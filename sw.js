@@ -1,5 +1,5 @@
 // E&S Kitchen service worker: keeps the app, recipe library and photos available offline.
-const VERSION = 'mvmt1g41';
+const VERSION = 'mvmt3prj';
 const SHELL = 'shell-' + VERSION;
 const RUNTIME = 'runtime-v1';
 const PRECACHE = ['./', 'index.html', 'firebase-config.js', 'app.js?v=' + VERSION, 'manifest.webmanifest', 'icons/icon.svg', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png', 'data/library.json'];
