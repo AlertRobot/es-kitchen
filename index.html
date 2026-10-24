@@ -334,6 +334,23 @@ details > summary svg { width: 18px; height: 18px; }
 .cook .chead .btn, .cook .chead .icon-btn, .cook .chead .chip { flex: none; }
 .cook .steptext, .cook .steptitle { overflow-wrap: anywhere; }
 @media (max-height: 500px) { .cook .chead, .cook .cfoot { padding-block: 6px; } .cook .cfoot .btn { min-height: 48px; } .cook .steptext { font-size: 1.15rem; } .cook .steptitle { font-size: 1.25rem; } .cookimg img { max-height: 30vh; } }
+
+/* What do you fancy? */
+.fgrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+@media (min-width: 620px) { .fgrid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.fcard { display: grid; gap: 2px; border-radius: var(--r); background: var(--surface); border: 1.5px solid var(--line); overflow: hidden; min-width: 0; }
+.fcard.on { border-color: var(--accent); box-shadow: inset 0 0 0 2px var(--accent); }
+.fpick { display: grid; gap: 6px; padding: 0; border: 0; background: none; text-align: left; min-width: 0; }
+.fimg { position: relative; display: block; aspect-ratio: 4 / 3; background: var(--surface-2); overflow: hidden; }
+.fimg img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.femoji { display: grid; place-items: center; width: 100%; height: 100%; font-size: 52px; }
+.ftick { position: absolute; top: 8px; right: 8px; width: 32px; height: 32px; border-radius: 50%; background: var(--accent); color: var(--accent-fg); display: grid; place-items: center; }
+.ftick svg { width: 20px; height: 20px; }
+.fbadge { position: absolute; left: 8px; top: 8px; }
+.fbody { display: grid; gap: 2px; padding: 0 10px; min-width: 0; }
+.fbody b { line-height: 1.25; font-size: 0.98rem; }
+.fpeek { justify-self: start; padding: 0 10px; min-height: 36px; }
+.fbar { position: sticky; bottom: 0; z-index: 3; display: grid; gap: 6px; padding: 12px 0 calc(8px + env(safe-area-inset-bottom, 0px)); background: linear-gradient(to bottom, transparent, var(--bg) 22%); }
 /* colour themes (Settings → Look & feel); garden green is the default */
 :root[data-palette="ocean"] { --bg: #F1F5F9; --surface: #FFFFFF; --surface-2: #E3EBF3; --line: #CFDAE6; --fg: #12202E; --muted: #52657A; --accent: #1F5FA8; --accent-fg: #FFFFFF; --accent-soft: #DCE8F7; --good: #1F5FA8; }
 @media (prefers-color-scheme: dark) { :root[data-palette="ocean"]:not([data-theme="light"]) { --bg: #0E141B; --surface: #151D27; --surface-2: #1E2834; --line: #2A3644; --fg: #E5ECF3; --muted: #98A8BA; --accent: #6AA8F0; --accent-fg: #08121F; --accent-soft: #1A3150; --good: #6AA8F0; } }
@@ -368,6 +385,6 @@ details > summary svg { width: 18px; height: 18px; }
 <nav class="nav" aria-label="Sections"><div class="in" id="nav"></div></nav>
 <div id="toast" class="toast" hidden role="status"></div>
 <script src="firebase-config.js"></script>
-<script src="app.js?v=mvl9h226"></script>
+<script src="app.js?v=mvmfacf5"></script>
 </body>
 </html>
