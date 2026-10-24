@@ -1,5 +1,5 @@
 // E&S Kitchen service worker: keeps the app, recipe library and photos available offline.
-const VERSION = 'mvmom1dq';
+const VERSION = 'mvmothqj';
 const SHELL = 'shell-' + VERSION;
 const RUNTIME = 'runtime-v1';
 const PRECACHE = ['./', 'index.html', 'firebase-config.js', 'app.js?v=' + VERSION, 'manifest.webmanifest', 'icons/icon.svg', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png', 'data/library.json'];
@@ -16,6 +16,8 @@ self.addEventListener('fetch', e => {
   const url = new URL(req.url);
   if (isFirebase(url)) return; // Firestore keeps its own offline copy
   const same = url.origin === self.location.origin;
+  // the install settings must always be fresh, or Chrome can mistake this app for another one on the same site
+  if (same && url.pathname.endsWith('/manifest.webmanifest')) { e.respondWith(fetch(req, { cache: 'no-store' }).then(res => { const copy = res.clone(); caches.open(SHELL).then(c => c.put(req, copy)); return res; }).catch(() => caches.match(req))); return; }
   if (same && url.pathname.endsWith('/firebase-config.js')) { e.respondWith(fetch(req).then(res => { const copy = res.clone(); caches.open(SHELL).then(c => c.put(req, copy)); return res; }).catch(() => caches.match(req))); return; }
   if (same && url.pathname.endsWith('/data/library.json')) {
     // network first so price refreshes arrive; fall back to the saved copy offline
