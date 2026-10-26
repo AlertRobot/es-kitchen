@@ -304,12 +304,15 @@ function subscribeHousehold(hid) {
 function weekKey(start) { return 'esk-wk:' + (S.userDoc && S.userDoc.current) + ':' + start; }
 // Offline, with the database's saved copy gone but the phone's plain copy still there: a change made now (a tick in the
 // shop) is held by the database as just the fields that changed. Show it on top of the plain copy, not as the whole week.
+// (The plain copy follows every change, so laying the database's version over it is right when both are there too.)
 function withCopy(start, d, meta) {
-  if (!d || !meta || !meta.cache || !meta.pending || d.start) return d;
+  if (!d || !meta || !meta.cache || !meta.pending) return d;
   const c = loadWeekCopy(start); if (!c) return d;
-  const x = encWeek(c); for (const k in d) x[k] = isObj(d[k]) && isObj(x[k]) ? { ...x[k], ...d[k] } : d[k];
+  const x = encWeek(c); for (const k in d) x[k] = deepMerge(x[k], d[k]);
   return x;
 }
+// changed fields laid over the copy at every level (one person's night out, over their other nights)
+function deepMerge(a, b) { if (!isObj(a) || !isObj(b)) return b; const x = { ...a }; for (const k in b) x[k] = deepMerge(a[k], b[k]); return x; }
 // only this household's recent weeks are kept (Caledonite shows tonight's dinner from these copies, so another
 // household's plan mustn't linger here, and old weeks needn't pile up)
 function pruneWeekCopies(hid) {
@@ -2924,7 +2927,8 @@ window.addEventListener('offline', () => { S.online = false; schedule(); });
     S.userDoc = d || null; S.userErr = null;
     const cur = d && d.current;
     if (cur && cur !== prev) { S.hhError = null; S.household = null; subscribeHousehold(cur); }
-    if (!cur) unsubAll(['hh', 'recipes', 'ing', 'people', 'settings', 'pantry', 'thumbs', 'photoPrefs', 'ratings', 'week', 'prev', 'thisW', 'nextW']);
+    // left the household (or never had one): stop following it, so nothing more is read from or written to it
+    if (!cur) { unsubAll(['hh', 'recipes', 'ing', 'people', 'settings', 'pantry', 'thumbs', 'photoPrefs', 'ratings', 'week', 'prev', 'thisW', 'nextW', 'backup', 'shops']); S.household = null; curHid = null; S.bg.cfg = null; S.cal.on = false; }
     render();
   }
   // Listen to the signed-in person's record. If loading it fails, try a direct read and keep retrying,

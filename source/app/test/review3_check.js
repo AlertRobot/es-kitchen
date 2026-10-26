@@ -187,6 +187,34 @@ const signedIn = (name) => ({ 'users/u_ethan': { households: ['h1'], current: 'h
     const vm = require('vm'), gs = {}; vm.createContext(gs); vm.runInContext(fs.readFileSync(__dirname + '/../../../apps-script/Code.gs', 'utf8'), gs);
     ok(gs.cell_('=IMPORTXML("https://x.example")') === '\'=IMPORTXML("https://x.example")' && gs.cell_('-4.5') === '-4.5' && gs.cell_('Ethan') === 'Ethan', 'backup sheet: text that starts like a formula is kept as text');
   }
+  // ---- 6. offline with only the phone's copy: a change to who's in keeps that person's other nights ----
+  if (!only || only === 6) {
+    const pre = signedIn(); pre['households/h1/people/u_ethan'] = { name: 'Ethan', uid: 'u_ethan', order: 1 }; pre['households/h1/people/p_s'] = { name: 'Sophie', order: 2 };
+    const copy = { start: MON, days: Array.from({ length: 7 }, () => ({ r: 'it_tuna_puttanesca' })), away: { p_s: { 1: 'dinner' } }, checked: {}, extras: [], bumped: [] };
+    const A = boot({ pre, local: { ['esk-wk:h1:' + MON]: JSON.stringify(copy) } }); A.w.__offlineWeeks = true; await wait(1500);
+    const outOn = d => { const c = A.d.querySelector('[data-act="who-cycle"][data-n="' + d + '"]'); return c ? [...c.querySelectorAll('i')].map(i => i.className === 'off') : []; };
+    ok(outOn(1)[1] === true, 'offline copy: Sophie shows out on Tuesday from the phone\u2019s copy');
+    await A.act('whosin'); await A.click('#sheet [data-act="away-cycle"][data-v="p_s"][data-n="3"]', 400); await A.act('sheet-back');
+    ok(outOn(3)[1] === true && outOn(1)[1] === true, 'offline copy: marking her out on Thursday keeps her out on Tuesday too (' + JSON.stringify([outOn(1), outOn(3)]) + ')');
+    // a week whose record was started by Caledonite's shifts (so it has no start date yet): a tick in the shop keeps the plan
+    const B = boot({ pre, local: { ['esk-wk:h1:' + MON]: JSON.stringify({ days: copy.days, shifts: { p_s: {} } }) } }); B.w.__offlineWeeks = true; await wait(1500);
+    await B.act('tab', 'shop', null, 400); await B.click('[data-act="tick"]', 400); await B.act('tab', 'week', null, 400);
+    ok(B.d.querySelectorAll('.meal .ttl').length === 7, 'offline copy: a tick on a week Caledonite started keeps the plan showing (' + B.d.querySelectorAll('.meal .ttl').length + ')');
+  }
+  // ---- 7. after leaving a household, nothing more is read from it or written to it ----
+  if (!only || only === 7) {
+    const B = { people: [{ id: 'ethan', name: 'Ethan' }], budgets: [{ id: 'e-food', person: 'ethan', name: 'Food' }], transactions: [{ id: 't-new', date: TODAY, person: 'ethan', amount: 9, budget: 'e-food', note: 'Tesco' }], splits: [], accounts: [] };
+    let posts = 0;
+    const fetch = async (url) => { if (!/script\.google\.com/.test(url)) return { ok: true, json: async () => JSON.parse(lib) }; posts++; return { ok: true, json: async () => ({ ok: true, person: 'ethan', keyType: 'app', now: Date.now(), full: true, rows: B }) }; };
+    const pre = signedIn(); pre['households/h1/people/u_ethan'] = { name: 'Ethan', uid: 'u_ethan', order: 1 };
+    const A = boot({ pre, fetch, local: { 'peckish.budgie': JSON.stringify({ u: 'https://script.google.com/macros/s/B/exec', k: 'app_peckish_' + 'd'.repeat(64), hid: 'h1' }) } });
+    await wait(4000);
+    [...A.w.__docs.keys()].filter(k => k.includes('/shops/')).forEach(k => A.w.__docs.delete(k));
+    A.w.__docs.set('users/u_ethan', { households: [], current: null, names: {} }); await A.w.__refreshMe(); await wait(500);
+    const n0 = posts; await A.act('bg-sync', null, null, 1500);
+    ok(posts === n0 && ![...A.w.__docs.keys()].some(k => k.includes('/shops/')), 'leaving: Budgie stops syncing into the household you left');
+    ok(/Set up your kitchen/.test(A.d.querySelector('#app').textContent), 'leaving: and you\u2019re back at the start');
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();
