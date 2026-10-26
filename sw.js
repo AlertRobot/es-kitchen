@@ -1,5 +1,5 @@
 // Peckish service worker: keeps the app, recipe library and photos available offline.
-const VERSION = 'mvp6d12v';
+const VERSION = 'mvp7iaa2';
 const SHELL = 'shell-' + VERSION;
 const RUNTIME = 'runtime-v1';
 const PRECACHE = ['./', 'index.html', 'firebase-config.js', 'app.js?v=' + VERSION, 'manifest.webmanifest', 'icons/icon.svg', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png', 'data/library.json',
@@ -12,6 +12,17 @@ self.addEventListener('activate', e => {
   e.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k.startsWith('shell-') && k !== SHELL).map(k => caches.delete(k)))).then(() => self.clients.claim()));
 });
 function isFirebase(url) { return /googleapis\.com|firebaseio|identitytoolkit|securetoken|firebaseapp\.com|gstatic\.com\/firebasejs|google\.com\/recaptcha|apis\.google\.com|accounts\.google/.test(url.href); }
+// Network first, but on a weak signal (one bar in the supermarket) use the saved copy after a few seconds
+// instead of hanging; the network copy still updates the cache when it arrives.
+function fresh(req, key, ms) {
+  const net = fetch(req).then(res => { if (res.ok) { const copy = res.clone(); caches.open(SHELL).then(c => c.put(key, copy)); } return res; });
+  const saved = caches.match(key);
+  return new Promise(resolve => {
+    let done = false; const finish = r => { if (!done && r) { done = true; resolve(r); } };
+    net.then(finish).catch(() => saved.then(hit => finish(hit || Response.error())));
+    setTimeout(() => saved.then(hit => finish(hit)), ms);
+  });
+}
 self.addEventListener('fetch', e => {
   const req = e.request; if (req.method !== 'GET') return;
   const url = new URL(req.url);
@@ -22,11 +33,11 @@ self.addEventListener('fetch', e => {
   if (same && url.pathname.endsWith('/firebase-config.js')) { e.respondWith(fetch(req).then(res => { const copy = res.clone(); caches.open(SHELL).then(c => c.put(req, copy)); return res; }).catch(() => caches.match(req))); return; }
   if (same && url.pathname.endsWith('/data/library.json')) {
     // network first so price refreshes arrive; fall back to the saved copy offline
-    e.respondWith(fetch(req).then(res => { const copy = res.clone(); caches.open(SHELL).then(c => c.put('data/library.json', copy)); return res; }).catch(() => caches.match('data/library.json')));
+    e.respondWith(fresh(req, 'data/library.json', 4000));
     return;
   }
   if (same && req.mode === 'navigate') {
-    e.respondWith(fetch(req).then(res => { const copy = res.clone(); caches.open(SHELL).then(c => c.put('index.html', copy)); return res; }).catch(() => caches.match('index.html')));
+    e.respondWith(fresh(req, 'index.html', 3000));
     return;
   }
   if (same) { e.respondWith(caches.match(req, { ignoreSearch: false }).then(hit => hit || fetch(req).then(res => { const copy = res.clone(); caches.open(SHELL).then(c => c.put(req, copy)); return res; }))); return; }
