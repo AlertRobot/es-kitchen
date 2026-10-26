@@ -1,0 +1,491 @@
+[
+ {
+  "id": "diced_beef",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API ('diced beef': no everyday line), Open Food Facts Open Prices (all Lidl GB stores with prices in the last 6 months: Cardiff x2, Hartlepool, London N22, Grimsby x2, Slough, Bristol, Pontypridd, Southampton SO15 etc.) (none), news/deal sites (WebSearch) (none); specific meat cut, so not modelled"
+   }
+  }
+ },
+ {
+  "id": "sirloin_steak",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "Lidl search API 'sirloin steak'/'sirloin'/'steak' errored on each try (retried); Open Food Facts Open Prices (all Lidl GB stores with prices in the last 6 months: Cardiff x2, Hartlepool, London N22, Grimsby x2, Slough, Bristol, Pontypridd, Southampton SO15 etc.) (none), news/deal sites (WebSearch) (none); steak cut, so not modelled"
+   }
+  }
+ },
+ {
+  "id": "chicken_legs",
+  "prices": {
+   "lidl": {
+    "pack": 1000,
+    "price": 2.25,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label British chicken legs 1kg (modelled)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Ashfields Chicken Legs 1kg £2.25; Lidl API 'chicken legs' only showed wings/fillets"
+   }
+  }
+ },
+ {
+  "id": "branston_pickle",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API ('pickle': no everyday line), Open Food Facts Open Prices (all Lidl GB stores with prices in the last 6 months: Cardiff x2, Hartlepool, London N22, Grimsby x2, Slough, Bristol, Pontypridd, Southampton SO15 etc.) (none), news/deal sites (WebSearch) (none); no Aldi price in input; trolley shows Aldi Bramwells Sweet Pickle 390g \"usually £0.79\" (pack differs from 295g), so not modelled"
+   }
+  }
+ },
+ {
+  "id": "self_raising_flour",
+  "prices": {
+   "lidl": {
+    "pack": 1500,
+    "price": 0.7,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl Belbake self raising flour 1.5kg (modelled)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi The Pantry Self Raising Flour 1.5kg £0.70; Lidl API shows Belbake Plain Flour 1.5kg £0.70 (same price) and OFF Cardiff 2026-09-09 plain flour 1.5kg £0.70; self-raising not listed"
+   }
+  }
+ },
+ {
+  "id": "chilli_powder",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API ('chilli powder': no everyday line), Open Food Facts Open Prices (all Lidl GB stores with prices in the last 6 months: Cardiff x2, Hartlepool, London N22, Grimsby x2, Slough, Bristol, Pontypridd, Southampton SO15 etc.) (none), news/deal sites (WebSearch) (none); spice, not modelled"
+   }
+  }
+ },
+ {
+  "id": "mustard_seeds",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API ('mustard seeds': no everyday line), Open Food Facts Open Prices (all Lidl GB stores with prices in the last 6 months: Cardiff x2, Hartlepool, London N22, Grimsby x2, Slough, Bristol, Pontypridd, Southampton SO15 etc.) (none), news/deal sites (WebSearch) (none); spice, not modelled"
+   }
+  }
+ },
+ {
+  "id": "kasoori_methi",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API ('fenugreek': no everyday line), Open Food Facts Open Prices (all Lidl GB stores with prices in the last 6 months: Cardiff x2, Hartlepool, London N22, Grimsby x2, Slough, Bristol, Pontypridd, Southampton SO15 etc.) (none), news/deal sites (WebSearch) (none); world food, not modelled"
+   }
+  }
+ },
+ {
+  "id": "gram_flour",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API ('gram flour': no everyday line), Open Food Facts Open Prices (all Lidl GB stores with prices in the last 6 months: Cardiff x2, Hartlepool, London N22, Grimsby x2, Slough, Bristol, Pontypridd, Southampton SO15 etc.) (none), news/deal sites (WebSearch) (none); world food, not modelled"
+   }
+  }
+ },
+ {
+  "id": "mango_chutney",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API ('mango chutney': no everyday line), Open Food Facts Open Prices (all Lidl GB stores with prices in the last 6 months: Cardiff x2, Hartlepool, London N22, Grimsby x2, Slough, Bristol, Pontypridd, Southampton SO15 etc.) (none), news/deal sites (WebSearch) (none); world food, no Aldi price, not modelled"
+   }
+  }
+ },
+ {
+  "id": "diced_lamb",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API ('lamb': no everyday line), Open Food Facts Open Prices (all Lidl GB stores with prices in the last 6 months: Cardiff x2, Hartlepool, London N22, Grimsby x2, Slough, Bristol, Pontypridd, Southampton SO15 etc.) (none), news/deal sites (WebSearch) (none); lamb cut, not modelled (only Pick of the Week lamb leg chops/minted steaks)"
+   }
+  }
+ },
+ {
+  "id": "orzo",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API ('orzo': no everyday line), Open Food Facts Open Prices (all Lidl GB stores with prices in the last 6 months: Cardiff x2, Hartlepool, London N22, Grimsby x2, Slough, Bristol, Pontypridd, Southampton SO15 etc.) (none), news/deal sites (WebSearch) (none); no evidence Lidl GB stocks orzo as an everyday line, so not modelled"
+   }
+  }
+ },
+ {
+  "id": "passata",
+  "prices": {
+   "lidl": {
+    "pack": 500,
+    "price": 0.45,
+    "loyalty": null,
+    "basis": "crowd",
+    "seen": "2026-09-27",
+    "conf": "medium",
+    "checked": "2026-10-26",
+    "label": "Tomato Passata 500g",
+    "src": "https://prices.openfoodfacts.org/api/v1/prices?location_id=1908&order_by=-date&size=100",
+    "note": "Open Prices receipt, Lidl Llandaff North Cardiff, not discounted; Lidl API had no passata"
+   }
+  }
+ },
+ {
+  "id": "pancetta",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API ('pancetta': no everyday line), Open Food Facts Open Prices (all Lidl GB stores with prices in the last 6 months: Cardiff x2, Hartlepool, London N22, Grimsby x2, Slough, Bristol, Pontypridd, Southampton SO15 etc.) (none), news/deal sites (WebSearch) (none); no Aldi price, specialist cured meat, not modelled"
+   }
+  }
+ },
+ {
+  "id": "capers",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API ('capers': no everyday line), Open Food Facts Open Prices (all Lidl GB stores with prices in the last 6 months: Cardiff x2, Hartlepool, London N22, Grimsby x2, Slough, Bristol, Pontypridd, Southampton SO15 etc.) (none), news/deal sites (WebSearch) (none); specialist jar, no Aldi price, not modelled"
+   }
+  }
+ },
+ {
+  "id": "sun_dried_tomatoes",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API ('sun dried tomatoes': no everyday line), Open Food Facts Open Prices (all Lidl GB stores with prices in the last 6 months: Cardiff x2, Hartlepool, London N22, Grimsby x2, Slough, Bristol, Pontypridd, Southampton SO15 etc.) (none), news/deal sites (WebSearch) (none); deli/specialist jar, not modelled (Aldi THE DELI £1.29)"
+   }
+  }
+ },
+ {
+  "id": "pecorino",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API ('pecorino': no everyday line), Open Food Facts Open Prices (all Lidl GB stores with prices in the last 6 months: Cardiff x2, Hartlepool, London N22, Grimsby x2, Slough, Bristol, Pontypridd, Southampton SO15 etc.) (none), news/deal sites (WebSearch) (none); specialist cheese, no Aldi price, not modelled"
+   }
+  }
+ },
+ {
+  "id": "rocket",
+  "prices": {
+   "lidl": {
+    "pack": 60,
+    "price": 0.89,
+    "loyalty": null,
+    "basis": "crowd",
+    "seen": "2026-05-30",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Wild Rocket 60g",
+    "src": "https://prices.openfoodfacts.org/api/v1/prices?product_code=4335619070783&order_by=-date",
+    "note": "Open Prices receipt, Lidl Cardiff, not discounted; ~5 months old; Aldi equivalent is £0.79; Lidl API 'rocket' errored on retry"
+   }
+  }
+ },
+ {
+  "id": "fennel_seeds",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API ('fennel seeds': no everyday line), Open Food Facts Open Prices (all Lidl GB stores with prices in the last 6 months: Cardiff x2, Hartlepool, London N22, Grimsby x2, Slough, Bristol, Pontypridd, Southampton SO15 etc.) (none), news/deal sites (WebSearch) (none); spice, not modelled"
+   }
+  }
+ },
+ {
+  "id": "anchovies",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API ('anchovies': no everyday line), Open Food Facts Open Prices (all Lidl GB stores with prices in the last 6 months: Cardiff x2, Hartlepool, London N22, Grimsby x2, Slough, Bristol, Pontypridd, Southampton SO15 etc.) (none), news/deal sites (WebSearch) (none); specialist tinned fish, not modelled"
+   }
+  }
+ },
+ {
+  "id": "chipotle_paste",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API ('chipotle': no everyday line), Open Food Facts Open Prices (all Lidl GB stores with prices in the last 6 months: Cardiff x2, Hartlepool, London N22, Grimsby x2, Slough, Bristol, Pontypridd, Southampton SO15 etc.) (none), news/deal sites (WebSearch) (none); specialist paste, not modelled"
+   }
+  }
+ },
+ {
+  "id": "pork_shoulder_steaks",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API ('pork shoulder steaks': no everyday line), Open Food Facts Open Prices (all Lidl GB stores with prices in the last 6 months: Cardiff x2, Hartlepool, London N22, Grimsby x2, Slough, Bristol, Pontypridd, Southampton SO15 etc.) (none), news/deal sites (WebSearch) (none); meat cut (steaks), not modelled (only Pick of the Week pork belly/loin medallions)"
+   }
+  }
+ },
+ {
+  "id": "sour_cream",
+  "prices": {
+   "lidl": {
+    "pack": 300,
+    "price": 0.85,
+    "loyalty": null,
+    "basis": "crowd",
+    "seen": "2026-05-31",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Soured Cream 300ml",
+    "src": "https://prices.openfoodfacts.org/api/v1/prices?location_id=1908&order_by=-date&size=25&page=2",
+    "note": "Open Prices receipt, Lidl Llandaff North Cardiff, not discounted; ~5 months old; same as Aldi COWBELLE £0.85"
+   }
+  }
+ },
+ {
+  "id": "jalapenos",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API ('jalapenos': no everyday line), Open Food Facts Open Prices (all Lidl GB stores with prices in the last 6 months: Cardiff x2, Hartlepool, London N22, Grimsby x2, Slough, Bristol, Pontypridd, Southampton SO15 etc.) (none), news/deal sites (WebSearch) (none); jar sizes differ a lot (Aldi 110g), not modelled"
+   }
+  }
+ },
+ {
+  "id": "red_cabbage",
+  "prices": {
+   "lidl": {
+    "pack": 1,
+    "price": 0.89,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl red cabbage each (modelled)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi NATURE'S PICK Red Cabbage £0.89; Lidl API 'red cabbage' showed only other Pick of the Week veg"
+   }
+  }
+ },
+ {
+  "id": "zaatar",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API ('zaatar': no everyday line), Open Food Facts Open Prices (all Lidl GB stores with prices in the last 6 months: Cardiff x2, Hartlepool, London N22, Grimsby x2, Slough, Bristol, Pontypridd, Southampton SO15 etc.) (none), news/deal sites (WebSearch) (none); spice blend, not modelled"
+   }
+  }
+ },
+ {
+  "id": "dried_apricots",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API ('dried apricots': no everyday line), Open Food Facts Open Prices (all Lidl GB stores with prices in the last 6 months: Cardiff x2, Hartlepool, London N22, Grimsby x2, Slough, Bristol, Pontypridd, Southampton SO15 etc.) (none), news/deal sites (WebSearch) (none); no Aldi price, not modelled"
+   }
+  }
+ },
+ {
+  "id": "olives",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API ('black olives': no everyday line), Open Food Facts Open Prices (all Lidl GB stores with prices in the last 6 months: Cardiff x2, Hartlepool, London N22, Grimsby x2, Slough, Bristol, Pontypridd, Southampton SO15 etc.) (none), news/deal sites (WebSearch) (none) (only Flavour of the Week Greece olives); pack basis differs (Aldi 320g gross vs 163g drained), not modelled"
+   }
+  }
+ },
+ {
+  "id": "cooked_chicken_slices",
+  "prices": {
+   "lidl": {
+    "pack": 150,
+    "price": 1.99,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label cooked chicken breast slices 150g (modelled)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Ashfields Cooked Chicken Breast Slices 150g £1.99; Lidl API 'cooked chicken' showed no sliced chicken"
+   }
+  }
+ },
+ {
+  "id": "ham_slices",
+  "prices": {
+   "lidl": {
+    "pack": 120,
+    "price": 1.49,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label British cooked ham slices 120g (modelled)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Ashfields British Dry Cured Cooked Ham 7 Slices 120g £1.49; Lidl API 'ham' showed only themed hams"
+   }
+  }
+ },
+ {
+  "id": "hummus",
+  "prices": {
+   "lidl": {
+    "pack": 200,
+    "price": 0.95,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl Classic Houmous 200g (modelled)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi THE DELI Houmous £0.95; Open Prices has Lidl Classic Houmous 200g £0.95 at Hartlepool 2025-09-04 (too old to use); Lidl API only Deluxe Premium Houmous 170g on offer"
+   }
+  }
+ },
+ {
+  "id": "salad_leaves",
+  "prices": {
+   "lidl": {
+    "pack": 160,
+    "price": 0.89,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label mixed leaf salad 160g (modelled)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Nature's Pick Bistro Salad 160g £0.89; Open Prices Lidl Cardiff Mixed Leaf Salad 200g £0.95 on 2026-03-28 (older than 6 months)"
+   }
+  }
+ },
+ {
+  "id": "quinoa",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API ('quinoa': no everyday line), Open Food Facts Open Prices (all Lidl GB stores with prices in the last 6 months: Cardiff x2, Hartlepool, London N22, Grimsby x2, Slough, Bristol, Pontypridd, Southampton SO15 etc.) (none), news/deal sites (WebSearch) (none); no Aldi price, not modelled"
+   }
+  }
+ },
+ {
+  "id": "light_mayonnaise",
+  "prices": {
+   "lidl": {
+    "pack": 480,
+    "price": 0.89,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label light mayonnaise 500ml (modelled)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Bramwells Light Mayonnaise 500ml £0.89; Lidl API 'light mayonnaise' errored, 'mayonnaise' had none; Open Prices Lidl Slough Real (full-fat) Mayonnaise 500ml £0.95 on 2026-08-19"
+   }
+  }
+ },
+ {
+  "id": "cottage_cheese",
+  "prices": {
+   "lidl": {
+    "pack": 300,
+    "price": 1.39,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl Milbona cottage cheese 300g (modelled)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi EMPORIUM Cottage Cheese Natural 300g £1.39"
+   }
+  }
+ },
+ {
+  "id": "wholemeal_bread",
+  "prices": {
+   "lidl": {
+    "pack": 19,
+    "price": 0.75,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label wholemeal medium sliced bread 800g (modelled)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Village Bakery Wholemeal Sliced Loaf 800g £0.75; Open Prices Lidl Cardiff Rowan Hill Medium White Bread £0.74 on 2026-05-31"
+   }
+  }
+ },
+ {
+  "id": "skyr",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API ('skyr': no everyday line), Open Food Facts Open Prices (all Lidl GB stores with prices in the last 6 months: Cardiff x2, Hartlepool, London N22, Grimsby x2, Slough, Bristol, Pontypridd, Southampton SO15 etc.) (none), news/deal sites (WebSearch) (none); no Aldi own-label skyr price found, not modelled"
+   }
+  }
+ },
+ {
+  "id": "frozen_edamame",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API ('edamame': no everyday line), Open Food Facts Open Prices (all Lidl GB stores with prices in the last 6 months: Cardiff x2, Hartlepool, London N22, Grimsby x2, Slough, Bristol, Pontypridd, Southampton SO15 etc.) (none), news/deal sites (WebSearch) (none); not a commodity frozen veg, no Aldi price, not modelled"
+   }
+  }
+ },
+ {
+  "id": "smoked_mackerel",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API ('smoked mackerel': no everyday line), Open Food Facts Open Prices (all Lidl GB stores with prices in the last 6 months: Cardiff x2, Hartlepool, London N22, Grimsby x2, Slough, Bristol, Pontypridd, Southampton SO15 etc.) (none), news/deal sites (WebSearch) (none); fish fillets, not modelled"
+   }
+  }
+ },
+ {
+  "id": "cooked_beetroot",
+  "prices": {
+   "lidl": {
+    "pack": 500,
+    "price": 0.66,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl cooked beetroot 500g (modelled)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Nature's Pick Cooked Beetroot 500g £0.66; Open Prices Lidl Birchgrove Cardiff Cooked Beetroot 500g £0.66 on 2026-02-07 agrees (older than 6 months)"
+   }
+  }
+ },
+ {
+  "id": "baked_beans",
+  "prices": {
+   "lidl": {
+    "pack": 410,
+    "price": 0.27,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl Newgate baked beans in tomato sauce 410g (modelled)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Everyday Essentials Baked Beans in Tomato Sauce 410g £0.27; HotUKDeals Aug 2026 shows Newgate Baked Beans 410g 4 for £1.49 Lidl Plus (promo, regular price not stated)"
+   }
+  }
+ }
+]

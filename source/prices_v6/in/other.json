@@ -1,0 +1,219 @@
+[
+ {
+  "id": "tahini",
+  "name": "Tahini",
+  "unit": "g",
+  "packs": [
+   300
+  ],
+  "aisle": "World foods",
+  "known": {
+   "tesco": {
+    "label": "Tesco Tahini 300G",
+    "pack": 300,
+    "price": 3.1,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Tahini, Inspired to Cook 300g",
+    "pack": 300,
+    "price": 3,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   }
+  }
+ },
+ {
+  "id": "mustard_seeds",
+  "name": "Black mustard seeds",
+  "unit": "g",
+  "packs": [
+   100
+  ],
+  "aisle": "Herbs & spices",
+  "known": {
+   "tesco": {
+    "label": "Rajah Whole Black Mustard Seeds 100G",
+    "pack": 100,
+    "price": 1.1,
+    "loyalty": 0.85,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Fudco Brown Mustard Seeds 100g",
+    "pack": 100,
+    "price": 1.3,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   }
+  }
+ },
+ {
+  "id": "zaatar",
+  "name": "Za'atar spice blend",
+  "unit": "g",
+  "packs": [
+   35
+  ],
+  "aisle": "Herbs & spices",
+  "known": {
+   "tesco": {
+    "label": "Schwartz Za'atar Seasoning 35G",
+    "pack": 35,
+    "price": 2,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Zaatar, Inspired to Cook 35g",
+    "pack": 35,
+    "price": 2.5,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   }
+  }
+ },
+ {
+  "id": "rice_krispies",
+  "name": "Rice Krispies (Kellogg's)",
+  "unit": "g",
+  "packs": [
+   430,
+   660
+  ],
+  "aisle": "Dry goods",
+  "known": {
+   "tesco": {
+    "label": "Kellogg's Rice Krispies Breakfast Cereal 430g",
+    "pack": 430,
+    "price": 3.5,
+    "loyalty": null,
+    "checked": "2026-10-24"
+   },
+   "asda": {
+    "label": "Kellogg's Rice Krispies Cereal 430g",
+    "pack": 430,
+    "price": 3.5,
+    "loyalty": null,
+    "checked": "2026-10-24"
+   },
+   "aldi": {
+    "label": "Harvest Morn Crisp Rice Cereal 375g",
+    "pack": 375,
+    "price": 0.89,
+    "loyalty": null,
+    "checked": "2026-10-24"
+   }
+  }
+ },
+ {
+  "id": "pork_crackling_joint",
+  "name": "Pork crackling joint (small loin or leg)",
+  "unit": "g",
+  "packs": [
+   700,
+   800,
+   1000
+  ],
+  "aisle": "Meat & fish",
+  "known": {
+   "tesco": {
+    "label": "Tesco Pork Loin Crackling Joint 700g-1.3kg",
+    "pack": 700,
+    "price": 5.25,
+    "loyalty": null,
+    "checked": "2026-10-24"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's (Approx. 800G) British Small Pork Crackling Leg Joint",
+    "pack": 800,
+    "price": 5.8,
+    "loyalty": null,
+    "checked": "2026-10-24"
+   },
+   "aldi": {
+    "label": "ASHFIELDS British Pork Crackling Leg Joint",
+    "pack": 1500,
+    "price": 7.49,
+    "loyalty": null,
+    "checked": "2026-10-26"
+   }
+  }
+ },
+ {
+  "id": "lamb_shanks",
+  "name": "Lamb shanks (raw)",
+  "unit": "each",
+  "packs": [
+   2
+  ],
+  "aisle": "Meat & fish",
+  "known": {
+   "tesco": {
+    "label": "Tesco 2 Lamb Shanks 550g-900g",
+    "pack": 2,
+    "price": 7.7,
+    "loyalty": null,
+    "checked": "2026-10-24"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's British or New Zealand Lamb Shanks (Approx. 750g)",
+    "pack": 2,
+    "price": 10.5,
+    "loyalty": null,
+    "checked": "2026-10-26"
+   }
+  }
+ },
+ {
+  "id": "pork_ribs",
+  "name": "Pork ribs (uncooked, plain rack or individual ribs)",
+  "unit": "g",
+  "packs": [
+   700
+  ],
+  "aisle": "Meat & fish",
+  "known": {
+   "tesco": {
+    "label": "Tesco Pork Ribs 700g",
+    "pack": 700,
+    "price": 5.75,
+    "loyalty": null,
+    "checked": "2026-10-24"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's British Pork Rib Rack 500g",
+    "pack": 500,
+    "price": 4.5,
+    "loyalty": null,
+    "checked": "2026-10-24"
+   }
+  }
+ },
+ {
+  "id": "star_anise",
+  "name": "Star anise (whole)",
+  "unit": "g",
+  "packs": [
+   11
+  ],
+  "aisle": "Herbs & spices",
+  "known": {
+   "tesco": {
+    "label": "Tesco Whole Star Anise 11G",
+    "pack": 11,
+    "price": 1,
+    "loyalty": null,
+    "checked": "2026-10-24"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Star Anise 15g",
+    "pack": 15,
+    "price": 1.15,
+    "loyalty": null,
+    "checked": "2026-10-24"
+   }
+  }
+ }
+]

@@ -1,0 +1,472 @@
+[
+ {
+  "id": "smoked_salmon",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "only a Feb 2026 Lidl receipt reading found; too old and not verifiable"
+   }
+  }
+ },
+ {
+  "id": "bagel_thins",
+  "prices": {
+   "lidl": {
+    "pack": 6,
+    "price": 1.19,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Rowan Hill Bakery Bagel Thins 6 (assumed Lidl own-label equivalent)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Village Bakery Original Bagel Thins 6 £1.19; Lidl search API had no everyday line, no Open Food Facts Lidl GB price in last 6 months, no dated article; bread staple; Lidl range of bagel thins not confirmed online"
+   }
+  }
+ },
+ {
+  "id": "weetabix",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API, Open Food Facts Open Prices (all Lidl GB stores with prices), web for dated articles/HotUKDeals; API only has Weetabix Flavours (banana/chocolate) 24 pack, Lidl Plus £2.29, regular £2.99, Scotland only, offer 22.10-04.11 (not Original, not everyday); branded cereal not modelled"
+   }
+  }
+ },
+ {
+  "id": "protein_bar",
+  "prices": {
+   "lidl": {
+    "pack": 3,
+    "price": 2.39,
+    "loyalty": null,
+    "basis": "crowd",
+    "seen": "2026-07-06",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Crownfield High Protein Flapjacks Salted Caramel 3 x 50g",
+    "src": "https://prices.openfoodfacts.org/api/v1/prices?location_id=3893&order_by=-date&size=25",
+    "note": "Open Food Facts receipt, Lidl Grimsby (Cromwell Rd); a protein flapjack not a 20g-protein bar (likely ~10g protein each), and nearly 4 months old"
+   }
+  }
+ },
+ {
+  "id": "porridge_oats",
+  "prices": {
+   "lidl": {
+    "pack": 1000,
+    "price": 0.85,
+    "loyalty": null,
+    "basis": "crowd",
+    "seen": "2026-09-12",
+    "conf": "medium",
+    "checked": "2026-10-26",
+    "label": "Crownfield Porridge Oats 1kg",
+    "src": "https://prices.openfoodfacts.org/api/v1/prices?location_id=1908&order_by=-date&size=100",
+    "note": "Open Food Facts receipt, Lidl Cardiff Station Rd (EAN 4056489462828, not discounted); same as Aldi Everyday Essentials 1kg £0.85"
+   }
+  }
+ },
+ {
+  "id": "banana",
+  "prices": {
+   "lidl": {
+    "pack": 5,
+    "price": 0.78,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl Bananas (loose/5 pack)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Nature's Pick Bananas 5 Each £0.78; Lidl search API had no everyday line, no Open Food Facts Lidl GB price in last 6 months, no dated article; everyday fresh fruit"
+   }
+  }
+ },
+ {
+  "id": "frozen_berries",
+  "prices": {
+   "lidl": {
+    "pack": 500,
+    "price": 1.99,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Harvest Basket/Freshona Frozen Summer Fruits 500g",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Four Seasons Summer Fruits 500g £1.99; Lidl search API had no everyday line, no Open Food Facts Lidl GB price in last 6 months, no dated article; frozen fruit treated as frozen basic; Lidl pack assumed 500g like Aldi"
+   }
+  }
+ },
+ {
+  "id": "cheerios",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API, Open Food Facts Open Prices (all Lidl GB stores with prices), web for dated articles/HotUKDeals; branded cereal (Nestle), not on Lidl API; not modelled"
+   }
+  }
+ },
+ {
+  "id": "crunchy_nut",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API, Open Food Facts Open Prices (all Lidl GB stores with prices), web for dated articles/HotUKDeals; branded cereal (Kellogg's), not on Lidl API; not modelled"
+   }
+  }
+ },
+ {
+  "id": "shreddies",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API, Open Food Facts Open Prices (all Lidl GB stores with prices), web for dated articles/HotUKDeals; branded cereal (Nestle), not on Lidl API; not modelled"
+   }
+  }
+ },
+ {
+  "id": "rice_krispies",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API, Open Food Facts Open Prices (all Lidl GB stores with prices), web for dated articles/HotUKDeals; branded cereal (Kellogg's), not on Lidl API; not modelled"
+   }
+  }
+ },
+ {
+  "id": "special_k",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API, Open Food Facts Open Prices (all Lidl GB stores with prices), web for dated articles/HotUKDeals; branded cereal (Kellogg's), not on Lidl API; not modelled"
+   }
+  }
+ },
+ {
+  "id": "cornflakes",
+  "prices": {
+   "lidl": {
+    "loyalty": null,
+    "basis": "crowd",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "pack": 500,
+    "price": 0.95,
+    "seen": "2026-01-31",
+    "label": "Crownfield Corn Flakes 500g",
+    "src": "https://prices.openfoodfacts.org/api/v1/prices?product_code=4335619092822&order_by=-date",
+    "note": "Open Food Facts receipt, Lidl Cardiff, Jan 2026 (older reading)"
+   }
+  }
+ },
+ {
+  "id": "bran_flakes",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API, Open Food Facts Open Prices (all Lidl GB stores with prices), web for dated articles/HotUKDeals; branded cereal (Kellogg's), not on Lidl API; not modelled"
+   }
+  }
+ },
+ {
+  "id": "fruit_and_fibre",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API, Open Food Facts Open Prices (all Lidl GB stores with prices), web for dated articles/HotUKDeals; branded cereal (Kellogg's), not on Lidl API; not modelled"
+   }
+  }
+ },
+ {
+  "id": "shredded_wheat",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API, Open Food Facts Open Prices (all Lidl GB stores with prices), web for dated articles/HotUKDeals; branded cereal (Nestle), not on Lidl API; not modelled"
+   }
+  }
+ },
+ {
+  "id": "granola",
+  "prices": {
+   "lidl": {
+    "loyalty": null,
+    "basis": "crowd",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "pack": 1000,
+    "price": 1.95,
+    "seen": "2026-01-31",
+    "label": "Crownfield Raisin & Almond Granola 1kg",
+    "src": "https://prices.openfoodfacts.org/api/v1/prices?product_code=20719326&order_by=-date",
+    "note": "Open Food Facts receipt, Lidl Cardiff, Jan 2026 (older reading)"
+   }
+  }
+ },
+ {
+  "id": "jam",
+  "prices": {
+   "lidl": {
+    "pack": 454,
+    "price": 0.49,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-24",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label Strawberry Jam 454g",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Everyday Essentials Strawberry Jam 454g £0.49; Lidl search API had no everyday line, no Open Food Facts Lidl GB price in last 6 months, no dated article; jarred basic; Lidl API search for 'jam' errored twice"
+   }
+  }
+ },
+ {
+  "id": "crumpets",
+  "prices": {
+   "lidl": {
+    "pack": 6,
+    "price": 0.45,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Rowan Hill Bakery Crumpets 6 pack",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi VILLAGE BAKERY Crumpets 6 Pack £0.45; Lidl search API had no everyday line, no Open Food Facts Lidl GB price in last 6 months, no dated article; bread staple"
+   }
+  }
+ },
+ {
+  "id": "soft_cheese",
+  "prices": {
+   "lidl": {
+    "pack": 200,
+    "price": 0.89,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-24",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Milbona Light Soft Cheese 200g",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Emporium Reduced Fat Soft Cheese Lighter 200g £0.89; Lidl search API had no everyday line, no Open Food Facts Lidl GB price in last 6 months, no dated article; cheese staple; API only had Greek-week Eridanous soft cheese 175g £1.49 (themed week, not used)"
+   }
+  }
+ },
+ {
+  "id": "croissants",
+  "prices": {
+   "lidl": {
+    "pack": 8,
+    "price": 1.49,
+    "loyalty": null,
+    "basis": "model",
+    "conf": "low",
+    "seen": "2026-10-23",
+    "checked": "2026-10-26",
+    "label": "Croissants 8 pack (matched to Aldi)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Bon Appetit! Croissants 8 pack £1.49; Lidl in-store bakery croissant 65p each (Apr 2025) is a different product"
+   }
+  }
+ },
+ {
+  "id": "teacakes",
+  "prices": {
+   "lidl": {
+    "pack": 6,
+    "price": 0.95,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-24",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Rowan Hill Bakery Teacakes 6 pack",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Village Bakery Teacakes (6) £0.95; Lidl search API had no everyday line, no Open Food Facts Lidl GB price in last 6 months, no dated article; bread staple"
+   }
+  }
+ },
+ {
+  "id": "cream_crackers",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API, Open Food Facts Open Prices (all Lidl GB stores with prices), web for dated articles/HotUKDeals; no cream crackers on API; OFF has only Rivercote Sea Salt/Black Pepper/Rosemary Crackers 185g £0.95 (Lidl Grimsby 2026-07-06), a different product; no Aldi price in input and crackers not in model list"
+   }
+  }
+ },
+ {
+  "id": "tomato_soup",
+  "prices": {
+   "lidl": {
+    "pack": 400,
+    "price": 0.59,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-24",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label Cream of Tomato Soup 400g",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Bramwells Cream of Tomato Soup 400g £0.59; Lidl search API had no everyday line, no Open Food Facts Lidl GB price in last 6 months, no dated article; tinned basic; API only had Scotland-only McKinlay's chilled soup offer"
+   }
+  }
+ },
+ {
+  "id": "bread_rolls",
+  "prices": {
+   "lidl": {
+    "pack": 6,
+    "price": 0.45,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-24",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Rowan Hill Bakery Soft White Rolls 6 pack",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Village Bakery White Rolls (6) £0.45; Lidl search API had no everyday line, no Open Food Facts Lidl GB price in last 6 months, no dated article; bread staple"
+   }
+  }
+ },
+ {
+  "id": "gammon_steaks",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API, Open Food Facts Open Prices (all Lidl GB stores with prices), web for dated articles/HotUKDeals; no gammon on API; meat cut with very different packs (Aldi 250g vs others 450g), not modelled"
+   }
+  }
+ },
+ {
+  "id": "corned_beef",
+  "prices": {
+   "lidl": {
+    "pack": 340,
+    "price": 2.19,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label Corned Beef 340g",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi BRAMWELLS Corned Beef £2.19; Lidl search API had no everyday line, no Open Food Facts Lidl GB price in last 6 months, no dated article; tinned basic"
+   }
+  }
+ },
+ {
+  "id": "chorizo",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API, Open Food Facts Open Prices (all Lidl GB stores with prices), web for dated articles/HotUKDeals; no chorizo on API; specialist cured meat, not modelled"
+   }
+  }
+ },
+ {
+  "id": "pork_crackling_joint",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API, Open Food Facts Open Prices (all Lidl GB stores with prices), web for dated articles/HotUKDeals; API only had XXL British Pork Leg Joint 2.5-3.5kg £4.49/kg as Pick of the Week (promo, in store to 28 Oct; not everyday, pack far bigger); meat cut not modelled"
+   }
+  }
+ },
+ {
+  "id": "ale",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API, Open Food Facts Open Prices (all Lidl GB stores with prices), web for dated articles/HotUKDeals; no beer/ale on API; branded drink, not modelled"
+   }
+  }
+ },
+ {
+  "id": "lamb_chops",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API, Open Food Facts Open Prices (all Lidl GB stores with prices), web for dated articles/HotUKDeals; API only had XXL 4 Lamb Leg Chops 640g £9.99 as Pick of the Week (promo, ended 14 Oct 2026); lamb not modelled"
+   }
+  }
+ },
+ {
+  "id": "sea_bass_fillets",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API, Open Food Facts Open Prices (all Lidl GB stores with prices), web for dated articles/HotUKDeals; no sea bass on API (only promo salmon fillets); fish not modelled"
+   }
+  }
+ },
+ {
+  "id": "lamb_shanks",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API, Open Food Facts Open Prices (all Lidl GB stores with prices), web for dated articles/HotUKDeals; no lamb shanks on API; lamb not modelled"
+   }
+  }
+ },
+ {
+  "id": "shortcrust_pastry",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API, Open Food Facts Open Prices (all Lidl GB stores with prices), web for dated articles/HotUKDeals; API 'pastry' returned only Greek-week filo/kataifi; ready-rolled pastry not in the model list (Aldi The Pantry 320g £0.99 for reference)"
+   }
+  }
+ },
+ {
+  "id": "pork_ribs",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API, Open Food Facts Open Prices (all Lidl GB stores with prices), web for dated articles/HotUKDeals; API only had Slow Cooked Bourbon BBQ Pork Rib Rack 600g £4.49 (cooked, Pick of the Week), not plain raw ribs; meat cut not modelled"
+   }
+  }
+ },
+ {
+  "id": "cashew_nuts",
+  "prices": {
+   "lidl": {
+    "pack": 125,
+    "price": 0.99,
+    "loyalty": null,
+    "basis": "crowd",
+    "seen": "2026-06-22",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Simply Roasted & Salted Cashews 125g",
+    "src": "https://prices.openfoodfacts.org/api/v1/prices?location_id=1908&order_by=-date&size=100",
+    "note": "Open Food Facts receipt, Lidl Cardiff Station Rd (EAN 4335619316539); roasted & salted, smaller pack than the plain 200g cashews at other shops, 4 months old; no cashews on Lidl API"
+   }
+  }
+ },
+ {
+  "id": "star_anise",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API, Open Food Facts Open Prices (all Lidl GB stores with prices), web for dated articles/HotUKDeals; no spices on API; spice not modelled"
+   }
+  }
+ },
+ {
+  "id": "taco_shells",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl search API, Open Food Facts Open Prices (all Lidl GB stores with prices), web for dated articles/HotUKDeals; API had only McEnnedy tortilla rolls and Mexican squeezy toppers (US/Mexican week offers), no taco shells; world food not modelled"
+   }
+  }
+ }
+]

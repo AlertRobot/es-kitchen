@@ -1078,6 +1078,7 @@ function renderComparison(B) {
     if (T.missing) flags.push(T.missing + ' not sold there online (priced at ' + h((SHOPS.find(x => x.id === weekShop()) || {}).name) + ')');
     
     if (T.stale) flags.push(T.stale + ' over 2 months old');
+    if (T.rough) flags.push(T.rough + ' a rough guide (e.g. matched to Aldi)');
     const base = k.replace('+', ''), isShop = base === weekShop();
     out += '<div class="cmp ' + (k === best ? 'best' : '') + '"><span class="sname">' + SHOP_KEY_NAMES[k] + (k === pref ? ' <span class="tag">your shop</span>' : '') + (k === best ? ' <span class="tag good">cheapest</span>' : '') + '</span><span class="money">' + fmtMoney(T.total) + '</span>' +
       '<span class="bar"><i style="width:' + (T.total / max * 100).toFixed(1) + '%"></i></span>' +
@@ -1612,6 +1613,16 @@ function setAccount() {
     (Store.kind === 'artifact' ? '' : '<section class="panel"><h2>Account</h2><p class="small">Signed in as <b>' + h(S.user ? (S.user.email || S.user.name) : '') + '</b></p><div class="row wrap"><button class="btn" data-act="sign-out">Sign out</button></div>' +
       '<details><summary class="small">Something stuck?</summary><div class="stack" style="padding-top:8px"><p class="small muted">Resetting clears only the copy kept on this phone and reloads. Your plans are safe online, but anything changed offline and not yet synced would be lost.</p><button class="btn" data-act="reset-local">Reset this phone’s saved copy</button></div></details></section>');
 }
+// where each shop's price came from, in plain words
+const BASIS = { shop: 'the shop\u2019s website', compare: 'a price-comparison site', app: 'the shop on a delivery app', crowd: 'shoppers\u2019 receipts and shelf photos', news: 'a dated article or leaflet', match: 'Tesco\u2019s Aldi Price Match', model: 'worked out from a matched price at another shop', receipt: 'your receipt' };
+const CONFW = { high: 'sure', medium: 'fairly sure', low: 'a rough guide' };
+function priceSources(ing) {
+  const rows = SHOPS.map(s => { const p = ing.prices && ing.prices[s.id]; if (!p || !p.price) return (ing.unlisted && ing.unlisted[s.id]) ? '<li><b>' + s.name + ':</b> no price found anywhere</li>' : ''; const basis = /receipt/i.test(p.src || '') ? 'receipt' : /in app/i.test(p.src || '') ? null : (p.basis || (/trolley\.co\.uk/.test(p.src || '') ? 'compare' : 'shop'));
+    if (!basis) return '<li><b>' + s.name + ':</b> entered by you</li>';
+    let host = ''; try { host = /^https?:/.test(p.src) ? new URL(p.src).hostname.replace(/^www\./, '') : ''; } catch (e) {}
+    return '<li><b>' + s.name + ':</b> ' + h(p.label || '') + (p.label ? ', ' : '') + 'from ' + BASIS[basis] + (host && basis !== 'shop' ? ' (' + h(host) + ')' : '') + (p.seen && p.seen !== p.checked ? ', seen ' + niceDate(p.seen) : '') + (p.conf && p.conf !== 'high' ? ' \u00b7 ' + CONFW[p.conf] : '') + '</li>'; }).join('');
+  return rows ? '<ul class="small muted srclist">' + rows + '</ul>' : '';
+}
 function priceEditor(ing) {
   let out = '<form class="stack" data-form="prices" data-v="' + h(ing.id) + '" style="padding:10px 0 14px"><div class="scrollx"><table class="pricetable"><thead><tr><th>Shop</th><th>Pack (' + ing.unit + ')</th><th>Price £</th><th>Offer £</th><th>Checked</th></tr></thead><tbody>';
   for (const s of SHOPS) {
@@ -1622,7 +1633,7 @@ function priceEditor(ing) {
       '<td>' + (s.loyalty ? '<input type="number" step="0.01" min="0" id="pe-' + ing.id + '-' + s.id + '-loy" value="' + (p.loyalty != null ? p.loyalty : '') + '" placeholder="' + s.loyalty + '" aria-label="' + s.name + ' ' + s.loyalty + ' price">' : '<span class="muted">–</span>') + '</td>' +
       '<td class="small">' + (p.checked ? '<span class="' + (age > STALE_DAYS ? 'tag warn' : '') + '">' + parseIso(p.checked).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' }) + '</span>' + (p.est ? ' <span class="tag">est.</span>' : '') : '<span class="muted">–</span>') + '</td></tr>';
   }
-  out += '</tbody></table></div><div class="row wrap"><button class="btn primary" type="submit">Save prices</button><button class="btn" type="button" data-act="toggle-staple" data-v="' + h(ing.id) + '">' + (ing.staple ? 'Not a staple' : 'Make it a staple') + '</button></div></form>';
+  out += '</tbody></table></div>' + priceSources(ing) + '<div class="row wrap"><button class="btn primary" type="submit">Save prices</button><button class="btn" type="button" data-act="toggle-staple" data-v="' + h(ing.id) + '">' + (ing.staple ? 'Not a staple' : 'Make it a staple') + '</button></div></form>';
   return out;
 }
 function ingForm() {

@@ -1,0 +1,579 @@
+[
+ {
+  "id": "greek_yogurt",
+  "prices": {
+   "lidl": {
+    "pack": 500,
+    "price": 0.95,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label Greek style yogurt 500g (modelled)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Brooklea Fat Free Greek Style Yogurt 500g £0.95; no Lidl price found (Lidl search API (no everyday line), Open Food Facts Lidl GB stores (last 6 months: nothing); news search not possible (search budget used up)). Lidl API only has ERIDANOUS Greek Yogurt 500g £1.99 under Flavour of the Week - Greece (themed week, true Greek yogurt), not used; Aldi match is fat-free"
+   }
+  }
+ },
+ {
+  "id": "green_chillies",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl API (chillies), Open Food Facts Lidl GB; no Lidl price. Not modelled: pack sizes vary 50-80g across shops"
+   }
+  }
+ },
+ {
+  "id": "ground_cinnamon",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl API (cinnamon), Open Food Facts Lidl GB; nothing. Spice: not modelled"
+   }
+  }
+ },
+ {
+  "id": "ground_coriander",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl API (coriander), Open Food Facts Lidl GB; nothing. Spice: not modelled"
+   }
+  }
+ },
+ {
+  "id": "halloumi",
+  "prices": {
+   "lidl": {
+    "pack": 225,
+    "price": 1.99,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label halloumi 225g (modelled)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Emporium Halloumi Plain 225g £1.99; no Lidl price found (Lidl search API (no everyday line), Open Food Facts Lidl GB stores (last 6 months: nothing); news search not possible (search budget used up)). Lidl API lists Halloumi 225g £1.99 (/p/halloumi/p11678615) but only under Flavour of the Week - Greece, in store from 29.10, so not accepted as everyday; it agrees with this price"
+   }
+  }
+ },
+ {
+  "id": "harissa",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl API (harissa), Open Food Facts Lidl GB; nothing. Specialist paste: not modelled"
+   }
+  }
+ },
+ {
+  "id": "hoisin_sauce",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl API (hoisin), Open Food Facts Lidl GB; nothing. World-food sauce: not modelled"
+   }
+  }
+ },
+ {
+  "id": "honey",
+  "prices": {
+   "lidl": {
+    "pack": 454,
+    "price": 1.39,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label squeezy honey 454g (modelled)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Grandessa Squeezy Honey 454g £1.39; no Lidl price found (Lidl search API (no everyday line), Open Food Facts Lidl GB stores (last 6 months: nothing); news search not possible (search budget used up)). modelled at Aldi 454g pack"
+   }
+  }
+ },
+ {
+  "id": "kidney_beans",
+  "prices": {
+   "lidl": {
+    "pack": 400,
+    "price": 0.33,
+    "loyalty": null,
+    "basis": "crowd",
+    "seen": "2026-09-27",
+    "conf": "medium",
+    "checked": "2026-10-26",
+    "label": "Simply Red Kidney Beans in water",
+    "src": "https://prices.openfoodfacts.org/api/v1/prices?product_code=4056489903710&order_by=-date",
+    "note": "Open Food Facts receipt, Lidl Cardiff; OFF records quantity as 240 g (drained weight of the 400g tin); same £0.33 at Lidl Grimsby Jul 2025 and Hartlepool Feb 2025. Lidl API search errored twice"
+   }
+  }
+ },
+ {
+  "id": "kimchi",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl API (kimchi), Open Food Facts Lidl GB; nothing. World food: not modelled"
+   }
+  }
+ },
+ {
+  "id": "lamb_mince",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl API (lamb, mince), Open Food Facts Lidl GB; nothing. Lamb: not modelled per spec"
+   }
+  }
+ },
+ {
+  "id": "lasagne_sheets",
+  "prices": {
+   "lidl": {
+    "pack": 500,
+    "price": 0.75,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label lasagne sheets 500g (modelled)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Cucina Lasagne Sheets 500g £0.75; no Lidl price found (Lidl search API (no everyday line), Open Food Facts Lidl GB stores (last 6 months: nothing); news search not possible (search budget used up))"
+   }
+  }
+ },
+ {
+  "id": "lemon",
+  "prices": {
+   "lidl": {
+    "pack": 4,
+    "price": 0.89,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label lemons 4 pack (modelled)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Everyday Essentials Wonky Lemons 4 pack £0.89; no Lidl price found (Lidl search API (no everyday line), Open Food Facts Lidl GB stores (last 6 months: nothing); news search not possible (search budget used up)). Lidl API lists Lemons 750g £1.19 (/p/lemons/p10055845) as Pick of the Week \"LIMITED OFFER\" from 08.10, not clearly the regular price, so not used"
+   }
+  }
+ },
+ {
+  "id": "lime",
+  "prices": {
+   "lidl": {
+    "pack": 5,
+    "price": 1.15,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label limes 5 pack (modelled)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Nature's Pick Limes 5 pack £1.15; no Lidl price found (Lidl search API (no everyday line), Open Food Facts Lidl GB stores (last 6 months: nothing); news search not possible (search budget used up))"
+   }
+  }
+ },
+ {
+  "id": "little_gem",
+  "prices": {
+   "lidl": {
+    "pack": 2,
+    "price": 0.77,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label little gem lettuce 2 pack (modelled)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Nature's Pick British Little Gem Lettuce 2 Pack £0.77; no Lidl price found (Lidl search API (no everyday line), Open Food Facts Lidl GB stores (last 6 months: nothing); news search not possible (search budget used up)). Lidl API lettuce search errored twice"
+   }
+  }
+ },
+ {
+  "id": "milk",
+  "prices": {
+   "lidl": {
+    "pack": 2272,
+    "price": 1.65,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label semi-skimmed milk 4 pints (modelled)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Cowbelle Semi Skimmed Milk 1.7% Fat 2.272L £1.65; no Lidl price found (Lidl search API (no everyday line), Open Food Facts Lidl GB stores (last 6 months: nothing); news search not possible (search budget used up)). OFF has only Lidl filtered whole milk 2L £1.69 (Chalvey, 2026-08-19), a different product"
+   }
+  }
+ },
+ {
+  "id": "miso_paste",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl API (miso), Open Food Facts Lidl GB; nothing. World food: not modelled"
+   }
+  }
+ },
+ {
+  "id": "mixed_herbs",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "Lidl API (herbs) errored twice; Open Food Facts Lidl GB nothing. Dried herbs: not modelled"
+   }
+  }
+ },
+ {
+  "id": "mozzarella",
+  "prices": {
+   "lidl": {
+    "pack": 125,
+    "price": 0.55,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label mozzarella 125g drained (modelled)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Everyday Essentials Classic Mozzarella (0.125kg drained) £0.55; no Lidl price found (Lidl search API (no everyday line), Open Food Facts Lidl GB stores (last 6 months: nothing); news search not possible (search budget used up))"
+   }
+  }
+ },
+ {
+  "id": "mushrooms",
+  "prices": {
+   "lidl": {
+    "pack": 250,
+    "price": 0.95,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label chestnut mushrooms 250g (modelled)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Nature's Pick British Chestnut Mushrooms 250g £0.95; no Lidl price found (Lidl search API (no everyday line), Open Food Facts Lidl GB stores (last 6 months: nothing); news search not possible (search budget used up)). OFF has only Lidl Large Flat Mushrooms 250g £0.99 (Chalvey, 2026-08-19), a different product"
+   }
+  }
+ },
+ {
+  "id": "naan",
+  "prices": {
+   "lidl": {
+    "pack": 2,
+    "price": 0.69,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label plain naan 2 pack (modelled)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Bilash Plain Naan Breads (2 each) £0.69; no Lidl price found (Lidl search API (no everyday line), Open Food Facts Lidl GB stores (last 6 months: nothing); news search not possible (search budget used up))"
+   }
+  }
+ },
+ {
+  "id": "oil",
+  "prices": {
+   "lidl": {
+    "pack": 1000,
+    "price": 1.45,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label vegetable oil 1L (modelled)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Solesta Vegetable Oil 1l £1.45; no Lidl price found (Lidl search API (no everyday line), Open Food Facts Lidl GB stores (last 6 months: nothing); news search not possible (search budget used up)). OFF Lidl Cardiff sunflower oil 1L £1.49 is from Jan 2026 (outside 6 months) and a different oil"
+   }
+  }
+ },
+ {
+  "id": "pak_choi",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "Lidl API (choi) errored twice; Open Food Facts Lidl GB nothing; no Aldi price to match"
+   }
+  }
+ },
+ {
+  "id": "paneer",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl API (paneer), Open Food Facts Lidl GB; nothing. No Aldi price; not modelled"
+   }
+  }
+ },
+ {
+  "id": "panko",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl API (panko), Open Food Facts Lidl GB; nothing. World food: not modelled"
+   }
+  }
+ },
+ {
+  "id": "parmesan",
+  "prices": {
+   "lidl": {
+    "pack": 200,
+    "price": 2.85,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label Grana Padano 200g (modelled)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Emporium Italian Grana Padano 200g £2.85; no Lidl price found (Lidl search API (no everyday line), Open Food Facts Lidl GB stores (last 6 months: nothing); news search not possible (search budget used up)). modelled at Aldi 200g pack; Lidl API grana search errored, parmesan search had no cheese"
+   }
+  }
+ },
+ {
+  "id": "pasta",
+  "prices": {
+   "lidl": {
+    "pack": 500,
+    "price": 0.75,
+    "loyalty": null,
+    "basis": "crowd",
+    "seen": "2026-06-22",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Baresa Spaghetti 500g",
+    "src": "https://prices.openfoodfacts.org/api/v1/prices?product_code=4013159604599&order_by=-date",
+    "note": "Open Food Facts receipt, Lidl Cardiff; same £0.75 there Jan 2026 and Nov 2025; reading over 3 months old. Aldi penne is £0.69"
+   }
+  }
+ },
+ {
+  "id": "peanut_butter",
+  "prices": {
+   "lidl": {
+    "pack": 340,
+    "price": 0.95,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label smooth peanut butter 340g (modelled)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Grandessa Smooth Peanut Butter 340g £0.95; no Lidl price found (Lidl search API (no everyday line), Open Food Facts Lidl GB stores (last 6 months: nothing); news search not possible (search budget used up))"
+   }
+  }
+ },
+ {
+  "id": "peppers",
+  "prices": {
+   "lidl": {
+    "pack": 3,
+    "price": 1.75,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label mixed peppers 3 pack (modelled)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Nature's Pick Mixed Peppers 3 pack £1.75; no Lidl price found (Lidl search API (no everyday line), Open Food Facts Lidl GB stores (last 6 months: nothing); news search not possible (search budget used up))"
+   }
+  }
+ },
+ {
+  "id": "pesto",
+  "prices": {
+   "lidl": {
+    "pack": 190,
+    "price": 0.89,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label green pesto 190g (modelled)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Cucina Basil Pesto 190g £0.89; no Lidl price found (Lidl search API (no everyday line), Open Food Facts Lidl GB stores (last 6 months: nothing); news search not possible (search budget used up)). older OFF readings: Lidl Green Pesto with Basil 190g £0.99 (Stratford, 2025-10-25, outside 6 months); Pesto alla Genovese 190g £1.99 (Cardiff, 2026-06-05, premium line)"
+   }
+  }
+ },
+ {
+  "id": "pitta",
+  "prices": {
+   "lidl": {
+    "pack": 6,
+    "price": 0.5,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label white pitta 6 pack (modelled)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Village Bakery White Pitta Bread 6 pack £0.50; no Lidl price found (Lidl search API (no everyday line), Open Food Facts Lidl GB stores (last 6 months: nothing); news search not possible (search budget used up))"
+   }
+  }
+ },
+ {
+  "id": "pork_mince",
+  "prices": {
+   "lidl": {
+    "pack": 500,
+    "price": 2.15,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label British pork mince 500g (modelled)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Ashfields British Pork Mince 12% Fat 500g £2.15; no Lidl price found (Lidl search API (no everyday line), Open Food Facts Lidl GB stores (last 6 months: nothing); news search not possible (search budget used up))"
+   }
+  }
+ },
+ {
+  "id": "potatoes",
+  "prices": {
+   "lidl": {
+    "pack": 2000,
+    "price": 1.32,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label white potatoes 2kg (modelled)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Nature's Pick White Potatoes 2kg £1.32; no Lidl price found (Lidl search API (no everyday line), Open Food Facts Lidl GB stores (last 6 months: nothing); news search not possible (search budget used up))"
+   }
+  }
+ },
+ {
+  "id": "prawns",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "Lidl API (prawns) errored twice; Open Food Facts Lidl GB nothing. Prawns: not modelled per spec"
+   }
+  }
+ },
+ {
+  "id": "puff_pastry",
+  "prices": {
+   "lidl": {
+    "pack": 320,
+    "price": 0.99,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label ready rolled puff pastry 320g (modelled)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi The Pantry Ready Rolled Puff Pastry 320g £0.99; no Lidl price found (Lidl search API (no everyday line), Open Food Facts Lidl GB stores (last 6 months: nothing); news search not possible (search budget used up))"
+   }
+  }
+ },
+ {
+  "id": "red_lentils",
+  "prices": {
+   "lidl": {
+    "pack": 500,
+    "price": 0.89,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label red split lentils 500g (modelled)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Worldwide Foods Red Lentils 500g £0.89; no Lidl price found (Lidl search API (no everyday line), Open Food Facts Lidl GB stores (last 6 months: nothing); news search not possible (search budget used up))"
+   }
+  }
+ },
+ {
+  "id": "red_onion",
+  "prices": {
+   "lidl": {
+    "pack": 6,
+    "price": 0.95,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label red onions 1kg (modelled)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Nature's Pick Red Onions 1kg £0.95; no Lidl price found (Lidl search API (no everyday line), Open Food Facts Lidl GB stores (last 6 months: nothing); news search not possible (search budget used up)). corroborated by OFF receipt: Lidl Cardiff red onions (barcode 20019006) £0.95 on 2026-05-31, pack size not recorded"
+   }
+  }
+ },
+ {
+  "id": "rice",
+  "prices": {
+   "lidl": {
+    "pack": 1000,
+    "price": 1.79,
+    "loyalty": null,
+    "basis": "crowd",
+    "seen": "2026-10-17",
+    "conf": "medium",
+    "checked": "2026-10-26",
+    "label": "Basmati Rice 1kg",
+    "src": "https://prices.openfoodfacts.org/api/v1/prices?location_id=1908&order_by=-date&size=100&date__gte=2026-04-26",
+    "note": "Open Food Facts receipt, Lidl Cardiff (product 20071974); same price as Aldi Worldwide Foods 1kg £1.79. Lidl API basmati/rice searches errored"
+   }
+  }
+ },
+ {
+  "id": "rice_noodles",
+  "prices": {
+   "lidl": {
+    "pack": 300,
+    "price": 0.99,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label rice noodles 300g (modelled)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Ready, Set…Cook! Rice Noodles 300g £0.99; no Lidl price found (Lidl search API (no everyday line), Open Food Facts Lidl GB stores (last 6 months: nothing); news search not possible (search budget used up)). modelled at Aldi 300g pack"
+   }
+  }
+ },
+ {
+  "id": "ricotta",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched Lidl API (ricotta), Open Food Facts Lidl GB; nothing. No Aldi price in input and web search unavailable, so not modelled"
+   }
+  }
+ },
+ {
+  "id": "salmon",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "Lidl API (salmon) errored twice; Open Food Facts Lidl GB only smoked salmon (Feb 2026). Salmon fillets: not modelled per spec"
+   }
+  }
+ }
+]

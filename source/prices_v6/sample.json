@@ -1,0 +1,342 @@
+[
+ {
+  "id": "cannellini_beans",
+  "shop": "aldi",
+  "price": 0.45,
+  "pack": 400,
+  "label": "Four Seasons Cannellini Beans 400g",
+  "basis": "match",
+  "seen": "2026-10-22",
+  "src": "https://digitalcontent.api.tesco.com/v2/media/ghs-mktg/24189fe7-5723-4679-8572-5c7b07b7de92/APM+Express+and+APM+Large+Store+Online+Verification+Form+24102026.pdf"
+ },
+ {
+  "id": "egg_noodles",
+  "shop": "aldi",
+  "price": 0.95,
+  "pack": 250,
+  "label": "Asia Green Garden Medium Egg Noodles 250g",
+  "basis": "match",
+  "seen": "2026-10-22",
+  "src": "https://digitalcontent.api.tesco.com/v2/media/ghs-mktg/24189fe7-5723-4679-8572-5c7b07b7de92/APM+Express+and+APM+Large+Store+Online+Verification+Form+24102026.pdf"
+ },
+ {
+  "id": "pak_choi",
+  "shop": "aldi",
+  "price": 1.29,
+  "pack": 200,
+  "label": "Nature's Pick Pak Choi",
+  "basis": "compare",
+  "seen": "2026-10-26",
+  "src": "https://www.trolley.co.uk/product/pak-choi/SCT404"
+ },
+ {
+  "id": "tomato_puree",
+  "shop": "aldi",
+  "price": 0.59,
+  "pack": 200,
+  "label": "Cucina Tomato Puree 200g",
+  "basis": "match",
+  "seen": "2026-10-22",
+  "src": "https://digitalcontent.api.tesco.com/v2/media/ghs-mktg/24189fe7-5723-4679-8572-5c7b07b7de92/APM+Express+and+APM+Large+Store+Online+Verification+Form+24102026.pdf"
+ },
+ {
+  "id": "apples",
+  "shop": "aldi",
+  "price": 0.95,
+  "pack": 6,
+  "label": "Everyday Essentials Braeburn Apples 6 pack",
+  "basis": "compare",
+  "seen": "2026-10-01",
+  "src": "https://www.trolley.co.uk/grocery-price-index/category_store/?store_id=10&category=Apples"
+ },
+ {
+  "id": "passata",
+  "shop": "aldi",
+  "price": 0.45,
+  "pack": 500,
+  "label": "Cucina Passata 500g",
+  "basis": "match",
+  "seen": "2026-10-22",
+  "src": "https://digitalcontent.api.tesco.com/v2/media/ghs-mktg/24189fe7-5723-4679-8572-5c7b07b7de92/APM+Express+and+APM+Large+Store+Online+Verification+Form+24102026.pdf"
+ },
+ {
+  "id": "cream_crackers",
+  "shop": "aldi",
+  "price": 0.49,
+  "pack": 300,
+  "label": "Savour Bakes Cream Crackers 300g",
+  "basis": "match",
+  "seen": "2026-10-22",
+  "src": "https://digitalcontent.api.tesco.com/v2/media/ghs-mktg/24189fe7-5723-4679-8572-5c7b07b7de92/APM+Express+and+APM+Large+Store+Online+Verification+Form+24102026.pdf"
+ },
+ {
+  "id": "beef_mince",
+  "shop": "lidl",
+  "price": 4.79,
+  "pack": 480,
+  "label": "High Protein Mince 5% (beef, 480g)",
+  "basis": "shop",
+  "seen": "2026-10-26",
+  "src": "https://www.lidl.co.uk/p/high-protein-mince-5/p11399923"
+ },
+ {
+  "id": "broccoli",
+  "shop": "lidl",
+  "price": 1.19,
+  "pack": 500,
+  "label": "Broccoli 500g",
+  "basis": "shop",
+  "seen": "2026-10-01",
+  "src": "https://www.lidl.co.uk/q/api/search?assortment=GB&locale=en_GB&version=v2.0.0&q=beansprouts"
+ },
+ {
+  "id": "butter",
+  "shop": "lidl",
+  "price": 1.85,
+  "pack": 250,
+  "label": "Salted Welsh Butter 250g",
+  "basis": "crowd",
+  "seen": "2026-09-23",
+  "src": "https://prices.openfoodfacts.org/api/v1/prices?location_id=1908&order_by=date&date__gte=2026-04-26&size=50"
+ },
+ {
+  "id": "cheddar",
+  "shop": "lidl",
+  "price": 2.49,
+  "pack": 400,
+  "label": "Lidl Mature Cheddar (Valley Spire, assumed 400g)",
+  "basis": "news",
+  "seen": "2026-06-04",
+  "src": "https://foodmanufacture.co.uk/Article/2026/06/04/a-leading-discounter-is-cutting-prices-on-more-than-1000-items/"
+ },
+ {
+  "id": "cherry_tomatoes",
+  "shop": "lidl",
+  "price": 1.35,
+  "pack": 500,
+  "label": "Cherry Tomatoes 500g",
+  "basis": "crowd",
+  "seen": "2026-09-05",
+  "src": "https://prices.openfoodfacts.org/api/v1/prices?location_id=6871&order_by=-date&date__gte=2026-04-26&size=100"
+ },
+ {
+  "id": "chicken_thighs",
+  "shop": "lidl",
+  "price": 4.29,
+  "pack": 600,
+  "label": "Chicken thigh fillets 600g",
+  "basis": "crowd",
+  "seen": "2026-08-19",
+  "src": "https://prices.openfoodfacts.org/api/v1/prices?location_id=6871&order_by=-date&date__gte=2026-04-26&size=100"
+ },
+ {
+  "id": "chickpeas",
+  "shop": "lidl",
+  "price": 0.37,
+  "pack": 400,
+  "label": "Chickpeas in Water 400g",
+  "basis": "crowd",
+  "seen": "2026-09-27",
+  "src": "https://prices.openfoodfacts.org/api/v1/prices?location_id=1908&order_by=date&date__gte=2026-04-26&size=50"
+ },
+ {
+  "id": "chopped_tomatoes",
+  "shop": "lidl",
+  "price": 0.43,
+  "pack": 400,
+  "label": "Chopped Tomatoes In Tomato Juice 400g",
+  "basis": "crowd",
+  "seen": "2026-08-19",
+  "src": "https://prices.openfoodfacts.org/api/v1/prices?location_id=6871&order_by=-date&date__gte=2026-04-26&size=100"
+ },
+ {
+  "id": "kidney_beans",
+  "shop": "lidl",
+  "price": 0.33,
+  "pack": 400,
+  "label": "Simply Red Kidney Beans in water",
+  "basis": "crowd",
+  "seen": "2026-09-27",
+  "src": "https://prices.openfoodfacts.org/api/v1/prices?product_code=4056489903710&order_by=-date"
+ },
+ {
+  "id": "pasta",
+  "shop": "lidl",
+  "price": 0.75,
+  "pack": 500,
+  "label": "Baresa Spaghetti 500g",
+  "basis": "crowd",
+  "seen": "2026-06-22",
+  "src": "https://prices.openfoodfacts.org/api/v1/prices?product_code=4013159604599&order_by=-date"
+ },
+ {
+  "id": "rice",
+  "shop": "lidl",
+  "price": 1.79,
+  "pack": 1000,
+  "label": "Basmati Rice 1kg",
+  "basis": "crowd",
+  "seen": "2026-10-17",
+  "src": "https://prices.openfoodfacts.org/api/v1/prices?location_id=1908&order_by=-date&size=100&date__gte=2026-04-26"
+ },
+ {
+  "id": "sausages",
+  "shop": "lidl",
+  "price": 2.49,
+  "pack": 6,
+  "label": "Lidl Deluxe Pork Sausages 400g (6)",
+  "basis": "news",
+  "seen": "2026-04-23",
+  "src": "https://www.which.co.uk/reviews/food-and-drink/article/best-pork-sausages-a5ry14e4lyVn"
+ },
+ {
+  "id": "tomato_puree",
+  "shop": "lidl",
+  "price": 0.59,
+  "pack": 200,
+  "label": "Tomato Purée 200 g",
+  "basis": "crowd",
+  "seen": "2026-10-19",
+  "src": "https://prices.openfoodfacts.org/api/v1/prices?product_code=20522612&order_by=-date"
+ },
+ {
+  "id": "tortilla_chips",
+  "shop": "lidl",
+  "price": 0.56,
+  "pack": 200,
+  "label": "Tortilla Chips 200g",
+  "basis": "crowd",
+  "seen": "2026-05-31",
+  "src": "https://prices.openfoodfacts.org/api/v1/prices?product_code=4335619100787&order_by=-date"
+ },
+ {
+  "id": "mayonnaise",
+  "shop": "lidl",
+  "price": 0.95,
+  "pack": 460,
+  "label": "Batts Real Mayonnaise 500ml",
+  "basis": "crowd",
+  "seen": "2026-08-19",
+  "src": "https://prices.openfoodfacts.org/api/v1/prices?product_code=4056489519706&order_by=-date"
+ },
+ {
+  "id": "chicken_wings",
+  "shop": "lidl",
+  "price": 3.59,
+  "pack": 1000,
+  "label": "Chicken Wings 1 kg",
+  "basis": "shop",
+  "seen": "2026-10-26",
+  "src": "https://www.lidl.co.uk/p/chicken-wings/p11678146"
+ },
+ {
+  "id": "salted_peanuts",
+  "shop": "lidl",
+  "price": 0.59,
+  "pack": 200,
+  "label": "Simply Roasted & Salted Peanuts 200g",
+  "basis": "crowd",
+  "seen": "2026-06-23",
+  "src": "https://prices.openfoodfacts.org/api/v1/prices?product_code=4056489823957&order_by=-date"
+ },
+ {
+  "id": "passata",
+  "shop": "lidl",
+  "price": 0.45,
+  "pack": 500,
+  "label": "Tomato Passata 500g",
+  "basis": "crowd",
+  "seen": "2026-09-27",
+  "src": "https://prices.openfoodfacts.org/api/v1/prices?location_id=1908&order_by=-date&size=100"
+ },
+ {
+  "id": "rocket",
+  "shop": "lidl",
+  "price": 0.89,
+  "pack": 60,
+  "label": "Wild Rocket 60g",
+  "basis": "crowd",
+  "seen": "2026-05-30",
+  "src": "https://prices.openfoodfacts.org/api/v1/prices?product_code=4335619070783&order_by=-date"
+ },
+ {
+  "id": "sour_cream",
+  "shop": "lidl",
+  "price": 0.85,
+  "pack": 300,
+  "label": "Soured Cream 300ml",
+  "basis": "crowd",
+  "seen": "2026-05-31",
+  "src": "https://prices.openfoodfacts.org/api/v1/prices?location_id=1908&order_by=-date&size=25&page=2"
+ },
+ {
+  "id": "smoked_salmon",
+  "shop": "lidl",
+  "price": 4.49,
+  "pack": 200,
+  "label": "Lighthouse Bay Smoked Salmon 200g",
+  "basis": "crowd",
+  "seen": "2026-02-07",
+  "src": "https://prices.openfoodfacts.org/api/v1/prices?currency=GBP&order_by=-date"
+ },
+ {
+  "id": "protein_bar",
+  "shop": "lidl",
+  "price": 2.39,
+  "pack": 3,
+  "label": "Crownfield High Protein Flapjacks Salted Caramel 3 x 50g",
+  "basis": "crowd",
+  "seen": "2026-07-06",
+  "src": "https://prices.openfoodfacts.org/api/v1/prices?location_id=3893&order_by=-date&size=25"
+ },
+ {
+  "id": "porridge_oats",
+  "shop": "lidl",
+  "price": 0.85,
+  "pack": 1000,
+  "label": "Crownfield Porridge Oats 1kg",
+  "basis": "crowd",
+  "seen": "2026-09-12",
+  "src": "https://prices.openfoodfacts.org/api/v1/prices?location_id=1908&order_by=-date&size=100"
+ },
+ {
+  "id": "cornflakes",
+  "shop": "lidl",
+  "price": 0.95,
+  "pack": 500,
+  "label": "Crownfield Corn Flakes 500g",
+  "basis": "crowd",
+  "seen": "2026-01-31",
+  "src": "https://prices.openfoodfacts.org/api/v1/prices?product_code=4335619092822&order_by=-date"
+ },
+ {
+  "id": "granola",
+  "shop": "lidl",
+  "price": 1.95,
+  "pack": 1000,
+  "label": "Crownfield Raisin & Almond Granola 1kg",
+  "basis": "crowd",
+  "seen": "2026-01-31",
+  "src": "https://prices.openfoodfacts.org/api/v1/prices?product_code=20719326&order_by=-date"
+ },
+ {
+  "id": "cashew_nuts",
+  "shop": "lidl",
+  "price": 0.99,
+  "pack": 125,
+  "label": "Simply Roasted & Salted Cashews 125g",
+  "basis": "crowd",
+  "seen": "2026-06-22",
+  "src": "https://prices.openfoodfacts.org/api/v1/prices?location_id=1908&order_by=-date&size=100"
+ },
+ {
+  "id": "mustard_seeds",
+  "shop": "asda",
+  "price": 2,
+  "pack": 48,
+  "label": "Schwartz Mustard Seed Jar",
+  "basis": "compare",
+  "seen": "2026-10-26",
+  "src": "https://www.trolley.co.uk/product/schwartz-mustard-seeds/RJI733"
+ }
+]

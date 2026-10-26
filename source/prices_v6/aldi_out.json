@@ -1,0 +1,472 @@
+[
+ {
+  "id": "aubergine",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); trolley Nature's Pick Aubergine Each (GZZ158) listed but out of stock in every store, no price; not on aldi.co.uk Vegetables page 1 (later pages blocked by robots.txt)"
+   }
+  }
+ },
+ {
+  "id": "cannellini_beans",
+  "prices": {
+   "aldi": {
+    "pack": 400,
+    "price": 0.45,
+    "loyalty": null,
+    "basis": "match",
+    "seen": "2026-10-22",
+    "conf": "medium",
+    "checked": "2026-10-26",
+    "label": "Four Seasons Cannellini Beans 400g",
+    "src": "https://digitalcontent.api.tesco.com/v2/media/ghs-mktg/24189fe7-5723-4679-8572-5c7b07b7de92/APM+Express+and+APM+Large+Store+Online+Verification+Form+24102026.pdf",
+    "note": "Tesco Aldi Price Match form (price check 22 Oct 2026): Tesco Cannellini Beans 400g £0.45 matched to Aldi Four Seasons Cannellini Beans 400g at the same price/pack"
+   }
+  }
+ },
+ {
+  "id": "couscous",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); aldi.co.uk Rice, Pasta & Noodles page 1 only has Make in Minutes flavoured cous cous 100g (£0.47), no plain 500g; no Aldi plain cous cous on trolley"
+   }
+  }
+ },
+ {
+  "id": "egg_noodles",
+  "prices": {
+   "aldi": {
+    "pack": 250,
+    "price": 0.95,
+    "loyalty": null,
+    "basis": "match",
+    "seen": "2026-10-22",
+    "conf": "medium",
+    "checked": "2026-10-26",
+    "label": "Asia Green Garden Medium Egg Noodles 250g",
+    "src": "https://digitalcontent.api.tesco.com/v2/media/ghs-mktg/24189fe7-5723-4679-8572-5c7b07b7de92/APM+Express+and+APM+Large+Store+Online+Verification+Form+24102026.pdf",
+    "note": "Tesco Aldi Price Match form (price check 22 Oct 2026): Tesco Medium Egg Noodles 250g £0.95 matched to Aldi Asia Green Garden Medium Egg Noodles 250g at the same price/pack"
+   }
+  }
+ },
+ {
+  "id": "ginger_paste",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); trolley Ready Set...Cook! Ginger Puree 75g (BRI627) out of stock in every store (undated \"usually £0.79\", not used); Aldi sells fresh Nature's Pick Ginger 125g £0.99 instead"
+   }
+  }
+ },
+ {
+  "id": "gochujang",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); trolley gochujang listing has no Aldi product"
+   }
+  }
+ },
+ {
+  "id": "ground_coriander",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); aldi.co.uk Herbs & Spices page 1 has the Ready, Set...Cook! jar range (e.g. Cumin 40g £0.65) but no ground coriander; pages 2-3 blocked by robots.txt; only fresh cut coriander in the Price Match list"
+   }
+  }
+ },
+ {
+  "id": "harissa",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); no Aldi harissa paste found on aldi.co.uk, trolley or in news"
+   }
+  }
+ },
+ {
+  "id": "kimchi",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); no Aldi kimchi found on aldi.co.uk, trolley or in news"
+   }
+  }
+ },
+ {
+  "id": "miso_paste",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); no Aldi miso paste found on aldi.co.uk or trolley"
+   }
+  }
+ },
+ {
+  "id": "pak_choi",
+  "prices": {
+   "aldi": {
+    "pack": 200,
+    "price": 1.29,
+    "loyalty": null,
+    "basis": "compare",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Nature's Pick Pak Choi",
+    "src": "https://www.trolley.co.uk/product/pak-choi/SCT404",
+    "note": "trolley lists ALDI £1.29 (online price) but shows no pack size; 200 g is an assumption, check on shelf/receipt"
+   }
+  }
+ },
+ {
+  "id": "paneer",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); trolley paneer listing has no Aldi product; not on aldi.co.uk Cheese page 1"
+   }
+  }
+ },
+ {
+  "id": "panko",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); no Aldi panko found on aldi.co.uk or trolley"
+   }
+  }
+ },
+ {
+  "id": "ricotta",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); Aldi press centre page mentions Emporium Ricotta at 79p but is undated (probably old), so not used; not on aldi.co.uk Cheese page 1 or trolley Emporium listing"
+   }
+  }
+ },
+ {
+  "id": "tahini",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); no Aldi tahini found on aldi.co.uk or trolley"
+   }
+  }
+ },
+ {
+  "id": "tomato_puree",
+  "prices": {
+   "aldi": {
+    "pack": 200,
+    "price": 0.59,
+    "loyalty": null,
+    "basis": "match",
+    "seen": "2026-10-22",
+    "conf": "medium",
+    "checked": "2026-10-26",
+    "label": "Cucina Tomato Puree 200g",
+    "src": "https://digitalcontent.api.tesco.com/v2/media/ghs-mktg/24189fe7-5723-4679-8572-5c7b07b7de92/APM+Express+and+APM+Large+Store+Online+Verification+Form+24102026.pdf",
+    "note": "Tesco Aldi Price Match form (price check 22 Oct 2026): Tesco Tomato Puree 200g £0.59 matched to Aldi Cucina Tomato Puree 200g at the same price/pack"
+   }
+  }
+ },
+ {
+  "id": "hot_sauce",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); no Aldi cayenne/buffalo hot sauce or Frank's RedHot found on aldi.co.uk Sauces page 1 or trolley"
+   }
+  }
+ },
+ {
+  "id": "sesame_oil",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); aldi.co.uk Sauces, Oils & Dressings page 1 has no sesame oil (Asia Specialities soy sauces only); none on trolley"
+   }
+  }
+ },
+ {
+  "id": "rice_vinegar",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); not on aldi.co.uk Sauces, Oils & Dressings page 1; none on trolley"
+   }
+  }
+ },
+ {
+  "id": "fish_sauce",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); not on aldi.co.uk Sauces, Oils & Dressings page 1; none on trolley"
+   }
+  }
+ },
+ {
+  "id": "oyster_sauce",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); not on aldi.co.uk Sauces, Oils & Dressings page 1; none on trolley"
+   }
+  }
+ },
+ {
+  "id": "black_bean_sauce",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); not on aldi.co.uk Sauces page 1 or the Stir Fry Vegetables, Sauce & Noodles category (all 16 items: Ready Set Cook stir fry sauces are teriyaki, chow mein, sweet chilli, plum & hoisin, katsu, coconut & lemongrass)"
+   }
+  }
+ },
+ {
+  "id": "beef_stir_fry_strips",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); not on aldi.co.uk Beef page 1 of 3 (34 items: steaks, mince, diced, burgers) or the Stir Fry category; none on trolley"
+   }
+  }
+ },
+ {
+  "id": "apples",
+  "prices": {
+   "aldi": {
+    "pack": 6,
+    "price": 0.95,
+    "loyalty": null,
+    "basis": "compare",
+    "seen": "2026-10-01",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Everyday Essentials Braeburn Apples 6 pack",
+    "src": "https://www.trolley.co.uk/grocery-price-index/category_store/?store_id=10&category=Apples",
+    "note": "trolley Aldi price index, Oct 2026 monthly figure £0.95 (same as Oct 2025); trolley product page OXZ004 shows it out of stock online, so may be a seasonal/wonky line; Nature's Pick Braeburn not found"
+   }
+  }
+ },
+ {
+  "id": "branston_pickle",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); trolley Bramwells Sweet Pickle 390g (JBO105) shows no current price (undated \"usually £0.79\", not used); likely stocked in store"
+   }
+  }
+ },
+ {
+  "id": "mustard_seeds",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); not on aldi.co.uk Herbs & Spices page 1; no Aldi whole mustard seeds found"
+   }
+  }
+ },
+ {
+  "id": "kasoori_methi",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); no Aldi kasoori methi found; world-food specialist item"
+   }
+  }
+ },
+ {
+  "id": "gram_flour",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); no Aldi gram flour found on aldi.co.uk or trolley"
+   }
+  }
+ },
+ {
+  "id": "mango_chutney",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); no Aldi mango chutney found on aldi.co.uk page 1s or trolley"
+   }
+  }
+ },
+ {
+  "id": "passata",
+  "prices": {
+   "aldi": {
+    "pack": 500,
+    "price": 0.45,
+    "loyalty": null,
+    "basis": "match",
+    "seen": "2026-10-22",
+    "conf": "medium",
+    "checked": "2026-10-26",
+    "label": "Cucina Passata 500g",
+    "src": "https://digitalcontent.api.tesco.com/v2/media/ghs-mktg/24189fe7-5723-4679-8572-5c7b07b7de92/APM+Express+and+APM+Large+Store+Online+Verification+Form+24102026.pdf",
+    "note": "Tesco Aldi Price Match form (price check 22 Oct 2026): Growers Harvest Tomato Passata 500g £0.45 matched to Aldi Cucina Passata 500g at the same price/pack"
+   }
+  }
+ },
+ {
+  "id": "pancetta",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); not on aldi.co.uk Chilled Meats page 1 of 4; none on trolley"
+   }
+  }
+ },
+ {
+  "id": "capers",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); not on aldi.co.uk Tins, Cans & Packets page 1; none on trolley"
+   }
+  }
+ },
+ {
+  "id": "pecorino",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); aldi.co.uk Cheese page 1 of 4 has Specially Selected Parmigiano Reggiano 170g £3.29 and Emporium Grana Padano 200g £2.75 but no pecorino; none on trolley"
+   }
+  }
+ },
+ {
+  "id": "fennel_seeds",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); not on aldi.co.uk Herbs & Spices page 1; no Aldi fennel seeds found"
+   }
+  }
+ },
+ {
+  "id": "chipotle_paste",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); no Aldi chipotle paste found on aldi.co.uk or trolley"
+   }
+  }
+ },
+ {
+  "id": "zaatar",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); no Aldi za'atar found"
+   }
+  }
+ },
+ {
+  "id": "dried_apricots",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); trolley The Foodie Market Soft Apricots 500g (QAD161) out of stock in every store, no price; not on aldi.co.uk Seeds, Nuts & Dried Fruits page 1"
+   }
+  }
+ },
+ {
+  "id": "quinoa",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); aldi.co.uk Rice, Pasta & Noodles page 1 only has quinoa mixes in 250g pouches (Worldwide Foods Special Quinoa, Pumpkin & Sunflower Seeds £0.85), no plain quinoa"
+   }
+  }
+ },
+ {
+  "id": "skyr",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); trolley Brooklea Skyr Icelandic Style Natural Yogurt 450g (QUF378) out of stock in every store with a bad placeholder price; not on aldi.co.uk Yogurts page 1 of 4"
+   }
+  }
+ },
+ {
+  "id": "frozen_edamame",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); aldi.co.uk Frozen Vegetables & Sides (single page, 28 items) has no edamame; only Ready Set Cook Edamame Bean & Broccoli Stir Fry 320g (chilled mix)"
+   }
+  }
+ },
+ {
+  "id": "special_k",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); not on aldi.co.uk Cereals page 1 of 4 (Harvest Morn own label, Weetabix); no Aldi Special K found"
+   }
+  }
+ },
+ {
+  "id": "cream_crackers",
+  "prices": {
+   "aldi": {
+    "pack": 300,
+    "price": 0.49,
+    "loyalty": null,
+    "basis": "match",
+    "seen": "2026-10-22",
+    "conf": "medium",
+    "checked": "2026-10-26",
+    "label": "Savour Bakes Cream Crackers 300g",
+    "src": "https://digitalcontent.api.tesco.com/v2/media/ghs-mktg/24189fe7-5723-4679-8572-5c7b07b7de92/APM+Express+and+APM+Large+Store+Online+Verification+Form+24102026.pdf",
+    "note": "Tesco Aldi Price Match form (price check 22 Oct 2026): Tesco Cream Crackers 300g £0.49 matched to Aldi Savour Bakes Cream Crackers 300g at the same price/pack"
+   }
+  }
+ },
+ {
+  "id": "lamb_shanks",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); aldi.co.uk Lamb category (all 7 items) has no raw shanks, only Oakhurst Slow Cooked Lamb Shanks with Mint Gravy 800g £7.99 (cooked, not comparable)"
+   }
+  }
+ },
+ {
+  "id": "pork_ribs",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); aldi.co.uk Pork & Gammon page 1 of 2 has only Oakhurst Slow Cooked BBQ Pork Ribs / Spare Ribs 600g £4.49 (cooked and sauced, not comparable); no raw ribs found"
+   }
+  }
+ },
+ {
+  "id": "star_anise",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); not on aldi.co.uk Herbs & Spices page 1; no Aldi star anise found"
+   }
+  }
+ },
+ {
+  "id": "taco_shells",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "WebSearch site:aldi.co.uk and aldi.co.uk/product found no Aldi UK product page; not in Tesco Aldi Price Match verification list (price check 22 Oct 2026); trolley taco shell listing has no Aldi product; Aldi's Fiesta range on aldi.co.uk shows fajita kits only"
+   }
+  }
+ }
+]

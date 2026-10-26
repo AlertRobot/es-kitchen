@@ -1,0 +1,603 @@
+[
+ {
+  "id": "arborio_rice",
+  "prices": {
+   "lidl": {
+    "pack": 1000,
+    "price": 2.49,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label equivalent of Cucina Arborio Rice 1kg",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Cucina Arborio Rice 1kg £2.49; Lidl search API (no everyday line), Open Food Facts Lidl GB stores (none in last 6 months), web search for dated articles (none); Lidl API 'risotto rice' returned only Tilda/Mai Thai/Laila Lidl Plus offers"
+   }
+  }
+ },
+ {
+  "id": "aubergine",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "Lidl search API 'aubergine': no aubergine; Open Food Facts Lidl GB stores: none; no dated article; no Aldi price found (site:aldi.co.uk, trolley) so not modelled"
+   }
+  }
+ },
+ {
+  "id": "avocado",
+  "prices": {
+   "lidl": {
+    "pack": 2,
+    "price": 1.39,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label equivalent of Nature's Pick Ripe & Ready Hass Avocados 2 pack",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Nature's Pick Ripe & Ready Hass Avocados 2 pack £1.39; Lidl search API (no everyday line), Open Food Facts Lidl GB stores (none in last 6 months), web search for dated articles (none); Lidl API shows 'Ripe & Ready XL Avocado' single, regular £1.39 each (Pick of the Week £1.19, 15-21 Oct) - a single XL, not the 2-pack, so not used"
+   }
+  }
+ },
+ {
+  "id": "bacon",
+  "prices": {
+   "lidl": {
+    "pack": 300,
+    "price": 1.49,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label equivalent of Oakhurst Smoked Back Bacon 10 Pack 300g",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Oakhurst Smoked Back Bacon 10 Pack 300g £1.49; Lidl search API (no everyday line), Open Food Facts Lidl GB stores (none in last 6 months), web search for dated articles (none); Lidl API 'bacon' only had McEnnedy rashers 240g £2.49 (USA themed week) and XXL streaky 600g £3.99 (Pick of the Week)"
+   }
+  }
+ },
+ {
+  "id": "baguette",
+  "prices": {
+   "lidl": {
+    "pack": 2,
+    "price": 0.85,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label equivalent of Village Bakery Bake at Home White Baguettes (2 each)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Village Bakery Bake at Home White Baguettes (2 each) £0.85; Lidl search API (no everyday line), Open Food Facts Lidl GB stores (none in last 6 months), web search for dated articles (none)"
+   }
+  }
+ },
+ {
+  "id": "basil",
+  "prices": {
+   "lidl": {
+    "pack": 30,
+    "price": 0.5,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label equivalent of Ready, Set…Cook! Cut Basil 30g",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Ready, Set…Cook! Cut Basil 30g £0.50; Lidl search API (no everyday line), Open Food Facts Lidl GB stores (none in last 6 months), web search for dated articles (none); fresh cut herbs modelled as everyday fresh produce"
+   }
+  }
+ },
+ {
+  "id": "beansprouts",
+  "prices": {
+   "lidl": {
+    "pack": 400,
+    "price": 0.95,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label equivalent of Ready, Set...Cook! Washed & Ready to Cook Straight to Wok Beansprouts 400g",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Ready, Set...Cook! Washed & Ready to Cook Straight to Wok Beansprouts 400g £0.95; Lidl search API (no everyday line), Open Food Facts Lidl GB stores (none in last 6 months), web search for dated articles (none)"
+   }
+  }
+ },
+ {
+  "id": "beef_mince",
+  "prices": {
+   "lidl": {
+    "pack": 480,
+    "price": 4.79,
+    "loyalty": null,
+    "basis": "shop",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "High Protein Mince 5% (beef, 480g)",
+    "src": "https://www.lidl.co.uk/p/high-protein-mince-5/p11399923",
+    "note": "extra lean beef mince 5% fat, regular price £4.79 (£9.98/kg); Lidl Plus £3.83 offer runs 29.10-04.11 only (upcoming), so loyalty left null; found via Lidl search API 'beef mince'"
+   }
+  }
+ },
+ {
+  "id": "black_beans",
+  "prices": {
+   "lidl": {
+    "pack": 400,
+    "price": 0.45,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label equivalent of Four Seasons Tinned Black Beans 400g",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Four Seasons Tinned Black Beans 400g £0.45; Lidl search API (no everyday line), Open Food Facts Lidl GB stores (none in last 6 months), web search for dated articles (none)"
+   }
+  }
+ },
+ {
+  "id": "black_pepper",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "spice - not modelled; Lidl search API 'black pepper': only a pepper mill and Greek-week green peppers; Open Food Facts Lidl GB: none; no dated article"
+   }
+  }
+ },
+ {
+  "id": "broccoli",
+  "prices": {
+   "lidl": {
+    "pack": 360,
+    "price": 0.86,
+    "loyalty": null,
+    "basis": "model",
+    "conf": "low",
+    "seen": "2026-10-23",
+    "checked": "2026-10-26",
+    "label": "matched to Aldi Nature's Pick British Broccoli 360g",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Nature's Pick British Broccoli 360g £0.86; Lidl broccoli reading could not be confirmed"
+   }
+  }
+ },
+ {
+  "id": "burger_buns",
+  "prices": {
+   "lidl": {
+    "pack": 4,
+    "price": 0.99,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label equivalent of Specially Selected Sliced Brioche Burger Buns 4 pack",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Specially Selected Sliced Brioche Burger Buns 4 pack £0.99; Lidl search API (no everyday line), Open Food Facts Lidl GB stores (none in last 6 months), web search for dated articles (none); Aldi match is its Specially Selected brioche buns (only brioche option); Lidl API 'brioche buns' only had Eridanous filled brioche (Greece week)"
+   }
+  }
+ },
+ {
+  "id": "butter",
+  "prices": {
+   "lidl": {
+    "pack": 250,
+    "price": 1.85,
+    "loyalty": null,
+    "basis": "crowd",
+    "seen": "2026-09-23",
+    "conf": "medium",
+    "checked": "2026-10-26",
+    "label": "Salted Welsh Butter 250g",
+    "src": "https://prices.openfoodfacts.org/api/v1/prices?location_id=1908&order_by=date&date__gte=2026-04-26&size=50",
+    "note": "Open Food Facts Open Prices receipt, Lidl Cardiff CF14 2FB (price id 334191, not discounted); Welsh-sourced line sold in Wales; matches Aldi Cowbelle 250g £1.85"
+   }
+  }
+ },
+ {
+  "id": "butter_beans",
+  "prices": {
+   "lidl": {
+    "pack": 400,
+    "price": 0.45,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label equivalent of Four Seasons Butter Beans 400g (240g drained)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Four Seasons Butter Beans 400g (240g drained) £0.45; Lidl search API (no everyday line), Open Food Facts Lidl GB stores (none in last 6 months), web search for dated articles (none)"
+   }
+  }
+ },
+ {
+  "id": "cannellini_beans",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "Lidl search API 'cannellini': no beans; Open Food Facts Lidl GB: none; no dated article; no Aldi price found (site:aldi.co.uk) so not modelled"
+   }
+  }
+ },
+ {
+  "id": "cauliflower",
+  "prices": {
+   "lidl": {
+    "pack": 1,
+    "price": 1.18,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label equivalent of Nature's Pick British Cauliflower",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Nature's Pick British Cauliflower £1.18; Lidl search API (no everyday line), Open Food Facts Lidl GB stores (none in last 6 months), web search for dated articles (none)"
+   }
+  }
+ },
+ {
+  "id": "cheddar",
+  "prices": {
+   "lidl": {
+    "pack": 400,
+    "price": 2.49,
+    "loyalty": null,
+    "basis": "news",
+    "seen": "2026-06-04",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl Mature Cheddar (Valley Spire, assumed 400g)",
+    "src": "https://foodmanufacture.co.uk/Article/2026/06/04/a-leading-discounter-is-cutting-prices-on-more-than-1000-items/",
+    "note": "article 4 Jun 2026: Lidl mature cheddar cut £2.79 -> £2.49 (regular price cut, not a promo); pack size not stated, 400g assumed; Aldi Emporium 400g now £2.45; Lidl API searches errored twice"
+   }
+  }
+ },
+ {
+  "id": "cherry_tomatoes",
+  "prices": {
+   "lidl": {
+    "pack": 500,
+    "price": 1.35,
+    "loyalty": null,
+    "basis": "crowd",
+    "seen": "2026-09-05",
+    "conf": "medium",
+    "checked": "2026-10-26",
+    "label": "Cherry Tomatoes 500g",
+    "src": "https://prices.openfoodfacts.org/api/v1/prices?location_id=6871&order_by=-date&date__gte=2026-04-26&size=100",
+    "note": "Open Food Facts Open Prices receipt, Lidl Chalvey (Slough) SL1 5AL (price id 326262, not discounted); also Lidl Cardiff 'Cherry Tomatoes Italian' 400g £0.75 on 2026-06-06 (summer, different line)"
+   }
+  }
+ },
+ {
+  "id": "chicken_breast",
+  "prices": {
+   "lidl": {
+    "pack": 650,
+    "price": 4.69,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label equivalent of Ashfields Chicken Breast Fillets 650g",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Ashfields Chicken Breast Fillets 650g £4.69; Lidl search API (no everyday line), Open Food Facts Lidl GB stores (none in last 6 months), web search for dated articles (none); Lidl API 'chicken breast' only had XXL British Chicken Breast Fillet 2.5kg £14.79 (Pick of the Week)"
+   }
+  }
+ },
+ {
+  "id": "chicken_thighs",
+  "prices": {
+   "lidl": {
+    "pack": 600,
+    "price": 4.29,
+    "loyalty": null,
+    "basis": "crowd",
+    "seen": "2026-08-19",
+    "conf": "medium",
+    "checked": "2026-10-26",
+    "label": "Chicken thigh fillets 600g",
+    "src": "https://prices.openfoodfacts.org/api/v1/prices?location_id=6871&order_by=-date&date__gte=2026-04-26&size=100",
+    "note": "Open Food Facts Open Prices receipt, Lidl Chalvey (Slough) SL1 5AL (price id 314945, EAN 5016901002826, not discounted); Aldi Ashfields 600g £4.39; Lidl API searches errored twice"
+   }
+  }
+ },
+ {
+  "id": "chickpeas",
+  "prices": {
+   "lidl": {
+    "pack": 400,
+    "price": 0.37,
+    "loyalty": null,
+    "basis": "crowd",
+    "seen": "2026-09-27",
+    "conf": "medium",
+    "checked": "2026-10-26",
+    "label": "Chickpeas in Water 400g",
+    "src": "https://prices.openfoodfacts.org/api/v1/prices?location_id=1908&order_by=date&date__gte=2026-04-26&size=50",
+    "note": "Open Food Facts Open Prices receipt, Lidl Cardiff CF14 2FB (price id 336459, EAN 4056489903703, not discounted); Aldi Four Seasons 400g £0.41"
+   }
+  }
+ },
+ {
+  "id": "chilli_flakes",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "spice - not modelled; Lidl search API 'chilli flakes' errored twice ('chilli' returned only sauces); Open Food Facts Lidl GB: none; no dated article"
+   }
+  }
+ },
+ {
+  "id": "chopped_tomatoes",
+  "prices": {
+   "lidl": {
+    "pack": 400,
+    "price": 0.43,
+    "loyalty": null,
+    "basis": "crowd",
+    "seen": "2026-08-19",
+    "conf": "medium",
+    "checked": "2026-10-26",
+    "label": "Chopped Tomatoes In Tomato Juice 400g",
+    "src": "https://prices.openfoodfacts.org/api/v1/prices?location_id=6871&order_by=-date&date__gte=2026-04-26&size=100",
+    "note": "Open Food Facts Open Prices receipt, Lidl Chalvey (Slough) SL1 5AL (price id 313883, EAN 20164072, not discounted); Aldi Cucina 400g £0.45"
+   }
+  }
+ },
+ {
+  "id": "coconut_milk",
+  "prices": {
+   "lidl": {
+    "pack": 400,
+    "price": 0.75,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label equivalent of Asia Green Garden Coconut Milk 400ml Full Fat",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Asia Green Garden Coconut Milk 400ml Full Fat £0.75; Lidl search API (no everyday line), Open Food Facts Lidl GB stores (none in last 6 months), web search for dated articles (none); treated as a tinned basic (Lidl Vitasia-type own label)"
+   }
+  }
+ },
+ {
+  "id": "coriander",
+  "prices": {
+   "lidl": {
+    "pack": 30,
+    "price": 0.5,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label equivalent of Ready, Set…Cook! British Cut Coriander 30g",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Ready, Set…Cook! British Cut Coriander 30g £0.50; Lidl search API (no everyday line), Open Food Facts Lidl GB stores (none in last 6 months), web search for dated articles (none); Open Food Facts has Lidl 'Bunched Coriander' £1.09 (Cardiff, 2026-05-31) but pack size unknown and a bunch not a 30g cut pack, so not used"
+   }
+  }
+ },
+ {
+  "id": "cornflour",
+  "prices": {
+   "lidl": {
+    "pack": 400,
+    "price": 1.35,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label equivalent of The Pantry Cornflour 400g",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi The Pantry Cornflour 400g £1.35; Lidl search API (no everyday line), Open Food Facts Lidl GB stores (none in last 6 months), web search for dated articles (none)"
+   }
+  }
+ },
+ {
+  "id": "couscous",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "Lidl search API 'couscous': none; Open Food Facts Lidl GB: none; no dated article; Aldi plain couscous not found (site:aldi.co.uk) so not modelled"
+   }
+  }
+ },
+ {
+  "id": "cumin",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "spice - not modelled; Lidl search API 'cumin': none; Open Food Facts Lidl GB: none; no dated article"
+   }
+  }
+ },
+ {
+  "id": "cumin_seeds",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "spice - not modelled; Lidl search API 'cumin': none; Open Food Facts Lidl GB: none; no dated article"
+   }
+  }
+ },
+ {
+  "id": "curry_powder",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "spice - not modelled; Lidl search API 'curry powder' errored, 'curry' returned only a snack; Open Food Facts Lidl GB: none; no dated article"
+   }
+  }
+ },
+ {
+  "id": "double_cream",
+  "prices": {
+   "lidl": {
+    "pack": 300,
+    "price": 1.29,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label equivalent of Cowbelle Fresh British Double Cream 300ml",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Cowbelle Fresh British Double Cream 300ml £1.29; Lidl search API (no everyday line), Open Food Facts Lidl GB stores (none in last 6 months), web search for dated articles (none)"
+   }
+  }
+ },
+ {
+  "id": "egg_noodles",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "Lidl search API 'egg noodles' errored, 'noodles' only had Alps-week German noodles/spaetzle; Open Food Facts Lidl GB: none; no dated article; no Aldi price found (site:aldi.co.uk, trolley) so not modelled"
+   }
+  }
+ },
+ {
+  "id": "eggs",
+  "prices": {
+   "lidl": {
+    "pack": 12,
+    "price": 2.49,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label equivalent of Merevale British Medium Free Range Eggs 12 Pack",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Merevale British Medium Free Range Eggs 12 Pack £2.49; Lidl search API (no everyday line), Open Food Facts Lidl GB stores (none in last 6 months), web search for dated articles (none)"
+   }
+  }
+ },
+ {
+  "id": "feta",
+  "prices": {
+   "lidl": {
+    "pack": 200,
+    "price": 1.69,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label equivalent of Emporium Greek Feta 200g",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Emporium Greek Feta 200g £1.69; Lidl search API (no everyday line), Open Food Facts Lidl GB stores (none in last 6 months), web search for dated articles (none); Lidl Slough receipt had 'Greek style salad cheese' 200g £0.85 (2026-08-19) - salad cheese, not feta, so not used"
+   }
+  }
+ },
+ {
+  "id": "frozen_peas",
+  "prices": {
+   "lidl": {
+    "pack": 900,
+    "price": 1.09,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label equivalent of Four Seasons Garden Peas 900g",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Four Seasons Garden Peas 900g £1.09; Lidl search API (no everyday line), Open Food Facts Lidl GB stores (none in last 6 months), web search for dated articles (none)"
+   }
+  }
+ },
+ {
+  "id": "garam_masala",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "spice - not modelled; Lidl search API 'garam masala': none; Open Food Facts Lidl GB: none; no dated article"
+   }
+  }
+ },
+ {
+  "id": "garlic",
+  "prices": {
+   "lidl": {
+    "pack": 40,
+    "price": 0.59,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label equivalent of Nature's Pick Garlic 4 pack",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Nature's Pick Garlic 4 pack £0.59; Lidl search API (no everyday line), Open Food Facts Lidl GB stores (none in last 6 months), web search for dated articles (none)"
+   }
+  }
+ },
+ {
+  "id": "ginger_paste",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "specialist paste - not modelled; Lidl search API 'ginger': none; Open Food Facts Lidl GB: none; no dated article"
+   }
+  }
+ },
+ {
+  "id": "gnocchi",
+  "prices": {
+   "lidl": {
+    "pack": 500,
+    "price": 0.99,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label equivalent of Cucina Gnocchi 500g",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Cucina Gnocchi 500g £0.99; Lidl search API (no everyday line), Open Food Facts Lidl GB stores (none in last 6 months), web search for dated articles (none); Lidl API 'gnocchi' only had Eridanous Greek-style gnocchi with feta & olives 400g £1.79 (Flavour of the Week - Greece, not everyday)"
+   }
+  }
+ },
+ {
+  "id": "gochujang",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "specialist/world-food paste - not modelled; Lidl search API 'gochujang': none; Open Food Facts Lidl GB: none; no dated article"
+   }
+  }
+ },
+ {
+  "id": "gravy",
+  "prices": {
+   "lidl": {
+    "pack": 200,
+    "price": 0.99,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label equivalent of Quixo Standard Gravy Granules",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Quixo Standard Gravy Granules £0.99; Lidl search API (no everyday line), Open Food Facts Lidl GB stores (none in last 6 months), web search for dated articles (none); Lidl API 'gravy granules' errored, 'gravy' returned nothing relevant"
+   }
+  }
+ }
+]

@@ -1,0 +1,531 @@
+[
+ {
+  "id": "salt",
+  "prices": {
+   "lidl": {
+    "pack": 750,
+    "price": 0.65,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label equivalent of Ready, Set…Cook! British Table Salt 750g",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Ready, Set…Cook! British Table Salt 750g £0.65; no Lidl price found (Lidl search API, Open Food Facts Lidl GB stores, news/leaflets); Lidl API 'salt' returned no salt"
+   }
+  }
+ },
+ {
+  "id": "sausages",
+  "prices": {
+   "lidl": {
+    "pack": 6,
+    "price": 2.49,
+    "loyalty": null,
+    "basis": "news",
+    "seen": "2026-04-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl Deluxe Pork Sausages 400g (6)",
+    "src": "https://www.which.co.uk/reviews/food-and-drink/article/best-pork-sausages-a5ry14e4lyVn",
+    "note": "Which? taste test 1 May 2026, prices as of 23 Apr 2026; premium Deluxe line (matches Aldi known Specially Selected 6-pack, then also £2.49, now £2.29); everyday 8-pack not found; Lidl API only had themed/Pick of the Week sausages"
+   }
+  }
+ },
+ {
+  "id": "smoked_paprika",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "spice, not modelled; Lidl API 'paprika' no match; no Open Food Facts Lidl GB price; no dated article"
+   }
+  }
+ },
+ {
+  "id": "soy_sauce",
+  "prices": {
+   "lidl": {
+    "pack": 150,
+    "price": 0.55,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label equivalent of Asia Specialities Light Soy Sauce 150ml",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Asia Specialities Light Soy Sauce 150ml £0.55; no Lidl price found (Lidl search API, Open Food Facts Lidl GB stores, news/leaflets); Lidl API 'soy sauce' had only Thai Dragon chilli sauces"
+   }
+  }
+ },
+ {
+  "id": "spinach",
+  "prices": {
+   "lidl": {
+    "pack": 240,
+    "price": 1.09,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label equivalent of Nature's Pick Baby Spinach 240g",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Nature's Pick Baby Spinach 240g £1.09; no Lidl price found (Lidl search API, Open Food Facts Lidl GB stores, news/leaflets); Open Food Facts has Lidl organic Spinach £1.45 (Slough, 2026-08-19, size unknown) - not the everyday baby spinach, not used"
+   }
+  }
+ },
+ {
+  "id": "stock_cubes",
+  "prices": {
+   "lidl": {
+    "pack": 12,
+    "price": 0.69,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label equivalent of Bramwells Chicken Stock Cubes 120g (12 cubes)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Bramwells Chicken Stock Cubes 120g (12 cubes) £0.69; no Lidl price found (Lidl search API, Open Food Facts Lidl GB stores, news/leaflets); Aldi pack is 12 cubes"
+   }
+  }
+ },
+ {
+  "id": "sweetcorn",
+  "prices": {
+   "lidl": {
+    "pack": 1000,
+    "price": 1.49,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label equivalent of Four Seasons Sweetcorn 1kg (frozen)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Four Seasons Sweetcorn 1kg (frozen) £1.49; no Lidl price found (Lidl search API, Open Food Facts Lidl GB stores, news/leaflets); Lidl API 'sweetcorn' no match"
+   }
+  }
+ },
+ {
+  "id": "tahini",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "Lidl API lists ERIDANOUS Sesame Paste 350g £2.79 (Lidl Plus £2.49) but only for Flavour of the Week - Greece (in store from 29.10), not an everyday line; no Open Food Facts Lidl GB price; no dated article; not modelled (world food)"
+   }
+  }
+ },
+ {
+  "id": "thai_green_paste",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "specialist paste, not modelled; Lidl API 'curry paste' no match; no Open Food Facts Lidl GB price; no dated article"
+   }
+  }
+ },
+ {
+  "id": "thai_red_paste",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "specialist paste, not modelled; Lidl API 'curry paste' no match; no Open Food Facts Lidl GB price; no dated article"
+   }
+  }
+ },
+ {
+  "id": "tikka_paste",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "specialist paste, not modelled; Lidl API 'curry paste' no match; no Open Food Facts Lidl GB price; no dated article"
+   }
+  }
+ },
+ {
+  "id": "tinned_tuna",
+  "prices": {
+   "lidl": {
+    "pack": 145,
+    "price": 0.65,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label equivalent of The Fishmonger Tuna Chunks In Spring Water 145g",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi The Fishmonger Tuna Chunks In Spring Water 145g £0.65; no Lidl price found (Lidl search API, Open Food Facts Lidl GB stores, news/leaflets); Lidl API 'tuna' errored twice (retried); 'cod' search showed only ERIDANOUS Tuna 160g (Greece week)"
+   }
+  }
+ },
+ {
+  "id": "tofu",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "not modelled (packs differ: Aldi 200g vs 280-399g elsewhere); Lidl API 'tofu' no match; no Open Food Facts Lidl GB price; no dated article"
+   }
+  }
+ },
+ {
+  "id": "tomato_puree",
+  "prices": {
+   "lidl": {
+    "pack": 200,
+    "price": 0.59,
+    "loyalty": null,
+    "basis": "crowd",
+    "seen": "2026-10-19",
+    "conf": "medium",
+    "checked": "2026-10-26",
+    "label": "Tomato Purée 200 g",
+    "src": "https://prices.openfoodfacts.org/api/v1/prices?product_code=20522612&order_by=-date",
+    "note": "Open Food Facts receipts: Lidl Bristol 2026-10-19 £0.59 and Lidl Cardiff 2026-09-27 £0.59 (also Cardiff 2025-11-01 £0.59), not discounted"
+   }
+  }
+ },
+ {
+  "id": "tortilla_chips",
+  "prices": {
+   "lidl": {
+    "pack": 200,
+    "price": 0.56,
+    "loyalty": null,
+    "basis": "crowd",
+    "seen": "2026-05-31",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Tortilla Chips 200g",
+    "src": "https://prices.openfoodfacts.org/api/v1/prices?product_code=4335619100787&order_by=-date",
+    "note": "Open Food Facts receipt, Lidl Cardiff 2026-05-31, not discounted (~5 months old); consistent with Aldi £0.57"
+   }
+  }
+ },
+ {
+  "id": "turmeric",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "spice, not modelled; Lidl API 'turmeric' no match; no Open Food Facts Lidl GB price; no dated article"
+   }
+  }
+ },
+ {
+  "id": "udon_noodles",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "world food, not modelled; Lidl API 'noodles' only Alps-week German noodles; udon seen only in a past Lidl Japan Week (HotUKDeals, undated, expired); no Open Food Facts Lidl GB price"
+   }
+  }
+ },
+ {
+  "id": "wholegrain_mustard",
+  "prices": {
+   "lidl": {
+    "pack": 200,
+    "price": 0.49,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label equivalent of Bramwells Wholegrain Mustard 200g",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Bramwells Wholegrain Mustard 200g £0.49; no Lidl price found (Lidl search API, Open Food Facts Lidl GB stores, news/leaflets); Lidl API 'mustard' only MCENNEDY American mustard (USA week)"
+   }
+  }
+ },
+ {
+  "id": "worcestershire",
+  "prices": {
+   "lidl": {
+    "pack": 150,
+    "price": 1.09,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label equivalent of Bramwells Worcester Sauce 150ml",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Bramwells Worcester Sauce 150ml £1.09; no Lidl price found (Lidl search API, Open Food Facts Lidl GB stores, news/leaflets); Lidl API 'worcester sauce' and 'worcestershire' both errored"
+   }
+  }
+ },
+ {
+  "id": "wraps",
+  "prices": {
+   "lidl": {
+    "pack": 8,
+    "price": 0.99,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label equivalent of Village Bakery White Tortilla Wraps 8 pack",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Village Bakery White Tortilla Wraps 8 pack £0.99; no Lidl price found (Lidl search API, Open Food Facts Lidl GB stores, news/leaflets); Lidl API 'tortilla wraps' only MCENNEDY tortilla rolls (USA week)"
+   }
+  }
+ },
+ {
+  "id": "dried_yeast",
+  "prices": {
+   "lidl": {
+    "pack": 42,
+    "price": 0.65,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label equivalent of The Pantry Yeast 42g",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi The Pantry Yeast 42g £0.65; no Lidl price found (Lidl search API, Open Food Facts Lidl GB stores, news/leaflets); Aldi pack 42g (6 x 7g); Lidl API 'yeast' no match"
+   }
+  }
+ },
+ {
+  "id": "pepperoni",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "not a listed model staple; Lidl API 'pepperoni' no match; no Open Food Facts Lidl GB price; no dated article"
+   }
+  }
+ },
+ {
+  "id": "bbq_sauce",
+  "prices": {
+   "lidl": {
+    "pack": 460,
+    "price": 0.85,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label equivalent of Bramwells BBQ Sauce 460g",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Bramwells BBQ Sauce 460g £0.85; no Lidl price found (Lidl search API, Open Food Facts Lidl GB stores, news/leaflets); Lidl API 'bbq sauce' no plain BBQ sauce"
+   }
+  }
+ },
+ {
+  "id": "hot_sauce",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "brand-led (Frank's), not modelled; Lidl API 'hot sauce' only Thai Dragon sriracha/MCENNEDY (USA week); no Open Food Facts Lidl GB price"
+   }
+  }
+ },
+ {
+  "id": "mayonnaise",
+  "prices": {
+   "lidl": {
+    "pack": 460,
+    "price": 0.95,
+    "loyalty": null,
+    "basis": "crowd",
+    "seen": "2026-08-19",
+    "conf": "medium",
+    "checked": "2026-10-26",
+    "label": "Batts Real Mayonnaise 500ml",
+    "src": "https://prices.openfoodfacts.org/api/v1/prices?product_code=4056489519706&order_by=-date",
+    "note": "Open Food Facts receipt, Lidl Slough (Chalvey) 2026-08-19, not discounted; 500ml jar recorded as 460g like the Aldi 500ml jar"
+   }
+  }
+ },
+ {
+  "id": "ketchup",
+  "prices": {
+   "lidl": {
+    "pack": 550,
+    "price": 0.89,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label equivalent of Bramwells Tomato Ketchup 550g",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Bramwells Tomato Ketchup 550g £0.89; no Lidl price found (Lidl search API, Open Food Facts Lidl GB stores, news/leaflets); Which? (6 Aug 2026) notes regular Lidl ketchup is only sold in some regions; Lidl API 'ketchup' no own-label ketchup"
+   }
+  }
+ },
+ {
+  "id": "chicken_wings",
+  "prices": {
+   "lidl": {
+    "pack": 1000,
+    "price": 2.09,
+    "loyalty": null,
+    "basis": "model",
+    "conf": "low",
+    "seen": "2026-10-23",
+    "checked": "2026-10-26",
+    "label": "matched to Aldi Ashfields Chicken Wings 1kg",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Ashfields Chicken Wings 1kg £2.09; Lidl's listed wings (£3.59/kg) are seasoned, not plain"
+   }
+  }
+ },
+ {
+  "id": "pork_shoulder",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "meat cut, not modelled; Lidl API 'pork' only Pick of the Week lines; Open Food Facts has Lidl Pork shoulder steaks 1kg £6.19 but dated 2025-10-25 (older than 6 months); no dated 2026 article"
+   }
+  }
+ },
+ {
+  "id": "beef_steak",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "meat cut, not modelled; Lidl API 'beef steak' only 4 British Beef Sirloin Steaks 800g £19.99 (Pick of the Week); no Open Food Facts Lidl GB price; no dated article"
+   }
+  }
+ },
+ {
+  "id": "hot_dog_rolls",
+  "prices": {
+   "lidl": {
+    "pack": 6,
+    "price": 0.99,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label equivalent of Village Bakery Hot Dog Rolls 6 Pack",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Village Bakery Hot Dog Rolls 6 Pack £0.99; no Lidl price found (Lidl search API, Open Food Facts Lidl GB stores, news/leaflets); Lidl API 'hot dog rolls' no rolls"
+   }
+  }
+ },
+ {
+  "id": "sesame_oil",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "world food, not modelled; Lidl API 'sesame oil' no match; no Open Food Facts Lidl GB price; no dated article"
+   }
+  }
+ },
+ {
+  "id": "rice_vinegar",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "world food, not modelled; Lidl API 'vinegar' errored, 'rice vinegar' no match; no Open Food Facts Lidl GB price; no dated article"
+   }
+  }
+ },
+ {
+  "id": "fish_sauce",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "world food, not modelled; Lidl API 'fish sauce' no match; no Open Food Facts Lidl GB price; no dated article"
+   }
+  }
+ },
+ {
+  "id": "oyster_sauce",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "world food, not modelled; Lidl API 'oyster sauce' no match; no Open Food Facts Lidl GB price; no dated article"
+   }
+  }
+ },
+ {
+  "id": "black_bean_sauce",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "world food/brand, not modelled; Lidl API 'black bean sauce' no match; no Open Food Facts Lidl GB price; no dated article"
+   }
+  }
+ },
+ {
+  "id": "beef_stir_fry_strips",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "meat cut, not modelled; Lidl API 'beef stir fry' and 'beef strips' errored; no Open Food Facts Lidl GB price; no dated article"
+   }
+  }
+ },
+ {
+  "id": "pork_loin_steaks",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "meat cut, not modelled; Lidl API only XXL 12 Pork Loin Medallions 1.35kg £7.99 (Pick of the Week, not the everyday 480g pack); no Open Food Facts Lidl GB price; no dated article"
+   }
+  }
+ },
+ {
+  "id": "salted_peanuts",
+  "prices": {
+   "lidl": {
+    "pack": 200,
+    "price": 0.59,
+    "loyalty": null,
+    "basis": "crowd",
+    "seen": "2026-06-23",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Simply Roasted & Salted Peanuts 200g",
+    "src": "https://prices.openfoodfacts.org/api/v1/prices?product_code=4056489823957&order_by=-date",
+    "note": "Open Food Facts receipt, Lidl Cardiff 2026-06-23, not discounted (~4 months old); same as Aldi £0.59"
+   }
+  }
+ },
+ {
+  "id": "pineapple_chunks",
+  "prices": {
+   "lidl": {
+    "pack": 255,
+    "price": 0.99,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Lidl own-label equivalent of FOUR SEASONS Pineapple Slices in Juice",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi FOUR SEASONS Pineapple Slices in Juice £0.99; no Lidl price found (Lidl search API, Open Food Facts Lidl GB stores, news/leaflets); Aldi known is slices, pack 255 as recorded; Lidl API 'pineapple' no tinned pineapple"
+   }
+  }
+ },
+ {
+  "id": "cod_fillets",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "fish fillets, not modelled; Lidl API 'cod' no cod fillets; Open Food Facts only cod fishcakes (Grimsby 2026-05-06); no dated article"
+   }
+  }
+ },
+ {
+  "id": "smoked_haddock",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "fish fillets, not modelled; Lidl API 'haddock' no match; Open Food Facts only smoked haddock fishcakes (Grimsby 2026-05-06); no dated article"
+   }
+  }
+ }
+]

@@ -1,0 +1,1546 @@
+[
+ {
+  "id": "greek_yogurt",
+  "name": "Greek-style yogurt",
+  "unit": "g",
+  "packs": [
+   500
+  ],
+  "aisle": "Dairy & eggs",
+  "known": {
+   "tesco": {
+    "label": "Tesco Greek Style Yogurt 500G",
+    "pack": 500,
+    "price": 1.15,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Greek Style Natural Yogurt 500g",
+    "pack": 500,
+    "price": 1.15,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "ASDA Creamy Greek Style Yogurt 500g",
+    "pack": 500,
+    "price": 1.15,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "aldi": {
+    "label": "Brooklea Fat Free Greek Style Yogurt 500g",
+    "pack": 500,
+    "price": 0.95,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   }
+  }
+ },
+ {
+  "id": "green_chillies",
+  "name": "Green chillies",
+  "unit": "g",
+  "packs": [
+   80
+  ],
+  "aisle": "Fruit & veg",
+  "known": {
+   "tesco": {
+    "label": "Tesco Finger Chillies 80G",
+    "pack": 80,
+    "price": 1.15,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Green Chillies 65g",
+    "pack": 65,
+    "price": 0.75,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "ASDA Hot & Fragrant Thin Chillies 50g",
+    "pack": 50,
+    "price": 0.62,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "aldi": {
+    "label": "Nature's Pick Finger Chillies",
+    "pack": 50,
+    "price": 0.79,
+    "loyalty": null,
+    "checked": "2026-10-26"
+   }
+  }
+ },
+ {
+  "id": "ground_cinnamon",
+  "name": "Ground cinnamon",
+  "unit": "g",
+  "packs": [
+   36
+  ],
+  "aisle": "Herbs & spices",
+  "known": {
+   "tesco": {
+    "label": "Tesco Ground Cinnamon 36g",
+    "pack": 36,
+    "price": 1,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Ground Cinnamon 38g",
+    "pack": 38,
+    "price": 1.15,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "COOK by ASDA Ground Cinnamon 34g",
+    "pack": 34,
+    "price": 0.95,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "aldi": {
+    "label": "Ready, Set…Cook! Ground Cinnamon 40g",
+    "pack": 40,
+    "price": 0.89,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   }
+  }
+ },
+ {
+  "id": "ground_coriander",
+  "name": "Ground coriander",
+  "unit": "g",
+  "packs": [
+   36
+  ],
+  "aisle": "Herbs & spices",
+  "known": {
+   "tesco": {
+    "label": "Tesco Ground Coriander 36G",
+    "pack": 36,
+    "price": 1,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Ground Coriander 36g",
+    "pack": 36,
+    "price": 1.15,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "COOK by ASDA Ground Coriander 34g",
+    "pack": 34,
+    "price": 1,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   }
+  }
+ },
+ {
+  "id": "halloumi",
+  "name": "Halloumi",
+  "unit": "g",
+  "packs": [
+   225
+  ],
+  "aisle": "Dairy & eggs",
+  "known": {
+   "tesco": {
+    "label": "Tesco Halloumi 225G",
+    "pack": 225,
+    "price": 1.99,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Cypriot Halloumi Cheese 225g",
+    "pack": 225,
+    "price": 1.99,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "ASDA Halloumi 225g",
+    "pack": 225,
+    "price": 1.97,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "aldi": {
+    "label": "Emporium Halloumi Plain 225g",
+    "pack": 225,
+    "price": 1.99,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   }
+  }
+ },
+ {
+  "id": "harissa",
+  "name": "Harissa paste",
+  "unit": "g",
+  "packs": [
+   90
+  ],
+  "aisle": "World foods",
+  "known": {
+   "tesco": {
+    "label": "Tesco Harissa Paste 90G",
+    "pack": 90,
+    "price": 1.8,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Harissa Paste, Inspired to Cook 90g",
+    "pack": 90,
+    "price": 1.95,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "COOK by ASDA Harissa Paste 90g",
+    "pack": 90,
+    "price": 1.9,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   }
+  }
+ },
+ {
+  "id": "hoisin_sauce",
+  "name": "Hoisin sauce",
+  "unit": "g",
+  "packs": [
+   320
+  ],
+  "aisle": "World foods",
+  "known": {
+   "tesco": {
+    "label": "Tesco Hoisin Dipping Sauce 320g",
+    "pack": 320,
+    "price": 2.4,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Hoisin Sauce 150ml",
+    "pack": 180,
+    "price": 1.65,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "Blue Dragon Rich Hoisin Sauce 250ml",
+    "pack": 300,
+    "price": 2.4,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "aldi": {
+    "label": "Asia Specialities Hoisin Sauce",
+    "pack": 315,
+    "price": 1.39,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   }
+  }
+ },
+ {
+  "id": "honey",
+  "name": "Honey",
+  "unit": "g",
+  "packs": [
+   340
+  ],
+  "aisle": "Tins & jars",
+  "known": {
+   "tesco": {
+    "label": "Tesco Squeezy Clear Honey 340G",
+    "pack": 340,
+    "price": 1.19,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Runny Honey 340g",
+    "pack": 340,
+    "price": 1.04,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "Asda Runny Honey 340g",
+    "pack": 340,
+    "price": 1.04,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "aldi": {
+    "label": "Grandessa Squeezy Honey 454g",
+    "pack": 454,
+    "price": 1.39,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   }
+  }
+ },
+ {
+  "id": "kidney_beans",
+  "name": "Red kidney beans (tin)",
+  "unit": "g",
+  "packs": [
+   400
+  ],
+  "aisle": "Tins & jars",
+  "known": {
+   "tesco": {
+    "label": "Tesco Red Kidney Beans In Water 400g",
+    "pack": 400,
+    "price": 0.39,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Red Kidney Beans in Water 400g",
+    "pack": 400,
+    "price": 0.39,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "ASDA Red Kidney Beans in Water 400g",
+    "pack": 400,
+    "price": 0.39,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "aldi": {
+    "label": "Four Seasons Red Kidney Beans in Water 400g",
+    "pack": 400,
+    "price": 0.39,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   }
+  }
+ },
+ {
+  "id": "kimchi",
+  "name": "Kimchi",
+  "unit": "g",
+  "packs": [
+   300
+  ],
+  "aisle": "Chilled",
+  "known": {
+   "tesco": {
+    "label": "Baxters Kimchi 300G",
+    "pack": 300,
+    "price": 3.5,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Baxters Kimchi Korean Inspired Cabbage with Chilli Pepper 300g",
+    "pack": 300,
+    "price": 3.5,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "Vadasz Raw Kimchi 400g",
+    "pack": 400,
+    "price": 4.5,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   }
+  }
+ },
+ {
+  "id": "lamb_mince",
+  "name": "Lamb mince (20% fat)",
+  "unit": "g",
+  "packs": [
+   500
+  ],
+  "aisle": "Meat & fish",
+  "known": {
+   "tesco": {
+    "label": "Tesco British Lamb Mince 20% Fat 500G",
+    "pack": 500,
+    "price": 6.5,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's British or New Zealand 20% Fat Lamb Mince 500g",
+    "pack": 500,
+    "price": 7,
+    "loyalty": 5.75,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "ASDA Flavourful Lamb Mince 20% Fat 500g",
+    "pack": 500,
+    "price": 6.42,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "aldi": {
+    "label": "Ashfields British Lamb Mince 20% Fat 475g",
+    "pack": 475,
+    "price": 5.49,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   }
+  }
+ },
+ {
+  "id": "lasagne_sheets",
+  "name": "Dried lasagne sheets",
+  "unit": "g",
+  "packs": [
+   500
+  ],
+  "aisle": "Dry goods",
+  "known": {
+   "tesco": {
+    "label": "Tesco Lasagne Pasta 500G",
+    "pack": 500,
+    "price": 0.75,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Lasagne Sheets Pasta 500g",
+    "pack": 500,
+    "price": 0.75,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "ASDA Italian Inspired Lasagne Sheets 375g",
+    "pack": 375,
+    "price": 0.72,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "aldi": {
+    "label": "Cucina Lasagne Sheets 500g",
+    "pack": 500,
+    "price": 0.75,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   }
+  }
+ },
+ {
+  "id": "lemon",
+  "name": "Lemons",
+  "unit": "each",
+  "packs": [
+   1
+  ],
+  "aisle": "Fruit & veg",
+  "known": {
+   "tesco": {
+    "label": "Tesco Lemons Each",
+    "pack": 1,
+    "price": 0.37,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Lemons",
+    "pack": 1,
+    "price": 0.37,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "ASDA Lemons",
+    "pack": 1,
+    "price": 0.37,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "aldi": {
+    "label": "Everyday Essentials Wonky Lemons 4 pack",
+    "pack": 4,
+    "price": 0.89,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   }
+  }
+ },
+ {
+  "id": "lime",
+  "name": "Limes",
+  "unit": "each",
+  "packs": [
+   1
+  ],
+  "aisle": "Fruit & veg",
+  "known": {
+   "tesco": {
+    "label": "Tesco Limes Each",
+    "pack": 1,
+    "price": 0.23,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Limes",
+    "pack": 1,
+    "price": 0.25,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "ASDA 5 Limes",
+    "pack": 5,
+    "price": 1.18,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "aldi": {
+    "label": "Nature's Pick Limes 5 pack",
+    "pack": 5,
+    "price": 1.15,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   }
+  }
+ },
+ {
+  "id": "little_gem",
+  "name": "Little gem lettuce",
+  "unit": "each",
+  "packs": [
+   2
+  ],
+  "aisle": "Fruit & veg",
+  "known": {
+   "tesco": {
+    "label": "Tesco Little Gem Lettuce Twin Pack",
+    "pack": 2,
+    "price": 0.77,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Little Gem Lettuce",
+    "pack": 2,
+    "price": 0.77,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "ASDA 2 Crisp & Crunchy Little Gem Lettuce",
+    "pack": 2,
+    "price": 0.77,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "aldi": {
+    "label": "Nature's Pick British Little Gem Lettuce 2 Pack",
+    "pack": 2,
+    "price": 0.77,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   }
+  }
+ },
+ {
+  "id": "milk",
+  "name": "Semi-skimmed milk",
+  "unit": "ml",
+  "packs": [
+   2272
+  ],
+  "aisle": "Dairy & eggs",
+  "known": {
+   "tesco": {
+    "label": "Tesco British Semi Skimmed Milk 2.272L, 4 Pints",
+    "pack": 2272,
+    "price": 1.75,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's British Semi Skimmed Milk 2.27L (4 pint)",
+    "pack": 2272,
+    "price": 1.65,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "ASDA British Milk Semi Skimmed (4pts)",
+    "pack": 2272,
+    "price": 1.65,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "aldi": {
+    "label": "Cowbelle Semi Skimmed Milk 1.7% Fat 2.272L",
+    "pack": 2272,
+    "price": 1.65,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   }
+  }
+ },
+ {
+  "id": "miso_paste",
+  "name": "Miso paste",
+  "unit": "g",
+  "packs": [
+   100
+  ],
+  "aisle": "World foods",
+  "known": {
+   "tesco": {
+    "label": "Tesco Miso Paste 100G",
+    "pack": 100,
+    "price": 1.8,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Miso Paste 100g",
+    "pack": 100,
+    "price": 1.9,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "Blue Dragon Miso Paste 135g",
+    "pack": 135,
+    "price": 2.5,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   }
+  }
+ },
+ {
+  "id": "mixed_herbs",
+  "name": "Dried mixed herbs",
+  "unit": "g",
+  "packs": [
+   18
+  ],
+  "aisle": "Herbs & spices",
+  "known": {
+   "tesco": {
+    "label": "Tesco Mixed Herbs 18G",
+    "pack": 18,
+    "price": 1,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Mixed Herbs 14g",
+    "pack": 14,
+    "price": 1.15,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "COOK by ASDA Mixed Herbs 12g",
+    "pack": 12,
+    "price": 0.95,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "aldi": {
+    "label": "Ready, Set…Cook! Mixed Herbs 11g",
+    "pack": 11,
+    "price": 0.59,
+    "loyalty": null,
+    "checked": "2026-10-26"
+   }
+  }
+ },
+ {
+  "id": "mozzarella",
+  "name": "Mozzarella",
+  "unit": "g",
+  "packs": [
+   125
+  ],
+  "aisle": "Dairy & eggs",
+  "known": {
+   "tesco": {
+    "label": "Tesco Mozzarella 200g (125g drained)",
+    "pack": 125,
+    "price": 1.3,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Mozzarella Cheese 150g",
+    "pack": 150,
+    "price": 1.55,
+    "loyalty": null,
+    "checked": "2026-10-26"
+   },
+   "asda": {
+    "label": "ASDA Mozzarella 225g",
+    "pack": 125,
+    "price": 1,
+    "loyalty": null,
+    "checked": "2026-10-26"
+   },
+   "aldi": {
+    "label": "Everyday Essentials Classic Mozzarella (0.125kg drained)",
+    "pack": 125,
+    "price": 0.55,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   }
+  }
+ },
+ {
+  "id": "mushrooms",
+  "name": "Chestnut mushrooms",
+  "unit": "g",
+  "packs": [
+   250
+  ],
+  "aisle": "Fruit & veg",
+  "known": {
+   "tesco": {
+    "label": "Tesco Chestnut Vitamin D Mushrooms 250G",
+    "pack": 250,
+    "price": 1.1,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's 300g Closed Cup Chestnut Mushrooms",
+    "pack": 300,
+    "price": 1.29,
+    "loyalty": 0.64,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "ASDA Chestnut Mushrooms 250g",
+    "pack": 250,
+    "price": 1.07,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "aldi": {
+    "label": "Nature's Pick British Chestnut Mushrooms 250g",
+    "pack": 250,
+    "price": 0.95,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   }
+  }
+ },
+ {
+  "id": "naan",
+  "name": "Plain naan",
+  "unit": "each",
+  "packs": [
+   2
+  ],
+  "aisle": "Bakery",
+  "known": {
+   "tesco": {
+    "label": "Tesco Plain Naans 2 Pack 260G",
+    "pack": 2,
+    "price": 0.69,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Plain Naan x 2 260g",
+    "pack": 2,
+    "price": 0.69,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "ASDA 2 Plain Naans",
+    "pack": 2,
+    "price": 0.69,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "aldi": {
+    "label": "Bilash Plain Naan Breads (2 each)",
+    "pack": 2,
+    "price": 0.69,
+    "loyalty": null,
+    "checked": "2026-10-26"
+   }
+  }
+ },
+ {
+  "id": "oil",
+  "name": "Vegetable oil",
+  "unit": "ml",
+  "packs": [
+   1000
+  ],
+  "aisle": "Oils & sauces",
+  "known": {
+   "tesco": {
+    "label": "Tesco Pure Vegetable Oil 1L",
+    "pack": 1000,
+    "price": 1.45,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Vegetable Oil 1L",
+    "pack": 1000,
+    "price": 1.45,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "ASDA Vegetable Oil 1 Litre",
+    "pack": 1000,
+    "price": 1.45,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "aldi": {
+    "label": "Solesta Vegetable Oil 1l",
+    "pack": 1000,
+    "price": 1.45,
+    "loyalty": null,
+    "checked": "2026-10-26"
+   }
+  }
+ },
+ {
+  "id": "pak_choi",
+  "name": "Pak choi",
+  "unit": "g",
+  "packs": [
+   250
+  ],
+  "aisle": "Fruit & veg",
+  "known": {
+   "tesco": {
+    "label": "Tesco Pak Choi 250G",
+    "pack": 250,
+    "price": 1.55,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Pak Choi 250g",
+    "pack": 250,
+    "price": 1.55,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "ASDA Mild & Crisp Pak Choi 200g",
+    "pack": 200,
+    "price": 1.12,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   }
+  }
+ },
+ {
+  "id": "paneer",
+  "name": "Paneer",
+  "unit": "g",
+  "packs": [
+   200
+  ],
+  "aisle": "Dairy & eggs",
+  "known": {
+   "tesco": {
+    "label": "Tesco Paneer Cheese 200g",
+    "pack": 200,
+    "price": 1.8,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Paneer 200g",
+    "pack": 200,
+    "price": 1.77,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "ASDA Paneer 200g",
+    "pack": 200,
+    "price": 1.76,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   }
+  }
+ },
+ {
+  "id": "panko",
+  "name": "Panko breadcrumbs",
+  "unit": "g",
+  "packs": [
+   150
+  ],
+  "aisle": "World foods",
+  "known": {
+   "tesco": {
+    "label": "Tesco Panko Breadcrumbs 150G",
+    "pack": 150,
+    "price": 2.1,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Panko Breadcrumbs, Inspired to Cook 100g",
+    "pack": 100,
+    "price": 1.4,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "COOK by ASDA Panko Breadcrumbs 70g",
+    "pack": 70,
+    "price": 1.21,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   }
+  }
+ },
+ {
+  "id": "parmesan",
+  "name": "Italian hard cheese (parmesan-style)",
+  "unit": "g",
+  "packs": [
+   175
+  ],
+  "aisle": "Dairy & eggs",
+  "known": {
+   "tesco": {
+    "label": "Creamfields Grana Padano Wedge 175G",
+    "pack": 175,
+    "price": 2.49,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Grana Padano Cheese 200g",
+    "pack": 200,
+    "price": 3.3,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "ASDA Grana Padano 160g",
+    "pack": 160,
+    "price": 2.57,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "aldi": {
+    "label": "Emporium Italian Grana Padano 200g",
+    "pack": 200,
+    "price": 2.85,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   }
+  }
+ },
+ {
+  "id": "pasta",
+  "name": "Dried pasta (spaghetti/penne)",
+  "unit": "g",
+  "packs": [
+   500
+  ],
+  "aisle": "Dry goods",
+  "known": {
+   "tesco": {
+    "label": "Tesco Penne Pasta Quills 500G",
+    "pack": 500,
+    "price": 0.69,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Penne Rigate Pasta 500g",
+    "pack": 500,
+    "price": 0.69,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "ASDA Spaghetti 500g",
+    "pack": 500,
+    "price": 0.75,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "aldi": {
+    "label": "Cucina Penne Pasta 500g",
+    "pack": 500,
+    "price": 0.69,
+    "loyalty": null,
+    "checked": "2026-10-26"
+   }
+  }
+ },
+ {
+  "id": "peanut_butter",
+  "name": "Peanut butter",
+  "unit": "g",
+  "packs": [
+   340
+  ],
+  "aisle": "Tins & jars",
+  "known": {
+   "tesco": {
+    "label": "Tesco Smooth Peanut Butter 340G",
+    "pack": 340,
+    "price": 0.95,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Peanut Butter Smooth 340g",
+    "pack": 340,
+    "price": 1.1,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "ASDA Classic Crunchy Peanut Butter 340g",
+    "pack": 340,
+    "price": 0.97,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "aldi": {
+    "label": "Grandessa Smooth Peanut Butter 340g",
+    "pack": 340,
+    "price": 0.95,
+    "loyalty": null,
+    "checked": "2026-10-26"
+   }
+  }
+ },
+ {
+  "id": "peppers",
+  "name": "Mixed peppers",
+  "unit": "each",
+  "packs": [
+   3
+  ],
+  "aisle": "Fruit & veg",
+  "known": {
+   "tesco": {
+    "label": "Tesco Sweet Peppers 500g (approx 3)",
+    "pack": 3,
+    "price": 2.1,
+    "loyalty": null,
+    "checked": "2026-10-22"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Sweet Peppers (Colours may vary) x3",
+    "pack": 3,
+    "price": 1.99,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "JUST ESSENTIALS by ASDA 3 Mixed Peppers",
+    "pack": 3,
+    "price": 1.79,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "aldi": {
+    "label": "Nature's Pick Mixed Peppers 3 pack",
+    "pack": 3,
+    "price": 1.75,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   }
+  }
+ },
+ {
+  "id": "pesto",
+  "name": "Green pesto",
+  "unit": "g",
+  "packs": [
+   190
+  ],
+  "aisle": "Tins & jars",
+  "known": {
+   "tesco": {
+    "label": "Tesco Classic Green Pesto 190G",
+    "pack": 190,
+    "price": 0.89,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Green Pesto 190g",
+    "pack": 190,
+    "price": 0.89,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "ASDA Green Pesto 190g",
+    "pack": 190,
+    "price": 1,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "aldi": {
+    "label": "Cucina Basil Pesto 190g",
+    "pack": 190,
+    "price": 0.89,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   }
+  }
+ },
+ {
+  "id": "pitta",
+  "name": "Pitta breads",
+  "unit": "each",
+  "packs": [
+   6
+  ],
+  "aisle": "Bakery",
+  "known": {
+   "tesco": {
+    "label": "Tesco White Plain Pitta Bread 6 Pack",
+    "pack": 6,
+    "price": 0.5,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's White Pittas x6",
+    "pack": 6,
+    "price": 0.5,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "The BAKERY at ASDA 6 White Pittas 360g",
+    "pack": 6,
+    "price": 0.5,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "aldi": {
+    "label": "Village Bakery White Pitta Bread 6 pack",
+    "pack": 6,
+    "price": 0.5,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   }
+  }
+ },
+ {
+  "id": "pork_mince",
+  "name": "Pork mince",
+  "unit": "g",
+  "packs": [
+   500
+  ],
+  "aisle": "Meat & fish",
+  "known": {
+   "tesco": {
+    "label": "Tesco Pork Mince 20% Fat 500G",
+    "pack": 500,
+    "price": 2.3,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's British Pork Mince 20% Fat 500g",
+    "pack": 500,
+    "price": 2.45,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "ASDA Succulent Lean Pork Mince 5% Fat 500g",
+    "pack": 500,
+    "price": 2.47,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "aldi": {
+    "label": "Ashfields British Pork Mince 12% Fat 500g",
+    "pack": 500,
+    "price": 2.15,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   }
+  }
+ },
+ {
+  "id": "potatoes",
+  "name": "White potatoes",
+  "unit": "g",
+  "packs": [
+   2000
+  ],
+  "aisle": "Fruit & veg",
+  "known": {
+   "tesco": {
+    "label": "Tesco All Rounder Potatoes 2Kg",
+    "pack": 2000,
+    "price": 1.32,
+    "loyalty": 0.99,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's 2kg White Potatoes",
+    "pack": 2000,
+    "price": 1.32,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "ASDA Light & Fluffy Maris Piper Potatoes 2kg",
+    "pack": 2000,
+    "price": 1.8,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "aldi": {
+    "label": "Nature's Pick White Potatoes 2kg",
+    "pack": 2000,
+    "price": 1.32,
+    "loyalty": null,
+    "checked": "2026-10-26"
+   }
+  }
+ },
+ {
+  "id": "prawns",
+  "name": "Frozen king prawns",
+  "unit": "g",
+  "packs": [
+   170
+  ],
+  "aisle": "Frozen",
+  "known": {
+   "tesco": {
+    "label": "Tesco Raw King Prawns 170g (frozen)",
+    "pack": 170,
+    "price": 3.4,
+    "loyalty": 2.7,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Frozen Large Raw Peeled King Prawns ASC 180g",
+    "pack": 180,
+    "price": 2.64,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "ASDA King Prawns 200g (raw)",
+    "pack": 200,
+    "price": 4,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "aldi": {
+    "label": "Specially Selected Raw Peeled Argentinian Prawns 250g (frozen)",
+    "pack": 250,
+    "price": 3.89,
+    "loyalty": null,
+    "checked": "2026-10-26"
+   }
+  }
+ },
+ {
+  "id": "puff_pastry",
+  "name": "Ready-rolled puff pastry",
+  "unit": "g",
+  "packs": [
+   320
+  ],
+  "aisle": "Chilled",
+  "known": {
+   "tesco": {
+    "label": "Tesco Ready Rolled Puff Pastry 320G",
+    "pack": 320,
+    "price": 0.99,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Sheet Puff Pastry x1 320g",
+    "pack": 320,
+    "price": 1.4,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "ASDA Ready Rolled Puff Pastry 320g",
+    "pack": 320,
+    "price": 1.2,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "aldi": {
+    "label": "The Pantry Ready Rolled Puff Pastry 320g",
+    "pack": 320,
+    "price": 0.99,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   }
+  }
+ },
+ {
+  "id": "red_lentils",
+  "name": "Red split lentils",
+  "unit": "g",
+  "packs": [
+   500
+  ],
+  "aisle": "Dry goods",
+  "known": {
+   "tesco": {
+    "label": "Tesco Red Split Lentils 500G",
+    "pack": 500,
+    "price": 2.1,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Dried Red Lentils 500g",
+    "pack": 500,
+    "price": 2.1,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "ASDA Red Lentils 500g",
+    "pack": 500,
+    "price": 2,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "aldi": {
+    "label": "Worldwide Foods Red Lentils 500g",
+    "pack": 500,
+    "price": 0.89,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   }
+  }
+ },
+ {
+  "id": "red_onion",
+  "name": "Red onions",
+  "unit": "each",
+  "packs": [
+   3
+  ],
+  "aisle": "Fruit & veg",
+  "known": {
+   "tesco": {
+    "label": "Tesco Red Onions 3Pack Minimum",
+    "pack": 3,
+    "price": 1,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Red Onions x3",
+    "pack": 3,
+    "price": 0.95,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "ASDA 3 Sweet & Crunchy Red Onions",
+    "pack": 3,
+    "price": 0.95,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "aldi": {
+    "label": "Nature's Pick Red Onions 1kg",
+    "pack": 6,
+    "price": 0.95,
+    "loyalty": null,
+    "checked": "2026-10-26"
+   }
+  }
+ },
+ {
+  "id": "rice",
+  "name": "Basmati rice",
+  "unit": "g",
+  "packs": [
+   1000
+  ],
+  "aisle": "Dry goods",
+  "known": {
+   "tesco": {
+    "label": "Tesco Basmati Rice 1Kg",
+    "pack": 1000,
+    "price": 1.79,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Basmati Rice 1kg",
+    "pack": 1000,
+    "price": 1.79,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "ASDA Basmati White Rice 1kg",
+    "pack": 1000,
+    "price": 1.85,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "aldi": {
+    "label": "Worldwide Foods Basmati Rice 1kg",
+    "pack": 1000,
+    "price": 1.79,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   }
+  }
+ },
+ {
+  "id": "rice_noodles",
+  "name": "Flat rice noodles (dried)",
+  "unit": "g",
+  "packs": [
+   400
+  ],
+  "aisle": "World foods",
+  "known": {
+   "tesco": {
+    "label": "Tiger Tiger 5mm Rice Stick Noodles 400g",
+    "pack": 400,
+    "price": 2.4,
+    "loyalty": 1.9,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Rice Noodles 250g",
+    "pack": 250,
+    "price": 1,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "ASDA Rice Noodles 250g",
+    "pack": 250,
+    "price": 1.15,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "aldi": {
+    "label": "Ready, Set…Cook! Rice Noodles 300g",
+    "pack": 300,
+    "price": 0.99,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   }
+  }
+ },
+ {
+  "id": "ricotta",
+  "name": "Ricotta",
+  "unit": "g",
+  "packs": [
+   250
+  ],
+  "aisle": "Dairy & eggs",
+  "known": {
+   "tesco": {
+    "label": "Tesco Ricotta Cheese 250 G",
+    "pack": 250,
+    "price": 1.5,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Ricotta Cheese 250g",
+    "pack": 250,
+    "price": 1.47,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "ASDA Italian Ricotta 250g",
+    "pack": 250,
+    "price": 1.46,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   }
+  }
+ },
+ {
+  "id": "salmon",
+  "name": "Salmon fillets",
+  "unit": "each",
+  "packs": [
+   2,
+   4
+  ],
+  "aisle": "Meat & fish",
+  "known": {
+   "tesco": {
+    "label": "Tesco 2 Boneless Salmon Fillets 260G",
+    "pack": 2,
+    "price": 4.9,
+    "loyalty": 4,
+    "checked": "2026-10-23"
+   },
+   "sainsburys": {
+    "label": "Sainsbury's Skin on ASC Scottish Salmon Fillets x2 240g",
+    "pack": 2,
+    "price": 4.95,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   },
+   "asda": {
+    "label": "ASDA 2 Boneless Salmon Fillets 260g",
+    "pack": 2,
+    "price": 3.8,
+    "loyalty": null,
+    "checked": "2026-10-22"
+   },
+   "aldi": {
+    "label": "The Fishmonger Boneless Salmon Fillets 2 Pack",
+    "pack": 2,
+    "price": 3.59,
+    "loyalty": null,
+    "checked": "2026-10-23"
+   }
+  }
+ }
+]

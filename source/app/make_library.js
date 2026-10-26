@@ -57,6 +57,25 @@ if (ex(V2 + '/prices_v5')) for (const f of fs.readdirSync(V2 + '/prices_v5').fil
     if (ing.unlisted) delete ing.unlisted[shop];
   }
 }
+// v6 (26 Oct 2026): every source we could read, not just the shops' own sites. Each price says where it came from
+// (basis: shop = the shop's site; compare = a price-comparison site; app = a delivery or shop app listing; crowd = shoppers'
+// receipts/shelf photos; news = a dated article or leaflet; model = worked out from another shop's matched price, with evidence)
+// and how sure we are (conf: high/medium/low). Gaps get filled; a cross-check replaces a price only when it's better evidence.
+const RANK = { shop: 5, app: 4, compare: 4, match: 3, crowd: 3, news: 3, model: 1 }, CONF = { high: 3, medium: 2, low: 1 };
+let v6filled = 0, v6replaced = 0;
+if (ex(V2 + '/prices_v6')) for (const f of fs.readdirSync(V2 + '/prices_v6').filter(f => /_out\.json$/.test(f))) for (const p of rd(V2 + '/prices_v6/' + f)) {
+  const ing = ING[p.id]; if (!ing) continue; ing.prices = ing.prices || {};
+  for (const [shop, x] of Object.entries(p.prices || {})) {
+    if (!x || x.unlisted || !(x.price > 0) || !(x.pack > 0) || !x.src) continue;
+    const cur = ing.prices[shop];
+    const entry = { pack: x.pack, price: Math.round(x.price * 100) / 100, loyalty: x.loyalty > 0 ? Math.round(x.loyalty * 100) / 100 : null, checked: x.checked || '2026-10-26', seen: x.seen || x.checked || '', src: x.src, est: false, verified: x.basis !== 'model', basis: x.basis || 'shop', conf: x.conf || 'medium', note: x.note || '', label: x.label || '' };
+    if (!cur) { ing.prices[shop] = entry; v6filled++; if (ing.unlisted) delete ing.unlisted[shop]; continue; }
+    // a check replaces the price only when it's marked so (the shop's own page today, or a reviewed correction)
+    if (x.replace === true) { ing.prices[shop] = { ...entry, was: cur.price }; v6replaced++; }
+    else if (x.agrees != null) cur.checkedBy = { src: x.src, price: entry.price, agrees: !!x.agrees };
+  }
+}
+console.log('v6 prices filled:', v6filled, 'replaced:', v6replaced);
 // no estimates: anything not confirmed on a live page is dropped and shows as "no price" for that shop
 let droppedEst = 0;
 for (const id in ING) { const ps = ING[id].prices || {}; for (const shop of Object.keys(ps)) if (ps[shop] && (ps[shop].est || !ps[shop].src)) { delete ps[shop]; droppedEst++; } }

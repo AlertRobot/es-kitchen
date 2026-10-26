@@ -367,7 +367,7 @@ function basketTotals(purchases, ctx, extraRows) {
   const pref = ctx.settings.shop || 'tesco', loy = ctx.settings.useLoyalty !== false;
   const keys = [];
   for (const s of SHOPS) { keys.push({ key: s.id, shop: s.id, loyalty: false }); if (s.loyalty) keys.push({ key: s.id + '+', shop: s.id, loyalty: true }); }
-  const totals = {}; keys.forEach(k => totals[k.key] = { total: 0, missing: 0, est: 0, stale: 0 });
+  const totals = {}; keys.forEach(k => totals[k.key] = { total: 0, missing: 0, est: 0, stale: 0, rough: 0 });
   const rows = [];
   const today = ctx.today || isoDate(new Date());
   const ids = Object.keys(purchases);
@@ -376,7 +376,7 @@ function basketTotals(purchases, ctx, extraRows) {
     const row = { i: id, need: P.need, packs: P.packs, bought: P.bought, staple: !!P.staple, forDays: P.forDays || [], forWhat: P.forWhat || [], always: !!P.always, byShop: {} };
     for (const k of keys) {
       const sp = shopPrice(ing, k.shop, k.loyalty);
-      let cost, missing = false, est = false, stale = false, count = 0, pack = null;
+      let cost, missing = false, est = false, stale = false, rough = false, count = 0, pack = null;
       if (sp) {
         pack = sp.pack;
         if (k.shop === pref && P.packs.length) { // same shop as the plan: price the exact packs bought
@@ -384,12 +384,12 @@ function basketTotals(purchases, ctx, extraRows) {
           cost = P.packs.reduce((a, size) => a + (Math.abs(size - sp.pack) < EPS ? sp.price : sp.unit * size), 0);
           count = P.packs.length;
         } else { count = Math.max(1, Math.ceil(P.need / sp.pack - 1e-9)); cost = count * sp.price; }
-        est = !!sp.rec.est; stale = ageDays(sp.rec.checked, today) > STALE_DAYS;
+        est = !!sp.rec.est; rough = sp.rec.conf === 'low' || sp.rec.basis === 'model'; stale = ageDays(sp.rec.checked, today) > STALE_DAYS;
       } else {
         missing = true; cost = P.bought * unitPrice(ing, pref, false); est = true;
       }
-      row.byShop[k.key] = { cost, missing, est, stale, count, pack };
-      const T = totals[k.key]; T.total += cost; if (missing) T.missing++; if (est) T.est++; if (stale) T.stale++;
+      row.byShop[k.key] = { cost, missing, est, stale, rough, count, pack };
+      const T = totals[k.key]; T.total += cost; if (missing) T.missing++; if (est) T.est++; if (stale) T.stale++; if (rough) T.rough++;
     }
     rows.push(row);
   }

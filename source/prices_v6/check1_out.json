@@ -1,0 +1,2030 @@
+[
+ {
+  "id": "salt",
+  "prices": {
+   "tesco": {
+    "agrees": true,
+    "price": 1.9,
+    "pack": 1500,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=cooking%20salt",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Tesco Cooking Salt 1.5Kg",
+    "known_price": 1.9
+   },
+   "sainsburys": {
+    "agrees": true,
+    "price": 0.75,
+    "pack": 750,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/table%20salt",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Sainsbury's Table Salt Bottle 750g",
+    "known_price": 0.75
+   },
+   "asda": {
+    "agrees": true,
+    "price": 0.82,
+    "pack": 750,
+    "loyalty": null,
+    "basis": "compare",
+    "src": "https://www.trolley.co.uk/product/asda-table-salt/ZFM057",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "ASDA Table Salt 750g",
+    "known_price": 0.82
+   },
+   "aldi": {
+    "agrees": true,
+    "price": 0.65,
+    "pack": 750,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.aldi.co.uk/products/food-cupboard/herbs-spices/k/1588161416978053007",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Ready, Set…Cook! British Table Salt 750g",
+    "known_price": 0.65
+   },
+   "lidl": {
+    "pack": 750,
+    "price": 0.65,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "(modelled) Lidl own-label equivalent of Aldi Ready, Set…Cook! British Table Salt 750g",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Ready, Set…Cook! British Table Salt 750g £0.65; Lidl API search \"salt\" shows no table salt"
+   }
+  }
+ },
+ {
+  "id": "oil",
+  "prices": {
+   "tesco": {
+    "agrees": true,
+    "price": 1.45,
+    "pack": 1000,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=vegetable%20oil",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Tesco Pure Vegetable Oil 1L",
+    "known_price": 1.45,
+    "note": "carries Aldi Price Match badge"
+   },
+   "sainsburys": {
+    "agrees": true,
+    "price": 1.45,
+    "pack": 1000,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/vegetable%20oil",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Sainsbury's Vegetable Oil 1L",
+    "known_price": 1.45
+   },
+   "asda": {
+    "agrees": true,
+    "price": 1.45,
+    "pack": 1000,
+    "loyalty": null,
+    "basis": "compare",
+    "src": "https://www.trolley.co.uk/product/asda-vegetable-oil/XRU461",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "ASDA Vegetable Oil 1 Litre",
+    "known_price": 1.45
+   },
+   "aldi": {
+    "agrees": true,
+    "price": 1.45,
+    "pack": 1000,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.aldi.co.uk/products/food-cupboard/sauces-oils-dressings/k/1588161416978053010",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Solesta Vegetable Oil 1l",
+    "known_price": 1.45
+   },
+   "lidl": {
+    "pack": 1000,
+    "price": 1.45,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "(modelled) Lidl own-label equivalent of Aldi Solesta Vegetable Oil 1l",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Solesta Vegetable Oil 1l £1.45; not in Lidl API"
+   }
+  }
+ },
+ {
+  "id": "black_pepper",
+  "prices": {
+   "tesco": {
+    "agrees": true,
+    "price": 2.55,
+    "pack": 100,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=ground%20black%20pepper",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Tesco Ground Black Pepper 100G",
+    "known_price": 2.55
+   },
+   "sainsburys": {
+    "agrees": true,
+    "price": 2.55,
+    "pack": 100,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/ground%20black%20pepper",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Sainsbury's Ground Black Pepper 100g",
+    "known_price": 2.55
+   },
+   "asda": {
+    "agrees": true,
+    "price": 2.7,
+    "pack": 104,
+    "loyalty": null,
+    "basis": "compare",
+    "src": "https://www.trolley.co.uk/product/asda-ground-black-pepper/YUP409",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "COOK by ASDA Ground Black Pepper 104g",
+    "known_price": 2.7
+   },
+   "aldi": {
+    "agrees": null,
+    "skipped": true,
+    "note": "no second source: not on aldi.co.uk herbs & spices page 1 and pages 2-3 are robots-blocked; trolley page (stonemill-ground-black-pepper/CQX613) shows out of stock everywhere with no usable price; Tesco black pepper has no Aldi Price Match badge"
+   },
+   "lidl": {
+    "unlisted": true,
+    "note": "spice, not modelled; Lidl API \"black pepper\" no match; no Open Prices GB entry"
+   }
+  }
+ },
+ {
+  "id": "chicken_thighs",
+  "prices": {
+   "tesco": {
+    "agrees": true,
+    "price": 5.75,
+    "pack": 600,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=chicken%20thigh%20fillets",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Tesco British Chicken Thigh Fillets 600G",
+    "known_price": 5.75
+   },
+   "sainsburys": {
+    "agrees": true,
+    "price": 6,
+    "pack": 640,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/chicken%20thighs%20boneless",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Sainsbury's 640g British Fresh Skinless & Boneless Chicken Thigh Fillets",
+    "known_price": 6
+   },
+   "asda": {
+    "agrees": true,
+    "price": 6.07,
+    "pack": 1000,
+    "loyalty": null,
+    "basis": "compare",
+    "src": "https://www.trolley.co.uk/product/asda-succulent-boneless-chicken-thigh-fillets/SEI999",
+    "seen": "2026-10-26",
+    "conf": "medium",
+    "checked": "2026-10-26",
+    "label": "ASDA British Boneless Chicken Thigh Fillets",
+    "known_price": 6.07,
+    "note": "trolley does not state the weight for this variant; a second variant (EIP782) is £6.84"
+   },
+   "aldi": {
+    "agrees": true,
+    "price": 4.39,
+    "pack": 600,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.aldi.co.uk/products/fresh-food/poultry/k/1588161416978050004",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Ashfields Chicken Thigh Fillets 600g",
+    "known_price": 4.39
+   },
+   "lidl": {
+    "pack": 600,
+    "price": 4.39,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "(modelled) Lidl own-label equivalent of Aldi Ashfields Chicken Thigh Fillets 600g",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Ashfields Chicken Thigh Fillets 600g £4.39; Lidl API has no thigh fillets"
+   }
+  }
+ },
+ {
+  "id": "chicken_breast",
+  "prices": {
+   "tesco": {
+    "agrees": true,
+    "price": 4.9,
+    "pack": 650,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=chicken%20breast%20fillets",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Tesco British Chicken Breast Fillets 650G",
+    "known_price": 4.9
+   },
+   "sainsburys": {
+    "agrees": true,
+    "price": 4.62,
+    "pack": 640,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/chicken%20breast%20fillets%20640g",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Sainsbury's 640g British Fresh Skinless & Boneless Chicken Breast Fillets",
+    "known_price": 4.62,
+    "note": "Nectar multibuy: 2 for £8.00 (£4.00 each)"
+   },
+   "asda": {
+    "agrees": true,
+    "price": 4.52,
+    "pack": 600,
+    "loyalty": null,
+    "basis": "compare",
+    "src": "https://www.trolley.co.uk/product/asda-tender-chicken-breast-fillets/HZF781",
+    "seen": "2026-10-26",
+    "conf": "medium",
+    "checked": "2026-10-26",
+    "label": "ASDA British Chicken Breast Fillets",
+    "known_price": 4.52,
+    "note": "trolley does not state the weight; £4.52 is the cheapest variant listed"
+   },
+   "aldi": {
+    "agrees": true,
+    "price": 4.69,
+    "pack": 650,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.aldi.co.uk/products/fresh-food/poultry/k/1588161416978050004",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Ashfields Chicken Breast Fillets 650g",
+    "known_price": 4.69,
+    "note": "consistent with Tesco 350g Aldi Price Match £2.67 vs Aldi 300g £2.29"
+   },
+   "lidl": {
+    "pack": 650,
+    "price": 4.69,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "(modelled) Lidl own-label equivalent of Aldi Ashfields Chicken Breast Fillets 650g",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Ashfields Chicken Breast Fillets 650g £4.69; Lidl API only lists XXL British Chicken Breast Fillet 2.5kg £14.79 (Pick of the Week)"
+   }
+  }
+ },
+ {
+  "id": "eggs",
+  "prices": {
+   "tesco": {
+    "agrees": true,
+    "price": 2.95,
+    "pack": 12,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=free%20range%20eggs",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Tesco Medium Free Range Eggs 12 Pack",
+    "known_price": 2.95
+   },
+   "sainsburys": {
+    "agrees": true,
+    "price": 2.95,
+    "pack": 12,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/free%20range%20eggs%20medium",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Sainsbury's British Free Range Eggs Medium x12",
+    "known_price": 2.95
+   },
+   "asda": {
+    "agrees": true,
+    "price": 2.95,
+    "pack": 12,
+    "loyalty": null,
+    "basis": "compare",
+    "src": "https://www.trolley.co.uk/product/asda-12-medium-free-range-eggs/YDR153",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "ASDA 12 Free Range Medium Eggs",
+    "known_price": 2.95
+   },
+   "aldi": {
+    "agrees": true,
+    "price": 2.49,
+    "pack": 12,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.aldi.co.uk/products/chilled-food/eggs/k/1588161416978051003",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Merevale British Medium Free Range Eggs 12 Pack",
+    "known_price": 2.49
+   },
+   "lidl": {
+    "pack": 12,
+    "price": 2.49,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "(modelled) Lidl own-label equivalent of Aldi Merevale British Medium Free Range Eggs 12 Pack",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Merevale British Medium Free Range Eggs 12 Pack £2.49; supporting: Open Prices Lidl Cardiff 12 Large Free Range Welsh Eggs £2.89 (2026-04-04) = Aldi large 12 £2.89"
+   }
+  }
+ },
+ {
+  "id": "garlic",
+  "prices": {
+   "tesco": {
+    "agrees": true,
+    "price": 0.87,
+    "pack": 40,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=garlic",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Tesco Garlic 4 Pack",
+    "known_price": 0.87
+   },
+   "sainsburys": {
+    "agrees": true,
+    "price": 0.87,
+    "pack": 40,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/garlic",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Sainsbury's Garlic x4",
+    "known_price": 0.87
+   },
+   "asda": {
+    "agrees": true,
+    "price": 0.87,
+    "pack": 40,
+    "loyalty": null,
+    "basis": "compare",
+    "src": "https://www.trolley.co.uk/product/asda-4-fragrant-bold-garlic/GHE366",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "ASDA 4 Garlic",
+    "known_price": 0.87
+   },
+   "aldi": {
+    "agrees": true,
+    "price": 0.59,
+    "pack": 40,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.aldi.co.uk/products/fresh-food/vegetables/k/1588161416978050002",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Nature's Pick Garlic 4 pack",
+    "known_price": 0.59,
+    "note": "shown as was £0.87"
+   },
+   "lidl": {
+    "pack": 40,
+    "price": 0.59,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "(modelled) Lidl own-label equivalent of Aldi Nature's Pick Garlic 4 pack",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Nature's Pick Garlic 4 pack £0.59; Lidl API \"garlic\" no fresh garlic"
+   }
+  }
+ },
+ {
+  "id": "butter",
+  "prices": {
+   "tesco": {
+    "agrees": true,
+    "price": 1.85,
+    "pack": 250,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=salted%20butter",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Tesco British Salted Block Butter 250G",
+    "known_price": 1.85,
+    "note": "carries Aldi Price Match badge"
+   },
+   "sainsburys": {
+    "agrees": true,
+    "price": 1.85,
+    "pack": 250,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/salted%20butter",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Sainsbury's British Butter, Salted 250g",
+    "known_price": 1.85
+   },
+   "asda": {
+    "agrees": true,
+    "price": 1.85,
+    "pack": 250,
+    "loyalty": null,
+    "basis": "compare",
+    "src": "https://www.trolley.co.uk/product/asda-salted-butter/YSB135",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "ASDA British Salted Butter 250g",
+    "known_price": 1.85
+   },
+   "aldi": {
+    "agrees": true,
+    "price": 1.85,
+    "pack": 250,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.aldi.co.uk/products/chilled-food/dairy/k/1588161416978051002",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Cowbelle British Salted Butter 250g",
+    "known_price": 1.85
+   },
+   "lidl": {
+    "pack": 250,
+    "price": 1.85,
+    "loyalty": null,
+    "basis": "crowd",
+    "seen": "2026-09-23",
+    "conf": "medium",
+    "checked": "2026-10-26",
+    "label": "Dairy Manor Salted Welsh Butter 250g",
+    "src": "https://prices.openfoodfacts.org/api/v1/prices?product_code=4056489895251&order_by=-date",
+    "note": "Open Prices, Lidl Cardiff; Welsh line (England stores carry a British equivalent); matches Aldi Cowbelle 250g £1.85"
+   }
+  }
+ },
+ {
+  "id": "cheddar",
+  "prices": {
+   "tesco": {
+    "agrees": true,
+    "price": 3.2,
+    "pack": 400,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=mature%20cheddar",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Tesco Mature Cheddar 400G",
+    "known_price": 3.2
+   },
+   "sainsburys": {
+    "agrees": true,
+    "price": 2.95,
+    "pack": 400,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/mature%20cheddar",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Sainsbury's British Mature Cheddar Cheese 400g",
+    "known_price": 2.95
+   },
+   "asda": {
+    "agrees": true,
+    "price": 3.2,
+    "pack": 400,
+    "loyalty": null,
+    "basis": "compare",
+    "src": "https://www.trolley.co.uk/product/asda-mature-cheddar-cheese/LTG307",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "ASDA British Mature Cheddar 400g",
+    "known_price": 3.2,
+    "note": "trolley's Sizes list shows £2.95 for the same pack (previous price)"
+   },
+   "aldi": {
+    "agrees": true,
+    "price": 2.45,
+    "pack": 400,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.aldi.co.uk/products/chilled-food/cheese/k/1588161416978051004",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Emporium British Mature Cheddar Cheese 400g",
+    "known_price": 2.45
+   },
+   "lidl": {
+    "pack": 400,
+    "price": 2.45,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "(modelled) Lidl own-label equivalent of Aldi Emporium British Mature Cheddar Cheese 400g",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Emporium British Mature Cheddar Cheese 400g £2.45; Lidl API cheddar search errored; Open Prices only has Welsh Mature Cheddar 900g £4.99 (2026-01-11), Aldi 900g is £4.85"
+   }
+  }
+ },
+ {
+  "id": "peppers",
+  "prices": {
+   "tesco": {
+    "agrees": true,
+    "price": 2.1,
+    "pack": 3,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=sweet%20peppers",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Tesco Sweet Peppers 500g",
+    "known_price": 2.1
+   },
+   "sainsburys": {
+    "agrees": true,
+    "price": 1.99,
+    "pack": 3,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/sweet%20peppers",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Sainsbury's Sweet Peppers (Colours may vary) x3",
+    "known_price": 1.99
+   },
+   "asda": {
+    "agrees": true,
+    "price": 1.79,
+    "pack": 3,
+    "loyalty": null,
+    "basis": "compare",
+    "src": "https://www.trolley.co.uk/product/just-essentials-by-asda-mixed-peppers-colour-may-vary/XRC115",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "JUST ESSENTIALS by ASDA 3 Mixed Peppers",
+    "known_price": 1.79
+   },
+   "aldi": {
+    "agrees": true,
+    "price": 1.75,
+    "pack": 3,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.aldi.co.uk/products/fresh-food/vegetables/k/1588161416978050002",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Nature's Pick Mixed Peppers 3 pack",
+    "known_price": 1.75,
+    "note": "shown as was £1.79"
+   },
+   "lidl": {
+    "pack": 3,
+    "price": 1.75,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "(modelled) Lidl own-label equivalent of Aldi Nature's Pick Mixed Peppers 3 pack",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Nature's Pick Mixed Peppers 3 pack £1.75; Lidl API \"peppers\" no fresh 3 pack"
+   }
+  }
+ },
+ {
+  "id": "beef_mince",
+  "prices": {
+   "tesco": {
+    "agrees": true,
+    "price": 5.05,
+    "pack": 500,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=5%25%20fat%20beef%20mince",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Tesco Lean Beef Steak Mince 5% Fat 500g",
+    "known_price": 5.05,
+    "note": "carries Aldi Price Match badge"
+   },
+   "sainsburys": {
+    "agrees": true,
+    "price": 5.05,
+    "pack": 500,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/5%25%20fat%20beef%20mince",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Sainsbury's British or Irish 5% Fat Beef Mince 500g",
+    "known_price": 5.05,
+    "note": "labelled Aldi price match"
+   },
+   "asda": {
+    "agrees": true,
+    "price": 5.05,
+    "pack": 500,
+    "loyalty": null,
+    "basis": "compare",
+    "src": "https://www.trolley.co.uk/product/asda-lean-beef-mince-typically-less-than-5-fat/WTB095",
+    "seen": "2026-10-26",
+    "conf": "medium",
+    "checked": "2026-10-26",
+    "label": "ASDA Beef Mince <5% Fat 500g",
+    "known_price": 5.05,
+    "note": "price taken from this page's alternatives list; the page's own 400g product is out of stock"
+   },
+   "aldi": {
+    "agrees": true,
+    "price": 5.05,
+    "pack": 500,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.aldi.co.uk/products/fresh-food/beef/k/1588161416978050005",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Ashfields British Lean Beef Steak Mince 5% Fat 500g",
+    "known_price": 5.05
+   },
+   "lidl": {
+    "pack": 500,
+    "price": 5.05,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "(modelled) Lidl own-label equivalent of Aldi Ashfields British Lean Beef Steak Mince 5% Fat 500g",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Ashfields British Lean Beef Steak Mince 5% Fat 500g £5.05; Lidl API only has High Protein Mince 5% 480g (regular £4.79, Lidl Plus £3.83 from 29.10), a different line"
+   }
+  }
+ },
+ {
+  "id": "ginger_paste",
+  "prices": {
+   "tesco": {
+    "agrees": false,
+    "price": 1.95,
+    "pack": 90,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=ginger%20paste",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Tesco Ginger Paste 90G",
+    "known_price": 1.8,
+    "replace": true
+   },
+   "sainsburys": {
+    "agrees": true,
+    "price": 1.75,
+    "pack": 75,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/ginger%20paste",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Sainsbury's Ginger Paste, Inspired to Cook 75g",
+    "known_price": 1.75
+   },
+   "asda": {
+    "agrees": true,
+    "price": 2.21,
+    "pack": 75,
+    "loyalty": null,
+    "basis": "compare",
+    "src": "https://www.trolley.co.uk/product/asda-chopped-ginger/CYE694",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "ASDA Chopped Ginger 75g",
+    "known_price": 2.21
+   },
+   "aldi": {
+    "pack": 75,
+    "price": 0.79,
+    "loyalty": null,
+    "basis": "compare",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Ready, Set…Cook! Ginger Puree 75g",
+    "src": "https://www.trolley.co.uk/product/stonemill-ginger-puree/BRI627",
+    "note": "trolley 'usually £0.79'; trolley marks it out of stock in every store (its Aldi feed looks stale), so last-seen date unknown; not found on aldi.co.uk page 1 of herbs/sauces (later pages robots-blocked)"
+   },
+   "lidl": {
+    "unlisted": true,
+    "note": "specialist paste, not modelled; Lidl API \"ginger\" no match"
+   }
+  }
+ },
+ {
+  "id": "rice",
+  "prices": {
+   "tesco": {
+    "agrees": true,
+    "price": 1.79,
+    "pack": 1000,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=basmati%20rice%201kg",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Tesco Basmati Rice 1Kg",
+    "known_price": 1.79,
+    "note": "carries Aldi Price Match badge"
+   },
+   "sainsburys": {
+    "agrees": true,
+    "price": 1.79,
+    "pack": 1000,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/basmati%20rice%201kg",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Sainsbury's Basmati Rice 1kg",
+    "known_price": 1.79,
+    "note": "labelled Aldi price match"
+   },
+   "asda": {
+    "agrees": true,
+    "price": 1.85,
+    "pack": 1000,
+    "loyalty": null,
+    "basis": "compare",
+    "src": "https://www.trolley.co.uk/product/asda-white-basmati-rice/HXA166",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "ASDA Basmati White Rice 1kg",
+    "known_price": 1.85
+   },
+   "aldi": {
+    "agrees": true,
+    "price": 1.79,
+    "pack": 1000,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.aldi.co.uk/products/food-cupboard",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Worldwide Foods Basmati Rice 1kg",
+    "known_price": 1.79
+   },
+   "lidl": {
+    "pack": 1000,
+    "price": 1.79,
+    "loyalty": null,
+    "basis": "crowd",
+    "seen": "2026-10-17",
+    "conf": "medium",
+    "checked": "2026-10-26",
+    "label": "Basmati Rice 1kg",
+    "src": "https://prices.openfoodfacts.org/api/v1/prices?product_code=20071974&order_by=-date",
+    "note": "Open Prices, Lidl Cardiff (also £1.79 Grimsby 2025-09-28); matches Aldi £1.79"
+   }
+  }
+ },
+ {
+  "id": "honey",
+  "prices": {
+   "tesco": {
+    "agrees": true,
+    "price": 1.19,
+    "pack": 340,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=squeezy%20honey",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Tesco Squeezy Clear Honey 340G",
+    "known_price": 1.19
+   },
+   "sainsburys": {
+    "agrees": true,
+    "price": 1.04,
+    "pack": 340,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/runny%20honey",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Sainsbury's Runny Honey 340g",
+    "known_price": 1.04,
+    "note": "labelled Aldi price match"
+   },
+   "asda": {
+    "agrees": true,
+    "price": 1.04,
+    "pack": 340,
+    "loyalty": null,
+    "basis": "compare",
+    "src": "https://www.trolley.co.uk/product/asda-runny-honey/LSU288",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "ASDA Runny Honey 340g",
+    "known_price": 1.04
+   },
+   "aldi": {
+    "agrees": true,
+    "price": 1.39,
+    "pack": 454,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.aldi.co.uk/products/food-cupboard/jams-spreads-syrups/k/1588161416978053006",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Grandessa Squeezy Honey 454g",
+    "known_price": 1.39,
+    "note": "Everyday Essentials Clear Honey 454g is £0.99"
+   },
+   "lidl": {
+    "pack": 454,
+    "price": 1.39,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "(modelled) Lidl own-label equivalent of Aldi Grandessa Squeezy Honey 454g",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Grandessa Squeezy Honey 454g £1.39; Lidl API \"honey\" no match; Aldi Everyday Essentials Clear Honey 454g is £0.99"
+   }
+  }
+ },
+ {
+  "id": "onion",
+  "prices": {
+   "tesco": {
+    "agrees": true,
+    "price": 0.95,
+    "pack": 6,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=brown%20onions",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Tesco Brown Onions 1Kg",
+    "known_price": 0.95
+   },
+   "sainsburys": {
+    "agrees": true,
+    "price": 0.95,
+    "pack": 6,
+    "loyalty": 0.47,
+    "basis": "shop",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/onions%201kg",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Sainsbury's Onions 1kg",
+    "known_price": 0.95
+   },
+   "asda": {
+    "agrees": true,
+    "price": 0.98,
+    "pack": 6,
+    "loyalty": null,
+    "basis": "compare",
+    "src": "https://www.trolley.co.uk/product/asda-crunchy-fragrant-brown-onions/LMN111",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "ASDA Brown Onions 1kg",
+    "known_price": 0.98
+   },
+   "aldi": {
+    "agrees": false,
+    "price": 0.47,
+    "pack": 6,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.aldi.co.uk/products/fresh-food/vegetables/k/1588161416978050002",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Nature's Pick Brown Onions 1kg",
+    "known_price": 0.59,
+    "note": "no was-price shown; may be a short-term price drop",
+    "replace": true
+   },
+   "lidl": {
+    "agrees": true,
+    "price": 0.95,
+    "pack": 6.25,
+    "loyalty": null,
+    "basis": "crowd",
+    "src": "https://prices.openfoodfacts.org/api/v1/prices?location_id=1908&order_by=-date&size=100",
+    "seen": "2026-09-18",
+    "conf": "medium",
+    "checked": "2026-10-26",
+    "label": "Brown Onions 1kg",
+    "known_price": 0.95,
+    "note": "Open Prices, Lidl Cardiff Station Road; Lidl API today also shows 95p regular / £0.69 Lidl Plus (Pick of the Week, from 29.10)"
+   }
+  }
+ },
+ {
+  "id": "parmesan",
+  "prices": {
+   "tesco": {
+    "agrees": true,
+    "price": 2.49,
+    "pack": 175,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=grana%20padano",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Creamfields Grana Padano Wedge 175G",
+    "known_price": 2.49
+   },
+   "sainsburys": {
+    "agrees": true,
+    "price": 3.3,
+    "pack": 200,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/grana%20padano",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Sainsbury's Grana Padano Cheese 200g",
+    "known_price": 3.3
+   },
+   "asda": {
+    "agrees": true,
+    "price": 2.57,
+    "pack": 160,
+    "loyalty": null,
+    "basis": "compare",
+    "src": "https://www.trolley.co.uk/product/asda-grana-padano/IGS933",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "ASDA Grana Padano 160g",
+    "known_price": 2.57
+   },
+   "aldi": {
+    "agrees": true,
+    "price": 2.75,
+    "pack": 200,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.aldi.co.uk/products/chilled-food/cheese/k/1588161416978051004",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Emporium Italian Grana Padano 200g",
+    "known_price": 2.85,
+    "note": "shown as was £2.85",
+    "replace": true
+   },
+   "lidl": {
+    "pack": 200,
+    "price": 2.75,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "(modelled) Lidl own-label equivalent of Aldi Emporium Italian Grana Padano 200g",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Emporium Italian Grana Padano 200g £2.75; Aldi's price today (was £2.85); Lidl API no grana padano"
+   }
+  }
+ },
+ {
+  "id": "potatoes",
+  "prices": {
+   "tesco": {
+    "agrees": true,
+    "price": 1.32,
+    "pack": 2000,
+    "loyalty": 0.99,
+    "basis": "shop",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=potatoes%202kg",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Tesco All Rounder Potatoes 2Kg",
+    "known_price": 1.32,
+    "note": "Clubcard 99p to 02/11/2026"
+   },
+   "sainsburys": {
+    "agrees": true,
+    "price": 1.32,
+    "pack": 2000,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/white%20potatoes%202kg",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Sainsbury's 2kg White Potatoes",
+    "known_price": 1.32
+   },
+   "asda": {
+    "agrees": true,
+    "price": 1.8,
+    "pack": 2000,
+    "loyalty": null,
+    "basis": "compare",
+    "src": "https://www.trolley.co.uk/product/asda-light-fluffy-maris-piper-potatoes/MYP835",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "ASDA Light & Fluffy Maris Piper Potatoes 2kg",
+    "known_price": 1.8
+   },
+   "aldi": {
+    "agrees": null,
+    "skipped": true,
+    "note": "no second source: white 2kg not on aldi.co.uk vegetables page 1 (pages 2-5 robots-blocked); Tesco All Rounder 2kg has no Aldi Price Match badge; no trolley page found"
+   },
+   "lidl": {
+    "pack": 2000,
+    "price": 1.32,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "(modelled) Lidl own-label equivalent of Aldi Nature's Pick White Potatoes 2kg",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Nature's Pick White Potatoes 2kg £1.32; Lidl API \"potatoes\" no white 2kg"
+   }
+  }
+ },
+ {
+  "id": "milk",
+  "prices": {
+   "tesco": {
+    "agrees": true,
+    "price": 1.75,
+    "pack": 2272,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=semi%20skimmed%20milk%204%20pints",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Tesco British Semi Skimmed Milk 2.272L, 4 Pints",
+    "known_price": 1.75
+   },
+   "sainsburys": {
+    "agrees": true,
+    "price": 1.65,
+    "pack": 2272,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/semi%20skimmed%20milk%204%20pint",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Sainsbury's British Semi Skimmed Milk 2.27L (4 pint)",
+    "known_price": 1.65,
+    "note": "labelled Aldi price match"
+   },
+   "asda": {
+    "agrees": true,
+    "price": 1.65,
+    "pack": 2272,
+    "loyalty": null,
+    "basis": "compare",
+    "src": "https://www.trolley.co.uk/product/asda-semi-skimmed-milk/UCW265",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "ASDA British Milk Semi Skimmed 4pts",
+    "known_price": 1.65
+   },
+   "aldi": {
+    "agrees": true,
+    "price": 1.65,
+    "pack": 2272,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.aldi.co.uk/products/chilled-food/milk/k/1588161416978051001",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Cowbelle Semi Skimmed Milk 1.7% Fat 2.272l",
+    "known_price": 1.65,
+    "note": "trolley's Aldi price-index page still shows £1.45 (stale)"
+   },
+   "lidl": {
+    "pack": 2272,
+    "price": 1.65,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "(modelled) Lidl own-label equivalent of Aldi Cowbelle Semi Skimmed Milk 1.7% Fat 2.272l",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Cowbelle Semi Skimmed Milk 1.7% Fat 2.272l £1.65; Lidl API \"milk\" no fresh milk"
+   }
+  }
+ },
+ {
+  "id": "greek_yogurt",
+  "prices": {
+   "tesco": {
+    "agrees": true,
+    "price": 1.15,
+    "pack": 500,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=greek%20style%20yogurt",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Tesco Greek Style Yogurt 500G",
+    "known_price": 1.15
+   },
+   "sainsburys": {
+    "agrees": true,
+    "price": 1.15,
+    "pack": 500,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/greek%20style%20yogurt",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Sainsbury's Greek Style Natural Yogurt 500g",
+    "known_price": 1.15,
+    "note": "fat-free 500g is 95p (Aldi price match)"
+   },
+   "asda": {
+    "agrees": true,
+    "price": 1.15,
+    "pack": 500,
+    "loyalty": null,
+    "basis": "compare",
+    "src": "https://www.trolley.co.uk/product/asda-greek-style-yogurt/EUJ912",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "ASDA Creamy Greek Style Yogurt 500g",
+    "known_price": 1.15
+   },
+   "aldi": {
+    "agrees": true,
+    "price": 0.95,
+    "pack": 500,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.aldi.co.uk/products/chilled-food/yogurts/k/1588161416978051005",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Brooklea Fat Free Greek Style Yogurt 500g",
+    "known_price": 0.95
+   },
+   "lidl": {
+    "pack": 500,
+    "price": 0.95,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "(modelled) Lidl own-label equivalent of Aldi Brooklea Fat Free Greek Style Yogurt 500g",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Brooklea Fat Free Greek Style Yogurt 500g £0.95; Lidl API only has Eridanous Greek Yogurt 500g £1.99 (Greek themed week, not everyday)"
+   }
+  }
+ },
+ {
+  "id": "cornflour",
+  "prices": {
+   "tesco": {
+    "agrees": true,
+    "price": 2.55,
+    "pack": 500,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=cornflour",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Tesco Cornflour 500g",
+    "known_price": 2.55
+   },
+   "sainsburys": {
+    "agrees": true,
+    "price": 2.65,
+    "pack": 500,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/cornflour",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Sainsbury's Cornflour 500g",
+    "known_price": 2.65
+   },
+   "asda": {
+    "agrees": true,
+    "price": 1.03,
+    "pack": 250,
+    "loyalty": null,
+    "basis": "compare",
+    "src": "https://www.trolley.co.uk/product/asda-lets-cook-cornflour/SAA169",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "BAKE by ASDA Cornflour 250g",
+    "known_price": 1.03
+   },
+   "aldi": {
+    "agrees": true,
+    "price": 1.35,
+    "pack": 400,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.aldi.co.uk/products/food-cupboard/sugar-home-baking/k/1588161416978053011",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "The Pantry Cornflour 400g",
+    "known_price": 1.35
+   },
+   "lidl": {
+    "pack": 400,
+    "price": 1.35,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "(modelled) Lidl own-label equivalent of Aldi The Pantry Cornflour 400g",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi The Pantry Cornflour 400g £1.35; Lidl API \"cornflour\" no match"
+   }
+  }
+ },
+ {
+  "id": "smoked_paprika",
+  "prices": {
+   "tesco": {
+    "agrees": true,
+    "price": 1,
+    "pack": 48,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=smoked%20paprika",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Tesco Smoked Paprika 48G",
+    "known_price": 1
+   },
+   "sainsburys": {
+    "agrees": true,
+    "price": 1.15,
+    "pack": 44,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/smoked%20paprika",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Sainsbury's Smoked Paprika 44g",
+    "known_price": 1.15
+   },
+   "asda": {
+    "agrees": true,
+    "price": 0.95,
+    "pack": 45,
+    "loyalty": null,
+    "basis": "compare",
+    "src": "https://www.trolley.co.uk/product/asda-smoked-paprika-45gr/OYE869",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "COOK by ASDA Smoked Paprika 45g",
+    "known_price": 0.95
+   },
+   "aldi": {
+    "agrees": true,
+    "price": 0.69,
+    "pack": 40,
+    "loyalty": null,
+    "basis": "compare",
+    "src": "https://www.trolley.co.uk/product/ready-set-cook-smoked-paprika/AFK059",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "Ready, Set…Cook! Smoked Paprika 40g",
+    "known_price": 0.69,
+    "note": "trolley 'usually £0.69'; trolley marks it out of stock everywhere (its Aldi feed looks stale), last-seen date not shown"
+   },
+   "lidl": {
+    "unlisted": true,
+    "note": "spice, not modelled; Lidl API \"paprika\" no match"
+   }
+  }
+ },
+ {
+  "id": "stock_cubes",
+  "prices": {
+   "tesco": {
+    "agrees": true,
+    "price": 1,
+    "pack": 10,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=chicken%20stock%20cubes",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Tesco Chicken Stock Cubes 10 Pack 100g",
+    "known_price": 1
+   },
+   "sainsburys": {
+    "agrees": true,
+    "price": 1.1,
+    "pack": 10,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/chicken%20stock%20cubes",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Sainsbury's Stock Cubes, Chicken 10x10g",
+    "known_price": 1.1
+   },
+   "asda": {
+    "agrees": false,
+    "price": 1.18,
+    "pack": 12,
+    "loyalty": null,
+    "basis": "compare",
+    "src": "https://www.trolley.co.uk/product/asda-chicken-stock-cubes/DOE453",
+    "seen": "2026-10-26",
+    "conf": "medium",
+    "checked": "2026-10-26",
+    "label": "ASDA Chicken Stock Cubes 12 x 10g",
+    "known_price": 1.25,
+    "note": "compare-site reading, not the shop page, so no replace"
+   },
+   "aldi": {
+    "agrees": true,
+    "price": 0.69,
+    "pack": 12,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.aldi.co.uk/products/food-cupboard/sauces-oils-dressings/k/1588161416978053010",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Bramwells Chicken Stock Cubes 120g",
+    "known_price": 0.69
+   },
+   "lidl": {
+    "pack": 12,
+    "price": 0.69,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "(modelled) Lidl own-label equivalent of Aldi Bramwells Chicken Stock Cubes 120g (12 cubes)",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Bramwells Chicken Stock Cubes 120g (12 cubes) £0.69; Lidl API \"stock cubes\" no food results"
+   }
+  }
+ },
+ {
+  "id": "spinach",
+  "prices": {
+   "tesco": {
+    "agrees": true,
+    "price": 1.3,
+    "pack": 250,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=baby%20spinach",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Tesco Baby Spinach 250G",
+    "known_price": 1.3
+   },
+   "sainsburys": {
+    "agrees": true,
+    "price": 1.5,
+    "pack": 200,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/baby%20spinach",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Sainsbury's Baby Leaf Spinach 200g",
+    "known_price": 1.5,
+    "note": "Nectar: buy 3 get cheapest free"
+   },
+   "asda": {
+    "agrees": true,
+    "price": 1,
+    "pack": 180,
+    "loyalty": null,
+    "basis": "compare",
+    "src": "https://www.trolley.co.uk/product/asda-mild-tender-baby-spinach/XZZ370",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "ASDA Mild & Tender Baby Spinach 180g",
+    "known_price": 1
+   },
+   "aldi": {
+    "agrees": true,
+    "price": 1.09,
+    "pack": 240,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.aldi.co.uk/products/fresh-food/vegetables/k/1588161416978050002",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Nature's Pick Baby Spinach 240g",
+    "known_price": 1.09
+   },
+   "lidl": {
+    "pack": 240,
+    "price": 1.09,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "(modelled) Lidl own-label equivalent of Aldi Nature's Pick Baby Spinach 240g",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Nature's Pick Baby Spinach 240g £1.09; Lidl API \"spinach\" no bagged spinach"
+   }
+  }
+ },
+ {
+  "id": "cherry_tomatoes",
+  "prices": {
+   "tesco": {
+    "agrees": true,
+    "price": 1,
+    "pack": 300,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=cherry%20tomatoes",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Tesco Cherry Tomatoes 300g",
+    "known_price": 1
+   },
+   "sainsburys": {
+    "agrees": true,
+    "price": 1,
+    "pack": 330,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/cherry%20tomatoes",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Sainsbury's 330g Cherry Tomatoes",
+    "known_price": 1
+   },
+   "asda": {
+    "agrees": true,
+    "price": 0.97,
+    "pack": 300,
+    "loyalty": null,
+    "basis": "compare",
+    "src": "https://www.trolley.co.uk/product/asda-crunchy-juicy-cherry-tomatoes/CLH647",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "ASDA Crunchy & Juicy Cherry Tomatoes 300g",
+    "known_price": 0.97
+   },
+   "aldi": {
+    "agrees": false,
+    "price": 0.95,
+    "pack": 330,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.aldi.co.uk/products/fresh-food/vegetables/k/1588161416978050002",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Nature's Pick Cherry Tomatoes 330g",
+    "known_price": 0.89,
+    "replace": true
+   },
+   "lidl": {
+    "pack": 330,
+    "price": 0.95,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "(modelled) Lidl own-label equivalent of Aldi Nature's Pick Cherry Tomatoes 330g",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Nature's Pick Cherry Tomatoes 330g £0.95; Aldi's price today; Lidl API no fresh cherry tomatoes"
+   }
+  }
+ },
+ {
+  "id": "sesame_oil",
+  "prices": {
+   "tesco": {
+    "agrees": true,
+    "price": 2.65,
+    "pack": 250,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=sesame%20oil",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Tesco Toasted Sesame Oil 250ml",
+    "known_price": 2.65
+   },
+   "sainsburys": {
+    "agrees": true,
+    "price": 2.75,
+    "pack": 250,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/sesame%20oil",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Sainsbury's Sesame Oil, Toasted 250ml",
+    "known_price": 2.75
+   },
+   "asda": {
+    "agrees": true,
+    "price": 2.64,
+    "pack": 250,
+    "loyalty": null,
+    "basis": "compare",
+    "src": "https://www.trolley.co.uk/product/asda-sesame-seed-oil/ETR406",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "ASDA Cook Sesame Oil 250ml",
+    "known_price": 2.64
+   },
+   "aldi": {
+    "unlisted": true,
+    "note": "not on aldi.co.uk sauces/oils/dressings page 1 (pages 2-5 robots-blocked); no trolley Aldi product found; web search found none"
+   },
+   "lidl": {
+    "unlisted": true,
+    "note": "world-food oil, not modelled; Lidl API \"sesame oil\" only Eridanous Sesame Paste"
+   }
+  }
+ },
+ {
+  "id": "salmon",
+  "prices": {
+   "tesco": {
+    "agrees": true,
+    "price": 4.9,
+    "pack": 2,
+    "loyalty": 4,
+    "basis": "shop",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=salmon%20fillets",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Tesco 2 Boneless Salmon Fillets 260G",
+    "known_price": 4.9,
+    "note": "Clubcard £4.00 to 17/11/2026"
+   },
+   "sainsburys": {
+    "agrees": true,
+    "price": 4.95,
+    "pack": 2,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/salmon%20fillets",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Sainsbury's Skin on ASC Scottish Salmon Fillets x2 240g",
+    "known_price": 4.95
+   },
+   "asda": {
+    "agrees": null,
+    "skipped": true,
+    "note": "no second source: no trolley page found for ASDA 2 Boneless Salmon Fillets 260g; ASDA Flavoursome 2 Salmon Fillets 240g (trolley LFK247) is out of stock everywhere with no price"
+   },
+   "aldi": {
+    "agrees": true,
+    "price": 3.59,
+    "pack": 2,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.aldi.co.uk/products/fresh-food/fish/k/1588161416978050011",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "The Fishmonger Boneless Salmon Fillets 2 Pack 240g",
+    "known_price": 3.59,
+    "note": "4 pack 480g is £6.85"
+   },
+   "lidl": {
+    "pack": 4,
+    "price": 5.99,
+    "loyalty": null,
+    "basis": "shop",
+    "seen": "2026-10-26",
+    "conf": "medium",
+    "checked": "2026-10-26",
+    "label": "Lighthouse Bay Salmon Fillets 4 pack 440g",
+    "src": "https://www.lidl.co.uk/q/api/search?assortment=GB&locale=en_GB&version=v2.0.0&q=salmon%20fillets",
+    "note": "Lidl API, Pick of the Week (in store from 29.10, price valid 20.10-04.11); no saving shown but may be a promotional price; no 2-pack listed"
+   }
+  }
+ },
+ {
+  "id": "red_onion",
+  "prices": {
+   "tesco": {
+    "agrees": true,
+    "price": 1,
+    "pack": 3,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=red%20onions",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Tesco Red Onions 3 Pack Minimum",
+    "known_price": 1
+   },
+   "sainsburys": {
+    "agrees": true,
+    "price": 0.95,
+    "pack": 3,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/onions%201kg",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Sainsbury's Red Onions x3",
+    "known_price": 0.95
+   },
+   "asda": {
+    "agrees": true,
+    "price": 0.95,
+    "pack": 3,
+    "loyalty": null,
+    "basis": "compare",
+    "src": "https://www.trolley.co.uk/product/asda-3-sweet-crunchy-red-onions/OTC765",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "ASDA 3 Sweet & Crunchy Red Onions",
+    "known_price": 0.95
+   },
+   "aldi": {
+    "agrees": true,
+    "price": 0.95,
+    "pack": 6,
+    "loyalty": null,
+    "basis": "match",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=red%20onions",
+    "seen": "2026-10-26",
+    "conf": "medium",
+    "checked": "2026-10-26",
+    "label": "Nature's Pick Red Onions 1kg (via Tesco Aldi Price Match)",
+    "known_price": 0.95,
+    "note": "Tesco Red Onions Pack 1Kg £0.95 carries the Aldi Price Match badge; same pack"
+   },
+   "lidl": {
+    "pack": 6,
+    "price": 0.95,
+    "loyalty": null,
+    "basis": "model",
+    "seen": "2026-10-26",
+    "conf": "low",
+    "checked": "2026-10-26",
+    "label": "(modelled) Lidl own-label equivalent of Aldi Nature's Pick Red Onions 1kg",
+    "src": "https://lidl.co.uk/static/assets/GrocerSuper33AlertMay24-957520.pdf",
+    "note": "matched Aldi Nature's Pick Red Onions 1kg £0.95; supporting: Lidl API Pink Onions 750g £0.79 (Pick of the Week); Open Prices Lidl Cardiff red onions £0.95 (2026-05-31, pack unknown)"
+   }
+  }
+ },
+ {
+  "id": "mixed_herbs",
+  "prices": {
+   "tesco": {
+    "agrees": true,
+    "price": 1,
+    "pack": 18,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=mixed%20herbs",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Tesco Mixed Herbs 18G",
+    "known_price": 1
+   },
+   "sainsburys": {
+    "agrees": true,
+    "price": 1.15,
+    "pack": 14,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/mixed%20herbs",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Sainsbury's Mixed Herbs 14g",
+    "known_price": 1.15
+   },
+   "asda": {
+    "agrees": true,
+    "price": 0.95,
+    "pack": 12,
+    "loyalty": null,
+    "basis": "compare",
+    "src": "https://www.trolley.co.uk/product/asda-mixed-herbs/HNU956",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "COOK by ASDA Mixed Herbs 12g",
+    "known_price": 0.95
+   },
+   "aldi": {
+    "agrees": true,
+    "price": 0.59,
+    "pack": 11,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.aldi.co.uk/products/food-cupboard/herbs-spices/k/1588161416978053007",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Ready, Set…Cook! Mixed Herbs 11g",
+    "known_price": 0.59
+   },
+   "lidl": {
+    "unlisted": true,
+    "note": "dried herbs, not modelled; Lidl API \"mixed herbs\" no match"
+   }
+  }
+ },
+ {
+  "id": "spring_onions",
+  "prices": {
+   "tesco": {
+    "agrees": true,
+    "price": 0.65,
+    "pack": 8,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=spring%20onions",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Tesco Bunched Spring Onions 100G",
+    "known_price": 0.65,
+    "note": "carries Aldi Price Match badge"
+   },
+   "sainsburys": {
+    "agrees": true,
+    "price": 0.65,
+    "pack": 8,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/spring%20onion",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Sainsbury's Spring Onions Bunch 100g",
+    "known_price": 0.65
+   },
+   "asda": {
+    "agrees": true,
+    "price": 0.68,
+    "pack": 8,
+    "loyalty": null,
+    "basis": "compare",
+    "src": "https://www.trolley.co.uk/product/asda-fragrant-crunchy-spring-onions/UTJ806",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "ASDA Fragrant & Crunchy Spring Onions",
+    "known_price": 0.68,
+    "note": "trolley does not state the size of the £0.68 variant; 125g variant is £0.82"
+   },
+   "aldi": {
+    "agrees": true,
+    "price": 0.65,
+    "pack": 8,
+    "loyalty": null,
+    "basis": "match",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=spring%20onions",
+    "seen": "2026-10-26",
+    "conf": "medium",
+    "checked": "2026-10-26",
+    "label": "Nature's Pick Spring Onions 100g (via Tesco Aldi Price Match)",
+    "known_price": 0.65,
+    "note": "Tesco Bunched Spring Onions 100G £0.65 carries the Aldi Price Match badge"
+   },
+   "lidl": {
+    "agrees": true,
+    "price": 0.65,
+    "pack": 8,
+    "loyalty": 0.45,
+    "basis": "shop",
+    "src": "https://www.lidl.co.uk/q/api/search?assortment=GB&locale=en_GB&version=v2.0.0&q=cherry%20tomatoes",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Spring Onions (per bunch)",
+    "known_price": 0.65,
+    "note": "Lidl API listing (Pick of the Week, in store from 08.10): regular £0.65, Lidl Plus £0.45; same channel as the known price, no independent crowd/news reading found"
+   }
+  }
+ },
+ {
+  "id": "chilli_flakes",
+  "prices": {
+   "tesco": {
+    "agrees": true,
+    "price": 1,
+    "pack": 28,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=crushed%20chillies",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Tesco Crushed Chillies 28G",
+    "known_price": 1
+   },
+   "sainsburys": {
+    "agrees": true,
+    "price": 1.15,
+    "pack": 32,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/crushed%20chillies",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Sainsbury's Crushed Chillies 32g",
+    "known_price": 1.15
+   },
+   "asda": {
+    "agrees": true,
+    "price": 0.95,
+    "pack": 28,
+    "loyalty": null,
+    "basis": "compare",
+    "src": "https://www.trolley.co.uk/product/asda-crushed-chillies/BAA168",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "COOK by ASDA Crushed Chillies 28g",
+    "known_price": 0.95,
+    "note": "trolley does not state pack size"
+   },
+   "aldi": {
+    "agrees": true,
+    "price": 0.79,
+    "pack": 29,
+    "loyalty": null,
+    "basis": "shop",
+    "src": "https://www.aldi.co.uk/products/food-cupboard/herbs-spices/k/1588161416978053007",
+    "seen": "2026-10-26",
+    "conf": "high",
+    "checked": "2026-10-26",
+    "label": "Ready, Set…Cook! Crushed Chillies 29g",
+    "known_price": 0.79
+   },
+   "lidl": {
+    "unlisted": true,
+    "note": "spice, not modelled; Lidl API \"chilli\" no match"
+   }
+  }
+ }
+]
