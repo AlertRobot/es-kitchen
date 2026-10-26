@@ -53,9 +53,10 @@ window.Store = !configured ? { kind: 'unconfigured', onUser(cb) { setTimeout(() 
     if (u.verified === false) return 'verify';
     const r = doc(db, 'allowed', String(u.email).toLowerCase());
     // on a weak signal (in the shop) don't hold the app up: after a few seconds use the answer saved on this phone
-    const late = new Promise((res, rej) => setTimeout(() => rej({ code: 'timeout' }), 4000));
-    try { return (await Promise.race([getDocFromServer(r), late])).exists() ? 'yes' : 'no'; }
+    let t = 0; const late = new Promise((res, rej) => { t = setTimeout(() => rej({ code: 'timeout' }), 4000); });
+    try { const s = await Promise.race([getDocFromServer(r), late]); clearTimeout(t); return s.exists() ? 'yes' : 'no'; }
     catch (e) {
+      clearTimeout(t);
       if (e && e.code === 'permission-denied') return 'no';
       try { return (await getDoc(r)).exists() ? 'yes' : 'unknown'; } catch (x) { return 'unknown'; }
     }
