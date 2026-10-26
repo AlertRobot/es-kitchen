@@ -1682,7 +1682,7 @@ function backupSummary() {
 }
 async function collectDocs() {
   const out = [];
-  for (const c of ['people', 'weeks', 'recipes', 'ingredients', 'ratings', 'config']) {
+  for (const c of ['people', 'weeks', 'recipes', 'ingredients', 'ratings', 'shops', 'config']) {
     const ds = await Store.list(c);
     ds.forEach(d => { if (c === 'config' && d.id === 'backup') return; out.push({ path: c + '/' + d.id, data: d.data }); });
   }
@@ -1730,6 +1730,8 @@ function buildTables(docs, withLib) {
   coll('ratings').forEach(({ id, data }) => Object.keys(data).forEach(uid => RA.rows.push([hid, id, rname(id), (hh.memberNames || {})[uid] || uid, typeof data[uid] === 'object' ? data[uid].n || data[uid].stars || cellText(data[uid]) : data[uid]])));
   const MR = t('MyRecipes', ['household_id', 'recipe_id', 'name', 'meal', 'cuisine', 'protein', 'minutes', 'ingredients', 'method', 'json']);
   coll('recipes').forEach(({ id, data: r }) => MR.rows.push([hid, id, r.title || '', r.meal || 'dinner', r.cuisine || '', r.protein || '', r.time || '', recipeLines(r), recipeMethod(r), cellText(r)]));
+  const SL = t('Shops', ['household_id', 'shop_id', 'date', 'shop', 'amount', 'paid_by', 'split', 'week_start', 'from', 'budgie', 'note']);
+  coll('shops').sort((a, b) => String(a.data.date || '').localeCompare(String(b.data.date || ''))).forEach(({ id, data: x }) => SL.rows.push([hid, id, x.date || '', SHOP_KEY_NAMES[x.shop] || x.shop || '', Number(x.amount) || 0, (S.people.find(p => p.id === x.paidBy) || {}).name || x.paidBy || '', x.split === 'half' ? 'half each' : '', x.week || '', x.source || '', (x.budgie && x.budgie.state) || '', x.note || '']));
   const PO = t('PriceOverrides', ['household_id', 'ingredient_id', 'ingredient', 'json']);
   coll('ingredients').forEach(({ id, data }) => PO.rows.push([hid, id, data.name || ingName(id), cellText(data)]));
   const D = t('Docs', ['household_id', 'path', 'part', 'parts', 'json', 'backed_up_at']);
@@ -1798,7 +1800,7 @@ async function saveBackupFile(share) {
   } catch (e) { if (!(e && e.name === 'AbortError')) toast('Couldn’t make the file: ' + ((e && e.message) || e)); }
 }
 function stageRestore(obj, source) {
-  const docs = (obj && Array.isArray(obj.docs) ? obj.docs : []).filter(d => d && typeof d.path === 'string' && d.data && typeof d.data === 'object' && /^(people|weeks|recipes|ingredients|ratings|config)\/[^/]+$/.test(d.path) && d.path !== 'config/backup');
+  const docs = (obj && Array.isArray(obj.docs) ? obj.docs : []).filter(d => d && typeof d.path === 'string' && d.data && typeof d.data === 'object' && /^(people|weeks|recipes|ingredients|ratings|shops|config)\/[^/]+$/.test(d.path) && d.path !== 'config/backup');
   if (!docs.length) { toast('That doesn’t look like a Peckish backup.'); return; }
   S.pendingRestore = { docs, at: obj.exported || obj.at || '', by: obj.by || '', source, from: (obj.household && obj.household.name) || '' };
   S.tab = 'settings'; S.setPage = 'backup'; render(); window.scrollTo(0, 0);
@@ -1828,7 +1830,7 @@ function setBackup() {
   const b = S.backup || {}, on = !!b.url, pr = S.pendingRestore;
   let out = '';
   if (pr) out += '<section class="panel" style="border-color:var(--warn)"><h2>Restore this backup?</h2><p class="small">From ' + h(pr.source) + (pr.at ? ', saved ' + h(fmtWhen(pr.at)) : '') + (pr.by ? ' by ' + h(pr.by) : '') + (pr.from ? ' (' + h(pr.from) + ')' : '') + '. It has ' + pr.docs.length + ' records: ' +
-    ['people', 'weeks', 'recipes', 'ratings'].map(c => { const n = pr.docs.filter(d => d.path.startsWith(c + '/')).length; return n ? n + ' ' + ({ people: 'people', weeks: 'weeks', recipes: 'own recipes', ratings: 'ratings' })[c] : ''; }).filter(Boolean).join(', ') + '.</p>' +
+    ['people', 'weeks', 'recipes', 'ratings', 'shops'].map(c => { const n = pr.docs.filter(d => d.path.startsWith(c + '/')).length; return n ? n + ' ' + ({ people: 'people', weeks: 'weeks', recipes: 'own recipes', ratings: 'ratings', shops: 'logged shops' })[c] : ''; }).filter(Boolean).join(', ') + '.</p>' +
     '<p class="small muted">Anything in the backup replaces what’s in the app now (for both of you). Anything added since the backup stays.</p><div class="row wrap"><button class="btn primary" data-act="restore-yes" ' + (S.restoring ? 'disabled' : '') + '>' + (S.restoring ? '<span class="spinner sm" aria-hidden="true"></span> Restoring…' : 'Restore') + '</button><button class="btn" data-act="restore-no">Cancel</button></div></section>';
   const failed = b.lastOk === false && b.lastTry && (!b.last || b.lastTry > b.last);
   out += '<section class="panel"><h2>Google Sheets</h2>';

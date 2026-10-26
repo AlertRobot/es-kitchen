@@ -20,7 +20,7 @@ var APP_URL = "https://alertrobot.github.io/es-kitchen/";
 // Tab order and the first column that identifies a household (or "library" for the shared recipe library).
 var TABLES = [
   "Households", "Accounts", "People", "Weeks", "BreakfastLunch", "Shopping", "Pantry", "Settings",
-  "Ratings", "MyRecipes", "PriceOverrides", "Recipes", "Ingredients", "Docs"
+  "Ratings", "MyRecipes", "PriceOverrides", "Shops", "Recipes", "Ingredients", "Docs"
 ];
 var LOG_TAB = "BackupLog";
 var README_TAB = "About";
@@ -169,6 +169,7 @@ function about_(ss) {
     ["Ratings: star ratings per recipe and person"],
     ["MyRecipes: recipes you've added or edited"],
     ["PriceOverrides: prices you've changed"],
+    ["Shops: food shops you've logged paying for (in Peckish or Budgie)"],
     ["Recipes and Ingredients: the full built-in recipe library with ingredients, method, nutrition and supermarket prices"],
     ["Docs: the raw records, used by the app to restore a household exactly"],
     ["BackupLog: when each backup ran"]

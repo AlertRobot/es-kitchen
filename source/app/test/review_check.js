@@ -68,6 +68,32 @@ const CAL = { household: { dinnerTime: '19:00' }, people: [{ id: 'ethan', name: 
     await A.click('[data-act="tab"][data-v="recipes"]'); await A.click('[data-act="open-recipe"]', 300); await A.click('#sheet [data-act="add-to-day"][data-v="0"]', 300); await A.click('[data-act="sheet-back"]');
     ok(A.night(0).guests === 2, 'guests: adding a recipe to that night from Recipes keeps the guests');
   }
+  // ---- 4. logged shops are in the backup, and come back on a restore ----
+  {
+    let last = null;
+    const sheet = async (url, opt) => {
+      if (!/script\.google\.com/.test(url)) return { ok: true, json: async () => JSON.parse(lib) };
+      const b = JSON.parse(opt.body); let r = { ok: true, sheetUrl: 'https://docs.google.com/x' };
+      if (b.action === 'backup') last = b;
+      if (b.action === 'restore') { const parts = {}; last.tables.Docs.rows.forEach(x => (parts[x[1]] = parts[x[1]] || []).push([x[2], x[4]])); r = { ok: true, docs: Object.keys(parts).map(p => ({ path: p, data: JSON.parse(parts[p].sort((a, b) => a[0] - b[0]).map(y => y[1]).join('')) })), at: '2026-10-26T10:00:00Z', by: 'Ethan' }; }
+      return { ok: true, text: async () => JSON.stringify(r) };
+    };
+    const A = boot({ fetch: sheet }); await A.start(); await A.click('[data-act="fill"]', 6000);
+    await A.click('[data-act="tab"][data-v="shop"]'); await A.click('[data-act="shop-view"][data-v="cost"]');
+    A.d.querySelector('#ls-amt').value = '52.10'; await A.submit('[data-form="logshop"]', 500);
+    const shopKey = [...A.w.__docs.keys()].find(k => k.includes('/shops/'));
+    ok(!!shopKey, 'backup: the shop is logged');
+    await A.click('[data-act="tab"][data-v="settings"]'); await A.click('[data-act="set-page"][data-v="backup"]');
+    A.d.querySelector('#bk-url').value = 'https://script.google.com/macros/s/abc/exec'; A.d.querySelector('#bk-key').value = 'k';
+    await A.submit('[data-form="backup-connect"]', 2000);
+    ok(last && last.tables.Docs.rows.some(r => String(r[1]).startsWith('shops/')), 'backup: logged shops are in the raw records');
+    ok(last && last.tables.Shops && last.tables.Shops.rows.length === 1 && last.tables.Shops.rows[0][4] === 52.1, 'backup: and in their own Shops tab');
+    A.w.__docs.delete(shopKey);
+    await A.click('[data-act="restore-sheet"]', 600);
+    ok(/1 logged shops/.test(A.d.querySelector('#app').textContent), 'restore: says the shop is in the backup');
+    await A.click('[data-act="restore-yes"]', 800);
+    ok(A.w.__docs.has(shopKey) && A.w.__docs.get(shopKey).amount === 52.1, 'restore: the shop comes back');
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();
