@@ -10,7 +10,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="color-scheme" content="light dark">
 <meta name="apple-mobile-web-app-title" content="Peckish">
-<script>try { var L = JSON.parse(localStorage.getItem("esk-look") || "{}"); if (L.palette) document.documentElement.dataset.palette = L.palette; if (L.theme) document.documentElement.dataset.theme = L.theme; if (L.size) document.documentElement.dataset.size = L.size; } catch (e) {}</script>
+<script>try { var L = JSON.parse(localStorage.getItem("esk-look") || "{}"); if (L.palette) document.documentElement.dataset.palette = L.palette; if (L.theme) document.documentElement.dataset.theme = L.theme; if (L.size) document.documentElement.dataset.size = L.size; if (L.oled && !/^(empyrean|dreamland|starship|neon|mars|hearth|frost)$/.test(L.palette || "")) document.documentElement.dataset.oled = "1"; } catch (e) {}</script>
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
@@ -161,8 +161,8 @@ h3 { font-size: 1.05rem; font-weight: 600; }
 .item.done .iname { text-decoration: line-through; color: var(--muted); }
 .item .iname { font-weight: 700; }
 .item .more { background: none; border: 0; padding: 6px 0; text-align: right; min-height: 44px; }
-.shopprices { grid-column: 2 / 4; display: grid; gap: 4px; font-size: 0.88rem; padding: 6px 10px; background: var(--surface-2); border-radius: var(--r-sm); }
-.shopprices div { display: flex; justify-content: space-between; gap: 8px; }
+.shopprices { grid-column: 2 / 4; display: grid; grid-template-columns: minmax(0, 1fr); gap: 4px; font-size: 0.88rem; padding: 6px 10px; background: var(--surface-2); border-radius: var(--r-sm); min-width: 0; }
+.shopprices div { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 8px; }
 .compare { display: grid; gap: 10px; }
 .cmp { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 10px; align-items: baseline; }
 .cmp .bar { grid-column: 1 / 3; height: 10px; border-radius: 5px; background: var(--surface-2); overflow: hidden; }

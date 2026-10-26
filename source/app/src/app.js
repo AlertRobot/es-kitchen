@@ -387,7 +387,7 @@ window.addEventListener('popstate', () => {
 });
 
 function gateScreen() {
-  if (Store.kind === 'unconfigured') return '<div class="auth"><div class="brand"><span class="brand-mark" aria-hidden="true"><img src="icons/icon.svg" alt=""></span><h1>Almost there</h1><p class="muted">This copy of E&amp;S Kitchen isn\u2019t connected to a database yet.</p></div><section class="panel"><p>Open <b>firebase-config.js</b> in your GitHub repository, paste in your Firebase settings (Firebase \u2192 Project settings \u2192 Your apps \u2192 Config), commit, then reload this page.</p></section></div>';
+  if (Store.kind === 'unconfigured') return '<div class="auth"><div class="brand"><span class="brand-mark" aria-hidden="true"><img src="icons/icon.svg" alt=""></span><h1>Almost there</h1><p class="muted">This copy of Peckish isn\u2019t connected to a database yet.</p></div><section class="panel"><p>Open <b>firebase-config.js</b> in your GitHub repository, paste in your Firebase settings (Firebase \u2192 Project settings \u2192 Your apps \u2192 Config), commit, then reload this page.</p></section></div>';
   if (!S.authReady) return '<div class="empty-state"><div class="spinner" aria-hidden="true"></div></div>';
   if (!S.user) return renderAuth();
   if (S.userDoc === undefined) return '<div class="empty-state"><div class="spinner" aria-hidden="true"></div><p class="muted">Opening your kitchen…</p>' +
@@ -1007,7 +1007,7 @@ function renderShop() {
   if (view === 'cost') return out + shopLogPanel(B) + '<section class="panel"><h2>Waste and cost</h2><div class="grid2">' +
     '<div><div class="label">Dinners cost</div><div class="money big-num">' + fmtMoney(sim.consumed) + '</div><div class="muted small">' + sim.portions + ' portions · ' + fmtMoney(sim.perPortion) + ' each' + (sim.blPortions ? '<br>Breakfasts &amp; lunches ' + fmtMoney(sim.blCost) + ' for ' + sim.blPortions : '') + '</div></div>' +
     '<div><div class="label">Likely unused</div><div class="money big-num" style="color:' + (sim.wasteValue > 1 ? 'var(--warn)' : 'inherit') + '">' + fmtMoney(sim.wasteValue) + '</div><div class="muted small">' + (Object.keys(sim.waste).length ? Object.keys(sim.waste).length + ' item' + (Object.keys(sim.waste).length > 1 ? 's' : '') : 'nothing') + '</div></div></div>' +
-    (Object.keys(sim.waste).length ? '<div class="leftlist">' + Object.keys(sim.waste).map(id => '<div class="left"><span>' + h(leftText(id, sim.waste[id])) + '<br><button class="linkish small" data-act="use-up" data-v="' + h(id) + '">Find a meal or lunch that uses it</button></span><span class="money">' + fmtMoney(sim.waste[id] * unitPrice(S.ING[id], S.settings.shop, S.settings.useLoyalty !== false)) + '</span></div>').join('') + '</div>' : '') +
+    (Object.keys(sim.waste).length ? '<div class="leftlist">' + Object.keys(sim.waste).map(id => '<div class="left"><span>' + h(leftText(id, sim.waste[id])) + '<br><button class="linkish small" data-act="use-up" data-v="' + h(id) + '">Find a meal or lunch that uses it</button></span><span class="money">' + fmtMoney(sim.waste[id] * unitPrice(S.ING[id], weekShop(), S.settings.useLoyalty !== false)) + '</span></div>').join('') + '</div>' : '') +
     (() => { const n = sim.carryOut.filter(L => S.ING[L.i] && !S.ING[L.i].staple).length; return n ? '<p class="muted small">' + n + ' spare thing' + (n > 1 ? 's carry' : ' carries') + ' into next week, and suggestions there use ' + (n > 1 ? 'them' : 'it') + ' first. <button class="linkish small" data-act="go-left">See what\u2019s left</button></p>' : ''; })() +
     '<p class="muted small">Meal costs include a share of pantry staples. Spare food that keeps or freezes carries into next week and isn’t counted as waste.</p></section>';
   const isTop = row => row.staple;
@@ -2420,7 +2420,6 @@ document.addEventListener('click', e => {
     case 'week-view': S.weekView = v; render(); window.scrollTo(0, 0); break;
     case 'shop-view': S.shopView = v; render(); window.scrollTo(0, 0); break;
     case 'kit-view': S.kitView = v; render(); window.scrollTo(0, 0); break;
-    case 'jump': { const el = document.getElementById(v); if (!el) break; const t = document.querySelector('#app > .top'); window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - (t ? t.offsetHeight : 0) - 8, behavior: 'smooth' }); break; }
     case 'wk-this': S.weekPicked = true; S.weekStart = mondayOf(TODAY); S.confirm = {}; subscribeWeek(); render(); window.scrollTo(0, 0); break;
     case 'wk': S.weekPicked = true; S.weekStart = addDays(S.weekStart, 7 * Number(v)); S.confirm = {}; subscribeWeek(); render(); break;
     case 'fill': doFill(0.6, false); break;
