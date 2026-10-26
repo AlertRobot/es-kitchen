@@ -1,4 +1,4 @@
-# E&S Kitchen
+# Peckish
 
 Meal planner for two: plans the week to use up whole packs, prices the shop at five supermarkets, works offline and syncs live between phones.
 

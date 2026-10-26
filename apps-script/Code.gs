@@ -1,5 +1,5 @@
 /**
- * E&S Kitchen backup: receives backups from the phone app and keeps them in this spreadsheet,
+ * Peckish backup: receives backups from the phone app and keeps them in this spreadsheet,
  * one tab per table. Each household's rows are replaced on every backup; other households' rows are left alone.
  *
  * Setup (once, in the Google account that should own the backup):
@@ -13,6 +13,7 @@
  * household's settings in the app. To change it, run "newKey" and reconnect the app.
  */
 
+var SHEET_ID = ""; // the backup spreadsheet's id (from its address); leave blank when the script is opened from the sheet's Extensions menu
 var WEB_APP_URL = ""; // optional: paste the /exec address here, then run connectLink()
 var APP_URL = "https://alertrobot.github.io/es-kitchen/";
 
@@ -49,12 +50,12 @@ function connectLink() {
   if (!key) throw new Error("Run setup first.");
   if (!/\/exec$/.test(url)) throw new Error("Paste your web app address (ending /exec) into WEB_APP_URL at the top, save, and run again.");
   var payload = Utilities.base64EncodeWebSafe(JSON.stringify({ u: url, k: key }));
-  Logger.log("Open this link on a phone that's signed in to E&S Kitchen:\n" + APP_URL + "#backup=" + payload);
+  Logger.log("Open this link on a phone that's signed in to Peckish:\n" + APP_URL + "#backup=" + payload);
 }
 
 // ---------- web endpoints ----------
 function doGet(e) {
-  return json_({ ok: true, app: "E&S Kitchen backup", note: "Nothing to see here. The app sends backups with POST." });
+  return json_({ ok: true, app: "Peckish backup", note: "Nothing to see here. The app sends backups with POST." });
 }
 function doPost(e) {
   var body = {};
@@ -139,7 +140,7 @@ function restore_(ss, hid) {
 }
 
 // ---------- helpers ----------
-function ss_() { return SpreadsheetApp.getActiveSpreadsheet(); }
+function ss_() { return SHEET_ID ? SpreadsheetApp.openById(SHEET_ID) : SpreadsheetApp.getActiveSpreadsheet(); }
 function sheet_(ss, name) { return ss.getSheetByName(name) || ss.insertSheet(name); }
 function checkKey_(k) {
   var key = PropertiesService.getScriptProperties().getProperty("APP_KEY");
@@ -151,8 +152,8 @@ function about_(ss) {
   var sh = sheet_(ss, README_TAB);
   if (sh.getLastRow() > 0) return;
   var lines = [
-    ["E&S Kitchen backup"],
-    ["This spreadsheet is filled in by the E&S Kitchen app (" + APP_URL + "). Don't edit the tabs by hand: each backup replaces a household's rows."],
+    ["Peckish backup"],
+    ["This spreadsheet is filled in by the Peckish app (" + APP_URL + "). Don't edit the tabs by hand: each backup replaces a household's rows."],
     ["The app backs up once a day and whenever a week is locked in. You can also tap Settings > Backup & restore > Back up now."],
     [""],
     ["Tabs"],
