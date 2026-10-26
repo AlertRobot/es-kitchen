@@ -131,8 +131,12 @@ const signedIn = (name) => ({ 'users/u_ethan': { households: ['h1'], current: 'h
     ok(reads.length === r0 && !shiftsIn('h2').length, 'links: nor your Caledonite shifts');
     await A.act('tab', 'settings', null, 300); await A.act('set-page', 'linked', null, 300);
     ok(!!A.d.querySelector('[data-form="bg-link"]') && !!A.d.querySelector('[data-act="cal-link"]'), 'links: there they show as not linked');
+    ok(/Budgie is linked in Home/.test(A.d.querySelector('#app').textContent), 'links: and it says where Budgie is linked');
+    await A.act('cal-link', null, null, 1500);
+    ok(reads.length > r0 && JSON.stringify(JSON.parse(A.w.localStorage.getItem('peckish.cal'))) === '["h1","h2"]', 'links: Caledonite can be linked here too, without unlinking it at home');
     A.w.__docs.set('users/u_ethan', { ...A.w.__docs.get('users/u_ethan'), current: 'h1' }); await A.w.__refreshMe(); await wait(4500);
     ok(posts.length > n0, 'links: back home, Budgie syncs again');
+    const r1 = reads.length; await A.act('cal-refresh', null, null, 1500); ok(reads.length > r1, 'links: and Caledonite is still linked at home');
     ok(JSON.parse(A.w.localStorage.getItem('peckish.budgie')).hid === 'h1', 'links: the old link was kept for the household it was used in');
   }
   // ---- 3. Budgie: only what Budgie took is marked sent or taken off; the rest wait for next time ----

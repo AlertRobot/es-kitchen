@@ -1299,9 +1299,11 @@ const CAL_TYPES = { long: { start: '07:30', end: '20:00' }, night: { start: '19:
 S.cal = { on: false, user: null, data: null, err: '', busy: false, at: 0 };
 // Caledonite and Budgie stay with the household they were linked in, so another household you're in never gets your
 // shifts, reminders or Budgie food payments. (A link made before this goes with the first household opened.)
+// Caledonite can be linked in each household you choose; Budgie in one (linking it in another moves it)
+function calHids() { const c = LINK.get('cal', false); return Array.isArray(c) ? c : typeof c === 'string' ? [c] : []; }
 function linkScope(hid) {
-  let c = LINK.get('cal', false); if (c === true) { c = hid; LINK.set('cal', hid); }
-  S.cal.on = !!c && c === hid;
+  if (LINK.get('cal', false) === true) LINK.set('cal', [hid]);
+  S.cal.on = calHids().includes(hid);
   if (!S.cal.on) { if (S.cal.unsub) { S.cal.unsub(); S.cal.unsub = null; } S.cal.user = null; S.cal.data = null; S.cal.at = 0; }
   let b = LINK.get('budgie', null); if (b && !b.hid) { b = { ...b, hid }; LINK.set('budgie', b); }
   S.bg.cfg = b && b.hid === hid ? b : null; S.bg.err = ''; S.bg.at = 0;
@@ -1313,10 +1315,10 @@ function calStart() {
 }
 async function calLink() {
   if (!Store.cal) { toast('Linking needs the installed app.'); return; }
-  LINK.set('cal', curHid || true); S.cal.on = true; S.cal.err = ''; calStart();
+  LINK.set('cal', Array.from(new Set(calHids().concat(curHid ? [curHid] : [])))); S.cal.on = true; S.cal.err = ''; calStart();
   try { await Store.cal.signIn(); } catch (e) { S.cal.err = e.message || String(e); schedule(); }
 }
-async function calUnlink() { LINK.set('cal', false); LINK.set('calNotes', null); S.cal.on = false; try { if (Store.cal) await Store.cal.signOut(); } catch (e) {} if (S.cal.unsub) { S.cal.unsub(); S.cal.unsub = null; } S.cal.user = null; S.cal.data = null; schedule(); }
+async function calUnlink() { const rest = calHids().filter(x => x !== curHid); LINK.set('cal', rest.length ? rest : false); LINK.set('calNotes', null); S.cal.on = false; try { if (Store.cal && !rest.length) await Store.cal.signOut(); } catch (e) {} if (S.cal.unsub) { S.cal.unsub(); S.cal.unsub = null; } S.cal.user = null; S.cal.data = null; schedule(); }
 // Peckish person → Caledonite person: by name unless set in Settings → Linked apps
 function calPidFor(p) { const m = (S.settings.calMap || {})[p.id]; if (m) return m === '-' ? null : m; const D = S.cal.data; if (!D) return null; const x = D.people.find(q => (q.name || '').toLowerCase() === (p.name || '').toLowerCase()); return x ? x.id : null; }
 const hm = dt => String(dt.getHours()).padStart(2, '0') + ':' + String(dt.getMinutes()).padStart(2, '0');
@@ -1537,6 +1539,7 @@ function shopLogPanel(B) {
   return out;
 }
 
+function bgElsewhere() { const b = LINK.get('budgie', null); return b && b.hid && b.hid !== curHid ? b.hid : null; }
 function linkedSummary() { return [S.cal.user ? 'Caledonite' : '', S.bg.cfg ? 'Budgie' : ''].filter(Boolean).join(' · ') || 'Caledonite and Budgie'; }
 function setLinked() {
   const D = S.cal.data, R = { cook: true, defrost: true, plates: true, cookAt: '18:00', ...(S.settings.remind || {}) };
@@ -1566,6 +1569,7 @@ function setLinked() {
   if (!S.bg.cfg) {
     out += '<p class="small">Log a food shop here or in Budgie and it shows in both, split half each, so Budgie keeps track of who owes who.</p>' +
       '<p class="small muted">In Budgie, go to Settings, then Linked apps, and tap Link Peckish. Copy the link it makes and paste it here. It only lets Peckish add food shops and see your food budget.</p>' +
+      (bgElsewhere() ? '<p class="note small">Budgie is linked in ' + h(((S.userDoc && S.userDoc.names) || {})[bgElsewhere()] || 'another of your households') + ' on this phone. Linking it here moves it.</p>' : '') +
       '<form class="stack" data-form="bg-link" style="gap:6px"><label class="small" for="bg-url">Your Peckish link from Budgie</label><input class="input" id="bg-url" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="https://alertrobot.github.io/es-kitchen/#connect=…"><button class="btn" type="submit">Link</button></form>' + (S.bg.err ? '<p class="note warn small">' + h(S.bg.err) + '</p>' : '');
   } else {
     const me = bgRows('people').find(q => q.id === S.bg.data.me), mine = bgFoodBudgets(), fb = bgFoodBudget();
