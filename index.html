@@ -397,6 +397,12 @@ details > summary svg { width: 18px; height: 18px; }
 .lockline { display: flex; align-items: center; gap: 8px; min-height: 48px; padding: 0 14px; border-radius: 999px; background: var(--accent-soft); font-size: 0.95rem; }
 .popmenu { margin-top: -10px; }
 .tonight.slim { padding: 10px 12px; gap: 0; }
+.whorow { display: grid; grid-template-columns: 64px 1fr; align-items: center; gap: 8px; padding: 8px 12px; }
+.whorow + .whorow { border-top: 1px solid var(--line); }
+.chip.outd { background: var(--warn-soft); border-color: var(--warn); color: var(--fg); }
+.chip.away { background: var(--surface-2); color: var(--muted); text-decoration: line-through; }
+.tag.who { background: var(--accent-soft); color: var(--fg); }
+.meal.empty.out { color: var(--muted); border-style: dashed; }
 .tonight.slim .tile { width: 56px; height: 56px; }
 .mrow1 { display: flex; align-items: center; width: 100%; min-height: 52px; padding: 0 16px; background: none; border: 0; text-align: left; font-weight: 700; color: var(--fg); text-decoration: none; }
 .mrow1 + .mrow1 { border-top: 1px solid var(--line); }
@@ -542,6 +548,6 @@ details.fold > .in { padding: 0 16px 16px; display: grid; gap: 10px; }
 <nav class="nav" aria-label="Sections"><div class="in" id="nav"></div></nav>
 <div id="toast" class="toast" hidden role="status"></div>
 <script src="firebase-config.js"></script>
-<script src="app.js?v=mvp7icn1"></script>
+<script src="app.js?v=mvpa7liq"></script>
 </body>
 </html>
