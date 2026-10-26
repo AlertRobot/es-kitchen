@@ -207,7 +207,7 @@ function subscribeHousehold(hid) {
   unsub.pantry = Store.sub('config/pantry', d => { S.pantryRaw = d ? clone(d) : null; S.pantry = d ? clone(d) : { status: {} }; if (!S.pantry.status) S.pantry.status = {}; schedule(); }, onSubErr);
   unsub.photoPrefs = Store.sub('config/photoPrefs', d => { S.photoPrefs = d && d.hidden ? clone(d) : { hidden: {} }; schedule(); }, onSubErr);
   unsub.thumbs = Store.subG('dishThumbs', docs => { S.thumbs = {}; docs.forEach(d => S.thumbs[d.id] = d); schedule(); }, () => {});
-  unsub.shops = Store.sub('shops', docs => { S.shopsLog = docs; schedule(); if (S.bg.cfg && docs.some(t => t.budgie && t.budgie.state === 'queued')) setTimeout(bgSyncShops, 800); }, onSubErr);
+  unsub.shops = Store.sub('shops', docs => { S.shopsLog = docs; schedule(); if (S.bg.cfg && docs.some(t => t.budgie && (t.budgie.state === 'queued' || (t.removed && t.budgie.tid)))) setTimeout(bgSyncShops, 800); }, onSubErr);
   unsub.ratings = Store.sub('ratings', docs => { const m = {}; docs.forEach(d => { const x = { ...d }; delete x.id; m[d.id] = x; }); S.ratings = m; schedule(); }, onSubErr);
   subscribeWeek();
   // Always keep this week and next week on the phone, so the plan and list are there offline in the shop.
@@ -1345,10 +1345,13 @@ async function bgSyncShops() {
   if (!S.bg.cfg || S.bg.busy || !S.household) return;
   S.bg.busy = true;
   try {
-    const me = S.bg.data.me, fb = bgFoodBudget(), ops = [], done = [], mePk = me ? peckFromBg(me) : null;
+    const me = S.bg.data.me, fb = bgFoodBudget(), ops = [], done = [], gone = [], mePk = me ? peckFromBg(me) : null;
     if (me && fb) (S.shopsLog || []).forEach(t => {
       // the payer's phone sends it (matched by who paid, in case the phone that logged it didn't know their Budgie name)
-      if (!t.budgie || t.budgie.state !== 'queued' || (t.budgie.person !== me && !(mePk && t.paidBy === mePk.id))) return;
+      if (!t.budgie || (t.budgie.person !== me && !(mePk && t.paidBy === mePk.id))) return;
+      // a shop taken off in Peckish comes off in Budgie too, then goes from here
+      if (t.removed) { if (t.budgie.tid) { ops.push({ op: 'delete', table: 'transactions', id: t.budgie.tid }); gone.push(t.id); } return; }
+      if (t.budgie.state !== 'queued') return;
       const tid = 't-pk-' + t.id;
       ops.push({ op: 'put', table: 'transactions', row: { id: tid, date: t.date, person: me, amount: Number(t.amount), budget: fb.id, account: fb.account || '', split: t.split === 'half' ? 'half' : '', note: (SHOP_KEY_NAMES[t.shop] || t.shop || 'Food') + ' shop (Peckish)', source: 'peckish' } });
       done.push([t.id, tid]);
@@ -1356,13 +1359,24 @@ async function bgSyncShops() {
     const sent = await bgCall(ops.slice(0, 40), false), refused = {};
     (sent.rejected || []).forEach(r => { refused[r.id] = r.error || 'Budgie didn’t take it'; });
     for (const [id, tid] of done.slice(0, 40)) await Store.patch('shops/' + id, { budgie: refused[tid] ? { state: 'refused', why: String(refused[tid]).slice(0, 120), person: me } : { state: 'sent', tid, person: me } });
+    for (const id of gone) await Store.del('shops/' + id);
+    // shops Peckish sent follow Budgie too: a new amount or date (fixed there, or matched to the bank) comes back here,
+    // and one taken off there goes from here (told by the payer's phone, which sees all of its own)
+    const ours = {}; (S.shopsLog || []).forEach(t => { if (t.source !== 'budgie' && !t.removed && t.budgie && t.budgie.state === 'sent' && t.budgie.tid) ours[t.budgie.tid] = t; });
+    const oursSeen = new Set(done.map(x => x[1]));
+    for (const tx of bgRows('transactions')) {
+      const t = ours[tx.id]; if (!t) continue; oursSeen.add(tx.id);
+      const amount = Math.round((Number(tx.amount) || 0) * 100) / 100, date = String(tx.date || '').slice(0, 10);
+      if (/^\d{4}-\d{2}-\d{2}$/.test(date) && (amount !== Number(t.amount) || date !== t.date)) await Store.patch('shops/' + t.id, { amount, date, week: mondayOf(date) });
+    }
+    if (sent.full === true) for (const tid in ours) { const t = ours[tid]; if (!oursSeen.has(tid) && t.budgie.person === me && String(t.date || '') >= addDays(mondayOf(TODAY), -120)) await Store.del('shops/' + t.id); }
     // food payments logged in Budgie (by either of you) show up here too, and follow it when they're changed or taken off there
     const known = new Set((S.shopsLog || []).map(t => t.budgie && t.budgie.tid).filter(Boolean));
     const imported = {}; (S.shopsLog || []).forEach(t => { if (t.source === 'budgie' && t.budgie && t.budgie.tid) imported[t.budgie.tid] = t; });
     const foodIds = new Set(bgRows('budgets').filter(b => /food|grocer/i.test(b.name)).map(b => b.id)); if (fb) foodIds.add(fb.id);
     const since = addDays(mondayOf(TODAY), -120), seen = new Set();
     for (const tx of bgRows('transactions')) {
-      if (tx.source === 'peckish' || !(foodIds.has(tx.budget) || /food/i.test(tx.budget || ''))) continue;
+      if (tx.source === 'peckish' || /^t-pk-/.test(String(tx.id)) || !(foodIds.has(tx.budget) || /food/i.test(tx.budget || ''))) continue;
       if (!tx.date || String(tx.date).slice(0, 10) < since) continue;
       const cur = imported[tx.id]; if (!cur && known.has(tx.id)) continue;
       seen.add(tx.id);
@@ -1379,7 +1393,8 @@ async function bgSyncShops() {
 }
 function pickKeys(o, keys) { const x = {}; keys.forEach(k => { if (o[k] !== undefined) x[k] = o[k]; }); return x; }
 function guessShop(note) { const n = String(note || '').toLowerCase(); return (SHOPS.find(s => n.includes(s.id) || n.includes(s.name.toLowerCase().replace(/[^a-z]/g, '').slice(0, 5))) || {}).id || ''; }
-function shopsThisMonth() { const m = TODAY.slice(0, 7); return (S.shopsLog || []).filter(t => (t.date || '').startsWith(m)); }
+function liveShops() { return (S.shopsLog || []).filter(t => !t.removed); }
+function shopsThisMonth() { const m = TODAY.slice(0, 7); return liveShops().filter(t => (t.date || '').startsWith(m)); }
 // log what you paid for a shop (Shop tab). Saved in Peckish for both phones, and sent to Budgie by the payer's phone.
 function logShop(amount, shop, paidBy, split, date) {
   const id = 's' + Date.now().toString(36) + Math.random().toString(36).slice(2, 5), p = personById(paidBy);
@@ -1392,7 +1407,9 @@ function shopLogPanel(B) {
   const list = shopsThisMonth().sort((a, b) => a.date < b.date ? 1 : -1), total = list.reduce((a, t) => a + (Number(t.amount) || 0), 0), bud = Number(S.settings.monthlyBudget) || 450;
   const me = mePerson(), est = B ? B.prefTotal : 0;
   let out = '<section class="panel"><div class="row between"><h2>Shops this month</h2><span class="small money">' + fmtMoney(total) + ' of ' + fmtMoney(bud) + '</span></div><div class="meter"><i class="' + (total > bud ? 'over' : '') + '" style="width:' + Math.min(100, total / bud * 100).toFixed(0) + '%"></i></div>';
-  out += list.length ? '<div class="leftlist">' + list.map(t => { const who = personById(t.paidBy); return '<div class="left"><span>' + h(niceDate(t.date)) + ' · ' + h(SHOP_KEY_NAMES[t.shop] || t.shop || 'Shop') + '<span class="small muted" style="display:block">' + (who ? h(who.name) + ' paid' : '') + (t.split === 'half' ? ' · half each, ' + fmtMoney(t.amount / 2) + ' each' : '') + (t.source === 'budgie' ? ' · from Budgie' : t.budgie && t.budgie.state === 'sent' ? ' · in Budgie' : t.budgie && t.budgie.state === 'refused' ? ' · Budgie didn’t take this one' : S.bg.cfg && t.budgie && t.budgie.state === 'queued' ? ' · goes to Budgie from ' + h(who ? who.name : '') + '’s phone' : '') + '</span></span><span class="money">' + fmtMoney(t.amount) + '</span></div>'; }).join('') + '</div>' : '<p class="muted small">Nothing logged this month yet.</p>';
+  out += list.length ? '<div class="leftlist">' + list.map(t => { const who = personById(t.paidBy); return '<div class="left"><span>' + h(niceDate(t.date)) + ' · ' + h(SHOP_KEY_NAMES[t.shop] || t.shop || 'Shop') + '<span class="small muted" style="display:block">' + (who ? h(who.name) + ' paid' : '') + (t.split === 'half' ? ' · half each, ' + fmtMoney(t.amount / 2) + ' each' : '') + (t.source === 'budgie' ? ' · from Budgie' : t.budgie && t.budgie.state === 'sent' ? ' · in Budgie' : t.budgie && t.budgie.state === 'refused' ? ' · Budgie didn’t take this one' : S.bg.cfg && t.budgie && t.budgie.state === 'queued' ? ' · goes to Budgie from ' + h(who ? who.name : '') + '’s phone' : '') +
+    // a shop logged here can be taken off (a typo, a duplicate); one from Budgie is changed there
+    (t.source === 'budgie' ? '' : S.confirm['rmshop:' + t.id] ? ' · Remove it? <button class="linkish small" style="color:var(--bad)" data-act="rm-shop-yes" data-v="' + h(t.id) + '">Yes</button> <button class="linkish small" data-act="rm-shop-no">No</button>' : ' · <button class="linkish small" data-act="rm-shop" data-v="' + h(t.id) + '">Remove</button>') + '</span></span><span class="money">' + fmtMoney(t.amount) + '</span></div>'; }).join('') + '</div>' : '<p class="muted small">Nothing logged this month yet.</p>';
   out += '<form class="stack" data-form="logshop" style="gap:8px"><span class="label">Done a shop? Log what you paid</span><div class="lsrow"><input class="input" id="ls-amt" type="number" step="0.01" min="0" inputmode="decimal" placeholder="' + (est ? est.toFixed(2) : '0.00') + '" aria-label="Amount paid in pounds"><select class="input" id="ls-shop" aria-label="Shop">' + SHOPS.map(s => '<option value="' + s.id + '"' + (s.id === weekShop() ? ' selected' : '') + '>' + h(s.name) + '</option>').join('') + '</select></div>' +
     (S.people.length > 1 ? '<div class="row wrap" style="gap:6px"><span class="small">Paid by</span>' + S.people.map(p => '<label class="chip"><input type="radio" name="ls-who" value="' + h(p.id) + '"' + ((me ? me.id === p.id : p === S.people[0]) ? ' checked' : '') + '> ' + h(p.name) + '</label>').join('') + '<label class="chip"><input type="checkbox" id="ls-split" checked> Half each</label></div>' : '') +
     '<button class="btn primary" type="submit">Log it</button>' + (S.bg.cfg ? '' : '<p class="muted small">Link Budgie in Settings → Linked apps and shops go there too, split half each.</p>') + '</form></section>';
@@ -1532,7 +1549,7 @@ function setHistory() {
   // money by month: logged shops (from Budgie or this app) and what the plans cost
   const months = {}; const mk = iso => iso.slice(0, 7);
   weeks.forEach(x => { const m = mk(x.start); months[m] = months[m] || { plan: 0, paid: 0 }; months[m].plan += weekCost(x); });
-  (S.shopsLog || []).forEach(t => { const m = mk(t.date); months[m] = months[m] || { plan: 0, paid: 0 }; months[m].paid += Number(t.amount) || 0; });
+  liveShops().forEach(t => { const m = mk(t.date); months[m] = months[m] || { plan: 0, paid: 0 }; months[m].paid += Number(t.amount) || 0; });
   const mkeys = Object.keys(months).sort().slice(-6), mmax = Math.max(1, ...mkeys.map(m => Math.max(months[m].plan, months[m].paid)));
   const monthName = m => parseIso(m + '-01').toLocaleDateString('en-GB', { month: 'short' });
   const budget = Number(S.settings.monthlyBudget) || 450;
@@ -1550,7 +1567,7 @@ function setHistory() {
   const ck = Object.keys(cuis).sort((a, b) => cuis[b] - cuis[a]);
   if (ck.length) out += '<section class="panel"><h2>What you eat</h2><div class="stack" style="gap:6px">' + ck.map(c => '<div class="cuisbar"><span class="small">' + h(c) + '</span><span class="bar"><i style="width:' + (cuis[c] / cooked * 100).toFixed(0) + '%"></i></span><span class="small muted">' + Math.round(cuis[c] / cooked * 100) + '%</span></div>').join('') + '</div></section>';
   out += '<section class="panel"><h2>Every week</h2>' + weeks.slice(0, 26).map(x => {
-    const n = x.w.days.filter(d => d.r && !d.takeaway).length, paid = (S.shopsLog || []).filter(t => t.week === x.start).reduce((a, t) => a + (Number(t.amount) || 0), 0);
+    const n = x.w.days.filter(d => d.r && !d.takeaway).length, paid = liveShops().filter(t => t.week === x.start).reduce((a, t) => a + (Number(t.amount) || 0), 0);
     return '<button class="mrow1 histrow" data-act="go-week" data-v="' + x.start + '"><span class="grow"><b>' + weekRange(x.start) + '</b><span class="small muted" style="display:block">' + n + ' dinner' + (n === 1 ? '' : 's') + (x.w.locked ? ' · locked in' : '') + '</span></span><span class="small money">' + (paid ? fmtMoney(paid) + ' paid' : fmtMoney(weekCost(x)) + ' planned') + '</span></button>';
   }).join('') + '</section>';
   return out;
@@ -1770,7 +1787,7 @@ function buildTables(docs, withLib) {
   const MR = t('MyRecipes', ['household_id', 'recipe_id', 'name', 'meal', 'cuisine', 'protein', 'minutes', 'ingredients', 'method', 'json']);
   coll('recipes').forEach(({ id, data: r }) => MR.rows.push([hid, id, r.title || '', r.meal || 'dinner', r.cuisine || '', r.protein || '', r.time || '', recipeLines(r), recipeMethod(r), cellText(r)]));
   const SL = t('Shops', ['household_id', 'shop_id', 'date', 'shop', 'amount', 'paid_by', 'split', 'week_start', 'from', 'budgie', 'note']);
-  coll('shops').sort((a, b) => String(a.data.date || '').localeCompare(String(b.data.date || ''))).forEach(({ id, data: x }) => SL.rows.push([hid, id, x.date || '', SHOP_KEY_NAMES[x.shop] || x.shop || '', Number(x.amount) || 0, (S.people.find(p => p.id === x.paidBy) || {}).name || x.paidBy || '', x.split === 'half' ? 'half each' : '', x.week || '', x.source || '', (x.budgie && x.budgie.state) || '', x.note || '']));
+  coll('shops').filter(x => !x.data.removed).sort((a, b) => String(a.data.date || '').localeCompare(String(b.data.date || ''))).forEach(({ id, data: x }) => SL.rows.push([hid, id, x.date || '', SHOP_KEY_NAMES[x.shop] || x.shop || '', Number(x.amount) || 0, (S.people.find(p => p.id === x.paidBy) || {}).name || x.paidBy || '', x.split === 'half' ? 'half each' : '', x.week || '', x.source || '', (x.budgie && x.budgie.state) || '', x.note || '']));
   const PO = t('PriceOverrides', ['household_id', 'ingredient_id', 'ingredient', 'json']);
   coll('ingredients').forEach(({ id, data }) => PO.rows.push([hid, id, data.name || ingName(id), cellText(data)]));
   const D = t('Docs', ['household_id', 'path', 'part', 'parts', 'json', 'backed_up_at']);
@@ -2544,6 +2561,13 @@ document.addEventListener('click', e => {
     case 'del-fm': mutateCarry(w => { w.freezerMeals.splice(Number(v), 1); }); break;
     case 'pantry': S.pantry.status[v] = b.dataset.s; savePantry(); break;
     case 'pref-del': { const p = clone(S.people.find(x => x.id === v)); p[b.dataset.k].splice(Number(b.dataset.i), 1); S.people = S.people.map(x => x.id === v ? p : x); savePerson(p); render(); break; }
+    case 'rm-shop': S.confirm = { ['rmshop:' + v]: true }; render(); break;
+    case 'rm-shop-no': S.confirm = {}; render(); break;
+    case 'rm-shop-yes': { S.confirm = {}; const t = (S.shopsLog || []).find(x => x.id === v); if (!t) break;
+      // sent to Budgie: marked, and the payer's phone takes it off there and then here; otherwise it just goes
+      if (t.budgie && t.budgie.state === 'sent' && t.budgie.tid) { S.shopsLog = S.shopsLog.map(x => x.id === v ? { ...x, removed: true } : x); Store.patch('shops/' + v, { removed: true }).then(() => bgSyncShops()).catch(e => { console.warn(e); toast('Couldn\u2019t remove that.'); }); toast('Removed. It comes off in Budgie too.'); }
+      else { S.shopsLog = S.shopsLog.filter(x => x.id !== v); Store.del('shops/' + v).catch(e => { console.warn(e); toast('Couldn\u2019t remove that.'); }); toast('Removed'); }
+      render(); break; }
     case 'rm-person': S.confirm['rmp:' + v] = true; render(); break;
     case 'rm-person-yes': S.confirm = {}; S.people = S.people.filter(x => x.id !== v); Store.del('people/' + v).catch(() => {}); render(); break;
     case 'eq': { const eq = { ...S.settings.equipment, [v]: S.settings.equipment[v] === false }; saveSettings({ equipment: eq }); break; }

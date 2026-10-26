@@ -58,6 +58,42 @@ const CAL = { household: { dinnerTime: '19:00' }, people: [{ id: 'ethan', name: 
     await A.click('[data-act="tab"][data-v="settings"]'); await A.click('[data-act="set-page"][data-v=""]'); await A.click('[data-act="set-page"][data-v="linked"]');
     ok(/isn.t taking reminders from Peckish/.test(A.d.querySelector('#app').textContent), 'reminders: a refusal from Caledonite is shown, not swallowed');
   }
+  // ---- 3. Budgie: a shop sent from Peckish follows Budgie, and a shop logged by mistake can be taken off ----
+  {
+    const B = { people: [{ id: 'ethan', name: 'Ethan' }, { id: 'sophie', name: 'Sophie' }], budgets: [{ id: 'e-food', person: 'ethan', name: 'Food' }], transactions: [], splits: [], accounts: [] };
+    const OPS = [];
+    const budgie = async (url, opt) => {
+      if (!/script\.google\.com/.test(url)) return { ok: true, json: async () => JSON.parse(lib) };
+      const b = JSON.parse(opt.body);
+      (b.ops || []).forEach(o => { OPS.push(o); if (o.op === 'delete') { const t = B.transactions.find(x => x.id === o.id); if (t) t.deleted = true; } else { const i = B.transactions.findIndex(x => x.id === o.row.id); if (i >= 0) B.transactions[i] = { ...B.transactions[i], ...o.row }; else B.transactions.push({ ...o.row }); } });
+      const rows = JSON.parse(JSON.stringify(B)); rows.transactions = rows.transactions.filter(t => !t.deleted);
+      return { ok: true, json: async () => ({ ok: true, person: 'ethan', keyType: 'app', now: Date.now(), full: true, rows }) };
+    };
+    const A = boot({ fetch: budgie }); await A.start();
+    await A.click('[data-act="tab"][data-v="settings"]'); await A.click('[data-act="set-page"][data-v="linked"]');
+    A.d.querySelector('#bg-url').value = 'https://alertrobot.github.io/es-kitchen/#connect=' + Buffer.from(JSON.stringify({ u: 'https://script.google.com/macros/s/BUDGIE/exec', k: 'app_peckish_' + 'e'.repeat(64) })).toString('base64url');
+    await A.submit('[data-form="bg-link"]', 1500);
+    await A.click('[data-act="tab"][data-v="week"]'); await A.click('[data-act="fill"]', 6000);
+    await A.click('[data-act="tab"][data-v="shop"]'); await A.click('[data-act="shop-view"][data-v="cost"]');
+    A.d.querySelector('#ls-amt').value = '52.10'; await A.submit('[data-form="logshop"]', 1500);
+    const shops = () => [...A.w.__docs.keys()].filter(k => k.includes('/shops/')).map(k => ({ k, ...A.w.__docs.get(k) }));
+    const s1 = shops()[0];
+    const sync = async () => { const b = A.d.createElement('button'); b.dataset.act = 'bg-sync'; A.d.body.appendChild(b); b.click(); b.remove(); await wait(1200); };
+    ok(s1 && s1.budgie && s1.budgie.state === 'sent' && B.transactions.some(t => t.id === s1.budgie.tid), 'budgie: the shop went to Budgie');
+    B.transactions.find(t => t.id === s1.budgie.tid).amount = 49.85; await sync();
+    ok(A.w.__docs.get(s1.k).amount === 49.85, 'budgie: a new amount in Budgie (fixed there, or the bank\u2019s) comes back to Peckish');
+    ok(!shops().some(x => x.source === 'budgie'), 'budgie: and it isn\u2019t brought in a second time as a Budgie shop');
+    B.transactions.find(t => t.id === s1.budgie.tid).deleted = true; await sync();
+    ok(!A.w.__docs.has(s1.k), 'budgie: a shop taken off in Budgie goes from Peckish too');
+    await A.click('[data-act="tab"][data-v="week"]'); await A.click('[data-act="tab"][data-v="shop"]');
+    A.d.querySelector('#ls-amt').value = '482.00'; await A.submit('[data-form="logshop"]', 1500);
+    const s2 = shops()[0]; ok(s2 && s2.budgie.state === 'sent', 'remove: a mistyped shop was logged and sent');
+    await A.click('[data-act="rm-shop"][data-v="' + s2.k.split('/').pop() + '"]', 200);
+    await A.click('[data-act="rm-shop-yes"]', 1500);
+    ok(!A.w.__docs.has(s2.k) && OPS.some(o => o.op === 'delete' && o.id === s2.budgie.tid), 'remove: it goes from Peckish and comes off in Budgie');
+    ok(!/482/.test(A.d.querySelector('#app').textContent), 'remove: and it\u2019s off Shops this month');
+    ok(!A.errs.length, 'budgie: no page errors ' + A.errs.join(' '));
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();
