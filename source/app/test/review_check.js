@@ -94,6 +94,33 @@ const CAL = { household: { dinnerTime: '19:00' }, people: [{ id: 'ethan', name: 
     await A.click('[data-act="restore-yes"]', 800);
     ok(A.w.__docs.has(shopKey) && A.w.__docs.get(shopKey).amount === 52.1, 'restore: the shop comes back');
   }
+  // ---- 5. Budgie: payments changed or taken off in Budgie follow here; the payer's phone sends their shop ----
+  {
+    const B = { people: [{ id: 'ethan', name: 'Ethan' }, { id: 'sophie', name: 'Sophie' }], budgets: [{ id: 'e-food', person: 'ethan', name: 'Food' }, { id: 's-food', person: 'sophie', name: 'Food' }],
+      transactions: [{ id: 't-abc', date: iso(day(0)), person: 'sophie', amount: 31.4, budget: 's-food', split: 'half', note: 'Aldi shop', source: 'app' }], splits: [], accounts: [] };
+    const OPS = [];
+    const budgie = async (url, opt) => {
+      if (!/script\.google\.com/.test(url)) return { ok: true, json: async () => JSON.parse(lib) };
+      const b = JSON.parse(opt.body); (b.ops || []).forEach(o => { OPS.push(o); B.transactions.push({ ...o.row }); });
+      // like Budgie: always the whole picture, without anything taken off
+      const rows = JSON.parse(JSON.stringify(B)); rows.transactions = rows.transactions.filter(t => !t.deleted);
+      return { ok: true, json: async () => ({ ok: true, person: 'ethan', keyType: 'app', now: Date.now(), full: true, rows }) };
+    };
+    // a shop Ethan paid for, logged on a phone that didn't know his Budgie name
+    const pre = { 'households/h1/shops/sold1': { date: iso(day(0)), amount: 40, shop: 'tesco', paidBy: 'u_ethan', split: 'half', week: MON, source: 'peckish', by: 'Sophie', budgie: { state: 'queued', person: 'ethan dunning' } } };
+    const A = boot({ fetch: budgie, pre }); await A.start(); await A.addSophie();
+    await A.click('[data-act="tab"][data-v="settings"]'); await A.click('[data-act="set-page"][data-v=""]'); await A.click('[data-act="set-page"][data-v="linked"]');
+    A.d.querySelector('#bg-url').value = 'https://alertrobot.github.io/es-kitchen/#connect=' + Buffer.from(JSON.stringify({ u: 'https://script.google.com/macros/s/BUDGIE/exec', k: 'app_peckish_' + 'e'.repeat(64) })).toString('base64url');
+    await A.submit('[data-form="bg-link"]', 2000);
+    const imp = () => A.w.__docs.get('households/h1/shops/b_t_abc');
+    ok(OPS.some(o => o.row.id === 't-pk-sold1' && o.row.person === 'ethan'), 'budgie: the payer’s phone sends a shop logged under another spelling of their name');
+    ok(imp() && imp().amount === 31.4, 'budgie: Sophie’s Budgie food shop shows here');
+    B.transactions[0].amount = 33.9; await A.click('[data-act="bg-sync"]', 1200);
+    ok(imp() && imp().amount === 33.9, 'budgie: a change made in Budgie follows here');
+    B.transactions[0].deleted = true; await A.click('[data-act="bg-sync"]', 1200);
+    ok(!imp(), 'budgie: a payment taken off in Budgie goes from here too');
+    ok(A.w.__docs.has('households/h1/shops/sold1'), 'budgie: shops logged in Peckish stay');
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();

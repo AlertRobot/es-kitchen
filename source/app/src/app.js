@@ -1316,9 +1316,10 @@ async function bgSyncShops() {
   if (!S.bg.cfg || S.bg.busy || !S.household) return;
   S.bg.busy = true;
   try {
-    const me = S.bg.data.me, fb = bgFoodBudget(), ops = [], done = [];
+    const me = S.bg.data.me, fb = bgFoodBudget(), ops = [], done = [], mePk = me ? peckFromBg(me) : null;
     if (me && fb) (S.shopsLog || []).forEach(t => {
-      if (!t.budgie || t.budgie.state !== 'queued' || t.budgie.person !== me) return;
+      // the payer's phone sends it (matched by who paid, in case the phone that logged it didn't know their Budgie name)
+      if (!t.budgie || t.budgie.state !== 'queued' || (t.budgie.person !== me && !(mePk && t.paidBy === mePk.id))) return;
       const tid = 't-pk-' + t.id;
       ops.push({ op: 'put', table: 'transactions', row: { id: tid, date: t.date, person: me, amount: Number(t.amount), budget: fb.id, account: fb.account || '', split: t.split === 'half' ? 'half' : '', note: (SHOP_KEY_NAMES[t.shop] || t.shop || 'Food') + ' shop (Peckish)', source: 'peckish' } });
       done.push([t.id, tid]);
@@ -1326,19 +1327,28 @@ async function bgSyncShops() {
     const sent = await bgCall(ops.slice(0, 40), false), refused = {};
     (sent.rejected || []).forEach(r => { refused[r.id] = r.error || 'Budgie didn’t take it'; });
     for (const [id, tid] of done.slice(0, 40)) await Store.patch('shops/' + id, { budgie: refused[tid] ? { state: 'refused', why: String(refused[tid]).slice(0, 120), person: me } : { state: 'sent', tid, person: me } });
-    // food payments logged in Budgie (by either of you) show up here too
+    // food payments logged in Budgie (by either of you) show up here too, and follow it when they're changed or taken off there
     const known = new Set((S.shopsLog || []).map(t => t.budgie && t.budgie.tid).filter(Boolean));
+    const imported = {}; (S.shopsLog || []).forEach(t => { if (t.source === 'budgie' && t.budgie && t.budgie.tid) imported[t.budgie.tid] = t; });
     const foodIds = new Set(bgRows('budgets').filter(b => /food|grocer/i.test(b.name)).map(b => b.id)); if (fb) foodIds.add(fb.id);
+    const since = addDays(mondayOf(TODAY), -120), seen = new Set();
     for (const tx of bgRows('transactions')) {
-      if (tx.source === 'peckish' || known.has(tx.id) || !(foodIds.has(tx.budget) || /food/i.test(tx.budget || ''))) continue;
-      if (!tx.date || String(tx.date).slice(0, 10) < addDays(mondayOf(TODAY), -120)) continue;
-      const who = peckFromBg(tx.person), id = 'b_' + String(tx.id).replace(/[^A-Za-z0-9_]/g, '_');
-      await Store.set('shops/' + id, { date: String(tx.date).slice(0, 10), amount: Number(tx.amount) || 0, shop: guessShop(tx.note), note: tx.note || '', paidBy: who ? who.id : '', split: tx.split || '', week: mondayOf(String(tx.date).slice(0, 10)), source: 'budgie', budgie: { state: 'sent', tid: tx.id, person: tx.person }, by: 'Budgie' });
+      if (tx.source === 'peckish' || !(foodIds.has(tx.budget) || /food/i.test(tx.budget || ''))) continue;
+      if (!tx.date || String(tx.date).slice(0, 10) < since) continue;
+      const cur = imported[tx.id]; if (!cur && known.has(tx.id)) continue;
+      seen.add(tx.id);
+      const who = peckFromBg(tx.person), date = String(tx.date).slice(0, 10);
+      const doc = { date, amount: Number(tx.amount) || 0, shop: guessShop(tx.note), note: tx.note || '', paidBy: who ? who.id : '', split: tx.split || '', week: mondayOf(date), source: 'budgie', budgie: { state: 'sent', tid: tx.id, person: tx.person }, by: 'Budgie' };
+      // "via": the phone that brought it in, which is the one that can tell when it's gone (each of you sees a slightly different set)
+      if (cur) { if (stable({ ...doc, via: cur.via || me }) !== stable({ ...doc, ...pickKeys(cur, Object.keys(doc)), via: cur.via })) await Store.set('shops/' + cur.id, { ...doc, via: cur.via || me }); }
+      else await Store.set('shops/' + 'b_' + String(tx.id).replace(/[^A-Za-z0-9_]/g, '_'), { ...doc, via: me });
     }
+    if (sent.full === true) for (const tid in imported) { const t = imported[tid]; if (!seen.has(tid) && t.via && t.via === me && String(t.date || '') >= since) await Store.del('shops/' + t.id); }
     S.bg.err = '';
   } catch (e) { S.bg.err = navigator.onLine === false ? 'Offline: it’ll sync when you’re back online' : (e.message || String(e)); console.warn(e); }
   S.bg.busy = false; schedule();
 }
+function pickKeys(o, keys) { const x = {}; keys.forEach(k => { if (o[k] !== undefined) x[k] = o[k]; }); return x; }
 function guessShop(note) { const n = String(note || '').toLowerCase(); return (SHOPS.find(s => n.includes(s.id) || n.includes(s.name.toLowerCase().replace(/[^a-z]/g, '').slice(0, 5))) || {}).id || ''; }
 function shopsThisMonth() { const m = TODAY.slice(0, 7); return (S.shopsLog || []).filter(t => (t.date || '').startsWith(m)); }
 // log what you paid for a shop (Shop tab). Saved in Peckish for both phones, and sent to Budgie by the payer's phone.
