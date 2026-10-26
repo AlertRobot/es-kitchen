@@ -1,0 +1,113 @@
+// Third review's fixes (jsdom + in-memory store). Exits 1 if anything fails.
+const { JSDOM } = require('jsdom'); const fs = require('fs');
+const html = fs.readFileSync(__dirname + '/../public/index.html', 'utf8').replace(/<script src="(app|firebase-config)\.js[^"]*"><\/script>/g, '');
+const lib = fs.readFileSync(__dirname + '/../public/data/library.json', 'utf8');
+const bundle = fs.readFileSync(__dirname + '/app.test.js', 'utf8');
+const pad = n => String(n).padStart(2, '0');
+const iso = d => d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate());
+const now = new Date(); const mon = new Date(now); mon.setDate(now.getDate() - ((now.getDay() + 6) % 7)); const day = k => { const x = new Date(mon); x.setDate(mon.getDate() + k); return x; };
+const MON = iso(day(0)), NEXT = iso(day(7)), TODAY_IDX = (now.getDay() + 6) % 7, TODAY = iso(now);
+const wait = ms => new Promise(r => setTimeout(r, ms));
+let fails = 0; const ok = (cond, what) => { console.log((cond ? 'ok   ' : 'FAIL ') + what); if (!cond) fails++; };
+const only = process.argv[2] ? Number(process.argv[2]) : 0;
+function boot(opts) {
+  opts = opts || {};
+  const dom = new JSDOM(html, { runScripts: 'dangerously', pretendToBeVisual: true, url: 'https://x.github.io/es-kitchen/', beforeParse(w) {
+    if (opts.pre) w.__preDocs = new Map(Object.entries(JSON.parse(JSON.stringify(opts.pre))));
+    for (const k in (opts.local || {})) w.localStorage.setItem(k, opts.local[k]);
+    w.fetch = opts.fetch || (async () => ({ ok: true, json: async () => JSON.parse(lib) }));
+    w.scrollTo = () => {};
+  } });
+  const w = dom.window, d = w.document; const errs = []; w.addEventListener('error', e => errs.push(e.message));
+  w.console.warn = () => {};
+  const s = d.createElement('script'); s.textContent = bundle; d.body.appendChild(s);
+  if (opts.cal) w.Store.cal = opts.cal;
+  const click = async (sel, ms) => { const el = d.querySelector(sel); if (!el) { console.log('  MISSING', sel); return false; } el.click(); await wait(ms || 250); return true; };
+  const act = async (a, v, extra, ms) => { const b = d.createElement('button'); b.dataset.act = a; if (v != null) b.dataset.v = v; Object.assign(b.dataset, extra || {}); d.body.appendChild(b); b.click(); b.remove(); await wait(ms || 250); };
+  const submit = async (sel, ms) => { d.querySelector(sel).dispatchEvent(new w.Event('submit', { bubbles: true, cancelable: true })); await wait(ms || 400); };
+  const type = async (sel, v) => { const el = d.querySelector(sel); el.value = v; el.dispatchEvent(new w.Event('input', { bubbles: true })); await wait(300); const f = d.activeElement; if (f && f.blur) f.blur(); f && f.dispatchEvent(new w.FocusEvent('focusout', { bubbles: true })); await wait(100); };
+  const start = async () => { await wait(150); await submit('[data-form="create"]', 600); };
+  return { w, d, errs, click, act, submit, start, type };
+}
+const signedIn = (name) => ({ 'users/u_ethan': { households: ['h1'], current: 'h1', names: { h1: name || 'Home' } },
+  'households/h1': { name: name || 'Home', members: ['u_ethan'], memberNames: { u_ethan: 'Ethan' }, inviteCode: 'K7RM2Q' } });
+
+(async () => {
+  // ---- 1. nothing anyone else can write (household records, the shared photos, Caledonite, Budgie) becomes markup ----
+  if (!only || only === 1) {
+    const P = '1"\'><b class="xss">x</b>';
+    const dayIs = k => k === TODAY_IDX;
+    const days = {}; for (let k = 0; k < 7; k++) days['d' + k] = k === 5 ? { takeaway: true, was: 'my_x' } : k === 6 ? {} : k === 3 ? { r: 'am_double_smash_burgers', freezer: true } : { r: 'my_x', guests: P, extra: P, extraUse: P };
+    const pre = {
+      'users/u_ethan': { households: ['h1', 'h2'], current: 'h1', names: { h1: P, h2: P } },
+      'households/h1': { name: P, members: ['u_ethan'], memberNames: { u_ethan: P, u_x: P }, inviteCode: P, memberEmails: { u_ethan: P } },
+      'households/h1/people/u_ethan': { name: 'Ethan', uid: 'u_ethan', order: 1, wontEat: [P], dislikes: [P], likes: [P], kcalTarget: P, proteinTarget: P, portion: P, plan: { b: true, l: true }, usual: { b: ['my_x', P], l: ['lo'] }, days: { b: [0, 1, 2, 3, 4, 5, 6], l: [0, 1, 2, 3, 4] }, packed: true },
+      'households/h1/people/p_s': { name: P, order: 2, wontEat: [], dislikes: [], likes: [], plan: { b: true }, usual: { b: [P] } },
+      'households/h1/recipes/my_x': { title: P, icon: P, cuisine: P, protein: P, category: 'everyday', time: P, servings: 2, equipment: [P], meal: 'dinner', custom: true, tags: [P], airFryer: P, batch: P, short: P,
+        ingredients: [{ i: 'ing_x', q: P, t: P, swap: P }, { i: 'beef_mince', q: 400, t: P }, { i: P, q: 1, t: P }], steps: [{ title: P, text: P + ' 10 minutes' }, P], source: { title: P, site: P, author: P, url: P, match: P } },
+      'households/h1/recipes/my_l': { title: P, icon: P, cuisine: 'British', protein: 'veggie', time: 5, servings: 1, equipment: [], meal: 'lunch', custom: true, keepsDays: P, packable: true,
+        ingredients: [{ i: 'ing_x', q: 1, t: P }], steps: [{ title: '', text: P }] },
+      ['households/h1/recipes/my_q"\'><b class="xss">']: { title: 'Odd id', icon: 'x', cuisine: 'British', protein: 'veggie', time: 5, servings: 2, equipment: [], custom: true, ingredients: [{ i: 'beef_mince', q: 100 }], steps: [{ text: 'Cook' }] },
+      'households/h1/ingredients/ing_x': { name: P, aisle: P, unit: P, packs: [P], keeps: P, life: P, freeze: true, staple: true, tags: [P], custom: true, separable: P, nut: { per: P, kcal: P, protein: P },
+        prices: { tesco: { pack: P, price: P, loyalty: P, checked: P, src: P, label: P, seen: P, conf: P, basis: P, alt: [{ pack: P }] }, aldi: { pack: 1, price: 1, checked: P, src: 'https://x"><b class="xss">/' } }, unlisted: { lidl: true } },
+      'households/h1/ingredients/beef_mince': { staple: false, note: P, prices: { tesco: { pack: P, price: P, loyalty: P, checked: '2099-01-01', src: 'Your receipt', label: P, seen: P } } },
+      ['households/h1/weeks/' + MON]: { days, carryEdited: true, carryIn: [{ i: 'beef_mince', q: P, exp: P, frozen: false }, { i: 'ing_x', q: P, frozen: true }, { i: 'chicken_breast', q: 300, exp: P }], freezerMeals: [{ r: P, portions: P }, { r: 'my_x', portions: P }],
+        extras: { x1: { name: P, done: false, o: 1 } }, checked: { beef_mince: true }, have: { ing_x: true, [P]: true }, votes: { u_ethan: { 0: { r: 'my_x', v: 1 } }, p_s: { 0: { r: 'my_x', v: -1 } } },
+        away: { p_s: { 1: P } }, shifts: { u_ethan: { [TODAY_IDX]: { t: P, s: P, e: P, miss: true }, 2: { t: 'long', s: '07:30', e: P, miss: true } } }, plates: {}, updatedBy: P, updated: P, shop: 'tesco',
+        bl: { u_ethan: { b: [['my_x', P, 'lo'], null, null, null, null, null, null], l: [[P], ['lo']] } }, bumped: [P, 'my_x'], undoTk: { d: 5, days: [] } },
+      ['households/h1/weeks/' + NEXT]: { days: { d0: { r: 'my_x' } }, locked: { by: P, at: P }, extras: [{ name: P }], updatedBy: P },
+      ['households/h1/ratings/my_x']: { u_x: { stars: 2, name: P }, [P]: { stars: P, name: P } },
+      'households/h1/shops/s1': { date: TODAY.slice(0, 8) + P, amount: P, shop: P, paidBy: 'u_ethan', split: 'half', week: MON, source: 'peckish', by: P, budgie: { state: 'queued', person: P }, note: P },
+      'households/h1/shops/s2': { date: TODAY, amount: 5, shop: P, paidBy: 'p_s', split: 'half', week: MON, source: 'budgie', by: P, budgie: { state: 'refused', why: P, person: P }, note: P },
+      'households/h1/config/settings': { shop: 'tesco', weeknightCap: P, monthlyBudget: P, stapleBudget: P, freezerSpace: P, treatDays: [P, 4], lateCutoff: P, calMap: { p_s: 'sophie' }, remind: { cookAt: '18:00', cook: true }, style: P, budgieBudget: P, equipment: { [P]: false } },
+      'households/h1/config/pantry': { status: { beef_mince: 'low', ing_x: P, [P]: 'low' }, always: { ing_x: true }, checkedOnce: false },
+      'households/h1/config/backup': { url: 'https://script.google.com/macros/s/x/exec', key: P, last: P, lastBy: P, lastOk: false, lastTry: P, lastErr: P, sheetUrl: 'javascript:document.body.classList.add("xss")', counts: { Weeks: P, Docs: P }, auto: false },
+      'dishThumbs/my_x': { thumb: P, by: P, uid: 'u_other', hid: 'h_other' },
+      'dishThumbs/am_double_smash_burgers': { thumb: 'data:image/gif;base64,R0lGODlhAQABAAAAACw=', by: P, uid: 'u_other', hid: 'h_other' },
+      'stepPhotos/am_double_smash_burgers__0': { img: 'data:image/gif;base64,R0lGODlhAQABAAAAACw=', by: P, uid: 'u_other', hid: 'h_other' },
+    };
+    const CAL = { household: { dinnerTime: P }, people: [{ id: 'ethan', name: 'Ethan', email: 'ethan@example.com', settings: { hasShifts: true, travelMins: P, shiftTypes: { [P]: { start: P, end: P } } } }, { id: 'sophie', name: P, settings: { hasShifts: true } }, { id: P, name: P }],
+      calendars: [{ owner: 'ethan', calKey: 'rota', role: 'rota' }], shifts: [{ person: 'ethan', day: iso(day(1)), type: P, start: P, end: P }], feeds: [{ owner: 'ethan', events: [{ t: P, s: day(2).getTime(), e: day(2).getTime() + 9 * 3600e3 }, { ad: true, sd: iso(day(4)), t: P }] }], me: 'ethan' };
+    const bgData = { since: 1, me: 'ethan', rows: { people: { ethan: { id: 'ethan', name: P }, sophie: { id: 'sophie', name: P } }, budgets: { b1: { id: 'b1', person: 'ethan', name: P + ' food', account: P } }, transactions: {}, splits: {}, accounts: {} } };
+    const A = boot({ pre, local: { 'peckish.cal': 'true', 'peckish.budgie': JSON.stringify({ u: 'https://script.google.com/macros/s/B/exec', k: 'app_peckish_' + 'a'.repeat(64), hid: 'h1' }), 'peckish.budgieData': JSON.stringify(bgData) },
+      fetch: async (url, opt) => /script\.google\.com/.test(url) ? { ok: true, json: async () => ({ ok: false, error: P }), text: async () => JSON.stringify({ ok: false, error: P }) } : { ok: true, json: async () => JSON.parse(lib) },
+      cal: { onUser(cb) { setTimeout(() => cb({ email: P, uid: 'c1' }), 0); return () => {}; }, async signIn() {}, async signOut() {}, async read() { return JSON.parse(JSON.stringify(CAL)); }, async notify() { return 'ok'; }, async unnotify() {} } });
+    const { d } = A; const seen = new Set();
+    const ctxs = new Set();
+    const check = what => { const els = [...d.querySelectorAll('.xss')]; if (els.length || d.body.classList.contains('xss')) seen.add(what); if (process.env.XSS_DEBUG) els.forEach(e => { const c = (e.parentElement ? e.parentElement.outerHTML : '').replace(/\s+/g, ' ').slice(0, 220); if (!ctxs.has(c)) { ctxs.add(c); console.log('  [' + what + '] ' + c); } }); };
+    await wait(3500); check('week');
+    const sweep = async (label, fn) => { try { await fn(); } catch (e) { A.errs.push(label + ': ' + e.message); } check(label); };
+    await sweep('week bl', async () => { await A.act('week-view', 'bl'); await A.act('bl-person', 'p_s'); await A.act('bl-person', 'u_ethan'); });
+    await sweep('bl pick', async () => { await A.act('bl-pick', 'u_ethan|b|0', null, 600); await A.act('sheet-back'); await A.act('bl-pick', 'u_ethan|l|1', null, 600); await A.act('sheet-back'); });
+    await A.act('week-view', 'dinners');
+    await sweep('recipe sheet', async () => { await A.act('open-day', '0', null, 500); });
+    await sweep('recipe form', async () => { await A.act('edit-recipe', 'my_x', null, 400); await A.act('sheet-back'); await A.act('sheet-back'); });
+    await sweep('freezer recipe', async () => { await A.act('open-day', '3', null, 500); await A.act('sheet-back'); });
+    await sweep('pick sheet', async () => { await A.act('pick', '6', null, 1500); await A.act('more-filters', 'p-', null, 400); await A.act('sheet-back'); });
+    await sweep('votes', async () => { await A.act('votes'); await A.act('sheet-back'); });
+    await sweep('whosin', async () => { await A.act('whosin'); await A.act('sheet-back'); });
+    await sweep('rescue', async () => { await A.act('takeaway', '0', null, 1500); await A.act('sheet-back'); });
+    await sweep('cook', async () => { await A.act('cook', 'my_x', null, 300); await A.act('cook-ings'); await A.act('cook-ings'); await A.act('cook-next'); await A.act('cook-close'); });
+    await sweep('cook burger', async () => { await A.act('cook', 'am_double_smash_burgers', null, 300); await A.act('cook-close'); });
+    await sweep('odd recipe', async () => { await A.act('open-recipe', 'my_q"\'><b class="xss">', null, 400); await A.act('edit-recipe', 'my_q"\'><b class="xss">', null, 300); await A.act('sheet-back'); await A.act('sheet-back'); });
+    await sweep('lunch recipe', async () => { await A.act('open-recipe', 'my_l', null, 400); await A.act('sheet-back'); });
+    await sweep('next week', async () => { await A.act('wk', '1', null, 600); await A.act('wk', '-1', null, 600); });
+    await sweep('recipes', async () => { await A.act('tab', 'recipes', null, 500); await A.act('more-filters', 'f-'); await A.type('#rq', '1'); await A.type('#rq', ''); });
+    await sweep('shop', async () => { await A.act('tab', 'shop', null, 500); for (const b of [...d.querySelectorAll('[data-act="expand"]')].map(x => x.dataset.v)) await A.act('expand', b, null, 100); await A.act('share-menu'); });
+    await sweep('compare', async () => { await A.act('shop-view', 'compare', null, 400); });
+    await sweep('costs', async () => { await A.act('shop-view', 'cost', null, 400); });
+    await sweep('kitchen', async () => { await A.act('tab', 'kitchen', null, 400); for (const g of d.querySelectorAll('details')) g.open = true; await wait(100); });
+    await sweep('leftovers', async () => { await A.act('kit-view', 'left', null, 400); for (const g of d.querySelectorAll('details')) g.open = true; });
+    await sweep('freezer', async () => { await A.act('kit-view', 'freezer', null, 400); });
+    await A.act('tab', 'settings', null, 300); check('settings menu');
+    for (const pg of ['household', 'people', 'linked', 'planning', 'treats', 'equipment', 'prices', 'history', 'look', 'backup', 'account']) {
+      await sweep('settings ' + pg, async () => { await A.act('set-page', pg, null, pg === 'history' ? 800 : 300); if (pg === 'people') { await A.act('set-person', 'p_s'); } if (pg === 'prices') { await A.act('ing-new'); await A.type('#pq', '1"'); await A.act('expand', 'p:ing_x', null, 200); await A.type('#pq', 'mince'); await A.act('expand', 'p:beef_mince', null, 200); await A.type('#pq', ''); await A.act('price-aisle', '_old', null, 200); } });
+    }
+    await A.act('set-page', 'backup', null, 300);
+    ok(!d.querySelector('a[href^="javascript"]'), 'links: a backup sheet address that isn\u2019t a Google Sheet isn\u2019t offered as a link');
+    ok(!seen.size, 'markup: nothing written by someone else shows as markup' + (seen.size ? ' (in ' + [...seen].join(', ') + ')' : ''));
+    ok(!A.errs.length, 'markup: the app copes with odd values without errors ' + A.errs.slice(0, 5).join(' | '));
+  }
+  console.log(fails ? fails + ' FAILED' : 'all passed');
+  process.exit(fails ? 1 : 0);
+})();

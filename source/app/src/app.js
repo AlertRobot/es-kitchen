@@ -37,7 +37,7 @@ function cuisineClass(c) { return 'c-' + (CUISINES.includes(c) ? c.split(' ')[0]
 function ratingSummary() {
   if (ratingSummary.src === S.ratings) return ratingSummary.out;
   const out = {};
-  for (const rid in S.ratings) { const d = S.ratings[rid] || {}; const vals = Object.keys(d).filter(k => d[k] && d[k].stars).map(k => d[k].stars); if (vals.length) out[rid] = { avg: vals.reduce((a, b) => a + b, 0) / vals.length, n: vals.length }; }
+  for (const rid in S.ratings) { const d = S.ratings[rid] || {}; const vals = Object.keys(d).map(k => num(d[k] && d[k].stars, 0)).filter(v => v >= 1 && v <= 5); if (vals.length) out[rid] = { avg: vals.reduce((a, b) => a + b, 0) / vals.length, n: vals.length }; }
   ratingSummary.src = S.ratings; ratingSummary.out = out; return out;
 }
 function recentMap() {
@@ -176,18 +176,81 @@ function spellRecipe(r) {
   Object.defineProperty(r, '_spelt', { value: true, enumerable: false });
   return r;
 }
+// Records come from either phone, a backup file or the sheet: numbers stay numbers, dates stay dates and words stay
+// words before anything is shown, so an odd value can't break a page or end up as part of it
+const num = (x, d) => { const n = typeof x === 'number' ? x : typeof x === 'string' && x.trim() !== '' ? Number(x) : NaN; return Number.isFinite(n) ? n : d; };
+const txt = x => (typeof x === 'string' ? x : typeof x === 'number' ? String(x) : '');
+const isoOk = x => typeof x === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(x);
+const hhmm = x => typeof x === 'string' && /^\d{1,2}:\d{2}$/.test(x);
+function tidyPrice(p) {
+  if (!p || typeof p !== 'object' || Array.isArray(p)) return null;
+  const x = { ...p };
+  ['pack', 'price', 'loyalty', 'was'].forEach(k => { if (k in x) x[k] = num(x[k], null); });
+  ['checked', 'seen'].forEach(k => { if (k in x && !isoOk(x[k])) delete x[k]; });
+  ['src', 'label', 'note', 'basis', 'conf'].forEach(k => { if (k in x) x[k] = txt(x[k]); });
+  if ('alt' in x) x.alt = (Array.isArray(x.alt) ? x.alt : []).map(a => ({ pack: num(a && a.pack, 0) })).filter(a => a.pack > 0);
+  return x;
+}
+function tidyIng(over) {
+  const x = { ...over };
+  ['name', 'aisle', 'separable'].forEach(k => { if (k in x) x[k] = txt(x[k]); });
+  if ('unit' in x && !UNITS.includes(x.unit)) x.unit = 'each';
+  if ('packs' in x) { x.packs = (Array.isArray(x.packs) ? x.packs : []).map(p => num(p, 0)).filter(p => p > 0); if (!x.packs.length) x.packs = [1]; }
+  ['keeps', 'life'].forEach(k => { if (k in x) x[k] = num(x[k], 3); });
+  if ('tags' in x) x.tags = (Array.isArray(x.tags) ? x.tags : []).map(txt);
+  if ('nut' in x) x.nut = x.nut && typeof x.nut === 'object' ? { per: num(x.nut.per, 100), kcal: num(x.nut.kcal, 0), protein: num(x.nut.protein, 0), carbs: num(x.nut.carbs, 0), fat: num(x.nut.fat, 0) } : undefined;
+  if ('prices' in x) { const pr = {}; for (const sh in (x.prices && typeof x.prices === 'object' ? x.prices : {})) { const p = tidyPrice(x.prices[sh]); if (p) pr[sh] = p; } x.prices = pr; }
+  return x;
+}
+function tidyRecipe(x) {
+  const r = { ...x, time: num(x.time, 0), servings: num(x.servings, 0) > 0 ? num(x.servings, 2) : 2 };
+  ['title', 'icon', 'cuisine', 'protein', 'category', 'meal', 'short', 'airFryer', 'batch', 'base', 'family'].forEach(k => { if (k in r) r[k] = txt(r[k]); });
+  if ('keepsDays' in r) r.keepsDays = num(r.keepsDays, 0);
+  ['equipment', 'tags'].forEach(k => { if (k in r) r[k] = (Array.isArray(r[k]) ? r[k] : []).map(txt); });
+  if (Array.isArray(r.ingredients)) r.ingredients = r.ingredients.filter(l => l && typeof l === 'object').map(l => { const o = { ...l, i: txt(l.i), q: num(l.q, 0), t: txt(l.t) }; if ('swap' in l) o.swap = txt(l.swap) || undefined; return o; });
+  if ('steps' in r) r.steps = (Array.isArray(r.steps) ? r.steps : []).map(s => (s && typeof s === 'object' ? { ...s, title: txt(s.title), text: txt(s.text) } : txt(s)));
+  if (r.source && typeof r.source === 'object') r.source = { ...r.source, title: txt(r.source.title), site: txt(r.source.site), author: txt(r.source.author), url: txt(r.source.url) };
+  else delete r.source;
+  return r;
+}
+function tidyWeek(w) {
+  w.carryIn = (Array.isArray(w.carryIn) ? w.carryIn : []).filter(c => c && typeof c === 'object').map(c => ({ ...c, i: txt(c.i), q: num(c.q, 0), exp: isoOk(c.exp) ? c.exp : null }));
+  w.freezerMeals = (Array.isArray(w.freezerMeals) ? w.freezerMeals : []).filter(m => m && typeof m === 'object').map(m => ({ ...m, r: txt(m.r), portions: num(m.portions, 0) }));
+  w.days = w.days.map(d => { if (!d || typeof d !== 'object') return {}; const x = { ...d }; if ('r' in x) x.r = txt(x.r); if ('guests' in x) x.guests = num(x.guests, 0); if ('extra' in x) x.extra = num(x.extra, 0); if ('extraUse' in x && x.extraUse !== 'freeze') x.extraUse = 'lunch'; return x; });
+  w.extras = (Array.isArray(w.extras) ? w.extras : []).filter(e => e && typeof e === 'object').map(e => ({ ...e, name: txt(e.name) }));
+  if (w.locked && typeof w.locked === 'object') w.locked = { ...w.locked, by: txt(w.locked.by) };
+  return w;
+}
+function tidyPerson(p) {
+  const x = { ...p, name: txt(p.name) };
+  ['wontEat', 'dislikes', 'likes'].forEach(k => { x[k] = (Array.isArray(p[k]) ? p[k] : []).map(txt).filter(Boolean); });
+  ['kcalTarget', 'proteinTarget'].forEach(k => { if (k in x) x[k] = num(x[k], null); });
+  if ('portion' in x) x.portion = num(x.portion, 1);
+  return x;
+}
+function tidySettings(s) {
+  const x = { ...s };
+  ['weeknightCap', 'monthlyBudget'].forEach(k => { x[k] = num(x[k], DEFAULTS[k]); });
+  ['stapleBudget', 'freezerSpace'].forEach(k => { if (k in x) x[k] = num(x[k], k === 'stapleBudget' ? 8 : 0); });
+  x.treatDays = (Array.isArray(x.treatDays) ? x.treatDays : []).map(d => num(d, -1)).filter(d => d >= 0 && d < 7);
+  if ('lateCutoff' in x && !hhmm(x.lateCutoff)) delete x.lateCutoff;
+  if (x.remind && typeof x.remind === 'object' && 'cookAt' in x.remind && !hhmm(x.remind.cookAt)) x.remind = { ...x.remind, cookAt: '18:00' };
+  if (!SHOPS.some(sh => sh.id === x.shop)) x.shop = DEFAULTS.shop;
+  return x;
+}
+function tidyShop(t) { return { ...t, amount: num(t.amount, 0), date: isoOk(t.date) ? t.date : '', shop: txt(t.shop), note: txt(t.note) }; }
 function rebuild() {
   if (!S.lib) return;
   const recipes = {}; for (const r of S.lib.recipes) recipes[r.id] = r;
-  for (const id in RAW.myR) { const x = RAW.myR[id]; if (x.hidden) delete recipes[id]; else recipes[id] = { ...x, id, time: Number(x.time) || 0, servings: Number(x.servings) > 0 ? Number(x.servings) : 2 }; }
+  for (const id in RAW.myR) { const x = RAW.myR[id]; if (x.hidden) delete recipes[id]; else recipes[id] = { ...tidyRecipe(x), id }; }
   const all = Object.values(recipes).filter(r => r && r.title && Array.isArray(r.ingredients)).sort((a, b) => a.title.localeCompare(b.title));
   all.forEach(spellRecipe);
   S.RMAP = {}; all.forEach(r => S.RMAP[r.id] = r);
   S.recipes = all.filter(r => !r.retired); // retired recipes still open from old weeks, but aren't offered any more
   const ing = {}; for (const i of S.lib.ingredients) ing[i.id] = i;
   for (const id in RAW.myI) {
-    const lib = ing[id], over = RAW.myI[id];
-    if (!lib) { ing[id] = { ...over, id }; continue; }
+    const lib = ing[id], over = tidyIng(RAW.myI[id]);
+    if (!lib) { ing[id] = { packs: [1], unit: 'each', keeps: 3, life: 7, ...over, name: over.name || id, prices: over.prices || {}, id }; continue; }
     // your own edits only change what you changed: staple, and the prices you entered. For each shop the newer price wins,
     // so a refreshed library price replaces an old copy, but a receipt you logged today stays.
     const prices = { ...(lib.prices || {}) };
@@ -211,12 +274,12 @@ function subscribeHousehold(hid) {
   unsub.backup = Store.sub('config/backup', d => { S.backup = d || null; schedule(); maybeAutoBackup(); }, () => {});
   unsub.recipes = Store.sub('recipes', docs => { RAW.myR = {}; docs.forEach(d => RAW.myR[d.id] = d); RAW.gotR = true; rebuild(); }, onSubErr);
   unsub.ing = Store.sub('ingredients', docs => { RAW.myI = {}; docs.forEach(d => RAW.myI[d.id] = d); RAW.gotI = true; rebuild(); }, onSubErr);
-  unsub.people = Store.sub('people', docs => { RAW.people = {}; docs.forEach(d => { const x = clone(d); delete x.id; RAW.people[d.id] = x; }); S.people = docs.sort((a, b) => (a.order || 0) - (b.order || 0)); schedule(); if (S.cal.user && !S.cal.at && !S.cal.busy) setTimeout(() => calRefresh(true), 500); }, onSubErr);
-  unsub.settings = Store.sub('config/settings', d => { S.settings = { ...clone(DEFAULTS), ...(d || {}) }; S.settings.equipment = { ...DEFAULTS.equipment, ...((d && d.equipment) || {}) }; resetCaches(); schedule(); }, onSubErr);
+  unsub.people = Store.sub('people', docs => { RAW.people = {}; docs.forEach(d => { const x = clone(d); delete x.id; RAW.people[d.id] = x; }); S.people = docs.map(tidyPerson).sort((a, b) => (Number(a.order) || 0) - (Number(b.order) || 0)); schedule(); if (S.cal.user && !S.cal.at && !S.cal.busy) setTimeout(() => calRefresh(true), 500); }, onSubErr);
+  unsub.settings = Store.sub('config/settings', d => { S.settings = tidySettings({ ...clone(DEFAULTS), ...(d || {}) }); S.settings.equipment = { ...DEFAULTS.equipment, ...((d && d.equipment) || {}) }; resetCaches(); schedule(); }, onSubErr);
   unsub.pantry = Store.sub('config/pantry', d => { S.pantryRaw = d ? clone(d) : null; S.pantry = d ? clone(d) : { status: {} }; if (!S.pantry.status) S.pantry.status = {}; schedule(); }, onSubErr);
   unsub.photoPrefs = Store.sub('config/photoPrefs', d => { S.photoPrefs = d && d.hidden ? clone(d) : { hidden: {} }; schedule(); }, onSubErr);
   unsub.thumbs = Store.subG('dishThumbs', docs => { S.thumbs = {}; docs.forEach(d => S.thumbs[d.id] = d); schedule(); }, () => {});
-  unsub.shops = Store.sub('shops', docs => { S.shopsLog = docs; schedule(); if (S.bg.cfg && docs.some(t => t.budgie && (t.budgie.state === 'queued' || (t.removed && t.budgie.tid)))) setTimeout(bgSyncShops, 800); }, onSubErr);
+  unsub.shops = Store.sub('shops', docs => { S.shopsLog = docs.map(tidyShop); schedule(); if (S.bg.cfg && docs.some(t => t.budgie && (t.budgie.state === 'queued' || (t.removed && t.budgie.tid)))) setTimeout(bgSyncShops, 800); }, onSubErr);
   unsub.ratings = Store.sub('ratings', docs => { const m = {}; docs.forEach(d => { const x = { ...d }; delete x.id; m[d.id] = x; }); S.ratings = m; schedule(); }, onSubErr);
   subscribeWeek();
   // Always keep this week and next week on the phone, so the plan and list are there offline in the shop.
@@ -289,9 +352,9 @@ function subscribeWeek() {
 }
 function normWeek(w, start) {
   w = Object.assign(w, decWeek(w)); w.start = start; w.days = Array.from({ length: 7 }, (_, k) => (w.days && w.days[k]) || {});
-  w.carryIn = w.carryIn || []; w.freezerMeals = w.freezerMeals || []; w.checked = w.checked || {}; w.extras = w.extras || [];
-  w.bumped = w.bumped || []; w.suggestFirst = w.suggestFirst || [];
-  return w;
+  w.checked = isObj(w.checked) ? w.checked : {};
+  w.bumped = Array.isArray(w.bumped) ? w.bumped : []; w.suggestFirst = Array.isArray(w.suggestFirst) ? w.suggestFirst : [];
+  return tidyWeek(w);
 }
 // Carry-overs are worked out live from what last week actually planned. Nothing planned last week = nothing carried.
 // Only when someone edits the list in the Kitchen tab (carryEdited) is it kept as typed.
@@ -1141,8 +1204,8 @@ function renderComparison(B) {
 function carryRow(c, k) {
   const ing = S.ING[c.i]; if (!ing) return '';
   return '<div class="stack ruled"><div class="row between"><b>' + h(ing.name) + '</b><button class="icon-btn" data-act="del-carry" data-v="' + k + '" aria-label="Remove ' + h(ing.name) + '">' + ICON.close + '</button></div>' +
-    '<div class="grid2"><label class="field"><span>Amount (' + (ing.unit === 'each' ? 'items' : ing.unit) + ')</span><input class="input" type="number" min="0" step="any" id="cq-' + k + '" data-change="carry-q" data-v="' + k + '" value="' + (Number(c.q) || 0) + '"></label>' +
-    '<label class="field"><span>' + (c.frozen ? 'In the freezer' : 'Use by') + '</span>' + (c.frozen ? '<button class="btn" data-act="carry-thaw" data-v="' + k + '">Mark thawed</button>' : '<input class="input" type="date" id="ce-' + k + '" data-change="carry-exp" data-v="' + k + '" value="' + (c.exp || '') + '">') + '</label></div></div>';
+    '<div class="grid2"><label class="field"><span>Amount (' + (ing.unit === 'each' ? 'items' : h(ing.unit)) + ')</span><input class="input" type="number" min="0" step="any" id="cq-' + k + '" data-change="carry-q" data-v="' + k + '" value="' + (Number(c.q) || 0) + '"></label>' +
+    '<label class="field"><span>' + (c.frozen ? 'In the freezer' : 'Use by') + '</span>' + (c.frozen ? '<button class="btn" data-act="carry-thaw" data-v="' + k + '">Mark thawed</button>' : '<input class="input" type="date" id="ce-' + k + '" data-change="carry-exp" data-v="' + k + '" value="' + h(c.exp || '') + '">') + '</label></div></div>';
 }
 function carryAddForm(w, frozen) {
   const ingOpts = Object.values(S.ING).filter(i => !i.staple && (!frozen || i.freeze)).sort((a, b) => a.name.localeCompare(b.name)).map(i => '<option value="' + h(i.id) + '">' + h(i.name) + '</option>').join('');
@@ -1664,7 +1727,7 @@ function setPlanning() {
     '<label class="field"><span>Your usual shop (sets the list prices)</span><select class="input" id="set-shop" data-change="set-shop">' + SHOPS.map(s => '<option value="' + s.id + '" ' + (st.shop === s.id ? 'selected' : '') + '>' + s.name + '</option>').join('') + '</select></label>' +
     '<label class="row"><input type="checkbox" id="set-loy" class="cb" data-change="set-loy" ' + (st.useLoyalty !== false ? 'checked' : '') + '> Use Clubcard / Nectar / Lidl Plus prices where there’s an offer</label>' +
     '<div class="grid2"><label class="field"><span>Monthly food budget (£)</span><input class="input" type="number" min="0" step="10" id="set-budget" data-change="set-budget" value="' + h(st.monthlyBudget) + '"></label>' +
-    '<label class="field"><span>Cupboard top-ups a week (£)</span><input class="input" type="number" min="0" step="1" id="set-staple-budget" data-change="set-staple-budget" value="' + (st.stapleBudget == null ? 8 : st.stapleBudget) + '"></label></div>' +
+    '<label class="field"><span>Cupboard top-ups a week (£)</span><input class="input" type="number" min="0" step="1" id="set-staple-budget" data-change="set-staple-budget" value="' + h(st.stapleBudget == null ? 8 : st.stapleBudget) + '"></label></div>' +
     '<p class="muted small">That’s about ' + fmtMoney(weeklyBudget()) + ' a week. When you’re low on staples, the planner favours meals that use what you’ve got, so restocking is spread over a few weeks.</p></section>';
 }
 const PRICE_PAGE = 40;
@@ -1915,9 +1978,9 @@ function setBackup() {
   out += '<section class="panel"><h2>Google Sheets</h2>';
   if (on) {
     out += '<div class="backupstat"><span class="dot ' + (failed ? 'bad' : b.last ? 'good' : 'warn') + '" aria-hidden="true"></span><span class="small">' + (b.last ? 'Last backup <b>' + h(fmtWhen(b.last)) + '</b>' + (b.lastBy ? ' from ' + h(b.lastBy) + '’s phone' : '') : 'Connected, not backed up yet') + (failed ? '<br><span style="color:var(--bad)">Last try ' + h(fmtWhen(b.lastTry)) + ' failed: ' + h(b.lastErr || '') + '</span>' : '') + '</span></div>' +
-      '<div class="row wrap"><button class="btn primary grow" data-act="backup-now" ' + (S.backupBusy || !S.online ? 'disabled' : '') + '>' + (S.backupBusy ? '<span class="spinner sm" aria-hidden="true"></span> Backing up…' : 'Back up now') + '</button>' + (b.sheetUrl ? '<a class="btn grow" href="' + h(b.sheetUrl) + '" target="_blank" rel="noopener">Open the sheet</a>' : '') + '</div>' +
+      '<div class="row wrap"><button class="btn primary grow" data-act="backup-now" ' + (S.backupBusy || !S.online ? 'disabled' : '') + '>' + (S.backupBusy ? '<span class="spinner sm" aria-hidden="true"></span> Backing up…' : 'Back up now') + '</button>' + (/^https:\/\/docs\.google\.com\//.test(b.sheetUrl || '') ? '<a class="btn grow" href="' + h(b.sheetUrl) + '" target="_blank" rel="noopener">Open the sheet</a>' : '') + '</div>' +
       '<label class="row"><input type="checkbox" class="cb" data-change="backup-auto" ' + (b.auto !== false ? 'checked' : '') + '> Back up automatically once a day, and when a week is locked in</label>';
-    if (b.counts) out += '<p class="muted small">Last backup: ' + ['Weeks', 'People', 'Recipes', 'MyRecipes', 'Ingredients', 'Docs'].filter(k => b.counts[k] != null).map(k => b.counts[k] + ' ' + ({ Weeks: 'week-day rows', People: 'people', Recipes: 'library recipes', MyRecipes: 'own recipes', Ingredients: 'ingredients', Docs: 'raw records' })[k]).join(', ') + '.</p>';
+    if (b.counts) out += '<p class="muted small">Last backup: ' + ['Weeks', 'People', 'Recipes', 'MyRecipes', 'Ingredients', 'Docs'].filter(k => num(b.counts[k], null) != null).map(k => num(b.counts[k], 0) + ' ' + ({ Weeks: 'week-day rows', People: 'people', Recipes: 'library recipes', MyRecipes: 'own recipes', Ingredients: 'ingredients', Docs: 'raw records' })[k]).join(', ') + '.</p>';
   } else out += '<p class="small">Copies every household, account, person, week, shopping list, pantry, rating, recipe and price into a Google Sheet, one tab per table. It runs from your phones, so it carries on even if you never open Claude again.</p>';
   const d = S.backupDraft || { url: b.url || '', key: b.key || '' };
   out += '<details class="fold"' + (on ? '' : ' open') + '><summary>' + (on ? 'Connection' : 'Connect a backup sheet') + '</summary><div class="in"><form class="stack" data-form="backup-connect">' +
@@ -2074,8 +2137,8 @@ function sheetRecipe(r, top) {
   pc.blocked.forEach(b => { out += '<div class="note warn"><b>' + h(b.person) + ' won’t eat ' + h(b.what.toLowerCase()) + '</b>, and there’s no simple swap, so this won’t be suggested.</div>'; });
   pc.swaps.forEach(s => { out += '<div class="note good"><b>Swap for ' + h(s.person) + ':</b> ' + h(s.note) + ' (' + h(s.ingName.toLowerCase()) + ').</div>'; });
   {
-    const rr = S.ratings[r.id] || {}; const me = myUid(); const mine = rr[me] && rr[me].stars || 0;
-    const others = Object.keys(rr).filter(k => k !== me && rr[k] && rr[k].stars).map(k => h(rr[k].name || 'Someone') + ' ' + rr[k].stars + '★');
+    const rr = S.ratings[r.id] || {}; const me = myUid(); const mine = num(rr[me] && rr[me].stars, 0);
+    const others = Object.keys(rr).filter(k => k !== me && rr[k] && num(rr[k].stars, 0) >= 1).map(k => h(rr[k].name || 'Someone') + ' ' + Math.round(num(rr[k].stars, 0)) + '★');
     const rs = ratingSummary()[r.id];
     out += '<section class="ratebox"><div class="row wrap between"><span class="label">' + (mine ? 'Your rating' : 'Made it? Rate it') + '</span>' + rateButtons(r.id, mine) + '</div>' +
       (rr[me] ? '<div><button class="linkish small" data-act="rate-clear" data-v="' + h(r.id) + '">Clear my rating</button></div>' : '') +
@@ -2270,7 +2333,7 @@ function sheetForm(top) {
   while (steps.length < 8) steps.push({ title: '', text: '' });
   const opts = sel => '<option value="">Choose…</option>' + Object.values(S.ING).sort((a, b) => a.name.localeCompare(b.name)).map(i => '<option value="' + h(i.id) + '" ' + (sel === i.id ? 'selected' : '') + '>' + h(i.name) + ' (' + h(i.unit) + ')</option>').join('');
   const eq = r ? (r.equipment || []) : ['hob'];
-  let out = importBox(top) + '<form class="stack" data-form="recipe" data-v="' + (r && r.id ? r.id : '') + '">' +
+  let out = importBox(top) + '<form class="stack" data-form="recipe" data-v="' + h(r && r.id ? r.id : '') + '">' +
     '<label class="field"><span>Name</span><input class="input" id="rf-title" required value="' + h(r ? r.title : '') + '" placeholder="e.g. Nan’s sausage casserole"></label>' +
     '<div class="grid2"><label class="field"><span>Icon (an emoji)</span><input class="input" id="rf-icon" value="' + h(r ? r.icon : '🍲') + '" maxlength="4"></label><label class="field"><span>Total time (min)</span><input class="input" id="rf-time" type="number" min="5" step="5" required value="' + (r ? r.time : 30) + '"></label></div>' +
     '<div class="grid2"><label class="field"><span>Cuisine</span><select class="input" id="rf-cuisine">' + CUISINES.map(c => '<option ' + (r && r.cuisine === c ? 'selected' : '') + '>' + c + '</option>').join('') + '</select></label><label class="field"><span>Main protein</span><select class="input" id="rf-protein">' + PROTEINS.map(p => '<option ' + (r && r.protein === p ? 'selected' : '') + '>' + p + '</option>').join('') + '</select></label></div>' +
