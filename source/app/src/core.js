@@ -707,7 +707,7 @@ function rescuePlans(week, d, ctx) {
     { const days = old.map(x => ({ ...x })); let bumped = [];
       // takeaway nights, freezer meals and nights nobody's in stay where they are; cooked dinners shift into the free nights
       const fixed = k => k !== d && (old[k].takeaway || old[k].freezer || nobodyIn(week, k, ctx));
-      const tail = old.slice(d).filter((x, i) => x.r && !x.takeaway && (i === 0 || !x.freezer));
+      const tail = old.slice(d).filter((x, i) => x.r && !x.takeaway && (i === 0 || !fixed(d + i)));
       for (let k = d; k < 7; k++) if (!fixed(k)) days[k] = {};
       days[d] = tk; let k = d + 1;
       for (const x of tail) { while (k < 7 && fixed(k)) k++; if (k < 7) { days[k] = { ...x }; k++; } else bumped.push(x.r); }
