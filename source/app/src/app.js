@@ -347,7 +347,7 @@ function subscribeWeek() {
     else if (!S.online || (meta && meta.cache)) { const c = loadWeekCopy(start); if (c) d = c; }
     S.weekRaw = d ? { start, doc: clone(d), legacy } : null;
     S.week = d ? normWeek(clone(d), start) : null; S.weekLoaded = true; schedule();
-  }, e => { onSubErr(e); const c = loadWeekCopy(start); if (c && start === S.weekStart && !S.week) { S.week = normWeek(clone(c), start); S.weekLoaded = true; schedule(); } });
+  }, e => { onSubErr(e); if (start !== S.weekStart) return; const c = loadWeekCopy(start); if (c && !S.week) S.week = normWeek(clone(c), start); S.weekLoaded = true; schedule(); });
   unsub.prev = Store.sub('weeks/' + addDays(start, -7), d => { if (start !== S.weekStart) return; d = decWeek(d); S.prevWeek = d ? normWeek(clone(d), addDays(start, -7)) : null; schedule(); }, onSubErr);
   S.hist = {};
   [2, 3].forEach(k => Store.get('weeks/' + addDays(start, -7 * k)).then(d => { if (start !== S.weekStart) return; S.hist[k] = decWeek(d); schedule(); }));
@@ -422,6 +422,7 @@ function saveDiff(rel, before, after, whole) {
   p.catch(e => { console.warn(e); toast(e && e.code === 'permission-denied' ? 'You can\u2019t change this household.' : 'Couldn\u2019t save that change.'); });
 }
 function mutateWeek(fn) {
+  if (!S.weekLoaded) { toast('This week is still loading. Try again in a moment.'); return; }
   const w = clone(currentWeek()); fn(w); w.updated = new Date().toISOString(); w.updatedBy = myName();
   if (!w.carryEdited) { delete w.carryIn; delete w.freezerMeals; delete w.suggestFirst; }
   const raw = S.weekRaw && S.weekRaw.start === w.start ? S.weekRaw : null;
@@ -561,6 +562,8 @@ function renderTab() {
   if (S.tab === 'settings') return renderSettings();
   if (S.tab === 'recipes') return renderRecipes(nr);
   if (nr) return headerWeek(null) + nr;
+  // until the week has arrived (a weak signal), it shows as loading rather than empty, so nobody plans over the other phone's plan
+  if (!S.weekLoaded) return headerWeek(null) + '<div class="empty-state"><div class="spinner" aria-hidden="true"></div><p class="muted">Loading this week\u2026</p></div>';
   if (S.tab === 'week') return renderWeek();
   if (S.tab === 'shop') return renderShop();
   if (S.tab === 'kitchen') return renderKitchen();
@@ -2497,7 +2500,9 @@ function autoFillAsync(w, C, opts) {
   });
 }
 function doFill(jitter, clearAuto) {
-  if (S.busy || guardLocked()) return; S.busy = true; render();
+  if (S.busy || guardLocked()) return;
+  if (!S.weekLoaded) { toast('This week is still loading. Try again in a moment.'); return; }
+  S.busy = true; render();
   const C = ctx(); const w = clone(currentWeek());
   if (clearAuto) w.days = w.days.map(x => x.auto ? {} : x);
   autoFillAsync(w, C, { jitter, beam: 3, branch: 5 }).then(filled => {

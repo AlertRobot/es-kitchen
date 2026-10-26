@@ -156,6 +156,20 @@ const signedIn = (name) => ({ 'users/u_ethan': { households: ['h1'], current: 'h
     const q = id => (A.w.__docs.get('households/h1/shops/' + id) || {}).budgie || {};
     ok(q('q37').state === 'sent' && q('q44').state === 'queued', 'budgie: only the shops that were sent are marked sent');
   }
+  // ---- 4. on a weak signal, a week that hasn't arrived yet can't be planned over ----
+  if (!only || only === 4) {
+    const pre = signedIn(); pre['households/h1/people/u_ethan'] = { name: 'Ethan', uid: 'u_ethan', order: 1 };
+    const theirs = { d0: { r: 'it_tuna_puttanesca' }, d1: { r: 'in_chicken_tikka_masala' } };
+    pre['households/h1/weeks/' + MON] = { days: theirs, updatedBy: 'Sophie' };
+    const A = boot({ pre }); A.w.__slowWeeks = 2500; await wait(1200);
+    const shown = A.d.querySelector('#app').textContent;
+    ok(/Loading this week/.test(shown) && !A.d.querySelector('[data-act="fill"]'), 'loading: the week shows as loading, not as an empty week to fill');
+    await A.act('fill', null, null, 300); await A.act('pick', '0', null, 200); await A.act('choose', 'it_tuna_puttanesca', null, 200);
+    await wait(3500);
+    const days = (A.w.__docs.get('households/h1/weeks/' + MON) || {}).days || {};
+    ok(days.d0 && days.d0.r === 'it_tuna_puttanesca' && days.d1 && days.d1.r === 'in_chicken_tikka_masala' && Object.keys(days).length === 2, 'loading: a tap meanwhile doesn\u2019t plan over the other phone\u2019s week (' + JSON.stringify(days) + ')');
+    ok(A.d.querySelectorAll('.meal .ttl').length === 2, 'loading: then the week shows with their plan');
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();
