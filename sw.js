@@ -1,8 +1,9 @@
 // E&S Kitchen service worker: keeps the app, recipe library and photos available offline.
-const VERSION = 'mvmtn9uh';
+const VERSION = 'mvp5bpp8';
 const SHELL = 'shell-' + VERSION;
 const RUNTIME = 'runtime-v1';
-const PRECACHE = ['./', 'index.html', 'firebase-config.js', 'app.js?v=' + VERSION, 'manifest.webmanifest', 'icons/icon.svg', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png', 'data/library.json'];
+const PRECACHE = ['./', 'index.html', 'firebase-config.js', 'app.js?v=' + VERSION, 'manifest.webmanifest', 'icons/icon.svg', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png', 'data/library.json',
+  'fonts/atkinson-hyperlegible-latin-400-italic.woff2', 'fonts/atkinson-hyperlegible-latin-400-normal.woff2', 'fonts/atkinson-hyperlegible-latin-700-normal.woff2', 'fonts/audiowide-latin-400-normal.woff2', 'fonts/bricolage-grotesque-latin-600-normal.woff2', 'fonts/bricolage-grotesque-latin-800-normal.woff2', 'fonts/cinzel-latin-700-normal.woff2', 'fonts/exo-2-latin-700-normal.woff2', 'fonts/ibm-plex-mono-latin-500-normal.woff2', 'fonts/medievalsharp-latin-400-normal.woff2', 'fonts/orbitron-latin-700-normal.woff2'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(SHELL).then(c => c.addAll(PRECACHE)).then(() => self.skipWaiting()));
