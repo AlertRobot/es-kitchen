@@ -15,4 +15,11 @@ const placed = shift.days.map(x => x.r).filter(Boolean);
 ok(new Set(placed).size === placed.length, 'takeaway "shift the rest" never puts the same dinner on two nights');
 ok(shift.days[3].r === ids[3], 'a night nobody is in stays as it was');
 ok(shift.days[1].takeaway && shift.days[2].r === ids[1], 'tonight moves to tomorrow');
+// guests coming on Thursday stay on Thursday, whichever re-plan is used after a Tuesday takeaway
+{
+  const w2 = { start: '2026-10-26', days: ids.map((r, k) => (k === 3 ? { r, guests: 2 } : { r })) };
+  const { options: o2 } = Core.rescuePlans(w2, 1, C);
+  ok(o2.every(o => o.days[3].guests === 2), 'takeaway re-plans keep Thursday\u2019s guests on Thursday');
+  ok(o2.every(o => o.days.every((x, k) => k === 3 || !x.guests)), 'and don\u2019t move them to another night');
+}
 process.exit(fails ? 1 : 0);

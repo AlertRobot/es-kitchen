@@ -692,6 +692,8 @@ function rescuePlans(week, d, ctx) {
   const tonight = week.days[d] && week.days[d].r;
   const opts = [];
   const mk = (label, days, bumped, detail) => {
+    // guests belong to the night, not the dinner: they stay where they were whichever dinner ends up there
+    days = days.map((x, k) => { if (k === d || x.takeaway) return x; const y = { ...x }; if (old[k] && old[k].guests) y.guests = old[k].guests; else delete y.guests; return y; });
     const w = { ...week, days };
     const sim = simulateBought(w, bought, ctx);
     const extra = sim.buy.prefTotal;
