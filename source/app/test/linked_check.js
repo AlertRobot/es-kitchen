@@ -14,7 +14,6 @@ const CAL = { household: { dinnerTime: '19:00' }, people: [{ id: 'ethan', name: 
   feeds: [{ owner: 'sophie', events: [{ id: 'e1', t: 'Shift', s: wed.getTime(), e: wedE.getTime() }] }], me: 'ethan' };
 const dom = new JSDOM(html, { runScripts: 'dangerously', pretendToBeVisual: true, url: 'https://x.github.io/es-kitchen/', beforeParse(w) {
   w.localStorage.setItem('peckish.cal', 'true');
-  w.localStorage.setItem('budgie.cfg', JSON.stringify({ u: 'https://script.google.com/macros/s/BUDGIE/exec', k: 'kE' }));
   w.fetch = async (url, opt) => {
     if (/script\.google\.com\/macros\/s\/BUDGIE/.test(url)) { const b = JSON.parse(opt.body); POSTS.push(b); (b.ops || []).forEach(o => { if (o.op === 'put') BUDGIE[o.table].push({ ...o.row }); }); return { ok: true, json: async () => ({ ok: true, person: 'ethan', now: Date.now(), full: !!b.full, rows: b.full ? BUDGIE : { transactions: (b.ops || []).map(o => o.row) } }) }; }
     return { ok: true, json: async () => JSON.parse(lib) };
@@ -54,7 +53,9 @@ const rows = () => [...d.querySelectorAll('.day')].map(x => x.textContent.replac
   // Budgie: link and log a shop
   await click('[data-act="tab"][data-v="settings"]'); await click('[data-act="set-page"][data-v=""]'); await click('[data-act="set-page"][data-v="linked"]');
   console.log('4 linked page:', d.querySelector('#app').textContent.replace(/\s+/g, ' ').slice(0, 300));
-  await click('[data-act="bg-link-phone"]', 1500);
+  // paste Peckish's own limited link, made in Budgie (Settings, Linked apps)
+  d.querySelector('#bg-url').value = 'https://budgie-money.github.io/#connect=' + Buffer.from(JSON.stringify({ u: 'https://script.google.com/macros/s/BUDGIE/exec', k: 'kE' })).toString('base64url');
+  await submit('[data-form="bg-link"]', 1500);
   console.log('   budgie imported shops:', (w.__docs && [...w.__docs.keys()].filter(k => k.includes('/shops/')).length));
   await click('[data-act="tab"][data-v="shop"]'); await click('[data-act="shop-view"][data-v="cost"]');
   d.querySelector('#ls-amt').value = '48.20'; await submit('[data-form="logshop"]', 1500);

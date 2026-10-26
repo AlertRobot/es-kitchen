@@ -1274,7 +1274,6 @@ async function calReminders() {
 
 // ---------- Budgie ----------
 S.bg = { cfg: LINK.get('budgie', null), data: LINK.get('budgieData', { since: 0, me: '', rows: {} }), busy: false, err: '', at: 0 };
-function budgieOnPhone() { try { const c = JSON.parse(localStorage.getItem('budgie.cfg') || 'null'); return c && c.u && c.k ? c : null; } catch (e) { return null; } }
 function bgParseLink(text) {
   const m = String(text || '').match(/#connect=([A-Za-z0-9_\-=]+)/); if (!m) return null;
   try { const b64 = m[1].replace(/-/g, '+').replace(/_/g, '/'); const j = JSON.parse(decodeURIComponent(escape(atob(b64 + '==='.slice((b64.length + 3) % 4))))); return j.u && j.k ? { u: j.u, k: j.k } : null; } catch (e) { return null; }
@@ -1283,7 +1282,10 @@ async function bgCall(ops, full) {
   const c = S.bg.cfg; if (!c) throw new Error('Budgie isn’t linked.');
   const D = S.bg.data;
   const res = await fetch(c.u, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify({ key: c.k, since: full ? 0 : D.since, full: !!full || !D.since, ops: ops || [] }) });
-  const j = await res.json(); if (!j.ok) throw new Error(j.error || 'Budgie said no');
+  const j = await res.json();
+  // an old link with Budgie's full key: forget it and ask for Peckish's own limited link instead
+  if (j.keyType === 'full' || (!j.ok && /link for Peckish|not allowed with this link/i.test(j.error || ''))) { bgUnlink(); throw new Error('For safety, Budgie now gives Peckish its own link. In Budgie, go to Settings, then Linked apps, tap Link Peckish and paste the link here.'); }
+  if (!j.ok) throw new Error(j.error || 'Budgie said no');
   if (j.full) D.rows = {};
   for (const t of ['people', 'budgets', 'transactions', 'splits', 'accounts']) (j.rows && j.rows[t] || []).forEach(r => { D.rows[t] = D.rows[t] || {}; D.rows[t][r.id] = r; });
   D.since = j.now; D.me = j.person; LINK.set('budgieData', D); S.bg.at = Date.now();
@@ -1375,13 +1377,12 @@ function setLinked() {
     out += '<div class="row wrap"><button class="btn" data-act="cal-refresh">Check shifts now</button><button class="btn danger" data-act="cal-unlink">Unlink</button></div>';
   }
   out += '</section>';
-  // Budgie
-  const onPhone = budgieOnPhone();
+  // Budgie: linked with its own limited link, made in Budgie (Settings, Linked apps), never Budgie's full one
   out += '<section class="panel"><div class="row between"><h2>Budgie</h2>' + (S.bg.cfg ? '<span class="tag good">Linked</span>' : '') + '</div>';
   if (!S.bg.cfg) {
     out += '<p class="small">Log a food shop here or in Budgie and it shows in both, split half each, so Budgie keeps track of who owes who.</p>' +
-      (onPhone ? '<button class="btn primary" data-act="bg-link-phone">Link the Budgie on this phone</button>' : '') +
-      '<form class="stack" data-form="bg-link" style="gap:6px"><label class="small" for="bg-url">' + (onPhone ? 'Or paste' : 'Paste') + ' your Budgie connect link</label><input class="input" id="bg-url" placeholder="https://alertrobot.github.io/budgie/#connect=…"><button class="btn" type="submit">Link</button></form>' + (S.bg.err ? '<p class="note warn small">' + h(S.bg.err) + '</p>' : '');
+      '<p class="small muted">In Budgie, go to Settings, then Linked apps, and tap Link Peckish. Copy the link it makes and paste it here. It only lets Peckish add food shops and see your food budget.</p>' +
+      '<form class="stack" data-form="bg-link" style="gap:6px"><label class="small" for="bg-url">Your Peckish link from Budgie</label><input class="input" id="bg-url" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="https://budgie-money.github.io/#connect=…"><button class="btn" type="submit">Link</button></form>' + (S.bg.err ? '<p class="note warn small">' + h(S.bg.err) + '</p>' : '');
   } else {
     const me = bgRows('people').find(q => q.id === S.bg.data.me), mine = bgRows('budgets').filter(b => b.person === S.bg.data.me), fb = bgFoodBudget();
     out += '<p class="small">Linked as <b>' + h(me ? me.name : S.bg.data.me || '…') + '</b>' + (S.bg.at ? ' · synced ' + new Date(S.bg.at).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' }) : '') + (S.bg.busy ? ' · syncing…' : '') + '</p>' + (S.bg.err ? '<p class="note warn small">' + h(S.bg.err) + '</p>' : '');
@@ -2443,7 +2444,6 @@ document.addEventListener('click', e => {
     case 'cal-refresh': calRefresh(true); break;
     case 'set-cutoff': saveSettings({ lateCutoff: v }); calRefresh(true); break;
     case 'remind-at': saveSettings({ remind: { cook: true, defrost: true, plates: true, ...(S.settings.remind || {}), cookAt: v } }); calSoon(500); break;
-    case 'bg-link-phone': { const c = budgieOnPhone(); if (c) bgLink(c); break; }
     case 'bg-unlink': bgUnlink(); break;
     case 'bg-sync': bgCall([], false).then(bgSyncShops).catch(e => { S.bg.err = e.message; schedule(); }); break;
     case 'votes': pushSheet({ type: 'votes' }); break;

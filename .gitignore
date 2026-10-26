@@ -1,0 +1,3 @@
+source/app/node_modules/
+source/app/dist/
+source/app/test/app.test.js
