@@ -267,9 +267,11 @@ function onSubErr(e) { console.warn('sync error', e); if (e && e.code === 'permi
 function subscribeHousehold(hid) {
   unsubAll(['hh', 'recipes', 'ing', 'people', 'settings', 'pantry', 'thumbs', 'photoPrefs', 'ratings', 'week', 'prev', 'thisW', 'nextW', 'backup', 'shops']);
   S.backup = null; autoTried = false;
-  S.weekPicked = false;
-  Store.setHousehold(hid); pruneWeekCopies(hid);
+  S.weekPicked = false; curHid = hid;
+  Store.setHousehold(hid); pruneWeekCopies(hid); linkScope(hid);
   RAW.myR = {}; RAW.myI = {}; RAW.gotR = false; RAW.gotI = false; S.thumbs = {}; S.fullPhotos = {};
+  // nothing from the household you were in carries over while this one loads
+  RAW.people = {}; S.people = []; S.settings = clone(DEFAULTS); S.pantry = { status: {} }; S.pantryRaw = null; S.photoPrefs = { hidden: {} }; S.ratings = {}; S.shopsLog = null; S.thisWeekDoc = null; S.histAll = null; S.histCost = {};
   unsub.hh = Store.watchHousehold(hid, hh => { S.household = hh; if (hh && Store.touchMember && S.user) Store.touchMember(hh, S.user); schedule(); }, onSubErr);
   unsub.backup = Store.sub('config/backup', d => { S.backup = d || null; schedule(); maybeAutoBackup(); }, () => {});
   unsub.recipes = Store.sub('recipes', docs => { RAW.myR = {}; docs.forEach(d => RAW.myR[d.id] = d); RAW.gotR = true; rebuild(); }, onSubErr);
@@ -279,7 +281,7 @@ function subscribeHousehold(hid) {
   unsub.pantry = Store.sub('config/pantry', d => { S.pantryRaw = d ? clone(d) : null; S.pantry = d ? clone(d) : { status: {} }; if (!S.pantry.status) S.pantry.status = {}; schedule(); }, onSubErr);
   unsub.photoPrefs = Store.sub('config/photoPrefs', d => { S.photoPrefs = d && d.hidden ? clone(d) : { hidden: {} }; schedule(); }, onSubErr);
   unsub.thumbs = Store.subG('dishThumbs', docs => { S.thumbs = {}; docs.forEach(d => S.thumbs[d.id] = d); schedule(); }, () => {});
-  unsub.shops = Store.sub('shops', docs => { S.shopsLog = docs.map(tidyShop); schedule(); if (S.bg.cfg && docs.some(t => t.budgie && (t.budgie.state === 'queued' || (t.removed && t.budgie.tid)))) setTimeout(bgSyncShops, 800); }, onSubErr);
+  unsub.shops = Store.sub('shops', docs => { S.shopsLog = docs.map(tidyShop); schedule(); if (S.bg.cfg && (S.bg.wantSync || docs.some(t => t.budgie && (t.budgie.state === 'queued' || (t.removed && t.budgie.tid))))) { S.bg.wantSync = false; setTimeout(bgSyncShops, 800); } }, onSubErr);
   unsub.ratings = Store.sub('ratings', docs => { const m = {}; docs.forEach(d => { const x = { ...d }; delete x.id; m[d.id] = x; }); S.ratings = m; schedule(); }, onSubErr);
   subscribeWeek();
   // Always keep this week and next week on the phone, so the plan and list are there offline in the shop.
@@ -1277,16 +1279,27 @@ function renderKitchen() {
 }
 
 // ---------- LINKED APPS: Caledonite (shifts → who's in, reminders) and Budgie (what you paid) ----------
+let curHid = null;
 const LINK = { get(k, d) { try { const v = localStorage.getItem('peckish.' + k); return v ? JSON.parse(v) : d; } catch (e) { return d; } }, set(k, v) { try { if (v == null) localStorage.removeItem('peckish.' + k); else localStorage.setItem('peckish.' + k, JSON.stringify(v)); } catch (e) {} } };
 const CAL_TYPES = { long: { start: '07:30', end: '20:00' }, night: { start: '19:30', end: '08:00' }, early: { start: '07:00', end: '15:30' }, late: { start: '12:30', end: '20:30' }, leave: { allDay: true }, off: { allDay: true } };
-S.cal = { on: LINK.get('cal', false), user: null, data: null, err: '', busy: false, at: 0 };
+S.cal = { on: false, user: null, data: null, err: '', busy: false, at: 0 };
+// Caledonite and Budgie stay with the household they were linked in, so another household you're in never gets your
+// shifts, reminders or Budgie food payments. (A link made before this goes with the first household opened.)
+function linkScope(hid) {
+  let c = LINK.get('cal', false); if (c === true) { c = hid; LINK.set('cal', hid); }
+  S.cal.on = !!c && c === hid;
+  if (!S.cal.on) { if (S.cal.unsub) { S.cal.unsub(); S.cal.unsub = null; } S.cal.user = null; S.cal.data = null; S.cal.at = 0; }
+  let b = LINK.get('budgie', null); if (b && !b.hid) { b = { ...b, hid }; LINK.set('budgie', b); }
+  S.bg.cfg = b && b.hid === hid ? b : null; S.bg.err = ''; S.bg.at = 0;
+  S.bg.data = S.bg.cfg ? LINK.get('budgieData', null) || { since: 0, me: '', rows: {} } : { since: 0, me: '', rows: {} };
+}
 function calStart() {
   if (!Store.cal || !S.cal.on || S.cal.unsub) return;
   S.cal.unsub = Store.cal.onUser(u => { S.cal.user = u; schedule(); if (u) calRefresh(true); });
 }
 async function calLink() {
   if (!Store.cal) { toast('Linking needs the installed app.'); return; }
-  LINK.set('cal', true); S.cal.on = true; S.cal.err = ''; calStart();
+  LINK.set('cal', curHid || true); S.cal.on = true; S.cal.err = ''; calStart();
   try { await Store.cal.signIn(); } catch (e) { S.cal.err = e.message || String(e); schedule(); }
 }
 async function calUnlink() { LINK.set('cal', false); LINK.set('calNotes', null); S.cal.on = false; try { if (Store.cal) await Store.cal.signOut(); } catch (e) {} if (S.cal.unsub) { S.cal.unsub(); S.cal.unsub = null; } S.cal.user = null; S.cal.data = null; schedule(); }
@@ -1327,16 +1340,19 @@ function calShiftsFor(D, cpid, start) {
 async function calRefresh(force) {
   if (!S.cal.user || S.cal.busy || !S.household || !S.people.length) return;
   if (!force && Date.now() - S.cal.at < 10 * 60000) return;
-  S.cal.busy = true;
+  S.cal.busy = true; const hid0 = curHid;
   try {
     const thisW = mondayOf(TODAY), starts = [thisW, addDays(thisW, 7)];
     const months = [...new Set([thisW, addDays(thisW, 13)].map(x => x.slice(0, 7)))];
     const D = await Store.cal.read(months, thisW);
+    // switched to another household meanwhile: its weeks don't get these shifts
+    if (curHid !== hid0 || !S.cal.on) { S.cal.busy = false; return; }
     S.cal.data = D; S.cal.err = ''; S.cal.at = Date.now();
     for (const start of starts) {
       const want = {};
       S.people.forEach(p => { const cp = calPidFor(p); if (!cp) return; const m = calShiftsFor(D, cp, start); if (Object.keys(m).length) want[p.id] = m; });
       const have = (decWeek(await Store.get('weeks/' + start)) || {}).shifts || {};
+      if (curHid !== hid0) break;
       const flat = {};
       new Set([...Object.keys(have), ...Object.keys(want)]).forEach(pid => { if (stable(have[pid]) !== stable(want[pid])) flat['shifts.' + pid] = want[pid] || Store.DEL; });
       if (Object.keys(flat).length && Store.patch) await Store.patch('weeks/' + start, flat);
@@ -1389,7 +1405,7 @@ async function calReminders() {
 }
 
 // ---------- Budgie ----------
-S.bg = { cfg: LINK.get('budgie', null), data: LINK.get('budgieData', { since: 0, me: '', rows: {} }), busy: false, err: '', at: 0 };
+S.bg = { cfg: null, data: { since: 0, me: '', rows: {} }, busy: false, err: '', at: 0 };
 function bgParseLink(text) {
   const m = String(text || '').match(/#connect=([A-Za-z0-9_\-=]+)/); if (!m) return null;
   try { const b64 = m[1].replace(/-/g, '+').replace(/_/g, '/'); const j = JSON.parse(decodeURIComponent(escape(atob(b64 + '==='.slice((b64.length + 3) % 4))))); if (!j.u || !j.k) return null;
@@ -1421,7 +1437,7 @@ function bgFoodBudget() {
 function bgPidFor(p) { const x = bgRows('people').find(q => (q.name || '').toLowerCase() === (p.name || '').toLowerCase()); return x ? x.id : (p.name || '').toLowerCase(); }
 function peckFromBg(pid) { const x = bgRows('people').find(q => q.id === pid); const name = (x ? x.name : pid || '').toLowerCase(); return S.people.find(p => (p.name || '').toLowerCase() === name) || null; }
 async function bgLink(cfg) {
-  S.bg.cfg = cfg; LINK.set('budgie', cfg); S.bg.data = { since: 0, me: '', rows: {} }; S.bg.err = ''; schedule();
+  cfg = { ...cfg, hid: curHid }; S.bg.cfg = cfg; LINK.set('budgie', cfg); S.bg.data = { since: 0, me: '', rows: {} }; S.bg.err = ''; schedule();
   try { await bgCall([], true); toast('Budgie linked'); await bgSyncShops(); } catch (e) { S.bg.err = e.message || String(e); }
   schedule();
 }
@@ -1429,23 +1445,27 @@ function bgUnlink() { S.bg.cfg = null; LINK.set('budgie', null); LINK.set('budgi
 // Shops paid by whoever's phone this is go to Budgie as a food payment split half each; Budgie food payments come back as shops.
 async function bgSyncShops() {
   if (!S.bg.cfg || S.bg.busy || !S.household) return;
+  // wait for this household's shops before comparing them with Budgie's
+  if (!S.shopsLog) { S.bg.wantSync = true; return; }
   S.bg.busy = true;
+  const hid0 = curHid, here = () => { if (curHid !== hid0) throw new Error('Switched household'); };
   try {
-    const me = S.bg.data.me, fb = bgFoodBudget(), ops = [], done = [], gone = [], mePk = me ? peckFromBg(me) : null;
+    const me = S.bg.data.me, fb = bgFoodBudget(), ops = [], mePk = me ? peckFromBg(me) : null;
     if (me && fb) (S.shopsLog || []).forEach(t => {
       // the payer's phone sends it (matched by who paid, in case the phone that logged it didn't know their Budgie name)
       if (!t.budgie || (t.budgie.person !== me && !(mePk && t.paidBy === mePk.id))) return;
       // a shop taken off in Peckish comes off in Budgie too, then goes from here
-      if (t.removed) { if (t.budgie.tid) { ops.push({ op: 'delete', table: 'transactions', id: t.budgie.tid }); gone.push(t.id); } return; }
-      if (t.budgie.state !== 'queued') return;
+      if (t.removed) { if (t.budgie.tid) ops.push({ op: 'delete', table: 'transactions', id: t.budgie.tid, shop: t.id }); return; }
+      if (t.budgie.state !== 'queued' || !t.date) return;
       const tid = 't-pk-' + t.id;
-      ops.push({ op: 'put', table: 'transactions', row: { id: tid, date: t.date, person: me, amount: Number(t.amount), budget: fb.id, account: fb.account || '', split: t.split === 'half' ? 'half' : '', note: (SHOP_KEY_NAMES[t.shop] || t.shop || 'Food') + ' shop (Peckish)', source: 'peckish' } });
-      done.push([t.id, tid]);
+      ops.push({ op: 'put', table: 'transactions', row: { id: tid, date: t.date, person: me, amount: Number(t.amount), budget: fb.id, account: fb.account || '', split: t.split === 'half' ? 'half' : '', note: (SHOP_KEY_NAMES[t.shop] || t.shop || 'Food') + ' shop (Peckish)', source: 'peckish' }, shop: t.id });
     });
-    const sent = await bgCall(ops.slice(0, 40), false), refused = {};
+    // at most 40 at a time; the rest go next time. Only what Budgie took is marked sent, or taken off here.
+    const batch = ops.slice(0, 40), sent = await bgCall(batch.map(({ shop, ...o }) => o), false), refused = {};
     (sent.rejected || []).forEach(r => { refused[r.id] = r.error || 'Budgie didn’t take it'; });
-    for (const [id, tid] of done.slice(0, 40)) if ((S.shopsLog || []).some(t => t.id === id)) await Store.patch('shops/' + id, { budgie: refused[tid] ? { state: 'refused', why: String(refused[tid]).slice(0, 120), person: me } : { state: 'sent', tid, person: me } });
-    for (const id of gone) await Store.del('shops/' + id);
+    const done = batch.filter(o => o.op === 'put').map(o => [o.shop, o.row.id]);
+    for (const [id, tid] of done) { here(); if ((S.shopsLog || []).some(t => t.id === id)) await Store.patch('shops/' + id, { budgie: refused[tid] ? { state: 'refused', why: String(refused[tid]).slice(0, 120), person: me } : { state: 'sent', tid, person: me } }); }
+    for (const o of batch) if (o.op === 'delete' && !refused[o.id]) { here(); await Store.del('shops/' + o.shop); }
     // shops Peckish sent follow Budgie too: a new amount or date (fixed there, or matched to the bank) comes back here,
     // and one taken off there goes from here (told by the payer's phone, which sees all of its own)
     const ours = {}; (S.shopsLog || []).forEach(t => { if (t.source !== 'budgie' && !t.removed && t.budgie && t.budgie.state === 'sent' && t.budgie.tid) ours[t.budgie.tid] = t; });
@@ -1453,9 +1473,9 @@ async function bgSyncShops() {
     for (const tx of bgRows('transactions')) {
       const t = ours[tx.id]; if (!t) continue; oursSeen.add(tx.id);
       const amount = Math.round((Number(tx.amount) || 0) * 100) / 100, date = String(tx.date || '').slice(0, 10);
-      if (/^\d{4}-\d{2}-\d{2}$/.test(date) && (amount !== Number(t.amount) || date !== t.date)) await Store.patch('shops/' + t.id, { amount, date, week: mondayOf(date) });
+      if (/^\d{4}-\d{2}-\d{2}$/.test(date) && (amount !== Number(t.amount) || date !== t.date)) here(), await Store.patch('shops/' + t.id, { amount, date, week: mondayOf(date) });
     }
-    if (sent.full === true) for (const tid in ours) { const t = ours[tid]; if (!oursSeen.has(tid) && t.budgie.person === me && String(t.date || '') >= addDays(mondayOf(TODAY), -120)) await Store.del('shops/' + t.id); }
+    if (sent.full === true) for (const tid in ours) { const t = ours[tid]; if (!oursSeen.has(tid) && t.budgie.person === me && String(t.date || '') >= addDays(mondayOf(TODAY), -120)) here(), await Store.del('shops/' + t.id); }
     // food payments logged in Budgie (by either of you) show up here too, and follow it when they're changed or taken off there
     const known = new Set((S.shopsLog || []).map(t => t.budgie && t.budgie.tid).filter(Boolean));
     const imported = {}; (S.shopsLog || []).forEach(t => { if (t.source === 'budgie' && t.budgie && t.budgie.tid) imported[t.budgie.tid] = t; });
@@ -1469,12 +1489,13 @@ async function bgSyncShops() {
       const who = peckFromBg(tx.person), date = String(tx.date).slice(0, 10);
       const doc = { date, amount: Number(tx.amount) || 0, shop: guessShop(tx.note), note: tx.note || '', paidBy: who ? who.id : '', split: tx.split || '', week: mondayOf(date), source: 'budgie', budgie: { state: 'sent', tid: tx.id, person: tx.person }, by: 'Budgie' };
       // "via": the phone that brought it in, which is the one that can tell when it's gone (each of you sees a slightly different set)
+      here();
       if (cur) { if (stable({ ...doc, via: cur.via || me }) !== stable({ ...doc, ...pickKeys(cur, Object.keys(doc)), via: cur.via })) await Store.set('shops/' + cur.id, { ...doc, via: cur.via || me }); }
       else await Store.set('shops/' + 'b_' + String(tx.id).replace(/[^A-Za-z0-9_]/g, '_'), { ...doc, via: me });
     }
-    if (sent.full === true) for (const tid in imported) { const t = imported[tid]; if (!seen.has(tid) && t.via && t.via === me && String(t.date || '') >= since) await Store.del('shops/' + t.id); }
+    if (sent.full === true) for (const tid in imported) { const t = imported[tid]; if (!seen.has(tid) && t.via && t.via === me && String(t.date || '') >= since) here(), await Store.del('shops/' + t.id); }
     S.bg.err = '';
-  } catch (e) { S.bg.err = navigator.onLine === false ? 'Offline: it’ll sync when you’re back online' : (e.message || String(e)); console.warn(e); }
+  } catch (e) { if (curHid !== hid0) { S.bg.busy = false; return; } S.bg.err = navigator.onLine === false ? 'Offline: it’ll sync when you’re back online' : (e.message || String(e)); console.warn(e); }
   S.bg.busy = false; schedule();
 }
 function pickKeys(o, keys) { const x = {}; keys.forEach(k => { if (o[k] !== undefined) x[k] = o[k]; }); return x; }

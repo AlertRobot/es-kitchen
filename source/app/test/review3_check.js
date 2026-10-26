@@ -108,6 +108,54 @@ const signedIn = (name) => ({ 'users/u_ethan': { households: ['h1'], current: 'h
     ok(!seen.size, 'markup: nothing written by someone else shows as markup' + (seen.size ? ' (in ' + [...seen].join(', ') + ')' : ''));
     ok(!A.errs.length, 'markup: the app copes with odd values without errors ' + A.errs.slice(0, 5).join(' | '));
   }
+  // ---- 2. Budgie and Caledonite stay with the household they were linked in ----
+  if (!only || only === 2) {
+    const B = { people: [{ id: 'ethan', name: 'Ethan' }], budgets: [{ id: 'e-food', person: 'ethan', name: 'Food' }], transactions: [{ id: 't-abc', date: TODAY, person: 'ethan', amount: 31.4, budget: 'e-food', split: 'half', note: 'Aldi shop' }], splits: [], accounts: [] };
+    const posts = [];
+    const fetch = async (url, opt) => { if (!/script\.google\.com/.test(url)) return { ok: true, json: async () => JSON.parse(lib) }; posts.push(JSON.parse(opt.body)); return { ok: true, json: async () => ({ ok: true, person: 'ethan', keyType: 'app', now: Date.now(), full: true, rows: B }) }; };
+    const reads = [];
+    const cal = { onUser(cb) { setTimeout(() => cb({ email: 'ethan@example.com', uid: 'c1' }), 0); return () => {}; }, async signIn() {}, async signOut() {}, async read() { reads.push(1); return { household: {}, people: [{ id: 'ethan', name: 'Ethan', email: 'ethan@example.com', settings: { hasShifts: true } }], calendars: [], shifts: [{ person: 'ethan', day: iso(day(1)), type: 'night' }], feeds: [], me: 'ethan' }; }, async notify() { return 'ok'; }, async unnotify() {} };
+    const pre = { 'users/u_ethan': { households: ['h1', 'h2'], current: 'h1', names: { h1: 'Home', h2: 'Mum’s' } },
+      'households/h1': { name: 'Home', members: ['u_ethan'], memberNames: { u_ethan: 'Ethan' }, inviteCode: 'K7RM2Q' }, 'households/h1/people/u_ethan': { name: 'Ethan', uid: 'u_ethan', order: 1 },
+      'households/h2': { name: 'Mum’s', members: ['u_ethan', 'u_mum'], memberNames: { u_ethan: 'Ethan', u_mum: 'Mum' }, inviteCode: 'MUMMUM' }, 'households/h2/people/u_ethan': { name: 'Ethan', uid: 'u_ethan', order: 1 }, 'households/h2/people/u_mum': { name: 'Mum', uid: 'u_mum', order: 2 } };
+    // a link saved before links were kept per household
+    const A = boot({ pre, fetch, cal, local: { 'peckish.cal': 'true', 'peckish.budgie': JSON.stringify({ u: 'https://script.google.com/macros/s/B/exec', k: 'app_peckish_' + 'b'.repeat(64) }) } });
+    await wait(4500);
+    const shopsIn = hid => [...A.w.__docs.keys()].filter(k => k.startsWith('households/' + hid + '/shops/'));
+    const shiftsIn = hid => [...A.w.__docs.keys()].filter(k => k.startsWith('households/' + hid + '/weeks/') && (A.w.__docs.get(k) || {}).shifts);
+    ok(shopsIn('h1').length === 1 && shiftsIn('h1').length > 0, 'links: in the household they were linked in, Budgie shops and Caledonite shifts come through');
+    const n0 = posts.length, r0 = reads.length;
+    A.w.__docs.set('users/u_ethan', { ...A.w.__docs.get('users/u_ethan'), current: 'h2' }); await A.w.__refreshMe(); await wait(4500);
+    await A.act('bg-sync', null, null, 1500); await A.act('cal-refresh', null, null, 1500);
+    ok(posts.length === n0 && shopsIn('h2').every(k => (A.w.__docs.get(k) || {}).source === 'peckish'), 'links: another household you’re in gets none of your Budgie food payments, and sends nothing to your Budgie');
+    ok(reads.length === r0 && !shiftsIn('h2').length, 'links: nor your Caledonite shifts');
+    await A.act('tab', 'settings', null, 300); await A.act('set-page', 'linked', null, 300);
+    ok(!!A.d.querySelector('[data-form="bg-link"]') && !!A.d.querySelector('[data-act="cal-link"]'), 'links: there they show as not linked');
+    A.w.__docs.set('users/u_ethan', { ...A.w.__docs.get('users/u_ethan'), current: 'h1' }); await A.w.__refreshMe(); await wait(4500);
+    ok(posts.length > n0, 'links: back home, Budgie syncs again');
+    ok(JSON.parse(A.w.localStorage.getItem('peckish.budgie')).hid === 'h1', 'links: the old link was kept for the household it was used in');
+  }
+  // ---- 3. Budgie: only what Budgie took is marked sent or taken off; the rest wait for next time ----
+  if (!only || only === 3) {
+    const B = { people: [{ id: 'ethan', name: 'Ethan' }], budgets: [{ id: 'e-food', person: 'ethan', name: 'Food' }], transactions: [], splits: [], accounts: [] };
+    let posted = null;
+    const fetch = async (url, opt) => { if (!/script\.google\.com/.test(url)) return { ok: true, json: async () => JSON.parse(lib) }; const b = JSON.parse(opt.body); if (posted && (b.ops || []).length) return { ok: true, json: async () => ({ ok: false, error: 'Try later' }) }; if ((b.ops || []).length) posted = b.ops;
+      const rejected = (b.ops || []).filter(o => o.op === 'delete' && o.id === 't-pk-gone0').map(o => ({ id: o.id, error: 'Locked month' }));
+      return { ok: true, json: async () => ({ ok: true, person: 'ethan', keyType: 'app', now: Date.now(), full: false, rows: B, rejected }) }; };
+    const pre = signedIn(); pre['households/h1/people/u_ethan'] = { name: 'Ethan', uid: 'u_ethan', order: 1 };
+    for (let k = 0; k < 2; k++) pre['households/h1/shops/gone' + k] = { date: TODAY, amount: 10, shop: 'tesco', paidBy: 'u_ethan', source: 'peckish', removed: true, budgie: { state: 'sent', tid: 't-pk-gone' + k, person: 'ethan' } };
+    for (let k = 0; k < 45; k++) pre['households/h1/shops/q' + pad(k)] = { date: TODAY, amount: 1, shop: 'tesco', paidBy: 'u_ethan', source: 'peckish', budgie: { state: 'queued', person: 'ethan' } };
+    pre['households/h1/shops/zgone'] = { date: TODAY, amount: 10, shop: 'tesco', paidBy: 'u_ethan', source: 'peckish', removed: true, budgie: { state: 'sent', tid: 't-pk-zgone', person: 'ethan' } };
+    const A = boot({ pre, fetch, local: { 'peckish.budgie': JSON.stringify({ u: 'https://script.google.com/macros/s/B/exec', k: 'app_peckish_' + 'c'.repeat(64), hid: 'h1' }), 'peckish.budgieData': JSON.stringify({ since: 1, me: 'ethan', rows: { people: { ethan: B.people[0] }, budgets: { 'e-food': B.budgets[0] } } }) } });
+    await wait(5000);
+    const has = id => A.w.__docs.has('households/h1/shops/' + id);
+    ok(posted && posted.length === 40, 'budgie: sends at most 40 at once (' + (posted && posted.length) + ')');
+    ok(has('gone0'), 'budgie: a shop Budgie wouldn’t take off stays, so it isn’t left behind in Budgie');
+    ok(!has('gone1'), 'budgie: one Budgie took off goes from here');
+    ok(has('zgone') && !(posted || []).some(o => o.id === 't-pk-zgone'), 'budgie: one that didn’t fit in this batch waits for the next, rather than going from here only');
+    const q = id => (A.w.__docs.get('households/h1/shops/' + id) || {}).budgie || {};
+    ok(q('q37').state === 'sent' && q('q44').state === 'queued', 'budgie: only the shops that were sent are marked sent');
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();
