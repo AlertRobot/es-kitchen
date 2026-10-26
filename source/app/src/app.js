@@ -1291,10 +1291,12 @@ async function bgCall(ops, full) {
   D.since = j.now; D.me = j.person; LINK.set('budgieData', D); S.bg.at = Date.now();
   return j;
 }
+function bgFoodBudgets() { return bgRows('budgets').filter(b => b.person === S.bg.data.me && /food|grocer/i.test(b.name || '')); }
 function bgRows(t) { return Object.values((S.bg.data.rows || {})[t] || {}).filter(r => r && !r.deleted && r.deleted !== 'TRUE' && r.deleted !== true); }
 function bgFoodBudget() {
-  const mine = bgRows('budgets').filter(b => b.person === S.bg.data.me);
-  return mine.find(b => b.id === S.settings.budgieBudget) || mine.find(b => /food|grocer/i.test(b.name)) || null;
+  // Budgie only takes shops into one of your own food budgets
+  const mine = bgFoodBudgets();
+  return mine.find(b => b.id === S.settings.budgieBudget) || mine[0] || null;
 }
 // Peckish person ↔ Budgie person, by name
 function bgPidFor(p) { const x = bgRows('people').find(q => (q.name || '').toLowerCase() === (p.name || '').toLowerCase()); return x ? x.id : (p.name || '').toLowerCase(); }
@@ -1317,8 +1319,9 @@ async function bgSyncShops() {
       ops.push({ op: 'put', table: 'transactions', row: { id: tid, date: t.date, person: me, amount: Number(t.amount), budget: fb.id, account: fb.account || '', split: t.split === 'half' ? 'half' : '', note: (SHOP_KEY_NAMES[t.shop] || t.shop || 'Food') + ' shop (Peckish)', source: 'peckish' } });
       done.push([t.id, tid]);
     });
-    await bgCall(ops.slice(0, 40), false);
-    for (const [id, tid] of done.slice(0, 40)) await Store.patch('shops/' + id, { budgie: { state: 'sent', tid, person: me } });
+    const sent = await bgCall(ops.slice(0, 40), false), refused = {};
+    (sent.rejected || []).forEach(r => { refused[r.id] = r.error || 'Budgie didn’t take it'; });
+    for (const [id, tid] of done.slice(0, 40)) await Store.patch('shops/' + id, { budgie: refused[tid] ? { state: 'refused', why: String(refused[tid]).slice(0, 120), person: me } : { state: 'sent', tid, person: me } });
     // food payments logged in Budgie (by either of you) show up here too
     const known = new Set((S.shopsLog || []).map(t => t.budgie && t.budgie.tid).filter(Boolean));
     const foodIds = new Set(bgRows('budgets').filter(b => /food|grocer/i.test(b.name)).map(b => b.id)); if (fb) foodIds.add(fb.id);
@@ -1346,7 +1349,7 @@ function shopLogPanel(B) {
   const list = shopsThisMonth().sort((a, b) => a.date < b.date ? 1 : -1), total = list.reduce((a, t) => a + (Number(t.amount) || 0), 0), bud = Number(S.settings.monthlyBudget) || 450;
   const me = mePerson(), est = B ? B.prefTotal : 0;
   let out = '<section class="panel"><div class="row between"><h2>Shops this month</h2><span class="small money">' + fmtMoney(total) + ' of ' + fmtMoney(bud) + '</span></div><div class="meter"><i class="' + (total > bud ? 'over' : '') + '" style="width:' + Math.min(100, total / bud * 100).toFixed(0) + '%"></i></div>';
-  out += list.length ? '<div class="leftlist">' + list.map(t => { const who = personById(t.paidBy); return '<div class="left"><span>' + niceDate(t.date) + ' · ' + h(SHOP_KEY_NAMES[t.shop] || t.shop || 'Shop') + '<span class="small muted" style="display:block">' + (who ? h(who.name) + ' paid' : '') + (t.split === 'half' ? ' · half each, ' + fmtMoney(t.amount / 2) + ' each' : '') + (t.source === 'budgie' ? ' · from Budgie' : t.budgie && t.budgie.state === 'sent' ? ' · in Budgie' : S.bg.cfg && t.budgie && t.budgie.state === 'queued' ? ' · goes to Budgie from ' + h(who ? who.name : '') + '’s phone' : '') + '</span></span><span class="money">' + fmtMoney(t.amount) + '</span></div>'; }).join('') + '</div>' : '<p class="muted small">Nothing logged this month yet.</p>';
+  out += list.length ? '<div class="leftlist">' + list.map(t => { const who = personById(t.paidBy); return '<div class="left"><span>' + niceDate(t.date) + ' · ' + h(SHOP_KEY_NAMES[t.shop] || t.shop || 'Shop') + '<span class="small muted" style="display:block">' + (who ? h(who.name) + ' paid' : '') + (t.split === 'half' ? ' · half each, ' + fmtMoney(t.amount / 2) + ' each' : '') + (t.source === 'budgie' ? ' · from Budgie' : t.budgie && t.budgie.state === 'sent' ? ' · in Budgie' : t.budgie && t.budgie.state === 'refused' ? ' · Budgie didn’t take this one' : S.bg.cfg && t.budgie && t.budgie.state === 'queued' ? ' · goes to Budgie from ' + h(who ? who.name : '') + '’s phone' : '') + '</span></span><span class="money">' + fmtMoney(t.amount) + '</span></div>'; }).join('') + '</div>' : '<p class="muted small">Nothing logged this month yet.</p>';
   out += '<form class="stack" data-form="logshop" style="gap:8px"><span class="label">Done a shop? Log what you paid</span><div class="lsrow"><input class="input" id="ls-amt" type="number" step="0.01" min="0" inputmode="decimal" placeholder="' + (est ? est.toFixed(2) : '0.00') + '" aria-label="Amount paid in pounds"><select class="input" id="ls-shop" aria-label="Shop">' + SHOPS.map(s => '<option value="' + s.id + '"' + (s.id === weekShop() ? ' selected' : '') + '>' + h(s.name) + '</option>').join('') + '</select></div>' +
     (S.people.length > 1 ? '<div class="row wrap" style="gap:6px"><span class="small">Paid by</span>' + S.people.map(p => '<label class="chip"><input type="radio" name="ls-who" value="' + h(p.id) + '"' + ((me ? me.id === p.id : p === S.people[0]) ? ' checked' : '') + '> ' + h(p.name) + '</label>').join('') + '<label class="chip"><input type="checkbox" id="ls-split" checked> Half each</label></div>' : '') +
     '<button class="btn primary" type="submit">Log it</button>' + (S.bg.cfg ? '' : '<p class="muted small">Link Budgie in Settings → Linked apps and shops go there too, split half each.</p>') + '</form></section>';
@@ -1384,10 +1387,10 @@ function setLinked() {
       '<p class="small muted">In Budgie, go to Settings, then Linked apps, and tap Link Peckish. Copy the link it makes and paste it here. It only lets Peckish add food shops and see your food budget.</p>' +
       '<form class="stack" data-form="bg-link" style="gap:6px"><label class="small" for="bg-url">Your Peckish link from Budgie</label><input class="input" id="bg-url" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="https://budgie-money.github.io/#connect=…"><button class="btn" type="submit">Link</button></form>' + (S.bg.err ? '<p class="note warn small">' + h(S.bg.err) + '</p>' : '');
   } else {
-    const me = bgRows('people').find(q => q.id === S.bg.data.me), mine = bgRows('budgets').filter(b => b.person === S.bg.data.me), fb = bgFoodBudget();
+    const me = bgRows('people').find(q => q.id === S.bg.data.me), mine = bgFoodBudgets(), fb = bgFoodBudget();
     out += '<p class="small">Linked as <b>' + h(me ? me.name : S.bg.data.me || '…') + '</b>' + (S.bg.at ? ' · synced ' + new Date(S.bg.at).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' }) : '') + (S.bg.busy ? ' · syncing…' : '') + '</p>' + (S.bg.err ? '<p class="note warn small">' + h(S.bg.err) + '</p>' : '');
     if (mine.length) out += '<label class="row between small"><span>Food shops go to</span><select class="input" data-change="bg-budget">' + mine.map(b => '<option value="' + h(b.id) + '"' + (fb && fb.id === b.id ? ' selected' : '') + '>' + h(b.name) + '</option>').join('') + '</select></label>';
-    else if (!S.bg.busy) out += '<p class="note small">No budgets found for you in Budgie yet.</p>';
+    else if (!S.bg.busy) out += '<p class="note small">Budgie has no food budget for you yet. Add one called Food or Groceries in Budgie and shops go there.</p>';
     out += '<p class="muted small">Each phone sends the shops its owner paid for. A shop Sophie paid for goes to Budgie from her phone when she next opens Peckish.</p><div class="row wrap"><button class="btn" data-act="bg-sync">Sync now</button><button class="btn danger" data-act="bg-unlink">Unlink</button></div>';
   }
   out += '</section>';
