@@ -94,6 +94,25 @@ const CAL = { household: { dinnerTime: '19:00' }, people: [{ id: 'ethan', name: 
     ok(!/482/.test(A.d.querySelector('#app').textContent), 'remove: and it\u2019s off Shops this month');
     ok(!A.errs.length, 'budgie: no page errors ' + A.errs.join(' '));
   }
+  // ---- 4. step photos from another household say so and can be hidden; none can be a link to another website ----
+  {
+    const GIF = 'data:image/gif;base64,R0lGODlhAQABAAAAACw=';
+    const pre = { 'stepPhotos/in_chicken_tikka_masala__0': { img: GIF, by: 'Stranger', uid: 'u_x', hid: 'h_other' }, 'stepPhotos/in_chicken_tikka_masala__1': { img: GIF, by: 'Ethan', uid: 'u_ethan', hid: 'h1' },
+      'stepPhotos/in_chicken_tikka_masala__2': { img: 'https://tracker.example/pixel.gif', by: 'Stranger', uid: 'u_x', hid: 'h_other' }, 'dishThumbs/it_tuna_puttanesca': { thumb: 'https://tracker.example/t.gif', by: 'Stranger', uid: 'u_x', hid: 'h_other' } };
+    const A = boot({ pre }); await A.start();
+    const open = async id => { const b = A.d.createElement('button'); b.dataset.act = 'open-recipe'; b.dataset.v = id; A.d.body.appendChild(b); b.click(); b.remove(); await wait(400); };
+    await open('in_chicken_tikka_masala');
+    const steps = () => [...A.d.querySelectorAll('#sheet ol.steps > li')];
+    ok(/someone else using Peckish/.test(steps()[0].textContent) && !!steps()[0].querySelector('[data-act="hide-photo"]'), 'step photos: another household\u2019s says so and can be hidden');
+    ok(!steps()[0].querySelector('[data-stepphoto]'), 'step photos: no "replace" for one the database won\u2019t let you replace');
+    ok(!!steps()[1].querySelector('figure') && !steps()[1].querySelector('[data-act="hide-photo"]') && !!steps()[1].querySelector('[data-stepphoto]'), 'step photos: your own can be replaced, not hidden');
+    ok(!A.d.querySelector('#sheet img[src*="tracker.example"]'), 'photos: a picture that\u2019s really a link to another website isn\u2019t shown');
+    await A.click('#sheet ol.steps > li [data-act="hide-photo"]', 400);
+    ok(!steps()[0].querySelector('figure') && !!steps()[0].querySelector('[data-act="unhide-photo"]'), 'step photos: hidden, with a way back');
+    ok(((A.w.__docs.get('households/h1/config/photoPrefs') || {}).hidden || {}).in_chicken_tikka_masala__0 === true, 'step photos: hidden for both phones');
+    await A.click('[data-act="sheet-back"]'); await A.click('[data-act="tab"][data-v="recipes"]', 400);
+    ok(!A.d.querySelector('#app img[src*="tracker.example"]'), 'photos: nor on the recipe cards');
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();

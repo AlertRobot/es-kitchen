@@ -105,7 +105,17 @@ function fmtWhen(iso) { try { const d = new Date(iso); return d.toLocaleDateStri
 // a photo someone added: from this household (or you), or from another household using the app
 function ourPhoto(p) { return !!p && (p.uid === myUid() || (!!p.hid && !!S.household && p.hid === S.household.id)); }
 // someone else's photo shows unless your household hid it (photos are shared with everyone who uses the app)
-function userPhoto(r) { const p = S.thumbs[r.id]; return p && p.thumb && (ourPhoto(p) || !S.photoPrefs.hidden[r.id]) ? p : null; }
+// a photo someone added is only ever shown as a picture saved in the app, never as a link to another website
+const imgOk = x => typeof x === 'string' && /^data:image\/(jpeg|png|webp|gif);base64,[A-Za-z0-9+/=]+$/.test(x);
+// a step photo: ours, or another household's (which says so and can be hidden for this household, like recipe photos)
+function stepPhoto(r, k) { const x = (S.stepPhotos[r.id] || {})[k]; if (!x || !imgOk(x.img)) return null; const ours = ourPhoto(x); return { x, ours, hidden: !ours && !!S.photoPrefs.hidden[r.id + '__' + k] }; }
+function stepPhotoNote(r, k, sp) { return sp.ours ? '' : ' · <span class="muted">from someone else using Peckish</span> · <button class="linkish small" data-act="hide-photo" data-v="' + h(r.id + '__' + k) + '">Hide this photo</button>'; }
+function stepPhotoLink(r, k, sp, cls) {
+  if (sp && sp.hidden) return '<button class="linkish small steplink" data-act="unhide-photo" data-v="' + h(r.id + '__' + k) + '">Show the hidden step photo</button>';
+  if (sp && !sp.ours) return ''; // only its household can replace it
+  return '<label class="linkish ' + cls + ' steplink">' + ICON.camera + (sp ? (cls ? ' Replace step photo' : ' Replace the photo of this step') : ' Add a photo of this step') + '<input type="file" accept="image/*" capture="environment" data-stepphoto="' + h(r.id) + '|' + k + '" hidden></label>';
+}
+function userPhoto(r) { const p = S.thumbs[r.id]; return p && imgOk(p.thumb) && (ourPhoto(p) || !S.photoPrefs.hidden[r.id]) ? p : null; }
 function photoFor(r) {
   const own = userPhoto(r);
   if (own) return { thumb: own.thumb, own: true };
@@ -2007,7 +2017,7 @@ function heroHtml(r) {
   const own = userPhoto(r);
   if (own) {
     const full = S.fullPhotos[r.id];
-    if (full === undefined) { S.fullPhotos[r.id] = null; Store.getG('dishPhotos/' + r.id).then(d => { S.fullPhotos[r.id] = (d && d.img) || own.thumb; renderSheet(); }); }
+    if (full === undefined) { S.fullPhotos[r.id] = null; Store.getG('dishPhotos/' + r.id).then(d => { S.fullPhotos[r.id] = (d && imgOk(d.img) && d.img) || own.thumb; renderSheet(); }); }
     return '<figure class="hero"><img src="' + h(full || own.thumb) + '" alt="' + h(r.title) + ', as made at home"><figcaption>Photo by ' + h(own.by || 'one of you') + (ourPhoto(own) ? '' : ' · <span class="muted">from someone else using Peckish</span> · <button class="linkish small" data-act="hide-photo" data-v="' + h(r.id) + '">Hide this photo</button>') + '</figcaption></figure>';
   }
   if ((S.thumbs[r.id] || (r.photo && r.photo.url)) && S.photoPrefs.hidden[r.id]) return '<p class="muted small">You hid the ' + (S.thumbs[r.id] ? '' : 'stock ') + 'photo for this recipe. <button class="linkish" data-act="unhide-photo" data-v="' + h(r.id) + '">Show it again</button></p>';
@@ -2086,10 +2096,9 @@ function sheetRecipe(r, top) {
   out += '<section class="stack" style="gap:6px"><div class="row between"><h2>Ingredients</h2><span class="seg" aria-label="Servings">' + Array.from(new Set((isDinner(r) ? [2, 3, 4] : [1, 2, 3]).concat([serv]))).sort((a, b) => a - b).map(k => '<button class="' + (serv === k ? 'on' : '') + '" data-act="serv" data-v="' + k + '">' + k + '</button>').join('') + '</span></div><div class="ings">' +
     r.ingredients.map(l => { const ing = S.ING[l.i]; const amt = amtFor(l, f); const low = ing && ing.staple && ['low', 'out'].includes((S.pantry.status || {})[l.i]); return '<div class="ing"><span>' + h(ing ? ing.name : l.i) + (ing && ing.staple ? ' <span class="tag ' + (low ? 'warn' : '') + '">' + (low ? 'pantry · low' : 'pantry') + '</span>' : '') + (l.opt ? ' <span class="tag">optional</span>' : '') + (ing && pc.swaps.some(x => x.ingName === ing.name) ? ' <span class="tag swap">swap for ' + h(pc.swaps.filter(x => x.ingName === ing.name).map(x => x.person).join(' & ')) + '</span>' : '') + '</span><span class="amt">' + h(amt) + '</span></div>'; }).join('') + '</div></section>';
   loadStepPhotos(r);
-  const sp = S.stepPhotos[r.id] || {};
-  out += '<section class="stack"><h2>Method</h2>' + (Math.abs(f - 1) > 0.01 ? '<p class="note small">The method is written for ' + (r.servings || 2) + '. Use the amounts above for ' + serv + '.</p>' : '') + '<ol class="steps">' + r.steps.map((s, k) => '<li><div>' + (stepTitle(s) ? '<b class="stitle">' + h(stepTitle(s)) + '</b>' : '') + '<p>' + h(stepText(s)) + '</p>' +
-    (sp[k] ? '<figure class="stepimg"><img src="' + h(sp[k].img) + '" alt="How step ' + (k + 1) + ' should look" loading="lazy"><figcaption>' + h(sp[k].by || '') + (sp[k].uid === myUid() ? ' · <button class="linkish small" data-act="del-step-photo" data-v="' + h(r.id) + '" data-n="' + k + '">Remove</button>' : '') + '</figcaption></figure>' : '') +
-    '<label class="linkish small steplink">' + ICON.camera + (sp[k] ? ' Replace step photo' : ' Add a photo of this step') + '<input type="file" accept="image/*" capture="environment" data-stepphoto="' + h(r.id) + '|' + k + '" hidden></label></div></li>').join('') + '</ol></section>';
+  out += '<section class="stack"><h2>Method</h2>' + (Math.abs(f - 1) > 0.01 ? '<p class="note small">The method is written for ' + (r.servings || 2) + '. Use the amounts above for ' + serv + '.</p>' : '') + '<ol class="steps">' + r.steps.map((s, k) => { const sp = stepPhoto(r, k); return '<li><div>' + (stepTitle(s) ? '<b class="stitle">' + h(stepTitle(s)) + '</b>' : '') + '<p>' + h(stepText(s)) + '</p>' +
+    (sp && !sp.hidden ? '<figure class="stepimg"><img src="' + h(sp.x.img) + '" alt="How step ' + (k + 1) + ' should look" loading="lazy"><figcaption>' + h(sp.x.by || '') + (sp.x.uid === myUid() ? ' · <button class="linkish small" data-act="del-step-photo" data-v="' + h(r.id) + '" data-n="' + k + '">Remove</button>' : '') + stepPhotoNote(r, k, sp) + '</figcaption></figure>' : '') +
+    stepPhotoLink(r, k, sp, 'small') + '</div></li>'; }).join('') + '</ol></section>';
   if (r.source && r.source.site) {
     const s = r.source, by = s.author ? ' by ' + h(s.author) : '';
     out += '<p class="muted small credit">' + (s.match === 'loose' ? 'Inspired by ' : 'Based on ') + '“' + h(s.title) + '”' + by + ' (' + h(s.site) + '). ' +
@@ -2307,11 +2316,11 @@ function stepTimes(text) {
   return out;
 }
 function cookExtras(r, k, s) {
-  const sp = (S.stepPhotos[r.id] || {})[k];
+  const sp = stepPhoto(r, k);
   const times = stepTimes(stepText(s));
   return (times.length ? '<div class="row wrap">' + times.map(m => '<button class="btn soft" data-act="timer" data-v="' + m + '" data-l="' + h((stepTitle(s) || 'Step ' + (k + 1)).slice(0, 28)) + '">' + ICON.timer + ' ' + m + ' min timer</button>').join('') + '</div>' : '') +
-    (sp ? '<figure class="cookimg"><img src="' + h(sp.img) + '" alt="How this step should look"><figcaption>How it looked for ' + h(sp.by || 'someone') + '</figcaption></figure>' : '') +
-    '<label class="linkish steplink">' + ICON.camera + (sp ? ' Replace the photo of this step' : ' Add a photo of this step') + '<input type="file" accept="image/*" capture="environment" data-stepphoto="' + h(r.id) + '|' + k + '" hidden></label>';
+    (sp && !sp.hidden ? '<figure class="cookimg"><img src="' + h(sp.x.img) + '" alt="How this step should look"><figcaption>How it looked for ' + h(sp.x.by || 'someone') + stepPhotoNote(r, k, sp) + '</figcaption></figure>' : '') +
+    stepPhotoLink(r, k, sp, '');
 }
 function timersHtml() {
   const now = Date.now();
@@ -2607,8 +2616,8 @@ document.addEventListener('click', e => {
     case 'set-style': saveSettings({ style: v }); break;
     case 'use-up': S.tab = 'recipes'; S.filters = { q: ingName(v).replace(/\(.*?\)/g, '').trim().split(' ').slice(-2).join(' '), cuisine: '', quick: false, protein: '', category: '', kcal: '', rated: '', meal: '' }; closeSheets(); window.scrollTo(0, 0); render(); break;
     case 'make-staple': { saveIng(v, { staple: true }); toast(ingName(v) + ' added to staples'); break; }
-    case 'hide-photo': S.photoPrefs.hidden[v] = true; savePhotoPref(v, true); renderSheet(true); schedule(); toast('Photo hidden for your household'); break;
-    case 'unhide-photo': delete S.photoPrefs.hidden[v]; savePhotoPref(v, false); renderSheet(true); schedule(); break;
+    case 'hide-photo': S.photoPrefs.hidden[v] = true; savePhotoPref(v, true); renderSheet(true); renderCook(); schedule(); toast('Photo hidden for your household'); break;
+    case 'unhide-photo': delete S.photoPrefs.hidden[v]; savePhotoPref(v, false); renderSheet(true); renderCook(); schedule(); break;
     case 'retry-lib': S.libError = null; schedule(); loadLibrary(); break;
     // auth & households
     case 'auth-google': withBusy(() => Store.signInGoogle()); break;
