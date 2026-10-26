@@ -136,6 +136,14 @@ const CAL = { household: { dinnerTime: '19:00' }, people: [{ id: 'ethan', name: 
     ok(!A.w.__docs.has('households/h1/ingredients/' + bad.replace('x', 'y')), 'restore: a record with an odd id is left out');
     ok(A.w.__docs.has('households/h1/ratings/it_tuna_puttanesca'), 'restore: the rest comes back');
   }
+  // ---- 6. a stock photo that can't load (offline, not saved yet) doesn't leave a broken box on the recipe ----
+  {
+    const A = boot(); await A.start();
+    const r = JSON.parse(lib).recipes.find(x => x.photo && x.photo.url);
+    const b = A.d.createElement('button'); b.dataset.act = 'open-recipe'; b.dataset.v = r.id; A.d.body.appendChild(b); b.click(); b.remove(); await wait(400);
+    const img = A.d.querySelector('#sheet .hero img'); img.dispatchEvent(new A.w.Event('error'));
+    ok(A.d.querySelector('#sheet .hero').hidden === true, 'photos: a stock photo that fails to load is put away');
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();
