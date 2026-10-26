@@ -221,13 +221,21 @@ function subscribeHousehold(hid) {
     // Friday to Sunday: once this week is locked in or every night is filled (or next week is already planned), open next week
     if (S.weekStart === thisW && ((today >= 4 && (sorted || nextPlanned)) || (!left && nextPlanned))) { S.weekStart = nextW; subscribeWeek(); render(); }
   };
-  const got = (k, start) => (d, meta) => { d = decWeek(d); if (d) saveWeekCopy(start, d); else if (!S.online || (meta && meta.cache)) d = loadWeekCopy(start); seen[k] = d; if (k === 'a') { S.thisWeekDoc = d ? normWeek(clone(d), start) : null; schedule(); } pickWeek(); };
+  const got = (k, start) => (d, meta) => { d = decWeek(withCopy(start, d, meta)); if (d) saveWeekCopy(start, d); else if (!S.online || (meta && meta.cache)) d = loadWeekCopy(start); seen[k] = d; if (k === 'a') { S.thisWeekDoc = d ? normWeek(clone(d), start) : null; schedule(); } pickWeek(); };
   unsub.thisW = Store.sub('weeks/' + thisW, got('a', thisW), () => { seen.a = loadWeekCopy(thisW); pickWeek(); });
   unsub.nextW = Store.sub('weeks/' + nextW, got('b', nextW), () => { seen.b = loadWeekCopy(nextW); pickWeek(); });
   setTimeout(() => { calStart(); if (S.bg.cfg) bgCall([], false).then(bgSyncShops).catch(e => { S.bg.err = e.message || String(e); schedule(); }); }, 2500);
 }
 // A plain backup of recent weeks on this phone, used only when offline and the database has no saved copy
 function weekKey(start) { return 'esk-wk:' + (S.userDoc && S.userDoc.current) + ':' + start; }
+// Offline, with the database's saved copy gone but the phone's plain copy still there: a change made now (a tick in the
+// shop) is held by the database as just the fields that changed. Show it on top of the plain copy, not as the whole week.
+function withCopy(start, d, meta) {
+  if (!d || !meta || !meta.cache || !meta.pending || d.start) return d;
+  const c = loadWeekCopy(start); if (!c) return d;
+  const x = encWeek(c); for (const k in d) x[k] = isObj(d[k]) && isObj(x[k]) ? { ...x[k], ...d[k] } : d[k];
+  return x;
+}
 function saveWeekCopy(start, d) { if (!d) return; try { localStorage.setItem(weekKey(start), JSON.stringify(d)); } catch (e) {} }
 function loadWeekCopy(start) { try { const x = localStorage.getItem(weekKey(start)); return x ? decWeek(JSON.parse(x)) : null; } catch (e) { return null; } }
 // Weeks are stored with days and extras as maps (days.d0 … days.d6, extras.<id>) so each phone writes only the night or item it
@@ -250,6 +258,7 @@ function subscribeWeek() {
   const start = S.weekStart; S.week = null; S.prevWeek = null; S.weekLoaded = false;
   unsub.week = Store.sub('weeks/' + start, (d, meta) => {
     if (start !== S.weekStart) return;
+    d = withCopy(start, d, meta);
     const legacy = !!(d && Array.isArray(d.days)); d = decWeek(d);
     if (d) saveWeekCopy(start, d);
     else if (!S.online || (meta && meta.cache)) { const c = loadWeekCopy(start); if (c) d = c; }
@@ -326,7 +335,7 @@ function mutateWeek(fn) {
   const w = clone(currentWeek()); fn(w); w.updated = new Date().toISOString(); w.updatedBy = myName();
   if (!w.carryEdited) { delete w.carryIn; delete w.freezerMeals; delete w.suggestFirst; }
   const raw = S.weekRaw && S.weekRaw.start === w.start ? S.weekRaw : null;
-  S.week = normWeek(clone(w), w.start); S.weekRaw = { start: w.start, doc: clone(w), legacy: false }; schedule(); if (S.cal.user) calSoon();
+  S.week = normWeek(clone(w), w.start); S.weekRaw = { start: w.start, doc: clone(w), legacy: false }; saveWeekCopy(w.start, clone(w)); schedule(); if (S.cal.user) calSoon();
   saveDiff('weeks/' + w.start, encWeek(raw && raw.doc), encWeek(w), raw && raw.legacy ? ['days', 'extras'] : null);
 }
 // change only the named fields of your own ingredient record ("prices.tesco", "staple")
@@ -1282,8 +1291,12 @@ async function calReminders() {
   const w = currentWeek(), thisW = mondayOf(TODAY);
   if (w.start !== thisW && w.start !== addDays(thisW, 7)) return;
   const { want, past } = wantedReminders(w), sent = LINK.get('calNotes', {});
-  for (const id in want) { const hsh = stable(want[id]); if (sent[id] === hsh) continue; try { await Store.cal.notify(id, want[id]); sent[id] = hsh; } catch (e) { console.warn(e); } }
-  for (const id in sent) if (id.startsWith('pk-' + w.start + '-') && !want[id] && !past[id]) { try { await Store.cal.unnotify(id); } catch (e) {} delete sent[id]; }
+  // Caledonite saying no (its rules don't let Peckish queue reminders) shows in Linked apps rather than failing quietly
+  let refused = false, through = false;
+  const no = e => { console.warn(e); if (e && e.code === 'permission-denied') refused = true; };
+  for (const id in want) { const hsh = stable(want[id]); if (sent[id] === hsh) continue; try { await Store.cal.notify(id, want[id]); sent[id] = hsh; through = true; } catch (e) { no(e); } }
+  for (const id in sent) if (id.startsWith('pk-' + w.start + '-') && !want[id] && !past[id]) { try { await Store.cal.unnotify(id); delete sent[id]; } catch (e) { no(e); if (!(e && e.code === 'permission-denied')) delete sent[id]; } }
+  if (refused !== !!S.cal.refused && (refused || through)) { S.cal.refused = refused; schedule(); }
   // forget old weeks
   Object.keys(sent).forEach(id => { const st = id.slice(3, 13); if (st < addDays(thisW, -7)) delete sent[id]; });
   LINK.set('calNotes', sent);
@@ -1406,7 +1419,7 @@ function setLinked() {
       (R.cook ? '<span class="seg full">' + ['17:30', '18:00', '18:30'].map(t => '<button class="' + (R.cookAt === t ? 'on' : '') + '" data-act="remind-at" data-v="' + t + '">' + t + '</button>').join('') + '</span>' : '') +
       '<label class="row small" style="gap:8px"><input type="checkbox" data-change="remind" data-k="defrost"' + (R.defrost ? ' checked' : '') + '> Take something out of the freezer (8pm the night before)</label>' +
       '<label class="row small" style="gap:8px"><input type="checkbox" data-change="remind" data-k="plates"' + (R.plates ? ' checked' : '') + '> Ask about saving a plate on late shifts</label>' +
-      '<p class="muted small">They arrive as Caledonite notifications, so keep notifications on there. Tapping one opens Peckish.</p></div>';
+      (S.cal.refused ? '<p class="note warn small">Caledonite isn\u2019t taking reminders from Peckish at the moment, so none are queued. It needs updating to accept them.</p>' : '<p class="muted small">They arrive as Caledonite notifications, so keep notifications on there. Tapping one opens Peckish.</p>') + '</div>';
     out += '<div class="row wrap"><button class="btn" data-act="cal-refresh">Check shifts now</button><button class="btn danger" data-act="cal-unlink">Unlink</button></div>';
   }
   out += '</section>';
