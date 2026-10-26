@@ -54,7 +54,14 @@ const rows = () => [...d.querySelectorAll('.day')].map(x => x.textContent.replac
   await click('[data-act="tab"][data-v="settings"]'); await click('[data-act="set-page"][data-v=""]'); await click('[data-act="set-page"][data-v="linked"]');
   console.log('4 linked page:', d.querySelector('#app').textContent.replace(/\s+/g, ' ').slice(0, 300));
   // paste Peckish's own limited link, made in Budgie (Settings, Linked apps)
-  d.querySelector('#bg-url').value = 'https://budgie-money.github.io/#connect=' + Buffer.from(JSON.stringify({ u: 'https://script.google.com/macros/s/BUDGIE/exec', k: 'kE' })).toString('base64url');
+  const linkFor = k => 'https://alertrobot.github.io/es-kitchen/#connect=' + Buffer.from(JSON.stringify({ u: 'https://script.google.com/macros/s/BUDGIE/exec', k })).toString('base64url');
+  for (const [what, k, u] of [['a full Budgie key', 'a'.repeat(64)], ['plain http', 'app_peckish_' + 'e'.repeat(64), 'http://script.google.com/macros/s/BUDGIE/exec'], ['another host', 'app_peckish_' + 'e'.repeat(64), 'https://evil.example/exec']]) {
+    const before = POSTS.length;
+    d.querySelector('#bg-url').value = u ? 'https://alertrobot.github.io/es-kitchen/#connect=' + Buffer.from(JSON.stringify({ u, k })).toString('base64url') : linkFor(k);
+    await submit('[data-form="bg-link"]', 400);
+    console.log('   refuses ' + what + ':', POSTS.length === before && !w.localStorage.getItem('peckish.budgie') ? 'yes' : 'NO');
+  }
+  d.querySelector('#bg-url').value = linkFor('app_peckish_' + 'e'.repeat(64));
   await submit('[data-form="bg-link"]', 1500);
   console.log('   budgie imported shops:', (w.__docs && [...w.__docs.keys()].filter(k => k.includes('/shops/')).length));
   await click('[data-act="tab"][data-v="shop"]'); await click('[data-act="shop-view"][data-v="cost"]');

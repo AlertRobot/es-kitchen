@@ -1276,7 +1276,10 @@ async function calReminders() {
 S.bg = { cfg: LINK.get('budgie', null), data: LINK.get('budgieData', { since: 0, me: '', rows: {} }), busy: false, err: '', at: 0 };
 function bgParseLink(text) {
   const m = String(text || '').match(/#connect=([A-Za-z0-9_\-=]+)/); if (!m) return null;
-  try { const b64 = m[1].replace(/-/g, '+').replace(/_/g, '/'); const j = JSON.parse(decodeURIComponent(escape(atob(b64 + '==='.slice((b64.length + 3) % 4))))); return j.u && j.k ? { u: j.u, k: j.k } : null; } catch (e) { return null; }
+  try { const b64 = m[1].replace(/-/g, '+').replace(/_/g, '/'); const j = JSON.parse(decodeURIComponent(escape(atob(b64 + '==='.slice((b64.length + 3) % 4))))); if (!j.u || !j.k) return null;
+    // only ever a Google Apps Script web app over https, and only Peckish's own limited link, never Budgie's full key
+    const url = new URL(j.u); if (url.protocol !== 'https:' || !/^script\.google(usercontent)?\.com$/.test(url.hostname) || !/^app_peckish_[0-9a-f]{64}$/.test(String(j.k))) return null;
+    return { u: j.u, k: j.k }; } catch (e) { return null; }
 }
 async function bgCall(ops, full) {
   const c = S.bg.cfg; if (!c) throw new Error('Budgie isn’t linked.');
@@ -1385,7 +1388,7 @@ function setLinked() {
   if (!S.bg.cfg) {
     out += '<p class="small">Log a food shop here or in Budgie and it shows in both, split half each, so Budgie keeps track of who owes who.</p>' +
       '<p class="small muted">In Budgie, go to Settings, then Linked apps, and tap Link Peckish. Copy the link it makes and paste it here. It only lets Peckish add food shops and see your food budget.</p>' +
-      '<form class="stack" data-form="bg-link" style="gap:6px"><label class="small" for="bg-url">Your Peckish link from Budgie</label><input class="input" id="bg-url" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="https://budgie-money.github.io/#connect=…"><button class="btn" type="submit">Link</button></form>' + (S.bg.err ? '<p class="note warn small">' + h(S.bg.err) + '</p>' : '');
+      '<form class="stack" data-form="bg-link" style="gap:6px"><label class="small" for="bg-url">Your Peckish link from Budgie</label><input class="input" id="bg-url" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="https://alertrobot.github.io/es-kitchen/#connect=…"><button class="btn" type="submit">Link</button></form>' + (S.bg.err ? '<p class="note warn small">' + h(S.bg.err) + '</p>' : '');
   } else {
     const me = bgRows('people').find(q => q.id === S.bg.data.me), mine = bgFoodBudgets(), fb = bgFoodBudget();
     out += '<p class="small">Linked as <b>' + h(me ? me.name : S.bg.data.me || '…') + '</b>' + (S.bg.at ? ' · synced ' + new Date(S.bg.at).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' }) : '') + (S.bg.busy ? ' · syncing…' : '') + '</p>' + (S.bg.err ? '<p class="note warn small">' + h(S.bg.err) + '</p>' : '');
@@ -2608,7 +2611,7 @@ document.addEventListener('submit', e => {
   if (k === 'join') { const code = $('#jn-code').value, me = $('#jn-name').value.trim(); withBusy(async () => { await Store.joinHousehold(S.user, code, me); S.onboard = 'choose'; if (window.__refreshMe) await window.__refreshMe(); }); }
   if (k === 'hh-rename') { const n = $('#hh-name').value.trim(); if (n) Store.renameHousehold(S.user, S.household, n).then(() => toast('Renamed')).catch(() => toast('Couldn’t rename.')); }
   if (k === 'import-url') { const u = $('#imp-url').value.trim(); if (!/^https?:\/\//i.test(u)) { toast('Paste a web link that starts with https://'); return; } importRecipe({ url: u }); return; }
-  if (k === 'bg-link') { const c = bgParseLink($('#bg-url').value); if (!c) { toast('That doesn\u2019t look like a Budgie connect link.'); return; } bgLink(c); return; }
+  if (k === 'bg-link') { const c = bgParseLink($('#bg-url').value); if (!c) { toast('That isn\u2019t a Peckish link from Budgie. In Budgie, go to Settings, then Linked apps, and tap Link Peckish.'); return; } bgLink(c); return; }
   if (k === 'logshop') {
     const amt = Number($('#ls-amt').value); if (!(amt > 0)) { toast('Enter what you paid, e.g. 48.20'); return; }
     const who = (document.querySelector('input[name="ls-who"]:checked') || {}).value || (mePerson() || S.people[0] || {}).id, split = $('#ls-split') ? $('#ls-split').checked : false;
