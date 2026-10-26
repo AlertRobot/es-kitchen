@@ -435,7 +435,8 @@ details > summary svg { width: 18px; height: 18px; }
 .mrow .mt span { color: var(--muted); font-size: 0.85rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .mrow > svg { color: var(--muted); }
 .seg.full { display: flex; width: 100%; }
-.seg.full button { flex: 1 1 0; min-width: 0; padding: 0 8px; overflow: hidden; text-overflow: ellipsis; }
+/* full-width segments share the room by how long their labels are, and wrap onto two lines rather than cut a word off */
+.seg.full button { flex: 1 1 auto; min-width: 0; padding: 4px 8px; white-space: normal; line-height: 1.15; text-wrap: balance; }
 .seg .count { font-family: var(--f-data); font-size: 0.78rem; opacity: 0.75; margin-left: 4px; }
 .toolbar { display: flex; gap: 8px; align-items: center; }
 .toolbar .search { flex: 1 1 auto; min-width: 0; }
