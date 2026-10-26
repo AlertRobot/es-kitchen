@@ -19,20 +19,26 @@ service cloud.firestore {
       allow delete: if signedIn() && isMember(resource.data.hid);
     }
 
-    // recipe photos and step photos are shared with everyone using the app; only the person who added one can delete it
+    // recipe photos and step photos are shared with everyone using the app; only the person who added one (or someone in their household) can replace it, and only they can delete it
     match /dishThumbs/{rid} {
       allow read: if signedIn();
-      allow create, update: if signedIn() && request.resource.data.uid == request.auth.uid;
+      allow create: if signedIn() && request.resource.data.uid == request.auth.uid;
+      allow update: if signedIn() && request.resource.data.uid == request.auth.uid
+        && (resource.data.uid == request.auth.uid || (resource.data.get('hid', '') != '' && isMember(resource.data.hid)));
       allow delete: if signedIn() && resource.data.uid == request.auth.uid;
     }
     match /dishPhotos/{rid} {
       allow read: if signedIn();
-      allow create, update: if signedIn() && request.resource.data.uid == request.auth.uid;
+      allow create: if signedIn() && request.resource.data.uid == request.auth.uid;
+      allow update: if signedIn() && request.resource.data.uid == request.auth.uid
+        && (resource.data.uid == request.auth.uid || (resource.data.get('hid', '') != '' && isMember(resource.data.hid)));
       allow delete: if signedIn() && resource.data.uid == request.auth.uid;
     }
     match /stepPhotos/{id} {
       allow read: if signedIn();
-      allow create, update: if signedIn() && request.resource.data.uid == request.auth.uid;
+      allow create: if signedIn() && request.resource.data.uid == request.auth.uid;
+      allow update: if signedIn() && request.resource.data.uid == request.auth.uid
+        && (resource.data.uid == request.auth.uid || (resource.data.get('hid', '') != '' && isMember(resource.data.hid)));
       allow delete: if signedIn() && resource.data.uid == request.auth.uid;
     }
 
