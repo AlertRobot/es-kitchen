@@ -144,6 +144,12 @@ const CAL = { household: { dinnerTime: '19:00' }, people: [{ id: 'ethan', name: 
     const img = A.d.querySelector('#sheet .hero img'); img.dispatchEvent(new A.w.Event('error'));
     ok(A.d.querySelector('#sheet .hero').hidden === true, 'photos: a stock photo that fails to load is put away');
   }
+  // ---- 7. a shop record with no date (left half-written by two phones at once) doesn't break History ----
+  {
+    const A = boot({ pre: { 'households/h1/shops/ghost': { budgie: { state: 'sent', tid: 't-pk-ghost', person: 'ethan' } } } }); await A.start(); await A.click('[data-act="fill"]', 6000);
+    await A.click('[data-act="tab"][data-v="settings"]'); await A.click('[data-act="set-page"][data-v="history"]', 600); await wait(400);
+    ok(/Spending by month/.test(A.d.querySelector('#app').textContent) && !A.errs.length, 'history: opens with a shop that has no date ' + A.errs.join(' '));
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();

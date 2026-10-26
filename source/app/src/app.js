@@ -2,8 +2,7 @@
 const {
   SHOPS, DAY_NAMES, DAY_LONG, AISLE_ORDER, STALE_DAYS, isoDate, parseIso, addDays, daysBetween, mondayOf, ageDays,
   fmtMoney, fmtQty, packLabel, checkPrefs, recipeNutrition, hasEquipment, shopPrice, unitPrice, simulate, shoppingList,
-  suggest, autoFill, rescuePlans, blItems, seeded, varietyClash, baseOf, familyOf, weekObjective, breaksLimits,
-  tasteScore, excludedByRating, allowedOnDay, arrangeWeek, dinnerPortionsOn, nobodyIn, awayOn, shiftOn, dayShift, cookOn, guestsOn,
+  suggest, autoFill, rescuePlans, blItems, seeded, baseOf, nobodyIn, awayOn, shiftOn, cookOn, guestsOn,
 } = window.Core;
 const Store = window.Store;
 
@@ -898,19 +897,6 @@ function recipeMatches(r, f) {
   if (f.q) { const q = f.q.toLowerCase(); const hay = (r.title + ' ' + r.cuisine + ' ' + r.protein + ' ' + (r.category || '') + ' ' + (r.tags || []).join(' ') + ' ' + r.ingredients.map(l => ingName(l.i)).join(' ')).toLowerCase(); if (!q.split(/\s+/).every(t => hay.includes(t))) return false; }
   return true;
 }
-function rcardHtml(r, act, extra) {
-  const pc = checkPrefs(r, S.people, S.ING), n = nut(r);
-  const tags = [];
-  if (!pc.ok) tags.push('<span class="tag bad">' + h(pc.blocked[0].person) + ' won’t eat ' + h(pc.blocked[0].what.toLowerCase()) + '</span>');
-  if (!hasEquipment(r, S.settings)) tags.push('<span class="tag warn">Needs ' + h(missingEquipment(r).join(', ')) + '</span>');
-  if (r.category === 'treat') tags.push('<span class="tag treat">Treat</span>');
-  pc.swaps.forEach(s => tags.push('<span class="tag swap">Swap for ' + h(s.person) + '</span>'));
-  if (r.airFryer && S.settings.equipment && S.settings.equipment.air_fryer) tags.push('<span class="tag">Air fryer option</span>');
-  if (r.custom) tags.push('<span class="tag">Yours</span>');
-  const rs = ratingSummary()[r.id]; if (rs) tags.unshift('<span class="tag ' + (rs.avg < 3 ? 'bad' : 'good') + '">' + rs.avg.toFixed(1) + '★' + (rs.avg < 3 ? ' · not suggested' : '') + '</span>');
-  const dim = !pc.ok || !hasEquipment(r, S.settings) || (rs && rs.avg < 3);
-  return '<button class="rcard ' + (dim ? 'blocked' : '') + '" data-act="' + act + '" data-v="' + h(r.id) + '"' + (extra || '') + '>' + tileHtml(r) + '<span class="body"><span class="rtitle">' + h(rt(r)) + '</span><span class="muted small">' + r.time + ' min · ' + (n.kcal ? n.kcal + ' kcal · ' : '') + '<span class="money">' + fmtMoney(recipeCost(r)) + '</span>/portion</span>' + (tags.length ? '<span class="row wrap tagrow">' + tags.join('') + '</span>' : '') + '</span></button>';
-}
 function activeFilterCount(f) { return ['category', 'rated', 'kcal', 'cuisine', 'protein'].filter(k => f[k]).length + (f.quick ? 1 : 0); }
 function filterPanel(f, prefix, opts) {
   opts = opts || {};
@@ -1368,7 +1354,7 @@ async function bgSyncShops() {
     });
     const sent = await bgCall(ops.slice(0, 40), false), refused = {};
     (sent.rejected || []).forEach(r => { refused[r.id] = r.error || 'Budgie didn’t take it'; });
-    for (const [id, tid] of done.slice(0, 40)) await Store.patch('shops/' + id, { budgie: refused[tid] ? { state: 'refused', why: String(refused[tid]).slice(0, 120), person: me } : { state: 'sent', tid, person: me } });
+    for (const [id, tid] of done.slice(0, 40)) if ((S.shopsLog || []).some(t => t.id === id)) await Store.patch('shops/' + id, { budgie: refused[tid] ? { state: 'refused', why: String(refused[tid]).slice(0, 120), person: me } : { state: 'sent', tid, person: me } });
     for (const id of gone) await Store.del('shops/' + id);
     // shops Peckish sent follow Budgie too: a new amount or date (fixed there, or matched to the bank) comes back here,
     // and one taken off there goes from here (told by the payer's phone, which sees all of its own)
@@ -1557,7 +1543,7 @@ function setHistory() {
   const count = {}, cuis = {}; let cooked = 0, takeaways = 0, kc = 0, kn = 0;
   past.forEach(x => x.w.days.forEach((d, k) => { if (addDays(x.start, k) > TODAY) return; if (d.takeaway) { takeaways++; return; } const r = d.r && S.RMAP[d.r]; if (!r) return; cooked++; count[r.id] = (count[r.id] || 0) + 1; cuis[r.cuisine] = (cuis[r.cuisine] || 0) + 1; const n = nut(r); if (n.kcal) { kc += n.kcal; kn++; } }));
   // money by month: logged shops (from Budgie or this app) and what the plans cost
-  const months = {}; const mk = iso => iso.slice(0, 7);
+  const months = {}; const mk = iso => String(iso || '').slice(0, 7);
   weeks.forEach(x => { const m = mk(x.start); months[m] = months[m] || { plan: 0, paid: 0 }; months[m].plan += weekCost(x); });
   liveShops().forEach(t => { const m = mk(t.date); months[m] = months[m] || { plan: 0, paid: 0 }; months[m].paid += Number(t.amount) || 0; });
   const mkeys = Object.keys(months).sort().slice(-6), mmax = Math.max(1, ...mkeys.map(m => Math.max(months[m].plan, months[m].paid)));
