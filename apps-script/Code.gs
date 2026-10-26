@@ -65,6 +65,7 @@ function doPost(e) {
     var ss = ss_();
     if (body.action === "ping") return json_({ ok: true, sheetUrl: ss.getUrl(), sheetName: ss.getName() });
     if (body.action === "restore") return json_(restore_(ss, String(body.hid || "")));
+    if (body.action === "recipe") return json_(recipe_(body)); // Recipes.gs
     if (body.action !== "backup") throw new Error("Unknown action");
     var lock = LockService.getScriptLock();
     lock.waitLock(30000);
