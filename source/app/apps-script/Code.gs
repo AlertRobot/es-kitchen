@@ -114,7 +114,9 @@ function cell_(v) {
   if (v === null || v === undefined) return "";
   if (typeof v === "object") v = JSON.stringify(v);
   v = String(v);
-  return v.length > 49000 ? v.slice(0, 49000) : v;
+  if (v.length > 49000) v = v.slice(0, 49000);
+  // text that starts like a formula (a name or note typed as "=...") stays text: the apostrophe isn't part of the value
+  return /^[=+\-@]/.test(v) && !/^[+-]?\d/.test(v) ? "'" + v : v;
 }
 function pad_(r, n) { while (r.length < n) r.push(""); return r; }
 function trimLog_(ss) { var sh = ss.getSheetByName(LOG_TAB); var n = sh.getLastRow(); if (n > 1001) sh.deleteRows(2, n - 1001); }

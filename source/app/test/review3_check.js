@@ -170,6 +170,23 @@ const signedIn = (name) => ({ 'users/u_ethan': { households: ['h1'], current: 'h
     ok(days.d0 && days.d0.r === 'it_tuna_puttanesca' && days.d1 && days.d1.r === 'in_chicken_tikka_masala' && Object.keys(days).length === 2, 'loading: a tap meanwhile doesn\u2019t plan over the other phone\u2019s week (' + JSON.stringify(days) + ')');
     ok(A.d.querySelectorAll('.meal .ttl').length === 2, 'loading: then the week shows with their plan');
   }
+  // ---- 5. backup sheet: long records split cleanly, and text can't turn into a formula ----
+  if (!only || only === 5) {
+    const pre = signedIn(); pre['households/h1/people/u_ethan'] = { name: '=HYPERLINK("https://x.example","Ethan")', uid: 'u_ethan', order: 1 };
+    for (let k = 0; k < 5; k++) pre['households/h1/recipes/my_long' + k] = { title: 'Long ' + k, icon: '\ud83c\udf72', cuisine: 'British', protein: 'veggie', time: 30, servings: 2, equipment: [], custom: true, ingredients: [{ i: 'onion', q: 1 }], steps: [{ title: '', text: 'x'.repeat(k) + 'a\ud83d\ude00\'=-'.repeat(20000) }] };
+    let tables = null;
+    const fetch = async (url, opt) => { if (!/script\.google\.com/.test(url)) return { ok: true, json: async () => JSON.parse(lib) }; const b = JSON.parse(opt.body); if (b.action === 'backup') tables = b.tables; return { ok: true, text: async () => JSON.stringify({ ok: true, sheetUrl: 'https://docs.google.com/spreadsheets/d/x' }) }; };
+    pre['households/h1/config/backup'] = { url: 'https://script.google.com/macros/s/x/exec', key: 'k', auto: false };
+    const A = boot({ pre, fetch }); await wait(1500);
+    await A.act('tab', 'settings'); await A.act('set-page', 'backup'); await A.act('backup-now', null, null, 2500);
+    const rows = tables ? tables.Docs.rows.filter(r => /my_long/.test(r[1])) : [];
+    const byPath = {}; rows.forEach(r => (byPath[r[1]] = byPath[r[1]] || []).push(r));
+    const starts = rows.filter(r => r[2] > 1).map(r => r[4].charCodeAt(0));
+    ok(rows.length > 5 && starts.every(c => !(c >= 0xdc00 && c <= 0xdfff) && !/[=+\-@']/.test(String.fromCharCode(c))), 'backup: a long record is split without cutting an emoji in two or starting a cell with = + - @ or an apostrophe');
+    ok(Object.keys(byPath).length === 5 && Object.keys(byPath).every(pth => { const j = byPath[pth].sort((a, b) => a[2] - b[2]).map(r => r[4]).join(''); try { return JSON.parse(j).steps[0].text.length > 90000; } catch (e) { return false; } }), 'backup: and the pieces join back into the record');
+    const vm = require('vm'), gs = {}; vm.createContext(gs); vm.runInContext(fs.readFileSync(__dirname + '/../../../apps-script/Code.gs', 'utf8'), gs);
+    ok(gs.cell_('=IMPORTXML("https://x.example")') === '\'=IMPORTXML("https://x.example")' && gs.cell_('-4.5') === '-4.5' && gs.cell_('Ethan') === 'Ethan', 'backup sheet: text that starts like a formula is kept as text');
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();

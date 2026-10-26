@@ -1854,6 +1854,13 @@ async function collectDocs() {
   }
   return out;
 }
+// a long record is split over several cells, never in the middle of an emoji, and no cell starts with a character
+// Sheets treats specially (= + - @ or an apostrophe), so the pieces join back exactly
+function chunks(s) {
+  const out = []; let i = 0;
+  while (i < s.length) { let j = Math.min(s.length, i + CHUNK); while (j < s.length && j > i + 1 && /[\udc00-\udfff=+\-@']/.test(s[j])) j--; out.push(s.slice(i, j)); i = j; }
+  return out.length ? out : [''];
+}
 function cellText(x) { if (x == null) return ''; const s = typeof x === 'object' ? JSON.stringify(x) : String(x); return s.length > CHUNK ? s.slice(0, CHUNK) + '…' : s; }
 function recipeLines(r) { return (r.ingredients || []).map(l => { const ing = S.ING[l.i]; return (l.t ? l.t + ' ' : (l.q != null ? fmtQty(l.q, ing ? ing.unit : '') + ' ' : '')) + (ing ? ing.name : l.i) + (l.opt ? ' (optional)' : ''); }).join('\n'); }
 function recipeMethod(r) { return (r.steps || []).map((s, k) => (k + 1) + '. ' + (typeof s === 'string' ? s : (s.title ? s.title + ': ' : '') + s.text)).join('\n'); }
@@ -1901,7 +1908,7 @@ function buildTables(docs, withLib) {
   const PO = t('PriceOverrides', ['household_id', 'ingredient_id', 'ingredient', 'json']);
   coll('ingredients').forEach(({ id, data }) => PO.rows.push([hid, id, data.name || ingName(id), cellText(data)]));
   const D = t('Docs', ['household_id', 'path', 'part', 'parts', 'json', 'backed_up_at']);
-  docs.forEach(d => { const s = JSON.stringify(d.data); const n = Math.max(1, Math.ceil(s.length / CHUNK)); for (let k = 0; k < n; k++) D.rows.push([hid, d.path, k + 1, n, s.slice(k * CHUNK, (k + 1) * CHUNK), now]); });
+  docs.forEach(d => { const parts = chunks(JSON.stringify(d.data)); parts.forEach((x, k) => D.rows.push([hid, d.path, k + 1, parts.length, x, now])); });
   if (withLib && S.lib) {
     const R = t('Recipes', ['household_id', 'recipe_id', 'name', 'full_title', 'meal', 'cuisine', 'protein', 'category', 'minutes', 'kcal', 'protein_g', 'cost_per_portion', 'ingredients', 'method', 'based_on', 'photo', 'json']);
     (S.lib.recipes || []).forEach(r0 => { const r = S.RMAP[r0.id] || r0; let n = { kcal: '', protein: '' }, cost = ''; try { n = nut(r); cost = Number(recipeCost(r).toFixed(2)); } catch (e) {}
