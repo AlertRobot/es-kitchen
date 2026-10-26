@@ -1238,9 +1238,10 @@ async function calRefresh(force) {
 let calT = 0;
 function calSoon(ms) { clearTimeout(calT); calT = setTimeout(() => { calReminders().catch(e => console.warn(e)); }, ms || 5000); }
 function wantedReminders(w) {
-  const R = { cook: true, defrost: true, plates: true, cookAt: '18:00', ...(S.settings.remind || {}) }, want = {}, now = Date.now();
+  const R = { cook: true, defrost: true, plates: true, cookAt: '18:00', ...(S.settings.remind || {}) }, want = {}, past = {}, now = Date.now();
   const at = (d, t) => { const x = parseIso(addDays(w.start, d)); const [a, b] = t.split(':').map(Number); x.setHours(a, b, 0, 0); return x.getTime(); };
-  const add = (key, p, title, body, when) => { const cp = calPidFor(p); if (!cp || when < now - 60000) return; want['pk-' + w.start + '-' + key + '-' + cp] = { to: cp, kind: 'reminders', title, body, link: '../es-kitchen/', sendAfter: Math.max(when, now) }; };
+  // one whose time has come is left alone: Caledonite may not have sent it yet (it sends within about 10 minutes)
+  const add = (key, p, title, body, when) => { const cp = calPidFor(p); if (!cp) return; const id = 'pk-' + w.start + '-' + key + '-' + cp; if (when < now - 60000) { past[id] = true; return; } want[id] = { to: cp, kind: 'reminders', title, body, link: '../es-kitchen/', sendAfter: Math.max(when, now) }; };
   const eaters = S.people.filter(p => p.dinner !== false);
   const sim = simulate(w, ctx());
   for (let d = 0; d < 7; d++) {
@@ -1258,15 +1259,15 @@ function wantedReminders(w) {
       const cook = cookOn(w, d, S.people); (cook ? [cook] : eaters.filter(p => !awayOn(w, p, d))).forEach(p => add(d + '-defrost', p, d === 0 ? 'Out of the freezer this morning' : 'Out of the freezer tonight', 'Take ' + what + ' out to thaw in the fridge for ' + (r ? rt(r) : 'dinner') + (d === 0 ? ' tonight.' : ' tomorrow.'), when));
     });
   }
-  return want;
+  return { want, past };
 }
 async function calReminders() {
   if (!S.cal.user || !S.cal.data || !S.week || !Store.cal) return;
   const w = currentWeek(), thisW = mondayOf(TODAY);
   if (w.start !== thisW && w.start !== addDays(thisW, 7)) return;
-  const want = wantedReminders(w), sent = LINK.get('calNotes', {}), now = Date.now();
+  const { want, past } = wantedReminders(w), sent = LINK.get('calNotes', {});
   for (const id in want) { const hsh = stable(want[id]); if (sent[id] === hsh) continue; try { await Store.cal.notify(id, want[id]); sent[id] = hsh; } catch (e) { console.warn(e); } }
-  for (const id in sent) if (id.startsWith('pk-' + w.start + '-') && !want[id]) { try { await Store.cal.unnotify(id); } catch (e) {} delete sent[id]; }
+  for (const id in sent) if (id.startsWith('pk-' + w.start + '-') && !want[id] && !past[id]) { try { await Store.cal.unnotify(id); } catch (e) {} delete sent[id]; }
   // forget old weeks
   Object.keys(sent).forEach(id => { const st = id.slice(3, 13); if (st < addDays(thisW, -7)) delete sent[id]; });
   LINK.set('calNotes', sent);
