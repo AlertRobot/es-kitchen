@@ -44,6 +44,30 @@ const CAL = { household: { dinnerTime: '19:00' }, people: [{ id: 'ethan', name: 
     ok(Object.keys(NOTIFS).length > 0 || TODAY_IDX === 6, 'reminders: later reminders are still queued');
     ok(!A.errs.length, 'reminders: no page errors ' + A.errs.join(' '));
   }
+  // ---- 2. going to another week while "Fill it for me" is working doesn't put the plan on that week ----
+  {
+    const A = boot(); await A.start();
+    await A.click('[data-act="fill"]', 1); await A.click('[data-act="wk"][data-v="1"]', 1);
+    await wait(6000);
+    const next = iso(day(7));
+    ok(!Object.keys(A.weekDoc(next).days || {}).length, 'fill: the week you moved to is left empty');
+    ok(/moved to another week/.test(A.d.querySelector('#toast').textContent), 'fill: says why nothing was filled');
+    await A.click('[data-act="wk"][data-v="-1"]', 300); await A.click('[data-act="fill"]', 6000);
+    ok(Object.keys(A.weekDoc().days || {}).length === 7, 'fill: filling the week you stay on still works');
+  }
+  // ---- 3. guests stay on the night when its dinner is swapped or changed ----
+  {
+    const A = boot(); await A.start(); await A.click('[data-act="fill"]', 6000);
+    await A.click('[data-act="open-day"][data-v="0"]'); await A.click('#sheet [data-act="guests"][data-v="0"][data-n="2"]'); await A.click('#sheet [data-act="extra"][data-v="0"][data-n="1"]'); await A.click('[data-act="sheet-back"]');
+    const was = A.night(0).r;
+    await A.click('[data-act="swap-day"][data-v="0"]', 600);
+    ok(A.night(0).r && A.night(0).r !== was, 'guests: Monday was swapped');
+    ok(A.night(0).guests === 2 && A.night(0).extra === 1, 'guests: swapping keeps the guests and extra portions');
+    await A.click('[data-act="open-day"][data-v="0"]'); await A.click('#sheet [data-act="change-day"]', 600); await A.click('#sheet [data-act="choose"]', 400);
+    ok(A.night(0).guests === 2, 'guests: choosing another dinner keeps the guests');
+    await A.click('[data-act="tab"][data-v="recipes"]'); await A.click('[data-act="open-recipe"]', 300); await A.click('#sheet [data-act="add-to-day"][data-v="0"]', 300); await A.click('[data-act="sheet-back"]');
+    ok(A.night(0).guests === 2, 'guests: adding a recipe to that night from Recipes keeps the guests');
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();

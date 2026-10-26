@@ -2314,6 +2314,8 @@ async function addPhoto(rid, file) {
 
 // ---------- actions ----------
 function setDay(d, patch) { mutateWeek(w => { w.days[d] = { ...patch }; }); }
+// what belongs to the night rather than the dinner: guests coming, and extra portions for lunch or the freezer
+function nightKeep(old) { const o = old || {}; return { extra: o.extra || 0, extraUse: o.extraUse, guests: o.guests }; }
 function guardLocked() { if (currentWeek().locked) { toast('This week is locked in. Unlock it to change dinners.'); return true; } return false; }
 // run the planner in a background worker on the phone; fall back to running it here (tests, old browsers, a worker error)
 let fillWorker = null, fillSeq = 0;
@@ -2336,8 +2338,11 @@ function doFill(jitter, clearAuto) {
     try {
       const empties = w.days.map((x, d) => (!x.r && !x.takeaway && !nobodyIn(w, d, C)) ? d : -1).filter(d => d >= 0);
       S.busy = false;
+      // planning takes a moment: if you've gone to another week meanwhile, don't put this plan on it
+      if (S.weekStart !== w.start) { toast('You moved to another week, so nothing was filled in. Tap Fill again here.'); render(); return; }
       if (!empties.some(d => filled.days[d].r)) { toast('No recipes fit the remaining days. Try loosening the weeknight time, equipment or preferences.'); render(); return; }
-      mutateWeek(x => { empties.forEach(d => { if (filled.days[d].r) x.days[d] = { ...filled.days[d], auto: true }; }); });
+      // only nights that are still empty (the other phone may have chosen one meanwhile)
+      mutateWeek(x => { empties.forEach(d => { if (filled.days[d].r && !x.days[d].r && !x.days[d].takeaway) x.days[d] = { ...x.days[d], ...filled.days[d], auto: true }; }); });
       toast('Week planned. Swap any day you don’t fancy.');
     } catch (e) { S.busy = false; render(); toast('Couldn’t plan the week.'); console.error(e); }
   });
@@ -2429,11 +2434,11 @@ document.addEventListener('click', e => {
     case 'p-day': { const p = clone(personById(v)); const slot = b.dataset.s, d = Number(b.dataset.n); p.days = { ...(p.days || {}) }; const cur = new Set(p.days[slot] || (slot === 'l' ? [0, 1, 2, 3, 4] : [0, 1, 2, 3, 4, 5, 6])); cur.has(d) ? cur.delete(d) : cur.add(d); p.days[slot] = Array.from(cur).sort(); S.people = S.people.map(x => x.id === v ? p : x); savePerson(p); render(); break; }
     case 'choose': {
       const pick = S.sheets.slice().reverse().find(s => s.type === 'pick');
-      if (pick) { const d = pick.d; const old = currentWeek().days[d]; setDay(d, { r: v, extra: old.extra || 0, extraUse: old.extraUse }); closeSheets(); toast((S.RMAP[v] || {}).title + ' added to ' + DAY_LONG[d]); }
+      if (pick) { const d = pick.d; const old = currentWeek().days[d]; setDay(d, { r: v, ...nightKeep(old) }); closeSheets(); toast((S.RMAP[v] || {}).title + ' added to ' + DAY_LONG[d]); }
       break;
     }
-    case 'choose-freezer': { const pick = S.sheets.find(s => s.type === 'pick'); setDay(pick.d, { r: v, freezer: true }); closeSheets(); break; }
-    case 'add-to-day': { if (guardLocked()) break; const d = Number(v); setDay(d, { r: b.dataset.r }); toast('Added to ' + DAY_LONG[d]); renderSheet(true); break; }
+    case 'choose-freezer': { const pick = S.sheets.find(s => s.type === 'pick'); setDay(pick.d, { r: v, freezer: true, guests: currentWeek().days[pick.d].guests }); closeSheets(); break; }
+    case 'add-to-day': { if (guardLocked()) break; const d = Number(v); setDay(d, { r: b.dataset.r, ...nightKeep(currentWeek().days[d]) }); toast('Added to ' + DAY_LONG[d]); renderSheet(true); break; }
     case 'change-day': { if (guardLocked()) break; const d = Number(v); S.sheets = []; pushSheet({ type: 'pick', d }); break; }
     case 'remove-day': if (guardLocked()) break; setDay(Number(v), {}); closeSheets(); break;
     case 'takeaway': pushSheet({ type: 'rescue', d: Number(v) }); break;
@@ -2526,7 +2531,7 @@ document.addEventListener('click', e => {
       const skipped = (day.skipped || []).concat(cur ? [cur] : []).slice(-12);
       const sg = suggest(w, d, ctx(), { seed: 'swap' + Math.random(), hard: true, filter: r => r.id !== cur && !skipped.includes(r.id) && (!S.RMAP[cur] || r.cuisine !== S.RMAP[cur].cuisine || Math.random() < 0.3) });
       const pick = sg[0]; if (!pick) { toast('Nothing else fits that day.'); break; }
-      mutateWeek(x => { x.days[d] = { r: pick.r.id, auto: true, skipped, extra: day.extra || 0, extraUse: day.extraUse }; });
+      mutateWeek(x => { x.days[d] = { r: pick.r.id, auto: true, skipped, ...nightKeep(day) }; });
       toast(DAY_LONG[d] + ': ' + pick.r.title); break;
     }
     case 'move-day': { if (guardLocked()) break; const a = Number(v), t = Number(b.dataset.to); mutateWeek(x => { const tmp = x.days[a]; x.days[a] = x.days[t]; x.days[t] = tmp; }); closeSheets(); toast('Moved to ' + DAY_LONG[t]); break; }
