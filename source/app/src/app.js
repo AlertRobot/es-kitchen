@@ -320,6 +320,7 @@ function save(rel, data) { Store.set(rel, data).catch(e => { console.warn(e); to
 const isObj = x => !!x && typeof x === 'object' && !Array.isArray(x);
 function stable(x) { return isObj(x) ? '{' + Object.keys(x).sort().map(k => JSON.stringify(k) + ':' + stable(x[k])).join(',') + '}' : Array.isArray(x) ? '[' + x.map(stable).join(',') + ']' : JSON.stringify(x === undefined ? null : x); }
 const SAFE_KEY = /^[A-Za-z0-9_]+$/;
+const DEEP = { away: true, plates: true };
 function diffFields(a, b) {
   a = a || {}; b = b || {}; const out = {};
   for (const k of new Set([...Object.keys(a), ...Object.keys(b)])) {
@@ -327,7 +328,13 @@ function diffFields(a, b) {
     if (!SAFE_KEY.test(k)) return null; // can't address this field on its own: write the whole document
     const A = isObj(a[k]) ? a[k] : a[k] === undefined ? {} : null;
     if (A && isObj(b[k]) && Object.keys(b[k]).concat(Object.keys(A)).every(x => SAFE_KEY.test(x))) {
-      for (const sk of new Set([...Object.keys(A), ...Object.keys(b[k])])) if (stable(A[sk]) !== stable(b[k][sk])) out[k + '.' + sk] = b[k][sk] === undefined ? Store.DEL : b[k][sk];
+      for (const sk of new Set([...Object.keys(A), ...Object.keys(b[k])])) {
+        if (stable(A[sk]) === stable(b[k][sk])) continue;
+        // who's in and plate answers are kept per person per night, so both phones can change different nights at once
+        const A2 = isObj(A[sk]) ? A[sk] : A[sk] === undefined ? {} : null, B2 = b[k][sk];
+        if (DEEP[k] && A2 && isObj(B2) && Object.keys(B2).concat(Object.keys(A2)).every(x => SAFE_KEY.test(x))) { for (const x of new Set([...Object.keys(A2), ...Object.keys(B2)])) if (stable(A2[x]) !== stable(B2[x])) out[k + '.' + sk + '.' + x] = B2[x] === undefined ? Store.DEL : B2[x]; }
+        else out[k + '.' + sk] = B2 === undefined ? Store.DEL : B2;
+      }
     } else out[k] = b[k] === undefined ? Store.DEL : b[k];
   }
   return out;

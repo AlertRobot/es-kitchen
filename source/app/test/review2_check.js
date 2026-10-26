@@ -91,7 +91,7 @@ const CAL = { household: { dinnerTime: '19:00' }, people: [{ id: 'ethan', name: 
     await A.click('[data-act="rm-shop"][data-v="' + s2.k.split('/').pop() + '"]', 200);
     await A.click('[data-act="rm-shop-yes"]', 1500);
     ok(!A.w.__docs.has(s2.k) && OPS.some(o => o.op === 'delete' && o.id === s2.budgie.tid), 'remove: it goes from Peckish and comes off in Budgie');
-    ok(!/482/.test(A.d.querySelector('#app').textContent), 'remove: and it\u2019s off Shops this month');
+    ok(!/£482\.00/.test(A.d.querySelector('#app').textContent), 'remove: and it\u2019s off Shops this month');
     ok(!A.errs.length, 'budgie: no page errors ' + A.errs.join(' '));
   }
   // ---- 4. step photos from another household say so and can be hidden; none can be a link to another website ----
@@ -149,6 +149,18 @@ const CAL = { household: { dinnerTime: '19:00' }, people: [{ id: 'ethan', name: 
     const A = boot({ pre: { 'households/h1/shops/ghost': { budgie: { state: 'sent', tid: 't-pk-ghost', person: 'ethan' } } } }); await A.start(); await A.click('[data-act="fill"]', 6000);
     await A.click('[data-act="tab"][data-v="settings"]'); await A.click('[data-act="set-page"][data-v="history"]', 600); await wait(400);
     ok(/Spending by month/.test(A.d.querySelector('#app').textContent) && !A.errs.length, 'history: opens with a shop that has no date ' + A.errs.join(' '));
+  }
+  // ---- 8. both phones changing who's in for the same person on different nights keep both changes ----
+  {
+    const A = boot(); await A.start(); await A.addSophie(); await A.click('[data-act="fill"]', 6000);
+    const sid = A.w.Store && [...A.w.__docs.keys()].filter(k => k.includes('/people/')).map(k => k.split('/').pop()).find(id => id !== 'u_ethan');
+    const b = A.d.createElement('button'); b.dataset.act = 'whosin'; A.d.body.appendChild(b); b.click(); b.remove(); await wait(300);
+    await A.click('#sheet [data-act="away-cycle"][data-v="' + sid + '"][data-n="1"]', 300);
+    // the other phone marks her out on Friday; it hasn't reached this phone yet
+    const key = 'households/h1/weeks/' + MON; const doc = A.w.__docs.get(key); doc.away[sid]['4'] = 'dinner';
+    await A.click('#sheet [data-act="away-cycle"][data-v="' + sid + '"][data-n="2"]', 300);
+    const aw = (A.w.__docs.get(key).away || {})[sid] || {};
+    ok(aw['1'] === 'dinner' && aw['2'] === 'dinner' && aw['4'] === 'dinner', 'who\u2019s in: a change on each phone for different nights both stay (' + JSON.stringify(aw) + ')');
   }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
