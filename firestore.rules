@@ -1,27 +1,42 @@
 rules_version = '2';
 // Peckish — who can read and write what.
+// Peckish is invite-only: nothing can be read or written without a signed-in, verified email on the allowlist
+// (/allowed/{email, in lower case}), which is managed in the Firebase console and can never be changed from the app.
 // Each household's plan, list, pantry, recipes, prices, ratings and shops are visible only to its members.
 // Joining needs the household's current invite code.
 service cloud.firestore {
   match /databases/{database}/documents {
     function signedIn() { return request.auth != null; }
+    function myEmail() { return request.auth.token.get('email', '').lower(); }
+    // one cheap check per request: a verified email with a document in /allowed
+    function allowed() {
+      return signedIn() && request.auth.token.get('email_verified', false) == true && myEmail() != ''
+        && exists(/databases/$(database)/documents/allowed/$(myEmail()));
+    }
     function household(hid) { return get(/databases/$(database)/documents/households/$(hid)); }
-    function isMember(hid) { return signedIn() && request.auth.uid in household(hid).data.members; }
+    function isMember(hid) { return allowed() && request.auth.uid in household(hid).data.members; }
+
+    // the allowlist: you can only see whether your own email is on it; nobody can change it from the app
+    match /allowed/{email} {
+      allow get: if signedIn() && request.auth.token.get('email_verified', false) == true && myEmail() == email;
+      allow list, write: if false;
+    }
 
     match /users/{uid} {
-      allow read, write: if signedIn() && request.auth.uid == uid;
+      allow read, write: if allowed() && request.auth.uid == uid;
     }
 
-    // invite codes: anyone signed in can look up a code they know (no listing)
+    // invite codes: anyone on the allowlist can look up a code they know (no listing)
     match /invites/{code} {
-      allow get: if signedIn();
-      allow create: if signedIn() && isMember(request.resource.data.hid);
-      allow delete: if signedIn() && isMember(resource.data.hid);
+      allow get: if allowed();
+      allow create: if isMember(request.resource.data.hid);
+      allow delete: if isMember(resource.data.hid);
     }
 
-    // recipe photos and step photos are shared with everyone using the app. Whoever adds one says which of their
-    // households it's from (checked: they must be in it), so "someone in their household can replace it" can't be faked.
-    // Only the person who added one, or someone in that household, can replace it; only the person who added it can delete it.
+    // recipe photos and step photos are shared with everyone using the app (only people on the allowlist). Whoever adds
+    // one says which of their households it's from (checked: they must be in it), so "someone in their household can
+    // replace it" can't be faked. Only the person who added one, or someone in that household, can replace it; only the
+    // person who added it can delete it.
     function photoOk(field, maxLen) {
       return request.resource.data.uid == request.auth.uid
         && request.resource.data.get('hid', '') is string && request.resource.data.get('hid', '') != ''
@@ -32,31 +47,31 @@ service cloud.firestore {
       return resource.data.uid == request.auth.uid || (resource.data.get('hid', '') != '' && isMember(resource.data.hid));
     }
     match /dishThumbs/{rid} {
-      allow read: if signedIn();
-      allow create: if signedIn() && photoOk('thumb', 300000);
-      allow update: if signedIn() && photoOk('thumb', 300000) && mayReplace();
-      allow delete: if signedIn() && resource.data.uid == request.auth.uid;
+      allow read: if allowed();
+      allow create: if allowed() && photoOk('thumb', 300000);
+      allow update: if allowed() && photoOk('thumb', 300000) && mayReplace();
+      allow delete: if allowed() && resource.data.uid == request.auth.uid;
     }
     match /dishPhotos/{rid} {
-      allow read: if signedIn();
-      allow create: if signedIn() && photoOk('img', 1000000);
-      allow update: if signedIn() && photoOk('img', 1000000) && mayReplace();
-      allow delete: if signedIn() && resource.data.uid == request.auth.uid;
+      allow read: if allowed();
+      allow create: if allowed() && photoOk('img', 1000000);
+      allow update: if allowed() && photoOk('img', 1000000) && mayReplace();
+      allow delete: if allowed() && resource.data.uid == request.auth.uid;
     }
     match /stepPhotos/{id} {
-      allow read: if signedIn();
-      allow create: if signedIn() && photoOk('img', 1000000);
-      allow update: if signedIn() && photoOk('img', 1000000) && mayReplace();
-      allow delete: if signedIn() && resource.data.uid == request.auth.uid;
+      allow read: if allowed();
+      allow create: if allowed() && photoOk('img', 1000000);
+      allow update: if allowed() && photoOk('img', 1000000) && mayReplace();
+      allow delete: if allowed() && resource.data.uid == request.auth.uid;
     }
 
     match /households/{hid} {
-      allow create: if signedIn() && request.resource.data.members == [request.auth.uid];
-      allow read: if signedIn() && request.auth.uid in resource.data.members;
-      allow update: if signedIn() && (
+      allow create: if allowed() && request.resource.data.members == [request.auth.uid];
+      allow read: if allowed() && request.auth.uid in resource.data.members;
+      allow update: if allowed() && (
         // members can change anything
         request.auth.uid in resource.data.members
-        // someone with the invite code may add only themselves
+        // someone on the allowlist with the invite code may add only themselves
         || (request.resource.data.joinCode == resource.data.inviteCode
             && request.resource.data.members.hasAll(resource.data.members)
             && request.resource.data.members.size() == resource.data.members.size() + 1
@@ -66,7 +81,7 @@ service cloud.firestore {
             && request.resource.data.get('memberNames', {}).diff(resource.data.get('memberNames', {})).affectedKeys().hasOnly([request.auth.uid]))
       );
 
-      // weeks, people, config, recipes, ingredients, photos, thumbs
+      // weeks, people, config, recipes, ingredients, ratings, shops
       match /{document=**} {
         allow read, write: if isMember(hid);
       }

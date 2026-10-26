@@ -13,6 +13,7 @@ window.Store = {
   async signInGoogle() { window.__signedOut = false; userCb(user); },
   async signInEmail() { userCb(user); }, async signUpEmail() { userCb(user); }, async resetPassword() {},
   async signOut() { window.__signedOut = true; userCb(null); },
+  async access() { window.__accessChecks = (window.__accessChecks || 0) + 1; return window.__access || 'yes'; }, async sendVerify() { window.__verifySent = true; }, async recheck() { return user; },
   watchUser(uid, cb, err) { if (window.__failWatch > 0) { window.__failWatch--; setTimeout(() => err && err({ code: 'permission-denied' }), 0); return () => {}; } const f = () => cb(docs.get('users/' + uid) || null); subs.add(f); setTimeout(f, 0); return () => subs.delete(f); },
   watchHousehold(id, cb) { const f = () => { const d = docs.get('households/' + id); cb(d ? { id, ...d } : null); }; subs.add(f); setTimeout(f, 0); return () => subs.delete(f); },
   setHousehold(id) { hid = id; },

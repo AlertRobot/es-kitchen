@@ -390,6 +390,8 @@ function gateScreen() {
   if (Store.kind === 'unconfigured') return '<div class="auth"><div class="brand"><span class="brand-mark" aria-hidden="true"><img src="icons/icon.svg" alt=""></span><h1>Almost there</h1><p class="muted">This copy of Peckish isn\u2019t connected to a database yet.</p></div><section class="panel"><p>Open <b>firebase-config.js</b> in your GitHub repository, paste in your Firebase settings (Firebase \u2192 Project settings \u2192 Your apps \u2192 Config), commit, then reload this page.</p></section></div>';
   if (!S.authReady) return '<div class="empty-state"><div class="spinner" aria-hidden="true"></div></div>';
   if (!S.user) return renderAuth();
+  if (S.access === 'no' || S.access === 'verify') return renderInviteOnly();
+  if (S.access === undefined) return '<div class="empty-state"><div class="spinner" aria-hidden="true"></div><p class="muted">Opening your kitchen…</p></div>';
   if (S.userDoc === undefined) return '<div class="empty-state"><div class="spinner" aria-hidden="true"></div><p class="muted">Opening your kitchen…</p>' +
     (S.userErr ? '<p class="small muted">Having trouble reaching your account (' + h(S.userErr) + '). Still trying…</p><button class="btn" data-act="me-retry">Try again</button><button class="linkish small" data-act="reset-local">Reset this phone\u2019s saved copy</button>' : '') + '</div>';
   if (!S.userDoc || !S.userDoc.current || S.onboard === 'force') return renderOnboard();
@@ -409,6 +411,16 @@ function renderAuth() {
     (S.authMsg ? '<p class="note ' + (S.authMsgOk ? 'good' : 'warn') + '">' + h(S.authMsg) + '</p>' : '') +
     '<div class="row wrap between small">' + (m === 'signin' ? '<button class="linkish" data-act="auth-mode" data-v="signup">New here? Create an account</button><button class="linkish" data-act="auth-mode" data-v="reset">Forgot password?</button>' : '<button class="linkish" data-act="auth-mode" data-v="signin">I already have an account</button>') + '</div>' +
     '</section><p class="muted small center">Sign in once on each phone. After that it works offline too.</p></div>';
+}
+function renderInviteOnly() {
+  const email = (S.user && S.user.email) || '';
+  const verify = S.access === 'verify';
+  return '<div class="auth"><div class="brand"><span class="brand-mark" aria-hidden="true"><img src="icons/icon.svg" alt=""></span><h1>' + (verify ? 'Confirm your email' : 'Peckish is invite-only') + '</h1><p class="muted">' +
+    (verify ? 'Open the link we emailed to <b>' + h(email) + '</b>, then come back here.' : 'It\u2019s just for Ethan, Sophie and family they invite. You\u2019re signed in as <b>' + h(email || 'an account with no email') + '</b>, which isn\u2019t on the list yet.') + '</p></div>' +
+    '<section class="panel">' + (verify ? '<p class="small">Peckish checks every account\u2019s email before letting it in.</p><div class="row wrap"><button class="btn primary grow" data-act="verify-done">I\u2019ve confirmed it</button><button class="btn grow" data-act="verify-send">Send the link again</button></div>'
+      : '<p class="small">Ask Ethan to add this email, then tap <b>Check again</b>. If you meant to use a different account, sign out and sign in with that one.</p><button class="btn primary block" data-act="verify-done">Check again</button>') +
+    (S.authMsg ? '<p class="note ' + (S.authMsgOk ? 'good' : 'warn') + ' small">' + h(S.authMsg) + '</p>' : '') + '</section>' +
+    '<button class="linkish center" data-act="sign-out">Sign out</button></div>';
 }
 function renderOnboard() {
   const names = (S.userDoc && S.userDoc.names) || {};
@@ -2569,6 +2581,8 @@ document.addEventListener('click', e => {
     case 'new-code': Store.newInviteCode(S.household).then(c => toast('New code: ' + c)).catch(() => toast('Couldn’t make a new code. Are you online?')); break;
     case 'hh-other': case 'hh-reset': S.onboard = 'force'; S.hhError = null; render(); break;
     case 'hh-switch': withBusy(async () => { await Store.switchHousehold(S.user, v); S.onboard = 'choose'; if (window.__refreshMe) await window.__refreshMe(); }); break;
+    case 'verify-done': S.authMsg = ''; if (window.__recheckAccess) window.__recheckAccess(); break;
+    case 'verify-send': withBusy(async () => { await Store.sendVerify(); S.authMsg = 'Sent. Check your inbox (and spam) for the link.'; S.authMsgOk = true; }); break;
     case 'me-retry': if (window.__refreshMe) window.__refreshMe(); break;
     case 'reset-local': if (Store.resetLocal) Store.resetLocal(); break;
     case 'leave': S.confirm.leave = true; render(); break;
@@ -2729,9 +2743,22 @@ window.addEventListener('offline', () => { S.online = false; schedule(); });
     S.authReady = true; S.user = u; S.authMsg = '';
     if (userUnsub) { userUnsub(); userUnsub = null; }
     if (!u) { S.userDoc = undefined; unsubAll(Object.keys(unsub)); render(); return; }
-    S.userDoc = undefined; render();
-    watchMe(u, 0);
+    S.userDoc = undefined; S.access = Store.access ? undefined : 'yes'; render();
+    checkAccess(u);
   });
+  // Peckish is invite-only: someone signed in whose email isn't on the list sees a calm note instead of the app
+  async function checkAccess(u) {
+    if (!Store.access) { watchMe(u, 0); return; }
+    let a = 'unknown'; try { a = await Store.access(u); } catch (e) {}
+    if (S.user !== u) return;
+    S.access = a === 'no' || a === 'verify' ? a : 'yes'; render();
+    if (S.access === 'yes') watchMe(u, 0);
+  }
+  window.__recheckAccess = async () => {
+    if (!S.user) return;
+    let u = S.user; try { if (Store.recheck) u = (await Store.recheck()) || u; } catch (e) {}
+    S.user = u; S.access = undefined; render(); checkAccess(u);
+  };
   function gotUserDoc(d, meta) {
     // "No household" from this phone's saved copy isn't trusted: ask the server before showing the join page
     if (!d && meta && meta.fromCache) {

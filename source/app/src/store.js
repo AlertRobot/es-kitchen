@@ -2,7 +2,7 @@
 import { initializeApp } from 'firebase/app';
 import {
   getAuth, onAuthStateChanged, GoogleAuthProvider, signInWithPopup, signInWithRedirect, getRedirectResult,
-  signInWithEmailAndPassword, createUserWithEmailAndPassword, sendPasswordResetEmail, signOut, updateProfile,
+  signInWithEmailAndPassword, createUserWithEmailAndPassword, sendPasswordResetEmail, signOut, updateProfile, sendEmailVerification,
   setPersistence, indexedDBLocalPersistence, browserLocalPersistence,
 } from 'firebase/auth';
 import {
@@ -21,6 +21,7 @@ if (configured) {
 }
 
 let hid = null;
+const me = u => ({ uid: u.uid, name: u.displayName || (u.email || '').split('@')[0], email: u.email, verified: !!u.emailVerified });
 const CODE_ABC = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789';
 function newCode() { let s = ''; const a = new Uint32Array(6); crypto.getRandomValues(a); for (const x of a) s += CODE_ABC[x % CODE_ABC.length]; return s; }
 function newId() { return doc(collection(db, 'households')).id; }
@@ -44,7 +45,24 @@ function friendly(e) {
 window.Store = !configured ? { kind: 'unconfigured', onUser(cb) { setTimeout(() => cb(null), 0); return () => {}; } } : {
   kind: 'firebase',
   // ----- auth -----
-  onUser(cb) { getRedirectResult(auth).catch(() => {}); return onAuthStateChanged(auth, u => cb(u ? { uid: u.uid, name: u.displayName || (u.email || '').split('@')[0], email: u.email } : null)); },
+  onUser(cb) { getRedirectResult(auth).catch(() => {}); return onAuthStateChanged(auth, u => cb(u ? me(u) : null)); },
+  // Peckish is invite-only: is this person's email on the allowlist (allowed/{email})? 'yes', 'no', 'verify' (an email
+  // account that hasn't confirmed its address yet) or 'unknown' (offline, nothing saved: the database still checks).
+  async access(u) {
+    if (!u || !u.email) return 'no';
+    if (u.verified === false) return 'verify';
+    const r = doc(db, 'allowed', String(u.email).toLowerCase());
+    // on a weak signal (in the shop) don't hold the app up: after a few seconds use the answer saved on this phone
+    const late = new Promise((res, rej) => setTimeout(() => rej({ code: 'timeout' }), 4000));
+    try { return (await Promise.race([getDocFromServer(r), late])).exists() ? 'yes' : 'no'; }
+    catch (e) {
+      if (e && e.code === 'permission-denied') return 'no';
+      try { return (await getDoc(r)).exists() ? 'yes' : 'unknown'; } catch (x) { return 'unknown'; }
+    }
+  },
+  async sendVerify() { if (auth.currentUser) await sendEmailVerification(auth.currentUser); },
+  // after confirming the email: fetch the account again (and a fresh sign-in token, which the database checks)
+  async recheck() { const u = auth.currentUser; if (!u) return null; await u.reload(); await u.getIdToken(true); return me(auth.currentUser); },
   async signInGoogle() {
     const p = new GoogleAuthProvider();
     try { await signInWithPopup(auth, p); }
@@ -55,7 +73,7 @@ window.Store = !configured ? { kind: 'unconfigured', onUser(cb) { setTimeout(() 
   },
   async signInEmail(email, pw) { try { await signInWithEmailAndPassword(auth, email, pw); } catch (e) { throw new Error(friendly(e)); } },
   async signUpEmail(name, email, pw) {
-    try { const c = await createUserWithEmailAndPassword(auth, email, pw); if (name) await updateProfile(c.user, { displayName: name }); }
+    try { const c = await createUserWithEmailAndPassword(auth, email, pw); if (name) await updateProfile(c.user, { displayName: name }); await sendEmailVerification(c.user).catch(() => {}); }
     catch (e) { throw new Error(friendly(e)); }
   },
   async resetPassword(email) { try { await sendPasswordResetEmail(auth, email); } catch (e) { throw new Error(friendly(e)); } },
