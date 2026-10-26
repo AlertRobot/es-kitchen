@@ -172,6 +172,12 @@ const CAL = { household: { dinnerTime: '19:00' }, people: [{ id: 'ethan', name: 
     const eq = A.w.__docs.get(key).equipment;
     ok(eq.grill === false && eq.oven === false && eq.air_fryer === true, 'equipment: a change on each phone both stay (' + JSON.stringify(eq) + ')');
   }
+  // ---- 10. the phone keeps plain copies of this household's recent weeks only ----
+  {
+    const A = boot({ local: { ['esk-wk:h_family:' + MON]: JSON.stringify({ days: [{ r: 'x' }] }), 'esk-wk:h1:2025-01-06': '{}', ['esk-wk:h1:' + MON]: '{}' } }); await A.start(); await wait(300);
+    const ks = Object.keys(A.w.localStorage).filter(k => k.startsWith('esk-wk:'));
+    ok(!ks.includes('esk-wk:h_family:' + MON) && !ks.includes('esk-wk:h1:2025-01-06') && ks.includes('esk-wk:h1:' + MON), 'week copies: another household\u2019s and old ones are cleared, this week\u2019s kept');
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();

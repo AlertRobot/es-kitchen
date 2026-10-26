@@ -205,7 +205,7 @@ function subscribeHousehold(hid) {
   unsubAll(['hh', 'recipes', 'ing', 'people', 'settings', 'pantry', 'thumbs', 'photoPrefs', 'ratings', 'week', 'prev', 'thisW', 'nextW', 'backup', 'shops']);
   S.backup = null; autoTried = false;
   S.weekPicked = false;
-  Store.setHousehold(hid);
+  Store.setHousehold(hid); pruneWeekCopies(hid);
   RAW.myR = {}; RAW.myI = {}; RAW.gotR = false; RAW.gotI = false; S.thumbs = {}; S.fullPhotos = {};
   unsub.hh = Store.watchHousehold(hid, hh => { S.household = hh; if (hh && Store.touchMember && S.user) Store.touchMember(hh, S.user); schedule(); }, onSubErr);
   unsub.backup = Store.sub('config/backup', d => { S.backup = d || null; schedule(); maybeAutoBackup(); }, () => {});
@@ -244,6 +244,15 @@ function withCopy(start, d, meta) {
   const c = loadWeekCopy(start); if (!c) return d;
   const x = encWeek(c); for (const k in d) x[k] = isObj(d[k]) && isObj(x[k]) ? { ...x[k], ...d[k] } : d[k];
   return x;
+}
+// only this household's recent weeks are kept (Caledonite shows tonight's dinner from these copies, so another
+// household's plan mustn't linger here, and old weeks needn't pile up)
+function pruneWeekCopies(hid) {
+  try {
+    const keep = addDays(mondayOf(TODAY), -28), gone = [];
+    for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i), m = k && /^esk-wk:([^:]*):(\d{4}-\d{2}-\d{2})$/.exec(k); if (m && (m[1] !== hid || m[2] < keep)) gone.push(k); }
+    gone.forEach(k => localStorage.removeItem(k));
+  } catch (e) {}
 }
 function saveWeekCopy(start, d) { if (!d) return; try { localStorage.setItem(weekKey(start), JSON.stringify(d)); } catch (e) {} }
 function loadWeekCopy(start) { try { const x = localStorage.getItem(weekKey(start)); return x ? decWeek(JSON.parse(x)) : null; } catch (e) { return null; } }
