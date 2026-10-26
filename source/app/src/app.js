@@ -102,9 +102,13 @@ function toast(msg) { const t = $('#toast'); t.textContent = msg; t.hidden = fal
 // "Tue 3 Nov", or "Nov 2027" for anything months away (frozen and long-life food)
 function useByText(iso) { const d = parseIso(iso), days = daysBetween(TODAY, iso); return days > 60 ? 'keeps for months' : 'use by ' + d.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' }); }
 function fmtWhen(iso) { try { const d = new Date(iso); return d.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' }) + ', ' + d.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' }); } catch (e) { return ''; } }
+// a photo someone added: from this household (or you), or from another household using the app
+function ourPhoto(p) { return !!p && (p.uid === myUid() || (!!p.hid && !!S.household && p.hid === S.household.id)); }
+// someone else's photo shows unless your household hid it (photos are shared with everyone who uses the app)
+function userPhoto(r) { const p = S.thumbs[r.id]; return p && p.thumb && (ourPhoto(p) || !S.photoPrefs.hidden[r.id]) ? p : null; }
 function photoFor(r) {
-  const own = S.thumbs[r.id];
-  if (own && own.thumb) return { thumb: own.thumb, own: true };
+  const own = userPhoto(r);
+  if (own) return { thumb: own.thumb, own: true };
   if (r.photo && r.photo.thumb && !S.photoPrefs.hidden[r.id]) return { thumb: r.photo.thumb, url: r.photo.url, credit: r.photo.credit, licence: r.photo.licence, source: r.photo.source };
   return null;
 }
@@ -166,7 +170,7 @@ function spellRecipe(r) {
 function rebuild() {
   if (!S.lib) return;
   const recipes = {}; for (const r of S.lib.recipes) recipes[r.id] = r;
-  for (const id in RAW.myR) { const x = RAW.myR[id]; if (x.hidden) delete recipes[id]; else recipes[id] = { ...x, id }; }
+  for (const id in RAW.myR) { const x = RAW.myR[id]; if (x.hidden) delete recipes[id]; else recipes[id] = { ...x, id, time: Number(x.time) || 0, servings: Number(x.servings) > 0 ? Number(x.servings) : 2 }; }
   const all = Object.values(recipes).filter(r => r && r.title && Array.isArray(r.ingredients)).sort((a, b) => a.title.localeCompare(b.title));
   all.forEach(spellRecipe);
   S.RMAP = {}; all.forEach(r => S.RMAP[r.id] = r);
@@ -1363,7 +1367,7 @@ function shopLogPanel(B) {
   const list = shopsThisMonth().sort((a, b) => a.date < b.date ? 1 : -1), total = list.reduce((a, t) => a + (Number(t.amount) || 0), 0), bud = Number(S.settings.monthlyBudget) || 450;
   const me = mePerson(), est = B ? B.prefTotal : 0;
   let out = '<section class="panel"><div class="row between"><h2>Shops this month</h2><span class="small money">' + fmtMoney(total) + ' of ' + fmtMoney(bud) + '</span></div><div class="meter"><i class="' + (total > bud ? 'over' : '') + '" style="width:' + Math.min(100, total / bud * 100).toFixed(0) + '%"></i></div>';
-  out += list.length ? '<div class="leftlist">' + list.map(t => { const who = personById(t.paidBy); return '<div class="left"><span>' + niceDate(t.date) + ' · ' + h(SHOP_KEY_NAMES[t.shop] || t.shop || 'Shop') + '<span class="small muted" style="display:block">' + (who ? h(who.name) + ' paid' : '') + (t.split === 'half' ? ' · half each, ' + fmtMoney(t.amount / 2) + ' each' : '') + (t.source === 'budgie' ? ' · from Budgie' : t.budgie && t.budgie.state === 'sent' ? ' · in Budgie' : t.budgie && t.budgie.state === 'refused' ? ' · Budgie didn’t take this one' : S.bg.cfg && t.budgie && t.budgie.state === 'queued' ? ' · goes to Budgie from ' + h(who ? who.name : '') + '’s phone' : '') + '</span></span><span class="money">' + fmtMoney(t.amount) + '</span></div>'; }).join('') + '</div>' : '<p class="muted small">Nothing logged this month yet.</p>';
+  out += list.length ? '<div class="leftlist">' + list.map(t => { const who = personById(t.paidBy); return '<div class="left"><span>' + h(niceDate(t.date)) + ' · ' + h(SHOP_KEY_NAMES[t.shop] || t.shop || 'Shop') + '<span class="small muted" style="display:block">' + (who ? h(who.name) + ' paid' : '') + (t.split === 'half' ? ' · half each, ' + fmtMoney(t.amount / 2) + ' each' : '') + (t.source === 'budgie' ? ' · from Budgie' : t.budgie && t.budgie.state === 'sent' ? ' · in Budgie' : t.budgie && t.budgie.state === 'refused' ? ' · Budgie didn’t take this one' : S.bg.cfg && t.budgie && t.budgie.state === 'queued' ? ' · goes to Budgie from ' + h(who ? who.name : '') + '’s phone' : '') + '</span></span><span class="money">' + fmtMoney(t.amount) + '</span></div>'; }).join('') + '</div>' : '<p class="muted small">Nothing logged this month yet.</p>';
   out += '<form class="stack" data-form="logshop" style="gap:8px"><span class="label">Done a shop? Log what you paid</span><div class="lsrow"><input class="input" id="ls-amt" type="number" step="0.01" min="0" inputmode="decimal" placeholder="' + (est ? est.toFixed(2) : '0.00') + '" aria-label="Amount paid in pounds"><select class="input" id="ls-shop" aria-label="Shop">' + SHOPS.map(s => '<option value="' + s.id + '"' + (s.id === weekShop() ? ' selected' : '') + '>' + h(s.name) + '</option>').join('') + '</select></div>' +
     (S.people.length > 1 ? '<div class="row wrap" style="gap:6px"><span class="small">Paid by</span>' + S.people.map(p => '<label class="chip"><input type="radio" name="ls-who" value="' + h(p.id) + '"' + ((me ? me.id === p.id : p === S.people[0]) ? ' checked' : '') + '> ' + h(p.name) + '</label>').join('') + '<label class="chip"><input type="checkbox" id="ls-split" checked> Half each</label></div>' : '') +
     '<button class="btn primary" type="submit">Log it</button>' + (S.bg.cfg ? '' : '<p class="muted small">Link Budgie in Settings → Linked apps and shops go there too, split half each.</p>') + '</form></section>';
@@ -1958,14 +1962,14 @@ function suggHtml(s, best) {
     '<button class="icon-btn" data-act="peek" data-v="' + h(r.id) + '" aria-label="See the recipe for ' + h(r.title) + '">' + ICON.info + '</button></div>';
 }
 function heroHtml(r) {
-  const own = S.thumbs[r.id];
+  const own = userPhoto(r);
   if (own) {
     const full = S.fullPhotos[r.id];
     if (full === undefined) { S.fullPhotos[r.id] = null; Store.getG('dishPhotos/' + r.id).then(d => { S.fullPhotos[r.id] = (d && d.img) || own.thumb; renderSheet(); }); }
-    return '<figure class="hero"><img src="' + h(full || own.thumb) + '" alt="' + h(r.title) + ', as made at home"><figcaption>Photo by ' + h(own.by || 'one of you') + '</figcaption></figure>';
+    return '<figure class="hero"><img src="' + h(full || own.thumb) + '" alt="' + h(r.title) + ', as made at home"><figcaption>Photo by ' + h(own.by || 'one of you') + (ourPhoto(own) ? '' : ' · <span class="muted">from someone else using Peckish</span> · <button class="linkish small" data-act="hide-photo" data-v="' + h(r.id) + '">Hide this photo</button>') + '</figcaption></figure>';
   }
-  if (r.photo && r.photo.url && S.photoPrefs.hidden[r.id]) return '<p class="muted small">You hid the stock photo for this recipe. <button class="linkish" data-act="unhide-photo" data-v="' + h(r.id) + '">Show it again</button></p>';
-  if (r.photo && r.photo.url) return '<figure class="hero"><img src="' + h(r.photo.url) + '" alt="' + h(r.photo.alt || r.title) + '" loading="lazy"><figcaption>Photo: ' + h(r.photo.credit || '') + (r.photo.licence ? ' · ' + h(r.photo.licence) : '') + (r.photo.source ? ' · <a href="' + h(r.photo.source) + '" target="_blank" rel="noopener">source</a>' : '') + ' · <span class="muted">a similar dish, not this exact recipe</span> · <button class="linkish small" data-act="hide-photo" data-v="' + h(r.id) + '">Hide this photo</button></figcaption></figure>';
+  if ((S.thumbs[r.id] || (r.photo && r.photo.url)) && S.photoPrefs.hidden[r.id]) return '<p class="muted small">You hid the ' + (S.thumbs[r.id] ? '' : 'stock ') + 'photo for this recipe. <button class="linkish" data-act="unhide-photo" data-v="' + h(r.id) + '">Show it again</button></p>';
+  if (r.photo && r.photo.url) return '<figure class="hero"><img src="' + h(r.photo.url) + '" alt="' + h(r.photo.alt || r.title) + '" loading="lazy"><figcaption>Photo: ' + h(r.photo.credit || '') + (r.photo.licence ? ' · ' + h(r.photo.licence) : '') + (/^https?:\/\//i.test(r.photo.source || '') ? ' · <a href="' + h(r.photo.source) + '" target="_blank" rel="noopener">source</a>' : '') + ' · <span class="muted">a similar dish, not this exact recipe</span> · <button class="linkish small" data-act="hide-photo" data-v="' + h(r.id) + '">Hide this photo</button></figcaption></figure>';
   return '';
 }
 // how many portions a planned night cooks: everyone eating + extra portions + leftovers for lunch
@@ -2050,7 +2054,9 @@ function sheetRecipe(r, top) {
       (s.match === 'close' ? 'Scaled and written up for this app.' : 'Adapted to UK supermarket ingredients and rewritten for this app.') + '</p>';
   }
   const own = S.thumbs[r.id];
-  out += '<section class="panel"><h3>Your photo</h3><p class="muted small">' + (own ? 'This photo shows on the card for everyone using the app.' : 'Made it? Add a photo of how yours turned out. It shows on the card for everyone using the app.') + '</p><div class="row wrap"><label class="btn soft">' + ICON.camera + (own ? ' Replace photo' : ' Add a photo') + '<input type="file" accept="image/*" capture="environment" data-photo="' + h(r.id) + '" hidden></label>' + (own && own.uid === myUid() ? '<button class="btn danger" data-act="del-photo" data-v="' + h(r.id) + '">Remove</button>' : '') + '</div></section>';
+  // only the person who added a photo, or their household, can replace it
+  if (own && !ourPhoto(own)) out += '<section class="panel"><h3>Your photo</h3><p class="muted small">Someone else using Peckish has added a photo of this dish, so yours can\u2019t go on the card. You can hide theirs for your household.</p></section>';
+  else out += '<section class="panel"><h3>Your photo</h3><p class="muted small">' + (own ? 'This photo shows on the card for everyone using the app.' : 'Made it? Add a photo of how yours turned out. It shows on the card for everyone using the app.') + '</p><div class="row wrap"><label class="btn soft">' + ICON.camera + (own ? ' Replace photo' : ' Add a photo') + '<input type="file" accept="image/*" capture="environment" data-photo="' + h(r.id) + '" hidden></label>' + (own && own.uid === myUid() ? '<button class="btn danger" data-act="del-photo" data-v="' + h(r.id) + '">Remove</button>' : '') + '</div></section>';
   out += '<div class="row wrap"><button class="btn" data-act="edit-recipe" data-v="' + h(r.id) + '">Edit recipe</button>' + (top.confirmDel ? '<button class="btn danger" data-act="del-recipe-yes" data-v="' + h(r.id) + '">Yes, remove it</button>' : '<button class="btn danger" data-act="del-recipe" data-v="' + h(r.id) + '">Remove from library</button>') + '</div>';
   return out;
 }

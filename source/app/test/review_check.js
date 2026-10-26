@@ -121,6 +121,21 @@ const CAL = { household: { dinnerTime: '19:00' }, people: [{ id: 'ethan', name: 
     ok(!imp(), 'budgie: a payment taken off in Budgie goes from here too');
     ok(A.w.__docs.has('households/h1/shops/sold1'), 'budgie: shops logged in Peckish stay');
   }
+  // ---- 6. a photo added by someone outside the household can be hidden; ours can't be taken over ----
+  {
+    const pre = { 'dishThumbs/in_chicken_tikka_masala': { thumb: 'data:image/gif;base64,R0lGODlhAQABAAAAACw=', by: 'Stranger', uid: 'u_x', hid: 'h_other' }, 'dishThumbs/it_tuna_puttanesca': { thumb: 'data:image/gif;base64,R0lGODlhAQABAAAAACw=', by: 'Ethan', uid: 'u_ethan', hid: 'h1' } };
+    const A = boot({ pre }); await A.start();
+    const open = async id => { const b = A.d.createElement('button'); b.dataset.act = 'open-recipe'; b.dataset.v = id; A.d.body.appendChild(b); b.click(); b.remove(); await wait(300); };
+    await open('in_chicken_tikka_masala');
+    const hero = () => A.d.querySelector('#sheet .hero figcaption'); 
+    ok(hero() && /someone else using Peckish/.test(hero().textContent) && !!A.d.querySelector('#sheet .hero [data-act="hide-photo"]'), 'photos: another household’s photo says so and can be hidden');
+    ok(!A.d.querySelector('#sheet [data-photo]'), 'photos: no "replace" for a photo you can’t replace');
+    await A.click('#sheet .hero [data-act="hide-photo"]', 300);
+    ok(!A.d.querySelector('#sheet .hero') && /You hid the photo/.test(A.d.querySelector('#sheet').textContent), 'photos: hidden for the household, with a way back');
+    ok(((A.w.__docs.get('households/h1/config/photoPrefs') || {}).hidden || {}).in_chicken_tikka_masala === true, 'photos: the choice is saved for both phones');
+    await A.click('[data-act="sheet-back"]'); await open('it_tuna_puttanesca');
+    ok(A.d.querySelector('#sheet .hero') && !A.d.querySelector('#sheet .hero [data-act="hide-photo"]') && !!A.d.querySelector('#sheet [data-photo]'), 'photos: your own photo has no hide link and can be replaced');
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();
