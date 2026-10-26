@@ -397,6 +397,17 @@ details > summary svg { width: 18px; height: 18px; }
 .lockline { display: flex; align-items: center; gap: 8px; min-height: 48px; padding: 0 14px; border-radius: 999px; background: var(--accent-soft); font-size: 0.95rem; }
 .popmenu { margin-top: -10px; }
 .tonight.slim { padding: 10px 12px; gap: 0; }
+/* calmer Week layouts */
+.planbar { display: grid; grid-template-columns: 1fr auto; grid-template-areas: "text cta" "track track"; align-items: center; gap: 6px 10px; width: 100%; padding: 10px 14px 12px; border-radius: var(--r); border: 1px solid var(--line); background: var(--surface); text-align: left; color: var(--fg); }
+.planbar .pb-text { grid-area: text; font-size: 0.92rem; display: flex; align-items: center; gap: 6px; }
+.planbar .pb-cta { grid-area: cta; font-weight: 700; color: var(--accent); display: flex; align-items: center; gap: 2px; font-size: 0.92rem; }
+.planbar .pb-cta svg { width: 16px; height: 16px; }
+.planbar .pb-track { grid-area: track; height: 4px; border-radius: 2px; background: var(--surface-2); overflow: hidden; }
+.planbar .pb-track i { display: block; height: 100%; background: var(--accent); border-radius: 2px; }
+.fab { position: fixed; z-index: 24; right: max(16px, calc((100vw - 760px) / 2 + 16px)); bottom: calc(76px + env(safe-area-inset-bottom, 0px)); display: flex; align-items: center; gap: 8px; height: 56px; padding: 0 20px 0 16px; border-radius: 28px; border: 0; background: var(--accent); color: var(--accent-fg); font-weight: 700; box-shadow: 0 6px 20px rgba(0,0,0,0.22); }
+.fab svg { width: 22px; height: 22px; }
+.app:has(.fab) { padding-bottom: calc(160px + env(safe-area-inset-bottom, 0px)); }
+.fillall { grid-column: 2; justify-self: end; display: block; min-height: 32px; padding: 0 4px; }
 .whorow { display: grid; grid-template-columns: 64px 1fr; align-items: center; gap: 8px; padding: 8px 12px; }
 .whorow + .whorow { border-top: 1px solid var(--line); }
 .chip.outd { background: var(--warn-soft); border-color: var(--warn); color: var(--fg); }
@@ -548,6 +559,6 @@ details.fold > .in { padding: 0 16px 16px; display: grid; gap: 10px; }
 <nav class="nav" aria-label="Sections"><div class="in" id="nav"></div></nav>
 <div id="toast" class="toast" hidden role="status"></div>
 <script src="firebase-config.js"></script>
-<script src="app.js?v=mvpblwy0"></script>
+<script src="app.js?v=mvpctipp"></script>
 </body>
 </html>
