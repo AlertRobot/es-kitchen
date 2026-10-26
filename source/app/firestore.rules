@@ -1,6 +1,6 @@
 rules_version = '2';
-// E&S Kitchen — who can read and write what.
-// Each household's plan, list, pantry, recipes, prices and photos are visible only to its members.
+// Peckish — who can read and write what.
+// Each household's plan, list, pantry, recipes, prices, ratings and shops are visible only to its members.
 // Joining needs the household's current invite code.
 service cloud.firestore {
   match /databases/{database}/documents {
@@ -19,26 +19,34 @@ service cloud.firestore {
       allow delete: if signedIn() && isMember(resource.data.hid);
     }
 
-    // recipe photos and step photos are shared with everyone using the app; only the person who added one (or someone in their household) can replace it, and only they can delete it
+    // recipe photos and step photos are shared with everyone using the app. Whoever adds one says which of their
+    // households it's from (checked: they must be in it), so "someone in their household can replace it" can't be faked.
+    // Only the person who added one, or someone in that household, can replace it; only the person who added it can delete it.
+    function photoOk(field, maxLen) {
+      return request.resource.data.uid == request.auth.uid
+        && request.resource.data.get('hid', '') is string && request.resource.data.get('hid', '') != ''
+        && isMember(request.resource.data.hid)
+        && request.resource.data[field] is string && request.resource.data[field].size() <= maxLen;
+    }
+    function mayReplace() {
+      return resource.data.uid == request.auth.uid || (resource.data.get('hid', '') != '' && isMember(resource.data.hid));
+    }
     match /dishThumbs/{rid} {
       allow read: if signedIn();
-      allow create: if signedIn() && request.resource.data.uid == request.auth.uid;
-      allow update: if signedIn() && request.resource.data.uid == request.auth.uid
-        && (resource.data.uid == request.auth.uid || (resource.data.get('hid', '') != '' && isMember(resource.data.hid)));
+      allow create: if signedIn() && photoOk('thumb', 300000);
+      allow update: if signedIn() && photoOk('thumb', 300000) && mayReplace();
       allow delete: if signedIn() && resource.data.uid == request.auth.uid;
     }
     match /dishPhotos/{rid} {
       allow read: if signedIn();
-      allow create: if signedIn() && request.resource.data.uid == request.auth.uid;
-      allow update: if signedIn() && request.resource.data.uid == request.auth.uid
-        && (resource.data.uid == request.auth.uid || (resource.data.get('hid', '') != '' && isMember(resource.data.hid)));
+      allow create: if signedIn() && photoOk('img', 1000000);
+      allow update: if signedIn() && photoOk('img', 1000000) && mayReplace();
       allow delete: if signedIn() && resource.data.uid == request.auth.uid;
     }
     match /stepPhotos/{id} {
       allow read: if signedIn();
-      allow create: if signedIn() && request.resource.data.uid == request.auth.uid;
-      allow update: if signedIn() && request.resource.data.uid == request.auth.uid
-        && (resource.data.uid == request.auth.uid || (resource.data.get('hid', '') != '' && isMember(resource.data.hid)));
+      allow create: if signedIn() && photoOk('img', 1000000);
+      allow update: if signedIn() && photoOk('img', 1000000) && mayReplace();
       allow delete: if signedIn() && resource.data.uid == request.auth.uid;
     }
 
@@ -53,7 +61,9 @@ service cloud.firestore {
             && request.resource.data.members.hasAll(resource.data.members)
             && request.resource.data.members.size() == resource.data.members.size() + 1
             && request.auth.uid in request.resource.data.members
-            && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['members', 'joinCode', 'memberNames']))
+            && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['members', 'joinCode', 'memberNames'])
+            // and may only add their own name, not change anyone else's
+            && request.resource.data.get('memberNames', {}).diff(resource.data.get('memberNames', {})).affectedKeys().hasOnly([request.auth.uid]))
       );
 
       // weeks, people, config, recipes, ingredients, photos, thumbs
