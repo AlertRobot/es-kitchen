@@ -1,0 +1,83 @@
+[
+ {
+  "name": "Lamb chops with new potatoes",
+  "cuisine": "British",
+  "protein": "lamb",
+  "base": "potato",
+  "family": "grill_steak",
+  "category": "everyday",
+  "why": "Simple chops night; no plain lamb chops in library"
+ },
+ {
+  "name": "Roast beef and Yorkshires",
+  "cuisine": "British",
+  "protein": "beef",
+  "base": "potato",
+  "family": "roast_traybake",
+  "category": "treat",
+  "why": "Beef Sunday roast; only chicken roast exists"
+ },
+ {
+  "name": "Scampi and chips",
+  "cuisine": "British",
+  "protein": "prawns",
+  "base": "potato",
+  "family": "fried",
+  "category": "treat",
+  "why": "Chip-shop/pub favourite; prawn treat night"
+ },
+ {
+  "name": "Peri-peri chicken and rice",
+  "cuisine": "British",
+  "protein": "chicken",
+  "base": "rice",
+  "family": "grill_steak",
+  "category": "everyday",
+  "why": "Nando's-style at home; hugely popular with mid-20s"
+ },
+ {
+  "name": "Sea bass with new potatoes",
+  "cuisine": "British",
+  "protein": "fish",
+  "base": "potato",
+  "family": "grill_steak",
+  "category": "everyday",
+  "why": "Easy white-fish dinner to offset the salmon cuts"
+ },
+ {
+  "name": "Beef stroganoff",
+  "cuisine": "British",
+  "protein": "beef",
+  "base": "rice",
+  "family": "stew_soup",
+  "category": "everyday",
+  "why": "Familiar creamy beef dinner; made without mushrooms"
+ },
+ {
+  "name": "Chicken casserole and mash",
+  "cuisine": "British",
+  "protein": "chicken",
+  "base": "potato",
+  "family": "stew_soup",
+  "category": "everyday",
+  "why": "Everyday British one-pot; no chicken casserole in library"
+ },
+ {
+  "name": "Breakfast for dinner (fry-up)",
+  "cuisine": "British",
+  "protein": "pork",
+  "base": "bread",
+  "family": "eggs",
+  "category": "treat",
+  "why": "Full English as a lazy treat tea"
+ },
+ {
+  "name": "Lamb shanks and mash",
+  "cuisine": "British",
+  "protein": "lamb",
+  "base": "potato",
+  "family": "stew_soup",
+  "category": "treat",
+  "why": "Slow-cooker weekend treat"
+ }
+]

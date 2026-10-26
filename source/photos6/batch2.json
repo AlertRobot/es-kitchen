@@ -1,0 +1,605 @@
+[
+ {
+  "id": "lu_falafel_hummus_box",
+  "title": "Falafel & Houmous Mezze Box",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "veggie",
+   "no-cook",
+   "batch"
+  ],
+  "ingredients": [
+   "Chilled falafel (ready to eat)",
+   "Classic houmous",
+   "Pitta breads",
+   "Cucumber",
+   "Skyr (natural, high-protein yogurt)",
+   "Garlic",
+   "Lemons",
+   "Cherry tomatoes",
+   "Mixed peppers",
+   "Cooked beetroot (vacuum pack, not in vinegar)",
+   "Salt"
+  ]
+ },
+ {
+  "id": "lu_harissa_chicken_couscous",
+  "title": "Harissa Chicken & Apricot Couscous",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "high-protein",
+   "batch",
+   "spicy"
+  ],
+  "ingredients": [
+   "Chicken breast fillets",
+   "Harissa paste",
+   "Vegetable oil",
+   "Mixed peppers",
+   "Red onions",
+   "Couscous",
+   "Stock cubes",
+   "Soft dried apricots",
+   "Lemons",
+   "Fresh coriander",
+   "Baby spinach",
+   "Skyr (natural, high-protein yogurt)",
+   "Salt"
+  ]
+ },
+ {
+  "id": "lu_spinach_feta_egg_muffins",
+  "title": "Spinach, Pepper & Feta Egg Muffins",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "high-protein",
+   "batch",
+   "freezable",
+   "veggie"
+  ],
+  "ingredients": [
+   "Free-range eggs",
+   "Cottage cheese",
+   "Baby spinach",
+   "Mixed peppers",
+   "Spring onions",
+   "Feta",
+   "Vegetable oil",
+   "Mixed salad leaves",
+   "Cherry tomatoes",
+   "Salt",
+   "Black pepper"
+  ]
+ },
+ {
+  "id": "lu_chicken_caesar_wrap",
+  "title": "Chicken Caesar Wrap",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "high-protein",
+   "no-cook",
+   "quick"
+  ],
+  "ingredients": [
+   "Cooked chicken breast slices",
+   "Light mayonnaise",
+   "Skyr (natural, high-protein yogurt)",
+   "Lemons",
+   "Garlic",
+   "Wholegrain mustard",
+   "Italian hard cheese (parmesan-style)",
+   "Little gem lettuce",
+   "Plain tortilla wraps",
+   "Black pepper"
+  ]
+ },
+ {
+  "id": "lu_ploughmans_lunchbox",
+  "title": "Ham, Cheddar & Pickle Ploughman's Box",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "no-cook",
+   "quick"
+  ],
+  "ingredients": [
+   "Wholemeal bread (800g loaf)",
+   "Cooked ham slices",
+   "Mature cheddar",
+   "Original pickle (Branston-style)",
+   "Little gem lettuce",
+   "Sliced gherkins (jar)",
+   "Braeburn apples",
+   "Lemons"
+  ]
+ },
+ {
+  "id": "lu_smoked_mackerel_potato_salad",
+  "title": "Smoked Mackerel, Beetroot & Mustard Potato Salad",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "batch"
+  ],
+  "ingredients": [
+   "White potatoes",
+   "Skyr (natural, high-protein yogurt)",
+   "Wholegrain mustard",
+   "Lemons",
+   "Spring onions",
+   "Smoked mackerel fillets",
+   "Cooked beetroot (vacuum pack, not in vinegar)",
+   "Mixed salad leaves",
+   "Salt",
+   "Black pepper"
+  ]
+ },
+ {
+  "id": "lu_spiced_lentil_tomato_soup",
+  "title": "Spiced Red Lentil & Tomato Soup",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "light",
+   "veggie",
+   "batch",
+   "freezable"
+  ],
+  "ingredients": [
+   "Vegetable oil",
+   "Brown onions",
+   "Carrots",
+   "Garlic",
+   "Ginger paste",
+   "Ground cumin",
+   "Ground turmeric",
+   "Chilli flakes",
+   "Red split lentils",
+   "Chopped tomatoes (tin)",
+   "Stock cubes",
+   "Lemons",
+   "Skyr (natural, high-protein yogurt)",
+   "Fresh coriander",
+   "Salt"
+  ]
+ },
+ {
+  "id": "lu_ginger_chicken_noodle_soup",
+  "title": "Ginger Chicken Noodle Soup",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "light",
+   "high-protein",
+   "batch"
+  ],
+  "ingredients": [
+   "Stock cubes",
+   "Ginger paste",
+   "Garlic",
+   "Chicken breast fillets",
+   "Carrots",
+   "Pak choi",
+   "Soy sauce",
+   "Medium egg noodles",
+   "Spring onions",
+   "Limes",
+   "Chilli flakes"
+  ]
+ },
+ {
+  "id": "lu_sweet_chilli_prawn_noodle_salad",
+  "title": "Sweet Chilli Prawn Noodle Salad",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "high-protein",
+   "batch"
+  ],
+  "ingredients": [
+   "Frozen king prawns",
+   "Flat rice noodles (dried)",
+   "Frozen edamame soya beans",
+   "Cucumber",
+   "Carrots",
+   "Sweet chilli sauce",
+   "Limes",
+   "Soy sauce",
+   "Spring onions",
+   "Fresh coriander",
+   "Salted roasted peanuts"
+  ]
+ },
+ {
+  "id": "lu_zaatar_chickpea_quinoa_feta",
+  "title": "Za'atar Chickpea, Quinoa & Feta Salad",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "veggie",
+   "batch"
+  ],
+  "ingredients": [
+   "Quinoa",
+   "Frozen edamame soya beans",
+   "Chickpeas (tin)",
+   "Cucumber",
+   "Cherry tomatoes",
+   "Red onions",
+   "Baby spinach",
+   "Lemons",
+   "Vegetable oil",
+   "Za'atar spice blend",
+   "Feta",
+   "Salt"
+  ]
+ },
+ {
+  "id": "lu_chicken_shawarma_pitta_box",
+  "title": "Chicken Shawarma Pitta Box with Garlic Yogurt",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "high-protein",
+   "batch"
+  ],
+  "ingredients": [
+   "Chicken thigh fillets",
+   "Ground cumin",
+   "Smoked paprika",
+   "Ground turmeric",
+   "Garlic",
+   "Lemons",
+   "Vegetable oil",
+   "Red cabbage",
+   "Cucumber",
+   "Skyr (natural, high-protein yogurt)",
+   "Pitta breads",
+   "Chilli flakes",
+   "Salt"
+  ]
+ },
+ {
+  "id": "lu_cottage_cheese_protein_pot",
+  "title": "Cottage Cheese, Ham & Egg Protein Pot",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "light",
+   "high-protein",
+   "quick"
+  ],
+  "ingredients": [
+   "Free-range eggs",
+   "Cottage cheese",
+   "Cooked ham slices",
+   "Cherry tomatoes",
+   "Cucumber",
+   "Spring onions",
+   "Black pepper",
+   "Chilli flakes"
+  ]
+ },
+ {
+  "id": "lu_gochujang_beef_kimchi_rice",
+  "title": "Gochujang Beef & Kimchi Rice Bowl",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "high-protein",
+   "spicy",
+   "freezable"
+  ],
+  "ingredients": [
+   "Beef mince (5% fat)",
+   "Garlic",
+   "Ginger paste",
+   "Gochujang Korean chilli paste",
+   "Soy sauce",
+   "Toasted sesame oil",
+   "Frozen edamame soya beans",
+   "Microwave basmati rice pouch (250g)",
+   "Kimchi",
+   "Cucumber",
+   "Spring onions"
+  ]
+ },
+ {
+  "id": "lu_beef_bean_chilli_pot",
+  "title": "Beef & Bean Chilli Lunch Pot",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "high-protein",
+   "batch",
+   "freezable",
+   "spicy"
+  ],
+  "ingredients": [
+   "Vegetable oil",
+   "Brown onions",
+   "Mixed peppers",
+   "Garlic",
+   "Beef mince (5% fat)",
+   "Smoked paprika",
+   "Ground cumin",
+   "Hot chilli powder",
+   "Tomato purée",
+   "Chopped tomatoes (tin)",
+   "Red kidney beans (tin)",
+   "Stock cubes",
+   "Skyr (natural, high-protein yogurt)",
+   "Lightly salted tortilla chips",
+   "Fresh coriander",
+   "Salt"
+  ]
+ },
+ {
+  "id": "lu_honey_soy_salmon_noodles",
+  "title": "Honey-Soy Salmon Noodle Box",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "high-protein",
+   "batch"
+  ],
+  "ingredients": [
+   "Salmon fillets",
+   "Soy sauce",
+   "Honey",
+   "Ginger paste",
+   "Garlic",
+   "Medium egg noodles",
+   "Frozen edamame soya beans",
+   "Pak choi",
+   "Toasted sesame oil",
+   "Limes",
+   "Spring onions",
+   "Chilli flakes"
+  ]
+ },
+ {
+  "id": "lu_coronation_chicken_pot",
+  "title": "Coronation Chicken Wrap Pot",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "high-protein",
+   "no-cook",
+   "quick"
+  ],
+  "ingredients": [
+   "Skyr (natural, high-protein yogurt)",
+   "Light mayonnaise",
+   "Mild curry powder",
+   "Mango chutney",
+   "Cooked chicken breast slices",
+   "Spring onions",
+   "Little gem lettuce",
+   "Plain tortilla wraps",
+   "Salt"
+  ]
+ },
+ {
+  "id": "lu_cajun_chicken_sweet_potato_box",
+  "title": "Cajun Chicken, Sweet Potato & Broccoli Box",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "high-protein",
+   "batch",
+   "traybake"
+  ],
+  "ingredients": [
+   "Sweet potatoes",
+   "Vegetable oil",
+   "Chicken breast fillets",
+   "Smoked paprika",
+   "Ground cumin",
+   "Hot chilli powder",
+   "Dried mixed herbs",
+   "Garlic",
+   "Broccoli",
+   "Skyr (natural, high-protein yogurt)",
+   "Cayenne pepper hot sauce (buffalo-style)",
+   "Salt"
+  ]
+ },
+ {
+  "id": "lu_loaded_beans_on_toast",
+  "title": "Smoky Loaded Beans on Toast with a Poached Egg",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "quick",
+   "veggie",
+   "high-protein",
+   "comfort"
+  ],
+  "ingredients": [
+   "Baked beans in tomato sauce (tin)",
+   "Smoked paprika",
+   "Baby spinach",
+   "Free-range eggs",
+   "Wholemeal bread (800g loaf)",
+   "Mature cheddar",
+   "Black pepper"
+  ]
+ },
+ {
+  "id": "lu_tomato_mozzarella_frittata",
+  "title": "Tomato, Spinach & Mozzarella Frittata",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "quick",
+   "veggie",
+   "high-protein",
+   "light"
+  ],
+  "ingredients": [
+   "Free-range eggs",
+   "Italian hard cheese (parmesan-style)",
+   "Vegetable oil",
+   "Baby spinach",
+   "Cherry tomatoes",
+   "Mozzarella",
+   "Fresh basil",
+   "Mixed salad leaves",
+   "Salt",
+   "Black pepper"
+  ]
+ },
+ {
+  "id": "lu_smoked_salmon_egg_bagel",
+  "title": "Smoked Salmon & Scrambled Egg Bagel Thin",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "quick",
+   "high-protein"
+  ],
+  "ingredients": [
+   "Free-range eggs",
+   "Semi-skimmed milk",
+   "Butter",
+   "Wholemeal bagel thins",
+   "Smoked salmon slices",
+   "Spring onions",
+   "Lemons",
+   "Wild rocket",
+   "Black pepper"
+  ]
+ },
+ {
+  "id": "lu_tuna_melt_jacket",
+  "title": "Tuna Melt Jacket Potato",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "high-protein",
+   "comfort"
+  ],
+  "ingredients": [
+   "White potatoes",
+   "Tuna chunks in spring water (tin)",
+   "Frozen sweetcorn",
+   "Light mayonnaise",
+   "Spring onions",
+   "Mature cheddar",
+   "Mixed salad leaves",
+   "Salt",
+   "Black pepper"
+  ]
+ },
+ {
+  "id": "lu_halloumi_hummus_pitta",
+  "title": "Griddled Halloumi & Pepper Pitta with Houmous",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "quick",
+   "veggie"
+  ],
+  "ingredients": [
+   "Mixed peppers",
+   "Red onions",
+   "Vegetable oil",
+   "Halloumi",
+   "Pitta breads",
+   "Classic houmous",
+   "Mixed salad leaves",
+   "Lemons",
+   "Chilli flakes"
+  ]
+ },
+ {
+  "id": "lu_chicken_fajita_quesadilla",
+  "title": "Chicken Fajita Quesadilla",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "quick",
+   "high-protein",
+   "fakeaway"
+  ],
+  "ingredients": [
+   "Vegetable oil",
+   "Mixed peppers",
+   "Red onions",
+   "Smoked paprika",
+   "Ground cumin",
+   "Cooked chicken breast slices",
+   "Plain tortilla wraps",
+   "Mature cheddar",
+   "Skyr (natural, high-protein yogurt)",
+   "Limes",
+   "Sliced green jalapeños (jar)"
+  ]
+ },
+ {
+  "id": "bf_cheerios_milk",
+  "title": "Cheerios with Milk",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "quick",
+   "cereal",
+   "no-cook"
+  ],
+  "ingredients": [
+   "Cheerios (Nestlé Multigrain hoops)",
+   "Semi-skimmed milk"
+  ]
+ },
+ {
+  "id": "bf_crunchy_nut_milk",
+  "title": "Crunchy Nut Corn Flakes with Milk",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "quick",
+   "cereal",
+   "no-cook"
+  ],
+  "ingredients": [
+   "Crunchy Nut Corn Flakes (Kellogg's)",
+   "Semi-skimmed milk"
+  ]
+ },
+ {
+  "id": "bf_shreddies_milk",
+  "title": "Shreddies with Milk",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "quick",
+   "cereal",
+   "no-cook",
+   "light"
+  ],
+  "ingredients": [
+   "Shreddies Original (Nestlé)",
+   "Semi-skimmed milk"
+  ]
+ },
+ {
+  "id": "bf_rice_krispies_milk",
+  "title": "Rice Krispies with Milk",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "quick",
+   "cereal",
+   "no-cook"
+  ],
+  "ingredients": [
+   "Rice Krispies (Kellogg's)",
+   "Semi-skimmed milk"
+  ]
+ }
+]

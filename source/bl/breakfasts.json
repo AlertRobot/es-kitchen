@@ -1,0 +1,1217 @@
+[
+  {
+    "id": "bf_protein_bar",
+    "title": "Protein Bar",
+    "icon": "🍫",
+    "meal": "breakfast",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 0,
+    "servings": 1,
+    "packable": true,
+    "microwave": false,
+    "keepsDays": 0,
+    "batch": "",
+    "equipment": [],
+    "kcalEst": 210,
+    "proteinEst": 20,
+    "ingredients": [
+      {
+        "i": "protein_bar",
+        "q": 1,
+        "t": "1 bar"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Grab and go",
+        "text": "Unwrap and enjoy. Keep a couple in your bag or desk drawer for when dinner is a while off."
+      }
+    ],
+    "tags": [
+      "quick",
+      "high-protein",
+      "no-cook",
+      "snack"
+    ]
+  },
+  {
+    "id": "bf_weetabix_milk",
+    "title": "Weetabix with Milk",
+    "icon": "🥣",
+    "meal": "breakfast",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 2,
+    "servings": 1,
+    "packable": false,
+    "microwave": false,
+    "keepsDays": 0,
+    "batch": "",
+    "equipment": [],
+    "kcalEst": 120,
+    "proteinEst": 6,
+    "ingredients": [
+      {
+        "i": "weetabix",
+        "q": 1,
+        "t": "1 biscuit"
+      },
+      {
+        "i": "milk",
+        "q": 100,
+        "t": "100ml semi-skimmed"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Pour and eat",
+        "text": "Pop the biscuit in a bowl and pour over the cold milk. Give it a minute to soften if you like it soft, or eat straight away for crunch."
+      }
+    ],
+    "tags": [
+      "quick",
+      "light",
+      "no-cook"
+    ]
+  },
+  {
+    "id": "bf_weetabix_milk_x2",
+    "title": "2 Weetabix with Milk",
+    "icon": "🥣",
+    "meal": "breakfast",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 2,
+    "servings": 1,
+    "packable": false,
+    "microwave": false,
+    "keepsDays": 0,
+    "batch": "",
+    "equipment": [],
+    "kcalEst": 210,
+    "proteinEst": 10,
+    "ingredients": [
+      {
+        "i": "weetabix",
+        "q": 2,
+        "t": "2 biscuits"
+      },
+      {
+        "i": "milk",
+        "q": 150,
+        "t": "150ml semi-skimmed"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Pour and eat",
+        "text": "Put both biscuits in a bowl and pour over the cold milk. Leave for a minute to soak in, or eat straight away if you like the crunch."
+      }
+    ],
+    "tags": [
+      "quick",
+      "light",
+      "no-cook"
+    ]
+  },
+  {
+    "id": "bf_banana",
+    "title": "Banana",
+    "icon": "🍌",
+    "meal": "breakfast",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 0,
+    "servings": 1,
+    "packable": true,
+    "microwave": false,
+    "keepsDays": 0,
+    "batch": "",
+    "equipment": [],
+    "kcalEst": 105,
+    "proteinEst": 1,
+    "ingredients": [
+      {
+        "i": "banana",
+        "q": 1,
+        "t": "1 medium"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Peel and eat",
+        "text": "Peel and enjoy. Pack it in the side pocket of your bag, not under the lunchbox, so it doesn't bruise."
+      }
+    ],
+    "tags": [
+      "quick",
+      "light",
+      "no-cook",
+      "snack"
+    ]
+  },
+  {
+    "id": "bf_greek_yogurt_berries",
+    "title": "Greek Yogurt Pot with Berries",
+    "icon": "🫐",
+    "meal": "breakfast",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 2,
+    "servings": 1,
+    "packable": true,
+    "microwave": false,
+    "keepsDays": 1,
+    "batch": "Spoon up the night before; the frozen berries thaw by morning and keep it cold in your bag.",
+    "equipment": [],
+    "kcalEst": 225,
+    "proteinEst": 7,
+    "ingredients": [
+      {
+        "i": "greek_yogurt",
+        "q": 150,
+        "t": "150g (a small bowlful)"
+      },
+      {
+        "i": "frozen_berries",
+        "q": 60,
+        "t": "60g (a small handful)"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Spoon and top",
+        "text": "Spoon the yogurt into a bowl or lidded pot and scatter over the berries straight from frozen. Eat after 10 min once they start to bleed into the yogurt, or pack it the night before and it'll be thawed and juicy by your break."
+      }
+    ],
+    "tags": [
+      "quick",
+      "no-cook"
+    ]
+  },
+  {
+    "id": "bf_boiled_eggs_x2",
+    "title": "Boiled Eggs ×2",
+    "icon": "🥚",
+    "meal": "breakfast",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 10,
+    "servings": 1,
+    "packable": true,
+    "microwave": false,
+    "keepsDays": 3,
+    "batch": "Boil 6 at once and keep them in their shells in the fridge for up to 3 days.",
+    "equipment": [
+      "hob"
+    ],
+    "kcalEst": 135,
+    "proteinEst": 13,
+    "ingredients": [
+      {
+        "i": "eggs",
+        "q": 2,
+        "t": "2 medium"
+      },
+      {
+        "i": "salt",
+        "q": 0.5,
+        "t": "a pinch"
+      },
+      {
+        "i": "black_pepper",
+        "q": 0.2,
+        "t": "a pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Boil, cool, season",
+        "text": "Lower the eggs into a pan of boiling water and cook for 7 min for jammy yolks or 9 min for hard-boiled. Run under cold water for a minute, peel, and season with salt and pepper. For a packed breakfast, leave them in their shells and peel at your break."
+      }
+    ],
+    "tags": [
+      "quick",
+      "high-protein",
+      "low-carb"
+    ]
+  },
+  {
+    "id": "bf_overnight_oats_berry",
+    "title": "Berry Overnight Oats with Skyr",
+    "icon": "🫙",
+    "meal": "breakfast",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 5,
+    "servings": 1,
+    "packable": true,
+    "microwave": false,
+    "keepsDays": 3,
+    "batch": "Make 3 jars on Sunday night; they keep 3 days in the fridge and go straight into a bag.",
+    "equipment": [],
+    "kcalEst": 305,
+    "proteinEst": 20,
+    "ingredients": [
+      {
+        "i": "porridge_oats",
+        "q": 40,
+        "t": "40g (about 4 tbsp)"
+      },
+      {
+        "i": "milk",
+        "q": 100,
+        "t": "100ml semi-skimmed"
+      },
+      {
+        "i": "skyr",
+        "q": 100,
+        "t": "100g"
+      },
+      {
+        "i": "frozen_berries",
+        "q": 60,
+        "t": "60g (a small handful)"
+      },
+      {
+        "i": "honey",
+        "q": 5,
+        "t": "1 tsp"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Mix the base",
+        "text": "In a jar or lidded tub, stir together the oats, milk, skyr and honey until there are no dry patches."
+      },
+      {
+        "title": "Add the berries",
+        "text": "Tip the frozen berries on top – no need to thaw, they'll melt overnight and turn the top layer purple."
+      },
+      {
+        "title": "Chill overnight",
+        "text": "Seal and refrigerate for at least 6 hours. Give it a stir before eating; loosen with a splash of milk if it's too thick."
+      }
+    ],
+    "tags": [
+      "high-protein",
+      "no-cook",
+      "batch",
+      "make-ahead"
+    ]
+  },
+  {
+    "id": "bf_overnight_oats_pb_banana",
+    "title": "Peanut Butter & Banana Overnight Oats",
+    "icon": "🥜",
+    "meal": "breakfast",
+    "cuisine": "American",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 5,
+    "servings": 1,
+    "packable": true,
+    "microwave": false,
+    "keepsDays": 2,
+    "batch": "Make 2 jars at once; add the banana to the second jar on the morning you eat it so it stays fresh.",
+    "equipment": [],
+    "kcalEst": 375,
+    "proteinEst": 21,
+    "ingredients": [
+      {
+        "i": "porridge_oats",
+        "q": 40,
+        "t": "40g (about 4 tbsp)"
+      },
+      {
+        "i": "milk",
+        "q": 120,
+        "t": "120ml semi-skimmed"
+      },
+      {
+        "i": "skyr",
+        "q": 80,
+        "t": "80g"
+      },
+      {
+        "i": "banana",
+        "q": 0.5,
+        "t": "½, sliced"
+      },
+      {
+        "i": "peanut_butter",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "ground_cinnamon",
+        "q": 0.5,
+        "t": "a pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Whisk the peanut butter in",
+        "text": "In a jar, stir the peanut butter into a splash of the milk until smooth, then add the rest of the milk, the skyr, oats and cinnamon. Mix well."
+      },
+      {
+        "title": "Top with banana",
+        "text": "Slice the half banana over the top. Wrap the other half tightly and keep it for tomorrow's jar."
+      },
+      {
+        "title": "Chill overnight",
+        "text": "Seal and refrigerate for at least 6 hours. Stir before eating; it's lovely cold, or microwave for 1½ min if you fancy it warm."
+      }
+    ],
+    "tags": [
+      "high-protein",
+      "no-cook",
+      "batch",
+      "make-ahead"
+    ]
+  },
+  {
+    "id": "bf_overnight_oats_apple_cinnamon",
+    "title": "Apple Pie Overnight Oats",
+    "icon": "🍏",
+    "meal": "breakfast",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 5,
+    "servings": 1,
+    "packable": true,
+    "microwave": false,
+    "keepsDays": 3,
+    "batch": "Grate a whole apple and make 2 jars at once; they keep 3 days in the fridge.",
+    "equipment": [],
+    "kcalEst": 320,
+    "proteinEst": 19,
+    "ingredients": [
+      {
+        "i": "porridge_oats",
+        "q": 40,
+        "t": "40g (about 4 tbsp)"
+      },
+      {
+        "i": "milk",
+        "q": 100,
+        "t": "100ml semi-skimmed"
+      },
+      {
+        "i": "skyr",
+        "q": 100,
+        "t": "100g"
+      },
+      {
+        "i": "apples",
+        "q": 0.5,
+        "t": "½, grated (skin on)"
+      },
+      {
+        "i": "ground_cinnamon",
+        "q": 1,
+        "t": "½ tsp"
+      },
+      {
+        "i": "honey",
+        "q": 5,
+        "t": "1 tsp"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Grate the apple",
+        "text": "Coarsely grate the half apple, skin and all – stop when you reach the core."
+      },
+      {
+        "title": "Mix everything",
+        "text": "In a jar, stir together the oats, milk, skyr, cinnamon, honey and grated apple. The apple juices help soften the oats."
+      },
+      {
+        "title": "Chill overnight",
+        "text": "Seal and refrigerate for at least 6 hours. Stir and add a splash of milk if it's set too thick."
+      }
+    ],
+    "tags": [
+      "high-protein",
+      "no-cook",
+      "batch",
+      "make-ahead"
+    ]
+  },
+  {
+    "id": "bf_protein_porridge",
+    "title": "Creamy Protein Porridge with Banana",
+    "icon": "🥣",
+    "meal": "breakfast",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 6,
+    "servings": 1,
+    "packable": false,
+    "microwave": false,
+    "keepsDays": 0,
+    "batch": "",
+    "equipment": [
+      "microwave"
+    ],
+    "kcalEst": 355,
+    "proteinEst": 21,
+    "ingredients": [
+      {
+        "i": "porridge_oats",
+        "q": 40,
+        "t": "40g (about 4 tbsp)"
+      },
+      {
+        "i": "milk",
+        "q": 200,
+        "t": "200ml semi-skimmed"
+      },
+      {
+        "i": "skyr",
+        "q": 80,
+        "t": "80g"
+      },
+      {
+        "i": "banana",
+        "q": 0.5,
+        "t": "½, sliced"
+      },
+      {
+        "i": "ground_cinnamon",
+        "q": 0.5,
+        "t": "a pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Cook the oats",
+        "text": "Stir the oats and milk together in a large microwaveable bowl (it bubbles up). Microwave on high for 2 min, stir, then another 1 min until thick and creamy."
+      },
+      {
+        "title": "Stir in the skyr",
+        "text": "Let it stand for 1 min so it's not boiling, then beat in the skyr – this keeps it smooth rather than splitting, and adds a big protein boost."
+      },
+      {
+        "title": "Top and serve",
+        "text": "Top with the sliced banana and a pinch of cinnamon. Eat straight away while hot."
+      }
+    ],
+    "tags": [
+      "high-protein",
+      "comfort"
+    ]
+  },
+  {
+    "id": "bf_egg_muffins_spinach_feta",
+    "title": "Spinach, Feta & Tomato Egg Muffins",
+    "icon": "🧁",
+    "meal": "breakfast",
+    "cuisine": "Middle Eastern",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 25,
+    "servings": 1,
+    "packable": true,
+    "microwave": false,
+    "keepsDays": 3,
+    "batch": "Make a tray of 6 (3 portions of 2); keeps 3 days in the fridge – eat cold or warm for 30 sec.",
+    "equipment": [
+      "oven"
+    ],
+    "kcalEst": 200,
+    "proteinEst": 16,
+    "ingredients": [
+      {
+        "i": "eggs",
+        "q": 2,
+        "t": "2 medium"
+      },
+      {
+        "i": "spinach",
+        "q": 15,
+        "t": "a small handful, chopped"
+      },
+      {
+        "i": "feta",
+        "q": 15,
+        "t": "15g, crumbled"
+      },
+      {
+        "i": "cherry_tomatoes",
+        "q": 30,
+        "t": "3, quartered"
+      },
+      {
+        "i": "spring_onions",
+        "q": 0.5,
+        "t": "½, sliced"
+      },
+      {
+        "i": "oil",
+        "q": 2,
+        "t": "a little, for greasing"
+      },
+      {
+        "i": "black_pepper",
+        "q": 0.2,
+        "t": "a pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Heat and grease",
+        "text": "Preheat the oven to 190°C (170°C fan). Brush 2 holes of a muffin tin (or 6 if batch-cooking) well with oil – silicone cases release best."
+      },
+      {
+        "title": "Fill the tin",
+        "text": "Divide the chopped spinach, tomatoes, spring onion and feta between the holes."
+      },
+      {
+        "title": "Add the eggs",
+        "text": "Beat the eggs with plenty of pepper (no salt – the feta is salty) and pour over the filling so each hole is about ¾ full."
+      },
+      {
+        "title": "Bake",
+        "text": "Bake for 18–20 min until puffed, golden at the edges and set in the middle. Cool for 5 min, then run a knife around and lift out. Cool fully before boxing up."
+      }
+    ],
+    "tags": [
+      "high-protein",
+      "low-carb",
+      "batch",
+      "make-ahead"
+    ]
+  },
+  {
+    "id": "bf_egg_muffins_ham_pepper",
+    "title": "Ham, Pepper & Cheddar Egg Muffins",
+    "icon": "🧁",
+    "meal": "breakfast",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "pork",
+    "time": 25,
+    "servings": 1,
+    "packable": true,
+    "microwave": false,
+    "keepsDays": 3,
+    "batch": "Make a tray of 6 (3 portions of 2); keeps 3 days in the fridge – eat cold or warm for 30 sec.",
+    "equipment": [
+      "oven"
+    ],
+    "kcalEst": 225,
+    "proteinEst": 20,
+    "ingredients": [
+      {
+        "i": "eggs",
+        "q": 2,
+        "t": "2 medium"
+      },
+      {
+        "i": "ham_slices",
+        "q": 20,
+        "t": "1 slice, chopped"
+      },
+      {
+        "i": "peppers",
+        "q": 0.25,
+        "t": "¼, finely diced"
+      },
+      {
+        "i": "cheddar",
+        "q": 10,
+        "t": "10g, grated"
+      },
+      {
+        "i": "spring_onions",
+        "q": 0.5,
+        "t": "½, sliced"
+      },
+      {
+        "i": "oil",
+        "q": 2,
+        "t": "a little, for greasing"
+      },
+      {
+        "i": "black_pepper",
+        "q": 0.2,
+        "t": "a pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Heat and grease",
+        "text": "Preheat the oven to 190°C (170°C fan). Brush 2 holes of a muffin tin (or 6 if batch-cooking) well with oil."
+      },
+      {
+        "title": "Fill the tin",
+        "text": "Divide the chopped ham, diced pepper and spring onion between the holes."
+      },
+      {
+        "title": "Add egg and cheese",
+        "text": "Beat the eggs with a pinch of pepper and pour over the filling until ¾ full, then sprinkle the cheddar on top."
+      },
+      {
+        "title": "Bake",
+        "text": "Bake for 18–20 min until puffed, golden and set in the middle with no wobble. Cool for 5 min before lifting out; cool fully before boxing up."
+      }
+    ],
+    "tags": [
+      "high-protein",
+      "low-carb",
+      "batch",
+      "make-ahead"
+    ]
+  },
+  {
+    "id": "bf_scrambled_eggs_toast",
+    "title": "Soft Scrambled Eggs on Wholemeal Toast",
+    "icon": "🍳",
+    "meal": "breakfast",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 8,
+    "servings": 1,
+    "packable": false,
+    "microwave": false,
+    "keepsDays": 0,
+    "batch": "",
+    "equipment": [
+      "hob"
+    ],
+    "kcalEst": 270,
+    "proteinEst": 17,
+    "ingredients": [
+      {
+        "i": "eggs",
+        "q": 2,
+        "t": "2 medium"
+      },
+      {
+        "i": "milk",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "butter",
+        "q": 5,
+        "t": "a small knob"
+      },
+      {
+        "i": "wholemeal_bread",
+        "q": 1,
+        "t": "1 slice"
+      },
+      {
+        "i": "spring_onions",
+        "q": 0.5,
+        "t": "½, finely sliced"
+      },
+      {
+        "i": "salt",
+        "q": 0.5,
+        "t": "a pinch"
+      },
+      {
+        "i": "black_pepper",
+        "q": 0.2,
+        "t": "a pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Beat the eggs",
+        "text": "Whisk the eggs with the milk and a pinch of salt and pepper. Put the bread in the toaster."
+      },
+      {
+        "title": "Scramble gently",
+        "text": "Melt the butter in a small non-stick pan over a low-medium heat. Add the eggs and stir slowly with a spatula, pulling the set edges into the middle. Take off the heat while still slightly glossy – they'll finish cooking in the pan."
+      },
+      {
+        "title": "Serve",
+        "text": "Pile the eggs onto the hot toast and scatter over the spring onion."
+      }
+    ],
+    "tags": [
+      "high-protein",
+      "comfort"
+    ]
+  },
+  {
+    "id": "bf_cottage_cheese_toast",
+    "title": "Cottage Cheese & Tomato Toast",
+    "icon": "🍅",
+    "meal": "breakfast",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 5,
+    "servings": 1,
+    "packable": false,
+    "microwave": false,
+    "keepsDays": 0,
+    "batch": "",
+    "equipment": [],
+    "kcalEst": 315,
+    "proteinEst": 21,
+    "ingredients": [
+      {
+        "i": "wholemeal_bread",
+        "q": 2,
+        "t": "2 slices"
+      },
+      {
+        "i": "cottage_cheese",
+        "q": 120,
+        "t": "120g (about 4 heaped tbsp)"
+      },
+      {
+        "i": "cherry_tomatoes",
+        "q": 60,
+        "t": "6, halved"
+      },
+      {
+        "i": "chilli_flakes",
+        "q": 0.3,
+        "t": "a pinch"
+      },
+      {
+        "i": "black_pepper",
+        "q": 0.2,
+        "t": "a good grind"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Toast and top",
+        "text": "Toast the bread. Spread the cottage cheese thickly over both slices."
+      },
+      {
+        "title": "Finish",
+        "text": "Press the halved tomatoes on top, then finish with a good grind of black pepper and a pinch of chilli flakes. Eat straight away so the toast stays crisp."
+      }
+    ],
+    "tags": [
+      "high-protein",
+      "no-cook"
+    ]
+  },
+  {
+    "id": "bf_pb_banana_toast",
+    "title": "Peanut Butter & Banana Toast",
+    "icon": "🍞",
+    "meal": "breakfast",
+    "cuisine": "American",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 4,
+    "servings": 1,
+    "packable": false,
+    "microwave": false,
+    "keepsDays": 0,
+    "batch": "",
+    "equipment": [],
+    "kcalEst": 240,
+    "proteinEst": 8,
+    "ingredients": [
+      {
+        "i": "wholemeal_bread",
+        "q": 1,
+        "t": "1 slice"
+      },
+      {
+        "i": "peanut_butter",
+        "q": 15,
+        "t": "1 level tbsp"
+      },
+      {
+        "i": "banana",
+        "q": 0.5,
+        "t": "½, sliced"
+      },
+      {
+        "i": "ground_cinnamon",
+        "q": 0.3,
+        "t": "a pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Toast and spread",
+        "text": "Toast the bread and spread the peanut butter on while it's hot so it goes slightly melty."
+      },
+      {
+        "title": "Top",
+        "text": "Lay the banana slices over the top and dust with a pinch of cinnamon."
+      }
+    ],
+    "tags": [
+      "quick"
+    ]
+  },
+  {
+    "id": "bf_avocado_egg_toast",
+    "title": "Smashed Avocado & Jammy Egg Toast",
+    "icon": "🥑",
+    "meal": "breakfast",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 10,
+    "servings": 1,
+    "packable": false,
+    "microwave": false,
+    "keepsDays": 0,
+    "batch": "",
+    "equipment": [
+      "hob"
+    ],
+    "kcalEst": 290,
+    "proteinEst": 12,
+    "ingredients": [
+      {
+        "i": "eggs",
+        "q": 1,
+        "t": "1 medium"
+      },
+      {
+        "i": "wholemeal_bread",
+        "q": 1,
+        "t": "1 slice"
+      },
+      {
+        "i": "avocado",
+        "q": 0.5,
+        "t": "½"
+      },
+      {
+        "i": "lemon",
+        "q": 0.1,
+        "t": "a squeeze"
+      },
+      {
+        "i": "chilli_flakes",
+        "q": 0.3,
+        "t": "a pinch"
+      },
+      {
+        "i": "salt",
+        "q": 0.5,
+        "t": "a pinch"
+      },
+      {
+        "i": "black_pepper",
+        "q": 0.2,
+        "t": "a pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Boil the egg",
+        "text": "Lower the egg into boiling water and cook for 6½ min for a set white and runny-jammy yolk. Cool under the cold tap for 1 min, then peel."
+      },
+      {
+        "title": "Smash the avocado",
+        "text": "While the egg cooks, toast the bread. Mash the avocado with a squeeze of lemon and a pinch of salt and pepper – keep it a bit chunky."
+      },
+      {
+        "title": "Build",
+        "text": "Spread the avocado over the toast, halve the egg on top and finish with the chilli flakes. Wrap the leftover avocado half tightly with its stone in."
+      }
+    ],
+    "tags": []
+  },
+  {
+    "id": "bf_mushroom_spinach_omelette",
+    "title": "Mushroom, Spinach & Feta Omelette",
+    "icon": "🍳",
+    "meal": "breakfast",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 10,
+    "servings": 1,
+    "packable": false,
+    "microwave": false,
+    "keepsDays": 0,
+    "batch": "",
+    "equipment": [
+      "hob"
+    ],
+    "kcalEst": 210,
+    "proteinEst": 17,
+    "ingredients": [
+      {
+        "i": "eggs",
+        "q": 2,
+        "t": "2 medium"
+      },
+      {
+        "i": "mushrooms",
+        "q": 60,
+        "t": "3, sliced"
+      },
+      {
+        "i": "spinach",
+        "q": 30,
+        "t": "a large handful"
+      },
+      {
+        "i": "feta",
+        "q": 15,
+        "t": "15g, crumbled"
+      },
+      {
+        "i": "oil",
+        "q": 3,
+        "t": "1 tsp"
+      },
+      {
+        "i": "black_pepper",
+        "q": 0.2,
+        "t": "a pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Cook the veg",
+        "text": "Heat the oil in a small non-stick frying pan over a medium-high heat. Fry the mushrooms for 3–4 min until golden, then add the spinach and stir until just wilted. Tip onto a plate."
+      },
+      {
+        "title": "Cook the omelette",
+        "text": "Beat the eggs with plenty of pepper and pour into the pan. Swirl, then gently pull the edges in as they set, tilting so raw egg runs underneath. After about 1½ min it should be just set on top."
+      },
+      {
+        "title": "Fill and fold",
+        "text": "Scatter the veg and crumbled feta over one half, fold over and slide onto a plate."
+      }
+    ],
+    "tags": [
+      "high-protein",
+      "low-carb"
+    ]
+  },
+  {
+    "id": "bf_breakfast_wrap",
+    "title": "Egg, Spinach & Cheddar Breakfast Wrap",
+    "icon": "🌯",
+    "meal": "breakfast",
+    "cuisine": "Mexican",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 10,
+    "servings": 1,
+    "packable": true,
+    "microwave": true,
+    "keepsDays": 2,
+    "batch": "Make 2 at once, wrap each in foil and refrigerate for up to 2 days.",
+    "equipment": [
+      "hob"
+    ],
+    "kcalEst": 380,
+    "proteinEst": 21,
+    "ingredients": [
+      {
+        "i": "wraps",
+        "q": 1,
+        "t": "1 tortilla"
+      },
+      {
+        "i": "eggs",
+        "q": 2,
+        "t": "2 medium"
+      },
+      {
+        "i": "spinach",
+        "q": 20,
+        "t": "a handful"
+      },
+      {
+        "i": "cheddar",
+        "q": 10,
+        "t": "10g, grated"
+      },
+      {
+        "i": "hot_sauce",
+        "q": 5,
+        "t": "a few dashes (optional)"
+      },
+      {
+        "i": "oil",
+        "q": 2,
+        "t": "a little"
+      },
+      {
+        "i": "black_pepper",
+        "q": 0.2,
+        "t": "a pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Scramble with spinach",
+        "text": "Heat the oil in a non-stick pan over a medium heat. Wilt the spinach for 30 sec, then pour in the beaten eggs and stir until just set but not dry. Season with pepper."
+      },
+      {
+        "title": "Fill the wrap",
+        "text": "Warm the wrap in the pan for 10 sec each side. Spoon the eggs down the middle, sprinkle with cheddar and add a few dashes of hot sauce."
+      },
+      {
+        "title": "Roll up",
+        "text": "Fold in the sides, roll up tightly and cut in half. Eat now, or cool completely and wrap in foil for a packed breakfast."
+      },
+      {
+        "title": "Reheat at work",
+        "text": "Unwrap from foil, wrap in a piece of kitchen paper and microwave for 45–60 sec until hot through. It's also fine eaten cold."
+      }
+    ],
+    "tags": [
+      "high-protein",
+      "batch",
+      "make-ahead"
+    ]
+  },
+  {
+    "id": "bf_skyr_berry_parfait",
+    "title": "Skyr Berry Parfait with Toasted Oats",
+    "icon": "🍨",
+    "meal": "breakfast",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 8,
+    "servings": 1,
+    "packable": true,
+    "microwave": false,
+    "keepsDays": 2,
+    "batch": "Toast a bigger batch of oats (keeps a week in a jar) and layer 2 pots at once; pack the oats in a separate little tub so they stay crunchy.",
+    "equipment": [
+      "hob"
+    ],
+    "kcalEst": 225,
+    "proteinEst": 20,
+    "ingredients": [
+      {
+        "i": "skyr",
+        "q": 150,
+        "t": "150g"
+      },
+      {
+        "i": "frozen_berries",
+        "q": 80,
+        "t": "80g, thawed"
+      },
+      {
+        "i": "porridge_oats",
+        "q": 20,
+        "t": "20g (2 tbsp)"
+      },
+      {
+        "i": "honey",
+        "q": 5,
+        "t": "1 tsp"
+      },
+      {
+        "i": "ground_cinnamon",
+        "q": 0.3,
+        "t": "a pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Toast the oats",
+        "text": "Put the oats in a dry frying pan over a medium heat for 3–4 min, shaking often, until golden and nutty. Off the heat, stir in the honey and cinnamon so they clump. Leave to cool and crisp up."
+      },
+      {
+        "title": "Thaw the berries",
+        "text": "Microwave the frozen berries for 40 sec (or leave in the fridge overnight) so they release their juice."
+      },
+      {
+        "title": "Layer up",
+        "text": "In a glass or lidded pot, layer the skyr and berries with their juice. Sprinkle the oats on just before eating."
+      }
+    ],
+    "tags": [
+      "high-protein",
+      "light"
+    ]
+  },
+  {
+    "id": "bf_berry_smoothie",
+    "title": "Berry & Banana Protein Smoothie",
+    "icon": "🥤",
+    "meal": "breakfast",
+    "cuisine": "American",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 5,
+    "servings": 1,
+    "packable": true,
+    "microwave": false,
+    "keepsDays": 1,
+    "batch": "Bag up portions of berries, banana and oats in the freezer so each morning is just tip-and-blend.",
+    "equipment": [
+      "blender"
+    ],
+    "kcalEst": 290,
+    "proteinEst": 20,
+    "ingredients": [
+      {
+        "i": "frozen_berries",
+        "q": 100,
+        "t": "100g"
+      },
+      {
+        "i": "banana",
+        "q": 0.5,
+        "t": "½ (fresh or frozen)"
+      },
+      {
+        "i": "skyr",
+        "q": 100,
+        "t": "100g"
+      },
+      {
+        "i": "milk",
+        "q": 150,
+        "t": "150ml semi-skimmed"
+      },
+      {
+        "i": "porridge_oats",
+        "q": 15,
+        "t": "15g (1½ tbsp)"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Load the blender",
+        "text": "Put the milk in first, then the oats, skyr, banana and frozen berries."
+      },
+      {
+        "title": "Blend",
+        "text": "Blitz for 45–60 sec until completely smooth. Add a splash more milk if it's too thick to pour."
+      },
+      {
+        "title": "Drink or pack",
+        "text": "Drink straight away, or pour into a sealed flask or bottle and keep cold – it'll be fine until your mid-morning break. Shake before drinking."
+      }
+    ],
+    "tags": [
+      "high-protein",
+      "quick"
+    ]
+  }
+]

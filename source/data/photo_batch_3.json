@@ -1,0 +1,422 @@
+[
+ {
+  "id": "it_proper_ragu_bolognese",
+  "title": "Proper Slow-Simmered Ragù Bolognese with Spaghetti & Parmesan",
+  "cuisine": "Italian",
+  "main": "beef_mince,bacon,onion,carrots,garlic"
+ },
+ {
+  "id": "it_proper_carbonara",
+  "title": "Proper Spaghetti Carbonara with Crispy Pancetta & Pecorino (No Cream)",
+  "cuisine": "Italian",
+  "main": "pasta,pancetta,eggs,pecorino,parmesan"
+ },
+ {
+  "id": "it_cacio_e_pepe_rocket",
+  "title": "Cacio e Pepe-Style Spaghetti with Toasted Black Pepper & Lemony Rocket",
+  "cuisine": "Italian",
+  "main": "pasta,pecorino,parmesan,black_pepper,butter"
+ },
+ {
+  "id": "it_pesto_potato_broccoli_pasta",
+  "title": "Genovese-Style Pesto Pasta with Potatoes, Tenderstem-Style Broccoli & Parmesan",
+  "cuisine": "Italian",
+  "main": "pasta,potatoes,broccoli,pesto,parmesan"
+ },
+ {
+  "id": "it_tuna_puttanesca",
+  "title": "Spaghetti Puttanesca with Tuna, Olives, Capers & Chilli",
+  "cuisine": "Italian",
+  "main": "pasta,tinned_tuna,anchovies,olives,capers"
+ },
+ {
+  "id": "it_penne_arrabbiata_mozzarella",
+  "title": "Fiery Penne all'Arrabbiata with Torn Mozzarella & Basil",
+  "cuisine": "Italian",
+  "main": "pasta,chopped_tomatoes,tomato_puree,garlic,chilli_flakes"
+ },
+ {
+  "id": "it_sausage_fennel_ragu",
+  "title": "Sausage & Fennel Ragù with Rigatoni, Chilli & Parmesan",
+  "cuisine": "Italian",
+  "main": "sausages,fennel_seeds,onion,garlic,chilli_flakes"
+ },
+ {
+  "id": "it_lemon_chicken_orzo",
+  "title": "One-Pan Lemon & Garlic Chicken Orzo with Spinach & Parmesan",
+  "cuisine": "Italian",
+  "main": "chicken_thighs,orzo,onion,garlic,lemon"
+ },
+ {
+  "id": "it_chicken_cacciatore",
+  "title": "Chicken Cacciatore with Peppers, Mushrooms, Olives & Crusty Bread",
+  "cuisine": "Italian",
+  "main": "chicken_thighs,plain_flour,onion,peppers,mushrooms"
+ },
+ {
+  "id": "it_creamy_tuscan_chicken",
+  "title": "Creamy Tuscan Chicken with Sun-Dried Tomatoes, Spinach & Garlicky Crushed Potatoes",
+  "cuisine": "Italian",
+  "main": "chicken_breast,sun_dried_tomatoes,garlic,double_cream,stock_cubes"
+ },
+ {
+  "id": "it_sausage_pesto_gnocchi_traybake",
+  "title": "Sausage, Pesto & Cherry Tomato Gnocchi Traybake with Melted Mozzarella",
+  "cuisine": "Italian",
+  "main": "gnocchi,sausages,cherry_tomatoes,red_onion,peppers"
+ },
+ {
+  "id": "it_mushroom_risotto",
+  "title": "Creamy Mushroom Risotto with Garlic-Butter Mushrooms, Spinach & Parmesan",
+  "cuisine": "Italian",
+  "main": "arborio_rice,mushrooms,onion,garlic,stock_cubes"
+ },
+ {
+  "id": "it_pea_bacon_risotto",
+  "title": "Pea, Crispy Bacon & Lemon Risotto with Parmesan",
+  "cuisine": "Italian",
+  "main": "arborio_rice,bacon,frozen_peas,onion,garlic"
+ },
+ {
+  "id": "it_minestrone_pesto",
+  "title": "Hearty Minestrone with Cannellini Beans, Pasta & a Pesto Swirl",
+  "cuisine": "Italian",
+  "main": "onion,carrots,courgette,garlic,cannellini_beans"
+ },
+ {
+  "id": "it_proper_beef_lasagne",
+  "title": "Proper Beef Lasagne with Silky Béchamel & a Golden Cheese Crust",
+  "cuisine": "Italian",
+  "main": "beef_mince,onion,carrots,garlic,tomato_puree"
+ },
+ {
+  "id": "it_aubergine_parmigiana",
+  "title": "Melting Aubergine Parmigiana with Basil, Mozzarella & Garlic Bread",
+  "cuisine": "Italian",
+  "main": "aubergine,oil,passata,garlic,basil"
+ },
+ {
+  "id": "it_chicken_parmigiana",
+  "title": "Crispy Chicken Parmigiana with Bubbling Mozzarella & Spaghetti al Pomodoro",
+  "cuisine": "Italian",
+  "main": "chicken_breast,plain_flour,eggs,panko,parmesan"
+ },
+ {
+  "id": "it_spaghetti_meatballs",
+  "title": "Juicy Beef & Parmesan Meatballs in Rich Tomato Sauce with Spaghetti",
+  "cuisine": "Italian",
+  "main": "beef_mince,panko,milk,eggs,parmesan"
+ },
+ {
+  "id": "it_chicken_bacon_mushroom_bake",
+  "title": "Creamy Chicken, Bacon & Mushroom Pasta Bake with a Cheesy Crust",
+  "cuisine": "Italian",
+  "main": "chicken_thighs,bacon,mushrooms,garlic,pasta"
+ },
+ {
+  "id": "it_garlic_chilli_prawn_linguine",
+  "title": "Garlic, Chilli & Lemon King Prawn Linguine with Cherry Tomatoes & Rocket",
+  "cuisine": "Italian",
+  "main": "pasta,prawns,cherry_tomatoes,garlic,chilli_flakes"
+ },
+ {
+  "id": "it_creamy_lemon_salmon_penne",
+  "title": "Creamy Lemon & Garlic Salmon Penne with Spinach & Peas",
+  "cuisine": "Italian",
+  "main": "salmon,pasta,double_cream,garlic,lemon"
+ },
+ {
+  "id": "it_potato_spinach_feta_frittata",
+  "title": "Golden Potato, Spinach & Feta Frittata with Cherry Tomato & Rocket Salad",
+  "cuisine": "Italian",
+  "main": "eggs,potatoes,spinach,spring_onions,feta"
+ },
+ {
+  "id": "it_spinach_ricotta_cannelloni",
+  "title": "Spinach & Ricotta Cannelloni Baked in Tomato Sauce with Golden Mozzarella",
+  "cuisine": "Italian",
+  "main": "lasagne_sheets,ricotta,spinach,parmesan,lemon"
+ },
+ {
+  "id": "it_chicken_milanese_lemon_spaghetti",
+  "title": "Crispy Chicken Milanese with Lemon-Parmesan Spaghetti & Rocket",
+  "cuisine": "Italian",
+  "main": "chicken_breast,plain_flour,eggs,panko,parmesan"
+ },
+ {
+  "id": "it_tuscan_sausage_bean_stew",
+  "title": "Tuscan Sausage & Cannellini Bean Stew with Spinach & Garlic Toasts",
+  "cuisine": "Italian",
+  "main": "sausages,cannellini_beans,chopped_tomatoes,onion,garlic"
+ },
+ {
+  "id": "it_pasta_alla_norma",
+  "title": "Pasta alla Norma with Golden Aubergine, Basil & Pecorino",
+  "cuisine": "Italian",
+  "main": "aubergine,oil,garlic,chilli_flakes,tomato_puree"
+ },
+ {
+  "id": "it_crispy_gnocchi_garlic_mushrooms",
+  "title": "Crispy Pan-Fried Gnocchi with Creamy Garlic Mushrooms, Spinach & Parmesan",
+  "cuisine": "Italian",
+  "main": "gnocchi,mushrooms,garlic,double_cream,spinach"
+ },
+ {
+  "id": "it_salmon_basil_salsa_verde",
+  "title": "Roast Salmon with Basil & Caper Salsa Verde, Crushed Potatoes & Rocket",
+  "cuisine": "Italian",
+  "main": "salmon,potatoes,cherry_tomatoes,basil,capers"
+ },
+ {
+  "id": "it_pasta_e_ceci",
+  "title": "Pasta e Ceci – Roman Chickpea & Pasta Stew with Rosemary, Chilli & Parmesan",
+  "cuisine": "Italian",
+  "main": "chickpeas,pasta,onion,carrots,garlic"
+ },
+ {
+  "id": "it_sausage_broccoli_orecchiette",
+  "title": "Sausage & Broccoli Orecchiette with Garlic, Chilli & Lemon",
+  "cuisine": "Italian",
+  "main": "sausages,broccoli,pasta,garlic,chilli_flakes"
+ },
+ {
+  "id": "mx_chipotle_chilli_con_carne",
+  "title": "Smoky Chipotle Chilli Con Carne with Lime Rice & Soured Cream",
+  "cuisine": "Mexican",
+  "main": "beef_mince,oil,onion,peppers,garlic"
+ },
+ {
+  "id": "mx_sizzling_chicken_fajitas",
+  "title": "Sizzling Chicken Fajitas with Charred Peppers, Smashed Guacamole & Soured Cream",
+  "cuisine": "Mexican",
+  "main": "chicken_breast,peppers,red_onion,smoked_paprika,cumin"
+ },
+ {
+  "id": "mx_chipotle_chicken_burrito_bowl",
+  "title": "Chipotle Chicken Burrito Bowls with Coriander-Lime Rice, Black Beans & Charred Corn",
+  "cuisine": "Mexican",
+  "main": "chicken_thighs,chipotle_paste,honey,cumin,garlic"
+ },
+ {
+  "id": "mx_cheesy_chicken_enchiladas",
+  "title": "Cheesy Chicken & Black Bean Enchiladas with Smoky Tomato Sauce",
+  "cuisine": "Mexican",
+  "main": "chicken_breast,oil,onion,peppers,garlic"
+ },
+ {
+  "id": "mx_black_bean_jalapeno_quesadillas",
+  "title": "Crispy Black Bean, Sweetcorn & Jalapeño Quesadillas with Pico de Gallo",
+  "cuisine": "Mexican",
+  "main": "black_beans,sweetcorn,spring_onions,cheddar,jalapenos"
+ },
+ {
+  "id": "mx_chicken_tinga_tacos",
+  "title": "Chipotle Chicken Tinga Tacos with Avocado Crema & Quick-Pickled Onions",
+  "cuisine": "Mexican",
+  "main": "chicken_thighs,oil,onion,garlic,cumin"
+ },
+ {
+  "id": "mx_crispy_pork_carnitas_tacos",
+  "title": "Crispy Pork Carnitas Tacos with Lime Slaw, Soured Cream & Jalapeños",
+  "cuisine": "Mexican",
+  "main": "pork_shoulder_steaks,cumin,mixed_herbs,ground_cinnamon,salt"
+ },
+ {
+  "id": "mx_panko_fish_tacos",
+  "title": "Crispy Panko Fish Tacos with Lime Slaw & Chipotle Yogurt",
+  "cuisine": "Mexican",
+  "main": "cod_fillets,plain_flour,eggs,panko,smoked_paprika"
+ },
+ {
+  "id": "mx_sweet_potato_black_bean_tacos",
+  "title": "Roasted Sweet Potato & Black Bean Tacos with Feta & Lime Yogurt",
+  "cuisine": "Mexican",
+  "main": "sweet_potato,red_onion,oil,cumin,smoked_paprika"
+ },
+ {
+  "id": "mx_huevos_rancheros",
+  "title": "Huevos Rancheros with Smoky Chipotle Beans, Crispy Eggs & Avocado",
+  "cuisine": "Mexican",
+  "main": "oil,onion,peppers,garlic,cumin"
+ },
+ {
+  "id": "mx_cheesy_chicken_rice_bake",
+  "title": "One-Pot Cheesy Mexican Chicken & Rice Bake",
+  "cuisine": "Mexican",
+  "main": "chicken_thighs,oil,onion,peppers,garlic"
+ },
+ {
+  "id": "mx_loaded_beef_nachos",
+  "title": "Loaded Beef Nachos Traybake with Melted Cheese, Guacamole & Jalapeños",
+  "cuisine": "Mexican",
+  "main": "beef_mince,oil,red_onion,garlic,cumin"
+ },
+ {
+  "id": "mx_birria_beef_tacos",
+  "title": "Birria-Style Beef Tacos with Melty Cheese & Chilli Dipping Broth",
+  "cuisine": "Mexican",
+  "main": "diced_beef,salt,oil,onion,garlic"
+ },
+ {
+  "id": "mx_crispy_beef_chimichangas",
+  "title": "Crispy Golden Beef & Bean Chimichangas with Soured Cream & Pico de Gallo",
+  "cuisine": "Mexican",
+  "main": "beef_mince,oil,onion,garlic,cumin"
+ },
+ {
+  "id": "mx_beef_crunchwrap",
+  "title": "Homemade Beef Crunchwrap with Nacho Cheese Sauce & Tortilla Crunch",
+  "cuisine": "Mexican",
+  "main": "beef_mince,oil,garlic,cumin,smoked_paprika"
+ },
+ {
+  "id": "mx_chicken_tortilla_soup",
+  "title": "Smoky Chicken Tortilla Soup with Avocado, Lime & Crispy Tortilla Strips",
+  "cuisine": "Mexican",
+  "main": "chicken_breast,oil,wraps,onion,peppers"
+ },
+ {
+  "id": "mx_chilli_lime_prawn_tacos",
+  "title": "Garlic, Chilli & Lime Prawn Tacos with Charred Corn Salsa",
+  "cuisine": "Mexican",
+  "main": "prawns,garlic,smoked_paprika,chilli_flakes,oil"
+ },
+ {
+  "id": "mx_smoky_pork_burritos",
+  "title": "Smoky Pork, Rice & Black Bean Burritos with Chipotle Soured Cream",
+  "cuisine": "Mexican",
+  "main": "rice,lime,coriander,pork_mince,oil"
+ },
+ {
+  "id": "mx_chipotle_honey_salmon",
+  "title": "Chipotle-Honey Glazed Salmon with Black Bean & Corn Salsa and Lime Rice",
+  "cuisine": "Mexican",
+  "main": "salmon,chipotle_paste,honey,oil,rice"
+ },
+ {
+  "id": "mx_spiced_chicken_taco_salad",
+  "title": "Spiced Chicken Taco Salad with Crunchy Tortilla Chips & Lime-Yogurt Dressing",
+  "cuisine": "Mexican",
+  "main": "chicken_breast,smoked_paprika,cumin,garlic,oil"
+ },
+ {
+  "id": "me_harissa_shakshuka_feta",
+  "title": "Smoky Harissa Shakshuka with Feta, Coriander & Warm Pittas",
+  "cuisine": "Middle Eastern",
+  "main": "oil,onion,peppers,garlic,cumin"
+ },
+ {
+  "id": "me_chicken_shawarma_traybake",
+  "title": "Chicken Shawarma Traybake with Garlic Yogurt, Pickled Red Onion & Warm Pittas",
+  "cuisine": "Middle Eastern",
+  "main": "chicken_thighs,cumin,ground_coriander,smoked_paprika,turmeric"
+ },
+ {
+  "id": "me_crispy_chicken_shawarma_wraps",
+  "title": "Crispy Chicken Shawarma Wraps with Garlic Sauce & Fries Tucked Inside",
+  "cuisine": "Middle Eastern",
+  "main": "potatoes,oil,chicken_thighs,cumin,smoked_paprika"
+ },
+ {
+  "id": "me_lamb_koftas_herby_couscous",
+  "title": "Grilled Lamb Koftas with Herby Couscous, Tahini Yogurt & Pitta",
+  "cuisine": "Middle Eastern",
+  "main": "lamb_mince,red_onion,garlic,cumin,ground_coriander"
+ },
+ {
+  "id": "me_crispy_falafel_wraps",
+  "title": "Crispy Homemade Falafel Wraps with Tahini Sauce & Chopped Salad",
+  "cuisine": "Middle Eastern",
+  "main": "chickpeas,spring_onions,garlic,cumin,ground_coriander"
+ },
+ {
+  "id": "me_halloumi_harissa_veg_wraps",
+  "title": "Griddled Halloumi & Harissa Veg Wraps with Garlic Yogurt",
+  "cuisine": "Middle Eastern",
+  "main": "halloumi,peppers,courgette,red_onion,oil"
+ },
+ {
+  "id": "me_sticky_harissa_chicken_traybake",
+  "title": "Sticky Harissa Chicken Traybake with Chickpeas, Sweet Potato & Feta",
+  "cuisine": "Middle Eastern",
+  "main": "chicken_thighs,harissa,honey,oil,garlic"
+ },
+ {
+  "id": "me_chicken_apricot_tagine",
+  "title": "Moroccan Chicken Tagine with Apricots, Chickpeas & Lemon Couscous",
+  "cuisine": "Middle Eastern",
+  "main": "chicken_thighs,oil,onion,garlic,ginger_paste"
+ },
+ {
+  "id": "me_harissa_couscous_stuffed_peppers",
+  "title": "Roasted Peppers Stuffed with Harissa Couscous, Chickpeas & Feta",
+  "cuisine": "Middle Eastern",
+  "main": "peppers,oil,couscous,stock_cubes,harissa"
+ },
+ {
+  "id": "me_turkish_eggs_cilbir",
+  "title": "Turkish Eggs (Çılbır) with Garlic Yogurt, Chilli Butter, Spinach & Toasted Pitta",
+  "cuisine": "Middle Eastern",
+  "main": "greek_yogurt,garlic,salt,oil,spinach"
+ },
+ {
+  "id": "me_lahmacun_lamb_flatbreads",
+  "title": "Crispy Lahmacun-Style Spiced Lamb Flatbreads with Lemon & Herb Salad",
+  "cuisine": "Middle Eastern",
+  "main": "lamb_mince,red_onion,peppers,cherry_tomatoes,garlic"
+ },
+ {
+  "id": "me_zaatar_chicken_fattoush",
+  "title": "Za'atar Chicken Fattoush with Crispy Pitta Chips & Garlic Yogurt",
+  "cuisine": "Middle Eastern",
+  "main": "chicken_breast,zaatar,garlic,lemon,oil"
+ },
+ {
+  "id": "me_smoky_chickpea_spinach_stew",
+  "title": "Smoky Chickpea, Spinach & Tomato Stew with Lemony Yogurt & Toasted Pitta",
+  "cuisine": "Middle Eastern",
+  "main": "oil,onion,garlic,cumin,smoked_paprika"
+ },
+ {
+  "id": "me_homemade_lamb_doner",
+  "title": "Homemade Lamb Doner Kebab with Chilli Sauce, Garlic Yogurt & Chips",
+  "cuisine": "Middle Eastern",
+  "main": "lamb_mince,onion,garlic,cumin,ground_coriander"
+ },
+ {
+  "id": "me_zaatar_salmon_herby_couscous",
+  "title": "Za'atar-Crusted Salmon with Herby Couscous & Lemon Tahini",
+  "cuisine": "Middle Eastern",
+  "main": "salmon,zaatar,oil,lemon,couscous"
+ },
+ {
+  "id": "me_harissa_prawns_butter_beans",
+  "title": "Harissa Prawns with Butter Beans, Blistered Tomatoes, Spinach & Feta",
+  "cuisine": "Middle Eastern",
+  "main": "oil,red_onion,garlic,harissa,cherry_tomatoes"
+ },
+ {
+  "id": "me_crispy_halloumi_burgers",
+  "title": "Crispy Panko Halloumi Burgers with Harissa Yogurt, Charred Peppers & Chips",
+  "cuisine": "Middle Eastern",
+  "main": "potatoes,oil,smoked_paprika,salt,peppers"
+ },
+ {
+  "id": "me_spinach_feta_gozleme",
+  "title": "Butter-Fried Spinach, Feta & Mozzarella Gözleme with Lemony Salad",
+  "cuisine": "Middle Eastern",
+  "main": "oil,garlic,spinach,feta,mozzarella"
+ },
+ {
+  "id": "me_chicken_pastilla_pie",
+  "title": "Moroccan Chicken Pastilla-Style Pie with Cinnamon, Honey & Golden Puff Pastry",
+  "cuisine": "Middle Eastern",
+  "main": "chicken_thighs,oil,onion,garlic,ginger_paste"
+ },
+ {
+  "id": "me_beef_kofta_meatballs_feta",
+  "title": "Spiced Beef Kofta Meatballs in Tomato Sauce with Feta & Lemony Couscous",
+  "cuisine": "Middle Eastern",
+  "main": "beef_mince,onion,garlic,cumin,ground_cinnamon"
+ }
+]

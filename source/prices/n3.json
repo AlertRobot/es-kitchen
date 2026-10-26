@@ -1,0 +1,585 @@
+[
+ {
+  "id": "branston_pickle",
+  "tescoPack": 295,
+  "prices": {
+   "tesco": {
+    "pack": 295,
+    "label": "Tesco Sandwich Pickle 295g",
+    "price": 1.45,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/shop/en-GB/products/305730412",
+    "est": false,
+    "note": "own-label; Branston Original 360g is £2.20"
+   },
+   "sainsburys": {
+    "pack": 295,
+    "label": "Sainsbury's Sweet Pickle 295g",
+    "price": 1.45,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/branston%20pickle",
+    "est": false,
+    "note": "own-label; Branston Original 360g is £2.20"
+   },
+   "asda": {
+    "pack": 295,
+    "label": "ASDA Sweet Pickle 295g",
+    "price": 1.32,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/asda-tangy-juicy-sweet-pickle/HXG770",
+    "est": false
+   },
+   "aldi": {
+    "pack": 390,
+    "label": "Bramwells Sweet Pickle 390g",
+    "price": 0.79,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/bramwells-sweet-pickle/JBO105",
+    "est": true,
+    "note": "trolley 'usual' price; current price not shown"
+   },
+   "lidl": {
+    "pack": 390,
+    "label": "Lidl equivalent (est.)",
+    "price": 0.79,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "",
+    "est": true,
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "self_raising_flour",
+  "tescoPack": 1500,
+  "prices": {
+   "tesco": {
+    "pack": 1500,
+    "label": "Tesco Self Raising Flour 1.5Kg",
+    "price": 0.8,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/shop/en-GB/products/254917759",
+    "est": false
+   },
+   "sainsburys": {
+    "pack": 1500,
+    "label": "Sainsbury's Self Raising Flour 1.5kg",
+    "price": 0.7,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/groceries/product/sainsburys-self-raising-flour-1-5kg",
+    "est": false
+   },
+   "asda": {
+    "pack": 1500,
+    "label": "Just Essentials by ASDA Self Raising Flour 1.5kg",
+    "price": 0.7,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/just-essentials-by-asda-plain-flour/AYS247",
+    "est": false,
+    "note": "price shown in alternatives list on this trolley page"
+   },
+   "aldi": {
+    "pack": 1500,
+    "label": "The Pantry Self Raising Flour 1.5kg",
+    "price": 0.7,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.aldi.co.uk/product/the-pantry-self-raising-flour-000000000000382618",
+    "est": false
+   },
+   "lidl": {
+    "pack": 1500,
+    "label": "Lidl equivalent (est.)",
+    "price": 0.7,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "",
+    "est": true,
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "chilli_powder",
+  "tescoPack": 50,
+  "prices": {
+   "tesco": {
+    "pack": 50,
+    "label": "Tesco Hot Chilli Powder 50g",
+    "price": 1,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/shop/en-GB/products/251994596",
+    "est": false,
+    "note": "Clubcard any-4-for-3 multibuy only"
+   },
+   "sainsburys": {
+    "pack": 44,
+    "label": "Sainsbury's Hot Chilli Powder 44g",
+    "price": 1.15,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/chilli%20powder",
+    "est": false
+   },
+   "asda": {
+    "pack": 44,
+    "label": "Cook by ASDA Hot Chilli Powder 44g",
+    "price": 0.95,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/asda-hot-chilli-powder/SHP185",
+    "est": false
+   },
+   "aldi": {
+    "pack": 40,
+    "label": "Ready, Set...Cook! Chilli Powder 40g",
+    "price": 0.79,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.aldi.co.uk/products/food-cupboard/herbs-spices/k/1588161416978053007",
+    "est": false,
+    "note": "heat level not stated"
+   },
+   "lidl": {
+    "pack": 40,
+    "label": "Lidl equivalent (est.)",
+    "price": 0.79,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "",
+    "est": true,
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "mustard_seeds",
+  "tescoPack": 100,
+  "prices": {
+   "tesco": {
+    "pack": 100,
+    "label": "Rajah Whole Black Mustard Seeds 100g",
+    "price": 1.1,
+    "loyalty": 0.85,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/shop/en-GB/products/322249634",
+    "est": false
+   },
+   "sainsburys": {
+    "pack": 100,
+    "label": "Fudco Brown Mustard Seeds 100g",
+    "price": 1.3,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/mustard%20seeds",
+    "est": false,
+    "note": "brown, no black mustard seed found; own-label Mustard Seed 60g is £1.15"
+   },
+   "asda": null,
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "kasoori_methi",
+  "tescoPack": 100,
+  "prices": {
+   "tesco": {
+    "pack": 100,
+    "label": "East End Kasuri Methi 100g",
+    "price": 1,
+    "loyalty": 0.9,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/shop/en-GB/products/261150641",
+    "est": false
+   },
+   "sainsburys": {
+    "pack": 50,
+    "label": "Fudco Kasuri Methi 50g",
+    "price": 1.5,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/groceries/product/fudco-kasuri-methi-50g",
+    "est": false
+   },
+   "asda": {
+    "pack": 100,
+    "label": "Natco Kasoori Methi 100g",
+    "price": 1.48,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/natco-kasoori-methi/SXS762",
+    "est": false
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "gram_flour",
+  "tescoPack": 1000,
+  "prices": {
+   "tesco": {
+    "pack": 1000,
+    "label": "Koh-I-Noor Besan Gram Flour 1Kg",
+    "price": 2.65,
+    "loyalty": 2,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/shop/en-GB/products/265181200",
+    "est": false
+   },
+   "sainsburys": {
+    "pack": 1000,
+    "label": "East End Gram Flour 1kg",
+    "price": 2,
+    "loyalty": 1.7,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/groceries/product/east-end-gram-flour-1kg",
+    "est": false
+   },
+   "asda": {
+    "pack": 2000,
+    "label": "KTC Superfine Gram Flour 2kg",
+    "price": 2.44,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/ktc-gram-flour/ZXA962",
+    "est": false,
+    "note": "no 1kg found at Asda"
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "ground_almonds",
+  "tescoPack": 250,
+  "prices": {
+   "tesco": {
+    "pack": 250,
+    "label": "Tesco Ground Almonds 250G",
+    "price": 4.25,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/shop/en-GB/products/312559582",
+    "est": false
+   },
+   "sainsburys": {
+    "pack": 200,
+    "label": "Sainsbury's Ground Almonds 200g",
+    "price": 3.5,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/groceries/product/sainsburys-ground-almonds-200g",
+    "est": false
+   },
+   "asda": {
+    "pack": 150,
+    "label": "ASDA Ground Almonds 150g",
+    "price": 1.71,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/asda-ground-almonds/QPD154",
+    "est": false
+   },
+   "aldi": {
+    "pack": 150,
+    "label": "The Pantry Ground Almonds 150g",
+    "price": 1.19,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.aldi.co.uk/product/the-pantry-ground-almonds-000000000496633001",
+    "est": false
+   },
+   "lidl": {
+    "pack": 150,
+    "label": "Lidl equivalent (est.)",
+    "price": 1.19,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "",
+    "est": true,
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "mango_chutney",
+  "tescoPack": 230,
+  "prices": {
+   "tesco": {
+    "pack": 230,
+    "label": "Tesco Mango Chutney 230G",
+    "price": 1.2,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/shop/en-GB/products/263625653",
+    "est": false
+   },
+   "sainsburys": {
+    "pack": 340,
+    "label": "Amaara Mango Chutney 340g",
+    "price": 1.75,
+    "loyalty": 1.25,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/mango%20chutney",
+    "est": false,
+    "note": "no Sainsbury's own-label shown in search"
+   },
+   "asda": {
+    "pack": 240,
+    "label": "ASDA Mango Chutney 240g",
+    "price": 1.08,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/asda-mango-chutney/PMQ611",
+    "est": false
+   },
+   "aldi": {
+    "pack": 370,
+    "label": "Bilash Mango Chutney 370g",
+    "price": 1.59,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/bilash-mango-chutney/WXF317",
+    "est": true,
+    "note": "trolley 'usual' price; current price not shown"
+   },
+   "lidl": {
+    "pack": 370,
+    "label": "Lidl equivalent (est.)",
+    "price": 1.59,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "",
+    "est": true,
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "diced_lamb",
+  "tescoPack": 300,
+  "prices": {
+   "tesco": {
+    "pack": 300,
+    "label": "Tesco Lamb Diced Leg 300G",
+    "price": 7.75,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/shop/en-GB/products/282524801",
+    "est": false
+   },
+   "sainsburys": {
+    "pack": 300,
+    "label": "Sainsbury's British or New Zealand Extra Lean Diced Lamb 300g",
+    "price": 7.75,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/diced%20lamb",
+    "est": false,
+    "note": "cut not stated"
+   },
+   "asda": {
+    "pack": 300,
+    "label": "ASDA British Diced Lamb Leg 300g",
+    "price": 7.44,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/asda-diced-lamb/NBM897",
+    "est": false,
+    "note": "price shown in alternatives list on this trolley page"
+   },
+   "aldi": {
+    "pack": 300,
+    "label": "Ashfields Diced Lamb 300g",
+    "price": 5.49,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.aldi.co.uk/product/ashfields-diced-lamb-000000000000387561",
+    "est": false,
+    "note": "cut not stated"
+   },
+   "lidl": {
+    "pack": 300,
+    "label": "Lidl equivalent (est.)",
+    "price": 5.49,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "",
+    "est": true,
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "orzo",
+  "tescoPack": 500,
+  "prices": {
+   "tesco": {
+    "pack": 500,
+    "label": "Napolina Orzo Pasta 500g",
+    "price": 1.5,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/shop/en-GB/products/317205550",
+    "est": false,
+    "note": "no standard Tesco own-label; Tesco Finest Orzo £2.15 (Clubcard £1.60)"
+   },
+   "sainsburys": {
+    "pack": 500,
+    "label": "Napolina Orzo 500g",
+    "price": 1.5,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/groceries/product/napolina-orzo-500g",
+    "est": false,
+    "note": "own-label is Taste the Difference only (£2.15)"
+   },
+   "asda": {
+    "pack": 500,
+    "label": "Napolina Orzo 500g",
+    "price": 1.5,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/napolina-orzo-pasta/CTL903",
+    "est": false,
+    "note": "ASDA own orzo out of stock"
+   },
+   "aldi": {
+    "pack": 500,
+    "label": "Cucina Orzo Pasta 500g",
+    "price": 0.85,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.aldi.co.uk/product/cucina-orzo-pasta-000000000000596280",
+    "est": false
+   },
+   "lidl": {
+    "pack": 500,
+    "label": "Lidl equivalent (est.)",
+    "price": 0.85,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "",
+    "est": true,
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "passata",
+  "tescoPack": 500,
+  "prices": {
+   "tesco": {
+    "pack": 500,
+    "label": "Tesco Tomato Passata 500G",
+    "price": 0.6,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/shop/en-GB/products/254874296",
+    "est": false
+   },
+   "sainsburys": {
+    "pack": 500,
+    "label": "Sainsbury's Passata 500g",
+    "price": 0.6,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/groceries/product/sainsburys-passata-500g",
+    "est": false
+   },
+   "asda": {
+    "pack": 500,
+    "label": "ASDA Passata 500g",
+    "price": 0.6,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/asda-italian-tomato-passata/AGX616",
+    "est": false
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "pancetta",
+  "tescoPack": 130,
+  "prices": {
+   "tesco": {
+    "pack": 130,
+    "label": "Tesco Smoked Pancetta 2 x 65g",
+    "price": 1.95,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/shop/en-GB/products/268334344",
+    "est": false
+   },
+   "sainsburys": {
+    "pack": 200,
+    "label": "Sainsbury's Inspired to Cook Italian Beechwood Smoked Diced Pancetta 200g",
+    "price": 2.85,
+    "loyalty": 2.5,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/groceries/product/sainsburys-inspired-to-cook-italian-beechwood-smoked-diced-pancetta-200g",
+    "est": false,
+    "note": "Nectar price until 27 Oct 2026"
+   },
+   "asda": {
+    "pack": 160,
+    "label": "ASDA Diced Smoked Pancetta 2 x 80g",
+    "price": 2.44,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/asda-simply-cook-diced-smoked-pancetta/MOO564",
+    "est": false
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "capers",
+  "tescoPack": 190,
+  "prices": {
+   "tesco": {
+    "pack": 190,
+    "label": "Tesco Capers 190G (120g drained)",
+    "price": 2.3,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/shop/en-GB/products/285634113",
+    "est": false
+   },
+   "sainsburys": {
+    "pack": 100,
+    "label": "Sainsbury's Non Pareilles Capers in Brine, Inspired to Cook 100g (60g drained)",
+    "price": 1.9,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/groceries/product/sainsburys-non-pareilles-capers-in-brine-inspired-to-cook-100g-60g",
+    "est": false
+   },
+   "asda": {
+    "pack": 190,
+    "label": "ASDA Tangy Capers 190g",
+    "price": 2.2,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/asda-capers/BIZ745",
+    "est": false
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ }
+]

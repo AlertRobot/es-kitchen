@@ -1,0 +1,516 @@
+[
+ {
+  "id": "bf_protein_bar",
+  "title": "Protein Bar",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "quick",
+   "high-protein",
+   "no-cook",
+   "snack"
+  ],
+  "ingredients": [
+   "Protein bar (approx. 20g protein)"
+  ]
+ },
+ {
+  "id": "bf_weetabix_milk",
+  "title": "Weetabix with Milk",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "quick",
+   "light",
+   "no-cook"
+  ],
+  "ingredients": [
+   "Weetabix (wholegrain wheat biscuits)",
+   "Semi-skimmed milk"
+  ]
+ },
+ {
+  "id": "bf_weetabix_milk_x2",
+  "title": "2 Weetabix with Milk",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "quick",
+   "light",
+   "no-cook"
+  ],
+  "ingredients": [
+   "Weetabix (wholegrain wheat biscuits)",
+   "Semi-skimmed milk"
+  ]
+ },
+ {
+  "id": "bf_banana",
+  "title": "Banana",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "quick",
+   "light",
+   "no-cook",
+   "snack"
+  ],
+  "ingredients": [
+   "Bananas"
+  ]
+ },
+ {
+  "id": "bf_greek_yogurt_berries",
+  "title": "Greek Yogurt Pot with Berries",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "quick",
+   "no-cook"
+  ],
+  "ingredients": [
+   "Greek-style yogurt",
+   "Frozen mixed berries"
+  ]
+ },
+ {
+  "id": "bf_boiled_eggs_x2",
+  "title": "Boiled Eggs ×2",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "quick",
+   "high-protein",
+   "low-carb"
+  ],
+  "ingredients": [
+   "Free-range eggs",
+   "Salt",
+   "Black pepper"
+  ]
+ },
+ {
+  "id": "bf_overnight_oats_berry",
+  "title": "Berry Overnight Oats with Skyr",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "high-protein",
+   "no-cook",
+   "batch",
+   "make-ahead"
+  ],
+  "ingredients": [
+   "Porridge oats",
+   "Semi-skimmed milk",
+   "Skyr (natural, high-protein yogurt)",
+   "Frozen mixed berries",
+   "Honey"
+  ]
+ },
+ {
+  "id": "bf_overnight_oats_pb_banana",
+  "title": "Peanut Butter & Banana Overnight Oats",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "high-protein",
+   "no-cook",
+   "batch",
+   "make-ahead"
+  ],
+  "ingredients": [
+   "Porridge oats",
+   "Semi-skimmed milk",
+   "Skyr (natural, high-protein yogurt)",
+   "Bananas",
+   "Peanut butter",
+   "Ground cinnamon"
+  ]
+ },
+ {
+  "id": "bf_overnight_oats_apple_cinnamon",
+  "title": "Apple Pie Overnight Oats",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "high-protein",
+   "no-cook",
+   "batch",
+   "make-ahead"
+  ],
+  "ingredients": [
+   "Porridge oats",
+   "Semi-skimmed milk",
+   "Skyr (natural, high-protein yogurt)",
+   "Braeburn apples",
+   "Ground cinnamon",
+   "Honey"
+  ]
+ },
+ {
+  "id": "bf_protein_porridge",
+  "title": "Creamy Protein Porridge with Banana",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "high-protein",
+   "comfort"
+  ],
+  "ingredients": [
+   "Porridge oats",
+   "Semi-skimmed milk",
+   "Skyr (natural, high-protein yogurt)",
+   "Bananas",
+   "Ground cinnamon"
+  ]
+ },
+ {
+  "id": "bf_egg_muffins_spinach_feta",
+  "title": "Spinach, Feta & Tomato Egg Muffins",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "high-protein",
+   "low-carb",
+   "batch",
+   "make-ahead"
+  ],
+  "ingredients": [
+   "Free-range eggs",
+   "Baby spinach",
+   "Feta",
+   "Cherry tomatoes",
+   "Spring onions",
+   "Vegetable oil",
+   "Black pepper"
+  ]
+ },
+ {
+  "id": "bf_egg_muffins_ham_pepper",
+  "title": "Ham, Pepper & Cheddar Egg Muffins",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "high-protein",
+   "low-carb",
+   "batch",
+   "make-ahead"
+  ],
+  "ingredients": [
+   "Free-range eggs",
+   "Cooked ham slices",
+   "Mixed peppers",
+   "Mature cheddar",
+   "Spring onions",
+   "Vegetable oil",
+   "Black pepper"
+  ]
+ },
+ {
+  "id": "bf_scrambled_eggs_toast",
+  "title": "Soft Scrambled Eggs on Wholemeal Toast",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "high-protein",
+   "comfort"
+  ],
+  "ingredients": [
+   "Free-range eggs",
+   "Semi-skimmed milk",
+   "Butter",
+   "Wholemeal bread (800g loaf)",
+   "Spring onions",
+   "Salt",
+   "Black pepper"
+  ]
+ },
+ {
+  "id": "bf_cottage_cheese_toast",
+  "title": "Cottage Cheese & Tomato Toast",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "high-protein",
+   "no-cook"
+  ],
+  "ingredients": [
+   "Wholemeal bread (800g loaf)",
+   "Cottage cheese",
+   "Cherry tomatoes",
+   "Chilli flakes",
+   "Black pepper"
+  ]
+ },
+ {
+  "id": "bf_pb_banana_toast",
+  "title": "Peanut Butter & Banana Toast",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "quick"
+  ],
+  "ingredients": [
+   "Wholemeal bread (800g loaf)",
+   "Peanut butter",
+   "Bananas",
+   "Ground cinnamon"
+  ]
+ },
+ {
+  "id": "bf_avocado_egg_toast",
+  "title": "Smashed Avocado & Jammy Egg Toast",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [],
+  "ingredients": [
+   "Free-range eggs",
+   "Wholemeal bread (800g loaf)",
+   "Ripe & ready avocados",
+   "Lemons",
+   "Chilli flakes",
+   "Salt",
+   "Black pepper"
+  ]
+ },
+ {
+  "id": "bf_mushroom_spinach_omelette",
+  "title": "Mushroom, Spinach & Feta Omelette",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "high-protein",
+   "low-carb"
+  ],
+  "ingredients": [
+   "Free-range eggs",
+   "Chestnut mushrooms",
+   "Baby spinach",
+   "Feta",
+   "Vegetable oil",
+   "Black pepper"
+  ]
+ },
+ {
+  "id": "bf_breakfast_wrap",
+  "title": "Egg, Spinach & Cheddar Breakfast Wrap",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "high-protein",
+   "batch",
+   "make-ahead"
+  ],
+  "ingredients": [
+   "Plain tortilla wraps",
+   "Free-range eggs",
+   "Baby spinach",
+   "Mature cheddar",
+   "Cayenne pepper hot sauce (buffalo-style)",
+   "Vegetable oil",
+   "Black pepper"
+  ]
+ },
+ {
+  "id": "bf_skyr_berry_parfait",
+  "title": "Skyr Berry Parfait with Toasted Oats",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "high-protein",
+   "light"
+  ],
+  "ingredients": [
+   "Skyr (natural, high-protein yogurt)",
+   "Frozen mixed berries",
+   "Porridge oats",
+   "Honey",
+   "Ground cinnamon"
+  ]
+ },
+ {
+  "id": "bf_berry_smoothie",
+  "title": "Berry & Banana Protein Smoothie",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "high-protein",
+   "quick"
+  ],
+  "ingredients": [
+   "Frozen mixed berries",
+   "Bananas",
+   "Skyr (natural, high-protein yogurt)",
+   "Semi-skimmed milk",
+   "Porridge oats"
+  ]
+ },
+ {
+  "id": "lu_chicken_pesto_pasta_salad",
+  "title": "Chicken Pesto Pasta Salad",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "high-protein",
+   "batch"
+  ],
+  "ingredients": [
+   "Dried pasta (spaghetti/penne)",
+   "Chicken breast fillets",
+   "Vegetable oil",
+   "Green pesto",
+   "Skyr (natural, high-protein yogurt)",
+   "Lemons",
+   "Cherry tomatoes",
+   "Baby spinach",
+   "Italian hard cheese (parmesan-style)",
+   "Salt",
+   "Black pepper"
+  ]
+ },
+ {
+  "id": "lu_lemon_chicken_orzo_feta",
+  "title": "Lemon & Herb Chicken Orzo Salad with Feta",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "high-protein",
+   "batch"
+  ],
+  "ingredients": [
+   "Orzo pasta",
+   "Chicken breast fillets",
+   "Dried mixed herbs",
+   "Lemons",
+   "Vegetable oil",
+   "Cucumber",
+   "Cherry tomatoes",
+   "Red onions",
+   "Pitted black olives",
+   "Wild rocket",
+   "Feta",
+   "Salt",
+   "Black pepper"
+  ]
+ },
+ {
+  "id": "lu_chicken_tikka_rice_box",
+  "title": "Chicken Tikka Rice Box with Peas & Spinach",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "high-protein",
+   "batch",
+   "freezable"
+  ],
+  "ingredients": [
+   "Chicken breast fillets",
+   "Tikka masala curry paste",
+   "Skyr (natural, high-protein yogurt)",
+   "Vegetable oil",
+   "Microwave basmati rice pouch (250g)",
+   "Frozen garden peas",
+   "Baby spinach",
+   "Red onions",
+   "Lemons",
+   "Fresh coriander",
+   "Salt"
+  ]
+ },
+ {
+  "id": "lu_chicken_burrito_quinoa_bowl",
+  "title": "Smoky Chicken Burrito Bowl with Quinoa",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "high-protein",
+   "batch"
+  ],
+  "ingredients": [
+   "Quinoa",
+   "Chicken breast fillets",
+   "Mixed peppers",
+   "Smoked paprika",
+   "Ground cumin",
+   "Vegetable oil",
+   "Black beans (tin)",
+   "Frozen sweetcorn",
+   "Cherry tomatoes",
+   "Limes",
+   "Skyr (natural, high-protein yogurt)",
+   "Fresh coriander",
+   "Salt"
+  ]
+ },
+ {
+  "id": "lu_tuna_sweetcorn_pasta_salad",
+  "title": "Tuna, Sweetcorn & Spring Onion Pasta Salad",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "high-protein",
+   "batch"
+  ],
+  "ingredients": [
+   "Dried pasta (spaghetti/penne)",
+   "Tuna chunks in spring water (tin)",
+   "Frozen sweetcorn",
+   "Light mayonnaise",
+   "Skyr (natural, high-protein yogurt)",
+   "Lemons",
+   "Spring onions",
+   "Cucumber",
+   "Salt",
+   "Black pepper"
+  ]
+ },
+ {
+  "id": "lu_peanut_chicken_noodle_salad",
+  "title": "Satay Chicken Noodle Salad",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "high-protein",
+   "batch"
+  ],
+  "ingredients": [
+   "Chicken breast fillets",
+   "Flat rice noodles (dried)",
+   "Frozen edamame soya beans",
+   "Carrots",
+   "Red cabbage",
+   "Spring onions",
+   "Fresh coriander",
+   "Peanut butter",
+   "Soy sauce",
+   "Sweet chilli sauce",
+   "Ginger paste",
+   "Limes"
+  ]
+ },
+ {
+  "id": "lu_miso_chicken_noodle_jar",
+  "title": "Miso Chicken Noodle Jar",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "high-protein",
+   "batch",
+   "quick"
+  ],
+  "ingredients": [
+   "Medium egg noodles",
+   "Miso paste",
+   "Stock cubes",
+   "Soy sauce",
+   "Ginger paste",
+   "Cooked chicken breast slices",
+   "Frozen edamame soya beans",
+   "Carrots",
+   "Baby spinach",
+   "Spring onions",
+   "Chilli flakes"
+  ]
+ }
+]

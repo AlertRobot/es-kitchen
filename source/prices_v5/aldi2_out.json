@@ -1,0 +1,533 @@
+[
+ {
+  "id": "fish_sauce",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched fish sauce: not in ASIA SPECIALITIES brand page (21 items, complete), ASIA GREEN GARDEN brand page (complete) or Sauces category p1; web search of aldi.co.uk found none"
+   }
+  }
+ },
+ {
+  "id": "oyster_sauce",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched oyster sauce: not in ASIA SPECIALITIES brand page (complete), ASIA GREEN GARDEN or Sauces category p1; web search of aldi.co.uk found none"
+   }
+  }
+ },
+ {
+  "id": "black_bean_sauce",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched black bean sauce: not in ASIA SPECIALITIES brand page (complete; only a Beef in Black Bean ready meal) or Sauces category p1; web search found none"
+   }
+  }
+ },
+ {
+  "id": "beef_stir_fry_strips",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched beef stir fry strips: Beef category p1 none; web search of aldi.co.uk only found Ashfields Hoisin/Smoky BBQ PORK stir fry strips (aldi.co.uk search and category/brand ?page=2+ are robots-blocked, so only page 1 of each listing was readable)"
+   }
+  }
+ },
+ {
+  "id": "pineapple_chunks",
+  "prices": {
+   "aldi": {
+    "pack": 255,
+    "price": 0.99,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "FOUR SEASONS Pineapple Slices in Juice",
+    "src": "https://www.aldi.co.uk/product/four-seasons-pineapple-slices-in-juice-000000000000201269",
+    "note": "Aldi lists slices, not chunks. Page gives only drained weight 0.255kg (£3.88/kg drained); net tin weight not shown"
+   }
+  }
+ },
+ {
+  "id": "apples",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched braeburn apples: NATURE'S PICK Braeburn Apples page (000000000000339768) says \"currently not available\", no price. Available alternative: NATURE'S PICK Pink Lady Apples 6 each £2.85"
+   }
+  }
+ },
+ {
+  "id": "gherkins",
+  "prices": {
+   "aldi": {
+    "pack": 190,
+    "price": 1.19,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "THE DELI Cornichons & Crinkle Cut Gherkins",
+    "src": "https://www.aldi.co.uk/product/the-deli-cornichons-crinkle-cut-gherkins-000000000680853003",
+    "note": "190g is DRAINED weight (net not shown; £6.26/kg drained); jar is a mix of cornichons and crinkle-cut gherkins. The plain THE DELI Crinkle Cut Gherkins page says currently not available"
+   }
+  }
+ },
+ {
+  "id": "branston_pickle",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched sweet pickle: BRAMWELLS Sweet Pickle 390g page (000000000000335912) says \"currently not available\", no price"
+   }
+  }
+ },
+ {
+  "id": "mustard_seeds",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched mustard seeds: not found on Herbs & Spices category p1 or READY, SET…COOK! brand p1 (30 items each); Worldwide Foods brand (complete) has none (aldi.co.uk search and category/brand ?page=2+ are robots-blocked, so only page 1 of each listing was readable)"
+   }
+  }
+ },
+ {
+  "id": "kasoori_methi",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched fenugreek / kasoori methi: not found on Herbs & Spices category p1 or READY, SET…COOK! brand p1 (30 items each); Worldwide Foods brand (complete) has none (aldi.co.uk search and category/brand ?page=2+ are robots-blocked, so only page 1 of each listing was readable)"
+   }
+  }
+ },
+ {
+  "id": "gram_flour",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched gram flour: not on THE PANTRY brand p1 or Worldwide Foods brand (complete) (aldi.co.uk search and category/brand ?page=2+ are robots-blocked, so only page 1 of each listing was readable)"
+   }
+  }
+ },
+ {
+  "id": "mango_chutney",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched mango chutney: SPECIALLY SELECTED Mango Chutney 320g page (000000000000632006) says \"currently not available\", no price"
+   }
+  }
+ },
+ {
+  "id": "passata",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched passata: CUCINA Tomato Passata 500g page (000000000000444490) says \"currently not available\", no price"
+   }
+  }
+ },
+ {
+  "id": "pancetta",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched pancetta: THE DELI Smoked and Unsmoked Diced Pancetta 170g pages say \"currently not available\", no price. Available alternative: OAKHURST Smoked Bacon Lardons 200g £1.69 (oakhurst-smoked-bacon-lardons-000000000386241001)"
+   }
+  }
+ },
+ {
+  "id": "capers",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched capers: none in web search of aldi.co.uk, THE DELI brand p1 or Tins category p1 (aldi.co.uk search and category/brand ?page=2+ are robots-blocked, so only page 1 of each listing was readable)"
+   }
+  }
+ },
+ {
+  "id": "sun_dried_tomatoes",
+  "prices": {
+   "aldi": {
+    "pack": 280,
+    "price": 1.29,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "THE DELI Sundried Tomatoes",
+    "src": "https://www.aldi.co.uk/product/the-deli-sundried-tomatoes-000000000266488002",
+    "note": "280g net (£4.61/kg); drained weight not shown"
+   }
+  }
+ },
+ {
+  "id": "pecorino",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched pecorino: not on Cheese category p1 (has SPECIALLY SELECTED Parmigiano Reggiano 170g £3.29, EMPORIUM Grana Padano 200g £2.75) (aldi.co.uk search and category/brand ?page=2+ are robots-blocked, so only page 1 of each listing was readable)"
+   }
+  }
+ },
+ {
+  "id": "rocket",
+  "prices": {
+   "aldi": {
+    "pack": 60,
+    "price": 0.79,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "NATURE'S PICK Wild Rocket",
+    "src": "https://www.aldi.co.uk/product/nature-s-pick-wild-rocket-000000000000340018",
+    "note": ""
+   }
+  }
+ },
+ {
+  "id": "fennel_seeds",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched fennel seeds: not found on Herbs & Spices category p1 or READY, SET…COOK! brand p1 (30 items each); Worldwide Foods brand (complete) has none (aldi.co.uk search and category/brand ?page=2+ are robots-blocked, so only page 1 of each listing was readable)"
+   }
+  }
+ },
+ {
+  "id": "chipotle_paste",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched chipotle paste: FIESTA brand page (complete, 3 items) has none; not in Sauces category p1"
+   }
+  }
+ },
+ {
+  "id": "sour_cream",
+  "prices": {
+   "aldi": {
+    "pack": 300,
+    "price": 0.85,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "COWBELLE Fresh British Soured Cream",
+    "src": "https://www.aldi.co.uk/product/cowbelle-fresh-british-soured-cream-000000000000416778",
+    "note": ""
+   }
+  }
+ },
+ {
+  "id": "red_cabbage",
+  "prices": {
+   "aldi": {
+    "pack": 1,
+    "price": 0.89,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "NATURE'S PICK Red Cabbage",
+    "src": "https://www.aldi.co.uk/product/nature-s-pick-red-cabbage-000000000340671002",
+    "note": "£0.89 each"
+   }
+  }
+ },
+ {
+  "id": "zaatar",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched za'atar: not found on Herbs & Spices category p1 or READY, SET…COOK! brand p1 (30 items each); Worldwide Foods brand (complete) has none (aldi.co.uk search and category/brand ?page=2+ are robots-blocked, so only page 1 of each listing was readable)"
+   }
+  }
+ },
+ {
+  "id": "dried_apricots",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched soft dried apricots: THE FOODIE MARKET Soft Apricots 500g page (000000000000383285) says \"currently not available\", no price"
+   }
+  }
+ },
+ {
+  "id": "olives",
+  "prices": {
+   "aldi": {
+    "pack": 320,
+    "price": 0.89,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "THE DELI Black Spanish Olives pitted 320g",
+    "src": "https://www.aldi.co.uk/product/the-deli-black-spanish-olives-pitted-320g-000000000658174002",
+    "note": "320g is the jar weight (gross); drained weight not shown on page (catalogue pack 163 is drained)"
+   }
+  }
+ },
+ {
+  "id": "hummus",
+  "prices": {
+   "aldi": {
+    "pack": 200,
+    "price": 0.95,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "THE DELI Houmous",
+    "src": "https://www.aldi.co.uk/product/the-deli-houmous-000000000403915001",
+    "note": "£4.75/kg"
+   }
+  }
+ },
+ {
+  "id": "quinoa",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched quinoa: only WORLDWIDE FOODS rice/quinoa microwave pouches (250g £0.85) in Worldwide Foods brand (complete) and Rice category p1; no plain dried quinoa"
+   }
+  }
+ },
+ {
+  "id": "cottage_cheese",
+  "prices": {
+   "aldi": {
+    "pack": 300,
+    "price": 1.39,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "EMPORIUM Cottage Cheese Natural 300g",
+    "src": "https://www.aldi.co.uk/product/emporium-emporium-cottage-cheese-natural-300g-000000000598109002",
+    "note": "Budget alternative: EVERYDAY ESSENTIALS Low Fat Cottage Cheese 300g £0.85 (everyday-essentials-low-fat-cottage-cheese-000000000000416217). EMPORIUM Full Fat Plain Cottage Cheese page says not available"
+   }
+  }
+ },
+ {
+  "id": "skyr",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched skyr: only BROOKLEA Superberry Skyr Yogurt Pouch 150g £0.69 (flavoured pouch, not natural tub); none on Yogurts category p1 or BROOKLEA brand p1"
+   }
+  }
+ },
+ {
+  "id": "frozen_edamame",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched edamame: none in Frozen Vegetables & Sides category (28 items, single page), FOUR SEASONS brand p1 or web search"
+   }
+  }
+ },
+ {
+  "id": "falafel",
+  "prices": {
+   "aldi": {
+    "pack": 8,
+    "price": 1.39,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "THE DELI Moroccan Falafel (ready to eat)",
+    "src": "https://www.aldi.co.uk/product/the-deli-ready-to-eat-moroccan-falafel-000000000404138002",
+    "note": "171g pack (£8.13/kg); piece count not shown on page, 8 assumed (~20g each). Also THE DELI Mediterranean Falafels 170g £1.39 (offer, was £1.49)"
+   }
+  }
+ },
+ {
+  "id": "special_k",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched Special K / Benefit: not on Cereals category p1; only HARVEST MORN Benefit Red Fruit Cereal 375g £1.69 seen (not the Original) (aldi.co.uk search and category/brand ?page=2+ are robots-blocked, so only page 1 of each listing was readable)"
+   }
+  }
+ },
+ {
+  "id": "crumpets",
+  "prices": {
+   "aldi": {
+    "pack": 6,
+    "price": 0.45,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "VILLAGE BAKERY Crumpets 6 Pack",
+    "src": "https://www.aldi.co.uk/product/village-bakery-crumpets-6-pack-000000000000499730",
+    "note": "The older 6-pack listing (000000000000383383) is unavailable; this is the current one"
+   }
+  }
+ },
+ {
+  "id": "cream_crackers",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched cream crackers: SAVOUR BAKES Cream Crackers 300g page (000000000000382689) says \"currently not available\", no price; none on Biscuits category p1"
+   }
+  }
+ },
+ {
+  "id": "gammon_steaks",
+  "prices": {
+   "aldi": {
+    "pack": 250,
+    "price": 1.99,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "OAKHURST Unsmoked Gammon Steaks 2 Pack",
+    "src": "https://www.aldi.co.uk/product/oakhurst-unsmoked-gammon-steaks-2-pack-000000000383403002",
+    "note": "£7.96/kg. Larger: ASHFIELDS Gammon Steaks 350g £3.49"
+   }
+  }
+ },
+ {
+  "id": "corned_beef",
+  "prices": {
+   "aldi": {
+    "pack": 340,
+    "price": 2.19,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "BRAMWELLS Corned Beef",
+    "src": "https://www.aldi.co.uk/product/bramwells-corned-beef-000000000000335581",
+    "note": "340g tin (£6.44/kg)"
+   }
+  }
+ },
+ {
+  "id": "chorizo",
+  "prices": {
+   "aldi": {
+    "pack": 200,
+    "price": 1.89,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "SPECIALLY SELECTED Spicy Spanish Chorizo Ring",
+    "src": "https://www.aldi.co.uk/product/specially-selected-spicy-spanish-chorizo-ring-000000000404018002",
+    "note": "Only chorizo ring listed (premium line); £9.45/kg"
+   }
+  }
+ },
+ {
+  "id": "pork_crackling_joint",
+  "prices": {
+   "aldi": {
+    "pack": 1500,
+    "price": 7.49,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "ASHFIELDS British Pork Crackling Leg Joint",
+    "src": "https://www.aldi.co.uk/product/ashfields-british-pork-crackling-leg-joint-000000000000384443",
+    "note": "Sold by weight: £4.99/kg, \"Weight range 1.2kg to 1.8kg\"; pack/price use the 1.5kg midpoint (1.2kg ≈ £5.99, 1.8kg ≈ £8.98)"
+   }
+  }
+ },
+ {
+  "id": "ale",
+  "prices": {
+   "aldi": {
+    "pack": 550,
+    "price": 1.75,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "NEWCASTLE BROWN Newcastle Brown Ale",
+    "src": "https://www.aldi.co.uk/product/newcastle-brown-newcastle-brown-ale-000000000000399105",
+    "note": "Only single-bottle ale on Beers & Ciders p1 (brown ale, 550ml); no amber ale/bitter seen"
+   }
+  }
+ },
+ {
+  "id": "lamb_shanks",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched lamb shanks: Lamb category (7 items, complete) has no raw shanks, only OAKHURST Slow Cooked Lamb Shanks with Mint Gravy 800g £7.99"
+   }
+  }
+ },
+ {
+  "id": "shortcrust_pastry",
+  "prices": {
+   "aldi": {
+    "pack": 320,
+    "price": 0.99,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "THE PANTRY Ready Rolled Shortcrust Pastry 320g",
+    "src": "https://www.aldi.co.uk/product/the-pantry-ready-rolled-shortcrust-pastry-320g-000000000524778002",
+    "note": "£3.09/kg"
+   }
+  }
+ },
+ {
+  "id": "pork_ribs",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched pork ribs: only pre-cooked/marinated ribs (OAKHURST Slow Cooked BBQ Pork Ribs 600g £4.49, ASHFIELDS Teriyaki Boneless Pork Ribs); no plain uncooked ribs"
+   }
+  }
+ },
+ {
+  "id": "cashew_nuts",
+  "prices": {
+   "aldi": {
+    "pack": 200,
+    "price": 1.69,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "THE FOODIE MARKET Cashew Nuts",
+    "src": "https://www.aldi.co.uk/product/the-foodie-market-cashew-nuts-000000000000384094",
+    "note": "£8.45/kg"
+   }
+  }
+ },
+ {
+  "id": "star_anise",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched star anise: not found on Herbs & Spices category p1 or READY, SET…COOK! brand p1 (30 items each); Worldwide Foods brand (complete) has none (aldi.co.uk search and category/brand ?page=2+ are robots-blocked, so only page 1 of each listing was readable)"
+   }
+  }
+ },
+ {
+  "id": "taco_shells",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched taco shells: FIESTA brand page (complete, 3 items) has none; web search of aldi.co.uk found none"
+   }
+  }
+ }
+]

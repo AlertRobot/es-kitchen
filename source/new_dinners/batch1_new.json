@@ -1,0 +1,127 @@
+[
+ {
+  "id": "gammon_steaks",
+  "name": "Unsmoked gammon steaks",
+  "aisle": "Meat & fish",
+  "unit": "g",
+  "packs": [
+   300,
+   450
+  ],
+  "life": 10,
+  "keeps": 2,
+  "freeze": true,
+  "staple": false,
+  "tags": [
+   "pork",
+   "meat"
+  ],
+  "nutrition": {
+   "per": 100,
+   "kcal": 130,
+   "protein": 21,
+   "carbs": 0.5,
+   "fat": 5
+  }
+ },
+ {
+  "id": "corned_beef",
+  "name": "Corned beef (tin)",
+  "aisle": "Tins & jars",
+  "unit": "g",
+  "packs": [
+   200,
+   340
+  ],
+  "life": 720,
+  "keeps": 2,
+  "freeze": false,
+  "staple": false,
+  "tags": [
+   "beef",
+   "meat"
+  ],
+  "nutrition": {
+   "per": 100,
+   "kcal": 215,
+   "protein": 26,
+   "carbs": 0.5,
+   "fat": 12
+  }
+ },
+ {
+  "id": "chorizo",
+  "name": "Chorizo (cooking sausages or ring)",
+  "aisle": "Meat & fish",
+  "unit": "g",
+  "packs": [
+   200,
+   225
+  ],
+  "life": 28,
+  "keeps": 7,
+  "freeze": false,
+  "staple": false,
+  "tags": [
+   "pork",
+   "meat"
+  ],
+  "nutrition": {
+   "per": 100,
+   "kcal": 380,
+   "protein": 23,
+   "carbs": 2,
+   "fat": 31
+  }
+ },
+ {
+  "id": "pork_crackling_joint",
+  "name": "Pork crackling joint (small loin or leg)",
+  "aisle": "Meat & fish",
+  "unit": "g",
+  "packs": [
+   700,
+   800,
+   1000
+  ],
+  "life": 5,
+  "keeps": 2,
+  "freeze": true,
+  "staple": false,
+  "tags": [
+   "pork",
+   "meat"
+  ],
+  "nutrition": {
+   "per": 100,
+   "kcal": 210,
+   "protein": 20,
+   "carbs": 0,
+   "fat": 14
+  }
+ },
+ {
+  "id": "ale",
+  "name": "Amber ale or bitter (for cooking)",
+  "aisle": "Drinks",
+  "unit": "ml",
+  "packs": [
+   500
+  ],
+  "life": 270,
+  "keeps": 2,
+  "freeze": false,
+  "staple": false,
+  "tags": [
+   "alcohol",
+   "gluten"
+  ],
+  "nutrition": {
+   "per": 100,
+   "kcal": 36,
+   "protein": 0.3,
+   "carbs": 3,
+   "fat": 0
+  }
+ }
+]

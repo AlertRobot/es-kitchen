@@ -1,0 +1,494 @@
+[
+ {
+  "id": "cheerios",
+  "name": "Cheerios (Nestlé Multigrain hoops)",
+  "aisle": "Dry goods",
+  "unit": "g",
+  "packs": [
+   500,
+   800
+  ],
+  "staple": false,
+  "life": 270,
+  "keeps": 60,
+  "freeze": false,
+  "tags": [
+   "cereal",
+   "breakfast",
+   "gluten"
+  ],
+  "nutrition": {
+   "per": 100,
+   "kcal": 379,
+   "protein": 8.6,
+   "carbs": 71.6,
+   "fat": 4.4
+  }
+ },
+ {
+  "id": "crunchy_nut",
+  "name": "Crunchy Nut Corn Flakes (Kellogg's)",
+  "aisle": "Dry goods",
+  "unit": "g",
+  "packs": [
+   300,
+   460,
+   1000
+  ],
+  "staple": false,
+  "life": 270,
+  "keeps": 60,
+  "freeze": false,
+  "tags": [
+   "cereal",
+   "breakfast",
+   "nuts",
+   "peanut"
+  ],
+  "nutrition": {
+   "per": 100,
+   "kcal": 398,
+   "protein": 7.1,
+   "carbs": 82,
+   "fat": 4.6
+  }
+ },
+ {
+  "id": "shreddies",
+  "name": "Shreddies Original (Nestlé)",
+  "aisle": "Dry goods",
+  "unit": "g",
+  "packs": [
+   460,
+   630,
+   1100
+  ],
+  "staple": false,
+  "life": 270,
+  "keeps": 60,
+  "freeze": false,
+  "tags": [
+   "cereal",
+   "breakfast",
+   "gluten"
+  ],
+  "nutrition": {
+   "per": 100,
+   "kcal": 373,
+   "protein": 10,
+   "carbs": 73.1,
+   "fat": 2
+  }
+ },
+ {
+  "id": "rice_krispies",
+  "name": "Rice Krispies (Kellogg's)",
+  "aisle": "Dry goods",
+  "unit": "g",
+  "packs": [
+   430,
+   660
+  ],
+  "staple": false,
+  "life": 270,
+  "keeps": 60,
+  "freeze": false,
+  "tags": [
+   "cereal",
+   "breakfast"
+  ],
+  "nutrition": {
+   "per": 100,
+   "kcal": 383,
+   "protein": 6.6,
+   "carbs": 87,
+   "fat": 1
+  }
+ },
+ {
+  "id": "special_k",
+  "name": "Special K Original (Kellogg's)",
+  "aisle": "Dry goods",
+  "unit": "g",
+  "packs": [
+   440,
+   750
+  ],
+  "staple": false,
+  "life": 270,
+  "keeps": 60,
+  "freeze": false,
+  "tags": [
+   "cereal",
+   "breakfast",
+   "gluten"
+  ],
+  "nutrition": {
+   "per": 100,
+   "kcal": 377,
+   "protein": 9.5,
+   "carbs": 79,
+   "fat": 1.5
+  }
+ },
+ {
+  "id": "cornflakes",
+  "name": "Corn Flakes (Kellogg's)",
+  "aisle": "Dry goods",
+  "unit": "g",
+  "packs": [
+   450,
+   670,
+   1000
+  ],
+  "staple": false,
+  "life": 270,
+  "keeps": 60,
+  "freeze": false,
+  "tags": [
+   "cereal",
+   "breakfast"
+  ],
+  "nutrition": {
+   "per": 100,
+   "kcal": 378,
+   "protein": 7,
+   "carbs": 84,
+   "fat": 0.9
+  }
+ },
+ {
+  "id": "bran_flakes",
+  "name": "Bran Flakes (Kellogg's)",
+  "aisle": "Dry goods",
+  "unit": "g",
+  "packs": [
+   500,
+   750
+  ],
+  "staple": false,
+  "life": 270,
+  "keeps": 60,
+  "freeze": false,
+  "tags": [
+   "cereal",
+   "breakfast",
+   "gluten"
+  ],
+  "nutrition": {
+   "per": 100,
+   "kcal": 356,
+   "protein": 10,
+   "carbs": 64,
+   "fat": 2.6
+  }
+ },
+ {
+  "id": "fruit_and_fibre",
+  "name": "Fruit 'n Fibre (Kellogg's)",
+  "aisle": "Dry goods",
+  "unit": "g",
+  "packs": [
+   500,
+   700
+  ],
+  "staple": false,
+  "life": 270,
+  "keeps": 60,
+  "freeze": false,
+  "tags": [
+   "cereal",
+   "breakfast",
+   "gluten",
+   "nuts"
+  ],
+  "nutrition": {
+   "per": 100,
+   "kcal": 371,
+   "protein": 8,
+   "carbs": 68,
+   "fat": 6
+  }
+ },
+ {
+  "id": "shredded_wheat",
+  "name": "Shredded Wheat Original biscuits (Nestlé, ~22.5g each)",
+  "aisle": "Dry goods",
+  "unit": "g",
+  "packs": [
+   540,
+   675
+  ],
+  "staple": false,
+  "life": 270,
+  "keeps": 60,
+  "freeze": false,
+  "tags": [
+   "cereal",
+   "breakfast",
+   "gluten"
+  ],
+  "nutrition": {
+   "per": 100,
+   "kcal": 360,
+   "protein": 11.8,
+   "carbs": 68,
+   "fat": 2.5
+  }
+ },
+ {
+  "id": "granola",
+  "name": "Granola (own-brand, fruit & nut / honey & almond)",
+  "aisle": "Dry goods",
+  "unit": "g",
+  "packs": [
+   500,
+   1000
+  ],
+  "staple": false,
+  "life": 270,
+  "keeps": 60,
+  "freeze": false,
+  "tags": [
+   "cereal",
+   "breakfast",
+   "gluten",
+   "nuts"
+  ],
+  "nutrition": {
+   "per": 100,
+   "kcal": 426,
+   "protein": 11.1,
+   "carbs": 64.9,
+   "fat": 12.1
+  }
+ },
+ {
+  "id": "jam",
+  "name": "Strawberry jam",
+  "aisle": "Tins & jars",
+  "unit": "g",
+  "packs": [
+   454
+  ],
+  "staple": false,
+  "life": 365,
+  "keeps": 60,
+  "freeze": false,
+  "tags": [
+   "breakfast",
+   "sweet"
+  ],
+  "nutrition": {
+   "per": 100,
+   "kcal": 248,
+   "protein": 0.4,
+   "carbs": 61,
+   "fat": 0.1
+  }
+ },
+ {
+  "id": "crumpets",
+  "name": "Crumpets",
+  "aisle": "Bakery",
+  "unit": "each",
+  "packs": [
+   6,
+   9
+  ],
+  "staple": false,
+  "life": 5,
+  "keeps": 3,
+  "freeze": true,
+  "tags": [
+   "bread",
+   "gluten",
+   "breakfast"
+  ],
+  "nutrition": {
+   "per": 1,
+   "grams": 55,
+   "kcal": 105,
+   "protein": 3.4,
+   "carbs": 21.5,
+   "fat": 0.5
+  }
+ },
+ {
+  "id": "soft_cheese",
+  "name": "Light soft cheese (plain, 50% less fat)",
+  "aisle": "Dairy & eggs",
+  "unit": "g",
+  "packs": [
+   200,
+   250
+  ],
+  "staple": false,
+  "life": 21,
+  "keeps": 5,
+  "freeze": false,
+  "tags": [
+   "dairy",
+   "cheese"
+  ],
+  "nutrition": {
+   "per": 100,
+   "kcal": 158,
+   "protein": 6.8,
+   "carbs": 4.5,
+   "fat": 12.5
+  }
+ },
+ {
+  "id": "croissants",
+  "name": "All-butter croissants",
+  "aisle": "Bakery",
+  "unit": "each",
+  "packs": [
+   4,
+   8
+  ],
+  "staple": false,
+  "life": 4,
+  "keeps": 2,
+  "freeze": true,
+  "tags": [
+   "bread",
+   "gluten",
+   "dairy",
+   "breakfast"
+  ],
+  "nutrition": {
+   "per": 1,
+   "grams": 45,
+   "kcal": 189,
+   "protein": 3.8,
+   "carbs": 20,
+   "fat": 10.4
+  }
+ },
+ {
+  "id": "teacakes",
+  "name": "Fruited teacakes",
+  "aisle": "Bakery",
+  "unit": "each",
+  "packs": [
+   4,
+   6
+  ],
+  "staple": false,
+  "life": 5,
+  "keeps": 3,
+  "freeze": true,
+  "tags": [
+   "bread",
+   "gluten",
+   "breakfast"
+  ],
+  "nutrition": {
+   "per": 1,
+   "grams": 65,
+   "kcal": 180,
+   "protein": 5.3,
+   "carbs": 33.5,
+   "fat": 2.6
+  }
+ },
+ {
+  "id": "grapes",
+  "name": "Seedless grapes",
+  "aisle": "Fruit & veg",
+  "unit": "g",
+  "packs": [
+   500
+  ],
+  "staple": false,
+  "life": 7,
+  "keeps": 5,
+  "freeze": false,
+  "tags": [
+   "fruit"
+  ],
+  "nutrition": {
+   "per": 100,
+   "kcal": 66,
+   "protein": 0.4,
+   "carbs": 15.4,
+   "fat": 0.1
+  }
+ },
+ {
+  "id": "cream_crackers",
+  "name": "Cream crackers (~8g each)",
+  "aisle": "Dry goods",
+  "unit": "g",
+  "packs": [
+   300
+  ],
+  "staple": false,
+  "life": 180,
+  "keeps": 21,
+  "freeze": false,
+  "tags": [
+   "gluten",
+   "snack"
+  ],
+  "nutrition": {
+   "per": 100,
+   "kcal": 440,
+   "protein": 10,
+   "carbs": 68,
+   "fat": 14
+  }
+ },
+ {
+  "id": "tomato_soup",
+  "name": "Cream of tomato soup (400g tin)",
+  "aisle": "Tins & jars",
+  "unit": "g",
+  "packs": [
+   400
+  ],
+  "staple": false,
+  "life": 540,
+  "keeps": 2,
+  "freeze": true,
+  "tags": [
+   "tomato",
+   "soup",
+   "dairy"
+  ],
+  "nutrition": {
+   "per": 100,
+   "kcal": 59,
+   "protein": 0.9,
+   "carbs": 7.1,
+   "fat": 3
+  }
+ },
+ {
+  "id": "bread_rolls",
+  "name": "Soft white bread rolls",
+  "aisle": "Bakery",
+  "unit": "each",
+  "packs": [
+   6
+  ],
+  "staple": false,
+  "life": 4,
+  "keeps": 3,
+  "freeze": true,
+  "tags": [
+   "bread",
+   "gluten"
+  ],
+  "nutrition": {
+   "per": 1,
+   "grams": 60,
+   "kcal": 156,
+   "protein": 4.8,
+   "carbs": 29,
+   "fat": 2.1
+  }
+ }
+]

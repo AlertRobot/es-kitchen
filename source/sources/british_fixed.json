@@ -1,0 +1,119 @@
+[
+ {
+  "id": "br_coronation_chicken_jackets",
+  "title": "Coronation Chicken Jacket Potatoes with Cucumber Salad",
+  "icon": "🥔",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 35,
+  "servings": 2,
+  "equipment": [
+   "microwave",
+   "oven",
+   "hob"
+  ],
+  "airFryer": "After microwaving, rub the potatoes with oil and salt and air-fry at 200°C for 10–12 min until crisp; the chicken can be air-fried at 190°C for 12–14 min.",
+  "ingredients": [
+   {
+    "i": "potatoes",
+    "q": 600,
+    "t": "2 large baking potatoes"
+   },
+   {
+    "i": "chicken_breast",
+    "q": 300,
+    "t": "2 small breasts (300g)"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "curry_powder",
+    "q": 6,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "turmeric",
+    "q": 1,
+    "t": "½ tsp",
+    "opt": true
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 120,
+    "t": "8 tbsp"
+   },
+   {
+    "i": "mango_chutney",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "½, juiced"
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, chopped, to serve",
+    "opt": true,
+    "swap": "Scatter the coriander over one jacket only, or leave it out."
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, shredded"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.5,
+    "t": "½, diced"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the chicken and salad",
+    "text": "Heat the oven to 220°C (200°C fan) and prick the potatoes all over. Slice the chicken into thin strips and toss with half the curry powder and a pinch of salt. Slice the spring onions, dice the cucumber and shred the little gem. Juice the lemon half and chop the coriander (optional)."
+   },
+   {
+    "title": "Start the jackets",
+    "text": "Microwave the potatoes on high for 8–10 min, turning halfway, until just soft. Rub with 1 tsp oil and a pinch of salt. Bake directly on the oven shelf for 15 min until the skins are crisp."
+   },
+   {
+    "title": "Cook the chicken",
+    "text": "While the jackets bake, heat the remaining 1 tsp oil in a frying pan over a medium-high heat. Fry the chicken for 6–8 min until golden and cooked through with no pink inside. Tip onto a plate to cool for a few minutes."
+   },
+   {
+    "title": "Make the coronation dressing",
+    "text": "Take the pan off the heat and add the rest of the curry powder and the turmeric (optional) for 30 seconds to toast. Scrape into a bowl and stir in the yogurt, mango chutney and a squeeze of lemon until smooth and golden."
+   },
+   {
+    "title": "Mix the filling",
+    "text": "Fold the chicken and most of the spring onions into the dressing. Taste and add a squeeze more lemon if it needs it."
+   },
+   {
+    "title": "Fill and serve",
+    "text": "Split the jackets and fluff up the insides. Spoon in the coronation chicken and scatter with the remaining spring onions and the coriander (optional). Serve with the little gem and cucumber, dressed with the rest of the lemon juice."
+   }
+  ],
+  "tags": [
+   "quick",
+   "light"
+  ],
+  "basedOn": "Sainsbury's Magazine — Coronation chicken (Ailsa Brown), lightened with yogurt only and served in jacket potatoes"
+ }
+]

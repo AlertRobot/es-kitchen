@@ -1,0 +1,1193 @@
+[
+ {
+  "id": "salt",
+  "tescoPack": 1500,
+  "prices": {
+   "tesco": {
+    "pack": 1500,
+    "price": 1.9,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Cooking Salt 1.5Kg",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=table%20salt",
+    "note": "no own-brand 750g table salt; Saxa Salt 750g also £1.90; Clubcard Any 4 for 3 multibuy to 26/10"
+   },
+   "sainsburys": {
+    "pack": 750,
+    "price": 0.75,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Table Salt Bottle 750g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/table%20salt",
+    "note": ""
+   },
+   "asda": {
+    "pack": 750,
+    "price": 0.82,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Table Salt 750g",
+    "src": "https://www.trolley.co.uk/product/asda-table-salt/ZFM057",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 750,
+    "price": 0.65,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Ready, Set…Cook! British Table Salt 750g",
+    "src": "https://www.aldi.co.uk/products/food-cupboard/herbs-spices/k/1588161416978053007",
+    "note": "aldi.co.uk Herbs & Spices category listing; product https://www.aldi.co.uk/product/ready-set-cook-british-table-salt-000000000000335885"
+   },
+   "lidl": {
+    "pack": 750,
+    "price": 0.65,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Aldi British Table Salt",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "smoked_paprika",
+  "tescoPack": 48,
+  "prices": {
+   "tesco": {
+    "pack": 48,
+    "price": 1,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Smoked Paprika 48G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=smoked%20paprika",
+    "note": "Clubcard Any 4 for 3 multibuy on cooking ingredients (to 26/10/2026)"
+   },
+   "sainsburys": {
+    "pack": 44,
+    "price": 1.15,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Smoked Paprika 44g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/smoked%20paprika",
+    "note": "98g £2.30"
+   },
+   "asda": {
+    "pack": 45,
+    "price": 0.95,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "COOK by ASDA Smoked Paprika 45g",
+    "src": "https://www.trolley.co.uk/product/asda-smoked-paprika-45gr/OYE869",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 40,
+    "price": 0.69,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Ready, Set…Cook! Smoked Paprika 40g",
+    "src": "https://www.trolley.co.uk/product/ready-set-cook-smoked-paprika/AFK059",
+    "note": "kept: not on page 1 of aldi.co.uk Herbs & Spices (later pages/search blocked); trolley usual price"
+   },
+   "lidl": {
+    "pack": 40,
+    "price": 0.69,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Ready, Set…Cook! Smoked Paprika 40g",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "chopped_tomatoes",
+  "tescoPack": 400,
+  "prices": {
+   "tesco": {
+    "pack": 400,
+    "price": 0.47,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Italian Chopped Tomatoes 400G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=chopped%20tomatoes",
+    "note": "value line Grower's Harvest Chopped Tomatoes 400G £0.43"
+   },
+   "sainsburys": {
+    "pack": 400,
+    "price": 0.45,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Chopped Tomatoes Can 400g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/tinned%20chopped%20tomatoes",
+    "note": "value line Stamford Street Co. 400g £0.43"
+   },
+   "asda": {
+    "pack": 400,
+    "price": 0.47,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Chopped Tomatoes 400g",
+    "src": "https://www.trolley.co.uk/product/asda-chopped-tomatoes-in-tomato-juice/PMO540",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 400,
+    "price": 0.45,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Cucina Chopped Tomatoes in a Rich Tomato Juice 400g",
+    "src": "https://www.aldi.co.uk/product/cucina-chopped-tomatoes-in-a-rich-tomato-juice-000000000000278588",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 400,
+    "price": 0.45,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl own-brand equivalent (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "chicken_thighs",
+  "tescoPack": 600,
+  "prices": {
+   "tesco": {
+    "pack": 600,
+    "price": 5.75,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco British Chicken Thigh Fillets 600G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=chicken%20thigh%20fillets",
+    "note": "1kg £7.25"
+   },
+   "sainsburys": {
+    "pack": 640,
+    "price": 6,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's 640g British Fresh Skinless & Boneless Chicken Thigh Fillets",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/chicken%20legs",
+    "note": "1kg £6.95; 320g £3.75"
+   },
+   "asda": {
+    "pack": 1000,
+    "price": 6.84,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": true,
+    "label": "ASDA British Boneless Chicken Thigh Fillets",
+    "src": "https://www.trolley.co.uk/product/asda-succulent-boneless-chicken-thigh-fillets/SEI999",
+    "note": "trolley lists two Asda sizes (£6.84 and £6.07) without weights; £6.84 matches the previously recorded 1kg pack, so 1kg assumed"
+   },
+   "aldi": {
+    "pack": 600,
+    "price": 4.39,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Ashfields Chicken Thigh Fillets 600g",
+    "src": "https://www.aldi.co.uk/product/ashfields-chicken-thigh-fillets-000000000000416054",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 600,
+    "price": 4.39,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "carrots",
+  "tescoPack": 1000,
+  "prices": {
+   "tesco": {
+    "pack": 1000,
+    "price": 0.69,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Carrots 1Kg",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=carrots",
+    "note": "500g £0.55"
+   },
+   "sainsburys": {
+    "pack": 1000,
+    "price": 0.69,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's 1kg Carrots",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/carrots",
+    "note": "500g £0.44"
+   },
+   "asda": {
+    "pack": 1000,
+    "price": 0.69,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Crunchy & Sweet Carrots 1kg",
+    "src": "https://trolley.co.uk/product/asda-crunchy-sweet-carrots/GLK034",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 1000,
+    "price": 0.49,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Nature's Pick Carrots",
+    "src": "https://www.trolley.co.uk/product/carrots/SYV392",
+    "note": "kept: not on page 1 of aldi.co.uk Vegetables (later pages/search blocked); pack size assumed 1kg"
+   },
+   "lidl": {
+    "pack": 1000,
+    "price": 0.49,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl carrots 1kg (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "beef_mince",
+  "tescoPack": 500,
+  "prices": {
+   "tesco": {
+    "pack": 500,
+    "price": 5.05,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Lean Beef Steak Mince 5% Fat 500g",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=5%25%20beef%20mince",
+    "note": "now product 250871426, in stock; Aldi Price Match; 750g £7.50; 250g out of stock"
+   },
+   "sainsburys": {
+    "pack": 500,
+    "price": 5.05,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's British or Irish 5% Fat Beef Mince 500g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/5%25%20beef%20mince",
+    "note": "250g £2.55; 750g £7.49"
+   },
+   "asda": {
+    "pack": 500,
+    "price": 5.05,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Beef Mince <5% Fat 500g",
+    "src": "https://www.trolley.co.uk/product/asda-flavourful-lean-beef-steak-mince-typically-less-than-5-fat/PIP593",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 500,
+    "price": 5.05,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Ashfields British Lean Beef Steak Mince 5% Fat 500g",
+    "src": "https://www.aldi.co.uk/product/ashfields-british-lean-beef-steak-mince-5-fat-000000000000575278",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 500,
+    "price": 5.05,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "panko",
+  "tescoPack": 150,
+  "prices": {
+   "tesco": {
+    "pack": 150,
+    "price": 2.1,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Panko Breadcrumbs 150G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=panko",
+    "note": "Blue Dragon 120g £1.90"
+   },
+   "sainsburys": {
+    "pack": 100,
+    "price": 1.4,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Panko Breadcrumbs, Inspired to Cook 100g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/panko",
+    "note": ""
+   },
+   "asda": {
+    "pack": 70,
+    "price": 1.21,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "COOK by ASDA Panko Breadcrumbs 70g",
+    "src": "https://www.trolley.co.uk/product/asda-panko-breadcrumbs/SWC986",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 150,
+    "price": 1.49,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Bramwells Panko Breadcrumbs (est.)",
+    "src": "",
+    "note": "Aldi lists Bramwells panko but the product page could not be read; rough estimate"
+   },
+   "lidl": {
+    "pack": 150,
+    "price": 1.49,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl own-brand equivalent (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "mozzarella",
+  "tescoPack": 125,
+  "prices": {
+   "tesco": {
+    "pack": 125,
+    "price": 1.3,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Mozzarella 200g (125g drained)",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=mozzarella",
+    "note": "value line Creamfields Mozzarella 210G £0.55 (Aldi Price Match)"
+   },
+   "sainsburys": {
+    "pack": 125,
+    "price": 1.55,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": true,
+    "label": "Sainsbury's Mozzarella Cheese 150g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/mozzarella",
+    "note": "150g net; drained weight not shown, ~125g assumed; Castelli 210g 55p also listed"
+   },
+   "asda": {
+    "pack": 125,
+    "price": 1.27,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": true,
+    "label": "ASDA Mozzarella 215g (125g drained)",
+    "src": "https://www.trolley.co.uk/product/asda-mozzarella-cheese/FEL200",
+    "note": "drained weight not shown on trolley; 125g assumed"
+   },
+   "aldi": {
+    "pack": 125,
+    "price": 0.55,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Everyday Essentials Classic Mozzarella (0.125kg drained)",
+    "src": "https://www.aldi.co.uk/products/chilled-food/cheese/k/1588161416978051004",
+    "note": "reduced from £0.59 (Save 6%)"
+   },
+   "lidl": {
+    "pack": 125,
+    "price": 0.55,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "salmon",
+  "tescoPack": 2,
+  "prices": {
+   "tesco": {
+    "pack": 2,
+    "price": 4.9,
+    "loyalty": 4,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco 2 Boneless Salmon Fillets 260G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=salmon%20fillets",
+    "note": "4 pack 520g £9.25; 6 pack 780g £13.50 (Clubcard £12.00)"
+   },
+   "sainsburys": {
+    "pack": 2,
+    "price": 4.95,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Skin on ASC Scottish Salmon Fillets x2 240g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/salmon%20fillets%20x2",
+    "note": "value line Stamford Street Co. ASC Salmon Fillets x2 240g £3.59 (Aldi price match)"
+   },
+   "asda": {
+    "pack": 2,
+    "price": 3.8,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": false,
+    "label": "ASDA 2 Boneless Salmon Fillets 260g",
+    "src": "https://allsupers.co.uk/browse/meat-poultry-and-fish/fresh-fish/salmon-fillets",
+    "note": "kept: no live Asda page found (trolley ASDA Flavoursome 2 Salmon Fillets 240g out of stock); Rollback (was £4.65); 4 pack 520g £8.80"
+   },
+   "aldi": {
+    "pack": 2,
+    "price": 3.59,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "The Fishmonger Boneless Salmon Fillets 2 Pack",
+    "src": "https://www.aldi.co.uk/product/the-fishmonger-boneless-salmon-fillets-2-pack-000000000000381995",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 2,
+    "price": 3.59,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "chickpeas",
+  "tescoPack": 400,
+  "prices": {
+   "tesco": {
+    "pack": 400,
+    "price": 0.41,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Chickpeas In Water 400G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=chickpeas",
+    "note": "Aldi Price Match"
+   },
+   "sainsburys": {
+    "pack": 400,
+    "price": 0.41,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Chickpeas in Water 400g (240g drained)",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/chickpeas%20in%20water",
+    "note": ""
+   },
+   "asda": {
+    "pack": 400,
+    "price": 0.41,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Chickpeas in Water 400g",
+    "src": "https://www.trolley.co.uk/product/asda-chickpeas-in-water/JSQ555",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 400,
+    "price": 0.41,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Four Seasons Chickpeas 400g (265g drained)",
+    "src": "https://www.aldi.co.uk/product/four-seasons-chickpeas-000000000000625258",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 400,
+    "price": 0.41,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl own-brand equivalent (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "harissa",
+  "tescoPack": 90,
+  "prices": {
+   "tesco": {
+    "pack": 90,
+    "price": 1.8,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Harissa Paste 90G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=harissa%20paste",
+    "note": "Clubcard Any 4 for 3 multibuy to 26/10/2026"
+   },
+   "sainsburys": {
+    "pack": 90,
+    "price": 1.95,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Harissa Paste, Inspired to Cook 90g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/harissa",
+    "note": ""
+   },
+   "asda": {
+    "pack": 90,
+    "price": 1.9,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "COOK by ASDA Harissa Paste 90g",
+    "src": "https://www.trolley.co.uk/product/asda-harissa-paste/QQR248",
+    "note": ""
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "beansprouts",
+  "tescoPack": 300,
+  "prices": {
+   "tesco": {
+    "pack": 300,
+    "price": 0.85,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Beansprouts 300G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=beansprouts",
+    "note": "part of Clubcard Stir Fry Meal Deal for £5 (multibuy)"
+   },
+   "sainsburys": {
+    "pack": 300,
+    "price": 0.85,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Beansprouts 300g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/beansprouts",
+    "note": "Nectar buy 3 get cheapest free (multibuy)"
+   },
+   "asda": {
+    "pack": 200,
+    "price": 0.57,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Beansprouts 200g",
+    "src": "https://trolley.co.uk/product/asda-crunchy-beansprouts/FKR726",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 400,
+    "price": 0.95,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Ready, Set...Cook! Washed & Ready to Cook Straight to Wok Beansprouts 400g",
+    "src": "https://www.aldi.co.uk/product/ready-set-cook-washed-ready-to-cook-straight-to-wok-beansprouts-000000000000339761",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 400,
+    "price": 0.95,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Ready, Set...Cook! Washed & Ready to Cook Straight to Wok Beansprouts 400g",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "rocket",
+  "tescoPack": 60,
+  "prices": {
+   "tesco": {
+    "pack": 60,
+    "price": 1,
+    "loyalty": 0.9,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Wild Rocket 60G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=wild%20rocket",
+    "note": "Clubcard price valid 20/10/2026-02/11/2026"
+   },
+   "sainsburys": {
+    "pack": 60,
+    "price": 1,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Wild Rocket 60g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/wild%20rocket",
+    "note": "120g £1.50"
+   },
+   "asda": {
+    "pack": 60,
+    "price": 0.96,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Wild Rocket Strong & Peppery 60g",
+    "src": "https://www.trolley.co.uk/product/asda-wild-rocket/GBC275",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 60,
+    "price": 0.69,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Nature's Pick Wild Rocket 60g",
+    "src": "https://www.trolley.co.uk/product/natures-pick-wild-rocket/BCT002",
+    "note": "kept (trolley usual price, out of stock); aldi.co.uk live today: Nature's Pick Rocket & Baby Leaf Salad 90g £0.99"
+   },
+   "lidl": {
+    "pack": 60,
+    "price": 0.69,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "jalapenos",
+  "tescoPack": 300,
+  "prices": {
+   "tesco": {
+    "pack": 300,
+    "price": 1.6,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Sliced Green Jalapenos In Brine 300G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=jalapenos",
+    "note": "~135g drained (from DR.WT unit price)"
+   },
+   "sainsburys": {
+    "pack": 200,
+    "price": 1.1,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Sliced Green Jalapeños 200g (90g drained)",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/jalapenos",
+    "note": "Sainsbury's Sliced Jalapenos, Inspired to Cook 200g £1.05"
+   },
+   "asda": {
+    "pack": 340,
+    "price": 1.72,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Sliced Green Jalapenos 340g",
+    "src": "https://www.trolley.co.uk/product/asda-mexican-style-jalapenos/KWG791",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 110,
+    "price": 0.39,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "The Deli Green Sliced Jalapeños 110g",
+    "src": "https://www.aldi.co.uk/product/the-deli-green-sliced-jalapenos-000000000000335578",
+    "note": "product page now £0.39 (was £0.69 on 22/10); 110g may be drained weight"
+   },
+   "lidl": {
+    "pack": 110,
+    "price": 0.69,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "tahini",
+  "tescoPack": 300,
+  "prices": {
+   "tesco": {
+    "pack": 300,
+    "price": 3.1,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Tahini 300G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=tahini",
+    "note": "Clubcard Any 4 for 3 multibuy to 26/10/2026"
+   },
+   "sainsburys": {
+    "pack": 300,
+    "price": 3,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Tahini, Inspired to Cook 300g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/tahini",
+    "note": ""
+   },
+   "asda": null,
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "arborio_rice",
+  "tescoPack": 1000,
+  "prices": {
+   "tesco": {
+    "pack": 1000,
+    "price": 3.3,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Risotto Rice 1Kg",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=risotto%20rice",
+    "note": "Tesco own-brand arborio only in 1kg; Tesco Carnaroli 500G £2.50"
+   },
+   "sainsburys": {
+    "pack": 500,
+    "price": 2.45,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Arborio Risotto Rice 500g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/arborio%20rice",
+    "note": ""
+   },
+   "asda": {
+    "pack": 500,
+    "price": 2.6,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Risotto Arborio Rice 500g",
+    "src": "https://www.trolley.co.uk/product/asda-risotto-arborio-rice/HZP087",
+    "note": ""
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "tofu",
+  "tescoPack": 399,
+  "prices": {
+   "tesco": {
+    "pack": 399,
+    "price": 1.95,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Plant Chef Organic Firm Tofu 399g",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=tofu",
+    "note": "firm rather than extra firm; Cauldron Extra Firm 200g £1.75; Tofoo Naked 280g £2.50 / XL 450g £3.50"
+   },
+   "sainsburys": {
+    "pack": 300,
+    "price": 1.42,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's SO Organic Super Firm Tofu 300g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/firm%20tofu",
+    "note": ""
+   },
+   "asda": {
+    "pack": 200,
+    "price": 1,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Plant Based Organic Super Firm Tofu 200g",
+    "src": "https://www.trolley.co.uk/product/asda-plant-based-organic-super-firm-tofu/TYH782",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 200,
+    "price": 0.95,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Plant Menu Organic Super Firm Tofu 200g",
+    "src": "https://www.aldi.co.uk/product/plant-menu-organic-super-firm-tofu-000000000513086001",
+    "note": "page also says 180g in product details"
+   },
+   "lidl": {
+    "pack": 200,
+    "price": 0.95,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Plant Menu Organic Super Firm Tofu 200g",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "chicken_legs",
+  "tescoPack": 1000,
+  "prices": {
+   "tesco": {
+    "pack": 1000,
+    "price": 2.25,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco British Chicken Legs 1Kg",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=chicken%20legs",
+    "note": "Aldi Price Match"
+   },
+   "sainsburys": {
+    "pack": 1000,
+    "price": 2.25,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's 1kg British Fresh Skin on Chicken Legs",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/chicken%20legs",
+    "note": ""
+   },
+   "asda": {
+    "pack": 1100,
+    "price": 2.48,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Succulent Chicken Leg Quarters 1.1kg",
+    "src": "https://www.trolley.co.uk/product/asda-succulent-chicken-leg-quarters/ARE927",
+    "note": "usually £2.80"
+   },
+   "aldi": {
+    "pack": 1000,
+    "price": 2.25,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Ashfields Chicken Legs 1kg",
+    "src": "https://www.aldi.co.uk/product/ashfields-chicken-legs-000000000000382089",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 1000,
+    "price": 2.25,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent of Ashfields Chicken Legs 1kg",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "ricotta",
+  "tescoPack": 250,
+  "prices": {
+   "tesco": {
+    "pack": 250,
+    "price": 1.5,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Ricotta Cheese 250 G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=ricotta",
+    "note": ""
+   },
+   "sainsburys": {
+    "pack": 250,
+    "price": 1.47,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Ricotta Cheese 250g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/ricotta",
+    "note": ""
+   },
+   "asda": {
+    "pack": 250,
+    "price": 1.46,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Italian Ricotta 250g",
+    "src": "https://www.trolley.co.uk/product/asda-ricotta-cheese/IBK236",
+    "note": ""
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "branston_pickle",
+  "tescoPack": 295,
+  "prices": {
+   "tesco": {
+    "pack": 295,
+    "price": 1.45,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Sandwich Pickle 295G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=sandwich%20pickle",
+    "note": "own-label; Branston Original 360g ~£2.20 (not rechecked)"
+   },
+   "sainsburys": {
+    "pack": 295,
+    "price": 1.45,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Sweet Pickle 295g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/sweet%20pickle",
+    "note": ""
+   },
+   "asda": {
+    "pack": 295,
+    "price": 1.32,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Sweet Pickle 295g",
+    "src": "https://www.trolley.co.uk/product/asda-tangy-juicy-sweet-pickle/HXG770",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 390,
+    "price": 0.79,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Bramwells Sweet Pickle 390g",
+    "src": "https://www.trolley.co.uk/product/bramwells-sweet-pickle/JBO105",
+    "note": "trolley 'usual' price; current price not shown"
+   },
+   "lidl": {
+    "pack": 390,
+    "price": 0.79,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "dried_apricots",
+  "tescoPack": 250,
+  "prices": {
+   "tesco": {
+    "pack": 250,
+    "price": 2.8,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Soft Apricots 250G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=dried%20apricots",
+    "note": "Tesco Ready To Eat Apricots 250G also £2.80 (Clubcard Any 4 for 3 multibuy)"
+   },
+   "sainsburys": {
+    "pack": 200,
+    "price": 2.45,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Apricots 200g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/dried%20apricots",
+    "note": "Ready to Eat 500g £5.95"
+   },
+   "asda": {
+    "pack": 200,
+    "price": 2.17,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Apricots 200g",
+    "src": "https://www.trolley.co.uk/product/asda-apricots/UYP085",
+    "note": "also 500g £4.50 (not rechecked)"
+   },
+   "aldi": {
+    "pack": 500,
+    "price": 2.39,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "The Foodie Market Soft Apricots 500g",
+    "src": "https://www.trolley.co.uk/product/the-foodie-market-soft-apricots/QAD161",
+    "note": "kept: not on page 1 of aldi.co.uk Seeds, Nuts & Dried Fruits (later pages blocked); trolley 'usual price', out of stock"
+   },
+   "lidl": {
+    "pack": 500,
+    "price": 2.39,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ }
+]

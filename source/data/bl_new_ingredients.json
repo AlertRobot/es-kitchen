@@ -1,0 +1,206 @@
+[
+ {
+  "id": "weetabix",
+  "name": "Weetabix (wholegrain wheat biscuits)",
+  "aisle": "Dry goods",
+  "unit": "each",
+  "packs": [
+   24,
+   48
+  ]
+ },
+ {
+  "id": "protein_bar",
+  "name": "Protein bar (approx. 20g protein)",
+  "aisle": "Dry goods",
+  "unit": "each",
+  "packs": [
+   4,
+   12
+  ]
+ },
+ {
+  "id": "porridge_oats",
+  "name": "Porridge oats",
+  "aisle": "Dry goods",
+  "unit": "g",
+  "packs": [
+   500,
+   1000
+  ]
+ },
+ {
+  "id": "banana",
+  "name": "Bananas",
+  "aisle": "Fruit & veg",
+  "unit": "each",
+  "packs": [
+   1,
+   5
+  ]
+ },
+ {
+  "id": "frozen_berries",
+  "name": "Frozen mixed berries",
+  "aisle": "Frozen",
+  "unit": "g",
+  "packs": [
+   500
+  ]
+ },
+ {
+  "id": "wholemeal_bread",
+  "name": "Wholemeal bread, medium sliced (800g loaf)",
+  "aisle": "Bakery",
+  "unit": "each",
+  "packs": [
+   19
+  ]
+ },
+ {
+  "id": "skyr",
+  "name": "Skyr natural yogurt (fat-free, high protein)",
+  "aisle": "Dairy & eggs",
+  "unit": "g",
+  "packs": [
+   450
+  ]
+ },
+ {
+  "id": "cottage_cheese",
+  "name": "Cottage cheese",
+  "aisle": "Dairy & eggs",
+  "unit": "g",
+  "packs": [
+   300
+  ]
+ },
+ {
+  "id": "ham_slices",
+  "name": "Cooked ham slices",
+  "aisle": "Meat & fish",
+  "unit": "g",
+  "packs": [
+   125
+  ]
+ },
+ {
+  "id": "cooked_chicken_slices",
+  "name": "Cooked chicken breast slices",
+  "aisle": "Chilled",
+  "unit": "g",
+  "packs": [
+   130,
+   300
+  ]
+ },
+ {
+  "id": "hummus",
+  "name": "Classic houmous",
+  "aisle": "Chilled",
+  "unit": "g",
+  "packs": [
+   200,
+   300
+  ]
+ },
+ {
+  "id": "salad_leaves",
+  "name": "Mixed salad leaves",
+  "aisle": "Fruit & veg",
+  "unit": "g",
+  "packs": [
+   120
+  ]
+ },
+ {
+  "id": "microwave_rice_pouch",
+  "name": "Microwave basmati rice pouch (250g)",
+  "aisle": "Dry goods",
+  "unit": "g",
+  "packs": [
+   250
+  ]
+ },
+ {
+  "id": "quinoa",
+  "name": "Quinoa",
+  "aisle": "Dry goods",
+  "unit": "g",
+  "packs": [
+   300
+  ]
+ },
+ {
+  "id": "light_mayonnaise",
+  "name": "Light mayonnaise",
+  "aisle": "Oils & sauces",
+  "unit": "g",
+  "packs": [
+   430
+  ]
+ },
+ {
+  "id": "frozen_edamame",
+  "name": "Frozen edamame soya beans",
+  "aisle": "Frozen",
+  "unit": "g",
+  "packs": [
+   500
+  ]
+ },
+ {
+  "id": "smoked_mackerel",
+  "name": "Smoked mackerel fillets",
+  "aisle": "Meat & fish",
+  "unit": "g",
+  "packs": [
+   200
+  ]
+ },
+ {
+  "id": "cooked_beetroot",
+  "name": "Cooked beetroot (vacuum pack, not in vinegar)",
+  "aisle": "Fruit & veg",
+  "unit": "g",
+  "packs": [
+   250
+  ]
+ },
+ {
+  "id": "baked_beans",
+  "name": "Baked beans in tomato sauce (tin)",
+  "aisle": "Tins & jars",
+  "unit": "g",
+  "packs": [
+   415
+  ]
+ },
+ {
+  "id": "smoked_salmon",
+  "name": "Smoked salmon slices",
+  "aisle": "Meat & fish",
+  "unit": "g",
+  "packs": [
+   100
+  ]
+ },
+ {
+  "id": "bagel_thins",
+  "name": "Wholemeal bagel thins",
+  "aisle": "Bakery",
+  "unit": "each",
+  "packs": [
+   6
+  ]
+ },
+ {
+  "id": "falafel",
+  "name": "Chilled falafel (ready to eat)",
+  "aisle": "Chilled",
+  "unit": "each",
+  "packs": [
+   12
+  ]
+ }
+]

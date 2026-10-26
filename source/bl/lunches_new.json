@@ -1,0 +1,290 @@
+[
+ {
+  "id": "cooked_chicken_slices",
+  "name": "Cooked chicken breast slices",
+  "aisle": "Chilled",
+  "unit": "g",
+  "packs": [
+   130,
+   300
+  ],
+  "staple": false,
+  "life": 7,
+  "keeps": 2,
+  "freeze": true,
+  "tags": [
+   "chicken",
+   "meat"
+  ]
+ },
+ {
+  "id": "ham_slices",
+  "name": "Cooked ham slices",
+  "aisle": "Chilled",
+  "unit": "g",
+  "packs": [
+   125,
+   400
+  ],
+  "staple": false,
+  "life": 10,
+  "keeps": 3,
+  "freeze": true,
+  "tags": [
+   "pork",
+   "meat"
+  ]
+ },
+ {
+  "id": "hummus",
+  "name": "Classic houmous",
+  "aisle": "Chilled",
+  "unit": "g",
+  "packs": [
+   200,
+   300
+  ],
+  "staple": false,
+  "life": 10,
+  "keeps": 3,
+  "freeze": true,
+  "tags": [
+   "vegan",
+   "sesame"
+  ]
+ },
+ {
+  "id": "salad_leaves",
+  "name": "Mixed salad leaves",
+  "aisle": "Fruit & veg",
+  "unit": "g",
+  "packs": [
+   120
+  ],
+  "staple": false,
+  "life": 4,
+  "keeps": 2,
+  "freeze": false,
+  "tags": [
+   "leaves",
+   "salad"
+  ]
+ },
+ {
+  "id": "microwave_rice_pouch",
+  "name": "Microwave basmati rice pouch (250g)",
+  "aisle": "Dry goods",
+  "unit": "g",
+  "packs": [
+   250
+  ],
+  "staple": false,
+  "life": 270,
+  "keeps": 1,
+  "freeze": false,
+  "tags": [
+   "gluten-free"
+  ]
+ },
+ {
+  "id": "quinoa",
+  "name": "Quinoa",
+  "aisle": "Dry goods",
+  "unit": "g",
+  "packs": [
+   300
+  ],
+  "staple": false,
+  "life": 365,
+  "keeps": 365,
+  "freeze": false,
+  "tags": [
+   "gluten-free",
+   "vegan"
+  ]
+ },
+ {
+  "id": "light_mayonnaise",
+  "name": "Light mayonnaise",
+  "aisle": "Oils & sauces",
+  "unit": "g",
+  "packs": [
+   430
+  ],
+  "staple": false,
+  "life": 180,
+  "keeps": 90,
+  "freeze": false,
+  "tags": [
+   "egg"
+  ]
+ },
+ {
+  "id": "cottage_cheese",
+  "name": "Cottage cheese",
+  "aisle": "Dairy & eggs",
+  "unit": "g",
+  "packs": [
+   300,
+   600
+  ],
+  "staple": false,
+  "life": 10,
+  "keeps": 4,
+  "freeze": false,
+  "tags": [
+   "dairy",
+   "cheese"
+  ]
+ },
+ {
+  "id": "wholemeal_bread",
+  "name": "Wholemeal bread (800g loaf)",
+  "aisle": "Bakery",
+  "unit": "each",
+  "packs": [
+   18
+  ],
+  "staple": false,
+  "life": 5,
+  "keeps": 5,
+  "freeze": true,
+  "tags": [
+   "bread",
+   "gluten"
+  ]
+ },
+ {
+  "id": "skyr",
+  "name": "Skyr (natural, high-protein yogurt)",
+  "aisle": "Dairy & eggs",
+  "unit": "g",
+  "packs": [
+   450
+  ],
+  "staple": false,
+  "life": 21,
+  "keeps": 5,
+  "freeze": false,
+  "tags": [
+   "dairy"
+  ]
+ },
+ {
+  "id": "frozen_edamame",
+  "name": "Frozen edamame soya beans",
+  "aisle": "Frozen",
+  "unit": "g",
+  "packs": [
+   500
+  ],
+  "staple": false,
+  "life": 365,
+  "keeps": 90,
+  "freeze": true,
+  "tags": [
+   "soy",
+   "beans",
+   "vegan"
+  ]
+ },
+ {
+  "id": "smoked_mackerel",
+  "name": "Smoked mackerel fillets",
+  "aisle": "Meat & fish",
+  "unit": "g",
+  "packs": [
+   200
+  ],
+  "staple": false,
+  "life": 14,
+  "keeps": 2,
+  "freeze": true,
+  "tags": [
+   "fish"
+  ]
+ },
+ {
+  "id": "cooked_beetroot",
+  "name": "Cooked beetroot (vacuum pack, not in vinegar)",
+  "aisle": "Fruit & veg",
+  "unit": "g",
+  "packs": [
+   250
+  ],
+  "staple": false,
+  "life": 21,
+  "keeps": 4,
+  "freeze": false,
+  "tags": [
+   "vegan"
+  ]
+ },
+ {
+  "id": "baked_beans",
+  "name": "Baked beans in tomato sauce (tin)",
+  "aisle": "Tins & jars",
+  "unit": "g",
+  "packs": [
+   415
+  ],
+  "staple": false,
+  "life": 720,
+  "keeps": 3,
+  "freeze": true,
+  "tags": [
+   "beans",
+   "vegan"
+  ]
+ },
+ {
+  "id": "smoked_salmon",
+  "name": "Smoked salmon slices",
+  "aisle": "Meat & fish",
+  "unit": "g",
+  "packs": [
+   100
+  ],
+  "staple": false,
+  "life": 14,
+  "keeps": 2,
+  "freeze": true,
+  "tags": [
+   "fish"
+  ]
+ },
+ {
+  "id": "bagel_thins",
+  "name": "Wholemeal bagel thins",
+  "aisle": "Bakery",
+  "unit": "each",
+  "packs": [
+   6
+  ],
+  "staple": false,
+  "life": 6,
+  "keeps": 6,
+  "freeze": true,
+  "tags": [
+   "bread",
+   "gluten"
+  ]
+ },
+ {
+  "id": "falafel",
+  "name": "Chilled falafel (ready to eat)",
+  "aisle": "Chilled",
+  "unit": "each",
+  "packs": [
+   12
+  ],
+  "staple": false,
+  "life": 7,
+  "keeps": 3,
+  "freeze": true,
+  "tags": [
+   "vegan",
+   "beans"
+  ]
+ }
+]

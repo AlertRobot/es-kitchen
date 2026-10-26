@@ -1,0 +1,3650 @@
+[
+  {
+    "id": "br_crispy_oven_fish_chips",
+    "title": "Crispy Panko Cod & Oven Chips with Mushy Peas & Tartare",
+    "icon": "🐟",
+    "cuisine": "British",
+    "category": "treat",
+    "protein": "fish",
+    "time": 50,
+    "servings": 2,
+    "equipment": [
+      "oven",
+      "hob"
+    ],
+    "airFryer": "Air-fry the oiled chips at 200°C for 20–25 min, shaking twice, then cook the crumbed cod at 200°C for 8–10 min until golden and flaking.",
+    "ingredients": [
+      {
+        "i": "potatoes",
+        "q": 600,
+        "t": "600g, cut into chunky chips"
+      },
+      {
+        "i": "oil",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "cod_fillets",
+        "q": 280,
+        "t": "2 fillets (280g)"
+      },
+      {
+        "i": "plain_flour",
+        "q": 20,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "eggs",
+        "q": 1,
+        "t": "1, beaten"
+      },
+      {
+        "i": "panko",
+        "q": 50,
+        "t": "50g"
+      },
+      {
+        "i": "lemon",
+        "q": 1,
+        "t": "1: zest, juice of half, rest in wedges"
+      },
+      {
+        "i": "frozen_peas",
+        "q": 200,
+        "t": "200g",
+        "swap": "Mushy peas are a side: make half the amount (100g) and serve them on one plate only."
+      },
+      {
+        "i": "butter",
+        "q": 15,
+        "t": "15g"
+      },
+      {
+        "i": "greek_yogurt",
+        "q": 60,
+        "t": "4 tbsp"
+      },
+      {
+        "i": "gherkins",
+        "q": 30,
+        "t": "2 tbsp, finely chopped",
+        "swap": "Spoon one portion of the lemony yogurt into a separate dish before stirring in the gherkins."
+      },
+      {
+        "i": "salt",
+        "q": 3,
+        "t": "a good pinch"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "a pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the chips",
+        "text": "Heat the oven to 220°C (200°C fan). Cut the potatoes into thick chips (no need to peel), rinse, then pat really dry with a clean tea towel. Zest the lemon, juice one half and cut the other half into wedges. Finely chop the gherkins."
+      },
+      {
+        "title": "Roast the chips",
+        "text": "Toss the chips on a large baking tray with 1½ tbsp oil and a good pinch of salt. Spread them out in one layer. Roast on the top shelf for 35–40 min, turning halfway, until golden and crisp."
+      },
+      {
+        "title": "Crumb the cod",
+        "text": "While the chips roast, set out three plates: flour seasoned with salt and pepper, the beaten egg, and panko mixed with the lemon zest. Pat the cod dry, dust in flour, dip in egg and press firmly into the crumbs. Lay on a lined baking tray and drizzle with the remaining ½ tbsp oil."
+      },
+      {
+        "title": "Bake the cod",
+        "text": "When the chips have 15 min left, put the cod on the shelf below. Bake for 12–15 min until the crumb is golden and the fish flakes easily when pressed with a fork."
+      },
+      {
+        "title": "Make the tartare",
+        "text": "While the cod bakes, stir the gherkins into the yogurt with a squeeze of lemon juice and a pinch of pepper. Add a splash of the gherkin vinegar if you like it sharper."
+      },
+      {
+        "title": "Make the mushy peas",
+        "text": "Boil the peas in a small pan of water over a medium heat for 3–4 min until tender. Drain, keeping a splash of the water, and return to the pan. Add the butter, the rest of the lemon juice and a pinch of salt, then crush with a potato masher until thick and chunky."
+      },
+      {
+        "title": "Finish and serve",
+        "text": "Pile the chips onto plates, sprinkle with a little salt and set the cod alongside. Add a mound of mushy peas, a spoonful of tartare and the lemon wedges for squeezing."
+      }
+    ],
+    "tags": [
+      "fakeaway",
+      "crispy",
+      "kid-friendly"
+    ],
+    "basedOn": "BBC Good Food-style healthier oven fish & chips with mushy peas; Birds Eye fish & chips with mushy peas and tartare (adapted: panko-crumbed cod, yogurt tartare)"
+  },
+  {
+    "id": "br_chicken_leek_bacon_pie",
+    "title": "Creamy Chicken, Leek & Bacon Pie with a Puff Pastry Lid",
+    "icon": "🥧",
+    "cuisine": "British",
+    "category": "treat",
+    "protein": "chicken",
+    "time": 60,
+    "servings": 2,
+    "equipment": [
+      "hob",
+      "oven"
+    ],
+    "ingredients": [
+      {
+        "i": "chicken_thighs",
+        "q": 350,
+        "t": "350g, cut into bite-size pieces"
+      },
+      {
+        "i": "bacon",
+        "q": 75,
+        "t": "3 rashers, chopped"
+      },
+      {
+        "i": "leeks",
+        "q": 250,
+        "t": "2 small leeks (250g), sliced"
+      },
+      {
+        "i": "garlic",
+        "q": 2,
+        "t": "2 cloves, crushed"
+      },
+      {
+        "i": "butter",
+        "q": 15,
+        "t": "15g"
+      },
+      {
+        "i": "oil",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "plain_flour",
+        "q": 20,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "stock_cubes",
+        "q": 1,
+        "t": "1 chicken cube in 250ml boiling water"
+      },
+      {
+        "i": "double_cream",
+        "q": 75,
+        "t": "5 tbsp"
+      },
+      {
+        "i": "wholegrain_mustard",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "mixed_herbs",
+        "q": 1,
+        "t": "½ tsp",
+        "opt": true
+      },
+      {
+        "i": "puff_pastry",
+        "q": 160,
+        "t": "½ sheet"
+      },
+      {
+        "i": "eggs",
+        "q": 1,
+        "t": "1, beaten, to glaze"
+      },
+      {
+        "i": "broccoli",
+        "q": 200,
+        "t": "200g, in florets"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "a pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the filling",
+        "text": "Heat the oven to 200°C (180°C fan) and take the pastry out of the fridge. Dissolve the stock cube in 250ml boiling water. Slice the leeks, crush the garlic, chop the bacon and cut the chicken into bite-size pieces. Cut the broccoli into florets."
+      },
+      {
+        "title": "Brown the chicken and bacon",
+        "text": "Heat the oil in a large, deep frying pan over a medium-high heat. Fry the bacon and chicken for 6–8 min, stirring now and then, until the bacon is crisp and the chicken golden all over."
+      },
+      {
+        "title": "Soften the leeks",
+        "text": "Turn the heat down to medium and add the butter, leeks, garlic and mixed herbs (optional). Cook for 5 min until the leeks are soft and glossy. Sprinkle over the flour and stir for 1 min so there are no dry patches."
+      },
+      {
+        "title": "Make the creamy filling",
+        "text": "Gradually stir in the stock, then the cream and mustard. Bubble gently for 4–5 min until the sauce coats the back of a spoon. Season with pepper (the bacon is salty), tip into a small pie dish (about 1 litre) and leave to cool for 5 min."
+      },
+      {
+        "title": "Top the pie",
+        "text": "Lay the pastry over the dish, trim the overhang and press the edges down with a fork to seal. Brush with the beaten egg and cut a small slit in the middle for steam."
+      },
+      {
+        "title": "Bake the pie",
+        "text": "Bake on the middle shelf for 25 min until the pastry is puffed and deep golden. The filling should be bubbling at the edges."
+      },
+      {
+        "title": "Cook the broccoli and serve",
+        "text": "When the pie has 5 min left, boil the broccoli over a high heat for 4–5 min until just tender, then drain. Cut the pie in half and serve with the broccoli."
+      }
+    ],
+    "tags": [
+      "comfort",
+      "freezable"
+    ],
+    "basedOn": "RecipeTin Eats — Chicken & leek pie; Cranswick chicken, bacon & leek pie (adapted to a single puff lid for 2)"
+  },
+  {
+    "id": "br_toad_in_the_hole",
+    "title": "Toad in the Hole with Sticky Red Onion Gravy",
+    "icon": "🌭",
+    "cuisine": "British",
+    "category": "treat",
+    "protein": "pork",
+    "time": 60,
+    "servings": 2,
+    "equipment": [
+      "oven",
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "sausages",
+        "q": 6,
+        "t": "6 pork sausages"
+      },
+      {
+        "i": "plain_flour",
+        "q": 70,
+        "t": "70g"
+      },
+      {
+        "i": "eggs",
+        "q": 2,
+        "t": "2"
+      },
+      {
+        "i": "milk",
+        "q": 100,
+        "t": "100ml"
+      },
+      {
+        "i": "oil",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "red_onion",
+        "q": 2,
+        "t": "2, thinly sliced"
+      },
+      {
+        "i": "butter",
+        "q": 15,
+        "t": "15g"
+      },
+      {
+        "i": "gravy",
+        "q": 30,
+        "t": "3 tbsp granules"
+      },
+      {
+        "i": "wholegrain_mustard",
+        "q": 5,
+        "t": "1 tsp"
+      },
+      {
+        "i": "carrots",
+        "q": 200,
+        "t": "2, cut into batons"
+      },
+      {
+        "i": "frozen_peas",
+        "q": 100,
+        "t": "100g",
+        "swap": "Cook the peas in a separate small pan of boiling water for 2 min and add them to one plate only."
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "a pinch, plus extra for the veg water"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the veg",
+        "text": "Heat the oven to 220°C (200°C fan). Thinly slice the red onions. Peel the carrots and cut them into batons."
+      },
+      {
+        "title": "Make the batter",
+        "text": "Whisk the flour, eggs and a pinch of salt in a jug. Gradually whisk in the milk until smooth and about as thick as single cream. Leave to rest while the sausages cook."
+      },
+      {
+        "title": "Roast the sausages",
+        "text": "Put the oil and sausages in a roasting tin about 20 x 25cm. Roast on the top shelf for 15 min until browned and the oil is sizzling hot. A really hot tin is what makes the batter rise."
+      },
+      {
+        "title": "Bake the toad",
+        "text": "Working quickly, take the tin out, give the batter a final whisk and pour it around the sausages – it should sizzle. Return to the oven for 25–30 min without opening the door, until puffed, crisp and deep golden."
+      },
+      {
+        "title": "Cook the onions",
+        "text": "While the batter bakes, melt the butter in a saucepan over a medium-low heat. Cook the onions for 15 min, stirring often, until soft and sticky."
+      },
+      {
+        "title": "Finish the gravy",
+        "text": "Add 300ml boiling water to the onions, then stir in the gravy granules and mustard. Simmer for 2 min until thick and glossy, then keep warm on the lowest heat."
+      },
+      {
+        "title": "Cook the veg and serve",
+        "text": "When the toad has 6 min left, boil the carrots in a pan of salted water over a high heat. Add the peas for the final 2 min, then drain. Cut the toad in the hole in half and serve with the veg and plenty of onion gravy."
+      }
+    ],
+    "tags": [
+      "comfort",
+      "kid-friendly"
+    ],
+    "basedOn": "BBC Good Food — Toad in the hole with onion gravy (scaled to 2)"
+  },
+  {
+    "id": "br_steak_chips_peppercorn",
+    "title": "Sirloin Steak & Chips with Peppercorn Sauce & Mushrooms",
+    "icon": "🥩",
+    "cuisine": "British",
+    "category": "treat",
+    "protein": "beef",
+    "time": 50,
+    "servings": 2,
+    "equipment": [
+      "oven",
+      "hob"
+    ],
+    "airFryer": "Air-fry the oiled chips at 200°C for 20–25 min, shaking twice, until golden; the tomatoes can go in for the last 5 min.",
+    "ingredients": [
+      {
+        "i": "sirloin_steak",
+        "q": 454,
+        "t": "2 sirloin steaks (about 227g each)"
+      },
+      {
+        "i": "potatoes",
+        "q": 600,
+        "t": "600g, cut into chunky chips"
+      },
+      {
+        "i": "oil",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "cherry_tomatoes",
+        "q": 150,
+        "t": "150g, on the vine or loose"
+      },
+      {
+        "i": "mushrooms",
+        "q": 125,
+        "t": "125g, sliced",
+        "swap": "The mushrooms are cooked in their own pan and the sauce is made without them, so spoon them onto one plate only."
+      },
+      {
+        "i": "garlic",
+        "q": 1,
+        "t": "1 clove, crushed"
+      },
+      {
+        "i": "butter",
+        "q": 20,
+        "t": "20g"
+      },
+      {
+        "i": "black_pepper",
+        "q": 4,
+        "t": "2 tsp, coarsely crushed"
+      },
+      {
+        "i": "stock_cubes",
+        "q": 0.5,
+        "t": "½ beef cube in 75ml boiling water"
+      },
+      {
+        "i": "double_cream",
+        "q": 100,
+        "t": "100ml"
+      },
+      {
+        "i": "worcestershire",
+        "q": 5,
+        "t": "1 tsp"
+      },
+      {
+        "i": "salt",
+        "q": 3,
+        "t": "a good pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the chips",
+        "text": "Heat the oven to 220°C (200°C fan) and take the steaks out of the fridge. Cut the potatoes into thick chips and pat dry with a clean tea towel. Slice the mushrooms, crush the garlic and coarsely crush the black pepper. Dissolve ½ stock cube in 75ml boiling water."
+      },
+      {
+        "title": "Roast the chips",
+        "text": "Toss the chips on a large baking tray with 1½ tbsp oil and a pinch of salt. Roast on the top shelf for 35–40 min, turning halfway, until golden. Add the tomatoes to a corner of the tray for the last 10 min."
+      },
+      {
+        "title": "Cook the mushrooms",
+        "text": "When the chips have 15 min left, melt half the butter in a small frying pan over a medium-high heat. Fry the mushrooms for 5–6 min until golden and any liquid has gone. Stir in the garlic for 1 min, season with salt and keep warm."
+      },
+      {
+        "title": "Sear the steaks",
+        "text": "Heat a large frying pan over a high heat until smoking. Rub the steaks with the remaining ½ tbsp oil and season with salt, then cook for 2–3 min each side for medium-rare. Move to a board, top with the remaining butter and rest for 5 min."
+      },
+      {
+        "title": "Make the peppercorn sauce",
+        "text": "Turn the steak pan down to medium and toast the crushed pepper for 30 seconds. Pour in the stock and Worcestershire and bubble, scraping up the browned bits, until reduced by half. Stir in the cream and simmer for 2–3 min until it coats a spoon, then add the resting juices."
+      },
+      {
+        "title": "Finish and serve",
+        "text": "Slice the steaks or leave them whole and plate up with the chips and roast tomatoes. Spoon the mushrooms alongside and pour over the peppercorn sauce."
+      }
+    ],
+    "tags": [
+      "fakeaway",
+      "crispy"
+    ],
+    "basedOn": "BBC Good Food — Steak with peppercorn sauce & chips (classic pub-style steak night, scaled to 2)"
+  },
+  {
+    "id": "br_sunday_roast_chicken_for_two",
+    "title": "Roast Chicken for Two with Roasties, Yorkshires & Gravy",
+    "icon": "🍗",
+    "cuisine": "British",
+    "category": "treat",
+    "protein": "chicken",
+    "time": 85,
+    "servings": 2,
+    "equipment": [
+      "oven",
+      "hob"
+    ],
+    "airFryer": "To free up the oven, air-fry the parboiled, oiled potatoes at 200°C for 25–30 min, shaking every 10 min, until crisp and golden.",
+    "ingredients": [
+      {
+        "i": "chicken_legs",
+        "q": 500,
+        "t": "2 chicken legs (about 500g)"
+      },
+      {
+        "i": "potatoes",
+        "q": 600,
+        "t": "600g, peeled and halved"
+      },
+      {
+        "i": "carrots",
+        "q": 250,
+        "t": "3, halved lengthways"
+      },
+      {
+        "i": "broccoli",
+        "q": 200,
+        "t": "200g, in florets"
+      },
+      {
+        "i": "oil",
+        "q": 50,
+        "t": "3½ tbsp"
+      },
+      {
+        "i": "garlic",
+        "q": 4,
+        "t": "4 cloves, unpeeled and bashed"
+      },
+      {
+        "i": "lemon",
+        "q": 1,
+        "t": "1, halved"
+      },
+      {
+        "i": "mixed_herbs",
+        "q": 2,
+        "t": "1 tsp",
+        "opt": true
+      },
+      {
+        "i": "honey",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "plain_flour",
+        "q": 50,
+        "t": "50g"
+      },
+      {
+        "i": "eggs",
+        "q": 1,
+        "t": "1"
+      },
+      {
+        "i": "milk",
+        "q": 60,
+        "t": "60ml"
+      },
+      {
+        "i": "gravy",
+        "q": 25,
+        "t": "2½ tbsp granules"
+      },
+      {
+        "i": "salt",
+        "q": 4,
+        "t": "to season"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "a pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the veg",
+        "text": "Heat the oven to 220°C (200°C fan). Peel and halve the potatoes, halve the carrots lengthways and cut the broccoli into florets. Bash the unpeeled garlic cloves and halve the lemon."
+      },
+      {
+        "title": "Make the Yorkshire batter",
+        "text": "Whisk the flour, egg and a pinch of salt in a jug. Gradually whisk in the milk until smooth. Leave to rest at room temperature until needed."
+      },
+      {
+        "title": "Roast the chicken",
+        "text": "Rub the chicken legs with 1 tsp oil, the mixed herbs (optional), salt and pepper. Sit them in a roasting tin with the lemon halves and garlic. Roast on the top shelf for 45–50 min until the skin is crisp and the juices run clear."
+      },
+      {
+        "title": "Parboil the potatoes",
+        "text": "When the chicken has been in for 15 min, boil the potatoes in salted water for 8 min. Meanwhile, heat 2 tbsp oil in a second tray in the oven for 5 min. Drain the potatoes, steam for 2 min, then shake in the colander to rough up the edges."
+      },
+      {
+        "title": "Roast the potatoes and carrots",
+        "text": "Tip the potatoes into the hot oil, turn to coat and roast on the middle shelf for 40 min, turning once, until crunchy. At the same time, toss the carrots with the honey, 1 tsp oil and a pinch of salt and add them to the chicken tin."
+      },
+      {
+        "title": "Bake the Yorkshires",
+        "text": "When the chicken is done, lift it and the carrots onto a plate and cover with foil to rest. Put ½ tsp oil in each of 4 holes of a muffin tin and heat in the oven for 5 min. Pour in the batter (it should sizzle) and bake for 18–20 min without opening the door, until risen and crisp."
+      },
+      {
+        "title": "Make the gravy",
+        "text": "While the Yorkshires bake, squeeze the soft garlic out of its skins into the chicken tin and squeeze in the roasted lemon. Add 300ml boiling water, scrape up the sticky bits, then strain into a small saucepan. Whisk in the gravy granules over a medium heat and simmer for 1–2 min until thick."
+      },
+      {
+        "title": "Cook the broccoli and serve",
+        "text": "For the last 4 min, boil the broccoli in a pan of salted water until just tender, then drain. Pile everything onto plates and pour over plenty of gravy."
+      }
+    ],
+    "tags": [
+      "comfort"
+    ],
+    "basedOn": "Tesco Real Food — One-tray roast dinner; BBC Good Food — Yorkshire puddings for two (roast scaled down using chicken legs)"
+  },
+  {
+    "id": "br_hunters_chicken",
+    "title": "Hunter's Chicken with BBQ Sauce, Cheddar & Paprika Wedges",
+    "icon": "🧀",
+    "cuisine": "British",
+    "category": "treat",
+    "protein": "chicken",
+    "time": 50,
+    "servings": 2,
+    "equipment": [
+      "oven",
+      "hob"
+    ],
+    "airFryer": "Air-fry the wedges at 200°C for 20–22 min, shaking halfway; the bacon-wrapped chicken can then go in at 190°C for 18–20 min before adding the sauce and cheese for a final 3 min.",
+    "ingredients": [
+      {
+        "i": "chicken_breast",
+        "q": 350,
+        "t": "2 breasts (350g)"
+      },
+      {
+        "i": "bacon",
+        "q": 100,
+        "t": "4 rashers"
+      },
+      {
+        "i": "cheddar",
+        "q": 60,
+        "t": "60g, grated"
+      },
+      {
+        "i": "potatoes",
+        "q": 500,
+        "t": "500g, cut into wedges"
+      },
+      {
+        "i": "oil",
+        "q": 20,
+        "t": "4 tsp"
+      },
+      {
+        "i": "smoked_paprika",
+        "q": 4,
+        "t": "2 tsp"
+      },
+      {
+        "i": "tomato_puree",
+        "q": 45,
+        "t": "3 tbsp"
+      },
+      {
+        "i": "honey",
+        "q": 20,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "worcestershire",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "garlic",
+        "q": 1,
+        "t": "1 clove, crushed"
+      },
+      {
+        "i": "sweetcorn",
+        "q": 150,
+        "t": "150g",
+        "swap": "The corn is a side: cook half the amount (75g), toss with half the butter and add it to one plate only."
+      },
+      {
+        "i": "butter",
+        "q": 10,
+        "t": "10g"
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "a pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the chicken",
+        "text": "Heat the oven to 220°C (200°C fan). Cut the potatoes into wedges, crush the garlic and grate the cheddar. Wrap each chicken breast in 2 rashers of bacon, tucking the ends underneath."
+      },
+      {
+        "title": "Roast the wedges",
+        "text": "Toss the wedges on a baking tray with 1 tbsp oil, 1 tsp smoked paprika and a pinch of salt. Roast on the top shelf for 35–40 min, turning halfway, until golden and crisp at the edges."
+      },
+      {
+        "title": "Bake the chicken",
+        "text": "When the wedges have been in for 15 min, put the chicken in a small ovenproof dish and rub with the remaining 1 tsp oil. Bake on the middle shelf for 20–25 min until the bacon is crisp and the chicken is cooked through with no pink in the middle."
+      },
+      {
+        "title": "Make the BBQ sauce",
+        "text": "While the chicken bakes, mix the tomato purée, honey, Worcestershire, garlic, the remaining 1 tsp paprika and 4 tbsp water in a small pan. Simmer over a low heat for 3–4 min, stirring, until thick and glossy. Add a splash more water if it gets too stiff to spoon."
+      },
+      {
+        "title": "Add the sauce and cheese",
+        "text": "Spoon the BBQ sauce over the chicken and scatter with the cheddar. Return to the oven for 5 min until the cheese is melted and bubbling."
+      },
+      {
+        "title": "Cook the corn and serve",
+        "text": "Meanwhile, boil the sweetcorn in a small pan of water for 3 min, then drain and toss with the butter. Serve the chicken with the wedges and buttery corn."
+      }
+    ],
+    "tags": [
+      "fakeaway",
+      "kid-friendly"
+    ],
+    "basedOn": "Kitchen Sanctuary — Hunter's chicken (pub classic; BBQ sauce made from storecupboard)"
+  },
+  {
+    "id": "br_halloumi_burger",
+    "title": "Crispy Halloumi Burgers with Sweet Chilli & Carrot Slaw",
+    "icon": "🍔",
+    "cuisine": "British",
+    "category": "treat",
+    "protein": "veggie",
+    "time": 30,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "airFryer": "Air-fry the floured halloumi slices at 200°C for 6–8 min, turning once, until golden; the pepper strips can go in alongside.",
+    "ingredients": [
+      {
+        "i": "halloumi",
+        "q": 225,
+        "t": "1 block (225g), cut into 4 thick slices"
+      },
+      {
+        "i": "plain_flour",
+        "q": 10,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "smoked_paprika",
+        "q": 2,
+        "t": "1 tsp",
+        "opt": true
+      },
+      {
+        "i": "oil",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "peppers",
+        "q": 1,
+        "t": "1, sliced into strips"
+      },
+      {
+        "i": "burger_buns",
+        "q": 2,
+        "t": "2 brioche buns"
+      },
+      {
+        "i": "sweet_chilli_sauce",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "greek_yogurt",
+        "q": 80,
+        "t": "5 tbsp"
+      },
+      {
+        "i": "garlic",
+        "q": 1,
+        "t": "1 small clove, grated"
+      },
+      {
+        "i": "carrots",
+        "q": 120,
+        "t": "1 large, grated"
+      },
+      {
+        "i": "red_onion",
+        "q": 0.5,
+        "t": "½, very thinly sliced"
+      },
+      {
+        "i": "lemon",
+        "q": 0.5,
+        "t": "½, juiced"
+      },
+      {
+        "i": "little_gem",
+        "q": 1,
+        "t": "1, leaves separated"
+      },
+      {
+        "i": "salt",
+        "q": 1,
+        "t": "a pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the veg",
+        "text": "Grate the carrot and very thinly slice the red onion. Slice the pepper into strips, grate the garlic and separate the little gem leaves. Cut the halloumi into 4 thick slices and pat dry. Juice the lemon half."
+      },
+      {
+        "title": "Mix the slaw and yogurt",
+        "text": "Toss the red onion with half the lemon juice and a pinch of salt and leave for 5 min to soften. Mix the yogurt with the garlic and the rest of the lemon juice. Stir the carrot and onion together with 2 tbsp of the garlic yogurt."
+      },
+      {
+        "title": "Char the peppers",
+        "text": "Heat ½ tbsp oil in a large frying pan over a high heat. Fry the pepper strips for 5–6 min until soft and charred in places, then tip onto a plate."
+      },
+      {
+        "title": "Fry the halloumi",
+        "text": "Mix the flour with the smoked paprika (optional) and dust the halloumi in it. Add the remaining ½ tbsp oil to the pan over a medium-high heat and fry the slices for 2 min each side until deep golden. Drizzle over half the sweet chilli sauce so it turns sticky, then lift out."
+      },
+      {
+        "title": "Toast the buns",
+        "text": "Halve the buns and toast them cut-side down in the same pan over a medium heat. They need about 30 seconds, until lightly golden."
+      },
+      {
+        "title": "Build the burgers",
+        "text": "Spread the bun bases with garlic yogurt and add the little gem leaves, peppers and two slices of halloumi each. Drizzle over the remaining sweet chilli sauce and add the lids. Serve with the slaw on the side."
+      }
+    ],
+    "tags": [
+      "quick",
+      "fakeaway",
+      "crispy"
+    ],
+    "basedOn": "HelloFresh UK — Halloumi burger; Food & Travel — Halloumi burgers with lemon (adapted with sweet chilli and slaw)"
+  },
+  {
+    "id": "br_minced_beef_onion_pie",
+    "title": "Minced Beef & Onion Puff Pie with Mash, Peas & Gravy",
+    "icon": "🥧",
+    "cuisine": "British",
+    "category": "treat",
+    "protein": "beef",
+    "time": 60,
+    "servings": 2,
+    "equipment": [
+      "hob",
+      "oven"
+    ],
+    "ingredients": [
+      {
+        "i": "beef_mince",
+        "q": 250,
+        "t": "250g"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, finely chopped"
+      },
+      {
+        "i": "carrots",
+        "q": 80,
+        "t": "1, finely diced"
+      },
+      {
+        "i": "oil",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "plain_flour",
+        "q": 10,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "tomato_puree",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "worcestershire",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "stock_cubes",
+        "q": 1,
+        "t": "1 beef cube in 300ml boiling water"
+      },
+      {
+        "i": "gravy",
+        "q": 8,
+        "t": "2 heaped tsp granules"
+      },
+      {
+        "i": "puff_pastry",
+        "q": 160,
+        "t": "½ sheet"
+      },
+      {
+        "i": "eggs",
+        "q": 1,
+        "t": "1, beaten, to glaze"
+      },
+      {
+        "i": "potatoes",
+        "q": 500,
+        "t": "500g, peeled and chopped"
+      },
+      {
+        "i": "butter",
+        "q": 20,
+        "t": "20g"
+      },
+      {
+        "i": "milk",
+        "q": 40,
+        "t": "3 tbsp"
+      },
+      {
+        "i": "frozen_peas",
+        "q": 150,
+        "t": "150g",
+        "swap": "The peas are a side: cook 75g in their own small pan of boiling water for 3 min and serve them on one plate only."
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "a pinch, plus extra for the potato water"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "a pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the veg",
+        "text": "Heat the oven to 200°C (180°C fan) and take the pastry out of the fridge. Dissolve the stock cube in 300ml boiling water. Finely chop the onion, finely dice the carrot, and peel and chop the potatoes."
+      },
+      {
+        "title": "Brown the mince",
+        "text": "Heat the oil in a frying pan over a high heat. Brown the mince for 5 min, breaking it up, until no pink remains. Add the onion and carrot and cook for 5 min until soft."
+      },
+      {
+        "title": "Simmer the filling",
+        "text": "Stir in the flour and tomato purée for 1 min, then add the Worcestershire and 200ml of the stock. Simmer over a medium heat for 10 min until rich and thick. Season with pepper, spoon into a small pie dish and leave to cool for 5 min."
+      },
+      {
+        "title": "Top and bake the pie",
+        "text": "Lay the pastry over the filling and press the edges onto the rim with a fork. Brush with the beaten egg and cut a small steam hole in the middle. Bake on the middle shelf for 25 min until well risen and deep golden."
+      },
+      {
+        "title": "Make the mash",
+        "text": "While the pie bakes, boil the potatoes in a large pan of salted water for 15 min until a knife slides in easily. Drain, then mash with the butter and milk until smooth. Season with salt and pepper."
+      },
+      {
+        "title": "Make the gravy",
+        "text": "Bring the remaining 100ml stock to a simmer in a small pan. Whisk in the gravy granules and bubble for 1 min until thick and glossy."
+      },
+      {
+        "title": "Cook the peas and serve",
+        "text": "Boil the peas in a small pan of water for 3 min, then drain. Serve the pie with the mash, peas and gravy."
+      }
+    ],
+    "tags": [
+      "comfort",
+      "freezable"
+    ],
+    "basedOn": "Classic British minced beef & onion pie (BBC Good Food / chip-shop style pie, mash & peas), scaled to 2"
+  },
+  {
+    "id": "br_fish_pie",
+    "title": "Smoked Haddock, Salmon & Prawn Fish Pie with Cheddar Mash",
+    "icon": "🐠",
+    "cuisine": "British",
+    "category": "treat",
+    "protein": "fish",
+    "time": 60,
+    "servings": 2,
+    "equipment": [
+      "hob",
+      "oven"
+    ],
+    "ingredients": [
+      {
+        "i": "smoked_haddock",
+        "q": 280,
+        "t": "280g"
+      },
+      {
+        "i": "salmon",
+        "q": 1,
+        "t": "1 fillet, skin removed"
+      },
+      {
+        "i": "prawns",
+        "q": 100,
+        "t": "100g, defrosted"
+      },
+      {
+        "i": "spinach",
+        "q": 80,
+        "t": "80g"
+      },
+      {
+        "i": "milk",
+        "q": 350,
+        "t": "350ml"
+      },
+      {
+        "i": "butter",
+        "q": 40,
+        "t": "40g"
+      },
+      {
+        "i": "plain_flour",
+        "q": 25,
+        "t": "2½ tbsp"
+      },
+      {
+        "i": "double_cream",
+        "q": 50,
+        "t": "3 tbsp"
+      },
+      {
+        "i": "lemon",
+        "q": 0.5,
+        "t": "½, zested"
+      },
+      {
+        "i": "wholegrain_mustard",
+        "q": 5,
+        "t": "1 tsp"
+      },
+      {
+        "i": "potatoes",
+        "q": 600,
+        "t": "600g, peeled and chopped"
+      },
+      {
+        "i": "cheddar",
+        "q": 30,
+        "t": "30g, grated"
+      },
+      {
+        "i": "frozen_peas",
+        "q": 150,
+        "t": "150g",
+        "swap": "The peas are a side: cook 75g in their own small pan of boiling water for 3 min and serve them on one plate only."
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "a pinch, plus extra for the potato water"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "a pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the fish and veg",
+        "text": "Heat the oven to 200°C (180°C fan) and boil the kettle. Peel and chop the potatoes, zest the lemon half and grate the cheddar. Put the spinach in a colander, pour over boiling water to wilt it, then squeeze dry. Pat the defrosted prawns dry."
+      },
+      {
+        "title": "Boil the potatoes",
+        "text": "Put the potatoes in a large pan of boiling salted water over a high heat. Cook for 15 min until very tender, then drain and leave to steam dry."
+      },
+      {
+        "title": "Poach the fish",
+        "text": "While the potatoes boil, lay the haddock and salmon in a frying pan and pour over the milk. Bring to a gentle simmer over a medium heat and cook for 4–5 min until the fish just flakes. Lift onto a plate and pour the milk into a jug."
+      },
+      {
+        "title": "Make the sauce",
+        "text": "Melt 25g butter in a saucepan over a medium heat, stir in the flour and cook for 1 min. Gradually whisk in the warm poaching milk, then simmer for 3–4 min, stirring, until it coats a spoon. Stir in the cream, mustard, lemon zest and plenty of pepper."
+      },
+      {
+        "title": "Fill the dish",
+        "text": "Flake the fish into large chunks into a baking dish (about 1 litre), discarding any skin. Scatter over the prawns and spinach, then pour over the sauce."
+      },
+      {
+        "title": "Top with the mash",
+        "text": "Mash the potatoes with the remaining 15g butter and a pinch of salt. Spoon over the filling, rough up the top with a fork and sprinkle with the cheddar."
+      },
+      {
+        "title": "Bake the pie",
+        "text": "Bake on the middle shelf for 25 min until bubbling at the edges and golden on top. Raw prawns will turn pink and cook through in the oven."
+      },
+      {
+        "title": "Cook the peas and serve",
+        "text": "When the pie has 3 min left, boil the peas in a small pan of water, then drain. Leave the pie to settle for a couple of minutes and serve with the peas."
+      }
+    ],
+    "tags": [
+      "comfort",
+      "freezable"
+    ],
+    "basedOn": "BBC Good Food — Fish pie (smoked haddock, salmon & prawn), scaled to 2"
+  },
+  {
+    "id": "br_cottage_pie",
+    "title": "Cottage Pie with Worcestershire Gravy & a Cheddar Mash Crust",
+    "icon": "🥔",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "beef",
+    "time": 60,
+    "servings": 2,
+    "equipment": [
+      "hob",
+      "oven"
+    ],
+    "ingredients": [
+      {
+        "i": "beef_mince",
+        "q": 250,
+        "t": "250g"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, finely chopped"
+      },
+      {
+        "i": "carrots",
+        "q": 120,
+        "t": "1 large, finely diced"
+      },
+      {
+        "i": "oil",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "garlic",
+        "q": 1,
+        "t": "1 clove, crushed"
+      },
+      {
+        "i": "plain_flour",
+        "q": 10,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "tomato_puree",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "worcestershire",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "mixed_herbs",
+        "q": 1,
+        "t": "½ tsp",
+        "opt": true
+      },
+      {
+        "i": "stock_cubes",
+        "q": 1,
+        "t": "1 beef cube in 250ml boiling water"
+      },
+      {
+        "i": "potatoes",
+        "q": 600,
+        "t": "600g, peeled and chopped"
+      },
+      {
+        "i": "butter",
+        "q": 20,
+        "t": "20g"
+      },
+      {
+        "i": "milk",
+        "q": 40,
+        "t": "3 tbsp"
+      },
+      {
+        "i": "cheddar",
+        "q": 30,
+        "t": "30g, grated"
+      },
+      {
+        "i": "frozen_peas",
+        "q": 150,
+        "t": "150g",
+        "swap": "The peas are a side: cook 75g in their own small pan of boiling water for 3 min and serve them on one plate only."
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "a pinch, plus extra for the potato water"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "a pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the veg",
+        "text": "Heat the oven to 200°C (180°C fan). Peel and chop the potatoes, finely chop the onion, finely dice the carrot and crush the garlic. Dissolve the stock cube in 250ml boiling water and grate the cheddar."
+      },
+      {
+        "title": "Boil the potatoes",
+        "text": "Put the potatoes in a large pan of salted water and bring to the boil. Cook for 15 min until tender, then drain and leave to steam dry."
+      },
+      {
+        "title": "Brown the mince",
+        "text": "While the potatoes cook, heat the oil in a large frying pan over a high heat. Fry the mince for 5–6 min, breaking it up with a wooden spoon, until well browned and any liquid has cooked off. The browning is where the flavour comes from."
+      },
+      {
+        "title": "Simmer the filling",
+        "text": "Add the onion, carrot and garlic and cook over a medium heat for 5 min until soft. Stir in the flour, tomato purée and mixed herbs (optional) for 1 min, then pour in the stock and Worcestershire. Simmer for 15 min, stirring now and then, until thick and glossy, then season with pepper."
+      },
+      {
+        "title": "Mash and top",
+        "text": "Mash the potatoes with the butter, milk and a pinch of salt until smooth. Spoon the mince into a small baking dish and spread the mash over the top. Rake with a fork so it crisps up and scatter with the cheddar."
+      },
+      {
+        "title": "Bake the pie",
+        "text": "Bake on the middle shelf for 20 min until golden and bubbling at the edges. Leave to settle for a couple of minutes before serving."
+      },
+      {
+        "title": "Cook the peas and serve",
+        "text": "When the pie has 3 min left, boil the peas in a small pan of water, then drain. Serve the pie with the peas alongside."
+      }
+    ],
+    "tags": [
+      "comfort",
+      "freezable",
+      "kid-friendly"
+    ],
+    "basedOn": "BBC Good Food — Cottage pie (one of the site's most-rated British classics), scaled to 2"
+  },
+  {
+    "id": "br_shepherds_pie",
+    "title": "Lamb Shepherd's Pie with Peas, Herby Gravy & Crispy Mash",
+    "icon": "🐑",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "lamb",
+    "time": 60,
+    "servings": 2,
+    "equipment": [
+      "hob",
+      "oven"
+    ],
+    "ingredients": [
+      {
+        "i": "lamb_mince",
+        "q": 250,
+        "t": "250g"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, finely chopped"
+      },
+      {
+        "i": "carrots",
+        "q": 120,
+        "t": "1 large, diced"
+      },
+      {
+        "i": "garlic",
+        "q": 2,
+        "t": "2 cloves, crushed"
+      },
+      {
+        "i": "plain_flour",
+        "q": 10,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "tomato_puree",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "worcestershire",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "mixed_herbs",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "stock_cubes",
+        "q": 1,
+        "t": "1 lamb or beef cube in 250ml boiling water"
+      },
+      {
+        "i": "frozen_peas",
+        "q": 80,
+        "t": "80g",
+        "swap": "Leave the peas out of the filling. Boil them in a small pan for 3 min and serve them on one plate only."
+      },
+      {
+        "i": "potatoes",
+        "q": 600,
+        "t": "600g, peeled and chopped"
+      },
+      {
+        "i": "butter",
+        "q": 25,
+        "t": "25g"
+      },
+      {
+        "i": "milk",
+        "q": 40,
+        "t": "3 tbsp"
+      },
+      {
+        "i": "broccoli",
+        "q": 200,
+        "t": "200g, in florets"
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "a pinch, plus extra for the potato water"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "a pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the veg",
+        "text": "Heat the oven to 200°C (180°C fan). Peel and chop the potatoes, finely chop the onion, dice the carrot and crush the garlic. Dissolve the stock cube in 250ml boiling water and cut the broccoli into florets."
+      },
+      {
+        "title": "Boil the potatoes",
+        "text": "Put the potatoes in a large pan of salted water and bring to the boil. Cook for 15 min until tender, then drain and leave to steam dry."
+      },
+      {
+        "title": "Brown the lamb",
+        "text": "While the potatoes cook, put the lamb mince in a large dry frying pan over a high heat. It has enough fat of its own. Fry for 6–8 min, breaking it up, until deeply browned. Spoon off any excess fat."
+      },
+      {
+        "title": "Simmer the filling",
+        "text": "Add the onion, carrot and garlic and cook over a medium heat for 5 min until soft. Stir in the flour, tomato purée and mixed herbs, then the stock and Worcestershire. Simmer for 15 min until thick, then stir in the peas, season with pepper and tip into a small baking dish."
+      },
+      {
+        "title": "Mash and top",
+        "text": "Mash the potatoes with the butter, milk and a pinch of salt until smooth. Spoon over the lamb and fluff up the surface with a fork so the peaks crisp."
+      },
+      {
+        "title": "Bake the pie",
+        "text": "Bake on the middle shelf for 20–25 min until the peaks are crisp and golden. Leave to settle for a couple of minutes before serving."
+      },
+      {
+        "title": "Cook the broccoli and serve",
+        "text": "When the pie has 5 min left, boil the broccoli in a pan of salted water until just tender, then drain. Serve the pie with the broccoli."
+      }
+    ],
+    "tags": [
+      "comfort",
+      "freezable"
+    ],
+    "basedOn": "BBC Good Food — Shepherd's pie (classic lamb version), scaled to 2"
+  },
+  {
+    "id": "br_bangers_mash_onion_gravy",
+    "title": "Bangers & Mustard Mash with Red Onion Gravy & Peas",
+    "icon": "🌭",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "pork",
+    "time": 40,
+    "servings": 2,
+    "equipment": [
+      "hob",
+      "oven"
+    ],
+    "airFryer": "Air-fry the sausages at 190°C for 12–14 min, shaking halfway, until browned and cooked through.",
+    "ingredients": [
+      {
+        "i": "sausages",
+        "q": 6,
+        "t": "6 pork sausages"
+      },
+      {
+        "i": "potatoes",
+        "q": 600,
+        "t": "600g, peeled and chopped"
+      },
+      {
+        "i": "butter",
+        "q": 30,
+        "t": "30g"
+      },
+      {
+        "i": "milk",
+        "q": 50,
+        "t": "3–4 tbsp"
+      },
+      {
+        "i": "wholegrain_mustard",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "red_onion",
+        "q": 2,
+        "t": "2, thinly sliced"
+      },
+      {
+        "i": "oil",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "honey",
+        "q": 5,
+        "t": "1 tsp"
+      },
+      {
+        "i": "worcestershire",
+        "q": 5,
+        "t": "1 tsp"
+      },
+      {
+        "i": "gravy",
+        "q": 30,
+        "t": "3 tbsp granules"
+      },
+      {
+        "i": "frozen_peas",
+        "q": 150,
+        "t": "150g",
+        "swap": "The peas are a side: cook 75g in their own small pan of boiling water for 3 min and serve them on one plate only."
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "a pinch, plus extra for the potato water"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the veg",
+        "text": "Heat the oven to 200°C (180°C fan) and boil the kettle. Peel and chop the potatoes and thinly slice the red onions."
+      },
+      {
+        "title": "Bake the sausages",
+        "text": "Put the sausages on a lined baking tray and bake on the middle shelf for 25 min, turning halfway. They're done when browned all over with no pink in the middle."
+      },
+      {
+        "title": "Boil the potatoes",
+        "text": "Meanwhile, put the potatoes in a large pan of salted water and bring to the boil. Cook for 15 min until soft, then drain and leave to steam for a minute."
+      },
+      {
+        "title": "Caramelise the onions",
+        "text": "Heat the oil and half the butter in a saucepan over a medium heat. Add the onions with a pinch of salt and cook for 12–15 min, stirring often, until soft and sticky. Stir in the honey for the last 2 min so they turn jammy."
+      },
+      {
+        "title": "Make the gravy",
+        "text": "Pour 300ml boiling water into the onions, add the Worcestershire and stir in the gravy granules. Simmer for 2 min until thick and glossy, adding a splash more water if needed."
+      },
+      {
+        "title": "Make the mustard mash",
+        "text": "Mash the potatoes with the rest of the butter, the milk and mustard until smooth and creamy. Season with salt to taste."
+      },
+      {
+        "title": "Cook the peas and serve",
+        "text": "Boil the peas in a small pan of water for 3 min, then drain. Pile the mash onto plates, top with the sausages and pour over the onion gravy, with the peas alongside."
+      }
+    ],
+    "tags": [
+      "comfort",
+      "kid-friendly"
+    ],
+    "basedOn": "BBC Good Food — Sausage & mash with onion gravy (classic pub-style bangers & mash)"
+  },
+  {
+    "id": "br_smoky_sausage_bean_casserole",
+    "title": "Smoky Sausage & Butter Bean Casserole with Garlic Baguette",
+    "icon": "🍲",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "pork",
+    "time": 40,
+    "servings": 2,
+    "equipment": [
+      "hob",
+      "oven"
+    ],
+    "ingredients": [
+      {
+        "i": "sausages",
+        "q": 6,
+        "t": "6 pork sausages"
+      },
+      {
+        "i": "oil",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, sliced"
+      },
+      {
+        "i": "peppers",
+        "q": 1,
+        "t": "1, sliced"
+      },
+      {
+        "i": "garlic",
+        "q": 3,
+        "t": "3 cloves (2 crushed, 1 grated for the bread)"
+      },
+      {
+        "i": "smoked_paprika",
+        "q": 4,
+        "t": "2 tsp"
+      },
+      {
+        "i": "chopped_tomatoes",
+        "q": 400,
+        "t": "1 tin"
+      },
+      {
+        "i": "butter_beans",
+        "q": 400,
+        "t": "1 tin, drained"
+      },
+      {
+        "i": "tomato_puree",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "worcestershire",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "stock_cubes",
+        "q": 0.5,
+        "t": "½ chicken cube in 150ml boiling water"
+      },
+      {
+        "i": "spinach",
+        "q": 80,
+        "t": "80g"
+      },
+      {
+        "i": "baguette",
+        "q": 1,
+        "t": "1 part-baked baguette"
+      },
+      {
+        "i": "butter",
+        "q": 20,
+        "t": "20g, softened"
+      },
+      {
+        "i": "salt",
+        "q": 1,
+        "t": "a pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the veg",
+        "text": "Heat the oven to 200°C (180°C fan) for the bread and take the butter out of the fridge. Slice the onion and pepper, crush 2 garlic cloves and grate the third. Dissolve ½ stock cube in 150ml boiling water and drain the butter beans."
+      },
+      {
+        "title": "Brown the sausages",
+        "text": "Heat the oil in a large deep pan or casserole over a medium-high heat. Brown the sausages for 6–8 min, turning, until golden all over. Lift out and cut each one in half on the diagonal."
+      },
+      {
+        "title": "Soften the veg",
+        "text": "Add the onion and pepper to the pan and cook for 5 min until soft and lightly charred. Stir in the crushed garlic and smoked paprika for 1 min until fragrant."
+      },
+      {
+        "title": "Simmer the casserole",
+        "text": "Add the chopped tomatoes, tomato purée, Worcestershire, stock and butter beans, then return the sausages. Bring to a bubble, then simmer over a low-medium heat for 15 min, stirring now and then. It's ready when thick and the sausages are cooked through."
+      },
+      {
+        "title": "Bake the garlic bread",
+        "text": "While it simmers, mash the softened butter with the grated garlic. Cut deep slashes along the baguette and spread the butter inside. Bake for 8–10 min until crisp and golden."
+      },
+      {
+        "title": "Wilt the spinach and serve",
+        "text": "Stir the spinach into the casserole for 1 min until just wilted, then taste and add a pinch of salt if needed. Ladle into bowls and serve with the hot garlic bread for dunking."
+      }
+    ],
+    "tags": [
+      "one-pot",
+      "comfort",
+      "freezable"
+    ],
+    "basedOn": "BBC Good Food — Sausage & butter bean casserole (smoky paprika version)"
+  },
+  {
+    "id": "br_lemon_herb_chicken_traybake",
+    "title": "Lemon, Garlic & Herb Chicken Traybake with Crispy Potatoes",
+    "icon": "🍋",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "chicken",
+    "time": 55,
+    "servings": 2,
+    "equipment": [
+      "oven"
+    ],
+    "airFryer": "Cook the seasoned chicken legs skin-side up at 190°C for 25–28 min until the juices run clear; the potatoes can go alongside if they fit in one layer, shaken halfway.",
+    "ingredients": [
+      {
+        "i": "chicken_legs",
+        "q": 500,
+        "t": "2 chicken legs (about 500g)"
+      },
+      {
+        "i": "potatoes",
+        "q": 450,
+        "t": "450g, cut into 3cm chunks"
+      },
+      {
+        "i": "leeks",
+        "q": 200,
+        "t": "1 leek, cut into 3cm lengths"
+      },
+      {
+        "i": "peppers",
+        "q": 1,
+        "t": "1, cut into chunks"
+      },
+      {
+        "i": "garlic",
+        "q": 4,
+        "t": "4 cloves, bashed"
+      },
+      {
+        "i": "lemon",
+        "q": 1,
+        "t": "1, zested then quartered"
+      },
+      {
+        "i": "oil",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "mixed_herbs",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "smoked_paprika",
+        "q": 2,
+        "t": "1 tsp",
+        "opt": true
+      },
+      {
+        "i": "spinach",
+        "q": 80,
+        "t": "80g"
+      },
+      {
+        "i": "greek_yogurt",
+        "q": 60,
+        "t": "4 tbsp, to serve",
+        "opt": true
+      },
+      {
+        "i": "salt",
+        "q": 3,
+        "t": "a good pinch"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "a pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the veg",
+        "text": "Heat the oven to 220°C (200°C fan). Cut the potatoes into 3cm chunks, the leek into 3cm lengths and the pepper into chunks. Bash the garlic cloves, then zest the lemon and cut it into quarters."
+      },
+      {
+        "title": "Season the tray",
+        "text": "In a large roasting tin, toss the potatoes, garlic and lemon quarters with the oil, mixed herbs, smoked paprika (optional), lemon zest, salt and pepper. Push to the sides and sit the chicken legs in the middle, skin-side up. Rub them in the oily seasoning."
+      },
+      {
+        "title": "Roast the chicken",
+        "text": "Roast on the top shelf for 20 min. Turn the potatoes and tuck the leek and pepper in around the chicken. Roast for 20–25 min more until the skin is crisp and the juices run clear when the thickest part is pierced."
+      },
+      {
+        "title": "Wilt the spinach",
+        "text": "Take the tin out and squeeze the roasted lemon over everything. Scatter in the spinach and toss it through the hot potatoes and juices until it just wilts."
+      },
+      {
+        "title": "Finish and serve",
+        "text": "Season the yogurt (optional) with a pinch of salt. Divide the traybake between plates, spooning over the pan juices, with a dollop of yogurt on the side."
+      }
+    ],
+    "tags": [
+      "traybake",
+      "one-pot"
+    ],
+    "basedOn": "Tesco Real Food — Lemon chicken with rosemary potatoes; Jamie Oliver one-pan chicken traybakes"
+  },
+  {
+    "id": "br_salmon_fishcakes",
+    "title": "Salmon & Spring Onion Fishcakes with Tartare & Lemon Salad",
+    "icon": "🐟",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "fish",
+    "time": 40,
+    "servings": 2,
+    "equipment": [
+      "microwave",
+      "hob"
+    ],
+    "airFryer": "Spray the crumbed fishcakes with oil and air-fry at 200°C for 10–12 min, turning halfway, until golden and hot through.",
+    "ingredients": [
+      {
+        "i": "salmon",
+        "q": 2,
+        "t": "2 fillets, skin removed"
+      },
+      {
+        "i": "potatoes",
+        "q": 350,
+        "t": "350g, peeled and chopped"
+      },
+      {
+        "i": "spring_onions",
+        "q": 3,
+        "t": "3, finely sliced"
+      },
+      {
+        "i": "lemon",
+        "q": 1,
+        "t": "1, zested, then halved"
+      },
+      {
+        "i": "wholegrain_mustard",
+        "q": 5,
+        "t": "1 tsp"
+      },
+      {
+        "i": "plain_flour",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "eggs",
+        "q": 1,
+        "t": "1, beaten"
+      },
+      {
+        "i": "panko",
+        "q": 50,
+        "t": "50g"
+      },
+      {
+        "i": "oil",
+        "q": 30,
+        "t": "2 tbsp, for frying"
+      },
+      {
+        "i": "greek_yogurt",
+        "q": 60,
+        "t": "4 tbsp"
+      },
+      {
+        "i": "gherkins",
+        "q": 20,
+        "t": "1 tbsp, chopped",
+        "swap": "Spoon one portion of the lemony yogurt into a separate dish before stirring in the gherkins."
+      },
+      {
+        "i": "little_gem",
+        "q": 1,
+        "t": "1, leaves torn"
+      },
+      {
+        "i": "cucumber",
+        "q": 0.5,
+        "t": "½, sliced"
+      },
+      {
+        "i": "frozen_peas",
+        "q": 80,
+        "t": "80g",
+        "swap": "Toss the defrosted peas through one portion of the salad only."
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "a pinch, plus extra for the potato water"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the salad and tartare",
+        "text": "Boil the kettle. Peel and chop the potatoes, finely slice the spring onions, chop the gherkins and slice the cucumber. Tear the little gem leaves, then zest the lemon and cut it in half. Cover the peas with boiling water for 2 min, then drain."
+      },
+      {
+        "title": "Boil the potatoes",
+        "text": "Put the potatoes in a pan of boiling salted water over a medium-high heat. Cook for 12 min until soft, then drain well and leave to steam dry for 2 min."
+      },
+      {
+        "title": "Cook the salmon",
+        "text": "While the potatoes boil, put the salmon on a plate, cover and microwave on high for 3–4 min until it flakes easily. Leave to cool slightly."
+      },
+      {
+        "title": "Shape the fishcakes",
+        "text": "Roughly mash the potatoes. Flake in the salmon, add the spring onions, lemon zest, mustard and a pinch of salt and mix gently so you keep some chunks. Shape into 4 thick patties."
+      },
+      {
+        "title": "Crumb the fishcakes",
+        "text": "Put the flour, beaten egg and panko on three separate plates. Dust each fishcake in flour, dip in egg and press into the panko until evenly coated."
+      },
+      {
+        "title": "Fry the fishcakes",
+        "text": "Heat the oil in a large non-stick frying pan over a medium heat. Fry the fishcakes for 3–4 min each side until deep golden, crisp and piping hot in the middle."
+      },
+      {
+        "title": "Make the tartare and serve",
+        "text": "While the fishcakes fry, mix the yogurt with the gherkins and a squeeze of lemon. Toss the little gem, cucumber and peas with the rest of the lemon juice. Serve the fishcakes with the salad and tartare."
+      }
+    ],
+    "tags": [
+      "crispy",
+      "kid-friendly",
+      "quick"
+    ],
+    "basedOn": "BBC Good Food — Salmon fishcakes (consistently top-rated), adapted with panko and yogurt tartare"
+  },
+  {
+    "id": "br_tuna_sweetcorn_jackets",
+    "title": "Crispy Jacket Potatoes with Tuna, Sweetcorn & Cheddar",
+    "icon": "🥔",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "fish",
+    "time": 30,
+    "servings": 2,
+    "equipment": [
+      "microwave",
+      "oven"
+    ],
+    "airFryer": "After microwaving, rub the potatoes with oil and salt and air-fry at 200°C for 10–12 min until the skins are crisp.",
+    "ingredients": [
+      {
+        "i": "potatoes",
+        "q": 600,
+        "t": "2 large baking potatoes (about 300g each)"
+      },
+      {
+        "i": "oil",
+        "q": 5,
+        "t": "1 tsp"
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "a pinch"
+      },
+      {
+        "i": "tinned_tuna",
+        "q": 145,
+        "t": "1 tin, drained"
+      },
+      {
+        "i": "sweetcorn",
+        "q": 100,
+        "t": "100g",
+        "swap": "Mix the tuna filling without the sweetcorn, then stir the corn into one portion only."
+      },
+      {
+        "i": "spring_onions",
+        "q": 2,
+        "t": "2, sliced"
+      },
+      {
+        "i": "greek_yogurt",
+        "q": 80,
+        "t": "5 tbsp"
+      },
+      {
+        "i": "lemon",
+        "q": 0.5,
+        "t": "½, juiced"
+      },
+      {
+        "i": "butter",
+        "q": 15,
+        "t": "15g"
+      },
+      {
+        "i": "cheddar",
+        "q": 40,
+        "t": "40g, grated"
+      },
+      {
+        "i": "little_gem",
+        "q": 1,
+        "t": "1, shredded"
+      },
+      {
+        "i": "cucumber",
+        "q": 0.5,
+        "t": "½, diced"
+      },
+      {
+        "i": "cherry_tomatoes",
+        "q": 100,
+        "t": "100g, halved"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "a pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the filling",
+        "text": "Heat the oven to 220°C (200°C fan) and boil the kettle. Prick the potatoes all over with a fork. Slice the spring onions, dice the cucumber, halve the tomatoes, shred the little gem and grate the cheddar. Cover the sweetcorn with boiling water for 2 min, then drain."
+      },
+      {
+        "title": "Microwave the potatoes",
+        "text": "Microwave the potatoes on high for 8–10 min, turning halfway, until a knife slides in easily. Take care, as they'll be very hot."
+      },
+      {
+        "title": "Crisp the skins",
+        "text": "Rub the hot potatoes with the oil and a pinch of salt and put them straight onto the oven shelf. Bake for 12–15 min until the skins are crisp and crackly."
+      },
+      {
+        "title": "Make the tuna filling",
+        "text": "While the skins crisp, flake the tuna into a bowl with the sweetcorn, spring onions, yogurt, a squeeze of lemon and plenty of pepper. Mix until creamy but still chunky."
+      },
+      {
+        "title": "Make the side salad",
+        "text": "Put the little gem, cucumber and tomatoes in a bowl. Toss with the rest of the lemon juice and a pinch of salt just before serving."
+      },
+      {
+        "title": "Fill and serve",
+        "text": "Split the jackets open with a cross and push the sides to fluff up the middles. Add a knob of butter to each, pile in the tuna mix and scatter over the cheddar. Serve with the salad."
+      }
+    ],
+    "tags": [
+      "quick",
+      "kid-friendly",
+      "light"
+    ],
+    "basedOn": "Classic British jacket potato with tuna & sweetcorn (BBC Good Food microwave-then-oven jacket method)"
+  },
+  {
+    "id": "br_coronation_chicken_jackets",
+    "title": "Coronation Chicken Jacket Potatoes with Cucumber Salad",
+    "icon": "🥔",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "chicken",
+    "time": 35,
+    "servings": 2,
+    "equipment": [
+      "microwave",
+      "oven",
+      "hob"
+    ],
+    "airFryer": "After microwaving, rub the potatoes with oil and salt and air-fry at 200°C for 10–12 min until crisp; the chicken can be air-fried at 190°C for 12–14 min.",
+    "ingredients": [
+      {
+        "i": "potatoes",
+        "q": 600,
+        "t": "2 large baking potatoes"
+      },
+      {
+        "i": "chicken_breast",
+        "q": 300,
+        "t": "2 small breasts (300g)"
+      },
+      {
+        "i": "oil",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "curry_powder",
+        "q": 6,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "turmeric",
+        "q": 1,
+        "t": "½ tsp",
+        "opt": true
+      },
+      {
+        "i": "greek_yogurt",
+        "q": 120,
+        "t": "8 tbsp"
+      },
+      {
+        "i": "honey",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "lemon",
+        "q": 0.5,
+        "t": "½, juiced"
+      },
+      {
+        "i": "spring_onions",
+        "q": 2,
+        "t": "2, sliced"
+      },
+      {
+        "i": "coriander",
+        "q": 10,
+        "t": "a small handful, chopped, to serve",
+        "opt": true,
+        "swap": "Scatter the coriander over one jacket only, or leave it out."
+      },
+      {
+        "i": "little_gem",
+        "q": 1,
+        "t": "1, shredded"
+      },
+      {
+        "i": "cucumber",
+        "q": 0.5,
+        "t": "½, diced"
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "a pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the chicken and salad",
+        "text": "Heat the oven to 220°C (200°C fan) and prick the potatoes all over. Slice the chicken into thin strips and toss with half the curry powder and a pinch of salt. Slice the spring onions, dice the cucumber and shred the little gem. Juice the lemon half and chop the coriander (optional)."
+      },
+      {
+        "title": "Start the jackets",
+        "text": "Microwave the potatoes on high for 8–10 min, turning halfway, until just soft. Rub with 1 tsp oil and a pinch of salt. Bake directly on the oven shelf for 15 min until the skins are crisp."
+      },
+      {
+        "title": "Cook the chicken",
+        "text": "While the jackets bake, heat the remaining 1 tsp oil in a frying pan over a medium-high heat. Fry the chicken for 6–8 min until golden and cooked through with no pink inside. Tip onto a plate to cool for a few minutes."
+      },
+      {
+        "title": "Make the coronation dressing",
+        "text": "Take the pan off the heat and add the rest of the curry powder and the turmeric (optional) for 30 seconds to toast. Scrape into a bowl and stir in the yogurt, honey and a squeeze of lemon until smooth and golden."
+      },
+      {
+        "title": "Mix the filling",
+        "text": "Fold the chicken and most of the spring onions into the dressing. Taste and add a squeeze more lemon if it needs it."
+      },
+      {
+        "title": "Fill and serve",
+        "text": "Split the jackets and fluff up the insides. Spoon in the coronation chicken and scatter with the remaining spring onions and the coriander (optional). Serve with the little gem and cucumber, dressed with the rest of the lemon juice."
+      }
+    ],
+    "tags": [
+      "quick",
+      "light"
+    ],
+    "basedOn": "BBC Good Food — Lighter coronation chicken (yogurt-based) served in jacket potatoes"
+  },
+  {
+    "id": "br_leek_potato_soup_cheese_toasts",
+    "title": "Velvety Leek & Potato Soup with Cheddar & Mustard Toasts",
+    "icon": "🥣",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 35,
+    "servings": 2,
+    "equipment": [
+      "hob",
+      "grill",
+      "blender"
+    ],
+    "ingredients": [
+      {
+        "i": "leeks",
+        "q": 300,
+        "t": "2 leeks (300g), sliced"
+      },
+      {
+        "i": "potatoes",
+        "q": 350,
+        "t": "350g, peeled and diced"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, chopped"
+      },
+      {
+        "i": "butter",
+        "q": 25,
+        "t": "25g"
+      },
+      {
+        "i": "garlic",
+        "q": 1,
+        "t": "1 clove, crushed"
+      },
+      {
+        "i": "stock_cubes",
+        "q": 1,
+        "t": "1 veg cube in 700ml boiling water"
+      },
+      {
+        "i": "double_cream",
+        "q": 50,
+        "t": "3 tbsp"
+      },
+      {
+        "i": "baguette",
+        "q": 1,
+        "t": "1 part-baked baguette, sliced"
+      },
+      {
+        "i": "cheddar",
+        "q": 60,
+        "t": "60g, grated"
+      },
+      {
+        "i": "wholegrain_mustard",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "spring_onions",
+        "q": 1,
+        "t": "1, sliced, to serve",
+        "opt": true,
+        "swap": "Scatter the spring onion over one bowl only."
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "a pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the veg",
+        "text": "Boil the kettle and dissolve the stock cube in 700ml boiling water. Slice the leeks, rinsing out any grit, then dice the potatoes and chop the onion. Crush the garlic, grate the cheddar and slice the spring onion (optional)."
+      },
+      {
+        "title": "Sweat the leeks",
+        "text": "Melt the butter in a large saucepan over a medium-low heat. Add the leeks, onion and garlic, cover with a lid and cook for 8 min, stirring now and then, until very soft but not coloured."
+      },
+      {
+        "title": "Simmer the soup",
+        "text": "Add the potatoes and stock and bring to the boil. Lower to a simmer and cook for 12–15 min until the potatoes break apart when pressed with a spoon."
+      },
+      {
+        "title": "Make the cheese toasts",
+        "text": "While the soup simmers, heat the grill to high. Slice the baguette on the diagonal and toast one side under the grill until golden. Turn over, spread thinly with mustard, top with the cheddar and grill for 2–3 min until bubbling."
+      },
+      {
+        "title": "Blend the soup",
+        "text": "Blitz the soup with a stick blender until silky. Stir in the cream and season with pepper, adding a splash of water if it's too thick."
+      },
+      {
+        "title": "Finish and serve",
+        "text": "Ladle the soup into bowls and scatter with the spring onion (optional). Serve with the cheesy toasts for dunking."
+      }
+    ],
+    "tags": [
+      "quick",
+      "comfort",
+      "freezable"
+    ],
+    "basedOn": "BBC Good Food — Leek & potato soup (one of the site's most popular soups), served with cheese toasts"
+  },
+  {
+    "id": "br_pork_steaks_apple_mustard",
+    "title": "Pork Steaks with Apples, Mustard Cream & Crushed Potatoes",
+    "icon": "🍎",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "pork",
+    "time": 35,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "pork_loin_steaks",
+        "q": 250,
+        "t": "2 pork loin steaks (250g)"
+      },
+      {
+        "i": "apples",
+        "q": 1,
+        "t": "1, cored and cut into wedges"
+      },
+      {
+        "i": "potatoes",
+        "q": 450,
+        "t": "450g, cut into chunks"
+      },
+      {
+        "i": "oil",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "butter",
+        "q": 25,
+        "t": "25g"
+      },
+      {
+        "i": "onion",
+        "q": 0.5,
+        "t": "½, thinly sliced"
+      },
+      {
+        "i": "stock_cubes",
+        "q": 0.5,
+        "t": "½ chicken cube in 100ml boiling water"
+      },
+      {
+        "i": "double_cream",
+        "q": 75,
+        "t": "5 tbsp"
+      },
+      {
+        "i": "wholegrain_mustard",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "honey",
+        "q": 5,
+        "t": "1 tsp",
+        "opt": true
+      },
+      {
+        "i": "broccoli",
+        "q": 200,
+        "t": "200g, in florets"
+      },
+      {
+        "i": "spring_onions",
+        "q": 2,
+        "t": "2, sliced"
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "a pinch, plus extra for the potato water"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "a pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the pork and veg",
+        "text": "Cut the potatoes into chunks and the broccoli into florets. Core the apple and cut it into wedges, thinly slice the onion and slice the spring onions. Dissolve ½ stock cube in 100ml boiling water. Season the pork on both sides with salt and pepper."
+      },
+      {
+        "title": "Boil the potatoes",
+        "text": "Put the potatoes in a pan of boiling salted water and cook for 15 min until tender, adding the broccoli for the last 4 min. Drain and keep warm in the pan with the lid on."
+      },
+      {
+        "title": "Fry the pork",
+        "text": "While the potatoes cook, heat the oil in a large frying pan over a medium-high heat. Fry the pork steaks for 4–5 min each side until golden and cooked through, with clear juices. Move to a plate to rest."
+      },
+      {
+        "title": "Caramelise the apples",
+        "text": "Turn the heat down to medium and add 15g butter, the apple wedges and onion. Cook for 4–5 min, turning, until the apples are golden and just tender. Drizzle with the honey (optional)."
+      },
+      {
+        "title": "Make the mustard sauce",
+        "text": "Pour the stock into the pan and bubble for 1 min, scraping up the sticky bits. Stir in the cream and mustard and simmer for 2 min until it coats the back of a spoon. Return the pork and any resting juices to warm through."
+      },
+      {
+        "title": "Crush and serve",
+        "text": "Lift the broccoli out of the potato pan. Lightly crush the potatoes with the remaining butter, the spring onions and a pinch of salt. Serve the pork with the apples and sauce spooned over, with the crushed potatoes and broccoli alongside."
+      }
+    ],
+    "tags": [
+      "quick"
+    ],
+    "basedOn": "Sainsbury's Magazine — Pork chops with apples & mustard sauce (adapted to loin steaks)"
+  },
+  {
+    "id": "br_beef_stew_dumplings",
+    "title": "Slow-Simmered Beef Stew with Fluffy Herb Dumplings",
+    "icon": "🍲",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "beef",
+    "time": 170,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "diced_beef",
+        "q": 400,
+        "t": "400g"
+      },
+      {
+        "i": "plain_flour",
+        "q": 15,
+        "t": "1½ tbsp"
+      },
+      {
+        "i": "oil",
+        "q": 20,
+        "t": "1½ tbsp"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, chopped"
+      },
+      {
+        "i": "carrots",
+        "q": 200,
+        "t": "2, cut into chunks"
+      },
+      {
+        "i": "garlic",
+        "q": 2,
+        "t": "2 cloves, crushed"
+      },
+      {
+        "i": "tomato_puree",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "worcestershire",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "stock_cubes",
+        "q": 1,
+        "t": "1 beef cube in 500ml boiling water"
+      },
+      {
+        "i": "mixed_herbs",
+        "q": 2,
+        "t": "1 tsp, plus a pinch for the dumplings"
+      },
+      {
+        "i": "mushrooms",
+        "q": 125,
+        "t": "125g, quartered",
+        "swap": "The mushrooms are fried in their own pan, so spoon them onto one bowl only."
+      },
+      {
+        "i": "self_raising_flour",
+        "q": 100,
+        "t": "100g"
+      },
+      {
+        "i": "butter",
+        "q": 60,
+        "t": "60g (50g cold, for the dumplings)"
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "a pinch"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "a pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the beef and veg",
+        "text": "Chop the onion, cut the carrots into chunks and crush the garlic. Dissolve the stock cube in 500ml boiling water and quarter the mushrooms. Toss the beef in the plain flour with a pinch of salt and pepper."
+      },
+      {
+        "title": "Brown the beef",
+        "text": "Heat 1 tbsp oil in a large lidded casserole or deep pan over a high heat. Brown the beef in two batches for 4–5 min each, until well coloured on all sides. Lift out onto a plate."
+      },
+      {
+        "title": "Build the stew",
+        "text": "Turn the heat to medium and add the remaining ½ tbsp oil, the onion and carrots. Cook for 5 min until starting to soften, then stir in the garlic and tomato purée for 1 min. Return the beef with the stock, Worcestershire and 1 tsp mixed herbs and bring to the boil."
+      },
+      {
+        "title": "Simmer the stew",
+        "text": "Turn the heat right down, cover and simmer very gently for 2 hr, stirring now and then, until the beef breaks apart with a spoon. Add a splash of water if it gets too thick. In a slow cooker, cook on low for 7–8 hr instead."
+      },
+      {
+        "title": "Make the dumplings",
+        "text": "About 30 min before the end, grate 50g cold butter into the self-raising flour. Rub together with a pinch of salt and the remaining herbs, then stir in 4–5 tbsp cold water to make a soft, slightly sticky dough. Shape into 6 balls."
+      },
+      {
+        "title": "Steam the dumplings",
+        "text": "Sit the dumplings on top of the bubbling stew, cover and cook for 20–25 min until doubled in size and fluffy all the way through. Don't lift the lid early or they won't rise. In a slow cooker, turn to high and allow 30–40 min."
+      },
+      {
+        "title": "Fry the mushrooms and serve",
+        "text": "While the dumplings steam, melt the remaining butter in a small frying pan over a medium-high heat. Fry the mushrooms for 5 min until golden. Ladle the stew and dumplings into bowls and spoon the mushrooms on top."
+      }
+    ],
+    "tags": [
+      "comfort",
+      "freezable",
+      "one-pot"
+    ],
+    "basedOn": "Hairy Bikers / Tesco Real Food — Beef stew with dumplings (hob or slow cooker)"
+  },
+  {
+    "id": "br_ploughmans_supper",
+    "title": "Ploughman's Supper with Warm Baguette, Cheddar & Pickle",
+    "icon": "🧀",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 25,
+    "servings": 2,
+    "equipment": [
+      "hob",
+      "oven"
+    ],
+    "ingredients": [
+      {
+        "i": "baguette",
+        "q": 2,
+        "t": "2 part-baked baguettes"
+      },
+      {
+        "i": "cheddar",
+        "q": 120,
+        "t": "120g, cut into chunks"
+      },
+      {
+        "i": "eggs",
+        "q": 4,
+        "t": "4"
+      },
+      {
+        "i": "branston_pickle",
+        "q": 60,
+        "t": "4 tbsp",
+        "swap": "Serve the pickle in a little dish on the side so it only goes on one plate."
+      },
+      {
+        "i": "gherkins",
+        "q": 50,
+        "t": "a handful",
+        "opt": true,
+        "swap": "Keep the gherkins in a small dish on the side so they only go on one plate."
+      },
+      {
+        "i": "apples",
+        "q": 1,
+        "t": "1, sliced"
+      },
+      {
+        "i": "cherry_tomatoes",
+        "q": 150,
+        "t": "150g"
+      },
+      {
+        "i": "little_gem",
+        "q": 1,
+        "t": "1, leaves separated"
+      },
+      {
+        "i": "cucumber",
+        "q": 0.5,
+        "t": "½, cut into sticks"
+      },
+      {
+        "i": "red_onion",
+        "q": 0.5,
+        "t": "½, thinly sliced"
+      },
+      {
+        "i": "lemon",
+        "q": 0.5,
+        "t": "½, juiced"
+      },
+      {
+        "i": "butter",
+        "q": 25,
+        "t": "25g"
+      },
+      {
+        "i": "wholegrain_mustard",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "salt",
+        "q": 1,
+        "t": "a pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the board",
+        "text": "Heat the oven according to the baguette pack (usually 200°C, 180°C fan). Thinly slice the red onion, slice the apple and cut the cucumber into sticks. Cut the cheddar into chunks, separate the little gem leaves and juice the lemon half."
+      },
+      {
+        "title": "Bake the bread",
+        "text": "Bake the baguettes for 8–10 min until crisp and golden. Wrap them in a clean tea towel so they stay warm."
+      },
+      {
+        "title": "Boil the eggs",
+        "text": "Meanwhile, lower the eggs into a pan of boiling water over a medium-high heat and cook for 8 min for firm-but-fudgy yolks. Drain and cool under cold water until you can peel them, then halve."
+      },
+      {
+        "title": "Quick-pickle the onion",
+        "text": "Toss the red onion with the lemon juice and a pinch of salt and leave for 5 min until it turns pink and softens. Toss the apple slices in any leftover juice so they don't brown."
+      },
+      {
+        "title": "Build the board and serve",
+        "text": "Arrange the cheddar, eggs, pickle, gherkins (optional), apple, tomatoes, little gem, cucumber and pickled onion on a board or two plates. Put the butter and mustard in little dishes. Slice the warm baguettes and let everyone butter and pile up their own."
+      }
+    ],
+    "tags": [
+      "quick",
+      "light"
+    ],
+    "basedOn": "Classic pub ploughman's lunch (Delicious magazine / BBC Good Food ploughman's), made into a warm supper"
+  },
+  {
+    "id": "br_kedgeree",
+    "title": "Smoked Haddock Kedgeree with Jammy Eggs, Spinach & Lemon",
+    "icon": "🍛",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "fish",
+    "time": 35,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "smoked_haddock",
+        "q": 280,
+        "t": "280g"
+      },
+      {
+        "i": "rice",
+        "q": 150,
+        "t": "150g, rinsed"
+      },
+      {
+        "i": "eggs",
+        "q": 2,
+        "t": "2"
+      },
+      {
+        "i": "milk",
+        "q": 200,
+        "t": "200ml"
+      },
+      {
+        "i": "butter",
+        "q": 20,
+        "t": "20g"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, finely chopped"
+      },
+      {
+        "i": "curry_powder",
+        "q": 6,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "turmeric",
+        "q": 1,
+        "t": "½ tsp",
+        "opt": true
+      },
+      {
+        "i": "spinach",
+        "q": 80,
+        "t": "80g"
+      },
+      {
+        "i": "frozen_peas",
+        "q": 80,
+        "t": "80g",
+        "swap": "Leave the peas out of the rice. Boil them in a small pan for 3 min and stir them into one bowl only."
+      },
+      {
+        "i": "lemon",
+        "q": 1,
+        "t": "1, half juiced, half in wedges"
+      },
+      {
+        "i": "coriander",
+        "q": 10,
+        "t": "a small handful, chopped, to serve",
+        "opt": true,
+        "swap": "Scatter over one bowl only, or leave it out."
+      },
+      {
+        "i": "green_chillies",
+        "q": 5,
+        "t": "1, sliced, to serve",
+        "opt": true,
+        "swap": "Sprinkle the chilli over one bowl only."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the rice and garnishes",
+        "text": "Finely chop the onion and rinse the rice in a sieve until the water runs clear. Juice half the lemon and cut the other half into wedges. Chop the coriander and slice the green chilli (both optional)."
+      },
+      {
+        "title": "Poach the haddock",
+        "text": "Put the haddock in a frying pan, pour over the milk and 200ml water and bring to a gentle simmer over a medium heat. Cook for 5 min until it flakes, then lift out onto a plate. Pour 300ml of the poaching liquid into a jug."
+      },
+      {
+        "title": "Boil the eggs",
+        "text": "At the same time, lower the eggs into a small pan of boiling water and cook for 7 min for jammy yolks. Cool in cold water, then peel and halve."
+      },
+      {
+        "title": "Soften the onion",
+        "text": "Melt the butter in a lidded saucepan over a medium heat and cook the onion for 5 min until soft and golden. Stir in the curry powder and turmeric (optional) for 1 min until fragrant."
+      },
+      {
+        "title": "Cook the rice",
+        "text": "Add the rice and stir to coat in the spiced butter, then pour in the reserved poaching liquid. Bring to the boil, cover and cook on the lowest heat for 10 min until the liquid is absorbed. Scatter the peas on top for the last 3 min and put the lid back on."
+      },
+      {
+        "title": "Fold it together",
+        "text": "Stir the spinach through the hot rice until it wilts. Flake in the haddock in big pieces, discarding any skin. Add the lemon juice and fold gently so the fish stays chunky."
+      },
+      {
+        "title": "Finish and serve",
+        "text": "Spoon into bowls and top with the halved eggs. Scatter over the coriander and green chilli (both optional) and serve with the lemon wedges."
+      }
+    ],
+    "tags": [
+      "quick",
+      "one-pot"
+    ],
+    "basedOn": "BBC Good Food — Smoked haddock kedgeree; Booths — Smoked haddock kedgeree"
+  },
+  {
+    "id": "br_leek_welsh_rarebit",
+    "title": "Leek & Mustard Welsh Rarebit with Tomatoes & Spinach Salad",
+    "icon": "🧀",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 30,
+    "servings": 2,
+    "equipment": [
+      "hob",
+      "grill"
+    ],
+    "ingredients": [
+      {
+        "i": "baguette",
+        "q": 1,
+        "t": "1 part-baked baguette, halved and split"
+      },
+      {
+        "i": "leeks",
+        "q": 150,
+        "t": "1 small leek, finely sliced"
+      },
+      {
+        "i": "butter",
+        "q": 25,
+        "t": "25g"
+      },
+      {
+        "i": "plain_flour",
+        "q": 10,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "milk",
+        "q": 60,
+        "t": "4 tbsp"
+      },
+      {
+        "i": "cheddar",
+        "q": 120,
+        "t": "120g, grated"
+      },
+      {
+        "i": "wholegrain_mustard",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "worcestershire",
+        "q": 15,
+        "t": "1 tbsp (2 tsp for the rarebit, the rest to serve)"
+      },
+      {
+        "i": "eggs",
+        "q": 1,
+        "t": "1 yolk"
+      },
+      {
+        "i": "cherry_tomatoes",
+        "q": 200,
+        "t": "200g, halved"
+      },
+      {
+        "i": "oil",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "spinach",
+        "q": 80,
+        "t": "80g"
+      },
+      {
+        "i": "red_onion",
+        "q": 0.5,
+        "t": "½, thinly sliced"
+      },
+      {
+        "i": "lemon",
+        "q": 0.5,
+        "t": "½, juiced"
+      },
+      {
+        "i": "salt",
+        "q": 1,
+        "t": "a pinch"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "a pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the bread and veg",
+        "text": "Heat the grill to high. Cut the baguette into four pieces and split each one lengthways. Finely slice the leek, thinly slice the red onion, halve the tomatoes and grate the cheddar. Juice the lemon half and separate the egg, keeping the yolk."
+      },
+      {
+        "title": "Grill the tomatoes",
+        "text": "Toss the tomatoes with 1 tsp oil and a pinch of pepper on the grill tray. Grill for 5–6 min until blistered, then tip into a dish and keep warm."
+      },
+      {
+        "title": "Soften the leek",
+        "text": "Melt the butter in a saucepan over a medium heat and cook the leek for 5 min until soft and silky, without browning. Stir often so it doesn't catch."
+      },
+      {
+        "title": "Make the rarebit",
+        "text": "Stir the flour into the leek for 1 min, then add the milk and stir until thick. Take off the heat and beat in the cheddar, mustard, 2 tsp Worcestershire and the egg yolk to make a thick, spreadable paste."
+      },
+      {
+        "title": "Toast and grill",
+        "text": "Toast the baguette pieces cut-side up under the grill until lightly golden. Spread the rarebit thickly right to the edges. Grill for 3–4 min until bubbling and speckled dark brown."
+      },
+      {
+        "title": "Make the salad and serve",
+        "text": "Toss the spinach and red onion with the lemon juice, the remaining 1 tsp oil and a pinch of salt. Serve the rarebit straight from the grill with a splash of the remaining Worcestershire, the tomatoes and the salad."
+      }
+    ],
+    "tags": [
+      "quick",
+      "comfort"
+    ],
+    "basedOn": "BBC Good Food — Welsh rarebit; Delicious magazine — leek rarebit (adapted to a supper with salad)"
+  },
+  {
+    "id": "br_bubble_squeak_bacon_eggs",
+    "title": "Bubble & Squeak Cakes with Crispy Bacon & Fried Eggs",
+    "icon": "🍳",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "pork",
+    "time": 35,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "potatoes",
+        "q": 450,
+        "t": "450g, peeled and chopped"
+      },
+      {
+        "i": "leeks",
+        "q": 150,
+        "t": "1 small leek, finely sliced"
+      },
+      {
+        "i": "broccoli",
+        "q": 120,
+        "t": "120g, finely chopped"
+      },
+      {
+        "i": "frozen_peas",
+        "q": 60,
+        "t": "60g",
+        "swap": "Boil the peas in a separate small pan for 3 min. Shape 2 cakes from the mash first, then fold the peas into the rest for the other 2."
+      },
+      {
+        "i": "butter",
+        "q": 25,
+        "t": "25g"
+      },
+      {
+        "i": "cheddar",
+        "q": 30,
+        "t": "30g, grated"
+      },
+      {
+        "i": "plain_flour",
+        "q": 10,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "oil",
+        "q": 22,
+        "t": "1½ tbsp"
+      },
+      {
+        "i": "bacon",
+        "q": 150,
+        "t": "6 rashers"
+      },
+      {
+        "i": "eggs",
+        "q": 2,
+        "t": "2"
+      },
+      {
+        "i": "tomato_puree",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "worcestershire",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "honey",
+        "q": 5,
+        "t": "1 tsp"
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "a pinch, plus extra for the potato water"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "a pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the veg and relish",
+        "text": "Peel and chop the potatoes, finely slice the leek and finely chop the broccoli. Grate the cheddar. In a small bowl, stir the tomato purée, Worcestershire and honey with 1 tbsp water to make a quick tangy relish."
+      },
+      {
+        "title": "Boil the potatoes",
+        "text": "Boil the potatoes in salted water for 12–15 min until tender, adding the broccoli and peas for the last 3 min. Drain well and leave to steam dry for a couple of minutes."
+      },
+      {
+        "title": "Soften the leek",
+        "text": "While the potatoes cook, melt the butter in a large non-stick frying pan over a medium heat. Cook the leek for 5 min until soft, then tip into the potato pan."
+      },
+      {
+        "title": "Shape the cakes",
+        "text": "Roughly mash the potatoes with the veg, leek, cheddar and plenty of pepper, keeping it chunky. Shape into 4 thick cakes and dust lightly in the flour."
+      },
+      {
+        "title": "Fry the cakes",
+        "text": "Wipe out the frying pan and heat 1 tbsp oil over a medium heat. Fry the cakes for 4–5 min each side without moving them, until a deep golden crust forms."
+      },
+      {
+        "title": "Fry the bacon and eggs",
+        "text": "While the cakes fry, dry-fry the bacon in a second pan over a medium-high heat for 6–8 min until crisp. Move it to a plate. Add the remaining ½ tbsp oil and fry the eggs for 2–3 min until the whites are set and the yolks still runny."
+      },
+      {
+        "title": "Finish and serve",
+        "text": "Put two cakes on each plate and top with the bacon and a fried egg. Serve with the relish on the side."
+      }
+    ],
+    "tags": [
+      "comfort",
+      "crispy"
+    ],
+    "basedOn": "BBC Good Food — Bubble & squeak cakes with bacon & fried egg"
+  },
+  {
+    "id": "br_creamy_chicken_leek_mushroom",
+    "title": "Creamy Chicken, Leek & Mushroom Pan with Crushed Potatoes",
+    "icon": "🍗",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "chicken",
+    "time": 35,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "chicken_thighs",
+        "q": 350,
+        "t": "350g"
+      },
+      {
+        "i": "potatoes",
+        "q": 450,
+        "t": "450g, cut into chunks"
+      },
+      {
+        "i": "leeks",
+        "q": 200,
+        "t": "1 leek, sliced"
+      },
+      {
+        "i": "mushrooms",
+        "q": 125,
+        "t": "125g, sliced",
+        "swap": "The mushrooms are cooked in their own pan, so spoon them onto one plate only."
+      },
+      {
+        "i": "garlic",
+        "q": 2,
+        "t": "2 cloves, crushed"
+      },
+      {
+        "i": "oil",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "butter",
+        "q": 25,
+        "t": "25g"
+      },
+      {
+        "i": "stock_cubes",
+        "q": 0.5,
+        "t": "½ chicken cube in 150ml boiling water"
+      },
+      {
+        "i": "double_cream",
+        "q": 100,
+        "t": "100ml"
+      },
+      {
+        "i": "wholegrain_mustard",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "mixed_herbs",
+        "q": 1,
+        "t": "½ tsp",
+        "opt": true
+      },
+      {
+        "i": "spinach",
+        "q": 60,
+        "t": "60g"
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "a pinch, plus extra for the potato water"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "a pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the chicken and veg",
+        "text": "Cut the potatoes into chunks, slice the leek and mushrooms, and crush the garlic. Dissolve ½ stock cube in 150ml boiling water. Season the chicken with salt and pepper."
+      },
+      {
+        "title": "Boil the potatoes",
+        "text": "Put the potatoes in a pan of boiling salted water and cook for 15 min until tender. Drain and keep warm in the pan."
+      },
+      {
+        "title": "Brown the chicken",
+        "text": "While the potatoes cook, heat the oil in a large frying pan over a medium-high heat. Fry the chicken thighs smooth-side down first for 5 min each side, until golden and cooked through with no pink inside. Lift onto a plate."
+      },
+      {
+        "title": "Cook the mushrooms",
+        "text": "Melt a small knob of the butter in a small frying pan over a high heat. Fry the mushrooms for 5 min until golden, then keep warm in the pan."
+      },
+      {
+        "title": "Make the creamy sauce",
+        "text": "Turn the chicken pan down to medium and add 15g butter, the leek, garlic and mixed herbs (optional). Cook for 5 min until soft, then pour in the stock and bubble for 2 min. Stir in the cream and mustard and simmer until it coats a spoon. Return the chicken and stir through the spinach until wilted."
+      },
+      {
+        "title": "Crush and serve",
+        "text": "Lightly crush the potatoes with the remaining butter and a pinch of salt. Serve with the chicken and plenty of sauce, spooning the mushrooms over the top."
+      }
+    ],
+    "tags": [
+      "quick",
+      "comfort",
+      "one-pot"
+    ],
+    "basedOn": "BBC Good Food — Creamy chicken, leek & mushroom (pie-filling-style one-pan supper)"
+  },
+  {
+    "id": "br_glamorgan_sausages",
+    "title": "Glamorgan Sausages with Tomato Chutney & Crushed Potatoes",
+    "icon": "🌭",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 40,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "airFryer": "Brush the chilled Glamorgan sausages with oil and air-fry at 190°C for 10–12 min, turning halfway, until golden and crisp.",
+    "ingredients": [
+      {
+        "i": "leeks",
+        "q": 150,
+        "t": "1 small leek, very finely chopped"
+      },
+      {
+        "i": "butter",
+        "q": 25,
+        "t": "25g"
+      },
+      {
+        "i": "panko",
+        "q": 90,
+        "t": "90g"
+      },
+      {
+        "i": "cheddar",
+        "q": 100,
+        "t": "100g, grated"
+      },
+      {
+        "i": "wholegrain_mustard",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "mixed_herbs",
+        "q": 1,
+        "t": "½ tsp",
+        "opt": true
+      },
+      {
+        "i": "eggs",
+        "q": 2,
+        "t": "2 (1 separated)"
+      },
+      {
+        "i": "oil",
+        "q": 22,
+        "t": "1½ tbsp"
+      },
+      {
+        "i": "potatoes",
+        "q": 400,
+        "t": "400g, cut into chunks"
+      },
+      {
+        "i": "cherry_tomatoes",
+        "q": 200,
+        "t": "200g, halved"
+      },
+      {
+        "i": "red_onion",
+        "q": 0.5,
+        "t": "½, finely chopped"
+      },
+      {
+        "i": "honey",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "spinach",
+        "q": 100,
+        "t": "100g"
+      },
+      {
+        "i": "garlic",
+        "q": 1,
+        "t": "1 clove, sliced"
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "a pinch, plus extra for the potato water"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the veg",
+        "text": "Very finely chop the leek and the red onion half, halve the tomatoes and slice the garlic. Grate the cheddar and cut the potatoes into chunks. Separate one of the eggs."
+      },
+      {
+        "title": "Boil the potatoes",
+        "text": "Put the potatoes in a pan of boiling salted water and cook for 15 min until tender. Drain and keep warm in the pan."
+      },
+      {
+        "title": "Soften the leek",
+        "text": "While the potatoes cook, melt 15g butter in a frying pan over a medium heat. Cook the leek for 4–5 min until soft, then tip into a bowl and wipe out the pan."
+      },
+      {
+        "title": "Shape the sausages",
+        "text": "Add 60g of the panko, the cheddar, mustard, mixed herbs (optional), the whole egg and the yolk to the leek. Mix until it holds together when squeezed, then shape into 6 small sausages. Beat the egg white, dip in each sausage, then roll in the rest of the panko."
+      },
+      {
+        "title": "Make the tomato chutney",
+        "text": "In a small pan over a medium heat, cook the tomatoes, red onion and honey with a pinch of salt for 8–10 min. Squash the tomatoes as they soften and stir now and then until thick and jammy."
+      },
+      {
+        "title": "Fry the sausages",
+        "text": "Heat 1 tbsp oil in the frying pan over a medium heat. Fry the sausages for 6–8 min, turning often, until crisp and golden all over and the cheese is just starting to ooze. Lift onto a plate."
+      },
+      {
+        "title": "Wilt the spinach and serve",
+        "text": "Add the remaining ½ tbsp oil and the garlic to the pan for 30 seconds, then the spinach for 1–2 min until wilted. Lightly crush the potatoes with the remaining butter. Serve the sausages on the potatoes with the spinach and a spoonful of chutney."
+      }
+    ],
+    "tags": [
+      "crispy",
+      "comfort"
+    ],
+    "basedOn": "BBC Good Food / Felicity Cloake — Glamorgan sausages (Welsh cheese & leek), adapted with cheddar and panko"
+  },
+  {
+    "id": "br_lemon_butter_salmon_crushed_potatoes",
+    "title": "Crispy-Skin Salmon with Lemon Butter & Leek Crushed Potatoes",
+    "icon": "🐟",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "fish",
+    "time": 30,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "airFryer": "Air-fry the oiled, seasoned salmon skin-side up at 200°C for 8–10 min until it flakes easily.",
+    "ingredients": [
+      {
+        "i": "salmon",
+        "q": 2,
+        "t": "2 fillets, skin on"
+      },
+      {
+        "i": "potatoes",
+        "q": 450,
+        "t": "450g, cut into chunks"
+      },
+      {
+        "i": "leeks",
+        "q": 150,
+        "t": "1 small leek, sliced"
+      },
+      {
+        "i": "frozen_peas",
+        "q": 120,
+        "t": "120g",
+        "swap": "Cook the peas in a separate small pan of boiling water for 2–3 min and stir them into one portion of the crushed potatoes only."
+      },
+      {
+        "i": "butter",
+        "q": 35,
+        "t": "35g"
+      },
+      {
+        "i": "oil",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "lemon",
+        "q": 1,
+        "t": "1, zested and juiced"
+      },
+      {
+        "i": "garlic",
+        "q": 1,
+        "t": "1 clove, crushed"
+      },
+      {
+        "i": "spring_onions",
+        "q": 2,
+        "t": "2, sliced"
+      },
+      {
+        "i": "wholegrain_mustard",
+        "q": 5,
+        "t": "1 tsp"
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "a pinch, plus extra for the potato water"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "a pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the salmon and veg",
+        "text": "Cut the potatoes into chunks, slice the leek and spring onions and crush the garlic. Zest and juice the lemon. Pat the salmon skin really dry with kitchen paper and season with salt."
+      },
+      {
+        "title": "Boil the potatoes",
+        "text": "Put the potatoes in a pan of boiling salted water and cook for 15 min until tender, adding the peas for the last 2 min. Drain and keep in the pan."
+      },
+      {
+        "title": "Soften the leek",
+        "text": "While the potatoes cook, melt 15g butter in a small pan over a medium heat. Cook the leek for 5 min until soft and sweet, then stir in the mustard."
+      },
+      {
+        "title": "Fry the salmon",
+        "text": "When the potatoes have 8 min left, heat the oil in a non-stick frying pan over a medium-high heat. Lay the salmon in skin-side down and press for 10 seconds so it doesn't curl. Cook for 5–6 min until the skin is crisp and the flesh is opaque two-thirds of the way up, then flip for 1 min."
+      },
+      {
+        "title": "Make the lemon butter",
+        "text": "Lift the salmon onto a plate and turn the heat to low. Add the remaining butter and the garlic and cook until it foams and smells nutty. Take off the heat and stir in the lemon juice and zest."
+      },
+      {
+        "title": "Crush and serve",
+        "text": "Roughly crush the potatoes and peas with the leek, spring onions, a pinch of pepper and 1 tbsp of the lemon butter. Serve the salmon on top with the rest of the lemon butter spooned over."
+      }
+    ],
+    "tags": [
+      "quick"
+    ],
+    "basedOn": "BBC Good Food — Salmon with crushed potatoes & lemon butter sauce"
+  },
+  {
+    "id": "br_honey_mustard_chicken_traybake",
+    "title": "Sticky Honey & Mustard Chicken Traybake with Sweet Potato",
+    "icon": "🍯",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "chicken",
+    "time": 50,
+    "servings": 2,
+    "equipment": [
+      "oven"
+    ],
+    "airFryer": "Air-fry the veg at 200°C for 10 min, then add the glazed chicken and cook for 15–18 min more, shaking halfway, until sticky and cooked through.",
+    "ingredients": [
+      {
+        "i": "chicken_thighs",
+        "q": 400,
+        "t": "400g"
+      },
+      {
+        "i": "sweet_potato",
+        "q": 400,
+        "t": "1 large (400g), in chunks"
+      },
+      {
+        "i": "carrots",
+        "q": 200,
+        "t": "2, cut into batons"
+      },
+      {
+        "i": "red_onion",
+        "q": 1,
+        "t": "1, cut into wedges"
+      },
+      {
+        "i": "oil",
+        "q": 22,
+        "t": "1½ tbsp"
+      },
+      {
+        "i": "honey",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "wholegrain_mustard",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "garlic",
+        "q": 2,
+        "t": "2 cloves, crushed"
+      },
+      {
+        "i": "soy_sauce",
+        "q": 5,
+        "t": "1 tsp"
+      },
+      {
+        "i": "mixed_herbs",
+        "q": 1,
+        "t": "½ tsp",
+        "opt": true
+      },
+      {
+        "i": "broccoli",
+        "q": 200,
+        "t": "200g, in florets"
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "a pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the veg and glaze",
+        "text": "Heat the oven to 220°C (200°C fan). Cut the sweet potato into chunks, the carrots into batons, the red onion into wedges and the broccoli into florets. Crush the garlic and mix it with the honey, mustard and soy sauce in a bowl to make the glaze."
+      },
+      {
+        "title": "Start the veg",
+        "text": "In a large roasting tin, toss the sweet potato, carrots and red onion with 1 tbsp oil, the mixed herbs (optional) and salt. Spread out in a single layer and roast on the top shelf for 10 min."
+      },
+      {
+        "title": "Add the chicken",
+        "text": "Toss the chicken in half the glaze, then nestle it among the veg. Roast for 15 min."
+      },
+      {
+        "title": "Glaze and add the broccoli",
+        "text": "Brush the chicken with the remaining glaze. Toss the broccoli with the remaining ½ tbsp oil and scatter it into the tin. Roast for 10–12 min more, until the chicken is sticky and cooked through with no pink inside and the broccoli is charred at the tips."
+      },
+      {
+        "title": "Finish and serve",
+        "text": "Give everything a stir in the sticky pan juices. Divide between plates and spoon over any glaze left in the tin."
+      }
+    ],
+    "tags": [
+      "traybake",
+      "kid-friendly"
+    ],
+    "basedOn": "BBC Good Food — Honey mustard chicken traybake (one of the site's top-rated traybakes)"
+  },
+  {
+    "id": "br_crispy_chicken_escalopes",
+    "title": "Crispy Parmesan Chicken Escalopes with Garlic Potatoes",
+    "icon": "🍗",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "chicken",
+    "time": 35,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "airFryer": "Spray the crumbed escalopes with oil and air-fry at 200°C for 8–10 min, turning halfway, until golden and cooked through.",
+    "ingredients": [
+      {
+        "i": "chicken_breast",
+        "q": 300,
+        "t": "2 small breasts (300g)"
+      },
+      {
+        "i": "plain_flour",
+        "q": 15,
+        "t": "1½ tbsp"
+      },
+      {
+        "i": "eggs",
+        "q": 1,
+        "t": "1, beaten"
+      },
+      {
+        "i": "panko",
+        "q": 50,
+        "t": "50g"
+      },
+      {
+        "i": "parmesan",
+        "q": 20,
+        "t": "20g, finely grated"
+      },
+      {
+        "i": "oil",
+        "q": 30,
+        "t": "2 tbsp, for frying"
+      },
+      {
+        "i": "potatoes",
+        "q": 400,
+        "t": "400g, cut into chunks"
+      },
+      {
+        "i": "butter",
+        "q": 30,
+        "t": "30g"
+      },
+      {
+        "i": "garlic",
+        "q": 1,
+        "t": "1 clove, crushed"
+      },
+      {
+        "i": "lemon",
+        "q": 1,
+        "t": "1, zested, then cut into wedges"
+      },
+      {
+        "i": "frozen_peas",
+        "q": 150,
+        "t": "150g",
+        "swap": "Cook the peas in a separate small pan of boiling water for 3 min and stir them into one portion of the lettuce only."
+      },
+      {
+        "i": "little_gem",
+        "q": 1,
+        "t": "1, shredded"
+      },
+      {
+        "i": "spring_onions",
+        "q": 2,
+        "t": "2, sliced"
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "a pinch, plus extra for the potato water"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "a pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the veg",
+        "text": "Cut the potatoes into chunks, crush the garlic and slice the spring onions. Shred the little gem and finely grate the parmesan. Zest the lemon, then cut it into wedges."
+      },
+      {
+        "title": "Boil the potatoes",
+        "text": "Put the potatoes in a pan of boiling salted water and cook for 15–18 min until tender. Drain and keep in the pan."
+      },
+      {
+        "title": "Crumb the chicken",
+        "text": "While the potatoes cook, put the chicken between two sheets of baking paper and bash with a rolling pin until about 1cm thick. Set out three plates: seasoned flour, the beaten egg, and panko mixed with the parmesan and lemon zest. Dust the chicken in flour, dip in egg, then press firmly into the crumbs."
+      },
+      {
+        "title": "Fry the escalopes",
+        "text": "Heat the oil in a large frying pan over a medium heat. Fry the escalopes for 3–4 min each side until deep golden and the chicken is white all the way through. Drain on kitchen paper."
+      },
+      {
+        "title": "Cook the peas and lettuce",
+        "text": "Meanwhile, melt half the butter in a small pan over a medium heat. Add the spring onions, peas and 3 tbsp water and simmer for 3 min. Stir in the little gem for 1 min until just wilted and season with salt and pepper."
+      },
+      {
+        "title": "Garlic butter and serve",
+        "text": "Wipe out the escalope pan and melt the remaining butter with the garlic over a low heat for 30 seconds. Toss half through the potatoes. Serve the escalopes drizzled with the rest, with the potatoes, peas and lettuce, and lemon wedges for squeezing."
+      }
+    ],
+    "tags": [
+      "quick",
+      "crispy",
+      "kid-friendly"
+    ],
+    "basedOn": "Jamie Oliver / BBC Good Food — Crispy chicken escalopes with garlic butter (British take on schnitzel)"
+  },
+  {
+    "id": "br_chilli_beef_jackets",
+    "title": "Smoky Beef Chilli Jacket Potatoes with Cheddar & Yogurt",
+    "icon": "🌶️",
+    "cuisine": "British",
+    "category": "everyday",
+    "protein": "beef",
+    "time": 35,
+    "servings": 2,
+    "equipment": [
+      "microwave",
+      "oven",
+      "hob"
+    ],
+    "airFryer": "After microwaving, rub the potatoes with oil and salt and air-fry at 200°C for 10–12 min until the skins are crisp.",
+    "ingredients": [
+      {
+        "i": "potatoes",
+        "q": 600,
+        "t": "2 large baking potatoes"
+      },
+      {
+        "i": "oil",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "beef_mince",
+        "q": 250,
+        "t": "250g"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, finely chopped"
+      },
+      {
+        "i": "peppers",
+        "q": 1,
+        "t": "1, diced"
+      },
+      {
+        "i": "garlic",
+        "q": 2,
+        "t": "2 cloves, crushed"
+      },
+      {
+        "i": "smoked_paprika",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "cumin",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "chilli_flakes",
+        "q": 1,
+        "t": "½ tsp",
+        "opt": true,
+        "swap": "Leave the chilli flakes out of the pan and sprinkle them over one jacket only."
+      },
+      {
+        "i": "chopped_tomatoes",
+        "q": 400,
+        "t": "1 tin"
+      },
+      {
+        "i": "kidney_beans",
+        "q": 200,
+        "t": "½ tin, drained"
+      },
+      {
+        "i": "tomato_puree",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "stock_cubes",
+        "q": 0.5,
+        "t": "½ beef cube"
+      },
+      {
+        "i": "cheddar",
+        "q": 50,
+        "t": "50g, grated"
+      },
+      {
+        "i": "greek_yogurt",
+        "q": 60,
+        "t": "4 tbsp"
+      },
+      {
+        "i": "spring_onions",
+        "q": 2,
+        "t": "2, sliced, to serve",
+        "opt": true,
+        "swap": "Scatter the spring onions over one jacket only."
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "a pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the veg",
+        "text": "Heat the oven to 220°C (200°C fan) and prick the potatoes all over. Finely chop the onion, dice the pepper and crush the garlic. Drain the kidney beans, grate the cheddar and slice the spring onions (optional)."
+      },
+      {
+        "title": "Start the jackets",
+        "text": "Microwave the potatoes on high for 8–10 min until a knife slides in easily. Rub with 1 tsp oil and a pinch of salt. Bake directly on the oven shelf for 15 min until the skins are crisp."
+      },
+      {
+        "title": "Brown the mince",
+        "text": "Meanwhile, heat the remaining 1 tsp oil in a frying pan over a high heat. Fry the mince for 5 min, breaking it up, until browned. Add the onion and pepper and cook for 5 min more until soft."
+      },
+      {
+        "title": "Spice the chilli",
+        "text": "Stir in the garlic, smoked paprika, cumin and chilli flakes (optional) for 1 min until fragrant. Add the chopped tomatoes, tomato purée and kidney beans and crumble in the ½ stock cube."
+      },
+      {
+        "title": "Simmer the chilli",
+        "text": "Bubble over a medium heat for 10–12 min, stirring now and then, until thick enough to sit on a spoon. Season with salt to taste."
+      },
+      {
+        "title": "Fill and serve",
+        "text": "Split the jackets with a cross and fluff up the middles. Spoon over the chilli and scatter with the cheddar so it melts. Top with a dollop of yogurt and the spring onions (optional)."
+      }
+    ],
+    "tags": [
+      "quick",
+      "kid-friendly",
+      "freezable"
+    ],
+    "basedOn": "BBC Good Food — Chilli con carne jacket potatoes (a British jacket-spud favourite)"
+  }
+]

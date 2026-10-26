@@ -1,0 +1,1155 @@
+[
+ {
+  "id": "avocado",
+  "name": "Ripe & ready avocados",
+  "unit": "each",
+  "packs": [
+   2
+  ],
+  "aisle": "Fruit & veg",
+  "current": {
+   "tesco": {
+    "pack": 2,
+    "price": 1.5,
+    "label": "Tesco Perfectly Ripe Avocados Twin Pack",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=avocados"
+   },
+   "sainsburys": {
+    "pack": 2,
+    "price": 1.5,
+    "label": "Sainsbury's 2 x Ripe & Ready Avocados",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/avocados"
+   },
+   "asda": {
+    "pack": 2,
+    "price": 1.48,
+    "label": "ASDA Creamy & Nutty Avocados",
+    "est": true,
+    "src": "https://www.trolley.co.uk/product/asda-creamy-nutty-avocados/FBF015"
+   },
+   "aldi": {
+    "pack": 2,
+    "price": 1.39,
+    "label": "Nature's Pick Ripe & Ready Hass Avocados 2 pack",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/nature-s-pick-ripe-ready-hass-avocados-000000000000264102"
+   },
+   "lidl": {
+    "pack": 2,
+    "price": 1.39,
+    "label": "Lidl equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "basil",
+  "name": "Fresh basil",
+  "unit": "g",
+  "packs": [
+   30
+  ],
+  "aisle": "Fruit & veg",
+  "current": {
+   "tesco": {
+    "pack": 30,
+    "price": 0.5,
+    "label": "Tesco Fresh Cut Basil 30G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=fresh%20basil"
+   },
+   "sainsburys": {
+    "pack": 30,
+    "price": 0.5,
+    "label": "Sainsbury's Fresh Packed Basil 30g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/basil"
+   },
+   "asda": {
+    "pack": 30,
+    "price": 0.5,
+    "label": "ASDA Basil",
+    "est": true,
+    "src": "https://www.trolley.co.uk/product/asda-wonderfully-aromatic-basil/EZR886"
+   },
+   "aldi": {
+    "pack": 30,
+    "price": 0.5,
+    "label": "Ready, Set…Cook! Cut Basil 30g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/ready-set-cook-cut-basil-000000000000339815"
+   },
+   "lidl": {
+    "pack": 30,
+    "price": 0.5,
+    "label": "Lidl equivalent of Ready, Set…Cook! Cut Basil 30g (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "broccoli",
+  "name": "Broccoli",
+  "unit": "g",
+  "packs": [
+   375
+  ],
+  "aisle": "Fruit & veg",
+  "current": {
+   "tesco": {
+    "pack": 375,
+    "price": 0.9,
+    "label": "Tesco Broccoli 375G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=broccoli"
+   },
+   "sainsburys": {
+    "pack": 350,
+    "price": 0.84,
+    "label": "Sainsbury's Loose Broccoli (£2.39/kg, ~350g head)",
+    "est": true,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/broccoli"
+   },
+   "asda": {
+    "pack": 350,
+    "price": 0.72,
+    "label": "ASDA Tender & Crunchy Broccoli",
+    "est": true,
+    "src": "https://www.trolley.co.uk/product/asda-tender-crunchy-broccoli/IOU463"
+   },
+   "aldi": {
+    "pack": 360,
+    "price": 0.86,
+    "label": "Nature's Pick British Broccoli 360g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/nature-s-pick-british-broccoli-000000000000339776"
+   },
+   "lidl": {
+    "pack": 360,
+    "price": 0.86,
+    "label": "Lidl equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "chicken_thighs",
+  "name": "Chicken thigh fillets",
+  "unit": "g",
+  "packs": [
+   600,
+   1000
+  ],
+  "aisle": "Meat & fish",
+  "current": {
+   "tesco": {
+    "pack": 600,
+    "price": 5.75,
+    "label": "Tesco British Chicken Thigh Fillets 600G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=chicken%20thigh%20fillets"
+   },
+   "sainsburys": {
+    "pack": 640,
+    "price": 6,
+    "label": "Sainsbury's 640g British Fresh Skinless & Boneless Chicken Thigh Fillets",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/chicken%20legs"
+   },
+   "asda": {
+    "pack": 1000,
+    "price": 6.84,
+    "label": "ASDA British Boneless Chicken Thigh Fillets",
+    "est": true,
+    "src": "https://www.trolley.co.uk/product/asda-succulent-boneless-chicken-thigh-fillets/SEI999"
+   },
+   "aldi": {
+    "pack": 600,
+    "price": 4.39,
+    "label": "Ashfields Chicken Thigh Fillets 600g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/ashfields-chicken-thigh-fillets-000000000000416054"
+   },
+   "lidl": {
+    "pack": 600,
+    "price": 4.39,
+    "label": "Lidl equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "coconut_milk",
+  "name": "Coconut milk (tin)",
+  "unit": "ml",
+  "packs": [
+   400
+  ],
+  "aisle": "Tins & jars",
+  "current": {
+   "tesco": {
+    "pack": 400,
+    "price": 0.75,
+    "label": "Tesco Coconut Milk 400ml",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=coconut%20milk"
+   },
+   "sainsburys": {
+    "pack": 400,
+    "price": 0.75,
+    "label": "Sainsbury's Coconut Milk 400ml",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/coconut%20milk"
+   },
+   "asda": {
+    "pack": 400,
+    "price": 0.85,
+    "label": "ASDA Coconut Milk",
+    "est": true,
+    "src": "https://www.trolley.co.uk/product/asda-coconut-milk/WZO213"
+   },
+   "aldi": {
+    "pack": 400,
+    "price": 0.75,
+    "label": "Asia Green Garden Coconut Milk 400ml Full Fat",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/asia-green-garden-coconut-milk-400ml-full-fat-000000000635586001"
+   },
+   "lidl": {
+    "pack": 400,
+    "price": 0.75,
+    "label": "Lidl own-brand equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "curry_powder",
+  "name": "Mild curry powder",
+  "unit": "g",
+  "packs": [
+   80
+  ],
+  "aisle": "Herbs & spices",
+  "current": {
+   "tesco": {
+    "pack": 80,
+    "price": 1.25,
+    "label": "Tesco Mild Curry Powder 80g",
+    "est": true,
+    "src": "https://www.tesco.com/shop/en-GB/products/255770060"
+   },
+   "sainsburys": {
+    "pack": 79,
+    "price": 1.3,
+    "label": "Sainsbury's Mild Curry Powder, Inspired to Cook 79g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/mild%20curry%20powder"
+   },
+   "asda": {
+    "pack": 80,
+    "price": 1.35,
+    "label": "COOK by ASDA Mild Curry Powder 80g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-mild-curry-powder/CZG187"
+   },
+   "aldi": {
+    "pack": 90,
+    "price": 0.89,
+    "label": "Ready, Set…Cook! Mild Curry Powder 90g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/ready-set-cook-mild-curry-powder-000000000336690002"
+   },
+   "lidl": {
+    "pack": 85,
+    "price": 1,
+    "label": "Ready, Set…Cook! Mild Curry Powder 85g",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "mozzarella",
+  "name": "Mozzarella",
+  "unit": "g",
+  "packs": [
+   125
+  ],
+  "aisle": "Dairy & eggs",
+  "current": {
+   "tesco": {
+    "pack": 125,
+    "price": 1.3,
+    "label": "Tesco Mozzarella 200g (125g drained)",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=mozzarella"
+   },
+   "sainsburys": {
+    "pack": 125,
+    "price": 1.55,
+    "label": "Sainsbury's Mozzarella Cheese 150g",
+    "est": true,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/mozzarella"
+   },
+   "asda": {
+    "pack": 125,
+    "price": 1.27,
+    "label": "ASDA Mozzarella 215g (125g drained)",
+    "est": true,
+    "src": "https://www.trolley.co.uk/product/asda-mozzarella-cheese/FEL200"
+   },
+   "aldi": {
+    "pack": 125,
+    "price": 0.55,
+    "label": "Everyday Essentials Classic Mozzarella (0.125kg drained)",
+    "est": false,
+    "src": "https://www.aldi.co.uk/products/chilled-food/cheese/k/1588161416978051004"
+   },
+   "lidl": {
+    "pack": 125,
+    "price": 0.55,
+    "label": "Lidl equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "spring_onions",
+  "name": "Spring onions",
+  "unit": "each",
+  "packs": [
+   8
+  ],
+  "aisle": "Fruit & veg",
+  "current": {
+   "tesco": {
+    "pack": 8,
+    "price": 0.65,
+    "label": "Tesco Bunched Spring Onions 100G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=brown%20onions"
+   },
+   "sainsburys": {
+    "pack": 8,
+    "price": 0.65,
+    "label": "Sainsbury's Spring Onions Bunch 100g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/brown%20onions"
+   },
+   "asda": {
+    "pack": 8,
+    "price": 0.68,
+    "label": "ASDA Fragrant & Crunchy Spring Onions",
+    "est": true,
+    "src": "https://www.trolley.co.uk/product/asda-fragrant-crunchy-spring-onions/UTJ806"
+   },
+   "aldi": {
+    "pack": 8,
+    "price": 0.65,
+    "label": "Nature's Pick Spring Onions 100g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/nature-s-pick-spring-onions-000000000000339978"
+   },
+   "lidl": {
+    "pack": 8,
+    "price": 0.65,
+    "label": "Lidl equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "tahini",
+  "name": "Tahini",
+  "unit": "g",
+  "packs": [
+   300
+  ],
+  "aisle": "World foods",
+  "current": {
+   "tesco": {
+    "pack": 300,
+    "price": 3.1,
+    "label": "Tesco Tahini 300G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=tahini"
+   },
+   "sainsburys": {
+    "pack": 300,
+    "price": 3,
+    "label": "Sainsbury's Tahini, Inspired to Cook 300g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/tahini"
+   },
+   "asda": null,
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "chicken_wings",
+  "name": "Chicken wings",
+  "unit": "g",
+  "packs": [
+   1000
+  ],
+  "aisle": "Meat & fish",
+  "current": {
+   "tesco": {
+    "pack": 1000,
+    "price": 2.05,
+    "label": "Tesco Chicken Wings 1KG",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=chicken%20wings"
+   },
+   "sainsburys": {
+    "pack": 1000,
+    "price": 2.09,
+    "label": "Sainsbury's 1kg British Fresh Chicken Wings",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/chicken%20wings"
+   },
+   "asda": {
+    "pack": 1000,
+    "price": 2.41,
+    "label": "JUST ESSENTIALS by ASDA Chicken Wings",
+    "est": true,
+    "src": "https://www.trolley.co.uk/product/just-essentials-by-asda-essentials-chicken-wings/XQV956"
+   },
+   "aldi": {
+    "pack": 1000,
+    "price": 2.09,
+    "label": "Ashfields Chicken Wings 1kg",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/ashfields-chicken-wings-000000000000382085"
+   },
+   "lidl": {
+    "pack": 1000,
+    "price": 2.09,
+    "label": "Lidl equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "beef_steak",
+  "name": "Thin-cut beef frying steaks",
+  "unit": "g",
+  "packs": [
+   395
+  ],
+  "aisle": "Meat & fish",
+  "current": {
+   "tesco": {
+    "pack": 395,
+    "price": 4.38,
+    "label": "Tesco Thin Cut Beef Steaks 395G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=thin%20cut%20beef%20frying%20steak"
+   },
+   "sainsburys": {
+    "pack": 350,
+    "price": 4,
+    "label": "Sainsbury's British or Irish 21 Day Matured Sizzler Steaks 350g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/sizzler%20steaks"
+   },
+   "asda": {
+    "pack": 300,
+    "price": 4.56,
+    "label": "ASDA Thin Cut Beef Steaks",
+    "est": true,
+    "src": "https://www.trolley.co.uk/product/asda-tender-beef-thin-cut-steak/ITX445"
+   },
+   "aldi": {
+    "pack": 227,
+    "price": 3.19,
+    "label": "Everyday Essentials British Beef Steak 21 Day Matured 227g",
+    "est": true,
+    "src": "https://www.aldi.co.uk/products/fresh-food/beef/k/1588161416978050005"
+   },
+   "lidl": {
+    "pack": 227,
+    "price": 3.19,
+    "label": "Lidl equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "black_bean_sauce",
+  "name": "Black bean garlic sauce",
+  "unit": "g",
+  "packs": [
+   205
+  ],
+  "aisle": "World foods",
+  "current": {
+   "tesco": {
+    "pack": 205,
+    "price": 2.25,
+    "label": "Lee Kum Kee Black Bean Garlic Sauce 205G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=black%20bean%20sauce"
+   },
+   "sainsburys": {
+    "pack": 205,
+    "price": 2.25,
+    "label": "Lee Kum Kee Black Bean Garlic Sauce 205g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/black%20bean%20sauce"
+   },
+   "asda": {
+    "pack": 120,
+    "price": 0.7,
+    "label": "ASDA Black Bean Stir-Fry Sauce 120g",
+    "est": true,
+    "src": "https://www.trolley.co.uk/product/lee-kum-kee-black-bean-garlic-sauce/CYJ445"
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "pork_loin_steaks",
+  "name": "Pork loin steaks",
+  "unit": "g",
+  "packs": [
+   480
+  ],
+  "aisle": "Meat & fish",
+  "current": {
+   "tesco": {
+    "pack": 480,
+    "price": 2.99,
+    "label": "Tesco Pork Loin Steaks 480g",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=pork%20loin%20steaks"
+   },
+   "sainsburys": {
+    "pack": 480,
+    "price": 4.75,
+    "label": "Sainsbury's British Pork Loin Steaks x4 480g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/pork%20loin%20steaks"
+   },
+   "asda": {
+    "pack": 400,
+    "price": 3,
+    "label": "ASDA 4 Tender Pork Loin Steaks",
+    "est": true,
+    "src": "https://www.trolley.co.uk/product/asda-tender-4-pork-loin-steaks/SOE330"
+   },
+   "aldi": {
+    "pack": 480,
+    "price": 2.99,
+    "label": "Ashfields British Pork Loin Steaks 480g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/ashfields-british-pork-loin-steaks-000000000000382106"
+   },
+   "lidl": {
+    "pack": 480,
+    "price": 2.99,
+    "label": "Lidl equivalent of Ashfields British Pork Loin Steaks 480g",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "mustard_seeds",
+  "name": "Black mustard seeds",
+  "unit": "g",
+  "packs": [
+   100
+  ],
+  "aisle": "Herbs & spices",
+  "current": {
+   "tesco": {
+    "pack": 100,
+    "price": 1.1,
+    "label": "Rajah Whole Black Mustard Seeds 100G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=black%20mustard%20seeds"
+   },
+   "sainsburys": {
+    "pack": 100,
+    "price": 1.3,
+    "label": "Fudco Brown Mustard Seeds 100g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/mustard%20seeds"
+   },
+   "asda": null,
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "zaatar",
+  "name": "Za'atar spice blend",
+  "unit": "g",
+  "packs": [
+   35
+  ],
+  "aisle": "Herbs & spices",
+  "current": {
+   "tesco": {
+    "pack": 35,
+    "price": 2,
+    "label": "Schwartz Za'atar Seasoning 35G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=zaatar"
+   },
+   "sainsburys": {
+    "pack": 35,
+    "price": 2.5,
+    "label": "Sainsbury's Zaatar, Inspired to Cook 35g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/za'atar"
+   },
+   "asda": null,
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "olives",
+  "name": "Pitted black olives",
+  "unit": "g",
+  "packs": [
+   163
+  ],
+  "aisle": "Tins & jars",
+  "current": {
+   "tesco": {
+    "pack": 163,
+    "price": 1.1,
+    "label": "Tesco Pitted Black Olives 330g (~163g drained)",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=pitted%20black%20olives"
+   },
+   "sainsburys": {
+    "pack": 150,
+    "price": 1.35,
+    "label": "Sainsbury's Pitted Black Olives 340g (150g drained)",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/pitted%20black%20olives"
+   },
+   "asda": {
+    "pack": 150,
+    "price": 1.25,
+    "label": "ASDA Pitted Black Olives 310g",
+    "est": true,
+    "src": "https://www.trolley.co.uk/product/asda-pitted-black-olives/KTH675"
+   },
+   "aldi": {
+    "pack": 150,
+    "price": 0.89,
+    "label": "The Deli Black Spanish Olives pitted 320g",
+    "est": true,
+    "src": "https://www.aldi.co.uk/product/the-deli-black-spanish-olives-pitted-320g-000000000658174002"
+   },
+   "lidl": {
+    "pack": 150,
+    "price": 0.89,
+    "label": "Lidl equivalent of The Deli Black Spanish Olives pitted 320g (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "smoked_mackerel",
+  "name": "Smoked mackerel fillets",
+  "unit": "g",
+  "packs": [
+   240
+  ],
+  "aisle": "Meat & fish",
+  "current": {
+   "tesco": {
+    "pack": 240,
+    "price": 6,
+    "label": "Tesco Smoked Mackerel",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=smoked%20mackerel"
+   },
+   "sainsburys": {
+    "pack": 140,
+    "price": 3.75,
+    "label": "Sainsbury's British Smoked Mackerel Fillets 140g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/smoked%20mackerel"
+   },
+   "asda": {
+    "pack": 200,
+    "price": 3.2,
+    "label": "ASDA Extra Special Sweet Cured Hot Smoked Mackerel Fillets",
+    "est": true,
+    "src": "https://www.trolley.co.uk/product/asda-extra-special-sweet-cured-hot-smoked-mackerel-fillets/BCX265"
+   },
+   "aldi": {
+    "pack": 200,
+    "price": 3.29,
+    "label": "The Fishmonger Hot Smoked Mackerel Fillets 200g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/the-fishmonger-hot-smoked-mackerel-fillets-000000000384805003"
+   },
+   "lidl": {
+    "pack": 200,
+    "price": 3.29,
+    "label": "Lidl equivalent (est. from Aldi: The Fishmonger Hot Smoked Mackerel Fillets 200g)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "falafel",
+  "name": "Chilled falafel (ready to eat)",
+  "unit": "each",
+  "packs": [
+   8
+  ],
+  "aisle": "Chilled",
+  "current": {
+   "tesco": {
+    "pack": 8,
+    "price": 3,
+    "label": "Tesco Falafels 152g",
+    "est": true,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=falafel"
+   },
+   "sainsburys": {
+    "pack": 12,
+    "price": 2.6,
+    "label": "Cauldron Falafels 200g",
+    "est": true,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/falafel"
+   },
+   "asda": {
+    "pack": 12,
+    "price": 2.48,
+    "label": "Cauldron Vegan Middle Eastern Falafels 200g",
+    "est": true,
+    "src": "https://www.trolley.co.uk/product/cauldron-falafels/AFQ789"
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "rice_krispies",
+  "name": "Rice Krispies (Kellogg's)",
+  "unit": "g",
+  "packs": [
+   430,
+   660
+  ],
+  "aisle": "Dry goods",
+  "current": {
+   "tesco": {
+    "pack": 430,
+    "price": 3.5,
+    "label": "Kellogg's Rice Krispies Breakfast Cereal 430g",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=rice%20krispies"
+   },
+   "sainsburys": {
+    "pack": 430,
+    "price": 3.5,
+    "label": "Kellogg's Rice Krispies 430g (estimate)",
+    "est": true,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/kelloggs%20rice%20krispies"
+   },
+   "asda": {
+    "pack": 430,
+    "price": 3.5,
+    "label": "Kellogg's Rice Krispies Cereal 430g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/kelloggs-rice-krispies-cereal/DPQ423"
+   },
+   "aldi": {
+    "pack": 375,
+    "price": 0.89,
+    "label": "Harvest Morn Crisp Rice Cereal 375g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/harvest-morn-crisp-rice-cereal-000000000000308552"
+   },
+   "lidl": {
+    "pack": 375,
+    "price": 0.89,
+    "label": "Lidl equivalent (est. from Aldi: Harvest Morn Crisp Rice Cereal 375g)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "granola",
+  "name": "Granola (own-brand, fruit & nut / honey & almond)",
+  "unit": "g",
+  "packs": [
+   500,
+   1000
+  ],
+  "aisle": "Dry goods",
+  "current": {
+   "tesco": {
+    "pack": 1000,
+    "price": 2.2,
+    "label": "Tesco Honey & Almond Granola 1Kg",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=tesco%20granola"
+   },
+   "sainsburys": {
+    "pack": 1000,
+    "price": 2.4,
+    "label": "Sainsbury's Simply Granola 1kg",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/sainsburys%20granola"
+   },
+   "asda": {
+    "pack": 1000,
+    "price": 2.32,
+    "label": "ASDA Simply Granola",
+    "est": true,
+    "src": "https://www.trolley.co.uk/product/asda-simply-granola/DDT598"
+   },
+   "aldi": {
+    "pack": 1000,
+    "price": 1.99,
+    "label": "Harvest Morn Raisin & Almond Granola 1kg",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/harvest-morn-raisin-almond-granola-000000000335670001"
+   },
+   "lidl": {
+    "pack": 1000,
+    "price": 1.99,
+    "label": "Lidl equivalent (est. from Aldi: Harvest Morn Raisin & Almond Granola 1kg)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "gammon_steaks",
+  "name": "Unsmoked gammon steaks",
+  "unit": "g",
+  "packs": [
+   300,
+   450
+  ],
+  "aisle": "Meat & fish",
+  "current": {
+   "tesco": {
+    "pack": 450,
+    "price": 4.5,
+    "label": "Tesco Unsmoked Gammon Steaks 2 Pack 450G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=gammon%20steaks"
+   },
+   "sainsburys": {
+    "pack": 450,
+    "price": 4.75,
+    "label": "Sainsbury's Unsmoked Gammon Steaks x2 450g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/gammon%20steaks"
+   },
+   "asda": {
+    "pack": 450,
+    "price": 4.5,
+    "label": "ASDA Unsmoked Gammon Steaks (est.)",
+    "est": true,
+    "src": ""
+   },
+   "aldi": {
+    "pack": 300,
+    "price": 2.39,
+    "label": "Aldi unsmoked gammon steaks 300g (est.)",
+    "est": true,
+    "src": ""
+   },
+   "lidl": {
+    "pack": 300,
+    "price": 2.39,
+    "label": "Lidl unsmoked gammon steaks 300g (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "corned_beef",
+  "name": "Corned beef (tin)",
+  "unit": "g",
+  "packs": [
+   200,
+   340
+  ],
+  "aisle": "Tins & jars",
+  "current": {
+   "tesco": {
+    "pack": 200,
+    "price": 3.2,
+    "label": "Princes Corned Beef 200G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=corned%20beef"
+   },
+   "sainsburys": {
+    "pack": 200,
+    "price": 3.5,
+    "label": "Princes Corned Beef 200g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/corned%20beef"
+   },
+   "asda": {
+    "pack": 200,
+    "price": 3.2,
+    "label": "Princes Corned Beef 200g (est.)",
+    "est": true,
+    "src": ""
+   },
+   "aldi": {
+    "pack": 340,
+    "price": 2.99,
+    "label": "Aldi corned beef 340g (est.)",
+    "est": true,
+    "src": ""
+   },
+   "lidl": {
+    "pack": 340,
+    "price": 2.99,
+    "label": "Lidl corned beef 340g (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "pork_crackling_joint",
+  "name": "Pork crackling joint (small loin or leg)",
+  "unit": "g",
+  "packs": [
+   700,
+   800,
+   1000
+  ],
+  "aisle": "Meat & fish",
+  "current": {
+   "tesco": {
+    "pack": 700,
+    "price": 5.25,
+    "label": "Tesco Pork Loin Crackling Joint 700g-1.3kg",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=pork%20joint%20crackling"
+   },
+   "sainsburys": {
+    "pack": 800,
+    "price": 5.8,
+    "label": "Sainsbury's (Approx. 800G) British Small Pork Crackling Leg Joint",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/pork%20loin%20joint"
+   },
+   "asda": {
+    "pack": 800,
+    "price": 5.6,
+    "label": "ASDA pork crackling joint (est.)",
+    "est": true,
+    "src": ""
+   },
+   "aldi": {
+    "pack": 800,
+    "price": 5.2,
+    "label": "Aldi pork crackling joint (est.)",
+    "est": true,
+    "src": ""
+   },
+   "lidl": {
+    "pack": 800,
+    "price": 5.2,
+    "label": "Lidl pork crackling joint (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "ale",
+  "name": "Amber ale or bitter (for cooking)",
+  "unit": "ml",
+  "packs": [
+   500
+  ],
+  "aisle": "Drinks",
+  "current": {
+   "tesco": {
+    "pack": 500,
+    "price": 0.99,
+    "label": "Banks's Amber Ale Beer Bottle 500ml",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=ale%20500ml"
+   },
+   "sainsburys": {
+    "pack": 500,
+    "price": 2,
+    "label": "Hobgoblin Ruby Ale Beer Bottle 500ml",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/ale"
+   },
+   "asda": {
+    "pack": 500,
+    "price": 1,
+    "label": "Amber ale 500ml (est.)",
+    "est": true,
+    "src": ""
+   },
+   "aldi": {
+    "pack": 500,
+    "price": 0.99,
+    "label": "Aldi amber ale 500ml (est.)",
+    "est": true,
+    "src": ""
+   },
+   "lidl": {
+    "pack": 500,
+    "price": 0.99,
+    "label": "Lidl amber ale 500ml (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "lamb_shanks",
+  "name": "Lamb shanks (raw)",
+  "unit": "each",
+  "packs": [
+   2
+  ],
+  "aisle": "Meat & fish",
+  "current": {
+   "tesco": {
+    "pack": 2,
+    "price": 7.7,
+    "label": "Tesco 2 Lamb Shanks 550g-900g",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=lamb%20shanks"
+   },
+   "sainsburys": {
+    "pack": 2,
+    "price": 10.5,
+    "label": "Sainsbury's British or New Zealand Lamb Shanks approx. 750g",
+    "est": true,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/lamb%20shanks"
+   },
+   "asda": {
+    "pack": 2,
+    "price": 9.8,
+    "label": "Estimate: raw Asda lamb shanks (2, ~700g)",
+    "est": true,
+    "src": "https://www.trolley.co.uk/explore/lamb-shanks"
+   },
+   "aldi": null,
+   "lidl": {
+    "pack": 2,
+    "price": 9.8,
+    "label": "Estimate: Lidl raw lamb shanks (2, ~700g)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "pork_ribs",
+  "name": "Pork ribs (uncooked, plain rack or individual ribs)",
+  "unit": "g",
+  "packs": [
+   700
+  ],
+  "aisle": "Meat & fish",
+  "current": {
+   "tesco": {
+    "pack": 700,
+    "price": 5.75,
+    "label": "Tesco Pork Ribs 700g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/tesco-pork-individual-ribs/OCD687"
+   },
+   "sainsburys": {
+    "pack": 500,
+    "price": 4.5,
+    "label": "Sainsbury's British Pork Rib Rack 500g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/sainsburys-british-pork-rib-rack/WDX221"
+   },
+   "asda": {
+    "pack": 700,
+    "price": 5.75,
+    "label": "Asda plain pork ribs (est.)",
+    "est": true,
+    "src": ""
+   },
+   "aldi": {
+    "pack": 500,
+    "price": 4.1,
+    "label": "Aldi pork rib rack (est.)",
+    "est": true,
+    "src": ""
+   },
+   "lidl": {
+    "pack": 500,
+    "price": 4.1,
+    "label": "Lidl equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "star_anise",
+  "name": "Star anise (whole)",
+  "unit": "g",
+  "packs": [
+   11
+  ],
+  "aisle": "Herbs & spices",
+  "current": {
+   "tesco": {
+    "pack": 11,
+    "price": 1,
+    "label": "Tesco Whole Star Anise 11G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=star%20anise"
+   },
+   "sainsburys": {
+    "pack": 15,
+    "price": 1.15,
+    "label": "Sainsbury's Star Anise 15g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/star%20anise"
+   },
+   "asda": {
+    "pack": 14,
+    "price": 1.1,
+    "label": "COOK by ASDA Star Anise (est.)",
+    "est": true,
+    "src": "https://www.trolley.co.uk/product/asda-star-anise/NXI805"
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ }
+]

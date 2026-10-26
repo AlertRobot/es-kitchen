@@ -1,0 +1,168 @@
+[
+  {
+    "id": "chipotle_paste",
+    "name": "Chipotle chilli paste",
+    "aisle": "World foods",
+    "unit": "g",
+    "packs": [
+      100
+    ],
+    "staple": false,
+    "freeze": false,
+    "keeps": 30,
+    "life": 365,
+    "tags": [
+      "vegan",
+      "chilli"
+    ]
+  },
+  {
+    "id": "pork_shoulder_steaks",
+    "name": "Pork shoulder steaks",
+    "aisle": "Meat & fish",
+    "unit": "g",
+    "packs": [
+      400,
+      700
+    ],
+    "staple": false,
+    "freeze": true,
+    "keeps": 1,
+    "life": 5,
+    "tags": [
+      "pork",
+      "meat"
+    ]
+  },
+  {
+    "id": "diced_beef",
+    "name": "Diced beef (braising)",
+    "aisle": "Meat & fish",
+    "unit": "g",
+    "packs": [
+      400
+    ],
+    "staple": false,
+    "freeze": true,
+    "keeps": 1,
+    "life": 5,
+    "tags": [
+      "beef",
+      "meat"
+    ]
+  },
+  {
+    "id": "white_fish_fillets",
+    "name": "Skinless white fish fillets (cod/basa)",
+    "aisle": "Meat & fish",
+    "unit": "g",
+    "packs": [
+      260
+    ],
+    "staple": false,
+    "freeze": true,
+    "keeps": 1,
+    "life": 3,
+    "tags": [
+      "fish"
+    ]
+  },
+  {
+    "id": "sour_cream",
+    "name": "Soured cream",
+    "aisle": "Dairy & eggs",
+    "unit": "ml",
+    "packs": [
+      300
+    ],
+    "staple": false,
+    "freeze": false,
+    "keeps": 5,
+    "life": 14,
+    "tags": [
+      "dairy"
+    ]
+  },
+  {
+    "id": "jalapenos",
+    "name": "Sliced green jalapeños (jar)",
+    "aisle": "Tins & jars",
+    "unit": "g",
+    "packs": [
+      215
+    ],
+    "staple": false,
+    "freeze": false,
+    "keeps": 28,
+    "life": 365,
+    "tags": [
+      "vegan",
+      "chilli"
+    ]
+  },
+  {
+    "id": "red_cabbage",
+    "name": "Red cabbage",
+    "aisle": "Fruit & veg",
+    "unit": "each",
+    "packs": [
+      1
+    ],
+    "staple": false,
+    "freeze": false,
+    "keeps": 10,
+    "life": 21,
+    "tags": [
+      "vegan"
+    ]
+  },
+  {
+    "id": "zaatar",
+    "name": "Za'atar spice blend",
+    "aisle": "Herbs & spices",
+    "unit": "g",
+    "packs": [
+      40
+    ],
+    "staple": false,
+    "freeze": false,
+    "keeps": 180,
+    "life": 365,
+    "tags": [
+      "vegan",
+      "sesame"
+    ]
+  },
+  {
+    "id": "dried_apricots",
+    "name": "Soft dried apricots",
+    "aisle": "Dry goods",
+    "unit": "g",
+    "packs": [
+      250
+    ],
+    "staple": false,
+    "freeze": false,
+    "keeps": 60,
+    "life": 270,
+    "tags": [
+      "vegan"
+    ]
+  },
+  {
+    "id": "olives",
+    "name": "Pitted Kalamata olives (jar, drained)",
+    "aisle": "Tins & jars",
+    "unit": "g",
+    "packs": [
+      160
+    ],
+    "staple": false,
+    "freeze": false,
+    "keeps": 21,
+    "life": 365,
+    "tags": [
+      "vegan"
+    ]
+  }
+]

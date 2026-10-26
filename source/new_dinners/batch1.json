@@ -1,0 +1,1098 @@
+[
+ {
+  "id": "br_chicken_kiev_wedges",
+  "short": "Chicken Kiev",
+  "title": "Garlic Butter Chicken Kievs with Wedges & Broccoli",
+  "icon": "🍗",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "chicken",
+  "base": "potato",
+  "family": "fried",
+  "time": 70,
+  "servings": 2,
+  "equipment": [
+   "oven",
+   "hob"
+  ],
+  "airFryer": "Air-fry the oiled wedges at 200°C for 20–25 min, shaking twice. Then air-fry the coated kievs at 180°C for 18–20 min, turning once, until golden and cooked through.",
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 350,
+    "t": "2 large breasts (about 350g)"
+   },
+   {
+    "i": "butter",
+    "q": 50,
+    "t": "50g, softened"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1: zest, rest cut into wedges"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 1,
+    "t": "½ tsp",
+    "opt": true
+   },
+   {
+    "i": "plain_flour",
+    "q": 20,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "eggs",
+    "q": 1,
+    "t": "1, beaten"
+   },
+   {
+    "i": "panko",
+    "q": 60,
+    "t": "60g"
+   },
+   {
+    "i": "oil",
+    "q": 40,
+    "t": "2½ tbsp"
+   },
+   {
+    "i": "potatoes",
+    "q": 600,
+    "t": "600g, cut into wedges"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 2,
+    "t": "1 tsp",
+    "opt": true
+   },
+   {
+    "i": "broccoli",
+    "q": 200,
+    "t": "200g, in florets"
+   },
+   {
+    "i": "salt",
+    "q": 3,
+    "t": "a good pinch"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep and make the butter",
+    "text": "Heat the oven to 220°C (200°C fan). Mash the softened butter with the garlic, lemon zest, mixed herbs (optional) and a pinch of salt. Shape it into a short log on cling film, wrap and freeze for 15 min. Cut the potatoes into wedges, the broccoli into florets and the zested lemon into wedges."
+   },
+   {
+    "title": "Roast the wedges",
+    "text": "Toss the wedges on a large baking tray with 1½ tbsp oil, the smoked paprika (optional) and a pinch of salt. Spread out in one layer and roast on the top shelf for 40–45 min, turning halfway, until golden and crisp."
+   },
+   {
+    "title": "Fill the chicken",
+    "text": "Lay each breast between two sheets of baking paper and bash with a rolling pin to an even 1cm thickness, avoiding thin spots. Put half the frozen butter in the middle of each, fold in the sides and roll up into a tight parcel. Sit seam-side down and freeze for 15 min to firm up."
+   },
+   {
+    "title": "Toast the crumbs",
+    "text": "While the chicken chills, put the panko and the remaining 1 tbsp oil in a frying pan over a medium heat. Stir for 3–4 min until evenly golden. Tip onto a plate to cool."
+   },
+   {
+    "title": "Coat the kievs",
+    "text": "Set out three plates: the flour seasoned with salt and pepper, the beaten egg and the toasted crumbs. Roll each parcel in flour, then egg, then press firmly into the crumbs, covering the ends well. Put seam-side down on a lined baking tray."
+   },
+   {
+    "title": "Bake the kievs",
+    "text": "Bake on the shelf below the wedges for 25–30 min until golden and the chicken is cooked through, with no pink in the middle. Rest for 3 min before serving, as the butter inside is very hot."
+   },
+   {
+    "title": "Cook the broccoli and serve",
+    "text": "For the last 4 min, boil the broccoli in a pan of salted water over a high heat until just tender, then drain. Plate the kievs with the wedges, broccoli and lemon wedges. Cut into the kiev at the table so the garlic butter spills out."
+   }
+  ],
+  "tags": [
+   "crispy",
+   "kid-friendly",
+   "comfort"
+  ],
+  "basedOn": "RecipeTin Eats — Chicken Kiev — Nagi Maehashi"
+ },
+ {
+  "id": "br_gammon_egg_chips",
+  "short": "Gammon, egg & chips",
+  "title": "Gammon Steak, Fried Egg & Chunky Chips with Peas",
+  "icon": "🍳",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "pork",
+  "base": "potato",
+  "family": "grill_steak",
+  "time": 50,
+  "servings": 2,
+  "equipment": [
+   "oven",
+   "hob"
+  ],
+  "airFryer": "Air-fry the oiled chips at 200°C for 20–25 min, shaking twice, until golden.",
+  "ingredients": [
+   {
+    "i": "gammon_steaks",
+    "q": 450,
+    "t": "2 steaks (450g pack)"
+   },
+   {
+    "i": "potatoes",
+    "q": 600,
+    "t": "600g, cut into chunky chips"
+   },
+   {
+    "i": "oil",
+    "q": 35,
+    "t": "2 tbsp + 1 tsp"
+   },
+   {
+    "i": "eggs",
+    "q": 2,
+    "t": "2"
+   },
+   {
+    "i": "frozen_peas",
+    "q": 160,
+    "t": "160g",
+    "swap": "Cook the peas in their own small pan and serve them on one plate only; cook the same amount of sweetcorn the same way for the other plate."
+   },
+   {
+    "i": "butter",
+    "q": 10,
+    "t": "10g"
+   },
+   {
+    "i": "pineapple_chunks",
+    "q": 100,
+    "t": "100g (about ¼ tin), drained",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 3,
+    "t": "a good pinch"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the chips",
+    "text": "Heat the oven to 220°C (200°C fan). Cut the potatoes into thick chips (no need to peel), rinse and pat really dry with a clean tea towel. Snip through the fat on the gammon every 2cm so the steaks stay flat. Drain the pineapple (optional)."
+   },
+   {
+    "title": "Roast the chips",
+    "text": "Toss the chips on a large baking tray with 1½ tbsp oil and a good pinch of salt. Spread out in one layer and roast on the top shelf for 35–40 min, turning halfway, until golden and crisp."
+   },
+   {
+    "title": "Fry the gammon",
+    "text": "When the chips have 12 min left, heat 1 tsp oil in a large frying pan over a medium-high heat. Fry the gammon for 4–5 min each side until golden at the edges and cooked through, with no pink juices. Add the pineapple (optional) for the last 2 min to caramelise, then move it all to a plate and cover with foil."
+   },
+   {
+    "title": "Cook the peas",
+    "text": "While the gammon cooks, boil the peas in a small pan of water for 3 min until tender. Drain and stir through the butter and a pinch of pepper."
+   },
+   {
+    "title": "Fry the eggs",
+    "text": "Wipe out the gammon pan and heat the remaining 1 tsp oil over a medium heat. Crack in the eggs and fry for 3–4 min until the whites are set and the edges are lacy. Season with pepper."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Pile the chips onto plates with a little salt and lay the gammon alongside. Top each steak with an egg and add the pineapple (optional) and peas. Gammon is salty, so taste before adding more salt."
+   }
+  ],
+  "tags": [
+   "comfort",
+   "kid-friendly"
+  ],
+  "basedOn": "Krumpli — Gammon Egg and Chips with Pineapple and Tomato — Brian Jones"
+ },
+ {
+  "id": "br_fish_finger_sandwiches",
+  "short": "Fish finger sandwich",
+  "title": "Crispy Homemade Fish Finger Sandwiches with Tartare",
+  "icon": "🥪",
+  "cuisine": "British",
+  "category": "treat",
+  "protein": "fish",
+  "base": "bread",
+  "family": "burger_sandwich",
+  "time": 30,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "airFryer": "Instead of shallow-frying, spray the crumbed fingers with a little oil and air-fry at 200°C for 8–10 min, turning halfway, until golden and the fish flakes.",
+  "ingredients": [
+   {
+    "i": "cod_fillets",
+    "q": 280,
+    "t": "2 fillets (280g)"
+   },
+   {
+    "i": "plain_flour",
+    "q": 25,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "eggs",
+    "q": 1,
+    "t": "1, beaten"
+   },
+   {
+    "i": "panko",
+    "q": 60,
+    "t": "60g"
+   },
+   {
+    "i": "oil",
+    "q": 60,
+    "t": "4 tbsp, for shallow-frying"
+   },
+   {
+    "i": "wholemeal_bread",
+    "q": 4,
+    "t": "4 slices"
+   },
+   {
+    "i": "butter",
+    "q": 15,
+    "t": "15g, for spreading"
+   },
+   {
+    "i": "mayonnaise",
+    "q": 60,
+    "t": "4 tbsp"
+   },
+   {
+    "i": "gherkins",
+    "q": 30,
+    "t": "2 tbsp, finely chopped",
+    "swap": "Spoon half the lemony mayo into a separate bowl before stirring in the gherkins and capers, and use it for one sandwich."
+   },
+   {
+    "i": "capers",
+    "q": 10,
+    "t": "2 tsp, chopped",
+    "opt": true,
+    "swap": "Leave the capers out of the plain portion of mayo, as with the gherkins."
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1: juice of half, rest in wedges"
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, leaves separated"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the fish",
+    "text": "Pat the cod dry and cut it into 8 thick fingers, about 2cm wide. Season with salt and pepper. Finely chop the gherkins and capers, juice half the lemon and cut the rest into wedges. Separate the lettuce leaves."
+   },
+   {
+    "title": "Make the tartare",
+    "text": "Stir the mayonnaise with a squeeze of the lemon juice and a pinch of pepper. Stir in the gherkins and the capers (optional). Chill until needed."
+   },
+   {
+    "title": "Crumb the fish",
+    "text": "Set out three plates: the flour, the beaten egg and the panko. Dust each finger in flour, dip in egg, then press into the panko so it is coated all over."
+   },
+   {
+    "title": "Fry the fish fingers",
+    "text": "Heat the oil in a large frying pan over a medium-high heat until a crumb sizzles straight away. Fry the fingers for 2–3 min each side until deep golden and the fish is white and flakes when pressed. Drain on kitchen paper; most of the oil stays in the pan, so let it cool and discard it."
+   },
+   {
+    "title": "Butter the bread",
+    "text": "While the fish drains, butter the bread (toast it first if you like). Spread the tartare thickly over two of the slices."
+   },
+   {
+    "title": "Build and serve",
+    "text": "Lay lettuce leaves over the tartare and top each with 4 fish fingers and a squeeze of lemon. Close with the remaining bread and cut in half. Serve with the lemon wedges."
+   }
+  ],
+  "tags": [
+   "quick",
+   "crispy",
+   "fakeaway",
+   "kid-friendly"
+  ],
+  "basedOn": "Woman & Home — Homemade Fish Finger Sandwich with Tartare Sauce — Woman & Home"
+ },
+ {
+  "id": "br_sausage_rolls_beans_wedges",
+  "short": "Sausage rolls, beans & wedges",
+  "title": "Homemade Sausage Rolls with Wedges & Beans",
+  "icon": "🥐",
+  "cuisine": "British",
+  "category": "treat",
+  "protein": "pork",
+  "base": "potato",
+  "family": "pie_bake",
+  "time": 60,
+  "servings": 2,
+  "equipment": [
+   "oven",
+   "hob"
+  ],
+  "airFryer": "Air-fry the sausage rolls at 190°C for 15–18 min until puffed and golden, and the oiled wedges at 200°C for 20–25 min, shaking twice.",
+  "ingredients": [
+   {
+    "i": "sausages",
+    "q": 4,
+    "t": "4 pork sausages"
+   },
+   {
+    "i": "puff_pastry",
+    "q": 160,
+    "t": "½ a 320g ready-rolled sheet"
+   },
+   {
+    "i": "red_onion",
+    "q": 0.5,
+    "t": "½, finely chopped"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "panko",
+    "q": 15,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "eggs",
+    "q": 1,
+    "t": "1, beaten, to glaze"
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "potatoes",
+    "q": 600,
+    "t": "600g, cut into wedges"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 2,
+    "t": "1 tsp",
+    "opt": true
+   },
+   {
+    "i": "baked_beans",
+    "q": 415,
+    "t": "1 × 415g tin"
+   },
+   {
+    "i": "ketchup",
+    "q": 30,
+    "t": "2 tbsp, to serve",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the veg and pastry",
+    "text": "Heat the oven to 220°C (200°C fan). Cut the potatoes into wedges and finely chop the red onion. Unroll the pastry, cut it in half widthways, then wrap and chill (or freeze) the spare half. Cut the remaining piece in half lengthways to make two long strips."
+   },
+   {
+    "title": "Soften the onion",
+    "text": "Heat 1 tsp oil in a small frying pan over a medium-low heat. Cook the onion for 8–10 min, stirring now and then, until soft and lightly golden. Tip onto a plate to cool."
+   },
+   {
+    "title": "Roast the wedges",
+    "text": "Toss the wedges on a large baking tray with 1½ tbsp oil, the smoked paprika (optional) and a pinch of salt. Roast on the top shelf for 35–40 min, turning halfway, until golden and crisp."
+   },
+   {
+    "title": "Make the filling",
+    "text": "While the wedges roast, slit the sausage skins and squeeze the meat into a bowl. Add the cooled onion, panko, mixed herbs and a pinch of pepper. Mix well with your hands."
+   },
+   {
+    "title": "Roll the sausage rolls",
+    "text": "Shape the filling into two long sausages and lay one along the middle of each pastry strip. Brush one long edge with egg, fold the pastry over and press the join with a fork to seal. Cut each into 3 rolls, put on a lined baking tray, brush with egg and snip two small slits in the tops."
+   },
+   {
+    "title": "Bake the sausage rolls",
+    "text": "Bake on the shelf below the wedges for 22–25 min until puffed and deep golden. The sausagemeat should be piping hot with no pink in the middle."
+   },
+   {
+    "title": "Heat the beans and serve",
+    "text": "For the last 5 min, warm the beans in a small pan over a medium heat, stirring, until bubbling. Serve the sausage rolls with the wedges, beans and ketchup (optional)."
+   }
+  ],
+  "tags": [
+   "comfort",
+   "kid-friendly",
+   "freezable"
+  ],
+  "basedOn": "Jamie Oliver — Sausage rolls — Jamie Oliver"
+ },
+ {
+  "id": "br_roast_pork_crackling",
+  "short": "Roast pork",
+  "title": "Roast Pork with Crackling, Roasties & Apple Sauce",
+  "icon": "🐖",
+  "cuisine": "British",
+  "category": "treat",
+  "protein": "pork",
+  "base": "potato",
+  "family": "roast_traybake",
+  "time": 110,
+  "servings": 2,
+  "equipment": [
+   "oven",
+   "hob"
+  ],
+  "airFryer": "To free up the oven, air-fry the parboiled, oiled potatoes at 200°C for 25–30 min, shaking every 10 min, until crisp and golden.",
+  "ingredients": [
+   {
+    "i": "pork_crackling_joint",
+    "q": 700,
+    "t": "1 small crackling joint (about 700g); leftovers make great sandwiches"
+   },
+   {
+    "i": "salt",
+    "q": 10,
+    "t": "2 tsp for the rind, plus extra"
+   },
+   {
+    "i": "oil",
+    "q": 45,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "fennel_seeds",
+    "q": 2,
+    "t": "1 tsp",
+    "opt": true
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, halved"
+   },
+   {
+    "i": "potatoes",
+    "q": 600,
+    "t": "600g, peeled and halved"
+   },
+   {
+    "i": "carrots",
+    "q": 250,
+    "t": "3, halved lengthways"
+   },
+   {
+    "i": "apples",
+    "q": 2,
+    "t": "2, peeled, cored and chopped"
+   },
+   {
+    "i": "butter",
+    "q": 10,
+    "t": "10g"
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp",
+    "opt": true
+   },
+   {
+    "i": "gravy",
+    "q": 25,
+    "t": "2½ tbsp granules"
+   },
+   {
+    "i": "broccoli",
+    "q": 200,
+    "t": "200g, in florets"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the pork and veg",
+    "text": "Heat the oven to 240°C (220°C fan). Pat the pork rind really dry with kitchen paper. Peel and halve the potatoes, halve the carrots lengthways and cut the broccoli into florets. Halve the onion, and peel, core and chop the apples."
+   },
+   {
+    "title": "Start the pork",
+    "text": "Rub the meat (not the rind) with 1 tsp oil, the fennel seeds (optional) and pepper. Rub the rind with 1 tsp oil, then 2 tsp salt, working it into the scores. Sit it rind-side up on the onion halves in a roasting tin. Roast on the top shelf for 25 min, until the rind starts to bubble."
+   },
+   {
+    "title": "Parboil the potatoes",
+    "text": "Meanwhile, boil the potatoes in a pan of salted water for 8 min. Drain, leave to steam for 2 min, then shake in the colander to rough up the edges. Toss the carrots with 1 tsp oil and a pinch of salt."
+   },
+   {
+    "title": "Roast low and slow",
+    "text": "After 25 min, turn the oven down to 200°C (180°C fan) and pour 100ml water into the pork tin, keeping the rind dry. Heat the remaining 2 tbsp oil in a second tray for 5 min, tip in the potatoes and carrots and turn to coat. Roast both for 45–50 min, turning the veg once, until the pork juices run clear when the thickest part is pierced."
+   },
+   {
+    "title": "Rest and crisp up",
+    "text": "Lift the pork onto a board and rest, uncovered, for 15 min (foil softens the crackling). Turn the oven up to 220°C (200°C fan) and give the potatoes and carrots 15 min more until crunchy. If any crackling is still chewy, slice it off and crisp it on the potato tray."
+   },
+   {
+    "title": "Make the apple sauce",
+    "text": "While the pork rests, put the apples, butter and 2 tbsp water in a small covered pan over a medium-low heat. Cook for 8–10 min until the apples collapse, then mash with a fork and stir in the honey (optional)."
+   },
+   {
+    "title": "Make the gravy",
+    "text": "Spoon the fat off the pork tin, add 300ml boiling water and scrape up the sticky bits. Strain into a small saucepan, pressing the onion. Whisk in the gravy granules over a medium heat and simmer for 1–2 min until thick."
+   },
+   {
+    "title": "Cook the broccoli and serve",
+    "text": "For the last 4 min, boil the broccoli in salted water until just tender, then drain. Carve the pork into thick slices and break up the crackling. Serve with the roasties, carrots, broccoli, apple sauce and gravy poured beside (not over) the crackling."
+   }
+  ],
+  "tags": [
+   "comfort"
+  ],
+  "basedOn": "RecipeTin Eats — Pork Roast with Crispy Crackling — Nagi Maehashi"
+ },
+ {
+  "id": "br_steak_ale_pie_mash",
+  "short": "Steak and ale pie",
+  "title": "Steak & Ale Pie with Buttery Mash & Broccoli",
+  "icon": "🥧",
+  "cuisine": "British",
+  "category": "treat",
+  "protein": "beef",
+  "base": "potato",
+  "family": "pie_bake",
+  "time": 150,
+  "servings": 2,
+  "equipment": [
+   "hob",
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "i": "diced_beef",
+    "q": 400,
+    "t": "400g pack"
+   },
+   {
+    "i": "plain_flour",
+    "q": 15,
+    "t": "1½ tbsp"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, chopped"
+   },
+   {
+    "i": "carrots",
+    "q": 150,
+    "t": "1 large, chunked"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, crushed"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "ale",
+    "q": 250,
+    "t": "250ml (half a 500ml bottle)"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 beef cube in 200ml boiling water"
+   },
+   {
+    "i": "worcestershire",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 1,
+    "t": "½ tsp",
+    "opt": true
+   },
+   {
+    "i": "puff_pastry",
+    "q": 160,
+    "t": "½ a 320g ready-rolled sheet"
+   },
+   {
+    "i": "eggs",
+    "q": 1,
+    "t": "1, beaten, to glaze"
+   },
+   {
+    "i": "potatoes",
+    "q": 600,
+    "t": "600g, peeled and chopped"
+   },
+   {
+    "i": "butter",
+    "q": 25,
+    "t": "25g"
+   },
+   {
+    "i": "milk",
+    "q": 40,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "broccoli",
+    "q": 200,
+    "t": "200g, in florets"
+   },
+   {
+    "i": "salt",
+    "q": 3,
+    "t": "a good pinch"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the filling",
+    "text": "Chop the onion, cut the carrot into chunks and crush the garlic. Dissolve the stock cube in 200ml boiling water. Toss the beef with the flour, a pinch of salt and pepper."
+   },
+   {
+    "title": "Brown the beef",
+    "text": "Heat the oil in a casserole or deep lidded pan over a high heat. Brown the beef in two batches for 4–5 min each, until deep brown all over. Lift onto a plate; the brown bits in the pan are flavour."
+   },
+   {
+    "title": "Simmer the filling",
+    "text": "Turn the heat to medium, add the onion and carrot and cook for 5 min. Stir in the garlic and tomato purée for 1 min, then pour in the ale, scraping the bottom. Add the stock, Worcestershire, mixed herbs (optional) and beef. Cover and simmer over a low heat for 1½ hours, stirring now and then. It is ready when the beef is tender and the gravy coats a spoon."
+   },
+   {
+    "title": "Top the pie",
+    "text": "Heat the oven to 220°C (200°C fan). Spoon the filling into a small pie dish (about 1 litre) and leave to cool for 10 min. Brush the rim with egg, lay the pastry over and press the edges to seal, then trim. Brush with egg and cut a small hole in the middle for steam."
+   },
+   {
+    "title": "Bake the pie",
+    "text": "Put the pie on a baking tray and bake on the middle shelf for 25–30 min until puffed, deep golden and bubbling at the edges."
+   },
+   {
+    "title": "Make the mash",
+    "text": "While the pie bakes, boil the potatoes in a large pan of salted water for 15 min until tender. Drain, leave to steam for 2 min, then mash with the butter, milk and a pinch of salt until smooth."
+   },
+   {
+    "title": "Cook the broccoli and serve",
+    "text": "For the last 4 min, boil the broccoli in salted water until just tender, then drain. Serve the pie with a big spoonful of mash, the broccoli and extra gravy from the dish."
+   }
+  ],
+  "tags": [
+   "comfort",
+   "freezable"
+  ],
+  "basedOn": "Hairy Bikers — Steak and Ale Pie — The Hairy Bikers"
+ },
+ {
+  "id": "br_lancashire_hotpot",
+  "short": "Lancashire hotpot",
+  "title": "Lancashire Hotpot with a Crispy Sliced Potato Top",
+  "icon": "🍲",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "lamb",
+  "base": "potato",
+  "family": "stew_soup",
+  "time": 140,
+  "servings": 2,
+  "equipment": [
+   "hob",
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "i": "diced_lamb",
+    "q": 300,
+    "t": "300g pack"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "onion",
+    "q": 2,
+    "t": "2, sliced"
+   },
+   {
+    "i": "carrots",
+    "q": 150,
+    "t": "1 large, sliced"
+   },
+   {
+    "i": "plain_flour",
+    "q": 10,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 lamb or beef cube in 350ml boiling water"
+   },
+   {
+    "i": "worcestershire",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "potatoes",
+    "q": 500,
+    "t": "500g, thinly sliced (no need to peel)"
+   },
+   {
+    "i": "butter",
+    "q": 20,
+    "t": "20g, melted"
+   },
+   {
+    "i": "broccoli",
+    "q": 200,
+    "t": "200g, in florets"
+   },
+   {
+    "i": "salt",
+    "q": 3,
+    "t": "a good pinch"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the veg",
+    "text": "Heat the oven to 170°C (150°C fan). Slice the onions and carrot, and thinly slice the potatoes to about 3mm. Dissolve the stock cube in 350ml boiling water and melt the butter."
+   },
+   {
+    "title": "Brown the lamb",
+    "text": "Toss the lamb with the mixed herbs, salt and pepper. Heat the oil in a flameproof casserole (or a frying pan) over a high heat. Brown the lamb for 4–5 min until coloured all over. Lift onto a plate."
+   },
+   {
+    "title": "Make the gravy",
+    "text": "Turn the heat to medium and cook the onions and carrot for 8–10 min until soft and golden. Stir in the flour for 1 min, then gradually stir in the stock and Worcestershire until it thickens. Return the lamb and season."
+   },
+   {
+    "title": "Layer the potatoes",
+    "text": "If you used a frying pan, tip everything into a small ovenproof dish (about 1 litre). Lay the potato slices over the top, overlapping like roof tiles. Brush with half the melted butter and season."
+   },
+   {
+    "title": "Bake covered",
+    "text": "Cover with a lid or foil and bake on the middle shelf for 1 hour 15 min, until the lamb is tender."
+   },
+   {
+    "title": "Crisp the top",
+    "text": "Uncover, brush the potatoes with the remaining butter and turn the oven up to 200°C (180°C fan). Bake for 35–40 min more until the top is golden and crisp at the edges and a knife slides easily through the potatoes."
+   },
+   {
+    "title": "Cook the broccoli and serve",
+    "text": "For the last 4 min, boil the broccoli in salted water until just tender, then drain. Leave the hotpot to settle for a couple of minutes, then serve with the broccoli."
+   }
+  ],
+  "tags": [
+   "comfort",
+   "one-pot",
+   "freezable"
+  ],
+  "basedOn": "Simply Beef & Lamb (AHDB) — Lancashire Hotpot"
+ },
+ {
+  "id": "br_chicken_chorizo_traybake",
+  "short": "Chicken & chorizo traybake",
+  "title": "Chicken & Chorizo Traybake with Crispy Potatoes",
+  "icon": "🥘",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "chicken",
+  "base": "potato",
+  "family": "roast_traybake",
+  "time": 55,
+  "servings": 2,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 450,
+    "t": "about 5 thigh fillets (450g)"
+   },
+   {
+    "i": "chorizo",
+    "q": 100,
+    "t": "100g, cut into chunks"
+   },
+   {
+    "i": "potatoes",
+    "q": 500,
+    "t": "500g, cut into 3cm chunks"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, cut into chunks"
+   },
+   {
+    "i": "red_onion",
+    "q": 1,
+    "t": "1, cut into wedges"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, bashed"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 3,
+    "t": "1 tsp"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 1,
+    "t": "½ tsp",
+    "opt": true
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "spinach",
+    "q": 80,
+    "t": "80g"
+   },
+   {
+    "i": "honey",
+    "q": 10,
+    "t": "2 tsp",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 3,
+    "t": "a good pinch"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the veg",
+    "text": "Heat the oven to 220°C (200°C fan). Cut the potatoes into 3cm chunks, the pepper into chunks and the red onion into wedges. Cut the chorizo into chunks and bash the garlic cloves."
+   },
+   {
+    "title": "Start the potatoes",
+    "text": "Toss the potatoes in a large roasting tray with 1 tbsp oil, half the smoked paprika and a pinch of salt. Roast on the top shelf for 15 min to get a head start."
+   },
+   {
+    "title": "Season the chicken",
+    "text": "While the potatoes roast, toss the chicken in a bowl with the remaining oil and paprika. Add the mixed herbs (optional), salt and pepper."
+   },
+   {
+    "title": "Roast the chicken and chorizo",
+    "text": "Add the chicken, chorizo, pepper, onion and garlic to the tray and turn everything in the oil, sitting the chicken on top. Roast for 25 min, until the chicken is starting to brown and the chorizo releases its red oil."
+   },
+   {
+    "title": "Add the tomatoes",
+    "text": "Scatter over the tomatoes and roast for 8–10 min more, until they burst and the potatoes are crisp. The chicken should be golden and cooked through, with no pink and clear juices."
+   },
+   {
+    "title": "Wilt the spinach and serve",
+    "text": "Take the tray out and stir the spinach through the hot juices for 1–2 min until wilted. Drizzle with the honey (optional) and serve straight from the tray."
+   }
+  ],
+  "tags": [
+   "traybake",
+   "comfort"
+  ],
+  "basedOn": "Tesco Real Food — Chicken and chorizo traybake — Tesco Real Food team"
+ },
+ {
+  "id": "br_corned_beef_hash_eggs",
+  "short": "Corned beef hash",
+  "title": "Crispy Corned Beef Hash with Fried Eggs",
+  "icon": "🥔",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "beef",
+  "base": "potato",
+  "family": "other",
+  "time": 40,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "potatoes",
+    "q": 600,
+    "t": "600g, cut into 2cm cubes"
+   },
+   {
+    "i": "corned_beef",
+    "q": 200,
+    "t": "1 × 200g tin, cut into chunks"
+   },
+   {
+    "i": "red_onion",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, crushed"
+   },
+   {
+    "i": "wholegrain_mustard",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "worcestershire",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "eggs",
+    "q": 4,
+    "t": "4"
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced, to serve",
+    "opt": true,
+    "swap": "Scatter the spring onions over one plate only."
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch, plus extra for the potato water"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a good pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the hash",
+    "text": "Put the kettle on. Cut the potatoes into 2cm cubes, slice the red onion and crush the garlic. Cut the corned beef into 2cm chunks (chilling the tin first helps it slice neatly). Slice the spring onions (optional)."
+   },
+   {
+    "title": "Parboil the potatoes",
+    "text": "Boil the potatoes in a pan of salted water for 5–6 min until just tender at the edges. Drain and leave to steam dry for 2 min."
+   },
+   {
+    "title": "Brown the corned beef",
+    "text": "Heat 1 tsp oil in a large non-stick frying pan over a medium-high heat. Fry the corned beef for 3–4 min until crisp at the edges, then lift onto a plate."
+   },
+   {
+    "title": "Soften the onion",
+    "text": "Add another 1 tsp oil and cook the onion over a medium heat for 5 min until soft. Stir in the garlic, mustard and Worcestershire for 1 min."
+   },
+   {
+    "title": "Crisp the hash",
+    "text": "Add the remaining oil and the potatoes and press them down. Fry for 10–12 min, turning only every 3 min so a golden crust forms. Fold the corned beef back in and season with pepper; it is salty, so taste before adding salt."
+   },
+   {
+    "title": "Cook the eggs and serve",
+    "text": "Make 4 hollows in the hash and crack an egg into each. Cover with a lid or baking tray and cook over a medium-low heat for 3–4 min until the whites are set. Scatter with the spring onions (optional) and serve from the pan."
+   }
+  ],
+  "tags": [
+   "quick",
+   "comfort"
+  ],
+  "basedOn": "Tesco Real Food — Corned beef hash with eggs — Tesco Real Food team"
+ }
+]

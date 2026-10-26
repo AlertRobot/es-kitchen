@@ -1,0 +1,16 @@
+[
+ {"id": "chorizo", "tescoPack": 200, "prices": {
+  "tesco": {"pack": 200, "price": 2.70, "loyalty": null, "checked": "2026-10-24", "verified": true, "est": false, "label": "Tesco Chorizo Sausages For Cooking 200G", "src": "https://www.tesco.com/groceries/en-GB/search?query=cooking%20chorizo", "note": "product page https://www.tesco.com/shop/en-GB/products/308453188; Tesco Spanish Chorizo Sausage Slices 150g £1.25 also stocked"},
+  "sainsburys": {"pack": 225, "price": 2.60, "loyalty": null, "checked": "2026-10-24", "verified": true, "est": false, "label": "Sainsbury's Spanish Chorizo Ring 225g", "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/chorizo", "note": "Inspire to Cook Cooking Spanish Chorizo 190g £2.75 (Nectar £2.25) also stocked"},
+  "asda": {"pack": 200, "price": 2.68, "loyalty": null, "checked": "2026-10-24", "verified": true, "est": false, "label": "ASDA Dry Cured Chorizo Sausage 200g", "src": "https://www.trolley.co.uk/product/asda-spanish-chorizo-sausage/HPF654", "note": "via trolley.co.uk (Asda online price)"},
+  "aldi": {"pack": 225, "price": 1.99, "loyalty": null, "checked": "", "verified": false, "est": true, "label": "Aldi own-brand Spanish chorizo ring (est.)", "src": "", "note": "no Aldi UK product page found; estimate"},
+  "lidl": {"pack": 225, "price": 1.99, "loyalty": null, "checked": "", "verified": false, "est": true, "label": "Lidl own-brand chorizo ring (est.)", "src": "", "note": "estimate from Aldi"}
+ }},
+ {"id": "taco_shells", "tescoPack": 12, "prices": {
+  "tesco": {"pack": 12, "price": 2.00, "loyalty": null, "checked": "2026-10-24", "verified": true, "est": false, "label": "Tesco Crunchy Taco Shells 12 Pack 150G", "src": "https://www.tesco.com/groceries/en-GB/search?query=taco%20shells", "note": "product page https://www.tesco.com/shop/en-GB/products/297237749; Old El Paso 12 £2.45"},
+  "sainsburys": {"pack": 12, "price": 2.10, "loyalty": null, "checked": "2026-10-24", "verified": true, "est": false, "label": "Sainsbury's Crunchy Taco Shells x12 150g", "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/taco%20shells", "note": ""},
+  "asda": {"pack": 12, "price": 2.10, "loyalty": null, "checked": "2026-10-24", "verified": true, "est": false, "label": "ASDA 12 Classico Crunchy Taco Shells 158g", "src": "https://www.trolley.co.uk/product/asda-12-crunchy-taco-shells/WGU818", "note": "via trolley.co.uk; was £2.15"},
+  "aldi": {"pack": 12, "price": 0.99, "loyalty": null, "checked": "", "verified": false, "est": true, "label": "Aldi own-brand taco shells 12 pack (est.)", "src": "", "note": "no Aldi UK product page found; estimate"},
+  "lidl": {"pack": 12, "price": 0.99, "loyalty": null, "checked": "", "verified": false, "est": true, "label": "Lidl own-brand taco shells (est.)", "src": "", "note": "estimate from Aldi"}
+ }}
+]

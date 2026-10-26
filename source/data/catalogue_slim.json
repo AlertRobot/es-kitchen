@@ -1,0 +1,1465 @@
+[
+ {
+  "id": "arborio_rice",
+  "name": "Risotto rice (arborio)",
+  "aisle": "Dry goods",
+  "unit": "g",
+  "packs": [
+   1000
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 365,
+  "life": 365
+ },
+ {
+  "id": "aubergine",
+  "name": "Aubergines",
+  "aisle": "Fruit & veg",
+  "unit": "each",
+  "packs": [
+   1
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 3,
+  "life": 7
+ },
+ {
+  "id": "avocado",
+  "name": "Ripe & ready avocados",
+  "aisle": "Fruit & veg",
+  "unit": "each",
+  "packs": [
+   2
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 1,
+  "life": 5
+ },
+ {
+  "id": "bacon",
+  "name": "Smoked back bacon",
+  "aisle": "Meat & fish",
+  "unit": "g",
+  "packs": [
+   300
+  ],
+  "staple": false,
+  "freeze": true,
+  "keeps": 3,
+  "life": 10
+ },
+ {
+  "id": "baguette",
+  "name": "Part-baked white baguettes",
+  "aisle": "Bakery",
+  "unit": "each",
+  "packs": [
+   2
+  ],
+  "staple": false,
+  "freeze": true,
+  "keeps": 2,
+  "life": 10
+ },
+ {
+  "id": "basil",
+  "name": "Fresh basil",
+  "aisle": "Fruit & veg",
+  "unit": "g",
+  "packs": [
+   30
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 3,
+  "life": 6
+ },
+ {
+  "id": "beansprouts",
+  "name": "Beansprouts",
+  "aisle": "Fruit & veg",
+  "unit": "g",
+  "packs": [
+   300
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 1,
+  "life": 3
+ },
+ {
+  "id": "beef_mince",
+  "name": "Beef mince (5% fat)",
+  "aisle": "Meat & fish",
+  "unit": "g",
+  "packs": [
+   500,
+   750
+  ],
+  "staple": false,
+  "freeze": true,
+  "keeps": 1,
+  "life": 4
+ },
+ {
+  "id": "black_beans",
+  "name": "Black beans (tin)",
+  "aisle": "Tins & jars",
+  "unit": "g",
+  "packs": [
+   400
+  ],
+  "staple": false,
+  "freeze": true,
+  "keeps": 3,
+  "life": 365
+ },
+ {
+  "id": "black_pepper",
+  "name": "Black pepper",
+  "aisle": "Herbs & spices",
+  "unit": "g",
+  "packs": [
+   100
+  ],
+  "staple": true,
+  "freeze": false,
+  "keeps": 999,
+  "life": 999
+ },
+ {
+  "id": "broccoli",
+  "name": "Broccoli",
+  "aisle": "Fruit & veg",
+  "unit": "g",
+  "packs": [
+   375
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 4,
+  "life": 7
+ },
+ {
+  "id": "burger_buns",
+  "name": "Brioche burger buns",
+  "aisle": "Bakery",
+  "unit": "each",
+  "packs": [
+   4
+  ],
+  "staple": false,
+  "freeze": true,
+  "keeps": 3,
+  "life": 6
+ },
+ {
+  "id": "butter",
+  "name": "Butter",
+  "aisle": "Dairy & eggs",
+  "unit": "g",
+  "packs": [
+   250
+  ],
+  "staple": true,
+  "freeze": true,
+  "keeps": 30,
+  "life": 60
+ },
+ {
+  "id": "butter_beans",
+  "name": "Butter beans in water (tin)",
+  "aisle": "Tins & jars",
+  "unit": "g",
+  "packs": [
+   400
+  ],
+  "staple": false,
+  "freeze": true,
+  "keeps": 3,
+  "life": 365
+ },
+ {
+  "id": "cannellini_beans",
+  "name": "Cannellini beans (tin)",
+  "aisle": "Tins & jars",
+  "unit": "g",
+  "packs": [
+   400
+  ],
+  "staple": false,
+  "freeze": true,
+  "keeps": 3,
+  "life": 365
+ },
+ {
+  "id": "carrots",
+  "name": "Carrots",
+  "aisle": "Fruit & veg",
+  "unit": "g",
+  "packs": [
+   1000
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 21,
+  "life": 21
+ },
+ {
+  "id": "cauliflower",
+  "name": "Cauliflower",
+  "aisle": "Fruit & veg",
+  "unit": "each",
+  "packs": [
+   1
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 4,
+  "life": 7
+ },
+ {
+  "id": "cheddar",
+  "name": "Mature cheddar",
+  "aisle": "Dairy & eggs",
+  "unit": "g",
+  "packs": [
+   400
+  ],
+  "staple": false,
+  "freeze": true,
+  "keeps": 14,
+  "life": 40
+ },
+ {
+  "id": "cherry_tomatoes",
+  "name": "Cherry tomatoes",
+  "aisle": "Fruit & veg",
+  "unit": "g",
+  "packs": [
+   300
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 5,
+  "life": 8
+ },
+ {
+  "id": "chicken_breast",
+  "name": "Chicken breast fillets",
+  "aisle": "Meat & fish",
+  "unit": "g",
+  "packs": [
+   350,
+   650
+  ],
+  "staple": false,
+  "freeze": true,
+  "keeps": 1,
+  "life": 5
+ },
+ {
+  "id": "chicken_thighs",
+  "name": "Chicken thigh fillets",
+  "aisle": "Meat & fish",
+  "unit": "g",
+  "packs": [
+   600,
+   1000
+  ],
+  "staple": false,
+  "freeze": true,
+  "keeps": 1,
+  "life": 5
+ },
+ {
+  "id": "chickpeas",
+  "name": "Chickpeas (tin)",
+  "aisle": "Tins & jars",
+  "unit": "g",
+  "packs": [
+   400
+  ],
+  "staple": false,
+  "freeze": true,
+  "keeps": 3,
+  "life": 365
+ },
+ {
+  "id": "chilli_flakes",
+  "name": "Chilli flakes",
+  "aisle": "Herbs & spices",
+  "unit": "g",
+  "packs": [
+   28
+  ],
+  "staple": true,
+  "freeze": false,
+  "keeps": 365,
+  "life": 365
+ },
+ {
+  "id": "chopped_tomatoes",
+  "name": "Chopped tomatoes (tin)",
+  "aisle": "Tins & jars",
+  "unit": "g",
+  "packs": [
+   400
+  ],
+  "staple": false,
+  "freeze": true,
+  "keeps": 3,
+  "life": 365
+ },
+ {
+  "id": "coconut_milk",
+  "name": "Coconut milk (tin)",
+  "aisle": "Tins & jars",
+  "unit": "ml",
+  "packs": [
+   400
+  ],
+  "staple": false,
+  "freeze": true,
+  "keeps": 3,
+  "life": 365
+ },
+ {
+  "id": "coriander",
+  "name": "Fresh coriander",
+  "aisle": "Fruit & veg",
+  "unit": "g",
+  "packs": [
+   30
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 4,
+  "life": 6
+ },
+ {
+  "id": "cornflour",
+  "name": "Cornflour",
+  "aisle": "Dry goods",
+  "unit": "g",
+  "packs": [
+   500
+  ],
+  "staple": true,
+  "freeze": false,
+  "keeps": 365,
+  "life": 365
+ },
+ {
+  "id": "courgette",
+  "name": "Courgettes",
+  "aisle": "Fruit & veg",
+  "unit": "each",
+  "packs": [
+   1
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 4,
+  "life": 8
+ },
+ {
+  "id": "couscous",
+  "name": "Couscous",
+  "aisle": "Dry goods",
+  "unit": "g",
+  "packs": [
+   500
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 365,
+  "life": 365
+ },
+ {
+  "id": "cucumber",
+  "name": "Cucumber",
+  "aisle": "Fruit & veg",
+  "unit": "each",
+  "packs": [
+   1
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 4,
+  "life": 8
+ },
+ {
+  "id": "cumin",
+  "name": "Ground cumin",
+  "aisle": "Herbs & spices",
+  "unit": "g",
+  "packs": [
+   43
+  ],
+  "staple": true,
+  "freeze": false,
+  "keeps": 365,
+  "life": 365
+ },
+ {
+  "id": "cumin_seeds",
+  "name": "Cumin seeds",
+  "aisle": "Herbs & spices",
+  "unit": "g",
+  "packs": [
+   37
+  ],
+  "staple": true,
+  "freeze": false,
+  "keeps": 365,
+  "life": 365
+ },
+ {
+  "id": "curry_powder",
+  "name": "Mild curry powder",
+  "aisle": "Herbs & spices",
+  "unit": "g",
+  "packs": [
+   80
+  ],
+  "staple": true,
+  "freeze": false,
+  "keeps": 365,
+  "life": 365
+ },
+ {
+  "id": "double_cream",
+  "name": "Double cream",
+  "aisle": "Dairy & eggs",
+  "unit": "ml",
+  "packs": [
+   150,
+   300
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 3,
+  "life": 8
+ },
+ {
+  "id": "egg_noodles",
+  "name": "Medium egg noodles",
+  "aisle": "World foods",
+  "unit": "g",
+  "packs": [
+   250
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 365,
+  "life": 365
+ },
+ {
+  "id": "eggs",
+  "name": "Free-range eggs",
+  "aisle": "Dairy & eggs",
+  "unit": "each",
+  "packs": [
+   6,
+   12
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 21,
+  "life": 21
+ },
+ {
+  "id": "feta",
+  "name": "Feta",
+  "aisle": "Dairy & eggs",
+  "unit": "g",
+  "packs": [
+   200
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 4,
+  "life": 20
+ },
+ {
+  "id": "frozen_peas",
+  "name": "Frozen garden peas",
+  "aisle": "Frozen",
+  "unit": "g",
+  "packs": [
+   1000
+  ],
+  "staple": false,
+  "freeze": true,
+  "keeps": 365,
+  "life": 365
+ },
+ {
+  "id": "garam_masala",
+  "name": "Garam masala",
+  "aisle": "Herbs & spices",
+  "unit": "g",
+  "packs": [
+   38
+  ],
+  "staple": true,
+  "freeze": false,
+  "keeps": 365,
+  "life": 365
+ },
+ {
+  "id": "garlic",
+  "name": "Garlic",
+  "aisle": "Fruit & veg",
+  "unit": "clove",
+  "packs": [
+   40
+  ],
+  "staple": true,
+  "freeze": false,
+  "keeps": 30,
+  "life": 30
+ },
+ {
+  "id": "ginger_paste",
+  "name": "Ginger paste",
+  "aisle": "World foods",
+  "unit": "g",
+  "packs": [
+   90
+  ],
+  "staple": true,
+  "freeze": false,
+  "keeps": 42,
+  "life": 365
+ },
+ {
+  "id": "gnocchi",
+  "name": "Potato gnocchi",
+  "aisle": "Chilled",
+  "unit": "g",
+  "packs": [
+   500
+  ],
+  "staple": false,
+  "freeze": true,
+  "keeps": 3,
+  "life": 30
+ },
+ {
+  "id": "gochujang",
+  "name": "Gochujang Korean chilli paste",
+  "aisle": "World foods",
+  "unit": "g",
+  "packs": [
+   90
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 60,
+  "life": 365
+ },
+ {
+  "id": "gravy",
+  "name": "Gravy granules",
+  "aisle": "Dry goods",
+  "unit": "g",
+  "packs": [
+   200
+  ],
+  "staple": true,
+  "freeze": false,
+  "keeps": 365,
+  "life": 365
+ },
+ {
+  "id": "greek_yogurt",
+  "name": "Greek-style yogurt",
+  "aisle": "Dairy & eggs",
+  "unit": "g",
+  "packs": [
+   500
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 5,
+  "life": 12
+ },
+ {
+  "id": "green_chillies",
+  "name": "Green chillies",
+  "aisle": "Fruit & veg",
+  "unit": "g",
+  "packs": [
+   80
+  ],
+  "staple": false,
+  "freeze": true,
+  "keeps": 5,
+  "life": 10
+ },
+ {
+  "id": "ground_cinnamon",
+  "name": "Ground cinnamon",
+  "aisle": "Herbs & spices",
+  "unit": "g",
+  "packs": [
+   36
+  ],
+  "staple": true,
+  "freeze": false,
+  "keeps": 365,
+  "life": 365
+ },
+ {
+  "id": "ground_coriander",
+  "name": "Ground coriander",
+  "aisle": "Herbs & spices",
+  "unit": "g",
+  "packs": [
+   36
+  ],
+  "staple": true,
+  "freeze": false,
+  "keeps": 365,
+  "life": 365
+ },
+ {
+  "id": "halloumi",
+  "name": "Halloumi",
+  "aisle": "Dairy & eggs",
+  "unit": "g",
+  "packs": [
+   225
+  ],
+  "staple": false,
+  "freeze": true,
+  "keeps": 3,
+  "life": 20
+ },
+ {
+  "id": "harissa",
+  "name": "Harissa paste",
+  "aisle": "World foods",
+  "unit": "g",
+  "packs": [
+   90
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 28,
+  "life": 365
+ },
+ {
+  "id": "hoisin_sauce",
+  "name": "Hoisin sauce",
+  "aisle": "World foods",
+  "unit": "g",
+  "packs": [
+   320
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 90,
+  "life": 365
+ },
+ {
+  "id": "honey",
+  "name": "Honey",
+  "aisle": "Tins & jars",
+  "unit": "g",
+  "packs": [
+   340
+  ],
+  "staple": true,
+  "freeze": false,
+  "keeps": 999,
+  "life": 999
+ },
+ {
+  "id": "kidney_beans",
+  "name": "Red kidney beans (tin)",
+  "aisle": "Tins & jars",
+  "unit": "g",
+  "packs": [
+   400
+  ],
+  "staple": false,
+  "freeze": true,
+  "keeps": 3,
+  "life": 365
+ },
+ {
+  "id": "kimchi",
+  "name": "Kimchi",
+  "aisle": "Chilled",
+  "unit": "g",
+  "packs": [
+   300
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 14,
+  "life": 30
+ },
+ {
+  "id": "lamb_mince",
+  "name": "Lamb mince (20% fat)",
+  "aisle": "Meat & fish",
+  "unit": "g",
+  "packs": [
+   500
+  ],
+  "staple": false,
+  "freeze": true,
+  "keeps": 1,
+  "life": 4
+ },
+ {
+  "id": "lasagne_sheets",
+  "name": "Dried lasagne sheets",
+  "aisle": "Dry goods",
+  "unit": "g",
+  "packs": [
+   500
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 365,
+  "life": 365
+ },
+ {
+  "id": "leeks",
+  "name": "Leeks",
+  "aisle": "Fruit & veg",
+  "unit": "g",
+  "packs": [
+   500
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 4,
+  "life": 10
+ },
+ {
+  "id": "lemon",
+  "name": "Lemons",
+  "aisle": "Fruit & veg",
+  "unit": "each",
+  "packs": [
+   1
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 7,
+  "life": 21
+ },
+ {
+  "id": "lime",
+  "name": "Limes",
+  "aisle": "Fruit & veg",
+  "unit": "each",
+  "packs": [
+   1
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 7,
+  "life": 21
+ },
+ {
+  "id": "little_gem",
+  "name": "Little gem lettuce",
+  "aisle": "Fruit & veg",
+  "unit": "each",
+  "packs": [
+   2
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 4,
+  "life": 7
+ },
+ {
+  "id": "milk",
+  "name": "Semi-skimmed milk",
+  "aisle": "Dairy & eggs",
+  "unit": "ml",
+  "packs": [
+   2272
+  ],
+  "staple": true,
+  "freeze": false,
+  "keeps": 4,
+  "life": 7
+ },
+ {
+  "id": "miso_paste",
+  "name": "Miso paste",
+  "aisle": "World foods",
+  "unit": "g",
+  "packs": [
+   100
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 90,
+  "life": 365
+ },
+ {
+  "id": "mixed_herbs",
+  "name": "Dried mixed herbs",
+  "aisle": "Herbs & spices",
+  "unit": "g",
+  "packs": [
+   18
+  ],
+  "staple": true,
+  "freeze": false,
+  "keeps": 365,
+  "life": 365
+ },
+ {
+  "id": "mozzarella",
+  "name": "Mozzarella",
+  "aisle": "Dairy & eggs",
+  "unit": "g",
+  "packs": [
+   125
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 2,
+  "life": 10
+ },
+ {
+  "id": "mushrooms",
+  "name": "Chestnut mushrooms",
+  "aisle": "Fruit & veg",
+  "unit": "g",
+  "packs": [
+   250
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 3,
+  "life": 6
+ },
+ {
+  "id": "naan",
+  "name": "Plain naan",
+  "aisle": "Bakery",
+  "unit": "each",
+  "packs": [
+   2
+  ],
+  "staple": false,
+  "freeze": true,
+  "keeps": 2,
+  "life": 7
+ },
+ {
+  "id": "oil",
+  "name": "Olive oil",
+  "aisle": "Oils & sauces",
+  "unit": "ml",
+  "packs": [
+   500
+  ],
+  "staple": true,
+  "freeze": false,
+  "keeps": 365,
+  "life": 365
+ },
+ {
+  "id": "onion",
+  "name": "Brown onions",
+  "aisle": "Fruit & veg",
+  "unit": "each",
+  "packs": [
+   6
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 5,
+  "life": 30
+ },
+ {
+  "id": "pak_choi",
+  "name": "Pak choi",
+  "aisle": "Fruit & veg",
+  "unit": "g",
+  "packs": [
+   250
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 3,
+  "life": 5
+ },
+ {
+  "id": "paneer",
+  "name": "Paneer",
+  "aisle": "Dairy & eggs",
+  "unit": "g",
+  "packs": [
+   200
+  ],
+  "staple": false,
+  "freeze": true,
+  "keeps": 3,
+  "life": 14
+ },
+ {
+  "id": "panko",
+  "name": "Panko breadcrumbs",
+  "aisle": "World foods",
+  "unit": "g",
+  "packs": [
+   150
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 90,
+  "life": 365
+ },
+ {
+  "id": "parmesan",
+  "name": "Italian hard cheese (parmesan-style)",
+  "aisle": "Dairy & eggs",
+  "unit": "g",
+  "packs": [
+   175
+  ],
+  "staple": false,
+  "freeze": true,
+  "keeps": 21,
+  "life": 40
+ },
+ {
+  "id": "pasta",
+  "name": "Dried pasta (spaghetti/penne)",
+  "aisle": "Dry goods",
+  "unit": "g",
+  "packs": [
+   500
+  ],
+  "staple": true,
+  "freeze": false,
+  "keeps": 365,
+  "life": 365
+ },
+ {
+  "id": "peanut_butter",
+  "name": "Peanut butter",
+  "aisle": "Tins & jars",
+  "unit": "g",
+  "packs": [
+   340
+  ],
+  "staple": true,
+  "freeze": false,
+  "keeps": 90,
+  "life": 365
+ },
+ {
+  "id": "peppers",
+  "name": "Mixed peppers",
+  "aisle": "Fruit & veg",
+  "unit": "each",
+  "packs": [
+   3
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 3,
+  "life": 10
+ },
+ {
+  "id": "pesto",
+  "name": "Green pesto",
+  "aisle": "Tins & jars",
+  "unit": "g",
+  "packs": [
+   190
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 14,
+  "life": 365
+ },
+ {
+  "id": "pitta",
+  "name": "Pitta breads",
+  "aisle": "Bakery",
+  "unit": "each",
+  "packs": [
+   6
+  ],
+  "staple": false,
+  "freeze": true,
+  "keeps": 3,
+  "life": 6
+ },
+ {
+  "id": "plain_flour",
+  "name": "Plain flour",
+  "aisle": "Dry goods",
+  "unit": "g",
+  "packs": [
+   1500
+  ],
+  "staple": true,
+  "freeze": false,
+  "keeps": 365,
+  "life": 365
+ },
+ {
+  "id": "pork_mince",
+  "name": "Pork mince",
+  "aisle": "Meat & fish",
+  "unit": "g",
+  "packs": [
+   500
+  ],
+  "staple": false,
+  "freeze": true,
+  "keeps": 1,
+  "life": 4
+ },
+ {
+  "id": "potatoes",
+  "name": "White potatoes",
+  "aisle": "Fruit & veg",
+  "unit": "g",
+  "packs": [
+   2000
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 21,
+  "life": 21
+ },
+ {
+  "id": "prawns",
+  "name": "Frozen king prawns",
+  "aisle": "Frozen",
+  "unit": "g",
+  "packs": [
+   170
+  ],
+  "staple": false,
+  "freeze": true,
+  "keeps": 365,
+  "life": 365
+ },
+ {
+  "id": "puff_pastry",
+  "name": "Ready-rolled puff pastry",
+  "aisle": "Chilled",
+  "unit": "g",
+  "packs": [
+   320
+  ],
+  "staple": false,
+  "freeze": true,
+  "keeps": 2,
+  "life": 14
+ },
+ {
+  "id": "red_lentils",
+  "name": "Red split lentils",
+  "aisle": "Dry goods",
+  "unit": "g",
+  "packs": [
+   500
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 365,
+  "life": 365
+ },
+ {
+  "id": "red_onion",
+  "name": "Red onions",
+  "aisle": "Fruit & veg",
+  "unit": "each",
+  "packs": [
+   3
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 5,
+  "life": 30
+ },
+ {
+  "id": "rice",
+  "name": "Basmati rice",
+  "aisle": "Dry goods",
+  "unit": "g",
+  "packs": [
+   1000
+  ],
+  "staple": true,
+  "freeze": false,
+  "keeps": 365,
+  "life": 365
+ },
+ {
+  "id": "rice_noodles",
+  "name": "Flat rice noodles (dried)",
+  "aisle": "World foods",
+  "unit": "g",
+  "packs": [
+   400
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 365,
+  "life": 365
+ },
+ {
+  "id": "ricotta",
+  "name": "Ricotta",
+  "aisle": "Dairy & eggs",
+  "unit": "g",
+  "packs": [
+   250
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 3,
+  "life": 14
+ },
+ {
+  "id": "salmon",
+  "name": "Salmon fillets",
+  "aisle": "Meat & fish",
+  "unit": "each",
+  "packs": [
+   2,
+   4
+  ],
+  "staple": false,
+  "freeze": true,
+  "keeps": 1,
+  "life": 4
+ },
+ {
+  "id": "salt",
+  "name": "Salt",
+  "aisle": "Herbs & spices",
+  "unit": "g",
+  "packs": [
+   1500
+  ],
+  "staple": true,
+  "freeze": false,
+  "keeps": 999,
+  "life": 999
+ },
+ {
+  "id": "sausages",
+  "name": "Pork sausages",
+  "aisle": "Meat & fish",
+  "unit": "each",
+  "packs": [
+   8
+  ],
+  "staple": false,
+  "freeze": true,
+  "keeps": 2,
+  "life": 6
+ },
+ {
+  "id": "smoked_paprika",
+  "name": "Smoked paprika",
+  "aisle": "Herbs & spices",
+  "unit": "g",
+  "packs": [
+   48
+  ],
+  "staple": true,
+  "freeze": false,
+  "keeps": 365,
+  "life": 365
+ },
+ {
+  "id": "soy_sauce",
+  "name": "Soy sauce",
+  "aisle": "World foods",
+  "unit": "ml",
+  "packs": [
+   150
+  ],
+  "staple": true,
+  "freeze": false,
+  "keeps": 365,
+  "life": 365
+ },
+ {
+  "id": "spinach",
+  "name": "Baby spinach",
+  "aisle": "Fruit & veg",
+  "unit": "g",
+  "packs": [
+   250
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 2,
+  "life": 5
+ },
+ {
+  "id": "spring_onions",
+  "name": "Spring onions",
+  "aisle": "Fruit & veg",
+  "unit": "each",
+  "packs": [
+   8
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 5,
+  "life": 8
+ },
+ {
+  "id": "stir_fry_veg",
+  "name": "Stir-fry vegetables",
+  "aisle": "Fruit & veg",
+  "unit": "g",
+  "packs": [
+   320
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 1,
+  "life": 4
+ },
+ {
+  "id": "stock_cubes",
+  "name": "Stock cubes",
+  "aisle": "Dry goods",
+  "unit": "each",
+  "packs": [
+   10
+  ],
+  "staple": true,
+  "freeze": false,
+  "keeps": 365,
+  "life": 365
+ },
+ {
+  "id": "sweet_chilli_sauce",
+  "name": "Sweet chilli sauce",
+  "aisle": "World foods",
+  "unit": "g",
+  "packs": [
+   290
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 90,
+  "life": 365
+ },
+ {
+  "id": "sweet_potato",
+  "name": "Sweet potatoes",
+  "aisle": "Fruit & veg",
+  "unit": "g",
+  "packs": [
+   1000
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 14,
+  "life": 14
+ },
+ {
+  "id": "sweetcorn",
+  "name": "Frozen sweetcorn",
+  "aisle": "Frozen",
+  "unit": "g",
+  "packs": [
+   1000
+  ],
+  "staple": false,
+  "freeze": true,
+  "keeps": 365,
+  "life": 365
+ },
+ {
+  "id": "tahini",
+  "name": "Tahini",
+  "aisle": "World foods",
+  "unit": "g",
+  "packs": [
+   300
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 90,
+  "life": 365
+ },
+ {
+  "id": "thai_green_paste",
+  "name": "Thai green curry paste",
+  "aisle": "World foods",
+  "unit": "g",
+  "packs": [
+   180
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 28,
+  "life": 365
+ },
+ {
+  "id": "thai_red_paste",
+  "name": "Thai red curry paste",
+  "aisle": "World foods",
+  "unit": "g",
+  "packs": [
+   180
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 28,
+  "life": 365
+ },
+ {
+  "id": "tikka_paste",
+  "name": "Tikka masala curry paste",
+  "aisle": "World foods",
+  "unit": "g",
+  "packs": [
+   283
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 28,
+  "life": 365
+ },
+ {
+  "id": "tinned_tuna",
+  "name": "Tuna chunks in spring water (tin)",
+  "aisle": "Tins & jars",
+  "unit": "g",
+  "packs": [
+   145
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 2,
+  "life": 365
+ },
+ {
+  "id": "tofu",
+  "name": "Extra firm tofu",
+  "aisle": "Chilled",
+  "unit": "g",
+  "packs": [
+   280,
+   399
+  ],
+  "staple": false,
+  "freeze": true,
+  "keeps": 3,
+  "life": 21
+ },
+ {
+  "id": "tomato_puree",
+  "name": "Tomato purée",
+  "aisle": "Tins & jars",
+  "unit": "g",
+  "packs": [
+   200
+  ],
+  "staple": true,
+  "freeze": false,
+  "keeps": 42,
+  "life": 365
+ },
+ {
+  "id": "tortilla_chips",
+  "name": "Lightly salted tortilla chips",
+  "aisle": "World foods",
+  "unit": "g",
+  "packs": [
+   200
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 7,
+  "life": 180
+ },
+ {
+  "id": "turmeric",
+  "name": "Ground turmeric",
+  "aisle": "Herbs & spices",
+  "unit": "g",
+  "packs": [
+   45
+  ],
+  "staple": true,
+  "freeze": false,
+  "keeps": 365,
+  "life": 365
+ },
+ {
+  "id": "udon_noodles",
+  "name": "Straight-to-wok udon noodles (2 x 150g)",
+  "aisle": "World foods",
+  "unit": "g",
+  "packs": [
+   300
+  ],
+  "staple": false,
+  "freeze": false,
+  "keeps": 1,
+  "life": 180
+ },
+ {
+  "id": "wholegrain_mustard",
+  "name": "Wholegrain mustard",
+  "aisle": "Oils & sauces",
+  "unit": "g",
+  "packs": [
+   180
+  ],
+  "staple": true,
+  "freeze": false,
+  "keeps": 90,
+  "life": 365
+ },
+ {
+  "id": "worcestershire",
+  "name": "Worcestershire sauce",
+  "aisle": "Oils & sauces",
+  "unit": "ml",
+  "packs": [
+   150
+  ],
+  "staple": true,
+  "freeze": false,
+  "keeps": 365,
+  "life": 365
+ },
+ {
+  "id": "wraps",
+  "name": "Plain tortilla wraps",
+  "aisle": "Bakery",
+  "unit": "each",
+  "packs": [
+   8
+  ],
+  "staple": false,
+  "freeze": true,
+  "keeps": 5,
+  "life": 10
+ }
+]

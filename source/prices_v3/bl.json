@@ -1,0 +1,1264 @@
+[
+ {
+  "id": "weetabix",
+  "tescoPack": 24,
+  "prices": {
+   "tesco": {
+    "pack": 24,
+    "price": 3.5,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Weetabix Cereal 24 Pack",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=weetabix",
+    "note": "48 pack £5.50 (£0.12/each); no Tesco own-brand wheat biscuit shown in search (trolley lists Tesco Wheat Biscuits, unverified)"
+   },
+   "sainsburys": {
+    "pack": 24,
+    "price": 3.5,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Weetabix 24 Original Cereal Pack",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/weetabix",
+    "note": "48 pack £5.50; cheapest own-brand: Sainsbury's Wheat Biscuits £1.46 per trolley (not seen on Sainsbury's search)"
+   },
+   "asda": {
+    "pack": 24,
+    "price": 3.48,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Weetabix Cereal 24",
+    "src": "https://www.trolley.co.uk/product/weetabix-cereal/VLS995",
+    "note": "own-brand: ASDA 48 Wheat Bisks £2.92 (trolley IVQ955)"
+   },
+   "aldi": {
+    "pack": 36,
+    "price": 2.19,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Harvest Morn Wheat Bisks 36 Pack",
+    "src": "https://www.aldi.co.uk/product/harvest-morn-wheat-bisks-36-pack-000000000000337432",
+    "note": "Aldi does not list Weetabix Original (only Choc Minis); own-brand wheat biscuit used — this is also the cheapest own-brand (£0.06/biscuit)"
+   },
+   "lidl": {
+    "pack": 36,
+    "price": 2.19,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: Harvest Morn Wheat Bisks 36 Pack)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "protein_bar",
+  "tescoPack": 1,
+  "prices": {
+   "tesco": {
+    "pack": 1,
+    "price": 2.9,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Grenade Protein Bar - Chocolate Chip Cookie Dough 60g",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=protein%20bar",
+    "note": "no ~20g-protein multipack or own-brand protein bar at Tesco (search \"protein bar multipack\" only KIND marketplace); single 60g bar ~20g protein"
+   },
+   "sainsburys": {
+    "pack": 1,
+    "price": 2.9,
+    "loyalty": 1.8,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Grenade Chocolate Chip Cookie Dough Flavour Protein Bar 60g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/protein%20bar",
+    "note": "two unlabelled prices £1.80/£2.90 shown — £1.80 taken as Nectar price; no multipacks listed"
+   },
+   "asda": {
+    "pack": 1,
+    "price": 1.8,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Grenade White Oreo Protein Bar 60g",
+    "src": "https://www.trolley.co.uk/product/grenade-oreo-white/GBL189",
+    "note": "Asda single-bar price; trolley lists Grenade 4 x 60g £8.80 (worse per bar)"
+   },
+   "aldi": {
+    "pack": 3,
+    "price": 2.99,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Harvest Morn Chocolate Salted Caramel Flavour Vitamin & Protein Bar 3 Pack (120g)",
+    "src": "https://www.aldi.co.uk/product/harvest-morn-chocolate-salted-caramel-flavour-vitamin-protein-bar-3-pack-000000000481474002",
+    "note": "40g bars (≈£1.00/bar, likely ~15g protein); Harvest Morn High Protein 3 x 60g packs (~21g protein) listed but \"currently not available\""
+   },
+   "lidl": {
+    "pack": 3,
+    "price": 2.99,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: Harvest Morn Chocolate Salted Caramel Flavour Vitamin & Protein Bar 3 Pack (120g))",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "porridge_oats",
+  "tescoPack": 1000,
+  "prices": {
+   "tesco": {
+    "pack": 1000,
+    "price": 1.25,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Scottish Oats Porridge 1Kg",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=porridge%20oats",
+    "note": "Grower's Harvest Porridge Oats 1Kg £0.85 (Aldi Price Match); 2kg £2.45"
+   },
+   "sainsburys": {
+    "pack": 1000,
+    "price": 1.25,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Scottish Porridge Oats 1kg",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/porridge%20oats",
+    "note": "Stamford Street Co. 1kg Wholegrain Rolled Oats £0.85 (Aldi price match)"
+   },
+   "asda": {
+    "pack": 1000,
+    "price": 1.18,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Scottish Porridge Oats 1kg",
+    "src": "https://www.trolley.co.uk/product/asda-scottish-porridge-oats/NFX278",
+    "note": "usually £1.25; Just Essentials by Asda Porridge Oats 1kg £0.85"
+   },
+   "aldi": {
+    "pack": 1000,
+    "price": 0.85,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Everyday Essentials Porridge Oats 1kg",
+    "src": "https://www.aldi.co.uk/product/everyday-essentials-porridge-oats-000000000000337387",
+    "note": "only non-organic oats Aldi lists (Kavanagh's Organic 1kg £2.25)"
+   },
+   "lidl": {
+    "pack": 1000,
+    "price": 0.85,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: Everyday Essentials Porridge Oats 1kg)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "banana",
+  "tescoPack": 5,
+  "prices": {
+   "tesco": {
+    "pack": 5,
+    "price": 0.78,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Ripe Bananas 5 Pack",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=bananas",
+    "note": "Aldi Price Match; loose £0.90/kg (≈£0.16 each); Small Bananas 6 Pack £0.75"
+   },
+   "sainsburys": {
+    "pack": 5,
+    "price": 0.78,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Fairtrade Bananas x5",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/bananas",
+    "note": "Aldi price match; loose £0.90/kg; x8 £1.39"
+   },
+   "asda": {
+    "pack": 6,
+    "price": 0.94,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA 6 Sweet Creamy Bananas",
+    "src": "https://www.trolley.co.uk/product/asda-7-brilliant-bananas/LOP676",
+    "note": "seen in \"More from ASDA\" on trolley LOP676 (product WUD601); no loose Asda bananas on trolley; Garden Gang 7 small bananas £0.88"
+   },
+   "aldi": {
+    "pack": 5,
+    "price": 0.78,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Nature's Pick Bananas 5 Each",
+    "src": "https://www.aldi.co.uk/product/nature-s-pick-bananas-000000000000267180",
+    "note": "single banana £0.16 (https://www.aldi.co.uk/product/nature-s-pick-banana-000000000000267186)"
+   },
+   "lidl": {
+    "pack": 5,
+    "price": 0.78,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: Nature's Pick Bananas 5 Each)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "frozen_berries",
+  "tescoPack": 1000,
+  "prices": {
+   "tesco": {
+    "pack": 1000,
+    "price": 2.99,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Perfectly Imperfect Frozen Mixed Berries 1kg",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=frozen%20mixed%20berries",
+    "note": "no Tesco 500g frozen mixed berries; Aldi Price Match; Tesco Berry Smoothie Mix 500g £3.00"
+   },
+   "sainsburys": {
+    "pack": 1000,
+    "price": 3.5,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Stamford Street Co. Berry Mix 1kg",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/frozen%20mixed%20berries",
+    "note": "no Sainsbury's-brand mixed berries in search; Stamford St Berry Mix 400g £2.50; Sainsbury's Frozen Summer Fruits 450g £3.60 (trolley); Nectar buy-3-cheapest-free multibuy"
+   },
+   "asda": {
+    "pack": 500,
+    "price": 2.96,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Summer Fruits 500g (frozen)",
+    "src": "https://www.trolley.co.uk/product/frozen-for-freshness-summer-fruits/YPB443",
+    "note": "usually £2.65"
+   },
+   "aldi": {
+    "pack": 500,
+    "price": 1.99,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Four Seasons Summer Fruits 500g",
+    "src": "https://www.aldi.co.uk/product/four-seasons-summer-fruits-000000000286556001",
+    "note": "Black Forest Fruits 500g also £1.99"
+   },
+   "lidl": {
+    "pack": 500,
+    "price": 1.99,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: Four Seasons Summer Fruits 500g)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "wholemeal_bread",
+  "tescoPack": 19,
+  "prices": {
+   "tesco": {
+    "pack": 19,
+    "price": 0.75,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Wholemeal Medium Sliced Bread 800g",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=wholemeal%20bread%20800g",
+    "note": "800g ≈ 19 slices; Aldi Price Match; H.W. Nevill's 800g £0.55"
+   },
+   "sainsburys": {
+    "pack": 19,
+    "price": 0.75,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Medium Sliced Wholemeal Bread 800g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/wholemeal%20bread%20800g",
+    "note": "800g ≈ 19 slices; Aldi price match; Stamford Street Co. 800g £0.55"
+   },
+   "asda": {
+    "pack": 19,
+    "price": 0.75,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "The BAKERY at ASDA Wholemeal Medium Sliced 800g",
+    "src": "https://www.trolley.co.uk/product/the-bakery-at-asda-wholemeal-medium-sliced-bread/XYZ637",
+    "note": "800g ≈ 19 slices; usually £0.95; Just Essentials Wholemeal 800g £0.55"
+   },
+   "aldi": {
+    "pack": 19,
+    "price": 0.75,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Village Bakery Wholemeal Sliced Loaf 800g",
+    "src": "https://www.aldi.co.uk/product/village-bakery-wholemeal-sliced-loaf-000000000000382253",
+    "note": "800g ≈ 19 slices; Everyday Essentials Medium Sliced Wholemeal 800g £0.55 (https://www.aldi.co.uk/product/everyday-essentials-medium-sliced-wholemeal-bread-000000000383372002)"
+   },
+   "lidl": {
+    "pack": 19,
+    "price": 0.75,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: Village Bakery Wholemeal Sliced Loaf 800g)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "skyr",
+  "tescoPack": 450,
+  "prices": {
+   "tesco": {
+    "pack": 450,
+    "price": 2.4,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Danone Skyr 0% Fat High Protein Natural Yoghurt 450g",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=skyr",
+    "note": "no Tesco own-brand skyr; Arla Skyr Natural 450g £2.75; siggi's 0% 450g £2.95; Arla 0% 1kg £3.65"
+   },
+   "sainsburys": {
+    "pack": 450,
+    "price": 2.75,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Danone Skyr High Protein 0% Fat Natural Yogurt 450g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/skyr",
+    "note": "no own-brand skyr; Siggi's Natural 0% 450g shows £2.95/£2.00 (unlabelled, £2.00 likely Nectar); trolley shows Arla Skyr Natural 450g £2.75 / £1.50 with Nectar"
+   },
+   "asda": {
+    "pack": 450,
+    "price": 2.25,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Arla Skyr Natural Icelandic Style Yogurt 450g",
+    "src": "https://www.trolley.co.uk/product/arla-skyr-natural-icelandic-style-yogurt/XMK602",
+    "note": "no ASDA own-brand skyr found; fat content not stated (Arla natural skyr is ~0.2% fat)"
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "cottage_cheese",
+  "tescoPack": 300,
+  "prices": {
+   "tesco": {
+    "pack": 300,
+    "price": 1.65,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Fat Free Cottage Cheese 300G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=cottage%20cheese",
+    "note": "Creamfields Low Fat Cottage Cheese 300g £0.85 (Aldi Price Match); Tesco Full Fat 300g £1.65"
+   },
+   "sainsburys": {
+    "pack": 300,
+    "price": 1.65,
+    "loyalty": 1.4,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Graham's the Family Dairy Cottage Cheese Natural 300g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/cottage%20cheese",
+    "note": "no Sainsbury's own-brand 300g in search; two unlabelled prices £1.40/£1.65 — £1.40 taken as Nectar; Arla Natural 300g £1.90"
+   },
+   "asda": {
+    "pack": 300,
+    "price": 1.58,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Cottage Cheese 300g",
+    "src": "https://www.trolley.co.uk/product/asda-cottage-cheese/HUK839",
+    "note": "usually £1.36; ASDA Fat Free 300g £1.58; Just Essentials by ASDA Cottage Cheese 300g £0.85"
+   },
+   "aldi": {
+    "pack": 300,
+    "price": 0.85,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": false,
+    "est": true,
+    "label": "Everyday Essentials Low Fat Cottage Cheese 300g",
+    "src": "https://www.trolley.co.uk/product/creamfields-cottage-cheese-low-fat/VAK362",
+    "note": "not findable on aldi.co.uk (not on Cheese/Dairy/Yogurts page 1; search blocked); price from trolley related-products listing (VHN598), not confirmed at Aldi; Emporium Natural 300g also listed"
+   },
+   "lidl": {
+    "pack": 300,
+    "price": 0.85,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: Everyday Essentials Low Fat Cottage Cheese 300g)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "ham_slices",
+  "tescoPack": 120,
+  "prices": {
+   "tesco": {
+    "pack": 120,
+    "price": 2.3,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco British Cooked Ham Slices 120g",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=cooked%20ham%20slices",
+    "note": "Clubcard multibuy any 2 for £3.50 (to 21/03/2027); Eastmans Cooked Ham Slices 125g £0.85 (Tesco value brand)"
+   },
+   "sainsburys": {
+    "pack": 115,
+    "price": 1.1,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's British Cooked Ham Slices x10 115g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/cooked%20ham%20slices",
+    "note": "Sainsbury's 6 Cooked Ham Slices 120g £2.00; Stamford Street Co. 400g £1.99"
+   },
+   "asda": {
+    "pack": 125,
+    "price": 1,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Cooked Ham 125g",
+    "src": "https://www.trolley.co.uk/product/asda-cooked-ham/RAK575",
+    "note": "usually £0.92; 10 slices 300g £1.87"
+   },
+   "aldi": {
+    "pack": 120,
+    "price": 1.49,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Ashfields British Dry Cured Cooked Ham 7 Slices 120g",
+    "src": "https://www.aldi.co.uk/product/ashfields-british-dry-cured-cooked-ham-7-slices-000000000400299001",
+    "note": "only page 1 of Chilled Meats visible; The Deli German Unsmoked Baked Ham 120g £1.19"
+   },
+   "lidl": {
+    "pack": 120,
+    "price": 1.49,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: Ashfields British Dry Cured Cooked Ham 7 Slices 120g)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "cooked_chicken_slices",
+  "tescoPack": 180,
+  "prices": {
+   "tesco": {
+    "pack": 180,
+    "price": 3.75,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Roast Chicken Slices 180g",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=cooked%20chicken%20breast%20slices",
+    "note": "breast slices; Tesco British Wafer Thin Roast Chicken Slices 120g £2.30 (any 2 for £3.50 Clubcard); Tesco Cooked Sliced Chicken 340g £3.55; Wafer Thin 400g £2.19"
+   },
+   "sainsburys": {
+    "pack": 135,
+    "price": 2.25,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's 8 British Roast Chicken Breast Slices 135g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/cooked%20chicken%20slices",
+    "note": "Roast British Cooked Breast Chicken Slices 180g £3.75 / Nectar £2.75; 10 Cooked Chicken Slices 115g £0.89"
+   },
+   "asda": {
+    "pack": 160,
+    "price": 2.94,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Classic Chicken Breast Slices 160g",
+    "src": "https://www.trolley.co.uk/product/asda-classic-chicken-breast-slices/OML442",
+    "note": "seen as other size (BTT817) on OML442 page; 450g £4.98; ASDA 10 Slices Cooked Chicken 300g £1.87"
+   },
+   "aldi": {
+    "pack": 150,
+    "price": 1.99,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Ashfields Cooked Chicken Breast Slices 150g",
+    "src": "https://www.aldi.co.uk/product/ashfields-cooked-chicken-breast-slices-000000000000400048",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 150,
+    "price": 1.99,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: Ashfields Cooked Chicken Breast Slices 150g)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "hummus",
+  "tescoPack": 200,
+  "prices": {
+   "tesco": {
+    "pack": 200,
+    "price": 1.3,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Houmous 200g",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=houmous",
+    "note": "Clubcard multibuy any 2 for £2.20 (to 12/04/2027); Tesco Houmous 300g £1.50"
+   },
+   "sainsburys": {
+    "pack": 200,
+    "price": 1.35,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Houmous 200g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/classic%20houmous",
+    "note": "Creamy Classic Houmous 315g shows £1.25/£1.75 (unlabelled)"
+   },
+   "asda": {
+    "pack": 200,
+    "price": 1.3,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Classic Houmous 200g",
+    "src": "https://www.trolley.co.uk/product/asda-houmous/JAV108",
+    "note": "usually £1.40; 310g £1.52"
+   },
+   "aldi": {
+    "pack": 200,
+    "price": 0.95,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": true,
+    "label": "The Deli Houmous",
+    "src": "https://www.aldi.co.uk/product/the-deli-houmous-000000000403915001",
+    "note": "pack size not shown on page (assumed 200g)"
+   },
+   "lidl": {
+    "pack": 200,
+    "price": 0.95,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: The Deli Houmous)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "salad_leaves",
+  "tescoPack": 120,
+  "prices": {
+   "tesco": {
+    "pack": 120,
+    "price": 1.2,
+    "loyalty": 1,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Mixed Leaf Salad 120G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=mixed%20salad%20leaves",
+    "note": "Clubcard price £1.00 to 02/11/2026"
+   },
+   "sainsburys": {
+    "pack": 90,
+    "price": 1,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Mixed Leaf Salad 90g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/mixed%20salad%20leaves",
+    "note": "180g shows £1.50/£1.80 (unlabelled)"
+   },
+   "asda": {
+    "pack": 200,
+    "price": 1.17,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Mixed Leaf Salad 200g",
+    "src": "https://www.trolley.co.uk/product/asda-mild-mixed-leaf-salad/MKZ746",
+    "note": "price range £1.08–£1.17"
+   },
+   "aldi": {
+    "pack": 160,
+    "price": 0.89,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Nature's Pick Bistro Salad 160g",
+    "src": "https://www.aldi.co.uk/product/nature-s-pick-bistro-salad-000000000000339763",
+    "note": "Nature's Pick Mixed Leaf Salad 120g exists (trolley) but not on veg page 1; Rocket & Baby Leaf 90g £0.99"
+   },
+   "lidl": {
+    "pack": 160,
+    "price": 0.89,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: Nature's Pick Bistro Salad 160g)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "microwave_rice_pouch",
+  "tescoPack": 250,
+  "prices": {
+   "tesco": {
+    "pack": 250,
+    "price": 0.7,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Microwave Basmati Rice 250G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=microwave%20basmati%20rice",
+    "note": "Grower's Harvest 250g £0.55; Tilda 250g £1.00; Ben's Original 220g £1.00"
+   },
+   "sainsburys": {
+    "pack": 250,
+    "price": 0.55,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Microwave Rice Basmati 250g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/microwave%20basmati%20rice",
+    "note": "Aldi price match"
+   },
+   "asda": {
+    "pack": 250,
+    "price": 0.69,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Basmati Micro Rice 250g",
+    "src": "https://www.trolley.co.uk/product/asda-basmati-micro-rice/RXU213",
+    "note": "usually £0.64"
+   },
+   "aldi": {
+    "pack": 250,
+    "price": 0.55,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Worldwide Foods Basmati Rice Pouch 250g",
+    "src": "https://www.aldi.co.uk/product/worldwide-foods-basmati-rice-pouch-000000000000334608",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 250,
+    "price": 0.55,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: Worldwide Foods Basmati Rice Pouch 250g)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "quinoa",
+  "tescoPack": 300,
+  "prices": {
+   "tesco": {
+    "pack": 300,
+    "price": 3.1,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Quinoa 300G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=quinoa",
+    "note": ""
+   },
+   "sainsburys": {
+    "pack": 300,
+    "price": 3.1,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Quinoa 300g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/quinoa",
+    "note": "White Red & Black Quinoa 300g also £3.10"
+   },
+   "asda": {
+    "pack": 300,
+    "price": 2.94,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Red & White Quinoa 300g",
+    "src": "https://www.trolley.co.uk/product/asda-white-black-red-quinoa/HKK104",
+    "note": "usually £2.57; plain ASDA Quinoa 300g also £2.94 (TIB596)"
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "light_mayonnaise",
+  "tescoPack": 430,
+  "prices": {
+   "tesco": {
+    "pack": 430,
+    "price": 0.86,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Light Mayonnaise 450ml",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=light%20mayonnaise",
+    "note": "450ml ≈ 430g (light mayo ~0.96 g/ml); Aldi Price Match; 500ml £0.89; Hellmann's Light Squeezy 430ml £2.45"
+   },
+   "sainsburys": {
+    "pack": 460,
+    "price": 0.85,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Reduced Fat Mayonnaise 480ml",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/light%20mayonnaise",
+    "note": "480ml ≈ 460g; Aldi price match; Mayonnaise Light Squeezy 500ml £1.00"
+   },
+   "asda": {
+    "pack": 480,
+    "price": 0.89,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Classic Light Mayonnaise 500ml",
+    "src": "https://www.trolley.co.uk/product/asda-light-mayonnaise/SXH629",
+    "note": "500ml ≈ 480g; another 500ml listing £0.96"
+   },
+   "aldi": {
+    "pack": 480,
+    "price": 0.89,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Bramwells Light Mayonnaise 500ml",
+    "src": "https://www.aldi.co.uk/product/bramwells-light-mayonnaise-000000000279901002",
+    "note": "500ml ≈ 480g"
+   },
+   "lidl": {
+    "pack": 480,
+    "price": 0.89,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: Bramwells Light Mayonnaise 500ml)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "frozen_edamame",
+  "tescoPack": 600,
+  "prices": {
+   "tesco": {
+    "pack": 600,
+    "price": 3.4,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Soya Beans 600G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=frozen%20soya%20beans",
+    "note": "frozen edamame/soya beans; chilled Tesco Edamame Beans 150g £1.50"
+   },
+   "sainsburys": {
+    "pack": 500,
+    "price": 2.88,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Edamame Beans 500g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/frozen%20edamame",
+    "note": "Yutaka Shelled Edamame 500g £2.75"
+   },
+   "asda": {
+    "pack": 600,
+    "price": 3.42,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Edamame Soya Beans 600g (frozen)",
+    "src": "https://www.trolley.co.uk/product/asda-edamame-soya-beans/AJG967",
+    "note": "usually £3.07"
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "smoked_mackerel",
+  "tescoPack": 240,
+  "prices": {
+   "tesco": {
+    "pack": 240,
+    "price": 6,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Smoked Mackerel",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=smoked%20mackerel",
+    "note": "variable weight 240/260/280g at £25.00/kg; peppered 225g £5.63"
+   },
+   "sainsburys": {
+    "pack": 140,
+    "price": 3.75,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's British Smoked Mackerel Fillets 140g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/smoked%20mackerel",
+    "note": "£26.79/kg; Sound Seafood Hot Smoked Mackerel Fillets 250g £4.11 (Aldi price match)"
+   },
+   "asda": {
+    "pack": 200,
+    "price": 3.2,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": true,
+    "label": "ASDA Extra Special Sweet Cured Hot Smoked Mackerel Fillets",
+    "src": "https://www.trolley.co.uk/product/asda-extra-special-sweet-cured-hot-smoked-mackerel-fillets/BCX265",
+    "note": "no plain ASDA smoked mackerel found on trolley; \"from £3.20\", pack size not stated (assumed 200g)"
+   },
+   "aldi": {
+    "pack": 200,
+    "price": 3.29,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "The Fishmonger Hot Smoked Mackerel Fillets 200g",
+    "src": "https://www.aldi.co.uk/product/the-fishmonger-hot-smoked-mackerel-fillets-000000000384805003",
+    "note": "£16.45/kg"
+   },
+   "lidl": {
+    "pack": 200,
+    "price": 3.29,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: The Fishmonger Hot Smoked Mackerel Fillets 200g)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "cooked_beetroot",
+  "tescoPack": 500,
+  "prices": {
+   "tesco": {
+    "pack": 500,
+    "price": 0.9,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Cooked Beetroot 500g",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=cooked%20beetroot",
+    "note": "Love Beets Cooked Beetroot 250g £0.90"
+   },
+   "sainsburys": {
+    "pack": 250,
+    "price": 0.85,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Beetroot Vacuum Pack 250g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/cooked%20beetroot",
+    "note": "Cooked Beetroot in Natural Juices 500g £0.95"
+   },
+   "asda": {
+    "pack": 300,
+    "price": 0.87,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Cooked Beetroot 300g",
+    "src": "https://www.trolley.co.uk/product/asda-cooked-beetroot/TQU109",
+    "note": "vinegar/natural not stated; Just Essentials Cooked Beetroot 500g £0.66"
+   },
+   "aldi": {
+    "pack": 500,
+    "price": 0.66,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Nature's Pick Cooked Beetroot 500g",
+    "src": "https://www.aldi.co.uk/product/nature-s-pick-cooked-beetroot-000000000000339762",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 500,
+    "price": 0.66,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: Nature's Pick Cooked Beetroot 500g)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "baked_beans",
+  "tescoPack": 420,
+  "prices": {
+   "tesco": {
+    "pack": 420,
+    "price": 0.39,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Baked Beans In Tomato Sauce 420G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=baked%20beans",
+    "note": "Stockwell & Co 420g £0.28 (Aldi Price Match); Heinz 415g £1.40 (Clubcard any 2 for £2)"
+   },
+   "sainsburys": {
+    "pack": 400,
+    "price": 0.37,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Baked Beans In Tomato Sauce 400g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/baked%20beans%20in%20tomato%20sauce",
+    "note": "Aldi price match; Stamford Street Co. 400g £0.30; Heinz 415g £1.40"
+   },
+   "asda": {
+    "pack": 410,
+    "price": 0.38,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Baked Beans in a Rich Tomato Sauce 410g",
+    "src": "https://www.trolley.co.uk/product/tesco-baked-beans-in-tomato-sauce/CNY355",
+    "note": "single tin KLI954 seen as alternative on CNY355 & GUN518 pages; Just Essentials £0.28; 4 x 410g £1.51"
+   },
+   "aldi": {
+    "pack": 410,
+    "price": 0.27,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Everyday Essentials Baked Beans in Tomato Sauce 410g",
+    "src": "https://www.aldi.co.uk/product/everyday-essentials-baked-beans-in-tomato-sauce-000000000000541280",
+    "note": "Bramwells Baked Beans in a Rich Tomato Sauce 410g also sold (price not checked)"
+   },
+   "lidl": {
+    "pack": 410,
+    "price": 0.27,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: Everyday Essentials Baked Beans in Tomato Sauce 410g)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "smoked_salmon",
+  "tescoPack": 100,
+  "prices": {
+   "tesco": {
+    "pack": 100,
+    "price": 3.8,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Smoked Salmon 100g",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=smoked%20salmon",
+    "note": "150g £5.65 (Clubcard £4.50 to 01/11/2026)"
+   },
+   "sainsburys": {
+    "pack": 100,
+    "price": 3.09,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's ASC Scottish Mild Smoked Salmon 100g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/smoked%20salmon%20slices",
+    "note": "Aldi price match; trimmings 100g £1.95"
+   },
+   "asda": {
+    "pack": 100,
+    "price": 3.75,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Flavoursome Oak Smoked Salmon 100g",
+    "src": "https://www.trolley.co.uk/product/asda-flavoursome-oak-smoked-salmon/WIZ075",
+    "note": "200g £6.56; trimmings 120g £2.34"
+   },
+   "aldi": {
+    "pack": 100,
+    "price": 2.49,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "The Fishmonger Smoked Salmon Slices 100g",
+    "src": "https://www.aldi.co.uk/product/the-fishmonger-smoked-salmon-slices-000000000000513647",
+    "note": "200g £4.49"
+   },
+   "lidl": {
+    "pack": 100,
+    "price": 2.49,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: The Fishmonger Smoked Salmon Slices 100g)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "bagel_thins",
+  "tescoPack": 6,
+  "prices": {
+   "tesco": {
+    "pack": 6,
+    "price": 1.85,
+    "loyalty": 1.35,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Warburtons Thin Plain Bagels 6 Pack",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=bagel%20thins",
+    "note": "no wholemeal bagel thins at Tesco; Clubcard £1.35 to 09/11/2026; NYBC Wholemeal Bagels 5pk £2.00 (CC £1.35)"
+   },
+   "sainsburys": {
+    "pack": 6,
+    "price": 1.85,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Warburtons Original Thin Bagels x6",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/bagel%20thins",
+    "note": "no wholemeal thin bagels; Sesame x6 £1.85/£1.35 (Nectar)"
+   },
+   "asda": {
+    "pack": 6,
+    "price": 1.35,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Warburtons Thin Bagels (6) Plain",
+    "src": "https://www.trolley.co.uk/product/warburtons-thin-bagels-plain/DZF950",
+    "note": "no ASDA own or wholemeal thin bagels found"
+   },
+   "aldi": {
+    "pack": 6,
+    "price": 1.19,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Village Bakery Original Bagel Thins 6",
+    "src": "https://www.aldi.co.uk/product/village-bakery-original-bagel-thins-000000000000381861",
+    "note": "not wholemeal (no wholemeal version listed)"
+   },
+   "lidl": {
+    "pack": 6,
+    "price": 1.19,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: Village Bakery Original Bagel Thins 6)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "falafel",
+  "tescoPack": 8,
+  "prices": {
+   "tesco": {
+    "pack": 8,
+    "price": 3,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": true,
+    "label": "Tesco Falafels 152g",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=falafel",
+    "note": "count not stated (assumed ~8 x 19g); Clubcard multibuy any 2 for £5; Cauldron Falafel 200g £2.60, Al'fez 150g £1.90"
+   },
+   "sainsburys": {
+    "pack": 12,
+    "price": 2.6,
+    "loyalty": 1.5,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": true,
+    "label": "Cauldron Falafels 200g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/falafel",
+    "note": "only own-brand is Taste the Difference 144g £3.75; count not stated (assumed ~12 x 17g); unlabelled £1.50 taken as Nectar"
+   },
+   "asda": {
+    "pack": 12,
+    "price": 2.48,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": true,
+    "label": "Cauldron Vegan Middle Eastern Falafels 200g",
+    "src": "https://www.trolley.co.uk/product/cauldron-falafels/AFQ789",
+    "note": "count not stated (assumed ~12); usually £2.75; ASDA 10 Sweet Potato Falafels £2.98"
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ }
+]

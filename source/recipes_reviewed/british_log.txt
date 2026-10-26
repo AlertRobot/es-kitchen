@@ -1,0 +1,30 @@
+br_crispy_oven_fish_chips: title shortened; time 45->50; 6->7 steps (prep split out, explicit timings/heat); cod text fixed to fillets; swaps added for peas and gherkins
+br_chicken_leek_bacon_pie: title shortened; time 55->60 (cooling + 25 min bake); 6->7 steps (top and bake split, broccoli timed to pie); pie dish size made realistic for half a sheet; broccoli no longer boiled in salted water (no salt line); mixed herbs marked optional
+br_toad_in_the_hole: title shortened; time 55->60; 5->7 steps (prep, batter, sausages, bake, onions, gravy, veg); salt raised to cover carrot water; peas swap added
+br_steak_chips_peppercorn: title shortened; time 45->50; 5->6 steps (prep step added, mushrooms timed to chips); butter text in grams; mushroom swap reworded
+br_sunday_roast_chicken_for_two: title shortened; time 80->85; 6->8 steps; timeline reworked so potatoes and Yorkshires finish together (potatoes start 15 min after chicken, Yorkshires go in when chicken rests); gravy strained into a saucepan instead of heating the roasting tin on the hob; oil 45->50ml to match the amounts used; mixed herbs marked optional
+br_hunters_chicken: title shortened; time 45->50; 5->6 steps (prep step added, chicken timed to wedges); oil text fixed to 4 tsp to match 20ml; sweetcorn swap added
+br_halloumi_burger: title shortened; time 25->30; 5->6 steps (prep step added); garlic text fixed to 1 small clove; smoked paprika marked optional
+br_minced_beef_onion_pie: title shortened; time 55->60; 5->7 steps; the 'gravy' (just warmed stock) is now thickened with 2 tsp gravy granules (staple added); salt added for potato water/mash; filling cooled before topping; peas swap added
+br_fish_pie: title shortened; 5->8 steps (prep, potatoes, poach, sauce, fill, mash top, bake, peas); butter text in grams with 25g/15g split; salt added for potato water/mash; peas swap added
+br_cottage_pie: title shortened; time 55->60; 5->7 steps (prep, potatoes, mince, filling, mash and top, bake, peas); salt added for potato water/mash; mixed herbs marked optional; peas swap added
+br_shepherds_pie: title shortened; time 55->60; 5->7 steps; removed 'plus extra peas to serve' (not in the amount); salt added for potato water/mash; peas swap added (leave out of filling, cook separately)
+br_bangers_mash_onion_gravy: title shortened; time 30->40 (oven heat + 25 min sausages + 15 min onions); 5->7 steps (prep, sausages, potatoes, onions, gravy, mash, peas); butter in grams; peas swap added
+br_smoky_sausage_bean_casserole: time 35->40; 5->6 steps (prep step added); salt added so 'season to taste' has an ingredient
+br_lemon_herb_chicken_traybake: title shortened; time 50->55; step text tightened; smoked paprika and yogurt-to-serve marked optional; air-fryer note given a doneness cue
+br_salmon_fishcakes: title shortened; time 30->40 (boil, shape, crumb and fry is not 30 min); 5->7 steps (prep, potatoes, salmon, shape, crumb, fry, tartare and serve); peas now defrosted with kettle water in prep; swaps added for peas and gherkins
+br_tuna_sweetcorn_jackets: title shortened; time 25->30; 5->6 steps (prep step added, sweetcorn defrosted with kettle water); sweetcorn swap added
+br_coronation_chicken_jackets: title shortened; time 30->35; 5->6 steps (prep step added, chicken cook/cool separated from jackets); coriander and turmeric marked optional; honey no longer 'add more' (all used)
+br_leek_potato_soup_cheese_toasts: title tightened; time 30->35; 5->6 steps (blend and serve split); spring onion garnish marked optional with swap
+br_pork_steaks_apple_mustard: title shortened; time 30->35; 5->6 steps (prep step added); broccoli lifted out before crushing potatoes; butter in grams (15g/10g split); honey drizzle marked optional
+br_beef_stew_dumplings: time 165->170; 6->7 steps (prep step added, mushrooms moved to while the dumplings steam); butter 50->60g to cover the knob used for the mushrooms; slow-cooker option given a dumpling instruction; mushroom swap reworded
+br_ploughmans_supper: title shortened; time 20->25 (oven heat + bake); 5 steps kept but prep step added and build/serve merged; gherkins marked optional; swaps added for gherkins and pickle
+br_kedgeree: time 30->35; 5->7 steps (prep added, poaching and egg-boiling split); green chilli, coriander and turmeric marked optional; peas swap added (cook separately)
+br_leek_welsh_rarebit: title shortened; time 25->30; 5->6 steps (prep and tomatoes split); salt added (used in salad but missing); Worcestershire 10->15ml to cover the splash to serve; 'roast' tomatoes renamed grilled
+br_bubble_squeak_bacon_eggs: title shortened; time 30->35; 5->7 steps (relish moved to prep, cakes and bacon/eggs split into their own pans/steps); oil text matched (1½ tbsp = 22ml); peas swap added (shape 2 cakes before adding peas)
+br_creamy_chicken_leek_mushroom: title shortened; time 30->35; 5->6 steps (prep and potato boil split); butter in grams; mixed herbs marked optional; mushroom swap reworded to match the separate-pan method
+br_glamorgan_sausages: title shortened; time 30->40 (shape, crumb, chutney and fry); 5->7 steps; spinach now wilted in the sausage pan (was the potato pan, which still held the potatoes); oil text matched (1½ tbsp = 22ml); butter in grams; mixed herbs marked optional
+br_lemon_butter_salmon_crushed_potatoes: title shortened; time 25->30; 5->6 steps (prep added, salmon timed to potatoes); butter in grams; peas swap added (cook separately)
+br_honey_mustard_chicken_traybake: title shortened; time 45->50; glaze and broccoli steps merged into one oven stage so the broccoli timing is explicit; oil text matched (1½ tbsp = 22ml); mixed herbs marked optional
+br_crispy_chicken_escalopes: title shortened; time 30->35; 5->6 steps (prep added; flatten and crumb together as one prep job); potatoes now cut into chunks; butter in grams; peas swap added (cook separately)
+br_chilli_beef_jackets: title shortened; time 30->35; 5->6 steps (prep step added); chilli flakes and spring-onion garnish marked optional; spring onion swap added

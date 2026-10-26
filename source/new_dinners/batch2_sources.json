@@ -1,0 +1,79 @@
+{
+ "br_lamb_chops_new_potatoes": {
+  "title": "Minty lamb chops with quick boulangère potatoes",
+  "site": "delicious. magazine",
+  "url": "https://www.deliciousmagazine.co.uk/recipes/minty-lamb-chops-with-quick-boulangere-potatoes/",
+  "match": "adapted",
+  "checked": "2026-10-24",
+  "fix": "Same grilled chops (garlic-rubbed, 3–4 min per side, glazed, rested); honey + dried herbs glaze replaces mint jelly (not in catalogue) and buttery boiled new potatoes + broccoli replace the stock-simmered boulangère potatoes. Scaled 4 → 2."
+ },
+ "br_roast_beef_yorkshires": {
+  "title": "Roast beef & Yorkshire puddings (Mark Hamill's roast sirloin)",
+  "site": "Jamie Oliver",
+  "url": "https://www.jamieoliver.com/recipes/beef/roast-sirloin-yorkshire-puddings/",
+  "author": "Jamie Oliver",
+  "match": "adapted",
+  "checked": "2026-10-24",
+  "fix": "Scaled from a 2kg sirloin joint for 6 to two thick sirloin steaks seared and roasted as mini joints (6–8 min, rested 15 min); pepper crust kept, rosemary dropped; gravy granules replace the 5-hour bone gravy; Yorkshire batter scaled to 1 egg/50g flour/60ml milk in a hot muffin tin at 220°C as in the source."
+ },
+ "br_scampi_and_chips": {
+  "title": "Scampi with chips and tartare sauce",
+  "site": "delicious. magazine",
+  "url": "https://www.deliciousmagazine.co.uk/recipes/scampi-with-chips-and-tartare-sauce/",
+  "match": "adapted",
+  "checked": "2026-10-24",
+  "fix": "Raw king prawns replace langoustine tails; panko replaces fresh breadcrumbs; shallow-fried in ~100ml oil instead of deep-fried at 180°C; quick tartare made from shop mayonnaise + gherkins + capers + lemon instead of homemade mayo; parboil step for chips dropped (oven chips as in our existing fish & chips)."
+ },
+ "br_peri_peri_chicken_rice": {
+  "title": "Nando's Portuguese Chicken and Rice (one pot recipe)",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/portuguese-chicken-and-rice-one-pot-recipe/",
+  "author": "Nagi",
+  "match": "adapted",
+  "checked": "2026-10-24",
+  "fix": "Whole thigh fillets seared then steamed on the rice (15 min covered + 10 min rest, checked for no pink) instead of bite-size pieces; smoked paprika, chilli flakes, dried herbs and honey replace sweet paprika, cayenne, oregano and brown sugar; sweetcorn replaces peas (with swap); peri mayo from mayonnaise + hot sauce."
+ },
+ "br_sea_bass_new_potatoes": {
+  "title": "Pan Seared Sea Bass with New Potatoes and Cucumber-Dill Relish",
+  "site": "HelloFresh UK",
+  "url": "https://www.hellofresh.co.uk/recipes/pan-seared-sea-bass-with-new-potatoes-20-57223771f8b25ea3388b4569",
+  "match": "adapted",
+  "checked": "2026-10-24",
+  "fix": "Same method (salted cucumber ribbons + red onion relish, boiled new potatoes, skin-side-down sea bass 3–4 min then flipped off the heat, dressed baby gem); no dill (not in catalogue), rice vinegar for white wine vinegar, honey for sugar, butter added to the potatoes."
+ },
+ "br_beef_stroganoff": {
+  "title": "Beef Stroganoff",
+  "site": "Nicky's Kitchen Sanctuary",
+  "url": "https://www.kitchensanctuary.com/beef-stroganoff/",
+  "author": "Nicky Corbishley",
+  "match": "adapted",
+  "checked": "2026-10-24",
+  "fix": "Mushrooms removed entirely (one partner won't eat them) — more onion, garlic, paprika, wholegrain mustard and a little reduced stock + Worcestershire carry the flavour instead; sirloin replaces fillet/ribeye; soured cream only (150ml) rather than double + soured cream to keep it lighter; same quick-sear timings (1 min + 30 sec) and no-boil cream finish."
+ },
+ "br_chicken_casserole_mash": {
+  "title": "Chicken casserole with roast garlic mash",
+  "site": "Tesco Real Food",
+  "url": "https://realfood.tesco.com/recipes/chicken-casserole-with-roast-garlic-mash.html",
+  "match": "adapted",
+  "checked": "2026-10-24",
+  "fix": "Mushrooms and red wine removed; carrots and leek added, onion for shallots, extra stock with tomato purée + Worcestershire for depth; boneless thighs simmered 35 min (source 45–60 min for bone-in); garlic cloves boiled with the potatoes instead of roasting a whole bulb; same cornflour-thickened gravy."
+ },
+ "br_breakfast_for_dinner_fry_up": {
+  "title": "Full English Breakfast",
+  "site": "Taming Twins",
+  "url": "https://www.tamingtwins.com/full-english-breakfast/",
+  "author": "Sarah Rossi",
+  "match": "close",
+  "checked": "2026-10-24",
+  "fix": "Same oven method at 220°C/200°C fan (sausages first, roasted tomatoes and mushrooms, bacon added later, beans warmed); scaled 4 → 2; cherry tomatoes for vine tomatoes; mushrooms optional with a separate-tray swap; eggs fried in a pan rather than baked in a muffin tin; toast added."
+ },
+ "br_slow_cooker_lamb_shanks_mash": {
+  "title": "Slow Cooker Lamb Shank Recipe",
+  "site": "Nicky's Kitchen Sanctuary",
+  "url": "https://www.kitchensanctuary.com/slow-cooker-lamb-shanks/",
+  "author": "Nicky",
+  "match": "adapted",
+  "checked": "2026-10-24",
+  "fix": "Same method (brown shanks ~10 min, soften onion/carrot/garlic, simmer liquid, 7–8 h on low, finish and thicken gravy with cornflour on the hob, mash + greens); red wine and redcurrant jelly replaced by extra stock, Worcestershire and honey; scaled 4 → 2 shanks."
+ }
+}

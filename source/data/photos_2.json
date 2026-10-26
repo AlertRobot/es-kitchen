@@ -1,0 +1,398 @@
+{
+ "as_kimchi_fried_rice": {
+  "url": "https://images.unsplash.com/photo-1600688654899-379ec76aca42?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1600688654899-379ec76aca42?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Emanuel Ekström on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/sunny-side-up-egg-on-white-ceramic-bowl-1C_RSVhy32Y",
+  "alt": "Kimchi fried rice topped with a fried egg",
+  "confidence": "high"
+ },
+ "as_bun_cha": {
+  "url": "https://images.unsplash.com/photo-1742893368398-128bded9c656?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1742893368398-128bded9c656?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Thomas Hoang on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/vietnamese-bun-cha-noodles-herbs-and-sauce-YC8i6bBGiZk",
+  "alt": "Vietnamese bun cha with noodles, herbs and dipping sauce",
+  "confidence": "high"
+ },
+ "as_chicken_laksa": {
+  "url": "https://images.unsplash.com/photo-1632057153803-dece2e78310f?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1632057153803-dece2e78310f?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Advocator SY on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-bowl-of-food-with-chopsticks-on-a-table-IWwZUVAHsmo",
+  "alt": "Bowl of Malaysian curry laksa with chopsticks",
+  "confidence": "high"
+ },
+ "as_nasi_goreng": {
+  "url": "https://images.unsplash.com/photo-1680674774705-90b4904b3a7f?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1680674774705-90b4904b3a7f?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "R Eris on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-plate-of-rice-with-shrimp-and-vegetables-o6Oq7rBMqVc",
+  "alt": "Seafood nasi goreng with prawns and vegetables",
+  "confidence": "high"
+ },
+ "br_crispy_oven_fish_chips": {
+  "url": "https://images.unsplash.com/photo-1611599538235-128e54f1250f?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1611599538235-128e54f1250f?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Davey Gravy on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/fried-food-on-red-and-white-checkered-plate-YpQGo0QTshE",
+  "alt": "Fish and chips on a checkered plate",
+  "confidence": "high"
+ },
+ "br_chicken_leek_bacon_pie": {
+  "url": "https://images.unsplash.com/photo-1581986675622-41eccf27129d?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1581986675622-41eccf27129d?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "David Foodphototasty on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/pie-on-stainless-steel-bowl-beside-black-handled-knife-hAUyjrUb-s8",
+  "alt": "Golden chicken pie in a dish",
+  "confidence": "medium"
+ },
+ "br_steak_chips_peppercorn": {
+  "url": "https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Tim Toomey on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/grilled-meat-on-white-ceramic-plate-pe9dvM1rQkM",
+  "alt": "Sliced steak with fries on a white plate",
+  "confidence": "high"
+ },
+ "br_sunday_roast_chicken_for_two": {
+  "url": "https://images.unsplash.com/photo-1720983197848-39f51a5e4544?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1720983197848-39f51a5e4544?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Sue Winston on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-white-plate-topped-with-different-types-of-food-1WCLIjfXDeg",
+  "alt": "Roast chicken dinner with roast potatoes, carrots, broccoli, Yorkshire pudding and gravy",
+  "confidence": "high"
+ },
+ "br_halloumi_burger": {
+  "url": "https://images.unsplash.com/photo-1665145323730-2d1e5f77426c?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1665145323730-2d1e5f77426c?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Benoît Deschasaux on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-burger-and-fries-on-a-plate-NEwBRXyksK8",
+  "alt": "Halloumi burger with fries on a plate",
+  "confidence": "high"
+ },
+ "br_bangers_mash_onion_gravy": {
+  "url": "https://images.unsplash.com/photo-1658925111653-2c08083c08ff?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1658925111653-2c08083c08ff?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Dmitry Dreyer on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-plate-of-food-on-a-table-4rWrcTdacbU",
+  "alt": "Sausages and mash on a plate",
+  "confidence": "high"
+ },
+ "br_minced_beef_onion_pie": {
+  "url": "https://images.unsplash.com/photo-1518311297794-ec7298ffba64?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1518311297794-ec7298ffba64?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Jelleke Vanooteghem on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/pie-cake-on-white-plate-oTr3NJ6gDRY",
+  "alt": "Golden meat pie on a white plate",
+  "confidence": "medium"
+ },
+ "br_shepherds_pie": {
+  "url": "https://images.unsplash.com/photo-1648889095694-c597b314356e?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1648889095694-c597b314356e?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Mario Raj on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-brown-and-white-bowl-filled-with-food-on-top-of-a-table-ywQuVlXNuJ0",
+  "alt": "Shepherd's pie in a bowl",
+  "confidence": "high"
+ },
+ "br_lemon_herb_chicken_traybake": {
+  "url": "https://images.unsplash.com/photo-1764756995069-4a0b5f31d792?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1764756995069-4a0b5f31d792?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Phil Hearing on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/roasted-chicken-drumsticks-in-a-glass-baking-dish-tBUgcNRubXA",
+  "alt": "Roasted chicken legs in a baking dish",
+  "confidence": "medium"
+ },
+ "br_salmon_fishcakes": {
+  "url": "https://images.unsplash.com/photo-1607877200924-1762edf69437?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1607877200924-1762edf69437?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Carlos Perales on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/fried-food-on-white-ceramic-plate-HMGaDUg81WQ",
+  "alt": "Golden fish cakes on a white plate",
+  "confidence": "medium"
+ },
+ "br_pork_steaks_apple_mustard": {
+  "url": "https://images.unsplash.com/photo-1432139555190-58524dae6a55?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1432139555190-58524dae6a55?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Alex Munsell on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/grilled-steak-with-vegetables-on-white-ceramic-plate-Yr4n8O_3UPc",
+  "alt": "Pork chop dinner with vegetables on a white plate",
+  "confidence": "medium"
+ },
+ "br_smoky_sausage_bean_casserole": {
+  "url": "https://images.unsplash.com/photo-1698917467449-08bcd1d9014b?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1698917467449-08bcd1d9014b?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "David de Andrés Martín on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-white-plate-topped-with-a-stew-of-beans-and-meat-9iJPST6E1-M",
+  "alt": "Rustic white bean stew with chorizo in tomato broth",
+  "confidence": "medium"
+ },
+ "br_creamy_chicken_leek_mushroom": {
+  "url": "https://images.unsplash.com/photo-1788462612914-44793f2980f2?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1788462612914-44793f2980f2?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "gabbiistudios on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/chicken-dinner-with-mushroom-sauce-UdO-JP67I-4",
+  "alt": "Chicken with creamy mushroom sauce and potatoes",
+  "confidence": "medium"
+ },
+ "br_beef_stew_dumplings": {
+  "url": "https://images.unsplash.com/photo-1664741662725-bd131742b7b7?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1664741662725-bd131742b7b7?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Laura Ohlman on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-bowl-of-food-y_7KLDoPlAc",
+  "alt": "Bowl of hearty beef stew with sourdough bread",
+  "confidence": "medium"
+ },
+ "br_lemon_butter_salmon_crushed_potatoes": {
+  "url": "https://images.unsplash.com/photo-1660180751287-ed23a963cd83?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1660180751287-ed23a963cd83?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Federico Ramirez on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-plate-of-food-4GrI_1tg2B4",
+  "alt": "Salmon fillet with potatoes on a plate",
+  "confidence": "medium"
+ },
+ "in_chicken_tikka_masala": {
+  "url": "https://images.unsplash.com/photo-1762922425226-8cfe6987e7b0?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1762922425226-8cfe6987e7b0?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Jessie Maxwell on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/chicken-tikka-masala-served-with-naan-bread-PXMh2o3tO1s",
+  "alt": "Chicken tikka masala served with naan bread",
+  "confidence": "high"
+ },
+ "in_butter_chicken": {
+  "url": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Raman on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/brown-and-green-dish-on-brown-wooden-bowl-sqcH2q7lkvo",
+  "alt": "Butter chicken in a wooden bowl",
+  "confidence": "high"
+ },
+ "in_chicken_korma": {
+  "url": "https://images.unsplash.com/photo-1708782345297-ce50e319fec2?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1708782345297-ce50e319fec2?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Rimsha Noor on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-bowl-of-chicken-curry-next-to-some-nuts-acduywuP6E8",
+  "alt": "Creamy chicken curry in a bowl with nuts",
+  "confidence": "medium"
+ },
+ "in_paneer_tikka": {
+  "url": "https://images.unsplash.com/photo-1666001120694-3ebe8fd207be?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1666001120694-3ebe8fd207be?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Rupa venketa vardhan on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-plate-of-food-85gaOsWNsHo",
+  "alt": "Grilled paneer tikka on a plate",
+  "confidence": "high"
+ },
+ "in_chicken_biryani": {
+  "url": "https://images.unsplash.com/photo-1719239885399-f87d992e0f18?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1719239885399-f87d992e0f18?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Circle Digital Marketing Agency on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-white-plate-topped-with-rice-and-meat-n7kqI1mISOY",
+  "alt": "Chicken biryani on a white plate",
+  "confidence": "high"
+ },
+ "in_madras_onion_bhajis": {
+  "url": "https://images.unsplash.com/photo-1708782344490-9026aaa5eec7?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1708782344490-9026aaa5eec7?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Rimsha Noor on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-bowl-of-chicken-curry-next-to-a-bowl-of-rice-tsQhEvzU6MQ",
+  "alt": "Bowl of chicken curry next to a bowl of rice",
+  "confidence": "medium"
+ },
+ "in_chicken_jalfrezi": {
+  "url": "https://images.unsplash.com/photo-1716535232842-d10da4eb33d5?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1716535232842-d10da4eb33d5?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Mustafa Fatemi on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-black-bowl-filled-with-food-on-top-of-a-white-table-YTmdwZiuqS4",
+  "alt": "Spicy chicken karahi in a black bowl",
+  "confidence": "medium"
+ },
+ "in_lamb_rogan_josh": {
+  "url": "https://images.unsplash.com/photo-1606843046080-45bf7a23c39f?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1606843046080-45bf7a23c39f?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Prchi Palwe on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/cooked-food-on-white-ceramic-plate-3OMLWzkkt0Y",
+  "alt": "Rich red mutton curry on a white plate",
+  "confidence": "medium"
+ },
+ "in_indo_chinese_chilli_chicken": {
+  "url": "https://images.unsplash.com/photo-1578500318083-58053cb41f9f?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1578500318083-58053cb41f9f?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "chiranjeeb mitra on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/plate-of-flatbread-and-meats-V1FX1VOSogs",
+  "alt": "Dry chilli chicken served with chapati",
+  "confidence": "medium"
+ },
+ "in_tarka_dal": {
+  "url": "https://images.unsplash.com/photo-1788603092417-a01e665e0ab2?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1788603092417-a01e665e0ab2?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Zoshua Colah on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/basmati-rice-and-dal-dinner-t-OO1RUgvt4",
+  "alt": "Tempered lentil dal with jeera basmati rice",
+  "confidence": "high"
+ },
+ "in_coconut_dal": {
+  "url": "https://images.unsplash.com/photo-1755090154817-58d9d36ec988?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1755090154817-58d9d36ec988?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Anil Sharma on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-bowl-of-yellow-dal-with-garnishes-and-bread-O_MFjbig3hA",
+  "alt": "Bowl of yellow dal with garnishes and bread",
+  "confidence": "medium"
+ },
+ "in_saag_paneer": {
+  "url": "https://images.unsplash.com/photo-1589647363585-f4a7d3877b10?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1589647363585-f4a7d3877b10?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Kanwardeep Kaur on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/sliced-cucumber-in-white-ceramic-bowl-jTv_cWxEtFs",
+  "alt": "Palak paneer, a spinach and paneer curry, in a white bowl",
+  "confidence": "high"
+ },
+ "in_chana_masala": {
+  "url": "https://images.unsplash.com/photo-1788602564560-9bcbf0f9acb6?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1788602564560-9bcbf0f9acb6?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Zoshua Colah on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/chana-masala-with-fried-bhatura-bread-Idh9dnG2v8w",
+  "alt": "Chana masala garnished with cilantro and ginger",
+  "confidence": "high"
+ },
+ "in_saag_chicken": {
+  "url": "https://images.unsplash.com/photo-1767114915936-745dd372f1d8?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1767114915936-745dd372f1d8?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Chetanya Sharma on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-delicious-indian-meal-with-spinach-and-flatbread-_bAW_ln_-Zs",
+  "alt": "Spinach curry served with flatbread",
+  "confidence": "medium"
+ },
+ "in_mattar_paneer": {
+  "url": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Kalyani Akella on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-metal-bowl-filled-with-food-next-to-a-bowl-of-rice-vgTntT8PmIM",
+  "alt": "Paneer in a rich spiced tomato curry with rice",
+  "confidence": "medium"
+ },
+ "in_egg_curry": {
+  "url": "https://images.unsplash.com/photo-1764315197254-94385571df22?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1764315197254-94385571df22?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Kalindu Waranga on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/three-eggs-in-a-rich-spicy-indian-curry-h51fYRG2p30",
+  "alt": "Eggs in a rich, spicy Indian curry",
+  "confidence": "high"
+ },
+ "in_goan_prawn_curry": {
+  "url": "https://images.unsplash.com/photo-1781332143666-5d02f0fe7865?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1781332143666-5d02f0fe7865?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Zayed Ahmed Zadu on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/shrimp-curry-in-a-metal-bowl-surrounded-by-fresh-vegetables-JcJ5k21tiA0",
+  "alt": "Prawn curry in a metal bowl",
+  "confidence": "medium"
+ },
+ "in_keralan_fish_curry": {
+  "url": "https://images.unsplash.com/photo-1620894580123-466ad3a0ca06?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1620894580123-466ad3a0ca06?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Vinitha V on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/cooked-food-in-round-stainless-steel-bowl-LPnJ146r9Mg",
+  "alt": "Kerala fish curry in a steel bowl",
+  "confidence": "high"
+ },
+ "in_tandoori_chicken_traybake": {
+  "url": "https://images.unsplash.com/photo-1727280376746-b89107a5b0df?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1727280376746-b89107a5b0df?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Madhurima Basak on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-tray-of-chicken-wings-with-a-side-of-dipping-sauce-R25pvpErlsI",
+  "alt": "Tray of tandoori chicken with dipping sauce",
+  "confidence": "high"
+ },
+ "in_chicken_kathi_rolls": {
+  "url": "https://images.unsplash.com/photo-1591064141340-fe4ac79b862f?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1591064141340-fe4ac79b862f?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Tanmay Agrawal on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/green-vegetable-on-brown-wooden-chopping-board-Aoc8fbqh1OA",
+  "alt": "Indian street-food chicken roll on a wooden board",
+  "confidence": "high"
+ },
+ "br_crispy_chicken_escalopes": {
+  "url": "https://images.unsplash.com/photo-1670398564097-0762e1b30b3a?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1670398564097-0762e1b30b3a?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Elena Leya on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/chicken-breast-dinner-with-peas-DBVIb_rWUKw",
+  "alt": "Sliced crispy fried chicken fillet with green peas",
+  "confidence": "medium"
+ },
+ "in_prawn_pea_pilau": {
+  "url": "https://images.unsplash.com/photo-1551326844-4df70f78d0e9?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1551326844-4df70f78d0e9?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Mae Mu on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/fry-rice-with-prawn-dish-dTNNDTbZr8I",
+  "alt": "Rice with prawns and peas",
+  "confidence": "medium"
+ },
+ "in_lamb_kofta_curry": {
+  "url": "https://images.unsplash.com/photo-1708782342102-ee13e9ac16f4?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1708782342102-ee13e9ac16f4?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Rimsha Noor on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-bowl-of-meatballs-with-tomato-sauce-and-parsley-IOeXR0RCZtE",
+  "alt": "Bowl of meatball curry in tomato sauce with parsley",
+  "confidence": "medium"
+ },
+ "in_chicken_tikka_rice_bowls": {
+  "url": "https://images.unsplash.com/photo-1775039984426-544b16dc2993?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1775039984426-544b16dc2993?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Zayed Ahmed Zadu on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/spicy-chicken-and-rice-bowl-with-cucumber-and-onion-KnIeqQyEi2E",
+  "alt": "Spicy chicken and rice bowl with cucumber and onion",
+  "confidence": "medium"
+ },
+ "in_chicken_mushroom_balti": {
+  "url": "https://images.unsplash.com/photo-1764304733301-3a9f335f0c67?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1764304733301-3a9f335f0c67?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Kalindu Waranga on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/chicken-curry-in-a-white-bowl-with-sauce-VtNLbOAeO68",
+  "alt": "Chicken curry in a white bowl with sauce",
+  "confidence": "medium"
+ }
+}

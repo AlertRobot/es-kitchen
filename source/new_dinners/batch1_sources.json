@@ -1,0 +1,88 @@
+{
+ "br_chicken_kiev_wedges": {
+  "title": "Chicken Kiev",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/chicken-kiev",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-24",
+  "fix": "",
+  "note": "Uses the recipe's own no-fry option (pre-toasted panko, oven-baked) instead of deep-frying; dried herbs + lemon zest stand in for parsley; wedges and broccoli added."
+ },
+ "br_gammon_egg_chips": {
+  "title": "Gammon Egg and Chips with Pineapple and Tomato",
+  "site": "Krumpli",
+  "url": "https://www.krumpli.co.uk/gammon-egg-and-chips/",
+  "author": "Brian Jones",
+  "match": "adapted",
+  "checked": "2026-10-24",
+  "fix": "",
+  "note": "Home-cut oven chips instead of frozen; tomato dropped; pineapple optional."
+ },
+ "br_fish_finger_sandwiches": {
+  "title": "Homemade Fish Finger Sandwich with Tartare Sauce",
+  "site": "Woman & Home",
+  "url": "https://www.womanandhome.com/recipes/homemade-fish-finger-sandwich-with-tartare-sauce/",
+  "match": "adapted",
+  "checked": "2026-10-24",
+  "fix": "",
+  "note": "Panko crumb without parmesan; sliced bread instead of ciabatta; scaled to 2. Cross-checked against Tesco Real Food posh fish-finger sandwiches (https://realfood.tesco.com/recipes/posh-fish-finger-sandwiches.html)."
+ },
+ "br_sausage_rolls_beans_wedges": {
+  "title": "Sausage rolls",
+  "site": "Jamie Oliver",
+  "url": "https://www.jamieoliver.com/recipes/pork/sausage-rolls",
+  "author": "Jamie Oliver",
+  "match": "adapted",
+  "checked": "2026-10-24",
+  "fix": "",
+  "note": "Dried mixed herbs for fresh sage, panko for breadcrumbs, nutmeg dropped, quicker onion; baked beans and wedges added to make a dinner."
+ },
+ "br_roast_pork_crackling": {
+  "title": "Pork Roast with Crispy Crackling",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/pork-shoulder-roast-with-crispy-crackling/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-24",
+  "fix": "",
+  "note": "Source is a 3kg shoulder roasted low then blasted; scaled to a small UK crackling joint (high heat first, then 180°C fan) with roast potatoes, apple sauce and gravy."
+ },
+ "br_steak_ale_pie_mash": {
+  "title": "Steak and Ale Pie",
+  "site": "Hairy Bikers",
+  "url": "https://www.hairybikers.com/recipes/view/steak-and-ale-pie",
+  "author": "The Hairy Bikers",
+  "match": "adapted",
+  "checked": "2026-10-24",
+  "fix": "",
+  "note": "Scaled to 2 (400g beef); mushrooms left out; braise lengthened to 1½ h for casserole steak; puff pastry lid as in the source; mash and broccoli added."
+ },
+ "br_lancashire_hotpot": {
+  "title": "Lancashire Hotpot",
+  "site": "Simply Beef & Lamb (AHDB)",
+  "url": "https://www.simplybeefandlamb.co.uk/recipes/lancashire-hotpot/",
+  "match": "adapted",
+  "checked": "2026-10-24",
+  "fix": "",
+  "note": "Diced lamb leg instead of chops, kidneys and mint omitted, carrot added; scaled to 2 with shorter bake times."
+ },
+ "br_chicken_chorizo_traybake": {
+  "title": "Chicken and chorizo traybake",
+  "site": "Tesco Real Food",
+  "url": "https://realfood.tesco.com/recipes/chicken-and-chorizo-traybake.html",
+  "match": "adapted",
+  "checked": "2026-10-24",
+  "fix": "",
+  "note": "White potatoes for sweet potatoes, thigh fillets for bone-in pieces, chorizo chunks for chorizo meatballs, cherry tomatoes added; spinach and honey finish kept."
+ },
+ "br_corned_beef_hash_eggs": {
+  "title": "Corned beef hash with eggs",
+  "site": "Tesco Real Food",
+  "url": "https://realfood.tesco.com/recipes/corned-beef-hash-with-eggs.html",
+  "match": "close",
+  "checked": "2026-10-24",
+  "fix": "",
+  "note": "Same ingredients and method scaled to 2; potatoes cubed rather than grated; spring onions for parsley."
+ }
+}

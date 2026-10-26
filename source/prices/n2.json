@@ -1,0 +1,593 @@
+[
+ {
+  "id": "oyster_sauce",
+  "tescoPack": 180,
+  "prices": {
+   "tesco": {
+    "pack": 180,
+    "label": "Tesco Oyster Sauce 150ml",
+    "price": 1.65,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=oyster%20sauce",
+    "est": false,
+    "note": "150ml converted to ~180g (density ~1.2)"
+   },
+   "sainsburys": {
+    "pack": 180,
+    "label": "Sainsbury's Oyster Sauce 150ml",
+    "price": 1.75,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/oyster%20sauce",
+    "est": false,
+    "note": "150ml converted to ~180g (density ~1.2)"
+   },
+   "asda": {
+    "pack": 510,
+    "label": "Lee Kum Kee Panda Oyster Sauce 510g",
+    "price": 2.76,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/explore/oyster-sauces",
+    "est": false,
+    "note": "no Asda own-brand found"
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "black_bean_sauce",
+  "tescoPack": 205,
+  "prices": {
+   "tesco": {
+    "pack": 205,
+    "label": "Lee Kum Kee Black Bean Garlic Sauce 205g",
+    "price": 2.25,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=black%20bean%20sauce",
+    "est": false
+   },
+   "sainsburys": {
+    "pack": 205,
+    "label": "Lee Kum Kee Black Bean Garlic Sauce 205g",
+    "price": 2.25,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/black%20bean%20sauce",
+    "est": false
+   },
+   "asda": {
+    "pack": 120,
+    "label": "ASDA Black Bean Stir-Fry Sauce 120g",
+    "price": 0.7,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/lee-kum-kee-black-bean-garlic-sauce/CYJ445",
+    "est": true,
+    "note": "substitute: stir-fry sauce pouch, not black bean garlic sauce; no LKK at Asda found"
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "beef_stir_fry_strips",
+  "tescoPack": 357,
+  "prices": {
+   "tesco": {
+    "pack": 357,
+    "label": "Tesco Beef Stir Fry Strips 357g",
+    "price": 6.4,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=beef%20stir%20fry%20strips",
+    "est": false
+   },
+   "sainsburys": {
+    "pack": 350,
+    "label": "Sainsbury's British or Irish Stir Fry Beef 350g",
+    "price": 6.25,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/beef%20stir%20fry%20strips",
+    "est": false
+   },
+   "asda": {
+    "pack": 300,
+    "label": "ASDA Beef Stir-Fry Strips 300g",
+    "price": 5.27,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/asda-tender-beef-stir-fry-strips/EBE183",
+    "est": false
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "pork_loin_steaks",
+  "tescoPack": 480,
+  "prices": {
+   "tesco": {
+    "pack": 480,
+    "label": "Tesco Pork Loin Steaks 480g",
+    "price": 2.99,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=pork%20loin%20steaks",
+    "est": false,
+    "note": "Aldi Price Match; Tesco also sells 1kg \u00a36.00 (Clubcard \u00a35.00)"
+   },
+   "sainsburys": {
+    "pack": 480,
+    "label": "Sainsbury's British Pork Loin Steaks x4 480g",
+    "price": 4.75,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/pork%20loin%20steaks",
+    "est": false
+   },
+   "asda": {
+    "pack": 400,
+    "label": "ASDA 4 Tender Pork Loin Steaks",
+    "price": 3.0,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/asda-tender-4-pork-loin-steaks/SOE330",
+    "est": false,
+    "note": "weight not stated; ~400g inferred from Asda 8 steaks = 800g (\u00a34.73)"
+   },
+   "aldi": {
+    "pack": 480,
+    "label": "Ashfields British Pork Loin Steaks 480g",
+    "price": 2.99,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.aldi.co.uk/product/ashfields-british-pork-loin-steaks-000000000000382106",
+    "est": false
+   },
+   "lidl": {
+    "pack": 480,
+    "label": "Lidl equivalent of Ashfields British Pork Loin Steaks 480g",
+    "price": 2.99,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "",
+    "est": true,
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "salted_peanuts",
+  "tescoPack": 200,
+  "prices": {
+   "tesco": {
+    "pack": 200,
+    "label": "Tesco Salted Roasted Peanuts 200g",
+    "price": 1.4,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=salted%20peanuts",
+    "est": false,
+    "note": "Stockwell & Co value 200g is \u00a30.59"
+   },
+   "sainsburys": {
+    "pack": 200,
+    "label": "Sainsbury's Salted Peanuts 200g",
+    "price": 1.5,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/salted%20peanuts",
+    "est": false,
+    "note": "Stamford Street Co. value 200g is \u00a30.59"
+   },
+   "asda": {
+    "pack": 200,
+    "label": "ASDA Salted Peanuts 200g",
+    "price": 1.33,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/asda-salted-peanuts/QJX936",
+    "est": false
+   },
+   "aldi": {
+    "pack": 200,
+    "label": "Everyday Essentials Roasted Salted Peanuts 200g",
+    "price": 0.59,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.aldi.co.uk/product/everyday-essentials-roasted-salted-peanuts-000000000000318128",
+    "est": false
+   },
+   "lidl": {
+    "pack": 200,
+    "label": "Lidl equivalent of Everyday Essentials Roasted Salted Peanuts 200g",
+    "price": 0.59,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "",
+    "est": true,
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "pineapple_chunks",
+  "tescoPack": 425,
+  "prices": {
+   "tesco": {
+    "pack": 425,
+    "label": "Tesco Pineapple Chunks In Juice 425g",
+    "price": 1.15,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=pineapple%20chunks%20in%20juice",
+    "est": false
+   },
+   "sainsburys": {
+    "pack": 432,
+    "label": "Dole Tropical Gold Pineapple Chunks In 100% Pineapple Juice 432g",
+    "price": 1.25,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/pineapple%20chunks%20in%20juice",
+    "est": false,
+    "note": "no Sainsbury's own-brand chunks found"
+   },
+   "asda": {
+    "pack": 432,
+    "label": "ASDA Pineapple Chunks in Fruit Juice 432g",
+    "price": 1.17,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/asda-pineapple-chunks-in-fruit-juice/NVY285",
+    "est": false
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "cod_fillets",
+  "tescoPack": 280,
+  "prices": {
+   "tesco": {
+    "pack": 280,
+    "label": "Tesco 2 Boneless Cod Fillets 280g",
+    "price": 8.15,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=cod%20fillets",
+    "est": false,
+    "note": "Tesco Boneless Haddock Fillets 280g is \u00a36.35"
+   },
+   "sainsburys": {
+    "pack": 250,
+    "label": "Sainsbury's Skinless & Boneless Cod Fillets x2 250g",
+    "price": 7.5,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/cod%20fillets",
+    "est": false,
+    "note": "listed as '2 x 250g'; read as 2 fillets totalling 250g (\u00a3/100g matches other shops)"
+   },
+   "asda": {
+    "pack": 260,
+    "label": "ASDA 2 Cod Fillets 260g",
+    "price": 7.56,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/asda-norwegian-flaky-2-cod-fillets/EYA933",
+    "est": false
+   },
+   "aldi": {
+    "pack": 250,
+    "label": "The Fishmonger Boneless Cod Fillets 2 Pack 250g",
+    "price": 4.99,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.aldi.co.uk/product/the-fishmonger-boneless-cod-fillets-2-pack-000000000000382012",
+    "est": false
+   },
+   "lidl": {
+    "pack": 250,
+    "label": "Lidl equivalent of The Fishmonger Boneless Cod Fillets 2 Pack 250g",
+    "price": 4.99,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "",
+    "est": true,
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "smoked_haddock",
+  "tescoPack": 280,
+  "prices": {
+   "tesco": {
+    "pack": 280,
+    "label": "Tesco Boneless Smoked Haddock 280g",
+    "price": 8.5,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=smoked%20haddock",
+    "est": false,
+    "note": "Tesco Smoked Haddock Fillets 360g is \u00a36.50"
+   },
+   "sainsburys": {
+    "pack": 240,
+    "label": "Sainsbury's Skin on & Boneless Smoked MSC Haddock Fillets 240g",
+    "price": 7.25,
+    "loyalty": 5.95,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/smoked%20haddock",
+    "est": false,
+    "note": "Nectar price inferred from two-price listing; trolley shows \u00a37.25 normal"
+   },
+   "asda": {
+    "pack": 220,
+    "label": "ASDA 2 Smoked Haddock Fillets 220g",
+    "price": 6.67,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/asda-delicate-2-smoked-norwegian-haddock-fillets/OKQ389",
+    "est": false
+   },
+   "aldi": {
+    "pack": 230,
+    "label": "The Fishmonger Boneless Smoked Haddock Fillets 2 Pack 230g",
+    "price": 4.49,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.aldi.co.uk/products/fresh-food/fish/k/1588161416978050011",
+    "est": false
+   },
+   "lidl": {
+    "pack": 230,
+    "label": "Lidl equivalent of The Fishmonger Boneless Smoked Haddock Fillets 2 Pack 230g",
+    "price": 4.49,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "",
+    "est": true,
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "diced_beef",
+  "tescoPack": 400,
+  "prices": {
+   "tesco": {
+    "pack": 400,
+    "label": "Tesco Diced Beef 400g",
+    "price": 5.0,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=diced%20beef",
+    "est": false,
+    "note": "Tesco Lean Diced Beef 400g \u00a35.20, Clubcard \u00a34.50 to 27/10/2026"
+   },
+   "sainsburys": {
+    "pack": 500,
+    "label": "Sainsbury's British or Irish Diced Beef 500g",
+    "price": 6.0,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/diced%20beef",
+    "est": false
+   },
+   "asda": {
+    "pack": 450,
+    "label": "ASDA Diced Beef 450g",
+    "price": 5.5,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://trolley.co.uk/product/asda-beef-diced/VCY494",
+    "est": false,
+    "note": "Asda Lean Diced Beef 400g is \u00a34.97"
+   },
+   "aldi": {
+    "pack": 400,
+    "label": "Ashfields British Diced Beef 400g",
+    "price": 4.49,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.aldi.co.uk/product/ashfields-british-diced-beef-000000000000387077",
+    "est": false
+   },
+   "lidl": {
+    "pack": 400,
+    "label": "Lidl equivalent of Ashfields British Diced Beef 400g",
+    "price": 4.49,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "",
+    "est": true,
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "sirloin_steak",
+  "tescoPack": 227,
+  "prices": {
+   "tesco": {
+    "pack": 227,
+    "label": "Tesco Sirloin Steak 227g",
+    "price": 6.0,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=sirloin%20steak",
+    "est": false
+   },
+   "sainsburys": {
+    "pack": 225,
+    "label": "Sainsbury's British or Irish 21 Day Matured Sirloin Steak 225g",
+    "price": 6.0,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/sirloin%20steak",
+    "est": false
+   },
+   "asda": {
+    "pack": 227,
+    "label": "ASDA Sirloin Beef Steak 227g",
+    "price": 5.97,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/ashfields-british-21-day-matured-sirloin-steak/EXL681",
+    "est": false
+   },
+   "aldi": {
+    "pack": 195,
+    "label": "Ashfields British Sirloin Steak 21 Day Matured 195g",
+    "price": 4.49,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.aldi.co.uk/product/ashfields-british-sirloin-steak-21-day-matured-000000000000382068",
+    "est": false,
+    "note": "Ashfields 30 Day Matured 227g is \u00a36.29"
+   },
+   "lidl": {
+    "pack": 195,
+    "label": "Lidl equivalent of Ashfields British Sirloin Steak 21 Day Matured 195g",
+    "price": 4.49,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "",
+    "est": true,
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "chicken_legs",
+  "tescoPack": 1000,
+  "prices": {
+   "tesco": {
+    "pack": 1000,
+    "label": "Tesco British Chicken Legs 1kg",
+    "price": 2.25,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=chicken%20legs",
+    "est": false
+   },
+   "sainsburys": {
+    "pack": 1000,
+    "label": "Sainsbury's 1kg British Fresh Skin on Chicken Legs",
+    "price": 2.25,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/chicken%20legs",
+    "est": false
+   },
+   "asda": {
+    "pack": 1100,
+    "label": "ASDA Succulent Chicken Leg Quarters 1.1kg",
+    "price": 2.48,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/asda-succulent-chicken-leg-quarters/ARE927",
+    "est": false
+   },
+   "aldi": {
+    "pack": 1000,
+    "label": "Ashfields Chicken Legs 1kg",
+    "price": 2.25,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.aldi.co.uk/product/ashfields-chicken-legs-000000000000382089",
+    "est": false
+   },
+   "lidl": {
+    "pack": 1000,
+    "label": "Lidl equivalent of Ashfields Chicken Legs 1kg",
+    "price": 2.25,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "",
+    "est": true,
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "apples",
+  "tescoPack": 5,
+  "prices": {
+   "tesco": {
+    "pack": 5,
+    "label": "Tesco Braeburn Apple Minimum 5 Pack",
+    "price": 1.8,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=braeburn%20apples",
+    "est": false
+   },
+   "sainsburys": {
+    "pack": 6,
+    "label": "Sainsbury's Braeburn Apples x6",
+    "price": 1.8,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/braeburn%20apples",
+    "est": false
+   },
+   "asda": {
+    "pack": 6,
+    "label": "ASDA 6 Braeburn Apples",
+    "price": 1.67,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/asda-zingy-crisp-braeburn-apples/HXN147",
+    "est": false
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "gherkins",
+  "tescoPack": 480,
+  "prices": {
+   "tesco": {
+    "pack": 480,
+    "label": "Tesco Sliced Gherkins 480g",
+    "price": 2.2,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=sliced%20gherkins",
+    "est": false,
+    "note": "Tesco Crinkle Cut Gherkins 340g is \u00a31.50"
+   },
+   "sainsburys": {
+    "pack": 340,
+    "label": "Sainsbury's Sliced Gherkins in Vinegar 340g",
+    "price": 1.55,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/sliced%20gherkins",
+    "est": false
+   },
+   "asda": {
+    "pack": 480,
+    "label": "ASDA Sliced Pickled Gherkins 480g",
+    "price": 2.09,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/asda-tangy-crunchy-sliced-pickled-gherkins/QVW165",
+    "est": false
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ }
+]

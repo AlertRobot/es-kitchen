@@ -1,0 +1,1161 @@
+[
+ {
+  "id": "cheerios",
+  "tescoPack": 500,
+  "prices": {
+   "tesco": {
+    "pack": 500,
+    "price": 3.5,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Nestlé Cheerios Multigrain Hoop Breakfast Cereal 500g",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=cheerios",
+    "note": "800g £4.00 (better value per kg)"
+   },
+   "sainsburys": {
+    "pack": 500,
+    "price": 3.25,
+    "loyalty": 2.5,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Nestle Cheerios Multigrain Cereal 500g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/cheerios",
+    "note": "390g £3.00, 800g £4.00; Nectar £2.50 also shown on trolley"
+   },
+   "asda": {
+    "pack": 500,
+    "price": 3.5,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Nestle Cheerios Multigrain Hoop Breakfast Cereal 500g",
+    "src": "https://www.trolley.co.uk/product/nestle-cheerios-multigrain-cereal/PGY152",
+    "note": "Asda price via trolley.co.uk"
+   },
+   "aldi": {
+    "pack": 375,
+    "price": 0.79,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Harvest Morn Multigrain Hoops Cereal 375g",
+    "src": "https://www.aldi.co.uk/product/harvest-morn-multigrain-hoops-cereal-000000000000305740",
+    "note": "Aldi does not sell the branded cereal; own-brand equivalent used (multigrain hoops)"
+   },
+   "lidl": {
+    "pack": 375,
+    "price": 0.79,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: Harvest Morn Multigrain Hoops Cereal 375g)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "crunchy_nut",
+  "tescoPack": 460,
+  "prices": {
+   "tesco": {
+    "pack": 460,
+    "price": 3.5,
+    "loyalty": 3,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Kellogg's Crunchy Nut Breakfast Cereal 460g",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=crunchy%20nut",
+    "note": "300g £2.35; 1kg £5.95"
+   },
+   "sainsburys": {
+    "pack": 460,
+    "price": 3.5,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Kellogg's Crunchy Nut Breakfast Cereal 460g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/crunchy%20nut",
+    "note": "trolley shows £2.85 with Nectar, not shown on the search page; 300g £2.35"
+   },
+   "asda": {
+    "pack": 460,
+    "price": 2.85,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Kellogg's Crunchy Nut Breakfast Cereal 460g",
+    "src": "https://www.trolley.co.uk/product/kelloggs-crunchy-nut/MGS911",
+    "note": "Asda price via trolley.co.uk"
+   },
+   "aldi": {
+    "pack": 500,
+    "price": 0.99,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Harvest Morn Honey Nut Crunchy Cornflakes 500g",
+    "src": "https://www.aldi.co.uk/product/harvest-morn-honey-nut-crunchy-cornflakes-000000000000307688",
+    "note": "Aldi does not sell the branded cereal; own-brand equivalent used (honey nut cornflakes)"
+   },
+   "lidl": {
+    "pack": 500,
+    "price": 0.99,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: Harvest Morn Honey Nut Crunchy Cornflakes 500g)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "shreddies",
+  "tescoPack": 630,
+  "prices": {
+   "tesco": {
+    "pack": 630,
+    "price": 3.5,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Nestlé Shreddies Original Malted Wheats Breakfast Cereal 630g",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=shreddies",
+    "note": "1.1kg £4.00"
+   },
+   "sainsburys": {
+    "pack": 630,
+    "price": 3.5,
+    "loyalty": 2.5,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Nestle Shreddies Original Cereal 630g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/shreddies",
+    "note": "1.1kg £4.00"
+   },
+   "asda": {
+    "pack": 630,
+    "price": 3.5,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Shreddies The Original Cereal 630g",
+    "src": "https://www.trolley.co.uk/product/shreddies-the-original/FIJ768",
+    "note": "Asda price via trolley.co.uk; own-brand ASDA Malted Wheaties 750g also listed"
+   },
+   "aldi": {
+    "pack": 625,
+    "price": 0.95,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Harvest Morn Malted Wheaties Cereal 625g",
+    "src": "https://www.aldi.co.uk/products/food-cupboard/cereals-snack-bars/k/1588161416978053002",
+    "note": "Aldi does not sell the branded cereal; own-brand equivalent used (malted wheaties); price from Aldi cereals category page"
+   },
+   "lidl": {
+    "pack": 625,
+    "price": 0.95,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: Harvest Morn Malted Wheaties Cereal 625g)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "rice_krispies",
+  "tescoPack": 430,
+  "prices": {
+   "tesco": {
+    "pack": 430,
+    "price": 3.5,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Kellogg's Rice Krispies Breakfast Cereal 430g",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=rice%20krispies",
+    "note": "660g £4.35; own-brand Tesco Rice Snaps 500g £1.25"
+   },
+   "sainsburys": {
+    "pack": 430,
+    "price": 3.5,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Kellogg's Rice Krispies 430g (estimate)",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/kelloggs%20rice%20krispies",
+    "note": "Not listed on Sainsbury's search today (only Rice Krispies Multigrain Shapes 350g £3.50/£2.85) and trolley lists no Sainsbury's price; estimated at the Tesco/Asda shelf price"
+   },
+   "asda": {
+    "pack": 430,
+    "price": 3.5,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Kellogg's Rice Krispies Cereal 430g",
+    "src": "https://www.trolley.co.uk/product/kelloggs-rice-krispies-cereal/DPQ423",
+    "note": "Asda price via trolley.co.uk"
+   },
+   "aldi": {
+    "pack": 375,
+    "price": 0.89,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Harvest Morn Crisp Rice Cereal 375g",
+    "src": "https://www.aldi.co.uk/product/harvest-morn-crisp-rice-cereal-000000000000308552",
+    "note": "Aldi does not sell the branded cereal; own-brand equivalent used (crisp rice)"
+   },
+   "lidl": {
+    "pack": 375,
+    "price": 0.89,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: Harvest Morn Crisp Rice Cereal 375g)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "special_k",
+  "tescoPack": 440,
+  "prices": {
+   "tesco": {
+    "pack": 440,
+    "price": 3.5,
+    "loyalty": 2.85,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Kellogg's Special K Original Breakfast Cereal 440g",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=special%20k",
+    "note": "750g £4.35; Clubcard price until 26/10/2026"
+   },
+   "sainsburys": {
+    "pack": 440,
+    "price": 3.5,
+    "loyalty": 2.85,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Kellogg's Special K Original Breakfast Cereal 440g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/special%20k%20original",
+    "note": "750g £4.35"
+   },
+   "asda": {
+    "pack": 440,
+    "price": 2.85,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Kellogg's Special K Original Cereal 440g",
+    "src": "https://www.trolley.co.uk/product/kelloggs-special-k-original-cereal/AWZ928",
+    "note": "Asda price via trolley.co.uk; own-brand ASDA Special Flakes 500g £1.90"
+   },
+   "aldi": {
+    "pack": 375,
+    "price": 1.69,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Harvest Morn Benefit cereal 375g (estimate)",
+    "src": "https://www.aldi.co.uk/products/food-cupboard/cereals-snack-bars/k/1588161416978053002",
+    "note": "Aldi does not sell the branded cereal; own-brand equivalent used; no plain \"Benefit\"/special flakes listed on page 1 of Aldi's cereals — priced as Harvest Morn Benefit Red Fruit 375g £1.69 seen there"
+   },
+   "lidl": {
+    "pack": 375,
+    "price": 1.69,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: Harvest Morn Benefit cereal 375g (estimate))",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "cornflakes",
+  "tescoPack": 450,
+  "prices": {
+   "tesco": {
+    "pack": 450,
+    "price": 2.45,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Kellogg's Corn Flakes Breakfast Cereal 450g",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=kelloggs%20corn%20flakes",
+    "note": "670g £3.55 (Clubcard £2.85)"
+   },
+   "sainsburys": {
+    "pack": 450,
+    "price": 2.5,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Kellogg's Corn Flakes Breakfast Cereal 450g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/corn%20flakes",
+    "note": "670g £3.50 (£2.85 unlabelled, likely Nectar); 1kg £4.20"
+   },
+   "asda": {
+    "pack": 450,
+    "price": 2.45,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Kellogg's Corn Flakes Breakfast Cereal 450g",
+    "src": "https://www.trolley.co.uk/product/kelloggs-corn-flakes-breakfast-cereal/NSR945",
+    "note": "Asda price via trolley.co.uk; own-brand ASDA Corn Flakes 500g £1.15"
+   },
+   "aldi": {
+    "pack": 500,
+    "price": 0.99,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Harvest Morn Corn Flakes Cereal 500g",
+    "src": "https://www.aldi.co.uk/product/harvest-morn-corn-flakes-cereal-000000000000307683",
+    "note": "Aldi does not sell the branded cereal; own-brand equivalent used"
+   },
+   "lidl": {
+    "pack": 500,
+    "price": 0.99,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: Harvest Morn Corn Flakes Cereal 500g)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "bran_flakes",
+  "tescoPack": 750,
+  "prices": {
+   "tesco": {
+    "pack": 750,
+    "price": 3,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Kellogg's Bran Flakes Breakfast Cereal 750g",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=bran%20flakes",
+    "note": "500g £2.20; own-brand Tesco Bran Flakes 750g £1.50"
+   },
+   "sainsburys": {
+    "pack": 750,
+    "price": 3,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Kellogg's Bran Flakes Breakfast Cereal 750g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/bran%20flakes",
+    "note": "trolley shows £2.50 with Nectar (not on search page); 500g £2.20; own-brand 750g £1.29"
+   },
+   "asda": {
+    "pack": 750,
+    "price": 3,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Kellogg's All-Bran Bran Flakes Breakfast Cereal 750g",
+    "src": "https://www.trolley.co.uk/product/kelloggs-bran-flakes-breakfast-cereal/VQC179",
+    "note": "Asda price via trolley.co.uk; 500g not listed at Asda; own-brand ASDA Bran Flakes 1kg £1.93"
+   },
+   "aldi": {
+    "pack": 750,
+    "price": 1.29,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Harvest Morn Bran Flakes 750g",
+    "src": "https://www.aldi.co.uk/product/harvest-morn-bran-flakes-000000000000307696",
+    "note": "Aldi does not sell the branded cereal; own-brand equivalent used; price from Aldi cereals category page"
+   },
+   "lidl": {
+    "pack": 750,
+    "price": 1.29,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: Harvest Morn Bran Flakes 750g)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "fruit_and_fibre",
+  "tescoPack": 700,
+  "prices": {
+   "tesco": {
+    "pack": 700,
+    "price": 3.45,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Kellogg's Fruit 'n Fibre Original Breakfast Cereal 700g",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=fruit%20and%20fibre",
+    "note": "500g £2.95; own-brand Tesco Fruit & Fibre 750g £1.75"
+   },
+   "sainsburys": {
+    "pack": 700,
+    "price": 3.5,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Kellogg's Fruit 'n Fibre Original Breakfast Cereal 700g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/fruit%20n%20fibre",
+    "note": "375g £2.25; own-brand 750g £1.75"
+   },
+   "asda": {
+    "pack": 700,
+    "price": 3.47,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Kellogg's Fruit 'n Fibre Cereal 700g",
+    "src": "https://www.trolley.co.uk/product/kelloggs-fruit-n-fibre-original-breakfast-cereal/QFI720",
+    "note": "Asda price via trolley.co.uk; own-brand ASDA Fruit & Fibre 750g £1.45"
+   },
+   "aldi": {
+    "pack": 750,
+    "price": 1.39,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Harvest Morn Fruit & Fibre Cereal 750g",
+    "src": "https://www.aldi.co.uk/products/food-cupboard/cereals-snack-bars/k/1588161416978053002",
+    "note": "Aldi does not sell the branded cereal; own-brand equivalent used; price from Aldi cereals category page"
+   },
+   "lidl": {
+    "pack": 750,
+    "price": 1.39,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: Harvest Morn Fruit & Fibre Cereal 750g)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "shredded_wheat",
+  "tescoPack": 675,
+  "prices": {
+   "tesco": {
+    "pack": 675,
+    "price": 3.75,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Nestlé Shredded Wheat Original Breakfast Cereal 30 Biscuits 675g",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=shredded%20wheat",
+    "note": ""
+   },
+   "sainsburys": {
+    "pack": 675,
+    "price": 3.75,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Nestle Shredded Wheat Original Cereal Biscuits x30 675g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/shredded%20wheat",
+    "note": "13p per biscuit"
+   },
+   "asda": {
+    "pack": 540,
+    "price": 3.25,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Nestle Shredded Wheat 24 Original Biscuits 540g",
+    "src": "https://www.trolley.co.uk/product/nestle-shredded-wheat-24-biscuits/TAO416",
+    "note": "Asda price via trolley.co.uk; the 30-biscuit pack is not listed at Asda"
+   },
+   "aldi": {
+    "pack": 500,
+    "price": 1.79,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Harvest Morn Bitesize Wheat Shreds 500g",
+    "src": "https://www.aldi.co.uk/products/food-cupboard/cereals-snack-bars/k/1588161416978053002",
+    "note": "Aldi does not sell the branded cereal; own-brand equivalent used — Aldi only has bitesize shreds, not whole biscuits; weigh 45g"
+   },
+   "lidl": {
+    "pack": 500,
+    "price": 1.79,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: Harvest Morn Bitesize Wheat Shreds 500g)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "granola",
+  "tescoPack": 1000,
+  "prices": {
+   "tesco": {
+    "pack": 1000,
+    "price": 2.2,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Honey & Almond Granola 1Kg",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=tesco%20granola",
+    "note": "Fruit & Nut and Tropical 1kg also £2.20"
+   },
+   "sainsburys": {
+    "pack": 1000,
+    "price": 2.4,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Simply Granola 1kg",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/sainsburys%20granola",
+    "note": "Strawberry and Tropical 1kg also £2.40"
+   },
+   "asda": {
+    "pack": 1000,
+    "price": 2.32,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": true,
+    "label": "ASDA Simply Granola",
+    "src": "https://www.trolley.co.uk/product/asda-simply-granola/DDT598",
+    "note": "Asda price via trolley.co.uk; pack size not shown on the page, assumed 1kg like the other own-brand simply granolas"
+   },
+   "aldi": {
+    "pack": 1000,
+    "price": 1.99,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Harvest Morn Raisin & Almond Granola 1kg",
+    "src": "https://www.aldi.co.uk/product/harvest-morn-raisin-almond-granola-000000000335670001",
+    "note": "Nutrition per 100g taken from this page"
+   },
+   "lidl": {
+    "pack": 1000,
+    "price": 1.99,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: Harvest Morn Raisin & Almond Granola 1kg)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "jam",
+  "tescoPack": 454,
+  "prices": {
+   "tesco": {
+    "pack": 454,
+    "price": 0.89,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Strawberry Jam 454G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=strawberry%20jam",
+    "note": "Aldi Price Match; value Stockwell & Co Strawberry Spread 454g £0.49"
+   },
+   "sainsburys": {
+    "pack": 454,
+    "price": 0.99,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Strawberry Jam 454g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/strawberry%20jam",
+    "note": "Aldi price match"
+   },
+   "asda": {
+    "pack": 454,
+    "price": 0.89,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Fruity Strawberry Jam 454g",
+    "src": "https://www.trolley.co.uk/product/asda-strawberry-jam/NOE013",
+    "note": "Asda price via trolley.co.uk; usual price £1.15"
+   },
+   "aldi": {
+    "pack": 454,
+    "price": 0.49,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Everyday Essentials Strawberry Jam 454g",
+    "src": "https://www.aldi.co.uk/product/everyday-essentials-strawberry-jam-000000000000335836",
+    "note": "Grandessa Strawberry Jam 454g (standard line) is £0.99 on trolley"
+   },
+   "lidl": {
+    "pack": 454,
+    "price": 0.49,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: Everyday Essentials Strawberry Jam 454g)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "crumpets",
+  "tescoPack": 6,
+  "prices": {
+   "tesco": {
+    "pack": 6,
+    "price": 0.45,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Crumpets 6 Pack",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=crumpets",
+    "note": "Aldi Price Match; Warburtons 6 £0.90"
+   },
+   "sainsburys": {
+    "pack": 6,
+    "price": 0.45,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Crumpets x6",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/crumpets",
+    "note": "Warburtons x6 £0.90"
+   },
+   "asda": {
+    "pack": 6,
+    "price": 0.45,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "The BAKERY at ASDA 6 Crumpets",
+    "src": "https://www.trolley.co.uk/product/the-bakery-at-asda-6-crumpets/WGW844",
+    "note": "Asda price via trolley.co.uk"
+   },
+   "aldi": {
+    "pack": 6,
+    "price": 0.45,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Village Bakery Crumpets 6 Pack (estimate)",
+    "src": "https://www.aldi.co.uk/product/village-bakery-crumpets-6-pack-000000000000383383",
+    "note": "Aldi page says \"currently not available\" online with no price; estimated from Tesco/Sainsbury's Aldi-price-matched £0.45"
+   },
+   "lidl": {
+    "pack": 6,
+    "price": 0.45,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: Village Bakery Crumpets 6 Pack (estimate))",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "soft_cheese",
+  "tescoPack": 200,
+  "prices": {
+   "tesco": {
+    "pack": 200,
+    "price": 1.3,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Tesco 50% Less Fat Soft Cheese 200g",
+    "src": "https://www.trolley.co.uk/product/tesco-50-less-fat-soft-cheese/NET545",
+    "note": "Tesco price via trolley.co.uk (the Tesco search for it failed to load); Tesco search shows Tesco Soft Cheese Plain Full Fat 200G £1.35 and Philadelphia Light 165g £2.25 (Clubcard £1.25)"
+   },
+   "sainsburys": {
+    "pack": 250,
+    "price": 1.65,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Light Soft Cheese 250g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/soft%20cheese",
+    "note": ""
+   },
+   "asda": {
+    "pack": 200,
+    "price": 1.1,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Lighter Original Soft Cheese 200g",
+    "src": "https://www.trolley.co.uk/product/asda-light-50-less-fat-original-soft-cheese/NIH531",
+    "note": "Asda price via trolley.co.uk; usual price £1.54"
+   },
+   "aldi": {
+    "pack": 200,
+    "price": 0.89,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Emporium Reduced Fat Soft Cheese Lighter 200g",
+    "src": "https://www.aldi.co.uk/product/emporium-reduced-fat-soft-cheese-lighter-000000000422498002",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 200,
+    "price": 0.89,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: Emporium Reduced Fat Soft Cheese Lighter 200g)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "croissants",
+  "tescoPack": 4,
+  "prices": {
+   "tesco": {
+    "pack": 4,
+    "price": 1.5,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Tesco All Butter Croissants 4 Pack",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=croissants",
+    "note": "8 pack £2.25"
+   },
+   "sainsburys": {
+    "pack": 4,
+    "price": 1.45,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's All Butter Croissants x4",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/croissants",
+    "note": "Low everyday price"
+   },
+   "asda": {
+    "pack": 4,
+    "price": 1.48,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "The BAKERY at ASDA 4 All-Butter Croissants",
+    "src": "https://www.trolley.co.uk/product/the-bakery-at-asda-4-all-butter-croissants/QKM562",
+    "note": "Asda price via trolley.co.uk"
+   },
+   "aldi": {
+    "pack": 8,
+    "price": 1.49,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Bon Appetit! Croissants 8 pack",
+    "src": "https://www.aldi.co.uk/products/bakery/k/1588161416978049",
+    "note": "From Aldi bakery category page; not labelled all-butter"
+   },
+   "lidl": {
+    "pack": 8,
+    "price": 1.49,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: Bon Appetit! Croissants 8 pack)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "teacakes",
+  "tescoPack": 4,
+  "prices": {
+   "tesco": {
+    "pack": 4,
+    "price": 1.4,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Warburtons Fruit Teacakes 4 Pack",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=teacakes",
+    "note": "No everyday Tesco own-brand teacake in search (Tesco Finest Large Teacakes 4 pack £2.00)"
+   },
+   "sainsburys": {
+    "pack": 4,
+    "price": 1.4,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Warburtons Teacakes x4",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/teacakes",
+    "note": "Own-brand Sainsbury's 6 x Fruited Teacakes £1.55"
+   },
+   "asda": {
+    "pack": 4,
+    "price": 1.38,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Warburtons Fruity Teacakes 4 pack",
+    "src": "https://www.trolley.co.uk/product/warburtons-fruity-teacakes/XHK619",
+    "note": "Asda price via trolley.co.uk; own-brand The BAKERY at ASDA 6 Teacakes £1.73"
+   },
+   "aldi": {
+    "pack": 6,
+    "price": 0.95,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Village Bakery Teacakes (6)",
+    "src": "https://www.aldi.co.uk/product/village-bakery-teacakes-000000000728017001",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 6,
+    "price": 0.95,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: Village Bakery Teacakes (6))",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "grapes",
+  "tescoPack": 500,
+  "prices": {
+   "tesco": {
+    "pack": 500,
+    "price": 2,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Red Seedless Grapes 500G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=seedless%20grapes",
+    "note": "Green/black/selection 500g also £2.00; value Suntrail Farms Grapes 500G £1.37"
+   },
+   "sainsburys": {
+    "pack": 500,
+    "price": 2,
+    "loyalty": 1,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Red Seedless Grapes 500g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/seedless%20grapes",
+    "note": "Half price with Nectar"
+   },
+   "asda": {
+    "pack": 500,
+    "price": 2,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Seedless Red Grapes 500g",
+    "src": "https://www.trolley.co.uk/product/just-essentials-by-asda-seedless-grapes-colour-may-vary-depending-on-seasonality/CIJ091",
+    "note": "Asda price via trolley.co.uk (listed on this page); value Just Essentials Seedless Grapes 500g £1.37"
+   },
+   "aldi": {
+    "pack": 500,
+    "price": 1.89,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Nature's Pick Seedless Red Grapes 500g",
+    "src": "https://www.aldi.co.uk/products/fresh-food/fruit/k/1588161416978050001",
+    "note": "From Aldi fruit category page"
+   },
+   "lidl": {
+    "pack": 500,
+    "price": 1.89,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: Nature's Pick Seedless Red Grapes 500g)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "cream_crackers",
+  "tescoPack": 300,
+  "prices": {
+   "tesco": {
+    "pack": 300,
+    "price": 0.49,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Cream Crackers 300G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=cream%20crackers",
+    "note": "Jacob's 300g £1.60"
+   },
+   "sainsburys": {
+    "pack": 300,
+    "price": 0.49,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Cream Cracker 300g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/cream%20crackers",
+    "note": "Aldi price match"
+   },
+   "asda": {
+    "pack": 300,
+    "price": 0.49,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Classic Cream Crackers 300g",
+    "src": "https://www.trolley.co.uk/product/asda-cream-crackers/CRB363",
+    "note": "Asda price via trolley.co.uk"
+   },
+   "aldi": {
+    "pack": 300,
+    "price": 0.49,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Savour Bakes Cream Crackers 300g (estimate)",
+    "src": "https://www.aldi.co.uk/product/savour-bakes-cream-crackers-000000000000382689",
+    "note": "Aldi page says \"currently not available\" online with no price; estimated from Sainsbury's Aldi-price-matched £0.49"
+   },
+   "lidl": {
+    "pack": 300,
+    "price": 0.49,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: Savour Bakes Cream Crackers 300g (estimate))",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "tomato_soup",
+  "tescoPack": 400,
+  "prices": {
+   "tesco": {
+    "pack": 400,
+    "price": 0.59,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Cream Of Tomato Soup 400G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=cream%20of%20tomato%20soup",
+    "note": "Aldi Price Match; Heinz 400g £1.59 (5 for £5 Clubcard multibuy)"
+   },
+   "sainsburys": {
+    "pack": 400,
+    "price": 0.59,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Cream Of Tomato Soup 400g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/cream%20of%20tomato%20soup",
+    "note": "4x400g £2.36"
+   },
+   "asda": {
+    "pack": 400,
+    "price": 0.59,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Cream of Tomato Soup 400g",
+    "src": "https://www.trolley.co.uk/product/asda-cream-of-tomato-soup/HEV511",
+    "note": "Asda price via trolley.co.uk"
+   },
+   "aldi": {
+    "pack": 400,
+    "price": 0.59,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Bramwells Cream of Tomato Soup 400g",
+    "src": "https://www.aldi.co.uk/product/bramwells-cream-of-tomato-soup-000000000000335747",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 400,
+    "price": 0.59,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: Bramwells Cream of Tomato Soup 400g)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ },
+ {
+  "id": "bread_rolls",
+  "tescoPack": 6,
+  "prices": {
+   "tesco": {
+    "pack": 6,
+    "price": 1.15,
+    "loyalty": 1,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Soft White Rolls 6 Pack",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=white%20rolls",
+    "note": "Clubcard price until 09/11/2026; cheaper Tesco White Batch Rolls 6 Pack £0.45"
+   },
+   "sainsburys": {
+    "pack": 6,
+    "price": 1.15,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Soft White Rolls x6",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/white%20rolls",
+    "note": "Any 2 for £2.00 with Nectar (multibuy)"
+   },
+   "asda": {
+    "pack": 6,
+    "price": 1.12,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "The BAKERY at ASDA 6 White Sliced Rolls",
+    "src": "https://trolley.co.uk/product/the-bakery-at-asda-6-white-sliced-rolls/PJE464",
+    "note": "Asda price via trolley.co.uk; value Just Essentials 6 White Rolls £0.45"
+   },
+   "aldi": {
+    "pack": 6,
+    "price": 0.45,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Village Bakery White Rolls (6)",
+    "src": "https://www.aldi.co.uk/product/village-bakery-white-rolls-000000000383591001",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 6,
+    "price": 0.45,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est. from Aldi: Village Bakery White Rolls (6))",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi"
+   }
+  }
+ }
+]

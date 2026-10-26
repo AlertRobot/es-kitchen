@@ -1,0 +1,837 @@
+[
+ {
+  "id": "lu_ham_cheese_sandwich",
+  "title": "Ham & Cheese Sandwich",
+  "icon": "🥪",
+  "meal": "lunch",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "pork",
+  "time": 5,
+  "servings": 1,
+  "packable": true,
+  "microwave": false,
+  "keepsDays": 1,
+  "batch": "Make the night before and keep in the fridge; wrap tightly so the bread doesn't dry out.",
+  "equipment": [],
+  "kcalEst": 360,
+  "proteinEst": 21,
+  "ingredients": [
+   {
+    "i": "wholemeal_bread",
+    "q": 2,
+    "t": "2 slices"
+   },
+   {
+    "i": "butter",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "ham_slices",
+    "q": 40,
+    "t": "2 slices"
+   },
+   {
+    "i": "cheddar",
+    "q": 20,
+    "t": "20g, thinly sliced"
+   },
+   {
+    "i": "little_gem",
+    "q": 0.15,
+    "t": "2–3 leaves"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Butter and build",
+    "text": "Thinly butter both slices of bread right to the edges — it stops the filling making them soggy. Layer the lettuce, ham and cheese, top with the second slice and cut in half."
+   },
+   {
+    "title": "Wrap and chill",
+    "text": "Wrap tightly in foil or a sandwich box and keep it in the fridge (or a cool bag at work) until lunch."
+   }
+  ],
+  "tags": [
+   "quick",
+   "no-cook"
+  ]
+ },
+ {
+  "id": "lu_chicken_sweetcorn_sandwich",
+  "title": "Chicken & Sweetcorn Mayo Sandwich",
+  "icon": "🥪",
+  "meal": "lunch",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 8,
+  "servings": 1,
+  "packable": true,
+  "microwave": false,
+  "keepsDays": 1,
+  "batch": "The filling keeps 2 days in a lidded tub; make sandwiches fresh each morning.",
+  "equipment": [
+   "microwave"
+  ],
+  "kcalEst": 330,
+  "proteinEst": 24,
+  "ingredients": [
+   {
+    "i": "sweetcorn",
+    "q": 30,
+    "t": "2 tbsp frozen"
+   },
+   {
+    "i": "cooked_chicken_slices",
+    "q": 60,
+    "t": "60g, torn into strips"
+   },
+   {
+    "i": "light_mayonnaise",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "black_pepper",
+    "q": 0.5,
+    "t": "a few grinds"
+   },
+   {
+    "i": "wholemeal_bread",
+    "q": 2,
+    "t": "2 slices"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Cook the sweetcorn",
+    "text": "Microwave the frozen sweetcorn with a splash of water for 1–2 min until piping hot, then drain and leave to cool. (Frozen sweetcorn should always be cooked before eating.)"
+   },
+   {
+    "title": "Mix the filling",
+    "text": "Stir the chicken, cooled sweetcorn and light mayo together with plenty of black pepper."
+   },
+   {
+    "title": "Build and pack",
+    "text": "Spread the filling over one slice of bread, top with the other and cut in half. Keep chilled until lunch."
+   }
+  ],
+  "tags": [
+   "quick",
+   "high-protein"
+  ]
+ },
+ {
+  "id": "lu_egg_mayo_sandwich",
+  "title": "Egg Mayo Sandwich",
+  "icon": "🥚",
+  "meal": "lunch",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 15,
+  "servings": 1,
+  "packable": true,
+  "microwave": false,
+  "keepsDays": 1,
+  "batch": "Boil 4–6 eggs at once; the egg mayo keeps 2 days in a lidded tub in the fridge.",
+  "equipment": [
+   "hob"
+  ],
+  "kcalEst": 370,
+  "proteinEst": 22,
+  "ingredients": [
+   {
+    "i": "eggs",
+    "q": 2,
+    "t": "2 eggs"
+   },
+   {
+    "i": "light_mayonnaise",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "spring_onions",
+    "q": 1,
+    "t": "1, finely sliced"
+   },
+   {
+    "i": "black_pepper",
+    "q": 0.5,
+    "t": "a few grinds"
+   },
+   {
+    "i": "salt",
+    "q": 0.5,
+    "t": "a pinch"
+   },
+   {
+    "i": "wholemeal_bread",
+    "q": 2,
+    "t": "2 slices"
+   },
+   {
+    "i": "little_gem",
+    "q": 0.15,
+    "t": "2–3 leaves"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Hard-boil the eggs",
+    "text": "Lower the eggs into a pan of boiling water and simmer for 10 min. Drain and cool under cold running water, then peel."
+   },
+   {
+    "title": "Make the egg mayo",
+    "text": "Mash the eggs with a fork, then stir in the light mayo, spring onion, salt and pepper until creamy but still chunky."
+   },
+   {
+    "title": "Build and pack",
+    "text": "Lay the lettuce on one slice of bread, spoon over the egg mayo and top with the second slice. Keep chilled until lunch."
+   }
+  ],
+  "tags": [
+   "high-protein",
+   "make-ahead"
+  ]
+ },
+ {
+  "id": "lu_blt",
+  "title": "BLT",
+  "icon": "🥓",
+  "meal": "lunch",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "pork",
+  "time": 12,
+  "servings": 1,
+  "packable": true,
+  "microwave": false,
+  "keepsDays": 1,
+  "batch": "Grill the bacon the night before, cool and chill; pack the tomato in its own tub so the bread stays crisp.",
+  "equipment": [
+   "grill"
+  ],
+  "kcalEst": 440,
+  "proteinEst": 25,
+  "ingredients": [
+   {
+    "i": "bacon",
+    "q": 90,
+    "t": "3 rashers back bacon"
+   },
+   {
+    "i": "wholemeal_bread",
+    "q": 2,
+    "t": "2 slices (toasted if eating at home)"
+   },
+   {
+    "i": "light_mayonnaise",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "little_gem",
+    "q": 0.25,
+    "t": "a few leaves, shredded"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 60,
+    "t": "5, sliced"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Grill the bacon",
+    "text": "Grill the rashers on a foil-lined tray for 7–8 min, turning once, until golden and crisp at the edges. Drain on kitchen paper."
+   },
+   {
+    "title": "Build the sandwich",
+    "text": "Spread the mayo over both slices of bread. Layer the lettuce, then the tomato slices, then the bacon, and top with the second slice."
+   },
+   {
+    "title": "Pack it right",
+    "text": "Eating later? Let the bacon cool fully, chill the sandwich and keep the tomato in a separate tub to add at your break."
+   }
+  ],
+  "tags": [
+   "high-protein"
+  ]
+ },
+ {
+  "id": "lu_cheese_pickle_sandwich",
+  "title": "Cheese & Pickle Sandwich",
+  "icon": "🧀",
+  "meal": "lunch",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 5,
+  "servings": 1,
+  "packable": true,
+  "microwave": false,
+  "keepsDays": 1,
+  "batch": "Make the night before; it holds up well overnight in the fridge.",
+  "equipment": [],
+  "kcalEst": 375,
+  "proteinEst": 17,
+  "ingredients": [
+   {
+    "i": "wholemeal_bread",
+    "q": 2,
+    "t": "2 slices"
+   },
+   {
+    "i": "butter",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "cheddar",
+    "q": 30,
+    "t": "30g, grated or sliced"
+   },
+   {
+    "i": "branston_pickle",
+    "q": 20,
+    "t": "1 heaped tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Butter, fill and wrap",
+    "text": "Thinly butter both slices. Cover one with the cheese and spread the pickle over the cheese (not the bread) so it doesn't soak in. Top, cut in half and wrap tightly."
+   }
+  ],
+  "tags": [
+   "quick",
+   "no-cook",
+   "veggie"
+  ]
+ },
+ {
+  "id": "lu_tuna_mayo_wrap",
+  "title": "Tuna Mayo & Sweetcorn Wrap",
+  "icon": "🌯",
+  "meal": "lunch",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "fish",
+  "time": 8,
+  "servings": 1,
+  "packable": true,
+  "microwave": false,
+  "keepsDays": 1,
+  "batch": "Mix a whole tin of filling for 2 wraps; it keeps 2 days in a lidded tub.",
+  "equipment": [
+   "microwave"
+  ],
+  "kcalEst": 340,
+  "proteinEst": 25,
+  "ingredients": [
+   {
+    "i": "sweetcorn",
+    "q": 30,
+    "t": "2 tbsp frozen"
+   },
+   {
+    "i": "tinned_tuna",
+    "q": 72,
+    "t": "½ tin, drained"
+   },
+   {
+    "i": "light_mayonnaise",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "black_pepper",
+    "q": 0.5,
+    "t": "a few grinds"
+   },
+   {
+    "i": "wraps",
+    "q": 1,
+    "t": "1 tortilla wrap"
+   },
+   {
+    "i": "little_gem",
+    "q": 0.25,
+    "t": "a few leaves"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.1,
+    "t": "a 3cm chunk, cut into sticks"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Cook the sweetcorn",
+    "text": "Microwave the frozen sweetcorn with a splash of water for 1–2 min until piping hot. Drain and cool."
+   },
+   {
+    "title": "Mix the tuna",
+    "text": "Flake the drained tuna into a bowl and stir in the sweetcorn, light mayo and black pepper."
+   },
+   {
+    "title": "Roll it up",
+    "text": "Lay the lettuce and cucumber down the middle of the wrap, spoon the tuna on top, fold in the ends and roll up tightly. Wrap in foil and chill."
+   }
+  ],
+  "tags": [
+   "quick",
+   "high-protein"
+  ]
+ },
+ {
+  "id": "lu_chicken_salad_wrap",
+  "title": "Chicken Salad Wrap",
+  "icon": "🌯",
+  "meal": "lunch",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 5,
+  "servings": 1,
+  "packable": true,
+  "microwave": false,
+  "keepsDays": 1,
+  "batch": "",
+  "equipment": [],
+  "kcalEst": 325,
+  "proteinEst": 23,
+  "ingredients": [
+   {
+    "i": "wraps",
+    "q": 1,
+    "t": "1 tortilla wrap"
+   },
+   {
+    "i": "light_mayonnaise",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "cooked_chicken_slices",
+    "q": 70,
+    "t": "70g"
+   },
+   {
+    "i": "salad_leaves",
+    "q": 20,
+    "t": "a handful"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 40,
+    "t": "3, quartered"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.1,
+    "t": "a 3cm chunk, sliced"
+   },
+   {
+    "i": "black_pepper",
+    "q": 0.5,
+    "t": "a few grinds"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Spread and fill",
+    "text": "Spread the mayo over the wrap. Pile the leaves, chicken, tomatoes and cucumber in a line down the middle and season with pepper."
+   },
+   {
+    "title": "Roll and wrap",
+    "text": "Fold in the ends, roll up tightly and wrap in foil. Keep chilled until lunch."
+   }
+  ],
+  "tags": [
+   "quick",
+   "high-protein",
+   "no-cook"
+  ]
+ },
+ {
+  "id": "lu_houmous_veg_pitta",
+  "title": "Houmous & Veg Sticks with Pitta",
+  "icon": "🥕",
+  "meal": "lunch",
+  "cuisine": "Middle Eastern",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 8,
+  "servings": 1,
+  "packable": true,
+  "microwave": false,
+  "keepsDays": 2,
+  "batch": "Cut veg sticks for 2–3 days at once and keep in a tub with a damp piece of kitchen paper.",
+  "equipment": [],
+  "kcalEst": 385,
+  "proteinEst": 11,
+  "ingredients": [
+   {
+    "i": "hummus",
+    "q": 60,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "carrots",
+    "q": 80,
+    "t": "1 carrot, cut into sticks"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.15,
+    "t": "a 5cm chunk, cut into sticks"
+   },
+   {
+    "i": "peppers",
+    "q": 0.5,
+    "t": "½, cut into strips"
+   },
+   {
+    "i": "pitta",
+    "q": 1,
+    "t": "1 pitta"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Cut the veg",
+    "text": "Peel the carrot and cut the carrot, cucumber and pepper into finger-length sticks."
+   },
+   {
+    "title": "Pack the box",
+    "text": "Spoon the houmous into a small pot. Pack it with the veg sticks and the pitta, cut into strips. Toast the pitta first if you're eating at home."
+   }
+  ],
+  "tags": [
+   "quick",
+   "no-cook",
+   "veggie"
+  ]
+ },
+ {
+  "id": "lu_cheese_crackers_grapes",
+  "title": "Cheese, Crackers & Grapes Box",
+  "icon": "🧀",
+  "meal": "lunch",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 5,
+  "servings": 1,
+  "packable": true,
+  "microwave": false,
+  "keepsDays": 1,
+  "batch": "",
+  "equipment": [],
+  "kcalEst": 355,
+  "proteinEst": 13,
+  "ingredients": [
+   {
+    "i": "cheddar",
+    "q": 35,
+    "t": "35g, cut into cubes or slices"
+   },
+   {
+    "i": "cream_crackers",
+    "q": 32,
+    "t": "4 crackers"
+   },
+   {
+    "i": "grapes",
+    "q": 100,
+    "t": "a good handful"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.1,
+    "t": "a 3cm chunk, sliced"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Pack it up",
+    "text": "Slice or cube the cheese and pack it in a box with the grapes and cucumber. Keep the crackers in a separate bag or compartment so they stay crisp. Keep chilled until lunch."
+   }
+  ],
+  "tags": [
+   "quick",
+   "no-cook",
+   "veggie"
+  ]
+ },
+ {
+  "id": "lu_tomato_soup_roll",
+  "title": "Tomato Soup with a Buttered Roll",
+  "icon": "🍅",
+  "meal": "lunch",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 6,
+  "servings": 1,
+  "packable": true,
+  "microwave": true,
+  "keepsDays": 0,
+  "batch": "",
+  "equipment": [
+   "microwave"
+  ],
+  "kcalEst": 445,
+  "proteinEst": 8,
+  "ingredients": [
+   {
+    "i": "tomato_soup",
+    "q": 400,
+    "t": "1 x 400g tin"
+   },
+   {
+    "i": "bread_rolls",
+    "q": 1,
+    "t": "1 soft white roll"
+   },
+   {
+    "i": "butter",
+    "q": 7,
+    "t": "1½ tsp"
+   },
+   {
+    "i": "black_pepper",
+    "q": 0.5,
+    "t": "a few grinds"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Heat the soup",
+    "text": "Pour the soup into a microwavable bowl, cover and heat for 3–4 min, stirring halfway, until piping hot (or warm in a pan on the hob). Taking it to work? Heat it until steaming and pour into a pre-warmed flask, or pack it cold and microwave at your break."
+   },
+   {
+    "title": "Butter the roll",
+    "text": "Split and butter the roll. Grind pepper over the soup and dunk away."
+   }
+  ],
+  "tags": [
+   "quick",
+   "comfort",
+   "veggie"
+  ]
+ },
+ {
+  "id": "lu_ham_sweetcorn_pasta_salad",
+  "title": "Ham & Sweetcorn Pasta Salad Pot",
+  "icon": "🥗",
+  "meal": "lunch",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "pork",
+  "time": 20,
+  "servings": 1,
+  "packable": true,
+  "microwave": false,
+  "keepsDays": 3,
+  "batch": "Make 3 pots on Sunday (180g dry pasta, 150g ham); keeps 3 days in the fridge.",
+  "equipment": [
+   "hob"
+  ],
+  "kcalEst": 375,
+  "proteinEst": 21,
+  "ingredients": [
+   {
+    "i": "pasta",
+    "q": 60,
+    "t": "60g fusilli or macaroni"
+   },
+   {
+    "i": "sweetcorn",
+    "q": 40,
+    "t": "3 tbsp frozen"
+   },
+   {
+    "i": "ham_slices",
+    "q": 50,
+    "t": "2–3 slices, diced"
+   },
+   {
+    "i": "light_mayonnaise",
+    "q": 20,
+    "t": "1½ tbsp"
+   },
+   {
+    "i": "skyr",
+    "q": 20,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "spring_onions",
+    "q": 1,
+    "t": "1, finely sliced"
+   },
+   {
+    "i": "black_pepper",
+    "q": 0.5,
+    "t": "plenty"
+   },
+   {
+    "i": "salt",
+    "q": 1,
+    "t": "a pinch, for the water"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Cook the pasta and corn",
+    "text": "Boil the pasta in salted water for 10–12 min until just tender, adding the frozen sweetcorn for the last 2 min. Drain."
+   },
+   {
+    "title": "Cool it completely",
+    "text": "Rinse under cold running water and drain well — warm pasta melts the dressing and shouldn't sit around, so chill it within an hour."
+   },
+   {
+    "title": "Make the dressing",
+    "text": "Stir the light mayo and skyr together with plenty of black pepper."
+   },
+   {
+    "title": "Toss and pack",
+    "text": "Toss the cold pasta, sweetcorn, diced ham and spring onion in the dressing. Pack into a lidded pot and keep in the fridge."
+   }
+  ],
+  "tags": [
+   "batch",
+   "make-ahead"
+  ]
+ },
+ {
+  "id": "lu_jacket_beans_cheese",
+  "title": "Microwave Jacket Potato with Beans & Cheese",
+  "icon": "🥔",
+  "meal": "lunch",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 15,
+  "servings": 1,
+  "packable": false,
+  "microwave": true,
+  "keepsDays": 0,
+  "batch": "",
+  "equipment": [
+   "microwave"
+  ],
+  "kcalEst": 490,
+  "proteinEst": 21,
+  "ingredients": [
+   {
+    "i": "potatoes",
+    "q": 250,
+    "t": "1 medium baking potato (about 250g)"
+   },
+   {
+    "i": "butter",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "baked_beans",
+    "q": 200,
+    "t": "½ tin"
+   },
+   {
+    "i": "cheddar",
+    "q": 25,
+    "t": "25g, grated"
+   },
+   {
+    "i": "black_pepper",
+    "q": 0.5,
+    "t": "a few grinds"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Microwave the potato",
+    "text": "Scrub the potato and prick it all over with a fork. Microwave on high for 5 min, turn it over and cook for 4–5 min more, until a knife slides easily into the middle. Leave to stand for 2 min."
+   },
+   {
+    "title": "Heat the beans",
+    "text": "Microwave the beans in a covered bowl for 1½–2 min, stirring halfway, until piping hot."
+   },
+   {
+    "title": "Load it up",
+    "text": "Cut a cross in the potato, squeeze it open and add the butter and pepper. Spoon over the hot beans and scatter with the cheese so it melts."
+   }
+  ],
+  "tags": [
+   "comfort",
+   "veggie"
+  ]
+ },
+ {
+  "id": "lu_ham_cheese_toastie",
+  "title": "Ham & Cheese Toastie",
+  "icon": "🧀",
+  "meal": "lunch",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "pork",
+  "time": 10,
+  "servings": 1,
+  "packable": false,
+  "microwave": false,
+  "keepsDays": 0,
+  "batch": "",
+  "equipment": [
+   "hob"
+  ],
+  "kcalEst": 420,
+  "proteinEst": 24,
+  "ingredients": [
+   {
+    "i": "wholemeal_bread",
+    "q": 2,
+    "t": "2 slices"
+   },
+   {
+    "i": "butter",
+    "q": 8,
+    "t": "2 tsp, softened"
+   },
+   {
+    "i": "ham_slices",
+    "q": 40,
+    "t": "2 slices"
+   },
+   {
+    "i": "cheddar",
+    "q": 30,
+    "t": "30g, grated or sliced"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Butter the outsides",
+    "text": "Spread the butter thinly over one side of each slice of bread. Lay one slice butter-side down and top with the ham and cheese, then the second slice, butter-side up."
+   },
+   {
+    "title": "Fry until golden",
+    "text": "Cook in a frying pan over a medium-low heat for 3–4 min, pressing down with a spatula, until golden underneath. Flip and cook for 3–4 min more until the cheese has melted."
+   },
+   {
+    "title": "Rest and slice",
+    "text": "Rest for a minute so the cheese doesn't all run out, then cut in half. Got a toastie maker? Use that instead — about 4 min."
+   }
+  ],
+  "tags": [
+   "comfort"
+  ]
+ }
+]

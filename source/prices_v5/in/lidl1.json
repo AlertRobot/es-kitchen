@@ -1,0 +1,3269 @@
+[
+ {
+  "id": "arborio_rice",
+  "name": "Risotto rice (arborio)",
+  "unit": "g",
+  "packs": [
+   1000
+  ],
+  "aisle": "Dry goods",
+  "current": {
+   "tesco": {
+    "pack": 1000,
+    "price": 3.3,
+    "label": "Tesco Risotto Rice 1Kg",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=risotto%20rice"
+   },
+   "sainsburys": {
+    "pack": 500,
+    "price": 2.45,
+    "label": "Sainsbury's Arborio Risotto Rice 500g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/arborio%20rice"
+   },
+   "asda": {
+    "pack": 500,
+    "price": 2.6,
+    "label": "ASDA Risotto Arborio Rice 500g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-risotto-arborio-rice/HZP087"
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "aubergine",
+  "name": "Aubergines",
+  "unit": "each",
+  "packs": [
+   1
+  ],
+  "aisle": "Fruit & veg",
+  "current": {
+   "tesco": {
+    "pack": 1,
+    "price": 0.95,
+    "label": "Tesco Aubergine Each",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=aubergine"
+   },
+   "sainsburys": {
+    "pack": 1,
+    "price": 1.05,
+    "label": "Sainsbury's Aubergine",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/aubergine"
+   },
+   "asda": {
+    "pack": 1,
+    "price": 0.98,
+    "label": "ASDA Aubergine",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-aubergine/HED876"
+   },
+   "aldi": {
+    "pack": 1,
+    "price": 0.95,
+    "label": "Aldi aubergine each (est.)",
+    "est": true,
+    "src": ""
+   },
+   "lidl": {
+    "pack": 1,
+    "price": 0.95,
+    "label": "Lidl aubergine each (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "avocado",
+  "name": "Ripe & ready avocados",
+  "unit": "each",
+  "packs": [
+   2
+  ],
+  "aisle": "Fruit & veg",
+  "current": {
+   "tesco": {
+    "pack": 2,
+    "price": 1.5,
+    "label": "Tesco Perfectly Ripe Avocados Twin Pack",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=avocados"
+   },
+   "sainsburys": {
+    "pack": 2,
+    "price": 1.5,
+    "label": "Sainsbury's 2 x Ripe & Ready Avocados",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/avocados"
+   },
+   "asda": {
+    "pack": 2,
+    "price": 1.48,
+    "label": "ASDA Creamy & Nutty Avocados",
+    "est": true,
+    "src": "https://www.trolley.co.uk/product/asda-creamy-nutty-avocados/FBF015"
+   },
+   "aldi": {
+    "pack": 2,
+    "price": 1.39,
+    "label": "Nature's Pick Ripe & Ready Hass Avocados 2 pack",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/nature-s-pick-ripe-ready-hass-avocados-000000000000264102"
+   },
+   "lidl": {
+    "pack": 2,
+    "price": 1.39,
+    "label": "Lidl equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "bacon",
+  "name": "Smoked back bacon",
+  "unit": "g",
+  "packs": [
+   300
+  ],
+  "aisle": "Meat & fish",
+  "current": {
+   "tesco": {
+    "pack": 300,
+    "price": 1.49,
+    "label": "Tesco Smoked Back Bacon Rashers 300G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=smoked%20back%20bacon"
+   },
+   "sainsburys": {
+    "pack": 300,
+    "price": 1.49,
+    "label": "Sainsbury's Smoked Back Bacon Rashers x10 300g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/smoked%20back%20bacon"
+   },
+   "asda": {
+    "pack": 310,
+    "price": 1.64,
+    "label": "ASDA Flavoursome 10 Smoked Back Bacon Rashers 310g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-flavoursome-10-smoked-back-bacon-rashers/LXL616"
+   },
+   "aldi": {
+    "pack": 300,
+    "price": 1.49,
+    "label": "Oakhurst Smoked Back Bacon 10 Pack 300g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/oakhurst-smoked-back-bacon-10-pack-000000000000399795"
+   },
+   "lidl": {
+    "pack": 300,
+    "price": 1.49,
+    "label": "Lidl equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "baguette",
+  "name": "Part-baked white baguettes",
+  "unit": "each",
+  "packs": [
+   2
+  ],
+  "aisle": "Bakery",
+  "current": {
+   "tesco": {
+    "pack": 2,
+    "price": 1.5,
+    "label": "Tesco Homebake Part Baked White Baguettes 2 Pack",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=part%20baked%20baguettes"
+   },
+   "sainsburys": {
+    "pack": 2,
+    "price": 1.5,
+    "label": "Sainsbury's Bake at Home White Baguettes x2",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/part%20baked%20baguettes"
+   },
+   "asda": {
+    "pack": 2,
+    "price": 1.18,
+    "label": "ASDA Bake at Home 2 Baguettes 300g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/bake-at-home-2-baguettes/RPN058"
+   },
+   "aldi": {
+    "pack": 2,
+    "price": 0.85,
+    "label": "Village Bakery Bake at Home White Baguettes",
+    "est": true,
+    "src": "https://www.aldi.co.uk/product/village-bakery-bake-at-home-white-baguettes-000000000000279031"
+   },
+   "lidl": {
+    "pack": 2,
+    "price": 0.85,
+    "label": "Lidl equivalent of Village Bakery Bake at Home White Baguettes 2 pack",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "basil",
+  "name": "Fresh basil",
+  "unit": "g",
+  "packs": [
+   30
+  ],
+  "aisle": "Fruit & veg",
+  "current": {
+   "tesco": {
+    "pack": 30,
+    "price": 0.5,
+    "label": "Tesco Fresh Cut Basil 30G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=fresh%20basil"
+   },
+   "sainsburys": {
+    "pack": 30,
+    "price": 0.5,
+    "label": "Sainsbury's Fresh Packed Basil 30g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/basil"
+   },
+   "asda": {
+    "pack": 30,
+    "price": 0.5,
+    "label": "ASDA Basil",
+    "est": true,
+    "src": "https://www.trolley.co.uk/product/asda-wonderfully-aromatic-basil/EZR886"
+   },
+   "aldi": {
+    "pack": 30,
+    "price": 0.5,
+    "label": "Ready, Set…Cook! Cut Basil 30g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/ready-set-cook-cut-basil-000000000000339815"
+   },
+   "lidl": {
+    "pack": 30,
+    "price": 0.5,
+    "label": "Lidl equivalent of Ready, Set…Cook! Cut Basil 30g (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "beansprouts",
+  "name": "Beansprouts",
+  "unit": "g",
+  "packs": [
+   300
+  ],
+  "aisle": "Fruit & veg",
+  "current": {
+   "tesco": {
+    "pack": 300,
+    "price": 0.85,
+    "label": "Tesco Beansprouts 300G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=beansprouts"
+   },
+   "sainsburys": {
+    "pack": 300,
+    "price": 0.85,
+    "label": "Sainsbury's Beansprouts 300g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/beansprouts"
+   },
+   "asda": {
+    "pack": 200,
+    "price": 0.57,
+    "label": "ASDA Beansprouts 200g",
+    "est": false,
+    "src": "https://trolley.co.uk/product/asda-crunchy-beansprouts/FKR726"
+   },
+   "aldi": {
+    "pack": 400,
+    "price": 0.95,
+    "label": "Ready, Set...Cook! Washed & Ready to Cook Straight to Wok Beansprouts 400g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/ready-set-cook-washed-ready-to-cook-straight-to-wok-beansprouts-000000000000339761"
+   },
+   "lidl": {
+    "pack": 400,
+    "price": 0.95,
+    "label": "Ready, Set...Cook! Washed & Ready to Cook Straight to Wok Beansprouts 400g",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "beef_mince",
+  "name": "Beef mince (5% fat)",
+  "unit": "g",
+  "packs": [
+   500,
+   750
+  ],
+  "aisle": "Meat & fish",
+  "current": {
+   "tesco": {
+    "pack": 500,
+    "price": 5.05,
+    "label": "Tesco Lean Beef Steak Mince 5% Fat 500g",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=5%25%20beef%20mince"
+   },
+   "sainsburys": {
+    "pack": 500,
+    "price": 5.05,
+    "label": "Sainsbury's British or Irish 5% Fat Beef Mince 500g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/5%25%20beef%20mince"
+   },
+   "asda": {
+    "pack": 500,
+    "price": 5.05,
+    "label": "ASDA Beef Mince <5% Fat 500g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-flavourful-lean-beef-steak-mince-typically-less-than-5-fat/PIP593"
+   },
+   "aldi": {
+    "pack": 500,
+    "price": 5.05,
+    "label": "Ashfields British Lean Beef Steak Mince 5% Fat 500g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/ashfields-british-lean-beef-steak-mince-5-fat-000000000000575278"
+   },
+   "lidl": {
+    "pack": 500,
+    "price": 5.05,
+    "label": "Lidl equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "black_beans",
+  "name": "Black beans (tin)",
+  "unit": "g",
+  "packs": [
+   400
+  ],
+  "aisle": "Tins & jars",
+  "current": {
+   "tesco": {
+    "pack": 400,
+    "price": 0.46,
+    "label": "Tesco Black Beans 400G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=black%20beans"
+   },
+   "sainsburys": {
+    "pack": 400,
+    "price": 0.45,
+    "label": "Sainsbury's Black Beans in Water 400g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/black%20beans"
+   },
+   "asda": {
+    "pack": 400,
+    "price": 0.46,
+    "label": "ASDA Black Beans in Water 400g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-black-beans-in-water/SMY131"
+   },
+   "aldi": {
+    "pack": 400,
+    "price": 0.45,
+    "label": "Four Seasons Tinned Black Beans 400g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/four-seasons-tinned-black-beans-000000000627180001"
+   },
+   "lidl": {
+    "pack": 400,
+    "price": 0.45,
+    "label": "Lidl own-brand equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "black_pepper",
+  "name": "Black pepper",
+  "unit": "g",
+  "packs": [
+   100
+  ],
+  "aisle": "Herbs & spices",
+  "current": {
+   "tesco": {
+    "pack": 100,
+    "price": 2.55,
+    "label": "Tesco Ground Black Pepper 100G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=black%20pepper"
+   },
+   "sainsburys": {
+    "pack": 100,
+    "price": 2.55,
+    "label": "Sainsbury's Ground Black Pepper 100g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/black%20pepper"
+   },
+   "asda": {
+    "pack": 104,
+    "price": 2.7,
+    "label": "COOK by ASDA Ground Black Pepper 104g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-ground-black-pepper/YUP409"
+   },
+   "aldi": {
+    "pack": 100,
+    "price": 3.35,
+    "label": "Ready, Set…Cook! Ground Black Pepper 100g",
+    "est": true,
+    "src": "https://www.trolley.co.uk/product/stonemill-ground-black-pepper/CQX613"
+   },
+   "lidl": {
+    "pack": 100,
+    "price": 3.35,
+    "label": "Ready, Set…Cook! Ground Black Pepper 100g",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "broccoli",
+  "name": "Broccoli",
+  "unit": "g",
+  "packs": [
+   375
+  ],
+  "aisle": "Fruit & veg",
+  "current": {
+   "tesco": {
+    "pack": 375,
+    "price": 0.9,
+    "label": "Tesco Broccoli 375G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=broccoli"
+   },
+   "sainsburys": {
+    "pack": 350,
+    "price": 0.84,
+    "label": "Sainsbury's Loose Broccoli (£2.39/kg, ~350g head)",
+    "est": true,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/broccoli"
+   },
+   "asda": {
+    "pack": 350,
+    "price": 0.72,
+    "label": "ASDA Tender & Crunchy Broccoli",
+    "est": true,
+    "src": "https://www.trolley.co.uk/product/asda-tender-crunchy-broccoli/IOU463"
+   },
+   "aldi": {
+    "pack": 360,
+    "price": 0.86,
+    "label": "Nature's Pick British Broccoli 360g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/nature-s-pick-british-broccoli-000000000000339776"
+   },
+   "lidl": {
+    "pack": 360,
+    "price": 0.86,
+    "label": "Lidl equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "burger_buns",
+  "name": "Brioche burger buns",
+  "unit": "each",
+  "packs": [
+   4
+  ],
+  "aisle": "Bakery",
+  "current": {
+   "tesco": {
+    "pack": 4,
+    "price": 0.99,
+    "label": "Tesco Brioche Burger Buns 4 Pack",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=brioche%20burger%20buns"
+   },
+   "sainsburys": {
+    "pack": 4,
+    "price": 1.05,
+    "label": "Sainsbury's Brioche Burger Buns Rolls x4",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/brioche%20burger%20buns%20x4"
+   },
+   "asda": {
+    "pack": 4,
+    "price": 0.97,
+    "label": "The BAKERY at ASDA 4 Sliced Brioche Burger Buns",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/a/FOR351"
+   },
+   "aldi": {
+    "pack": 4,
+    "price": 0.99,
+    "label": "Specially Selected Sliced Brioche Burger Buns 4 pack",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/specially-selected-sliced-brioche-burger-buns-000000000000310384"
+   },
+   "lidl": {
+    "pack": 4,
+    "price": 0.99,
+    "label": "Lidl equivalent of Specially Selected Sliced Brioche Burger Buns 4 pack",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "butter",
+  "name": "Butter",
+  "unit": "g",
+  "packs": [
+   250
+  ],
+  "aisle": "Dairy & eggs",
+  "current": {
+   "tesco": {
+    "pack": 250,
+    "price": 1.85,
+    "label": "Tesco British Salted Block Butter 250G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=butter"
+   },
+   "sainsburys": {
+    "pack": 250,
+    "price": 1.85,
+    "label": "Sainsbury's British Butter, Salted 250g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/butter"
+   },
+   "asda": {
+    "pack": 250,
+    "price": 1.85,
+    "label": "ASDA British Salted Butter 250g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-salted-butter/YSB135"
+   },
+   "aldi": {
+    "pack": 250,
+    "price": 1.85,
+    "label": "Cowbelle British Salted Butter 250g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/cowbelle-british-salted-butter-250g-000000000000416554"
+   },
+   "lidl": {
+    "pack": 250,
+    "price": 1.85,
+    "label": "Lidl equivalent of Cowbelle British Salted Butter 250g",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "butter_beans",
+  "name": "Butter beans in water (tin)",
+  "unit": "g",
+  "packs": [
+   400
+  ],
+  "aisle": "Tins & jars",
+  "current": {
+   "tesco": {
+    "pack": 400,
+    "price": 0.45,
+    "label": "Tesco Butter Beans In Water 400G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=butter%20beans"
+   },
+   "sainsburys": {
+    "pack": 400,
+    "price": 0.45,
+    "label": "Sainsbury's Butter Beans In Water 400g (235g drained)",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/butter%20beans"
+   },
+   "asda": {
+    "pack": 400,
+    "price": 0.5,
+    "label": "ASDA Butter Beans in Water 400g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-butter-beans-in-water/NYM112"
+   },
+   "aldi": {
+    "pack": 400,
+    "price": 0.45,
+    "label": "Four Seasons Butter Beans 400g (240g drained)",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/four-seasons-butter-beans-000000000625454001"
+   },
+   "lidl": {
+    "pack": 400,
+    "price": 0.45,
+    "label": "Lidl equivalent of Four Seasons Butter Beans 400g",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "cannellini_beans",
+  "name": "Cannellini beans (tin)",
+  "unit": "g",
+  "packs": [
+   400
+  ],
+  "aisle": "Tins & jars",
+  "current": {
+   "tesco": {
+    "pack": 400,
+    "price": 0.45,
+    "label": "Tesco Cannellini Beans Water 400G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=cannellini%20beans"
+   },
+   "sainsburys": {
+    "pack": 400,
+    "price": 0.45,
+    "label": "Sainsbury's Cannellini Beans In Water 400g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/cannellini%20beans"
+   },
+   "asda": {
+    "pack": 400,
+    "price": 0.45,
+    "label": "ASDA Cannellini Beans in Water 400g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-cannellini-beans-in-water/BPE406"
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "carrots",
+  "name": "Carrots",
+  "unit": "g",
+  "packs": [
+   1000
+  ],
+  "aisle": "Fruit & veg",
+  "current": {
+   "tesco": {
+    "pack": 1000,
+    "price": 0.69,
+    "label": "Tesco Carrots 1Kg",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=carrots"
+   },
+   "sainsburys": {
+    "pack": 1000,
+    "price": 0.69,
+    "label": "Sainsbury's 1kg Carrots",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/carrots"
+   },
+   "asda": {
+    "pack": 1000,
+    "price": 0.69,
+    "label": "ASDA Crunchy & Sweet Carrots 1kg",
+    "est": false,
+    "src": "https://trolley.co.uk/product/asda-crunchy-sweet-carrots/GLK034"
+   },
+   "aldi": {
+    "pack": 1000,
+    "price": 0.49,
+    "label": "Nature's Pick Carrots",
+    "est": true,
+    "src": "https://www.trolley.co.uk/product/carrots/SYV392"
+   },
+   "lidl": {
+    "pack": 1000,
+    "price": 0.49,
+    "label": "Lidl carrots 1kg (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "cauliflower",
+  "name": "Cauliflower",
+  "unit": "each",
+  "packs": [
+   1
+  ],
+  "aisle": "Fruit & veg",
+  "current": {
+   "tesco": {
+    "pack": 1,
+    "price": 1.18,
+    "label": "Tesco Cauliflower Each",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=cauliflower"
+   },
+   "sainsburys": {
+    "pack": 1,
+    "price": 1.18,
+    "label": "Sainsbury's Cauliflower",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/cauliflower%20each"
+   },
+   "asda": {
+    "pack": 1,
+    "price": 1.18,
+    "label": "ASDA Light & Nutty Cauliflower",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-light-nutty-cauliflower/TPZ067"
+   },
+   "aldi": {
+    "pack": 1,
+    "price": 1.18,
+    "label": "Nature's Pick British Cauliflower",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/nature-s-pick-british-cauliflower-000000000000334794"
+   },
+   "lidl": {
+    "pack": 1,
+    "price": 1.18,
+    "label": "Lidl equivalent of Nature's Pick British Cauliflower each",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "cheddar",
+  "name": "Mature cheddar",
+  "unit": "g",
+  "packs": [
+   400
+  ],
+  "aisle": "Dairy & eggs",
+  "current": {
+   "tesco": {
+    "pack": 400,
+    "price": 3.2,
+    "label": "Tesco Mature Cheddar 400G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=mature%20cheddar"
+   },
+   "sainsburys": {
+    "pack": 400,
+    "price": 2.95,
+    "label": "Sainsbury's British Mature Cheddar Cheese 400g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/mature%20cheddar"
+   },
+   "asda": {
+    "pack": 400,
+    "price": 3.2,
+    "label": "ASDA British Mature Cheddar 400g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-mature-cheddar-cheese/LTG307"
+   },
+   "aldi": {
+    "pack": 400,
+    "price": 2.45,
+    "label": "Emporium British Mature Cheddar Cheese 400g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/emporium-british-mature-cheddar-cheese-000000000000522537"
+   },
+   "lidl": {
+    "pack": 400,
+    "price": 2.45,
+    "label": "Lidl equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "cherry_tomatoes",
+  "name": "Cherry tomatoes",
+  "unit": "g",
+  "packs": [
+   300
+  ],
+  "aisle": "Fruit & veg",
+  "current": {
+   "tesco": {
+    "pack": 300,
+    "price": 1,
+    "label": "Tesco Cherry Tomatoes 300g",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=cherry%20tomatoes"
+   },
+   "sainsburys": {
+    "pack": 330,
+    "price": 1,
+    "label": "Sainsbury's 330g Cherry Tomatoes",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/cherry%20tomatoes"
+   },
+   "asda": {
+    "pack": 300,
+    "price": 0.97,
+    "label": "ASDA Crunchy & Juicy Cherry Tomatoes 300g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-crunchy-juicy-cherry-tomatoes/CLH647"
+   },
+   "aldi": {
+    "pack": 330,
+    "price": 0.89,
+    "label": "Nature's Pick Cherry Tomatoes 330g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/nature-s-pick-cherry-tomatoes-000000000000275529"
+   },
+   "lidl": {
+    "pack": 330,
+    "price": 0.95,
+    "label": "Lidl cherry tomatoes 330g (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "chicken_breast",
+  "name": "Chicken breast fillets",
+  "unit": "g",
+  "packs": [
+   350,
+   650
+  ],
+  "aisle": "Meat & fish",
+  "current": {
+   "tesco": {
+    "pack": 650,
+    "price": 4.9,
+    "label": "Tesco British Chicken Breast Fillets 650G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=chicken%20breast%20fillets"
+   },
+   "sainsburys": {
+    "pack": 640,
+    "price": 4.62,
+    "label": "Sainsbury's 640g British Fresh Skinless & Boneless Chicken Breast Fillets",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/chicken%20breast"
+   },
+   "asda": {
+    "pack": 600,
+    "price": 4.52,
+    "label": "ASDA British Chicken Breast Fillets 600g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-tender-chicken-breast-fillets/HZF781"
+   },
+   "aldi": {
+    "pack": 650,
+    "price": 4.69,
+    "label": "Ashfields Chicken Breast Fillets 650g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/ashfields-chicken-breast-fillets-000000000000383730"
+   },
+   "lidl": {
+    "pack": 650,
+    "price": 4.69,
+    "label": "Lidl equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "chicken_thighs",
+  "name": "Chicken thigh fillets",
+  "unit": "g",
+  "packs": [
+   600,
+   1000
+  ],
+  "aisle": "Meat & fish",
+  "current": {
+   "tesco": {
+    "pack": 600,
+    "price": 5.75,
+    "label": "Tesco British Chicken Thigh Fillets 600G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=chicken%20thigh%20fillets"
+   },
+   "sainsburys": {
+    "pack": 640,
+    "price": 6,
+    "label": "Sainsbury's 640g British Fresh Skinless & Boneless Chicken Thigh Fillets",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/chicken%20legs"
+   },
+   "asda": {
+    "pack": 1000,
+    "price": 6.84,
+    "label": "ASDA British Boneless Chicken Thigh Fillets",
+    "est": true,
+    "src": "https://www.trolley.co.uk/product/asda-succulent-boneless-chicken-thigh-fillets/SEI999"
+   },
+   "aldi": {
+    "pack": 600,
+    "price": 4.39,
+    "label": "Ashfields Chicken Thigh Fillets 600g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/ashfields-chicken-thigh-fillets-000000000000416054"
+   },
+   "lidl": {
+    "pack": 600,
+    "price": 4.39,
+    "label": "Lidl equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "chickpeas",
+  "name": "Chickpeas (tin)",
+  "unit": "g",
+  "packs": [
+   400
+  ],
+  "aisle": "Tins & jars",
+  "current": {
+   "tesco": {
+    "pack": 400,
+    "price": 0.41,
+    "label": "Tesco Chickpeas In Water 400G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=chickpeas"
+   },
+   "sainsburys": {
+    "pack": 400,
+    "price": 0.41,
+    "label": "Sainsbury's Chickpeas in Water 400g (240g drained)",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/chickpeas%20in%20water"
+   },
+   "asda": {
+    "pack": 400,
+    "price": 0.41,
+    "label": "ASDA Chickpeas in Water 400g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-chickpeas-in-water/JSQ555"
+   },
+   "aldi": {
+    "pack": 400,
+    "price": 0.41,
+    "label": "Four Seasons Chickpeas 400g (265g drained)",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/four-seasons-chickpeas-000000000000625258"
+   },
+   "lidl": {
+    "pack": 400,
+    "price": 0.41,
+    "label": "Lidl own-brand equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "chilli_flakes",
+  "name": "Chilli flakes",
+  "unit": "g",
+  "packs": [
+   28
+  ],
+  "aisle": "Herbs & spices",
+  "current": {
+   "tesco": {
+    "pack": 28,
+    "price": 1,
+    "label": "Tesco Crushed Chillies 28G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=crushed%20chillies"
+   },
+   "sainsburys": {
+    "pack": 32,
+    "price": 1.15,
+    "label": "Sainsbury's Crushed Chillies 32g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/crushed%20chillies"
+   },
+   "asda": {
+    "pack": 28,
+    "price": 0.95,
+    "label": "COOK by ASDA Crushed Chillies 28g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-crushed-chillies/BAA168"
+   },
+   "aldi": {
+    "pack": 29,
+    "price": 0.79,
+    "label": "Ready, Set…Cook! Crushed Chillies 29g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/products/food-cupboard/herbs-spices/k/1588161416978053007"
+   },
+   "lidl": {
+    "pack": 30,
+    "price": 0.69,
+    "label": "Aldi crushed chillies (estimated)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "chopped_tomatoes",
+  "name": "Chopped tomatoes (tin)",
+  "unit": "g",
+  "packs": [
+   400
+  ],
+  "aisle": "Tins & jars",
+  "current": {
+   "tesco": {
+    "pack": 400,
+    "price": 0.47,
+    "label": "Tesco Italian Chopped Tomatoes 400G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=chopped%20tomatoes"
+   },
+   "sainsburys": {
+    "pack": 400,
+    "price": 0.45,
+    "label": "Sainsbury's Chopped Tomatoes Can 400g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/tinned%20chopped%20tomatoes"
+   },
+   "asda": {
+    "pack": 400,
+    "price": 0.47,
+    "label": "ASDA Chopped Tomatoes 400g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-chopped-tomatoes-in-tomato-juice/PMO540"
+   },
+   "aldi": {
+    "pack": 400,
+    "price": 0.45,
+    "label": "Cucina Chopped Tomatoes in a Rich Tomato Juice 400g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/cucina-chopped-tomatoes-in-a-rich-tomato-juice-000000000000278588"
+   },
+   "lidl": {
+    "pack": 400,
+    "price": 0.45,
+    "label": "Lidl own-brand equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "coconut_milk",
+  "name": "Coconut milk (tin)",
+  "unit": "ml",
+  "packs": [
+   400
+  ],
+  "aisle": "Tins & jars",
+  "current": {
+   "tesco": {
+    "pack": 400,
+    "price": 0.75,
+    "label": "Tesco Coconut Milk 400ml",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=coconut%20milk"
+   },
+   "sainsburys": {
+    "pack": 400,
+    "price": 0.75,
+    "label": "Sainsbury's Coconut Milk 400ml",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/coconut%20milk"
+   },
+   "asda": {
+    "pack": 400,
+    "price": 0.85,
+    "label": "ASDA Coconut Milk",
+    "est": true,
+    "src": "https://www.trolley.co.uk/product/asda-coconut-milk/WZO213"
+   },
+   "aldi": {
+    "pack": 400,
+    "price": 0.75,
+    "label": "Asia Green Garden Coconut Milk 400ml Full Fat",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/asia-green-garden-coconut-milk-400ml-full-fat-000000000635586001"
+   },
+   "lidl": {
+    "pack": 400,
+    "price": 0.75,
+    "label": "Lidl own-brand equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "coriander",
+  "name": "Fresh coriander",
+  "unit": "g",
+  "packs": [
+   30
+  ],
+  "aisle": "Fruit & veg",
+  "current": {
+   "tesco": {
+    "pack": 30,
+    "price": 0.5,
+    "label": "Tesco Fresh Cut Coriander 30G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=fresh%20coriander"
+   },
+   "sainsburys": {
+    "pack": 30,
+    "price": 0.55,
+    "label": "Sainsbury's Fresh Packed Bunch Coriander 30g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/fresh%20coriander"
+   },
+   "asda": {
+    "pack": 30,
+    "price": 0.5,
+    "label": "ASDA Coriander 30g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-aromatic-zesty-coriander/CAA278"
+   },
+   "aldi": {
+    "pack": 30,
+    "price": 0.5,
+    "label": "Ready, Set…Cook! British Cut Coriander 30g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/ready-set-cook-british-cut-coriander-000000000000339817"
+   },
+   "lidl": {
+    "pack": 30,
+    "price": 0.5,
+    "label": "Lidl equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "cornflour",
+  "name": "Cornflour",
+  "unit": "g",
+  "packs": [
+   500
+  ],
+  "aisle": "Dry goods",
+  "current": {
+   "tesco": {
+    "pack": 500,
+    "price": 2.55,
+    "label": "Tesco Cornflour 500g",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=cornflour"
+   },
+   "sainsburys": {
+    "pack": 500,
+    "price": 2.65,
+    "label": "Sainsbury's Cornflour 500g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/cornflour"
+   },
+   "asda": {
+    "pack": 250,
+    "price": 1.03,
+    "label": "BAKE by ASDA Cornflour 250g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-lets-cook-cornflour/SAA169"
+   },
+   "aldi": {
+    "pack": 400,
+    "price": 1.35,
+    "label": "The Pantry Cornflour 400g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/the-pantry-cornflour-000000000000675134"
+   },
+   "lidl": {
+    "pack": 400,
+    "price": 1.35,
+    "label": "Lidl equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "courgette",
+  "name": "Courgettes",
+  "unit": "each",
+  "packs": [
+   1
+  ],
+  "aisle": "Fruit & veg",
+  "current": {
+   "tesco": {
+    "pack": 1,
+    "price": 0.7,
+    "label": "Tesco Courgettes Loose (£2.78/kg, ~250g)",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=courgette"
+   },
+   "sainsburys": {
+    "pack": 1,
+    "price": 0.7,
+    "label": "Sainsbury's Courgettes Loose (£2.78/kg, ~250g)",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/courgettes"
+   },
+   "asda": {
+    "pack": 1.32,
+    "price": 0.83,
+    "label": "ASDA Mild & Delicate Courgettes 330g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/courgettes/NYQ560"
+   },
+   "aldi": {
+    "pack": 2,
+    "price": 1.39,
+    "label": "Nature's Pick Courgettes 500g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/nature-s-pick-courgettes-000000000000339808"
+   },
+   "lidl": {
+    "pack": 2,
+    "price": 1.39,
+    "label": "Lidl equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "couscous",
+  "name": "Couscous",
+  "unit": "g",
+  "packs": [
+   500
+  ],
+  "aisle": "Dry goods",
+  "current": {
+   "tesco": {
+    "pack": 500,
+    "price": 1.3,
+    "label": "Tesco Cous Cous 500G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=cous%20cous"
+   },
+   "sainsburys": {
+    "pack": 500,
+    "price": 1.3,
+    "label": "Sainsbury's Cous Cous 500g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/cous%20cous"
+   },
+   "asda": {
+    "pack": 500,
+    "price": 1.2,
+    "label": "ASDA Cous Cous 500g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-cous-cous/FQU899"
+   },
+   "aldi": {
+    "pack": 500,
+    "price": 1.15,
+    "label": "Aldi cous cous 500g (estimated)",
+    "est": true,
+    "src": ""
+   },
+   "lidl": {
+    "pack": 500,
+    "price": 1.15,
+    "label": "Aldi cous cous 500g (estimated)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "cucumber",
+  "name": "Cucumber",
+  "unit": "each",
+  "packs": [
+   1
+  ],
+  "aisle": "Fruit & veg",
+  "current": {
+   "tesco": {
+    "pack": 1,
+    "price": 0.99,
+    "label": "Tesco Whole Cucumber Each",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=cucumber"
+   },
+   "sainsburys": {
+    "pack": 1,
+    "price": 1.09,
+    "label": "Sainsbury's Whole Cucumber",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/cucumber"
+   },
+   "asda": {
+    "pack": 1,
+    "price": 0.99,
+    "label": "ASDA Cucumber",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-whole-cucumber/GXG785"
+   },
+   "aldi": {
+    "pack": 1,
+    "price": 0.99,
+    "label": "Nature's Pick Cucumber",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/nature-s-pick-cucumber-000000000000273659"
+   },
+   "lidl": {
+    "pack": 1,
+    "price": 0.99,
+    "label": "Lidl equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "cumin",
+  "name": "Ground cumin",
+  "unit": "g",
+  "packs": [
+   43
+  ],
+  "aisle": "Herbs & spices",
+  "current": {
+   "tesco": {
+    "pack": 43,
+    "price": 1,
+    "label": "Tesco Ground Cumin 43G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=ground%20cumin"
+   },
+   "sainsburys": {
+    "pack": 43,
+    "price": 1.15,
+    "label": "Sainsbury's Ground Cumin 43g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/ground%20cumin"
+   },
+   "asda": {
+    "pack": 41,
+    "price": 0.95,
+    "label": "ASDA Cook Ground Cumin 41g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-ground-cumin/OIG648"
+   },
+   "aldi": {
+    "pack": 40,
+    "price": 0.65,
+    "label": "Ready, Set…Cook! Cumin 40g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/products/food-cupboard/herbs-spices/k/1588161416978053007"
+   },
+   "lidl": {
+    "pack": 40,
+    "price": 0.59,
+    "label": "Ready, Set…Cook! Ground Cumin 40g",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "cumin_seeds",
+  "name": "Cumin seeds",
+  "unit": "g",
+  "packs": [
+   37
+  ],
+  "aisle": "Herbs & spices",
+  "current": {
+   "tesco": {
+    "pack": 37,
+    "price": 1,
+    "label": "Tesco Whole Cumin Seeds 37G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=cumin%20seeds"
+   },
+   "sainsburys": {
+    "pack": 38,
+    "price": 1.15,
+    "label": "Sainsbury's Cumin Seed 38g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/cumin%20seeds"
+   },
+   "asda": {
+    "pack": 37,
+    "price": 1,
+    "label": "COOK by ASDA Cumin Seeds 37g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-whole-cumin-seeds/QWS311"
+   },
+   "aldi": {
+    "pack": 40,
+    "price": 0.65,
+    "label": "Ready, Set…Cook! Cumin 40g",
+    "est": true,
+    "src": "https://www.aldi.co.uk/product/ready-set-cook-cumin-000000000000335731"
+   },
+   "lidl": {
+    "pack": 40,
+    "price": 0.65,
+    "label": "Lidl equivalent of Ready, Set...Cook! Cumin 40g",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "curry_powder",
+  "name": "Mild curry powder",
+  "unit": "g",
+  "packs": [
+   80
+  ],
+  "aisle": "Herbs & spices",
+  "current": {
+   "tesco": {
+    "pack": 80,
+    "price": 1.25,
+    "label": "Tesco Mild Curry Powder 80g",
+    "est": true,
+    "src": "https://www.tesco.com/shop/en-GB/products/255770060"
+   },
+   "sainsburys": {
+    "pack": 79,
+    "price": 1.3,
+    "label": "Sainsbury's Mild Curry Powder, Inspired to Cook 79g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/mild%20curry%20powder"
+   },
+   "asda": {
+    "pack": 80,
+    "price": 1.35,
+    "label": "COOK by ASDA Mild Curry Powder 80g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-mild-curry-powder/CZG187"
+   },
+   "aldi": {
+    "pack": 90,
+    "price": 0.89,
+    "label": "Ready, Set…Cook! Mild Curry Powder 90g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/ready-set-cook-mild-curry-powder-000000000336690002"
+   },
+   "lidl": {
+    "pack": 85,
+    "price": 1,
+    "label": "Ready, Set…Cook! Mild Curry Powder 85g",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "double_cream",
+  "name": "Double cream",
+  "unit": "ml",
+  "packs": [
+   150,
+   300
+  ],
+  "aisle": "Dairy & eggs",
+  "current": {
+   "tesco": {
+    "pack": 300,
+    "price": 1.7,
+    "label": "Tesco British Double Cream 300Ml",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=double%20cream"
+   },
+   "sainsburys": {
+    "pack": 300,
+    "price": 1.7,
+    "label": "Sainsbury's Double Cream 300ml",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/double%20cream"
+   },
+   "asda": {
+    "pack": 300,
+    "price": 1.7,
+    "label": "ASDA Fresh Double Cream 300ml",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-fresh-double-cream/SSZ208"
+   },
+   "aldi": {
+    "pack": 300,
+    "price": 1.29,
+    "label": "Cowbelle Fresh British Double Cream 300ml",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/cowbelle-fresh-british-double-cream-000000000000416559"
+   },
+   "lidl": {
+    "pack": 300,
+    "price": 1.29,
+    "label": "Lidl double cream 300ml (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "egg_noodles",
+  "name": "Medium egg noodles",
+  "unit": "g",
+  "packs": [
+   250
+  ],
+  "aisle": "World foods",
+  "current": {
+   "tesco": {
+    "pack": 250,
+    "price": 0.95,
+    "label": "Tesco Medium Egg Noodles 250G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=medium%20egg%20noodles"
+   },
+   "sainsburys": {
+    "pack": 250,
+    "price": 0.95,
+    "label": "Sainsbury's Medium Noodles 250g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/medium%20egg%20noodles"
+   },
+   "asda": {
+    "pack": 250,
+    "price": 1.15,
+    "label": "ASDA Medium Egg Noodles 250g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-egg-noodles/VUY754"
+   },
+   "aldi": {
+    "pack": 410,
+    "price": 1.09,
+    "label": "Ready, Set...Cook! Egg Noodles 410g",
+    "est": true,
+    "src": "https://www.aldi.co.uk/product/ready-set-cook-egg-noodles-000000000000339840"
+   },
+   "lidl": {
+    "pack": 410,
+    "price": 1.09,
+    "label": "Lidl own-brand equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "eggs",
+  "name": "Free-range eggs",
+  "unit": "each",
+  "packs": [
+   6,
+   12
+  ],
+  "aisle": "Dairy & eggs",
+  "current": {
+   "tesco": {
+    "pack": 12,
+    "price": 2.95,
+    "label": "Tesco Medium Free Range Eggs 12 Pack",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=free%20range%20eggs"
+   },
+   "sainsburys": {
+    "pack": 12,
+    "price": 2.95,
+    "label": "Sainsbury's British Free Range Eggs Medium x12",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/free%20range%20eggs"
+   },
+   "asda": {
+    "pack": 12,
+    "price": 2.95,
+    "label": "ASDA 12 Free Range Medium Eggs",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-12-medium-free-range-eggs/YDR153"
+   },
+   "aldi": {
+    "pack": 12,
+    "price": 2.49,
+    "label": "Merevale British Medium Free Range Eggs 12 Pack",
+    "est": false,
+    "src": "https://allsupers.co.uk/browse/dairy-eggs-and-butter/eggs/free-range-eggs"
+   },
+   "lidl": {
+    "pack": 12,
+    "price": 2.49,
+    "label": "Lidl equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "feta",
+  "name": "Feta",
+  "unit": "g",
+  "packs": [
+   200
+  ],
+  "aisle": "Dairy & eggs",
+  "current": {
+   "tesco": {
+    "pack": 200,
+    "price": 2.25,
+    "label": "Tesco Greek Feta Cheese 200 G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=feta"
+   },
+   "sainsburys": {
+    "pack": 200,
+    "price": 2.35,
+    "label": "Sainsbury's Greek Feta Cheese 200g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/feta"
+   },
+   "asda": {
+    "pack": 200,
+    "price": 2.04,
+    "label": "ASDA Greek Feta 200g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-feta-cheese/UWE186"
+   },
+   "aldi": {
+    "pack": 200,
+    "price": 1.69,
+    "label": "Emporium Greek Feta 200g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/emporium-greek-feta-000000000000557625"
+   },
+   "lidl": {
+    "pack": 200,
+    "price": 1.69,
+    "label": "Lidl Greek feta 200g (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "frozen_peas",
+  "name": "Frozen garden peas",
+  "unit": "g",
+  "packs": [
+   1000
+  ],
+  "aisle": "Frozen",
+  "current": {
+   "tesco": {
+    "pack": 1000,
+    "price": 1.7,
+    "label": "Tesco Garden Peas 1Kg",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=frozen%20garden%20peas"
+   },
+   "sainsburys": {
+    "pack": 910,
+    "price": 1.55,
+    "label": "Sainsbury's Garden Peas 910g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/frozen%20garden%20peas"
+   },
+   "asda": {
+    "pack": 1000,
+    "price": 1.64,
+    "label": "ASDA Garden Peas 1kg",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-frozen-for-freshness-garden-peas/XCX284"
+   },
+   "aldi": {
+    "pack": 900,
+    "price": 1.09,
+    "label": "Four Seasons Garden Peas 900g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/four-seasons-garden-peas-000000000000366805"
+   },
+   "lidl": {
+    "pack": 1000,
+    "price": 1.09,
+    "label": "Four Seasons Garden Peas",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "garam_masala",
+  "name": "Garam masala",
+  "unit": "g",
+  "packs": [
+   38
+  ],
+  "aisle": "Herbs & spices",
+  "current": {
+   "tesco": {
+    "pack": 38,
+    "price": 1,
+    "label": "Tesco Garam Masala Spice Blend 38g",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=garam%20masala"
+   },
+   "sainsburys": {
+    "pack": 38,
+    "price": 1.15,
+    "label": "Sainsbury's Garam Masala 38g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/garam%20masala"
+   },
+   "asda": {
+    "pack": 92,
+    "price": 0.95,
+    "label": "COOK by ASDA Garam Masala Spice Blend 92g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-garam-masala-spice-blend/YQQ391"
+   },
+   "aldi": {
+    "pack": 90,
+    "price": 0.89,
+    "label": "Ready, Set…Cook! Garam Malasa Powder",
+    "est": true,
+    "src": "https://www.aldi.co.uk/product/ready-set-cook-garam-malasa-powder-000000000336690003"
+   },
+   "lidl": {
+    "pack": 85,
+    "price": 0.69,
+    "label": "Ready, Set…Cook! Garam Masala 85g",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "garlic",
+  "name": "Garlic",
+  "unit": "clove",
+  "packs": [
+   40
+  ],
+  "aisle": "Fruit & veg",
+  "current": {
+   "tesco": {
+    "pack": 40,
+    "price": 0.87,
+    "label": "Tesco Garlic 4 Pack",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=garlic"
+   },
+   "sainsburys": {
+    "pack": 40,
+    "price": 0.87,
+    "label": "Sainsbury's Garlic x4",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/garlic"
+   },
+   "asda": {
+    "pack": 40,
+    "price": 0.87,
+    "label": "ASDA 4 Garlic",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-fragrant-bold-garlic-60mm/GBY971"
+   },
+   "aldi": {
+    "pack": 40,
+    "price": 0.59,
+    "label": "Nature's Pick Garlic 4 pack",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/nature-s-pick-garlic-000000000000273810"
+   },
+   "lidl": {
+    "pack": 40,
+    "price": 0.59,
+    "label": "Lidl equivalent of Nature's Pick Garlic 4 pack",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "ginger_paste",
+  "name": "Ginger paste",
+  "unit": "g",
+  "packs": [
+   90
+  ],
+  "aisle": "World foods",
+  "current": {
+   "tesco": {
+    "pack": 90,
+    "price": 1.8,
+    "label": "Tesco Ginger Paste 90G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=ginger%20paste"
+   },
+   "sainsburys": {
+    "pack": 75,
+    "price": 1.75,
+    "label": "Sainsbury's Ginger Paste, Inspired to Cook 75g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/ginger%20paste"
+   },
+   "asda": {
+    "pack": 75,
+    "price": 2.21,
+    "label": "ASDA Chopped Ginger 75g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/cook-by-asda-easy-ginger/LEE787"
+   },
+   "aldi": {
+    "pack": 75,
+    "price": 0.79,
+    "label": "Ready Set...Cook! Ginger Puree 75g",
+    "est": true,
+    "src": "https://www.trolley.co.uk/product/stonemill-ginger-puree/BRI627"
+   },
+   "lidl": {
+    "pack": 75,
+    "price": 0.79,
+    "label": "Lidl equivalent of Ready Set...Cook! Ginger Puree 75g",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "gnocchi",
+  "name": "Potato gnocchi",
+  "unit": "g",
+  "packs": [
+   500
+  ],
+  "aisle": "Chilled",
+  "current": {
+   "tesco": {
+    "pack": 500,
+    "price": 2,
+    "label": "Tesco Gnocchi 500G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=gnocchi"
+   },
+   "sainsburys": {
+    "pack": 500,
+    "price": 1.5,
+    "label": "Sainsbury's Potato Gnocchi 500g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/gnocchi"
+   },
+   "asda": {
+    "pack": 500,
+    "price": 1.96,
+    "label": "ASDA Gnocchi 500g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-gnocchi-pasta/OVG728"
+   },
+   "aldi": {
+    "pack": 500,
+    "price": 0.99,
+    "label": "Cucina Gnocchi 500g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/cucina-gnocchi-500g-000000000635994003"
+   },
+   "lidl": {
+    "pack": 500,
+    "price": 0.99,
+    "label": "Lidl own-brand equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "gochujang",
+  "name": "Gochujang Korean chilli paste",
+  "unit": "g",
+  "packs": [
+   90
+  ],
+  "aisle": "World foods",
+  "current": {
+   "tesco": {
+    "pack": 90,
+    "price": 1.8,
+    "label": "Tesco Gochujang Paste 90G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=gochujang"
+   },
+   "sainsburys": {
+    "pack": 170,
+    "price": 2.25,
+    "label": "Sun Hee Gochujang Sun Dried Red Chilli Paste 170g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/gochujang%20paste"
+   },
+   "asda": {
+    "pack": 110,
+    "price": 2.32,
+    "label": "COOK by ASDA Gochujang Paste 110g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/cook-by-asda-gochujang-paste/LPJ985"
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "gravy",
+  "name": "Gravy granules",
+  "unit": "g",
+  "packs": [
+   200
+  ],
+  "aisle": "Dry goods",
+  "current": {
+   "tesco": {
+    "pack": 200,
+    "price": 0.66,
+    "label": "Tesco Gravy Granules For Chicken 200G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=gravy%20granules"
+   },
+   "sainsburys": {
+    "pack": 170,
+    "price": 0.65,
+    "label": "Sainsbury's Gravy Granules For Meat 170g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/gravy%20granules"
+   },
+   "asda": {
+    "pack": 200,
+    "price": 0.66,
+    "label": "ASDA Gravy Granules for Meat 200g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-reduced-salt-gravy-granules/YJV196"
+   },
+   "aldi": {
+    "pack": 200,
+    "price": 0.66,
+    "label": "Aldi gravy granules 200g (equivalent)",
+    "est": true,
+    "src": ""
+   },
+   "lidl": {
+    "pack": 200,
+    "price": 0.66,
+    "label": "Lidl equivalent of Aldi gravy granules 200g (equivalent)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "greek_yogurt",
+  "name": "Greek-style yogurt",
+  "unit": "g",
+  "packs": [
+   500
+  ],
+  "aisle": "Dairy & eggs",
+  "current": {
+   "tesco": {
+    "pack": 500,
+    "price": 1.15,
+    "label": "Tesco Greek Style Yogurt 500G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=greek%20style%20yogurt"
+   },
+   "sainsburys": {
+    "pack": 500,
+    "price": 1.15,
+    "label": "Sainsbury's Greek Style Natural Yogurt 500g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/greek%20style%20yogurt"
+   },
+   "asda": {
+    "pack": 500,
+    "price": 1.15,
+    "label": "ASDA Creamy Greek Style Yogurt 500g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-greek-style-yogurt/EUJ912"
+   },
+   "aldi": {
+    "pack": 500,
+    "price": 0.95,
+    "label": "Brooklea Fat Free Greek Style Yogurt 500g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/brooklea-fat-free-greek-style-yogurt-000000000000422093"
+   },
+   "lidl": {
+    "pack": 1000,
+    "price": 1.49,
+    "label": "Milbona Greek Style Natural Yoghurt 1kg",
+    "est": true,
+    "src": "https://britbrief.co.uk/business/regulations/aldi-lidl-greek-yoghurt-beat-yeo-valley-ms-in-test.html"
+   }
+  }
+ },
+ {
+  "id": "green_chillies",
+  "name": "Green chillies",
+  "unit": "g",
+  "packs": [
+   80
+  ],
+  "aisle": "Fruit & veg",
+  "current": {
+   "tesco": {
+    "pack": 80,
+    "price": 1.15,
+    "label": "Tesco Finger Chillies 80G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=green%20chillies"
+   },
+   "sainsburys": {
+    "pack": 65,
+    "price": 0.75,
+    "label": "Sainsbury's Green Chillies 65g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/green%20chillies"
+   },
+   "asda": {
+    "pack": 50,
+    "price": 0.62,
+    "label": "ASDA Hot & Fragrant Thin Chillies 50g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-hot-fragrant-thin-chillies/PGB231"
+   },
+   "aldi": {
+    "pack": 50,
+    "price": 0.79,
+    "label": "Nature's Pick Finger Chillies",
+    "est": true,
+    "src": "https://www.aldi.co.uk/product/nature-s-pick-finger-chillies-000000000556893002"
+   },
+   "lidl": {
+    "pack": 50,
+    "price": 0.79,
+    "label": "Lidl equivalent of Nature's Pick Finger Chillies",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "ground_cinnamon",
+  "name": "Ground cinnamon",
+  "unit": "g",
+  "packs": [
+   36
+  ],
+  "aisle": "Herbs & spices",
+  "current": {
+   "tesco": {
+    "pack": 36,
+    "price": 1,
+    "label": "Tesco Ground Cinnamon 36g",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=ground%20cinnamon"
+   },
+   "sainsburys": {
+    "pack": 38,
+    "price": 1.15,
+    "label": "Sainsbury's Ground Cinnamon 38g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/ground%20cinnamon"
+   },
+   "asda": {
+    "pack": 34,
+    "price": 0.95,
+    "label": "COOK by ASDA Ground Cinnamon 34g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-ground-cinnamon/JYB566"
+   },
+   "aldi": {
+    "pack": 40,
+    "price": 0.89,
+    "label": "Ready, Set…Cook! Ground Cinnamon 40g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/ready-set-cook-ground-cinnamon-000000000000335976"
+   },
+   "lidl": {
+    "pack": 38,
+    "price": 0.89,
+    "label": "Lidl equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "ground_coriander",
+  "name": "Ground coriander",
+  "unit": "g",
+  "packs": [
+   36
+  ],
+  "aisle": "Herbs & spices",
+  "current": {
+   "tesco": {
+    "pack": 36,
+    "price": 1,
+    "label": "Tesco Ground Coriander 36G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=ground%20coriander"
+   },
+   "sainsburys": {
+    "pack": 36,
+    "price": 1.15,
+    "label": "Sainsbury's Ground Coriander 36g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/ground%20coriander"
+   },
+   "asda": {
+    "pack": 34,
+    "price": 1,
+    "label": "COOK by ASDA Ground Coriander 34g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-ground-coriander/VSL590"
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "halloumi",
+  "name": "Halloumi",
+  "unit": "g",
+  "packs": [
+   225
+  ],
+  "aisle": "Dairy & eggs",
+  "current": {
+   "tesco": {
+    "pack": 225,
+    "price": 1.99,
+    "label": "Tesco Halloumi 225G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=halloumi"
+   },
+   "sainsburys": {
+    "pack": 225,
+    "price": 1.99,
+    "label": "Sainsbury's Cypriot Halloumi Cheese 225g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/halloumi"
+   },
+   "asda": {
+    "pack": 225,
+    "price": 1.97,
+    "label": "ASDA Halloumi 225g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-halloumi/OUD520"
+   },
+   "aldi": {
+    "pack": 225,
+    "price": 1.99,
+    "label": "Emporium Halloumi Plain 225g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/emporium-halloumi-plain-225g-000000000000612513"
+   },
+   "lidl": {
+    "pack": 225,
+    "price": 1.99,
+    "label": "Lidl halloumi 225g (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "harissa",
+  "name": "Harissa paste",
+  "unit": "g",
+  "packs": [
+   90
+  ],
+  "aisle": "World foods",
+  "current": {
+   "tesco": {
+    "pack": 90,
+    "price": 1.8,
+    "label": "Tesco Harissa Paste 90G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=harissa%20paste"
+   },
+   "sainsburys": {
+    "pack": 90,
+    "price": 1.95,
+    "label": "Sainsbury's Harissa Paste, Inspired to Cook 90g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/harissa"
+   },
+   "asda": {
+    "pack": 90,
+    "price": 1.9,
+    "label": "COOK by ASDA Harissa Paste 90g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-harissa-paste/QQR248"
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "hoisin_sauce",
+  "name": "Hoisin sauce",
+  "unit": "g",
+  "packs": [
+   320
+  ],
+  "aisle": "World foods",
+  "current": {
+   "tesco": {
+    "pack": 320,
+    "price": 2.4,
+    "label": "Tesco Hoisin Dipping Sauce 320g",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=hoisin%20sauce"
+   },
+   "sainsburys": {
+    "pack": 180,
+    "price": 1.65,
+    "label": "Sainsbury's Hoisin Sauce 150ml",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/hoisin"
+   },
+   "asda": {
+    "pack": 300,
+    "price": 2.4,
+    "label": "Blue Dragon Rich Hoisin Sauce 250ml",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/blue-dragon-hoisin-sauce/GBS093"
+   },
+   "aldi": {
+    "pack": 315,
+    "price": 1.39,
+    "label": "Asia Specialities Hoisin Sauce",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/asia-specialities-hoisin-sauce-000000000337196001"
+   },
+   "lidl": {
+    "pack": 315,
+    "price": 1.39,
+    "label": "Asia Specialities Hoisin Sauce",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "honey",
+  "name": "Honey",
+  "unit": "g",
+  "packs": [
+   340
+  ],
+  "aisle": "Tins & jars",
+  "current": {
+   "tesco": {
+    "pack": 340,
+    "price": 1.19,
+    "label": "Tesco Squeezy Clear Honey 340G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=honey"
+   },
+   "sainsburys": {
+    "pack": 340,
+    "price": 1.04,
+    "label": "Sainsbury's Runny Honey 340g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/clear%20honey"
+   },
+   "asda": {
+    "pack": 340,
+    "price": 1.04,
+    "label": "Asda Runny Honey 340g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/tesco-squeezy-honey/VSK691"
+   },
+   "aldi": {
+    "pack": 454,
+    "price": 1.39,
+    "label": "Grandessa Squeezy Honey 454g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/grandessa-squeezy-honey-000000000000672171"
+   },
+   "lidl": {
+    "pack": 454,
+    "price": 1.39,
+    "label": "Lidl equivalent of Grandessa Squeezy Honey 454g",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "kidney_beans",
+  "name": "Red kidney beans (tin)",
+  "unit": "g",
+  "packs": [
+   400
+  ],
+  "aisle": "Tins & jars",
+  "current": {
+   "tesco": {
+    "pack": 400,
+    "price": 0.39,
+    "label": "Tesco Red Kidney Beans In Water 400g",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=red%20kidney%20beans"
+   },
+   "sainsburys": {
+    "pack": 400,
+    "price": 0.39,
+    "label": "Sainsbury's Red Kidney Beans in Water 400g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/kidney%20beans"
+   },
+   "asda": {
+    "pack": 400,
+    "price": 0.39,
+    "label": "ASDA Red Kidney Beans in Water 400g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-red-kidney-beans-in-water/FVL297"
+   },
+   "aldi": {
+    "pack": 400,
+    "price": 0.39,
+    "label": "Four Seasons Red Kidney Beans in Water 400g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/four-seasons-red-kidney-beans-in-water-000000000000284569"
+   },
+   "lidl": {
+    "pack": 400,
+    "price": 0.39,
+    "label": "Lidl own-brand equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "kimchi",
+  "name": "Kimchi",
+  "unit": "g",
+  "packs": [
+   300
+  ],
+  "aisle": "Chilled",
+  "current": {
+   "tesco": {
+    "pack": 300,
+    "price": 3.5,
+    "label": "Baxters Kimchi 300G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=kimchi"
+   },
+   "sainsburys": {
+    "pack": 300,
+    "price": 3.5,
+    "label": "Baxters Kimchi Korean Inspired Cabbage with Chilli Pepper 300g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/kimchi"
+   },
+   "asda": {
+    "pack": 400,
+    "price": 4.5,
+    "label": "Vadasz Raw Kimchi 400g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/explore/kimchis"
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "lamb_mince",
+  "name": "Lamb mince (20% fat)",
+  "unit": "g",
+  "packs": [
+   500
+  ],
+  "aisle": "Meat & fish",
+  "current": {
+   "tesco": {
+    "pack": 500,
+    "price": 6.5,
+    "label": "Tesco British Lamb Mince 20% Fat 500G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=lamb%20mince"
+   },
+   "sainsburys": {
+    "pack": 500,
+    "price": 7,
+    "label": "Sainsbury's British or New Zealand 20% Fat Lamb Mince 500g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/lamb%20mince"
+   },
+   "asda": {
+    "pack": 500,
+    "price": 6.42,
+    "label": "ASDA Flavourful Lamb Mince 20% Fat 500g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-flavourful-lamb-mince/IES553"
+   },
+   "aldi": {
+    "pack": 475,
+    "price": 5.49,
+    "label": "Ashfields British Lamb Mince 20% Fat 475g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/ashfields-british-lamb-mince-20-fat-000000000000575324"
+   },
+   "lidl": {
+    "pack": 475,
+    "price": 5.49,
+    "label": "Lidl equivalent of Ashfields British Lamb Mince 20% Fat 475g",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "lasagne_sheets",
+  "name": "Dried lasagne sheets",
+  "unit": "g",
+  "packs": [
+   500
+  ],
+  "aisle": "Dry goods",
+  "current": {
+   "tesco": {
+    "pack": 500,
+    "price": 0.75,
+    "label": "Tesco Lasagne Pasta 500G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=lasagne%20sheets"
+   },
+   "sainsburys": {
+    "pack": 500,
+    "price": 0.75,
+    "label": "Sainsbury's Lasagne Sheets Pasta 500g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/lasagne%20sheets"
+   },
+   "asda": {
+    "pack": 375,
+    "price": 0.72,
+    "label": "ASDA Italian Inspired Lasagne Sheets 375g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-italian-inspired-lasagne-sheets/UYC232"
+   },
+   "aldi": {
+    "pack": 500,
+    "price": 0.75,
+    "label": "Cucina Lasagne Sheets 500g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/cucina-lasagne-sheets-000000000000305855"
+   },
+   "lidl": {
+    "pack": 500,
+    "price": 0.75,
+    "label": "Lidl equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "leeks",
+  "name": "Leeks",
+  "unit": "g",
+  "packs": [
+   500
+  ],
+  "aisle": "Fruit & veg",
+  "current": {
+   "tesco": {
+    "pack": 500,
+    "price": 1.37,
+    "label": "Tesco Leeks 500G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=leeks"
+   },
+   "sainsburys": {
+    "pack": 500,
+    "price": 1.37,
+    "label": "Sainsbury's Leeks 500g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/leeks"
+   },
+   "asda": {
+    "pack": 500,
+    "price": 1.37,
+    "label": "ASDA Mild & Sweet Trimmed Leeks 500g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-mild-sweet-trimmed-leeks/JJM417"
+   },
+   "aldi": {
+    "pack": 500,
+    "price": 1.37,
+    "label": "Nature's Pick British Leeks 500g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/nature-s-pick-british-leeks-000000000000339864"
+   },
+   "lidl": {
+    "pack": 500,
+    "price": 1.37,
+    "label": "Lidl equivalent of Nature's Pick British Leeks 500g",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "lemon",
+  "name": "Lemons",
+  "unit": "each",
+  "packs": [
+   1
+  ],
+  "aisle": "Fruit & veg",
+  "current": {
+   "tesco": {
+    "pack": 1,
+    "price": 0.37,
+    "label": "Tesco Lemons Each",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=lemons"
+   },
+   "sainsburys": {
+    "pack": 1,
+    "price": 0.37,
+    "label": "Sainsbury's Lemons",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/lemons"
+   },
+   "asda": {
+    "pack": 1,
+    "price": 0.37,
+    "label": "ASDA Lemons",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-tangy-zesty-lemons/XSQ850"
+   },
+   "aldi": {
+    "pack": 4,
+    "price": 0.89,
+    "label": "Everyday Essentials Wonky Lemons 4 pack",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/everyday-essentials-wonky-lemons-000000000000268496"
+   },
+   "lidl": {
+    "pack": 4,
+    "price": 0.89,
+    "label": "Lidl equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "lime",
+  "name": "Limes",
+  "unit": "each",
+  "packs": [
+   1
+  ],
+  "aisle": "Fruit & veg",
+  "current": {
+   "tesco": {
+    "pack": 1,
+    "price": 0.23,
+    "label": "Tesco Limes Each",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=limes"
+   },
+   "sainsburys": {
+    "pack": 1,
+    "price": 0.25,
+    "label": "Sainsbury's Limes",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/limes"
+   },
+   "asda": {
+    "pack": 5,
+    "price": 1.18,
+    "label": "ASDA 5 Limes",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-zingy-zesty-limes/THE316"
+   },
+   "aldi": {
+    "pack": 5,
+    "price": 1.15,
+    "label": "Nature's Pick Limes 5 pack",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/nature-s-pick-limes-000000000000285988"
+   },
+   "lidl": {
+    "pack": 5,
+    "price": 1.15,
+    "label": "Lidl equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "little_gem",
+  "name": "Little gem lettuce",
+  "unit": "each",
+  "packs": [
+   2
+  ],
+  "aisle": "Fruit & veg",
+  "current": {
+   "tesco": {
+    "pack": 2,
+    "price": 0.77,
+    "label": "Tesco Little Gem Lettuce Twin Pack",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=little%20gem%20lettuce"
+   },
+   "sainsburys": {
+    "pack": 2,
+    "price": 0.77,
+    "label": "Sainsbury's Little Gem Lettuce",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/little%20gem"
+   },
+   "asda": {
+    "pack": 2,
+    "price": 0.77,
+    "label": "ASDA 2 Crisp & Crunchy Little Gem Lettuce",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-crisp-crunchy-little-gem-lettuce/AEV324"
+   },
+   "aldi": {
+    "pack": 2,
+    "price": 0.77,
+    "label": "Nature's Pick British Little Gem Lettuce 2 Pack",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/nature-s-pick-british-little-gem-lettuce-2-pack-000000000000339865"
+   },
+   "lidl": {
+    "pack": 2,
+    "price": 0.77,
+    "label": "Lidl equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "milk",
+  "name": "Semi-skimmed milk",
+  "unit": "ml",
+  "packs": [
+   2272
+  ],
+  "aisle": "Dairy & eggs",
+  "current": {
+   "tesco": {
+    "pack": 2272,
+    "price": 1.75,
+    "label": "Tesco British Semi Skimmed Milk 2.272L, 4 Pints",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=semi%20skimmed%20milk"
+   },
+   "sainsburys": {
+    "pack": 2272,
+    "price": 1.65,
+    "label": "Sainsbury's British Semi Skimmed Milk 2.27L (4 pint)",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/semi%20skimmed%20milk"
+   },
+   "asda": {
+    "pack": 2272,
+    "price": 1.65,
+    "label": "ASDA British Milk Semi Skimmed (4pts)",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-semi-skimmed-milk/UCW265"
+   },
+   "aldi": {
+    "pack": 2272,
+    "price": 1.65,
+    "label": "Cowbelle Semi Skimmed Milk 1.7% Fat 2.272L",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/cowbelle-semi-skimmed-milk-1-7-fat-000000000000416770"
+   },
+   "lidl": {
+    "pack": 2272,
+    "price": 1.65,
+    "label": "Lidl equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "miso_paste",
+  "name": "Miso paste",
+  "unit": "g",
+  "packs": [
+   100
+  ],
+  "aisle": "World foods",
+  "current": {
+   "tesco": {
+    "pack": 100,
+    "price": 1.8,
+    "label": "Tesco Miso Paste 100G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=miso%20paste"
+   },
+   "sainsburys": {
+    "pack": 100,
+    "price": 1.9,
+    "label": "Sainsbury's Miso Paste 100g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/miso%20paste"
+   },
+   "asda": {
+    "pack": 135,
+    "price": 2.5,
+    "label": "Blue Dragon Miso Paste 135g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/blue-dragon-miso-paste/PQE006"
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "mixed_herbs",
+  "name": "Dried mixed herbs",
+  "unit": "g",
+  "packs": [
+   18
+  ],
+  "aisle": "Herbs & spices",
+  "current": {
+   "tesco": {
+    "pack": 18,
+    "price": 1,
+    "label": "Tesco Mixed Herbs 18G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=mixed%20herbs"
+   },
+   "sainsburys": {
+    "pack": 14,
+    "price": 1.15,
+    "label": "Sainsbury's Mixed Herbs 14g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/mixed%20herbs"
+   },
+   "asda": {
+    "pack": 12,
+    "price": 0.95,
+    "label": "COOK by ASDA Mixed Herbs 12g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-mixed-herbs/HNU956"
+   },
+   "aldi": {
+    "pack": 11,
+    "price": 0.49,
+    "label": "Ready, Set…Cook! Dried Mixed Herbs 11g",
+    "est": true,
+    "src": "https://www.trolley.co.uk/product/ready-set-cook-mixed-herbs/CFJ689"
+   },
+   "lidl": {
+    "pack": 11,
+    "price": 0.49,
+    "label": "Ready, Set…Cook! Dried Mixed Herbs 11g",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "mozzarella",
+  "name": "Mozzarella",
+  "unit": "g",
+  "packs": [
+   125
+  ],
+  "aisle": "Dairy & eggs",
+  "current": {
+   "tesco": {
+    "pack": 125,
+    "price": 1.3,
+    "label": "Tesco Mozzarella 200g (125g drained)",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=mozzarella"
+   },
+   "sainsburys": {
+    "pack": 125,
+    "price": 1.55,
+    "label": "Sainsbury's Mozzarella Cheese 150g",
+    "est": true,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/mozzarella"
+   },
+   "asda": {
+    "pack": 125,
+    "price": 1.27,
+    "label": "ASDA Mozzarella 215g (125g drained)",
+    "est": true,
+    "src": "https://www.trolley.co.uk/product/asda-mozzarella-cheese/FEL200"
+   },
+   "aldi": {
+    "pack": 125,
+    "price": 0.55,
+    "label": "Everyday Essentials Classic Mozzarella (0.125kg drained)",
+    "est": false,
+    "src": "https://www.aldi.co.uk/products/chilled-food/cheese/k/1588161416978051004"
+   },
+   "lidl": {
+    "pack": 125,
+    "price": 0.55,
+    "label": "Lidl equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "mushrooms",
+  "name": "Chestnut mushrooms",
+  "unit": "g",
+  "packs": [
+   250
+  ],
+  "aisle": "Fruit & veg",
+  "current": {
+   "tesco": {
+    "pack": 250,
+    "price": 1.1,
+    "label": "Tesco Chestnut Vitamin D Mushrooms 250G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=chestnut%20mushrooms"
+   },
+   "sainsburys": {
+    "pack": 300,
+    "price": 1.29,
+    "label": "Sainsbury's 300g Closed Cup Chestnut Mushrooms",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/chestnut%20mushrooms"
+   },
+   "asda": {
+    "pack": 250,
+    "price": 1.07,
+    "label": "ASDA Chestnut Mushrooms 250g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-nutty-earthy-chestnut-mushrooms/ZPC289"
+   },
+   "aldi": {
+    "pack": 250,
+    "price": 0.95,
+    "label": "Nature's Pick British Chestnut Mushrooms 250g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/nature-s-pick-british-chestnut-mushrooms-000000000000339800"
+   },
+   "lidl": {
+    "pack": 250,
+    "price": 0.95,
+    "label": "Lidl equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "naan",
+  "name": "Plain naan",
+  "unit": "each",
+  "packs": [
+   2
+  ],
+  "aisle": "Bakery",
+  "current": {
+   "tesco": {
+    "pack": 2,
+    "price": 0.69,
+    "label": "Tesco Plain Naans 2 Pack 260G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=plain%20naan"
+   },
+   "sainsburys": {
+    "pack": 2,
+    "price": 0.69,
+    "label": "Sainsbury's Plain Naan x 2 260g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/plain%20naan"
+   },
+   "asda": {
+    "pack": 2,
+    "price": 0.69,
+    "label": "ASDA 2 Plain Naans",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-2-plain-naans/BBP481"
+   },
+   "aldi": {
+    "pack": 2,
+    "price": 0.69,
+    "label": "Bilash Plain Naan Breads",
+    "est": true,
+    "src": "https://www.aldi.co.uk/product/bilash-plain-naan-breads-000000000000383275"
+   },
+   "lidl": {
+    "pack": 2,
+    "price": 0.69,
+    "label": "Lidl equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "oil",
+  "name": "Vegetable oil",
+  "unit": "ml",
+  "packs": [
+   1000
+  ],
+  "aisle": "Oils & sauces",
+  "current": {
+   "tesco": {
+    "pack": 1000,
+    "price": 1.45,
+    "label": "Tesco Pure Vegetable Oil 1L",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=vegetable%20oil"
+   },
+   "sainsburys": {
+    "pack": 1000,
+    "price": 1.45,
+    "label": "Sainsbury's Vegetable Oil 1L",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/vegetable%20oil"
+   },
+   "asda": {
+    "pack": 1000,
+    "price": 1.45,
+    "label": "ASDA Vegetable Oil 1 Litre",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-vegetable-oil/XRU461"
+   },
+   "aldi": {
+    "pack": 1000,
+    "price": 1.45,
+    "label": "Solesta Vegetable Oil 1L (est.)",
+    "est": true,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=vegetable%20oil"
+   },
+   "lidl": {
+    "pack": 1000,
+    "price": 1.45,
+    "label": "Lidl vegetable oil 1L (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "onion",
+  "name": "Brown onions",
+  "unit": "each",
+  "packs": [
+   6
+  ],
+  "aisle": "Fruit & veg",
+  "current": {
+   "tesco": {
+    "pack": 6,
+    "price": 0.95,
+    "label": "Tesco Brown Onions 1Kg",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=brown%20onions"
+   },
+   "sainsburys": {
+    "pack": 6,
+    "price": 0.95,
+    "label": "Sainsbury's Onions 1kg",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/brown%20onions"
+   },
+   "asda": {
+    "pack": 6,
+    "price": 0.98,
+    "label": "ASDA Brown Onions 1kg",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-crunchy-fragrant-brown-onions/LMN111"
+   },
+   "aldi": {
+    "pack": 6,
+    "price": 0.59,
+    "label": "Nature's Pick Brown Onions 1kg",
+    "est": false,
+    "src": "https://aldi.co.uk/product/nature-s-pick-brown-onions-000000000000339777"
+   },
+   "lidl": {
+    "pack": 6,
+    "price": 0.59,
+    "label": "Lidl brown onions 1kg (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "pak_choi",
+  "name": "Pak choi",
+  "unit": "g",
+  "packs": [
+   250
+  ],
+  "aisle": "Fruit & veg",
+  "current": {
+   "tesco": {
+    "pack": 250,
+    "price": 1.55,
+    "label": "Tesco Pak Choi 250G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=pak%20choi"
+   },
+   "sainsburys": {
+    "pack": 250,
+    "price": 1.55,
+    "label": "Sainsbury's Pak Choi 250g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/pak%20choi%20250g"
+   },
+   "asda": {
+    "pack": 200,
+    "price": 1.12,
+    "label": "ASDA Mild & Crisp Pak Choi 200g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-pak-choi/VXY006"
+   },
+   "aldi": {
+    "pack": 250,
+    "price": 1.29,
+    "label": "Nature's Pick Pak Choi",
+    "est": true,
+    "src": "https://www.trolley.co.uk/product/pak-choi/SCT404"
+   },
+   "lidl": {
+    "pack": 250,
+    "price": 1.29,
+    "label": "Nature's Pick Pak Choi",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "paneer",
+  "name": "Paneer",
+  "unit": "g",
+  "packs": [
+   200
+  ],
+  "aisle": "Dairy & eggs",
+  "current": {
+   "tesco": {
+    "pack": 200,
+    "price": 1.8,
+    "label": "Tesco Paneer Cheese 200g",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=paneer"
+   },
+   "sainsburys": {
+    "pack": 200,
+    "price": 1.77,
+    "label": "Sainsbury's Paneer 200g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/paneer"
+   },
+   "asda": {
+    "pack": 200,
+    "price": 1.76,
+    "label": "ASDA Paneer 200g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-paneer/SGK757"
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "panko",
+  "name": "Panko breadcrumbs",
+  "unit": "g",
+  "packs": [
+   150
+  ],
+  "aisle": "World foods",
+  "current": {
+   "tesco": {
+    "pack": 150,
+    "price": 2.1,
+    "label": "Tesco Panko Breadcrumbs 150G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=panko"
+   },
+   "sainsburys": {
+    "pack": 100,
+    "price": 1.4,
+    "label": "Sainsbury's Panko Breadcrumbs, Inspired to Cook 100g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/panko"
+   },
+   "asda": {
+    "pack": 70,
+    "price": 1.21,
+    "label": "COOK by ASDA Panko Breadcrumbs 70g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-panko-breadcrumbs/SWC986"
+   },
+   "aldi": {
+    "pack": 150,
+    "price": 1.49,
+    "label": "Bramwells Panko Breadcrumbs (est.)",
+    "est": true,
+    "src": ""
+   },
+   "lidl": {
+    "pack": 150,
+    "price": 1.49,
+    "label": "Lidl own-brand equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "parmesan",
+  "name": "Italian hard cheese (parmesan-style)",
+  "unit": "g",
+  "packs": [
+   175
+  ],
+  "aisle": "Dairy & eggs",
+  "current": {
+   "tesco": {
+    "pack": 175,
+    "price": 2.49,
+    "label": "Creamfields Grana Padano Wedge 175G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=grana%20padano"
+   },
+   "sainsburys": {
+    "pack": 200,
+    "price": 3.3,
+    "label": "Sainsbury's Grana Padano Cheese 200g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/grana%20padano"
+   },
+   "asda": {
+    "pack": 160,
+    "price": 2.57,
+    "label": "ASDA Grana Padano 160g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-grana-padano/IGS933"
+   },
+   "aldi": {
+    "pack": 200,
+    "price": 2.85,
+    "label": "Emporium Italian Grana Padano 200g",
+    "est": false,
+    "src": "https://www.aldi.co.uk/product/emporium-italian-grana-padano-000000000000284856"
+   },
+   "lidl": {
+    "pack": 200,
+    "price": 2.75,
+    "label": "Lidl equivalent (est.)",
+    "est": true,
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "pasta",
+  "name": "Dried pasta (spaghetti/penne)",
+  "unit": "g",
+  "packs": [
+   500
+  ],
+  "aisle": "Dry goods",
+  "current": {
+   "tesco": {
+    "pack": 500,
+    "price": 0.69,
+    "label": "Tesco Penne Pasta Quills 500G",
+    "est": false,
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=penne%20pasta"
+   },
+   "sainsburys": {
+    "pack": 500,
+    "price": 0.69,
+    "label": "Sainsbury's Penne Rigate Pasta 500g",
+    "est": false,
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/penne"
+   },
+   "asda": {
+    "pack": 500,
+    "price": 0.75,
+    "label": "ASDA Spaghetti 500g",
+    "est": false,
+    "src": "https://www.trolley.co.uk/product/asda-spaghetti/NOG228"
+   },
+   "aldi": {
+    "pack": 500,
+    "price": 0.69,
+    "label": "Aldi penne/spaghetti 500g (estimated)",
+    "est": true,
+    "src": "https://www.tesco.com/shop/en-GB/products/254878482"
+   },
+   "lidl": {
+    "pack": 500,
+    "price": 0.69,
+    "label": "Aldi penne/spaghetti 500g (estimated)",
+    "est": true,
+    "src": ""
+   }
+  }
+ }
+]

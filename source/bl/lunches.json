@@ -1,0 +1,2871 @@
+[
+ {
+  "id": "lu_chicken_pesto_pasta_salad",
+  "title": "Chicken Pesto Pasta Salad",
+  "icon": "🥗",
+  "meal": "lunch",
+  "cuisine": "Italian",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 25,
+  "servings": 1,
+  "kcalEst": 485,
+  "packable": true,
+  "microwave": false,
+  "keepsDays": 3,
+  "batch": "Cook 3 chicken breasts and 150g pasta on Sunday and split between 3 boxes; keeps 3 days in the fridge.",
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "pasta",
+    "q": 50,
+    "t": "50g penne or fusilli"
+   },
+   {
+    "i": "chicken_breast",
+    "q": 120,
+    "t": "1 small breast (about 120g)"
+   },
+   {
+    "i": "oil",
+    "q": 3,
+    "t": "½ tsp"
+   },
+   {
+    "i": "pesto",
+    "q": 20,
+    "t": "1 heaped tbsp"
+   },
+   {
+    "i": "skyr",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "lemon",
+    "q": 0.25,
+    "t": "a squeeze"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 80,
+    "t": "6, halved"
+   },
+   {
+    "i": "spinach",
+    "q": 20,
+    "t": "a handful"
+   },
+   {
+    "i": "parmesan",
+    "q": 8,
+    "t": "a little, finely grated"
+   },
+   {
+    "i": "salt",
+    "q": 1,
+    "t": "a pinch"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a few grinds"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Cook the chicken",
+    "text": "Season the chicken and fry in the oil over a medium heat for 6–7 min each side until golden and cooked through with no pink in the middle. Rest for 5 min, then slice."
+   },
+   {
+    "title": "Cook the pasta",
+    "text": "Boil the pasta in salted water for 10–12 min until just tender. Drain and rinse under cold water so it stays separate in the box."
+   },
+   {
+    "title": "Make a creamy pesto dressing",
+    "text": "Stir the pesto, skyr and lemon juice together. The skyr makes a little pesto go further and keeps the salad from drying out."
+   },
+   {
+    "title": "Toss and pack",
+    "text": "Toss the pasta, chicken, tomatoes and spinach in the dressing and pack into a box. Scatter over the parmesan and chill within an hour."
+   }
+  ],
+  "tags": [
+   "high-protein",
+   "batch"
+  ]
+ },
+ {
+  "id": "lu_lemon_chicken_orzo_feta",
+  "title": "Lemon & Herb Chicken Orzo Salad with Feta",
+  "icon": "🍋",
+  "meal": "lunch",
+  "cuisine": "Italian",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 25,
+  "servings": 1,
+  "kcalEst": 475,
+  "packable": true,
+  "microwave": false,
+  "keepsDays": 3,
+  "batch": "Cook a 3-portion batch (150g orzo, 3 breasts) and pack the feta on top of each box; keeps 3 days.",
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "orzo",
+    "q": 50,
+    "t": "50g"
+   },
+   {
+    "i": "chicken_breast",
+    "q": 110,
+    "t": "1 small breast (about 110g)"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 1,
+    "t": "½ tsp dried oregano or mixed herbs"
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "½, zested and juiced"
+   },
+   {
+    "i": "oil",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.25,
+    "t": "¼, diced"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 60,
+    "t": "5, quartered"
+   },
+   {
+    "i": "red_onion",
+    "q": 0.25,
+    "t": "¼, finely chopped"
+   },
+   {
+    "i": "olives",
+    "q": 15,
+    "t": "a few, halved"
+   },
+   {
+    "i": "rocket",
+    "q": 10,
+    "t": "a small handful"
+   },
+   {
+    "i": "feta",
+    "q": 25,
+    "t": "25g, crumbled"
+   },
+   {
+    "i": "salt",
+    "q": 1,
+    "t": "a pinch"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a few grinds"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Cook the chicken",
+    "text": "Rub the chicken with the herbs, lemon zest, a pinch of salt and half the oil. Fry over a medium heat for 6–7 min each side until cooked through, then rest and slice."
+   },
+   {
+    "title": "Cook the orzo",
+    "text": "Boil the orzo in salted water for 8–9 min until tender. Drain, rinse under cold water and toss with the lemon juice and remaining oil so it doesn't clump."
+   },
+   {
+    "title": "Toss and pack",
+    "text": "Mix the orzo with the cucumber, tomatoes, red onion, olives and rocket. Top with the chicken and crumble over the feta last so it stays in chunks."
+   }
+  ],
+  "tags": [
+   "high-protein",
+   "batch"
+  ]
+ },
+ {
+  "id": "lu_chicken_tikka_rice_box",
+  "title": "Chicken Tikka Rice Box with Peas & Spinach",
+  "icon": "🍛",
+  "meal": "lunch",
+  "cuisine": "Indian",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 25,
+  "servings": 1,
+  "kcalEst": 505,
+  "packable": true,
+  "microwave": true,
+  "keepsDays": 1,
+  "batch": "Make 2 portions so one rice pouch covers both; eat the second next day or freeze it and defrost overnight in the fridge.",
+  "equipment": [
+   "hob",
+   "microwave"
+  ],
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 130,
+    "t": "130g, cut into chunks"
+   },
+   {
+    "i": "tikka_paste",
+    "q": 20,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "skyr",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "oil",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "microwave_rice_pouch",
+    "q": 125,
+    "t": "½ pouch"
+   },
+   {
+    "i": "frozen_peas",
+    "q": 40,
+    "t": "a handful"
+   },
+   {
+    "i": "spinach",
+    "q": 30,
+    "t": "a big handful"
+   },
+   {
+    "i": "red_onion",
+    "q": 0.25,
+    "t": "¼, finely sliced"
+   },
+   {
+    "i": "lemon",
+    "q": 0.25,
+    "t": "a squeeze"
+   },
+   {
+    "i": "coriander",
+    "q": 5,
+    "t": "a few sprigs, chopped"
+   },
+   {
+    "i": "salt",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Marinate the chicken",
+    "text": "Mix the chicken chunks with the tikka paste and skyr. Leave for 10 min, or overnight in the fridge if you're organised."
+   },
+   {
+    "title": "Cook the chicken",
+    "text": "Heat the oil in a frying pan over a medium-high heat and cook the chicken for 8–10 min, turning, until charred in places and cooked through."
+   },
+   {
+    "title": "Heat the rice and veg",
+    "text": "Tip the rice and peas into a bowl and microwave for 2 min. Stir in the spinach so it wilts in the heat."
+   },
+   {
+    "title": "Pack it",
+    "text": "Spoon the rice into a box and top with the chicken. Squeeze the lemon over the red onion and pile it on with the coriander. Cool quickly and chill within an hour."
+   },
+   {
+    "title": "Reheat at work",
+    "text": "Microwave for 2½–3 min, stirring halfway, until piping hot all the way through."
+   }
+  ],
+  "tags": [
+   "high-protein",
+   "batch",
+   "freezable"
+  ]
+ },
+ {
+  "id": "lu_chicken_burrito_quinoa_bowl",
+  "title": "Smoky Chicken Burrito Bowl with Quinoa",
+  "icon": "🌯",
+  "meal": "lunch",
+  "cuisine": "Mexican",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 30,
+  "servings": 1,
+  "kcalEst": 485,
+  "packable": true,
+  "microwave": false,
+  "keepsDays": 3,
+  "batch": "Cook 120g quinoa and 3 portions of chicken and peppers at once, then build 3 boxes; keeps 3 days.",
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "quinoa",
+    "q": 40,
+    "t": "40g, rinsed"
+   },
+   {
+    "i": "chicken_breast",
+    "q": 120,
+    "t": "1 small breast, sliced into strips"
+   },
+   {
+    "i": "peppers",
+    "q": 0.5,
+    "t": "½, sliced"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "cumin",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "oil",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "black_beans",
+    "q": 100,
+    "t": "¼ tin, drained and rinsed"
+   },
+   {
+    "i": "sweetcorn",
+    "q": 40,
+    "t": "a handful"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 50,
+    "t": "4, quartered"
+   },
+   {
+    "i": "lime",
+    "q": 0.5,
+    "t": "½, zested and juiced"
+   },
+   {
+    "i": "skyr",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "coriander",
+    "q": 5,
+    "t": "a few sprigs, chopped"
+   },
+   {
+    "i": "salt",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Cook the quinoa",
+    "text": "Simmer the quinoa in plenty of water for 12–15 min until the little white tails appear. Drain well and spread out to cool."
+   },
+   {
+    "title": "Cook the smoky chicken",
+    "text": "Toss the chicken and pepper with the paprika, cumin, salt and oil. Fry over a medium-high heat for 8–10 min until the chicken is cooked through and the peppers are charred at the edges."
+   },
+   {
+    "title": "Prep the sides",
+    "text": "Cover the sweetcorn with boiling water for 2 min, then drain. Stir the lime zest and a squeeze of juice into the skyr for a quick crema."
+   },
+   {
+    "title": "Build the bowl",
+    "text": "Pack the quinoa, chicken, beans, sweetcorn and tomatoes in rows and squeeze over the rest of the lime. Add the coriander and pack the crema in a small pot."
+   }
+  ],
+  "tags": [
+   "high-protein",
+   "batch"
+  ]
+ },
+ {
+  "id": "lu_tuna_sweetcorn_pasta_salad",
+  "title": "Tuna, Sweetcorn & Spring Onion Pasta Salad",
+  "icon": "🐟",
+  "meal": "lunch",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "fish",
+  "time": 15,
+  "servings": 1,
+  "kcalEst": 410,
+  "packable": true,
+  "microwave": false,
+  "keepsDays": 2,
+  "batch": "Make 2 at a time with 100g pasta and 2 tins of tuna; keeps 2 days in the fridge.",
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "pasta",
+    "q": 50,
+    "t": "50g fusilli or penne"
+   },
+   {
+    "i": "tinned_tuna",
+    "q": 145,
+    "t": "1 tin, drained"
+   },
+   {
+    "i": "sweetcorn",
+    "q": 50,
+    "t": "a big handful"
+   },
+   {
+    "i": "light_mayonnaise",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "skyr",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "lemon",
+    "q": 0.25,
+    "t": "a squeeze"
+   },
+   {
+    "i": "spring_onions",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.25,
+    "t": "¼, diced"
+   },
+   {
+    "i": "salt",
+    "q": 1,
+    "t": "a pinch"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a few grinds"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Cook the pasta",
+    "text": "Boil the pasta in salted water for 10–12 min, adding the sweetcorn for the last 2 min. Drain and rinse under cold water until cool."
+   },
+   {
+    "title": "Mix the tuna",
+    "text": "Mash the tuna with the mayo, skyr, lemon juice and plenty of black pepper. Half mayo, half skyr keeps it creamy for far fewer calories."
+   },
+   {
+    "title": "Toss and pack",
+    "text": "Fold the pasta, sweetcorn, spring onion and cucumber through the tuna and pack into a box. Keep chilled until lunch."
+   }
+  ],
+  "tags": [
+   "high-protein",
+   "batch"
+  ]
+ },
+ {
+  "id": "lu_peanut_chicken_noodle_salad",
+  "title": "Satay Chicken Noodle Salad",
+  "icon": "🥜",
+  "meal": "lunch",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 25,
+  "servings": 1,
+  "kcalEst": 495,
+  "packable": true,
+  "microwave": false,
+  "keepsDays": 3,
+  "batch": "Make 3 boxes from one pot of noodles and 3 breasts, with the satay dressing in a jar; keeps 3 days.",
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 110,
+    "t": "1 small breast"
+   },
+   {
+    "i": "rice_noodles",
+    "q": 45,
+    "t": "45g"
+   },
+   {
+    "i": "frozen_edamame",
+    "q": 40,
+    "t": "a handful"
+   },
+   {
+    "i": "carrots",
+    "q": 50,
+    "t": "½ carrot, cut into thin matchsticks"
+   },
+   {
+    "i": "red_cabbage",
+    "q": 0.06,
+    "t": "a small wedge (50g), finely shredded"
+   },
+   {
+    "i": "spring_onions",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "coriander",
+    "q": 5,
+    "t": "a few sprigs"
+   },
+   {
+    "i": "peanut_butter",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "sweet_chilli_sauce",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 3,
+    "t": "½ tsp"
+   },
+   {
+    "i": "lime",
+    "q": 0.5,
+    "t": "½, juiced"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Poach the chicken",
+    "text": "Put the chicken in a small pan, cover with water and bring to a gentle simmer. Cook for 12–14 min until cooked through, then lift out and shred with two forks."
+   },
+   {
+    "title": "Cook the noodles and beans",
+    "text": "Cook the noodles following the pack, adding the edamame for the last 2 min. Drain and rinse under cold water so the noodles don't stick together."
+   },
+   {
+    "title": "Shake up the satay dressing",
+    "text": "Whisk the peanut butter, soy, sweet chilli, ginger and lime with 1–2 tbsp hot water until smooth and pourable."
+   },
+   {
+    "title": "Pack it",
+    "text": "Pile the noodles, edamame, carrot, cabbage and chicken into a box and top with spring onion and coriander. Pack the dressing in a small pot and toss just before eating."
+   }
+  ],
+  "tags": [
+   "high-protein",
+   "batch"
+  ]
+ },
+ {
+  "id": "lu_miso_chicken_noodle_jar",
+  "title": "Miso Chicken Noodle Jar",
+  "icon": "🍜",
+  "meal": "lunch",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 15,
+  "servings": 1,
+  "kcalEst": 340,
+  "packable": true,
+  "microwave": true,
+  "keepsDays": 3,
+  "batch": "Build 3 jars at once with pre-cooked noodles; they keep 3 days in the fridge until you add hot water.",
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "egg_noodles",
+    "q": 40,
+    "t": "1 nest (about 40g)"
+   },
+   {
+    "i": "miso_paste",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 0.5,
+    "t": "½ chicken stock cube, crumbled"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 3,
+    "t": "½ tsp"
+   },
+   {
+    "i": "cooked_chicken_slices",
+    "q": 80,
+    "t": "80g, torn"
+   },
+   {
+    "i": "frozen_edamame",
+    "q": 30,
+    "t": "a small handful"
+   },
+   {
+    "i": "carrots",
+    "q": 30,
+    "t": "a small piece, grated"
+   },
+   {
+    "i": "spinach",
+    "q": 25,
+    "t": "a handful"
+   },
+   {
+    "i": "spring_onions",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 0.5,
+    "t": "a pinch (optional)"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Cook the noodles",
+    "text": "Cook the noodles following the pack (usually 4 min), adding the edamame for the last minute. Drain and rinse under cold water."
+   },
+   {
+    "title": "Layer the jar",
+    "text": "In a large heatproof jar or tub, spoon in the miso, stock cube, soy and ginger. Layer the noodles and edamame on top, then the carrot, chicken, spinach, spring onion and chilli. Seal and chill."
+   },
+   {
+    "title": "Add hot water at lunch",
+    "text": "Fill with about 350ml boiling water from the kettle, put the lid on and leave for 3 min, then stir well. No kettle? Add cold water and microwave for 3 min until piping hot."
+   }
+  ],
+  "tags": [
+   "high-protein",
+   "batch",
+   "quick"
+  ]
+ },
+ {
+  "id": "lu_falafel_hummus_box",
+  "title": "Falafel & Houmous Mezze Box",
+  "icon": "🧆",
+  "meal": "lunch",
+  "cuisine": "Middle Eastern",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 10,
+  "servings": 1,
+  "kcalEst": 510,
+  "packable": true,
+  "microwave": false,
+  "keepsDays": 3,
+  "batch": "Pack 3 boxes from one tub of houmous and a pack of falafel; keep the pitta in a separate bag so it stays soft.",
+  "equipment": [],
+  "ingredients": [
+   {
+    "i": "falafel",
+    "q": 3,
+    "t": "3"
+   },
+   {
+    "i": "hummus",
+    "q": 40,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "pitta",
+    "q": 1,
+    "t": "1, cut into strips"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.25,
+    "t": "¼"
+   },
+   {
+    "i": "skyr",
+    "q": 50,
+    "t": "50g"
+   },
+   {
+    "i": "garlic",
+    "q": 0.5,
+    "t": "½ small clove, grated"
+   },
+   {
+    "i": "lemon",
+    "q": 0.25,
+    "t": "a squeeze"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 60,
+    "t": "5"
+   },
+   {
+    "i": "peppers",
+    "q": 0.5,
+    "t": "½, cut into strips"
+   },
+   {
+    "i": "cooked_beetroot",
+    "q": 40,
+    "t": "1 small, cut into wedges"
+   },
+   {
+    "i": "salt",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Make a quick tzatziki",
+    "text": "Grate half the cucumber, squeeze out the water with your hands, then stir into the skyr with the garlic, lemon and salt."
+   },
+   {
+    "title": "Prep the veg",
+    "text": "Cut the rest of the cucumber into sticks and halve the tomatoes. Keep the beetroot in its own corner of the box so it doesn't stain everything pink."
+   },
+   {
+    "title": "Pack the box",
+    "text": "Spoon the houmous and tzatziki into small pots and pack them with the falafel and veg. Put the pitta strips in a separate bag; warm the falafel for 30 sec in the microwave if you like."
+   }
+  ],
+  "tags": [
+   "veggie",
+   "no-cook",
+   "batch"
+  ]
+ },
+ {
+  "id": "lu_harissa_chicken_couscous",
+  "title": "Harissa Chicken & Apricot Couscous",
+  "icon": "🌶️",
+  "meal": "lunch",
+  "cuisine": "Middle Eastern",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 20,
+  "servings": 1,
+  "kcalEst": 445,
+  "packable": true,
+  "microwave": false,
+  "keepsDays": 3,
+  "batch": "Make 3 portions in one go (135g couscous, 3 breasts); keeps 3 days and is good cold or warmed.",
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 120,
+    "t": "1 small breast"
+   },
+   {
+    "i": "harissa",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "oil",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "peppers",
+    "q": 0.5,
+    "t": "½, sliced"
+   },
+   {
+    "i": "red_onion",
+    "q": 0.25,
+    "t": "¼, sliced"
+   },
+   {
+    "i": "couscous",
+    "q": 45,
+    "t": "45g"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 0.25,
+    "t": "¼ chicken cube in 70ml boiling water"
+   },
+   {
+    "i": "dried_apricots",
+    "q": 15,
+    "t": "3, chopped"
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "½, juiced"
+   },
+   {
+    "i": "coriander",
+    "q": 5,
+    "t": "a few sprigs, chopped"
+   },
+   {
+    "i": "spinach",
+    "q": 25,
+    "t": "a handful"
+   },
+   {
+    "i": "skyr",
+    "q": 30,
+    "t": "2 tbsp, to serve"
+   },
+   {
+    "i": "salt",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Cook the harissa chicken",
+    "text": "Rub the chicken with the harissa and a pinch of salt. Fry in the oil over a medium heat with the pepper and onion for 12–14 min, turning the chicken once, until it's cooked through and the veg is soft and charred."
+   },
+   {
+    "title": "Make the couscous",
+    "text": "Pour the hot stock over the couscous, cover with a plate and leave for 5 min. Fluff up with a fork, then stir in the apricots, lemon juice and coriander."
+   },
+   {
+    "title": "Pack it",
+    "text": "Slice the chicken. Pack the spinach, couscous, peppers and chicken into a box with the skyr in a small pot for dolloping. Eat cold or microwave for 2 min."
+   }
+  ],
+  "tags": [
+   "high-protein",
+   "batch",
+   "spicy"
+  ]
+ },
+ {
+  "id": "lu_spinach_feta_egg_muffins",
+  "title": "Spinach, Pepper & Feta Egg Muffins",
+  "icon": "🧁",
+  "meal": "lunch",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 30,
+  "servings": 1,
+  "kcalEst": 350,
+  "packable": true,
+  "microwave": false,
+  "keepsDays": 3,
+  "batch": "Bake 9 muffins (3 lunches) in one 12-hole tin; keeps 3 days chilled or freeze them individually.",
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "i": "eggs",
+    "q": 3,
+    "t": "3"
+   },
+   {
+    "i": "cottage_cheese",
+    "q": 40,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "spinach",
+    "q": 25,
+    "t": "a handful, chopped"
+   },
+   {
+    "i": "peppers",
+    "q": 0.33,
+    "t": "⅓, finely diced"
+   },
+   {
+    "i": "spring_onions",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "feta",
+    "q": 20,
+    "t": "20g, crumbled"
+   },
+   {
+    "i": "oil",
+    "q": 2,
+    "t": "a little, for greasing"
+   },
+   {
+    "i": "salad_leaves",
+    "q": 30,
+    "t": "a handful, to serve"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 60,
+    "t": "5, to serve"
+   },
+   {
+    "i": "salt",
+    "q": 1,
+    "t": "a pinch"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a few grinds"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Heat the oven",
+    "text": "Heat the oven to 190°C (170°C fan) and lightly oil 3 holes of a muffin tin, or use silicone cases."
+   },
+   {
+    "title": "Mix the filling",
+    "text": "Whisk the eggs with the cottage cheese and season. Stir in the spinach, pepper and spring onion, then divide between the holes and crumble the feta on top."
+   },
+   {
+    "title": "Bake",
+    "text": "Bake for 18–20 min until puffed, golden and set in the middle — a knife poked in should come out clean. Cool in the tin for 5 min, then on a rack."
+   },
+   {
+    "title": "Pack it",
+    "text": "Pack the muffins with the salad leaves and tomatoes. Eat cold, or microwave for 30–40 sec if you prefer them warm."
+   }
+  ],
+  "tags": [
+   "high-protein",
+   "batch",
+   "freezable",
+   "veggie"
+  ]
+ },
+ {
+  "id": "lu_chicken_caesar_wrap",
+  "title": "Chicken Caesar Wrap",
+  "icon": "🥬",
+  "meal": "lunch",
+  "cuisine": "American",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 10,
+  "servings": 1,
+  "kcalEst": 395,
+  "packable": true,
+  "microwave": false,
+  "keepsDays": 1,
+  "batch": "Mix 2–3 days' worth of Caesar chicken in one tub (keeps 2 days), then roll each wrap the night before.",
+  "equipment": [],
+  "ingredients": [
+   {
+    "i": "cooked_chicken_slices",
+    "q": 90,
+    "t": "90g, torn"
+   },
+   {
+    "i": "light_mayonnaise",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "skyr",
+    "q": 25,
+    "t": "1½ tbsp"
+   },
+   {
+    "i": "lemon",
+    "q": 0.25,
+    "t": "a squeeze"
+   },
+   {
+    "i": "garlic",
+    "q": 0.5,
+    "t": "½ small clove, grated"
+   },
+   {
+    "i": "wholegrain_mustard",
+    "q": 3,
+    "t": "½ tsp"
+   },
+   {
+    "i": "parmesan",
+    "q": 10,
+    "t": "10g, finely grated"
+   },
+   {
+    "i": "little_gem",
+    "q": 0.5,
+    "t": "½, leaves separated"
+   },
+   {
+    "i": "wraps",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "lots"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Make the Caesar dressing",
+    "text": "Stir the mayo, skyr, lemon, garlic, mustard and half the parmesan together with lots of black pepper. Toss the chicken through it."
+   },
+   {
+    "title": "Roll it up",
+    "text": "Lay the lettuce leaves over the wrap first — they act as a barrier so the wrap doesn't go soggy. Pile the chicken along the middle, scatter over the rest of the parmesan and roll up tightly, tucking in the sides."
+   },
+   {
+    "title": "Wrap and chill",
+    "text": "Wrap tightly in foil or baking paper, cut in half and chill. For the crispest result, pack the chicken in a pot and roll at your break."
+   }
+  ],
+  "tags": [
+   "high-protein",
+   "no-cook",
+   "quick"
+  ]
+ },
+ {
+  "id": "lu_ploughmans_lunchbox",
+  "title": "Ham, Cheddar & Pickle Ploughman's Box",
+  "icon": "🧀",
+  "meal": "lunch",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "pork",
+  "time": 10,
+  "servings": 1,
+  "kcalEst": 445,
+  "packable": true,
+  "microwave": false,
+  "keepsDays": 1,
+  "batch": "",
+  "equipment": [],
+  "ingredients": [
+   {
+    "i": "wholemeal_bread",
+    "q": 2,
+    "t": "2 slices"
+   },
+   {
+    "i": "ham_slices",
+    "q": 60,
+    "t": "3–4 slices"
+   },
+   {
+    "i": "cheddar",
+    "q": 20,
+    "t": "20g, thinly sliced"
+   },
+   {
+    "i": "branston_pickle",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "little_gem",
+    "q": 0.25,
+    "t": "a few leaves"
+   },
+   {
+    "i": "gherkins",
+    "q": 15,
+    "t": "a few slices"
+   },
+   {
+    "i": "apples",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "lemon",
+    "q": 0.1,
+    "t": "a squeeze, for the apple"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Build the sandwich",
+    "text": "Lay the lettuce on one slice of bread, then the ham, then the cheese. Spread the pickle over the cheese, not the bread, and top with the second slice — that way nothing soggy touches the bread."
+   },
+   {
+    "title": "Pack the sides",
+    "text": "Cut the sandwich in half and pack with the gherkins. Slice the apple and squeeze over a little lemon so it doesn't brown. Prefer it as a proper ploughman's? Pack everything separately and build at your break."
+   }
+  ],
+  "tags": [
+   "no-cook",
+   "quick"
+  ]
+ },
+ {
+  "id": "lu_smoked_mackerel_potato_salad",
+  "title": "Smoked Mackerel, Beetroot & Mustard Potato Salad",
+  "icon": "🐟",
+  "meal": "lunch",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "fish",
+  "time": 25,
+  "servings": 1,
+  "kcalEst": 475,
+  "packable": true,
+  "microwave": false,
+  "keepsDays": 2,
+  "batch": "Make 2 at once — one pack of mackerel covers both lunches; keeps 2 days.",
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "potatoes",
+    "q": 120,
+    "t": "120g small or new potatoes, halved"
+   },
+   {
+    "i": "skyr",
+    "q": 40,
+    "t": "2½ tbsp"
+   },
+   {
+    "i": "wholegrain_mustard",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "lemon",
+    "q": 0.25,
+    "t": "a squeeze"
+   },
+   {
+    "i": "spring_onions",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "smoked_mackerel",
+    "q": 100,
+    "t": "½ pack (1 fillet), skin removed"
+   },
+   {
+    "i": "cooked_beetroot",
+    "q": 80,
+    "t": "2 small, cut into wedges"
+   },
+   {
+    "i": "salad_leaves",
+    "q": 30,
+    "t": "a handful"
+   },
+   {
+    "i": "salt",
+    "q": 1,
+    "t": "a pinch"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a few grinds"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Boil the potatoes",
+    "text": "Cover the potatoes with cold salted water, bring to the boil and simmer for 12–15 min until a knife slides in easily. Drain and leave to cool."
+   },
+   {
+    "title": "Dress the potatoes",
+    "text": "Mix the skyr, mustard, lemon and lots of pepper, then fold through the cooled potatoes and spring onion."
+   },
+   {
+    "title": "Pack it",
+    "text": "Pack the leaves, then the potatoes, then flake the mackerel on top. Tuck the beetroot into one corner so it doesn't bleed into everything."
+   }
+  ],
+  "tags": [
+   "batch"
+  ]
+ },
+ {
+  "id": "lu_spiced_lentil_tomato_soup",
+  "title": "Spiced Red Lentil & Tomato Soup",
+  "icon": "🍲",
+  "meal": "lunch",
+  "cuisine": "Indian",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 35,
+  "servings": 1,
+  "kcalEst": 305,
+  "packable": true,
+  "microwave": true,
+  "keepsDays": 3,
+  "batch": "Make a 3-portion pot (150g lentils, 1 tin of tomatoes); keeps 3 days in the fridge or 3 months in the freezer.",
+  "equipment": [
+   "hob",
+   "blender"
+  ],
+  "ingredients": [
+   {
+    "i": "oil",
+    "q": 3,
+    "t": "½ tsp"
+   },
+   {
+    "i": "onion",
+    "q": 0.33,
+    "t": "⅓, chopped"
+   },
+   {
+    "i": "carrots",
+    "q": 60,
+    "t": "1 small, chopped"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, crushed"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 3,
+    "t": "½ tsp"
+   },
+   {
+    "i": "cumin",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "turmeric",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 0.5,
+    "t": "a pinch"
+   },
+   {
+    "i": "red_lentils",
+    "q": 50,
+    "t": "50g, rinsed"
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 133,
+    "t": "⅓ tin"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 0.33,
+    "t": "⅓ veg stock cube in 300ml water"
+   },
+   {
+    "i": "lemon",
+    "q": 0.25,
+    "t": "a squeeze"
+   },
+   {
+    "i": "skyr",
+    "q": 30,
+    "t": "2 tbsp, to serve"
+   },
+   {
+    "i": "coriander",
+    "q": 3,
+    "t": "a few leaves"
+   },
+   {
+    "i": "salt",
+    "q": 1,
+    "t": "to taste"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Soften the veg",
+    "text": "Heat the oil in a pan over a medium heat and cook the onion and carrot for 6–8 min until soft. Stir in the garlic, ginger and spices for 1 min until fragrant."
+   },
+   {
+    "title": "Simmer",
+    "text": "Add the lentils, tomatoes and stock. Bring to the boil, then simmer for 20 min, stirring now and then, until the lentils have collapsed."
+   },
+   {
+    "title": "Blend and season",
+    "text": "Blend until smooth (or leave chunky), adding a splash of water if it's too thick. Season and add the lemon."
+   },
+   {
+    "title": "Pack and reheat",
+    "text": "Cool quickly and chill, with the skyr and coriander in a small pot. Microwave for 3–4 min, stirring halfway, until piping hot, or fill a preheated flask with boiling-hot soup in the morning."
+   }
+  ],
+  "tags": [
+   "light",
+   "veggie",
+   "batch",
+   "freezable"
+  ]
+ },
+ {
+  "id": "lu_ginger_chicken_noodle_soup",
+  "title": "Ginger Chicken Noodle Soup",
+  "icon": "🍜",
+  "meal": "lunch",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 25,
+  "servings": 1,
+  "kcalEst": 300,
+  "packable": true,
+  "microwave": true,
+  "keepsDays": 3,
+  "batch": "Make 3 portions in one pan and keep the noodles in a separate tub so they don't swell; keeps 3 days.",
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 chicken cube in 400ml water"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, sliced"
+   },
+   {
+    "i": "chicken_breast",
+    "q": 120,
+    "t": "1 small breast"
+   },
+   {
+    "i": "carrots",
+    "q": 40,
+    "t": "½ small carrot, thinly sliced"
+   },
+   {
+    "i": "pak_choi",
+    "q": 60,
+    "t": "1 small head, quartered"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "egg_noodles",
+    "q": 30,
+    "t": "¾ nest (about 30g)"
+   },
+   {
+    "i": "spring_onions",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "lime",
+    "q": 0.25,
+    "t": "a wedge"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 0.5,
+    "t": "a pinch (optional)"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Poach the chicken in the broth",
+    "text": "Bring the stock, ginger and garlic to a simmer, add the chicken and cook gently for 12–15 min until cooked through. Lift out and shred."
+   },
+   {
+    "title": "Add the veg",
+    "text": "Add the carrot to the broth for 3 min, then the pak choi for 2 min. Stir in the soy and return the chicken."
+   },
+   {
+    "title": "Cook the noodles separately",
+    "text": "Cook the noodles following the pack, rinse under cold water and pack in their own tub."
+   },
+   {
+    "title": "Reheat at lunch",
+    "text": "Tip the noodles into the soup and microwave for 3–4 min, stirring halfway, until piping hot. Finish with spring onion, lime and chilli. For a flask, pour boiling-hot soup over the noodles in the morning."
+   }
+  ],
+  "tags": [
+   "light",
+   "high-protein",
+   "batch"
+  ]
+ },
+ {
+  "id": "lu_sweet_chilli_prawn_noodle_salad",
+  "title": "Sweet Chilli Prawn Noodle Salad",
+  "icon": "🦐",
+  "meal": "lunch",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "prawns",
+  "time": 20,
+  "servings": 1,
+  "kcalEst": 420,
+  "packable": true,
+  "microwave": false,
+  "keepsDays": 2,
+  "batch": "Make 2 at a time from one bag of prawns; keeps 2 days in the fridge.",
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "prawns",
+    "q": 85,
+    "t": "½ bag"
+   },
+   {
+    "i": "rice_noodles",
+    "q": 45,
+    "t": "45g"
+   },
+   {
+    "i": "frozen_edamame",
+    "q": 40,
+    "t": "a handful"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.25,
+    "t": "¼, cut into batons"
+   },
+   {
+    "i": "carrots",
+    "q": 40,
+    "t": "½ small carrot, grated"
+   },
+   {
+    "i": "sweet_chilli_sauce",
+    "q": 20,
+    "t": "1 heaped tbsp"
+   },
+   {
+    "i": "lime",
+    "q": 0.5,
+    "t": "½, juiced"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "spring_onions",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "coriander",
+    "q": 5,
+    "t": "a few sprigs"
+   },
+   {
+    "i": "salted_peanuts",
+    "q": 10,
+    "t": "a small handful, chopped"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Cook the prawns",
+    "text": "Simmer the prawns in boiling water for 3–4 min until pink all the way through. Drain and cool under cold water."
+   },
+   {
+    "title": "Cook the noodles",
+    "text": "Cook the noodles following the pack, adding the edamame for the last 2 min. Drain and rinse until cold."
+   },
+   {
+    "title": "Dress and pack",
+    "text": "Mix the sweet chilli, lime and soy, then toss with the noodles, edamame, prawns, cucumber, carrot and spring onion. Pack with the coriander, and keep the peanuts in a little bag so they stay crunchy."
+   }
+  ],
+  "tags": [
+   "high-protein",
+   "batch"
+  ]
+ },
+ {
+  "id": "lu_zaatar_chickpea_quinoa_feta",
+  "title": "Za'atar Chickpea, Quinoa & Feta Salad",
+  "icon": "🥙",
+  "meal": "lunch",
+  "cuisine": "Middle Eastern",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 25,
+  "servings": 1,
+  "kcalEst": 470,
+  "packable": true,
+  "microwave": false,
+  "keepsDays": 3,
+  "batch": "Cook 120g quinoa and use one tin of chickpeas for 3 boxes; keeps 3 days.",
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "quinoa",
+    "q": 40,
+    "t": "40g, rinsed"
+   },
+   {
+    "i": "frozen_edamame",
+    "q": 40,
+    "t": "a handful"
+   },
+   {
+    "i": "chickpeas",
+    "q": 133,
+    "t": "⅓ tin, drained"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.25,
+    "t": "¼, diced"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 60,
+    "t": "5, quartered"
+   },
+   {
+    "i": "red_onion",
+    "q": 0.25,
+    "t": "¼, finely chopped"
+   },
+   {
+    "i": "spinach",
+    "q": 20,
+    "t": "a handful"
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "½, juiced"
+   },
+   {
+    "i": "oil",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "zaatar",
+    "q": 3,
+    "t": "1 tsp"
+   },
+   {
+    "i": "feta",
+    "q": 30,
+    "t": "30g, crumbled"
+   },
+   {
+    "i": "salt",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Cook the quinoa",
+    "text": "Simmer the quinoa in plenty of water for 12–15 min until tender, adding the edamame for the last 3 min. Drain well and cool."
+   },
+   {
+    "title": "Make the dressing",
+    "text": "Whisk the lemon juice, oil, za'atar and a pinch of salt in the bottom of your box."
+   },
+   {
+    "title": "Toss and pack",
+    "text": "Add the quinoa, edamame, chickpeas, cucumber, tomatoes, onion and spinach and toss through the dressing. Crumble the feta on top and chill."
+   }
+  ],
+  "tags": [
+   "veggie",
+   "batch"
+  ]
+ },
+ {
+  "id": "lu_chicken_shawarma_pitta_box",
+  "title": "Chicken Shawarma Pitta Box with Garlic Yogurt",
+  "icon": "🥙",
+  "meal": "lunch",
+  "cuisine": "Middle Eastern",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 25,
+  "servings": 1,
+  "kcalEst": 445,
+  "packable": true,
+  "microwave": false,
+  "keepsDays": 3,
+  "batch": "Cook 3 portions of thighs at once and pack slaw, sauce and pitta separately; keeps 3 days.",
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 120,
+    "t": "2 small thigh fillets, sliced"
+   },
+   {
+    "i": "cumin",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "turmeric",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, grated"
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "½, juiced"
+   },
+   {
+    "i": "oil",
+    "q": 3,
+    "t": "½ tsp"
+   },
+   {
+    "i": "red_cabbage",
+    "q": 0.06,
+    "t": "a small wedge (50g), finely shredded"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.25,
+    "t": "¼, sliced"
+   },
+   {
+    "i": "skyr",
+    "q": 40,
+    "t": "2½ tbsp"
+   },
+   {
+    "i": "pitta",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 0.5,
+    "t": "a pinch (optional)"
+   },
+   {
+    "i": "salt",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Marinate the chicken",
+    "text": "Toss the chicken with the spices, half the garlic, half the lemon juice, the oil and salt. Leave for 10 min, or overnight."
+   },
+   {
+    "title": "Cook the chicken",
+    "text": "Fry in a hot pan for 10–12 min, turning, until charred at the edges and cooked through with no pink."
+   },
+   {
+    "title": "Make the slaw and sauce",
+    "text": "Scrunch the cabbage with the rest of the lemon juice and a pinch of salt. Stir the remaining garlic into the skyr."
+   },
+   {
+    "title": "Pack it",
+    "text": "Pack the chicken, slaw and cucumber with the garlic yogurt in a small pot and the pitta in a separate bag. Eat cold, or warm the chicken for 1 min and the pitta for 15 sec, then stuff and eat."
+   }
+  ],
+  "tags": [
+   "high-protein",
+   "batch"
+  ]
+ },
+ {
+  "id": "lu_cottage_cheese_protein_pot",
+  "title": "Cottage Cheese, Ham & Egg Protein Pot",
+  "icon": "🥒",
+  "meal": "lunch",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "pork",
+  "time": 10,
+  "servings": 1,
+  "kcalEst": 280,
+  "packable": true,
+  "microwave": false,
+  "keepsDays": 2,
+  "batch": "Boil 3–4 eggs at once and keep them in their shells in the fridge for up to 5 days.",
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "eggs",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "cottage_cheese",
+    "q": 150,
+    "t": "½ tub"
+   },
+   {
+    "i": "ham_slices",
+    "q": 40,
+    "t": "2 slices, torn"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 60,
+    "t": "5, halved"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.25,
+    "t": "¼, cut into chunks"
+   },
+   {
+    "i": "spring_onions",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "lots"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 0.5,
+    "t": "a pinch (optional)"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Boil the egg",
+    "text": "Lower the egg into boiling water and cook for 9 min, then cool in cold water. Peel and halve."
+   },
+   {
+    "title": "Pack the pot",
+    "text": "Spoon the cottage cheese into a box and stir through the spring onion, pepper and chilli. Arrange the ham, egg, tomatoes and cucumber alongside for dipping and scooping."
+   }
+  ],
+  "tags": [
+   "light",
+   "high-protein",
+   "quick"
+  ]
+ },
+ {
+  "id": "lu_gochujang_beef_kimchi_rice",
+  "title": "Gochujang Beef & Kimchi Rice Bowl",
+  "icon": "🍚",
+  "meal": "lunch",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "beef",
+  "time": 20,
+  "servings": 1,
+  "kcalEst": 470,
+  "packable": true,
+  "microwave": true,
+  "keepsDays": 1,
+  "batch": "Cook 2–3 portions of the beef at once; keep one in the fridge for tomorrow and freeze the rest, defrosting overnight in the fridge.",
+  "equipment": [
+   "hob",
+   "microwave"
+  ],
+  "ingredients": [
+   {
+    "i": "beef_mince",
+    "q": 110,
+    "t": "110g"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, grated"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 3,
+    "t": "½ tsp"
+   },
+   {
+    "i": "gochujang",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "sesame_oil",
+    "q": 3,
+    "t": "½ tsp"
+   },
+   {
+    "i": "frozen_edamame",
+    "q": 30,
+    "t": "a small handful"
+   },
+   {
+    "i": "microwave_rice_pouch",
+    "q": 125,
+    "t": "½ pouch"
+   },
+   {
+    "i": "kimchi",
+    "q": 40,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.25,
+    "t": "¼, sliced"
+   },
+   {
+    "i": "spring_onions",
+    "q": 1,
+    "t": "1, sliced"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Brown the beef",
+    "text": "Fry the mince in a dry non-stick pan over a high heat for 5–6 min, breaking it up, until browned with no pink left."
+   },
+   {
+    "title": "Make it sticky",
+    "text": "Stir in the garlic and ginger for 1 min, then the gochujang, soy, sesame oil, edamame and a splash of water. Bubble for 2 min until sticky and glossy."
+   },
+   {
+    "title": "Pack it",
+    "text": "Spoon the rice into a box and top with the beef. Pack the kimchi, cucumber and spring onion in a separate small pot so they stay cold and crunchy. Cool quickly and chill."
+   },
+   {
+    "title": "Reheat at work",
+    "text": "Microwave the beef and rice for 2½–3 min, stirring halfway, until piping hot, then pile the kimchi and cucumber on top."
+   }
+  ],
+  "tags": [
+   "high-protein",
+   "spicy",
+   "freezable"
+  ]
+ },
+ {
+  "id": "lu_beef_bean_chilli_pot",
+  "title": "Beef & Bean Chilli Lunch Pot",
+  "icon": "🌶️",
+  "meal": "lunch",
+  "cuisine": "Mexican",
+  "category": "everyday",
+  "protein": "beef",
+  "time": 40,
+  "servings": 1,
+  "kcalEst": 395,
+  "packable": true,
+  "microwave": true,
+  "keepsDays": 3,
+  "batch": "Make a 3-portion pot (300g mince, 1 tin each of beans and tomatoes); keeps 3 days or freezes for 3 months.",
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "oil",
+    "q": 3,
+    "t": "½ tsp"
+   },
+   {
+    "i": "onion",
+    "q": 0.33,
+    "t": "⅓, chopped"
+   },
+   {
+    "i": "peppers",
+    "q": 0.33,
+    "t": "⅓, chopped"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, crushed"
+   },
+   {
+    "i": "beef_mince",
+    "q": 100,
+    "t": "100g"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "cumin",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "chilli_powder",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 133,
+    "t": "⅓ tin"
+   },
+   {
+    "i": "kidney_beans",
+    "q": 133,
+    "t": "⅓ tin, drained"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 0.33,
+    "t": "⅓ beef cube in 100ml water"
+   },
+   {
+    "i": "skyr",
+    "q": 30,
+    "t": "2 tbsp, to serve"
+   },
+   {
+    "i": "tortilla_chips",
+    "q": 10,
+    "t": "a small handful, to serve"
+   },
+   {
+    "i": "coriander",
+    "q": 3,
+    "t": "a few leaves"
+   },
+   {
+    "i": "salt",
+    "q": 1,
+    "t": "to taste"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Soften the veg",
+    "text": "Heat the oil in a pan over a medium heat and cook the onion and pepper for 6–8 min until soft. Add the garlic for 1 min."
+   },
+   {
+    "title": "Brown the mince",
+    "text": "Turn up the heat, add the mince and break it up. Cook for 5 min until browned, then stir in the spices and purée for 1 min."
+   },
+   {
+    "title": "Simmer",
+    "text": "Add the tomatoes, beans and stock. Simmer for 20 min, stirring now and then, until thick and rich. Season to taste."
+   },
+   {
+    "title": "Pack and reheat",
+    "text": "Cool and chill in a box, with the skyr and coriander in a small pot and the tortilla chips in a bag. Microwave for 3 min, stirring halfway, until piping hot, then top with the skyr and crumble over the chips."
+   }
+  ],
+  "tags": [
+   "high-protein",
+   "batch",
+   "freezable",
+   "spicy"
+  ]
+ },
+ {
+  "id": "lu_honey_soy_salmon_noodles",
+  "title": "Honey-Soy Salmon Noodle Box",
+  "icon": "🍣",
+  "meal": "lunch",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "fish",
+  "time": 25,
+  "servings": 1,
+  "kcalEst": 515,
+  "packable": true,
+  "microwave": false,
+  "keepsDays": 2,
+  "batch": "Roast 2 salmon fillets together and make 2 boxes; keeps 2 days and is great cold.",
+  "equipment": [
+   "oven",
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "salmon",
+    "q": 1,
+    "t": "1 fillet"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 3,
+    "t": "½ tsp"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, grated"
+   },
+   {
+    "i": "egg_noodles",
+    "q": 40,
+    "t": "1 nest"
+   },
+   {
+    "i": "frozen_edamame",
+    "q": 40,
+    "t": "a handful"
+   },
+   {
+    "i": "pak_choi",
+    "q": 60,
+    "t": "1 small head, sliced"
+   },
+   {
+    "i": "sesame_oil",
+    "q": 2,
+    "t": "a few drops"
+   },
+   {
+    "i": "lime",
+    "q": 0.25,
+    "t": "a wedge"
+   },
+   {
+    "i": "spring_onions",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 0.5,
+    "t": "a pinch (optional)"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Glaze and roast the salmon",
+    "text": "Heat the oven to 200°C (180°C fan). Mix the soy, honey, ginger and garlic, spoon half over the salmon on a lined tray and roast for 12–14 min until it flakes easily."
+   },
+   {
+    "title": "Cook the noodles and greens",
+    "text": "Cook the noodles following the pack, adding the edamame and pak choi for the last 2 min. Drain, rinse under cold water and toss with the sesame oil and the rest of the glaze."
+   },
+   {
+    "title": "Pack it",
+    "text": "Pack the noodles and greens, then flake the salmon on top with the spring onion, chilli and a lime wedge. Eat cold, or microwave for 1½–2 min if you'd rather have it warm."
+   }
+  ],
+  "tags": [
+   "high-protein",
+   "batch"
+  ]
+ },
+ {
+  "id": "lu_coronation_chicken_pot",
+  "title": "Coronation Chicken Wrap Pot",
+  "icon": "🐔",
+  "meal": "lunch",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 10,
+  "servings": 1,
+  "kcalEst": 410,
+  "packable": true,
+  "microwave": false,
+  "keepsDays": 2,
+  "batch": "Mix a double batch of coronation chicken (keeps 2 days) and pack the wrap separately each day.",
+  "equipment": [],
+  "ingredients": [
+   {
+    "i": "skyr",
+    "q": 40,
+    "t": "2½ tbsp"
+   },
+   {
+    "i": "light_mayonnaise",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "curry_powder",
+    "q": 3,
+    "t": "1 tsp"
+   },
+   {
+    "i": "mango_chutney",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "cooked_chicken_slices",
+    "q": 100,
+    "t": "100g, torn (or leftover roast chicken)"
+   },
+   {
+    "i": "spring_onions",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "little_gem",
+    "q": 0.5,
+    "t": "½, leaves separated"
+   },
+   {
+    "i": "wraps",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "salt",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Mix the coronation sauce",
+    "text": "Stir the skyr, mayo, curry powder and mango chutney together with a pinch of salt until smooth."
+   },
+   {
+    "title": "Fold in the chicken",
+    "text": "Fold the chicken and spring onion through the sauce and pack into a tub."
+   },
+   {
+    "title": "Pack and build",
+    "text": "Pack the lettuce leaves and wrap separately. At lunch, lay the lettuce on the wrap, spoon in the chicken and roll — or use the leaves as cups."
+   }
+  ],
+  "tags": [
+   "high-protein",
+   "no-cook",
+   "quick"
+  ]
+ },
+ {
+  "id": "lu_cajun_chicken_sweet_potato_box",
+  "title": "Cajun Chicken, Sweet Potato & Broccoli Box",
+  "icon": "🍠",
+  "meal": "lunch",
+  "cuisine": "American",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 35,
+  "servings": 1,
+  "kcalEst": 410,
+  "packable": true,
+  "microwave": true,
+  "keepsDays": 3,
+  "batch": "Roast 3 portions on one big tray; keeps 3 days in the fridge.",
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "i": "sweet_potato",
+    "q": 150,
+    "t": "1 small, cut into chunks"
+   },
+   {
+    "i": "oil",
+    "q": 8,
+    "t": "2 tsp"
+   },
+   {
+    "i": "chicken_breast",
+    "q": 130,
+    "t": "1 breast, cut into chunks"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "cumin",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "chilli_powder",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, crushed"
+   },
+   {
+    "i": "broccoli",
+    "q": 80,
+    "t": "a few florets"
+   },
+   {
+    "i": "skyr",
+    "q": 40,
+    "t": "2½ tbsp"
+   },
+   {
+    "i": "hot_sauce",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "salt",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Start the sweet potato",
+    "text": "Heat the oven to 200°C (180°C fan). Toss the sweet potato with half the oil and a pinch of salt and roast for 10 min."
+   },
+   {
+    "title": "Add the chicken and broccoli",
+    "text": "Toss the chicken with the spices, herbs, garlic and remaining oil. Add to the tray with the broccoli and roast for 18–20 min until the chicken is cooked through and the potato is tender and caramelised."
+   },
+   {
+    "title": "Make the dip and pack",
+    "text": "Stir the hot sauce into the skyr and pack in a small pot. Cool everything quickly and pack into a box."
+   },
+   {
+    "title": "Reheat at lunch",
+    "text": "Microwave for 2–3 min, stirring halfway, until piping hot, then dunk everything in the spicy dip."
+   }
+  ],
+  "tags": [
+   "high-protein",
+   "batch",
+   "traybake"
+  ]
+ },
+ {
+  "id": "lu_loaded_beans_on_toast",
+  "title": "Smoky Loaded Beans on Toast with a Poached Egg",
+  "icon": "🫘",
+  "meal": "lunch",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 10,
+  "servings": 1,
+  "kcalEst": 495,
+  "packable": false,
+  "microwave": false,
+  "keepsDays": 0,
+  "batch": "",
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "baked_beans",
+    "q": 200,
+    "t": "½ tin"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "spinach",
+    "q": 30,
+    "t": "a big handful"
+   },
+   {
+    "i": "eggs",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "wholemeal_bread",
+    "q": 2,
+    "t": "2 slices"
+   },
+   {
+    "i": "cheddar",
+    "q": 15,
+    "t": "15g, grated"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a few grinds"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Warm the beans",
+    "text": "Heat the beans with the smoked paprika in a small pan over a medium heat. Stir in the spinach until it wilts."
+   },
+   {
+    "title": "Poach the egg",
+    "text": "Crack the egg into a pan of barely simmering water and cook for 3 min until the white is set but the yolk is still runny. Lift out with a slotted spoon."
+   },
+   {
+    "title": "Toast and stack",
+    "text": "Toast the bread, spoon over the beans, top with the egg and scatter over the cheddar and pepper."
+   }
+  ],
+  "tags": [
+   "quick",
+   "veggie",
+   "high-protein",
+   "comfort"
+  ]
+ },
+ {
+  "id": "lu_tomato_mozzarella_frittata",
+  "title": "Tomato, Spinach & Mozzarella Frittata",
+  "icon": "🍳",
+  "meal": "lunch",
+  "cuisine": "Italian",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 15,
+  "servings": 1,
+  "kcalEst": 345,
+  "packable": false,
+  "microwave": false,
+  "keepsDays": 0,
+  "batch": "",
+  "equipment": [
+   "hob",
+   "grill"
+  ],
+  "ingredients": [
+   {
+    "i": "eggs",
+    "q": 3,
+    "t": "3"
+   },
+   {
+    "i": "parmesan",
+    "q": 5,
+    "t": "a little, grated"
+   },
+   {
+    "i": "oil",
+    "q": 3,
+    "t": "½ tsp"
+   },
+   {
+    "i": "spinach",
+    "q": 30,
+    "t": "a big handful"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 60,
+    "t": "5, halved"
+   },
+   {
+    "i": "mozzarella",
+    "q": 30,
+    "t": "¼ ball, torn"
+   },
+   {
+    "i": "basil",
+    "q": 3,
+    "t": "a few leaves"
+   },
+   {
+    "i": "salad_leaves",
+    "q": 30,
+    "t": "a handful, to serve"
+   },
+   {
+    "i": "salt",
+    "q": 1,
+    "t": "a pinch"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a few grinds"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Heat the grill",
+    "text": "Turn the grill to high. Beat the eggs with the parmesan and season."
+   },
+   {
+    "title": "Start on the hob",
+    "text": "Heat the oil in a small ovenproof frying pan over a medium heat. Wilt the spinach for 30 sec, then pour in the eggs and scatter over the tomatoes and mozzarella. Cook for 3–4 min until the bottom is set."
+   },
+   {
+    "title": "Finish under the grill",
+    "text": "Slide the pan under the grill for 2–3 min until puffed, golden and just set in the middle. Scatter over the basil and serve with the leaves."
+   }
+  ],
+  "tags": [
+   "quick",
+   "veggie",
+   "high-protein",
+   "light"
+  ]
+ },
+ {
+  "id": "lu_smoked_salmon_egg_bagel",
+  "title": "Smoked Salmon & Scrambled Egg Bagel Thin",
+  "icon": "🥯",
+  "meal": "lunch",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "fish",
+  "time": 10,
+  "servings": 1,
+  "kcalEst": 375,
+  "packable": false,
+  "microwave": false,
+  "keepsDays": 0,
+  "batch": "",
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "eggs",
+    "q": 2,
+    "t": "2"
+   },
+   {
+    "i": "milk",
+    "q": 10,
+    "t": "a splash"
+   },
+   {
+    "i": "butter",
+    "q": 3,
+    "t": "a small knob"
+   },
+   {
+    "i": "bagel_thins",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "smoked_salmon",
+    "q": 50,
+    "t": "½ pack"
+   },
+   {
+    "i": "spring_onions",
+    "q": 1,
+    "t": "1, finely sliced"
+   },
+   {
+    "i": "lemon",
+    "q": 0.25,
+    "t": "a wedge"
+   },
+   {
+    "i": "rocket",
+    "q": 10,
+    "t": "a small handful"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "lots"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Scramble the eggs",
+    "text": "Beat the eggs with the milk and pepper. Melt the butter in a non-stick pan over a low heat and stir the eggs slowly for 2–3 min until just set and still soft — take them off a little early, they keep cooking."
+   },
+   {
+    "title": "Toast and top",
+    "text": "Toast the bagel thin, pile on the rocket and eggs, then drape over the smoked salmon. Finish with spring onion, a squeeze of lemon and more black pepper."
+   }
+  ],
+  "tags": [
+   "quick",
+   "high-protein"
+  ]
+ },
+ {
+  "id": "lu_tuna_melt_jacket",
+  "title": "Tuna Melt Jacket Potato",
+  "icon": "🥔",
+  "meal": "lunch",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "fish",
+  "time": 15,
+  "servings": 1,
+  "kcalEst": 440,
+  "packable": false,
+  "microwave": false,
+  "keepsDays": 0,
+  "batch": "",
+  "equipment": [
+   "microwave",
+   "grill"
+  ],
+  "ingredients": [
+   {
+    "i": "potatoes",
+    "q": 250,
+    "t": "1 medium baking potato"
+   },
+   {
+    "i": "tinned_tuna",
+    "q": 145,
+    "t": "1 tin, drained"
+   },
+   {
+    "i": "sweetcorn",
+    "q": 30,
+    "t": "a handful, defrosted"
+   },
+   {
+    "i": "light_mayonnaise",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "spring_onions",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "cheddar",
+    "q": 15,
+    "t": "15g, grated"
+   },
+   {
+    "i": "salad_leaves",
+    "q": 30,
+    "t": "a handful, to serve"
+   },
+   {
+    "i": "salt",
+    "q": 1,
+    "t": "a pinch"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a few grinds"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Microwave the potato",
+    "text": "Prick the potato all over with a fork and microwave on high for 8–10 min, turning halfway, until soft all the way through."
+   },
+   {
+    "title": "Mix the filling",
+    "text": "Mix the tuna, sweetcorn, mayo and spring onion with plenty of black pepper. Heat the grill to high."
+   },
+   {
+    "title": "Melt and serve",
+    "text": "Split the potato, fluff the inside with a fork and pile in the tuna. Top with the cheddar and grill for 3–4 min until bubbling and golden. Serve with the leaves."
+   }
+  ],
+  "tags": [
+   "high-protein",
+   "comfort"
+  ]
+ },
+ {
+  "id": "lu_halloumi_hummus_pitta",
+  "title": "Griddled Halloumi & Pepper Pitta with Houmous",
+  "icon": "🫓",
+  "meal": "lunch",
+  "cuisine": "Middle Eastern",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 15,
+  "servings": 1,
+  "kcalEst": 465,
+  "packable": false,
+  "microwave": false,
+  "keepsDays": 0,
+  "batch": "",
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "peppers",
+    "q": 0.5,
+    "t": "½, sliced"
+   },
+   {
+    "i": "red_onion",
+    "q": 0.25,
+    "t": "¼, sliced"
+   },
+   {
+    "i": "oil",
+    "q": 3,
+    "t": "½ tsp"
+   },
+   {
+    "i": "halloumi",
+    "q": 50,
+    "t": "2 thick slices"
+   },
+   {
+    "i": "pitta",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "hummus",
+    "q": 30,
+    "t": "1½ tbsp"
+   },
+   {
+    "i": "salad_leaves",
+    "q": 20,
+    "t": "a handful"
+   },
+   {
+    "i": "lemon",
+    "q": 0.25,
+    "t": "a squeeze"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 0.5,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Char the veg",
+    "text": "Heat the oil in a griddle or frying pan over a high heat and cook the pepper and onion for 5–6 min until soft and charred."
+   },
+   {
+    "title": "Griddle the halloumi",
+    "text": "Push the veg aside and cook the halloumi for 1–2 min each side until golden. Squeeze over the lemon and sprinkle with chilli."
+   },
+   {
+    "title": "Stuff the pitta",
+    "text": "Warm the pitta in the toaster, split it open and spread with houmous. Stuff with the leaves, veg and halloumi and eat straight away."
+   }
+  ],
+  "tags": [
+   "quick",
+   "veggie"
+  ]
+ },
+ {
+  "id": "lu_chicken_fajita_quesadilla",
+  "title": "Chicken Fajita Quesadilla",
+  "icon": "🫓",
+  "meal": "lunch",
+  "cuisine": "Mexican",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 15,
+  "servings": 1,
+  "kcalEst": 450,
+  "packable": false,
+  "microwave": false,
+  "keepsDays": 0,
+  "batch": "",
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "oil",
+    "q": 3,
+    "t": "½ tsp"
+   },
+   {
+    "i": "peppers",
+    "q": 0.5,
+    "t": "½, sliced"
+   },
+   {
+    "i": "red_onion",
+    "q": 0.25,
+    "t": "¼, sliced"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "cumin",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "cooked_chicken_slices",
+    "q": 80,
+    "t": "80g, torn"
+   },
+   {
+    "i": "wraps",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "cheddar",
+    "q": 20,
+    "t": "20g, grated"
+   },
+   {
+    "i": "skyr",
+    "q": 30,
+    "t": "2 tbsp, to dip"
+   },
+   {
+    "i": "lime",
+    "q": 0.25,
+    "t": "a wedge"
+   },
+   {
+    "i": "jalapenos",
+    "q": 10,
+    "t": "a few slices (optional)"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Cook the fajita veg",
+    "text": "Heat the oil in a frying pan over a medium-high heat and cook the pepper and onion for 5 min until soft and charred. Stir in the spices and chicken for 1 min, then tip onto a plate."
+   },
+   {
+    "title": "Fill and fold",
+    "text": "Wipe the pan. Lay the wrap in it, scatter half of it with cheese, then the chicken mix and jalapeños, and fold over."
+   },
+   {
+    "title": "Crisp it up",
+    "text": "Cook over a medium heat for 2–3 min each side, pressing down with a spatula, until golden and the cheese has melted. Cut into wedges and serve with the skyr and a squeeze of lime."
+   }
+  ],
+  "tags": [
+   "quick",
+   "high-protein",
+   "fakeaway"
+  ]
+ }
+]

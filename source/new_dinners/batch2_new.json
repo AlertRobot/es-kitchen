@@ -1,0 +1,76 @@
+[
+ {
+  "id": "lamb_chops",
+  "name": "Lamb chops",
+  "aisle": "Meat & fish",
+  "unit": "g",
+  "packs": [
+   300,
+   550
+  ],
+  "life": 5,
+  "keeps": 2,
+  "freeze": true,
+  "staple": false,
+  "tags": [
+   "lamb",
+   "meat"
+  ],
+  "nutrition": {
+   "per": 100,
+   "kcal": 232,
+   "protein": 18.5,
+   "carbs": 0,
+   "fat": 17.7
+  }
+ },
+ {
+  "id": "sea_bass_fillets",
+  "name": "Sea bass fillets (boneless)",
+  "aisle": "Meat & fish",
+  "unit": "g",
+  "packs": [
+   180,
+   360
+  ],
+  "life": 4,
+  "keeps": 2,
+  "freeze": true,
+  "staple": false,
+  "tags": [
+   "fish"
+  ],
+  "nutrition": {
+   "per": 100,
+   "kcal": 124,
+   "protein": 19.6,
+   "carbs": 0,
+   "fat": 5.1
+  }
+ },
+ {
+  "id": "lamb_shanks",
+  "name": "Lamb shanks (raw)",
+  "aisle": "Meat & fish",
+  "unit": "each",
+  "packs": [
+   2
+  ],
+  "life": 6,
+  "keeps": 2,
+  "freeze": true,
+  "staple": false,
+  "tags": [
+   "lamb",
+   "meat"
+  ],
+  "nutrition": {
+   "per": 1,
+   "grams": 350,
+   "kcal": 480,
+   "protein": 46,
+   "carbs": 0,
+   "fat": 33
+  }
+ }
+]

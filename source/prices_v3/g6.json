@@ -1,0 +1,1092 @@
+[
+ {
+  "id": "honey",
+  "tescoPack": 340,
+  "prices": {
+   "tesco": {
+    "pack": 340,
+    "price": 1.19,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Squeezy Clear Honey 340G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=honey",
+    "note": "Stockwell & Co Honey 340g £0.74 (Aldi Price Match)"
+   },
+   "sainsburys": {
+    "pack": 340,
+    "price": 1.04,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Runny Honey 340g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/clear%20honey",
+    "note": "Aldi price match; Stamford Street Co. Clear Honey 340g 74p"
+   },
+   "asda": {
+    "pack": 340,
+    "price": 1.04,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Asda Runny Honey 340g",
+    "src": "https://www.trolley.co.uk/product/tesco-squeezy-honey/VSK691",
+    "note": "price from trolley alternatives list on Tesco product page"
+   },
+   "aldi": {
+    "pack": 454,
+    "price": 1.39,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Grandessa Squeezy Honey 454g",
+    "src": "https://www.aldi.co.uk/product/grandessa-squeezy-honey-000000000000672171",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 454,
+    "price": 1.39,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent of Grandessa Squeezy Honey 454g",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "ginger_paste",
+  "tescoPack": 90,
+  "prices": {
+   "tesco": {
+    "pack": 90,
+    "price": 1.8,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Ginger Paste 90G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=ginger%20paste",
+    "note": "only Clubcard offer is any-4-for-3 multibuy"
+   },
+   "sainsburys": {
+    "pack": 75,
+    "price": 1.75,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Ginger Paste, Inspired to Cook 75g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/ginger%20paste",
+    "note": ""
+   },
+   "asda": {
+    "pack": 75,
+    "price": 2.21,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Chopped Ginger 75g",
+    "src": "https://www.trolley.co.uk/product/cook-by-asda-easy-ginger/LEE787",
+    "note": "COOK by ASDA Easy Ginger £1.79 also listed but pack size not stated"
+   },
+   "aldi": {
+    "pack": 75,
+    "price": 0.79,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Ready Set...Cook! Ginger Puree 75g",
+    "src": "https://www.trolley.co.uk/product/stonemill-ginger-puree/BRI627",
+    "note": "out of stock online; trolley usual price; trolley page today: out of stock in every store, no live price (usually £0.79)"
+   },
+   "lidl": {
+    "pack": 75,
+    "price": 0.79,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent of Ready Set...Cook! Ginger Puree 75g",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "potatoes",
+  "tescoPack": 2000,
+  "prices": {
+   "tesco": {
+    "pack": 2000,
+    "price": 1.32,
+    "loyalty": 0.99,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco All Rounder Potatoes 2Kg",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=white%20potatoes",
+    "note": "Clubcard price valid 20/10-02/11/2026"
+   },
+   "sainsburys": {
+    "pack": 2000,
+    "price": 1.32,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's 2kg White Potatoes",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/white%20potatoes",
+    "note": "Aldi price match; previously used Sainsbury's Maris Piper 2kg £1.80"
+   },
+   "asda": {
+    "pack": 2000,
+    "price": 1.8,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Light & Fluffy Maris Piper Potatoes 2kg",
+    "src": "https://www.trolley.co.uk/product/asda-light-fluffy-maris-piper-potatoes/MYP835",
+    "note": "JUST ESSENTIALS by ASDA White Potatoes £1.32 listed but out of stock"
+   },
+   "aldi": {
+    "pack": 2500,
+    "price": 1.65,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": true,
+    "label": "Nature's Pick British White Potatoes",
+    "src": "https://www.trolley.co.uk/product/british-white-potatoes/WLB920",
+    "note": "price via trolley today; pack size not stated, assumed 2.5kg"
+   },
+   "lidl": {
+    "pack": 2500,
+    "price": 1.65,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl white potatoes 2.5kg (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "plain_flour",
+  "tescoPack": 1500,
+  "prices": {
+   "tesco": {
+    "pack": 1500,
+    "price": 0.8,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Plain Flour 1.5kg",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=plain%20flour",
+    "note": "Stockwell & Co. Plain Flour 1.5kg £0.70 (Aldi Price Match)"
+   },
+   "sainsburys": {
+    "pack": 1500,
+    "price": 0.7,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Plain Flour 1.5kg",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/plain%20white%20flour",
+    "note": "Aldi price match"
+   },
+   "asda": {
+    "pack": 1500,
+    "price": 0.78,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "BAKE by ASDA Plain Flour 1.5kg",
+    "src": "https://www.trolley.co.uk/product/asda-plain-flour/PTX933",
+    "note": "Just Essentials Plain Flour 1.5kg £0.70 also listed"
+   },
+   "aldi": {
+    "pack": 1500,
+    "price": 0.7,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "The Pantry Plain Flour 1.5kg",
+    "src": "https://www.aldi.co.uk/product/the-pantry-plain-flour-000000000000382617",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 1500,
+    "price": 0.7,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent of The Pantry Plain Flour 1.5kg",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "wraps",
+  "tescoPack": 8,
+  "prices": {
+   "tesco": {
+    "pack": 8,
+    "price": 1.4,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Plain White Tortilla Wraps 8 Pack",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=plain%20tortilla%20wraps",
+    "note": "H.W. Nevills Plain White Tortilla Wraps 8 pack £0.99 (Aldi Price Match)"
+   },
+   "sainsburys": {
+    "pack": 8,
+    "price": 1.4,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Plain Tortilla Wraps x8 496g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/plain%20tortilla%20wraps",
+    "note": "Stamford Street Co. Plain Tortilla Wraps x8 99p"
+   },
+   "asda": {
+    "pack": 8,
+    "price": 1.32,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "The BAKERY at ASDA 8 White Wraps 488g",
+    "src": "https://www.trolley.co.uk/product/the-bakery-at-asda-8-white-wraps/FPQ994",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 8,
+    "price": 0.99,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Village Bakery White Tortilla Wraps 8 pack",
+    "src": "https://www.aldi.co.uk/products/bakery/wraps-naans-pittas-thins/k/1588161416978049007",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 8,
+    "price": 0.99,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "rice_vinegar",
+  "tescoPack": 150,
+  "prices": {
+   "tesco": {
+    "pack": 150,
+    "price": 2.25,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Rice Wine Vinegar 150Ml",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=rice%20vinegar",
+    "note": ""
+   },
+   "sainsburys": {
+    "pack": 150,
+    "price": 2.2,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Yutaka Japanese Rice Vinegar 150ml",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/rice%20vinegar",
+    "note": "no Sainsbury's own-brand rice vinegar listed"
+   },
+   "asda": {
+    "pack": 150,
+    "price": 2.25,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Rice Vinegar 150ml",
+    "src": "https://www.trolley.co.uk/product/asda-rice-vinegar/YPL414",
+    "note": ""
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "sesame_oil",
+  "tescoPack": 250,
+  "prices": {
+   "tesco": {
+    "pack": 250,
+    "price": 2.65,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Toasted Sesame Oil 250ml",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=toasted%20sesame%20oil",
+    "note": ""
+   },
+   "sainsburys": {
+    "pack": 250,
+    "price": 2.75,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Sesame Oil, Toasted 250ml",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/sesame%20oil",
+    "note": "KTC Pressed Toasted Pure Sesame Oil 250ml shown at £1.90/£2.20"
+   },
+   "asda": {
+    "pack": 250,
+    "price": 2.64,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Cook Sesame Oil 250ml",
+    "src": "https://www.trolley.co.uk/product/asda-sesame-seed-oil/ETR406",
+    "note": ""
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "feta",
+  "tescoPack": 200,
+  "prices": {
+   "tesco": {
+    "pack": 200,
+    "price": 2.25,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Greek Feta Cheese 200 G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=feta",
+    "note": "Tranos Greek Feta 200g £1.69 (Aldi Price Match)"
+   },
+   "sainsburys": {
+    "pack": 200,
+    "price": 2.35,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Greek Feta Cheese 200g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/feta",
+    "note": ""
+   },
+   "asda": {
+    "pack": 200,
+    "price": 2.04,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Greek Feta 200g",
+    "src": "https://www.trolley.co.uk/product/asda-feta-cheese/UWE186",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 200,
+    "price": 1.69,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Emporium Greek Feta 200g",
+    "src": "https://www.aldi.co.uk/product/emporium-greek-feta-000000000000557625",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 200,
+    "price": 1.69,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl Greek feta 200g (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "coconut_milk",
+  "tescoPack": 400,
+  "prices": {
+   "tesco": {
+    "pack": 400,
+    "price": 0.75,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Coconut Milk 400ml",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=coconut%20milk",
+    "note": "Aldi Price Match"
+   },
+   "sainsburys": {
+    "pack": 400,
+    "price": 0.75,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Coconut Milk 400ml",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/coconut%20milk",
+    "note": "Aldi price match"
+   },
+   "asda": {
+    "pack": 400,
+    "price": 0.85,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": true,
+    "label": "ASDA Coconut Milk",
+    "src": "https://www.trolley.co.uk/product/asda-coconut-milk/WZO213",
+    "note": "pack size not stated; assumed 400ml (ASDA Reduced Fat Coconut Milk 400ml same price)"
+   },
+   "aldi": {
+    "pack": 400,
+    "price": 0.75,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Asia Green Garden Coconut Milk 400ml Full Fat",
+    "src": "https://www.aldi.co.uk/product/asia-green-garden-coconut-milk-400ml-full-fat-000000000635586001",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 400,
+    "price": 0.75,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl own-brand equivalent (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "leeks",
+  "tescoPack": 500,
+  "prices": {
+   "tesco": {
+    "pack": 500,
+    "price": 1.37,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Leeks 500G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=leeks",
+    "note": ""
+   },
+   "sainsburys": {
+    "pack": 500,
+    "price": 1.37,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Leeks 500g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/leeks",
+    "note": "Aldi price match"
+   },
+   "asda": {
+    "pack": 500,
+    "price": 1.37,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Mild & Sweet Trimmed Leeks 500g",
+    "src": "https://www.trolley.co.uk/product/asda-mild-sweet-trimmed-leeks/JJM417",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 500,
+    "price": 1.37,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Nature's Pick British Leeks 500g",
+    "src": "https://www.aldi.co.uk/product/nature-s-pick-british-leeks-000000000000339864",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 500,
+    "price": 1.37,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent of Nature's Pick British Leeks 500g",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "mustard_seeds",
+  "tescoPack": 100,
+  "prices": {
+   "tesco": {
+    "pack": 100,
+    "price": 1.1,
+    "loyalty": 0.85,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Rajah Whole Black Mustard Seeds 100G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=black%20mustard%20seeds",
+    "note": "Clubcard price valid 15/09-10/11/2026; no Tesco own-brand"
+   },
+   "sainsburys": {
+    "pack": 100,
+    "price": 1.3,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Fudco Brown Mustard Seeds 100g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/mustard%20seeds",
+    "note": "brown, no black mustard seed listed; Sainsbury's Mustard Seed 60g £1.15"
+   },
+   "asda": null,
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "kidney_beans",
+  "tescoPack": 400,
+  "prices": {
+   "tesco": {
+    "pack": 400,
+    "price": 0.39,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Red Kidney Beans In Water 400g",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=red%20kidney%20beans",
+    "note": "Grower's Harvest Red Kidney Beans 400g £0.35"
+   },
+   "sainsburys": {
+    "pack": 400,
+    "price": 0.39,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Red Kidney Beans in Water 400g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/kidney%20beans",
+    "note": "Aldi price match"
+   },
+   "asda": {
+    "pack": 400,
+    "price": 0.39,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Red Kidney Beans in Water 400g",
+    "src": "https://www.trolley.co.uk/product/asda-red-kidney-beans-in-water/FVL297",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 400,
+    "price": 0.39,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Four Seasons Red Kidney Beans in Water 400g",
+    "src": "https://www.aldi.co.uk/product/four-seasons-red-kidney-beans-in-water-000000000000284569",
+    "note": "page header says 240g (drained); details say 400g"
+   },
+   "lidl": {
+    "pack": 400,
+    "price": 0.39,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl own-brand equivalent (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "paneer",
+  "tescoPack": 200,
+  "prices": {
+   "tesco": {
+    "pack": 200,
+    "price": 1.8,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Paneer Cheese 200g",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=paneer",
+    "note": ""
+   },
+   "sainsburys": {
+    "pack": 200,
+    "price": 1.77,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Paneer 200g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/paneer",
+    "note": "Low everyday price"
+   },
+   "asda": {
+    "pack": 200,
+    "price": 1.76,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Paneer 200g",
+    "src": "https://www.trolley.co.uk/product/asda-paneer/SGK757",
+    "note": ""
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "hoisin_sauce",
+  "tescoPack": 320,
+  "prices": {
+   "tesco": {
+    "pack": 320,
+    "price": 2.4,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Hoisin Dipping Sauce 320g",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=hoisin%20sauce",
+    "note": ""
+   },
+   "sainsburys": {
+    "pack": 180,
+    "price": 1.65,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Hoisin Sauce 150ml",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/hoisin",
+    "note": "150ml converted to ~180g (density ~1.2)"
+   },
+   "asda": {
+    "pack": 300,
+    "price": 2.4,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Blue Dragon Rich Hoisin Sauce 250ml",
+    "src": "https://www.trolley.co.uk/product/blue-dragon-hoisin-sauce/GBS093",
+    "note": "no Asda own-brand hoisin shown; 250ml converted to ~300g"
+   },
+   "aldi": {
+    "pack": 315,
+    "price": 1.39,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Asia Specialities Hoisin Sauce",
+    "src": "https://www.aldi.co.uk/product/asia-specialities-hoisin-sauce-000000000337196001",
+    "note": "pack size 315g from earlier trolley listing; Aldi page doesn't state size"
+   },
+   "lidl": {
+    "pack": 315,
+    "price": 1.39,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Asia Specialities Hoisin Sauce",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "gherkins",
+  "tescoPack": 480,
+  "prices": {
+   "tesco": {
+    "pack": 480,
+    "price": 2.2,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Sliced Gherkins 480G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=sliced%20gherkins",
+    "note": "Tesco Crinkle Cut Gherkins 340g £1.50"
+   },
+   "sainsburys": {
+    "pack": 340,
+    "price": 1.55,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Sliced Gherkins in Vinegar 340g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/sliced%20gherkins",
+    "note": ""
+   },
+   "asda": {
+    "pack": 480,
+    "price": 2.09,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Sliced Pickled Gherkins 480g",
+    "src": "https://www.trolley.co.uk/product/asda-tangy-crunchy-sliced-pickled-gherkins/QVW165",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 680,
+    "price": 1.19,
+    "loyalty": null,
+    "checked": "",
+    "verified": false,
+    "est": true,
+    "label": "The Deli Pickled Gherkins 680g (370g drained)",
+    "src": "https://www.trolley.co.uk/product/the-deli-pickled-gherkins-370g-drained/OGF346",
+    "note": "whole, not sliced; trolley shows only 'usually £1.19', no live price; not on aldi.co.uk pages reachable"
+   },
+   "lidl": {
+    "pack": 680,
+    "price": 1.19,
+    "loyalty": null,
+    "checked": "",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent of The Deli Pickled Gherkins 680g (370g drained) (est.)",
+    "src": "",
+    "note": "estimate from Aldi; Lidl GB publishes no online prices"
+   }
+  }
+ },
+ {
+  "id": "cannellini_beans",
+  "tescoPack": 400,
+  "prices": {
+   "tesco": {
+    "pack": 400,
+    "price": 0.45,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Cannellini Beans Water 400G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=cannellini%20beans",
+    "note": "Aldi Price Match"
+   },
+   "sainsburys": {
+    "pack": 400,
+    "price": 0.45,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Cannellini Beans In Water 400g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/cannellini%20beans",
+    "note": "Aldi price match"
+   },
+   "asda": {
+    "pack": 400,
+    "price": 0.45,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Cannellini Beans in Water 400g",
+    "src": "https://www.trolley.co.uk/product/asda-cannellini-beans-in-water/BPE406",
+    "note": ""
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "pork_shoulder",
+  "tescoPack": 700,
+  "prices": {
+   "tesco": {
+    "pack": 700,
+    "price": 6.15,
+    "loyalty": 4.5,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Pork Shoulder Steaks 700g",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=pork%20shoulder%20steaks",
+    "note": "Clubcard price valid 07/10-27/10/2026"
+   },
+   "sainsburys": {
+    "pack": 600,
+    "price": 5.5,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's British Pork Shoulder Steaks x4 600g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/pork%20shoulder%20steaks",
+    "note": "x6 900g shown at £6.50/£7.65"
+   },
+   "asda": {
+    "pack": 700,
+    "price": 6.35,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Tender 4 Pork Shoulder Steaks 700g",
+    "src": "https://www.trolley.co.uk/product/asda-tender-4-pork-shoulder-steaks/WDX455",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 700,
+    "price": 3.89,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Ashfields British Pork Shoulder Steaks 700g",
+    "src": "https://www.aldi.co.uk/product/ashfields-british-pork-shoulder-steaks-000000000000387512",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 700,
+    "price": 3.89,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "capers",
+  "tescoPack": 190,
+  "prices": {
+   "tesco": {
+    "pack": 190,
+    "price": 2.3,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Capers 190g",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=capers",
+    "note": "120g drained"
+   },
+   "sainsburys": {
+    "pack": 100,
+    "price": 1.9,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Non Pareilles Capers in Brine, Inspired to Cook 100g (60g drained)",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/capers",
+    "note": "Capucine Capers 198g (125g drained) £2.50"
+   },
+   "asda": {
+    "pack": 190,
+    "price": 2.2,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Tangy Capers 190g",
+    "src": "https://www.trolley.co.uk/product/asda-capers/BIZ745",
+    "note": ""
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "chicken_wings",
+  "tescoPack": 1000,
+  "prices": {
+   "tesco": {
+    "pack": 1000,
+    "price": 2.05,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Chicken Wings 1KG",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=chicken%20wings",
+    "note": "Aldi Price Match"
+   },
+   "sainsburys": {
+    "pack": 1000,
+    "price": 2.09,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's 1kg British Fresh Chicken Wings",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/chicken%20wings",
+    "note": "Aldi price match"
+   },
+   "asda": {
+    "pack": 1000,
+    "price": 2.41,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": true,
+    "label": "JUST ESSENTIALS by ASDA Chicken Wings",
+    "src": "https://www.trolley.co.uk/product/just-essentials-by-asda-essentials-chicken-wings/XQV956",
+    "note": "price direct but pack weight not shown; assumed 1kg"
+   },
+   "aldi": {
+    "pack": 1000,
+    "price": 2.09,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Ashfields Chicken Wings 1kg",
+    "src": "https://www.aldi.co.uk/product/ashfields-chicken-wings-000000000000382085",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 1000,
+    "price": 2.09,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "diced_lamb",
+  "tescoPack": 300,
+  "prices": {
+   "tesco": {
+    "pack": 300,
+    "price": 7.75,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Lamb Diced Leg 300G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=diced%20lamb",
+    "note": "Tesco Diced Lamb Shoulder 300g £6.50"
+   },
+   "sainsburys": {
+    "pack": 300,
+    "price": 7.75,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's British or New Zealand Extra Lean Diced Lamb 300g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/diced%20lamb",
+    "note": "cut not stated; Diced Lamb Shoulder 400g £8.40"
+   },
+   "asda": {
+    "pack": 300,
+    "price": 7.44,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA British Diced Lamb Leg 300g",
+    "src": "https://www.trolley.co.uk/product/asda-tender-diced-lamb/MGE066",
+    "note": "ASDA Diced Lamb 350g £5.98"
+   },
+   "aldi": {
+    "pack": 300,
+    "price": 5.49,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Ashfields Diced Lamb 300g",
+    "src": "https://www.aldi.co.uk/product/ashfields-diced-lamb-000000000000387561",
+    "note": "cut not stated"
+   },
+   "lidl": {
+    "pack": 300,
+    "price": 5.49,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ }
+]

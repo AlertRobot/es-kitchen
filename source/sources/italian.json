@@ -1,0 +1,267 @@
+{
+ "it_proper_ragu_bolognese": {
+  "title": "Spaghetti Bolognese",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/spaghetti-bolognese/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "it_proper_carbonara": {
+  "title": "Carbonara",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/carbonara/",
+  "author": "Nagi Maehashi",
+  "match": "close",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "it_cacio_e_pepe_rocket": {
+  "title": "Cacio e Pepe",
+  "site": "The Mediterranean Dish",
+  "url": "https://www.themediterraneandish.com/cacio-e-pepe/",
+  "author": "Domenica Marchetti",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "it_pesto_potato_broccoli_pasta": {
+  "title": "Trofie with Potatoes, Green Beans and Pesto (from The Food of Italy)",
+  "site": "The Happy Foodie",
+  "url": "https://thehappyfoodie.co.uk/recipes/trofie-with-potatoes-green-beans-trofie-con-patate-fagiolini-e-pesto/",
+  "author": "Claudia Roden",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "it_tuna_puttanesca": {
+  "title": "Spaghetti alla Puttanesca",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/spaghetti-alla-puttanesca/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "it_penne_arrabbiata_mozzarella": {
+  "title": "Penne all'Arrabbiata (spicy tomato pasta)",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/penne-all-arrabbiata-spicy-tomato-pasta/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "it_sausage_fennel_ragu": {
+  "title": "Rick Stein's Fennel and Sausage Ragù with Tagliatelle",
+  "site": "The Happy Foodie",
+  "url": "https://thehappyfoodie.co.uk/recipes/rick-steins-fennel-and-sausage-ragu-with-tagliatelle/",
+  "author": "Rick Stein",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "it_lemon_chicken_orzo": {
+  "title": "Lemon Chicken Orzo",
+  "site": "Salt & Lavender",
+  "url": "https://www.saltandlavender.com/wprm_print/lemon-chicken-orzo",
+  "author": "Natasha Bull",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "it_chicken_cacciatore": {
+  "title": "Chicken Cacciatore (Italian chicken stew)",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/chicken-cacciatore/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "it_creamy_tuscan_chicken": {
+  "title": "Chicken with Creamy Sun Dried Tomato Sauce",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/chicken-with-creamy-sun-dried-tomato-sauce/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "it_sausage_pesto_gnocchi_traybake": {
+  "title": "Sausage, veg and gnocchi traybake",
+  "site": "Tesco Real Food",
+  "url": "https://realfood.tesco.com/recipes/sausage-veg-and-gnocchi-traybake.html",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "it_mushroom_risotto": {
+  "title": "Mushroom Risotto",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/mushroom-risotto/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "it_pea_bacon_risotto": {
+  "title": "Creamy Pea Risotto with Bacon",
+  "site": "Jessica Gavin",
+  "url": "https://www.jessicagavin.com/creamy-pea-and-bacon-risotto-with-mint/",
+  "author": "Jessica Gavin",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "it_minestrone_pesto": {
+  "title": "Minestrone Soup",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/minestrone-soup/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "it_proper_beef_lasagne": {
+  "title": "Lasagna!",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/lasagna/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "it_aubergine_parmigiana": {
+  "title": "Eggplant Parmigiana (Parmigiana di Melanzane)",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/eggplant-parmigiana/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "it_chicken_parmigiana": {
+  "title": "Chicken Parmigiana",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/chicken-parmigiana/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "it_spaghetti_meatballs": {
+  "title": "Italian Meatballs (Extra Soft and Juicy!)",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/classic-italian-meatballs-extra-soft-and-juicy/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "it_chicken_bacon_mushroom_bake": {
+  "title": "Creamy Pasta Bake \"formula\" – make with anything!",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/creamy-pasta-bake/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "it_garlic_chilli_prawn_linguine": {
+  "title": "Shrimp / Prawn Pasta with Lemon",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/lemon-prawn-shrimp-pasta-restaurant-style/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "it_creamy_lemon_salmon_penne": {
+  "title": "Salmon Pasta",
+  "site": "Mob",
+  "url": "https://mob.co.uk/recipes/salmon-pasta-recipe",
+  "author": "Adam Bush",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "it_potato_spinach_feta_frittata": {
+  "title": "Spinach and feta frittata",
+  "site": "safefood",
+  "url": "https://www.safefood.net/recipes/spinach-feta-frittata",
+  "match": "close",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "it_spinach_ricotta_cannelloni": {
+  "title": "Spinach and Ricotta Rotolo (Italian Lasagna Roll Ups)",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/baked-spinach-ricotta-rotolo/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "it_chicken_milanese_lemon_spaghetti": {
+  "title": "Chicken Milanese and Garlic Butter with Spinach and Peas (from John and Lisa's Kitchen)",
+  "site": "The Happy Foodie",
+  "url": "https://thehappyfoodie.co.uk/recipes/chicken-milanese-and-garlic-butter-with-spinach-and-peas/",
+  "author": "John Torode and Lisa Faulkner",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "it_tuscan_sausage_bean_stew": {
+  "title": "Tuscan Sausage & Bean Stew",
+  "site": "WW (WeightWatchers)",
+  "url": "https://www.weightwatchers.com/us/recipe/tuscan-sausage-and-bean-stew/59c530b577cfe159f2694588",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "it_pasta_alla_norma": {
+  "title": "Pasta alla Norma (Eggplant pasta)",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/pasta-alla-norma-eggplant-pasta/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "it_crispy_gnocchi_garlic_mushrooms": {
+  "title": "Creamy Mushroom Gnocchi with Spinach",
+  "site": "HelloFresh UK",
+  "url": "https://hellofresh.co.uk/recipes/creamy-mushroom-gnocchi-5e4ffe36328e58205035e725",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "it_salmon_basil_salsa_verde": {
+  "title": "Salmon with salsa verde and asparagus",
+  "site": "ITV Lorraine",
+  "url": "https://itv.com/lorraine/articles/salmon-salsa-verde-asparagus-dean-edwards-recipe",
+  "author": "Dean Edwards",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "it_pasta_e_ceci": {
+  "title": "Quick Pasta and Chickpeas (Pasta e Ceci)",
+  "site": "Smitten Kitchen",
+  "url": "https://smittenkitchen.com/2017/10/quick-pasta-and-chickpeas",
+  "author": "Deb Perelman",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "it_sausage_broccoli_orecchiette": {
+  "title": "Orecchiette with Sausage and Broccoli",
+  "site": "Cooking Classy",
+  "url": "https://www.cookingclassy.com/?p=36346",
+  "match": "close",
+  "checked": "2026-10-23",
+  "fix": ""
+ }
+}

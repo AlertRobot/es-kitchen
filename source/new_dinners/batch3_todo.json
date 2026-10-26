@@ -1,0 +1,83 @@
+[
+ {
+  "name": "Quiche Lorraine and potato salad",
+  "cuisine": "British",
+  "protein": "pork",
+  "base": "potato",
+  "family": "pie_bake",
+  "category": "everyday",
+  "why": "Familiar summer supper; no quiche in library"
+ },
+ {
+  "name": "Pork and apple burgers",
+  "cuisine": "British",
+  "protein": "pork",
+  "base": "bread",
+  "family": "burger_sandwich",
+  "category": "treat",
+  "why": "Pork burger option; all current burgers are beef/chicken"
+ },
+ {
+  "name": "BBQ ribs with wedges",
+  "cuisine": "American",
+  "protein": "pork",
+  "base": "potato",
+  "family": "grill_steak",
+  "category": "treat",
+  "why": "Treat-night classic missing from the library"
+ },
+ {
+  "name": "Loaded potato skins",
+  "cuisine": "American",
+  "protein": "pork",
+  "base": "potato",
+  "family": "other",
+  "category": "treat",
+  "why": "Pub-style treat; cheesy, bacon-loaded potatoes"
+ },
+ {
+  "name": "Tuna melts",
+  "cuisine": "American",
+  "protein": "fish",
+  "base": "bread",
+  "family": "burger_sandwich",
+  "category": "everyday",
+  "why": "Quick cheap fish dinner"
+ },
+ {
+  "name": "Spicy bean burgers",
+  "cuisine": "American",
+  "protein": "veggie",
+  "base": "bread",
+  "family": "burger_sandwich",
+  "category": "everyday",
+  "why": "Veggie burger meat-eaters actually like"
+ },
+ {
+  "name": "Prawn stir-fry with noodles",
+  "cuisine": "Asian",
+  "protein": "prawns",
+  "base": "noodles",
+  "family": "stir_fry",
+  "category": "everyday",
+  "why": "Classic 15-minute noodle night"
+ },
+ {
+  "name": "Singapore noodles",
+  "cuisine": "Asian",
+  "protein": "prawns",
+  "base": "noodles",
+  "family": "stir_fry",
+  "category": "everyday",
+  "why": "Chinese takeaway favourite; curry-spiced noodles"
+ },
+ {
+  "name": "Chinese lemon chicken",
+  "cuisine": "Asian",
+  "protein": "chicken",
+  "base": "rice",
+  "family": "fried",
+  "category": "treat",
+  "why": "Takeaway classic not in library"
+ }
+]

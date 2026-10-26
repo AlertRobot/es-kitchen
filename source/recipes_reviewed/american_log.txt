@@ -1,0 +1,35 @@
+am_double_smash_burgers: split into 6 one-job steps (veg prep, sauce, buns, smash, flip, serve); shortened sentences; added swap to cucumber (quick pickles)
+am_buttermilk_chicken_burger: split prep/marinade/slaw/coat/fry/serve into 6 steps; step 1 now prep; mixed herbs marked optional; oil labelled 'for frying' and told to discard used oil; shortened sentences
+am_nashville_hot_chicken_burger: split into 6 one-job steps with prep first; butter melted by the hot oil (no extra pan); said to discard used frying oil; fixed air-fryer note for melting the butter; added swap to cucumber (quick pickles); tidied chilli swap wording
+am_homemade_meat_feast_pizza: time 90→100 (10 min knead + 1 hr rise + bake); split into 6 steps (oven heat moved to just before shaping, topping and baking separated); shortened sentences
+am_pan_pepperoni_pizza: split sauce and hot honey into separate steps (6 steps); oil 30→35ml to cover 1 tsp dough + 1 tbsp per base; added hot-handle warning; reworded chilli swap
+am_bbq_chicken_naan_pizza: title shortened (61→50 chars); time 20→25; coriander marked optional; added sweetcorn swap; grating/tearing moved into prep
+am_stovetop_mac_and_cheese: hot sauce, smoked paprika and parmesan topping marked optional; parmesan grating moved into prep; shortened sentences
+am_slow_cooker_pulled_pork: step 1 now prep (rub, slice, crush) with loading as step 2; slaw chopping moved to while wedges roast; added hob to equipment (bun toasting); explicit heat/time for buns
+am_buffalo_wings: step 1 now prep (oven, dry wings, veg sticks, garlic); timing cue for sauce; mixed herbs optional; added feta swap
+am_loaded_bacon_cheese_fries: time 45→50 (35–40 min bake plus prep); all chopping moved into step 1; spring onions, green chilli and yogurt marked optional; added spring onion swap; timing cue for bacon
+am_sausage_hot_dogs: title shortened (74→50 chars); time 30→35; step 1 now prep only; fries bake separated from prep; 6 steps; explicit oil split
+am_philly_cheesesteak: title shortened (63→49 chars); time 25→30 (10 min chill); mushrooms given their own step/pan with oil split stated; explained 'against the grain'; mushroom swap reworded; 6 steps
+am_sloppy_joes: time 30→35; step 1 now all prep; fries bake its own step; stock dissolved where used; buns warmed in the oven (mince pan is busy); 6 steps; added swap to cucumber (quick pickles)
+am_crispy_chicken_tenders: title shortened (66→55 chars); time 30→35 (two frying batches); grating/shredding moved into prep; crumbing set-up and crumbing split (6 steps); oil labelled 'for frying'; added sweetcorn swap
+am_meatball_subs: time 30→35; added a prep step (garlic, cheese) so 6 steps; chilli flakes marked optional and swap reworded; shortened sentences
+am_chilli_cheese_fries: title shortened (62→43 chars); time 45→55; all chopping moved into step 1; mince/chilli split so 6 steps; oil 25→30ml to match 1½ + ½ tbsp; spring onions, green chilli and yogurt optional; added chilli-flake and spring-onion swaps
+am_chicken_pot_pie: time 55→70 (10 min cooking + cool + 25–30 min bake + 5 min rest); filling into dish moved to pastry step; mixed herbs optional; added peas swap (peas served separately)
+am_cheeseburger_quesadillas: time 25→35 (4 quesadillas cooked one at a time); added oven to equipment (keeping warm); sauce split from prep; salad moved to final step; 6 steps; added swap to cucumber (quick pickles)
+am_bbq_bacon_burger: time 40→45; bacon and burgers split into separate steps (6 steps); patty time 4–5→5–6 min each side for 200g patties; oil labelled 'for frying' and discard stated; BBQ sauce split given
+am_buffalo_cauliflower: title shortened (63→56 chars); time 45→50; sauce and ranch split into separate steps (6 steps); spring onions and mixed herbs optional; added feta and spring-onion swaps; timing cue for sauce
+am_southern_fried_chicken_gravy: time 50→55; step 1 now prep + marinade; gravy and corn split into separate steps (6 steps); butter/milk splits stated; mixed herbs optional; oil labelled 'for frying'; added sweetcorn swap
+am_blackened_salmon_tacos: time 25→30; slaw/sauce and assembly split (6 steps); avocado sliced at the end so it doesn't brown; mixed herbs, chilli flakes and coriander optional; added chilli-flake and sweetcorn swaps
+am_bbq_chicken_traybake: title shortened (61→51 chars); time 45→50; BBQ sauce split given in tbsp; spring onions optional; added sweetcorn and spring-onion swaps
+am_jambalaya: time 40→50 (8 min browning + 6 min veg + 20 min rice + 5 min rest); chilli flakes, hot sauce and spring onions optional; added spring-onion swap; shortened sentences
+am_cajun_chicken_dirty_rice: time 30→35; chicken spicing split from prep, 6 steps; chilli flakes and lemon wedges optional; added chilli-flake and spring-onion (greens) swaps
+am_buffalo_chicken_wraps: fill and toast split into separate steps (6 steps); cheddar grating moved to prep; heat given for wraps; mixed herbs optional; added feta swap
+am_chicken_caesar_wraps: time 25→30; bacon and crumbs split into separate steps (6 steps); grating/zesting moved into prep; shortened sentences
+am_chicken_cobb_salad: title shortened (65→57 chars); time 25→30; step 1 now all prep incl. dressing; eggs, chicken and corn each their own step (6 steps); added sweetcorn swap
+am_chicken_sweetcorn_chowder: time 30→35; bread baking given its own step (6 steps); smoked paprika, mixed herbs and spring onions optional; added spring-onion swap; no sweetcorn swap (simmered into the chowder and is the base of the dish)
+am_bbq_glazed_salmon: title shortened (61→53 chars); time 25→30; boil and mash split around the salmon so timing overlaps (6 steps); coriander optional; added sweetcorn swap
+am_honey_mustard_chicken_burgers: step 1 now prep (flatten + all chopping) with marinade as step 2 (6 steps); salad made while chicken cooks; smoked paprika optional
+am_cajun_prawn_pasta: time 20→25 (10 min prawn defrost); mixed herbs, chilli flakes and parmesan topping optional; added spring-onion (greens) swap; shortened sentences
+am_bbq_pork_steaks: title shortened (64→57 chars); time 30→35; step 1 now prep (incl. rub and glaze); potato salad and serving split (6 steps); added sweetcorn and spring-onion swaps
+am_mini_meatloaves: time 40→45 (peeling + 25 min bake + rest); step 1 now prep; potatoes and mash split around the bake (6 steps); milk warmed in the pan instead of separately
+am_garlic_butter_steak_bites: title shortened (63→56 chars); time 30→35; mixed herbs, chilli flakes and lemon optional; chilli swap changed so both portions still get garlic butter; oil split stated; shortened sentences

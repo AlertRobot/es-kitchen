@@ -1,0 +1,4673 @@
+[
+  {
+    "id": "in_chicken_tikka_masala",
+    "title": "Proper Chicken Tikka Masala with Fluffy Basmati Rice",
+    "icon": "🍛",
+    "cuisine": "Indian",
+    "category": "treat",
+    "protein": "chicken",
+    "time": 40,
+    "servings": 2,
+    "equipment": [
+      "hob",
+      "grill"
+    ],
+    "airFryer": "Air-fry the marinated chicken pieces at 200°C for 10–12 min, shaking halfway, until charred at the edges, then add to the sauce.",
+    "ingredients": [
+      {
+        "i": "chicken_breast",
+        "q": 300,
+        "t": "2 breasts (300g), cut into chunks"
+      },
+      {
+        "i": "tikka_paste",
+        "q": 60,
+        "t": "4 tbsp"
+      },
+      {
+        "i": "greek_yogurt",
+        "q": 50,
+        "t": "3 tbsp"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, finely chopped"
+      },
+      {
+        "i": "garlic",
+        "q": 2,
+        "t": "2 cloves, grated"
+      },
+      {
+        "i": "ginger_paste",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "chopped_tomatoes",
+        "q": 200,
+        "t": "½ tin"
+      },
+      {
+        "i": "tomato_puree",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "double_cream",
+        "q": 75,
+        "t": "5 tbsp"
+      },
+      {
+        "i": "garam_masala",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "honey",
+        "q": 5,
+        "t": "1 tsp"
+      },
+      {
+        "i": "butter",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "oil",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "rice",
+        "q": 150,
+        "t": "150g"
+      },
+      {
+        "i": "coriander",
+        "q": 10,
+        "t": "a small handful, to serve",
+        "opt": true,
+        "swap": "Keep the coriander in a little bowl on the table so it only goes on the plates that want it."
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep and marinate",
+        "text": "Heat the grill to high and boil the kettle. Cut the chicken into chunks, finely chop the onion and grate the garlic. Mix 2 tbsp tikka paste with the yogurt and a pinch of salt, then stir in the chicken. Leave it to marinate while you start the sauce."
+      },
+      {
+        "title": "Start the masala",
+        "text": "Melt the butter with the oil in a large frying pan over a medium heat. Add the onion with a pinch of salt and cook for 8–10 min until soft and golden. Stir in the garlic, ginger paste and remaining 2 tbsp tikka paste and fry for 1 min until fragrant."
+      },
+      {
+        "title": "Simmer the sauce",
+        "text": "Add the chopped tomatoes, tomato purée, honey and 100ml water. Simmer gently for 10 min, stirring now and then, until thick and jammy. For a smoother sauce, mash the onions in with a potato masher."
+      },
+      {
+        "title": "Cook the rice",
+        "text": "While the sauce simmers, rinse the rice until the water runs clear. Tip it into a small pan with 300ml boiling water and a pinch of salt. Cover and cook on the lowest heat for 10 min. Turn off the heat and leave covered off the heat for 5 min, then fluff with a fork."
+      },
+      {
+        "title": "Grill the tikka",
+        "text": "While the rice cooks, spread the chicken on a foil-lined tray. Grill for 8–10 min, turning once, until blackened in places and cooked through with no pink inside."
+      },
+      {
+        "title": "Finish the sauce",
+        "text": "Stir the cream and garam masala into the sauce. Tip in the chicken and any juices and simmer for 2 min so the smoky flavour gets into the sauce. Season to taste."
+      },
+      {
+        "title": "Plate up",
+        "text": "Divide the rice between bowls. Spoon over the tikka masala and scatter with torn coriander (optional)."
+      }
+    ],
+    "tags": [
+      "fakeaway",
+      "comfort",
+      "kid-friendly"
+    ],
+    "basedOn": "RecipeTin Eats / BBC Good Food — Chicken tikka masala (curry-house style, grilled tikka in a creamy tomato masala)"
+  },
+  {
+    "id": "in_butter_chicken",
+    "title": "Silky Butter Chicken with Fenugreek & Warm Buttered Naan",
+    "icon": "🍗",
+    "cuisine": "Indian",
+    "category": "treat",
+    "protein": "chicken",
+    "time": 40,
+    "servings": 2,
+    "equipment": [
+      "hob",
+      "grill"
+    ],
+    "airFryer": "Air-fry the marinated thighs at 200°C for 12–14 min, turning halfway, until charred and cooked through.",
+    "ingredients": [
+      {
+        "i": "chicken_thighs",
+        "q": 350,
+        "t": "350g thigh fillets, cut into chunks"
+      },
+      {
+        "i": "greek_yogurt",
+        "q": 50,
+        "t": "3 tbsp"
+      },
+      {
+        "i": "garam_masala",
+        "q": 4,
+        "t": "2 tsp"
+      },
+      {
+        "i": "chilli_powder",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "ginger_paste",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "garlic",
+        "q": 3,
+        "t": "3 cloves, grated"
+      },
+      {
+        "i": "butter",
+        "q": 40,
+        "t": "40g"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, finely chopped"
+      },
+      {
+        "i": "chopped_tomatoes",
+        "q": 200,
+        "t": "½ tin"
+      },
+      {
+        "i": "tomato_puree",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "double_cream",
+        "q": 100,
+        "t": "100ml"
+      },
+      {
+        "i": "kasoori_methi",
+        "q": 2,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "honey",
+        "q": 5,
+        "t": "1 tsp"
+      },
+      {
+        "i": "cumin",
+        "q": 2,
+        "t": "1 tsp",
+        "opt": true
+      },
+      {
+        "i": "naan",
+        "q": 2,
+        "t": "2"
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep and marinate",
+        "text": "Heat the grill to high. Cut the chicken into chunks, finely chop the onion and grate the garlic. Mix the yogurt with 1 tsp garam masala, the chilli powder, 1 tsp ginger paste, 1 garlic clove and a good pinch of salt. Stir in the chicken and leave for 10 min."
+      },
+      {
+        "title": "Make the onion base",
+        "text": "Melt 25g butter in a deep frying pan over a medium heat. Cook the onion for 8 min until soft and golden. Add the remaining garlic and ginger paste, the cumin (optional) and the remaining 1 tsp garam masala and stir for 1 min."
+      },
+      {
+        "title": "Simmer the sauce",
+        "text": "Add the chopped tomatoes, tomato purée, honey and 100ml water. Simmer for 10 min until thickened, then mash or stir hard until fairly smooth."
+      },
+      {
+        "title": "Grill the chicken",
+        "text": "While the sauce simmers, spread the chicken over a foil-lined tray. Grill for 10–12 min, turning once, until charred in spots and cooked through with no pink inside."
+      },
+      {
+        "title": "Add the cream",
+        "text": "Pour the cream into the sauce and rub the dried fenugreek (kasoori methi) between your palms over the pan. Bubble for 2 min until the sauce is a rich orange and coats the back of a spoon."
+      },
+      {
+        "title": "Finish the curry",
+        "text": "Stir the chicken and its juices into the sauce with the remaining 15g butter. Simmer for 2 min, then season to taste."
+      },
+      {
+        "title": "Warm the naan and serve",
+        "text": "Warm the naans under the grill for 1 min each side. Serve the butter chicken with the naan for scooping."
+      }
+    ],
+    "tags": [
+      "fakeaway",
+      "comfort",
+      "kid-friendly"
+    ],
+    "basedOn": "RecipeTin Eats — Butter chicken (4.9★, thousands of reviews)"
+  },
+  {
+    "id": "in_chicken_korma",
+    "title": "Creamy Almond Chicken Korma with Golden Pilau Rice",
+    "icon": "🍛",
+    "cuisine": "Indian",
+    "category": "treat",
+    "protein": "chicken",
+    "time": 35,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "chicken_breast",
+        "q": 300,
+        "t": "2 breasts (300g), cut into chunks"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, finely chopped"
+      },
+      {
+        "i": "garlic",
+        "q": 2,
+        "t": "2 cloves, grated"
+      },
+      {
+        "i": "ginger_paste",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "ground_coriander",
+        "q": 4,
+        "t": "2 tsp"
+      },
+      {
+        "i": "cumin",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "turmeric",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "garam_masala",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "ground_almonds",
+        "q": 30,
+        "t": "3 tbsp"
+      },
+      {
+        "i": "double_cream",
+        "q": 100,
+        "t": "100ml"
+      },
+      {
+        "i": "honey",
+        "q": 5,
+        "t": "1 tsp"
+      },
+      {
+        "i": "butter",
+        "q": 20,
+        "t": "20g"
+      },
+      {
+        "i": "oil",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "rice",
+        "q": 150,
+        "t": "150g"
+      },
+      {
+        "i": "ground_cinnamon",
+        "q": 1,
+        "t": "a pinch",
+        "opt": true
+      },
+      {
+        "i": "stock_cubes",
+        "q": 1,
+        "t": "1 chicken or veg cube"
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the ingredients",
+        "text": "Boil the kettle. Finely chop the onion, grate the garlic and cut the chicken into chunks. Rinse the rice well and leave to drain. Make up 300ml stock with half the stock cube for the rice, and 150ml with the other half for the sauce."
+      },
+      {
+        "title": "Start the pilau",
+        "text": "Melt 10g butter in a small pan over a medium heat. Add the rice, a pinch of the turmeric and the cinnamon (optional) and stir for 1 min until glossy. Pour in the 300ml stock, cover and cook on the lowest heat for 10 min. Turn off the heat and leave covered."
+      },
+      {
+        "title": "Cook the onion base",
+        "text": "While the rice cooks, heat the oil and remaining 10g butter in a frying pan over a medium-low heat. Cook the onion gently for 8–10 min until very soft and pale gold without catching, which keeps the korma sweet. Stir in the garlic, ginger paste, ground coriander, cumin and remaining turmeric for 1 min."
+      },
+      {
+        "title": "Cook the chicken",
+        "text": "Turn the heat up to medium, add the chicken and stir for 3 min to coat it in the spices. Pour in the 150ml stock and stir in the ground almonds and honey. Simmer for 8–10 min until the chicken is cooked through and the sauce has thickened."
+      },
+      {
+        "title": "Make it creamy",
+        "text": "Stir in the cream and garam masala and warm through for 2 min without boiling hard. The sauce should be pale, silky and coat the chicken. Season with salt to taste."
+      },
+      {
+        "title": "Plate up",
+        "text": "Fluff the pilau with a fork and divide between plates. Spoon the korma alongside."
+      }
+    ],
+    "tags": [
+      "fakeaway",
+      "comfort",
+      "kid-friendly"
+    ],
+    "basedOn": "BBC Good Food — Easy chicken korma (almond and cream korma, 4.5★)"
+  },
+  {
+    "id": "in_madras_onion_bhajis",
+    "title": "Fiery Chicken Madras with Crispy Onion Bhajis & Raita",
+    "icon": "🌶️",
+    "cuisine": "Indian",
+    "category": "treat",
+    "protein": "chicken",
+    "time": 50,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "airFryer": "Spoon the bhaji batter onto baking paper in the basket, spray well with oil and air-fry at 200°C for 12–14 min, turning halfway, until crisp and deep golden.",
+    "ingredients": [
+      {
+        "i": "chicken_thighs",
+        "q": 300,
+        "t": "300g thigh fillets, cut into chunks"
+      },
+      {
+        "i": "onion",
+        "q": 2,
+        "t": "2 (1 chopped for the curry, 1 thinly sliced for bhajis)"
+      },
+      {
+        "i": "garlic",
+        "q": 3,
+        "t": "3 cloves, grated"
+      },
+      {
+        "i": "ginger_paste",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "chilli_powder",
+        "q": 4,
+        "t": "2 tsp"
+      },
+      {
+        "i": "curry_powder",
+        "q": 6,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "cumin",
+        "q": 2,
+        "t": "1 tsp",
+        "opt": true
+      },
+      {
+        "i": "garam_masala",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "chopped_tomatoes",
+        "q": 200,
+        "t": "½ tin"
+      },
+      {
+        "i": "tomato_puree",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "lemon",
+        "q": 1,
+        "t": "1, to finish and serve",
+        "opt": true
+      },
+      {
+        "i": "gram_flour",
+        "q": 70,
+        "t": "70g"
+      },
+      {
+        "i": "turmeric",
+        "q": 1,
+        "t": "½ tsp"
+      },
+      {
+        "i": "cumin_seeds",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "oil",
+        "q": 165,
+        "t": "1 tbsp for the curry, plus about 150ml for shallow frying"
+      },
+      {
+        "i": "greek_yogurt",
+        "q": 100,
+        "t": "100g"
+      },
+      {
+        "i": "cucumber",
+        "q": 0.25,
+        "t": "¼, grated"
+      },
+      {
+        "i": "rice",
+        "q": 150,
+        "t": "150g"
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the ingredients",
+        "text": "Boil the kettle. Finely chop one onion and thinly slice the other. Cut the chicken into chunks, grate the garlic and grate the cucumber."
+      },
+      {
+        "title": "Make the raita",
+        "text": "Squeeze the grated cucumber in your hands to get rid of the water. Stir it into the yogurt with a pinch of salt, then chill until needed."
+      },
+      {
+        "title": "Start the madras",
+        "text": "Heat 1 tbsp oil in a saucepan over a medium heat and fry the chopped onion for 8 min until golden. Add the garlic, ginger paste, curry powder, ground cumin (optional) and all but a pinch of the chilli powder. Stir for 1 min until fragrant."
+      },
+      {
+        "title": "Simmer the curry",
+        "text": "Add the chicken and cook for 3 min until sealed all over. Tip in the chopped tomatoes, tomato purée and 150ml water. Cover and simmer for 20 min until thick and the chicken is tender."
+      },
+      {
+        "title": "Cook the rice",
+        "text": "While the curry simmers, rinse the rice until the water runs clear. Tip it into a small pan with 300ml boiling water and a pinch of salt. Cover and cook on the lowest heat for 10 min. Turn off the heat and leave covered until needed."
+      },
+      {
+        "title": "Make the bhaji batter",
+        "text": "Mix the gram flour, turmeric, cumin seeds, the reserved pinch of chilli powder and ½ tsp salt in a bowl. Add the sliced onion and 4–5 tbsp cold water. Mix with your hands until every strand is coated in a thick, sticky batter."
+      },
+      {
+        "title": "Fry the bhajis",
+        "text": "Heat 1cm oil in a frying pan over a medium-high heat until a drop of batter sizzles straight away. Fry heaped tablespoons of the mixture, flattened slightly, for 3–4 min each side until deep golden and crisp. Drain on kitchen paper and sprinkle with salt. Let the leftover oil cool, then throw it away."
+      },
+      {
+        "title": "Finish and serve",
+        "text": "Stir the garam masala and a squeeze of lemon (optional) into the madras and season. Serve with the rice, hot bhajis, raita and the rest of the lemon in wedges (optional)."
+      }
+    ],
+    "tags": [
+      "fakeaway",
+      "spicy",
+      "crispy"
+    ],
+    "basedOn": "British curry-house chicken madras (BBC Good Food) with gram-flour onion bhajis (Felicity Cloake, The Guardian \"How to make the perfect onion bhaji\")"
+  },
+  {
+    "id": "in_tikka_naan_pizza",
+    "title": "Chicken Tikka Naan Pizzas with Mango Chutney & Mozzarella",
+    "icon": "🍕",
+    "cuisine": "Indian",
+    "category": "treat",
+    "protein": "chicken",
+    "time": 30,
+    "servings": 2,
+    "equipment": [
+      "oven",
+      "hob"
+    ],
+    "airFryer": "Cook one topped naan at a time at 190°C for 5–6 min until the cheese is bubbling and the base is crisp.",
+    "ingredients": [
+      {
+        "i": "naan",
+        "q": 2,
+        "t": "2 large"
+      },
+      {
+        "i": "chicken_breast",
+        "q": 200,
+        "t": "1 large breast (200g), cut into small pieces"
+      },
+      {
+        "i": "tikka_paste",
+        "q": 45,
+        "t": "3 tbsp"
+      },
+      {
+        "i": "greek_yogurt",
+        "q": 60,
+        "t": "4 tbsp"
+      },
+      {
+        "i": "chopped_tomatoes",
+        "q": 100,
+        "t": "¼ tin"
+      },
+      {
+        "i": "mozzarella",
+        "q": 125,
+        "t": "1 ball, torn"
+      },
+      {
+        "i": "red_onion",
+        "q": 0.5,
+        "t": "½, thinly sliced"
+      },
+      {
+        "i": "peppers",
+        "q": 1,
+        "t": "1, thinly sliced"
+      },
+      {
+        "i": "mango_chutney",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "green_chillies",
+        "q": 5,
+        "t": "1, thinly sliced, to serve",
+        "opt": true,
+        "swap": "Scatter the chilli over one pizza only."
+      },
+      {
+        "i": "coriander",
+        "q": 10,
+        "t": "a small handful, to serve",
+        "opt": true,
+        "swap": "Keep the coriander in a little bowl on the table so it only goes on the plates that want it."
+      },
+      {
+        "i": "oil",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "lemon",
+        "q": 0.5,
+        "t": "½"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the ingredients",
+        "text": "Heat the oven to 220°C (200°C fan). Cut the chicken into small pieces, then mix 1 tbsp tikka paste with 1 tbsp yogurt and toss the chicken in it. Thinly slice the red onion, pepper and green chilli (optional)."
+      },
+      {
+        "title": "Cook the tikka",
+        "text": "Heat the oil in a frying pan over a high heat. Fry the chicken for 5–6 min until charred at the edges and cooked through, adding the pepper for the last 2 min. Tip onto a plate."
+      },
+      {
+        "title": "Make the sauce",
+        "text": "In the same pan over a medium heat, fry the remaining 2 tbsp tikka paste for 30 sec. Add the chopped tomatoes and bubble for 3 min until thick enough to spread like pizza sauce."
+      },
+      {
+        "title": "Top the naans",
+        "text": "Put the naans on a baking tray and spread over the sauce. Top with the chicken, pepper, red onion and torn mozzarella."
+      },
+      {
+        "title": "Bake the pizzas",
+        "text": "Bake for 8–10 min until the cheese is melted and blistered and the naan edges are crisp. While they bake, loosen the remaining yogurt with a squeeze of lemon and a splash of water."
+      },
+      {
+        "title": "Finish and serve",
+        "text": "Drizzle the yogurt over the hot pizzas and dot with the mango chutney. Scatter with the chilli and coriander (both optional), then cut into slices."
+      }
+    ],
+    "tags": [
+      "fakeaway",
+      "quick",
+      "kid-friendly"
+    ],
+    "basedOn": "Popular UK naan-bread pizza fakeaway (BBC Good Food / Tesco Real Food \"chicken tikka naan pizza\")"
+  },
+  {
+    "id": "in_lamb_rogan_josh",
+    "title": "Slow-Simmered Lamb Rogan Josh with Cumin Rice",
+    "icon": "🥘",
+    "cuisine": "Indian",
+    "category": "treat",
+    "protein": "lamb",
+    "time": 90,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "diced_lamb",
+        "q": 300,
+        "t": "300g diced lamb leg"
+      },
+      {
+        "i": "onion",
+        "q": 2,
+        "t": "2, finely sliced"
+      },
+      {
+        "i": "garlic",
+        "q": 4,
+        "t": "4 cloves, grated"
+      },
+      {
+        "i": "ginger_paste",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "smoked_paprika",
+        "q": 4,
+        "t": "2 tsp"
+      },
+      {
+        "i": "chilli_powder",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "ground_coriander",
+        "q": 4,
+        "t": "2 tsp"
+      },
+      {
+        "i": "cumin",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "ground_cinnamon",
+        "q": 1,
+        "t": "½ tsp",
+        "opt": true
+      },
+      {
+        "i": "garam_masala",
+        "q": 4,
+        "t": "2 tsp"
+      },
+      {
+        "i": "greek_yogurt",
+        "q": 100,
+        "t": "100g"
+      },
+      {
+        "i": "chopped_tomatoes",
+        "q": 200,
+        "t": "½ tin"
+      },
+      {
+        "i": "tomato_puree",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "stock_cubes",
+        "q": 1,
+        "t": "1 lamb or beef cube"
+      },
+      {
+        "i": "oil",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "rice",
+        "q": 150,
+        "t": "150g"
+      },
+      {
+        "i": "cumin_seeds",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "coriander",
+        "q": 10,
+        "t": "a small handful, to serve",
+        "opt": true,
+        "swap": "Keep the coriander in a little bowl on the table so it only goes on the plates that want it."
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the ingredients",
+        "text": "Boil the kettle and make up 300ml stock with the cube. Finely slice the onions and grate the garlic. Pat the lamb dry and season with salt. Mix the smoked paprika, chilli powder, ground coriander, cumin, cinnamon (optional) and 1 tsp garam masala in a small bowl."
+      },
+      {
+        "title": "Brown the lamb",
+        "text": "Heat 1 tbsp oil in a heavy casserole or saucepan over a high heat. Brown the lamb in one layer for 4–5 min until well coloured, then lift onto a plate."
+      },
+      {
+        "title": "Cook the onions",
+        "text": "Lower the heat to medium and add the remaining 1 tbsp oil and the onions. Cook for 10–12 min, stirring often, until deep golden and sticky."
+      },
+      {
+        "title": "Build the sauce",
+        "text": "Stir in the garlic, ginger paste and spice mix and cook for 1 min until fragrant. Take the pan off the heat and stir in the yogurt a spoonful at a time so it doesn't split. Add the chopped tomatoes, tomato purée and stock."
+      },
+      {
+        "title": "Simmer low and slow",
+        "text": "Return the lamb and its juices and bring to a gentle simmer. Cover and cook on a low heat for 1 hour, stirring now and then. Take the lid off for the last 10 min, until the lamb breaks apart with a spoon and the sauce is deep brick-red."
+      },
+      {
+        "title": "Cook the cumin rice",
+        "text": "With 20 min to go, rinse the rice. Toast the cumin seeds in a small dry pan over a medium heat for 30 sec. Add the rice, 300ml boiling water and a pinch of salt, cover and simmer on the lowest heat for 10 min. Rest off the heat, covered, for 5 min."
+      },
+      {
+        "title": "Plate up",
+        "text": "Stir the remaining 1 tsp garam masala into the rogan josh and season to taste. Spoon over the rice and scatter with coriander (optional)."
+      }
+    ],
+    "tags": [
+      "fakeaway",
+      "comfort",
+      "freezable"
+    ],
+    "basedOn": "RecipeTin Eats — Rogan josh (lamb curry, 4.9★, hundreds of reviews)"
+  },
+  {
+    "id": "in_chicken_biryani",
+    "title": "Layered Chicken Biryani with Crispy Onions & Cucumber Raita",
+    "icon": "🍚",
+    "cuisine": "Indian",
+    "category": "treat",
+    "protein": "chicken",
+    "time": 65,
+    "servings": 2,
+    "equipment": [
+      "hob",
+      "oven"
+    ],
+    "airFryer": "Toss the sliced onions in 1 tbsp oil and air-fry at 180°C for 12–15 min, shaking every few minutes, until deep golden and crisp.",
+    "ingredients": [
+      {
+        "i": "chicken_thighs",
+        "q": 350,
+        "t": "350g thigh fillets, cut into large chunks"
+      },
+      {
+        "i": "greek_yogurt",
+        "q": 180,
+        "t": "180g (100g for marinade, 80g for raita)"
+      },
+      {
+        "i": "garam_masala",
+        "q": 4,
+        "t": "2 tsp"
+      },
+      {
+        "i": "chilli_powder",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "turmeric",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "ginger_paste",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "garlic",
+        "q": 3,
+        "t": "3 cloves, grated"
+      },
+      {
+        "i": "onion",
+        "q": 2,
+        "t": "2, thinly sliced"
+      },
+      {
+        "i": "rice",
+        "q": 150,
+        "t": "150g"
+      },
+      {
+        "i": "ground_cinnamon",
+        "q": 1,
+        "t": "½ tsp",
+        "opt": true
+      },
+      {
+        "i": "butter",
+        "q": 25,
+        "t": "25g"
+      },
+      {
+        "i": "oil",
+        "q": 45,
+        "t": "3 tbsp"
+      },
+      {
+        "i": "lemon",
+        "q": 0.5,
+        "t": "½, juiced"
+      },
+      {
+        "i": "cucumber",
+        "q": 0.25,
+        "t": "¼, grated"
+      },
+      {
+        "i": "coriander",
+        "q": 15,
+        "t": "½ pack, chopped",
+        "opt": true,
+        "swap": "Leave the coriander out of the layers and keep it in a little bowl on the table so it only goes on the plates that want it."
+      },
+      {
+        "i": "milk",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the ingredients",
+        "text": "Heat the oven to 180°C (160°C fan) and boil the kettle. Thinly slice the onions, grate the garlic and cut the chicken into large chunks. Chop the coriander and grate the cucumber."
+      },
+      {
+        "title": "Marinate the chicken",
+        "text": "Mix 100g yogurt with the garam masala, chilli powder, ½ tsp turmeric, the ginger paste, garlic, lemon juice and 1 tsp salt. Stir in the chicken and leave for 15 min while you fry the onions."
+      },
+      {
+        "title": "Fry the onions",
+        "text": "Heat the oil in a lidded ovenproof casserole over a medium-high heat. Fry the onions for 12–15 min, stirring often, until deep golden and crisp. Lift out half with a slotted spoon onto kitchen paper and leave the rest in the pan."
+      },
+      {
+        "title": "Par-boil the rice",
+        "text": "While the onions fry, rinse the rice. Cook it in a pan of salted boiling water with the cinnamon (optional) for 5 min, until softening outside but still firm in the middle. Drain well."
+      },
+      {
+        "title": "Cook the chicken layer",
+        "text": "Add the chicken and marinade to the onions in the casserole. Cook over a medium heat for 8 min, stirring, until sealed and the sauce has thickened. Meanwhile, stir the remaining ½ tsp turmeric into the milk."
+      },
+      {
+        "title": "Layer and bake",
+        "text": "Scatter half the coriander (optional) over the chicken, then spread the rice on top. Drizzle over the turmeric milk and dot with the butter. Cover tightly with foil, then the lid, and bake for 25 min until the rice is tender and the chicken is cooked through."
+      },
+      {
+        "title": "Make the raita",
+        "text": "While it bakes, squeeze the grated cucumber dry. Mix it into the remaining 80g yogurt with a pinch of salt and chill."
+      },
+      {
+        "title": "Plate up",
+        "text": "Fluff the biryani gently with a fork. Scatter with the crispy onions and the rest of the coriander (optional), and serve with the raita."
+      }
+    ],
+    "tags": [
+      "fakeaway",
+      "comfort",
+      "one-pot"
+    ],
+    "basedOn": "RecipeTin Eats — Chicken biryani (dum-style, baked; 4.9★)"
+  },
+  {
+    "id": "in_paneer_tikka",
+    "title": "Paneer & Mushroom Tikka Skewers with Garlic Naan",
+    "icon": "🧀",
+    "cuisine": "Indian",
+    "category": "treat",
+    "protein": "veggie",
+    "time": 40,
+    "servings": 2,
+    "equipment": [
+      "grill",
+      "hob"
+    ],
+    "airFryer": "Lay the skewers in the basket and air-fry at 200°C for 10–12 min, turning halfway, until charred at the edges.",
+    "ingredients": [
+      {
+        "i": "paneer",
+        "q": 200,
+        "t": "1 block, cut into 2.5cm cubes"
+      },
+      {
+        "i": "greek_yogurt",
+        "q": 150,
+        "t": "150g (80g marinade, 70g raita)"
+      },
+      {
+        "i": "tikka_paste",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "peppers",
+        "q": 1,
+        "t": "1, cut into chunks"
+      },
+      {
+        "i": "red_onion",
+        "q": 1,
+        "t": "1, cut into wedges"
+      },
+      {
+        "i": "mushrooms",
+        "q": 100,
+        "t": "100g, halved",
+        "swap": "Thread the mushrooms onto their own skewer and give it to one plate only; add extra pepper and onion to the other skewers."
+      },
+      {
+        "i": "lemon",
+        "q": 1,
+        "t": "1, halved"
+      },
+      {
+        "i": "naan",
+        "q": 2,
+        "t": "2"
+      },
+      {
+        "i": "garlic",
+        "q": 2,
+        "t": "2 cloves, crushed"
+      },
+      {
+        "i": "butter",
+        "q": 20,
+        "t": "20g"
+      },
+      {
+        "i": "cucumber",
+        "q": 0.25,
+        "t": "¼, grated"
+      },
+      {
+        "i": "mango_chutney",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "kasoori_methi",
+        "q": 1,
+        "t": "1 tsp",
+        "opt": true
+      },
+      {
+        "i": "coriander",
+        "q": 10,
+        "t": "a small handful, to serve",
+        "opt": true,
+        "swap": "Keep the coriander in a little bowl on the table so it only goes on the plates that want it."
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the ingredients",
+        "text": "Cut the paneer into 2.5cm cubes, the pepper into chunks and the red onion into wedges. Halve the mushrooms, crush the garlic and grate the cucumber. If using wooden skewers, soak 4–6 in water."
+      },
+      {
+        "title": "Marinate the skewers",
+        "text": "Mix 80g yogurt with the tikka paste, kasoori methi (optional), the juice of half the lemon and a pinch of salt. Add the paneer, pepper, onion and mushrooms and toss gently until coated. Leave for 15 min, or longer if you have time."
+      },
+      {
+        "title": "Make the raita",
+        "text": "Squeeze the grated cucumber dry. Stir it into the remaining 70g yogurt with a pinch of salt and chill."
+      },
+      {
+        "title": "Thread the skewers",
+        "text": "Heat the grill to high. Thread the paneer and veg alternately onto the skewers and lay them on a foil-lined tray. Drizzle with any marinade left in the bowl."
+      },
+      {
+        "title": "Make the garlic butter",
+        "text": "Melt the butter with the crushed garlic in a small pan over a low heat for 2 min until fragrant. Stir in a few chopped coriander stalks (optional)."
+      },
+      {
+        "title": "Grill until charred",
+        "text": "Grill the skewers for 10–12 min, turning every few minutes, until the paneer is golden and the veg are charred at the edges. Warm the naans under the grill for the last minute and brush with the garlic butter."
+      },
+      {
+        "title": "Plate up",
+        "text": "Squeeze the rest of the lemon over the skewers and scatter with coriander leaves (optional). Serve with the garlic naans, raita and mango chutney."
+      }
+    ],
+    "tags": [
+      "fakeaway",
+      "veggie"
+    ],
+    "basedOn": "BBC Good Food — Paneer tikka skewers (tandoori-style grilled paneer and veg)"
+  },
+  {
+    "id": "in_indo_chinese_chilli_chicken",
+    "title": "Indo-Chinese Chilli Chicken with Spring Onion Rice",
+    "icon": "🥡",
+    "cuisine": "Indian",
+    "category": "treat",
+    "protein": "chicken",
+    "time": 35,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "airFryer": "Spray the coated chicken generously with oil and air-fry at 200°C for 12–14 min, shaking halfway, until crisp, then toss in the sauce.",
+    "ingredients": [
+      {
+        "i": "chicken_thighs",
+        "q": 350,
+        "t": "350g thigh fillets, cut into bite-size pieces"
+      },
+      {
+        "i": "cornflour",
+        "q": 30,
+        "t": "3 tbsp plus 1 tsp"
+      },
+      {
+        "i": "eggs",
+        "q": 1,
+        "t": "1"
+      },
+      {
+        "i": "soy_sauce",
+        "q": 45,
+        "t": "3 tbsp"
+      },
+      {
+        "i": "garlic",
+        "q": 4,
+        "t": "4 cloves, finely chopped"
+      },
+      {
+        "i": "ginger_paste",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "green_chillies",
+        "q": 10,
+        "t": "2, slit lengthways",
+        "swap": "Fry the chillies separately for a minute and spoon them over one plate only."
+      },
+      {
+        "i": "peppers",
+        "q": 1,
+        "t": "1, cut into squares"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, cut into squares"
+      },
+      {
+        "i": "spring_onions",
+        "q": 4,
+        "t": "4, sliced (half for the rice, half to serve)",
+        "swap": "Stir the spring onions through one portion of rice only and scatter the rest over that plate."
+      },
+      {
+        "i": "sweet_chilli_sauce",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "tomato_puree",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "½ tsp"
+      },
+      {
+        "i": "oil",
+        "q": 100,
+        "t": "about 100ml for shallow frying"
+      },
+      {
+        "i": "rice",
+        "q": 150,
+        "t": "150g"
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the ingredients",
+        "text": "Boil the kettle. Cut the chicken into bite-size pieces and the pepper and onion into squares. Finely chop the garlic, slit the green chillies lengthways and slice the spring onions."
+      },
+      {
+        "title": "Coat the chicken",
+        "text": "Mix the chicken with the egg, 1 tbsp soy sauce, 1 tsp ginger paste and a pinch each of salt and black pepper. Sprinkle over 3 tbsp cornflour and mix until each piece has a sticky coating. For the sauce, mix the remaining 2 tbsp soy, the sweet chilli sauce, tomato purée, 1 tsp cornflour and 4 tbsp water in a cup."
+      },
+      {
+        "title": "Cook the rice",
+        "text": "Rinse the rice until the water runs clear. Tip it into a small pan with 300ml boiling water and a pinch of salt. Cover and cook on the lowest heat for 10 min. Turn off the heat and leave covered for 5 min, then stir through half the spring onions."
+      },
+      {
+        "title": "Fry the chicken",
+        "text": "While the rice cooks, heat about 1cm oil in a wok or large frying pan over a medium-high heat. Fry the chicken in two batches for 5–6 min, turning, until deep golden, crisp and cooked through. Drain on kitchen paper. Carefully pour off all but 1 tbsp oil and throw it away once cool."
+      },
+      {
+        "title": "Stir-fry the veg",
+        "text": "Put the wok back over a high heat. Stir-fry the garlic, remaining 1 tsp ginger paste and green chillies for 30 sec. Add the onion and pepper and toss for 2–3 min until charred at the edges but still crunchy."
+      },
+      {
+        "title": "Make the sauce",
+        "text": "Pour in the sauce mix and bubble for 1 min until glossy and thick. Tip the crispy chicken back in and toss quickly so every piece is coated but stays crunchy."
+      },
+      {
+        "title": "Plate up",
+        "text": "Scatter with the rest of the spring onions and a pinch of black pepper. Serve straight away with the spring onion rice."
+      }
+    ],
+    "tags": [
+      "fakeaway",
+      "crispy",
+      "spicy"
+    ],
+    "basedOn": "Great British Chefs / Hebbars Kitchen — Indian-Chinese chilli chicken (dry-style)"
+  },
+  {
+    "id": "in_lamb_seekh_kebab_wraps",
+    "title": "Lamb Seekh Kebab Wraps with Pickled Onions & Raita",
+    "icon": "🌯",
+    "cuisine": "Indian",
+    "category": "treat",
+    "protein": "lamb",
+    "time": 30,
+    "servings": 2,
+    "equipment": [
+      "grill"
+    ],
+    "airFryer": "Air-fry the kebabs at 200°C for 10–12 min, turning halfway, until browned and cooked through.",
+    "ingredients": [
+      {
+        "i": "lamb_mince",
+        "q": 250,
+        "t": "½ pack (250g)"
+      },
+      {
+        "i": "red_onion",
+        "q": 1,
+        "t": "1 (half thinly sliced, half grated)"
+      },
+      {
+        "i": "garlic",
+        "q": 2,
+        "t": "2 cloves, grated"
+      },
+      {
+        "i": "ginger_paste",
+        "q": 5,
+        "t": "1 tsp"
+      },
+      {
+        "i": "garam_masala",
+        "q": 4,
+        "t": "2 tsp"
+      },
+      {
+        "i": "cumin",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "chilli_flakes",
+        "q": 1,
+        "t": "½ tsp",
+        "opt": true,
+        "swap": "Mix the chilli flakes into the raita for one portion instead of the kebabs."
+      },
+      {
+        "i": "coriander",
+        "q": 15,
+        "t": "½ pack, chopped",
+        "opt": true,
+        "swap": "Leave the coriander out of the kebab mix and keep it in a little bowl on the table so it only goes on the plates that want it."
+      },
+      {
+        "i": "lemon",
+        "q": 1,
+        "t": "1"
+      },
+      {
+        "i": "wraps",
+        "q": 4,
+        "t": "4"
+      },
+      {
+        "i": "greek_yogurt",
+        "q": 100,
+        "t": "100g"
+      },
+      {
+        "i": "cucumber",
+        "q": 0.5,
+        "t": "½"
+      },
+      {
+        "i": "little_gem",
+        "q": 1,
+        "t": "1, shredded"
+      },
+      {
+        "i": "mango_chutney",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the ingredients",
+        "text": "Heat the grill to high. Cut the red onion in half: thinly slice one half and grate the other. Grate the garlic, chop the coriander and shred the lettuce. Grate half the cucumber and cut the rest into sticks."
+      },
+      {
+        "title": "Pickle the onion",
+        "text": "Put the sliced red onion in a bowl with the juice of half the lemon and a big pinch of salt. Scrunch with your fingers and set aside to turn pink."
+      },
+      {
+        "title": "Mix the kebabs",
+        "text": "Squeeze the juice out of the grated onion. Mix it with the lamb, garlic, ginger paste, garam masala, cumin, chilli flakes (optional), half the coriander (optional) and ½ tsp salt. Knead for 1 min until sticky, then shape into 6 long sausage shapes, pressing firmly."
+      },
+      {
+        "title": "Grill the kebabs",
+        "text": "Lay the kebabs on a foil-lined tray. Grill for 10–12 min, turning every few minutes, until browned, sizzling and cooked through with no pink inside."
+      },
+      {
+        "title": "Make the raita",
+        "text": "While the kebabs grill, squeeze the grated cucumber dry. Mix it with the yogurt, a squeeze of lemon and a pinch of salt."
+      },
+      {
+        "title": "Wrap and serve",
+        "text": "Warm the wraps under the grill for 20 sec each side. Spread with raita and mango chutney, then add lettuce, cucumber sticks, kebabs, pickled onions and the rest of the coriander (optional). Roll up tightly and serve with the remaining lemon in wedges."
+      }
+    ],
+    "tags": [
+      "fakeaway",
+      "quick"
+    ],
+    "basedOn": "Dishoom-style seekh kebab rolls (Dishoom cookbook / BBC Good Food \"Lamb seekh kebabs\")"
+  },
+  {
+    "id": "in_amritsari_fish_masala_chips",
+    "title": "Amritsari Fish Bites with Masala Chips & Coriander Yogurt",
+    "icon": "🐟",
+    "cuisine": "Indian",
+    "category": "treat",
+    "protein": "fish",
+    "time": 50,
+    "servings": 2,
+    "equipment": [
+      "oven",
+      "hob"
+    ],
+    "airFryer": "Air-fry the chips at 200°C for 18–20 min, shaking halfway; then spray the battered fish with oil and air-fry at 200°C for 8–10 min, turning once, until crisp.",
+    "ingredients": [
+      {
+        "i": "cod_fillets",
+        "q": 280,
+        "t": "1 pack (280g), cut into chunky strips"
+      },
+      {
+        "i": "gram_flour",
+        "q": 60,
+        "t": "60g"
+      },
+      {
+        "i": "cornflour",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "chilli_powder",
+        "q": 3,
+        "t": "1½ tsp"
+      },
+      {
+        "i": "turmeric",
+        "q": 1,
+        "t": "½ tsp"
+      },
+      {
+        "i": "cumin_seeds",
+        "q": 2,
+        "t": "1 tsp",
+        "opt": true
+      },
+      {
+        "i": "ginger_paste",
+        "q": 5,
+        "t": "1 tsp"
+      },
+      {
+        "i": "garlic",
+        "q": 2,
+        "t": "2 cloves, grated"
+      },
+      {
+        "i": "lemon",
+        "q": 1,
+        "t": "1"
+      },
+      {
+        "i": "potatoes",
+        "q": 500,
+        "t": "500g, cut into chips"
+      },
+      {
+        "i": "garam_masala",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "oil",
+        "q": 130,
+        "t": "2 tbsp for the chips, plus about 100ml for frying"
+      },
+      {
+        "i": "greek_yogurt",
+        "q": 100,
+        "t": "100g"
+      },
+      {
+        "i": "coriander",
+        "q": 15,
+        "t": "½ pack, chopped",
+        "opt": true,
+        "swap": "Leave the coriander out of the yogurt and keep it in a little bowl on the table so it only goes on the plates that want it."
+      },
+      {
+        "i": "red_onion",
+        "q": 0.5,
+        "t": "½, finely sliced, to serve",
+        "opt": true
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the ingredients",
+        "text": "Heat the oven to 220°C (200°C fan). Cut the potatoes into chips and the fish into chunky strips. Grate the garlic, finely slice the red onion and chop the coriander."
+      },
+      {
+        "title": "Roast the chips",
+        "text": "Toss the chips with 2 tbsp oil and a pinch of salt on a large baking tray. Roast for 35–40 min, turning halfway, until crisp and golden."
+      },
+      {
+        "title": "Marinate the fish",
+        "text": "While the chips roast, toss the fish with the ginger paste, garlic, juice of half the lemon and a pinch of salt. Leave for 10 min."
+      },
+      {
+        "title": "Make the coriander yogurt",
+        "text": "Mix the yogurt with most of the coriander (optional), a squeeze of lemon and a pinch of salt. Chill until needed."
+      },
+      {
+        "title": "Batter the fish",
+        "text": "Whisk the gram flour, cornflour, 1 tsp chilli powder, the turmeric, cumin seeds (optional) and ½ tsp salt with about 5 tbsp cold water. It should make a thick batter that clings to a spoon. Add the fish and turn gently to coat."
+      },
+      {
+        "title": "Fry the fish",
+        "text": "When the chips have 10 min left, heat 1cm oil in a frying pan over a medium-high heat. Fry the fish in batches for 2–3 min each side until crisp, golden and flaking easily. Drain on kitchen paper, and let the leftover oil cool before throwing it away."
+      },
+      {
+        "title": "Spice the chips and serve",
+        "text": "Toss the hot chips with the garam masala, remaining ½ tsp chilli powder and a little salt. Pile the fish and chips onto plates with the red onion (optional), lemon wedges, coriander yogurt and the rest of the coriander (optional)."
+      }
+    ],
+    "tags": [
+      "fakeaway",
+      "crispy"
+    ],
+    "basedOn": "Amritsari fish pakora (Ranveer Brar / BBC Good Food \"Amritsari fish\") with British curry-house masala chips"
+  },
+  {
+    "id": "in_chicken_jalfrezi",
+    "title": "Smoky Chicken Jalfrezi with Charred Peppers & Green Chilli",
+    "icon": "🌶️",
+    "cuisine": "Indian",
+    "category": "everyday",
+    "protein": "chicken",
+    "time": 35,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "chicken_breast",
+        "q": 300,
+        "t": "2 breasts (300g), cut into chunks"
+      },
+      {
+        "i": "peppers",
+        "q": 2,
+        "t": "2, cut into chunky squares"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1 (half sliced into petals, half finely chopped)"
+      },
+      {
+        "i": "green_chillies",
+        "q": 10,
+        "t": "2, sliced",
+        "swap": "Slice the chilli and scatter it over one plate only instead of cooking it into the dish."
+      },
+      {
+        "i": "garlic",
+        "q": 3,
+        "t": "3 cloves, grated"
+      },
+      {
+        "i": "ginger_paste",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "cumin_seeds",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "curry_powder",
+        "q": 6,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "turmeric",
+        "q": 1,
+        "t": "½ tsp",
+        "opt": true
+      },
+      {
+        "i": "garam_masala",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "chopped_tomatoes",
+        "q": 200,
+        "t": "½ tin"
+      },
+      {
+        "i": "oil",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "rice",
+        "q": 150,
+        "t": "150g"
+      },
+      {
+        "i": "coriander",
+        "q": 10,
+        "t": "a small handful, to serve",
+        "opt": true,
+        "swap": "Keep the coriander in a little bowl on the table so it only goes on the plates that want it."
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the ingredients",
+        "text": "Boil the kettle. Cut the chicken into chunks and the peppers into chunky squares. Cut half the onion into chunky petals and finely chop the rest. Grate the garlic and slice the green chillies."
+      },
+      {
+        "title": "Cook the rice",
+        "text": "Rinse the rice until the water runs clear. Tip it into a small pan with 300ml boiling water and a pinch of salt. Cover and cook on the lowest heat for 10 min. Turn off the heat and leave covered off the heat for 5 min, then fluff with a fork."
+      },
+      {
+        "title": "Char the veg",
+        "text": "While the rice cooks, heat 1 tbsp oil in a large frying pan or wok over a high heat. Stir-fry the peppers and onion petals for 4–5 min until blackened in patches but still crunchy. Tip onto a plate."
+      },
+      {
+        "title": "Sear the chicken",
+        "text": "Toss the chicken with the turmeric (optional), half the curry powder and a pinch of salt. Add the remaining 1 tbsp oil to the pan and fry the chicken for 4–5 min until browned all over."
+      },
+      {
+        "title": "Add the aromatics",
+        "text": "Push the chicken to one side. Add the cumin seeds, chopped onion, garlic, ginger paste and most of the chilli, and stir for 2 min until the onion softens."
+      },
+      {
+        "title": "Simmer the sauce",
+        "text": "Stir in the rest of the curry powder, then the chopped tomatoes and a splash of water. Simmer for 6–8 min until the sauce is thick and clinging and the chicken is cooked through. Fold the charred veg back in with the garam masala."
+      },
+      {
+        "title": "Plate up",
+        "text": "Spoon the rice onto plates. Serve the jalfrezi alongside, topped with the remaining chilli and coriander (optional)."
+      }
+    ],
+    "tags": [
+      "quick",
+      "spicy"
+    ],
+    "basedOn": "BBC Good Food — Chicken jalfrezi (curry-house style, 4.6★, 500+ ratings)"
+  },
+  {
+    "id": "in_saag_chicken",
+    "title": "Garlicky Saag Chicken with Spinach & Warm Naan",
+    "icon": "🥬",
+    "cuisine": "Indian",
+    "category": "everyday",
+    "protein": "chicken",
+    "time": 35,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "chicken_thighs",
+        "q": 350,
+        "t": "350g thigh fillets, cut into chunks"
+      },
+      {
+        "i": "spinach",
+        "q": 200,
+        "t": "200g"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, finely chopped"
+      },
+      {
+        "i": "garlic",
+        "q": 4,
+        "t": "4 cloves, sliced"
+      },
+      {
+        "i": "ginger_paste",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "green_chillies",
+        "q": 5,
+        "t": "1, finely chopped",
+        "swap": "Slice the chilli and scatter it over one plate only instead of cooking it into the dish."
+      },
+      {
+        "i": "cumin_seeds",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "cumin",
+        "q": 2,
+        "t": "1 tsp",
+        "opt": true
+      },
+      {
+        "i": "ground_coriander",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "garam_masala",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "chopped_tomatoes",
+        "q": 100,
+        "t": "¼ tin"
+      },
+      {
+        "i": "greek_yogurt",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "oil",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "butter",
+        "q": 10,
+        "t": "10g"
+      },
+      {
+        "i": "naan",
+        "q": 2,
+        "t": "2"
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the ingredients",
+        "text": "Boil the kettle. Cut the chicken into chunks, finely chop the onion and green chilli, and slice the garlic."
+      },
+      {
+        "title": "Wilt the spinach",
+        "text": "Put the spinach in a colander and pour over the kettle of boiling water until it collapses. Leave to cool for a minute, then squeeze out as much water as you can. Chop finely into a rough purée."
+      },
+      {
+        "title": "Brown the chicken",
+        "text": "Heat the oil in a large frying pan over a medium-high heat. Fry the chicken with a pinch of salt for 5 min until golden all over, then lift onto a plate."
+      },
+      {
+        "title": "Build the masala",
+        "text": "Lower the heat to medium, add the butter and cumin seeds and let them sizzle for 30 sec. Add the onion and cook for 6–7 min until golden. Stir in the garlic, ginger paste, chilli, ground cumin (optional) and ground coriander for 1 min."
+      },
+      {
+        "title": "Simmer the chicken",
+        "text": "Add the chopped tomatoes and cook for 3 min until jammy. Return the chicken with a splash of water and simmer for 8 min until cooked through with no pink inside."
+      },
+      {
+        "title": "Add the saag",
+        "text": "Stir in the spinach and garam masala and cook for 2 min until the sauce is thick and deep green. Take off the heat, swirl through the yogurt and season."
+      },
+      {
+        "title": "Warm the naan and serve",
+        "text": "Warm the naans in a dry frying pan over a medium heat for 1 min each side. Serve alongside the saag chicken."
+      }
+    ],
+    "tags": [
+      "quick"
+    ],
+    "basedOn": "BBC Good Food / Hairy Bikers — Saag chicken (chicken and spinach curry)"
+  },
+  {
+    "id": "in_keema_matar",
+    "title": "Keema Matar with Spiced Beef, Peas & Chapati-Style Wraps",
+    "icon": "🥘",
+    "cuisine": "Indian",
+    "category": "everyday",
+    "protein": "beef",
+    "time": 30,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "beef_mince",
+        "q": 250,
+        "t": "½ pack (250g)"
+      },
+      {
+        "i": "frozen_peas",
+        "q": 120,
+        "t": "120g",
+        "swap": "Cook the peas in a small pan of boiling water for 3 min and stir them into one portion only."
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, finely chopped"
+      },
+      {
+        "i": "garlic",
+        "q": 3,
+        "t": "3 cloves, grated"
+      },
+      {
+        "i": "ginger_paste",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "cumin_seeds",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "curry_powder",
+        "q": 6,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "garam_masala",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "chopped_tomatoes",
+        "q": 200,
+        "t": "½ tin"
+      },
+      {
+        "i": "tomato_puree",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "oil",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "wraps",
+        "q": 4,
+        "t": "4"
+      },
+      {
+        "i": "greek_yogurt",
+        "q": 60,
+        "t": "4 tbsp, to serve",
+        "opt": true
+      },
+      {
+        "i": "lemon",
+        "q": 0.5,
+        "t": "½, to finish",
+        "opt": true
+      },
+      {
+        "i": "coriander",
+        "q": 10,
+        "t": "a small handful, to serve",
+        "opt": true,
+        "swap": "Keep the coriander in a little bowl on the table so it only goes on the plates that want it."
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the ingredients",
+        "text": "Finely chop the onion and grate the garlic. Take the peas out of the freezer so they start to thaw."
+      },
+      {
+        "title": "Brown the mince",
+        "text": "Heat the oil in a large frying pan over a high heat. Add the mince and fry for 5–6 min, breaking it up with a wooden spoon, until browned and starting to crisp."
+      },
+      {
+        "title": "Add the aromatics",
+        "text": "Turn the heat to medium, add the cumin seeds and onion and cook for 5 min until the onion is soft. Stir in the garlic, ginger paste and curry powder and cook for 1 min until it smells toasty."
+      },
+      {
+        "title": "Simmer the keema",
+        "text": "Add the chopped tomatoes, tomato purée and 100ml water. Simmer for 10 min, stirring now and then, until thick and rich."
+      },
+      {
+        "title": "Add the peas",
+        "text": "Stir in the peas and garam masala and cook for 3 min until the peas are hot and bright green. Season with salt and a squeeze of lemon (optional)."
+      },
+      {
+        "title": "Warm the wraps and serve",
+        "text": "Warm the wraps one at a time in a hot dry pan for 20 sec each side, until blistered like chapatis. Serve the keema with the wraps, a dollop of yogurt (optional) and coriander (optional)."
+      }
+    ],
+    "tags": [
+      "quick",
+      "freezable",
+      "kid-friendly"
+    ],
+    "basedOn": "BBC Good Food — Keema matar (minced meat and pea curry, 4.6★)"
+  },
+  {
+    "id": "in_chana_masala",
+    "title": "Punjabi Chana Masala with Spinach & Lemony Rice",
+    "icon": "🫘",
+    "cuisine": "Indian",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 30,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "chickpeas",
+        "q": 400,
+        "t": "1 tin, drained"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, finely chopped"
+      },
+      {
+        "i": "garlic",
+        "q": 3,
+        "t": "3 cloves, grated"
+      },
+      {
+        "i": "ginger_paste",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "green_chillies",
+        "q": 5,
+        "t": "1, slit",
+        "swap": "Slice the chilli and scatter it over one plate only instead of cooking it into the dish."
+      },
+      {
+        "i": "cumin_seeds",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "ground_coriander",
+        "q": 4,
+        "t": "2 tsp"
+      },
+      {
+        "i": "turmeric",
+        "q": 1,
+        "t": "½ tsp"
+      },
+      {
+        "i": "garam_masala",
+        "q": 4,
+        "t": "2 tsp"
+      },
+      {
+        "i": "chilli_powder",
+        "q": 1,
+        "t": "½ tsp",
+        "opt": true
+      },
+      {
+        "i": "chopped_tomatoes",
+        "q": 400,
+        "t": "1 tin"
+      },
+      {
+        "i": "spinach",
+        "q": 80,
+        "t": "2 big handfuls"
+      },
+      {
+        "i": "lemon",
+        "q": 1,
+        "t": "1"
+      },
+      {
+        "i": "oil",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "rice",
+        "q": 150,
+        "t": "150g"
+      },
+      {
+        "i": "coriander",
+        "q": 10,
+        "t": "a small handful, to serve",
+        "opt": true,
+        "swap": "Keep the coriander in a little bowl on the table so it only goes on the plates that want it."
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the ingredients",
+        "text": "Boil the kettle. Finely chop the onion, grate the garlic and slit the green chilli. Drain and rinse the chickpeas."
+      },
+      {
+        "title": "Cook the rice",
+        "text": "Rinse the rice until the water runs clear. Tip it into a small pan with 300ml boiling water and a pinch of salt. Cover and cook on the lowest heat for 10 min. Turn off the heat and leave covered off the heat for 5 min, then fluff with a fork."
+      },
+      {
+        "title": "Fry the masala",
+        "text": "While the rice cooks, heat the oil in a saucepan over a medium heat. Sizzle the cumin seeds for 30 sec, then add the onion and cook for 8 min until golden brown. Stir in the garlic, ginger paste, green chilli, ground coriander, turmeric, chilli powder (optional) and 1 tsp garam masala for 1 min."
+      },
+      {
+        "title": "Simmer the chickpeas",
+        "text": "Add the chopped tomatoes, chickpeas, 100ml water and a good pinch of salt. Simmer for 10 min, crushing a few chickpeas against the side of the pan, until the sauce is rich and glossy."
+      },
+      {
+        "title": "Finish the curry",
+        "text": "Stir in the spinach until wilted. Add the remaining 1 tsp garam masala and the juice of half the lemon, then season to taste."
+      },
+      {
+        "title": "Plate up",
+        "text": "Stir a squeeze of lemon through the rice. Spoon the chana masala alongside and top with coriander (optional) and the rest of the lemon in wedges."
+      }
+    ],
+    "tags": [
+      "quick",
+      "one-pot",
+      "veggie",
+      "freezable"
+    ],
+    "basedOn": "Felicity Cloake (The Guardian) \"How to make the perfect chana masala\" / BBC Good Food chana masala"
+  },
+  {
+    "id": "in_tarka_dal",
+    "title": "Restaurant-Style Tarka Dal with Sizzling Garlic & Jeera Rice",
+    "icon": "🍲",
+    "cuisine": "Indian",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 35,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "red_lentils",
+        "q": 150,
+        "t": "150g"
+      },
+      {
+        "i": "turmeric",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "ginger_paste",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, finely chopped"
+      },
+      {
+        "i": "garlic",
+        "q": 4,
+        "t": "4 cloves, thinly sliced"
+      },
+      {
+        "i": "cumin_seeds",
+        "q": 4,
+        "t": "2 tsp"
+      },
+      {
+        "i": "mustard_seeds",
+        "q": 2,
+        "t": "1 tsp",
+        "opt": true
+      },
+      {
+        "i": "chilli_flakes",
+        "q": 1,
+        "t": "½ tsp",
+        "opt": true,
+        "swap": "Sprinkle the chilli flakes over one bowl at the end instead of adding them to the tarka."
+      },
+      {
+        "i": "cherry_tomatoes",
+        "q": 120,
+        "t": "120g, halved"
+      },
+      {
+        "i": "garam_masala",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "butter",
+        "q": 25,
+        "t": "25g"
+      },
+      {
+        "i": "oil",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "lemon",
+        "q": 0.5,
+        "t": "½, to finish",
+        "opt": true
+      },
+      {
+        "i": "rice",
+        "q": 150,
+        "t": "150g"
+      },
+      {
+        "i": "coriander",
+        "q": 10,
+        "t": "a small handful, to serve",
+        "opt": true,
+        "swap": "Keep the coriander in a little bowl on the table so it only goes on the plates that want it."
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the ingredients",
+        "text": "Boil the kettle. Finely chop the onion, thinly slice the garlic and halve the cherry tomatoes. Rinse the lentils until the water runs clear, then rinse the rice."
+      },
+      {
+        "title": "Cook the lentils",
+        "text": "Tip the lentils into a saucepan with 700ml water, the turmeric and ginger paste. Bring to the boil and skim off any froth. Simmer for 20–25 min, stirring now and then, until completely soft and porridgey; add a splash more water if it gets too thick."
+      },
+      {
+        "title": "Make the jeera rice",
+        "text": "Meanwhile, toast 1 tsp cumin seeds in a small dry pan over a medium heat for 30 sec. Add the rice, 300ml boiling water and a pinch of salt. Cover and cook on the lowest heat for 10 min, then leave covered off the heat."
+      },
+      {
+        "title": "Cook the onion base",
+        "text": "Heat the oil in a frying pan over a medium heat and cook the onion for 8 min until golden. Add the tomatoes and cook for 3 min until they collapse. Stir everything into the soft lentils with the garam masala and 1 tsp salt, then whisk hard until creamy."
+      },
+      {
+        "title": "Make the tarka",
+        "text": "For the tarka (a sizzling spiced butter), wipe out the frying pan and melt the butter over a medium-high heat. Add the remaining 1 tsp cumin seeds, the mustard seeds (optional) and the garlic. Fry for 1–2 min until the seeds pop and the garlic is pale golden. Add the chilli flakes (optional) for the last few seconds."
+      },
+      {
+        "title": "Plate up",
+        "text": "Pour most of the tarka over the dal (it should hiss) and stir once. Squeeze in the lemon (optional). Serve with the jeera rice, the last of the tarka on top and coriander (optional)."
+      }
+    ],
+    "tags": [
+      "veggie",
+      "comfort",
+      "freezable"
+    ],
+    "basedOn": "Felicity Cloake (The Guardian) \"How to make perfect tarka dal\" / Dishoom-style dal"
+  },
+  {
+    "id": "in_coconut_dal",
+    "title": "Creamy Coconut Dal with Spinach & Tomato-Chilli Salsa",
+    "icon": "🥥",
+    "cuisine": "Indian",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 35,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "red_lentils",
+        "q": 150,
+        "t": "150g"
+      },
+      {
+        "i": "coconut_milk",
+        "q": 200,
+        "t": "½ tin"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, finely chopped"
+      },
+      {
+        "i": "garlic",
+        "q": 3,
+        "t": "3 cloves, grated"
+      },
+      {
+        "i": "ginger_paste",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "turmeric",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "cumin",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "mustard_seeds",
+        "q": 2,
+        "t": "1 tsp",
+        "opt": true
+      },
+      {
+        "i": "spinach",
+        "q": 100,
+        "t": "100g"
+      },
+      {
+        "i": "cherry_tomatoes",
+        "q": 100,
+        "t": "100g, finely chopped"
+      },
+      {
+        "i": "red_onion",
+        "q": 0.25,
+        "t": "¼, finely chopped"
+      },
+      {
+        "i": "green_chillies",
+        "q": 5,
+        "t": "1, finely chopped",
+        "opt": true,
+        "swap": "Stir the chilli into half of the salsa only."
+      },
+      {
+        "i": "lime",
+        "q": 1,
+        "t": "1"
+      },
+      {
+        "i": "oil",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "naan",
+        "q": 2,
+        "t": "2"
+      },
+      {
+        "i": "coriander",
+        "q": 10,
+        "t": "a small handful",
+        "opt": true,
+        "swap": "Leave the coriander out of the salsa and keep it in a little bowl on the table so it only goes on the plates that want it."
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the ingredients",
+        "text": "Boil the kettle. Finely chop the onion, cherry tomatoes, red onion and green chilli. Grate the garlic and rinse the lentils."
+      },
+      {
+        "title": "Make the salsa",
+        "text": "Mix the cherry tomatoes, red onion, chilli (optional) and half the coriander (optional) with the juice of half the lime and a pinch of salt. Set aside so the flavours mingle."
+      },
+      {
+        "title": "Fry the aromatics",
+        "text": "Heat the oil in a saucepan over a medium heat. Add the mustard seeds (optional) and, when they start to pop, the onion. Cook for 6–7 min until soft and lightly golden, then stir in the garlic, ginger paste, turmeric and cumin for 1 min."
+      },
+      {
+        "title": "Simmer the dal",
+        "text": "Add the lentils, coconut milk and 400ml boiling water. Bring to the boil, then simmer for 15–18 min, stirring often so it doesn't catch, until thick and creamy."
+      },
+      {
+        "title": "Add the spinach",
+        "text": "Stir in the spinach a handful at a time until wilted. Season with salt and the rest of the lime juice."
+      },
+      {
+        "title": "Warm the naan and serve",
+        "text": "Warm the naans in a dry frying pan over a medium heat for 1 min each side. Ladle the dal into bowls and top with the salsa and remaining coriander (optional). Serve with the naan for dunking."
+      }
+    ],
+    "tags": [
+      "veggie",
+      "quick",
+      "comfort",
+      "freezable"
+    ],
+    "basedOn": "Meera Sodha — Quick coconut dal with tomato sambol (Made in India / The Guardian)"
+  },
+  {
+    "id": "in_mattar_paneer",
+    "title": "Mattar Paneer with Golden Paneer, Peas & Tomato Gravy",
+    "icon": "🧀",
+    "cuisine": "Indian",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 30,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "paneer",
+        "q": 200,
+        "t": "1 block, cubed"
+      },
+      {
+        "i": "frozen_peas",
+        "q": 150,
+        "t": "150g",
+        "swap": "Cook the peas in a small pan of boiling water for 3 min and stir them into one portion only; the paneer and gravy go in as normal."
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, finely chopped"
+      },
+      {
+        "i": "garlic",
+        "q": 3,
+        "t": "3 cloves, grated"
+      },
+      {
+        "i": "ginger_paste",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "cumin_seeds",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "ground_coriander",
+        "q": 4,
+        "t": "2 tsp"
+      },
+      {
+        "i": "turmeric",
+        "q": 1,
+        "t": "½ tsp",
+        "opt": true
+      },
+      {
+        "i": "chilli_powder",
+        "q": 1,
+        "t": "½ tsp"
+      },
+      {
+        "i": "garam_masala",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "chopped_tomatoes",
+        "q": 200,
+        "t": "½ tin"
+      },
+      {
+        "i": "double_cream",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "kasoori_methi",
+        "q": 1,
+        "t": "1 tsp",
+        "opt": true
+      },
+      {
+        "i": "oil",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "rice",
+        "q": 150,
+        "t": "150g"
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the ingredients",
+        "text": "Boil the kettle. Cut the paneer into 2cm cubes and pat dry with kitchen paper. Finely chop the onion and grate the garlic."
+      },
+      {
+        "title": "Fry the paneer",
+        "text": "Heat 1 tbsp oil in a large frying pan over a medium-high heat. Fry the paneer for 4–5 min, turning, until golden on most sides. Tip into a bowl of warm water to keep it soft."
+      },
+      {
+        "title": "Cook the rice",
+        "text": "Meanwhile, rinse the rice until the water runs clear. Tip it into a small pan with 300ml boiling water and a pinch of salt. Cover and cook on the lowest heat for 10 min. Turn off the heat and leave covered for 5 min."
+      },
+      {
+        "title": "Cook the onion base",
+        "text": "Add the remaining 1 tbsp oil and the cumin seeds to the frying pan over a medium heat, then the onion. Cook for 7 min until golden. Stir in the garlic, ginger paste, ground coriander, turmeric (optional) and chilli powder for 1 min."
+      },
+      {
+        "title": "Simmer the gravy",
+        "text": "Add the chopped tomatoes and 150ml water. Simmer for 8 min until thick and the oil starts to pool at the edges."
+      },
+      {
+        "title": "Add the peas and paneer",
+        "text": "Drain the paneer and add it to the pan with the peas. Simmer for 4 min until the peas are tender. Stir in the cream and garam masala, then crumble in the kasoori methi (optional) between your fingers and season."
+      },
+      {
+        "title": "Plate up",
+        "text": "Fluff the rice with a fork and divide between plates. Spoon the mattar paneer alongside."
+      }
+    ],
+    "tags": [
+      "veggie",
+      "quick",
+      "kid-friendly"
+    ],
+    "basedOn": "Swasthi (Indian Healthy Recipes) — Matar paneer (4.9★, 1000+ reviews)"
+  },
+  {
+    "id": "in_saag_paneer",
+    "title": "Saag Paneer with Crispy Paneer, Garlicky Spinach & Naan",
+    "icon": "🥬",
+    "cuisine": "Indian",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 30,
+    "servings": 2,
+    "equipment": [
+      "hob",
+      "blender"
+    ],
+    "ingredients": [
+      {
+        "i": "paneer",
+        "q": 200,
+        "t": "1 block, cubed"
+      },
+      {
+        "i": "spinach",
+        "q": 250,
+        "t": "1 bag (250g)"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, finely chopped"
+      },
+      {
+        "i": "garlic",
+        "q": 4,
+        "t": "4 cloves, grated"
+      },
+      {
+        "i": "ginger_paste",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "green_chillies",
+        "q": 5,
+        "t": "1, chopped",
+        "swap": "Slice the chilli and scatter it over one plate only instead of cooking it into the dish."
+      },
+      {
+        "i": "cumin_seeds",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "cumin",
+        "q": 2,
+        "t": "1 tsp",
+        "opt": true
+      },
+      {
+        "i": "garam_masala",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "turmeric",
+        "q": 1,
+        "t": "½ tsp"
+      },
+      {
+        "i": "double_cream",
+        "q": 45,
+        "t": "3 tbsp"
+      },
+      {
+        "i": "butter",
+        "q": 15,
+        "t": "15g"
+      },
+      {
+        "i": "oil",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "lemon",
+        "q": 0.5,
+        "t": "½, to finish",
+        "opt": true
+      },
+      {
+        "i": "naan",
+        "q": 2,
+        "t": "2"
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the ingredients",
+        "text": "Boil the kettle. Cut the paneer into cubes, finely chop the onion and green chilli, and grate the garlic."
+      },
+      {
+        "title": "Blanch the spinach",
+        "text": "Put the spinach in a large bowl and pour over boiling water to cover. Leave for 1 min until wilted, then drain and rinse under cold water to keep it bright green. Squeeze out the water and blitz in a blender with a splash of water to a coarse purée."
+      },
+      {
+        "title": "Crisp the paneer",
+        "text": "Toss the paneer with the turmeric and a pinch of salt. Heat the oil in a large frying pan over a medium-high heat and fry for 4–5 min until golden and crisp. Lift onto a plate."
+      },
+      {
+        "title": "Cook the base",
+        "text": "Melt the butter in the same pan over a medium heat and sizzle the cumin seeds for 30 sec. Add the onion and cook for 7 min until soft and golden. Stir in the garlic, ginger paste, chilli and ground cumin (optional) for 1 min."
+      },
+      {
+        "title": "Bring it together",
+        "text": "Stir in the spinach purée with a splash of water and simmer for 3–4 min. Add the cream, garam masala and paneer and cook for 2 min until hot through. Season with salt and a squeeze of lemon (optional)."
+      },
+      {
+        "title": "Warm the naan and serve",
+        "text": "Warm the naans in a dry frying pan over a medium heat for 1 min each side. Serve with the saag paneer."
+      }
+    ],
+    "tags": [
+      "veggie",
+      "quick"
+    ],
+    "basedOn": "Olive magazine — Saag paneer / BBC Good Food palak paneer"
+  },
+  {
+    "id": "in_egg_curry",
+    "title": "Dhaba-Style Egg Curry with Golden Eggs & Tomato Masala",
+    "icon": "🥚",
+    "cuisine": "Indian",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 35,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "eggs",
+        "q": 4,
+        "t": "4"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, finely chopped"
+      },
+      {
+        "i": "garlic",
+        "q": 3,
+        "t": "3 cloves, grated"
+      },
+      {
+        "i": "ginger_paste",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "mustard_seeds",
+        "q": 2,
+        "t": "1 tsp",
+        "opt": true
+      },
+      {
+        "i": "turmeric",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "chilli_powder",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "ground_coriander",
+        "q": 4,
+        "t": "2 tsp"
+      },
+      {
+        "i": "garam_masala",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "chopped_tomatoes",
+        "q": 200,
+        "t": "½ tin"
+      },
+      {
+        "i": "coconut_milk",
+        "q": 100,
+        "t": "¼ tin"
+      },
+      {
+        "i": "oil",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "rice",
+        "q": 150,
+        "t": "150g"
+      },
+      {
+        "i": "coriander",
+        "q": 10,
+        "t": "a small handful, to serve",
+        "opt": true,
+        "swap": "Keep the coriander in a little bowl on the table so it only goes on the plates that want it."
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the ingredients",
+        "text": "Boil the kettle. Finely chop the onion and grate the garlic. Rinse the rice until the water runs clear."
+      },
+      {
+        "title": "Boil the eggs",
+        "text": "Lower the eggs into a pan of boiling water and cook for 8 min. Transfer to cold water. When cool enough to handle, peel and score each egg a few times so the sauce can seep in."
+      },
+      {
+        "title": "Cook the rice",
+        "text": "While the eggs boil, tip the rice into a small pan with 300ml boiling water and a pinch of salt. Cover and cook on the lowest heat for 10 min. Turn off the heat and leave covered for 5 min."
+      },
+      {
+        "title": "Fry the eggs",
+        "text": "Heat 1 tbsp oil in a frying pan over a medium heat. Add the eggs with half the turmeric and half the chilli powder. Roll them around for 2 min until golden and blistered, then lift onto a plate."
+      },
+      {
+        "title": "Make the masala",
+        "text": "Add the remaining 1 tbsp oil and the mustard seeds (optional) to the pan. When they pop, add the onion and cook for 8 min until deep golden. Stir in the garlic, ginger paste, ground coriander and remaining turmeric and chilli powder for 1 min. Add the chopped tomatoes and cook for 5 min until thick and the oil separates."
+      },
+      {
+        "title": "Simmer the curry",
+        "text": "Stir in the coconut milk and a splash of water and simmer for 3 min. Return the eggs, spoon over the sauce and stir in the garam masala. Season with salt."
+      },
+      {
+        "title": "Plate up",
+        "text": "Fluff the rice and divide between plates. Halve the eggs and serve with the masala, scattered with coriander (optional)."
+      }
+    ],
+    "tags": [
+      "veggie",
+      "quick"
+    ],
+    "basedOn": "Recipe Tin Eats / Hebbars Kitchen — Egg curry (anda curry)"
+  },
+  {
+    "id": "in_goan_prawn_curry",
+    "title": "Tangy Goan Prawn Curry with Coconut & Lime",
+    "icon": "🦐",
+    "cuisine": "Indian",
+    "category": "everyday",
+    "protein": "prawns",
+    "time": 30,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "prawns",
+        "q": 170,
+        "t": "1 pack (170g), defrosted"
+      },
+      {
+        "i": "coconut_milk",
+        "q": 400,
+        "t": "1 tin"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, finely sliced"
+      },
+      {
+        "i": "garlic",
+        "q": 3,
+        "t": "3 cloves, grated"
+      },
+      {
+        "i": "ginger_paste",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "mustard_seeds",
+        "q": 2,
+        "t": "1 tsp",
+        "opt": true
+      },
+      {
+        "i": "chilli_powder",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "smoked_paprika",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "turmeric",
+        "q": 1,
+        "t": "½ tsp"
+      },
+      {
+        "i": "ground_coriander",
+        "q": 4,
+        "t": "2 tsp"
+      },
+      {
+        "i": "cumin",
+        "q": 2,
+        "t": "1 tsp",
+        "opt": true
+      },
+      {
+        "i": "cherry_tomatoes",
+        "q": 150,
+        "t": "150g, halved"
+      },
+      {
+        "i": "green_chillies",
+        "q": 5,
+        "t": "1, slit",
+        "opt": true,
+        "swap": "Slice the chilli and scatter it over one plate only instead of cooking it into the dish."
+      },
+      {
+        "i": "lime",
+        "q": 1,
+        "t": "1"
+      },
+      {
+        "i": "oil",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "rice",
+        "q": 150,
+        "t": "150g"
+      },
+      {
+        "i": "coriander",
+        "q": 10,
+        "t": "a small handful, to serve",
+        "opt": true,
+        "swap": "Keep the coriander in a little bowl on the table so it only goes on the plates that want it."
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the ingredients",
+        "text": "Boil the kettle. Finely slice the onion, grate the garlic, slit the green chilli and halve the cherry tomatoes. Pat the defrosted prawns dry and toss with a pinch each of turmeric and salt. Mix the chilli powder, smoked paprika, ground coriander, cumin (optional) and remaining turmeric with 2 tbsp water to make a paste."
+      },
+      {
+        "title": "Cook the rice",
+        "text": "Rinse the rice until the water runs clear. Tip it into a small pan with 300ml boiling water and a pinch of salt. Cover and cook on the lowest heat for 10 min. Turn off the heat and leave covered off the heat for 5 min, then fluff with a fork."
+      },
+      {
+        "title": "Cook the onion",
+        "text": "While the rice cooks, heat the oil in a wide pan over a medium heat. Add the mustard seeds (optional) and, once they pop, the onion. Cook for 7 min until soft and golden."
+      },
+      {
+        "title": "Fry the spices",
+        "text": "Stir in the garlic, ginger paste and green chilli (optional) for 1 min. Add the spice paste and fry for 1 min until it darkens and smells rich."
+      },
+      {
+        "title": "Simmer the sauce",
+        "text": "Add the cherry tomatoes and cook for 2 min, then pour in the coconut milk. Simmer for 6–8 min until slightly thickened and a deep orange-red."
+      },
+      {
+        "title": "Cook the prawns",
+        "text": "Stir in the prawns and simmer for 2–3 min until pink and curled; don't overcook or they go rubbery. Squeeze in the juice of half the lime and season."
+      },
+      {
+        "title": "Plate up",
+        "text": "Divide the rice between bowls and ladle over the curry. Serve with the rest of the lime in wedges and coriander (optional)."
+      }
+    ],
+    "tags": [
+      "quick",
+      "spicy"
+    ],
+    "basedOn": "Rick Stein — Goan prawn curry (India: Rick Stein's cookbook) / RecipeTin Eats Goan fish curry"
+  },
+  {
+    "id": "in_keralan_fish_curry",
+    "title": "Keralan Coconut Fish Curry with Mustard Seeds & Lime",
+    "icon": "🐟",
+    "cuisine": "Indian",
+    "category": "everyday",
+    "protein": "fish",
+    "time": 30,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "cod_fillets",
+        "q": 280,
+        "t": "1 pack (280g), cut into large chunks"
+      },
+      {
+        "i": "coconut_milk",
+        "q": 400,
+        "t": "1 tin"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, thinly sliced"
+      },
+      {
+        "i": "garlic",
+        "q": 3,
+        "t": "3 cloves, sliced"
+      },
+      {
+        "i": "ginger_paste",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "green_chillies",
+        "q": 10,
+        "t": "2, slit",
+        "swap": "Slice the chilli and scatter it over one plate only instead of cooking it into the dish."
+      },
+      {
+        "i": "mustard_seeds",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "turmeric",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "chilli_powder",
+        "q": 1,
+        "t": "½ tsp"
+      },
+      {
+        "i": "ground_coriander",
+        "q": 2,
+        "t": "1 tsp",
+        "opt": true
+      },
+      {
+        "i": "cherry_tomatoes",
+        "q": 120,
+        "t": "120g, halved"
+      },
+      {
+        "i": "lime",
+        "q": 1,
+        "t": "1"
+      },
+      {
+        "i": "oil",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "rice",
+        "q": 150,
+        "t": "150g"
+      },
+      {
+        "i": "coriander",
+        "q": 10,
+        "t": "a small handful, to serve",
+        "opt": true,
+        "swap": "Keep the coriander in a little bowl on the table so it only goes on the plates that want it."
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the ingredients",
+        "text": "Boil the kettle. Thinly slice the onion, slice the garlic, slit the green chillies and halve the cherry tomatoes. Cut the fish into large chunks and toss with ½ tsp turmeric, the juice of half the lime and a pinch of salt."
+      },
+      {
+        "title": "Cook the rice",
+        "text": "Rinse the rice until the water runs clear. Tip it into a small pan with 300ml boiling water and a pinch of salt. Cover and cook on the lowest heat for 10 min. Turn off the heat and leave covered off the heat for 5 min, then fluff with a fork."
+      },
+      {
+        "title": "Fry the aromatics",
+        "text": "While the rice cooks, heat the oil in a wide shallow pan over a medium heat. Add the mustard seeds and, once they start to pop, stir in the onion, garlic and chillies. Cook for 6–8 min until soft and lightly golden."
+      },
+      {
+        "title": "Make the sauce",
+        "text": "Add the ginger paste, remaining ½ tsp turmeric, chilli powder and ground coriander (optional) and stir for 1 min. Add the cherry tomatoes and coconut milk and simmer for 5 min until sunny yellow and slightly thickened."
+      },
+      {
+        "title": "Poach the fish",
+        "text": "Nestle the fish into the sauce and spoon some over the top. Simmer very gently for 5–6 min, shaking the pan rather than stirring, until the fish is opaque and flakes easily."
+      },
+      {
+        "title": "Plate up",
+        "text": "Season with salt and a squeeze more lime. Serve in shallow bowls over the rice with coriander (optional)."
+      }
+    ],
+    "tags": [
+      "quick",
+      "light"
+    ],
+    "basedOn": "BBC Good Food / Jamie Oliver — Keralan fish curry (coconut, mustard seed and curry-leaf style)"
+  },
+  {
+    "id": "in_aloo_gobi",
+    "title": "Roasted Aloo Gobi with Chickpeas, Cumin & Lemony Yogurt",
+    "icon": "🥔",
+    "cuisine": "Indian",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 40,
+    "servings": 2,
+    "equipment": [
+      "oven",
+      "hob"
+    ],
+    "airFryer": "Air-fry the spiced potatoes and cauliflower at 200°C for 18–20 min, shaking every 5 min, until golden and tender.",
+    "ingredients": [
+      {
+        "i": "cauliflower",
+        "q": 0.5,
+        "t": "½, cut into florets"
+      },
+      {
+        "i": "potatoes",
+        "q": 300,
+        "t": "300g, cut into 2cm chunks"
+      },
+      {
+        "i": "chickpeas",
+        "q": 400,
+        "t": "1 tin, drained"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, sliced"
+      },
+      {
+        "i": "garlic",
+        "q": 3,
+        "t": "3 cloves, grated"
+      },
+      {
+        "i": "ginger_paste",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "cumin_seeds",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "turmeric",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "curry_powder",
+        "q": 6,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "garam_masala",
+        "q": 2,
+        "t": "1 tsp",
+        "opt": true
+      },
+      {
+        "i": "cherry_tomatoes",
+        "q": 120,
+        "t": "120g, halved"
+      },
+      {
+        "i": "oil",
+        "q": 45,
+        "t": "3 tbsp"
+      },
+      {
+        "i": "greek_yogurt",
+        "q": 100,
+        "t": "100g"
+      },
+      {
+        "i": "lemon",
+        "q": 0.5,
+        "t": "½"
+      },
+      {
+        "i": "naan",
+        "q": 2,
+        "t": "2"
+      },
+      {
+        "i": "coriander",
+        "q": 10,
+        "t": "a small handful, to serve",
+        "opt": true,
+        "swap": "Keep the coriander in a little bowl on the table so it only goes on the plates that want it."
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the ingredients",
+        "text": "Heat the oven to 220°C (200°C fan). Cut the cauliflower into florets and the potatoes into 2cm chunks, and drain the chickpeas. Slice the onion, grate the garlic and halve the cherry tomatoes."
+      },
+      {
+        "title": "Roast the veg",
+        "text": "Toss the cauliflower, potatoes and chickpeas on a large roasting tray with 2 tbsp oil, the turmeric, half the curry powder and 1 tsp salt. Roast for 25 min, turning halfway, until the potatoes are tender and the cauliflower is charred at the edges."
+      },
+      {
+        "title": "Make the masala",
+        "text": "With 15 min of roasting left, heat the remaining 1 tbsp oil in a large frying pan over a medium heat. Sizzle the cumin seeds for 30 sec, add the onion and cook for 8 min until golden. Stir in the garlic, ginger paste and remaining curry powder for 1 min. Add the tomatoes and a splash of water and cook for 4 min until they collapse into a thick sauce."
+      },
+      {
+        "title": "Make the lemony yogurt",
+        "text": "Mix the yogurt with a squeeze of lemon and a pinch of salt. Set aside until serving."
+      },
+      {
+        "title": "Toss together",
+        "text": "Tip the roasted veg and chickpeas into the masala pan with the garam masala (optional). Toss over the heat for 2 min until coated, then add a squeeze of lemon and season. Meanwhile, warm the naans in the oven for 2 min."
+      },
+      {
+        "title": "Plate up",
+        "text": "Divide the aloo gobi between plates. Serve with the warm naans, lemony yogurt and coriander (optional)."
+      }
+    ],
+    "tags": [
+      "veggie",
+      "traybake"
+    ],
+    "basedOn": "BBC Good Food — Aloo gobi (4.5★) with a roasted twist from Meera Sodha"
+  },
+  {
+    "id": "in_tandoori_chicken_traybake",
+    "title": "Tandoori Chicken Traybake with Bombay Potatoes & Kachumber",
+    "icon": "🍗",
+    "cuisine": "Indian",
+    "category": "everyday",
+    "protein": "chicken",
+    "time": 50,
+    "servings": 2,
+    "equipment": [
+      "oven"
+    ],
+    "airFryer": "Air-fry the potatoes at 200°C for 10 min, then add the chicken and cook for a further 14–16 min, shaking halfway, until charred and cooked through.",
+    "ingredients": [
+      {
+        "i": "chicken_thighs",
+        "q": 350,
+        "t": "350g thigh fillets"
+      },
+      {
+        "i": "greek_yogurt",
+        "q": 120,
+        "t": "120g"
+      },
+      {
+        "i": "garam_masala",
+        "q": 4,
+        "t": "2 tsp"
+      },
+      {
+        "i": "smoked_paprika",
+        "q": 4,
+        "t": "2 tsp"
+      },
+      {
+        "i": "chilli_powder",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "turmeric",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "ginger_paste",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "garlic",
+        "q": 3,
+        "t": "3 cloves, grated"
+      },
+      {
+        "i": "lemon",
+        "q": 1,
+        "t": "1"
+      },
+      {
+        "i": "potatoes",
+        "q": 450,
+        "t": "450g, cut into 2cm chunks"
+      },
+      {
+        "i": "mustard_seeds",
+        "q": 2,
+        "t": "1 tsp",
+        "opt": true
+      },
+      {
+        "i": "cumin_seeds",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "red_onion",
+        "q": 1,
+        "t": "1 (half in wedges, half finely chopped)"
+      },
+      {
+        "i": "cherry_tomatoes",
+        "q": 100,
+        "t": "100g, chopped"
+      },
+      {
+        "i": "cucumber",
+        "q": 0.5,
+        "t": "½, diced"
+      },
+      {
+        "i": "oil",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "coriander",
+        "q": 10,
+        "t": "a small handful",
+        "opt": true,
+        "swap": "Leave the coriander out of the salad and keep it in a little bowl on the table so it only goes on the plates that want it."
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the ingredients",
+        "text": "Heat the oven to 220°C (200°C fan). Cut the potatoes into 2cm chunks. Cut half the red onion into wedges and finely chop the rest. Grate the garlic, chop the cherry tomatoes and coriander, and dice the cucumber."
+      },
+      {
+        "title": "Marinate the chicken",
+        "text": "Mix 80g yogurt with the garam masala, paprika, chilli powder and ½ tsp turmeric. Stir in the ginger paste, garlic, juice of half the lemon and 1 tsp salt. Slash each chicken thigh a couple of times and coat well in the marinade."
+      },
+      {
+        "title": "Start the Bombay potatoes",
+        "text": "Toss the potatoes on a large roasting tray with the oil, cumin seeds, mustard seeds (optional), remaining ½ tsp turmeric and a pinch of salt. Roast for 15 min until they start to colour."
+      },
+      {
+        "title": "Roast the chicken",
+        "text": "Push the potatoes to the edges, add the onion wedges and lay the chicken in the middle. Roast for 25 min until the chicken is charred at the edges and the juices run clear, and the potatoes are crisp."
+      },
+      {
+        "title": "Make the kachumber",
+        "text": "While it roasts, make the kachumber, a fresh chopped salad. Mix the tomatoes, cucumber and chopped red onion with a squeeze of lemon, a pinch of salt and the coriander (optional). Loosen the remaining 40g yogurt with a splash of water and a pinch of salt."
+      },
+      {
+        "title": "Plate up",
+        "text": "Pile the chicken and Bombay potatoes onto plates and drizzle with the yogurt. Serve with the kachumber and the rest of the lemon in wedges."
+      }
+    ],
+    "tags": [
+      "traybake",
+      "kid-friendly"
+    ],
+    "basedOn": "Jamie Oliver — Tandoori chicken / BBC Good Food tandoori chicken traybake with Bombay potatoes"
+  },
+  {
+    "id": "in_chicken_kathi_rolls",
+    "title": "Chicken Kathi Rolls with Egg-Fried Wraps & Pickled Onion",
+    "icon": "🌯",
+    "cuisine": "Indian",
+    "category": "everyday",
+    "protein": "chicken",
+    "time": 30,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "chicken_breast",
+        "q": 300,
+        "t": "2 breasts (300g), cut into strips"
+      },
+      {
+        "i": "tikka_paste",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "greek_yogurt",
+        "q": 100,
+        "t": "100g"
+      },
+      {
+        "i": "eggs",
+        "q": 2,
+        "t": "2"
+      },
+      {
+        "i": "wraps",
+        "q": 4,
+        "t": "4"
+      },
+      {
+        "i": "red_onion",
+        "q": 1,
+        "t": "1, thinly sliced"
+      },
+      {
+        "i": "peppers",
+        "q": 1,
+        "t": "1, sliced"
+      },
+      {
+        "i": "lemon",
+        "q": 1,
+        "t": "1"
+      },
+      {
+        "i": "chilli_powder",
+        "q": 1,
+        "t": "½ tsp",
+        "opt": true
+      },
+      {
+        "i": "cucumber",
+        "q": 0.25,
+        "t": "¼, cut into sticks"
+      },
+      {
+        "i": "green_chillies",
+        "q": 5,
+        "t": "1, thinly sliced, to serve",
+        "opt": true,
+        "swap": "Add the chilli to one person's rolls only."
+      },
+      {
+        "i": "coriander",
+        "q": 10,
+        "t": "a small handful",
+        "opt": true,
+        "swap": "Leave the coriander out of the yogurt and keep it in a little bowl on the table so it only goes on the plates that want it."
+      },
+      {
+        "i": "oil",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the ingredients",
+        "text": "Cut the chicken into strips and mix with the tikka paste, 2 tbsp yogurt and a pinch of salt. Thinly slice the red onion, pepper and green chilli, cut the cucumber into sticks and chop the coriander. Beat the eggs with a pinch of salt."
+      },
+      {
+        "title": "Make the toppings",
+        "text": "Toss the red onion with the juice of half the lemon, the chilli powder (optional) and a pinch of salt, and leave to soften. Stir the remaining yogurt with a squeeze of lemon, a pinch of salt and most of the coriander (optional)."
+      },
+      {
+        "title": "Cook the chicken",
+        "text": "Heat 1 tbsp oil in a large frying pan over a high heat. Fry the chicken and pepper for 6–7 min until the chicken is charred at the edges and cooked through. Tip into a bowl and wipe out the pan."
+      },
+      {
+        "title": "Make the egg-fried wraps",
+        "text": "Heat a little of the remaining oil in the pan over a medium heat. Pour in a quarter of the egg, swirl, and immediately press a wrap on top. Cook for 1 min until the egg sets and sticks, then flip for 30 sec. Repeat with the rest."
+      },
+      {
+        "title": "Roll and serve",
+        "text": "Lay each wrap egg-side up and add the chicken and pepper, pickled onion, cucumber, chilli (optional) and a spoonful of yogurt. Roll tightly and wrap the bottom in foil or baking paper like a street-food roll. Serve with the rest of the lemon in wedges."
+      }
+    ],
+    "tags": [
+      "quick",
+      "kid-friendly"
+    ],
+    "basedOn": "Kolkata kathi roll (egg-paratha roll) — Hebbars Kitchen / Angus & Oink chicken kathi roll"
+  },
+  {
+    "id": "in_lentil_spinach_soup",
+    "title": "Spiced Red Lentil & Spinach Soup with Garlic-Butter Naan",
+    "icon": "🥣",
+    "cuisine": "Indian",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 35,
+    "servings": 2,
+    "equipment": [
+      "hob",
+      "blender"
+    ],
+    "ingredients": [
+      {
+        "i": "red_lentils",
+        "q": 120,
+        "t": "120g"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, chopped"
+      },
+      {
+        "i": "carrots",
+        "q": 150,
+        "t": "2 medium, chopped"
+      },
+      {
+        "i": "garlic",
+        "q": 4,
+        "t": "4 cloves (2 grated, 2 crushed)"
+      },
+      {
+        "i": "ginger_paste",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "cumin",
+        "q": 4,
+        "t": "2 tsp"
+      },
+      {
+        "i": "curry_powder",
+        "q": 4,
+        "t": "2 tsp"
+      },
+      {
+        "i": "turmeric",
+        "q": 1,
+        "t": "½ tsp",
+        "opt": true
+      },
+      {
+        "i": "chopped_tomatoes",
+        "q": 200,
+        "t": "½ tin"
+      },
+      {
+        "i": "stock_cubes",
+        "q": 1,
+        "t": "1 veg cube"
+      },
+      {
+        "i": "spinach",
+        "q": 100,
+        "t": "100g"
+      },
+      {
+        "i": "lemon",
+        "q": 0.5,
+        "t": "½, to finish",
+        "opt": true
+      },
+      {
+        "i": "greek_yogurt",
+        "q": 40,
+        "t": "2 tbsp, to serve",
+        "opt": true
+      },
+      {
+        "i": "oil",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "butter",
+        "q": 20,
+        "t": "20g"
+      },
+      {
+        "i": "naan",
+        "q": 2,
+        "t": "2"
+      },
+      {
+        "i": "chilli_flakes",
+        "q": 1,
+        "t": "a pinch, to serve",
+        "opt": true,
+        "swap": "Sprinkle chilli flakes over one bowl only."
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the ingredients",
+        "text": "Boil the kettle and make up 900ml stock with the cube. Chop the onion and carrots and rinse the lentils. Grate 2 garlic cloves for the soup and crush the other 2 for the naan."
+      },
+      {
+        "title": "Soften the veg",
+        "text": "Heat the oil in a large saucepan over a medium heat. Cook the onion and carrots for 6–7 min until starting to soften. Stir in the grated garlic, ginger paste, cumin, curry powder and turmeric (optional) for 1 min until fragrant."
+      },
+      {
+        "title": "Simmer the soup",
+        "text": "Add the lentils, chopped tomatoes and stock. Bring to the boil, then simmer for 18–20 min until the lentils have collapsed and the carrots are completely tender."
+      },
+      {
+        "title": "Make the garlic naan",
+        "text": "While the soup simmers, melt the butter with the crushed garlic in a small pan over a low heat. Brush it over the naans, then warm them in a dry frying pan over a medium heat for 1–2 min each side until golden."
+      },
+      {
+        "title": "Blend and add spinach",
+        "text": "Blitz the soup with a stick blender until mostly smooth but with a little texture. Stir in the spinach for 1–2 min until wilted. Season with salt and a squeeze of lemon (optional), adding a splash of water if it's too thick."
+      },
+      {
+        "title": "Plate up",
+        "text": "Ladle the soup into bowls and swirl in the yogurt (optional). Sprinkle with chilli flakes (optional) and serve with the garlic naan torn into strips."
+      }
+    ],
+    "tags": [
+      "veggie",
+      "light",
+      "freezable",
+      "one-pot"
+    ],
+    "basedOn": "BBC Good Food — Spiced carrot & lentil soup (5★, 1000+ ratings) / Jamie Oliver lentil, tomato & spinach soup"
+  },
+  {
+    "id": "in_chicken_mushroom_balti",
+    "title": "Chicken & Mushroom Balti with Peppers & Naan",
+    "icon": "🍲",
+    "cuisine": "Indian",
+    "category": "everyday",
+    "protein": "chicken",
+    "time": 30,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "chicken_breast",
+        "q": 300,
+        "t": "2 breasts (300g), cut into chunks"
+      },
+      {
+        "i": "mushrooms",
+        "q": 125,
+        "t": "½ pack, quartered",
+        "swap": "Fry the mushrooms in a separate small pan and add them to one plate only."
+      },
+      {
+        "i": "peppers",
+        "q": 1,
+        "t": "1, cut into chunks"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, chopped"
+      },
+      {
+        "i": "garlic",
+        "q": 3,
+        "t": "3 cloves, grated"
+      },
+      {
+        "i": "ginger_paste",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "curry_powder",
+        "q": 8,
+        "t": "4 tsp"
+      },
+      {
+        "i": "cumin_seeds",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "garam_masala",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "chopped_tomatoes",
+        "q": 400,
+        "t": "1 tin"
+      },
+      {
+        "i": "tomato_puree",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "spinach",
+        "q": 50,
+        "t": "1 big handful"
+      },
+      {
+        "i": "oil",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "naan",
+        "q": 2,
+        "t": "2"
+      },
+      {
+        "i": "coriander",
+        "q": 10,
+        "t": "a small handful, to serve",
+        "opt": true,
+        "swap": "Keep the coriander in a little bowl on the table so it only goes on the plates that want it."
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the ingredients",
+        "text": "Cut the chicken, pepper and onion into similar-sized chunks. Quarter the mushrooms and grate the garlic. Toss the chicken with 1 tsp curry powder and a pinch of salt."
+      },
+      {
+        "title": "Fry the mushrooms",
+        "text": "Heat 1 tbsp oil in a small frying pan over a high heat. Fry the mushrooms for 5 min until golden and any liquid has evaporated. Season and set aside."
+      },
+      {
+        "title": "Brown the chicken",
+        "text": "Heat the remaining 1 tbsp oil in a wok or large frying pan over a high heat. Add the cumin seeds, then the chicken, and fry for 4 min until browned. Add the onion and pepper and stir-fry for 3 min until starting to soften and char."
+      },
+      {
+        "title": "Make the balti sauce",
+        "text": "Stir in the garlic, ginger paste and remaining 3 tsp curry powder for 1 min. Add the chopped tomatoes and tomato purée. Bubble over a medium-high heat for 8–10 min, stirring, until the sauce clings and the chicken is cooked through."
+      },
+      {
+        "title": "Add the spinach",
+        "text": "Stir in the spinach and garam masala until wilted, then season. Spoon the fried mushrooms over the top."
+      },
+      {
+        "title": "Warm the naan and serve",
+        "text": "Warm the naans in a dry frying pan over a medium heat for 1 min each side. Serve the balti scattered with coriander (optional), with the naan alongside."
+      }
+    ],
+    "tags": [
+      "quick",
+      "one-pot"
+    ],
+    "basedOn": "Birmingham-style chicken balti — Hairy Bikers / BBC Good Food chicken balti"
+  },
+  {
+    "id": "in_kadai_paneer_mushroom",
+    "title": "Kadai Paneer with Mushrooms, Peppers & Roasted Spices",
+    "icon": "🫑",
+    "cuisine": "Indian",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 30,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "paneer",
+        "q": 200,
+        "t": "1 block, cubed"
+      },
+      {
+        "i": "mushrooms",
+        "q": 125,
+        "t": "½ pack, halved",
+        "swap": "Fry the mushrooms in a separate small pan and add them to one plate only."
+      },
+      {
+        "i": "peppers",
+        "q": 2,
+        "t": "2, cut into squares"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1 (half chopped, half in petals)"
+      },
+      {
+        "i": "garlic",
+        "q": 3,
+        "t": "3 cloves, grated"
+      },
+      {
+        "i": "ginger_paste",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "cumin_seeds",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "ground_coriander",
+        "q": 4,
+        "t": "2 tsp"
+      },
+      {
+        "i": "chilli_flakes",
+        "q": 1,
+        "t": "½ tsp",
+        "opt": true,
+        "swap": "Leave the chilli flakes out and sprinkle them over one plate at the end."
+      },
+      {
+        "i": "garam_masala",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "kasoori_methi",
+        "q": 1,
+        "t": "1 tsp",
+        "opt": true
+      },
+      {
+        "i": "chopped_tomatoes",
+        "q": 200,
+        "t": "½ tin"
+      },
+      {
+        "i": "oil",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "rice",
+        "q": 150,
+        "t": "150g"
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the ingredients",
+        "text": "Boil the kettle. Cube the paneer, halve the mushrooms and cut the peppers into squares. Finely chop half the onion and cut the other half into petals. Grate the garlic."
+      },
+      {
+        "title": "Toast the spice mix",
+        "text": "Toast the cumin seeds and chilli flakes (optional) in a dry wok over a medium heat for 1 min until fragrant. Tip into a bowl and roughly crush with the ground coriander using the end of a rolling pin. This is your kadai masala."
+      },
+      {
+        "title": "Cook the rice",
+        "text": "Rinse the rice until the water runs clear. Tip it into a small pan with 300ml boiling water and a pinch of salt. Cover and cook on the lowest heat for 10 min. Turn off the heat and leave covered off the heat for 5 min, then fluff with a fork."
+      },
+      {
+        "title": "Sear the paneer and veg",
+        "text": "While the rice cooks, heat 1 tbsp oil in the wok over a high heat. Fry the paneer for 3–4 min until golden, then lift out. Add the peppers and onion petals and stir-fry for 3 min until charred at the edges, then lift out."
+      },
+      {
+        "title": "Fry the mushrooms",
+        "text": "Heat a drop of oil in a small frying pan over a high heat. Fry the mushrooms for 5 min until golden, then season and keep warm."
+      },
+      {
+        "title": "Make the gravy",
+        "text": "Add the remaining oil and chopped onion to the wok over a medium heat and cook for 5 min until soft. Stir in the garlic, ginger paste and half the kadai masala for 1 min. Add the chopped tomatoes and a splash of water and cook for 5 min until thick."
+      },
+      {
+        "title": "Toss and serve",
+        "text": "Return the paneer and veg with the rest of the kadai masala, the garam masala and the kasoori methi (optional), and toss for 2 min. Serve over the rice with the mushrooms spooned on top."
+      }
+    ],
+    "tags": [
+      "veggie",
+      "quick"
+    ],
+    "basedOn": "Hebbars Kitchen / Indian Healthy Recipes — Kadai paneer (4.9★)"
+  },
+  {
+    "id": "in_masala_salmon_bombay_potatoes",
+    "title": "Masala-Crusted Salmon with Bombay Potatoes & Spinach",
+    "icon": "🐟",
+    "cuisine": "Indian",
+    "category": "everyday",
+    "protein": "fish",
+    "time": 30,
+    "servings": 2,
+    "equipment": [
+      "hob",
+      "microwave"
+    ],
+    "airFryer": "Air-fry the coated salmon at 190°C for 8–9 min until it flakes; crisp the parboiled potatoes at 200°C for 12 min, shaking halfway.",
+    "ingredients": [
+      {
+        "i": "salmon",
+        "q": 2,
+        "t": "2 fillets"
+      },
+      {
+        "i": "tikka_paste",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "greek_yogurt",
+        "q": 70,
+        "t": "4 tbsp"
+      },
+      {
+        "i": "potatoes",
+        "q": 400,
+        "t": "400g, cut into 2cm cubes"
+      },
+      {
+        "i": "mustard_seeds",
+        "q": 2,
+        "t": "1 tsp",
+        "opt": true
+      },
+      {
+        "i": "cumin_seeds",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "turmeric",
+        "q": 1,
+        "t": "½ tsp"
+      },
+      {
+        "i": "chilli_powder",
+        "q": 1,
+        "t": "½ tsp"
+      },
+      {
+        "i": "garlic",
+        "q": 2,
+        "t": "2 cloves, sliced"
+      },
+      {
+        "i": "cherry_tomatoes",
+        "q": 100,
+        "t": "100g, halved"
+      },
+      {
+        "i": "spinach",
+        "q": 100,
+        "t": "100g"
+      },
+      {
+        "i": "lemon",
+        "q": 1,
+        "t": "1"
+      },
+      {
+        "i": "oil",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "coriander",
+        "q": 10,
+        "t": "a small handful, to serve",
+        "opt": true,
+        "swap": "Keep the coriander in a little bowl on the table so it only goes on the plates that want it."
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the ingredients",
+        "text": "Cut the potatoes into 2cm cubes, slice the garlic and halve the cherry tomatoes. Mix the tikka paste with 1 tbsp yogurt and spread over the top of the salmon."
+      },
+      {
+        "title": "Par-cook the potatoes",
+        "text": "Put the potatoes in a microwaveable bowl with a splash of water. Cover and microwave on high for 6–7 min until just tender, then drain well."
+      },
+      {
+        "title": "Crisp the Bombay potatoes",
+        "text": "Heat 1½ tbsp oil in a large frying pan over a medium-high heat. Add the cumin seeds and mustard seeds (optional) and, when they pop, the potatoes, turmeric, chilli powder and a pinch of salt. Fry for 10 min, turning, until golden and crisp at the edges."
+      },
+      {
+        "title": "Cook the salmon",
+        "text": "Meanwhile, heat the remaining ½ tbsp oil in a second frying pan over a medium heat. Cook the salmon skin-side down for 4 min until crisp, then turn and cook for 3–4 min more. It's ready when the crust is charred and the salmon flakes easily."
+      },
+      {
+        "title": "Add the spinach",
+        "text": "Push the potatoes to one side, add the garlic and tomatoes and cook for 2 min until softening. Stir in the spinach until just wilted, then season with salt and a squeeze of lemon."
+      },
+      {
+        "title": "Plate up",
+        "text": "Loosen the rest of the yogurt with a little lemon juice and a pinch of salt. Serve the salmon on the potatoes and spinach with the yogurt, the rest of the lemon in wedges and coriander (optional)."
+      }
+    ],
+    "tags": [
+      "quick"
+    ],
+    "basedOn": "BBC Good Food — Tandoori salmon / Bombay potatoes (Bombay aloo, Tesco Real Food)"
+  },
+  {
+    "id": "in_sweet_potato_chickpea_curry",
+    "title": "Sweet Potato, Chickpea & Spinach Coconut Curry",
+    "icon": "🍠",
+    "cuisine": "Indian",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 35,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "sweet_potato",
+        "q": 350,
+        "t": "1 large (350g), cut into 2cm chunks"
+      },
+      {
+        "i": "chickpeas",
+        "q": 400,
+        "t": "1 tin, drained"
+      },
+      {
+        "i": "coconut_milk",
+        "q": 200,
+        "t": "½ tin"
+      },
+      {
+        "i": "chopped_tomatoes",
+        "q": 200,
+        "t": "½ tin"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, chopped"
+      },
+      {
+        "i": "garlic",
+        "q": 3,
+        "t": "3 cloves, grated"
+      },
+      {
+        "i": "ginger_paste",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "curry_powder",
+        "q": 8,
+        "t": "4 tsp"
+      },
+      {
+        "i": "cumin_seeds",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "garam_masala",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "spinach",
+        "q": 100,
+        "t": "100g"
+      },
+      {
+        "i": "lime",
+        "q": 1,
+        "t": "1"
+      },
+      {
+        "i": "oil",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "rice",
+        "q": 150,
+        "t": "150g"
+      },
+      {
+        "i": "coriander",
+        "q": 10,
+        "t": "a small handful, to serve",
+        "opt": true,
+        "swap": "Keep the coriander in a little bowl on the table so it only goes on the plates that want it."
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the ingredients",
+        "text": "Boil the kettle. Peel the sweet potato and cut into 2cm chunks. Chop the onion, grate the garlic and drain the chickpeas."
+      },
+      {
+        "title": "Fry the base",
+        "text": "Heat the oil in a large saucepan over a medium heat. Sizzle the cumin seeds for 30 sec, then add the onion and cook for 6 min until soft. Stir in the garlic, ginger paste and curry powder and cook for 1 min until fragrant."
+      },
+      {
+        "title": "Simmer the curry",
+        "text": "Add the sweet potato, chickpeas, chopped tomatoes, coconut milk, 100ml water and a good pinch of salt. Bring to a simmer, cover and cook for 15 min until the sweet potato is tender when pierced with a knife."
+      },
+      {
+        "title": "Cook the rice",
+        "text": "While the curry simmers, rinse the rice until the water runs clear. Tip it into a small pan with 300ml boiling water and a pinch of salt. Cover and cook on the lowest heat for 10 min. Turn off the heat and leave covered off the heat for 5 min, then fluff with a fork."
+      },
+      {
+        "title": "Finish the curry",
+        "text": "Stir in the spinach and garam masala and cook for 2 min until wilted and the sauce is thick and creamy. Squeeze in the juice of half the lime and season."
+      },
+      {
+        "title": "Plate up",
+        "text": "Divide the rice between bowls and spoon over the curry. Serve with the rest of the lime in wedges and coriander (optional)."
+      }
+    ],
+    "tags": [
+      "veggie",
+      "one-pot",
+      "freezable",
+      "kid-friendly"
+    ],
+    "basedOn": "BBC Good Food — Sweet potato & chickpea curry (4.7★, hundreds of ratings)"
+  },
+  {
+    "id": "in_chicken_dhansak",
+    "title": "Sweet & Sour Chicken Dhansak with Lentils & Pilau Rice",
+    "icon": "🍛",
+    "cuisine": "Indian",
+    "category": "everyday",
+    "protein": "chicken",
+    "time": 45,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "chicken_thighs",
+        "q": 300,
+        "t": "300g thigh fillets, cut into chunks"
+      },
+      {
+        "i": "red_lentils",
+        "q": 80,
+        "t": "80g"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, chopped"
+      },
+      {
+        "i": "garlic",
+        "q": 3,
+        "t": "3 cloves, grated"
+      },
+      {
+        "i": "ginger_paste",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "curry_powder",
+        "q": 8,
+        "t": "4 tsp"
+      },
+      {
+        "i": "chilli_powder",
+        "q": 1,
+        "t": "½ tsp"
+      },
+      {
+        "i": "cumin_seeds",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "garam_masala",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "chopped_tomatoes",
+        "q": 200,
+        "t": "½ tin"
+      },
+      {
+        "i": "mango_chutney",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "lemon",
+        "q": 0.5,
+        "t": "½"
+      },
+      {
+        "i": "stock_cubes",
+        "q": 1,
+        "t": "1 chicken cube"
+      },
+      {
+        "i": "oil",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "rice",
+        "q": 150,
+        "t": "150g"
+      },
+      {
+        "i": "turmeric",
+        "q": 1,
+        "t": "a pinch, for the rice",
+        "opt": true
+      },
+      {
+        "i": "coriander",
+        "q": 10,
+        "t": "a small handful, to serve",
+        "opt": true,
+        "swap": "Keep the coriander in a little bowl on the table so it only goes on the plates that want it."
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the ingredients",
+        "text": "Boil the kettle and make up 500ml stock with the cube. Rinse the lentils and the rice separately. Chop the onion, grate the garlic and cut the chicken into chunks."
+      },
+      {
+        "title": "Start the curry",
+        "text": "Heat the oil in a saucepan over a medium heat and fry the onion for 7 min until golden. Add the chicken and cook for 3 min until sealed. Stir in the garlic, ginger paste, curry powder and chilli powder for 1 min."
+      },
+      {
+        "title": "Simmer with lentils",
+        "text": "Add the lentils, chopped tomatoes and 400ml of the stock. Bring to the boil, then simmer gently, partly covered, for 25 min, stirring often. It's ready when the lentils have melted into a thick sauce and the chicken is tender; add more stock if it gets too thick."
+      },
+      {
+        "title": "Make the pilau",
+        "text": "With 15 min to go, toast the cumin seeds in a small pan over a medium heat for 30 sec. Add the rice, turmeric (optional), 300ml boiling water and a pinch of salt. Cover and cook on the lowest heat for 10 min, then rest off the heat."
+      },
+      {
+        "title": "Balance the flavours",
+        "text": "Stir the mango chutney, garam masala and lemon juice into the dhansak. It should taste hot, sweet and sour all at once, so add more chutney or lemon to taste. Season with salt."
+      },
+      {
+        "title": "Plate up",
+        "text": "Fluff the pilau with a fork and divide between plates. Spoon the dhansak alongside and scatter with coriander (optional)."
+      }
+    ],
+    "tags": [
+      "comfort",
+      "freezable"
+    ],
+    "basedOn": "British curry-house chicken dhansak — Hairy Bikers / BBC Good Food chicken dhansak"
+  },
+  {
+    "id": "in_prawn_pea_pilau",
+    "title": "One-Pot Prawn & Pea Pilau with Cucumber Raita",
+    "icon": "🦐",
+    "cuisine": "Indian",
+    "category": "everyday",
+    "protein": "prawns",
+    "time": 30,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "prawns",
+        "q": 170,
+        "t": "1 pack (170g), defrosted"
+      },
+      {
+        "i": "rice",
+        "q": 150,
+        "t": "150g"
+      },
+      {
+        "i": "frozen_peas",
+        "q": 100,
+        "t": "100g",
+        "swap": "Cook the peas in a small pan of boiling water for 3 min and stir them into one portion only."
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, thinly sliced"
+      },
+      {
+        "i": "garlic",
+        "q": 2,
+        "t": "2 cloves, grated"
+      },
+      {
+        "i": "ginger_paste",
+        "q": 5,
+        "t": "1 tsp"
+      },
+      {
+        "i": "cumin_seeds",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "garam_masala",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "turmeric",
+        "q": 1,
+        "t": "½ tsp"
+      },
+      {
+        "i": "ground_cinnamon",
+        "q": 1,
+        "t": "a pinch",
+        "opt": true
+      },
+      {
+        "i": "stock_cubes",
+        "q": 1,
+        "t": "1 veg or fish cube"
+      },
+      {
+        "i": "butter",
+        "q": 15,
+        "t": "15g"
+      },
+      {
+        "i": "oil",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "greek_yogurt",
+        "q": 100,
+        "t": "100g"
+      },
+      {
+        "i": "cucumber",
+        "q": 0.25,
+        "t": "¼, grated"
+      },
+      {
+        "i": "lemon",
+        "q": 1,
+        "t": "1"
+      },
+      {
+        "i": "coriander",
+        "q": 10,
+        "t": "a small handful, to serve",
+        "opt": true,
+        "swap": "Keep the coriander in a little bowl on the table so it only goes on the plates that want it."
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the ingredients",
+        "text": "Boil the kettle and make up 350ml stock with the cube. Thinly slice the onion, grate the garlic and grate the cucumber. Rinse the rice until the water runs clear."
+      },
+      {
+        "title": "Make the raita",
+        "text": "Squeeze the grated cucumber dry. Mix it into the yogurt with a pinch of salt and chill until needed."
+      },
+      {
+        "title": "Fry the onion",
+        "text": "Heat the oil and butter in a wide lidded pan over a medium heat. Fry the onion for 7–8 min until golden. Add the cumin seeds, garlic and ginger paste and stir for 1 min."
+      },
+      {
+        "title": "Cook the pilau",
+        "text": "Add the rice, turmeric, cinnamon (optional) and garam masala and stir for 1 min until every grain is glossy. Pour in the stock and bring to the boil. Cover and cook on the lowest heat for 10 min."
+      },
+      {
+        "title": "Add the prawns and peas",
+        "text": "Scatter the prawns and peas over the rice, cover again and cook for 4–5 min until the prawns are pink and the liquid is absorbed. Leave to steam off the heat for 2 min."
+      },
+      {
+        "title": "Plate up",
+        "text": "Squeeze over half the lemon and fork through gently. Serve with the raita, the rest of the lemon in wedges and coriander (optional)."
+      }
+    ],
+    "tags": [
+      "quick",
+      "one-pot"
+    ],
+    "basedOn": "BBC Good Food — Prawn pilau (one-pot, 4.5★)"
+  },
+  {
+    "id": "in_chicken_tikka_rice_bowls",
+    "title": "Chicken Tikka Rice Bowls with Kachumber & Mango Chutney",
+    "icon": "🥗",
+    "cuisine": "Indian",
+    "category": "everyday",
+    "protein": "chicken",
+    "time": 25,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "chicken_breast",
+        "q": 300,
+        "t": "2 breasts (300g), cut into chunks"
+      },
+      {
+        "i": "tikka_paste",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "greek_yogurt",
+        "q": 120,
+        "t": "120g"
+      },
+      {
+        "i": "rice",
+        "q": 150,
+        "t": "150g"
+      },
+      {
+        "i": "cucumber",
+        "q": 0.5,
+        "t": "½, diced"
+      },
+      {
+        "i": "cherry_tomatoes",
+        "q": 150,
+        "t": "150g, quartered"
+      },
+      {
+        "i": "red_onion",
+        "q": 0.5,
+        "t": "½, finely chopped"
+      },
+      {
+        "i": "little_gem",
+        "q": 1,
+        "t": "1, shredded"
+      },
+      {
+        "i": "lemon",
+        "q": 1,
+        "t": "1"
+      },
+      {
+        "i": "mango_chutney",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "turmeric",
+        "q": 1,
+        "t": "½ tsp",
+        "opt": true
+      },
+      {
+        "i": "oil",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "coriander",
+        "q": 10,
+        "t": "a small handful",
+        "opt": true,
+        "swap": "Leave the coriander out of the salad and keep it in a little bowl on the table so it only goes on the plates that want it."
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the ingredients",
+        "text": "Boil the kettle. Cut the chicken into chunks and mix with the tikka paste, 2 tbsp yogurt and a pinch of salt. Dice the cucumber, quarter the tomatoes, finely chop the red onion and coriander, and shred the lettuce. Rinse the rice."
+      },
+      {
+        "title": "Cook the rice",
+        "text": "Tip the rice into a small pan with the turmeric (optional), 300ml boiling water and a pinch of salt. Cover and cook on the lowest heat for 10 min. Turn off the heat and leave covered for 5 min."
+      },
+      {
+        "title": "Make the kachumber",
+        "text": "While the rice cooks, mix the cucumber, tomatoes and red onion in a bowl. Stir in the juice of half the lemon, a pinch of salt and half the coriander (optional). Stir the rest of the yogurt with a squeeze of lemon and a pinch of salt."
+      },
+      {
+        "title": "Cook the tikka",
+        "text": "Heat the oil in a large frying pan over a high heat. Fry the chicken for 7–8 min, turning, until charred at the edges and cooked through with no pink inside."
+      },
+      {
+        "title": "Build the bowls",
+        "text": "Divide the rice between bowls and add the lettuce, kachumber and hot tikka chicken. Spoon over the yogurt and mango chutney, then finish with the rest of the coriander (optional) and lemon wedges."
+      }
+    ],
+    "tags": [
+      "quick",
+      "light"
+    ],
+    "basedOn": "BBC Good Food — Chicken tikka bowls / Pinch of Nom chicken tikka rice bowl"
+  },
+  {
+    "id": "in_lamb_kofta_curry",
+    "title": "Lamb Kofta Curry with Spinach & Cumin-Buttered Naan",
+    "icon": "🧆",
+    "cuisine": "Indian",
+    "category": "everyday",
+    "protein": "lamb",
+    "time": 40,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "lamb_mince",
+        "q": 250,
+        "t": "½ pack (250g)"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, finely chopped (2 tbsp kept for the koftas)"
+      },
+      {
+        "i": "garlic",
+        "q": 4,
+        "t": "4 cloves, grated"
+      },
+      {
+        "i": "ginger_paste",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "garam_masala",
+        "q": 4,
+        "t": "2 tsp"
+      },
+      {
+        "i": "cumin",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "cumin_seeds",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "ground_coriander",
+        "q": 4,
+        "t": "2 tsp"
+      },
+      {
+        "i": "turmeric",
+        "q": 1,
+        "t": "½ tsp",
+        "opt": true
+      },
+      {
+        "i": "chilli_powder",
+        "q": 1,
+        "t": "½ tsp"
+      },
+      {
+        "i": "chopped_tomatoes",
+        "q": 400,
+        "t": "1 tin"
+      },
+      {
+        "i": "greek_yogurt",
+        "q": 40,
+        "t": "2 tbsp, to finish",
+        "opt": true
+      },
+      {
+        "i": "spinach",
+        "q": 80,
+        "t": "2 handfuls"
+      },
+      {
+        "i": "oil",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "butter",
+        "q": 15,
+        "t": "15g"
+      },
+      {
+        "i": "naan",
+        "q": 2,
+        "t": "2"
+      },
+      {
+        "i": "coriander",
+        "q": 15,
+        "t": "½ pack, chopped",
+        "opt": true,
+        "swap": "Leave the coriander out of the kofta mix and keep it in a little bowl on the table so it only goes on the plates that want it."
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the ingredients",
+        "text": "Finely chop the onion and set aside 2 tbsp for the koftas. Grate the garlic and chop the coriander."
+      },
+      {
+        "title": "Make the koftas",
+        "text": "Put the lamb in a bowl with the 2 tbsp onion, a third of the garlic and ½ tsp salt. Add 1 tsp garam masala, the ground cumin and half the coriander (optional). Knead for 1 min, then roll into 12 walnut-sized balls."
+      },
+      {
+        "title": "Brown the koftas",
+        "text": "Heat the oil in a deep frying pan over a medium-high heat. Fry the koftas for 5–6 min, turning, until browned all over. Lift onto a plate, leaving the fat in the pan."
+      },
+      {
+        "title": "Make the sauce",
+        "text": "Lower the heat to medium, add the remaining onion and cook for 7 min until golden. Stir in the rest of the garlic, the ginger paste, ground coriander, turmeric (optional) and chilli powder for 1 min. Add the chopped tomatoes and 100ml water."
+      },
+      {
+        "title": "Simmer the koftas",
+        "text": "Return the koftas to the pan, cover and simmer gently for 12–15 min until cooked through and the sauce is thick. Stir in the spinach and remaining 1 tsp garam masala until wilted. Take off the heat, swirl through the yogurt (optional) and season."
+      },
+      {
+        "title": "Make the cumin naan",
+        "text": "While the koftas simmer, melt the butter with the cumin seeds in a small pan until they sizzle. Brush over the naans and warm them in a dry frying pan over a medium heat for 1 min each side."
+      },
+      {
+        "title": "Plate up",
+        "text": "Spoon the kofta curry into bowls and scatter with the rest of the coriander (optional). Serve with the cumin naan."
+      }
+    ],
+    "tags": [
+      "comfort",
+      "freezable"
+    ],
+    "basedOn": "BBC Good Food — Lamb kofta curry (4.6★) / Hairy Bikers kofta curry"
+  },
+  {
+    "id": "in_tandoori_cauliflower_traybake",
+    "title": "Tandoori Cauliflower & Chickpea Traybake with Garlic Yogurt",
+    "icon": "🥦",
+    "cuisine": "Indian",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 35,
+    "servings": 2,
+    "equipment": [
+      "oven"
+    ],
+    "airFryer": "Air-fry the coated cauliflower, chickpeas and onion at 200°C for 18–20 min, shaking every 5 min, until charred at the edges.",
+    "ingredients": [
+      {
+        "i": "cauliflower",
+        "q": 0.5,
+        "t": "½, cut into florets"
+      },
+      {
+        "i": "chickpeas",
+        "q": 400,
+        "t": "1 tin, drained and patted dry"
+      },
+      {
+        "i": "red_onion",
+        "q": 1,
+        "t": "1, cut into wedges"
+      },
+      {
+        "i": "peppers",
+        "q": 1,
+        "t": "1, cut into chunks"
+      },
+      {
+        "i": "greek_yogurt",
+        "q": 150,
+        "t": "150g"
+      },
+      {
+        "i": "tikka_paste",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "smoked_paprika",
+        "q": 2,
+        "t": "1 tsp",
+        "opt": true
+      },
+      {
+        "i": "garlic",
+        "q": 1,
+        "t": "1 clove, grated"
+      },
+      {
+        "i": "lemon",
+        "q": 1,
+        "t": "1"
+      },
+      {
+        "i": "spinach",
+        "q": 60,
+        "t": "2 handfuls"
+      },
+      {
+        "i": "oil",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "pitta",
+        "q": 2,
+        "t": "2"
+      },
+      {
+        "i": "coriander",
+        "q": 10,
+        "t": "a small handful, to serve",
+        "opt": true,
+        "swap": "Keep the coriander in a little bowl on the table so it only goes on the plates that want it."
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the ingredients",
+        "text": "Heat the oven to 220°C (200°C fan). Cut the cauliflower into florets, the red onion into wedges and the pepper into chunks. Drain the chickpeas and pat them dry. Grate the garlic."
+      },
+      {
+        "title": "Coat the veg",
+        "text": "Mix 3 tbsp yogurt with the tikka paste, smoked paprika (optional), 1 tbsp oil and the juice of half the lemon. Put the veg and chickpeas on a large roasting tray, pour over the tandoori yogurt and toss until coated. Drizzle with the remaining 1 tbsp oil and season."
+      },
+      {
+        "title": "Roast the tray",
+        "text": "Roast for 25 min, turning halfway. It's ready when the cauliflower is tender and blackened at the edges and the chickpeas are crisp."
+      },
+      {
+        "title": "Make the garlic yogurt",
+        "text": "While it roasts, mix the remaining yogurt with the garlic, a squeeze of lemon and a pinch of salt. Set aside until serving."
+      },
+      {
+        "title": "Wilt the spinach",
+        "text": "Warm the pittas in the oven for the last 2 min of roasting. Take out the tray and toss the spinach through so it just wilts in the heat."
+      },
+      {
+        "title": "Plate up",
+        "text": "Pile the traybake onto plates with the warm pittas. Drizzle with the garlic yogurt and finish with coriander (optional) and the rest of the lemon in wedges."
+      }
+    ],
+    "tags": [
+      "veggie",
+      "traybake",
+      "light"
+    ],
+    "basedOn": "BBC Good Food — Tandoori cauliflower & chickpea traybake / Jamie Oliver roasted tandoori cauliflower"
+  }
+]

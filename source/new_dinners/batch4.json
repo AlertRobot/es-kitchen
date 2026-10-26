@@ -1,0 +1,1210 @@
+[
+ {
+  "id": "as_teriyaki_chicken_noodles",
+  "short": "Teriyaki chicken noodles",
+  "title": "Teriyaki Chicken Noodles with Broccoli & Spring Onion",
+  "icon": "🍜",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "chicken",
+  "base": "noodles",
+  "family": "stir_fry",
+  "time": 25,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 300,
+    "t": "2 breasts (300g), in thin strips"
+   },
+   {
+    "i": "egg_noodles",
+    "q": 150,
+    "t": "2 nests (150g)"
+   },
+   {
+    "i": "broccoli",
+    "q": 200,
+    "t": "½ head (200g), in small florets"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 45,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 30,
+    "t": "1½ tbsp"
+   },
+   {
+    "i": "rice_vinegar",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, grated"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "cornflour",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "sesame_oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "spring_onions",
+    "q": 3,
+    "t": "3, sliced",
+    "swap": "Keep the sliced green tops back and scatter them over one portion only."
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "a pinch, to serve",
+    "opt": true,
+    "swap": "Sprinkle over one portion only at the table."
+   }
+  ],
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Boil the kettle. Slice the chicken into thin strips and cut the broccoli into small florets. Grate the garlic. Slice the spring onions, keeping the white and green parts separate."
+   },
+   {
+    "title": "Mix the teriyaki sauce",
+    "text": "Stir the soy sauce, honey, rice vinegar, garlic, ginger paste and 3 tbsp water together in a jug. In a cup, mix the cornflour with 1 tbsp cold water until smooth."
+   },
+   {
+    "title": "Cook the noodles and broccoli",
+    "text": "Pour the boiled water into a large pan over a high heat. Add the broccoli for 2 min, then add the noodles for 4 min until both are tender. Drain and toss with the sesame oil."
+   },
+   {
+    "title": "Fry the chicken",
+    "text": "Heat the oil in a wok or large frying pan over a medium-high heat. Fry the chicken for 5–6 min, turning, until golden and cooked through with no pink inside."
+   },
+   {
+    "title": "Glaze the chicken",
+    "text": "Pour the teriyaki sauce into the pan and let it bubble for 1–2 min. Stir in the cornflour mix and cook for 1 min more, until thick, glossy and coating the chicken."
+   },
+   {
+    "title": "Toss and serve",
+    "text": "Add the noodles, broccoli and white spring onion to the pan. Toss over the heat for 1–2 min until piping hot and coated. Serve topped with the green spring onion and chilli flakes (optional)."
+   }
+  ],
+  "tags": [
+   "quick",
+   "kid-friendly",
+   "fakeaway"
+  ],
+  "basedOn": "Tesco Real Food — Teriyaki chicken noodles",
+  "photo": {
+   "url": "https://images.unsplash.com/photo-1758979690131-11e2aa0b142b?auto=format&fit=crop&w=1080&q=75",
+   "thumb": "https://images.unsplash.com/photo-1758979690131-11e2aa0b142b?auto=format&fit=crop&w=300&h=300&q=70",
+   "credit": "Denis on Unsplash",
+   "licence": "Unsplash Licence",
+   "source": "https://unsplash.com/photos/chicken-stir-fry-with-noodles-and-vegetables-in-a-bowl-kTROrGtnm7U",
+   "alt": "Chicken stir-fry with noodles and vegetables in a bowl",
+   "confidence": "medium"
+  }
+ },
+ {
+  "id": "as_chicken_ramen",
+  "short": "Chicken ramen",
+  "title": "Chicken Ramen with Jammy Egg & Pak Choi",
+  "icon": "🍜",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "chicken",
+  "base": "noodles",
+  "family": "noodle_soup",
+  "time": 30,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 300,
+    "t": "2 breasts (300g)"
+   },
+   {
+    "i": "egg_noodles",
+    "q": 150,
+    "t": "2 nests (150g)"
+   },
+   {
+    "i": "eggs",
+    "q": 2,
+    "t": "2"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 2,
+    "t": "2 chicken stock cubes"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "butter",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "sesame_oil",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, finely chopped"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "pak_choi",
+    "q": 200,
+    "t": "2 heads (200g), halved lengthways"
+   },
+   {
+    "i": "carrots",
+    "q": 80,
+    "t": "1 small, in thin matchsticks"
+   },
+   {
+    "i": "spring_onions",
+    "q": 3,
+    "t": "3, sliced, to serve",
+    "opt": true,
+    "swap": "Scatter over one bowl only."
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "a pinch, to serve",
+    "opt": true,
+    "swap": "Sprinkle over one bowl only at the table."
+   }
+  ],
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Boil a full kettle. Finely chop the garlic and halve the pak choi lengthways. Cut the carrot into thin matchsticks and slice the spring onions."
+   },
+   {
+    "title": "Boil the eggs",
+    "text": "Lower the eggs into a small pan of boiling water over a medium-high heat. Cook for 6½ min for jammy yolks. Cool them in cold water, then peel."
+   },
+   {
+    "title": "Make the broth",
+    "text": "Melt the butter with the sesame oil in a large saucepan over a medium heat. Fry the garlic and ginger paste for 1 min without browning. Add 1 litre boiling water, the crumbled stock cubes, soy sauce and honey, and bring to a simmer."
+   },
+   {
+    "title": "Poach the chicken",
+    "text": "Lower the whole chicken breasts into the broth. Cover and simmer gently for 12–14 min until cooked through with no pink inside. Lift onto a board and shred or slice."
+   },
+   {
+    "title": "Cook the noodles and greens",
+    "text": "Add the noodles to the simmering broth for 2 min. Add the pak choi and carrot for a final 2 min until the stalks are just tender. Taste and add a splash more soy if needed."
+   },
+   {
+    "title": "Build the bowls",
+    "text": "Use tongs to divide the noodles and veg between 2 deep bowls. Top with the chicken and ladle over the hot broth. Halve the eggs and sit them on top, then add spring onions and chilli flakes (optional)."
+   }
+  ],
+  "tags": [
+   "comfort",
+   "light"
+  ],
+  "basedOn": "Kitchen Sanctuary — Quick Chicken Ramen — Nicky",
+  "photo": {
+   "url": "https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&w=1080&q=75",
+   "thumb": "https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&w=300&h=300&q=70",
+   "credit": "ikhsan baihaqi on Unsplash",
+   "licence": "Unsplash Licence",
+   "source": "https://unsplash.com/photos/ramen-bowl-with-egg-and-chili-RwAXb8Hv_sU",
+   "alt": "Bowl of ramen noodles topped with a halved egg, chilli and spring onions",
+   "confidence": "medium"
+  }
+ },
+ {
+  "id": "as_chicken_cashew_nuts",
+  "short": "Chicken and cashew nuts",
+  "title": "Chicken & Cashew Nuts with Peppers & Basmati Rice",
+  "icon": "🥡",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "chicken",
+  "base": "rice",
+  "family": "stir_fry",
+  "time": 30,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 350,
+    "t": "350g, in 2.5cm pieces"
+   },
+   {
+    "i": "cashew_nuts",
+    "q": 60,
+    "t": "60g"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1 (green if you can), in 2cm pieces"
+   },
+   {
+    "i": "onion",
+    "q": 0.5,
+    "t": "½, in 2cm pieces"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, finely chopped"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "oyster_sauce",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "sesame_oil",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "cornflour",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "black_pepper",
+    "q": 0.5,
+    "t": "a pinch",
+    "opt": true
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "salt",
+    "q": 1,
+    "t": "a pinch, for the rice"
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced, to serve",
+    "opt": true,
+    "swap": "Scatter over one portion only."
+   }
+  ],
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Boil the kettle and rinse the rice until the water runs clear. Cut the chicken into 2.5cm pieces. Cut the pepper and onion into 2cm pieces, chop the garlic and slice the spring onions."
+   },
+   {
+    "title": "Make the sauce",
+    "text": "Whisk the cornflour into the soy sauce until smooth. Stir in the oyster sauce, sesame oil and black pepper (optional). Toss the chicken with 2 tbsp of this sauce and leave for 10 min."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "While the chicken marinates, start the rice. Tip the rinsed rice into a small pan with 300ml boiling water and a pinch of salt. Cover and cook on the lowest heat for 10 min. Take off the heat and leave covered for 5 min, then fluff with a fork."
+   },
+   {
+    "title": "Toast the cashews",
+    "text": "Tip the cashews into a dry wok or large frying pan over a medium heat. Toast for 2–3 min, shaking often, until golden. Tip into a bowl."
+   },
+   {
+    "title": "Stir-fry the chicken",
+    "text": "Heat the oil in the same wok over a high heat. Fry the garlic and onion for 1 min. Add the chicken and stir-fry for 4–5 min until golden and cooked through, then add the pepper for 1 min."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Pour in the rest of the sauce with 5 tbsp water. Bubble, stirring, for 1–2 min until glossy and thickened. Stir in the cashews and serve over the rice with spring onions (optional)."
+   }
+  ],
+  "tags": [
+   "quick",
+   "fakeaway",
+   "kid-friendly"
+  ],
+  "basedOn": "RecipeTin Eats — Cashew Chicken — Nagi Maehashi",
+  "photo": {
+   "url": "https://images.unsplash.com/photo-1767974877206-a594e0b1008e?auto=format&fit=crop&w=1080&q=75",
+   "thumb": "https://images.unsplash.com/photo-1767974877206-a594e0b1008e?auto=format&fit=crop&w=300&h=300&q=70",
+   "credit": "tommao wang on Unsplash",
+   "licence": "Unsplash Licence",
+   "source": "https://unsplash.com/photos/a-plate-of-glistening-chicken-and-green-peppers-TCYcFgCSCZE",
+   "alt": "Glossy Chinese chicken and green pepper stir-fry on a plate",
+   "confidence": "medium"
+  }
+ },
+ {
+  "id": "as_hoisin_beef_noodles",
+  "short": "Hoisin beef noodles",
+  "title": "Sticky Hoisin Beef Noodles with Peppers & Pak Choi",
+  "icon": "🥢",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "beef",
+  "base": "noodles",
+  "family": "stir_fry",
+  "time": 20,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "beef_stir_fry_strips",
+    "q": 250,
+    "t": "250g"
+   },
+   {
+    "i": "egg_noodles",
+    "q": 150,
+    "t": "2 nests (150g)"
+   },
+   {
+    "i": "hoisin_sauce",
+    "q": 60,
+    "t": "4 tbsp"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, grated"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "cornflour",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "carrots",
+    "q": 80,
+    "t": "1 small, in matchsticks"
+   },
+   {
+    "i": "pak_choi",
+    "q": 150,
+    "t": "150g, quartered lengthways"
+   },
+   {
+    "i": "sesame_oil",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "spring_onions",
+    "q": 3,
+    "t": "3, sliced, to serve",
+    "opt": true,
+    "swap": "Scatter over one portion only."
+   }
+  ],
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Boil the kettle. Toss the beef with the cornflour and a pinch of salt. Slice the pepper, cut the carrot into matchsticks and quarter the pak choi. Grate the garlic and slice the spring onions."
+   },
+   {
+    "title": "Mix the sauce",
+    "text": "Stir the hoisin, soy sauce, honey, garlic, ginger paste and 3 tbsp water together in a jug. Keep it by the hob, as the stir-fry is quick."
+   },
+   {
+    "title": "Cook the noodles",
+    "text": "Cook the noodles in a pan of boiling water for 4 min until just tender. Drain, rinse under cold water and toss with the sesame oil so they don't stick."
+   },
+   {
+    "title": "Sear the beef",
+    "text": "Heat the oil in a wok or large frying pan over a high heat until shimmering. Stir-fry the beef in one layer for 2 min until browned. Lift onto a plate, as longer cooking makes it chewy."
+   },
+   {
+    "title": "Fry the veg",
+    "text": "Add the pepper and carrot to the hot wok and stir-fry for 3 min. Add the pak choi for 1–2 min until the leaves wilt but the stalks stay crunchy."
+   },
+   {
+    "title": "Toss and serve",
+    "text": "Return the beef to the wok with the noodles and sauce. Toss over a high heat for 1–2 min until sticky and piping hot. Serve topped with spring onions (optional)."
+   }
+  ],
+  "tags": [
+   "quick",
+   "fakeaway"
+  ],
+  "basedOn": "Abel & Cole — Hoisin Beef Noodle Stir-Fry"
+ },
+ {
+  "id": "as_crispy_shredded_chicken",
+  "short": "Crispy shredded chicken",
+  "title": "Crispy Shredded Chicken in Honey-Chilli Sauce with Rice",
+  "icon": "🌶️",
+  "cuisine": "Asian",
+  "category": "treat",
+  "protein": "chicken",
+  "base": "rice",
+  "family": "fried",
+  "time": 40,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "airFryer": "Instead of shallow-frying, spray the coated strips with oil and air-fry at 200°C for 10–12 min, shaking halfway, until crisp and cooked through. Then toss them in the sauce in the wok as in the last step.",
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 300,
+    "t": "2 breasts (300g), in thin strips"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "eggs",
+    "q": 1,
+    "t": "1 egg white"
+   },
+   {
+    "i": "cornflour",
+    "q": 60,
+    "t": "6 tbsp"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 45,
+    "t": "3 tbsp, divided"
+   },
+   {
+    "i": "sesame_oil",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, finely chopped, divided"
+   },
+   {
+    "i": "honey",
+    "q": 30,
+    "t": "1½ tbsp"
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "½, juiced"
+   },
+   {
+    "i": "sweet_chilli_sauce",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, thinly sliced"
+   },
+   {
+    "i": "carrots",
+    "q": 80,
+    "t": "1 small, in thin matchsticks"
+   },
+   {
+    "i": "spring_onions",
+    "q": 3,
+    "t": "3, in 2cm lengths",
+    "swap": "Keep them out of the wok and scatter over one portion only."
+   },
+   {
+    "i": "oil",
+    "q": 150,
+    "t": "150ml, for shallow-frying"
+   },
+   {
+    "i": "salt",
+    "q": 1,
+    "t": "a pinch, for the rice"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "a pinch, to serve",
+    "opt": true,
+    "swap": "Sprinkle over one portion only at the table."
+   }
+  ],
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Boil the kettle and rinse the rice. Cut the chicken into pencil-thin strips and toss with 1 tbsp soy sauce, the sesame oil and a third of the garlic. Slice the pepper, cut the carrot into matchsticks and cut the spring onions."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "Tip the rinsed rice into a small pan with 300ml boiling water and a pinch of salt. Cover and cook on the lowest heat for 10 min. Take off the heat and leave covered for 5 min, then fluff with a fork."
+   },
+   {
+    "title": "Mix the sauce",
+    "text": "While the rice cooks, stir the remaining 2 tbsp soy sauce with the honey, lemon juice and sweet chilli sauce in a small bowl."
+   },
+   {
+    "title": "Coat the chicken",
+    "text": "Separate the egg and stir the white into the chicken. Tip the cornflour into a bowl and toss the strips through it until each one is dry and coated. Shake off the excess."
+   },
+   {
+    "title": "Fry the chicken",
+    "text": "Heat the oil in a wok or deep frying pan over a medium-high heat until a strip sizzles hard. Fry in 2 batches for 3–4 min until golden, crisp and cooked through. Drain on kitchen paper."
+   },
+   {
+    "title": "Fry the veg",
+    "text": "Carefully pour off all but 1 tbsp of the oil into a heatproof bowl (discard it once cool). Stir-fry the remaining garlic, the pepper and carrot over a high heat for 1–2 min."
+   },
+   {
+    "title": "Toss and serve",
+    "text": "Pour in the sauce and bubble for 30 sec until syrupy. Add the chicken and spring onions and toss for 1 min until coated. Serve on the rice with chilli flakes (optional)."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "crispy"
+  ],
+  "basedOn": "Khin's Kitchen — Crispy Shredded Chicken — Khin"
+ },
+ {
+  "id": "as_sweet_chilli_salmon_noodles",
+  "short": "Sweet chilli salmon noodles",
+  "title": "Sweet Chilli Salmon Noodles with Stir-Fried Veg",
+  "icon": "🐟",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "fish",
+  "base": "noodles",
+  "family": "stir_fry",
+  "time": 25,
+  "servings": 2,
+  "equipment": [
+   "oven",
+   "hob"
+  ],
+  "airFryer": "Brush the salmon with the sweet chilli and air-fry skin-side down at 180°C for 9–11 min until it flakes easily.",
+  "ingredients": [
+   {
+    "i": "salmon",
+    "q": 2,
+    "t": "2 fillets"
+   },
+   {
+    "i": "egg_noodles",
+    "q": 150,
+    "t": "2 nests (150g)"
+   },
+   {
+    "i": "sweet_chilli_sauce",
+    "q": 60,
+    "t": "4 tbsp, divided"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "hoisin_sauce",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "lime",
+    "q": 1,
+    "t": "1 (half juiced, half in wedges)"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, grated"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "carrots",
+    "q": 80,
+    "t": "1 small, in matchsticks"
+   },
+   {
+    "i": "pak_choi",
+    "q": 150,
+    "t": "150g, quartered lengthways"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced, to serve",
+    "opt": true,
+    "swap": "Scatter over one portion only."
+   }
+  ],
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Heat the oven to 200°C fan and boil the kettle. Slice the pepper, cut the carrot into matchsticks and quarter the pak choi. Grate the garlic, slice the spring onions and cut the lime in half."
+   },
+   {
+    "title": "Mix the sauce",
+    "text": "Squeeze the juice from half the lime into a jug. Stir in 2 tbsp sweet chilli sauce, the soy sauce, hoisin, ginger paste and 3 tbsp water."
+   },
+   {
+    "title": "Roast the salmon",
+    "text": "Put the salmon skin-side down on a lined baking tray, season and brush with 1 tbsp sweet chilli sauce. Roast for 12–15 min until it flakes easily and is opaque in the middle."
+   },
+   {
+    "title": "Cook the noodles",
+    "text": "While the salmon roasts, cook the noodles in a pan of boiling water for 4 min until just tender. Drain and rinse under cold water."
+   },
+   {
+    "title": "Stir-fry the veg",
+    "text": "Heat the oil in a wok or large frying pan over a medium-high heat. Stir-fry the pepper and carrot for 3 min. Add the garlic and pak choi for 1–2 min until the leaves wilt."
+   },
+   {
+    "title": "Toss the noodles",
+    "text": "Pour the sauce into the wok and bubble for 1 min. Add the noodles and toss for 1–2 min until coated and piping hot."
+   },
+   {
+    "title": "Serve",
+    "text": "Divide the noodles between bowls and sit the salmon on top. Drizzle with the remaining 1 tbsp sweet chilli sauce. Add spring onions (optional) and serve with the lime wedges."
+   }
+  ],
+  "tags": [
+   "quick"
+  ],
+  "basedOn": "HelloFresh UK — Sweet Chilli Salmon Noodle Bowl"
+ },
+ {
+  "id": "as_chicken_pho",
+  "short": "Chicken pho",
+  "title": "Vietnamese Chicken Pho with Rice Noodles & Fresh Herbs",
+  "icon": "🍲",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "chicken",
+  "base": "noodles",
+  "family": "noodle_soup",
+  "time": 45,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 350,
+    "t": "350g (about 4 fillets)"
+   },
+   {
+    "i": "rice_noodles",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, halved (skin on)"
+   },
+   {
+    "i": "star_anise",
+    "q": 1,
+    "t": "2 whole stars"
+   },
+   {
+    "i": "ground_cinnamon",
+    "q": 1,
+    "t": "¼ tsp"
+   },
+   {
+    "i": "fennel_seeds",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 2,
+    "t": "2 chicken stock cubes"
+   },
+   {
+    "i": "fish_sauce",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "oil",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "beansprouts",
+    "q": 100,
+    "t": "100g",
+    "swap": "Blanch them in a sieve dipped in the simmering broth for 1 min and add to one bowl only."
+   },
+   {
+    "i": "lime",
+    "q": 1,
+    "t": "1, in wedges"
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced, to serve",
+    "opt": true,
+    "swap": "Scatter over one bowl only."
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, to serve",
+    "opt": true,
+    "swap": "Add to one bowl only at the table."
+   },
+   {
+    "i": "green_chillies",
+    "q": 10,
+    "t": "1, sliced, to serve",
+    "opt": true,
+    "swap": "Serve on the side for one bowl only."
+   },
+   {
+    "i": "hoisin_sauce",
+    "q": 15,
+    "t": "1 tbsp, to serve",
+    "opt": true
+   }
+  ],
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Boil a full kettle. Halve the onion, leaving the skin on. Slice the spring onions and chilli, pick the coriander leaves and cut the lime into wedges."
+   },
+   {
+    "title": "Char the onion",
+    "text": "Heat the oil in a large saucepan over a high heat. Put the onion halves in cut-side down and cook for 3–4 min until blackened. Add the star anise, cinnamon and fennel seeds for 30 sec until fragrant."
+   },
+   {
+    "title": "Simmer the broth",
+    "text": "Pour in 1.2 litres boiling water and crumble in the stock cubes. Stir in the fish sauce, honey and ginger paste, then add the chicken. Bring to a gentle simmer, part-cover and cook for 25 min, skimming off any foam."
+   },
+   {
+    "title": "Shred the chicken",
+    "text": "Lift the chicken onto a board and shred it with two forks. Strain the broth through a sieve into a bowl, discarding the onion and spices, then pour it back into the pan. Taste and add a splash more fish sauce if needed."
+   },
+   {
+    "title": "Cook the noodles",
+    "text": "While the broth strains, soak or boil the rice noodles in boiling water for 4–5 min (check the pack) until soft. Drain and rinse with hot water."
+   },
+   {
+    "title": "Build the bowls",
+    "text": "Bring the broth back to a simmer and dip the beansprouts in for 1 min. Divide the noodles, chicken and beansprouts between 2 deep bowls and ladle over the hot broth. Serve with lime wedges and spring onions, coriander, chilli and hoisin (all optional)."
+   }
+  ],
+  "tags": [
+   "light",
+   "comfort"
+  ],
+  "basedOn": "RecipeTin Eats — Vietnamese Chicken Pho Soup (Pho Ga) — Nagi Maehashi",
+  "photo": {
+   "url": "https://images.unsplash.com/photo-1590420882553-4f9150b71f92?auto=format&fit=crop&w=1080&q=75",
+   "thumb": "https://images.unsplash.com/photo-1590420882553-4f9150b71f92?auto=format&fit=crop&w=300&h=300&q=70",
+   "credit": "Hong Anh Duong on Unsplash",
+   "licence": "Unsplash Licence",
+   "source": "https://unsplash.com/photos/soup-dish-in-white-ceramic-bowl-EK--nAm-CYM",
+   "alt": "Bowl of Vietnamese pho with rice noodles, beansprouts and herbs",
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "as_bang_bang_chicken_noodles",
+  "short": "Bang bang chicken noodles",
+  "title": "Crispy Bang Bang Chicken Noodles with Peanuts & Lime",
+  "icon": "🍜",
+  "cuisine": "Asian",
+  "category": "treat",
+  "protein": "chicken",
+  "base": "noodles",
+  "family": "fried",
+  "time": 35,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "airFryer": "Spray the cornflour-coated strips with oil and air-fry at 200°C for 12–14 min, shaking halfway, until crisp and cooked through. Skip the 3 tbsp frying oil.",
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 350,
+    "t": "350g (about 4 fillets), in strips"
+   },
+   {
+    "i": "cornflour",
+    "q": 40,
+    "t": "4 tbsp"
+   },
+   {
+    "i": "egg_noodles",
+    "q": 150,
+    "t": "2 nests (150g)"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 chicken stock cube"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "courgette",
+    "q": 1,
+    "t": "1 (half in ribbons, half chopped)"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, finely chopped"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "½ tsp",
+    "swap": "Leave them out of the wok and sprinkle over one portion only."
+   },
+   {
+    "i": "soy_sauce",
+    "q": 45,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "lime",
+    "q": 1,
+    "t": "1 (zest and juice of half, half in wedges)"
+   },
+   {
+    "i": "peanut_butter",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "sweet_chilli_sauce",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "oil",
+    "q": 60,
+    "t": "4 tbsp, divided"
+   },
+   {
+    "i": "salted_peanuts",
+    "q": 20,
+    "t": "a small handful, chopped, to serve",
+    "opt": true
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced, to serve",
+    "opt": true,
+    "swap": "Scatter over one portion only."
+   }
+  ],
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Boil the kettle. Cut the chicken into 2cm-wide strips, season with salt and toss in the cornflour until coated. Slice the pepper, peel half the courgette into ribbons and chop the rest. Chop the garlic, peanuts and spring onions."
+   },
+   {
+    "title": "Mix the sauces",
+    "text": "Zest the lime, then juice one half and cut the other into wedges. Whisk the peanut butter, sweet chilli sauce, a squeeze of the lime juice and 2–3 tbsp warm water until smooth. In a cup, mix the soy sauce, honey, lime zest and remaining juice."
+   },
+   {
+    "title": "Fry the chicken",
+    "text": "Heat 3 tbsp oil in a large frying pan over a medium-high heat. Fry the chicken in one layer for 6–8 min, turning, until golden, crisp and cooked through. Drain on kitchen paper."
+   },
+   {
+    "title": "Cook the noodles",
+    "text": "Pour the boiled water into a pan and crumble in the stock cube. Cook the noodles for 4 min until tender, then drain."
+   },
+   {
+    "title": "Stir-fry the veg",
+    "text": "Heat the remaining 1 tbsp oil in a wok over a high heat. Stir-fry the pepper and chopped courgette for 4–5 min until charred in places. Add the garlic and chilli flakes for 1 min."
+   },
+   {
+    "title": "Toss the noodles",
+    "text": "Pour in the soy mix and bubble for 1 min. Add the noodles and courgette ribbons and toss for 1–2 min until glossy and hot."
+   },
+   {
+    "title": "Serve",
+    "text": "Pile the noodles into bowls and top with the crispy chicken. Drizzle over the peanut sauce. Scatter with peanuts and spring onions (optional) and serve with the lime wedges."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "crispy",
+   "spicy"
+  ],
+  "basedOn": "Tesco Real Food — Bang bang chicken noodle stir-fry — The Tesco Recipes team"
+ },
+ {
+  "id": "in_chicken_bhuna",
+  "short": "Chicken bhuna",
+  "title": "Chicken Bhuna with Fluffy Basmati Rice",
+  "icon": "🍛",
+  "cuisine": "Indian",
+  "category": "everyday",
+  "protein": "chicken",
+  "base": "rice",
+  "family": "curry",
+  "time": 55,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 350,
+    "t": "350g, in bite-size chunks"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "onion",
+    "q": 2,
+    "t": "2, finely diced"
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, grated"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "chilli_powder",
+    "q": 2,
+    "t": "¾ tsp"
+   },
+   {
+    "i": "garam_masala",
+    "q": 3,
+    "t": "1 tsp"
+   },
+   {
+    "i": "ground_coriander",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "cumin",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "turmeric",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 400,
+    "t": "1 tin (400g)"
+   },
+   {
+    "i": "salt",
+    "q": 3,
+    "t": "½ tsp, plus a pinch for the rice"
+   },
+   {
+    "i": "butter",
+    "q": 10,
+    "t": "a knob, to finish",
+    "opt": true
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, to serve",
+    "opt": true,
+    "swap": "Scatter over one portion only."
+   },
+   {
+    "i": "green_chillies",
+    "q": 10,
+    "t": "1, sliced, to serve",
+    "opt": true,
+    "swap": "Scatter over one portion only."
+   }
+  ],
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Boil the kettle and rinse the rice until the water runs clear. Finely dice the onions and grate the garlic. Cut the chicken into bite-size chunks. Mix the chilli powder, garam masala, ground coriander, cumin and turmeric in a small bowl."
+   },
+   {
+    "title": "Fry the onions",
+    "text": "Heat the oil in a large deep frying pan over a medium heat. Fry the onions with a pinch of the salt for 15 min, stirring often, until deep golden and browning at the edges."
+   },
+   {
+    "title": "Toast the spices",
+    "text": "Stir in the garlic, ginger paste and spice mix. Cook for 1 min until fragrant, adding a splash of water if the spices start to catch."
+   },
+   {
+    "title": "Reduce the tomatoes",
+    "text": "Add the chopped tomatoes and the rest of the salt. Simmer briskly for 8–10 min, stirring, until thick and jammy and a spoon drawn through leaves a clear trail."
+   },
+   {
+    "title": "Simmer the chicken",
+    "text": "Stir the chicken into the masala until coated. Cover and cook over a medium-low heat for 15 min, stirring now and then, until cooked through. Add a splash of water if it gets too dry; the sauce should cling thickly."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "While the chicken simmers, cook the rice. Tip the rinsed rice into a small pan with 300ml boiling water and a pinch of salt. Cover and cook on the lowest heat for 10 min. Take off the heat and leave covered for 5 min, then fluff with a fork."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Stir the butter (optional) into the curry. Spoon the rice onto plates with the bhuna alongside. Top with coriander and green chilli (optional)."
+   }
+  ],
+  "tags": [
+   "comfort",
+   "freezable",
+   "fakeaway"
+  ],
+  "basedOn": "Fuss Free Flavours — Chicken Bhuna — Helen Best-Shaw",
+  "photo": {
+   "url": "https://images.unsplash.com/photo-1742599361539-f096753d1100?auto=format&fit=crop&w=1080&q=75",
+   "thumb": "https://images.unsplash.com/photo-1742599361539-f096753d1100?auto=format&fit=crop&w=300&h=300&q=70",
+   "credit": "Imad 786 on Unsplash",
+   "licence": "Unsplash Licence",
+   "source": "https://unsplash.com/photos/delicious-indian-chicken-curry-and-rice-ready-to-eat-gwUA_pHaOYY",
+   "alt": "Indian chicken curry served with rice",
+   "confidence": "medium"
+  }
+ }
+]

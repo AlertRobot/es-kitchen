@@ -1,0 +1,12 @@
+[
+  {"id":"orzo","name":"Orzo pasta","aisle":"Dry goods","unit":"g","packs":[500],"staple":false,"freeze":false,"keeps":365,"life":365,"tags":["gluten"]},
+  {"id":"passata","name":"Passata (sieved tomatoes)","aisle":"Tins & jars","unit":"g","packs":[500],"staple":false,"freeze":true,"keeps":5,"life":365,"tags":[]},
+  {"id":"pancetta","name":"Smoked pancetta cubes","aisle":"Meat & fish","unit":"g","packs":[130],"staple":false,"freeze":true,"keeps":3,"life":14,"tags":["pork","meat"]},
+  {"id":"black_olives","name":"Pitted Kalamata olives (jar, drained)","aisle":"Tins & jars","unit":"g","packs":[160],"staple":false,"freeze":false,"keeps":21,"life":365,"tags":[]},
+  {"id":"capers","name":"Capers in brine","aisle":"Tins & jars","unit":"g","packs":[100],"staple":false,"freeze":false,"keeps":60,"life":365,"tags":[]},
+  {"id":"sun_dried_tomatoes","name":"Sun-dried tomatoes in oil","aisle":"Tins & jars","unit":"g","packs":[280],"staple":false,"freeze":false,"keeps":28,"life":365,"tags":[]},
+  {"id":"pecorino","name":"Pecorino Romano","aisle":"Dairy & eggs","unit":"g","packs":[180],"staple":false,"freeze":true,"keeps":21,"life":60,"tags":["dairy","cheese"]},
+  {"id":"rocket","name":"Wild rocket","aisle":"Fruit & veg","unit":"g","packs":[60],"staple":false,"freeze":false,"keeps":2,"life":5,"tags":["salad"]},
+  {"id":"fennel_seeds","name":"Fennel seeds","aisle":"Herbs & spices","unit":"g","packs":[38],"staple":true,"freeze":false,"keeps":365,"life":365,"tags":[]},
+  {"id":"anchovies","name":"Anchovy fillets in olive oil (tin)","aisle":"Tins & jars","unit":"g","packs":[50],"staple":false,"freeze":false,"keeps":7,"life":365,"tags":["fish"]}
+]

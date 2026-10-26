@@ -1,0 +1,47 @@
+{
+ "lu_egg_mayo_sandwich": {
+  "title": "Devilled egg mayo",
+  "site": "Tesco Recipes",
+  "url": "https://www.tesco.com/recipes/en-GB/recipe/devilled-egg-mayo",
+  "author": "",
+  "match": "adapted",
+  "checked": "2026-10-24",
+  "fix": ""
+ },
+ "lu_blt": {
+  "title": "A sensational BLT",
+  "site": "Hovis",
+  "url": "https://www.hovis.co.uk/recipes/hovis-a-sensational-BLT",
+  "author": "",
+  "match": "close",
+  "checked": "2026-10-24",
+  "fix": ""
+ },
+ "lu_ham_sweetcorn_pasta_salad": {
+  "title": "Ham and corn pasta salad",
+  "site": "Salty Side Dish",
+  "url": "https://www.saltysidedish.com/ham-pasta-salad/",
+  "author": "Trisha Haas",
+  "match": "adapted",
+  "checked": "2026-10-24",
+  "fix": ""
+ },
+ "lu_jacket_beans_cheese": {
+  "title": "Jacket potato with baked beans and cheese",
+  "site": "Tesco Recipes",
+  "url": "https://www.tesco.com/recipes/en-GB/recipe/jacket-potato-with-baked-beans-and-cheese",
+  "author": "",
+  "match": "adapted",
+  "checked": "2026-10-24",
+  "fix": ""
+ },
+ "lu_ham_cheese_toastie": {
+  "title": "Cheese and ham toastie",
+  "site": "Hovis",
+  "url": "https://www.hovis.co.uk/recipes/mouth-watering-cheese-and-ham-toastie",
+  "author": "",
+  "match": "close",
+  "checked": "2026-10-24",
+  "fix": ""
+ }
+}

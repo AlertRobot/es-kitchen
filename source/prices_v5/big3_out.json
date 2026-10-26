@@ -1,0 +1,433 @@
+[
+ {
+  "id": "avocado",
+  "prices": {
+   "asda": {
+    "pack": 2,
+    "price": 1.48,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Creamy & Nutty Avocados",
+    "src": "https://www.trolley.co.uk/product/asda-creamy-nutty-avocados/FBF015",
+    "note": "2-pack (count not shown on trolley; sold as 2pack). JUST ESSENTIALS by ASDA Avocados £1.29 also listed"
+   }
+  }
+ },
+ {
+  "id": "basil",
+  "prices": {
+   "asda": {
+    "pack": 30,
+    "price": 0.5,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Basil",
+    "src": "https://www.trolley.co.uk/product/asda-wonderfully-aromatic-basil/EZR886",
+    "note": "pack size not shown on trolley; assumed standard 30g (Tesco/Sainsbury's equivalents 30g). Trolley says usually £1.25"
+   }
+  }
+ },
+ {
+  "id": "broccoli",
+  "prices": {
+   "sainsburys": {
+    "pack": 350,
+    "price": 0.84,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Loose Broccoli",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/broccoli",
+    "note": "sold loose by weight at £2.39/kg (Aldi price match); priced for a ~350g head"
+   },
+   "asda": {
+    "pack": 350,
+    "price": 0.86,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Tender & Crunchy Broccoli",
+    "src": "https://www.trolley.co.uk/product/asda-tender-crunchy-broccoli/IOU463",
+    "note": "loose head sold each; weight not shown on trolley, ~350g head assumed"
+   }
+  }
+ },
+ {
+  "id": "chicken_thighs",
+  "prices": {
+   "asda": {
+    "pack": 1000,
+    "price": 6.07,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "ASDA British Boneless Chicken Thigh Fillets",
+    "src": "https://www.trolley.co.uk/product/asda-succulent-boneless-chicken-thigh-fillets/SEI999",
+    "note": "PACK SIZE NOT SHOWN on trolley - 1kg assumed, confirm. Second size variant (EIP782) £6.84, also unlabelled"
+   }
+  }
+ },
+ {
+  "id": "coconut_milk",
+  "prices": {
+   "asda": {
+    "pack": 400,
+    "price": 0.85,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Coconut Milk",
+    "src": "https://www.trolley.co.uk/product/asda-coconut-milk/WZO213",
+    "note": "size not shown on trolley; standard 400ml tin assumed"
+   }
+  }
+ },
+ {
+  "id": "curry_powder",
+  "prices": {
+   "tesco": {
+    "pack": 80,
+    "price": 1.25,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Mild Curry Powder 80G",
+    "src": "https://www.tesco.com/shop/en-GB/products/255770060",
+    "note": "£15.62/kg; shown as out of stock online on 26 Oct"
+   }
+  }
+ },
+ {
+  "id": "mozzarella",
+  "prices": {
+   "sainsburys": {
+    "pack": 150,
+    "price": 1.55,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Mozzarella Cheese 150g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/mozzarella",
+    "note": "£10.33/kg; pack is labelled weight"
+   },
+   "asda": {
+    "pack": 125,
+    "price": 1,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Mozzarella 225g",
+    "src": "https://www.trolley.co.uk/product/asda-mozzarella-cheese/FEL200",
+    "note": "225g incl. brine (£0.44/100g); ~125g drained ball. Usually £1.27. JUST ESSENTIALS by ASDA Mozzarella 210g £0.55 also listed"
+   }
+  }
+ },
+ {
+  "id": "spring_onions",
+  "prices": {
+   "asda": {
+    "pack": 8,
+    "price": 0.68,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Fragrant & Crunchy Spring Onions",
+    "src": "https://www.trolley.co.uk/product/asda-fragrant-crunchy-spring-onions/UTJ806",
+    "note": "bunch; count not shown on trolley, 8 assumed. 125g pack variant £0.82"
+   }
+  }
+ },
+ {
+  "id": "tahini",
+  "prices": {
+   "asda": {
+    "unlisted": true,
+    "note": "searched trolley for Asda tahini (Al'Fez, Cypressa, Tesco pages): no tahini listed at Asda"
+   }
+  }
+ },
+ {
+  "id": "chicken_wings",
+  "prices": {
+   "asda": {
+    "pack": 1000,
+    "price": 2.41,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "JUST ESSENTIALS by ASDA Chicken Wings",
+    "src": "https://www.trolley.co.uk/product/just-essentials-by-asda-essentials-chicken-wings/XQV956",
+    "note": "PACK SIZE NOT SHOWN on trolley - 1kg assumed, confirm"
+   }
+  }
+ },
+ {
+  "id": "beef_steak",
+  "prices": {
+   "asda": {
+    "pack": 300,
+    "price": 4.56,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Thin Cut Beef Steaks",
+    "src": "https://www.trolley.co.uk/product/asda-tender-beef-thin-cut-steak/ITX445",
+    "note": "PACK SIZE NOT SHOWN on trolley - 300g assumed, confirm. Usually £4.83"
+   }
+  }
+ },
+ {
+  "id": "black_bean_sauce",
+  "prices": {
+   "asda": {
+    "pack": 120,
+    "price": 0.7,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Black Bean Stir-Fry Sauce",
+    "src": "https://www.trolley.co.uk/product/asda-black-bean-stir-fry-sauce/ZLA799",
+    "note": "120g stir-fry sauce pouch (£0.58/100g), not a concentrated paste; Lee Kum Kee Black Bean Garlic Sauce not listed at Asda"
+   }
+  }
+ },
+ {
+  "id": "pork_loin_steaks",
+  "prices": {
+   "asda": {
+    "pack": 400,
+    "price": 3,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "ASDA 4 Tender Pork Loin Steaks",
+    "src": "https://www.trolley.co.uk/product/asda-tender-4-pork-loin-steaks/SOE330",
+    "note": "4 steaks; weight not shown, 400g assumed (ASDA 6 = 600g, 8 = 800g £4.73)"
+   }
+  }
+ },
+ {
+  "id": "mustard_seeds",
+  "prices": {
+   "asda": {
+    "unlisted": true,
+    "note": "searched trolley for Asda black mustard seeds (Rajah, Bart, explore/mustard-seeds): no black mustard seeds at Asda; only Schwartz Mustard Seed jar (yellow) £2.00"
+   }
+  }
+ },
+ {
+  "id": "zaatar",
+  "prices": {
+   "asda": {
+    "unlisted": true,
+    "note": "searched trolley explore/zaatars and Schwartz Za'atar: not sold at Asda"
+   }
+  }
+ },
+ {
+  "id": "olives",
+  "prices": {
+   "asda": {
+    "pack": 150,
+    "price": 1.25,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Pitted Black Olives 310g",
+    "src": "https://www.trolley.co.uk/product/asda-pitted-black-olives/KTH675",
+    "note": "310g jar (£0.40/100g); drained weight not shown, ~150g assumed. Usually £1.00"
+   }
+  }
+ },
+ {
+  "id": "smoked_mackerel",
+  "prices": {
+   "asda": {
+    "pack": 215,
+    "price": 5.11,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Kiln Roasted Mackerel Fillets",
+    "src": "https://www.trolley.co.uk/product/asda-rich-kiln-roasted-mackerel-fillets/RLB143",
+    "note": "£2.38/100g; kiln roasted (hot-smoked style) - no plain standard-range smoked fillets listed. Extra Special Sweet Cured Hot Smoked £3.20 (size not shown)"
+   }
+  }
+ },
+ {
+  "id": "falafel",
+  "prices": {
+   "tesco": {
+    "pack": 8,
+    "price": 3,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Falafels 152g",
+    "src": "https://www.tesco.com/shop/en-GB/products/320666258",
+    "note": "8 falafels (per product description); £19.74/kg. Clubcard multibuy Any 2 for £5 (selected Tesco Deli Sharing) shown on search"
+   },
+   "sainsburys": {
+    "pack": 8,
+    "price": 2.6,
+    "loyalty": 1.5,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Cauldron Falafels 200g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/falafel",
+    "note": "200g, serves 4 x 2 falafels = 8 (per Tesco product page); lower price £1.50 also shown on Sainsbury's search, likely Nectar"
+   },
+   "asda": {
+    "pack": 8,
+    "price": 2.48,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Cauldron Vegan Middle Eastern Falafels 200g",
+    "src": "https://www.trolley.co.uk/product/cauldron-falafels/AFQ789",
+    "note": "200g (£1.24/100g), 8 falafels (serves 4 x 2). Asda own-brand only sweet potato (Asda 10 Sweet Potato Falafels £2.98)"
+   }
+  }
+ },
+ {
+  "id": "rice_krispies",
+  "prices": {
+   "sainsburys": {
+    "unlisted": true,
+    "note": "searched Sainsbury's for rice krispies / kellogg's rice krispies cereal: only Multigrain Shapes 350g and Squares bars listed, no plain Rice Krispies 430g/660g"
+   }
+  }
+ },
+ {
+  "id": "granola",
+  "prices": {
+   "asda": {
+    "pack": 1000,
+    "price": 2.2,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Raisin & Almond Granola",
+    "src": "https://www.trolley.co.uk/product/asda-raisin-almond-granola/RFH439",
+    "note": "PACK SIZE NOT SHOWN on trolley - 1kg assumed, confirm. Usually £1.90. ASDA Simply Granola £2.32 (size not shown); ASDA Low Sugar Multigrain Nutty Granola 500g £2.40"
+   }
+  }
+ },
+ {
+  "id": "gammon_steaks",
+  "prices": {
+   "asda": {
+    "pack": 450,
+    "price": 4.48,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Delicious 2 Unsmoked Gammon Steaks 450g",
+    "src": "https://www.trolley.co.uk/product/asda-delicious-2-unsmoked-gammon-steaks/FPA674",
+    "note": "£1.00/100g"
+   }
+  }
+ },
+ {
+  "id": "corned_beef",
+  "prices": {
+   "asda": {
+    "pack": 340,
+    "price": 2.8,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Corned Beef 340g",
+    "src": "https://www.trolley.co.uk/product/asda-corned-beef/KET700",
+    "note": "£0.82/100g. JUST ESSENTIALS by ASDA Corned Beef 340g £2.30"
+   }
+  }
+ },
+ {
+  "id": "pork_crackling_joint",
+  "prices": {
+   "asda": {
+    "unlisted": true,
+    "note": "searched trolley for Asda pork crackling joint: only Exceptional by ASDA Yorkshire Bred Crackling Pork Loin Joint £9.40 (premium, weight not shown); no standard crackling joint"
+   }
+  }
+ },
+ {
+  "id": "ale",
+  "prices": {
+   "asda": {
+    "pack": 500,
+    "price": 2.01,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Banks's Amber Ale Beer Bottle 500ml",
+    "src": "https://www.trolley.co.uk/product/bankss-amber-ale-beer-bottle/BJW219",
+    "note": "£0.40/100ml at Asda (£0.99 at Tesco/Morrisons). ASDA Original Bitter 4x440ml £1.55"
+   }
+  }
+ },
+ {
+  "id": "lamb_shanks",
+  "prices": {
+   "sainsburys": {
+    "pack": 2,
+    "price": 10.5,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's British or New Zealand Lamb Shanks (Approx. 750g)",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/lamb%20shanks",
+    "note": "weight-banded: £10.50 for 400g-750g, £15.40 for 750g-1.1kg (£14.00/kg); 2 shanks assumed"
+   },
+   "asda": {
+    "unlisted": true,
+    "note": "searched trolley for Asda lamb shanks: only ASDA Slow Cooked Lamb Shank with Mint Gravy 390g £5.77 (cooked), no raw shanks"
+   }
+  }
+ },
+ {
+  "id": "pork_ribs",
+  "prices": {
+   "asda": {
+    "unlisted": true,
+    "note": "searched trolley for Asda pork ribs: only BBQ-glazed/slow-cooked racks and mini ribs, no plain uncooked ribs"
+   }
+  }
+ },
+ {
+  "id": "star_anise",
+  "prices": {
+   "asda": {
+    "unlisted": true,
+    "note": "COOK by ASDA Star Anise listed on trolley but out of stock in every store, no current price"
+   }
+  }
+ }
+]

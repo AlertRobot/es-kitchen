@@ -1,0 +1,309 @@
+{
+  "am_double_smash_burgers": {
+    "title": "Seriously Good Smash Burgers",
+    "site": "Inspired Taste",
+    "url": "https://inspiredtaste.net/78092/smash-burgers-recipe",
+    "author": "Joanne Gallagher",
+    "match": "close",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "am_buttermilk_chicken_burger": {
+    "title": "Henry's Crispy Fried Chicken Burger",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/crispy-fried-chicken-burger/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "am_nashville_hot_chicken_burger": {
+    "title": "Nashville Hot Chicken Sandwiches",
+    "site": "Gimme Delicious",
+    "url": "https://gimmedelicious.com/nashville-hot-chicken-sandwiches/",
+    "author": "Layla Atik",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "am_homemade_meat_feast_pizza": {
+    "title": "Pizza Dough recipe – best ever homemade pizza!",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/pizza-dough-recipe/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "am_pan_pepperoni_pizza": {
+    "title": "Frying pan pizza",
+    "site": "Tesco Real Food",
+    "url": "https://realfood.tesco.com/recipes/frying-pan-pizza.html",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "am_bbq_chicken_naan_pizza": {
+    "title": "BBQ Chicken Naan Pizza",
+    "site": "Mashup Mom",
+    "url": "https://www.mashupmom.com/bbq-chicken-naan-pizza",
+    "author": "Rachel Singer",
+    "match": "close",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "am_stovetop_mac_and_cheese": {
+    "title": "Stovetop Macaroni and Cheese",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/stovetop-macaroni-cheese/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "am_slow_cooker_pulled_pork": {
+    "title": "Slow Cooker BBQ Pulled Pork Sandwich",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/slow-cooker-bbq-pulled-pork-sandwich/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "am_buffalo_wings": {
+    "title": "Baked Buffalo Wings – Ultra Crispy",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/truly-crispy-oven-baked-buffalo-wings-my-wings-cookbook/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "am_loaded_bacon_cheese_fries": {
+    "title": "Loaded Cheese & Bacon Dirty Fries",
+    "site": "Asda Good Living",
+    "url": "https://www.asda.com/good-living/recipe/loaded-cheese-bacon-dirty-fries",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "am_sausage_hot_dogs": {
+    "title": "Caramelised onion hot dogs",
+    "site": "Tesco Real Food",
+    "url": "https://realfood.tesco.com/recipes/caramelised-onion-hot-dogs.html",
+    "match": "close",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "am_philly_cheesesteak": {
+    "title": "Philly Cheesesteaks",
+    "site": "Brown Eyed Baker",
+    "url": "https://www.browneyedbaker.com/philly-cheesesteak-sandwiches/",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "am_sloppy_joes": {
+    "title": "Sloppy Joes",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/sloppy-joes/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "am_crispy_chicken_tenders": {
+    "title": "Oven Fried Parmesan Chicken Tenders",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/oven-fried-parmesan-baked-chicken-tenders/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "am_meatball_subs": {
+    "title": "Italian Meatballs (extra soft and juicy)",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/classic-italian-meatballs-extra-soft-and-juicy/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "am_chilli_cheese_fries": {
+    "title": "Chilli Cheese Fries",
+    "site": "Tesco Real Food",
+    "url": "https://realfood.tesco.com/recipes/chilli-cheese-fries.html",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "am_chicken_pot_pie": {
+    "title": "Chicken Pot Pie",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/chicken-pot-pie/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "am_cheeseburger_quesadillas": {
+    "title": "Smash Burger Tacos",
+    "site": "Oh Sweet Basil",
+    "url": "https://ohsweetbasil.com/smash-burger-tacos-recipe/",
+    "author": "Carrian Cheney",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "am_bbq_bacon_burger": {
+    "title": "Big, Juicy Hamburgers",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/hamburger-recipe/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "am_buffalo_cauliflower": {
+    "title": "Baked Buffalo Cauliflower Bites",
+    "site": "For the Love of Cooking",
+    "url": "https://fortheloveofcooking.net/recipe/baked-buffalo-cauliflower-bites",
+    "author": "Pam",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "am_southern_fried_chicken_gravy": {
+    "title": "Fried Chicken – ultra craggy crispy crust",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/fried-chicken/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "am_blackened_salmon_tacos": {
+    "title": "Cajun Blackened Fish",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/cajun-blackened-fish/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "am_bbq_chicken_traybake": {
+    "title": "Oven Baked BBQ Chicken",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/oven-baked-bbq-chicken/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "am_jambalaya": {
+    "title": "Jambalaya",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/jambalaya/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": "Liquid far too high for 150g basmati (1 tin tomatoes + 350ml stock, ~5:1 vs ~3.5:1 in RecipeTin) – would go soupy/mushy; fixed to ½ tin tomatoes + 1 tbsp purée + 300ml stock, 15–18 min."
+  },
+  "am_cajun_chicken_dirty_rice": {
+    "title": "Dirty Rice",
+    "site": "House of Nash Eats",
+    "url": "https://houseofnasheats.com/dirty-rice/",
+    "author": "Amy Nash",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "am_buffalo_chicken_wraps": {
+    "title": "Buffalo Chicken Wrap",
+    "site": "Feel Good Foodie",
+    "url": "https://feelgoodfoodie.net/recipe/buffalo-chicken-wrap/",
+    "author": "Yumna Jawad",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "am_chicken_caesar_wraps": {
+    "title": "Caesar Salad (with homemade Caesar dressing)",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/chicken-caesar-salad/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "am_chicken_cobb_salad": {
+    "title": "Cobb Salad Recipe",
+    "site": "Natasha's Kitchen",
+    "url": "https://natashaskitchen.com/cobb-salad/",
+    "author": "Natasha Kravchuk",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "am_chicken_sweetcorn_chowder": {
+    "title": "Chicken and corn chowder",
+    "site": "Tesco Real Food",
+    "url": "https://www.tesco.com/recipes/en-GB/recipe/chicken-and-corn-chowder",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "am_bbq_glazed_salmon": {
+    "title": "BBQ Glazed Salmon With Roasted Red Pepper Corn Salsa",
+    "site": "News On 6",
+    "url": "https://newson6.com/story/16907686/bbq-glazed-salmon-with-roasted-red-pepper-corn-salsa",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "am_honey_mustard_chicken_burgers": {
+    "title": "Honey Dijon Grilled Chicken Sandwich",
+    "site": "Festival Foods",
+    "url": "https://festivalfoods.net/blog/2022/08/11/honey-dijon-grilled-chicken-sandwich/",
+    "author": "Laura Youngquist",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "am_cajun_prawn_pasta": {
+    "title": "Creamy Cajun Prawn Pasta",
+    "site": "HelloFresh",
+    "url": "https://www.hellofresh.ie/recipes/creamy-cajun-prawn-pasta-67e3f251a43f6df39e7414ef",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "am_bbq_pork_steaks": {
+    "title": "Saint Louis-Style Pork Steaks",
+    "site": "Barbecue Bible",
+    "url": "https://barbecuebible.com/recipe/saint-louis-style-pork-steaks/",
+    "author": "Steven Raichlen",
+    "match": "loose",
+    "checked": "2026-10-23",
+    "fix": "Only the idea is shared: St Louis pork steaks are smoked 2.5–3 hrs before glazing; ours is a quick griddled BBQ-glazed shoulder steak. No error – 4–5 min/side matches pan-cooked shoulder steaks (Great British Chefs, Tesco) – but cannot be brought in line by small changes."
+  },
+  "am_mini_meatloaves": {
+    "title": "Meatloaf recipe (extra delicious!)",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/meatloaf-recipe/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "am_garlic_butter_steak_bites": {
+    "title": "Garlic Butter Steak Bites and Potatoes",
+    "site": "Chef Savvy",
+    "url": "https://chefsavvy.com/garlic-butter-steak-bites-and-potatoes/",
+    "author": "Kelley Simmons",
+    "match": "close",
+    "checked": "2026-10-23",
+    "fix": ""
+  }
+}

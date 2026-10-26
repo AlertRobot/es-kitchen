@@ -1,0 +1,694 @@
+[
+ {
+  "id": "arborio_rice",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched risotto rice, arborio, rice: only Tilda packets/jasmine/basmati listed"
+   }
+  }
+ },
+ {
+  "id": "aubergine",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched aubergine: none listed"
+   }
+  }
+ },
+ {
+  "id": "avocado",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched avocado: search index shows Ripe & Ready XL Avocado p10056236 (£1.19) and Large Avocado p10055529, but the product page no longer loads (stale listing)"
+   }
+  }
+ },
+ {
+  "id": "bacon",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched bacon, smoked back bacon: only McEnnedy (American-week) bacon rashers 240g and XXL streaky listed"
+   }
+  }
+ },
+ {
+  "id": "baguette",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched baguette: none listed"
+   }
+  }
+ },
+ {
+  "id": "basil",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched basil: none listed"
+   }
+  }
+ },
+ {
+  "id": "beansprouts",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched beansprouts: none listed"
+   }
+  }
+ },
+ {
+  "id": "beef_mince",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched beef mince, mince: only '- High Protein Mince 5%' 480g £4.79 (Lidl Plus £3.83), a short-term special in store from 29.10"
+   }
+  }
+ },
+ {
+  "id": "black_beans",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched black beans, beans: none listed"
+   }
+  }
+ },
+ {
+  "id": "black_pepper",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched black pepper: none listed"
+   }
+  }
+ },
+ {
+  "id": "broccoli",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched broccoli (via beansprouts): Broccoli 500g p10055533 in search index but product page no longer loads (stale offer listing)"
+   }
+  }
+ },
+ {
+  "id": "burger_buns",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched brioche buns: only Eridanous Brioche loaf (Greek-week special) listed"
+   }
+  }
+ },
+ {
+  "id": "butter",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched butter, salted butter: none listed"
+   }
+  }
+ },
+ {
+  "id": "butter_beans",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched butter beans, beans: none listed"
+   }
+  }
+ },
+ {
+  "id": "cannellini_beans",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched cannellini, beans: none listed"
+   }
+  }
+ },
+ {
+  "id": "carrots",
+  "prices": {
+   "lidl": {
+    "pack": 1000,
+    "price": 0.69,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Carrots 1kg",
+    "src": "https://www.lidl.co.uk/p/carrots/p10056238",
+    "note": "Regular price £0.69 (49p/kg Lidl Plus offer on page ran 15.10–21.10, expired)"
+   }
+  }
+ },
+ {
+  "id": "cauliflower",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched cauliflower: none listed"
+   }
+  }
+ },
+ {
+  "id": "cheddar",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched cheddar, hard cheese: none listed (only Alpen Fest specials and cheese slices)"
+   }
+  }
+ },
+ {
+  "id": "cherry_tomatoes",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched cherry tomatoes, tomatoes: none listed (only KTC plum tomatoes 800g and a Family Pack Tomatoes special from 29.10)"
+   }
+  }
+ },
+ {
+  "id": "chicken_breast",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched chicken breast, chicken: only XXL British Chicken Breast Fillet 2.5kg £14.79 (bulk pack, excluded)"
+   }
+  }
+ },
+ {
+  "id": "chicken_thighs",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched chicken thigh, chicken: none listed"
+   }
+  }
+ },
+ {
+  "id": "chickpeas",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched chickpeas: none listed"
+   }
+  }
+ },
+ {
+  "id": "chilli_flakes",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched chilli, chillies: none listed"
+   }
+  }
+ },
+ {
+  "id": "chopped_tomatoes",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched chopped tomatoes, tinned, tomatoes: none listed"
+   }
+  }
+ },
+ {
+  "id": "coconut_milk",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched coconut milk, coconut: none listed"
+   }
+  }
+ },
+ {
+  "id": "coriander",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched coriander: none listed"
+   }
+  }
+ },
+ {
+  "id": "cornflour",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched cornflour: none listed"
+   }
+  }
+ },
+ {
+  "id": "courgette",
+  "prices": {
+   "lidl": {
+    "pack": 1,
+    "price": 0.7,
+    "loyalty": 0.35,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Courgettes (loose, regular £2.78/kg; Lidl Plus £1.39/kg) – priced at ~250g each",
+    "src": "https://www.lidl.co.uk/p/courgettes/p11151073",
+    "note": "Sold loose by weight; 250g each at £2.78/kg = £0.695; Lidl Plus £1.39/kg (Save 50%)"
+   }
+  }
+ },
+ {
+  "id": "couscous",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched couscous: none listed"
+   }
+  }
+ },
+ {
+  "id": "cucumber",
+  "prices": {
+   "lidl": {
+    "pack": 1,
+    "price": 1.05,
+    "loyalty": 0.79,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Organic Cucumber (each)",
+    "src": "https://www.lidl.co.uk/p/organic-cucumber/p11151261",
+    "note": "Only cucumber with a live page (standard cucumber p10055848 page gone); organic line. Regular £1.05, Lidl Plus 79p"
+   }
+  }
+ },
+ {
+  "id": "cumin",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched cumin, spices: none listed"
+   }
+  }
+ },
+ {
+  "id": "cumin_seeds",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched cumin, spices: none listed"
+   }
+  }
+ },
+ {
+  "id": "curry_powder",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched curry, spices: none listed"
+   }
+  }
+ },
+ {
+  "id": "double_cream",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched double cream, cream: none listed"
+   }
+  }
+ },
+ {
+  "id": "egg_noodles",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched noodles: only Alpen Fest German noodles listed"
+   }
+  }
+ },
+ {
+  "id": "eggs",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched eggs, free range eggs: none listed"
+   }
+  }
+ },
+ {
+  "id": "feta",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched feta: only Eridanous Feta 400g £4.99 / PDO 800g, Greek-week specials in store from 29.10"
+   }
+  }
+ },
+ {
+  "id": "frozen_peas",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched peas: none listed"
+   }
+  }
+ },
+ {
+  "id": "garam_masala",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched garam masala, spices: none listed"
+   }
+  }
+ },
+ {
+  "id": "garlic",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched garlic: none listed"
+   }
+  }
+ },
+ {
+  "id": "ginger_paste",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched ginger: none listed"
+   }
+  }
+ },
+ {
+  "id": "gnocchi",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched gnocchi: only Eridanous Gnocchi 400g £1.79, Greek-week special in store from 29.10"
+   }
+  }
+ },
+ {
+  "id": "gochujang",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched gochujang: none listed"
+   }
+  }
+ },
+ {
+  "id": "gravy",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched gravy: none listed"
+   }
+  }
+ },
+ {
+  "id": "greek_yogurt",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched yogurt, greek style yoghurt: only Eridanous Greek Yogurt 500g £1.99, Greek-week special in store from 29.10"
+   }
+  }
+ },
+ {
+  "id": "green_chillies",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched chilli, chillies: none listed"
+   }
+  }
+ },
+ {
+  "id": "ground_cinnamon",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched cinnamon, spices: none listed"
+   }
+  }
+ },
+ {
+  "id": "ground_coriander",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched coriander, spices: none listed"
+   }
+  }
+ },
+ {
+  "id": "halloumi",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched halloumi: only flavoured Halloumi 225g £1.99 (basil-chilli etc. assortment), special in store from 29.10"
+   }
+  }
+ },
+ {
+  "id": "harissa",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched harissa: none listed"
+   }
+  }
+ },
+ {
+  "id": "hoisin_sauce",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched hoisin: none listed"
+   }
+  }
+ },
+ {
+  "id": "honey",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched honey: none listed"
+   }
+  }
+ },
+ {
+  "id": "kidney_beans",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched kidney beans, beans: none listed"
+   }
+  }
+ },
+ {
+  "id": "kimchi",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched kimchi: none listed"
+   }
+  }
+ },
+ {
+  "id": "lamb_mince",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched lamb mince, mince: none listed (only minted lamb steaks special)"
+   }
+  }
+ },
+ {
+  "id": "lasagne_sheets",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched lasagne, pasta: none listed"
+   }
+  }
+ },
+ {
+  "id": "leeks",
+  "prices": {
+   "lidl": {
+    "pack": 500,
+    "price": 1.09,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Leeks 500g",
+    "src": "https://www.lidl.co.uk/p/leeks/p11151063",
+    "note": "Currently £1.09, reduced from £1.37 (Save 20%)"
+   }
+  }
+ },
+ {
+  "id": "lemon",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched lemons: Lemons 750g p10055845 (£1.19) in search index but product page no longer loads (stale listing)"
+   }
+  }
+ },
+ {
+  "id": "lime",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched limes, lime: none listed"
+   }
+  }
+ },
+ {
+  "id": "little_gem",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched lettuce, salad: none listed"
+   }
+  }
+ },
+ {
+  "id": "milk",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched semi skimmed milk, milk: none listed"
+   }
+  }
+ },
+ {
+  "id": "miso_paste",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched miso: none listed"
+   }
+  }
+ },
+ {
+  "id": "mixed_herbs",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched mixed herbs, spices: only Eridanous Greek Spices special from 29.10"
+   }
+  }
+ },
+ {
+  "id": "mozzarella",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched mozzarella: none listed"
+   }
+  }
+ },
+ {
+  "id": "mushrooms",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched mushrooms: Chestnut Mushrooms 250g p10055842 in search index but product page no longer loads (stale listing)"
+   }
+  }
+ },
+ {
+  "id": "naan",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched naan: none listed"
+   }
+  }
+ },
+ {
+  "id": "oil",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched vegetable oil, oil: only Deluxe Greek extra virgin olive oil 500ml special"
+   }
+  }
+ },
+ {
+  "id": "onion",
+  "prices": {
+   "lidl": {
+    "pack": 6.25,
+    "price": 0.95,
+    "loyalty": 0.69,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Brown Onions 1kg",
+    "src": "https://www.lidl.co.uk/p/brown-onions/p11151220",
+    "note": "1kg bag = ~6.25 onions at 160g; regular 95p/kg, Lidl Plus 69p/kg (Save 20%; search lists offer as from 29.10)"
+   }
+  }
+ },
+ {
+  "id": "pak_choi",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched pak choi: none listed"
+   }
+  }
+ },
+ {
+  "id": "paneer",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched paneer: none listed"
+   }
+  }
+ },
+ {
+  "id": "panko",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched panko, breadcrumbs: none listed"
+   }
+  }
+ },
+ {
+  "id": "parmesan",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched parmesan, grana padano, hard cheese: none listed"
+   }
+  }
+ },
+ {
+  "id": "pasta",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched pasta, spaghetti, penne: only German Style Pasta (Alpen Fest special) listed"
+   }
+  }
+ }
+]

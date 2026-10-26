@@ -1,0 +1,208 @@
+[
+ {
+  "id": "lu_chicken_tikka_rice_box",
+  "title": "Chicken Tikka Rice Box with Peas & Spinach",
+  "icon": "🍛",
+  "meal": "lunch",
+  "cuisine": "Indian",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 25,
+  "servings": 1,
+  "kcalEst": 505,
+  "packable": true,
+  "microwave": true,
+  "keepsDays": 1,
+  "batch": "Make 2 portions so one rice pouch covers both; keep the opened half sealed in the fridge for tomorrow's box, or freeze the second box and defrost overnight in the fridge. Only ever reheat the rice once.",
+  "equipment": [
+   "hob",
+   "microwave"
+  ],
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 130,
+    "t": "130g, cut into chunks"
+   },
+   {
+    "i": "tikka_paste",
+    "q": 20,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "skyr",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "oil",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "microwave_rice_pouch",
+    "q": 125,
+    "t": "½ pouch"
+   },
+   {
+    "i": "frozen_peas",
+    "q": 40,
+    "t": "a handful"
+   },
+   {
+    "i": "spinach",
+    "q": 30,
+    "t": "a big handful"
+   },
+   {
+    "i": "red_onion",
+    "q": 0.25,
+    "t": "¼, finely sliced"
+   },
+   {
+    "i": "lemon",
+    "q": 0.25,
+    "t": "a squeeze"
+   },
+   {
+    "i": "coriander",
+    "q": 5,
+    "t": "a few sprigs, chopped"
+   },
+   {
+    "i": "salt",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Marinate the chicken",
+    "text": "Mix the chicken chunks with the tikka paste and skyr. Leave for 10 min, or overnight in the fridge if you're organised."
+   },
+   {
+    "title": "Cook the chicken",
+    "text": "Heat the oil in a frying pan over a medium-high heat and cook the chicken for 8–10 min, turning, until charred in places and cooked through."
+   },
+   {
+    "title": "Prep the peas",
+    "text": "Cover the peas with boiling water from the kettle for 2 min, then drain. Don't heat the rice now – cooked rice should only be reheated once, so it goes into the box straight from the pouch."
+   },
+   {
+    "title": "Pack it",
+    "text": "Break up the rice into a box and stir through the peas. Pile the spinach on top, then the chicken – the spinach wilts when you reheat it. Squeeze the lemon over the red onion and pack it with the coriander in a small pot. Cool the chicken quickly and chill the box within an hour."
+   },
+   {
+    "title": "Reheat at work",
+    "text": "Microwave the rice, spinach and chicken for 2½–3 min, stirring halfway, until piping hot all the way through. Top with the lemony onion and coriander."
+   }
+  ],
+  "tags": [
+   "high-protein",
+   "batch",
+   "freezable"
+  ],
+  "basedOn": "Pinch of Nom — Chicken Tikka Kebabs (yogurt-marinated tikka chicken, rice on the side), made as a lunch box with pouch rice, peas and spinach"
+ },
+ {
+  "id": "lu_spinach_feta_egg_muffins",
+  "title": "Spinach, Pepper & Feta Egg Muffins",
+  "icon": "🧁",
+  "meal": "lunch",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 30,
+  "servings": 1,
+  "kcalEst": 350,
+  "packable": true,
+  "microwave": false,
+  "keepsDays": 3,
+  "batch": "Bake 12 muffins (3 lunches) in one 12-hole tin; keeps 3 days chilled or freeze them individually.",
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "i": "eggs",
+    "q": 3,
+    "t": "3"
+   },
+   {
+    "i": "cottage_cheese",
+    "q": 40,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "spinach",
+    "q": 25,
+    "t": "a handful, chopped"
+   },
+   {
+    "i": "peppers",
+    "q": 0.33,
+    "t": "⅓, finely diced"
+   },
+   {
+    "i": "spring_onions",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "feta",
+    "q": 20,
+    "t": "20g, crumbled"
+   },
+   {
+    "i": "oil",
+    "q": 2,
+    "t": "a little, for greasing"
+   },
+   {
+    "i": "salad_leaves",
+    "q": 30,
+    "t": "a handful, to serve"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 60,
+    "t": "5, to serve"
+   },
+   {
+    "i": "salt",
+    "q": 1,
+    "t": "a pinch"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a few grinds"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Heat the oven",
+    "text": "Heat the oven to 190°C (170°C fan) and lightly oil 4 holes of a muffin tin, or use silicone cases."
+   },
+   {
+    "title": "Mix the filling",
+    "text": "Whisk the eggs with the cottage cheese and season. Stir in the spinach, pepper and spring onion, then divide between the 4 holes – fill them no more than ¾ full so they don't overflow as they puff up – and crumble the feta on top."
+   },
+   {
+    "title": "Bake",
+    "text": "Bake for 18–20 min until puffed, golden and set in the middle — a knife poked in should come out clean. Cool in the tin for 5 min, then on a rack."
+   },
+   {
+    "title": "Pack it",
+    "text": "Pack the 4 muffins with the salad leaves and tomatoes. Eat cold, or microwave for 30–40 sec if you prefer them warm."
+   }
+  ],
+  "tags": [
+   "high-protein",
+   "batch",
+   "freezable",
+   "veggie"
+  ],
+  "basedOn": "Tesco Recipes — Leek and feta breakfast bites, made with spinach, pepper and cottage cheese"
+ }
+]

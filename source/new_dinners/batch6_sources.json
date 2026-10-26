@@ -1,0 +1,11 @@
+{
+ "it_chicken_chorizo_pasta": {"title": "Chicken and Chorizo Pasta", "site": "Liana's Kitchen", "url": "https://lianaskitchen.co.uk/wprm_print/chicken-and-chorizo-pasta", "author": "Liana Green", "match": "close", "checked": "2026-10-24", "fix": ""},
+ "it_tomato_mozzarella_gnocchi_bake": {"title": "Gnocchi Bake with Tomatoes, Basil and Mozzarella", "site": "Tesco Real Food", "url": "https://realfood.tesco.com/recipes/gnocchi-bake-with-tomatoes-basil-and-mozzarella.html", "author": "", "match": "adapted", "checked": "2026-10-24", "fix": ""},
+ "mx_crunchy_beef_tacos": {"title": "Hard Shell Beef Tacos", "site": "Andy Cooks", "url": "https://www.andy-cooks.com/blogs/recipes/hard-shell-beef-tacos", "author": "", "match": "adapted", "checked": "2026-10-24", "fix": ""},
+ "mx_veggie_bean_chilli": {"title": "Vegetarian Chilli", "site": "Jamie Oliver", "url": "https://www.jamieoliver.com/recipes/vegetables-recipes/veggie-chilli", "author": "Jamie Oliver", "match": "adapted", "checked": "2026-10-24", "fix": ""},
+ "mx_steak_fajitas": {"title": "Steak Fajitas", "site": "Laura in the Kitchen", "url": "https://www.laurainthekitchen.com/recipes/steak-fajitas/", "author": "Laura Vitale", "match": "adapted", "checked": "2026-10-24", "fix": ""},
+ "me_chicken_shish_kebab": {"title": "Turkish Chicken Shish Kebab", "site": "Delicious magazine", "url": "https://www.deliciousmagazine.co.uk/recipes/turkish-chicken-shish/", "author": "", "match": "adapted", "checked": "2026-10-24", "fix": ""},
+ "me_chicken_gyros_chips": {"title": "Greek Chicken Gyros with Tzatziki", "site": "RecipeTin Eats", "url": "https://www.recipetineats.com/greek-chicken-gyros-with-tzatziki/", "author": "Nagi Maehashi", "match": "adapted", "checked": "2026-10-24", "fix": ""},
+ "me_lamb_moussaka": {"title": "Moussaka", "site": "Tesco Real Food", "url": "https://realfood.tesco.com/recipes/moussaka.html", "author": "", "match": "adapted", "checked": "2026-10-24", "fix": ""},
+ "me_greek_lamb_burgers": {"title": "Greek Lamb Burgers with Feta, Mint and Tzatziki", "site": "Le Creuset", "url": "https://www.lecreuset.com.au/greek-lamb-burgers-with-feta-mint-and-tzatziki", "author": "", "match": "adapted", "checked": "2026-10-24", "fix": ""}
+}

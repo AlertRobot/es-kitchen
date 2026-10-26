@@ -1,0 +1,587 @@
+[
+ {
+  "id": "sun_dried_tomatoes",
+  "tescoPack": 285,
+  "prices": {
+   "tesco": {
+    "pack": 285,
+    "label": "Tesco Sun Dried Tomatoes 285g",
+    "price": 2.5,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=sun%20dried%20tomatoes",
+    "est": false
+   },
+   "sainsburys": {
+    "pack": 280,
+    "label": "Sainsbury's Sun Dried Tomatoes, Inspired to Cook 280g",
+    "price": 3.9,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/sun%20dried%20tomatoes",
+    "est": false
+   },
+   "asda": {
+    "pack": 280,
+    "label": "ASDA Sun-Dried Tomatoes 280g",
+    "price": 3.2,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/asda-sun-dried-tomatoes/VFQ820",
+    "est": false
+   },
+   "aldi": {
+    "pack": 280,
+    "label": "The Deli Sundried Tomatoes 280g (170g drained)",
+    "price": 1.19,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/the-deli-sundried-tomatoes-170g-drained/ATO970",
+    "est": true,
+    "note": "trolley 'usual price'; listed out of stock, no current price"
+   },
+   "lidl": {
+    "pack": 280,
+    "label": "Lidl equivalent (est.)",
+    "price": 1.19,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "",
+    "est": true,
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "pecorino",
+  "tescoPack": 170,
+  "prices": {
+   "tesco": {
+    "pack": 170,
+    "label": "Tesco Italian Pecorino Cheese 170g",
+    "price": 4.0,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=pecorino",
+    "est": false
+   },
+   "sainsburys": {
+    "pack": 170,
+    "label": "Sainsbury's Pecorino Romano Cheese 170g",
+    "price": 4.0,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/pecorino",
+    "est": false
+   },
+   "asda": {
+    "pack": 50,
+    "label": "ASDA Italian Grated Pecorino 50g",
+    "price": 1.45,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/asda-grated-pecorino/BGY031",
+    "est": false,
+    "note": "only grated 50g found; no Asda pecorino wedge listed"
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "rocket",
+  "tescoPack": 60,
+  "prices": {
+   "tesco": {
+    "pack": 60,
+    "label": "Tesco Wild Rocket 60g",
+    "price": 1.0,
+    "loyalty": 0.9,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=wild%20rocket",
+    "est": false,
+    "note": "Clubcard price valid 20/10/2026-02/11/2026"
+   },
+   "sainsburys": {
+    "pack": 60,
+    "label": "Sainsbury's Wild Rocket 60g",
+    "price": 1.0,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/wild%20rocket",
+    "est": false
+   },
+   "asda": {
+    "pack": 60,
+    "label": "ASDA Wild Rocket Strong & Peppery 60g",
+    "price": 0.96,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/asda-wild-rocket/GBC275",
+    "est": false
+   },
+   "aldi": {
+    "pack": 60,
+    "label": "Nature's Pick Wild Rocket 60g",
+    "price": 0.69,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/natures-pick-wild-rocket/BCT002",
+    "est": true,
+    "note": "trolley 'usual price'; listed out of stock. aldi.co.uk live alternative: Rocket & Baby Leaf Salad 90g £0.99"
+   },
+   "lidl": {
+    "pack": 60,
+    "label": "Lidl equivalent (est.)",
+    "price": 0.69,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "",
+    "est": true,
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "fennel_seeds",
+  "tescoPack": 36,
+  "prices": {
+   "tesco": {
+    "pack": 36,
+    "label": "Tesco Fennel Seeds 36g",
+    "price": 1.0,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=fennel%20seeds",
+    "est": false
+   },
+   "sainsburys": {
+    "pack": 34,
+    "label": "Sainsbury's Fennel Seed 34g",
+    "price": 1.15,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/fennel%20seeds",
+    "est": false
+   },
+   "asda": {
+    "pack": 37,
+    "label": "COOK by ASDA Fennel Seeds 37g",
+    "price": 0.95,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/cook-by-asda-fennel-seeds/SSQ096",
+    "est": false
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "anchovies",
+  "tescoPack": 50,
+  "prices": {
+   "tesco": {
+    "pack": 50,
+    "label": "Tesco Finest Cantabrian Anchovy Fillets in Oil 50g",
+    "price": 1.65,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=anchovy%20fillets",
+    "est": false,
+    "note": "Tesco has no standard own-brand anchovy tin; Finest 50g is the only 50g option (John West 95g £3.20)"
+   },
+   "sainsburys": {
+    "pack": 50,
+    "label": "Sainsbury's Anchovy Fillets in Olive Oil 50g (30g drained)",
+    "price": 1.45,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/anchovy%20fillets",
+    "est": false
+   },
+   "asda": {
+    "pack": 50,
+    "label": "ASDA Anchovy Fillets in Olive Oil 50g",
+    "price": 0.9,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/asda-anchovy-fillets-in-olive-oil/PPL135",
+    "est": false
+   },
+   "aldi": {
+    "pack": 50,
+    "label": "The Fishmonger Anchovies in Extra Virgin Olive Oil",
+    "price": 0.79,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.aldi.co.uk/product/the-fishmonger-anchovies-in-extra-virgin-olive-oil-000000000000336472",
+    "est": true,
+    "note": "price live on aldi.co.uk; pack size not stated, assumed 50g tin"
+   },
+   "lidl": {
+    "pack": 50,
+    "label": "Lidl equivalent (est.)",
+    "price": 0.79,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "",
+    "est": true,
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "chipotle_paste",
+  "tescoPack": 95,
+  "prices": {
+   "tesco": {
+    "pack": 95,
+    "label": "Tesco Chipotle Chilli Paste 95g",
+    "price": 1.8,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=chipotle%20paste",
+    "est": false
+   },
+   "sainsburys": {
+    "pack": 90,
+    "label": "Sainsbury's Spicy Chipotle Chilli Paste, Inspired to Cook 90g",
+    "price": 1.95,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/chipotle%20paste",
+    "est": false
+   },
+   "asda": {
+    "pack": 100,
+    "label": "COOK by ASDA Chipotle Paste 100g",
+    "price": 2.0,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/asda-chipotle-paste/BLW041",
+    "est": false
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "pork_shoulder_steaks",
+  "tescoPack": 700,
+  "prices": {
+   "tesco": {
+    "pack": 700,
+    "label": "Tesco Pork Shoulder Steaks 700g",
+    "price": 6.15,
+    "loyalty": 4.5,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=pork%20shoulder%20steaks",
+    "est": false,
+    "note": "Clubcard price valid 07/10/2026-27/10/2026"
+   },
+   "sainsburys": {
+    "pack": 600,
+    "label": "Sainsbury's British Pork Shoulder Steaks x4 600g",
+    "price": 5.5,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/pork%20shoulder%20steaks",
+    "est": false,
+    "note": "also x6 900g £6.50 (shown with £7.65)"
+   },
+   "asda": {
+    "pack": 700,
+    "label": "ASDA Tender 4 Pork Shoulder Steaks 700g",
+    "price": 6.35,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/asda-tender-4-pork-shoulder-steaks/WDX455",
+    "est": false,
+    "note": "trolley usual price £3.95; current £6.35"
+   },
+   "aldi": {
+    "pack": 700,
+    "label": "Ashfields British Pork Shoulder Steaks 700g",
+    "price": 3.89,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.aldi.co.uk/product/ashfields-british-pork-shoulder-steaks-000000000000387512",
+    "est": false
+   },
+   "lidl": {
+    "pack": 700,
+    "label": "Lidl equivalent (est.)",
+    "price": 3.89,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "",
+    "est": true,
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "sour_cream",
+  "tescoPack": 300,
+  "prices": {
+   "tesco": {
+    "pack": 300,
+    "label": "Tesco Soured Cream 300ml",
+    "price": 0.85,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=soured%20cream",
+    "est": false
+   },
+   "sainsburys": {
+    "pack": 300,
+    "label": "Sainsbury's Soured Cream 300ml",
+    "price": 1.0,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/soured%20cream",
+    "est": false
+   },
+   "asda": {
+    "pack": 300,
+    "label": "ASDA Fresh Soured Cream 300ml",
+    "price": 0.85,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/asda-fresh-soured-cream/XGR342",
+    "est": false
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "jalapenos",
+  "tescoPack": 300,
+  "prices": {
+   "tesco": {
+    "pack": 300,
+    "label": "Tesco Sliced Green Jalapenos In Brine 300g",
+    "price": 1.6,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=jalapenos",
+    "est": false,
+    "note": "~135g drained (from DR.WT unit price)"
+   },
+   "sainsburys": {
+    "pack": 200,
+    "label": "Sainsbury's Sliced Green Jalapeños 200g (90g drained)",
+    "price": 1.1,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/jalapenos",
+    "est": false
+   },
+   "asda": {
+    "pack": 340,
+    "label": "ASDA Sliced Green Jalapenos 340g",
+    "price": 1.72,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/asda-mexican-style-jalapenos/KWG791",
+    "est": false
+   },
+   "aldi": {
+    "pack": 110,
+    "label": "The Deli Green Sliced Jalapeños 110g",
+    "price": 0.69,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.aldi.co.uk/product/the-deli-green-sliced-jalapenos-000000000000335578",
+    "est": false,
+    "note": "product page £0.69 (£6.27/kg); category listing showed £0.39. 110g may be drained weight"
+   },
+   "lidl": {
+    "pack": 110,
+    "label": "Lidl equivalent (est.)",
+    "price": 0.69,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "",
+    "est": true,
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "red_cabbage",
+  "tescoPack": 1,
+  "prices": {
+   "tesco": {
+    "pack": 1,
+    "label": "Tesco Red Cabbage Each",
+    "price": 0.89,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=red%20cabbage",
+    "est": false,
+    "note": "Aldi Price Match"
+   },
+   "sainsburys": {
+    "pack": 1,
+    "label": "Sainsbury's Red Cabbage Each",
+    "price": 0.89,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/red%20cabbage",
+    "est": false
+   },
+   "asda": {
+    "pack": 1,
+    "label": "ASDA Red Cabbage (typically 1kg, sold per kg)",
+    "price": 1.0,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/asda-red-cabbage-typically-1-1kg-per-kg/MXQ362",
+    "est": false,
+    "note": "£1.00/kg, one ~1kg head; trolley usual £2.40"
+   },
+   "aldi": {
+    "pack": 1,
+    "label": "Red Cabbage each",
+    "price": 0.89,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=red%20cabbage",
+    "est": true,
+    "note": "not found on aldi.co.uk; inferred from Tesco's 'Aldi Price Match' label at £0.89"
+   },
+   "lidl": {
+    "pack": 1,
+    "label": "Lidl equivalent (est.)",
+    "price": 0.89,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "",
+    "est": true,
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "zaatar",
+  "tescoPack": 35,
+  "prices": {
+   "tesco": {
+    "pack": 35,
+    "label": "Schwartz Za'atar Seasoning 35g",
+    "price": 2.0,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=zaatar",
+    "est": false,
+    "note": "no Tesco own-brand za'atar"
+   },
+   "sainsburys": {
+    "pack": 35,
+    "label": "Sainsbury's Zaatar, Inspired to Cook 35g",
+    "price": 2.5,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/za'atar",
+    "est": false
+   },
+   "asda": null,
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "dried_apricots",
+  "tescoPack": 250,
+  "prices": {
+   "tesco": {
+    "pack": 250,
+    "label": "Tesco Soft Apricots 250g",
+    "price": 2.8,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=dried%20apricots",
+    "est": false
+   },
+   "sainsburys": {
+    "pack": 200,
+    "label": "Sainsbury's Ready To Eat Apricots 200g",
+    "price": 2.45,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/dried%20apricots",
+    "est": false
+   },
+   "asda": {
+    "pack": 200,
+    "label": "ASDA Apricots 200g",
+    "price": 2.17,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/asda-apricots/UYP085",
+    "est": false,
+    "note": "also 500g £4.50"
+   },
+   "aldi": {
+    "pack": 500,
+    "label": "The Foodie Market Soft Apricots 500g",
+    "price": 2.39,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/the-foodie-market-soft-apricots/QAD161",
+    "est": true,
+    "note": "trolley 'usual price'; listed out of stock, no current price"
+   },
+   "lidl": {
+    "pack": 500,
+    "label": "Lidl equivalent (est.)",
+    "price": 2.39,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "",
+    "est": true,
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "olives",
+  "tescoPack": 163,
+  "prices": {
+   "tesco": {
+    "pack": 163,
+    "label": "Tesco Pitted Black Olives 330g (~163g drained)",
+    "price": 1.1,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=pitted%20black%20olives",
+    "est": false,
+    "note": "pack = drained weight derived from £6.75/kg DR.WT"
+   },
+   "sainsburys": {
+    "pack": 150,
+    "label": "Sainsbury's Pitted Black Olives 340g (150g drained)",
+    "price": 1.35,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/pitted%20black%20olives",
+    "est": false
+   },
+   "asda": {
+    "pack": 150,
+    "label": "ASDA Pitted Black Olives 310g",
+    "price": 1.25,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "src": "https://www.trolley.co.uk/product/asda-pitted-black-olives/KTH675",
+    "est": true,
+    "note": "price from trolley; drained weight not stated, assumed ~150g"
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ }
+]

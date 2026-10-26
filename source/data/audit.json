@@ -1,0 +1,1964 @@
+{
+ "dinners": {
+  "am_double_smash_burgers": {
+   "base": "bread",
+   "family": "burger_sandwich",
+   "short": "Smash burgers",
+   "verdict": "keep"
+  },
+  "am_buttermilk_chicken_burger": {
+   "base": "bread",
+   "family": "burger_sandwich",
+   "short": "Crispy chicken burger",
+   "verdict": "keep"
+  },
+  "am_nashville_hot_chicken_burger": {
+   "base": "bread",
+   "family": "burger_sandwich",
+   "short": "Spicy chicken burger",
+   "verdict": "keep"
+  },
+  "am_homemade_meat_feast_pizza": {
+   "base": "bread",
+   "family": "pizza",
+   "short": "Meat feast pizza",
+   "verdict": "keep"
+  },
+  "am_pan_pepperoni_pizza": {
+   "base": "bread",
+   "family": "pizza",
+   "short": "Pepperoni pizza",
+   "verdict": "keep"
+  },
+  "am_bbq_chicken_naan_pizza": {
+   "base": "bread",
+   "family": "pizza",
+   "short": "BBQ chicken pizza",
+   "verdict": "keep"
+  },
+  "am_stovetop_mac_and_cheese": {
+   "base": "pasta",
+   "family": "pasta",
+   "short": "Mac and cheese",
+   "verdict": "keep"
+  },
+  "am_slow_cooker_pulled_pork": {
+   "base": "bread",
+   "family": "burger_sandwich",
+   "short": "Pulled pork buns",
+   "verdict": "keep"
+  },
+  "am_buffalo_wings": {
+   "base": "none",
+   "family": "fried",
+   "short": "Buffalo wings",
+   "verdict": "keep"
+  },
+  "am_loaded_bacon_cheese_fries": {
+   "base": "potato",
+   "family": "other",
+   "short": "Loaded cheese fries",
+   "verdict": "keep"
+  },
+  "am_sausage_hot_dogs": {
+   "base": "bread",
+   "family": "burger_sandwich",
+   "short": "Hot dogs and fries",
+   "verdict": "keep"
+  },
+  "am_philly_cheesesteak": {
+   "base": "bread",
+   "family": "burger_sandwich",
+   "short": "Philly cheesesteak",
+   "verdict": "keep"
+  },
+  "am_sloppy_joes": {
+   "base": "bread",
+   "family": "burger_sandwich",
+   "short": "Sloppy joes",
+   "verdict": "keep"
+  },
+  "am_crispy_chicken_tenders": {
+   "base": "none",
+   "family": "fried",
+   "short": "Chicken tenders",
+   "verdict": "keep"
+  },
+  "am_meatball_subs": {
+   "base": "bread",
+   "family": "burger_sandwich",
+   "short": "Meatball subs",
+   "verdict": "keep"
+  },
+  "am_chilli_cheese_fries": {
+   "base": "potato",
+   "family": "other",
+   "short": "Chilli cheese fries",
+   "verdict": "keep"
+  },
+  "am_chicken_pot_pie": {
+   "base": "none",
+   "family": "pie_bake",
+   "short": "Chicken pot pie",
+   "verdict": "replace",
+   "reason": "near-duplicate of the chicken, leek & bacon pie"
+  },
+  "am_cheeseburger_quesadillas": {
+   "base": "bread",
+   "family": "tacos_wraps",
+   "short": "Cheeseburger quesadillas",
+   "verdict": "replace",
+   "reason": "fusion mash-up; burgers and quesadillas are both already in"
+  },
+  "am_bbq_bacon_burger": {
+   "base": "bread",
+   "family": "burger_sandwich",
+   "short": "BBQ bacon cheeseburger",
+   "verdict": "keep"
+  },
+  "am_buffalo_cauliflower": {
+   "base": "potato",
+   "family": "fried",
+   "short": "Buffalo cauliflower",
+   "verdict": "replace",
+   "reason": "experimental; cauliflower 'wings' won't feel like a treat night"
+  },
+  "am_southern_fried_chicken_gravy": {
+   "base": "potato",
+   "family": "fried",
+   "short": "Fried chicken and mash",
+   "verdict": "keep"
+  },
+  "am_blackened_salmon_tacos": {
+   "base": "bread",
+   "family": "tacos_wraps",
+   "short": "Cajun salmon tacos",
+   "verdict": "replace",
+   "reason": "near-duplicate of the crispy fish tacos; one salmon too many"
+  },
+  "am_bbq_chicken_traybake": {
+   "base": "potato",
+   "family": "roast_traybake",
+   "short": "BBQ chicken traybake",
+   "verdict": "keep"
+  },
+  "am_jambalaya": {
+   "base": "rice",
+   "family": "rice_bowl",
+   "short": "Jambalaya",
+   "verdict": "keep"
+  },
+  "am_cajun_chicken_dirty_rice": {
+   "base": "rice",
+   "family": "rice_bowl",
+   "short": "Cajun chicken and rice",
+   "verdict": "keep"
+  },
+  "am_buffalo_chicken_wraps": {
+   "base": "bread",
+   "family": "tacos_wraps",
+   "short": "Buffalo chicken wraps",
+   "verdict": "keep"
+  },
+  "am_chicken_caesar_wraps": {
+   "base": "bread",
+   "family": "tacos_wraps",
+   "short": "Chicken Caesar wraps",
+   "verdict": "keep"
+  },
+  "am_chicken_cobb_salad": {
+   "base": "none",
+   "family": "salad",
+   "short": "Chicken Cobb salad",
+   "verdict": "keep"
+  },
+  "am_chicken_sweetcorn_chowder": {
+   "base": "bread",
+   "family": "stew_soup",
+   "short": "Chicken and sweetcorn chowder",
+   "verdict": "keep"
+  },
+  "am_bbq_glazed_salmon": {
+   "base": "potato",
+   "family": "grill_steak",
+   "short": "BBQ salmon",
+   "verdict": "keep"
+  },
+  "am_honey_mustard_chicken_burgers": {
+   "base": "bread",
+   "family": "burger_sandwich",
+   "short": "Grilled chicken burgers",
+   "verdict": "keep"
+  },
+  "am_cajun_prawn_pasta": {
+   "base": "pasta",
+   "family": "pasta",
+   "short": "Cajun prawn pasta",
+   "verdict": "keep"
+  },
+  "am_bbq_pork_steaks": {
+   "base": "potato",
+   "family": "grill_steak",
+   "short": "BBQ pork steaks",
+   "verdict": "keep"
+  },
+  "am_mini_meatloaves": {
+   "base": "potato",
+   "family": "other",
+   "short": "Meatloaf and mash",
+   "verdict": "keep"
+  },
+  "am_garlic_butter_steak_bites": {
+   "base": "potato",
+   "family": "grill_steak",
+   "short": "Garlic butter steak bites",
+   "verdict": "keep"
+  },
+  "as_sweet_sour_chicken": {
+   "base": "rice",
+   "family": "stir_fry",
+   "short": "Sweet and sour chicken",
+   "verdict": "keep"
+  },
+  "as_salt_pepper_chicken_chips": {
+   "base": "potato",
+   "family": "fried",
+   "short": "Salt and pepper chicken",
+   "verdict": "keep"
+  },
+  "as_crispy_chilli_beef": {
+   "base": "rice",
+   "family": "stir_fry",
+   "short": "Crispy chilli beef",
+   "verdict": "keep"
+  },
+  "as_chicken_katsu_curry": {
+   "base": "rice",
+   "family": "fried",
+   "short": "Chicken katsu curry",
+   "verdict": "keep"
+  },
+  "as_korean_fried_chicken": {
+   "base": "rice",
+   "family": "fried",
+   "short": "Korean fried chicken",
+   "verdict": "keep"
+  },
+  "as_char_siu_pork": {
+   "base": "rice",
+   "family": "other",
+   "short": "Char siu pork and rice",
+   "verdict": "keep"
+  },
+  "as_special_egg_fried_rice": {
+   "base": "rice",
+   "family": "rice_bowl",
+   "short": "Special fried rice",
+   "verdict": "keep"
+  },
+  "as_korean_fried_chicken_burger": {
+   "base": "bread",
+   "family": "burger_sandwich",
+   "short": "Korean fried chicken burger",
+   "verdict": "replace",
+   "reason": "near-duplicate of Korean fried chicken and the crispy chicken burger"
+  },
+  "as_chinese_curry_chips": {
+   "base": "potato",
+   "family": "curry",
+   "short": "Chinese chicken curry",
+   "verdict": "keep"
+  },
+  "as_honey_sesame_chicken": {
+   "base": "rice",
+   "family": "stir_fry",
+   "short": "Honey sesame chicken",
+   "verdict": "keep"
+  },
+  "as_halloumi_katsu_curry": {
+   "base": "rice",
+   "family": "fried",
+   "short": "Halloumi katsu curry",
+   "verdict": "replace",
+   "reason": "fusion twist; chicken katsu curry already covers it"
+  },
+  "as_crispy_hoisin_pork_pancakes": {
+   "base": "bread",
+   "family": "tacos_wraps",
+   "short": "Hoisin pork wraps",
+   "verdict": "keep"
+  },
+  "as_kung_pao_chicken": {
+   "base": "rice",
+   "family": "stir_fry",
+   "short": "Kung pao chicken",
+   "verdict": "keep"
+  },
+  "as_chicken_chow_mein": {
+   "base": "noodles",
+   "family": "stir_fry",
+   "short": "Chicken chow mein",
+   "verdict": "keep"
+  },
+  "as_black_bean_beef": {
+   "base": "rice",
+   "family": "stir_fry",
+   "short": "Beef in black bean sauce",
+   "verdict": "keep"
+  },
+  "as_beef_broccoli": {
+   "base": "rice",
+   "family": "stir_fry",
+   "short": "Beef and broccoli",
+   "verdict": "keep"
+  },
+  "as_dan_dan_noodles": {
+   "base": "noodles",
+   "family": "stir_fry",
+   "short": "Dan dan noodles",
+   "verdict": "keep"
+  },
+  "as_sticky_sesame_tofu": {
+   "base": "rice",
+   "family": "stir_fry",
+   "short": "Sticky sesame tofu",
+   "verdict": "replace",
+   "reason": "another sticky-sesame dish, and tofu is a hard sell for meat-eaters"
+  },
+  "as_thai_green_chicken_curry": {
+   "base": "rice",
+   "family": "curry",
+   "short": "Thai green curry",
+   "verdict": "keep"
+  },
+  "as_thai_red_prawn_curry": {
+   "base": "rice",
+   "family": "curry",
+   "short": "Thai red prawn curry",
+   "verdict": "keep"
+  },
+  "as_massaman_chicken": {
+   "base": "rice",
+   "family": "curry",
+   "short": "Massaman curry",
+   "verdict": "keep"
+  },
+  "as_chicken_pad_thai": {
+   "base": "noodles",
+   "family": "stir_fry",
+   "short": "Pad Thai",
+   "verdict": "keep"
+  },
+  "as_chicken_larb": {
+   "base": "rice",
+   "family": "salad",
+   "short": "Thai chicken larb",
+   "verdict": "replace",
+   "reason": "obscure; lettuce cups don't read as dinner"
+  },
+  "as_chicken_satay": {
+   "base": "rice",
+   "family": "grill_steak",
+   "short": "Chicken satay",
+   "verdict": "keep"
+  },
+  "as_thai_basil_pork": {
+   "base": "rice",
+   "family": "stir_fry",
+   "short": "Thai basil pork",
+   "verdict": "keep"
+  },
+  "as_thai_red_tofu_curry": {
+   "base": "rice",
+   "family": "curry",
+   "short": "Thai red veg curry",
+   "verdict": "keep"
+  },
+  "as_honey_garlic_chicken": {
+   "base": "rice",
+   "family": "stir_fry",
+   "short": "Honey garlic chicken",
+   "verdict": "replace",
+   "reason": "near-duplicate of honey sesame chicken"
+  },
+  "as_teriyaki_salmon": {
+   "base": "rice",
+   "family": "grill_steak",
+   "short": "Teriyaki salmon",
+   "verdict": "keep"
+  },
+  "as_miso_salmon": {
+   "base": "rice",
+   "family": "grill_steak",
+   "short": "Miso salmon",
+   "verdict": "replace",
+   "reason": "near-duplicate of teriyaki salmon, and served with peas"
+  },
+  "as_oyakodon": {
+   "base": "rice",
+   "family": "rice_bowl",
+   "short": "Chicken and egg rice bowl",
+   "verdict": "replace",
+   "reason": "obscure Japanese dish most UK couples won't know"
+  },
+  "as_yaki_udon": {
+   "base": "noodles",
+   "family": "stir_fry",
+   "short": "Pork yaki udon",
+   "verdict": "keep"
+  },
+  "as_gyoza_pork_bowl": {
+   "base": "rice",
+   "family": "rice_bowl",
+   "short": "Gyoza pork rice bowl",
+   "verdict": "replace",
+   "reason": "odd mash-up; one of several near-identical rice bowls"
+  },
+  "as_bulgogi_beef_bowls": {
+   "base": "rice",
+   "family": "rice_bowl",
+   "short": "Korean beef rice bowl",
+   "verdict": "keep"
+  },
+  "as_gochujang_chicken": {
+   "base": "rice",
+   "family": "other",
+   "short": "Gochujang chicken",
+   "verdict": "replace",
+   "reason": "another sticky glazed chicken and rice; covered by Korean fried chicken / honey sesame"
+  },
+  "as_bibimbap": {
+   "base": "rice",
+   "family": "rice_bowl",
+   "short": "Bibimbap",
+   "verdict": "keep"
+  },
+  "as_kimchi_fried_rice": {
+   "base": "rice",
+   "family": "rice_bowl",
+   "short": "Kimchi fried rice",
+   "verdict": "replace",
+   "reason": "fusion (kimchi + cheddar); special fried rice covers it"
+  },
+  "as_bun_cha": {
+   "base": "noodles",
+   "family": "other",
+   "short": "Bun cha",
+   "verdict": "replace",
+   "reason": "obscure Vietnamese dish"
+  },
+  "as_banh_mi_bowls": {
+   "base": "rice",
+   "family": "rice_bowl",
+   "short": "Banh mi bowl",
+   "verdict": "replace",
+   "reason": "fusion; another near-identical rice bowl"
+  },
+  "as_chicken_laksa": {
+   "base": "noodles",
+   "family": "noodle_soup",
+   "short": "Chicken laksa",
+   "verdict": "keep"
+  },
+  "as_nasi_goreng": {
+   "base": "rice",
+   "family": "rice_bowl",
+   "short": "Nasi goreng",
+   "verdict": "keep"
+  },
+  "br_crispy_oven_fish_chips": {
+   "base": "potato",
+   "family": "fried",
+   "short": "Fish and chips",
+   "verdict": "keep"
+  },
+  "br_chicken_leek_bacon_pie": {
+   "base": "none",
+   "family": "pie_bake",
+   "short": "Chicken and leek pie",
+   "verdict": "keep"
+  },
+  "br_toad_in_the_hole": {
+   "base": "none",
+   "family": "pie_bake",
+   "short": "Toad in the hole",
+   "verdict": "keep"
+  },
+  "br_steak_chips_peppercorn": {
+   "base": "potato",
+   "family": "grill_steak",
+   "short": "Steak and chips",
+   "verdict": "keep"
+  },
+  "br_sunday_roast_chicken_for_two": {
+   "base": "potato",
+   "family": "roast_traybake",
+   "short": "Roast chicken dinner",
+   "verdict": "keep"
+  },
+  "br_hunters_chicken": {
+   "base": "potato",
+   "family": "roast_traybake",
+   "short": "Hunter's chicken",
+   "verdict": "keep"
+  },
+  "br_halloumi_burger": {
+   "base": "bread",
+   "family": "burger_sandwich",
+   "short": "Halloumi burger",
+   "verdict": "keep"
+  },
+  "br_minced_beef_onion_pie": {
+   "base": "potato",
+   "family": "pie_bake",
+   "short": "Mince and onion pie",
+   "verdict": "keep"
+  },
+  "br_fish_pie": {
+   "base": "potato",
+   "family": "pie_bake",
+   "short": "Fish pie",
+   "verdict": "keep"
+  },
+  "br_cottage_pie": {
+   "base": "potato",
+   "family": "pie_bake",
+   "short": "Cottage pie",
+   "verdict": "keep"
+  },
+  "br_shepherds_pie": {
+   "base": "potato",
+   "family": "pie_bake",
+   "short": "Shepherd's pie",
+   "verdict": "keep"
+  },
+  "br_bangers_mash_onion_gravy": {
+   "base": "potato",
+   "family": "grill_steak",
+   "short": "Sausage and mash",
+   "verdict": "keep"
+  },
+  "br_smoky_sausage_bean_casserole": {
+   "base": "bread",
+   "family": "stew_soup",
+   "short": "Sausage casserole",
+   "verdict": "keep"
+  },
+  "br_lemon_herb_chicken_traybake": {
+   "base": "potato",
+   "family": "roast_traybake",
+   "short": "Lemon chicken traybake",
+   "verdict": "keep"
+  },
+  "br_salmon_fishcakes": {
+   "base": "potato",
+   "family": "other",
+   "short": "Salmon fishcakes",
+   "verdict": "keep"
+  },
+  "br_tuna_sweetcorn_jackets": {
+   "base": "potato",
+   "family": "other",
+   "short": "Tuna jacket potatoes",
+   "verdict": "keep"
+  },
+  "br_coronation_chicken_jackets": {
+   "base": "potato",
+   "family": "other",
+   "short": "Coronation chicken jackets",
+   "verdict": "keep"
+  },
+  "br_leek_potato_soup_cheese_toasts": {
+   "base": "bread",
+   "family": "stew_soup",
+   "short": "Leek and potato soup",
+   "verdict": "keep"
+  },
+  "br_pork_steaks_apple_mustard": {
+   "base": "potato",
+   "family": "grill_steak",
+   "short": "Pork steaks with apple",
+   "verdict": "keep"
+  },
+  "br_beef_stew_dumplings": {
+   "base": "none",
+   "family": "stew_soup",
+   "short": "Beef stew and dumplings",
+   "verdict": "keep"
+  },
+  "br_ploughmans_supper": {
+   "base": "bread",
+   "family": "other",
+   "short": "Ploughman's",
+   "verdict": "keep"
+  },
+  "br_kedgeree": {
+   "base": "rice",
+   "family": "rice_bowl",
+   "short": "Kedgeree",
+   "verdict": "replace",
+   "reason": "dated and built with peas; few mid-20s would pick it for dinner"
+  },
+  "br_leek_welsh_rarebit": {
+   "base": "bread",
+   "family": "other",
+   "short": "Welsh rarebit",
+   "verdict": "replace",
+   "reason": "cheese on toast is a lunch/snack, not a dinner"
+  },
+  "br_bubble_squeak_bacon_eggs": {
+   "base": "potato",
+   "family": "eggs",
+   "short": "Bubble and squeak",
+   "verdict": "keep"
+  },
+  "br_creamy_chicken_leek_mushroom": {
+   "base": "potato",
+   "family": "other",
+   "short": "Creamy chicken and mushroom",
+   "verdict": "replace",
+   "reason": "built around mushrooms (Ethan); same idea as creamy Tuscan chicken"
+  },
+  "br_glamorgan_sausages": {
+   "base": "potato",
+   "family": "other",
+   "short": "Glamorgan sausages",
+   "verdict": "replace",
+   "reason": "obscure Welsh cheese-and-leek 'sausages'"
+  },
+  "br_lemon_butter_salmon_crushed_potatoes": {
+   "base": "potato",
+   "family": "grill_steak",
+   "short": "Salmon and crushed potatoes",
+   "verdict": "keep"
+  },
+  "br_honey_mustard_chicken_traybake": {
+   "base": "potato",
+   "family": "roast_traybake",
+   "short": "Honey mustard chicken",
+   "verdict": "keep"
+  },
+  "br_crispy_chicken_escalopes": {
+   "base": "potato",
+   "family": "fried",
+   "short": "Crispy chicken escalopes",
+   "verdict": "keep"
+  },
+  "br_chilli_beef_jackets": {
+   "base": "potato",
+   "family": "other",
+   "short": "Chilli jacket potatoes",
+   "verdict": "keep"
+  },
+  "in_chicken_tikka_masala": {
+   "base": "rice",
+   "family": "curry",
+   "short": "Chicken tikka masala",
+   "verdict": "keep"
+  },
+  "in_butter_chicken": {
+   "base": "bread",
+   "family": "curry",
+   "short": "Butter chicken",
+   "verdict": "keep"
+  },
+  "in_chicken_korma": {
+   "base": "rice",
+   "family": "curry",
+   "short": "Chicken korma",
+   "verdict": "keep"
+  },
+  "in_madras_onion_bhajis": {
+   "base": "rice",
+   "family": "curry",
+   "short": "Chicken madras",
+   "verdict": "keep"
+  },
+  "in_tikka_naan_pizza": {
+   "base": "bread",
+   "family": "pizza",
+   "short": "Tikka naan pizza",
+   "verdict": "replace",
+   "reason": "fusion; curry and pizza are each covered properly elsewhere"
+  },
+  "in_lamb_rogan_josh": {
+   "base": "rice",
+   "family": "curry",
+   "short": "Lamb rogan josh",
+   "verdict": "keep"
+  },
+  "in_chicken_biryani": {
+   "base": "rice",
+   "family": "rice_bowl",
+   "short": "Chicken biryani",
+   "verdict": "keep"
+  },
+  "in_paneer_tikka": {
+   "base": "bread",
+   "family": "other",
+   "short": "Paneer tikka skewers",
+   "verdict": "keep"
+  },
+  "in_indo_chinese_chilli_chicken": {
+   "base": "rice",
+   "family": "stir_fry",
+   "short": "Chilli chicken",
+   "verdict": "keep"
+  },
+  "in_lamb_seekh_kebab_wraps": {
+   "base": "bread",
+   "family": "tacos_wraps",
+   "short": "Lamb seekh kebab wraps",
+   "verdict": "keep"
+  },
+  "in_amritsari_fish_masala_chips": {
+   "base": "potato",
+   "family": "fried",
+   "short": "Amritsari fish and chips",
+   "verdict": "replace",
+   "reason": "obscure; fish and chips already covers it"
+  },
+  "in_chicken_jalfrezi": {
+   "base": "rice",
+   "family": "curry",
+   "short": "Chicken jalfrezi",
+   "verdict": "keep"
+  },
+  "in_saag_chicken": {
+   "base": "bread",
+   "family": "curry",
+   "short": "Chicken saag",
+   "verdict": "keep"
+  },
+  "in_keema_matar": {
+   "base": "bread",
+   "family": "curry",
+   "short": "Keema matar",
+   "verdict": "replace",
+   "reason": "built around peas (Sophie) - re-added as lamb keema without peas"
+  },
+  "in_chana_masala": {
+   "base": "rice",
+   "family": "curry",
+   "short": "Chana masala",
+   "verdict": "keep"
+  },
+  "in_tarka_dal": {
+   "base": "rice",
+   "family": "stew_soup",
+   "short": "Tarka dal",
+   "verdict": "keep"
+  },
+  "in_coconut_dal": {
+   "base": "bread",
+   "family": "stew_soup",
+   "short": "Coconut dal",
+   "verdict": "replace",
+   "reason": "near-duplicate of tarka dal"
+  },
+  "in_mattar_paneer": {
+   "base": "rice",
+   "family": "curry",
+   "short": "Mattar paneer",
+   "verdict": "replace",
+   "reason": "built around peas (Sophie)"
+  },
+  "in_saag_paneer": {
+   "base": "bread",
+   "family": "curry",
+   "short": "Saag paneer",
+   "verdict": "keep"
+  },
+  "in_egg_curry": {
+   "base": "rice",
+   "family": "curry",
+   "short": "Egg curry",
+   "verdict": "replace",
+   "reason": "unusual weeknight pick; plenty of better-known curries"
+  },
+  "in_goan_prawn_curry": {
+   "base": "rice",
+   "family": "curry",
+   "short": "Prawn curry",
+   "verdict": "keep"
+  },
+  "in_keralan_fish_curry": {
+   "base": "rice",
+   "family": "curry",
+   "short": "Fish curry",
+   "verdict": "keep"
+  },
+  "in_aloo_gobi": {
+   "base": "bread",
+   "family": "curry",
+   "short": "Aloo gobi",
+   "verdict": "keep"
+  },
+  "in_tandoori_chicken_traybake": {
+   "base": "potato",
+   "family": "roast_traybake",
+   "short": "Tandoori chicken traybake",
+   "verdict": "keep"
+  },
+  "in_chicken_kathi_rolls": {
+   "base": "bread",
+   "family": "tacos_wraps",
+   "short": "Chicken tikka wraps",
+   "verdict": "keep"
+  },
+  "in_lentil_spinach_soup": {
+   "base": "bread",
+   "family": "stew_soup",
+   "short": "Lentil soup",
+   "verdict": "replace",
+   "reason": "third red-lentil dish; soup won't feel like dinner"
+  },
+  "in_chicken_mushroom_balti": {
+   "base": "bread",
+   "family": "curry",
+   "short": "Chicken and mushroom balti",
+   "verdict": "replace",
+   "reason": "built around mushrooms (Ethan) - re-added as plain chicken balti"
+  },
+  "in_kadai_paneer_mushroom": {
+   "base": "rice",
+   "family": "curry",
+   "short": "Kadai paneer",
+   "verdict": "replace",
+   "reason": "built around mushrooms; third paneer curry"
+  },
+  "in_masala_salmon_bombay_potatoes": {
+   "base": "potato",
+   "family": "grill_steak",
+   "short": "Masala salmon",
+   "verdict": "keep"
+  },
+  "in_sweet_potato_chickpea_curry": {
+   "base": "rice",
+   "family": "curry",
+   "short": "Sweet potato chickpea curry",
+   "verdict": "keep"
+  },
+  "in_chicken_dhansak": {
+   "base": "rice",
+   "family": "curry",
+   "short": "Chicken dhansak",
+   "verdict": "keep"
+  },
+  "in_prawn_pea_pilau": {
+   "base": "rice",
+   "family": "rice_bowl",
+   "short": "Prawn and pea pilau",
+   "verdict": "replace",
+   "reason": "built around peas (Sophie)"
+  },
+  "in_chicken_tikka_rice_bowls": {
+   "base": "rice",
+   "family": "rice_bowl",
+   "short": "Chicken tikka rice bowl",
+   "verdict": "keep"
+  },
+  "in_lamb_kofta_curry": {
+   "base": "bread",
+   "family": "curry",
+   "short": "Lamb kofta curry",
+   "verdict": "keep"
+  },
+  "in_tandoori_cauliflower_traybake": {
+   "base": "bread",
+   "family": "roast_traybake",
+   "short": "Tandoori cauliflower traybake",
+   "verdict": "replace",
+   "reason": "experimental veggie traybake; tandoori chicken traybake covers it"
+  },
+  "it_proper_ragu_bolognese": {
+   "base": "pasta",
+   "family": "pasta",
+   "short": "Spaghetti bolognese",
+   "verdict": "keep"
+  },
+  "it_proper_carbonara": {
+   "base": "pasta",
+   "family": "pasta",
+   "short": "Spaghetti carbonara",
+   "verdict": "keep"
+  },
+  "it_cacio_e_pepe_rocket": {
+   "base": "pasta",
+   "family": "pasta",
+   "short": "Cacio e pepe",
+   "verdict": "replace",
+   "reason": "cheffy and very plain; too many pastas"
+  },
+  "it_pesto_potato_broccoli_pasta": {
+   "base": "pasta",
+   "family": "pasta",
+   "short": "Pesto pasta",
+   "verdict": "keep"
+  },
+  "it_tuna_puttanesca": {
+   "base": "pasta",
+   "family": "pasta",
+   "short": "Tuna puttanesca",
+   "verdict": "keep"
+  },
+  "it_penne_arrabbiata_mozzarella": {
+   "base": "pasta",
+   "family": "pasta",
+   "short": "Penne arrabbiata",
+   "verdict": "keep"
+  },
+  "it_sausage_fennel_ragu": {
+   "base": "pasta",
+   "family": "pasta",
+   "short": "Sausage ragu",
+   "verdict": "keep"
+  },
+  "it_lemon_chicken_orzo": {
+   "base": "pasta",
+   "family": "pasta",
+   "short": "Lemon chicken orzo",
+   "verdict": "keep"
+  },
+  "it_chicken_cacciatore": {
+   "base": "bread",
+   "family": "stew_soup",
+   "short": "Chicken cacciatore",
+   "verdict": "replace",
+   "reason": "built around mushrooms and olives"
+  },
+  "it_creamy_tuscan_chicken": {
+   "base": "potato",
+   "family": "other",
+   "short": "Creamy Tuscan chicken",
+   "verdict": "keep"
+  },
+  "it_sausage_pesto_gnocchi_traybake": {
+   "base": "potato",
+   "family": "roast_traybake",
+   "short": "Sausage gnocchi traybake",
+   "verdict": "keep"
+  },
+  "it_mushroom_risotto": {
+   "base": "rice",
+   "family": "rice_bowl",
+   "short": "Mushroom risotto",
+   "verdict": "replace",
+   "reason": "built around mushrooms (Ethan)"
+  },
+  "it_pea_bacon_risotto": {
+   "base": "rice",
+   "family": "rice_bowl",
+   "short": "Pea and bacon risotto",
+   "verdict": "replace",
+   "reason": "built around peas (Sophie) - re-added as chicken & bacon risotto"
+  },
+  "it_minestrone_pesto": {
+   "base": "pasta",
+   "family": "stew_soup",
+   "short": "Minestrone soup",
+   "verdict": "keep"
+  },
+  "it_proper_beef_lasagne": {
+   "base": "pasta",
+   "family": "pasta",
+   "short": "Beef lasagne",
+   "verdict": "keep"
+  },
+  "it_aubergine_parmigiana": {
+   "base": "bread",
+   "family": "pie_bake",
+   "short": "Aubergine parmigiana",
+   "verdict": "keep"
+  },
+  "it_chicken_parmigiana": {
+   "base": "pasta",
+   "family": "fried",
+   "short": "Chicken parmigiana",
+   "verdict": "keep"
+  },
+  "it_spaghetti_meatballs": {
+   "base": "pasta",
+   "family": "pasta",
+   "short": "Spaghetti and meatballs",
+   "verdict": "keep"
+  },
+  "it_chicken_bacon_mushroom_bake": {
+   "base": "pasta",
+   "family": "pasta",
+   "short": "Chicken mushroom pasta bake",
+   "verdict": "replace",
+   "reason": "built around mushrooms - re-added as cheesy chicken pasta bake"
+  },
+  "it_garlic_chilli_prawn_linguine": {
+   "base": "pasta",
+   "family": "pasta",
+   "short": "Garlic prawn linguine",
+   "verdict": "keep"
+  },
+  "it_creamy_lemon_salmon_penne": {
+   "base": "pasta",
+   "family": "pasta",
+   "short": "Creamy salmon pasta",
+   "verdict": "keep"
+  },
+  "it_potato_spinach_feta_frittata": {
+   "base": "potato",
+   "family": "eggs",
+   "short": "Potato and feta frittata",
+   "verdict": "keep"
+  },
+  "it_spinach_ricotta_cannelloni": {
+   "base": "pasta",
+   "family": "pasta",
+   "short": "Spinach ricotta cannelloni",
+   "verdict": "keep"
+  },
+  "it_chicken_milanese_lemon_spaghetti": {
+   "base": "pasta",
+   "family": "fried",
+   "short": "Chicken Milanese",
+   "verdict": "keep"
+  },
+  "it_tuscan_sausage_bean_stew": {
+   "base": "bread",
+   "family": "stew_soup",
+   "short": "Tuscan sausage and bean stew",
+   "verdict": "replace",
+   "reason": "near-duplicate of the sausage & bean casserole"
+  },
+  "it_pasta_alla_norma": {
+   "base": "pasta",
+   "family": "pasta",
+   "short": "Pasta alla Norma",
+   "verdict": "replace",
+   "reason": "aubergine pasta; too many pastas"
+  },
+  "it_crispy_gnocchi_garlic_mushrooms": {
+   "base": "potato",
+   "family": "other",
+   "short": "Gnocchi with mushrooms",
+   "verdict": "replace",
+   "reason": "built around mushrooms (Ethan)"
+  },
+  "it_salmon_basil_salsa_verde": {
+   "base": "potato",
+   "family": "grill_steak",
+   "short": "Salmon with salsa verde",
+   "verdict": "replace",
+   "reason": "near-duplicate of salmon and crushed potatoes"
+  },
+  "it_pasta_e_ceci": {
+   "base": "pasta",
+   "family": "stew_soup",
+   "short": "Pasta e ceci",
+   "verdict": "replace",
+   "reason": "obscure chickpea-and-pasta stew"
+  },
+  "it_sausage_broccoli_orecchiette": {
+   "base": "pasta",
+   "family": "pasta",
+   "short": "Sausage and broccoli pasta",
+   "verdict": "keep"
+  },
+  "mx_chipotle_chilli_con_carne": {
+   "base": "rice",
+   "family": "stew_soup",
+   "short": "Chilli con carne",
+   "verdict": "keep"
+  },
+  "mx_sizzling_chicken_fajitas": {
+   "base": "bread",
+   "family": "tacos_wraps",
+   "short": "Chicken fajitas",
+   "verdict": "keep"
+  },
+  "mx_chipotle_chicken_burrito_bowl": {
+   "base": "rice",
+   "family": "rice_bowl",
+   "short": "Chicken burrito bowl",
+   "verdict": "keep"
+  },
+  "mx_cheesy_chicken_enchiladas": {
+   "base": "bread",
+   "family": "tacos_wraps",
+   "short": "Chicken enchiladas",
+   "verdict": "keep"
+  },
+  "mx_black_bean_jalapeno_quesadillas": {
+   "base": "bread",
+   "family": "tacos_wraps",
+   "short": "Bean and cheese quesadillas",
+   "verdict": "keep"
+  },
+  "mx_chicken_tinga_tacos": {
+   "base": "bread",
+   "family": "tacos_wraps",
+   "short": "Chicken tacos",
+   "verdict": "keep"
+  },
+  "mx_crispy_pork_carnitas_tacos": {
+   "base": "bread",
+   "family": "tacos_wraps",
+   "short": "Pulled pork tacos",
+   "verdict": "keep"
+  },
+  "mx_panko_fish_tacos": {
+   "base": "bread",
+   "family": "tacos_wraps",
+   "short": "Fish tacos",
+   "verdict": "keep"
+  },
+  "mx_sweet_potato_black_bean_tacos": {
+   "base": "bread",
+   "family": "tacos_wraps",
+   "short": "Sweet potato tacos",
+   "verdict": "keep"
+  },
+  "mx_huevos_rancheros": {
+   "base": "bread",
+   "family": "eggs",
+   "short": "Huevos rancheros",
+   "verdict": "replace",
+   "reason": "brunch dish rather than a dinner"
+  },
+  "mx_cheesy_chicken_rice_bake": {
+   "base": "rice",
+   "family": "rice_bowl",
+   "short": "Mexican chicken and rice",
+   "verdict": "keep"
+  },
+  "mx_loaded_beef_nachos": {
+   "base": "bread",
+   "family": "other",
+   "short": "Loaded beef nachos",
+   "verdict": "keep"
+  },
+  "mx_birria_beef_tacos": {
+   "base": "bread",
+   "family": "tacos_wraps",
+   "short": "Birria tacos",
+   "verdict": "replace",
+   "reason": "3-hour trendy dish; plenty of tacos already"
+  },
+  "mx_crispy_beef_chimichangas": {
+   "base": "bread",
+   "family": "tacos_wraps",
+   "short": "Beef chimichangas",
+   "verdict": "keep"
+  },
+  "mx_beef_crunchwrap": {
+   "base": "bread",
+   "family": "tacos_wraps",
+   "short": "Beef crunchwrap",
+   "verdict": "keep"
+  },
+  "mx_chicken_tortilla_soup": {
+   "base": "bread",
+   "family": "stew_soup",
+   "short": "Chicken tortilla soup",
+   "verdict": "replace",
+   "reason": "soup won't feel like dinner; fajitas/tacos cover the flavours"
+  },
+  "mx_chilli_lime_prawn_tacos": {
+   "base": "bread",
+   "family": "tacos_wraps",
+   "short": "Prawn tacos",
+   "verdict": "keep"
+  },
+  "mx_smoky_pork_burritos": {
+   "base": "bread",
+   "family": "tacos_wraps",
+   "short": "Pork burritos",
+   "verdict": "keep"
+  },
+  "mx_chipotle_honey_salmon": {
+   "base": "rice",
+   "family": "grill_steak",
+   "short": "Chipotle honey salmon",
+   "verdict": "replace",
+   "reason": "yet another glazed salmon fillet"
+  },
+  "mx_spiced_chicken_taco_salad": {
+   "base": "none",
+   "family": "salad",
+   "short": "Chicken taco salad",
+   "verdict": "keep"
+  },
+  "me_harissa_shakshuka_feta": {
+   "base": "bread",
+   "family": "eggs",
+   "short": "Shakshuka",
+   "verdict": "keep"
+  },
+  "me_chicken_shawarma_traybake": {
+   "base": "bread",
+   "family": "roast_traybake",
+   "short": "Chicken shawarma traybake",
+   "verdict": "keep"
+  },
+  "me_crispy_chicken_shawarma_wraps": {
+   "base": "bread",
+   "family": "tacos_wraps",
+   "short": "Chicken shawarma wraps",
+   "verdict": "keep"
+  },
+  "me_lamb_koftas_herby_couscous": {
+   "base": "grain",
+   "family": "grill_steak",
+   "short": "Lamb koftas and couscous",
+   "verdict": "keep"
+  },
+  "me_crispy_falafel_wraps": {
+   "base": "bread",
+   "family": "tacos_wraps",
+   "short": "Falafel wraps",
+   "verdict": "keep"
+  },
+  "me_halloumi_harissa_veg_wraps": {
+   "base": "bread",
+   "family": "tacos_wraps",
+   "short": "Halloumi wraps",
+   "verdict": "keep"
+  },
+  "me_sticky_harissa_chicken_traybake": {
+   "base": "potato",
+   "family": "roast_traybake",
+   "short": "Harissa chicken traybake",
+   "verdict": "keep"
+  },
+  "me_chicken_apricot_tagine": {
+   "base": "grain",
+   "family": "stew_soup",
+   "short": "Chicken tagine",
+   "verdict": "keep"
+  },
+  "me_harissa_couscous_stuffed_peppers": {
+   "base": "grain",
+   "family": "other",
+   "short": "Stuffed peppers",
+   "verdict": "replace",
+   "reason": "dated veggie dish that won't excite meat-eaters"
+  },
+  "me_turkish_eggs_cilbir": {
+   "base": "bread",
+   "family": "eggs",
+   "short": "Turkish eggs",
+   "verdict": "replace",
+   "reason": "trendy brunch dish, not a dinner"
+  },
+  "me_lahmacun_lamb_flatbreads": {
+   "base": "bread",
+   "family": "pizza",
+   "short": "Turkish lamb flatbreads",
+   "verdict": "keep"
+  },
+  "me_zaatar_chicken_fattoush": {
+   "base": "bread",
+   "family": "salad",
+   "short": "Chicken fattoush salad",
+   "verdict": "replace",
+   "reason": "obscure name; pitta salad won't read as dinner"
+  },
+  "me_smoky_chickpea_spinach_stew": {
+   "base": "bread",
+   "family": "stew_soup",
+   "short": "Chickpea and spinach stew",
+   "verdict": "replace",
+   "reason": "near-duplicate of the chickpea curries; meat-free stew is a hard sell"
+  },
+  "me_homemade_lamb_doner": {
+   "base": "bread",
+   "family": "tacos_wraps",
+   "short": "Doner kebab",
+   "verdict": "keep"
+  },
+  "me_zaatar_salmon_herby_couscous": {
+   "base": "grain",
+   "family": "grill_steak",
+   "short": "Za'atar salmon",
+   "verdict": "replace",
+   "reason": "yet another salmon fillet; obscure seasoning"
+  },
+  "me_harissa_prawns_butter_beans": {
+   "base": "bread",
+   "family": "stew_soup",
+   "short": "Harissa prawns and beans",
+   "verdict": "replace",
+   "reason": "experimental; butter beans aren't a familiar dinner base"
+  },
+  "me_crispy_halloumi_burgers": {
+   "base": "bread",
+   "family": "burger_sandwich",
+   "short": "Halloumi burger and chips",
+   "verdict": "replace",
+   "reason": "near-duplicate of the British halloumi burger"
+  },
+  "me_spinach_feta_gozleme": {
+   "base": "bread",
+   "family": "other",
+   "short": "Gozleme",
+   "verdict": "replace",
+   "reason": "obscure Turkish flatbread"
+  },
+  "me_chicken_pastilla_pie": {
+   "base": "none",
+   "family": "pie_bake",
+   "short": "Chicken pastilla",
+   "verdict": "replace",
+   "reason": "obscure; sweet cinnamon chicken pie is an odd sell"
+  },
+  "me_beef_kofta_meatballs_feta": {
+   "base": "grain",
+   "family": "other",
+   "short": "Beef kofta meatballs",
+   "verdict": "keep"
+  }
+ },
+ "add": [
+  {
+   "name": "Chicken Kiev with wedges",
+   "cuisine": "British",
+   "protein": "chicken",
+   "base": "potato",
+   "family": "fried",
+   "category": "everyday",
+   "why": "Classic freezer-aisle favourite done at home; not in the library"
+  },
+  {
+   "name": "Gammon, egg and chips",
+   "cuisine": "British",
+   "protein": "pork",
+   "base": "potato",
+   "family": "grill_steak",
+   "category": "everyday",
+   "why": "Pub classic; the only gammon dish"
+  },
+  {
+   "name": "Fish finger sandwiches",
+   "cuisine": "British",
+   "protein": "fish",
+   "base": "bread",
+   "family": "burger_sandwich",
+   "category": "treat",
+   "why": "Nostalgic quick treat; easy fish night"
+  },
+  {
+   "name": "Sausage rolls, beans and wedges",
+   "cuisine": "British",
+   "protein": "pork",
+   "base": "potato",
+   "family": "pie_bake",
+   "category": "treat",
+   "why": "Proper comfort tea, kids-menu nostalgia"
+  },
+  {
+   "name": "Roast pork with crackling",
+   "cuisine": "British",
+   "protein": "pork",
+   "base": "potato",
+   "family": "roast_traybake",
+   "category": "treat",
+   "why": "Second Sunday-roast option alongside the chicken"
+  },
+  {
+   "name": "Steak and ale pie with mash",
+   "cuisine": "British",
+   "protein": "beef",
+   "base": "potato",
+   "family": "pie_bake",
+   "category": "treat",
+   "why": "Top UK pie; library has no steak pie"
+  },
+  {
+   "name": "Lancashire hotpot",
+   "cuisine": "British",
+   "protein": "lamb",
+   "base": "potato",
+   "family": "stew_soup",
+   "category": "everyday",
+   "why": "Familiar lamb one-pot; adds lamb without curry"
+  },
+  {
+   "name": "Chicken and chorizo traybake",
+   "cuisine": "British",
+   "protein": "chicken",
+   "base": "potato",
+   "family": "roast_traybake",
+   "category": "everyday",
+   "why": "One of BBC Good Food's most-cooked traybakes"
+  },
+  {
+   "name": "Corned beef hash with eggs",
+   "cuisine": "British",
+   "protein": "beef",
+   "base": "potato",
+   "family": "other",
+   "category": "everyday",
+   "why": "Cheap, familiar potato dinner"
+  },
+  {
+   "name": "Lamb chops with new potatoes",
+   "cuisine": "British",
+   "protein": "lamb",
+   "base": "potato",
+   "family": "grill_steak",
+   "category": "everyday",
+   "why": "Simple chops night; no plain lamb chops in library"
+  },
+  {
+   "name": "Roast beef and Yorkshires",
+   "cuisine": "British",
+   "protein": "beef",
+   "base": "potato",
+   "family": "roast_traybake",
+   "category": "treat",
+   "why": "Beef Sunday roast; only chicken roast exists"
+  },
+  {
+   "name": "Scampi and chips",
+   "cuisine": "British",
+   "protein": "prawns",
+   "base": "potato",
+   "family": "fried",
+   "category": "treat",
+   "why": "Chip-shop/pub favourite; prawn treat night"
+  },
+  {
+   "name": "Peri-peri chicken and rice",
+   "cuisine": "British",
+   "protein": "chicken",
+   "base": "rice",
+   "family": "grill_steak",
+   "category": "everyday",
+   "why": "Nando's-style at home; hugely popular with mid-20s"
+  },
+  {
+   "name": "Sea bass with new potatoes",
+   "cuisine": "British",
+   "protein": "fish",
+   "base": "potato",
+   "family": "grill_steak",
+   "category": "everyday",
+   "why": "Easy white-fish dinner to offset the salmon cuts"
+  },
+  {
+   "name": "Beef stroganoff",
+   "cuisine": "British",
+   "protein": "beef",
+   "base": "rice",
+   "family": "stew_soup",
+   "category": "everyday",
+   "why": "Familiar creamy beef dinner; made without mushrooms"
+  },
+  {
+   "name": "Chicken casserole and mash",
+   "cuisine": "British",
+   "protein": "chicken",
+   "base": "potato",
+   "family": "stew_soup",
+   "category": "everyday",
+   "why": "Everyday British one-pot; no chicken casserole in library"
+  },
+  {
+   "name": "Breakfast for dinner (fry-up)",
+   "cuisine": "British",
+   "protein": "pork",
+   "base": "bread",
+   "family": "eggs",
+   "category": "treat",
+   "why": "Full English as a lazy treat tea"
+  },
+  {
+   "name": "Lamb shanks and mash",
+   "cuisine": "British",
+   "protein": "lamb",
+   "base": "potato",
+   "family": "stew_soup",
+   "category": "treat",
+   "why": "Slow-cooker weekend treat"
+  },
+  {
+   "name": "Quiche Lorraine and potato salad",
+   "cuisine": "British",
+   "protein": "pork",
+   "base": "potato",
+   "family": "pie_bake",
+   "category": "everyday",
+   "why": "Familiar summer supper; no quiche in library"
+  },
+  {
+   "name": "Pork and apple burgers",
+   "cuisine": "British",
+   "protein": "pork",
+   "base": "bread",
+   "family": "burger_sandwich",
+   "category": "treat",
+   "why": "Pork burger option; all current burgers are beef/chicken"
+  },
+  {
+   "name": "BBQ ribs with wedges",
+   "cuisine": "American",
+   "protein": "pork",
+   "base": "potato",
+   "family": "grill_steak",
+   "category": "treat",
+   "why": "Treat-night classic missing from the library"
+  },
+  {
+   "name": "Loaded potato skins",
+   "cuisine": "American",
+   "protein": "pork",
+   "base": "potato",
+   "family": "other",
+   "category": "treat",
+   "why": "Pub-style treat; cheesy, bacon-loaded potatoes"
+  },
+  {
+   "name": "Tuna melts",
+   "cuisine": "American",
+   "protein": "fish",
+   "base": "bread",
+   "family": "burger_sandwich",
+   "category": "everyday",
+   "why": "Quick cheap fish dinner"
+  },
+  {
+   "name": "Spicy bean burgers",
+   "cuisine": "American",
+   "protein": "veggie",
+   "base": "bread",
+   "family": "burger_sandwich",
+   "category": "everyday",
+   "why": "Veggie burger meat-eaters actually like"
+  },
+  {
+   "name": "Prawn stir-fry with noodles",
+   "cuisine": "Asian",
+   "protein": "prawns",
+   "base": "noodles",
+   "family": "stir_fry",
+   "category": "everyday",
+   "why": "Classic 15-minute noodle night"
+  },
+  {
+   "name": "Singapore noodles",
+   "cuisine": "Asian",
+   "protein": "prawns",
+   "base": "noodles",
+   "family": "stir_fry",
+   "category": "everyday",
+   "why": "Chinese takeaway favourite; curry-spiced noodles"
+  },
+  {
+   "name": "Chinese lemon chicken",
+   "cuisine": "Asian",
+   "protein": "chicken",
+   "base": "rice",
+   "family": "fried",
+   "category": "treat",
+   "why": "Takeaway classic not in library"
+  },
+  {
+   "name": "Teriyaki chicken noodles",
+   "cuisine": "Asian",
+   "protein": "chicken",
+   "base": "noodles",
+   "family": "stir_fry",
+   "category": "everyday",
+   "why": "Sweet, familiar noodle dinner"
+  },
+  {
+   "name": "Chicken ramen",
+   "cuisine": "Asian",
+   "protein": "chicken",
+   "base": "noodles",
+   "family": "noodle_soup",
+   "category": "everyday",
+   "why": "Wagamama-style bowl; very popular with this age group"
+  },
+  {
+   "name": "Chicken and cashew nuts",
+   "cuisine": "Asian",
+   "protein": "chicken",
+   "base": "rice",
+   "family": "stir_fry",
+   "category": "everyday",
+   "why": "Chinese takeaway staple"
+  },
+  {
+   "name": "Hoisin beef noodles",
+   "cuisine": "Asian",
+   "protein": "beef",
+   "base": "noodles",
+   "family": "stir_fry",
+   "category": "everyday",
+   "why": "Beef noodle stir-fry; only chicken/pork noodles exist"
+  },
+  {
+   "name": "Crispy shredded chicken",
+   "cuisine": "Asian",
+   "protein": "chicken",
+   "base": "rice",
+   "family": "fried",
+   "category": "treat",
+   "why": "British-Chinese takeaway treat"
+  },
+  {
+   "name": "Sweet chilli salmon noodles",
+   "cuisine": "Asian",
+   "protein": "fish",
+   "base": "noodles",
+   "family": "stir_fry",
+   "category": "everyday",
+   "why": "Gets salmon onto noodles instead of another fillet-and-rice"
+  },
+  {
+   "name": "Chicken pho",
+   "cuisine": "Asian",
+   "protein": "chicken",
+   "base": "noodles",
+   "family": "noodle_soup",
+   "category": "everyday",
+   "why": "Now-mainstream noodle soup; light midweek option"
+  },
+  {
+   "name": "Bang bang chicken noodles",
+   "cuisine": "Asian",
+   "protein": "chicken",
+   "base": "noodles",
+   "family": "fried",
+   "category": "treat",
+   "why": "HelloFresh/Gousto favourite; crispy chicken on noodles"
+  },
+  {
+   "name": "Chicken bhuna",
+   "cuisine": "Indian",
+   "protein": "chicken",
+   "base": "rice",
+   "family": "curry",
+   "category": "everyday",
+   "why": "Curry-house standard missing from library"
+  },
+  {
+   "name": "Lamb keema and naan",
+   "cuisine": "Indian",
+   "protein": "lamb",
+   "base": "bread",
+   "family": "curry",
+   "category": "everyday",
+   "why": "Mince curry, made without peas"
+  },
+  {
+   "name": "One-pot chicken pilau",
+   "cuisine": "Indian",
+   "protein": "chicken",
+   "base": "rice",
+   "family": "rice_bowl",
+   "category": "everyday",
+   "why": "Easy rice dish replacing the pea-heavy pilau"
+  },
+  {
+   "name": "Chicken tikka kebab and naan",
+   "cuisine": "Indian",
+   "protein": "chicken",
+   "base": "bread",
+   "family": "tacos_wraps",
+   "category": "treat",
+   "why": "Takeaway-style kebab night"
+  },
+  {
+   "name": "Chicken balti",
+   "cuisine": "Indian",
+   "protein": "chicken",
+   "base": "bread",
+   "family": "curry",
+   "category": "everyday",
+   "why": "UK curry-house classic, without the mushrooms"
+  },
+  {
+   "name": "Margherita pizza",
+   "cuisine": "Italian",
+   "protein": "veggie",
+   "base": "bread",
+   "family": "pizza",
+   "category": "treat",
+   "why": "The basic homemade pizza; veggie treat"
+  },
+  {
+   "name": "Ham and pineapple pizza",
+   "cuisine": "Italian",
+   "protein": "pork",
+   "base": "bread",
+   "family": "pizza",
+   "category": "treat",
+   "why": "Familiar pizza-night choice"
+  },
+  {
+   "name": "Cheesy chicken pasta bake",
+   "cuisine": "Italian",
+   "protein": "chicken",
+   "base": "pasta",
+   "family": "pasta",
+   "category": "everyday",
+   "why": "UK's go-to pasta bake, tomato-based, no mushrooms"
+  },
+  {
+   "name": "Tuna pasta bake",
+   "cuisine": "Italian",
+   "protein": "fish",
+   "base": "pasta",
+   "family": "pasta",
+   "category": "everyday",
+   "why": "Student-days classic; cheap fish dinner"
+  },
+  {
+   "name": "Chicken and bacon risotto",
+   "cuisine": "Italian",
+   "protein": "chicken",
+   "base": "rice",
+   "family": "rice_bowl",
+   "category": "everyday",
+   "why": "Risotto with no mushrooms or peas"
+  },
+  {
+   "name": "Chicken and chorizo pasta",
+   "cuisine": "Italian",
+   "protein": "chicken",
+   "base": "pasta",
+   "family": "pasta",
+   "category": "everyday",
+   "why": "One of BBC Good Food's most popular pastas"
+  },
+  {
+   "name": "Tomato and mozzarella gnocchi bake",
+   "cuisine": "Italian",
+   "protein": "veggie",
+   "base": "potato",
+   "family": "pie_bake",
+   "category": "everyday",
+   "why": "Cheesy veggie bake meat-eaters enjoy; not pasta"
+  },
+  {
+   "name": "Crunchy beef tacos",
+   "cuisine": "Mexican",
+   "protein": "beef",
+   "base": "bread",
+   "family": "tacos_wraps",
+   "category": "everyday",
+   "why": "Old El Paso-style taco night; no beef tacos in library"
+  },
+  {
+   "name": "Veggie bean chilli",
+   "cuisine": "Mexican",
+   "protein": "veggie",
+   "base": "rice",
+   "family": "stew_soup",
+   "category": "everyday",
+   "why": "Hearty veggie night that doesn't feel like a compromise"
+  },
+  {
+   "name": "Steak fajitas",
+   "cuisine": "Mexican",
+   "protein": "beef",
+   "base": "bread",
+   "family": "tacos_wraps",
+   "category": "everyday",
+   "why": "Beef take on the fajita night"
+  },
+  {
+   "name": "Chicken shish kebab and rice",
+   "cuisine": "Middle Eastern",
+   "protein": "chicken",
+   "base": "rice",
+   "family": "grill_steak",
+   "category": "everyday",
+   "why": "Turkish-takeaway favourite"
+  },
+  {
+   "name": "Chicken gyros with chips",
+   "cuisine": "Middle Eastern",
+   "protein": "chicken",
+   "base": "bread",
+   "family": "tacos_wraps",
+   "category": "treat",
+   "why": "Greek-style pitta wrap treat"
+  },
+  {
+   "name": "Moussaka",
+   "cuisine": "Middle Eastern",
+   "protein": "lamb",
+   "base": "potato",
+   "family": "pie_bake",
+   "category": "treat",
+   "why": "Familiar Greek bake; lamb comfort food"
+  },
+  {
+   "name": "Greek lamb burgers",
+   "cuisine": "Middle Eastern",
+   "protein": "lamb",
+   "base": "bread",
+   "family": "burger_sandwich",
+   "category": "treat",
+   "why": "Lamb burger with tzatziki; new burger protein"
+  }
+ ],
+ "summary": {
+  "replaced": 54,
+  "kept": 156,
+  "added": 54,
+  "original": {
+   "total": 210,
+   "by_base": {
+    "bread": 70,
+    "rice": 57,
+    "potato": 41,
+    "pasta": 22,
+    "none": 9,
+    "noodles": 6,
+    "grain": 5
+   },
+   "by_family": {
+    "curry": 25,
+    "tacos_wraps": 23,
+    "other": 21,
+    "pasta": 18,
+    "rice_bowl": 18,
+    "stew_soup": 16,
+    "grill_steak": 15,
+    "stir_fry": 14,
+    "burger_sandwich": 13,
+    "fried": 13,
+    "roast_traybake": 10,
+    "pie_bake": 9,
+    "pizza": 5,
+    "eggs": 5,
+    "salad": 4,
+    "noodle_soup": 1
+   }
+  },
+  "kept_only": {
+   "total": 156,
+   "by_base": {
+    "bread": 49,
+    "rice": 39,
+    "potato": 35,
+    "pasta": 18,
+    "none": 7,
+    "noodles": 5,
+    "grain": 3
+   },
+   "by_family": {
+    "tacos_wraps": 20,
+    "curry": 20,
+    "pasta": 15,
+    "other": 13,
+    "stir_fry": 12,
+    "burger_sandwich": 11,
+    "grill_steak": 11,
+    "fried": 10,
+    "rice_bowl": 10,
+    "roast_traybake": 9,
+    "stew_soup": 8,
+    "pie_bake": 7,
+    "pizza": 4,
+    "eggs": 3,
+    "salad": 2,
+    "noodle_soup": 1
+   },
+   "by_cuisine": {
+    "American": 31,
+    "Asian": 28,
+    "British": 26,
+    "Indian": 24,
+    "Italian": 20,
+    "Mexican": 16,
+    "Middle Eastern": 11
+   },
+   "by_protein": {
+    "chicken": 62,
+    "beef": 26,
+    "pork": 22,
+    "veggie": 22,
+    "fish": 12,
+    "lamb": 7,
+    "prawns": 5
+   },
+   "by_category": {
+    "everyday": 97,
+    "treat": 59
+   }
+  },
+  "kept_plus_added": {
+   "total": 210,
+   "by_base": {
+    "bread": 63,
+    "potato": 54,
+    "rice": 49,
+    "pasta": 21,
+    "noodles": 13,
+    "none": 7,
+    "grain": 3
+   },
+   "by_family": {
+    "tacos_wraps": 24,
+    "curry": 23,
+    "pasta": 18,
+    "stir_fry": 18,
+    "grill_steak": 17,
+    "burger_sandwich": 16,
+    "fried": 15,
+    "other": 15,
+    "stew_soup": 13,
+    "roast_traybake": 12,
+    "rice_bowl": 12,
+    "pie_bake": 12,
+    "pizza": 6,
+    "eggs": 4,
+    "noodle_soup": 3,
+    "salad": 2
+   },
+   "by_cuisine": {
+    "British": 46,
+    "Asian": 39,
+    "American": 35,
+    "Indian": 29,
+    "Italian": 27,
+    "Mexican": 19,
+    "Middle Eastern": 15
+   },
+   "by_protein": {
+    "chicken": 82,
+    "beef": 33,
+    "pork": 31,
+    "veggie": 26,
+    "fish": 17,
+    "lamb": 13,
+    "prawns": 8
+   },
+   "by_category": {
+    "everyday": 131,
+    "treat": 79
+   },
+   "pasta_base_pct": 10
+  },
+  "original_by_cuisine": {
+   "Asian": 40,
+   "American": 35,
+   "Indian": 35,
+   "British": 30,
+   "Italian": 30,
+   "Mexican": 20,
+   "Middle Eastern": 20
+  },
+  "original_by_protein": {
+   "chicken": 77,
+   "veggie": 44,
+   "beef": 29,
+   "pork": 27,
+   "fish": 19,
+   "prawns": 7,
+   "lamb": 7
+  }
+ }
+}

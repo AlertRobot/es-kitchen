@@ -1,0 +1,1222 @@
+[
+ {
+  "id": "onion",
+  "tescoPack": 6,
+  "prices": {
+   "tesco": {
+    "pack": 6,
+    "price": 0.95,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Brown Onions 1Kg",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=brown%20onions",
+    "note": "1kg ≈ 6 onions; Aldi Price Match; no Clubcard price now"
+   },
+   "sainsburys": {
+    "pack": 6,
+    "price": 0.95,
+    "loyalty": 0.47,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Onions 1kg",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/brown%20onions",
+    "note": "1kg ≈ 6 onions; Half Price with Nectar"
+   },
+   "asda": {
+    "pack": 6,
+    "price": 0.98,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Brown Onions 1kg",
+    "src": "https://www.trolley.co.uk/product/asda-crunchy-fragrant-brown-onions/LMN111",
+    "note": "1kg ≈ 6 onions"
+   },
+   "aldi": {
+    "pack": 6,
+    "price": 0.59,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Nature's Pick Brown Onions 1kg",
+    "src": "https://aldi.co.uk/product/nature-s-pick-brown-onions-000000000000339777",
+    "note": "temporary reduction from £0.95 (Save 37%); 1kg ≈ 6 onions"
+   },
+   "lidl": {
+    "pack": 6,
+    "price": 0.59,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl brown onions 1kg (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "spring_onions",
+  "tescoPack": 8,
+  "prices": {
+   "tesco": {
+    "pack": 8,
+    "price": 0.65,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Bunched Spring Onions 100G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=brown%20onions",
+    "note": "100g bunch ≈ 8 onions; Aldi Price Match"
+   },
+   "sainsburys": {
+    "pack": 8,
+    "price": 0.65,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Spring Onions Bunch 100g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/brown%20onions",
+    "note": "100g bunch ≈ 8 onions; Aldi price match"
+   },
+   "asda": {
+    "pack": 8,
+    "price": 0.68,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": true,
+    "label": "ASDA Fragrant & Crunchy Spring Onions",
+    "src": "https://www.trolley.co.uk/product/asda-fragrant-crunchy-spring-onions/UTJ806",
+    "note": "pack weight not stated (assumed 100g ≈ 8); 125g variant £0.82"
+   },
+   "aldi": {
+    "pack": 8,
+    "price": 0.65,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Nature's Pick Spring Onions 100g",
+    "src": "https://www.aldi.co.uk/product/nature-s-pick-spring-onions-000000000000339978",
+    "note": "100g bunch ≈ 8 onions"
+   },
+   "lidl": {
+    "pack": 8,
+    "price": 0.65,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "cumin",
+  "tescoPack": 43,
+  "prices": {
+   "tesco": {
+    "pack": 43,
+    "price": 1,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Ground Cumin 43G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=ground%20cumin",
+    "note": "Clubcard \"Any 4 for 3\" multibuy on selected cooking ingredients (to 26/10/2026); no single-item Clubcard price"
+   },
+   "sainsburys": {
+    "pack": 43,
+    "price": 1.15,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Ground Cumin 43g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/ground%20cumin",
+    "note": ""
+   },
+   "asda": {
+    "pack": 41,
+    "price": 0.95,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Cook Ground Cumin 41g",
+    "src": "https://www.trolley.co.uk/product/asda-ground-cumin/OIG648",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 40,
+    "price": 0.65,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Ready, Set…Cook! Cumin 40g",
+    "src": "https://www.aldi.co.uk/products/food-cupboard/herbs-spices/k/1588161416978053007",
+    "note": "seen on aldi.co.uk Herbs & Spices category page; product page https://www.aldi.co.uk/product/ready-set-cook-cumin-000000000000335731"
+   },
+   "lidl": {
+    "pack": 40,
+    "price": 0.59,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Ready, Set…Cook! Ground Cumin 40g",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "cucumber",
+  "tescoPack": 1,
+  "prices": {
+   "tesco": {
+    "pack": 1,
+    "price": 0.99,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Whole Cucumber Each",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=cucumber",
+    "note": "Aldi Price Match"
+   },
+   "sainsburys": {
+    "pack": 1,
+    "price": 1.09,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Whole Cucumber",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/cucumber",
+    "note": ""
+   },
+   "asda": {
+    "pack": 1,
+    "price": 0.99,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Cucumber",
+    "src": "https://www.trolley.co.uk/product/asda-whole-cucumber/GXG785",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 1,
+    "price": 0.99,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Nature's Pick Cucumber",
+    "src": "https://www.aldi.co.uk/product/nature-s-pick-cucumber-000000000000273659",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 1,
+    "price": 0.99,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "parmesan",
+  "tescoPack": 175,
+  "prices": {
+   "tesco": {
+    "pack": 175,
+    "price": 2.49,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Creamfields Grana Padano Wedge 175G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=grana%20padano",
+    "note": "Creamfields is Tesco's value label; Tesco Parmigiano Reggiano 200g £4.00"
+   },
+   "sainsburys": {
+    "pack": 200,
+    "price": 3.3,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Grana Padano Cheese 200g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/grana%20padano",
+    "note": ""
+   },
+   "asda": {
+    "pack": 160,
+    "price": 2.57,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Grana Padano 160g",
+    "src": "https://www.trolley.co.uk/product/asda-grana-padano/IGS933",
+    "note": "Just Essentials Hard Cheese 170g £2.42"
+   },
+   "aldi": {
+    "pack": 200,
+    "price": 2.85,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Emporium Italian Grana Padano 200g",
+    "src": "https://www.aldi.co.uk/product/emporium-italian-grana-padano-000000000000284856",
+    "note": "offer (£2.75) has ended"
+   },
+   "lidl": {
+    "pack": 200,
+    "price": 2.75,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "frozen_peas",
+  "tescoPack": 1000,
+  "prices": {
+   "tesco": {
+    "pack": 1000,
+    "price": 1.7,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Garden Peas 1Kg",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=frozen%20garden%20peas",
+    "note": "Grower's Harvest Garden Peas 900g £1.15"
+   },
+   "sainsburys": {
+    "pack": 910,
+    "price": 1.55,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Garden Peas 910g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/frozen%20garden%20peas",
+    "note": ""
+   },
+   "asda": {
+    "pack": 1000,
+    "price": 1.64,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Garden Peas 1kg",
+    "src": "https://www.trolley.co.uk/product/asda-frozen-for-freshness-garden-peas/XCX284",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 900,
+    "price": 1.09,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Four Seasons Garden Peas 900g",
+    "src": "https://www.aldi.co.uk/product/four-seasons-garden-peas-000000000000366805",
+    "note": "pack is 900g (was assumed 1kg)"
+   },
+   "lidl": {
+    "pack": 1000,
+    "price": 1.09,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Four Seasons Garden Peas",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "sweetcorn",
+  "tescoPack": 1000,
+  "prices": {
+   "tesco": {
+    "pack": 1000,
+    "price": 1.9,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Supersweet Sweetcorn 1Kg (frozen)",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=frozen%20sweetcorn",
+    "note": "Grower's Harvest Sweetcorn 907g £1.35 (Aldi Price Match)"
+   },
+   "sainsburys": {
+    "pack": 1000,
+    "price": 1.9,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Sweetcorn, Super Sweet 1kg (frozen)",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/frozen%20sweetcorn",
+    "note": ""
+   },
+   "asda": {
+    "pack": 1000,
+    "price": 1.73,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Sweetcorn 1kg (frozen)",
+    "src": "https://www.trolley.co.uk/product/asda-frozen-for-freshness-sweetcorn/CQE106",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 1000,
+    "price": 1.49,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Four Seasons Sweetcorn 1kg (frozen)",
+    "src": "https://www.aldi.co.uk/product/four-seasons-sweetcorn-000000000000262686",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 1000,
+    "price": 1.49,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "mushrooms",
+  "tescoPack": 250,
+  "prices": {
+   "tesco": {
+    "pack": 250,
+    "price": 1.1,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Chestnut Vitamin D Mushrooms 250G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=chestnut%20mushrooms",
+    "note": "485g family pack £2.00, Clubcard £1.60 (to 16/11/2026)"
+   },
+   "sainsburys": {
+    "pack": 300,
+    "price": 1.29,
+    "loyalty": 0.64,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's 300g Closed Cup Chestnut Mushrooms",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/chestnut%20mushrooms",
+    "note": "Half Price with Nectar"
+   },
+   "asda": {
+    "pack": 250,
+    "price": 1.07,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Chestnut Mushrooms 250g",
+    "src": "https://www.trolley.co.uk/product/asda-nutty-earthy-chestnut-mushrooms/ZPC289",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 250,
+    "price": 0.95,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Nature's Pick British Chestnut Mushrooms 250g",
+    "src": "https://www.aldi.co.uk/product/nature-s-pick-british-chestnut-mushrooms-000000000000339800",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 250,
+    "price": 0.95,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "sour_cream",
+  "tescoPack": 300,
+  "prices": {
+   "tesco": {
+    "pack": 300,
+    "price": 0.85,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Soured Cream 300Ml",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=soured%20cream",
+    "note": "Aldi Price Match"
+   },
+   "sainsburys": {
+    "pack": 300,
+    "price": 1,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Soured Cream 300ml",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/soured%20cream",
+    "note": ""
+   },
+   "asda": {
+    "pack": 300,
+    "price": 0.85,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Fresh Soured Cream 300ml",
+    "src": "https://www.trolley.co.uk/product/asda-fresh-soured-cream/XGR342",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 300,
+    "price": 0.85,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Aldi soured cream 300ml (est.)",
+    "src": "",
+    "note": "not found on aldi.co.uk (dairy category page 1 only; later pages blocked); estimated from Tesco 300ml carrying an Aldi Price Match badge at £0.85"
+   },
+   "lidl": {
+    "pack": 300,
+    "price": 0.85,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl soured cream 300ml (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "sausages",
+  "tescoPack": 8,
+  "prices": {
+   "tesco": {
+    "pack": 8,
+    "price": 1.79,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco British Pork Sausages 8 Pack 454G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=pork%20sausages",
+    "note": "Aldi Price Match"
+   },
+   "sainsburys": {
+    "pack": 8,
+    "price": 1.79,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Butcher's choice British Pork Sausage x8 454g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/pork%20sausages",
+    "note": "Aldi price match"
+   },
+   "asda": {
+    "pack": 8,
+    "price": 1.79,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA 8 Flavourful Pork Sausages 454g",
+    "src": "https://www.trolley.co.uk/product/asda-flavourful-8-pork-sausages/OMD752",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 8,
+    "price": 1.79,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Aldi pork sausages 8 pack (est.)",
+    "src": "",
+    "note": "no Aldi 8-pack listed online; estimate from Tesco 8-pack Aldi Price Match at £1.79. Nearest listed: Specially Selected Pork Sausages 6 Pack 400g £2.29; re-checked 23/10: aldi.co.uk Bacon & Sausages page 1 shows no 8-pack (Specially Selected 6 Pack 400g £2.29; Ashfields Irish Style Pork Sausages 410g £1.29)"
+   },
+   "lidl": {
+    "pack": 8,
+    "price": 1.79,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "pork_mince",
+  "tescoPack": 500,
+  "prices": {
+   "tesco": {
+    "pack": 500,
+    "price": 2.3,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Pork Mince 20% Fat 500G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=pork%20mince",
+    "note": "10% fat £2.35, 5% fat £2.39"
+   },
+   "sainsburys": {
+    "pack": 500,
+    "price": 2.45,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's British Pork Mince 20% Fat 500g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/pork%20mince",
+    "note": ""
+   },
+   "asda": {
+    "pack": 500,
+    "price": 2.47,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Succulent Lean Pork Mince 5% Fat 500g",
+    "src": "https://www.trolley.co.uk/product/asda-lean-pork-mince/TMF578",
+    "note": "no standard 20% Asda line found; Just Essentials Pork Mince 500g £2.37"
+   },
+   "aldi": {
+    "pack": 500,
+    "price": 2.15,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Ashfields British Pork Mince 12% Fat 500g",
+    "src": "https://www.aldi.co.uk/product/ashfields-british-pork-mince-12-fat-000000000000586967",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 500,
+    "price": 2.15,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "couscous",
+  "tescoPack": 500,
+  "prices": {
+   "tesco": {
+    "pack": 500,
+    "price": 1.3,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Cous Cous 500G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=cous%20cous",
+    "note": ""
+   },
+   "sainsburys": {
+    "pack": 500,
+    "price": 1.3,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Cous Cous 500g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/cous%20cous",
+    "note": "1kg £2.40"
+   },
+   "asda": {
+    "pack": 500,
+    "price": 1.2,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Cous Cous 500g",
+    "src": "https://www.trolley.co.uk/product/asda-cous-cous/FQU899",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 500,
+    "price": 1.15,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Aldi cous cous 500g (estimated)",
+    "src": "",
+    "note": "no Aldi price found; estimated just below Asda £1.20; re-checked 23/10: aldi.co.uk Rice, Pasta & Noodles page 1 shows only Make In Minutes flavoured cous cous 100g £0.47"
+   },
+   "lidl": {
+    "pack": 500,
+    "price": 1.15,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Aldi cous cous 500g (estimated)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "gravy",
+  "tescoPack": 200,
+  "prices": {
+   "tesco": {
+    "pack": 200,
+    "price": 0.66,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Gravy Granules For Chicken 200G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=gravy%20granules",
+    "note": "Aldi Price Match; Tesco Beef Gravy Granules 200g also £0.66; Stockwell & Co 200g £0.45"
+   },
+   "sainsburys": {
+    "pack": 170,
+    "price": 0.65,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Gravy Granules For Meat 170g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/gravy%20granules",
+    "note": ""
+   },
+   "asda": {
+    "pack": 200,
+    "price": 0.66,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Gravy Granules for Meat 200g",
+    "src": "https://www.trolley.co.uk/product/asda-reduced-salt-gravy-granules/YJV196",
+    "note": "price seen in related-products list on this page (reduced salt 200g also £0.66)"
+   },
+   "aldi": {
+    "pack": 200,
+    "price": 0.66,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Aldi gravy granules 200g (equivalent)",
+    "src": "",
+    "note": "estimate from Tesco Aldi Price Match on 200g gravy granules; aldi.co.uk lists Quixo Gravy Granules £0.99, size not shown"
+   },
+   "lidl": {
+    "pack": 200,
+    "price": 0.66,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent of Aldi gravy granules 200g (equivalent)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "cauliflower",
+  "tescoPack": 1,
+  "prices": {
+   "tesco": {
+    "pack": 1,
+    "price": 1.18,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Cauliflower Each",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=cauliflower",
+    "note": "Aldi Price Match"
+   },
+   "sainsburys": {
+    "pack": 1,
+    "price": 1.18,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Cauliflower",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/cauliflower%20each",
+    "note": "Aldi price match"
+   },
+   "asda": {
+    "pack": 1,
+    "price": 1.18,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Light & Nutty Cauliflower",
+    "src": "https://www.trolley.co.uk/product/asda-light-nutty-cauliflower/TPZ067",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 1,
+    "price": 1.18,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Nature's Pick British Cauliflower",
+    "src": "https://www.aldi.co.uk/product/nature-s-pick-british-cauliflower-000000000000334794",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 1,
+    "price": 1.18,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent of Nature's Pick British Cauliflower each",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "tortilla_chips",
+  "tescoPack": 200,
+  "prices": {
+   "tesco": {
+    "pack": 200,
+    "price": 0.89,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Lightly Salted Tortilla Chips 200g",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=lightly%20salted%20tortilla%20chips",
+    "note": "Aldi Price Match; Stockwell & Co. 200g £0.57"
+   },
+   "sainsburys": {
+    "pack": 200,
+    "price": 0.89,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Tortilla Chips Salted 200g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/tortilla%20chips",
+    "note": "no own-brand 'lightly salted' line; salted is the equivalent; Aldi price match"
+   },
+   "asda": {
+    "pack": 180,
+    "price": 0.85,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Lightly Salted Tortilla Chips 180g",
+    "src": "https://www.trolley.co.uk/product/asda-lightly-salted-sharing-tortilla-chips/TPR576",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 200,
+    "price": 0.57,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Everyday Essentials Lightly Salted Tortilla Chips 200g",
+    "src": "https://www.aldi.co.uk/product/everyday-essentials-lightly-salted-tortilla-chips-200g-000000000000513723",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 200,
+    "price": 0.57,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "aubergine",
+  "tescoPack": 1,
+  "prices": {
+   "tesco": {
+    "pack": 1,
+    "price": 0.95,
+    "loyalty": 0.69,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Aubergine Each",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=aubergine",
+    "note": "Clubcard 69p valid 20/10–02/11/2026"
+   },
+   "sainsburys": {
+    "pack": 1,
+    "price": 1.05,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Aubergine",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/aubergine",
+    "note": ""
+   },
+   "asda": {
+    "pack": 1,
+    "price": 0.98,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Aubergine",
+    "src": "https://www.trolley.co.uk/product/asda-aubergine/HED876",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 1,
+    "price": 0.95,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Aldi aubergine each (est.)",
+    "src": "",
+    "note": "not found on aldi.co.uk (vegetables category page 1 only; later pages blocked); estimated at Tesco shelf price"
+   },
+   "lidl": {
+    "pack": 1,
+    "price": 0.95,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl aubergine each (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "dried_yeast",
+  "tescoPack": 56,
+  "prices": {
+   "tesco": {
+    "pack": 56,
+    "price": 1.55,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Fast Action Dried Yeast 56G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=fast%20action%20dried%20yeast",
+    "note": ""
+   },
+   "sainsburys": {
+    "pack": 56,
+    "price": 1.6,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Fast Action Dried Yeast Sachets x8 56g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/fast%20action%20dried%20yeast",
+    "note": ""
+   },
+   "asda": {
+    "pack": 42,
+    "price": 1.08,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "BAKE by ASDA Easy Bake Yeast 6x7g",
+    "src": "https://www.trolley.co.uk/product/asda-easy-bake-yeast-sachets/UGE416",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 42,
+    "price": 0.65,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "The Pantry Yeast 42g",
+    "src": "https://www.aldi.co.uk/product/the-pantry-yeast-000000000000675840",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 42,
+    "price": 0.65,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "apples",
+  "tescoPack": 5,
+  "prices": {
+   "tesco": {
+    "pack": 5,
+    "price": 1.8,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Braeburn Apple Minimum 5 Pack",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=braeburn%20apples",
+    "note": ""
+   },
+   "sainsburys": {
+    "pack": 6,
+    "price": 1.8,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Braeburn Apples x6",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/braeburn%20apples",
+    "note": ""
+   },
+   "asda": {
+    "pack": 6,
+    "price": 1.67,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA 6 Braeburn Apples",
+    "src": "https://www.trolley.co.uk/product/asda-zingy-crisp-braeburn-apples/HXN147",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 6,
+    "price": 1.67,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Aldi Braeburn apples 6 pack (est.)",
+    "src": "",
+    "note": "not found on aldi.co.uk (fruit category page 1 shows only Pink Lady 6 pack £2.85; later pages blocked); estimated at Asda 6-pack price"
+   },
+   "lidl": {
+    "pack": 6,
+    "price": 1.67,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl Braeburn apples 6 pack (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "thai_green_paste",
+  "tescoPack": 180,
+  "prices": {
+   "tesco": {
+    "pack": 180,
+    "price": 2.25,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Thai Green Curry Paste 180g",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=thai%20green%20curry%20paste",
+    "note": ""
+   },
+   "sainsburys": {
+    "pack": 180,
+    "price": 2.3,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Thai Inspired Green Curry, Inspired to Cook 180g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/thai%20green%20curry%20paste",
+    "note": ""
+   },
+   "asda": {
+    "pack": 200,
+    "price": 2.55,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Cook Thai Green Curry Paste 200g",
+    "src": "https://www.trolley.co.uk/product/asda-thai-green-curry-paste/DYK099",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 180,
+    "price": 1.39,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": true,
+    "label": "Ready, Set…Cook! Thai Green Curry Paste",
+    "src": "https://www.aldi.co.uk/product/ready-set-cook-thai-green-curry-paste-000000000557102002",
+    "note": "price live; pack size not on page, assumed 180g like the sibling Thai Red Curry Paste"
+   },
+   "lidl": {
+    "pack": 180,
+    "price": 1.39,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Ready, Set...Cook! Thai Green Curry Paste",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "self_raising_flour",
+  "tescoPack": 1500,
+  "prices": {
+   "tesco": {
+    "pack": 1500,
+    "price": 0.8,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Self Raising Flour 1.5Kg",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=self%20raising%20flour",
+    "note": "Stockwell & Co. 1.5kg £0.70 (Aldi Price Match)"
+   },
+   "sainsburys": {
+    "pack": 1500,
+    "price": 0.7,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Self Raising Flour 1.5kg",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/self%20raising%20flour",
+    "note": "Aldi price match"
+   },
+   "asda": {
+    "pack": 1500,
+    "price": 0.7,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Just Essentials by ASDA Self Raising Flour 1.5kg",
+    "src": "https://www.trolley.co.uk/product/just-essentials-by-asda-self-raising-flour/OFR084",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 1500,
+    "price": 0.7,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "The Pantry Self Raising Flour 1.5kg",
+    "src": "https://www.aldi.co.uk/product/the-pantry-self-raising-flour-000000000000382618",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 1500,
+    "price": 0.7,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ }
+]

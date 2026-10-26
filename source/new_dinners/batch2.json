@@ -1,0 +1,1189 @@
+[
+ {
+  "id": "br_lamb_chops_new_potatoes",
+  "short": "Lamb chops",
+  "title": "Honey-Garlic Lamb Chops with Buttery New Potatoes",
+  "icon": "🍖",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "lamb",
+  "base": "potato",
+  "family": "grill_steak",
+  "time": 35,
+  "servings": 2,
+  "equipment": [
+   "grill",
+   "hob"
+  ],
+  "airFryer": "Rub and season the chops as in step 3, then air-fry at 200°C for 8–10 min, turning halfway and brushing with the honey glaze for the last 2 min.",
+  "tags": [
+   "quick",
+   "comfort"
+  ],
+  "basedOn": "delicious. magazine — Minty lamb chops with quick boulangère potatoes",
+  "ingredients": [
+   {
+    "i": "lamb_chops",
+    "q": 300,
+    "t": "4 chops (about 300g)"
+   },
+   {
+    "i": "potatoes",
+    "q": 450,
+    "t": "450g, small ones halved"
+   },
+   {
+    "i": "broccoli",
+    "q": 200,
+    "t": "200g, in florets"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves"
+   },
+   {
+    "i": "honey",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "butter",
+    "q": 15,
+    "t": "15g"
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "½, in wedges, to serve",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 3,
+    "t": "a good pinch"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep everything",
+    "text": "Boil a full kettle and heat the grill to high. Halve any larger potatoes so they're all a similar size, and cut the broccoli into florets. Peel the garlic: halve one clove and crush the other. In a small bowl, mix the honey with the mixed herbs and a pinch of salt and pepper."
+   },
+   {
+    "title": "Boil the potatoes",
+    "text": "Put the potatoes in a medium saucepan, cover with boiling water from the kettle and add a pinch of salt. Simmer over a medium-high heat for 15–18 min, until a knife slides in easily."
+   },
+   {
+    "title": "Grill the lamb chops",
+    "text": "While the potatoes cook, rub the chops all over with the cut side of the halved garlic clove. Rub with the oil and season with salt and pepper. Grill on a rack for 3–4 min each side for pink, or 5 min each side for well done."
+   },
+   {
+    "title": "Glaze and rest the lamb",
+    "text": "Brush the honey glaze over the chops and grill for a final 1 min, until sticky and golden at the edges. Move to a warm plate and rest for 3 min."
+   },
+   {
+    "title": "Cook the broccoli",
+    "text": "When the potatoes have 4 min left, add the broccoli to the same pan. Cook until bright green and just tender."
+   },
+   {
+    "title": "Butter the potatoes",
+    "text": "Drain the potatoes and broccoli well and return them to the pan off the heat. Add the butter, the crushed garlic and a pinch of salt and pepper. Toss gently until the butter melts and coats everything."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Pile the buttery potatoes and broccoli onto plates and add two chops each. Spoon over any resting juices and serve with the lemon wedges (optional)."
+   }
+  ],
+  "photo": {
+   "url": "https://images.unsplash.com/photo-1507150370052-1e798df49f29?auto=format&fit=crop&w=1080&q=75",
+   "thumb": "https://images.unsplash.com/photo-1507150370052-1e798df49f29?auto=format&fit=crop&w=300&h=300&q=70",
+   "credit": "Bernard Tuck on Unsplash",
+   "licence": "Unsplash Licence",
+   "source": "https://unsplash.com/photos/three-fried-meats-on-cast-iron-skillet-sEVyWOg5M2s",
+   "alt": "Three golden lamb chops in a cast iron skillet",
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "br_roast_beef_yorkshires",
+  "short": "Roast beef & Yorkshires",
+  "title": "Roast Sirloin of Beef with Yorkshires, Roasties & Gravy",
+  "icon": "🥩",
+  "cuisine": "British",
+  "category": "treat",
+  "protein": "beef",
+  "base": "potato",
+  "family": "roast_traybake",
+  "time": 85,
+  "servings": 2,
+  "equipment": [
+   "oven",
+   "hob"
+  ],
+  "tags": [
+   "comfort"
+  ],
+  "basedOn": "Jamie Oliver — Roast beef & Yorkshire puddings (roast sirloin) — Jamie Oliver",
+  "ingredients": [
+   {
+    "i": "sirloin_steak",
+    "q": 454,
+    "t": "2 thick sirloin steaks (about 450g)"
+   },
+   {
+    "i": "potatoes",
+    "q": 600,
+    "t": "600g, peeled and cut into chunks"
+   },
+   {
+    "i": "carrots",
+    "q": 200,
+    "t": "2, cut into batons"
+   },
+   {
+    "i": "broccoli",
+    "q": 200,
+    "t": "200g, in florets"
+   },
+   {
+    "i": "plain_flour",
+    "q": 50,
+    "t": "50g"
+   },
+   {
+    "i": "eggs",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "milk",
+    "q": 60,
+    "t": "60ml"
+   },
+   {
+    "i": "oil",
+    "q": 50,
+    "t": "3½ tbsp"
+   },
+   {
+    "i": "gravy",
+    "q": 20,
+    "t": "4 tsp granules"
+   },
+   {
+    "i": "wholegrain_mustard",
+    "q": 10,
+    "t": "2 tsp, to serve",
+    "opt": true
+   },
+   {
+    "i": "black_pepper",
+    "q": 2,
+    "t": "1 tsp, coarsely ground"
+   },
+   {
+    "i": "salt",
+    "q": 4,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep and make the batter",
+    "text": "Heat the oven to 220°C (200°C fan) and boil a full kettle. Peel the potatoes and cut into large chunks; cut the carrots into batons and the broccoli into florets. Take the steaks out of the fridge. Whisk the flour, egg and a pinch of salt in a jug, then whisk in the milk until smooth and leave to rest."
+   },
+   {
+    "title": "Par-boil the potatoes",
+    "text": "Cover the potatoes with boiling water in a saucepan, add a pinch of salt and boil for 8 min. Meanwhile, put 2 tbsp oil in a roasting tin and heat in the oven for 5 min. Drain the potatoes, leave to steam for 2 min, then shake in the colander to rough up the edges."
+   },
+   {
+    "title": "Roast the potatoes",
+    "text": "Carefully tip the potatoes into the hot oil and turn to coat. Season and roast on the middle shelf for 45–50 min, turning halfway, until golden and crisp."
+   },
+   {
+    "title": "Sear and roast the beef",
+    "text": "When the potatoes have been in for 15 min, rub the steaks with 2 tsp oil, the coarse pepper and a pinch of salt. Sear in an ovenproof frying pan over a high heat for 1½ min each side, then hold the fat edge down for 30 sec. Roast in the oven for 6 min for medium-rare (8 min for medium). Rest on a board under foil for at least 15 min."
+   },
+   {
+    "title": "Bake the Yorkshires",
+    "text": "Straight after the beef comes out, put ½ tsp oil into each of 4 holes of a muffin tin. Heat on the top shelf for 5 min, until smoking hot. Quickly pour in the batter and bake for 18–20 min, until puffed and deep golden. Don't open the oven door for the first 15 min."
+   },
+   {
+    "title": "Cook the veg",
+    "text": "While the Yorkshires bake, boil the carrots in a pan of salted water over a medium-high heat for 4 min. Add the broccoli and cook for 4 min more, until both are just tender. Drain."
+   },
+   {
+    "title": "Make the gravy",
+    "text": "Stir the gravy granules into 250ml boiling water from the kettle until smooth and thickened. Pour in any juices from the resting beef."
+   },
+   {
+    "title": "Carve and serve",
+    "text": "Slice the beef thinly across the grain. Share it between plates with the roast potatoes, Yorkshires and veg, then pour over the hot gravy. Add a spoonful of mustard on the side (optional)."
+   }
+  ],
+  "photo": {
+   "url": "https://images.unsplash.com/photo-1635897411141-7bd2b9c6ab16?auto=format&fit=crop&w=1080&q=75",
+   "thumb": "https://images.unsplash.com/photo-1635897411141-7bd2b9c6ab16?auto=format&fit=crop&w=300&h=300&q=70",
+   "credit": "Lisa Baker on Unsplash",
+   "licence": "Unsplash Licence",
+   "source": "https://unsplash.com/photos/a-white-plate-topped-with-meat-and-veggies-VqTwBiaiSsk",
+   "alt": "Sunday roast beef dinner with Yorkshire pudding and vegetables",
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "br_scampi_and_chips",
+  "short": "Scampi & chips",
+  "title": "Crispy Prawn Scampi & Chips with Tartare Sauce",
+  "icon": "🍤",
+  "cuisine": "British",
+  "category": "treat",
+  "protein": "prawns",
+  "base": "potato",
+  "family": "fried",
+  "time": 50,
+  "servings": 2,
+  "equipment": [
+   "oven",
+   "hob"
+  ],
+  "airFryer": "Air-fry the oiled chips at 200°C for 20–25 min, shaking twice. Spray the crumbed prawns with a little oil and air-fry at 200°C for 6–8 min, turning halfway, until golden and the prawns are pink all the way through.",
+  "tags": [
+   "fakeaway",
+   "crispy"
+  ],
+  "basedOn": "delicious. magazine — Scampi with chips and tartare sauce",
+  "ingredients": [
+   {
+    "i": "potatoes",
+    "q": 600,
+    "t": "600g, cut into chunky chips"
+   },
+   {
+    "i": "prawns",
+    "q": 170,
+    "t": "1 pack (170g) raw king prawns, defrosted"
+   },
+   {
+    "i": "plain_flour",
+    "q": 20,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "chilli_powder",
+    "q": 0.5,
+    "t": "a pinch",
+    "opt": true,
+    "swap": "Leave it out of the flour and sprinkle a pinch over one portion's scampi after frying instead."
+   },
+   {
+    "i": "eggs",
+    "q": 1,
+    "t": "1, beaten"
+   },
+   {
+    "i": "panko",
+    "q": 50,
+    "t": "50g"
+   },
+   {
+    "i": "oil",
+    "q": 120,
+    "t": "1½ tbsp for the chips, plus about 100ml for shallow-frying"
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1: zest, juice of half, rest in wedges"
+   },
+   {
+    "i": "mayonnaise",
+    "q": 60,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "gherkins",
+    "q": 20,
+    "t": "1 tbsp, finely chopped",
+    "swap": "Spoon one portion of the lemony mayo into a separate dish before stirring in the gherkins."
+   },
+   {
+    "i": "capers",
+    "q": 10,
+    "t": "1 tsp, finely chopped",
+    "opt": true,
+    "swap": "Stir the capers into one portion of the tartare only."
+   },
+   {
+    "i": "salt",
+    "q": 3,
+    "t": "a good pinch"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep everything",
+    "text": "Heat the oven to 220°C (200°C fan). Cut the potatoes into chunky chips, rinse, then pat them and the defrosted prawns really dry. Zest the lemon, juice one half and cut the rest into wedges. Finely chop the gherkins and capers (optional)."
+   },
+   {
+    "title": "Roast the chips",
+    "text": "Toss the chips on a large baking tray with 1½ tbsp oil and a good pinch of salt. Spread out in one layer. Roast on the top shelf for 35–40 min, turning halfway, until golden and crisp."
+   },
+   {
+    "title": "Make the tartare sauce",
+    "text": "While the chips roast, mix the mayonnaise with a squeeze of lemon juice and a pinch of pepper. Stir in the gherkins and capers (optional). Chill until needed."
+   },
+   {
+    "title": "Crumb the prawns",
+    "text": "When the chips have 15 min left, set out three plates. Season the flour with salt, pepper and chilli powder (optional) on the first. Beat the egg on the second, and mix the panko with the lemon zest on the third. Dust each prawn in flour, dip in egg, then press firmly into the crumbs."
+   },
+   {
+    "title": "Fry the scampi",
+    "text": "Heat about 100ml oil in a large frying pan over a medium-high heat until a crumb sizzles straight away. Fry half the prawns for 1½–2 min each side, until the crumb is golden and the prawns are pink and opaque all the way through. Drain on kitchen paper and repeat. Let the leftover oil cool before throwing it away."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Pile the chips onto plates with a sprinkle of salt and add the scampi. Serve with a pot of tartare sauce and the lemon wedges for squeezing."
+   }
+  ]
+ },
+ {
+  "id": "br_peri_peri_chicken_rice",
+  "short": "Peri-peri chicken & rice",
+  "title": "Peri-Peri Chicken Thighs with Spicy Rice & Peri Mayo",
+  "icon": "🌶️",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "chicken",
+  "base": "rice",
+  "family": "grill_steak",
+  "time": 45,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "tags": [
+   "fakeaway",
+   "spicy",
+   "one-pot"
+  ],
+  "basedOn": "RecipeTin Eats — Nando's Portuguese Chicken and Rice (one pot recipe) — Nagi",
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 350,
+    "t": "4 thigh fillets (about 350g)"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "½ tsp",
+    "swap": "Make the marinade without the chilli flakes, coat all the chicken, then rub the flakes onto one portion's thighs only."
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, crushed"
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1: juice of half, rest in wedges"
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, finely chopped"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1 (red if you have it), diced"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g long-grain or basmati"
+   },
+   {
+    "i": "turmeric",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 chicken stock cube in 300ml boiling water"
+   },
+   {
+    "i": "sweetcorn",
+    "q": 80,
+    "t": "80g",
+    "swap": "Leave it out of the pan; warm the sweetcorn separately (1 min in the microwave) and stir it into one portion only."
+   },
+   {
+    "i": "mayonnaise",
+    "q": 40,
+    "t": "2 tbsp",
+    "opt": true
+   },
+   {
+    "i": "hot_sauce",
+    "q": 10,
+    "t": "2 tsp",
+    "opt": true,
+    "swap": "Stir the hot sauce into half the mayo only and leave the rest plain."
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced, to serve",
+    "opt": true,
+    "swap": "Scatter over one plate only."
+   },
+   {
+    "i": "salt",
+    "q": 3,
+    "t": "½ tsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep everything",
+    "text": "Boil the kettle and make up 300ml stock with the cube. Finely chop the onion, dice the pepper into 1cm pieces and crush the garlic. Juice half the lemon and cut the rest into wedges. Slice the spring onions (optional)."
+   },
+   {
+    "title": "Marinate the chicken",
+    "text": "In a bowl, mix the paprika, chilli flakes, herbs, honey, a third of the garlic, the lemon juice, 1 tbsp oil and the salt. Add the chicken thighs and turn to coat well. Leave for 10 min while you start the pan (or overnight in the fridge)."
+   },
+   {
+    "title": "Sear the chicken",
+    "text": "Heat the remaining 1 tbsp oil in a large, deep frying pan with a lid over a medium-high heat. Brown the thighs for 3 min each side until coloured but not cooked through. Lift onto a plate, leaving the oil and marinade bits in the pan."
+   },
+   {
+    "title": "Fry the veg and rice",
+    "text": "Turn the heat to medium. Fry the onion and pepper for 3 min until starting to soften, then add the rest of the garlic for 1 min. Stir in the rice and turmeric for 30 sec so every grain is coated and yellow."
+   },
+   {
+    "title": "Simmer the rice and chicken",
+    "text": "Pour in the stock, add the sweetcorn and bring to a simmer. Sit the chicken thighs on top with any juices, cover and turn the heat to low. Cook for 15 min without lifting the lid."
+   },
+   {
+    "title": "Rest off the heat",
+    "text": "Take the pan off the heat and leave covered for 10 min, until the rice is tender and the stock absorbed. Cut into the thickest thigh to check there's no pink and the juices run clear."
+   },
+   {
+    "title": "Make the peri mayo",
+    "text": "While the rice rests, stir the hot sauce into the mayonnaise (optional). Add a squeeze of lemon from one wedge and mix well."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Lift off the chicken, fluff up the rice with a fork and spoon into bowls. Top with the thighs, drizzle with peri mayo and scatter over the spring onions (optional). Serve with the remaining lemon wedges."
+   }
+  ]
+ },
+ {
+  "id": "br_sea_bass_new_potatoes",
+  "short": "Sea bass & new potatoes",
+  "title": "Crispy-Skin Sea Bass, New Potatoes & Cucumber Relish",
+  "icon": "🐟",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "fish",
+  "base": "potato",
+  "family": "grill_steak",
+  "time": 30,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "tags": [
+   "quick",
+   "light"
+  ],
+  "basedOn": "HelloFresh UK — Pan Seared Sea Bass with New Potatoes and Cucumber-Dill Relish",
+  "ingredients": [
+   {
+    "i": "sea_bass_fillets",
+    "q": 180,
+    "t": "2 fillets (180g)"
+   },
+   {
+    "i": "potatoes",
+    "q": 450,
+    "t": "450g, small ones quartered"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.5,
+    "t": "½"
+   },
+   {
+    "i": "red_onion",
+    "q": 0.25,
+    "t": "¼, thinly sliced"
+   },
+   {
+    "i": "rice_vinegar",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 3,
+    "t": "½ tsp",
+    "opt": true
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, leaves separated"
+   },
+   {
+    "i": "oil",
+    "q": 20,
+    "t": "1 tbsp + 1 tsp"
+   },
+   {
+    "i": "butter",
+    "q": 15,
+    "t": "15g"
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "½, in wedges, to serve",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 3,
+    "t": "a good pinch"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the relish veg",
+    "text": "Boil a full kettle. Peel the cucumber, then shave it into long ribbons with a vegetable peeler, stopping at the seedy core. Thinly slice the red onion, then toss both with a pinch of salt in a sieve for 10 min to draw out the water. Quarter the potatoes and separate the little gem leaves."
+   },
+   {
+    "title": "Boil the potatoes",
+    "text": "Put the potatoes in a saucepan, cover with boiling water and add a pinch of salt. Simmer over a medium-high heat for 12–15 min, until a knife slides through easily."
+   },
+   {
+    "title": "Dress the relish",
+    "text": "While the potatoes cook, squeeze the cucumber and onion firmly, rinse under cold water and pat dry with kitchen paper. In a bowl, mix the rice vinegar with the honey (optional) until dissolved. Stir three-quarters of this into the cucumber and onion; keep the rest for the salad."
+   },
+   {
+    "title": "Fry the sea bass",
+    "text": "Pat the fish skin dry, make 2–3 shallow cuts in it and heat 1 tbsp oil in a frying pan over a medium-high heat. Lay the fillets in skin-side down, pressing flat with a spatula for 30 sec. Season the flesh and cook for 3–4 min, until the skin is crisp and the flesh is nearly opaque. Flip, turn off the heat and leave for 1 min."
+   },
+   {
+    "title": "Butter the potatoes",
+    "text": "Drain the potatoes and return to the pan off the heat. Toss with the butter and a pinch of salt and pepper until glossy."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Toss the little gem with the rest of the dressing and 1 tsp oil. Share the potatoes between plates and top with the sea bass, skin-side up. Add a heap of cucumber relish, the salad and the lemon wedges (optional)."
+   }
+  ],
+  "photo": {
+   "url": "https://images.unsplash.com/photo-1646658102675-e3647eb64d37?auto=format&fit=crop&w=1080&q=75",
+   "thumb": "https://images.unsplash.com/photo-1646658102675-e3647eb64d37?auto=format&fit=crop&w=300&h=300&q=70",
+   "credit": "Jametlene Reskp on Unsplash",
+   "licence": "Unsplash Licence",
+   "source": "https://unsplash.com/photos/a-white-plate-topped-with-fish-and-vegetables-_1ziG646FZo",
+   "alt": "Sea bass with vegetables on a white plate",
+   "confidence": "medium"
+  }
+ },
+ {
+  "id": "br_beef_stroganoff",
+  "short": "Beef stroganoff",
+  "title": "Creamy Beef Stroganoff with Fluffy Rice",
+  "icon": "🍛",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "beef",
+  "base": "rice",
+  "family": "stew_soup",
+  "time": 30,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "tags": [
+   "quick",
+   "comfort"
+  ],
+  "basedOn": "Nicky's Kitchen Sanctuary — Beef Stroganoff — Nicky Corbishley",
+  "ingredients": [
+   {
+    "i": "sirloin_steak",
+    "q": 227,
+    "t": "1 large sirloin steak (227g)"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1 large, thinly sliced"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, crushed"
+   },
+   {
+    "i": "butter",
+    "q": 10,
+    "t": "10g"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 2,
+    "t": "1 tsp, plus a pinch to serve"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 0.5,
+    "t": "½ beef stock cube in 100ml boiling water"
+   },
+   {
+    "i": "wholegrain_mustard",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "worcestershire",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "sour_cream",
+    "q": 150,
+    "t": "150ml"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g long-grain"
+   },
+   {
+    "i": "spring_onions",
+    "q": 1,
+    "t": "1, finely sliced, to serve",
+    "opt": true,
+    "swap": "Scatter over one plate only."
+   },
+   {
+    "i": "salt",
+    "q": 3,
+    "t": "a good pinch"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep everything",
+    "text": "Boil the kettle and make up 100ml stock with the half cube. Thinly slice the onion and crush the garlic. Trim the fat from the steak, slice it across the grain into 1cm strips and season with salt and pepper. Slice the spring onion (optional)."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "Rinse the rice, put it in a saucepan with 300ml boiling water and a pinch of salt, and bring back to the boil. Cover, turn the heat to low and cook for 10–12 min. Take off the heat and leave covered for 5 min."
+   },
+   {
+    "title": "Soften the onion",
+    "text": "While the rice cooks, heat the butter and ½ tbsp oil in a large frying pan over a medium heat until foaming. Cook the onion for 6–8 min, stirring often, until soft and golden. Add the garlic and paprika for 1 min, then tip into a bowl."
+   },
+   {
+    "title": "Sear the steak",
+    "text": "Turn the heat to high and add the remaining ½ tbsp oil. Lay the steak strips in a single layer and cook for 1 min, then turn and cook for 30 sec more. They should still be pink inside; tip them into the bowl with the onion."
+   },
+   {
+    "title": "Make the sauce",
+    "text": "Turn the heat to medium. Pour the stock into the pan with the mustard and Worcestershire sauce, scraping up the browned bits. Bubble for 1–2 min until reduced by half. Turn the heat to low and stir in the soured cream until smooth and hot; don't let it boil or it may split."
+   },
+   {
+    "title": "Bring it together",
+    "text": "Return the steak, onion and any juices to the pan. Stir gently over a low heat for 1 min, just until the beef is hot through. Taste and season."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Fluff up the rice with a fork and share between bowls. Spoon over the stroganoff, then finish with a pinch of paprika and the spring onion (optional)."
+   }
+  ]
+ },
+ {
+  "id": "br_chicken_casserole_mash",
+  "short": "Chicken casserole & mash",
+  "title": "Chicken, Leek & Carrot Casserole with Garlic Mash",
+  "icon": "🍲",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "chicken",
+  "base": "potato",
+  "family": "stew_soup",
+  "time": 65,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "tags": [
+   "comfort",
+   "one-pot",
+   "freezable"
+  ],
+  "basedOn": "Tesco Real Food — Chicken casserole with roast garlic mash",
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 400,
+    "t": "about 400g thigh fillets, halved"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, chopped"
+   },
+   {
+    "i": "carrots",
+    "q": 200,
+    "t": "2, in thick rounds"
+   },
+   {
+    "i": "leeks",
+    "q": 150,
+    "t": "1 small, sliced"
+   },
+   {
+    "i": "garlic",
+    "q": 4,
+    "t": "4 cloves"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 chicken stock cube in 400ml boiling water"
+   },
+   {
+    "i": "worcestershire",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "cornflour",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "potatoes",
+    "q": 500,
+    "t": "500g, peeled and cut into chunks"
+   },
+   {
+    "i": "butter",
+    "q": 15,
+    "t": "15g"
+   },
+   {
+    "i": "milk",
+    "q": 50,
+    "t": "50ml"
+   },
+   {
+    "i": "salt",
+    "q": 3,
+    "t": "to season"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep everything",
+    "text": "Boil a full kettle and make up 400ml stock with the cube. Chop the onion, cut the carrots into thick rounds, and halve, rinse and slice the leek. Crush 1 garlic clove; peel the other 3 and leave whole. Halve the chicken thighs and season with salt and pepper."
+   },
+   {
+    "title": "Brown the chicken",
+    "text": "Heat the oil in a large saucepan or casserole with a lid over a medium-high heat. Brown the chicken for 3–4 min each side until golden all over (it will finish cooking later). Lift onto a plate."
+   },
+   {
+    "title": "Soften the veg",
+    "text": "Turn the heat to medium. Add the onion, carrots and leek to the pan and cook for 5 min, stirring, until starting to soften. Stir in the crushed garlic, tomato purée and mixed herbs for 1 min."
+   },
+   {
+    "title": "Simmer the casserole",
+    "text": "Pour in the stock and Worcestershire sauce, scraping up the browned bits. Return the chicken and its juices and bring to the boil. Cover, turn the heat to low and simmer for 35 min, until the chicken is tender and the carrots are soft."
+   },
+   {
+    "title": "Make the garlic mash",
+    "text": "While the casserole simmers, peel the potatoes and cut into even chunks. Boil with the 3 whole garlic cloves in salted water over a medium-high heat for 15–20 min, until soft. Drain, then mash the potatoes and garlic with the butter and milk until smooth. Season and keep covered."
+   },
+   {
+    "title": "Thicken the gravy",
+    "text": "Mix the cornflour with 1 tbsp cold water until smooth. Stir it into the casserole and simmer uncovered for 3–5 min, until the gravy thickens enough to coat a spoon. Check a piece of chicken has no pink, then taste and season."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Spoon the garlic mash into shallow bowls. Ladle the chicken casserole and its gravy alongside."
+   }
+  ]
+ },
+ {
+  "id": "br_breakfast_for_dinner_fry_up",
+  "short": "Full English fry-up",
+  "title": "Full English Fry-Up with Sausages, Bacon & Eggs",
+  "icon": "🍳",
+  "cuisine": "British",
+  "category": "treat",
+  "protein": "pork",
+  "base": "bread",
+  "family": "eggs",
+  "time": 40,
+  "servings": 2,
+  "equipment": [
+   "oven",
+   "hob"
+  ],
+  "airFryer": "Air-fry the sausages at 180°C for 14–16 min, turning halfway; add the bacon for the last 6–8 min and the tomatoes for the last 5 min.",
+  "tags": [
+   "comfort",
+   "kid-friendly"
+  ],
+  "basedOn": "Taming Twins — Full English Breakfast — Sarah Rossi",
+  "ingredients": [
+   {
+    "i": "sausages",
+    "q": 4,
+    "t": "4"
+   },
+   {
+    "i": "bacon",
+    "q": 120,
+    "t": "4 rashers (about 120g)"
+   },
+   {
+    "i": "eggs",
+    "q": 2,
+    "t": "2"
+   },
+   {
+    "i": "baked_beans",
+    "q": 415,
+    "t": "1 tin (415g)"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 150,
+    "t": "150g, halved"
+   },
+   {
+    "i": "mushrooms",
+    "q": 100,
+    "t": "100g, halved",
+    "opt": true,
+    "swap": "Roast the mushrooms on their own small tray (or a separate corner lined with foil) and serve them on one plate only."
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 1,
+    "t": "½ tsp",
+    "opt": true
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "wholemeal_bread",
+    "q": 2,
+    "t": "2 slices"
+   },
+   {
+    "i": "butter",
+    "q": 10,
+    "t": "10g, for the toast"
+   },
+   {
+    "i": "ketchup",
+    "q": 20,
+    "t": "to serve",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 1,
+    "t": "a pinch"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep everything",
+    "text": "Heat the oven to 220°C (200°C fan). Halve the cherry tomatoes and the mushrooms (optional). Line a baking tray with foil."
+   },
+   {
+    "title": "Roast the sausages",
+    "text": "Spread the sausages out in a small roasting tin, without pricking them. Roast on the top shelf for 30 min in total, turning halfway, until browned all over and cooked through."
+   },
+   {
+    "title": "Roast the tomatoes",
+    "text": "After the sausages have had 10 min, lay the tomatoes cut-side up on one half of the lined tray. Put the mushrooms (optional) in their own corner. Drizzle with half the oil and sprinkle with the herbs (optional), salt and pepper. Roast on the middle shelf for 20 min, until soft and juicy."
+   },
+   {
+    "title": "Bake the bacon",
+    "text": "When the sausages have 12 min left, lay the bacon on the free half of the tray. Bake for 10–12 min, until cooked through and the fat is golden at the edges."
+   },
+   {
+    "title": "Warm the beans",
+    "text": "While the bacon cooks, tip the beans into a small saucepan. Heat over a medium-low heat for 4–5 min, stirring now and then, until bubbling."
+   },
+   {
+    "title": "Fry the eggs",
+    "text": "Heat the remaining oil in a frying pan over a medium heat. Crack in the eggs and fry for 3–4 min, until the whites are set and the yolks are still runny. Meanwhile, toast the bread and spread with the butter."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Share everything between warm plates: sausages, bacon, an egg, tomatoes, beans and buttered toast. Serve with ketchup (optional)."
+   }
+  ],
+  "photo": {
+   "url": "https://images.unsplash.com/photo-1525473233136-080cdd8b7cb2?auto=format&fit=crop&w=1080&q=75",
+   "thumb": "https://images.unsplash.com/photo-1525473233136-080cdd8b7cb2?auto=format&fit=crop&w=300&h=300&q=70",
+   "credit": "Jonathan Farber on Unsplash",
+   "licence": "Unsplash Licence",
+   "source": "https://unsplash.com/photos/fried-ham-egg-bread-with-beans-and-red-tomato-slice-W3cKs5KeT2c",
+   "alt": "Classic full English breakfast with egg, bacon, beans, tomato and toast",
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "br_slow_cooker_lamb_shanks_mash",
+  "short": "Lamb shanks & mash",
+  "title": "Slow-Cooker Lamb Shanks with Rich Gravy & Mash",
+  "icon": "🍖",
+  "cuisine": "British",
+  "category": "treat",
+  "protein": "lamb",
+  "base": "potato",
+  "family": "stew_soup",
+  "time": 470,
+  "servings": 2,
+  "equipment": [
+   "slow_cooker",
+   "hob"
+  ],
+  "tags": [
+   "comfort",
+   "freezable"
+  ],
+  "basedOn": "Nicky's Kitchen Sanctuary — Slow Cooker Lamb Shank Recipe — Nicky",
+  "ingredients": [
+   {
+    "i": "lamb_shanks",
+    "q": 2,
+    "t": "2 lamb shanks (about 700g)"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, finely chopped"
+   },
+   {
+    "i": "carrots",
+    "q": 150,
+    "t": "2 small, in chunks"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 stock cube in 450ml boiling water"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "worcestershire",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "honey",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "cornflour",
+    "q": 10,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "potatoes",
+    "q": 500,
+    "t": "500g, peeled and cut into chunks"
+   },
+   {
+    "i": "butter",
+    "q": 15,
+    "t": "15g"
+   },
+   {
+    "i": "milk",
+    "q": 50,
+    "t": "50ml"
+   },
+   {
+    "i": "broccoli",
+    "q": 200,
+    "t": "200g, in florets"
+   },
+   {
+    "i": "salt",
+    "q": 3,
+    "t": "to season"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep everything",
+    "text": "Boil the kettle and make up 450ml stock with the cube. Finely chop the onion, cut the carrots into small chunks and crush the garlic. Season the lamb shanks all over with salt and pepper."
+   },
+   {
+    "title": "Brown the lamb",
+    "text": "Heat the oil in a large frying pan over a high heat. Brown the shanks for 8–10 min, turning, until well coloured on all sides. Move them into the slow cooker."
+   },
+   {
+    "title": "Make the sauce",
+    "text": "Turn the heat under the same pan to medium. Cook the onion and carrots for 5 min, stirring, until softened, then add the garlic for 1 min. Stir in the stock, tomato purée, Worcestershire sauce and mixed herbs, scraping up the browned bits, and bring to a simmer. Pour over the lamb."
+   },
+   {
+    "title": "Slow-cook the lamb",
+    "text": "Cover and cook on low for 7–8 hours, until the meat is meltingly tender and pulls away from the bone. No slow cooker? Cook in a lidded casserole in the oven at 180°C (160°C fan) for 3–3½ hours instead. Add a splash of water in the last hour if it looks dry."
+   },
+   {
+    "title": "Make the mash",
+    "text": "About 30 min before the lamb is ready, peel the potatoes and cut into even chunks. Boil in salted water over a medium-high heat for 15–20 min, until soft. Drain, then mash with the butter and milk until smooth. Season and keep covered."
+   },
+   {
+    "title": "Thicken the gravy",
+    "text": "Lift the shanks onto a plate and cover with foil. Pour the sauce and veg into a saucepan, stir in the honey and bring to a bubble over a medium heat. Mix the cornflour with 2 tbsp cold water, then whisk it in gradually and simmer for 2–3 min, until the gravy coats a spoon. Season."
+   },
+   {
+    "title": "Cook the broccoli",
+    "text": "While the gravy bubbles, cook the broccoli in a pan of boiling salted water for 3–4 min, until just tender. Drain."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Spoon the mash onto warm plates and sit a lamb shank on top of each. Pour over plenty of gravy with its carrots and serve the broccoli on the side."
+   }
+  ],
+  "photo": {
+   "url": "https://images.unsplash.com/photo-1773417325310-cc9c9bef75e7?auto=format&fit=crop&w=1080&q=75",
+   "thumb": "https://images.unsplash.com/photo-1773417325310-cc9c9bef75e7?auto=format&fit=crop&w=300&h=300&q=70",
+   "credit": "Neil Marshall on Unsplash",
+   "licence": "Unsplash Licence",
+   "source": "https://unsplash.com/photos/lamb-shank-with-mashed-potatoes-and-vegetables-2nJ7fYeuXVI",
+   "alt": "Lamb shank with mashed potatoes and vegetables",
+   "confidence": "high"
+  }
+ }
+]

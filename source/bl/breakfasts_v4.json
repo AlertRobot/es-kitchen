@@ -1,0 +1,761 @@
+[
+ {
+  "id": "bf_cheerios_milk",
+  "title": "Cheerios with Milk",
+  "icon": "🥣",
+  "meal": "breakfast",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 2,
+  "servings": 1,
+  "packable": false,
+  "microwave": false,
+  "keepsDays": 0,
+  "batch": "",
+  "equipment": [],
+  "kcalEst": 190,
+  "proteinEst": 8,
+  "ingredients": [
+   {
+    "i": "cheerios",
+    "q": 30,
+    "t": "30g (a small bowl — the box serving)"
+   },
+   {
+    "i": "milk",
+    "q": 150,
+    "t": "150ml semi-skimmed"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Pour and eat",
+    "text": "Tip the Cheerios into a bowl and pour over the cold milk. Eat straight away while the hoops are still crunchy."
+   }
+  ],
+  "tags": [
+   "quick",
+   "cereal",
+   "no-cook"
+  ]
+ },
+ {
+  "id": "bf_crunchy_nut_milk",
+  "title": "Crunchy Nut Corn Flakes with Milk",
+  "icon": "🥣",
+  "meal": "breakfast",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 2,
+  "servings": 1,
+  "packable": false,
+  "microwave": false,
+  "keepsDays": 0,
+  "batch": "",
+  "equipment": [],
+  "kcalEst": 195,
+  "proteinEst": 8,
+  "ingredients": [
+   {
+    "i": "crunchy_nut",
+    "q": 30,
+    "t": "30g (the box serving)"
+   },
+   {
+    "i": "milk",
+    "q": 150,
+    "t": "150ml semi-skimmed"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Pour and eat",
+    "text": "Pour the Crunchy Nut into a bowl and add the cold milk. It is sweeter than plain flakes, so the 30g box serving goes further than it looks."
+   }
+  ],
+  "tags": [
+   "quick",
+   "cereal",
+   "no-cook"
+  ]
+ },
+ {
+  "id": "bf_shreddies_milk",
+  "title": "Shreddies with Milk",
+  "icon": "🥣",
+  "meal": "breakfast",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 2,
+  "servings": 1,
+  "packable": false,
+  "microwave": false,
+  "keepsDays": 0,
+  "batch": "",
+  "equipment": [],
+  "kcalEst": 225,
+  "proteinEst": 9,
+  "ingredients": [
+   {
+    "i": "shreddies",
+    "q": 40,
+    "t": "40g (the box serving)"
+   },
+   {
+    "i": "milk",
+    "q": 150,
+    "t": "150ml semi-skimmed"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Pour and eat",
+    "text": "Tip the Shreddies into a bowl and pour over the cold milk. Leave for a minute if you like them softer."
+   }
+  ],
+  "tags": [
+   "quick",
+   "cereal",
+   "no-cook",
+   "light"
+  ]
+ },
+ {
+  "id": "bf_rice_krispies_milk",
+  "title": "Rice Krispies with Milk",
+  "icon": "🥣",
+  "meal": "breakfast",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 2,
+  "servings": 1,
+  "packable": false,
+  "microwave": false,
+  "keepsDays": 0,
+  "batch": "",
+  "equipment": [],
+  "kcalEst": 190,
+  "proteinEst": 7,
+  "ingredients": [
+   {
+    "i": "rice_krispies",
+    "q": 30,
+    "t": "30g (the box serving)"
+   },
+   {
+    "i": "milk",
+    "q": 150,
+    "t": "150ml semi-skimmed"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Pour and eat",
+    "text": "Pour the Rice Krispies into a bowl, add the cold milk and listen for the snap, crackle and pop. Eat quickly — they soften fast."
+   }
+  ],
+  "tags": [
+   "quick",
+   "cereal",
+   "no-cook"
+  ]
+ },
+ {
+  "id": "bf_special_k_milk",
+  "title": "Special K with Milk",
+  "icon": "🥣",
+  "meal": "breakfast",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 2,
+  "servings": 1,
+  "packable": false,
+  "microwave": false,
+  "keepsDays": 0,
+  "batch": "",
+  "equipment": [],
+  "kcalEst": 190,
+  "proteinEst": 8,
+  "ingredients": [
+   {
+    "i": "special_k",
+    "q": 30,
+    "t": "30g (the box serving)"
+   },
+   {
+    "i": "milk",
+    "q": 150,
+    "t": "150ml semi-skimmed"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Pour and eat",
+    "text": "Tip the Special K into a bowl and pour over the cold milk. A light, lower-fat bowl that keeps you going till lunch."
+   }
+  ],
+  "tags": [
+   "quick",
+   "cereal",
+   "no-cook",
+   "light"
+  ]
+ },
+ {
+  "id": "bf_cornflakes_milk",
+  "title": "Corn Flakes with Milk",
+  "icon": "🥣",
+  "meal": "breakfast",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 2,
+  "servings": 1,
+  "packable": false,
+  "microwave": false,
+  "keepsDays": 0,
+  "batch": "",
+  "equipment": [],
+  "kcalEst": 190,
+  "proteinEst": 8,
+  "ingredients": [
+   {
+    "i": "cornflakes",
+    "q": 30,
+    "t": "30g (the box serving)"
+   },
+   {
+    "i": "milk",
+    "q": 150,
+    "t": "150ml semi-skimmed"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Pour and eat",
+    "text": "Pour the corn flakes into a bowl and add the cold milk. Eat straight away for the crunch."
+   }
+  ],
+  "tags": [
+   "quick",
+   "cereal",
+   "no-cook",
+   "light"
+  ]
+ },
+ {
+  "id": "bf_bran_flakes_milk",
+  "title": "Bran Flakes with Milk",
+  "icon": "🥣",
+  "meal": "breakfast",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 2,
+  "servings": 1,
+  "packable": false,
+  "microwave": false,
+  "keepsDays": 0,
+  "batch": "",
+  "equipment": [],
+  "kcalEst": 180,
+  "proteinEst": 8,
+  "ingredients": [
+   {
+    "i": "bran_flakes",
+    "q": 30,
+    "t": "30g (the box serving)"
+   },
+   {
+    "i": "milk",
+    "q": 150,
+    "t": "150ml semi-skimmed"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Pour and eat",
+    "text": "Tip the bran flakes into a bowl and pour over the cold milk. One of the highest-fibre cereals, so it fills you up for few calories."
+   }
+  ],
+  "tags": [
+   "quick",
+   "cereal",
+   "no-cook",
+   "light"
+  ]
+ },
+ {
+  "id": "bf_fruit_fibre_milk",
+  "title": "Fruit 'n Fibre with Milk",
+  "icon": "🥣",
+  "meal": "breakfast",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 2,
+  "servings": 1,
+  "packable": false,
+  "microwave": false,
+  "keepsDays": 0,
+  "batch": "",
+  "equipment": [],
+  "kcalEst": 225,
+  "proteinEst": 9,
+  "ingredients": [
+   {
+    "i": "fruit_and_fibre",
+    "q": 40,
+    "t": "40g bowl"
+   },
+   {
+    "i": "milk",
+    "q": 150,
+    "t": "150ml semi-skimmed"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Pour and eat",
+    "text": "Pour the Fruit 'n Fibre into a bowl, give the box a shake first so you get some of the fruit and nuts, then add the cold milk."
+   }
+  ],
+  "tags": [
+   "quick",
+   "cereal",
+   "no-cook"
+  ]
+ },
+ {
+  "id": "bf_shredded_wheat_milk",
+  "title": "Shredded Wheat with Milk",
+  "icon": "🥣",
+  "meal": "breakfast",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 2,
+  "servings": 1,
+  "packable": false,
+  "microwave": false,
+  "keepsDays": 0,
+  "batch": "",
+  "equipment": [],
+  "kcalEst": 235,
+  "proteinEst": 11,
+  "ingredients": [
+   {
+    "i": "shredded_wheat",
+    "q": 45,
+    "t": "2 biscuits (45g)"
+   },
+   {
+    "i": "milk",
+    "q": 150,
+    "t": "150ml semi-skimmed"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Pour and eat",
+    "text": "Put the two biscuits in a bowl, pour over the cold milk and break them up with a spoon. Let them soak for a minute or two if you like them soft."
+   }
+  ],
+  "tags": [
+   "quick",
+   "cereal",
+   "no-cook",
+   "light"
+  ]
+ },
+ {
+  "id": "bf_granola_yogurt",
+  "title": "Granola with Greek Yogurt",
+  "icon": "🥣",
+  "meal": "breakfast",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 2,
+  "servings": 1,
+  "packable": true,
+  "microwave": false,
+  "keepsDays": 0,
+  "batch": "",
+  "equipment": [],
+  "kcalEst": 325,
+  "proteinEst": 10,
+  "ingredients": [
+   {
+    "i": "granola",
+    "q": 45,
+    "t": "45g (the box serving)"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 100,
+    "t": "100g (about 3 heaped tbsp)"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Spoon and scatter",
+    "text": "Spoon the yogurt into a bowl and scatter the granola over the top just before eating so it stays crunchy. Taking it to work? Pack the yogurt in a pot and the granola in a separate bag and mix at your break."
+   }
+  ],
+  "tags": [
+   "quick",
+   "cereal",
+   "no-cook"
+  ]
+ },
+ {
+  "id": "bf_cheerios_banana",
+  "title": "Cheerios with Sliced Banana",
+  "icon": "🍌",
+  "meal": "breakfast",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 3,
+  "servings": 1,
+  "packable": false,
+  "microwave": false,
+  "keepsDays": 0,
+  "batch": "",
+  "equipment": [],
+  "kcalEst": 295,
+  "proteinEst": 9,
+  "ingredients": [
+   {
+    "i": "cheerios",
+    "q": 30,
+    "t": "30g (the box serving)"
+   },
+   {
+    "i": "milk",
+    "q": 150,
+    "t": "150ml semi-skimmed"
+   },
+   {
+    "i": "banana",
+    "q": 1,
+    "t": "1, sliced"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Slice, pour and eat",
+    "text": "Slice the banana over the Cheerios in a bowl, then pour over the cold milk. The banana adds natural sweetness, so no sugar needed."
+   }
+  ],
+  "tags": [
+   "quick",
+   "cereal",
+   "no-cook"
+  ]
+ },
+ {
+  "id": "bf_toast_butter_jam",
+  "title": "Toast with Butter & Jam",
+  "icon": "🍞",
+  "meal": "breakfast",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 4,
+  "servings": 1,
+  "packable": false,
+  "microwave": false,
+  "keepsDays": 0,
+  "batch": "",
+  "equipment": [],
+  "kcalEst": 315,
+  "proteinEst": 9,
+  "ingredients": [
+   {
+    "i": "wholemeal_bread",
+    "q": 2,
+    "t": "2 slices"
+   },
+   {
+    "i": "butter",
+    "q": 10,
+    "t": "2 tsp, thinly spread"
+   },
+   {
+    "i": "jam",
+    "q": 20,
+    "t": "1 heaped tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Toast and spread",
+    "text": "Toast the bread until golden. Spread thinly with butter while it is hot so it melts in, then top with the jam."
+   }
+  ],
+  "tags": [
+   "quick"
+  ]
+ },
+ {
+  "id": "bf_crumpets_butter",
+  "title": "Toasted Crumpets with Butter",
+  "icon": "🧈",
+  "meal": "breakfast",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 5,
+  "servings": 1,
+  "packable": false,
+  "microwave": false,
+  "keepsDays": 0,
+  "batch": "",
+  "equipment": [],
+  "kcalEst": 285,
+  "proteinEst": 7,
+  "ingredients": [
+   {
+    "i": "crumpets",
+    "q": 2,
+    "t": "2 crumpets"
+   },
+   {
+    "i": "butter",
+    "q": 10,
+    "t": "2 tsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Toast and butter",
+    "text": "Toast the crumpets for 2 rounds (or about 4 min) until the tops are crisp and golden. Spread with the butter straight away so it melts into the holes."
+   }
+  ],
+  "tags": [
+   "quick"
+  ]
+ },
+ {
+  "id": "bf_bagel_cream_cheese",
+  "title": "Bagel Thin with Soft Cheese",
+  "icon": "🥯",
+  "meal": "breakfast",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 4,
+  "servings": 1,
+  "packable": false,
+  "microwave": false,
+  "keepsDays": 0,
+  "batch": "",
+  "equipment": [],
+  "kcalEst": 160,
+  "proteinEst": 7,
+  "ingredients": [
+   {
+    "i": "bagel_thins",
+    "q": 1,
+    "t": "1 bagel thin, split"
+   },
+   {
+    "i": "soft_cheese",
+    "q": 30,
+    "t": "2 tbsp light soft cheese"
+   },
+   {
+    "i": "black_pepper",
+    "q": 0.5,
+    "t": "a few grinds"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Toast and spread",
+    "text": "Toast both halves of the bagel thin until crisp at the edges. Spread with the soft cheese and finish with black pepper."
+   }
+  ],
+  "tags": [
+   "quick",
+   "light"
+  ]
+ },
+ {
+  "id": "bf_croissant",
+  "title": "Warm Croissant",
+  "icon": "🥐",
+  "meal": "breakfast",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 5,
+  "servings": 1,
+  "packable": true,
+  "microwave": false,
+  "keepsDays": 0,
+  "batch": "",
+  "equipment": [],
+  "kcalEst": 190,
+  "proteinEst": 4,
+  "ingredients": [
+   {
+    "i": "croissants",
+    "q": 1,
+    "t": "1 croissant"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Warm and eat",
+    "text": "Eat as it is, or warm in a hot oven (180°C fan) for 3–4 min until the outside crisps up again. Grab-and-go for an early shift — it travels fine in a paper bag."
+   }
+  ],
+  "tags": [
+   "quick"
+  ]
+ },
+ {
+  "id": "bf_granola_berry_pot",
+  "title": "Skyr, Berry & Granola Pot",
+  "icon": "🫐",
+  "meal": "breakfast",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 3,
+  "servings": 1,
+  "packable": true,
+  "microwave": false,
+  "keepsDays": 1,
+  "batch": "Make two pots the night before; keep the granola in a separate bag until you eat.",
+  "equipment": [],
+  "kcalEst": 265,
+  "proteinEst": 20,
+  "ingredients": [
+   {
+    "i": "skyr",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "frozen_berries",
+    "q": 60,
+    "t": "a handful"
+   },
+   {
+    "i": "granola",
+    "q": 30,
+    "t": "30g (2 tbsp)"
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Layer the night before",
+    "text": "Spoon the skyr into a lidded pot, add the frozen berries and drizzle with the honey. Chill overnight — the berries thaw into a quick compote. Pack the granola separately and scatter it over just before eating."
+   }
+  ],
+  "tags": [
+   "quick",
+   "high-protein",
+   "make-ahead",
+   "no-cook"
+  ]
+ },
+ {
+  "id": "bf_fruit_yogurt_pot",
+  "title": "Greek Yogurt with Apple & Grapes",
+  "icon": "🍇",
+  "meal": "breakfast",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 4,
+  "servings": 1,
+  "packable": true,
+  "microwave": false,
+  "keepsDays": 0,
+  "batch": "",
+  "equipment": [],
+  "kcalEst": 235,
+  "proteinEst": 6,
+  "ingredients": [
+   {
+    "i": "greek_yogurt",
+    "q": 120,
+    "t": "120g"
+   },
+   {
+    "i": "apples",
+    "q": 0.5,
+    "t": "½, chopped"
+   },
+   {
+    "i": "grapes",
+    "q": 60,
+    "t": "a small handful, halved"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Chop and spoon",
+    "text": "Chop the apple and halve the grapes. Spoon the yogurt into a bowl or lidded pot and pile the fruit on top. Eat within a few hours so the apple stays fresh."
+   }
+  ],
+  "tags": [
+   "quick",
+   "no-cook"
+  ]
+ },
+ {
+  "id": "bf_teacake_toasted",
+  "title": "Toasted Teacake with Butter",
+  "icon": "🍞",
+  "meal": "breakfast",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 5,
+  "servings": 1,
+  "packable": false,
+  "microwave": false,
+  "keepsDays": 0,
+  "batch": "",
+  "equipment": [],
+  "kcalEst": 240,
+  "proteinEst": 5,
+  "ingredients": [
+   {
+    "i": "teacakes",
+    "q": 1,
+    "t": "1 teacake, split"
+   },
+   {
+    "i": "butter",
+    "q": 8,
+    "t": "2 tsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Toast and butter",
+    "text": "Split the teacake and toast the cut sides until golden and the fruit is warm. Butter while hot."
+   }
+  ],
+  "tags": [
+   "quick"
+  ]
+ }
+]

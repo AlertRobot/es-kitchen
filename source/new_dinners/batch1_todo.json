@@ -1,0 +1,83 @@
+[
+ {
+  "name": "Chicken Kiev with wedges",
+  "cuisine": "British",
+  "protein": "chicken",
+  "base": "potato",
+  "family": "fried",
+  "category": "everyday",
+  "why": "Classic freezer-aisle favourite done at home; not in the library"
+ },
+ {
+  "name": "Gammon, egg and chips",
+  "cuisine": "British",
+  "protein": "pork",
+  "base": "potato",
+  "family": "grill_steak",
+  "category": "everyday",
+  "why": "Pub classic; the only gammon dish"
+ },
+ {
+  "name": "Fish finger sandwiches",
+  "cuisine": "British",
+  "protein": "fish",
+  "base": "bread",
+  "family": "burger_sandwich",
+  "category": "treat",
+  "why": "Nostalgic quick treat; easy fish night"
+ },
+ {
+  "name": "Sausage rolls, beans and wedges",
+  "cuisine": "British",
+  "protein": "pork",
+  "base": "potato",
+  "family": "pie_bake",
+  "category": "treat",
+  "why": "Proper comfort tea, kids-menu nostalgia"
+ },
+ {
+  "name": "Roast pork with crackling",
+  "cuisine": "British",
+  "protein": "pork",
+  "base": "potato",
+  "family": "roast_traybake",
+  "category": "treat",
+  "why": "Second Sunday-roast option alongside the chicken"
+ },
+ {
+  "name": "Steak and ale pie with mash",
+  "cuisine": "British",
+  "protein": "beef",
+  "base": "potato",
+  "family": "pie_bake",
+  "category": "treat",
+  "why": "Top UK pie; library has no steak pie"
+ },
+ {
+  "name": "Lancashire hotpot",
+  "cuisine": "British",
+  "protein": "lamb",
+  "base": "potato",
+  "family": "stew_soup",
+  "category": "everyday",
+  "why": "Familiar lamb one-pot; adds lamb without curry"
+ },
+ {
+  "name": "Chicken and chorizo traybake",
+  "cuisine": "British",
+  "protein": "chicken",
+  "base": "potato",
+  "family": "roast_traybake",
+  "category": "everyday",
+  "why": "One of BBC Good Food's most-cooked traybakes"
+ },
+ {
+  "name": "Corned beef hash with eggs",
+  "cuisine": "British",
+  "protein": "beef",
+  "base": "potato",
+  "family": "other",
+  "category": "everyday",
+  "why": "Cheap, familiar potato dinner"
+ }
+]

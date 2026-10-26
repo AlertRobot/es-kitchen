@@ -1,0 +1,12 @@
+[
+  {"id": "sesame_oil", "name": "Toasted sesame oil", "aisle": "World foods", "unit": "ml", "packs": [250], "staple": true, "freeze": false, "keeps": 180, "life": 365, "tags": ["sesame"]},
+  {"id": "rice_vinegar", "name": "Rice vinegar", "aisle": "World foods", "unit": "ml", "packs": [150], "staple": true, "freeze": false, "keeps": 365, "life": 730, "tags": []},
+  {"id": "fish_sauce", "name": "Thai fish sauce", "aisle": "World foods", "unit": "ml", "packs": [150], "staple": false, "freeze": false, "keeps": 365, "life": 730, "tags": ["fish"]},
+  {"id": "oyster_sauce", "name": "Oyster sauce", "aisle": "World foods", "unit": "g", "packs": [255], "staple": false, "freeze": false, "keeps": 90, "life": 540, "tags": ["seafood", "gluten", "soy"]},
+  {"id": "black_bean_sauce", "name": "Black bean garlic sauce", "aisle": "World foods", "unit": "g", "packs": [368], "staple": false, "freeze": false, "keeps": 90, "life": 540, "tags": ["soy", "gluten"]},
+  {"id": "beef_stir_fry_strips", "name": "Beef stir-fry strips", "aisle": "Meat & fish", "unit": "g", "packs": [300], "staple": false, "freeze": true, "keeps": 1, "life": 4, "tags": ["beef", "meat"]},
+  {"id": "pork_loin_steaks", "name": "Pork loin steaks", "aisle": "Meat & fish", "unit": "g", "packs": [500], "staple": false, "freeze": true, "keeps": 1, "life": 5, "tags": ["pork", "meat"]},
+  {"id": "salted_peanuts", "name": "Salted roasted peanuts", "aisle": "Dry goods", "unit": "g", "packs": [200], "staple": false, "freeze": false, "keeps": 30, "life": 180, "tags": ["nuts", "peanut"]},
+  {"id": "mayonnaise", "name": "Real mayonnaise", "aisle": "Tins & jars", "unit": "g", "packs": [400], "staple": false, "freeze": false, "keeps": 90, "life": 180, "tags": ["egg"]},
+  {"id": "pineapple_chunks", "name": "Pineapple chunks in juice (tin)", "aisle": "Tins & jars", "unit": "g", "packs": [432], "staple": false, "freeze": false, "keeps": 3, "life": 540, "tags": []}
+]

@@ -1,0 +1,808 @@
+{
+ "arborio_rice": {
+  "per": 100,
+  "kcal": 350,
+  "protein": 7,
+  "carbs": 78,
+  "fat": 0.6
+ },
+ "aubergine": {
+  "per": 1,
+  "grams": 250,
+  "kcal": 38,
+  "protein": 2.3,
+  "carbs": 5.5,
+  "fat": 1
+ },
+ "avocado": {
+  "per": 1,
+  "grams": 130,
+  "kcal": 257,
+  "protein": 2.5,
+  "carbs": 2.5,
+  "fat": 25.4
+ },
+ "bacon": {
+  "per": 100,
+  "kcal": 215,
+  "protein": 16.5,
+  "carbs": 0.1,
+  "fat": 16.5
+ },
+ "baguette": {
+  "per": 1,
+  "grams": 150,
+  "kcal": 402,
+  "protein": 11.9,
+  "carbs": 82.6,
+  "fat": 1.8
+ },
+ "basil": {
+  "per": 100,
+  "kcal": 23,
+  "protein": 3.2,
+  "carbs": 1.5,
+  "fat": 0.6
+ },
+ "beansprouts": {
+  "per": 100,
+  "kcal": 31,
+  "protein": 2.9,
+  "carbs": 4,
+  "fat": 0.5
+ },
+ "beef_mince": {
+  "per": 100,
+  "kcal": 126,
+  "protein": 20.5,
+  "carbs": 0,
+  "fat": 5
+ },
+ "black_beans": {
+  "per": 100,
+  "kcal": 100,
+  "protein": 7.5,
+  "carbs": 15.5,
+  "fat": 0.6
+ },
+ "black_pepper": {
+  "per": 100,
+  "kcal": 251,
+  "protein": 10.4,
+  "carbs": 38.7,
+  "fat": 3.3
+ },
+ "broccoli": {
+  "per": 100,
+  "kcal": 34,
+  "protein": 4.4,
+  "carbs": 1.8,
+  "fat": 0.9
+ },
+ "burger_buns": {
+  "per": 1,
+  "grams": 50,
+  "kcal": 155,
+  "protein": 4.5,
+  "carbs": 25,
+  "fat": 3.8
+ },
+ "butter": {
+  "per": 100,
+  "kcal": 744,
+  "protein": 0.6,
+  "carbs": 0.6,
+  "fat": 82.2
+ },
+ "butter_beans": {
+  "per": 100,
+  "kcal": 79,
+  "protein": 5.9,
+  "carbs": 13,
+  "fat": 0.5
+ },
+ "cannellini_beans": {
+  "per": 100,
+  "kcal": 88,
+  "protein": 6.9,
+  "carbs": 13,
+  "fat": 0.5
+ },
+ "carrots": {
+  "per": 100,
+  "kcal": 36,
+  "protein": 0.6,
+  "carbs": 7.9,
+  "fat": 0.3
+ },
+ "cauliflower": {
+  "per": 1,
+  "grams": 500,
+  "kcal": 170,
+  "protein": 18,
+  "carbs": 15,
+  "fat": 4.5
+ },
+ "cheddar": {
+  "per": 100,
+  "kcal": 416,
+  "protein": 25.4,
+  "carbs": 0.1,
+  "fat": 34.9
+ },
+ "cherry_tomatoes": {
+  "per": 100,
+  "kcal": 20,
+  "protein": 0.8,
+  "carbs": 3.5,
+  "fat": 0.3
+ },
+ "chicken_breast": {
+  "per": 100,
+  "kcal": 106,
+  "protein": 24,
+  "carbs": 0,
+  "fat": 1.1
+ },
+ "chicken_thighs": {
+  "per": 100,
+  "kcal": 161,
+  "protein": 18.3,
+  "carbs": 0,
+  "fat": 9.8
+ },
+ "chickpeas": {
+  "per": 100,
+  "kcal": 115,
+  "protein": 7.2,
+  "carbs": 16.1,
+  "fat": 2.9
+ },
+ "chilli_flakes": {
+  "per": 100,
+  "kcal": 323,
+  "protein": 12.9,
+  "carbs": 30.8,
+  "fat": 15.8
+ },
+ "chopped_tomatoes": {
+  "per": 100,
+  "kcal": 21,
+  "protein": 1.1,
+  "carbs": 3.8,
+  "fat": 0.1
+ },
+ "coconut_milk": {
+  "per": 100,
+  "kcal": 170,
+  "protein": 1.4,
+  "carbs": 2.7,
+  "fat": 17
+ },
+ "coriander": {
+  "per": 100,
+  "kcal": 23,
+  "protein": 2.1,
+  "carbs": 2,
+  "fat": 0.5
+ },
+ "cornflour": {
+  "per": 100,
+  "kcal": 354,
+  "protein": 0.6,
+  "carbs": 88,
+  "fat": 0.7
+ },
+ "courgette": {
+  "per": 1,
+  "grams": 200,
+  "kcal": 36,
+  "protein": 3.6,
+  "carbs": 3.6,
+  "fat": 0.8
+ },
+ "couscous": {
+  "per": 100,
+  "kcal": 360,
+  "protein": 12.8,
+  "carbs": 72.4,
+  "fat": 1.5
+ },
+ "cucumber": {
+  "per": 1,
+  "grams": 350,
+  "kcal": 35,
+  "protein": 2.5,
+  "carbs": 5.3,
+  "fat": 0.4
+ },
+ "cumin": {
+  "per": 100,
+  "kcal": 375,
+  "protein": 17.8,
+  "carbs": 33.7,
+  "fat": 22.3
+ },
+ "cumin_seeds": {
+  "per": 100,
+  "kcal": 375,
+  "protein": 17.8,
+  "carbs": 33.7,
+  "fat": 22.3
+ },
+ "curry_powder": {
+  "per": 100,
+  "kcal": 325,
+  "protein": 14.3,
+  "carbs": 30,
+  "fat": 14
+ },
+ "double_cream": {
+  "per": 100,
+  "kcal": 445,
+  "protein": 1.6,
+  "carbs": 2.6,
+  "fat": 48
+ },
+ "egg_noodles": {
+  "per": 100,
+  "kcal": 355,
+  "protein": 12.3,
+  "carbs": 70,
+  "fat": 1.9
+ },
+ "eggs": {
+  "per": 1,
+  "grams": 58,
+  "kcal": 66,
+  "protein": 6.3,
+  "carbs": 0.1,
+  "fat": 4.5
+ },
+ "feta": {
+  "per": 100,
+  "kcal": 265,
+  "protein": 15.6,
+  "carbs": 1,
+  "fat": 22
+ },
+ "frozen_peas": {
+  "per": 100,
+  "kcal": 70,
+  "protein": 5.7,
+  "carbs": 9.5,
+  "fat": 0.9
+ },
+ "garam_masala": {
+  "per": 100,
+  "kcal": 357,
+  "protein": 14.6,
+  "carbs": 34,
+  "fat": 15.1
+ },
+ "garlic": {
+  "per": 1,
+  "grams": 4,
+  "kcal": 5,
+  "protein": 0.3,
+  "carbs": 1,
+  "fat": 0
+ },
+ "ginger_paste": {
+  "per": 100,
+  "kcal": 70,
+  "protein": 1,
+  "carbs": 10,
+  "fat": 2.8
+ },
+ "gnocchi": {
+  "per": 100,
+  "kcal": 150,
+  "protein": 3.6,
+  "carbs": 32.4,
+  "fat": 0.4
+ },
+ "gochujang": {
+  "per": 100,
+  "kcal": 230,
+  "protein": 4,
+  "carbs": 49,
+  "fat": 2
+ },
+ "gravy": {
+  "per": 100,
+  "kcal": 470,
+  "protein": 2,
+  "carbs": 45,
+  "fat": 31
+ },
+ "greek_yogurt": {
+  "per": 100,
+  "kcal": 132,
+  "protein": 4.6,
+  "carbs": 5.6,
+  "fat": 10.2
+ },
+ "green_chillies": {
+  "per": 100,
+  "kcal": 40,
+  "protein": 2,
+  "carbs": 8,
+  "fat": 0.2
+ },
+ "ground_cinnamon": {
+  "per": 100,
+  "kcal": 255,
+  "protein": 3.9,
+  "carbs": 45,
+  "fat": 3.2
+ },
+ "ground_coriander": {
+  "per": 100,
+  "kcal": 298,
+  "protein": 12.4,
+  "carbs": 20,
+  "fat": 17.8
+ },
+ "halloumi": {
+  "per": 100,
+  "kcal": 316,
+  "protein": 21.5,
+  "carbs": 2,
+  "fat": 24.7
+ },
+ "harissa": {
+  "per": 100,
+  "kcal": 93,
+  "protein": 1.7,
+  "carbs": 9.7,
+  "fat": 4.5
+ },
+ "hoisin_sauce": {
+  "per": 100,
+  "kcal": 220,
+  "protein": 2.3,
+  "carbs": 48,
+  "fat": 2.3
+ },
+ "honey": {
+  "per": 100,
+  "kcal": 329,
+  "protein": 0.4,
+  "carbs": 81.5,
+  "fat": 0
+ },
+ "kidney_beans": {
+  "per": 100,
+  "kcal": 100,
+  "protein": 7,
+  "carbs": 15,
+  "fat": 0.6
+ },
+ "kimchi": {
+  "per": 100,
+  "kcal": 25,
+  "protein": 1.5,
+  "carbs": 3.5,
+  "fat": 0.4
+ },
+ "lamb_mince": {
+  "per": 100,
+  "kcal": 250,
+  "protein": 17,
+  "carbs": 0,
+  "fat": 20
+ },
+ "lasagne_sheets": {
+  "per": 100,
+  "kcal": 355,
+  "protein": 12.5,
+  "carbs": 71.5,
+  "fat": 1.6
+ },
+ "leeks": {
+  "per": 100,
+  "kcal": 22,
+  "protein": 1.6,
+  "carbs": 2.9,
+  "fat": 0.5
+ },
+ "lemon": {
+  "per": 1,
+  "grams": 110,
+  "kcal": 21,
+  "protein": 1.1,
+  "carbs": 3.5,
+  "fat": 0.3
+ },
+ "lime": {
+  "per": 1,
+  "grams": 70,
+  "kcal": 20,
+  "protein": 0.5,
+  "carbs": 4.5,
+  "fat": 0.1
+ },
+ "little_gem": {
+  "per": 1,
+  "grams": 90,
+  "kcal": 14,
+  "protein": 1.1,
+  "carbs": 1.6,
+  "fat": 0.3
+ },
+ "milk": {
+  "per": 100,
+  "kcal": 50,
+  "protein": 3.6,
+  "carbs": 4.8,
+  "fat": 1.8
+ },
+ "miso_paste": {
+  "per": 100,
+  "kcal": 198,
+  "protein": 12.8,
+  "carbs": 21.1,
+  "fat": 6
+ },
+ "mixed_herbs": {
+  "per": 100,
+  "kcal": 291,
+  "protein": 11,
+  "carbs": 45,
+  "fat": 7
+ },
+ "mozzarella": {
+  "per": 100,
+  "kcal": 246,
+  "protein": 18,
+  "carbs": 1,
+  "fat": 19
+ },
+ "mushrooms": {
+  "per": 100,
+  "kcal": 13,
+  "protein": 1.8,
+  "carbs": 0.4,
+  "fat": 0.5
+ },
+ "naan": {
+  "per": 1,
+  "grams": 130,
+  "kcal": 364,
+  "protein": 11.1,
+  "carbs": 62.4,
+  "fat": 7.5
+ },
+ "oil": {
+  "per": 100,
+  "kcal": 824,
+  "protein": 0,
+  "carbs": 0,
+  "fat": 91.6
+ },
+ "onion": {
+  "per": 1,
+  "grams": 160,
+  "kcal": 58,
+  "protein": 1.9,
+  "carbs": 12.6,
+  "fat": 0.3
+ },
+ "pak_choi": {
+  "per": 100,
+  "kcal": 13,
+  "protein": 1.5,
+  "carbs": 1.2,
+  "fat": 0.2
+ },
+ "paneer": {
+  "per": 100,
+  "kcal": 321,
+  "protein": 21,
+  "carbs": 3,
+  "fat": 25
+ },
+ "panko": {
+  "per": 100,
+  "kcal": 365,
+  "protein": 10.8,
+  "carbs": 75.1,
+  "fat": 2.4
+ },
+ "parmesan": {
+  "per": 100,
+  "kcal": 392,
+  "protein": 33,
+  "carbs": 0.1,
+  "fat": 28.4
+ },
+ "pasta": {
+  "per": 100,
+  "kcal": 355,
+  "protein": 12.5,
+  "carbs": 71.5,
+  "fat": 1.6
+ },
+ "peanut_butter": {
+  "per": 100,
+  "kcal": 615,
+  "protein": 25,
+  "carbs": 12.5,
+  "fat": 51
+ },
+ "peppers": {
+  "per": 1,
+  "grams": 160,
+  "kcal": 40,
+  "protein": 1.5,
+  "carbs": 7.8,
+  "fat": 0.4
+ },
+ "pesto": {
+  "per": 100,
+  "kcal": 380,
+  "protein": 4.5,
+  "carbs": 5,
+  "fat": 38
+ },
+ "pitta": {
+  "per": 1,
+  "grams": 60,
+  "kcal": 149,
+  "protein": 5.2,
+  "carbs": 28.9,
+  "fat": 0.8
+ },
+ "plain_flour": {
+  "per": 100,
+  "kcal": 341,
+  "protein": 10,
+  "carbs": 71,
+  "fat": 1.3
+ },
+ "pork_mince": {
+  "per": 100,
+  "kcal": 222,
+  "protein": 18,
+  "carbs": 0.5,
+  "fat": 16.4
+ },
+ "potatoes": {
+  "per": 100,
+  "kcal": 75,
+  "protein": 2.1,
+  "carbs": 17.2,
+  "fat": 0.2
+ },
+ "prawns": {
+  "per": 100,
+  "kcal": 72,
+  "protein": 16,
+  "carbs": 0,
+  "fat": 0.8
+ },
+ "puff_pastry": {
+  "per": 100,
+  "kcal": 400,
+  "protein": 5.5,
+  "carbs": 38,
+  "fat": 25
+ },
+ "red_lentils": {
+  "per": 100,
+  "kcal": 330,
+  "protein": 24,
+  "carbs": 56,
+  "fat": 1.3
+ },
+ "red_onion": {
+  "per": 1,
+  "grams": 140,
+  "kcal": 52,
+  "protein": 1.7,
+  "carbs": 11.1,
+  "fat": 0.3
+ },
+ "rice": {
+  "per": 100,
+  "kcal": 353,
+  "protein": 8.1,
+  "carbs": 77.8,
+  "fat": 0.9
+ },
+ "rice_noodles": {
+  "per": 100,
+  "kcal": 360,
+  "protein": 6,
+  "carbs": 82,
+  "fat": 0.6
+ },
+ "ricotta": {
+  "per": 100,
+  "kcal": 144,
+  "protein": 9.4,
+  "carbs": 2,
+  "fat": 11
+ },
+ "salmon": {
+  "per": 1,
+  "grams": 120,
+  "kcal": 259,
+  "protein": 24.6,
+  "carbs": 0,
+  "fat": 18
+ },
+ "salt": {
+  "per": 100,
+  "kcal": 0,
+  "protein": 0,
+  "carbs": 0,
+  "fat": 0
+ },
+ "sausages": {
+  "per": 1,
+  "grams": 57,
+  "kcal": 148,
+  "protein": 8,
+  "carbs": 4.8,
+  "fat": 10.8
+ },
+ "smoked_paprika": {
+  "per": 100,
+  "kcal": 282,
+  "protein": 14.1,
+  "carbs": 25,
+  "fat": 12.9
+ },
+ "soy_sauce": {
+  "per": 100,
+  "kcal": 60,
+  "protein": 8,
+  "carbs": 6.5,
+  "fat": 0.1
+ },
+ "spinach": {
+  "per": 100,
+  "kcal": 25,
+  "protein": 2.8,
+  "carbs": 1.6,
+  "fat": 0.8
+ },
+ "spring_onions": {
+  "per": 1,
+  "grams": 18,
+  "kcal": 4,
+  "protein": 0.4,
+  "carbs": 0.5,
+  "fat": 0.1
+ },
+ "stir_fry_veg": {
+  "per": 100,
+  "kcal": 30,
+  "protein": 1.6,
+  "carbs": 4.8,
+  "fat": 0.3
+ },
+ "stock_cubes": {
+  "per": 1,
+  "grams": 10,
+  "kcal": 20,
+  "protein": 0.6,
+  "carbs": 1.8,
+  "fat": 1.2
+ },
+ "sweet_chilli_sauce": {
+  "per": 100,
+  "kcal": 222,
+  "protein": 0.5,
+  "carbs": 54,
+  "fat": 0.4
+ },
+ "sweet_potato": {
+  "per": 100,
+  "kcal": 87,
+  "protein": 1.2,
+  "carbs": 20.5,
+  "fat": 0.3
+ },
+ "sweetcorn": {
+  "per": 100,
+  "kcal": 88,
+  "protein": 3,
+  "carbs": 18.6,
+  "fat": 0.8
+ },
+ "tahini": {
+  "per": 100,
+  "kcal": 607,
+  "protein": 18.5,
+  "carbs": 0.9,
+  "fat": 58.9
+ },
+ "thai_green_paste": {
+  "per": 100,
+  "kcal": 79,
+  "protein": 1.1,
+  "carbs": 9.8,
+  "fat": 3.6
+ },
+ "thai_red_paste": {
+  "per": 100,
+  "kcal": 90,
+  "protein": 1.5,
+  "carbs": 10.5,
+  "fat": 4.5
+ },
+ "tikka_paste": {
+  "per": 100,
+  "kcal": 270,
+  "protein": 3,
+  "carbs": 10,
+  "fat": 24
+ },
+ "tinned_tuna": {
+  "per": 100,
+  "kcal": 109,
+  "protein": 25,
+  "carbs": 0,
+  "fat": 0.9
+ },
+ "tofu": {
+  "per": 100,
+  "kcal": 135,
+  "protein": 14.5,
+  "carbs": 1,
+  "fat": 8
+ },
+ "tomato_puree": {
+  "per": 100,
+  "kcal": 84,
+  "protein": 4.7,
+  "carbs": 14,
+  "fat": 0.3
+ },
+ "tortilla_chips": {
+  "per": 100,
+  "kcal": 495,
+  "protein": 6.8,
+  "carbs": 62,
+  "fat": 24
+ },
+ "turmeric": {
+  "per": 100,
+  "kcal": 312,
+  "protein": 9.7,
+  "carbs": 58,
+  "fat": 3.3
+ },
+ "udon_noodles": {
+  "per": 100,
+  "kcal": 141,
+  "protein": 3.5,
+  "carbs": 29.5,
+  "fat": 0.9
+ },
+ "wholegrain_mustard": {
+  "per": 100,
+  "kcal": 155,
+  "protein": 7.5,
+  "carbs": 8,
+  "fat": 10
+ },
+ "worcestershire": {
+  "per": 100,
+  "kcal": 100,
+  "protein": 1.1,
+  "carbs": 23,
+  "fat": 0.1
+ },
+ "wraps": {
+  "per": 1,
+  "grams": 62,
+  "kcal": 186,
+  "protein": 5.3,
+  "carbs": 31,
+  "fat": 4.2
+ }
+}

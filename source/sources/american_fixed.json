@@ -1,0 +1,130 @@
+[
+  {
+    "id": "am_jambalaya",
+    "title": "Chicken & Smoky Sausage Jambalaya",
+    "icon": "🍲",
+    "cuisine": "American",
+    "category": "everyday",
+    "protein": "chicken",
+    "time": 50,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "chicken_thighs",
+        "q": 300,
+        "t": "300g, cut into bite-sized pieces"
+      },
+      {
+        "i": "sausages",
+        "q": 3,
+        "t": "3, cut into chunks"
+      },
+      {
+        "i": "oil",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, diced"
+      },
+      {
+        "i": "peppers",
+        "q": 1,
+        "t": "1, diced"
+      },
+      {
+        "i": "garlic",
+        "q": 2,
+        "t": "2 cloves, crushed"
+      },
+      {
+        "i": "smoked_paprika",
+        "q": 4,
+        "t": "2 tsp"
+      },
+      {
+        "i": "mixed_herbs",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "chilli_flakes",
+        "q": 1,
+        "t": "½ tsp",
+        "opt": true,
+        "swap": "Leave out the chilli flakes and pass hot sauce at the table instead."
+      },
+      {
+        "i": "rice",
+        "q": 150,
+        "t": "150g"
+      },
+      {
+        "i": "chopped_tomatoes",
+        "q": 200,
+        "t": "½ tin"
+      },
+      {
+        "i": "tomato_puree",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "stock_cubes",
+        "q": 1,
+        "t": "1 chicken stock cube"
+      },
+      {
+        "i": "worcestershire",
+        "q": 5,
+        "t": "1 tsp"
+      },
+      {
+        "i": "hot_sauce",
+        "q": 5,
+        "t": "a few dashes, to serve",
+        "opt": true
+      },
+      {
+        "i": "spring_onions",
+        "q": 2,
+        "t": "2, sliced, to serve",
+        "opt": true,
+        "swap": "Scatter the spring onions over one bowl only."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep",
+        "text": "Dice the onion and pepper, crush the garlic, slice the spring onions and cut the chicken and sausages into bite-sized chunks. Dissolve the stock cube in 300ml boiling water. Rinse the rice in a sieve until the water runs clear."
+      },
+      {
+        "title": "Brown the meats",
+        "text": "Heat the oil in a large deep pan or casserole with a lid over a medium-high heat. Brown the sausage chunks for 4 min. Add the chicken and cook for 4 min more until golden all over."
+      },
+      {
+        "title": "Soften the veg",
+        "text": "Add the onion and pepper and cook for 5 min until softened. Stir in the garlic, paprika, herbs and chilli flakes (optional) for 1 min until fragrant."
+      },
+      {
+        "title": "Simmer the rice",
+        "text": "Stir in the rice to coat it in the spices, then add the tomatoes, purée, stock and Worcestershire. Bring to the boil, cover and turn the heat to its lowest setting. Cook for 15–18 min, stirring once halfway so the bottom doesn't catch, until the rice is tender and the liquid is absorbed."
+      },
+      {
+        "title": "Rest and serve",
+        "text": "Take off the heat and leave covered for 5 min. Fluff up with a fork and season. Finish with a few dashes of hot sauce (optional) and the spring onions (optional)."
+      }
+    ],
+    "tags": [
+      "one-pot",
+      "spicy",
+      "freezable"
+    ],
+    "basedOn": "RecipeTin Eats (Nagi Maehashi) — Jambalaya"
+  }
+]

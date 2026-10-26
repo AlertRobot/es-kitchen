@@ -1,0 +1,266 @@
+{
+ "br_crispy_oven_fish_chips": {
+  "title": "Ultimate Fish and Chips with Tartare Sauce and Crushed Minted Peas",
+  "site": "HelloFresh UK",
+  "url": "https://www.hellofresh.co.uk/recipes/ultimate-fish-and-chips-61ba175cd3f05274177c6dd9",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "br_chicken_leek_bacon_pie": {
+  "title": "Chicken and leek pie",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/chicken-and-leek-pie/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "br_toad_in_the_hole": {
+  "title": "Toad in the hole",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/toad-in-the-hole/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "br_steak_chips_peppercorn": {
+  "title": "Steak with Creamy Peppercorn Sauce",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/peppercorn-sauce/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "br_sunday_roast_chicken_for_two": {
+  "title": "Midweek chicken roast",
+  "site": "Tesco Real Food",
+  "url": "https://realfood.tesco.com/recipes/midweek-chicken-roast.html",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "br_hunters_chicken": {
+  "title": "Hunter's Chicken",
+  "site": "Kitchen Sanctuary",
+  "url": "https://www.kitchensanctuary.com/hunters-chicken/",
+  "author": "Nicky",
+  "match": "close",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "br_halloumi_burger": {
+  "title": "Sticky Sweet Chilli Halloumi Burger with Wedges, Pickled Carrot and Baby Gem Salad",
+  "site": "HelloFresh UK",
+  "url": "https://www.hellofresh.co.uk/recipes/sticky-sweet-chilli-halloumi-burger-6a33d2dd27757fc0a25f42ab",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "br_minced_beef_onion_pie": {
+  "title": "Old School Minced Beef and Onion Pie",
+  "site": "Krumpli",
+  "url": "https://www.krumpli.co.uk/minced-beef-and-onion-pie/",
+  "author": "Brian Jones",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "br_fish_pie": {
+  "title": "Fish pie (Jamie's Ministry of Food)",
+  "site": "Jamie Oliver",
+  "url": "https://www.jamieoliver.com/recipes/fish/best-fish-pie",
+  "author": "Jamie Oliver",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "br_cottage_pie": {
+  "title": "Cottage Pie",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/cottage-pie/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "br_shepherds_pie": {
+  "title": "Shepherd's Pie",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/shepherds-pie/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "br_bangers_mash_onion_gravy": {
+  "title": "Bangers and Mash (Sausage with Onion Gravy)",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/bangers-and-mash/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "br_smoky_sausage_bean_casserole": {
+  "title": "Sausage and Bean Casserole (Rich & Smoky)",
+  "site": "Don't Go Bacon My Heart",
+  "url": "https://www.dontgobaconmyheart.co.uk/sausage-and-bean-casserole/",
+  "author": "Chris Collins",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "br_lemon_herb_chicken_traybake": {
+  "title": "Lemon and Garlic Chicken Tray Bake",
+  "site": "Eight Forest Lane",
+  "url": "https://eightforestlane.com/lemon-and-garlic-chicken-tray-bake/",
+  "author": "Sally",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "br_salmon_fishcakes": {
+  "title": "Fish Cakes",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/fish-cakes/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "br_tuna_sweetcorn_jackets": {
+  "title": "Tuna and sweetcorn jacket potatoes",
+  "site": "Tesco Real Food",
+  "url": "https://realfood.tesco.com/recipes/tuna-and-sweetcorn-jacket-potatoes.html",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "br_coronation_chicken_jackets": {
+  "title": "Coronation chicken",
+  "site": "Sainsbury's Magazine",
+  "url": "https://www.sainsburysmagazine.co.uk/recipes/mains/coronation-chicken",
+  "author": "Ailsa Brown",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": "Missing defining ingredient: published coronation chicken (Sainsbury's Magazine, Greedy Gourmet) all use mango chutney for the sweet-fruity note; swapped the 1 tbsp honey for 2 tbsp (30g) mango_chutney in the dressing (fixed version in british_fixed.json)."
+ },
+ "br_leek_potato_soup_cheese_toasts": {
+  "title": "Leek and Potato Soup",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/leek-and-potato-soup/",
+  "author": "Nagi Maehashi",
+  "match": "close",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "br_pork_steaks_apple_mustard": {
+  "title": "Pork chops with apples and mustard sauce",
+  "site": "Sainsbury's Magazine",
+  "url": "https://www.sainsburysmagazine.co.uk/recipes/pork/pork-chops-with-apples-and-mustard-sauce",
+  "author": "Emma Franklin",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "br_beef_stew_dumplings": {
+  "title": "Beef stew with dumplings",
+  "site": "Riverford",
+  "url": "https://rc.riverford.co.uk/recipes/beef-stew-with-dumplings",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "br_ploughmans_supper": {
+  "title": "Ploughman's Lunch",
+  "site": "Christina's Cucina",
+  "url": "https://www.christinascucina.com/wprm_print/ploughmans-lunch",
+  "author": "Christina Conte",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "br_kedgeree": {
+  "title": "Kedgeree – English curried rice and fish",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/kedgeree/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "br_leek_welsh_rarebit": {
+  "title": "Welsh Rarebit With Leeks",
+  "site": "Tin and Thyme",
+  "url": "https://tinandthyme.uk/2023/02/welsh-rarebit/",
+  "author": "Choclette",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "br_bubble_squeak_bacon_eggs": {
+  "title": "Bubble & squeak with crisp bacon",
+  "site": "lovefood",
+  "url": "https://www.lovefood.com/recipes/56853/bubble--squeak-with-crisp-bacon-recipe",
+  "author": "Genevieve Taylor",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "br_creamy_chicken_leek_mushroom": {
+  "title": "Creamy Chicken, Leek & Mushroom Stew",
+  "site": "SBS Food",
+  "url": "https://www.sbs.com.au/food/the-cook-up-with-adam-liaw/recipe/creamy-chicken-leek-mushroom-stew/pqq098yfb",
+  "author": "Adam Liaw",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "br_glamorgan_sausages": {
+  "title": "Glamorgan Sausages: Our Traditional Welsh Recipe",
+  "site": "Visit Wales (wales.com)",
+  "url": "https://www.wales.com/visit/food-and-drink/welsh-recipes/glamorgan-sausages",
+  "author": "Alex Vines",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "br_lemon_butter_salmon_crushed_potatoes": {
+  "title": "Pan-fried salmon with smashed potatoes and peas",
+  "site": "Southern Co-op",
+  "url": "https://southern.coop/recipe/pan-fried-salmon-with-smashed-potatoes-and-peas",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "br_honey_mustard_chicken_traybake": {
+  "title": "Honey Mustard Chicken {One Pan Meal}",
+  "site": "Taming Twins",
+  "url": "https://www.tamingtwins.com/honey-mustard-chicken-traybake/",
+  "author": "Sarah Rossi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "br_crispy_chicken_escalopes": {
+  "title": "Schnitzel",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/schnitzel/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "br_chilli_beef_jackets": {
+  "title": "Chilli Con Carne",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/chilli-con-carne/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ }
+}

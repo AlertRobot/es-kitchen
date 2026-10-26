@@ -1,0 +1,441 @@
+[
+ {
+  "id": "bf_special_k_milk",
+  "title": "Special K with Milk",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "quick",
+   "cereal",
+   "no-cook",
+   "light"
+  ],
+  "ingredients": [
+   "Special K Original (Kellogg's)",
+   "Semi-skimmed milk"
+  ]
+ },
+ {
+  "id": "bf_cornflakes_milk",
+  "title": "Corn Flakes with Milk",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "quick",
+   "cereal",
+   "no-cook",
+   "light"
+  ],
+  "ingredients": [
+   "Corn Flakes (Kellogg's)",
+   "Semi-skimmed milk"
+  ]
+ },
+ {
+  "id": "bf_bran_flakes_milk",
+  "title": "Bran Flakes with Milk",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "quick",
+   "cereal",
+   "no-cook",
+   "light"
+  ],
+  "ingredients": [
+   "Bran Flakes (Kellogg's)",
+   "Semi-skimmed milk"
+  ]
+ },
+ {
+  "id": "bf_fruit_fibre_milk",
+  "title": "Fruit 'n Fibre with Milk",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "quick",
+   "cereal",
+   "no-cook"
+  ],
+  "ingredients": [
+   "Fruit 'n Fibre (Kellogg's)",
+   "Semi-skimmed milk"
+  ]
+ },
+ {
+  "id": "bf_shredded_wheat_milk",
+  "title": "Shredded Wheat with Milk",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "quick",
+   "cereal",
+   "no-cook",
+   "light"
+  ],
+  "ingredients": [
+   "Shredded Wheat Original biscuits (Nestlé, ~22.5g each)",
+   "Semi-skimmed milk"
+  ]
+ },
+ {
+  "id": "bf_granola_yogurt",
+  "title": "Granola with Greek Yogurt",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "quick",
+   "cereal",
+   "no-cook"
+  ],
+  "ingredients": [
+   "Granola (own-brand, fruit & nut / honey & almond)",
+   "Greek-style yogurt"
+  ]
+ },
+ {
+  "id": "bf_cheerios_banana",
+  "title": "Cheerios with Sliced Banana",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "quick",
+   "cereal",
+   "no-cook"
+  ],
+  "ingredients": [
+   "Cheerios (Nestlé Multigrain hoops)",
+   "Semi-skimmed milk",
+   "Bananas"
+  ]
+ },
+ {
+  "id": "bf_toast_butter_jam",
+  "title": "Toast with Butter & Jam",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "quick"
+  ],
+  "ingredients": [
+   "Wholemeal bread (800g loaf)",
+   "Butter",
+   "Strawberry jam"
+  ]
+ },
+ {
+  "id": "bf_crumpets_butter",
+  "title": "Toasted Crumpets with Butter",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "quick"
+  ],
+  "ingredients": [
+   "Crumpets",
+   "Butter"
+  ]
+ },
+ {
+  "id": "bf_bagel_cream_cheese",
+  "title": "Bagel Thin with Soft Cheese",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "quick",
+   "light"
+  ],
+  "ingredients": [
+   "Wholemeal bagel thins",
+   "Light soft cheese (plain, 50% less fat)",
+   "Black pepper"
+  ]
+ },
+ {
+  "id": "bf_croissant",
+  "title": "Warm Croissant",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "quick"
+  ],
+  "ingredients": [
+   "All-butter croissants"
+  ]
+ },
+ {
+  "id": "bf_granola_berry_pot",
+  "title": "Skyr, Berry & Granola Pot",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "quick",
+   "high-protein",
+   "make-ahead",
+   "no-cook"
+  ],
+  "ingredients": [
+   "Skyr (natural, high-protein yogurt)",
+   "Frozen mixed berries",
+   "Granola (own-brand, fruit & nut / honey & almond)",
+   "Honey"
+  ]
+ },
+ {
+  "id": "bf_fruit_yogurt_pot",
+  "title": "Greek Yogurt with Apple & Grapes",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "quick",
+   "no-cook"
+  ],
+  "ingredients": [
+   "Greek-style yogurt",
+   "Braeburn apples",
+   "Seedless grapes"
+  ]
+ },
+ {
+  "id": "bf_teacake_toasted",
+  "title": "Toasted Teacake with Butter",
+  "short": "",
+  "meal": "breakfast",
+  "tags": [
+   "quick"
+  ],
+  "ingredients": [
+   "Fruited teacakes",
+   "Butter"
+  ]
+ },
+ {
+  "id": "lu_ham_cheese_sandwich",
+  "title": "Ham & Cheese Sandwich",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "quick",
+   "no-cook"
+  ],
+  "ingredients": [
+   "Wholemeal bread (800g loaf)",
+   "Butter",
+   "Cooked ham slices",
+   "Mature cheddar",
+   "Little gem lettuce"
+  ]
+ },
+ {
+  "id": "lu_chicken_sweetcorn_sandwich",
+  "title": "Chicken & Sweetcorn Mayo Sandwich",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "quick",
+   "high-protein"
+  ],
+  "ingredients": [
+   "Frozen sweetcorn",
+   "Cooked chicken breast slices",
+   "Light mayonnaise",
+   "Black pepper",
+   "Wholemeal bread (800g loaf)"
+  ]
+ },
+ {
+  "id": "lu_egg_mayo_sandwich",
+  "title": "Egg Mayo Sandwich",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "high-protein",
+   "make-ahead"
+  ],
+  "ingredients": [
+   "Free-range eggs",
+   "Light mayonnaise",
+   "Spring onions",
+   "Black pepper",
+   "Salt",
+   "Wholemeal bread (800g loaf)",
+   "Little gem lettuce"
+  ]
+ },
+ {
+  "id": "lu_blt",
+  "title": "BLT",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "high-protein"
+  ],
+  "ingredients": [
+   "Smoked back bacon",
+   "Wholemeal bread (800g loaf)",
+   "Light mayonnaise",
+   "Little gem lettuce",
+   "Cherry tomatoes"
+  ]
+ },
+ {
+  "id": "lu_cheese_pickle_sandwich",
+  "title": "Cheese & Pickle Sandwich",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "quick",
+   "no-cook",
+   "veggie"
+  ],
+  "ingredients": [
+   "Wholemeal bread (800g loaf)",
+   "Butter",
+   "Mature cheddar",
+   "Original pickle (Branston-style)"
+  ]
+ },
+ {
+  "id": "lu_tuna_mayo_wrap",
+  "title": "Tuna Mayo & Sweetcorn Wrap",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "quick",
+   "high-protein"
+  ],
+  "ingredients": [
+   "Frozen sweetcorn",
+   "Tuna chunks in spring water (tin)",
+   "Light mayonnaise",
+   "Black pepper",
+   "Plain tortilla wraps",
+   "Little gem lettuce",
+   "Cucumber"
+  ]
+ },
+ {
+  "id": "lu_chicken_salad_wrap",
+  "title": "Chicken Salad Wrap",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "quick",
+   "high-protein",
+   "no-cook"
+  ],
+  "ingredients": [
+   "Plain tortilla wraps",
+   "Light mayonnaise",
+   "Cooked chicken breast slices",
+   "Mixed salad leaves",
+   "Cherry tomatoes",
+   "Cucumber",
+   "Black pepper"
+  ]
+ },
+ {
+  "id": "lu_houmous_veg_pitta",
+  "title": "Houmous & Veg Sticks with Pitta",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "quick",
+   "no-cook",
+   "veggie"
+  ],
+  "ingredients": [
+   "Classic houmous",
+   "Carrots",
+   "Cucumber",
+   "Mixed peppers",
+   "Pitta breads"
+  ]
+ },
+ {
+  "id": "lu_cheese_crackers_grapes",
+  "title": "Cheese, Crackers & Grapes Box",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "quick",
+   "no-cook",
+   "veggie"
+  ],
+  "ingredients": [
+   "Mature cheddar",
+   "Cream crackers (~8g each)",
+   "Seedless grapes",
+   "Cucumber"
+  ]
+ },
+ {
+  "id": "lu_tomato_soup_roll",
+  "title": "Tomato Soup with a Buttered Roll",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "quick",
+   "comfort",
+   "veggie"
+  ],
+  "ingredients": [
+   "Cream of tomato soup (400g tin)",
+   "Soft white bread rolls",
+   "Butter",
+   "Black pepper"
+  ]
+ },
+ {
+  "id": "lu_ham_sweetcorn_pasta_salad",
+  "title": "Ham & Sweetcorn Pasta Salad Pot",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "batch",
+   "make-ahead"
+  ],
+  "ingredients": [
+   "Dried pasta (spaghetti/penne)",
+   "Frozen sweetcorn",
+   "Cooked ham slices",
+   "Light mayonnaise",
+   "Skyr (natural, high-protein yogurt)",
+   "Spring onions",
+   "Black pepper",
+   "Salt"
+  ]
+ },
+ {
+  "id": "lu_jacket_beans_cheese",
+  "title": "Microwave Jacket Potato with Beans & Cheese",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "comfort",
+   "veggie"
+  ],
+  "ingredients": [
+   "White potatoes",
+   "Butter",
+   "Baked beans in tomato sauce (tin)",
+   "Mature cheddar",
+   "Black pepper"
+  ]
+ },
+ {
+  "id": "lu_ham_cheese_toastie",
+  "title": "Ham & Cheese Toastie",
+  "short": "",
+  "meal": "lunch",
+  "tags": [
+   "comfort"
+  ],
+  "ingredients": [
+   "Wholemeal bread (800g loaf)",
+   "Butter",
+   "Cooked ham slices",
+   "Mature cheddar"
+  ]
+ }
+]

@@ -1,0 +1,16 @@
+[
+ {"id": "shortcrust_pastry", "tescoPack": 320, "prices": {
+  "tesco": {"pack": 320, "price": 0.99, "loyalty": null, "checked": "2026-10-24", "verified": true, "est": false, "label": "Tesco Ready Rolled Shortcrust Savoury Pastry 320g", "src": "https://www.trolley.co.uk/product/tesco-ready-rolled-shortcrust-pastry/KHA914", "note": "Seen on trolley.co.uk (Tesco online price); trolley shows usual price £1.35, so £0.99 may be a temporary drop. tesco.com not fetchable this session (fetches limited to URLs surfaced by search)."},
+  "sainsburys": {"pack": 320, "price": 1.40, "loyalty": null, "checked": "2026-10-24", "verified": true, "est": false, "label": "Sainsbury's Ready Rolled Shortcrust Pastry 320g", "src": "https://www.trolley.co.uk/product/sainsburys-ready-rolled-shortcrust-pastry/HJC633", "note": "Seen on trolley.co.uk; no Nectar price shown"},
+  "asda": {"pack": 320, "price": 1.20, "loyalty": null, "checked": "2026-10-24", "verified": true, "est": false, "label": "ASDA Ready Rolled Shortcrust Pastry 320g", "src": "https://www.trolley.co.uk/product/asda-ready-rolled-shortcrust-pastry/SRC608", "note": ""},
+  "aldi": {"pack": 320, "price": 0.99, "loyalty": null, "checked": "2026-10-24", "verified": false, "est": true, "label": "Aldi ready-rolled shortcrust pastry 320g (est.)", "src": "", "note": "Aldi product page not reachable this session; estimate set to the cheapest verified own-brand price"},
+  "lidl": {"pack": 320, "price": 0.99, "loyalty": null, "checked": "2026-10-24", "verified": false, "est": true, "label": "Lidl equivalent (est.)", "src": "", "note": "estimate from Aldi"}
+ }},
+ {"id": "pork_ribs", "tescoPack": 700, "prices": {
+  "tesco": {"pack": 700, "price": 5.75, "loyalty": null, "checked": "2026-10-24", "verified": true, "est": false, "label": "Tesco Pork Ribs 700g", "src": "https://www.trolley.co.uk/product/tesco-pork-individual-ribs/OCD687", "note": "Seen on trolley.co.uk (£8.20/kg); tesco.com not fetchable this session"},
+  "sainsburys": {"pack": 500, "price": 4.50, "loyalty": null, "checked": "2026-10-24", "verified": true, "est": false, "label": "Sainsbury's British Pork Rib Rack 500g", "src": "https://www.trolley.co.uk/product/sainsburys-british-pork-rib-rack/WDX221", "note": "£0.90/100g; no Nectar price shown"},
+  "asda": {"pack": 700, "price": 5.75, "loyalty": null, "checked": "2026-10-24", "verified": false, "est": true, "label": "Asda plain pork ribs (est.)", "src": "", "note": "Only pre-cooked BBQ rib racks found for Asda on trolley.co.uk (e.g. Asda Slow Cooked Smoky BBQ Pork Rack of Ribs 600g); plain raw ribs estimated at Tesco's £8.20/kg"},
+  "aldi": {"pack": 500, "price": 4.10, "loyalty": null, "checked": "2026-10-24", "verified": false, "est": true, "label": "Aldi pork rib rack (est.)", "src": "", "note": "Not verified; estimated at £8.20/kg, pack size assumed"},
+  "lidl": {"pack": 500, "price": 4.10, "loyalty": null, "checked": "2026-10-24", "verified": false, "est": true, "label": "Lidl equivalent (est.)", "src": "", "note": "estimate from Aldi"}
+ }}
+]

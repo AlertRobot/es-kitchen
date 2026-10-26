@@ -1,0 +1,129 @@
+[
+  {
+    "id": "chilli_powder",
+    "name": "Hot chilli powder",
+    "aisle": "Herbs & spices",
+    "unit": "g",
+    "packs": [
+      40
+    ],
+    "staple": true,
+    "freeze": false,
+    "keeps": 365,
+    "life": 540,
+    "tags": [
+      "spice"
+    ]
+  },
+  {
+    "id": "mustard_seeds",
+    "name": "Black mustard seeds",
+    "aisle": "Herbs & spices",
+    "unit": "g",
+    "packs": [
+      100
+    ],
+    "staple": false,
+    "freeze": false,
+    "keeps": 365,
+    "life": 540,
+    "tags": [
+      "spice"
+    ]
+  },
+  {
+    "id": "kasoori_methi",
+    "name": "Dried fenugreek leaves (kasoori methi)",
+    "aisle": "World foods",
+    "unit": "g",
+    "packs": [
+      100
+    ],
+    "staple": false,
+    "freeze": false,
+    "keeps": 180,
+    "life": 365,
+    "tags": [
+      "spice"
+    ]
+  },
+  {
+    "id": "gram_flour",
+    "name": "Gram flour (chickpea flour)",
+    "aisle": "World foods",
+    "unit": "g",
+    "packs": [
+      1000
+    ],
+    "staple": false,
+    "freeze": false,
+    "keeps": 180,
+    "life": 365,
+    "tags": [
+      "gluten-free"
+    ]
+  },
+  {
+    "id": "ground_almonds",
+    "name": "Ground almonds",
+    "aisle": "Dry goods",
+    "unit": "g",
+    "packs": [
+      200
+    ],
+    "staple": false,
+    "freeze": true,
+    "keeps": 60,
+    "life": 270,
+    "tags": [
+      "nuts"
+    ]
+  },
+  {
+    "id": "mango_chutney",
+    "name": "Mango chutney",
+    "aisle": "World foods",
+    "unit": "g",
+    "packs": [
+      340
+    ],
+    "staple": false,
+    "freeze": false,
+    "keeps": 42,
+    "life": 365,
+    "tags": []
+  },
+  {
+    "id": "diced_lamb",
+    "name": "Diced lamb leg",
+    "aisle": "Meat & fish",
+    "unit": "g",
+    "packs": [
+      300
+    ],
+    "staple": false,
+    "freeze": true,
+    "keeps": 1,
+    "life": 5,
+    "tags": [
+      "lamb",
+      "meat"
+    ]
+  },
+  {
+    "id": "white_fish",
+    "name": "Skinless & boneless cod fillets",
+    "aisle": "Meat & fish",
+    "unit": "g",
+    "packs": [
+      260
+    ],
+    "staple": false,
+    "freeze": true,
+    "keeps": 1,
+    "life": 4,
+    "tags": [
+      "fish"
+    ]
+  }
+]

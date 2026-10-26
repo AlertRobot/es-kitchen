@@ -1,0 +1,175 @@
+[
+ {
+  "id": "lamb_chops",
+  "tescoPack": 300,
+  "prices": {
+   "tesco": {
+    "pack": 300,
+    "price": 5.5,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Lamb Chops 300G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=lamb%20chops",
+    "note": "Tesco Lamb Chops 550G £9.50 (£17.27/kg)"
+   },
+   "sainsburys": {
+    "pack": 340,
+    "price": 6.75,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's British or New Zealand Lamb Chops 340g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/lamb%20shanks",
+    "note": "seen on the lamb search results page; 170g pack £3.25"
+   },
+   "asda": {
+    "pack": 300,
+    "price": 5.42,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "ASDA 4 Tender Lamb Chops 300g",
+    "src": "https://www.trolley.co.uk/product/asda-tender-4-lamb-chops/YAZ433",
+    "note": "trolley: usual £5.97, lowest £4.57; online price"
+   },
+   "aldi": {
+    "pack": 340,
+    "price": 5.59,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Ashfields British Lamb Chops 340g",
+    "src": "https://www.aldi.co.uk/product/ashfields-british-lamb-chops-000000000661917001",
+    "note": "Aldi lamb category page showed £5.79 the same day; product page £5.59 used"
+   },
+   "lidl": {
+    "pack": 340,
+    "price": 5.59,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent of Ashfields British Lamb Chops 340g",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "sea_bass_fillets",
+  "tescoPack": 180,
+  "prices": {
+   "tesco": {
+    "pack": 180,
+    "price": 5.95,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Tesco 2 Boneless Sea Bass Fillets 180G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=sea%20bass%20fillets",
+    "note": "4 fillets 360G £10.95, Clubcard £9.25 (to 27/10/2026)"
+   },
+   "sainsburys": {
+    "pack": 180,
+    "price": 5.95,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Sea Bass Fillets ASC 180g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/sea%20bass%20fillets",
+    "note": "'Nectar price' badge shown without a figure; x4 360g shown at £7.95 / £10.95 (Nectar split unclear); New England Seafood 210g £3.84 'Aldi price match'"
+   },
+   "asda": {
+    "pack": 180,
+    "price": 5.75,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "ASDA 2 Sea Bass Fillets 180g",
+    "src": "https://www.trolley.co.uk/product/asda-delicate-2-sea-bass-fillets/ITS312",
+    "note": "trolley: usually £4.64, highest £5.75; online price"
+   },
+   "aldi": {
+    "pack": 180,
+    "price": 3.29,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "The Fishmonger Boneless Mediterranean Sea Bass Fillets 2 Pack 180g",
+    "src": "https://www.aldi.co.uk/product/the-fishmonger-boneless-mediterranean-sea-bass-fillets-2-pack-000000000000388008",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 180,
+    "price": 3.29,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent of The Fishmonger Sea Bass Fillets 2 Pack 180g",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "lamb_shanks",
+  "tescoPack": 2,
+  "prices": {
+   "tesco": {
+    "pack": 2,
+    "price": 7.7,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Tesco 2 Lamb Shanks 550g-900g",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=lamb%20shanks",
+    "note": "sold by weight at £14.00/kg; £7.70 is the 550g pack, heavier packs (up to 898g) cost more, ~£9.80 for 700g"
+   },
+   "sainsburys": {
+    "pack": 2,
+    "price": 10.5,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": true,
+    "label": "Sainsbury's British or New Zealand Lamb Shanks approx. 750g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/lamb%20shanks",
+    "note": "pack count assumed to be 2 shanks (approx. 750g, 400–750g option £10.50; 750g–1.1kg option £15.40; £14.00/kg)"
+   },
+   "asda": {
+    "pack": 2,
+    "price": 9.8,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Estimate: raw Asda lamb shanks (2, ~700g)",
+    "src": "https://www.trolley.co.uk/explore/lamb-shanks",
+    "note": "no raw Asda lamb shanks found on trolley (only ASDA Slow Cooked Lamb Shank with Mint Gravy 390g £5.77); estimated at the Tesco/Sainsbury's £14/kg rate for ~700g"
+   },
+   "aldi": null,
+   "lidl": {
+    "pack": 2,
+    "price": 9.8,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Estimate: Lidl raw lamb shanks (2, ~700g)",
+    "src": "",
+    "note": "Aldi lists no raw lamb shanks (only Oakhurst slow-cooked in gravy), so estimated from Tesco/Sainsbury's £14/kg for ~700g"
+   }
+  }
+ }
+]

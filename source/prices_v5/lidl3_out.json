@@ -1,0 +1,662 @@
+[
+ {
+  "id": "orzo",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched orzo, pasta, kritharaki; only ERIDANOUS Kritharaki Pasta 500g £1.49 (Greek-week special, in store from 29.10) — not an everyday line (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "passata",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched passata, chopped tomatoes; no passata/tinned tomatoes listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "pancetta",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched pancetta; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "capers",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched capers; only ERIDANOUS artichokes with capers (Greek-week special) (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "sun_dried_tomatoes",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched sun dried tomatoes; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "pecorino",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched pecorino; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "rocket",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched rocket, rocket salad, salad; no rocket/salad bags listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "fennel_seeds",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched fennel seeds; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "anchovies",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched anchovies; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "chipotle_paste",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched chipotle; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "pork_shoulder_steaks",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched pork shoulder steaks, pork joint; none listed (only belly/loin medallions specials) (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "sour_cream",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched soured cream; only Snacktastic Sour Cream & Chive dip (not soured cream) (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "jalapenos",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched jalapenos; no jarred jalapenos listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "red_cabbage",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched red cabbage; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "zaatar",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched zaatar; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "dried_apricots",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched dried apricots, nuts; only Belbake dried mixed fruit/raisins/currants, no apricots (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "olives",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched black olives, olives; only Greek-week specials from 29.10 (e.g. \"Olives\" 250g whole Greek snack olives in oil, ERIDANOUS pitted mixed/green) — no everyday pitted black olives (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "cooked_chicken_slices",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched cooked chicken; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "ham_slices",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched ham; no cooked ham slices listed (only Alpen Fest smoked ham/hock specials) (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "hummus",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched houmous; only DELUXE Premium Houmous Assorted 170g (topped flavoured premium, Lidl Plus offer 22.10–28.10) — no classic houmous (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "salad_leaves",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched salad, mixed salad leaves; no salad bags listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "microwave_rice_pouch",
+  "prices": {
+   "lidl": {
+    "pack": 250,
+    "price": 0.99,
+    "loyalty": 0.79,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "TILDA Packet Rice Assorted 250g (Pure Basmati variety)",
+    "src": "https://www.lidl.co.uk/p/tilda-packet-rice-assorted/p10056460",
+    "note": "Branded; Lidl own-brand pouch not listed online. Assortment: Wholegrain Pilau, Pure Basmati, Sticky Rice. Lidl Plus 20% off 22.10–04.11."
+   }
+  }
+ },
+ {
+  "id": "quinoa",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched quinoa; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "light_mayonnaise",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched mayonnaise, light mayonnaise; none listed (only Thai Dragon mayo sauce) (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "cottage_cheese",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched cottage cheese; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "wholemeal_bread",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched wholemeal bread, bread; no loaves listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "skyr",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched skyr, yogurt; none (only ERIDANOUS Greek yogurt, Greek-week special) (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "frozen_edamame",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched edamame; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "smoked_mackerel",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched smoked mackerel; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "cooked_beetroot",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched beetroot; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "baked_beans",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched baked beans; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "smoked_salmon",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched smoked salmon; none (only Lighthouse Bay salmon fillets special) (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "bagel_thins",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched bagel; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "falafel",
+  "prices": {
+   "lidl": {
+    "pack": 9,
+    "price": 1.39,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "VEMONDO Falafels Assorted 171g",
+    "src": "https://www.lidl.co.uk/p/vemondo-falafels-assorted/p10056223",
+    "note": "Chilled; flavours Middle Eastern or BBQ Corn & Sweet Potato. Piece count not stated online: 171g taken as 9 x 19g. Lidl Plus £1.09 offer ended 21.10."
+   }
+  }
+ },
+ {
+  "id": "weetabix",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched wheat biscuits, cereal, bananas; only Weetabix Flavours 24 pack (flavoured, Scotland only, Lidl Plus offer) — no Original/own-brand wheat biscuits (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "protein_bar",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched protein bar; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "porridge_oats",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched porridge oats, oats; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "banana",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched bananas; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "frozen_berries",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched frozen berries; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "cheerios",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched cereal, nestle cereal; no multigrain hoops listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "crunchy_nut",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched cereal, kelloggs; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "shreddies",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched shreddies, cereal; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "rice_krispies",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched rice krispies, cereal; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "special_k",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched cereal, kelloggs; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "cornflakes",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched corn flakes, cereal, kelloggs; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "bran_flakes",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched bran flakes, cereal; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "fruit_and_fibre",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched cereal, kelloggs; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "shredded_wheat",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched cereal, wheat biscuits; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "granola",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched granola, cereal; none (only Crownfield Fruit & Nut Muesli 1kg special from 29.10) (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "jam",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched strawberry jam; only Maribel Conserve Assorted 450g (Special Edition conserve, offer) — no everyday strawberry jam (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "crumpets",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched crumpets; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "soft_cheese",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched soft cheese; none (only Greek-week ERIDANOUS soft cheese / breaded soft cheese) (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "croissants",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched croissants; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "teacakes",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched teacakes; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "grapes",
+  "prices": {
+   "lidl": {
+    "pack": 500,
+    "price": 1.89,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Red Grapes 500g",
+    "src": "https://www.lidl.co.uk/p/red-grapes/p10055531",
+    "note": "Listing still carries £1.29 offer for 01.10–07.10 (ended); regular \"was\" price £1.89 used. Seedless not stated."
+   }
+  }
+ },
+ {
+  "id": "cream_crackers",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched cream crackers; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "tomato_soup",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched tomato soup; none (only McKinlay's Scottish Soup Assorted 600g) (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "bread_rolls",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched bread rolls, bread; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "gammon_steaks",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched gammon; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "corned_beef",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched corned beef; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "chorizo",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched chorizo; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "pork_crackling_joint",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched pork joint; only XXL British Pork Leg Joint 2.5–3.5kg (bulk) — no small joint (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "ale",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched ale, beer; only lager multipacks/wine listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "lamb_chops",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched lamb, lamb chops; only XXL 4 Lamb Leg Chops 640g £9.99 (Pick of the Week 08.10–14.10, expired special) (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "sea_bass_fillets",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched sea bass; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "lamb_shanks",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched lamb shanks; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "shortcrust_pastry",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched shortcrust, pastry; none (only Greek-week filo) (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "pork_ribs",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched pork ribs; only Slow Cooked Bourbon BBQ Pork Rib Rack 600g (cooked, sauced — not raw ribs) (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "cashew_nuts",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched cashew, nuts; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "star_anise",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched star anise; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ },
+ {
+  "id": "taco_shells",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched taco shells; none listed (Lidl GB search API, 2026-10-26)"
+   }
+  }
+ }
+]

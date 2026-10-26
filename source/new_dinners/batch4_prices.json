@@ -1,0 +1,104 @@
+[
+ {
+  "id": "cashew_nuts",
+  "tescoPack": 200,
+  "prices": {
+   "tesco": {
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "note": "Also Tesco Cashews 300G £3.25; 'Any 4 for 3' nuts multibuy (not a loyalty price).",
+    "pack": 200,
+    "price": 2.25,
+    "label": "Tesco Cashew Nuts 200G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=cashew%20nuts"
+   },
+   "sainsburys": {
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "note": "Plain whole cashews not in first results; Sainsbury's Cashew Pieces 200g £2.35 is a cheaper alternative.",
+    "pack": 200,
+    "price": 3.2,
+    "label": "Sainsbury's Oven Baked Unsalted Cashews 200g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/cashew%20nuts"
+   },
+   "asda": {
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "note": "trolley.co.uk: usual price £2.85, currently £1.98 online.",
+    "pack": 200,
+    "price": 1.98,
+    "label": "ASDA Cashews 200g",
+    "src": "https://www.trolley.co.uk/product/asda-cashews/IKH455"
+   },
+   "aldi": {
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": true,
+    "note": "Aldi price via trolley.co.uk; pack size not shown, 200g assumed (aldi.co.uk page not found).",
+    "pack": 200,
+    "price": 1.69,
+    "label": "The Foodie Market Cashew Nuts",
+    "src": "https://www.trolley.co.uk/product/cashew-nuts/UBG501"
+   },
+   "lidl": {
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": false,
+    "est": true,
+    "note": "estimate from Aldi",
+    "pack": 200,
+    "price": 1.69,
+    "label": "Lidl equivalent (est.)",
+    "src": ""
+   }
+  }
+ },
+ {
+  "id": "star_anise",
+  "tescoPack": 11,
+  "prices": {
+   "tesco": {
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "note": "",
+    "pack": 11,
+    "price": 1,
+    "label": "Tesco Whole Star Anise 11G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=star%20anise"
+   },
+   "sainsburys": {
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "note": "Fudco Badian Star Anise 50g £1.50 (Nectar £1.25) also stocked.",
+    "pack": 15,
+    "price": 1.15,
+    "label": "Sainsbury's Star Anise 15g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/star%20anise"
+   },
+   "asda": {
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": false,
+    "est": true,
+    "note": "trolley.co.uk lists it as out of stock with no current price; pack (14g) and price estimated from Tesco/Sainsbury's own-brand.",
+    "pack": 14,
+    "price": 1.1,
+    "label": "COOK by ASDA Star Anise (est.)",
+    "src": "https://www.trolley.co.uk/product/asda-star-anise/NXI805"
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ }
+]

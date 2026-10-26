@@ -1,0 +1,4 @@
+[
+ {"id": "chorizo", "name": "Chorizo (cooking sausages or ring)", "aisle": "Chilled", "unit": "g", "packs": [200], "life": 28, "keeps": 7, "freeze": false, "staple": false, "tags": ["pork", "meat"], "nutrition": {"per": 100, "kcal": 340, "protein": 22, "carbs": 2.5, "fat": 27}},
+ {"id": "taco_shells", "name": "Crunchy taco shells", "aisle": "World foods", "unit": "each", "packs": [12], "life": 180, "keeps": 14, "freeze": false, "staple": false, "tags": ["mexican", "corn"], "nutrition": {"per": 1, "grams": 12.5, "kcal": 61, "protein": 0.9, "carbs": 7.6, "fat": 2.9}}
+]

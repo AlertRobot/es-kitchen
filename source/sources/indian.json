@@ -1,0 +1,317 @@
+{
+ "in_chicken_tikka_masala": {
+  "title": "Chicken Tikka Masala",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/chicken-tikka-masala/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "in_butter_chicken": {
+  "title": "Butter Chicken",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/butter-chicken/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "in_chicken_korma": {
+  "title": "Chicken Korma Recipe",
+  "site": "Swasthi's Recipes (Indian Healthy Recipes)",
+  "url": "https://www.indianhealthyrecipes.com/chicken-korma-recipe/",
+  "author": "Swasthi Shreekanth",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "in_madras_onion_bhajis": {
+  "title": "Chicken Madras Curry",
+  "site": "Swasthi's Recipes (Indian Healthy Recipes)",
+  "url": "https://www.indianhealthyrecipes.com/chicken-madras-curry/",
+  "author": "Swasthi Shreekanth",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "in_tikka_naan_pizza": {
+  "title": "Chicken Tikka Naan Pizza",
+  "site": "HelloFresh UK",
+  "url": "https://www.hellofresh.co.uk/recipes/chicken-tikka-naan-pizza-600192eb51c40d79be740c15",
+  "author": "",
+  "match": "close",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "in_lamb_rogan_josh": {
+  "title": "Rogan Josh",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/rogan-josh/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "in_chicken_biryani": {
+  "title": "Chicken Biryani",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/biryani/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "in_paneer_tikka": {
+  "title": "Paneer Tikka Recipe in Oven, Air Fryer, Stovetop",
+  "site": "Swasthi's Recipes (Indian Healthy Recipes)",
+  "url": "https://www.indianhealthyrecipes.com/paneer-tikka-on-stove-top/",
+  "author": "Swasthi Shreekanth",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "in_indo_chinese_chilli_chicken": {
+  "title": "Chilli Chicken Recipe (Crispy Restaurant Style)",
+  "site": "Swasthi's Recipes (Indian Healthy Recipes)",
+  "url": "https://www.indianhealthyrecipes.com/chilli-chicken-dry-recipe-indo-chinese-style/",
+  "author": "Swasthi Shreekanth",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "in_lamb_seekh_kebab_wraps": {
+  "title": "Lamb Seekh Kebabs",
+  "site": "Saveur",
+  "url": "https://www.saveur.com/lamb-seekh-kebabs-recipe/",
+  "author": "Meherwan Irani",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "in_amritsari_fish_masala_chips": {
+  "title": "Amritsari Fish Fry (Tawa Fish Fry)",
+  "site": "Swasthi's Recipes (Indian Healthy Recipes)",
+  "url": "https://www.indianhealthyrecipes.com/amritsari-tawa-fish-fry-pan-fried-amritsari-fish/",
+  "author": "Swasthi Shreekanth",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "in_chicken_jalfrezi": {
+  "title": "Chicken Jalfrezi Recipe (Restaurant Style)",
+  "site": "Swasthi's Recipes (Indian Healthy Recipes)",
+  "url": "https://www.indianhealthyrecipes.com/chicken-jalfrezi/",
+  "author": "Swasthi Shreekanth",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "in_saag_chicken": {
+  "title": "Palak Chicken (Chicken Saag Recipe)",
+  "site": "Swasthi's Recipes (Indian Healthy Recipes)",
+  "url": "https://www.indianhealthyrecipes.com/palak-spinach-chicken/",
+  "author": "Swasthi Shreekanth",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "in_keema_matar": {
+  "title": "Keema Recipe (Mutton Keema Curry), keema matar variation",
+  "site": "Swasthi's Recipes (Indian Healthy Recipes)",
+  "url": "https://www.indianhealthyrecipes.com/keema-recipe-mutton-keema-curry/",
+  "author": "Swasthi Shreekanth",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "in_chana_masala": {
+  "title": "Authentic Chana Masala (Chickpea Masala)",
+  "site": "Swasthi's Recipes (Indian Healthy Recipes)",
+  "url": "https://www.indianhealthyrecipes.com/chana-masala/",
+  "author": "Swasthi Shreekanth",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "in_tarka_dal": {
+  "title": "Dal Tadka Recipe (Restaurant Style)",
+  "site": "Swasthi's Recipes (Indian Healthy Recipes)",
+  "url": "https://www.indianhealthyrecipes.com/dal-tadka/",
+  "author": "Swasthi Shreekanth",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "in_coconut_dal": {
+  "title": "Quick Coconut Dal with Tomato Sambol",
+  "site": "Ocado (OcadoLife)",
+  "url": "https://www.ocado.com/recipes/quick-coconut-dal-with-tomato-sambol/192906",
+  "author": "Meera Sodha",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "in_mattar_paneer": {
+  "title": "Matar Paneer Recipe (Best Mutter Paneer)",
+  "site": "Swasthi's Recipes (Indian Healthy Recipes)",
+  "url": "https://www.indianhealthyrecipes.com/matar-paneer-mutter-masala/",
+  "author": "Swasthi Shreekanth",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "in_saag_paneer": {
+  "title": "Saag Paneer",
+  "site": "Swasthi's Recipes (Indian Healthy Recipes)",
+  "url": "https://www.indianhealthyrecipes.com/saag-paneer/",
+  "author": "Swasthi Shreekanth",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "in_egg_curry": {
+  "title": "Egg Curry Recipe (Dhaba Style)",
+  "site": "Swasthi's Recipes (Indian Healthy Recipes)",
+  "url": "https://www.indianhealthyrecipes.com/punjabi-egg-curry-anda-curry-dhaba-style/",
+  "author": "Swasthi Shreekanth",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "in_goan_prawn_curry": {
+  "title": "Goan Prawn Curry with Coconut (Ambot Tik)",
+  "site": "My Food Story",
+  "url": "https://myfoodstory.com/goan-prawn-curry-recipe/",
+  "author": "Richa",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "in_keralan_fish_curry": {
+  "title": "Kerala Meen (Fish) Curry",
+  "site": "Swasthi's Recipes (Indian Healthy Recipes)",
+  "url": "https://www.indianhealthyrecipes.com/kerala-meen-fish-curry/",
+  "author": "Swasthi Shreekanth",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "in_aloo_gobi": {
+  "title": "Aloo Gobi Recipe (roasted restaurant-style version)",
+  "site": "Swasthi's Recipes (Indian Healthy Recipes)",
+  "url": "https://www.indianhealthyrecipes.com/aloo-gobi-recipe/",
+  "author": "Swasthi Shreekanth",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "in_tandoori_chicken_traybake": {
+  "title": "Oven Baked Tandoori Chicken",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/oven-baked-tandoori-chicken/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "in_chicken_kathi_rolls": {
+  "title": "Chicken Kathi Roll (Chicken Frankie)",
+  "site": "Swasthi's Recipes (Indian Healthy Recipes)",
+  "url": "https://www.indianhealthyrecipes.com/chicken-kathi-roll/",
+  "author": "Swasthi Shreekanth",
+  "match": "close",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "in_lentil_spinach_soup": {
+  "title": "Spiced Lentil, Spinach and Cumin Soup",
+  "site": "Spice Kitchen",
+  "url": "https://www.spicekitchenuk.com/blogs/recipes/spiced-lentil-spinach-and-cumin-soup",
+  "author": "",
+  "match": "close",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "in_chicken_mushroom_balti": {
+  "title": "Homemade Chicken Balti Recipe",
+  "site": "Krumpli",
+  "url": "https://www.krumpli.co.uk/wprm_print/homemade-chicken-balti-recipe",
+  "author": "Brian Jones",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "in_kadai_paneer_mushroom": {
+  "title": "Kadai Paneer Recipe | Karahi Paneer Restaurant Style",
+  "site": "Hebbars Kitchen",
+  "url": "https://hebbarskitchen.com/kadai-paneer-recipe/",
+  "author": "",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "in_masala_salmon_bombay_potatoes": {
+  "title": "Tandoori Salmon Recipe (Indian Salmon Recipe)",
+  "site": "Swasthi's Recipes (Indian Healthy Recipes)",
+  "url": "https://www.indianhealthyrecipes.com/tandoori-salmon/",
+  "author": "Swasthi Shreekanth",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "in_sweet_potato_chickpea_curry": {
+  "title": "Sweet Potato Curry Recipe",
+  "site": "Swasthi's Recipes (Indian Healthy Recipes)",
+  "url": "https://www.indianhealthyrecipes.com/sweet-potato-curry/",
+  "author": "Swasthi Shreekanth",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "in_chicken_dhansak": {
+  "title": "Chicken Dhansak",
+  "site": "Kitchen Sanctuary",
+  "url": "https://www.kitchensanctuary.com/chicken-dhansak/",
+  "author": "Nicky",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "in_prawn_pea_pilau": {
+  "title": "Prawn Pulao (Shrimp Pulao)",
+  "site": "Swasthi's Recipes (Indian Healthy Recipes)",
+  "url": "https://www.indianhealthyrecipes.com/prawn-pulao-recipe/",
+  "author": "Swasthi Shreekanth",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "in_chicken_tikka_rice_bowls": {
+  "title": "Chicken Tikka Bowls with Kachumber",
+  "site": "Cookidoo (Thermomix UK)",
+  "url": "https://cookidoo.co.uk/recipes/recipe/en-gb/r500310",
+  "author": "",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "in_lamb_kofta_curry": {
+  "title": "Kofta Curry (Meatball Curry)",
+  "site": "Swasthi's Recipes (Indian Healthy Recipes)",
+  "url": "https://www.indianhealthyrecipes.com/kofta-curry/",
+  "author": "Swasthi Shreekanth",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "in_tandoori_cauliflower_traybake": {
+  "title": "Tikka roast cauliflower and chickpea wraps with minted yoghurt",
+  "site": "Riverford",
+  "url": "https://rc.riverford.co.uk/recipes/tikka-roast-cauli-chickpea-wraps",
+  "author": "",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ }
+}

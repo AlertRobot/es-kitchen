@@ -1,0 +1,497 @@
+{
+  "am_double_smash_burgers": {
+    "url": "https://images.unsplash.com/photo-1607013251379-e6eecfffe234?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1607013251379-e6eecfffe234?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Eiliv Aceron on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/double-cheeseburger-with-pickles-pu6b4yIlQF4",
+    "alt": "A double cheeseburger with pickles on a dark surface",
+    "confidence": "high"
+  },
+  "am_buttermilk_chicken_burger": {
+    "url": "https://images.unsplash.com/photo-1637710847214-f91d99669e18?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1637710847214-f91d99669e18?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Sultan Abdulrazzaq on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/a-fried-chicken-sandwich-on-a-wooden-table-UDYjeBwFZf8",
+    "alt": "A fried chicken burger on a wooden table",
+    "confidence": "high"
+  },
+  "am_nashville_hot_chicken_burger": {
+    "url": "https://images.unsplash.com/photo-1530216657255-616bc9be214f?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1530216657255-616bc9be214f?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Blake Guidry on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/sandwich-on-tray-z4xYT5fz8Hg",
+    "alt": "Hot chicken sandwich on a tray",
+    "confidence": "medium"
+  },
+  "am_homemade_meat_feast_pizza": {
+    "url": "https://images.unsplash.com/photo-1700760934249-93efbb574d23?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1700760934249-93efbb574d23?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Farhad Ibrahimzade on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/a-pizza-sitting-on-top-of-a-wooden-cutting-board-dFE0FNVd4k0",
+    "alt": "Fresh pepperoni and sausage pizza on a wooden board",
+    "confidence": "high"
+  },
+  "am_pan_pepperoni_pizza": {
+    "url": "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Alan Hardman on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/pepperoni-pizza-SU1LFoeEUkk",
+    "alt": "Pepperoni pizza",
+    "confidence": "high"
+  },
+  "am_bbq_chicken_naan_pizza": {
+    "url": "https://images.unsplash.com/photo-1604917869287-3ae73c77e227?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1604917869287-3ae73c77e227?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "ABHISHEK HAJARE on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/pizza-on-brown-wooden-table-pvpugAWd6_g",
+    "alt": "Chicken pizza on a wooden table",
+    "confidence": "medium"
+  },
+  "am_stovetop_mac_and_cheese": {
+    "url": "https://images.unsplash.com/photo-1701484185547-a71576b65e1a?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1701484185547-a71576b65e1a?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Keith Hanson Jr on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/a-dish-of-macaroni-and-cheese-with-a-spoon-in-it-VKI3lU4GA1w",
+    "alt": "A dish of mac and cheese with a spoon",
+    "confidence": "high"
+  },
+  "am_slow_cooker_pulled_pork": {
+    "url": "https://images.unsplash.com/photo-1761712826051-b873907fb5d3?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1761712826051-b873907fb5d3?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "nobleseed nobleseed on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/pulled-pork-sandwich-with-coleslaw-and-pickles-8icctIHfJIo",
+    "alt": "Pulled pork sandwich with coleslaw and pickles",
+    "confidence": "high"
+  },
+  "am_buffalo_wings": {
+    "url": "https://images.unsplash.com/photo-1734987942068-a1a459d65d3d?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1734987942068-a1a459d65d3d?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Snappr on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/a-black-plate-topped-with-wings-covered-in-sauce--7xpgPVH8bw",
+    "alt": "Buffalo wings covered in sauce on a black plate",
+    "confidence": "high"
+  },
+  "am_loaded_bacon_cheese_fries": {
+    "url": "https://images.unsplash.com/photo-1771818708792-d671ae9b4b46?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1771818708792-d671ae9b4b46?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Christopher Stites on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/french-fries-topped-with-cheese-and-meat-xy7BK6oDD2s",
+    "alt": "Loaded fries topped with cheese and meat",
+    "confidence": "medium"
+  },
+  "am_sausage_hot_dogs": {
+    "url": "https://images.unsplash.com/photo-1695089026763-0d984cbf7088?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1695089026763-0d984cbf7088?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Kelsey Todd on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/a-couple-of-hot-dogs-sitting-on-top-of-a-table-PQQwvmJ-cg8",
+    "alt": "Sausages in buns with mustard and caramelised onions",
+    "confidence": "high"
+  },
+  "am_philly_cheesesteak": {
+    "url": "https://images.unsplash.com/photo-1734769853702-c7444c039c8c?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1734769853702-c7444c039c8c?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Snappr on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/a-white-plate-topped-with-a-sandwich-and-fries-IKsF2Nfh9NY",
+    "alt": "Philly cheesesteak and fries on a white plate",
+    "confidence": "high"
+  },
+  "am_sloppy_joes": {
+    "url": "https://images.unsplash.com/photo-1584946763491-4b3f703b0bd3?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1584946763491-4b3f703b0bd3?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "The Fry Family Food Co. on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/burger-on-black-round-plate-h16DPYwOEJM",
+    "alt": "Sloppy joe on a black plate",
+    "confidence": "high"
+  },
+  "am_crispy_chicken_tenders": {
+    "url": "https://images.unsplash.com/photo-1619019187211-adf2f6119afd?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1619019187211-adf2f6119afd?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Israel Albornoz on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/fried-chicken-on-brown-wooden-chopping-board-T1IKasSmrEg",
+    "alt": "Crispy chicken tenders on a wooden board",
+    "confidence": "high"
+  },
+  "am_meatball_subs": {
+    "url": "https://images.unsplash.com/photo-1779939855537-27d24445f8db?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1779939855537-27d24445f8db?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Bunly Hort on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/a-meatball-sub-sandwich-with-greens-on-a-white-plate-Q35ne4THDAE",
+    "alt": "A meatball sub with greens on a white plate",
+    "confidence": "high"
+  },
+  "am_chilli_cheese_fries": {
+    "url": "https://images.unsplash.com/photo-1700835880456-2e5519fa54d6?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1700835880456-2e5519fa54d6?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Jonathan Borba on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/a-bowl-of-french-fries-topped-with-cheese-and-sauce-I-cgCz5DUi4",
+    "alt": "A bowl of fries topped with cheese and sauce",
+    "confidence": "medium"
+  },
+  "am_chicken_pot_pie": {
+    "url": "https://images.unsplash.com/photo-1581986675622-41eccf27129d?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1581986675622-41eccf27129d?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "David Foodphototasty on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/pie-on-stainless-steel-bowl-beside-black-handled-knife-hAUyjrUb-s8",
+    "alt": "Chicken pie with a golden pastry top",
+    "confidence": "medium"
+  },
+  "am_cheeseburger_quesadillas": {
+    "url": "https://images.unsplash.com/photo-1719957770167-bb66133ba808?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1719957770167-bb66133ba808?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Abdullah Guc on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/a-quesadilla-cut-in-half-on-a-red-and-white-checkered-paper-NTZpME8URX8",
+    "alt": "A quesadilla cut in half on checkered paper",
+    "confidence": "medium"
+  },
+  "am_bbq_bacon_burger": {
+    "url": "https://images.unsplash.com/photo-1761712826134-7a96fe3f68fb?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1761712826134-7a96fe3f68fb?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "nobleseed nobleseed on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/cheeseburger-with-bacon-on-checkered-paper-e_I0aT3_FkY",
+    "alt": "Bacon cheeseburger on checkered paper",
+    "confidence": "high"
+  },
+  "am_buffalo_cauliflower": {
+    "url": "https://images.unsplash.com/photo-1626026671527-d75ab5382a1f?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1626026671527-d75ab5382a1f?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Mikey Frost on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/fried-food-on-white-ceramic-plate-sKez95yZT4k",
+    "alt": "Buffalo cauliflower wings on a white plate",
+    "confidence": "high"
+  },
+  "am_southern_fried_chicken_gravy": {
+    "url": "https://images.unsplash.com/photo-1742936401708-dd1b132f06db?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1742936401708-dd1b132f06db?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Gennady Zakharin on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/delicious-golden-fried-chicken-is-piled-on-a-plate-xdcr4Z-KTcU",
+    "alt": "Golden fried chicken piled on a plate",
+    "confidence": "medium"
+  },
+  "am_blackened_salmon_tacos": {
+    "url": "https://images.unsplash.com/photo-1660180750968-4fbc84789a96?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1660180750968-4fbc84789a96?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Federico Ramirez on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/a-plate-of-food-Zggo6DP_P88",
+    "alt": "Chipotle salmon tacos on a plate",
+    "confidence": "high"
+  },
+  "am_bbq_chicken_traybake": {
+    "url": "https://images.unsplash.com/photo-1764756995069-4a0b5f31d792?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1764756995069-4a0b5f31d792?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Phil Hearing on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/roasted-chicken-drumsticks-in-a-glass-baking-dish-tBUgcNRubXA",
+    "alt": "Roasted chicken drumsticks in a baking dish",
+    "confidence": "medium"
+  },
+  "am_buffalo_chicken_wraps": {
+    "url": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Max Griss on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/white-and-brown-food-on-white-ceramic-plate-Spp1G283dow",
+    "alt": "Chicken wrap on a white plate",
+    "confidence": "medium"
+  },
+  "am_chicken_caesar_wraps": {
+    "url": "https://images.unsplash.com/photo-1632660346941-023cc64e1252?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1632660346941-023cc64e1252?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Advocator SY on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/a-black-plate-topped-with-a-burrito-and-a-salad-MdkUEKFfkTM",
+    "alt": "Chicken wrap with salad on a black plate",
+    "confidence": "medium"
+  },
+  "am_chicken_cobb_salad": {
+    "url": "https://images.unsplash.com/photo-1605291535557-4fc6bb3b4d00?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1605291535557-4fc6bb3b4d00?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "logan jeffrey on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/cooked-food-on-white-ceramic-plate-CJarbDnrdfs",
+    "alt": "Chicken Cobb salad on a white plate",
+    "confidence": "high"
+  },
+  "am_chicken_sweetcorn_chowder": {
+    "url": "https://images.unsplash.com/photo-1741315034133-321591ccadd5?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1741315034133-321591ccadd5?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Meg von Haartman on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/soup-and-toast-a-cozy-meal-i6ZnhjS3vUI",
+    "alt": "Corn chowder with toast",
+    "confidence": "high"
+  },
+  "am_honey_mustard_chicken_burgers": {
+    "url": "https://images.unsplash.com/photo-1620088576661-a9b87230af67?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1620088576661-a9b87230af67?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Daniel Lloyd Blunk-Fernández on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/burger-with-lettuce-and-fries-on-white-ceramic-plate-4ck--3et2WA",
+    "alt": "Chicken burger with avocado, lettuce and fries",
+    "confidence": "high"
+  },
+  "am_cajun_prawn_pasta": {
+    "url": "https://images.unsplash.com/photo-1788462612954-8ef63f894493?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1788462612954-8ef63f894493?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "gabbiistudios on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/spaghetti-with-shrimp-and-creamy-sauce-qhd7sulwZKQ",
+    "alt": "Pasta with prawns in a creamy sauce",
+    "confidence": "medium"
+  },
+  "am_bbq_pork_steaks": {
+    "url": "https://images.unsplash.com/photo-1432139555190-58524dae6a55?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1432139555190-58524dae6a55?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Alex Munsell on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/grilled-steak-with-vegetables-on-white-ceramic-plate-Yr4n8O_3UPc",
+    "alt": "Grilled pork chop dinner with vegetables",
+    "confidence": "medium"
+  },
+  "am_mini_meatloaves": {
+    "url": "https://images.unsplash.com/photo-1705945021699-7374c3fd34cb?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1705945021699-7374c3fd34cb?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Martinet Sinan on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/a-loaf-of-meatloaf-on-a-cutting-board-with-a-sprig-of-u0gs_AzC9CQ",
+    "alt": "Glazed meatloaf on a cutting board",
+    "confidence": "medium"
+  },
+  "as_sweet_sour_chicken": {
+    "url": "https://images.unsplash.com/photo-1664138788119-bd4f073259d5?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1664138788119-bd4f073259d5?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Janesca on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/a-bowl-of-food-CteaqWgFq3M",
+    "alt": "Sweet and sour chicken in a bowl",
+    "confidence": "high"
+  },
+  "as_chicken_katsu_curry": {
+    "url": "https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Stefen Tan on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/fried-dish-on-round-black-plate-_sfMD-OhFR8",
+    "alt": "Chicken katsu curry on a black plate",
+    "confidence": "high"
+  },
+  "as_korean_fried_chicken": {
+    "url": "https://images.unsplash.com/photo-1670207415519-3cc41f5768b8?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1670207415519-3cc41f5768b8?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "yeojin yun on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/a-bowl-of-food-next-to-a-bucket-of-food-fGrO9QTvWAc",
+    "alt": "Sticky Korean fried chicken (dakgangjeong)",
+    "confidence": "medium"
+  },
+  "as_char_siu_pork": {
+    "url": "https://images.unsplash.com/photo-1785899578127-f3883106c735?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1785899578127-f3883106c735?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Zion C on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/two-bowls-of-rice-with-roasted-duck-pork-and-chicken-8jrBNCyF75w",
+    "alt": "Cantonese char siu pork rice bowls",
+    "confidence": "medium"
+  },
+  "as_special_egg_fried_rice": {
+    "url": "https://images.unsplash.com/photo-1551326844-4df70f78d0e9?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1551326844-4df70f78d0e9?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Mae Mu on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/fry-rice-with-prawn-dish-dTNNDTbZr8I",
+    "alt": "Prawn fried rice",
+    "confidence": "medium"
+  },
+  "as_korean_fried_chicken_burger": {
+    "url": "https://images.unsplash.com/photo-1726082735259-a3f2233ef98d?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1726082735259-a3f2233ef98d?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Paul on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/a-sandwich-on-a-plate-next-to-a-bottle-of-beer-tUYEY_iF1PU",
+    "alt": "Korean fried chicken burger on a plate",
+    "confidence": "high"
+  },
+  "as_honey_sesame_chicken": {
+    "url": "https://images.unsplash.com/photo-1788090485550-ca71c6d578fb?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1788090485550-ca71c6d578fb?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Zayed Ahmed Zadu on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/fried-rice-bowl-with-glazed-chicken-ZK8kPP8I4rY",
+    "alt": "Glazed sesame chicken over rice",
+    "confidence": "medium"
+  },
+  "as_kung_pao_chicken": {
+    "url": "https://images.unsplash.com/photo-1605704922285-e82455dba38b?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1605704922285-e82455dba38b?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Karolina Kołodziejczak on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/cooked-food-on-white-ceramic-bowl-8qFMa9-ljD8",
+    "alt": "Kung pao chicken in a white bowl",
+    "confidence": "high"
+  },
+  "as_chicken_chow_mein": {
+    "url": "https://images.unsplash.com/photo-1772729219168-af0f0e57bb9c?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1772729219168-af0f0e57bb9c?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Mohammad Fahim on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/a-plate-of-delicious-noodles-with-vegetables-and-chicken--q8D0-ELL3E",
+    "alt": "Stir-fried noodles with chicken and vegetables",
+    "confidence": "medium"
+  },
+  "as_black_bean_beef": {
+    "url": "https://images.unsplash.com/photo-1606070781631-a7e961f84c9e?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1606070781631-a7e961f84c9e?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Jezebel Rose on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/green-vegetable-in-white-ceramic-bowl-5Oza8PhePew",
+    "alt": "Beef in black bean sauce in a white bowl",
+    "confidence": "high"
+  },
+  "as_beef_broccoli": {
+    "url": "https://images.unsplash.com/photo-1783375175952-705a0600e05c?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1783375175952-705a0600e05c?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "sheri silver on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/a-bowl-of-beef-and-broccoli-with-white-rice-BA2UZ6w8JfY",
+    "alt": "Beef and broccoli with white rice",
+    "confidence": "high"
+  },
+  "as_dan_dan_noodles": {
+    "url": "https://images.unsplash.com/photo-1791408842348-682ae1063988?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1791408842348-682ae1063988?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Zoshua Colah on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/noodle-soup-with-chili-oil-CE6fDt-LK08",
+    "alt": "Sichuan dan dan noodles with chilli oil and sesame",
+    "confidence": "medium"
+  },
+  "as_sticky_sesame_tofu": {
+    "url": "https://images.unsplash.com/photo-1762305194201-077e7e23ccf2?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1762305194201-077e7e23ccf2?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Lee Milo on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/crispy-fried-tofu-cubes-sprinkled-with-green-onions-N0lnO0gZlW8",
+    "alt": "Crispy fried tofu cubes with spring onions",
+    "confidence": "medium"
+  },
+  "as_thai_green_chicken_curry": {
+    "url": "https://images.unsplash.com/photo-1707056924965-2c687206af67?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1707056924965-2c687206af67?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "B R A Y D E N on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/a-blue-bowl-filled-with-meat-and-vegetables-LFbkWC3n2QQ",
+    "alt": "Thai green curry in a blue bowl",
+    "confidence": "high"
+  },
+  "as_thai_red_prawn_curry": {
+    "url": "https://images.unsplash.com/photo-1761545832792-535fafbad368?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1761545832792-535fafbad368?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Zayed Ahmed Zadu on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/shrimp-in-sauce-with-mixed-vegetables-and-limes-cujwrR1zfDI",
+    "alt": "Prawns in red curry sauce with vegetables, lime and basil",
+    "confidence": "medium"
+  },
+  "as_chicken_pad_thai": {
+    "url": "https://images.unsplash.com/photo-1637806930600-37fa8892069d?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1637806930600-37fa8892069d?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "John Aledia on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/a-plate-of-food-on-a-wooden-table-_wBJ0cvKhIE",
+    "alt": "Pad thai on a wooden table",
+    "confidence": "high"
+  },
+  "as_chicken_larb": {
+    "url": "https://images.unsplash.com/photo-1677366801962-483185852615?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1677366801962-483185852615?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Alexandra Tran on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/a-plate-of-food-on-a-wooden-table-jv7_67Mh8g0",
+    "alt": "Thai chicken larb salad on a wooden table",
+    "confidence": "high"
+  },
+  "as_chicken_satay": {
+    "url": "https://images.unsplash.com/photo-1772855386828-a18ff9a12584?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1772855386828-a18ff9a12584?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "likesilkto on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/chicken-satay-skewers-with-peanut-sauce-and-salad--B8jy23-QqM",
+    "alt": "Chicken satay skewers with peanut sauce and salad",
+    "confidence": "high"
+  },
+  "as_thai_basil_pork": {
+    "url": "https://images.unsplash.com/photo-1707897634981-39bcfe435268?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1707897634981-39bcfe435268?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Inna Safa on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/a-white-plate-topped-with-rice-and-fried-eggs-j-SsLyBAkZ8",
+    "alt": "Thai basil stir-fry with rice and a fried egg",
+    "confidence": "medium"
+  },
+  "as_thai_red_tofu_curry": {
+    "url": "https://images.unsplash.com/photo-1761038170236-1ed27c5ccbb4?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1761038170236-1ed27c5ccbb4?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "PHEAP MOEU on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/a-delicious-curry-served-with-white-rice-on-a-table-caqdoaCPVPo",
+    "alt": "Thai red curry served with white rice",
+    "confidence": "medium"
+  },
+  "as_honey_garlic_chicken": {
+    "url": "https://images.unsplash.com/photo-1586880392916-dd801c726a46?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1586880392916-dd801c726a46?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Cristian Andronic on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/cooked-food-on-white-ceramic-plate-YhFFRGu_7Zc",
+    "alt": "Glazed chicken with rice on a white plate",
+    "confidence": "medium"
+  },
+  "as_teriyaki_salmon": {
+    "url": "https://images.unsplash.com/photo-1684815595429-cf46bff6294f?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1684815595429-cf46bff6294f?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Michael Kahn on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/a-black-bowl-filled-with-meat-and-broccoli-uLQEP0a5DOg",
+    "alt": "Teriyaki salmon with broccoli in a black bowl",
+    "confidence": "high"
+  },
+  "as_miso_salmon": {
+    "url": "https://images.unsplash.com/photo-1691201090878-1b9eab935bdd?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1691201090878-1b9eab935bdd?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "sheri silver on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/two-plates-of-food-on-a-white-table-nmJRb8MPCLQ",
+    "alt": "Broiled glazed salmon with scallions and rice",
+    "confidence": "medium"
+  },
+  "as_bibimbap": {
+    "url": "https://images.unsplash.com/photo-1718777791239-c473e9ce7376?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1718777791239-c473e9ce7376?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Maria Klichik on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/a-bowl-of-food-with-carrots-cucumbers-and-other-vegetables-q-M8nQqBJvU",
+    "alt": "Bibimbap with vegetables and a fried egg",
+    "confidence": "high"
+  }
+}

@@ -1,0 +1,3936 @@
+[
+ {
+  "id": "am_double_smash_burgers",
+  "title": "Double Smash Cheeseburgers with Burger Sauce & Quick Pickles",
+  "icon": "🍔",
+  "cuisine": "American",
+  "category": "treat",
+  "protein": "beef",
+  "time": 25,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "beef_mince",
+    "q": 400,
+    "t": "400g, rolled into 4 loose balls"
+   },
+   {
+    "i": "burger_buns",
+    "q": 2,
+    "t": "2 brioche buns"
+   },
+   {
+    "i": "cheddar",
+    "q": 60,
+    "t": "60g, very thinly sliced"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, sliced paper-thin"
+   },
+   {
+    "i": "little_gem",
+    "q": 0.5,
+    "t": "½, shredded"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.25,
+    "t": "¼, thinly sliced"
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "½, juiced"
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "mayonnaise",
+    "q": 45,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "ketchup",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "wholegrain_mustard",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "butter",
+    "q": 10,
+    "t": "a small knob, for the buns"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Make the pickles and sauce",
+    "text": "Toss the cucumber slices with the lemon juice, honey and a good pinch of salt in a small bowl and leave to sit while you cook. In another bowl, stir together the mayo, ketchup, mustard and a teaspoon of the pickle liquid to make the burger sauce. Roll the mince into 4 loose balls without squashing them too tightly, and keep them in the fridge."
+   },
+   {
+    "title": "Toast the buns",
+    "text": "Halve the buns and spread a little butter on the cut sides. Toast them cut-side down in your largest dry frying pan over a medium heat for about 1 min until golden. Spread both halves with burger sauce and pile the lettuce onto the bottoms."
+   },
+   {
+    "title": "Smash the patties",
+    "text": "Turn the heat under the pan right up and wait until it is just starting to smoke. Add 2 mince balls, lay a square of baking paper on top and press down hard with a sturdy spatula or saucepan base until each patty is about 5mm thick. Peel off the paper, season with salt and pepper and scatter over a little of the sliced onion so it presses into the meat. Leave alone for 2 min until the edges are lacy and the underside has a deep brown crust."
+   },
+   {
+    "title": "Flip and melt the cheese",
+    "text": "Scrape firmly under each patty so you keep the crust, then flip so the onion side is underneath. Lay the cheddar on top and cook for 1 min until it melts over the edges and the onions have softened. Stack one patty on top of the other and lift onto a bun, then repeat with the remaining 2 balls."
+   },
+   {
+    "title": "Build and serve",
+    "text": "Top each double stack with a few drained quick pickles. Close with the bun lids, press down gently and eat straight away while the cheese is still molten."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "quick"
+  ],
+  "basedOn": "Serious Eats (J. Kenji López-Alt) — Ultra-smashed cheeseburgers, with Oklahoma-style smashed onions"
+ },
+ {
+  "id": "am_buttermilk_chicken_burger",
+  "title": "Crispy Buttermilk Chicken Burger with Hot Honey Mayo & Slaw",
+  "icon": "🍔",
+  "cuisine": "American",
+  "category": "treat",
+  "protein": "chicken",
+  "time": 45,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "airFryer": "Spray the coated thighs all over with oil and air-fry at 200°C for 16–18 min, turning halfway, until deep golden and the juices run clear.",
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 300,
+    "t": "2 large thighs (300g)"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 100,
+    "t": "100g"
+   },
+   {
+    "i": "milk",
+    "q": 50,
+    "t": "50ml"
+   },
+   {
+    "i": "hot_sauce",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, grated"
+   },
+   {
+    "i": "plain_flour",
+    "q": 80,
+    "t": "80g"
+   },
+   {
+    "i": "cornflour",
+    "q": 20,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "oil",
+    "q": 60,
+    "t": "60ml, for shallow frying"
+   },
+   {
+    "i": "burger_buns",
+    "q": 2,
+    "t": "2 brioche buns"
+   },
+   {
+    "i": "mayonnaise",
+    "q": 45,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "carrots",
+    "q": 80,
+    "t": "1 small, grated"
+   },
+   {
+    "i": "little_gem",
+    "q": 0.5,
+    "t": "½, shredded"
+   },
+   {
+    "i": "red_onion",
+    "q": 0.25,
+    "t": "¼, finely sliced"
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "½, juiced"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Marinate the chicken",
+    "text": "Lay the thighs between two sheets of baking paper and bash with a rolling pin until evenly thick. Whisk the yogurt, milk, half the hot sauce, the garlic and a pinch of salt into a quick 'buttermilk' in a bowl. Add the chicken, turn to coat and leave for at least 15 min (or covered in the fridge overnight)."
+   },
+   {
+    "title": "Make the slaw and sauce",
+    "text": "Toss the grated carrot, shredded lettuce and red onion with 1 tbsp of the mayo, the lemon juice and a pinch of salt. In a small bowl, mix the remaining mayo with the honey and the rest of the hot sauce to make the hot honey mayo."
+   },
+   {
+    "title": "Coat the chicken",
+    "text": "Mix the flour, cornflour, paprika, herbs, 1 tsp salt and plenty of pepper in a shallow dish. Drizzle in 1 tbsp of the marinade and rub it through with your fingertips to make little craggy clumps. Lift the chicken out, let the excess drip off, then press it firmly into the flour on both sides so it is thickly coated."
+   },
+   {
+    "title": "Fry until golden",
+    "text": "Heat the oil in a large non-stick frying pan over a medium-high heat until a pinch of flour sizzles instantly. Fry the chicken for 5–6 min on each side until deep golden and crisp, and the juices run clear when you pierce the thickest part. Drain on kitchen paper and sprinkle with a little salt."
+   },
+   {
+    "title": "Build the burgers",
+    "text": "Wipe out the pan and toast the halved buns cut-side down for 1 min. Spread the bases with hot honey mayo, add a pile of slaw and the crispy chicken, then a final spoonful of mayo before the lids go on."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "crispy"
+  ],
+  "basedOn": "BBC Good Food — Crispiest buttermilk fried chicken burgers"
+ },
+ {
+  "id": "am_nashville_hot_chicken_burger",
+  "title": "Nashville-Style Hot Chicken Burger with Pickles & Cool Mayo",
+  "icon": "🌶️",
+  "cuisine": "American",
+  "category": "treat",
+  "protein": "chicken",
+  "time": 45,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "airFryer": "Spray the coated chicken with oil and air-fry at 200°C for 16–18 min, turning halfway, until crisp and cooked through, then brush with the hot paste (made with 2 tbsp fresh oil instead of frying oil).",
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 300,
+    "t": "2 large thighs (300g)"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 100,
+    "t": "100g"
+   },
+   {
+    "i": "milk",
+    "q": 50,
+    "t": "50ml"
+   },
+   {
+    "i": "hot_sauce",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "plain_flour",
+    "q": 80,
+    "t": "80g"
+   },
+   {
+    "i": "cornflour",
+    "q": 20,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "oil",
+    "q": 60,
+    "t": "60ml, for shallow frying"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 4,
+    "t": "2 tsp, ground",
+    "swap": "For a milder burger, brush one piece of chicken with a little honey and butter only and keep the hot paste for the other."
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "honey",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, grated"
+   },
+   {
+    "i": "butter",
+    "q": 20,
+    "t": "20g, melted"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.25,
+    "t": "¼, thinly sliced"
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "½, juiced"
+   },
+   {
+    "i": "burger_buns",
+    "q": 2,
+    "t": "2 brioche buns"
+   },
+   {
+    "i": "mayonnaise",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "little_gem",
+    "q": 0.5,
+    "t": "½, shredded"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Marinate and pickle",
+    "text": "Flatten the thighs between baking paper until even, then coat in the yogurt, milk, hot sauce and a pinch of salt and leave for 15 min. Toss the cucumber with the lemon juice and a big pinch of salt and set aside to quick-pickle. Grind the chilli flakes to a powder in a pestle and mortar (or crush with the base of a mug)."
+   },
+   {
+    "title": "Dredge the chicken",
+    "text": "Mix the flour, cornflour, 1 tsp salt and plenty of pepper in a shallow dish and work in a spoonful of the marinade with your fingers to make crunchy clumps. Lift the chicken from the marinade and press it hard into the flour on both sides until thickly coated."
+   },
+   {
+    "title": "Fry the chicken",
+    "text": "Heat the oil in a large frying pan over a medium-high heat. Fry the chicken for 5–6 min each side until deep golden, crunchy and cooked through with no pink in the middle. Lift onto a rack or kitchen paper, keeping the hot oil in the pan."
+   },
+   {
+    "title": "Make the hot paste",
+    "text": "In a heatproof bowl, mix the ground chilli, paprika, honey, garlic and a pinch of salt. Carefully spoon in 2 tbsp of the hot frying oil plus the melted butter and stir to a glossy brick-red paste. Brush it generously all over the fried chicken while it's still hot."
+   },
+   {
+    "title": "Build the burgers",
+    "text": "Toast the halved buns cut-side down in a dry pan for 1 min. Spread the bases with mayo, add the lettuce and the hot chicken, then pile on the drained pickles and close with the lids — the cool mayo and sharp pickles tame the heat."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "spicy",
+   "crispy"
+  ],
+  "basedOn": "Serious Eats / Saveur — Nashville hot chicken (cayenne-oil paste brushed over buttermilk fried chicken)"
+ },
+ {
+  "id": "am_homemade_meat_feast_pizza",
+  "title": "Homemade Meat Feast Pizza with Sausage, Pepperoni & Peppers",
+  "icon": "🍕",
+  "cuisine": "American",
+  "category": "treat",
+  "protein": "pork",
+  "time": 90,
+  "servings": 2,
+  "equipment": [
+   "hob",
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "i": "plain_flour",
+    "q": 250,
+    "t": "250g, plus extra for dusting"
+   },
+   {
+    "i": "dried_yeast",
+    "q": 7,
+    "t": "1 sachet (7g)"
+   },
+   {
+    "i": "honey",
+    "q": 3,
+    "t": "½ tsp"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 200,
+    "t": "½ tin"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, crushed"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "mozzarella",
+    "q": 125,
+    "t": "1 ball, torn and patted dry"
+   },
+   {
+    "i": "cheddar",
+    "q": 40,
+    "t": "40g, grated"
+   },
+   {
+    "i": "pepperoni",
+    "q": 40,
+    "t": "40g"
+   },
+   {
+    "i": "sausages",
+    "q": 2,
+    "t": "2, skins removed"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, thinly sliced"
+   },
+   {
+    "i": "red_onion",
+    "q": 0.5,
+    "t": "½, thinly sliced"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Make the dough",
+    "text": "Mix the flour, yeast and 1 tsp salt in a large bowl, then add 160ml warm water, the honey and half the oil and stir into a shaggy dough. Knead on a lightly floured surface for 8–10 min until smooth, springy and no longer sticky. Put it back in the bowl rubbed with the remaining oil, cover and leave somewhere warm for 1 hr until doubled in size."
+   },
+   {
+    "title": "Cook the sauce",
+    "text": "Put the chopped tomatoes, purée, garlic, herbs and a pinch of salt in a small saucepan over a medium heat. Simmer for 10 min, stirring now and then, until thick enough that a spoon dragged through leaves a clear line. Leave to cool — a thick, cool sauce keeps the base crisp."
+   },
+   {
+    "title": "Prep the toppings and oven",
+    "text": "Heat the oven to its highest setting (at least 240°C, fan 220°C) with two baking trays inside. Pinch the sausage meat into small nuggets and fry in a dry frying pan over a medium-high heat for 5 min until browned. Slice the pepper and red onion thinly."
+   },
+   {
+    "title": "Shape the bases",
+    "text": "Knock the air out of the dough and halve it. On two sheets of baking paper, roll or stretch each piece into a 25cm round, keeping the middle thin and the edge slightly thicker."
+   },
+   {
+    "title": "Top and bake",
+    "text": "Spread the sauce thinly over each base, leaving a border, then scatter over the cheddar, mozzarella, sausage, pepperoni, pepper and onion. Slide the pizzas, still on their paper, onto the hot trays and bake for 10–12 min until the crust is puffed and blistered and the cheese is bubbling and golden. Rest for 1 min before slicing."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "kid-friendly"
+  ],
+  "basedOn": "BBC Good Food — Homemade pizza dough & easy pizza sauce, topped meat-feast style"
+ },
+ {
+  "id": "am_pan_pepperoni_pizza",
+  "title": "Crispy Pan Pepperoni Pizza with Hot Honey Drizzle",
+  "icon": "🍕",
+  "cuisine": "American",
+  "category": "treat",
+  "protein": "pork",
+  "time": 75,
+  "servings": 2,
+  "equipment": [
+   "hob",
+   "grill"
+  ],
+  "ingredients": [
+   {
+    "i": "plain_flour",
+    "q": 200,
+    "t": "200g, plus extra for dusting"
+   },
+   {
+    "i": "dried_yeast",
+    "q": 7,
+    "t": "1 sachet (7g)"
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 200,
+    "t": "½ tin"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, crushed"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "mozzarella",
+    "q": 125,
+    "t": "1 ball, torn and patted dry"
+   },
+   {
+    "i": "cheddar",
+    "q": 50,
+    "t": "50g, grated"
+   },
+   {
+    "i": "pepperoni",
+    "q": 60,
+    "t": "60g"
+   },
+   {
+    "i": "honey",
+    "q": 20,
+    "t": "1 heaped tbsp"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "½ tsp",
+    "swap": "Warm a little plain honey for one pizza and only add chilli flakes to the other half."
+   }
+  ],
+  "steps": [
+   {
+    "title": "Make a quick dough",
+    "text": "Mix the flour, yeast and 1 tsp salt in a bowl, add 130ml warm water and 1 tsp of the oil and bring together into a soft dough. Knead for 5 min until smooth, then cover and leave in a warm spot for 45 min until puffy and nearly doubled."
+   },
+   {
+    "title": "Make the sauce and hot honey",
+    "text": "Simmer the chopped tomatoes, purée, garlic, herbs and a pinch of salt in a small pan for 10 min until thick and jammy, then cool. In another small pan, warm the honey with the chilli flakes over a low heat for 1 min, then take off the heat to infuse."
+   },
+   {
+    "title": "Stretch the dough",
+    "text": "Heat the grill to high. Halve the dough and, on a floured surface, press and stretch each piece into a round about 24cm wide — slightly smaller than your largest ovenproof frying pan."
+   },
+   {
+    "title": "Fry the base",
+    "text": "Heat 1 tbsp of the oil in the ovenproof frying pan over a medium-high heat. Lay in one dough round and cook for 3–4 min until the underside is golden and crisp (lift an edge with a spatula to check). Quickly spread over half the sauce, then scatter with half the cheddar, mozzarella and pepperoni."
+   },
+   {
+    "title": "Grill until bubbling",
+    "text": "Slide the pan under the grill for 3–5 min until the cheese has melted and blistered and the pepperoni edges have curled up and crisped. Slide onto a board, drizzle with hot honey and slice. Repeat with the second base while you tuck into the first."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "crispy"
+  ],
+  "basedOn": "Jamie Oliver — frying-pan pizza method; hot honey pepperoni (Mike's Hot Honey-style, as popularised by New York pizzerias)"
+ },
+ {
+  "id": "am_bbq_chicken_naan_pizza",
+  "title": "BBQ Chicken Naan Pizzas with Sweetcorn, Red Onion & Coriander",
+  "icon": "🍕",
+  "cuisine": "American",
+  "category": "treat",
+  "protein": "chicken",
+  "time": 20,
+  "servings": 2,
+  "equipment": [
+   "hob",
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "i": "naan",
+    "q": 2,
+    "t": "2 plain naans"
+   },
+   {
+    "i": "chicken_breast",
+    "q": 250,
+    "t": "1 large breast (250g), cut into small strips"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "bbq_sauce",
+    "q": 60,
+    "t": "4 tbsp"
+   },
+   {
+    "i": "mozzarella",
+    "q": 125,
+    "t": "1 ball, torn"
+   },
+   {
+    "i": "cheddar",
+    "q": 40,
+    "t": "40g, grated"
+   },
+   {
+    "i": "sweetcorn",
+    "q": 60,
+    "t": "60g"
+   },
+   {
+    "i": "red_onion",
+    "q": 0.5,
+    "t": "½, thinly sliced"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, chopped",
+    "swap": "Scatter the coriander over one pizza only."
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Heat the oven to 220°C (fan 200°C). Toss the chicken strips with the paprika and a pinch of salt and pepper. Slice the red onion thinly and chop the coriander."
+   },
+   {
+    "title": "Cook the chicken",
+    "text": "Heat the oil in a frying pan over a high heat and fry the chicken for 5–6 min, turning, until golden and cooked through. Take off the heat and stir in 1 tbsp of the BBQ sauce so the chicken is glazed and sticky."
+   },
+   {
+    "title": "Top the naans",
+    "text": "Lay the naans on a baking tray and spread with the rest of the BBQ sauce, right to the edges. Scatter over the cheddar, torn mozzarella, chicken, sweetcorn (straight from frozen is fine) and red onion."
+   },
+   {
+    "title": "Bake and finish",
+    "text": "Bake for 8–10 min until the cheese has melted and turned golden in spots and the naan edges are crisp. Scatter with coriander, cut into slices and serve straight away."
+   }
+  ],
+  "tags": [
+   "quick",
+   "fakeaway",
+   "kid-friendly"
+  ],
+  "basedOn": "California Pizza Kitchen-style BBQ chicken pizza, naan-bread shortcut (as in Effortless Foodie / Heck BBQ chicken pizza)"
+ },
+ {
+  "id": "am_stovetop_mac_and_cheese",
+  "title": "Ultra-Creamy Stovetop Mac & Cheese with Garlic Panko Crunch",
+  "icon": "🧀",
+  "cuisine": "American",
+  "category": "treat",
+  "protein": "veggie",
+  "time": 25,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "pasta",
+    "q": 180,
+    "t": "180g penne or macaroni"
+   },
+   {
+    "i": "broccoli",
+    "q": 150,
+    "t": "150g, in small florets"
+   },
+   {
+    "i": "milk",
+    "q": 250,
+    "t": "250ml"
+   },
+   {
+    "i": "cheddar",
+    "q": 150,
+    "t": "150g, grated"
+   },
+   {
+    "i": "cornflour",
+    "q": 8,
+    "t": "2 tsp"
+   },
+   {
+    "i": "butter",
+    "q": 25,
+    "t": "25g"
+   },
+   {
+    "i": "wholegrain_mustard",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "hot_sauce",
+    "q": 5,
+    "t": "a dash"
+   },
+   {
+    "i": "parmesan",
+    "q": 20,
+    "t": "20g, finely grated"
+   },
+   {
+    "i": "panko",
+    "q": 30,
+    "t": "30g"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, crushed"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 1,
+    "t": "½ tsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Boil the kettle. Grate the cheddar and toss it with the cornflour in a bowl — this stops the sauce turning grainy. Cut the broccoli into small florets and crush the garlic."
+   },
+   {
+    "title": "Toast the crumbs",
+    "text": "Melt 15g of the butter in a large saucepan over a medium heat, then add the panko, garlic and paprika. Stir for 2–3 min until golden and smelling toasty, tip into a bowl and wipe out the pan."
+   },
+   {
+    "title": "Cook the pasta",
+    "text": "Fill the same pan with boiling water from the kettle, salt well and cook the pasta for 1 min less than the pack says, adding the broccoli for the last 3 min. Scoop out a mugful of the cooking water, then drain."
+   },
+   {
+    "title": "Make the cheese sauce",
+    "text": "Pour the milk into the empty pan and warm over a medium heat until steaming but not boiling. Add the cheddar a handful at a time, stirring constantly, until it melts into a smooth sauce that coats the back of a spoon. Stir in the mustard, the remaining butter and a dash of hot sauce."
+   },
+   {
+    "title": "Bring it together",
+    "text": "Tip the pasta and broccoli back into the sauce and stir over a low heat for 1 min, adding splashes of pasta water until it's glossy and saucy. Spoon into bowls and top with the parmesan and garlic crumbs."
+   }
+  ],
+  "tags": [
+   "comfort",
+   "quick",
+   "kid-friendly"
+  ],
+  "basedOn": "Serious Eats (J. Kenji López-Alt) — The Food Lab's ultra-gooey stovetop mac and cheese"
+ },
+ {
+  "id": "am_slow_cooker_pulled_pork",
+  "title": "Slow Cooker BBQ Pulled Pork Buns with Crunchy Slaw & Wedges",
+  "icon": "🐖",
+  "cuisine": "American",
+  "category": "treat",
+  "protein": "pork",
+  "time": 500,
+  "servings": 2,
+  "equipment": [
+   "slow_cooker",
+   "oven"
+  ],
+  "airFryer": "Toss the wedges in the oil and spices and air-fry at 200°C for 20–22 min, shaking halfway, until crisp.",
+  "ingredients": [
+   {
+    "i": "pork_shoulder",
+    "q": 500,
+    "t": "500g"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 5,
+    "t": "2½ tsp"
+   },
+   {
+    "i": "cumin",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, thickly sliced"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "bbq_sauce",
+    "q": 120,
+    "t": "8 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "worcestershire",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "potatoes",
+    "q": 500,
+    "t": "500g, cut into wedges"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "carrots",
+    "q": 100,
+    "t": "1 medium, grated"
+   },
+   {
+    "i": "little_gem",
+    "q": 0.5,
+    "t": "½, shredded"
+   },
+   {
+    "i": "red_onion",
+    "q": 0.25,
+    "t": "¼, finely sliced"
+   },
+   {
+    "i": "mayonnaise",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "½, juiced"
+   },
+   {
+    "i": "burger_buns",
+    "q": 2,
+    "t": "2 brioche buns"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Rub and load the slow cooker",
+    "text": "Mix 2 tsp of the paprika with the cumin, 1 tsp salt and some pepper, and rub it all over the pork. Lay the onion slices in the slow cooker and sit the pork on top. Stir together half the BBQ sauce, the honey, Worcestershire, purée, garlic and 50ml water and pour it over."
+   },
+   {
+    "title": "Cook low and slow",
+    "text": "Put the lid on and cook on low for 8 hrs (or high for 5 hrs) until the pork collapses when you press it with a fork. Try not to lift the lid while it cooks."
+   },
+   {
+    "title": "Roast the wedges",
+    "text": "About 40 min before you want to eat, heat the oven to 220°C (fan 200°C). Toss the potato wedges on a baking tray with the oil, the remaining paprika and a pinch of salt. Roast for 30–35 min, turning halfway, until golden and crisp at the edges."
+   },
+   {
+    "title": "Make the slaw",
+    "text": "Toss the grated carrot, shredded lettuce and red onion with the mayo, lemon juice and a pinch of salt. Keep it in the fridge so it stays crunchy."
+   },
+   {
+    "title": "Shred the pork",
+    "text": "Lift the pork onto a board and pull it apart with two forks, discarding any fatty bits. Skim the fat off the cooking juices, stir in the remaining BBQ sauce, then return the pork and toss until glossy and sticky."
+   },
+   {
+    "title": "Build the buns",
+    "text": "Toast the halved buns cut-side down in a dry pan. Pile in the pulled pork and top with slaw, with the wedges on the side."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "comfort",
+   "freezable"
+  ],
+  "basedOn": "RecipeTin Eats — Slow cooker BBQ pulled pork sandwich"
+ },
+ {
+  "id": "am_buffalo_wings",
+  "title": "Crispy Baked Buffalo Wings with Feta Ranch Dip & Veg Sticks",
+  "icon": "🍗",
+  "cuisine": "American",
+  "category": "treat",
+  "protein": "chicken",
+  "time": 60,
+  "servings": 2,
+  "equipment": [
+   "oven",
+   "hob"
+  ],
+  "airFryer": "Air-fry the cornflour-dusted wings at 200°C for 22–25 min, shaking every 8 min, until crisp and golden, then toss in the sauce.",
+  "ingredients": [
+   {
+    "i": "chicken_wings",
+    "q": 1000,
+    "t": "1kg"
+   },
+   {
+    "i": "cornflour",
+    "q": 15,
+    "t": "1½ tbsp"
+   },
+   {
+    "i": "hot_sauce",
+    "q": 60,
+    "t": "4 tbsp",
+    "swap": "Toss half the wings in the buffalo sauce and leave the rest salted and plain for a milder plate."
+   },
+   {
+    "i": "butter",
+    "q": 30,
+    "t": "30g"
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, grated"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 100,
+    "t": "100g"
+   },
+   {
+    "i": "feta",
+    "q": 40,
+    "t": "40g, crumbled"
+   },
+   {
+    "i": "mayonnaise",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "½, juiced"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "carrots",
+    "q": 150,
+    "t": "2, cut into sticks"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.5,
+    "t": "½, cut into sticks"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Dry and dust the wings",
+    "text": "Heat the oven to 220°C (fan 200°C) and line a large baking tray (set a wire rack on it if you have one). Pat the wings very dry with kitchen paper — dry skin is the secret to crunch. Toss them in a bowl with the cornflour and 1 tsp salt until lightly and evenly coated."
+   },
+   {
+    "title": "Roast until crackly",
+    "text": "Spread the wings out on the tray or rack, leaving space between each one. Roast for 45–50 min, turning halfway, until the skin is deep golden and crackly and the meat pulls easily from the bone."
+   },
+   {
+    "title": "Make the dip and veg sticks",
+    "text": "Mash the feta into the yogurt with the mayo, lemon juice, herbs and plenty of black pepper until creamy but still a bit chunky, then chill. Cut the carrots and cucumber into sticks."
+   },
+   {
+    "title": "Make the buffalo sauce",
+    "text": "In a small saucepan over a low heat, melt the butter with the hot sauce, honey and garlic. Whisk until glossy and smooth, then take off the heat — don't let it boil or it will split."
+   },
+   {
+    "title": "Toss and serve",
+    "text": "Tip the hot wings into a large bowl, pour over the buffalo sauce and toss until every wing is coated. Serve straight away with the feta ranch dip and the veg sticks, plus plenty of napkins."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "spicy",
+   "crispy"
+  ],
+  "basedOn": "Serious Eats (J. Kenji López-Alt) — The best crispy baked buffalo wings"
+ },
+ {
+  "id": "am_loaded_bacon_cheese_fries",
+  "title": "Loaded Bacon Cheese Fries with Spring Onions & Green Chilli",
+  "icon": "🍟",
+  "cuisine": "American",
+  "category": "treat",
+  "protein": "pork",
+  "time": 45,
+  "servings": 2,
+  "equipment": [
+   "oven",
+   "hob"
+  ],
+  "airFryer": "Air-fry the oiled fries at 200°C for 20–25 min, shaking every 5–6 min, until golden and crisp.",
+  "ingredients": [
+   {
+    "i": "potatoes",
+    "q": 700,
+    "t": "700g, cut into 1cm fries"
+   },
+   {
+    "i": "oil",
+    "q": 20,
+    "t": "1½ tbsp"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "bacon",
+    "q": 150,
+    "t": "150g, chopped"
+   },
+   {
+    "i": "cheddar",
+    "q": 100,
+    "t": "100g, grated"
+   },
+   {
+    "i": "cornflour",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "milk",
+    "q": 100,
+    "t": "100ml"
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced"
+   },
+   {
+    "i": "green_chillies",
+    "q": 10,
+    "t": "1, thinly sliced",
+    "swap": "Scatter the chilli over one side of the platter only."
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 60,
+    "t": "4 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the fries",
+    "text": "Heat the oven to 220°C (fan 200°C). Cut the potatoes into 1cm fries, rinse in cold water and pat completely dry with a clean tea towel. Toss with the oil, paprika and a good pinch of salt and spread over two lined baking trays in a single layer."
+   },
+   {
+    "title": "Bake the fries",
+    "text": "Bake for 35–40 min, turning halfway, until golden and crisp at the edges. Swap the trays between shelves when you turn them so they colour evenly."
+   },
+   {
+    "title": "Crisp the bacon",
+    "text": "Meanwhile, fry the chopped bacon in a dry frying pan over a medium-high heat for 6–8 min, stirring, until crisp and golden. Drain on kitchen paper. Slice the spring onions and chilli."
+   },
+   {
+    "title": "Make the cheese sauce",
+    "text": "Toss the grated cheddar with the cornflour. Warm the milk in a small saucepan until steaming, then add the cheese a handful at a time, stirring over a low heat until you have a smooth, pourable sauce."
+   },
+   {
+    "title": "Load them up",
+    "text": "Pile the hot fries onto a platter or two plates. Pour over the cheese sauce, then scatter with the bacon, spring onions and chilli, and finish with dollops of yogurt."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "comfort"
+  ],
+  "basedOn": "Tesco Real Food / Mob — Loaded cheese & bacon fries"
+ },
+ {
+  "id": "am_sausage_hot_dogs",
+  "title": "Butcher's Sausage Hot Dogs with Sticky Onions, Mustard Mayo & Skinny Fries",
+  "icon": "🌭",
+  "cuisine": "American",
+  "category": "treat",
+  "protein": "pork",
+  "time": 30,
+  "servings": 2,
+  "equipment": [
+   "oven",
+   "hob"
+  ],
+  "airFryer": "Air-fry the fries at 200°C for 18–20 min, shaking every 5 min; the sausages can go in for 12–14 min at 190°C, turning halfway.",
+  "ingredients": [
+   {
+    "i": "sausages",
+    "q": 4,
+    "t": "4 pork sausages"
+   },
+   {
+    "i": "hot_dog_rolls",
+    "q": 4,
+    "t": "4"
+   },
+   {
+    "i": "potatoes",
+    "q": 500,
+    "t": "500g, cut into thin fries"
+   },
+   {
+    "i": "oil",
+    "q": 20,
+    "t": "1½ tbsp"
+   },
+   {
+    "i": "onion",
+    "q": 2,
+    "t": "2, thinly sliced"
+   },
+   {
+    "i": "butter",
+    "q": 10,
+    "t": "a knob"
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "worcestershire",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "mayonnaise",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "wholegrain_mustard",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "ketchup",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "cheddar",
+    "q": 40,
+    "t": "40g, grated"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Start the fries",
+    "text": "Heat the oven to 220°C (fan 200°C). Cut the potatoes into skinny 7mm fries, pat dry and toss with 1 tbsp oil and a pinch of salt. Spread over a large lined tray in one layer and bake for 25 min, turning halfway, until golden."
+   },
+   {
+    "title": "Cook the sausages",
+    "text": "Heat the remaining oil in a large frying pan over a medium heat. Fry the sausages for 12–15 min, turning often, until browned all over and cooked through with no pink in the middle."
+   },
+   {
+    "title": "Make the sticky onions",
+    "text": "Meanwhile, melt the butter in a second pan over a medium heat, add the onions and a pinch of salt and cook for 12–15 min, stirring now and then, until soft and golden. Stir in the honey, Worcestershire and a splash of water and bubble for 2 min until dark and jammy."
+   },
+   {
+    "title": "Warm the rolls",
+    "text": "Split the rolls along the top and pop them in the oven for 2–3 min to warm through. Stir the mayo and mustard together."
+   },
+   {
+    "title": "Load the dogs",
+    "text": "Spread the inside of each roll with mustard mayo, add a sausage and pile over the sticky onions. Scatter with cheddar, zigzag over the ketchup and serve with the fries."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "kid-friendly"
+  ],
+  "basedOn": "Jamie Oliver / BBC Good Food — Hot dogs with sticky caramelised onions"
+ },
+ {
+  "id": "am_philly_cheesesteak",
+  "title": "Philly Cheesesteak with Charred Peppers, Onions & Melted Cheese",
+  "icon": "🥖",
+  "cuisine": "American",
+  "category": "treat",
+  "protein": "beef",
+  "time": 25,
+  "servings": 2,
+  "equipment": [
+   "hob",
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "i": "beef_steak",
+    "q": 250,
+    "t": "250g thin-cut frying steak"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, thinly sliced"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1 (green if you have it), thinly sliced"
+   },
+   {
+    "i": "mushrooms",
+    "q": 80,
+    "t": "80g, sliced",
+    "swap": "Fry the mushrooms in a separate small pan and add them to one sandwich only."
+   },
+   {
+    "i": "worcestershire",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "butter",
+    "q": 10,
+    "t": "a knob"
+   },
+   {
+    "i": "mozzarella",
+    "q": 125,
+    "t": "1 ball, sliced"
+   },
+   {
+    "i": "cheddar",
+    "q": 30,
+    "t": "30g, grated"
+   },
+   {
+    "i": "baguette",
+    "q": 2,
+    "t": "2 part-baked baguettes"
+   },
+   {
+    "i": "mayonnaise",
+    "q": 15,
+    "t": "1 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the steak and veg",
+    "text": "Heat the oven for the baguettes as the pack says. Put the steak in the freezer for 10 min to firm up, then slice it as thinly as you can against the grain. Thinly slice the onion, pepper and mushrooms."
+   },
+   {
+    "title": "Bake the bread",
+    "text": "Bake the baguettes for 8–10 min until crisp and golden. Split each one lengthways, leaving one side attached like a hinge."
+   },
+   {
+    "title": "Char the veg",
+    "text": "Heat the oil and butter in a large frying pan over a medium-high heat. Fry the onion and pepper for 8 min until soft and charred at the edges, then push to one side. Fry the mushrooms in a small separate pan with a drop of oil for 5 min until golden."
+   },
+   {
+    "title": "Sear the steak and melt the cheese",
+    "text": "Turn the heat right up and add the steak in a single layer, season and splash over the Worcestershire. Cook for 1–2 min, chopping and tossing with a spatula, until just browned, then mix through the veg. Shape into two baguette-length piles, lay the mozzarella and cheddar on top, cover with a lid or foil for 1 min until melted."
+   },
+   {
+    "title": "Fill and serve",
+    "text": "Spread the inside of the baguettes with mayo. Slide a spatula under each cheesy pile and flip it into the bread, adding the mushrooms to one sandwich. Eat straight away."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "quick"
+  ],
+  "basedOn": "RecipeTin Eats / Serious Eats — Philly cheesesteak (thin-shaved steak, griddled onions, melted provolone)"
+ },
+ {
+  "id": "am_sloppy_joes",
+  "title": "Sloppy Joes with Sweet Potato Fries & Quick Pickles",
+  "icon": "🍔",
+  "cuisine": "American",
+  "category": "treat",
+  "protein": "beef",
+  "time": 30,
+  "servings": 2,
+  "equipment": [
+   "hob",
+   "oven"
+  ],
+  "airFryer": "Air-fry the sweet potato fries at 200°C for 15–18 min, shaking twice, until crisp at the edges.",
+  "ingredients": [
+   {
+    "i": "beef_mince",
+    "q": 400,
+    "t": "400g"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, finely diced"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, finely diced"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "ketchup",
+    "q": 60,
+    "t": "4 tbsp"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "worcestershire",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "wholegrain_mustard",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 3,
+    "t": "1½ tsp"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 beef stock cube"
+   },
+   {
+    "i": "sweet_potato",
+    "q": 400,
+    "t": "400g, cut into fries"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.25,
+    "t": "¼, thinly sliced"
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "½, juiced"
+   },
+   {
+    "i": "burger_buns",
+    "q": 2,
+    "t": "2 brioche buns"
+   },
+   {
+    "i": "cheddar",
+    "q": 40,
+    "t": "40g, grated"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Get the fries in",
+    "text": "Heat the oven to 220°C (fan 200°C). Toss the sweet potato fries with the oil, ½ tsp paprika and a pinch of salt on a lined tray, spaced out, and bake for 25 min, turning halfway. Toss the cucumber with the lemon juice and a pinch of salt to quick-pickle, and dissolve the stock cube in 150ml boiling water."
+   },
+   {
+    "title": "Brown the mince",
+    "text": "Put the mince in a large dry frying pan over a high heat and cook for 5 min, breaking it up with a spoon, until browned all over and any liquid has cooked off. Tip away any excess fat so the sauce isn't greasy."
+   },
+   {
+    "title": "Soften the veg",
+    "text": "Turn the heat to medium, add the onion, pepper and garlic and cook for 5 min, stirring, until softened. Stir in the remaining paprika for 30 seconds."
+   },
+   {
+    "title": "Simmer the sauce",
+    "text": "Add the ketchup, purée, Worcestershire, mustard, honey and stock and stir well. Simmer for 8–10 min until thick and glossy and the mince clings together on a spoon rather than sitting in liquid. Taste and season."
+   },
+   {
+    "title": "Pile into buns",
+    "text": "Toast the halved buns cut-side down in a dry pan. Spoon the mince onto the bases, scatter with cheddar and pickles and pop the lids on. Serve with the sweet potato fries — and lots of napkins."
+   }
+  ],
+  "tags": [
+   "comfort",
+   "kid-friendly",
+   "freezable"
+  ],
+  "basedOn": "RecipeTin Eats — Sloppy Joes"
+ },
+ {
+  "id": "am_crispy_chicken_tenders",
+  "title": "Crispy Parmesan Chicken Tenders with Honey Mustard Dip & Corn Slaw",
+  "icon": "🍗",
+  "cuisine": "American",
+  "category": "treat",
+  "protein": "chicken",
+  "time": 30,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "airFryer": "Spray the crumbed tenders with oil and air-fry at 200°C for 10–12 min, turning halfway, until golden and cooked through.",
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 350,
+    "t": "2 breasts (350g)"
+   },
+   {
+    "i": "plain_flour",
+    "q": 30,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "eggs",
+    "q": 1,
+    "t": "1, beaten"
+   },
+   {
+    "i": "panko",
+    "q": 80,
+    "t": "80g"
+   },
+   {
+    "i": "parmesan",
+    "q": 15,
+    "t": "15g, finely grated"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "oil",
+    "q": 45,
+    "t": "3 tbsp, for shallow frying"
+   },
+   {
+    "i": "mayonnaise",
+    "q": 45,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "wholegrain_mustard",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "sweetcorn",
+    "q": 100,
+    "t": "100g"
+   },
+   {
+    "i": "carrots",
+    "q": 80,
+    "t": "1 small, grated"
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, shredded"
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "½, juiced"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Set up a crumbing station",
+    "text": "Boil the kettle. Slice the chicken breasts lengthways into 1.5cm-wide strips. Set out three shallow bowls: flour seasoned with salt and pepper; the beaten egg; and the panko mixed with the parmesan, paprika and a pinch of salt."
+   },
+   {
+    "title": "Crumb the chicken",
+    "text": "Dip each strip into the flour, then the egg, then the panko, pressing firmly so the crumbs stick all over. Lay the coated tenders on a plate in a single layer."
+   },
+   {
+    "title": "Make the corn slaw",
+    "text": "Put the sweetcorn in a bowl, cover with boiling water for 2 min, then drain and cool under the cold tap. Toss with the carrot, lettuce, lemon juice, 1 tbsp of the mayo and a pinch of salt."
+   },
+   {
+    "title": "Fry the tenders",
+    "text": "Heat the oil in a large frying pan over a medium-high heat. Fry the tenders in two batches for 2–3 min each side until deep golden and crisp, and cooked through (cut the thickest one to check there's no pink). Drain on kitchen paper."
+   },
+   {
+    "title": "Mix the dip and serve",
+    "text": "Stir the remaining mayo with the honey and mustard to make the dip. Serve the tenders piled up with the corn slaw and the honey mustard on the side."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "crispy",
+   "kid-friendly"
+  ],
+  "basedOn": "Gimme Delicious / BBC Good Food — Crispy parmesan chicken tenders with honey mustard"
+ },
+ {
+  "id": "am_meatball_subs",
+  "title": "Meatball Marinara Subs with Bubbling Mozzarella",
+  "icon": "🥖",
+  "cuisine": "American",
+  "category": "treat",
+  "protein": "beef",
+  "time": 30,
+  "servings": 2,
+  "equipment": [
+   "hob",
+   "oven",
+   "grill"
+  ],
+  "ingredients": [
+   {
+    "i": "beef_mince",
+    "q": 300,
+    "t": "300g"
+   },
+   {
+    "i": "panko",
+    "q": 20,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "milk",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "parmesan",
+    "q": 20,
+    "t": "20g, finely grated"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "a pinch",
+    "swap": "Leave the chilli out of the sauce and sprinkle it over one sub at the end."
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 400,
+    "t": "1 tin"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 3,
+    "t": "½ tsp"
+   },
+   {
+    "i": "baguette",
+    "q": 2,
+    "t": "2 part-baked baguettes"
+   },
+   {
+    "i": "mozzarella",
+    "q": 125,
+    "t": "1 ball, torn"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Roll the meatballs",
+    "text": "Heat the oven for the baguettes as the pack says. Soak the panko in the milk for 2 min, then mix with the mince, half the parmesan, 1 crushed garlic clove, half the herbs and a good pinch of salt and pepper. Roll into 10–12 walnut-sized balls with damp hands."
+   },
+   {
+    "title": "Brown the meatballs",
+    "text": "Heat the oil in a large deep frying pan over a medium-high heat. Fry the meatballs for 5 min, turning, until browned all over — they don't need to be cooked through yet."
+   },
+   {
+    "title": "Simmer in marinara",
+    "text": "Push the meatballs to the side, add the remaining garlic (thinly sliced) and the chilli and sizzle for 30 seconds. Pour in the tomatoes, purée, remaining herbs, honey and a pinch of salt. Simmer for 10–12 min, turning the meatballs, until the sauce is thick and the meatballs are cooked through."
+   },
+   {
+    "title": "Bake the bread",
+    "text": "While the sauce simmers, bake the baguettes for 8–10 min until crisp. Split them lengthways, keeping one side attached, and heat the grill to high."
+   },
+   {
+    "title": "Load and grill",
+    "text": "Sit the baguettes on a baking tray and fill with the meatballs and plenty of sauce. Top with the mozzarella and remaining parmesan and grill for 2–3 min until bubbling and golden in spots. Serve with any extra sauce for dunking."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "comfort",
+   "kid-friendly"
+  ],
+  "basedOn": "HelloFresh — Classic meatball subs; Kent Rollins — Meatball sub sandwiches"
+ },
+ {
+  "id": "am_chilli_cheese_fries",
+  "title": "Chilli Cheese Fries with Beef & Bean Chilli and Melted Cheddar",
+  "icon": "🍟",
+  "cuisine": "American",
+  "category": "treat",
+  "protein": "beef",
+  "time": 45,
+  "servings": 2,
+  "equipment": [
+   "oven",
+   "hob"
+  ],
+  "airFryer": "Air-fry the oiled fries at 200°C for 20–25 min, shaking every 5–6 min, until golden and crisp.",
+  "ingredients": [
+   {
+    "i": "potatoes",
+    "q": 600,
+    "t": "600g, cut into 1cm fries"
+   },
+   {
+    "i": "oil",
+    "q": 25,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "beef_mince",
+    "q": 250,
+    "t": "250g"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, finely chopped"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "cumin",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 3,
+    "t": "1½ tsp"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 200,
+    "t": "½ tin"
+   },
+   {
+    "i": "kidney_beans",
+    "q": 200,
+    "t": "½ tin, drained"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 0.5,
+    "t": "½ beef stock cube"
+   },
+   {
+    "i": "cheddar",
+    "q": 80,
+    "t": "80g, grated"
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced"
+   },
+   {
+    "i": "green_chillies",
+    "q": 10,
+    "t": "1, sliced",
+    "swap": "Scatter the fresh chilli over one portion only."
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 50,
+    "t": "3 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Bake the fries",
+    "text": "Heat the oven to 220°C (fan 200°C). Rinse the cut fries, pat them really dry and toss with 1½ tbsp of the oil and a pinch of salt. Spread over two lined trays and bake for 35–40 min, turning halfway, until golden and crisp."
+   },
+   {
+    "title": "Start the chilli",
+    "text": "Heat the remaining oil in a saucepan over a medium-high heat and brown the mince for 5 min, breaking it up. Add the onion and cook for 5 min until soft, then stir in the garlic, cumin, paprika and chilli flakes for 1 min until fragrant."
+   },
+   {
+    "title": "Simmer until thick",
+    "text": "Stir in the purée, chopped tomatoes, kidney beans and the half stock cube crumbled into 100ml hot water. Simmer for 15–20 min, stirring now and then, until rich and thick rather than runny, so it won't make the fries soggy. Season to taste."
+   },
+   {
+    "title": "Melt the cheese",
+    "text": "Pile the fries into an ovenproof dish, spoon over the chilli and scatter with the cheddar. Return to the oven for 3–4 min until the cheese has melted."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Scatter over the spring onions and fresh chilli and add a few spoonfuls of yogurt. Bring the dish to the table and dig in."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "comfort",
+   "spicy"
+  ],
+  "basedOn": "Tesco Real Food — Chilli cheese fries; Dinner at the Zoo — Chili cheese fries"
+ },
+ {
+  "id": "am_chicken_pot_pie",
+  "title": "Creamy Chicken & Leek Pot Pie with a Puff Pastry Lid",
+  "icon": "🥧",
+  "cuisine": "American",
+  "category": "treat",
+  "protein": "chicken",
+  "time": 55,
+  "servings": 2,
+  "equipment": [
+   "hob",
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 400,
+    "t": "400g, cut into bite-sized pieces"
+   },
+   {
+    "i": "butter",
+    "q": 20,
+    "t": "20g"
+   },
+   {
+    "i": "leeks",
+    "q": 200,
+    "t": "1 large, sliced"
+   },
+   {
+    "i": "carrots",
+    "q": 150,
+    "t": "2, diced"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, crushed"
+   },
+   {
+    "i": "plain_flour",
+    "q": 20,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 chicken stock cube"
+   },
+   {
+    "i": "milk",
+    "q": 100,
+    "t": "100ml"
+   },
+   {
+    "i": "double_cream",
+    "q": 75,
+    "t": "75ml"
+   },
+   {
+    "i": "wholegrain_mustard",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "frozen_peas",
+    "q": 80,
+    "t": "80g"
+   },
+   {
+    "i": "puff_pastry",
+    "q": 160,
+    "t": "½ sheet"
+   },
+   {
+    "i": "eggs",
+    "q": 1,
+    "t": "1, beaten"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Heat the oven to 200°C (fan 180°C). Cut the chicken into bite-sized pieces, slice the leek and dice the carrots. Dissolve the stock cube in 250ml boiling water and beat the egg."
+   },
+   {
+    "title": "Brown the chicken and veg",
+    "text": "Melt the butter in a large deep frying pan over a medium-high heat and cook the chicken for 5 min until golden in patches. Add the leek, carrots and garlic and cook for 5 min more until the leek is soft and glossy."
+   },
+   {
+    "title": "Make the creamy filling",
+    "text": "Sprinkle over the flour and stir for 1 min. Gradually stir in the stock, then the milk and cream, and simmer for 5 min until thick enough to coat the back of a spoon. Stir in the mustard, herbs and peas, season, then spoon into a 1-litre pie dish and leave to cool for 5 min."
+   },
+   {
+    "title": "Add the pastry lid",
+    "text": "Cut a piece of pastry a little larger than the top of the dish and lay it over the filling, pressing the edges onto the rim and trimming any excess. Cut a small hole in the middle for steam and brush all over with beaten egg."
+   },
+   {
+    "title": "Bake until golden",
+    "text": "Bake for 25–30 min until the pastry is puffed and deep golden and the filling is bubbling at the edges. Leave to stand for 5 min before cutting in."
+   }
+  ],
+  "tags": [
+   "comfort",
+   "freezable"
+  ],
+  "basedOn": "Delicious magazine / BBC Good Food — Chicken pot pie with puff pastry"
+ },
+ {
+  "id": "am_cheeseburger_quesadillas",
+  "title": "Smashed Cheeseburger Quesadillas with Burger Sauce Dip",
+  "icon": "🧀",
+  "cuisine": "American",
+  "category": "treat",
+  "protein": "beef",
+  "time": 25,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "beef_mince",
+    "q": 300,
+    "t": "300g"
+   },
+   {
+    "i": "onion",
+    "q": 0.5,
+    "t": "½, very finely diced"
+   },
+   {
+    "i": "wraps",
+    "q": 4,
+    "t": "4"
+   },
+   {
+    "i": "cheddar",
+    "q": 100,
+    "t": "100g, grated"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.25,
+    "t": "¼, thinly sliced"
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "½, juiced"
+   },
+   {
+    "i": "mayonnaise",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "ketchup",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "wholegrain_mustard",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "oil",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, leaves separated"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 100,
+    "t": "100g, halved"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Make pickles and burger sauce",
+    "text": "Toss the cucumber with half the lemon juice and a pinch of salt to quick-pickle. Mix the mayo, ketchup, mustard and a splash of the pickle juice into a burger sauce. Finely dice the onion and grate the cheddar."
+   },
+   {
+    "title": "Smash the mince onto the wraps",
+    "text": "Divide the mince into 4. Press each portion thinly and evenly over one half of a wrap, right to the edge, then season with salt and pepper and press some onion into the meat."
+   },
+   {
+    "title": "Cook meat-side down",
+    "text": "Heat the oil in a large frying pan over a medium-high heat. Lay a wrap in mince-side down and cook for 3–4 min until the meat is deeply browned and cooked through with no pink at the edges."
+   },
+   {
+    "title": "Fill and fold",
+    "text": "Flip the wrap, scatter a quarter of the cheddar over the meat and fold the empty half over the top, pressing down. Cook for 1–2 min each side until crisp and golden and the cheese has melted. Keep warm in a low oven while you cook the rest."
+   },
+   {
+    "title": "Serve",
+    "text": "Cut each quesadilla into wedges and serve with the burger sauce for dipping and the pickles. Toss the lettuce and tomatoes with the remaining lemon juice for a quick side salad."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "quick",
+   "kid-friendly"
+  ],
+  "basedOn": "Viral smash-burger tacos / cheeseburger quesadillas (TikTok, as adapted by Mob and Delish)"
+ },
+ {
+  "id": "am_bbq_bacon_burger",
+  "title": "BBQ Bacon Cheeseburgers with Crispy Panko Onion Rings",
+  "icon": "🍔",
+  "cuisine": "American",
+  "category": "treat",
+  "protein": "beef",
+  "time": 40,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "airFryer": "Spray the crumbed onion rings with oil and air-fry at 200°C for 8–10 min, turning halfway, until golden and crisp.",
+  "ingredients": [
+   {
+    "i": "beef_mince",
+    "q": 400,
+    "t": "400g"
+   },
+   {
+    "i": "bacon",
+    "q": 100,
+    "t": "4 rashers"
+   },
+   {
+    "i": "cheddar",
+    "q": 60,
+    "t": "60g, sliced"
+   },
+   {
+    "i": "bbq_sauce",
+    "q": 45,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "burger_buns",
+    "q": 2,
+    "t": "2 brioche buns"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1 large, cut into 1cm rings"
+   },
+   {
+    "i": "plain_flour",
+    "q": 40,
+    "t": "4 tbsp"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "eggs",
+    "q": 1,
+    "t": "1, beaten"
+   },
+   {
+    "i": "panko",
+    "q": 50,
+    "t": "50g"
+   },
+   {
+    "i": "oil",
+    "q": 60,
+    "t": "60ml, for shallow frying"
+   },
+   {
+    "i": "little_gem",
+    "q": 0.5,
+    "t": "½, leaves separated"
+   },
+   {
+    "i": "mayonnaise",
+    "q": 20,
+    "t": "1½ tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Shape the patties",
+    "text": "Shape the mince into 2 patties about 2cm wider than the buns, then press a dimple into the middle of each with your thumb so they stay flat as they cook. Season well on both sides. Separate the onion slices into rings."
+   },
+   {
+    "title": "Crumb the onion rings",
+    "text": "Set out three bowls: the flour mixed with the paprika and a pinch of salt, the beaten egg, and the panko. Dip each ring into flour, egg, then panko, pressing to coat."
+   },
+   {
+    "title": "Fry the onion rings",
+    "text": "Heat the oil in a large frying pan over a medium-high heat. Fry the rings in batches for 1–2 min each side until golden and crunchy, then drain on kitchen paper and sprinkle with salt. Carefully pour off most of the oil."
+   },
+   {
+    "title": "Cook the bacon and burgers",
+    "text": "Fry the bacon in the same pan for 3–4 min each side until crisp, then set aside. Cook the patties in the bacon fat for 4–5 min each side until well browned and cooked through with no pink. Brush with BBQ sauce for the last minute, top with cheddar and cover with a lid until melted."
+   },
+   {
+    "title": "Build the burgers",
+    "text": "Toast the buns, spread with mayo and add the lettuce. Stack on the cheesy patties, bacon, a little more BBQ sauce and a couple of onion rings, then serve the rest of the rings on the side."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "crispy"
+  ],
+  "basedOn": "RecipeTin Eats — Big, juicy hamburgers; Carl's Jr.-style Western bacon BBQ cheeseburger"
+ },
+ {
+  "id": "am_buffalo_cauliflower",
+  "title": "Crispy Buffalo Cauliflower Bites with Feta Ranch & Skinny Fries",
+  "icon": "🥦",
+  "cuisine": "American",
+  "category": "treat",
+  "protein": "veggie",
+  "time": 45,
+  "servings": 2,
+  "equipment": [
+   "oven",
+   "hob"
+  ],
+  "airFryer": "Air-fry the crumbed cauliflower at 200°C for 15–18 min, shaking halfway, until golden and tender; do the fries first at 200°C for 18–20 min and keep warm.",
+  "ingredients": [
+   {
+    "i": "cauliflower",
+    "q": 1,
+    "t": "1 head, in bite-sized florets"
+   },
+   {
+    "i": "plain_flour",
+    "q": 70,
+    "t": "70g"
+   },
+   {
+    "i": "cornflour",
+    "q": 20,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "milk",
+    "q": 120,
+    "t": "120ml"
+   },
+   {
+    "i": "panko",
+    "q": 50,
+    "t": "50g"
+   },
+   {
+    "i": "potatoes",
+    "q": 500,
+    "t": "500g, cut into skinny fries"
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "hot_sauce",
+    "q": 50,
+    "t": "3 tbsp",
+    "swap": "Keep a few bites back before saucing and toss them in a little honey instead for a milder plate."
+   },
+   {
+    "i": "butter",
+    "q": 25,
+    "t": "25g"
+   },
+   {
+    "i": "honey",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 100,
+    "t": "100g"
+   },
+   {
+    "i": "feta",
+    "q": 40,
+    "t": "40g, crumbled"
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "½, juiced"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Heat the oven to 230°C (fan 210°C) and line two baking trays. Cut the potatoes into skinny fries, pat dry and toss with 1 tbsp oil and a pinch of salt on one tray. Cut the cauliflower into bite-sized florets."
+   },
+   {
+    "title": "Batter and crumb the cauliflower",
+    "text": "Whisk the flour, cornflour, paprika and ½ tsp salt with the milk to a thick batter, about the texture of double cream. Toss the florets in the batter, let the excess drip off, then roll in the panko. Spread over the second tray and drizzle with the remaining oil."
+   },
+   {
+    "title": "Roast",
+    "text": "Roast both trays for 25–30 min, turning everything halfway, until the cauliflower is golden and a knife slides in easily, and the fries are crisp. Don't crowd the trays, or the coating will steam instead of crisping."
+   },
+   {
+    "title": "Make the sauce and dip",
+    "text": "Melt the butter with the hot sauce and honey in a small pan over a low heat, whisking until glossy. Mash the feta into the yogurt with the lemon juice, herbs and black pepper for the ranch."
+   },
+   {
+    "title": "Toss and serve",
+    "text": "Tip the hot cauliflower into a bowl, drizzle over the buffalo sauce and toss gently so the coating stays crisp. Scatter with spring onions and serve with the fries and feta ranch."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "spicy",
+   "crispy"
+  ],
+  "basedOn": "Minimalist Baker / BBC Good Food — Buffalo cauliflower wings"
+ },
+ {
+  "id": "am_southern_fried_chicken_gravy",
+  "title": "Southern Fried Chicken with Buttery Mash, Gravy & Sweetcorn",
+  "icon": "🍗",
+  "cuisine": "American",
+  "category": "treat",
+  "protein": "chicken",
+  "time": 50,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "airFryer": "Spray the coated chicken with oil and air-fry at 200°C for 18–20 min, turning halfway, until crisp and the juices run clear.",
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 500,
+    "t": "4 thighs (500g)"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 100,
+    "t": "100g"
+   },
+   {
+    "i": "milk",
+    "q": 110,
+    "t": "110ml"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, grated"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "plain_flour",
+    "q": 80,
+    "t": "80g"
+   },
+   {
+    "i": "cornflour",
+    "q": 20,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "oil",
+    "q": 60,
+    "t": "60ml, for shallow frying"
+   },
+   {
+    "i": "potatoes",
+    "q": 600,
+    "t": "600g, peeled and chunked"
+   },
+   {
+    "i": "butter",
+    "q": 30,
+    "t": "30g"
+   },
+   {
+    "i": "gravy",
+    "q": 25,
+    "t": "25g gravy granules"
+   },
+   {
+    "i": "sweetcorn",
+    "q": 150,
+    "t": "150g"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Marinate the chicken",
+    "text": "Whisk the yogurt with 50ml of the milk, the garlic, 1 tsp paprika and a pinch of salt. Add the chicken thighs, turn to coat and leave for at least 15 min while you get the mash going."
+   },
+   {
+    "title": "Make the mash",
+    "text": "Put the potatoes in a saucepan of salted water, bring to the boil and simmer for 15–18 min until a knife slides through easily. Drain, return to the pan and mash with 20g of the butter and the remaining milk, warmed, until smooth. Cover to keep warm."
+   },
+   {
+    "title": "Coat the chicken",
+    "text": "Mix the flour, cornflour, remaining paprika, herbs, 1 tsp salt and lots of black pepper in a shallow dish. Drizzle in a spoonful of marinade and rub it in to make little clumps, then press each thigh firmly into the coating on both sides."
+   },
+   {
+    "title": "Fry until crisp",
+    "text": "Heat the oil in a large frying pan over a medium-high heat. Fry the chicken for 6–7 min each side until deep golden and crunchy and the juices run clear when pierced. Drain on kitchen paper."
+   },
+   {
+    "title": "Gravy, corn and serve",
+    "text": "Make the gravy with 250ml boiling water, stirring until thick and smooth. Cook the sweetcorn in boiling water for 3 min, drain and toss with the last of the butter. Plate up the chicken with a pile of mash, gravy poured over and the buttery corn."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "comfort",
+   "crispy"
+  ],
+  "basedOn": "Hairy Bikers / BBC Good Food — Southern fried chicken with mash and gravy (KFC-style fakeaway)"
+ },
+ {
+  "id": "am_blackened_salmon_tacos",
+  "title": "Blackened Cajun Salmon Tacos with Charred Corn & Lime Slaw",
+  "icon": "🌮",
+  "cuisine": "American",
+  "category": "everyday",
+  "protein": "fish",
+  "time": 25,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "airFryer": "Rub the salmon with oil and spice and air-fry skin-side down at 200°C for 8–10 min until it flakes easily.",
+  "ingredients": [
+   {
+    "i": "salmon",
+    "q": 2,
+    "t": "2 fillets"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 3,
+    "t": "1½ tsp"
+   },
+   {
+    "i": "cumin",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "sweetcorn",
+    "q": 100,
+    "t": "100g"
+   },
+   {
+    "i": "red_onion",
+    "q": 0.5,
+    "t": "½, thinly sliced"
+   },
+   {
+    "i": "lime",
+    "q": 1,
+    "t": "1, juiced"
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, shredded"
+   },
+   {
+    "i": "carrots",
+    "q": 80,
+    "t": "1 small, grated"
+   },
+   {
+    "i": "avocado",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 60,
+    "t": "4 tbsp"
+   },
+   {
+    "i": "mayonnaise",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "hot_sauce",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, chopped",
+    "swap": "Keep the coriander in a bowl on the table so it's only added to one person's tacos."
+   },
+   {
+    "i": "wraps",
+    "q": 4,
+    "t": "4"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Toss the sliced red onion with a third of the lime juice and a pinch of salt and set aside to quick-pickle. Shred the lettuce, grate the carrot and chop the coriander. Mix the paprika, cumin, herbs, chilli flakes and ½ tsp salt for the blackening spice."
+   },
+   {
+    "title": "Spice the salmon",
+    "text": "Pat the salmon dry, rub with the oil, then press the spice mix all over the flesh side. Leave it on a plate while you char the corn so the spices stick."
+   },
+   {
+    "title": "Char the corn",
+    "text": "Heat a large frying pan over a high heat and dry-fry the sweetcorn for 4–5 min, shaking, until charred in spots. Tip into a bowl."
+   },
+   {
+    "title": "Cook the salmon",
+    "text": "Put the pan back over a medium-high heat and cook the salmon skin-side down for 4 min until the skin is crisp, then flip and cook for 2–3 min until the spice crust is dark and the fish just flakes. Lift off the skin and break into large chunks."
+   },
+   {
+    "title": "Assemble the tacos",
+    "text": "Toss the lettuce and carrot with the corn and remaining lime juice. Mix the yogurt, mayo and hot sauce. Warm the wraps in the dry pan for 20 seconds each side, then fill with slaw, salmon, avocado, pickled onion, a drizzle of sauce and coriander."
+   }
+  ],
+  "tags": [
+   "quick",
+   "light"
+  ],
+  "basedOn": "Hey Grill Hey / A Spicy Perspective — Fish tacos with creamy slaw; Tom Kerridge — Cajun salmon"
+ },
+ {
+  "id": "am_bbq_chicken_traybake",
+  "title": "Sticky BBQ Chicken Traybake with Sweet Potato, Corn & Peppers",
+  "icon": "🍗",
+  "cuisine": "American",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 45,
+  "servings": 2,
+  "equipment": [
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 500,
+    "t": "500g"
+   },
+   {
+    "i": "bbq_sauce",
+    "q": 60,
+    "t": "4 tbsp"
+   },
+   {
+    "i": "sweet_potato",
+    "q": 400,
+    "t": "400g, cut into 2cm chunks"
+   },
+   {
+    "i": "peppers",
+    "q": 2,
+    "t": "2, cut into strips"
+   },
+   {
+    "i": "red_onion",
+    "q": 1,
+    "t": "1, cut into wedges"
+   },
+   {
+    "i": "sweetcorn",
+    "q": 100,
+    "t": "100g"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 60,
+    "t": "4 tbsp"
+   },
+   {
+    "i": "lime",
+    "q": 0.5,
+    "t": "½, juiced"
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Heat the oven to 220°C (fan 200°C). Cut the sweet potato into 2cm chunks, the peppers into thick strips and the red onion into wedges."
+   },
+   {
+    "title": "Roast the veg",
+    "text": "Toss the veg with the oil, paprika and a good pinch of salt on your largest roasting tray, spreading it out so it roasts rather than steams. Roast for 15 min."
+   },
+   {
+    "title": "Glaze the chicken",
+    "text": "Meanwhile, toss the chicken thighs with two-thirds of the BBQ sauce and a pinch of salt and pepper. Leave to sit while the veg gets a head start."
+   },
+   {
+    "title": "Add the chicken and corn",
+    "text": "Push the veg to the edges of the tray and nestle the chicken in the middle, then scatter the sweetcorn over the veg. Roast for 20–25 min, brushing the chicken with the remaining BBQ sauce for the last 5 min, until sticky, charred at the edges and cooked through."
+   },
+   {
+    "title": "Serve",
+    "text": "Stir the lime juice into the yogurt with a pinch of salt. Spoon the traybake onto plates, drizzle with the lime yogurt and scatter with spring onions."
+   }
+  ],
+  "tags": [
+   "traybake"
+  ],
+  "basedOn": "BBC Good Food — BBQ chicken traybake; Pinch of Nom — BBQ chicken traybake"
+ },
+ {
+  "id": "am_jambalaya",
+  "title": "Chicken & Smoky Sausage Jambalaya",
+  "icon": "🍲",
+  "cuisine": "American",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 40,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 300,
+    "t": "300g, cut into bite-sized pieces"
+   },
+   {
+    "i": "sausages",
+    "q": 3,
+    "t": "3, cut into chunks"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, diced"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, diced"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "½ tsp",
+    "swap": "Leave out the chilli flakes and pass hot sauce at the table instead."
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 400,
+    "t": "1 tin"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 chicken stock cube"
+   },
+   {
+    "i": "worcestershire",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "hot_sauce",
+    "q": 5,
+    "t": "a few dashes"
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Dice the onion and pepper, crush the garlic, and cut the chicken and sausages into bite-sized chunks. Dissolve the stock cube in 350ml boiling water. Rinse the rice in a sieve until the water runs clear."
+   },
+   {
+    "title": "Brown the meats",
+    "text": "Heat the oil in a large deep pan or casserole with a lid over a medium-high heat. Brown the sausage chunks for 4 min, then add the chicken and cook for 4 min more until golden all over."
+   },
+   {
+    "title": "Soften the veg",
+    "text": "Add the onion and pepper and cook for 5 min until softened. Stir in the garlic, paprika, herbs and chilli flakes for 1 min until fragrant."
+   },
+   {
+    "title": "Simmer the rice",
+    "text": "Stir in the rice to coat it in the spices, then add the tomatoes, stock and Worcestershire. Bring to the boil, cover and turn the heat down to its lowest setting. Cook for 18–20 min, stirring once halfway so the bottom doesn't catch, until the rice is tender and most of the liquid has been absorbed."
+   },
+   {
+    "title": "Rest and finish",
+    "text": "Take off the heat and leave covered for 5 min. Fluff up with a fork, season, add a few dashes of hot sauce and scatter with spring onions."
+   }
+  ],
+  "tags": [
+   "one-pot",
+   "spicy",
+   "freezable"
+  ],
+  "basedOn": "RecipeTin Eats — Jambalaya"
+ },
+ {
+  "id": "am_cajun_chicken_dirty_rice",
+  "title": "Blackened Cajun Chicken with Dirty Rice",
+  "icon": "🍚",
+  "cuisine": "American",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 30,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 350,
+    "t": "2 breasts (350g)"
+   },
+   {
+    "i": "beef_mince",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, finely diced"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, finely diced"
+   },
+   {
+    "i": "spring_onions",
+    "q": 3,
+    "t": "3, whites and greens sliced separately"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "cumin",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 chicken stock cube"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "butter",
+    "q": 10,
+    "t": "a knob"
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "½, cut into wedges"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep and spice",
+    "text": "Rinse the rice and dissolve the stock cube in 350ml boiling water. Mix the paprika, cumin, herbs, chilli flakes and 1 tsp salt into a Cajun spice. Slice each chicken breast in half horizontally into two thin fillets, then rub with the oil and half the spice."
+   },
+   {
+    "title": "Start the dirty rice",
+    "text": "Put the mince in a saucepan with a lid over a high heat and fry for 4 min, breaking it up, until browned with crispy bits. Add the onion, pepper and spring onion whites and cook for 4 min until softened, then stir in the garlic and remaining spice for 1 min."
+   },
+   {
+    "title": "Simmer the rice",
+    "text": "Stir in the rice, pour in the stock and bring to the boil. Cover, turn the heat to low and cook for 12 min until the rice is tender and the liquid absorbed, then leave to steam off the heat, lid on, for 5 min."
+   },
+   {
+    "title": "Blacken the chicken",
+    "text": "Meanwhile, heat a frying pan over a medium-high heat and cook the chicken for 4–5 min each side until the spice crust is dark and the chicken is cooked through. Add the butter for the last minute and spoon it over, then rest for 2 min and slice."
+   },
+   {
+    "title": "Serve",
+    "text": "Fork the spring onion greens through the rice and spoon onto plates. Top with the sliced chicken and any buttery pan juices, with lemon wedges for squeezing."
+   }
+  ],
+  "tags": [
+   "quick",
+   "spicy"
+  ],
+  "basedOn": "The Chunky Chef — One-pot chicken dirty rice; HelloFresh UK — Cajun chicken with dirty rice"
+ },
+ {
+  "id": "am_buffalo_chicken_wraps",
+  "title": "Buffalo Chicken Wraps with Crunchy Feta Ranch Slaw",
+  "icon": "🌯",
+  "cuisine": "American",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 25,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 300,
+    "t": "2 small breasts (300g), cut into thin strips"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "hot_sauce",
+    "q": 30,
+    "t": "2 tbsp",
+    "swap": "Take one portion of chicken out of the pan before adding the buffalo sauce."
+   },
+   {
+    "i": "butter",
+    "q": 10,
+    "t": "a knob"
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, shredded"
+   },
+   {
+    "i": "carrots",
+    "q": 80,
+    "t": "1 small, grated"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.5,
+    "t": "½, diced"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 100,
+    "t": "100g, halved"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 60,
+    "t": "4 tbsp"
+   },
+   {
+    "i": "mayonnaise",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "feta",
+    "q": 30,
+    "t": "30g, crumbled"
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "½, juiced"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "cheddar",
+    "q": 40,
+    "t": "40g, grated"
+   },
+   {
+    "i": "wraps",
+    "q": 4,
+    "t": "4"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Cut the chicken into thin strips and toss with the paprika and a pinch of salt. Shred the lettuce, grate the carrot, dice the cucumber and halve the tomatoes."
+   },
+   {
+    "title": "Make the ranch slaw",
+    "text": "Mix the yogurt, mayo, crumbled feta, lemon juice, herbs and plenty of black pepper. Toss half of this through the lettuce and carrot to make a crunchy slaw, and keep the rest for drizzling."
+   },
+   {
+    "title": "Cook the chicken",
+    "text": "Heat the oil in a large frying pan over a high heat and fry the chicken for 5–6 min, turning, until golden and cooked through. Spread the strips out so they brown rather than stew."
+   },
+   {
+    "title": "Make it buffalo",
+    "text": "Turn the heat down to low and add the butter, hot sauce and honey. Toss for 1 min until the sauce turns glossy and clings to every strip."
+   },
+   {
+    "title": "Roll and toast",
+    "text": "Warm the wraps, then fill with slaw, buffalo chicken, cucumber, tomatoes, cheddar and a drizzle of ranch. Roll up tightly, then toast seam-side down in the wiped-out pan for 1 min to seal before cutting in half."
+   }
+  ],
+  "tags": [
+   "quick",
+   "spicy"
+  ],
+  "basedOn": "Pinch of Nom / BBC Good Food — Buffalo chicken wraps"
+ },
+ {
+  "id": "am_chicken_caesar_wraps",
+  "title": "Chicken Caesar Wraps with Crispy Bacon & Parmesan Crumbs",
+  "icon": "🌯",
+  "cuisine": "American",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 25,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 300,
+    "t": "2 small breasts (300g)"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, grated"
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1, zested and juiced"
+   },
+   {
+    "i": "bacon",
+    "q": 80,
+    "t": "3 rashers"
+   },
+   {
+    "i": "panko",
+    "q": 20,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "mayonnaise",
+    "q": 40,
+    "t": "2½ tbsp"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "parmesan",
+    "q": 30,
+    "t": "30g, finely grated"
+   },
+   {
+    "i": "worcestershire",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "wholegrain_mustard",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "little_gem",
+    "q": 2,
+    "t": "2, shredded"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 100,
+    "t": "100g, halved"
+   },
+   {
+    "i": "wraps",
+    "q": 4,
+    "t": "4"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the chicken",
+    "text": "Slice each chicken breast in half horizontally into two thin fillets. Rub with the oil, 1 grated garlic clove, the lemon zest and some salt and pepper. Shred the little gems and halve the tomatoes."
+   },
+   {
+    "title": "Whisk the Caesar dressing",
+    "text": "Mix the mayo, yogurt, the remaining garlic, half the parmesan, the lemon juice, Worcestershire and mustard with lots of black pepper. Loosen with a splash of water until it will drizzle off a spoon."
+   },
+   {
+    "title": "Crisp the bacon and crumbs",
+    "text": "Fry the bacon in a dry frying pan over a medium-high heat for 5 min until crisp, then chop. Toss the panko in the bacon fat left in the pan with a pinch of parmesan for 2 min until golden, then tip out."
+   },
+   {
+    "title": "Cook the chicken",
+    "text": "Put the pan back over a medium-high heat and cook the chicken for 4–5 min each side until golden and cooked through. Rest for 2 min, then slice."
+   },
+   {
+    "title": "Wrap it up",
+    "text": "Toss the lettuce with most of the dressing. Warm the wraps, then layer on the lettuce, chicken, bacon, tomatoes, crispy crumbs and remaining parmesan, drizzle with the last of the dressing, roll up tightly and halve."
+   }
+  ],
+  "tags": [
+   "quick"
+  ],
+  "basedOn": "BBC Good Food — Chicken Caesar wraps"
+ },
+ {
+  "id": "am_chicken_cobb_salad",
+  "title": "Grilled Chicken Cobb Salad with Bacon, Egg, Avocado & Feta Ranch",
+  "icon": "🥗",
+  "cuisine": "American",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 25,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 300,
+    "t": "2 small breasts (300g)"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "eggs",
+    "q": 2,
+    "t": "2"
+   },
+   {
+    "i": "bacon",
+    "q": 80,
+    "t": "3 rashers"
+   },
+   {
+    "i": "sweetcorn",
+    "q": 80,
+    "t": "80g"
+   },
+   {
+    "i": "little_gem",
+    "q": 2,
+    "t": "2, chopped"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 150,
+    "t": "150g, halved"
+   },
+   {
+    "i": "avocado",
+    "q": 1,
+    "t": "1, diced"
+   },
+   {
+    "i": "red_onion",
+    "q": 0.25,
+    "t": "¼, finely sliced"
+   },
+   {
+    "i": "feta",
+    "q": 50,
+    "t": "50g, crumbled",
+    "swap": "Crumble the feta over one half of the platter only."
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 60,
+    "t": "4 tbsp"
+   },
+   {
+    "i": "mayonnaise",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1, juiced"
+   },
+   {
+    "i": "wholegrain_mustard",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Boil the eggs and make the dressing",
+    "text": "Boil the kettle and lower the eggs into a small pan of boiling water for 8 min, then move to a bowl of cold water. Whisk the yogurt, mayo, three-quarters of the lemon juice, the mustard and honey with a pinch of salt for the dressing. Rub the chicken with the oil, paprika, salt and pepper."
+   },
+   {
+    "title": "Crisp the bacon",
+    "text": "Fry the bacon in a griddle or frying pan over a medium-high heat for 5 min until crisp, then drain on kitchen paper and chop into bits. Keep the bacon fat in the pan for cooking the chicken."
+   },
+   {
+    "title": "Grill the chicken and corn",
+    "text": "Cook the chicken in the same pan for 5–6 min each side until charred and cooked through, then rest and slice. Toss the sweetcorn into the hot pan for 3 min until it catches and chars in spots."
+   },
+   {
+    "title": "Prep the toppings",
+    "text": "Peel and quarter the eggs. Dice the avocado and toss with the remaining lemon juice so it doesn't brown. Halve the tomatoes and slice the red onion."
+   },
+   {
+    "title": "Build the Cobb",
+    "text": "Spread the chopped little gem over a large platter or two plates. Arrange the chicken, bacon, egg, avocado, tomatoes, corn, onion and feta in neat rows over the top, then drizzle with the dressing just before eating."
+   }
+  ],
+  "tags": [
+   "light",
+   "quick"
+  ],
+  "basedOn": "Natasha's Kitchen / Delicious magazine — Classic Cobb salad with grilled chicken"
+ },
+ {
+  "id": "am_chicken_sweetcorn_chowder",
+  "title": "Chicken, Bacon & Sweetcorn Chowder with Crusty Bread",
+  "icon": "🍲",
+  "cuisine": "American",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 30,
+  "servings": 2,
+  "equipment": [
+   "hob",
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 250,
+    "t": "1 large breast (250g), diced"
+   },
+   {
+    "i": "bacon",
+    "q": 80,
+    "t": "3 rashers, chopped"
+   },
+   {
+    "i": "butter",
+    "q": 15,
+    "t": "15g"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, diced"
+   },
+   {
+    "i": "potatoes",
+    "q": 300,
+    "t": "300g, in 1cm cubes"
+   },
+   {
+    "i": "plain_flour",
+    "q": 15,
+    "t": "1½ tbsp"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 chicken stock cube"
+   },
+   {
+    "i": "milk",
+    "q": 300,
+    "t": "300ml"
+   },
+   {
+    "i": "sweetcorn",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced"
+   },
+   {
+    "i": "baguette",
+    "q": 1,
+    "t": "1 part-baked baguette"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Heat the oven for the baguette as the pack says. Dice the onion, cut the potatoes into 1cm cubes, chop the bacon and dice the chicken into 2cm pieces. Dissolve the stock cube in 400ml boiling water."
+   },
+   {
+    "title": "Fry the bacon and onion",
+    "text": "Melt the butter in a large saucepan over a medium heat and fry the bacon for 3–4 min until the fat runs and it starts to crisp. Add the onion and cook for 5 min until soft."
+   },
+   {
+    "title": "Build the soup base",
+    "text": "Stir in the flour, paprika and herbs and cook for 1 min. Gradually stir in the stock, then the milk, so it stays smooth, and add the potatoes. Simmer gently for 10 min, stirring now and then. Put the baguette in the oven."
+   },
+   {
+    "title": "Add the chicken and corn",
+    "text": "Add the chicken and sweetcorn and simmer for 8 min until the chicken is cooked through and the potatoes are tender. Squash a few potato cubes against the side of the pan to thicken the chowder, then season well."
+   },
+   {
+    "title": "Serve",
+    "text": "Ladle into bowls, scatter with spring onions and a grind of black pepper, and serve with the warm crusty bread for dunking. Any leftovers thicken overnight, so loosen with a splash of milk when reheating."
+   }
+  ],
+  "tags": [
+   "comfort",
+   "one-pot",
+   "freezable"
+  ],
+  "basedOn": "Woman & Home / BBC Good Food — Chicken and sweetcorn chowder"
+ },
+ {
+  "id": "am_bbq_glazed_salmon",
+  "title": "Sticky BBQ Salmon with Sweet Potato Mash & Charred Corn Salsa",
+  "icon": "🐟",
+  "cuisine": "American",
+  "category": "everyday",
+  "protein": "fish",
+  "time": 25,
+  "servings": 2,
+  "equipment": [
+   "hob",
+   "oven"
+  ],
+  "airFryer": "Brush the salmon with half the glaze and air-fry skin-side down at 190°C for 8–10 min, brushing with more glaze halfway.",
+  "ingredients": [
+   {
+    "i": "salmon",
+    "q": 2,
+    "t": "2 fillets"
+   },
+   {
+    "i": "bbq_sauce",
+    "q": 45,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "sweet_potato",
+    "q": 500,
+    "t": "500g, peeled and chunked"
+   },
+   {
+    "i": "butter",
+    "q": 10,
+    "t": "a knob"
+   },
+   {
+    "i": "sweetcorn",
+    "q": 120,
+    "t": "120g"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 100,
+    "t": "100g, chopped"
+   },
+   {
+    "i": "red_onion",
+    "q": 0.25,
+    "t": "¼, finely chopped"
+   },
+   {
+    "i": "lime",
+    "q": 1,
+    "t": "1, juiced"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, chopped",
+    "swap": "Stir the coriander into half the salsa only."
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Heat the oven to 200°C (fan 180°C) and line a small baking tray. Peel the sweet potato and cut into 2cm chunks. Chop the tomatoes, red onion and coriander for the salsa."
+   },
+   {
+    "title": "Boil and mash the sweet potato",
+    "text": "Cook the sweet potato in a pan of salted boiling water for 12–15 min until very tender. Drain well, then mash with the butter, a pinch of salt and plenty of black pepper."
+   },
+   {
+    "title": "Glaze and bake the salmon",
+    "text": "Mix the BBQ sauce, honey and soy. Sit the salmon skin-side down on the tray and spoon over half the glaze. Bake for 12–14 min, brushing with the rest of the glaze halfway, until sticky and the fish flakes easily."
+   },
+   {
+    "title": "Make the corn salsa",
+    "text": "Dry-fry the sweetcorn in a frying pan over a high heat for 4–5 min until charred in spots. Tip into a bowl with the tomatoes, red onion, coriander, lime juice and a pinch of salt and stir."
+   },
+   {
+    "title": "Serve",
+    "text": "Spoon the mash onto plates, sit the salmon on top and pile the corn salsa alongside. Squeeze over any leftover lime juice from the salsa bowl."
+   }
+  ],
+  "tags": [
+   "quick",
+   "light"
+  ],
+  "basedOn": "Delicious magazine / BBC Good Food — BBQ-glazed salmon with sweetcorn salsa"
+ },
+ {
+  "id": "am_honey_mustard_chicken_burgers",
+  "title": "Honey Mustard Grilled Chicken Burgers with Smashed Avocado",
+  "icon": "🍔",
+  "cuisine": "American",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 25,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 300,
+    "t": "2 small breasts (300g)"
+   },
+   {
+    "i": "honey",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "wholegrain_mustard",
+    "q": 20,
+    "t": "4 tsp"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, grated"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "avocado",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1, juiced"
+   },
+   {
+    "i": "burger_buns",
+    "q": 2,
+    "t": "2 brioche buns"
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, leaves separated"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 150,
+    "t": "150g, halved"
+   },
+   {
+    "i": "red_onion",
+    "q": 0.25,
+    "t": "¼, thinly sliced"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.5,
+    "t": "½, sliced"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 40,
+    "t": "2½ tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Marinate the chicken",
+    "text": "Lay the chicken between baking paper and bash to an even 1.5cm thickness. Mix the honey, 3 tsp of the mustard, the garlic, paprika and oil with a pinch of salt, keep 1 tbsp back for glazing, and coat the chicken in the rest."
+   },
+   {
+    "title": "Smash the avocado",
+    "text": "Mash the avocado with a third of the lemon juice and a pinch of salt until chunky. Stir the remaining mustard into the yogurt for a quick burger sauce."
+   },
+   {
+    "title": "Grill the chicken",
+    "text": "Heat a griddle or frying pan over a medium-high heat and cook the chicken for 4–5 min each side until charred and cooked through. Brush with the reserved glaze for the last minute so it turns sticky."
+   },
+   {
+    "title": "Make the side salad",
+    "text": "Toss the cucumber, half the tomatoes and a few lettuce leaves with the remaining lemon juice and a pinch of salt. Keep it in the fridge until you're ready to eat so it stays crunchy."
+   },
+   {
+    "title": "Build the burgers",
+    "text": "Toast the halved buns cut-side down in the pan. Spread the bases with smashed avocado, then add lettuce, chicken, the rest of the tomatoes, red onion and a dollop of mustard yogurt. Serve with the salad on the side."
+   }
+  ],
+  "tags": [
+   "quick",
+   "light"
+  ],
+  "basedOn": "Pinch of Nom / Natasha's Kitchen — Honey mustard grilled chicken burgers"
+ },
+ {
+  "id": "am_cajun_prawn_pasta",
+  "title": "Creamy Cajun Prawn Pasta with Peppers & Spinach",
+  "icon": "🍤",
+  "cuisine": "American",
+  "category": "everyday",
+  "protein": "prawns",
+  "time": 20,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "prawns",
+    "q": 170,
+    "t": "170g, defrosted"
+   },
+   {
+    "i": "pasta",
+    "q": 180,
+    "t": "180g penne"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "spring_onions",
+    "q": 3,
+    "t": "3, whites and greens sliced separately"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, sliced"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 3,
+    "t": "1½ tsp"
+   },
+   {
+    "i": "cumin",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "½ tsp",
+    "swap": "Leave out the chilli flakes and sprinkle them over one bowl at the end."
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 200,
+    "t": "½ tin"
+   },
+   {
+    "i": "double_cream",
+    "q": 75,
+    "t": "75ml"
+   },
+   {
+    "i": "spinach",
+    "q": 80,
+    "t": "80g"
+   },
+   {
+    "i": "parmesan",
+    "q": 15,
+    "t": "15g, grated"
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "½, juiced"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Boil the kettle. If your prawns are frozen, sit them in a bowl of cold water for 10 min to defrost, then pat dry. Slice the pepper, spring onions and garlic, and mix the paprika, cumin, herbs, chilli and a pinch of salt for the Cajun spice."
+   },
+   {
+    "title": "Cook the pasta",
+    "text": "Cook the pasta in a large pan of salted boiling water for 10–12 min until just tender. Scoop out a mugful of the water before draining."
+   },
+   {
+    "title": "Sear the prawns",
+    "text": "Meanwhile, heat the oil in a large frying pan over a high heat. Toss the prawns with half the spice and fry for 2 min until just pink all over, then tip onto a plate."
+   },
+   {
+    "title": "Make the sauce",
+    "text": "Lower the heat to medium and fry the pepper and spring onion whites for 4 min until softened. Add the garlic and remaining spice for 1 min, then the tomatoes and cream, and bubble for 3–4 min until slightly thickened. Stir in the spinach until it wilts."
+   },
+   {
+    "title": "Toss together",
+    "text": "Add the drained pasta, prawns, lemon juice and a splash of pasta water and toss until silky and coated. Serve topped with parmesan and the spring onion greens."
+   }
+  ],
+  "tags": [
+   "quick",
+   "spicy"
+  ],
+  "basedOn": "Gimme Delicious / Delicious magazine — Creamy Cajun shrimp pasta"
+ },
+ {
+  "id": "am_bbq_pork_steaks",
+  "title": "BBQ-Rubbed Pork Steaks with Mustard Potato Salad & Buttered Corn",
+  "icon": "🥩",
+  "cuisine": "American",
+  "category": "everyday",
+  "protein": "pork",
+  "time": 30,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "pork_shoulder",
+    "q": 400,
+    "t": "2 large steaks (about 400g)"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 3,
+    "t": "1½ tsp"
+   },
+   {
+    "i": "cumin",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "bbq_sauce",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "potatoes",
+    "q": 500,
+    "t": "500g, in 3cm chunks"
+   },
+   {
+    "i": "spring_onions",
+    "q": 3,
+    "t": "3, sliced"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 50,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "mayonnaise",
+    "q": 20,
+    "t": "1½ tbsp"
+   },
+   {
+    "i": "wholegrain_mustard",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "½, juiced"
+   },
+   {
+    "i": "sweetcorn",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "butter",
+    "q": 10,
+    "t": "a knob"
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, leaves separated"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Boil the potatoes",
+    "text": "Put the potato chunks in a pan of cold salted water, bring to the boil and simmer for 12–15 min until tender. Drain and spread out on a plate to cool slightly and steam dry."
+   },
+   {
+    "title": "Rub the pork",
+    "text": "Mix the paprika, cumin, 1 tsp salt and some pepper. Pat the pork steaks dry, rub with the oil, then the spice mix. Stir the BBQ sauce and honey together for the glaze."
+   },
+   {
+    "title": "Cook the pork",
+    "text": "Heat a griddle or large frying pan over a medium-high heat and cook the steaks for 4–5 min each side until charred and cooked through. Brush with the BBQ glaze for the last 2 min, flipping a couple of times so it caramelises, then rest for 3 min."
+   },
+   {
+    "title": "Cook the corn",
+    "text": "Cook the sweetcorn in a small pan of boiling water for 3 min, drain and toss with the butter and a pinch of salt. Keep it warm in the pan with the lid on."
+   },
+   {
+    "title": "Make the potato salad and serve",
+    "text": "Mix the yogurt, mayo, mustard and lemon juice, then fold through the warm potatoes and most of the spring onions. Slice the pork and serve with the potato salad, buttered corn and crisp lettuce leaves, scattered with the last spring onions."
+   }
+  ],
+  "tags": [
+   "quick"
+  ],
+  "basedOn": "Serious Eats — St. Louis-style BBQ pork steaks; Hairy Bikers — Mustard potato salad"
+ },
+ {
+  "id": "am_mini_meatloaves",
+  "title": "Ketchup-Glazed Mini Meatloaves with Garlic Mash & Broccoli",
+  "icon": "🍖",
+  "cuisine": "American",
+  "category": "everyday",
+  "protein": "beef",
+  "time": 40,
+  "servings": 2,
+  "equipment": [
+   "oven",
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "beef_mince",
+    "q": 400,
+    "t": "400g"
+   },
+   {
+    "i": "onion",
+    "q": 0.5,
+    "t": "½, finely grated"
+   },
+   {
+    "i": "panko",
+    "q": 30,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "eggs",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "worcestershire",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "ketchup",
+    "q": 45,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "wholegrain_mustard",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "potatoes",
+    "q": 600,
+    "t": "600g, peeled and chunked"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, peeled"
+   },
+   {
+    "i": "butter",
+    "q": 20,
+    "t": "20g"
+   },
+   {
+    "i": "milk",
+    "q": 60,
+    "t": "60ml"
+   },
+   {
+    "i": "broccoli",
+    "q": 200,
+    "t": "200g, in florets"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Mix and shape",
+    "text": "Heat the oven to 200°C (fan 180°C) and line a baking tray. Mix the mince, grated onion, panko, egg, Worcestershire, herbs, 1 tbsp of the ketchup, ½ tsp salt and some pepper with your hands until just combined. Shape into 4 small loaves and space them out on the tray."
+   },
+   {
+    "title": "Glaze and bake",
+    "text": "Stir the remaining ketchup with the honey and mustard and brush thickly over the loaves. Bake for 25 min until the glaze is sticky and dark at the edges and the meatloaves are cooked through."
+   },
+   {
+    "title": "Make the garlic mash",
+    "text": "Meanwhile, put the potatoes and whole garlic cloves in a pan of salted water, bring to the boil and simmer for 15–18 min until tender. Drain and mash with the butter and warm milk until smooth, squashing the soft garlic in as you go."
+   },
+   {
+    "title": "Cook the broccoli",
+    "text": "For the last 4 min, cook the broccoli in a pan of boiling water until bright green and just tender, then drain. Season with a pinch of salt."
+   },
+   {
+    "title": "Serve",
+    "text": "Rest the meatloaves for 3 min, then plate up with a pile of garlic mash and the broccoli. Spoon over any sticky juices from the tray."
+   }
+  ],
+  "tags": [
+   "comfort",
+   "freezable",
+   "kid-friendly"
+  ],
+  "basedOn": "RecipeTin Eats — Meatloaf; Natasha's Kitchen — Mini meatloaves"
+ },
+ {
+  "id": "am_garlic_butter_steak_bites",
+  "title": "Garlic Butter Steak Bites with Crispy Potatoes & Charred Broccoli",
+  "icon": "🥩",
+  "cuisine": "American",
+  "category": "everyday",
+  "protein": "beef",
+  "time": 30,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "airFryer": "Toss the parboiled potatoes in 1 tsp oil and air-fry at 200°C for 15 min, shaking halfway, adding the broccoli for the last 5 min.",
+  "ingredients": [
+   {
+    "i": "beef_steak",
+    "q": 500,
+    "t": "2 packs (500g), cut into 3cm pieces"
+   },
+   {
+    "i": "potatoes",
+    "q": 500,
+    "t": "500g, in 2cm cubes"
+   },
+   {
+    "i": "broccoli",
+    "q": 200,
+    "t": "200g, in florets"
+   },
+   {
+    "i": "oil",
+    "q": 20,
+    "t": "1½ tbsp"
+   },
+   {
+    "i": "butter",
+    "q": 25,
+    "t": "25g"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, sliced"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "a pinch",
+    "swap": "Spoon out one portion of steak before adding the chilli to the butter."
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "½, juiced"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Boil the kettle. Cut the potatoes into 2cm cubes and the broccoli into florets. Cut the steak into 3cm pieces, pat very dry and season well with salt and pepper. Slice the garlic."
+   },
+   {
+    "title": "Parboil the potatoes",
+    "text": "Cook the potatoes in a pan of salted boiling water for 6–7 min until just tender at the edges, adding the broccoli for the last 2 min. Drain well and leave to steam dry for a couple of minutes."
+   },
+   {
+    "title": "Crisp the potatoes",
+    "text": "Heat 1 tbsp oil in a large frying pan over a medium-high heat and fry the potatoes for 10–12 min, turning every few minutes, until golden and crisp. Add the broccoli for the last 3 min to char, season and spoon onto warm plates."
+   },
+   {
+    "title": "Sear the steak",
+    "text": "Wipe out the pan, add the remaining oil and heat over a high heat until just smoking. Add the steak in a single layer and cook for 1–2 min per side until well browned outside and still pink in the middle (a minute or two longer if you like it more done)."
+   },
+   {
+    "title": "Baste in garlic butter",
+    "text": "Turn the heat to low, add the butter, garlic, herbs and chilli and toss for 1 min until the butter foams and the garlic is golden. Squeeze in the lemon juice and spoon the steak and garlic butter over the potatoes and broccoli."
+   }
+  ],
+  "tags": [
+   "quick"
+  ],
+  "basedOn": "Cafe Delites / Natasha's Kitchen — Garlic butter steak bites and potatoes"
+ }
+]

@@ -1,0 +1,149 @@
+[
+ {
+  "servings": 2,
+  "id": "me_chicken_pastilla_pie",
+  "title": "Moroccan Chicken Pastilla-Style Pie with Cinnamon & Honey",
+  "icon": "🥧",
+  "cuisine": "Middle Eastern",
+  "category": "treat",
+  "protein": "chicken",
+  "time": 80,
+  "equipment": [
+   "hob",
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 400,
+    "t": "4–5 thighs (400g), diced"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, finely chopped"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "ground_cinnamon",
+    "q": 3,
+    "t": "1½ tsp"
+   },
+   {
+    "i": "turmeric",
+    "q": 1,
+    "t": "½ tsp",
+    "opt": true
+   },
+   {
+    "i": "cumin",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "ground_coriander",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 chicken cube in 200ml water"
+   },
+   {
+    "i": "eggs",
+    "q": 3,
+    "t": "3 (2 for the filling, 1 to glaze)"
+   },
+   {
+    "i": "honey",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "ground_almonds",
+    "q": 30,
+    "t": "30g"
+   },
+   {
+    "i": "coriander",
+    "q": 15,
+    "t": "½ pack, chopped",
+    "swap": "Leave the coriander out of the filling and scatter it over one portion only at the table."
+   },
+   {
+    "i": "puff_pastry",
+    "q": 320,
+    "t": "1 sheet (320g)"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.5,
+    "t": "½, diced"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 100,
+    "t": "100g, chopped"
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to taste"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Finely chop the onion and crush the garlic. Dice the chicken and make up 200ml stock with the cube. Beat 2 of the eggs in one bowl and the third in another for glazing. Chop the coriander, dice the cucumber and chop the tomatoes."
+   },
+   {
+    "title": "Braise the chicken",
+    "text": "Heat the oil in a deep frying pan over a medium heat and cook the onion for 6 min until soft. Stir in the garlic, ginger paste, 1 tsp of the cinnamon, the turmeric (optional), cumin and ground coriander for 1 min. Add the chicken and stock, cover and simmer for 20 min until tender."
+   },
+   {
+    "title": "Reduce, shred and add almonds",
+    "text": "Uncover and bubble for 5 min until only a few spoonfuls of liquid are left. Shred the chicken in the pan with two forks. Stir in the ground almonds so they soak up the last of the juices and thicken the filling."
+   },
+   {
+    "title": "Set the filling with egg",
+    "text": "Turn the heat to low and pour in the 2 beaten eggs. Stir for 1–2 min until just set, like soft scrambled eggs. Stir in two-thirds of the honey and the coriander, then season. Leave to cool for 10 min and heat the oven to 180°C fan."
+   },
+   {
+    "title": "Build the pie",
+    "text": "Unroll the pastry onto a lined baking tray. Spoon the filling over one half, leaving a 2cm border, then fold the other half over. Crimp the edges with a fork, brush with the remaining beaten egg and cut two slits in the top."
+   },
+   {
+    "title": "Bake until golden",
+    "text": "Bake for 25 min until puffed up and deep golden brown. While it bakes, toss the cucumber and tomatoes with a squeeze of lemon and a pinch of salt."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Drizzle the hot pie with the remaining honey and dust with the last ½ tsp cinnamon. Cut into slices and serve with the salad."
+   }
+  ],
+  "tags": [
+   "comfort"
+  ],
+  "basedOn": "No Recipes (Marc Matsumoto) — Pastilla, adapted with ready-rolled puff pastry and ground almonds stirred into the filling"
+ }
+]

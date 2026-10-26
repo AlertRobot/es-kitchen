@@ -1,0 +1,200 @@
+{
+  "bf_special_k_milk": {
+    "url": "https://images.unsplash.com/photo-1736605406266-dbb985ef3325?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1736605406266-dbb985ef3325?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Tuccera LLC on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/a-bowl-of-cereal-next-to-a-glass-of-milk-9Ox2TAJj9Yc",
+    "alt": "Square bowl of crisp cereal flakes with a glass of milk",
+    "confidence": "medium"
+  },
+  "bf_cornflakes_milk": {
+    "url": "https://images.unsplash.com/photo-1748370973875-4f75b2f3d4db?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1748370973875-4f75b2f3d4db?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Tuccera LLC on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/cornflakes-and-milk-sit-in-a-bowl-xvc4m8GCibY",
+    "alt": "Black bowl of corn flakes with milk and a spoon",
+    "confidence": "high"
+  },
+  "bf_bran_flakes_milk": {
+    "url": "https://images.unsplash.com/photo-1588710920403-dacfbae1a640?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1588710920403-dacfbae1a640?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "engin akyurt on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/white-ceramic-bowl-with-soup-hGsq0aOZM_w",
+    "alt": "White bowl of cereal flakes with milk",
+    "confidence": "medium"
+  },
+  "bf_fruit_fibre_milk": {
+    "url": "https://images.unsplash.com/photo-1658402218013-18ccf3336bb5?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1658402218013-18ccf3336bb5?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Lisa Weinstein on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/a-bowl-of-cereal-with-milk-and-berries-Xw_oQ3pVBP0",
+    "alt": "Bowl of fruity muesli-style cereal with milk",
+    "confidence": "medium"
+  },
+  "bf_granola_yogurt": {
+    "url": "https://images.unsplash.com/photo-1763686483398-730a9555b3f5?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1763686483398-730a9555b3f5?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Nikita Khowala on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/greek-yogurt-with-granola-and-a-spoon-ua_qOi2M_80",
+    "alt": "Greek yogurt topped with granola and a spoon",
+    "confidence": "high"
+  },
+  "bf_cheerios_banana": {
+    "url": "https://images.unsplash.com/photo-1470909752008-c78c7f6423a3?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1470909752008-c78c7f6423a3?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "freestocks on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/biscuit-lot-on-white-ceramic-bowl-N56qCB6v4Kw",
+    "alt": "Bowl of oat hoops cereal in milk",
+    "confidence": "medium"
+  },
+  "bf_toast_butter_jam": {
+    "url": "https://images.unsplash.com/photo-1468577760773-139c2f1c335f?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1468577760773-139c2f1c335f?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Jonathan Pielmayer on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/photo-of-bread-with-strawberry-jam-c69HK1HKHYs",
+    "alt": "Toast spread with strawberry jam",
+    "confidence": "high"
+  },
+  "bf_bagel_cream_cheese": {
+    "url": "https://images.unsplash.com/photo-1585841393012-e4ded4a6e2d0?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1585841393012-e4ded4a6e2d0?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Rachel McDermott on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/bread-with-white-cream-on-black-round-plate-CO5GqJi47dY",
+    "alt": "Bagel spread with soft cream cheese",
+    "confidence": "medium"
+  },
+  "bf_croissant": {
+    "url": "https://images.unsplash.com/photo-1681218079567-35aef7c8e7e4?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1681218079567-35aef7c8e7e4?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Vicky Nguyen on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/a-croissant-sitting-on-top-of-a-cork-coaster-a4xoMVKzbak",
+    "alt": "A golden butter croissant",
+    "confidence": "high"
+  },
+  "bf_granola_berry_pot": {
+    "url": "https://images.unsplash.com/photo-1692071106919-01bc0b9b0919?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1692071106919-01bc0b9b0919?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Natalie Behn on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/a-bowl-of-yogurt-with-blackberries-and-granola-qj_zfYm-sdI",
+    "alt": "Thick yogurt with berries and granola",
+    "confidence": "medium"
+  },
+  "bf_fruit_yogurt_pot": {
+    "url": "https://images.unsplash.com/photo-1619683984330-b4604a0554f9?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1619683984330-b4604a0554f9?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Lynnsey Schneider on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/red-apple-fruit-on-blue-ceramic-bowl-J-ltVrZ2Z0o",
+    "alt": "Bowl of yogurt with apple",
+    "confidence": "medium"
+  },
+  "lu_ham_cheese_sandwich": {
+    "url": "https://images.unsplash.com/photo-1647505794572-0a6d945d664d?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1647505794572-0a6d945d664d?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Glenn Diaz on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/a-ham-and-cheese-sandwich-cut-in-half-87HPR8VlDfg",
+    "alt": "Ham and cheese sandwich cut in half",
+    "confidence": "high"
+  },
+  "lu_chicken_sweetcorn_sandwich": {
+    "url": "https://images.unsplash.com/photo-1754652327590-634bfebc7cf0?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1754652327590-634bfebc7cf0?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Dillon Lobo on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/chicken-salad-sandwich-with-lettuce-on-white-bread-BmP0dv6WfSo",
+    "alt": "Creamy chicken mayo sandwich with lettuce",
+    "confidence": "medium"
+  },
+  "lu_blt": {
+    "url": "https://images.unsplash.com/photo-1722041220514-f6a26e286f2e?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1722041220514-f6a26e286f2e?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "David Trinks on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/a-bacon-tomato-and-lettuce-sandwich-on-a-plate-p5K85hCgf2w",
+    "alt": "Bacon, lettuce and tomato sandwich on a plate",
+    "confidence": "high"
+  },
+  "lu_cheese_pickle_sandwich": {
+    "url": "https://images.unsplash.com/photo-1630330159773-4b2e6e5b8a56?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1630330159773-4b2e6e5b8a56?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Llio Angharad on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/burger-with-cheese-and-lettuce-AKxNTx-QGhw",
+    "alt": "Cheese sandwich on a plate",
+    "confidence": "medium"
+  },
+  "lu_tuna_mayo_wrap": {
+    "url": "https://images.unsplash.com/photo-1752095809096-f09d22c466c5?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1752095809096-f09d22c466c5?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Giorgio Trovato on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/a-wrap-and-salad-on-a-white-plate--KLZWBqfq6c",
+    "alt": "Filled tortilla wrap with salad",
+    "confidence": "medium"
+  },
+  "lu_chicken_salad_wrap": {
+    "url": "https://images.unsplash.com/photo-1574350211910-57ff8da5a209?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1574350211910-57ff8da5a209?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Toa Heftiba on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/wrapped-food-on-black-plate-zJNrEGsgT2s",
+    "alt": "Filled salad wrap halves on a black plate",
+    "confidence": "medium"
+  },
+  "lu_houmous_veg_pitta": {
+    "url": "https://images.unsplash.com/photo-1683725519288-eab9fa352335?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1683725519288-eab9fa352335?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Riddhi K on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/a-plate-of-hummus-carrots-and-pita-bread-enRLKyJLxrk",
+    "alt": "Houmous with carrot sticks and pitta bread",
+    "confidence": "high"
+  },
+  "lu_cheese_crackers_grapes": {
+    "url": "https://images.unsplash.com/photo-1632001605595-a8b79b435e7e?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1632001605595-a8b79b435e7e?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Content Pixie on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/grapes-crackers-and-cheese-on-a-marble-surface-WQu-SpFWiKU",
+    "alt": "Cheese, crackers and grapes",
+    "confidence": "high"
+  },
+  "lu_tomato_soup_roll": {
+    "url": "https://images.unsplash.com/photo-1775870226585-65e37f70dad7?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1775870226585-65e37f70dad7?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "aubin 47 on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/bowl-of-tomato-soup-with-bread-and-butter-yn_ep5Xrgjw",
+    "alt": "Bowl of tomato soup with buttered bread",
+    "confidence": "high"
+  },
+  "lu_ham_sweetcorn_pasta_salad": {
+    "url": "https://images.unsplash.com/photo-1543339494-b4cd4f7ba686?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1543339494-b4cd4f7ba686?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Hermes Rivera on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/bowlful-of-elbow-salad-4qzaeR_sTYA",
+    "alt": "Bowl of creamy pasta salad",
+    "confidence": "medium"
+  },
+  "lu_ham_cheese_toastie": {
+    "url": "https://images.unsplash.com/photo-1641848421637-713a3eb9c6cc?auto=format&fit=crop&w=1080&q=75",
+    "thumb": "https://images.unsplash.com/photo-1641848421637-713a3eb9c6cc?auto=format&fit=crop&w=300&h=300&q=70",
+    "credit": "Léo Roza on Unsplash",
+    "licence": "Unsplash Licence",
+    "source": "https://unsplash.com/photos/a-sandwich-on-a-plate-next-to-a-cup-of-coffee-WfMUQGnO1hk",
+    "alt": "Toasted ham and cheese sandwich (misto quente)",
+    "confidence": "high"
+  }
+}

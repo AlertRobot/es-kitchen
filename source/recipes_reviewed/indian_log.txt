@@ -1,0 +1,35 @@
+in_chicken_tikka_masala: title tightened; 6->7 steps (rice/grill/finish split, explicit overlaps, prep up front); coriander opt; salt line added
+in_butter_chicken: 5->7 steps (grill/sauce/cream/naan split, overlap made explicit); ground cumin opt (garam masala + fenugreek carry it); salt line added
+in_chicken_korma: 5->6 steps (prep chopping up front, serve split out, explicit overlap); cinnamon opt; salt line added
+in_madras_onion_bhajis: 6->8 steps (raita, simmer, rice split out; chilli powder split for batter made explicit); oil q 150->165 to cover curry + frying, discard note; ground cumin + lemon opt; salt line added
+in_tikka_naan_pizza: 5->6 steps (top and bake split); time 25->30 (8-10 min bake + frying); chilli + coriander garnish opt, chilli swap reworded
+in_lamb_rogan_josh: 6->7 steps (lamb browning and onions split; chopping moved to prep); cinnamon + coriander opt; salt line added
+in_chicken_biryani: 6->8 steps (prep, raita, serve split out; overlaps explicit); time 60->65; cinnamon + coriander opt, coriander swap reworded; salt line added
+in_paneer_tikka: title tightened (was 64 chars); 5->7 steps (prep, raita and garlic butter separated); added hob to equipment (butter melted in a pan); kasoori methi + coriander opt; salt line added
+in_indo_chinese_chilli_chicken: title tightened (was 68 chars); 5->7 steps (veg and sauce split, sauce mixed ahead); cornflour q/t corrected to 3 tbsp + 1 tsp; spring onion swap added; salt line added
+in_lamb_seekh_kebab_wraps: title tightened; 5->6 steps (all chopping moved to prep, overlap explicit); chilli flakes + coriander opt, coriander swap reworded; salt line added
+in_amritsari_fish_masala_chips: white_fish (not in catalogue) -> cod_fillets 280g (1 pack); 5->7 steps (prep, dip, frying timed to chips); time 45->50; oil q 150->130 to match t, discard note; cumin seeds, red onion, coriander opt; salt line added
+in_chicken_jalfrezi: 5->7 steps (sear/aromatics/simmer split, chopping in prep); time 30->35; turmeric + coriander opt; salt line added
+in_saag_chicken: 5->7 steps (prep added, simmer/saag/naan split); time 30->35; naan warmed in a dry pan (no grill in equipment); ground cumin opt (cumin seeds carry it); salt line added
+in_keema_matar: title tightened; 5->6 steps (simmer and peas split); peas swap added; lemon, yogurt, coriander opt; salt line added
+in_chana_masala: 5->6 steps (simmer and finish split, overlap explicit); time 25->30; chilli powder opt (green chilli carries heat), coriander opt; salt line added
+in_tarka_dal: 5->6 steps (prep added, chopping moved up front); tarka explained; mustard seeds, chilli flakes, lemon, coriander opt; salt line added
+in_coconut_dal: 5->6 steps (prep added, naan moved to a dry pan and its own step); time 30->35; mustard seeds, salsa chilli, coriander opt, coriander swap reworded; salt line added
+in_mattar_paneer: title tightened; 5->7 steps (base/gravy/serve split); peas swap added; kasoori methi + turmeric opt; salt line added
+in_saag_paneer: 5->6 steps (prep added); naan in a dry pan (no grill in equipment); ground cumin + lemon opt; salt line added
+in_egg_curry: title fixed (8-min eggs are not jammy); 5->7 steps (prep, simmer, serve split; rice overlaps eggs); time 30->35; mustard seeds + coriander opt; salt line added
+in_goan_prawn_curry: 5->7 steps (onion/spices/prawns split, prep consolidated); time 25->30; mustard seeds, cumin, green chilli (chilli powder carries heat), coriander opt; salt line added
+in_keralan_fish_curry: title fixed (rice is plain, not curry-spiced); white_fish (not in catalogue) -> cod_fillets 280g; chopping moved into prep; ground coriander + coriander opt; salt line added; 6 steps kept
+in_aloo_gobi: title fixed (no mint in the list: 'Minty' -> 'Lemony'); 5->6 steps; time 35->40 (25 min roast + prep + toss); garam masala (4th spice) + coriander opt; salt line added
+in_tandoori_chicken_traybake: title tightened (was 64 chars); 5->6 steps (prep chopping up front); time 45->50 (15 + 25 min roast + prep); kachumber explained; mustard seeds + coriander opt, coriander swap reworded; salt line added
+in_chicken_kathi_rolls: title tightened and fixed (no mint in the list); toppings grouped, chopping in prep; chilli powder, garnish chilli, coriander opt; chilli + coriander swaps reworded; salt line added; 5 steps kept
+in_lentil_spinach_soup: 5->6 steps (naan and serve split; naan in a dry pan, no grill in equipment); time 30->35; turmeric, lemon, yogurt swirl, chilli flakes opt; salt line added
+in_chicken_mushroom_balti: 5->6 steps (spinach/naan split; naan method stated); coriander opt; salt line added
+in_kadai_paneer_mushroom: 5->7 steps (mushrooms and prep split out; spice mix explained); chilli flakes + kasoori methi opt; salt line added
+in_masala_salmon_bombay_potatoes: 5->6 steps (microwave and prep split); mustard seeds + coriander opt; salt line added
+in_sweet_potato_chickpea_curry: 5->6 steps (finish and serve split; rice overlap explicit); time 30->35; coriander opt; salt line added
+in_chicken_dhansak: 5->6 steps (serve split); time 40->45 (25 min simmer + 11 min frying + prep); turmeric pinch + coriander opt; salt line added
+in_prawn_pea_pilau: 5->6 steps (raita split from prep); time 25->30; peas swap added; cinnamon + coriander opt; salt line added
+in_chicken_tikka_rice_bowls: title tightened and fixed (no mint in the list); all chopping moved to prep; turmeric + coriander opt, coriander swap reworded; salt line added; 5 steps kept
+in_lamb_kofta_curry: 5->7 steps (prep and serve split; naan in a dry pan, no grill in equipment); time 35->40; turmeric, yogurt swirl, coriander opt, coriander swap reworded; salt line added
+in_tandoori_cauliflower_traybake: 5->6 steps (prep chopping up front; spinach/pitta step split from serve); smoked paprika (tikka paste carries it) + coriander opt; salt line added

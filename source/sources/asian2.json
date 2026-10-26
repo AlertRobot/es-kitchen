@@ -1,0 +1,182 @@
+{
+ "as_massaman_chicken": {
+  "title": "Massaman Chicken Curry with Potatoes, Peanuts & Cinnamon",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/massaman-curry/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "as_chicken_pad_thai": {
+  "title": "Chicken & Prawn Pad Thai-Style Noodles with Peanuts & Lime",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/chicken-pad-thai/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "as_chicken_larb": {
+  "title": "Zingy Thai Chicken Larb Lettuce Cups with Rice",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/thai-chicken-lettuce-cups-larb-gai-laab-gai/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "as_chicken_satay": {
+  "title": "Grilled Chicken Satay with Peanut Sauce & Smashed Cucumber",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/thai-chicken-satay-peanut-sauce/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "as_thai_basil_pork": {
+  "title": "Thai Basil Pork (Pad Kra Pao) with Crispy Fried Egg & Rice",
+  "site": "Gourmet Traveller",
+  "url": "https://www.gourmettraveller.com.au/recipe/fast-recipes/pork-pad-kra-pao-with-fried-egg-13147/",
+  "author": "",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "as_thai_red_tofu_curry": {
+  "title": "Thai Red Curry with Crispy Tofu, Sweet Potato & Spinach",
+  "site": "America's Test Kitchen",
+  "url": "https://www.americastestkitchen.com/recipes/5224-skillet-thai-curry-with-sweet-potatoes-and-tofu",
+  "author": "",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "as_honey_garlic_chicken": {
+  "title": "Sticky Honey Garlic Chicken with Sesame Broccoli & Rice",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/honey-garlic-chicken/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "as_teriyaki_salmon": {
+  "title": "Teriyaki Salmon",
+  "site": "RecipeTin Japan",
+  "url": "https://japan.recipetineats.com/teriyaki-salmon/",
+  "author": "Yumiko",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "as_miso_salmon": {
+  "title": "Japanese Miso Salmon",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/miso-marinated-side-of-salmon/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "as_oyakodon": {
+  "title": "Oyakodon — Japanese Chicken & Egg Rice Bowl",
+  "site": "Just One Cookbook",
+  "url": "https://www.justonecookbook.com/oyakodon/",
+  "author": "Namiko Hirasawa Chen",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "as_yaki_udon": {
+  "title": "Yaki Udon with Crispy Pork, Pak Choi & Mushrooms",
+  "site": "Just One Cookbook",
+  "url": "https://www.justonecookbook.com/yaki-udon/",
+  "author": "Namiko Hirasawa Chen",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "as_gyoza_pork_bowl": {
+  "title": "Gyoza Pork Rice Bowls with Crispy Garlic & Dipping Sauce",
+  "site": "Kavey Eats (from Tim Anderson's JapanEasy Bowls & Bento)",
+  "url": "https://kaveyeats.com/gyoza-filling-rice-bowl",
+  "author": "Tim Anderson",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "as_bulgogi_beef_bowls": {
+  "title": "Beef Bulgogi Rice Bowls with Pickled Cucumber & Kimchi",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/korean-beef-bulgogi-rice-bowls-the-easy-way/",
+  "author": "Nagi Maehashi",
+  "match": "close",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "as_gochujang_chicken": {
+  "title": "Sticky Gochujang Chicken Thighs with Sesame Greens & Rice",
+  "site": "Supergolden Bakes",
+  "url": "https://www.supergoldenbakes.com/gochujang-chicken-thighs/",
+  "author": "Lucy Parissi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "as_bibimbap": {
+  "title": "Beef Bibimbap Bowls with Garlic Spinach & Fried Egg",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/bibimbap/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "as_kimchi_fried_rice": {
+  "title": "Kimchi Fried Rice with Crispy Bacon, Cheddar & Fried Eggs",
+  "site": "Maangchi",
+  "url": "https://www.maangchi.com/recipe/kimchi-bokkeumbap",
+  "author": "Maangchi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "as_bun_cha": {
+  "title": "Bun Cha — Vietnamese Pork Patties with Rice Noodles & Herbs",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/bun-cha-vietnamese-meatballs/",
+  "author": "Nagi Maehashi",
+  "match": "close",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "as_banh_mi_bowls": {
+  "title": "Caramelised Chicken Banh Mi Bowls with Sweet Chilli Mayo",
+  "site": "HelloFresh",
+  "url": "https://www.hellofresh.ca/recipes/chicken-banh-mi-style-bowls-65243564f6f4e0ca35003811",
+  "author": "",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "as_chicken_laksa": {
+  "title": "Quick Chicken Laksa with Coconut, Rice Noodles & Beansprouts",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/laksa-soup/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "as_nasi_goreng": {
+  "title": "Nasi Goreng with Chicken, Prawns, Fried Egg & Cucumber",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/nasi-goreng-indonesian-fried-rice/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ }
+}

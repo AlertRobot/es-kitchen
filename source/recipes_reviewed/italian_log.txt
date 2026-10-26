@@ -1,0 +1,30 @@
+it_proper_ragu_bolognese: title tightened; time 80->85; 5->6 steps (split cooking the pasta from tossing; milk/tomato/simmer kept as one station)
+it_proper_carbonara: title tightened (dropped '(No Cream)'); time 20->25; garlic marked optional; removed 'extra cheese' to serve (all cheese is in the sauce); 'while the pancetta crisps' timing added
+it_cacio_e_pepe_rocket: title tightened; time 15->20; rocket swap added; 5->6 steps (split cooking the spaghetti from toasting the pepper)
+it_pesto_potato_broccoli_pasta: title tightened; basil and finishing oil marked optional; basil swap added; step text tidied
+it_tuna_puttanesca: black_olives (not in catalogue) -> olives; added salt line for pasta water; capers swap added; chilli marked optional; time 20->25
+it_penne_arrabbiata_mozzarella: time 20->25; basil swap added; oil split stated (1½ tbsp to fry, ½ tbsp to finish); parmesan grating moved into prep
+it_sausage_fennel_ragu: time 35->40; added salt line for pasta water; chilli marked optional; 5->6 steps (split pasta cooking from the ragù simmer)
+it_lemon_chicken_orzo: time 30->35; mixed herbs marked optional; long simmer sentence split
+it_chicken_cacciatore: black_olives (not in catalogue) -> olives; title tightened; time 55->60; mushroom swap reworded; oven given as 180°C fan with explicit preheat timing; 5->6 steps (olives and bread split out)
+it_creamy_tuscan_chicken: title tightened; garlic 3->4 cloves so the 'garlicky' potatoes actually get garlic; sun-dried tomato swap added; herbs and smoked paprika marked optional; 5->6 steps (sauce split from adding spinach/chicken)
+it_sausage_pesto_gnocchi_traybake: title tightened; oven given as 200°C fan; basil marked optional with swap; air-fryer note adds cooked-through cue and batch tip
+it_mushroom_risotto: title tightened; time 35->45 (mushrooms then onion then 20 min of stock is sequential); mushroom swap simplified (they're already fried separately); herbs and lemon marked optional; 5->6 steps
+it_pea_bacon_risotto: time 30->40; peas swap added; step text tidied
+it_minestrone_pesto: title tightened (pesto swirl now optional so dropped from title); time 45->50; pesto swirl and mixed herbs marked optional; 5->6 steps (bread baking split out from the pasta step)
+it_proper_beef_lasagne: title tightened; time 95->110 (30 min simmer + 40 min bake + 10 min rest + prep); herbs marked optional; lasagne sheet count matched to 150g; 5->7 steps (ragù split into soften/brown/simmer; genuinely long dish)
+it_aubergine_parmigiana: title tightened; oven given as 180°C fan; basil swap added; 5->6 steps (garlic bread split out); oil split stated (3 tbsp aubergine, 1 tbsp sauce)
+it_chicken_parmigiana: title tightened; oven given as 180°C fan; basil marked optional with swap; pasta water put on when needed rather than at the start; 5->7 steps (crumb/fry and bake/spaghetti split)
+it_spaghetti_meatballs: title tightened; time 35->40; basil and herbs marked optional, basil swap added; garlic line explains the 1 grated/2 chopped split; 5->6 steps (prep, shaping, browning, sauce, spaghetti, serve)
+it_chicken_bacon_mushroom_bake: title tightened; oven given as 180°C fan; mushroom swap reworded; mustard marked optional; 5->6 steps (mushrooms split from chicken/bacon)
+it_garlic_chilli_prawn_linguine: title tightened; time 20->25 (defrosting prawns); chilli marked optional; rocket swap added; lemon use spelled out (half juiced, half wedges)
+it_creamy_lemon_salmon_penne: peas swap added; parmesan grating moved into prep; step text tidied
+it_potato_spinach_feta_frittata: title tightened; time 30->35; rocket swap added; grill now heated while the eggs set (not 25 min early); 5->6 steps (salad split from grilling)
+it_spinach_ricotta_cannelloni: title tightened; time 65->70; oven given as 180°C fan; basil swap added; lemon zest marked optional; 5->6 steps (prep split from making the filling)
+it_chicken_milanese_lemon_spaghetti: title tightened; time 30->35; oil 45->50ml so the salad drizzle is covered; herbs marked optional; rocket swap added; 5->6 steps (spaghetti cooking split from crumbing)
+it_tuscan_sausage_bean_stew: title tightened; time 30->40; oven given as 180°C fan; 5->6 steps (onion split from browning sausages); garlic clove handling made consistent
+it_pasta_alla_norma: chilli marked optional; basil swap added; 5->6 steps (pasta cooking split from the sauce)
+it_crispy_gnocchi_garlic_mushrooms: title tightened; time 20->25; herbs and lemon marked optional; mushroom swap reworded
+it_salmon_basil_salsa_verde: title tightened; anchovy line marked opt (was '(optional)' in text only); capers, basil and rocket swaps added; salmon start timed against the potatoes; oven given as 200°C fan; 5->6 steps (boiling potatoes split from prep)
+it_pasta_e_ceci: title tightened (rosemary isn't in the ingredient list); time 30->40; chilli marked optional; 'mash or blitz' now fork/masher only so no blender needed; soffritto explained
+it_sausage_broccoli_orecchiette: chilli and fennel seeds marked optional; parmesan grating moved into prep; step text tidied

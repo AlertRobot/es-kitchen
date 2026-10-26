@@ -1,0 +1,83 @@
+[
+ {
+  "name": "Teriyaki chicken noodles",
+  "cuisine": "Asian",
+  "protein": "chicken",
+  "base": "noodles",
+  "family": "stir_fry",
+  "category": "everyday",
+  "why": "Sweet, familiar noodle dinner"
+ },
+ {
+  "name": "Chicken ramen",
+  "cuisine": "Asian",
+  "protein": "chicken",
+  "base": "noodles",
+  "family": "noodle_soup",
+  "category": "everyday",
+  "why": "Wagamama-style bowl; very popular with this age group"
+ },
+ {
+  "name": "Chicken and cashew nuts",
+  "cuisine": "Asian",
+  "protein": "chicken",
+  "base": "rice",
+  "family": "stir_fry",
+  "category": "everyday",
+  "why": "Chinese takeaway staple"
+ },
+ {
+  "name": "Hoisin beef noodles",
+  "cuisine": "Asian",
+  "protein": "beef",
+  "base": "noodles",
+  "family": "stir_fry",
+  "category": "everyday",
+  "why": "Beef noodle stir-fry; only chicken/pork noodles exist"
+ },
+ {
+  "name": "Crispy shredded chicken",
+  "cuisine": "Asian",
+  "protein": "chicken",
+  "base": "rice",
+  "family": "fried",
+  "category": "treat",
+  "why": "British-Chinese takeaway treat"
+ },
+ {
+  "name": "Sweet chilli salmon noodles",
+  "cuisine": "Asian",
+  "protein": "fish",
+  "base": "noodles",
+  "family": "stir_fry",
+  "category": "everyday",
+  "why": "Gets salmon onto noodles instead of another fillet-and-rice"
+ },
+ {
+  "name": "Chicken pho",
+  "cuisine": "Asian",
+  "protein": "chicken",
+  "base": "noodles",
+  "family": "noodle_soup",
+  "category": "everyday",
+  "why": "Now-mainstream noodle soup; light midweek option"
+ },
+ {
+  "name": "Bang bang chicken noodles",
+  "cuisine": "Asian",
+  "protein": "chicken",
+  "base": "noodles",
+  "family": "fried",
+  "category": "treat",
+  "why": "HelloFresh/Gousto favourite; crispy chicken on noodles"
+ },
+ {
+  "name": "Chicken bhuna",
+  "cuisine": "Indian",
+  "protein": "chicken",
+  "base": "rice",
+  "family": "curry",
+  "category": "everyday",
+  "why": "Curry-house standard missing from library"
+ }
+]

@@ -1,0 +1,4 @@
+[
+ {"id": "shortcrust_pastry", "name": "Ready-rolled shortcrust pastry", "aisle": "Chilled", "unit": "g", "packs": [320], "staple": false, "life": 14, "keeps": 2, "freeze": false, "tags": ["gluten"], "nutrition": {"per": 100, "kcal": 440, "protein": 5.6, "carbs": 44, "fat": 26}},
+ {"id": "pork_ribs", "name": "Pork ribs (uncooked, plain rack or individual ribs)", "aisle": "Meat & fish", "unit": "g", "packs": [700], "staple": false, "life": 5, "keeps": 2, "freeze": true, "tags": ["pork", "meat"], "nutrition": {"per": 100, "kcal": 220, "protein": 15, "carbs": 0, "fat": 17.5, "note": "per 100g as bought, bone-in (about 30% bone); edible meat is about 280 kcal, 17g protein, 23g fat per 100g"}}
+]

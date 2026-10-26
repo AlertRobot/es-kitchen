@@ -1,0 +1,3127 @@
+[
+  {
+    "id": "it_proper_ragu_bolognese",
+    "title": "Proper Slow-Simmered Ragù Bolognese with Spaghetti & Parmesan",
+    "icon": "🍝",
+    "cuisine": "Italian",
+    "category": "everyday",
+    "protein": "beef",
+    "time": 80,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "beef_mince",
+        "q": 250,
+        "t": "250g (half a pack)"
+      },
+      {
+        "i": "bacon",
+        "q": 60,
+        "t": "2 rashers, finely chopped"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, finely diced"
+      },
+      {
+        "i": "carrots",
+        "q": 80,
+        "t": "1 medium, finely diced"
+      },
+      {
+        "i": "garlic",
+        "q": 2,
+        "t": "2 cloves, finely chopped"
+      },
+      {
+        "i": "tomato_puree",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "chopped_tomatoes",
+        "q": 400,
+        "t": "1 tin"
+      },
+      {
+        "i": "milk",
+        "q": 100,
+        "t": "100ml"
+      },
+      {
+        "i": "stock_cubes",
+        "q": 1,
+        "t": "1 beef cube in 200ml water"
+      },
+      {
+        "i": "oil",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "pasta",
+        "q": 180,
+        "t": "180g spaghetti or tagliatelle"
+      },
+      {
+        "i": "parmesan",
+        "q": 20,
+        "t": "20g, finely grated"
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the soffritto",
+        "text": "Finely dice the onion and carrot as small as you can – they should melt into the sauce rather than sit in chunks. Finely chop the bacon and garlic. Crumble the stock cube into 200ml just-boiled water."
+      },
+      {
+        "title": "Build the base",
+        "text": "Heat the oil in a large heavy pan or casserole over a medium-low heat. Add the bacon and cook for 3 min until its fat runs, then add the onion and carrot with a pinch of salt. Cook gently for 10 min, stirring now and then, until soft, sweet and just starting to colour, adding the garlic for the last minute."
+      },
+      {
+        "title": "Brown the mince",
+        "text": "Turn the heat up to medium-high, add the mince and break it up with a wooden spoon. Fry for 6–8 min until there's no pink left and it's catching and browning in places – that colour is where the flavour comes from. Stir in the tomato purée and cook for 1 min more."
+      },
+      {
+        "title": "Add the milk and simmer low",
+        "text": "Pour in the milk and let it bubble for about 3 min until it has almost all been absorbed – it keeps the meat tender. Add the chopped tomatoes and stock, bring to a bubble, then turn the heat right down. Simmer with the lid ajar for at least 45 min (up to 1½ hr), stirring every 15 min and adding a splash of water if it gets too thick; it's ready when it's rich and glossy and a little oil pools on top."
+      },
+      {
+        "title": "Cook the pasta and toss",
+        "text": "About 12 min before you want to eat, cook the pasta in a large pan of salted boiling water according to the pack. Scoop out a mugful of cooking water, drain, then tip the pasta into the ragù with a splash of the water and toss over the heat for 1 min so every strand is coated. Season and serve with the parmesan grated over."
+      }
+    ],
+    "tags": [
+      "freezable",
+      "comfort"
+    ],
+    "basedOn": "BBC Good Food — The best spaghetti Bolognese (4.7★, 1,000+ ratings), with the Bologna-style milk step"
+  },
+  {
+    "id": "it_proper_carbonara",
+    "title": "Proper Spaghetti Carbonara with Crispy Pancetta & Pecorino (No Cream)",
+    "icon": "🍝",
+    "cuisine": "Italian",
+    "category": "treat",
+    "protein": "pork",
+    "time": 20,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "pasta",
+        "q": 180,
+        "t": "180g spaghetti"
+      },
+      {
+        "i": "pancetta",
+        "q": 130,
+        "t": "1 pack (130g) cubes"
+      },
+      {
+        "i": "eggs",
+        "q": 3,
+        "t": "1 whole egg + 2 yolks"
+      },
+      {
+        "i": "pecorino",
+        "q": 40,
+        "t": "40g, finely grated"
+      },
+      {
+        "i": "parmesan",
+        "q": 20,
+        "t": "20g, finely grated"
+      },
+      {
+        "i": "garlic",
+        "q": 1,
+        "t": "1 clove, bashed"
+      },
+      {
+        "i": "black_pepper",
+        "q": 2,
+        "t": "1 tsp, coarsely ground"
+      },
+      {
+        "i": "salt",
+        "q": 1,
+        "t": "a small pinch for the pasta water"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the egg mix",
+        "text": "Put a large pan of water on to boil and salt it lightly – the pancetta and cheese bring plenty of salt. Finely grate the pecorino and parmesan into a bowl, then beat in the whole egg, the 2 yolks and lots of coarse black pepper to make a thick paste. Bash the garlic clove with the flat of a knife."
+      },
+      {
+        "title": "Crisp the pancetta",
+        "text": "Put the pancetta and garlic into a large cold frying pan, then set it over a medium heat. Cook for 6–8 min, stirring, until the fat has melted out and the cubes are golden and crisp. Fish out the garlic and take the pan off the heat, keeping all the fat in the pan."
+      },
+      {
+        "title": "Cook the spaghetti",
+        "text": "Cook the spaghetti for 1 min less than the pack says. Just before draining, scoop out a mugful of the starchy cooking water – this is what makes the sauce."
+      },
+      {
+        "title": "Coat in the fat",
+        "text": "Tip the drained spaghetti into the pancetta pan with a splash of pasta water and toss over a low heat for 30 seconds until coated in the fat. Now take the pan off the heat completely and let it sit for 30 seconds – if the pan is too hot, the eggs will scramble."
+      },
+      {
+        "title": "Make it silky",
+        "text": "Loosen the egg and cheese mix with 2 tbsp of the hot pasta water, pour it over the spaghetti and toss constantly with tongs for 1–2 min. Add more pasta water a splash at a time until the sauce is glossy, creamy and clings to every strand. Serve straight away with more black pepper and a little extra cheese."
+      }
+    ],
+    "tags": [
+      "quick",
+      "comfort"
+    ],
+    "basedOn": "Jamie Oliver — Ultimate classic carbonara; Felicity Cloake (Guardian) perfect carbonara — yolk & pecorino, no cream"
+  },
+  {
+    "id": "it_cacio_e_pepe_rocket",
+    "title": "Cacio e Pepe-Style Spaghetti with Toasted Black Pepper & Lemony Rocket",
+    "icon": "🧀",
+    "cuisine": "Italian",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 15,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "pasta",
+        "q": 180,
+        "t": "180g spaghetti"
+      },
+      {
+        "i": "pecorino",
+        "q": 60,
+        "t": "60g, very finely grated"
+      },
+      {
+        "i": "parmesan",
+        "q": 20,
+        "t": "20g, very finely grated"
+      },
+      {
+        "i": "black_pepper",
+        "q": 4,
+        "t": "2 tsp, coarsely cracked"
+      },
+      {
+        "i": "butter",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "rocket",
+        "q": 30,
+        "t": "½ bag"
+      },
+      {
+        "i": "lemon",
+        "q": 0.5,
+        "t": "½, for squeezing"
+      },
+      {
+        "i": "oil",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "salt",
+        "q": 1,
+        "t": "a small pinch"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the cheese",
+        "text": "Bring about 2 litres of water to the boil – less water than usual, with just a small pinch of salt, so it gets nice and starchy. Grate the pecorino and parmesan as finely as you can into a bowl; fine cheese melts smoothly, coarse cheese clumps. Coarsely crush the peppercorns."
+      },
+      {
+        "title": "Toast the pepper",
+        "text": "Cook the spaghetti for 2 min less than the pack says. Meanwhile, toast the pepper in a large dry frying pan over a medium heat for 1 min until fragrant, then add the butter and a ladle of the pasta water and let it bubble."
+      },
+      {
+        "title": "Make the cheese paste",
+        "text": "Stir 3–4 tbsp of hot (not boiling) pasta water into the grated cheese and mix to a smooth, thick paste. Doing this off the heat is the trick that stops the sauce going stringy."
+      },
+      {
+        "title": "Finish in the pan",
+        "text": "Lift the spaghetti straight into the pepper pan with tongs and toss over a medium heat for 1–2 min so it finishes cooking and soaks up the peppery liquid. Take the pan off the heat, add the cheese paste and toss hard for 1 min, adding splashes of pasta water until the sauce is creamy and coats the pasta."
+      },
+      {
+        "title": "Dress the rocket and serve",
+        "text": "Toss the rocket with a squeeze of lemon, the oil and a pinch of salt. Twirl the pasta into warm bowls, crack over a little more pepper and serve with the rocket on the side."
+      }
+    ],
+    "tags": [
+      "quick"
+    ],
+    "basedOn": "Felicity Cloake (Guardian) — How to make the perfect cacio e pepe; Serious Eats cheese-paste method"
+  },
+  {
+    "id": "it_pesto_potato_broccoli_pasta",
+    "title": "Genovese-Style Pesto Pasta with Potatoes, Tenderstem-Style Broccoli & Parmesan",
+    "icon": "🌿",
+    "cuisine": "Italian",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 25,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "pasta",
+        "q": 180,
+        "t": "180g trofie, penne or spaghetti"
+      },
+      {
+        "i": "potatoes",
+        "q": 200,
+        "t": "1 medium, peeled and cut into 1cm cubes"
+      },
+      {
+        "i": "broccoli",
+        "q": 180,
+        "t": "½ head, small florets"
+      },
+      {
+        "i": "pesto",
+        "q": 95,
+        "t": "½ jar"
+      },
+      {
+        "i": "parmesan",
+        "q": 20,
+        "t": "20g, grated"
+      },
+      {
+        "i": "lemon",
+        "q": 0.5,
+        "t": "½, zested"
+      },
+      {
+        "i": "basil",
+        "q": 10,
+        "t": "a few leaves (optional)"
+      },
+      {
+        "i": "oil",
+        "q": 10,
+        "t": "a drizzle"
+      },
+      {
+        "i": "salt",
+        "q": 3,
+        "t": "for the pasta water"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the veg",
+        "text": "Boil a full kettle. Peel the potato and cut it into 1cm cubes. Cut the broccoli into small bite-sized florets and thinly slice the stalk too. Grate the parmesan and zest the lemon."
+      },
+      {
+        "title": "Cook the potato and pasta together",
+        "text": "Pour the boiled water into a large pan, salt it well and bring back to the boil. Add the potato and pasta at the same time and cook for the pasta's pack time."
+      },
+      {
+        "title": "Add the broccoli",
+        "text": "4 min before the end of the cooking time, drop the broccoli into the same pan. Everything should be ready together – the pasta al dente, the broccoli tender and the potatoes soft enough to start breaking up at the edges."
+      },
+      {
+        "title": "Toss with the pesto",
+        "text": "Scoop out a mugful of the cooking water, then drain. Return everything to the pan off the heat with the pesto, lemon zest, half the parmesan and a good splash of the water, and toss hard for 1 min. The potato starch turns the pesto into a creamy sauce that clings – add more water if it looks dry."
+      },
+      {
+        "title": "Serve",
+        "text": "Season with black pepper and divide between bowls. Finish with the rest of the parmesan, torn basil and a drizzle of oil."
+      }
+    ],
+    "tags": [
+      "quick"
+    ],
+    "basedOn": "Classic Ligurian trofie al pesto with potatoes & green beans (Jamie Oliver / Felicity Cloake versions), adapted with broccoli"
+  },
+  {
+    "id": "it_tuna_puttanesca",
+    "title": "Spaghetti Puttanesca with Tuna, Olives, Capers & Chilli",
+    "icon": "🍝",
+    "cuisine": "Italian",
+    "category": "everyday",
+    "protein": "fish",
+    "time": 20,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "pasta",
+        "q": 180,
+        "t": "180g spaghetti"
+      },
+      {
+        "i": "tinned_tuna",
+        "q": 145,
+        "t": "1 tin, drained"
+      },
+      {
+        "i": "anchovies",
+        "q": 15,
+        "t": "3 fillets, chopped"
+      },
+      {
+        "i": "black_olives",
+        "q": 50,
+        "t": "a handful, halved",
+        "swap": "Leave the olives out of the sauce and scatter them over one plate only when you serve."
+      },
+      {
+        "i": "capers",
+        "q": 15,
+        "t": "1 tbsp, drained"
+      },
+      {
+        "i": "chopped_tomatoes",
+        "q": 400,
+        "t": "1 tin"
+      },
+      {
+        "i": "tomato_puree",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "garlic",
+        "q": 2,
+        "t": "2 cloves, thinly sliced"
+      },
+      {
+        "i": "chilli_flakes",
+        "q": 1,
+        "t": "½ tsp",
+        "swap": "Leave the chilli out of the pan and sprinkle it over one plate only at the end."
+      },
+      {
+        "i": "oil",
+        "q": 15,
+        "t": "1 tbsp"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep",
+        "text": "Put a large pan of salted water on to boil. Thinly slice the garlic, halve the olives, drain the capers and tuna, and roughly chop the anchovies."
+      },
+      {
+        "title": "Melt the anchovies",
+        "text": "Heat the oil in a large frying pan over a medium-low heat. Add the garlic, anchovies and chilli and cook for 2 min, mashing the anchovies with a wooden spoon until they melt into the oil and the garlic is just turning golden."
+      },
+      {
+        "title": "Simmer the sauce",
+        "text": "Stir in the tomato purée for 30 seconds, then add the chopped tomatoes, olives and capers. Bubble over a medium heat for 10 min, stirring now and then, until thick and jammy."
+      },
+      {
+        "title": "Cook the pasta",
+        "text": "Meanwhile, cook the spaghetti according to the pack. Scoop out a mugful of the cooking water before draining."
+      },
+      {
+        "title": "Add the tuna and toss",
+        "text": "Flake the tuna into the sauce in big chunks and warm through for 1 min. Toss in the drained spaghetti with a splash of pasta water until glossy and well coated. Taste before adding salt – the anchovies, olives and capers are already salty – then serve."
+      }
+    ],
+    "tags": [
+      "quick",
+      "spicy"
+    ],
+    "basedOn": "Nigella Lawson — Spaghetti puttanesca; Jamie Oliver linguine alla puttanesca; popular UK tuna puttanesca variation"
+  },
+  {
+    "id": "it_penne_arrabbiata_mozzarella",
+    "title": "Fiery Penne all'Arrabbiata with Torn Mozzarella & Basil",
+    "icon": "🌶️",
+    "cuisine": "Italian",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 20,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "pasta",
+        "q": 180,
+        "t": "180g penne"
+      },
+      {
+        "i": "chopped_tomatoes",
+        "q": 400,
+        "t": "1 tin"
+      },
+      {
+        "i": "tomato_puree",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "garlic",
+        "q": 3,
+        "t": "3 cloves, thinly sliced"
+      },
+      {
+        "i": "chilli_flakes",
+        "q": 2,
+        "t": "1 tsp (to taste)",
+        "swap": "Cook the sauce with just a pinch of chilli, spoon out one portion, then stir the rest of the chilli into the pan for the hotter plate."
+      },
+      {
+        "i": "oil",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "mozzarella",
+        "q": 125,
+        "t": "1 ball, torn"
+      },
+      {
+        "i": "basil",
+        "q": 15,
+        "t": "½ pack"
+      },
+      {
+        "i": "parmesan",
+        "q": 15,
+        "t": "15g, grated"
+      },
+      {
+        "i": "salt",
+        "q": 3,
+        "t": "for the pasta water"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep",
+        "text": "Put a large pan of salted water on to boil. Thinly slice the garlic. Tear the mozzarella into bite-sized pieces and pat dry on kitchen paper. Pick the basil leaves."
+      },
+      {
+        "title": "Fry the garlic and chilli",
+        "text": "Heat the oil in a large frying pan over a medium-low heat. Add the garlic and chilli and cook gently for 2 min until the garlic is pale golden and the oil is tinged red – don't let it brown or it will turn bitter."
+      },
+      {
+        "title": "Simmer the sauce",
+        "text": "Stir in the tomato purée for 30 seconds, then add the chopped tomatoes, a splash of water swilled round the tin and a pinch of salt. Simmer briskly for 12–15 min until thick and the oil shines on the surface. Tear in half the basil."
+      },
+      {
+        "title": "Cook the penne",
+        "text": "Meanwhile, cook the penne for 1 min less than the pack says. Scoop out a mugful of the cooking water, then drain."
+      },
+      {
+        "title": "Toss and serve",
+        "text": "Toss the penne into the sauce with a splash of pasta water and cook for 1 min over the heat until every tube is coated. Divide between bowls and top with the mozzarella, the rest of the basil, the parmesan and a drizzle of oil – the heat of the pasta will just soften the cheese."
+      }
+    ],
+    "tags": [
+      "quick",
+      "spicy"
+    ],
+    "basedOn": "Jamie Oliver — Penne arrabbiata (The Happy Foodie); BBC Good Food penne all'arrabbiata"
+  },
+  {
+    "id": "it_sausage_fennel_ragu",
+    "title": "Sausage & Fennel Ragù with Rigatoni, Chilli & Parmesan",
+    "icon": "🍝",
+    "cuisine": "Italian",
+    "category": "everyday",
+    "protein": "pork",
+    "time": 35,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "sausages",
+        "q": 4,
+        "t": "4, skins removed"
+      },
+      {
+        "i": "fennel_seeds",
+        "q": 2,
+        "t": "1 tsp, crushed"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, finely chopped"
+      },
+      {
+        "i": "garlic",
+        "q": 2,
+        "t": "2 cloves, finely chopped"
+      },
+      {
+        "i": "chilli_flakes",
+        "q": 1,
+        "t": "½ tsp",
+        "swap": "Leave the chilli out of the pan and sprinkle it over one plate only at the end."
+      },
+      {
+        "i": "tomato_puree",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "chopped_tomatoes",
+        "q": 400,
+        "t": "1 tin"
+      },
+      {
+        "i": "stock_cubes",
+        "q": 0.5,
+        "t": "½ chicken cube in 100ml water"
+      },
+      {
+        "i": "double_cream",
+        "q": 50,
+        "t": "50ml"
+      },
+      {
+        "i": "pasta",
+        "q": 180,
+        "t": "180g rigatoni or penne"
+      },
+      {
+        "i": "parmesan",
+        "q": 20,
+        "t": "20g, grated"
+      },
+      {
+        "i": "oil",
+        "q": 10,
+        "t": "2 tsp"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep",
+        "text": "Finely chop the onion and garlic. Squeeze the sausagemeat out of the skins into a bowl. Crush the fennel seeds with a pestle and mortar or the flat of a knife. Dissolve the half stock cube in 100ml just-boiled water."
+      },
+      {
+        "title": "Brown the sausagemeat",
+        "text": "Heat the oil in a large deep frying pan over a medium-high heat. Add the sausagemeat and fennel and fry for 8 min, breaking it into small nuggets with a wooden spoon, until golden and crisp in places. Lift out with a slotted spoon, leaving the fat behind."
+      },
+      {
+        "title": "Soften the onion",
+        "text": "Turn the heat down to medium-low and cook the onion in the sausage fat for 6–8 min until soft and golden. Add the garlic and chilli for 1 min, then stir in the tomato purée and cook for 1 min more."
+      },
+      {
+        "title": "Simmer the ragù",
+        "text": "Return the sausage to the pan with the chopped tomatoes and stock. Simmer uncovered for 15 min, stirring now and then, until thick and rich. Meanwhile, cook the pasta in salted boiling water according to the pack, saving a mugful of water before draining."
+      },
+      {
+        "title": "Finish and serve",
+        "text": "Stir the cream into the ragù – it should turn a rosy orange. Toss in the drained pasta with half the parmesan and a splash of pasta water until glossy, then serve with the rest of the parmesan on top."
+      }
+    ],
+    "tags": [
+      "freezable",
+      "comfort"
+    ],
+    "basedOn": "Delicious magazine — Fennel, chilli and sausage ragù; Jamie Oliver Southend stylee pappardelle"
+  },
+  {
+    "id": "it_lemon_chicken_orzo",
+    "title": "One-Pan Lemon & Garlic Chicken Orzo with Spinach & Parmesan",
+    "icon": "🍋",
+    "cuisine": "Italian",
+    "category": "everyday",
+    "protein": "chicken",
+    "time": 30,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "chicken_thighs",
+        "q": 300,
+        "t": "300g (about 4 fillets), bite-sized pieces"
+      },
+      {
+        "i": "orzo",
+        "q": 150,
+        "t": "150g"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1 small, finely chopped"
+      },
+      {
+        "i": "garlic",
+        "q": 3,
+        "t": "3 cloves, finely chopped"
+      },
+      {
+        "i": "lemon",
+        "q": 1,
+        "t": "1, zested and juiced"
+      },
+      {
+        "i": "stock_cubes",
+        "q": 1,
+        "t": "1 chicken cube in 500ml water"
+      },
+      {
+        "i": "spinach",
+        "q": 100,
+        "t": "2 big handfuls"
+      },
+      {
+        "i": "parmesan",
+        "q": 25,
+        "t": "25g, grated"
+      },
+      {
+        "i": "butter",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "mixed_herbs",
+        "q": 1,
+        "t": "½ tsp"
+      },
+      {
+        "i": "oil",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "salt",
+        "q": 1,
+        "t": "to season"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep",
+        "text": "Dissolve the stock cube in 500ml just-boiled water. Cut the chicken into bite-sized pieces and season with salt, pepper and the dried herbs. Finely chop the onion and garlic, zest the lemon and cut it in half."
+      },
+      {
+        "title": "Sear the chicken",
+        "text": "Heat the oil in a large deep frying pan (one with a lid) over a medium-high heat. Add the chicken in a single layer and fry for 5–6 min, turning once, until golden on both sides – it doesn't need to be cooked through yet. Transfer to a plate."
+      },
+      {
+        "title": "Toast the orzo",
+        "text": "Turn the heat to medium and add the butter and onion. Cook for 3 min until soft, add the garlic for 1 min, then tip in the orzo and stir for 1–2 min until lightly toasted and smelling nutty."
+      },
+      {
+        "title": "Simmer",
+        "text": "Pour in the stock with the lemon zest and scrape up any browned bits from the bottom. Return the chicken and its juices, bring to a simmer, cover and cook for 10–12 min, stirring every few minutes so it doesn't stick, until the orzo is tender, most of the liquid has been absorbed and the chicken is cooked through with no pink."
+      },
+      {
+        "title": "Finish and serve",
+        "text": "Take off the heat and stir in the spinach until wilted, then the parmesan and lemon juice to taste. It should be loose and creamy like a risotto – add a splash of hot water if it's too thick. Serve with plenty of black pepper."
+      }
+    ],
+    "tags": [
+      "one-pot",
+      "quick"
+    ],
+    "basedOn": "Spend With Pennies / The Recipe Critic — One-pot lemon chicken orzo (4.9★, thousands of ratings)"
+  },
+  {
+    "id": "it_chicken_cacciatore",
+    "title": "Chicken Cacciatore with Peppers, Mushrooms, Olives & Crusty Bread",
+    "icon": "🍗",
+    "cuisine": "Italian",
+    "category": "everyday",
+    "protein": "chicken",
+    "time": 55,
+    "servings": 2,
+    "equipment": [
+      "hob",
+      "oven"
+    ],
+    "ingredients": [
+      {
+        "i": "chicken_thighs",
+        "q": 400,
+        "t": "400g (about 5 fillets)"
+      },
+      {
+        "i": "plain_flour",
+        "q": 10,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, sliced"
+      },
+      {
+        "i": "peppers",
+        "q": 1,
+        "t": "1, sliced"
+      },
+      {
+        "i": "mushrooms",
+        "q": 125,
+        "t": "½ pack, quartered",
+        "swap": "Fry the mushrooms in a separate pan with a little oil until golden and add them to one plate only."
+      },
+      {
+        "i": "garlic",
+        "q": 3,
+        "t": "3 cloves, sliced"
+      },
+      {
+        "i": "tomato_puree",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "chopped_tomatoes",
+        "q": 400,
+        "t": "1 tin"
+      },
+      {
+        "i": "stock_cubes",
+        "q": 0.5,
+        "t": "½ chicken cube in 150ml water"
+      },
+      {
+        "i": "mixed_herbs",
+        "q": 2,
+        "t": "1 tsp"
+      },
+      {
+        "i": "black_olives",
+        "q": 40,
+        "t": "a small handful",
+        "swap": "Leave the olives out of the sauce and scatter them over one plate only when you serve."
+      },
+      {
+        "i": "oil",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "baguette",
+        "q": 1,
+        "t": "1 part-baked baguette"
+      },
+      {
+        "i": "salt",
+        "q": 1,
+        "t": "to season"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep",
+        "text": "Pat the chicken dry, season with salt and pepper and dust all over with the flour. Slice the onion, pepper and garlic and quarter the mushrooms. Dissolve the half stock cube in 150ml just-boiled water."
+      },
+      {
+        "title": "Brown the chicken",
+        "text": "Heat 1 tbsp oil in a large deep pan or casserole over a medium-high heat. Fry the chicken for 3 min each side until deep golden, then lift onto a plate – it will finish cooking in the sauce."
+      },
+      {
+        "title": "Fry the veg",
+        "text": "Add the remaining oil, the onion and pepper and cook for 5 min until softening. Add the mushrooms and fry for 3 min until golden, then stir in the garlic and herbs for 1 min."
+      },
+      {
+        "title": "Simmer the cacciatore",
+        "text": "Stir in the tomato purée, then the chopped tomatoes and stock, scraping up the browned bits. Nestle the chicken and its juices back into the sauce, cover and simmer gently for 25 min. Take the lid off, add the olives and simmer for 10 min more until the chicken is tender and cooked through and the sauce is thick enough to cling."
+      },
+      {
+        "title": "Bake the bread and serve",
+        "text": "When the lid comes off, heat the oven to 200°C (180°C fan) and bake the baguette for 8–10 min (check the pack) until crisp and golden. Serve the cacciatore in shallow bowls with the bread torn for mopping up the sauce."
+      }
+    ],
+    "tags": [
+      "one-pot",
+      "comfort",
+      "freezable"
+    ],
+    "basedOn": "RecipeTin Eats — Chicken cacciatore (Italian chicken stew), 4.9★ with 1,000+ reviews"
+  },
+  {
+    "id": "it_creamy_tuscan_chicken",
+    "title": "Creamy Tuscan Chicken with Sun-Dried Tomatoes, Spinach & Garlicky Crushed Potatoes",
+    "icon": "🍗",
+    "cuisine": "Italian",
+    "category": "treat",
+    "protein": "chicken",
+    "time": 35,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "chicken_breast",
+        "q": 350,
+        "t": "2 breasts (350g pack)"
+      },
+      {
+        "i": "sun_dried_tomatoes",
+        "q": 60,
+        "t": "6 pieces, sliced, plus 1 tbsp of their oil"
+      },
+      {
+        "i": "garlic",
+        "q": 3,
+        "t": "3 cloves, sliced"
+      },
+      {
+        "i": "double_cream",
+        "q": 150,
+        "t": "150ml pot"
+      },
+      {
+        "i": "stock_cubes",
+        "q": 0.5,
+        "t": "½ chicken cube in 100ml water"
+      },
+      {
+        "i": "spinach",
+        "q": 80,
+        "t": "2 handfuls"
+      },
+      {
+        "i": "parmesan",
+        "q": 30,
+        "t": "30g, grated"
+      },
+      {
+        "i": "mixed_herbs",
+        "q": 1,
+        "t": "½ tsp"
+      },
+      {
+        "i": "smoked_paprika",
+        "q": 1,
+        "t": "½ tsp"
+      },
+      {
+        "i": "potatoes",
+        "q": 500,
+        "t": "500g, cut into 3cm chunks"
+      },
+      {
+        "i": "butter",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "oil",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep",
+        "text": "Boil a full kettle. Cut the potatoes into 3cm chunks, leaving the skins on. Slice each chicken breast in half horizontally to make 4 thin fillets so they cook quickly and evenly, then season with salt, pepper, the herbs and paprika. Slice the sun-dried tomatoes and garlic and dissolve the half stock cube in 100ml just-boiled water."
+      },
+      {
+        "title": "Boil the potatoes",
+        "text": "Put the potatoes in a pan of salted boiling water and cook for 15–18 min until a knife slides in easily."
+      },
+      {
+        "title": "Fry the chicken",
+        "text": "Meanwhile, heat the oil and 1 tbsp of oil from the sun-dried tomato jar in a large frying pan over a medium-high heat. Fry the chicken for 3–4 min each side until golden and cooked through with no pink in the middle. Rest on a plate."
+      },
+      {
+        "title": "Make the Tuscan sauce",
+        "text": "Turn the heat to medium, add the garlic and sun-dried tomatoes and fry for 1 min. Pour in the stock and scrape up the browned bits, then add the cream and simmer for 3 min until thick enough to coat the back of a spoon. Stir in the parmesan and spinach until wilted, then return the chicken and its juices and spoon the sauce over for 2 min to warm through."
+      },
+      {
+        "title": "Crush the potatoes and serve",
+        "text": "Drain the potatoes and return them to the pan with the butter and a pinch of salt, then roughly crush with a fork. Plate up with the chicken and plenty of the creamy sauce."
+      }
+    ],
+    "tags": [
+      "comfort"
+    ],
+    "basedOn": "Mob Kitchen — Creamy Tuscan chicken; RecipeTin Eats creamy sun-dried tomato sauce"
+  },
+  {
+    "id": "it_sausage_pesto_gnocchi_traybake",
+    "title": "Sausage, Pesto & Cherry Tomato Gnocchi Traybake with Melted Mozzarella",
+    "icon": "🥘",
+    "cuisine": "Italian",
+    "category": "treat",
+    "protein": "pork",
+    "time": 40,
+    "servings": 2,
+    "equipment": [
+      "oven"
+    ],
+    "airFryer": "Air-fry the gnocchi, sausage pieces, onion and pepper at 200°C for 12 min, shaking halfway, then add the tomatoes for 6 min more. Toss with the pesto, top with the mozzarella and air-fry for 3 min until melted.",
+    "ingredients": [
+      {
+        "i": "gnocchi",
+        "q": 500,
+        "t": "1 pack"
+      },
+      {
+        "i": "sausages",
+        "q": 4,
+        "t": "4, each cut into 3"
+      },
+      {
+        "i": "cherry_tomatoes",
+        "q": 250,
+        "t": "250g"
+      },
+      {
+        "i": "red_onion",
+        "q": 1,
+        "t": "1, cut into wedges"
+      },
+      {
+        "i": "peppers",
+        "q": 1,
+        "t": "1, cut into chunks"
+      },
+      {
+        "i": "pesto",
+        "q": 95,
+        "t": "½ jar"
+      },
+      {
+        "i": "mozzarella",
+        "q": 125,
+        "t": "1 ball, torn"
+      },
+      {
+        "i": "basil",
+        "q": 5,
+        "t": "a few leaves"
+      },
+      {
+        "i": "oil",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "salt",
+        "q": 1,
+        "t": "to season"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep",
+        "text": "Heat the oven to 220°C (200°C fan). Cut each sausage into 3 chunky pieces, the red onion into wedges and the pepper into bite-sized chunks."
+      },
+      {
+        "title": "Roast the gnocchi and sausages",
+        "text": "Tip the gnocchi straight from the pack into a large roasting tray, breaking up any that are stuck together. Add the sausages, onion and pepper, toss with the oil and some seasoning and spread out in a single layer. Roast for 15 min."
+      },
+      {
+        "title": "Add the tomatoes",
+        "text": "Give everything a good toss, add the cherry tomatoes and roast for 10 min more until the gnocchi are golden and crisp at the edges, the tomatoes are starting to burst and the sausages are cooked through."
+      },
+      {
+        "title": "Pesto and mozzarella",
+        "text": "Take the tray out, dollop over the pesto and toss so everything is coated. Tear the mozzarella over the top and return to the oven for 5–7 min until melted and bubbling in spots."
+      },
+      {
+        "title": "Serve",
+        "text": "Scatter with basil leaves and a crack of black pepper and serve straight from the tray."
+      }
+    ],
+    "tags": [
+      "traybake",
+      "comfort"
+    ],
+    "basedOn": "Tesco Real Food — Sausage, veg & gnocchi traybake; Belazu gnocchi traybake with pesto, sausages & tomatoes"
+  },
+  {
+    "id": "it_mushroom_risotto",
+    "title": "Creamy Mushroom Risotto with Garlic-Butter Mushrooms, Spinach & Parmesan",
+    "icon": "🍄",
+    "cuisine": "Italian",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 35,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "arborio_rice",
+        "q": 150,
+        "t": "150g"
+      },
+      {
+        "i": "mushrooms",
+        "q": 250,
+        "t": "1 pack, sliced",
+        "swap": "Make the risotto without them, then fry the mushrooms in a separate pan with the garlic butter and spoon them onto one bowl only."
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, finely chopped"
+      },
+      {
+        "i": "garlic",
+        "q": 2,
+        "t": "2 cloves, finely chopped"
+      },
+      {
+        "i": "stock_cubes",
+        "q": 2,
+        "t": "2 veg cubes in 900ml water"
+      },
+      {
+        "i": "butter",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "parmesan",
+        "q": 40,
+        "t": "40g, grated"
+      },
+      {
+        "i": "spinach",
+        "q": 60,
+        "t": "a big handful"
+      },
+      {
+        "i": "lemon",
+        "q": 0.5,
+        "t": "½, for squeezing"
+      },
+      {
+        "i": "mixed_herbs",
+        "q": 1,
+        "t": "½ tsp (thyme if you have it)"
+      },
+      {
+        "i": "oil",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "salt",
+        "q": 1,
+        "t": "to season"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep",
+        "text": "Dissolve the stock cubes in 900ml boiling water and keep it hot in a pan on the lowest heat. Finely chop the onion and garlic, slice the mushrooms and grate the parmesan."
+      },
+      {
+        "title": "Fry the mushrooms",
+        "text": "Heat half the oil and half the butter in a large frying pan over a high heat. Add the mushrooms in a single layer and leave for 2–3 min until golden underneath, then stir and cook for 3 min more with half the garlic and the herbs. Season and tip onto a plate."
+      },
+      {
+        "title": "Start the risotto",
+        "text": "Heat the remaining oil in a wide, deep pan over a medium-low heat. Cook the onion for 5 min until soft but not coloured, add the rest of the garlic for 1 min, then stir in the rice for 2 min until the edges of the grains turn translucent."
+      },
+      {
+        "title": "Add the stock",
+        "text": "Add a ladle of hot stock and stir until almost absorbed, then keep going a ladle at a time, stirring often. After 18–20 min the rice should be tender with a slight bite and the risotto should flow slowly when you tilt the pan – you may not need all the stock."
+      },
+      {
+        "title": "Finish and serve",
+        "text": "Take off the heat and beat in the remaining butter, the parmesan, spinach and a squeeze of lemon, then cover and rest for 2 min. Stir through half the mushrooms, spoon into warm bowls and pile the rest on top with black pepper."
+      }
+    ],
+    "tags": [
+      "comfort"
+    ],
+    "basedOn": "BBC Good Food — Mushroom risotto (4.6★); Felicity Cloake perfect mushroom risotto"
+  },
+  {
+    "id": "it_pea_bacon_risotto",
+    "title": "Pea, Crispy Bacon & Lemon Risotto with Parmesan",
+    "icon": "🍚",
+    "cuisine": "Italian",
+    "category": "everyday",
+    "protein": "pork",
+    "time": 30,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "arborio_rice",
+        "q": 150,
+        "t": "150g"
+      },
+      {
+        "i": "bacon",
+        "q": 150,
+        "t": "5 rashers, chopped"
+      },
+      {
+        "i": "frozen_peas",
+        "q": 150,
+        "t": "150g"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, finely chopped"
+      },
+      {
+        "i": "garlic",
+        "q": 1,
+        "t": "1 clove, finely chopped"
+      },
+      {
+        "i": "stock_cubes",
+        "q": 2,
+        "t": "2 chicken cubes in 900ml water"
+      },
+      {
+        "i": "butter",
+        "q": 20,
+        "t": "1½ tbsp"
+      },
+      {
+        "i": "parmesan",
+        "q": 30,
+        "t": "30g, grated"
+      },
+      {
+        "i": "lemon",
+        "q": 0.5,
+        "t": "½, zested and squeezed"
+      },
+      {
+        "i": "oil",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep",
+        "text": "Dissolve the stock cubes in 900ml boiling water and keep hot in a pan on the lowest heat. Finely chop the onion and garlic, chop the bacon and zest the lemon."
+      },
+      {
+        "title": "Crisp the bacon",
+        "text": "Heat the oil in a wide, deep pan over a medium-high heat and fry the bacon for 5 min until golden and crisp. Lift half of it onto kitchen paper for the topping and leave the rest in the pan."
+      },
+      {
+        "title": "Start the risotto",
+        "text": "Turn the heat down to medium-low, add the onion to the bacon fat and cook for 5 min until soft. Stir in the garlic for 1 min, then the rice for 2 min until the edges of the grains turn translucent."
+      },
+      {
+        "title": "Add the stock and peas",
+        "text": "Add the hot stock a ladle at a time, stirring often and letting each one be almost absorbed before adding the next. After about 15 min, stir in the peas with the next ladle and cook for 3–5 min more until the rice is tender with a slight bite and the peas are bright green."
+      },
+      {
+        "title": "Finish and serve",
+        "text": "Take off the heat and beat in the butter, parmesan, lemon zest and a squeeze of juice, then cover and rest for 2 min. Spoon into bowls and top with the crispy bacon and black pepper."
+      }
+    ],
+    "tags": [
+      "comfort"
+    ],
+    "basedOn": "BBC Good Food — Pea & bacon risotto; Jamie Oliver basic risotto method"
+  },
+  {
+    "id": "it_minestrone_pesto",
+    "title": "Hearty Minestrone with Cannellini Beans, Pasta & a Pesto Swirl",
+    "icon": "🥣",
+    "cuisine": "Italian",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 45,
+    "servings": 2,
+    "equipment": [
+      "hob",
+      "oven"
+    ],
+    "ingredients": [
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, diced"
+      },
+      {
+        "i": "carrots",
+        "q": 120,
+        "t": "1 large, diced"
+      },
+      {
+        "i": "courgette",
+        "q": 1,
+        "t": "1, diced"
+      },
+      {
+        "i": "garlic",
+        "q": 2,
+        "t": "2 cloves, chopped"
+      },
+      {
+        "i": "cannellini_beans",
+        "q": 400,
+        "t": "1 tin, drained"
+      },
+      {
+        "i": "chopped_tomatoes",
+        "q": 400,
+        "t": "1 tin"
+      },
+      {
+        "i": "tomato_puree",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "stock_cubes",
+        "q": 2,
+        "t": "2 veg cubes in 1 litre water"
+      },
+      {
+        "i": "pasta",
+        "q": 60,
+        "t": "60g small pasta or broken spaghetti"
+      },
+      {
+        "i": "spinach",
+        "q": 60,
+        "t": "a big handful"
+      },
+      {
+        "i": "pesto",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "parmesan",
+        "q": 20,
+        "t": "20g, grated"
+      },
+      {
+        "i": "mixed_herbs",
+        "q": 1,
+        "t": "½ tsp"
+      },
+      {
+        "i": "oil",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "baguette",
+        "q": 1,
+        "t": "1 part-baked baguette"
+      },
+      {
+        "i": "salt",
+        "q": 1,
+        "t": "to season"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep",
+        "text": "Dissolve the stock cubes in 1 litre of boiling water. Dice the onion, carrot and courgette into roughly 1cm pieces and chop the garlic. Drain and rinse the beans."
+      },
+      {
+        "title": "Sweat the veg",
+        "text": "Heat the oil in a large saucepan over a medium heat. Cook the onion and carrot with a pinch of salt for 8 min until softened, then add the courgette, garlic and herbs for 2 min."
+      },
+      {
+        "title": "Simmer the soup",
+        "text": "Stir in the tomato purée for 1 min, then add the chopped tomatoes, stock and beans. Bring to the boil, then simmer partly covered for 15 min until the carrots are tender. Heat the oven for the baguette now."
+      },
+      {
+        "title": "Add the pasta",
+        "text": "Stir in the pasta (snap spaghetti into short lengths) and simmer for 10 min, stirring so it doesn't stick, until tender – the soup will thicken as the pasta releases its starch, so add a splash of water if needed. Bake the baguette meanwhile according to the pack, and stir the spinach into the soup for the final minute."
+      },
+      {
+        "title": "Serve",
+        "text": "Season to taste and ladle into deep bowls. Swirl a spoonful of pesto into each, finish with the parmesan and serve with the warm bread."
+      }
+    ],
+    "tags": [
+      "freezable",
+      "light"
+    ],
+    "basedOn": "BBC Good Food — Minestrone soup; Olive magazine green minestrone"
+  },
+  {
+    "id": "it_proper_beef_lasagne",
+    "title": "Proper Beef Lasagne with Silky Béchamel & a Golden Cheese Crust",
+    "icon": "🧀",
+    "cuisine": "Italian",
+    "category": "treat",
+    "protein": "beef",
+    "time": 95,
+    "servings": 2,
+    "equipment": [
+      "hob",
+      "oven"
+    ],
+    "ingredients": [
+      {
+        "i": "beef_mince",
+        "q": 250,
+        "t": "250g (half a pack)"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, finely diced"
+      },
+      {
+        "i": "carrots",
+        "q": 80,
+        "t": "1 medium, finely diced"
+      },
+      {
+        "i": "garlic",
+        "q": 2,
+        "t": "2 cloves, finely chopped"
+      },
+      {
+        "i": "tomato_puree",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "chopped_tomatoes",
+        "q": 400,
+        "t": "1 tin"
+      },
+      {
+        "i": "stock_cubes",
+        "q": 0.5,
+        "t": "½ beef cube in 150ml water"
+      },
+      {
+        "i": "mixed_herbs",
+        "q": 1,
+        "t": "½ tsp"
+      },
+      {
+        "i": "oil",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "butter",
+        "q": 30,
+        "t": "30g"
+      },
+      {
+        "i": "plain_flour",
+        "q": 30,
+        "t": "30g"
+      },
+      {
+        "i": "milk",
+        "q": 400,
+        "t": "400ml"
+      },
+      {
+        "i": "lasagne_sheets",
+        "q": 150,
+        "t": "about 6 sheets"
+      },
+      {
+        "i": "parmesan",
+        "q": 30,
+        "t": "30g, grated"
+      },
+      {
+        "i": "mozzarella",
+        "q": 125,
+        "t": "1 ball, torn"
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep the veg",
+        "text": "Finely dice the onion and carrot and finely chop the garlic. Dissolve the half stock cube in 150ml just-boiled water."
+      },
+      {
+        "title": "Make the ragù",
+        "text": "Heat the oil in a large pan over a medium heat and cook the onion and carrot for 8 min until soft, adding the garlic for the last minute. Turn up the heat, add the mince and fry for 6–8 min, breaking it up, until browned all over. Stir in the purée, then the tomatoes, stock and herbs, and simmer with the lid ajar for 30 min until thick – a spoon dragged through should leave a clear trail."
+      },
+      {
+        "title": "Make the béchamel",
+        "text": "While the ragù simmers, melt the butter in a saucepan over a medium heat and stir in the flour for 1 min to make a paste. Whisk in the milk a splash at a time until smooth, then simmer for 5 min, stirring, until it coats the back of a spoon. Take off the heat, stir in half the parmesan and season. Heat the oven to 190°C (170°C fan)."
+      },
+      {
+        "title": "Layer up",
+        "text": "Spread a thin layer of béchamel in a small ovenproof dish (about 20 x 15cm), then add a layer of lasagne sheets, snapping them to fit. Spoon over a third of the ragù and a little béchamel, and repeat to make 3 layers, finishing with sheets covered in the remaining béchamel. Tear over the mozzarella and scatter with the rest of the parmesan."
+      },
+      {
+        "title": "Bake and rest",
+        "text": "Bake for 35–40 min until deep golden, bubbling at the edges and a knife slides easily through the pasta. Leave to rest for 10 min before cutting so the layers hold together."
+      }
+    ],
+    "tags": [
+      "comfort",
+      "freezable"
+    ],
+    "basedOn": "BBC Good Food — Best ever lasagne; Jamie Oliver classic lasagne"
+  },
+  {
+    "id": "it_aubergine_parmigiana",
+    "title": "Melting Aubergine Parmigiana with Basil, Mozzarella & Garlic Bread",
+    "icon": "🍆",
+    "cuisine": "Italian",
+    "category": "treat",
+    "protein": "veggie",
+    "time": 75,
+    "servings": 2,
+    "equipment": [
+      "hob",
+      "oven"
+    ],
+    "airFryer": "Brush the aubergine slices lightly with oil and air-fry at 200°C for 10–12 min in batches, turning halfway, until soft and golden – it uses far less oil.",
+    "ingredients": [
+      {
+        "i": "aubergine",
+        "q": 2,
+        "t": "2, sliced lengthways 1cm thick"
+      },
+      {
+        "i": "oil",
+        "q": 60,
+        "t": "4 tbsp"
+      },
+      {
+        "i": "passata",
+        "q": 500,
+        "t": "1 carton"
+      },
+      {
+        "i": "garlic",
+        "q": 3,
+        "t": "3 cloves"
+      },
+      {
+        "i": "basil",
+        "q": 20,
+        "t": "most of a pack"
+      },
+      {
+        "i": "mozzarella",
+        "q": 125,
+        "t": "1 ball, torn"
+      },
+      {
+        "i": "parmesan",
+        "q": 50,
+        "t": "50g, grated"
+      },
+      {
+        "i": "baguette",
+        "q": 1,
+        "t": "1 part-baked baguette"
+      },
+      {
+        "i": "butter",
+        "q": 20,
+        "t": "20g, softened"
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep",
+        "text": "Heat the oven to 200°C (180°C fan). Slice the aubergines lengthways about 1cm thick, brush both sides with 3 tbsp of the oil and season with salt. Slice 2 garlic cloves, and crush the third into the softened butter for the garlic bread."
+      },
+      {
+        "title": "Roast the aubergine",
+        "text": "Lay the slices on 2 lined baking trays in a single layer and roast for 20–25 min, turning halfway, until soft, collapsing and golden brown."
+      },
+      {
+        "title": "Make the tomato sauce",
+        "text": "Meanwhile, warm the remaining oil in a saucepan over a medium-low heat and cook the sliced garlic for 1 min until fragrant. Add the passata, a pinch of salt and half the basil, torn, and simmer for 15 min until thickened and rich."
+      },
+      {
+        "title": "Layer the parmigiana",
+        "text": "Spoon a thin layer of sauce into a small ovenproof dish, then add a layer of aubergine, some torn mozzarella, a scattering of parmesan and a few basil leaves. Repeat until everything is used, finishing with sauce, mozzarella and parmesan."
+      },
+      {
+        "title": "Bake with the garlic bread",
+        "text": "Bake for 25 min until bubbling and golden on top. Split the baguette, spread with the garlic butter and bake on the shelf below for the last 10 min. Rest the parmigiana for 5 min, scatter with the remaining basil and serve with the garlic bread."
+      }
+    ],
+    "tags": [
+      "comfort"
+    ],
+    "basedOn": "Tesco Real Food — Aubergine parmigiana; Felicity Cloake perfect melanzane alla parmigiana (roasted rather than fried)"
+  },
+  {
+    "id": "it_chicken_parmigiana",
+    "title": "Crispy Chicken Parmigiana with Bubbling Mozzarella & Spaghetti al Pomodoro",
+    "icon": "🍗",
+    "cuisine": "Italian",
+    "category": "treat",
+    "protein": "chicken",
+    "time": 45,
+    "servings": 2,
+    "equipment": [
+      "hob",
+      "oven"
+    ],
+    "airFryer": "Spray the crumbed chicken with oil and air-fry at 200°C for 10 min, turning halfway, then top with the sauce and mozzarella and air-fry for 3–4 min more until melted.",
+    "ingredients": [
+      {
+        "i": "chicken_breast",
+        "q": 350,
+        "t": "2 breasts (350g pack)"
+      },
+      {
+        "i": "plain_flour",
+        "q": 20,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "eggs",
+        "q": 1,
+        "t": "1, beaten"
+      },
+      {
+        "i": "panko",
+        "q": 60,
+        "t": "60g"
+      },
+      {
+        "i": "parmesan",
+        "q": 30,
+        "t": "30g, grated"
+      },
+      {
+        "i": "oil",
+        "q": 45,
+        "t": "3 tbsp"
+      },
+      {
+        "i": "passata",
+        "q": 300,
+        "t": "300g"
+      },
+      {
+        "i": "garlic",
+        "q": 2,
+        "t": "2 cloves, sliced"
+      },
+      {
+        "i": "basil",
+        "q": 10,
+        "t": "a few sprigs"
+      },
+      {
+        "i": "mozzarella",
+        "q": 125,
+        "t": "1 ball, torn"
+      },
+      {
+        "i": "pasta",
+        "q": 140,
+        "t": "140g spaghetti"
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep and bash the chicken",
+        "text": "Heat the oven to 200°C (180°C fan). Put the chicken breasts between two sheets of baking paper and bash with a rolling pin to an even 1cm thickness. Set out three plates: seasoned flour, beaten egg, and the panko mixed with half the parmesan. Slice the garlic."
+      },
+      {
+        "title": "Make the tomato sauce",
+        "text": "Heat 1 tbsp oil in a saucepan over a medium-low heat and cook the garlic for 1 min. Add the passata, a pinch of salt and a few torn basil leaves and simmer for 10 min until thickened. Put a pan of salted water on to boil for the pasta."
+      },
+      {
+        "title": "Crumb and fry the chicken",
+        "text": "Dust each breast in flour, dip in the egg, then press firmly into the panko on both sides. Heat the remaining oil in a large frying pan over a medium-high heat and fry for 3 min each side until deep golden, then transfer to a baking tray."
+      },
+      {
+        "title": "Top and bake",
+        "text": "Spoon 2 tbsp of sauce over each escalope, keeping the crispy edges clear, then top with the mozzarella and the rest of the parmesan. Bake for 10–12 min until the cheese is bubbling and the chicken is cooked through with no pink when cut. Meanwhile, cook the spaghetti according to the pack."
+      },
+      {
+        "title": "Toss the spaghetti and serve",
+        "text": "Drain the spaghetti, saving a splash of water, and toss with the remaining sauce until glossy. Plate up with the chicken parmigiana and scatter over the rest of the basil."
+      }
+    ],
+    "tags": [
+      "crispy",
+      "comfort",
+      "fakeaway"
+    ],
+    "basedOn": "BBC Good Food — Chicken parmigiana; HelloFresh UK chicken parmigiana with spaghetti"
+  },
+  {
+    "id": "it_spaghetti_meatballs",
+    "title": "Juicy Beef & Parmesan Meatballs in Rich Tomato Sauce with Spaghetti",
+    "icon": "🍝",
+    "cuisine": "Italian",
+    "category": "everyday",
+    "protein": "beef",
+    "time": 35,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "beef_mince",
+        "q": 250,
+        "t": "250g (half a pack)"
+      },
+      {
+        "i": "panko",
+        "q": 20,
+        "t": "3 tbsp"
+      },
+      {
+        "i": "milk",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "eggs",
+        "q": 1,
+        "t": "1 yolk"
+      },
+      {
+        "i": "parmesan",
+        "q": 30,
+        "t": "30g, grated"
+      },
+      {
+        "i": "garlic",
+        "q": 3,
+        "t": "3 cloves"
+      },
+      {
+        "i": "mixed_herbs",
+        "q": 1,
+        "t": "½ tsp"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, finely chopped"
+      },
+      {
+        "i": "tomato_puree",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "chopped_tomatoes",
+        "q": 400,
+        "t": "1 tin"
+      },
+      {
+        "i": "basil",
+        "q": 10,
+        "t": "a few leaves"
+      },
+      {
+        "i": "pasta",
+        "q": 180,
+        "t": "180g spaghetti"
+      },
+      {
+        "i": "oil",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Make the meatballs",
+        "text": "Soak the panko in the milk for 2 min. Add the mince, egg yolk, 20g of the parmesan, 1 grated garlic clove, the herbs and a good pinch of salt and pepper, and mix gently with your hands – overworking makes them tough. Roll into 12 walnut-sized balls. Finely chop the onion and the remaining garlic."
+      },
+      {
+        "title": "Brown the meatballs",
+        "text": "Heat the oil in a large deep frying pan over a medium-high heat. Fry the meatballs for 5–6 min, turning, until browned all over (they don't need to be cooked through yet), then lift onto a plate."
+      },
+      {
+        "title": "Make the sauce",
+        "text": "Turn the heat to medium-low and cook the onion in the same pan for 5 min until soft, then add the garlic for 1 min and the tomato purée for 1 min. Pour in the chopped tomatoes and a splash of water, scraping up the browned bits."
+      },
+      {
+        "title": "Simmer",
+        "text": "Return the meatballs to the sauce, cover and simmer for 12–15 min, turning them once, until cooked through and the sauce has thickened. Meanwhile, cook the spaghetti in salted boiling water according to the pack."
+      },
+      {
+        "title": "Serve",
+        "text": "Tear the basil into the sauce. Toss the drained spaghetti with a few spoonfuls of sauce and a splash of pasta water, then top with the meatballs and remaining sauce and finish with the rest of the parmesan."
+      }
+    ],
+    "tags": [
+      "comfort",
+      "freezable",
+      "kid-friendly"
+    ],
+    "basedOn": "RecipeTin Eats — Italian meatballs; Jamie Oliver spaghetti & meatballs"
+  },
+  {
+    "id": "it_chicken_bacon_mushroom_bake",
+    "title": "Creamy Chicken, Bacon & Mushroom Pasta Bake with a Cheesy Crust",
+    "icon": "🧀",
+    "cuisine": "Italian",
+    "category": "treat",
+    "protein": "chicken",
+    "time": 45,
+    "servings": 2,
+    "equipment": [
+      "hob",
+      "oven"
+    ],
+    "ingredients": [
+      {
+        "i": "chicken_thighs",
+        "q": 250,
+        "t": "250g, bite-sized pieces"
+      },
+      {
+        "i": "bacon",
+        "q": 100,
+        "t": "3 rashers, chopped"
+      },
+      {
+        "i": "mushrooms",
+        "q": 125,
+        "t": "½ pack, sliced",
+        "swap": "Fry the mushrooms separately and scatter them over one half of the dish only before the cheese goes on."
+      },
+      {
+        "i": "garlic",
+        "q": 2,
+        "t": "2 cloves, sliced"
+      },
+      {
+        "i": "pasta",
+        "q": 160,
+        "t": "160g penne"
+      },
+      {
+        "i": "double_cream",
+        "q": 150,
+        "t": "150ml pot"
+      },
+      {
+        "i": "milk",
+        "q": 100,
+        "t": "100ml"
+      },
+      {
+        "i": "stock_cubes",
+        "q": 0.5,
+        "t": "½ chicken cube, crumbled"
+      },
+      {
+        "i": "wholegrain_mustard",
+        "q": 5,
+        "t": "1 tsp"
+      },
+      {
+        "i": "spinach",
+        "q": 60,
+        "t": "a big handful"
+      },
+      {
+        "i": "parmesan",
+        "q": 30,
+        "t": "30g, grated"
+      },
+      {
+        "i": "cheddar",
+        "q": 60,
+        "t": "60g, grated"
+      },
+      {
+        "i": "oil",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "for the pasta water"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep",
+        "text": "Heat the oven to 200°C (180°C fan) and put a pan of salted water on to boil. Cut the chicken into bite-sized pieces, chop the bacon, slice the mushrooms and garlic, and grate the cheeses."
+      },
+      {
+        "title": "Part-cook the pasta",
+        "text": "Cook the penne for 3 min less than the pack says – it will finish cooking in the oven. Scoop out a mugful of the water, then drain."
+      },
+      {
+        "title": "Fry the chicken and bacon",
+        "text": "Meanwhile, heat the oil in a large frying pan over a medium-high heat. Fry the chicken and bacon for 6–7 min until golden and the chicken is cooked through. Add the mushrooms and cook for 4 min until golden and any liquid has evaporated, then stir in the garlic for 1 min."
+      },
+      {
+        "title": "Make it creamy",
+        "text": "Turn the heat down and stir in the cream, milk, crumbled stock cube and mustard, then simmer for 2 min until slightly thickened. Stir in the spinach to wilt, then half the parmesan, the pasta and a splash of pasta water – it should look saucier than you think, as the pasta drinks it up in the oven."
+      },
+      {
+        "title": "Bake",
+        "text": "Tip into an ovenproof dish, scatter over the cheddar and remaining parmesan and bake for 15 min until bubbling and golden brown on top. Rest for 5 min before serving."
+      }
+    ],
+    "tags": [
+      "comfort"
+    ],
+    "basedOn": "BBC Good Food — Creamy chicken & mushroom pasta bake; HelloFresh UK cheesy chicken & bacon pasta bake"
+  },
+  {
+    "id": "it_garlic_chilli_prawn_linguine",
+    "title": "Garlic, Chilli & Lemon King Prawn Linguine with Cherry Tomatoes & Rocket",
+    "icon": "🦐",
+    "cuisine": "Italian",
+    "category": "everyday",
+    "protein": "prawns",
+    "time": 20,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "pasta",
+        "q": 180,
+        "t": "180g linguine or spaghetti"
+      },
+      {
+        "i": "prawns",
+        "q": 170,
+        "t": "1 pack, defrosted"
+      },
+      {
+        "i": "cherry_tomatoes",
+        "q": 150,
+        "t": "150g, halved"
+      },
+      {
+        "i": "garlic",
+        "q": 3,
+        "t": "3 cloves, thinly sliced"
+      },
+      {
+        "i": "chilli_flakes",
+        "q": 1,
+        "t": "½ tsp",
+        "swap": "Leave the chilli out of the pan and sprinkle it over one plate only at the end."
+      },
+      {
+        "i": "lemon",
+        "q": 1,
+        "t": "1, zested and halved"
+      },
+      {
+        "i": "butter",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "oil",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "rocket",
+        "q": 30,
+        "t": "½ bag"
+      },
+      {
+        "i": "salt",
+        "q": 3,
+        "t": "for the pasta water"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep",
+        "text": "If the prawns are frozen, defrost them in a bowl of cold water for 15 min, then pat dry. Put a large pan of salted water on to boil. Thinly slice the garlic, halve the tomatoes, zest the lemon and cut it in half."
+      },
+      {
+        "title": "Cook the linguine",
+        "text": "Cook the pasta according to the pack. Scoop out a mugful of the water before draining."
+      },
+      {
+        "title": "Start the sauce",
+        "text": "About 5 min before the pasta is ready, heat the oil in a large frying pan over a medium heat. Add the garlic and chilli for 1 min until pale golden, then add the tomatoes and cook for 2–3 min until they start to soften and burst."
+      },
+      {
+        "title": "Cook the prawns",
+        "text": "Add the prawns and cook for 2–3 min, turning, until pink all over and opaque – don't overcook or they turn rubbery. Stir in the butter, lemon zest and a good squeeze of juice."
+      },
+      {
+        "title": "Toss and serve",
+        "text": "Lift the linguine into the pan with tongs, add a splash of pasta water and toss over the heat for 1 min until silky. Take off the heat, toss through the rocket, season and serve with lemon wedges."
+      }
+    ],
+    "tags": [
+      "quick"
+    ],
+    "basedOn": "Jamie Oliver — Prawn linguine (chilli, garlic, lemon & rocket)"
+  },
+  {
+    "id": "it_creamy_lemon_salmon_penne",
+    "title": "Creamy Lemon & Garlic Salmon Penne with Spinach & Peas",
+    "icon": "🐟",
+    "cuisine": "Italian",
+    "category": "everyday",
+    "protein": "fish",
+    "time": 25,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "salmon",
+        "q": 2,
+        "t": "2 fillets"
+      },
+      {
+        "i": "pasta",
+        "q": 160,
+        "t": "160g penne"
+      },
+      {
+        "i": "double_cream",
+        "q": 150,
+        "t": "150ml pot"
+      },
+      {
+        "i": "garlic",
+        "q": 2,
+        "t": "2 cloves, finely chopped"
+      },
+      {
+        "i": "lemon",
+        "q": 1,
+        "t": "1, zested and juiced"
+      },
+      {
+        "i": "spinach",
+        "q": 80,
+        "t": "2 handfuls"
+      },
+      {
+        "i": "frozen_peas",
+        "q": 80,
+        "t": "80g"
+      },
+      {
+        "i": "parmesan",
+        "q": 20,
+        "t": "20g, grated"
+      },
+      {
+        "i": "oil",
+        "q": 10,
+        "t": "2 tsp"
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep",
+        "text": "Put a pan of salted water on to boil. Season the salmon with salt and pepper. Finely chop the garlic, zest the lemon and cut it in half."
+      },
+      {
+        "title": "Cook the salmon",
+        "text": "Heat the oil in a large non-stick frying pan over a medium-high heat. Cook the salmon skin-side down for 4 min until the skin is crisp, then flip and cook for 2–3 min more until it flakes easily but is still slightly translucent in the middle. Lift out, remove the skin and break into big flakes."
+      },
+      {
+        "title": "Cook the pasta and peas",
+        "text": "Meanwhile, cook the penne according to the pack, adding the peas for the last 2 min. Save a mugful of water before draining."
+      },
+      {
+        "title": "Make the sauce",
+        "text": "Wipe out most of the fat from the salmon pan and set over a medium-low heat. Add the garlic for 1 min, then pour in the cream with the lemon zest and bubble for 2 min until slightly thickened. Stir in the spinach until wilted."
+      },
+      {
+        "title": "Toss and serve",
+        "text": "Add the pasta and peas, the parmesan, a squeeze of lemon juice and a splash of pasta water and toss until glossy. Gently fold through the salmon so it stays in chunks, season with black pepper and serve."
+      }
+    ],
+    "tags": [
+      "quick"
+    ],
+    "basedOn": "Mob Kitchen — Creamy salmon pasta; BBC Good Food creamy salmon, spinach & pea pasta"
+  },
+  {
+    "id": "it_potato_spinach_feta_frittata",
+    "title": "Golden Potato, Spinach & Feta Frittata with Cherry Tomato & Rocket Salad",
+    "icon": "🍳",
+    "cuisine": "Italian",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 30,
+    "servings": 2,
+    "equipment": [
+      "hob",
+      "grill"
+    ],
+    "ingredients": [
+      {
+        "i": "eggs",
+        "q": 6,
+        "t": "6"
+      },
+      {
+        "i": "potatoes",
+        "q": 300,
+        "t": "2 medium, thinly sliced"
+      },
+      {
+        "i": "spinach",
+        "q": 100,
+        "t": "2 big handfuls"
+      },
+      {
+        "i": "spring_onions",
+        "q": 3,
+        "t": "3, sliced"
+      },
+      {
+        "i": "feta",
+        "q": 100,
+        "t": "½ pack, crumbled",
+        "swap": "Crumble the feta over one half of the frittata only before it goes under the grill."
+      },
+      {
+        "i": "parmesan",
+        "q": 15,
+        "t": "15g, grated"
+      },
+      {
+        "i": "oil",
+        "q": 20,
+        "t": "1½ tbsp"
+      },
+      {
+        "i": "butter",
+        "q": 10,
+        "t": "a knob"
+      },
+      {
+        "i": "cherry_tomatoes",
+        "q": 150,
+        "t": "150g, halved"
+      },
+      {
+        "i": "rocket",
+        "q": 30,
+        "t": "½ bag"
+      },
+      {
+        "i": "lemon",
+        "q": 0.5,
+        "t": "½, for dressing"
+      },
+      {
+        "i": "salt",
+        "q": 1,
+        "t": "to season"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep",
+        "text": "Heat the grill to high. Slice the potatoes about 3mm thick, leaving the skins on. Slice the spring onions and halve the tomatoes. Beat the eggs with the parmesan and a good pinch of salt and pepper."
+      },
+      {
+        "title": "Cook the potatoes",
+        "text": "Heat 1 tbsp oil and the butter in a 20–24cm ovenproof non-stick frying pan over a medium heat. Add the potatoes, cover and cook for 10–12 min, turning occasionally, until tender and golden at the edges."
+      },
+      {
+        "title": "Wilt the spinach",
+        "text": "Add the spring onions for 1 min, then the spinach a handful at a time until wilted. Spread everything out evenly across the pan."
+      },
+      {
+        "title": "Set the frittata",
+        "text": "Pour over the eggs, tilting the pan to fill any gaps, then crumble over the feta. Cook over a low heat for 6–8 min without stirring until the edges are set and the base is golden but the top is still wobbly."
+      },
+      {
+        "title": "Finish under the grill",
+        "text": "Slide the pan under the grill for 3–4 min until puffed, golden and just set in the middle. Meanwhile, toss the tomatoes and rocket with a squeeze of lemon, the remaining oil and a pinch of salt. Rest the frittata for 2 min, then cut into wedges and serve with the salad."
+      }
+    ],
+    "tags": [
+      "light"
+    ],
+    "basedOn": "BBC Good Food — Potato & spinach frittata; Jamie Oliver frittata method"
+  },
+  {
+    "id": "it_spinach_ricotta_cannelloni",
+    "title": "Spinach & Ricotta Cannelloni Baked in Tomato Sauce with Golden Mozzarella",
+    "icon": "🧀",
+    "cuisine": "Italian",
+    "category": "treat",
+    "protein": "veggie",
+    "time": 65,
+    "servings": 2,
+    "equipment": [
+      "hob",
+      "oven"
+    ],
+    "ingredients": [
+      {
+        "i": "lasagne_sheets",
+        "q": 125,
+        "t": "6 sheets"
+      },
+      {
+        "i": "ricotta",
+        "q": 250,
+        "t": "1 tub"
+      },
+      {
+        "i": "spinach",
+        "q": 200,
+        "t": "200g"
+      },
+      {
+        "i": "parmesan",
+        "q": 40,
+        "t": "40g, grated"
+      },
+      {
+        "i": "lemon",
+        "q": 0.5,
+        "t": "½, zested"
+      },
+      {
+        "i": "garlic",
+        "q": 3,
+        "t": "3 cloves"
+      },
+      {
+        "i": "passata",
+        "q": 500,
+        "t": "1 carton"
+      },
+      {
+        "i": "basil",
+        "q": 15,
+        "t": "½ pack"
+      },
+      {
+        "i": "mozzarella",
+        "q": 125,
+        "t": "1 ball, torn"
+      },
+      {
+        "i": "oil",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Make the filling",
+        "text": "Heat the oven to 200°C (180°C fan) and boil a full kettle. Put the spinach in a colander and pour over boiling water to wilt it, then cool under the cold tap and squeeze out as much water as you can. Chop it and mix with the ricotta, half the parmesan, the lemon zest, 1 crushed garlic clove and plenty of salt and pepper."
+      },
+      {
+        "title": "Make the sauce",
+        "text": "Heat the oil in a saucepan over a medium-low heat, add the remaining garlic, sliced, and cook for 1 min. Add the passata, a pinch of salt and half the basil, torn, and simmer for 10 min."
+      },
+      {
+        "title": "Soften the sheets",
+        "text": "Lay the lasagne sheets in a roasting tin, cover with just-boiled water and leave for 5 min until pliable. Lift out onto a clean tea towel."
+      },
+      {
+        "title": "Roll and fill",
+        "text": "Spread half the sauce over the base of a small ovenproof dish. Spoon a line of filling along the short edge of each sheet, roll it up into a tube and lay seam-side down in the dish, packing them in snugly. Spoon over the remaining sauce so all the pasta is covered (any exposed edges go hard), then tear over the mozzarella and scatter with the rest of the parmesan."
+      },
+      {
+        "title": "Bake",
+        "text": "Cover with foil and bake for 15 min, then uncover and bake for 15–20 min more until bubbling and golden and the pasta is tender when poked with a knife. Rest for 5 min and scatter with the remaining basil."
+      }
+    ],
+    "tags": [
+      "comfort",
+      "freezable"
+    ],
+    "basedOn": "BBC Good Food — Spinach & ricotta cannelloni; lovefood spinach & ricotta cannelloni (rolled lasagne-sheet method)"
+  },
+  {
+    "id": "it_chicken_milanese_lemon_spaghetti",
+    "title": "Crispy Chicken Milanese with Lemon-Parmesan Spaghetti & Rocket",
+    "icon": "🍋",
+    "cuisine": "Italian",
+    "category": "everyday",
+    "protein": "chicken",
+    "time": 30,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "airFryer": "Spray the crumbed escalopes with oil on both sides and air-fry at 200°C for 8–10 min, turning halfway, until golden and cooked through.",
+    "ingredients": [
+      {
+        "i": "chicken_breast",
+        "q": 350,
+        "t": "2 breasts (350g pack)"
+      },
+      {
+        "i": "plain_flour",
+        "q": 20,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "eggs",
+        "q": 1,
+        "t": "1, beaten"
+      },
+      {
+        "i": "panko",
+        "q": 60,
+        "t": "60g"
+      },
+      {
+        "i": "parmesan",
+        "q": 40,
+        "t": "40g, grated"
+      },
+      {
+        "i": "mixed_herbs",
+        "q": 1,
+        "t": "½ tsp"
+      },
+      {
+        "i": "oil",
+        "q": 45,
+        "t": "3 tbsp"
+      },
+      {
+        "i": "pasta",
+        "q": 140,
+        "t": "140g spaghetti"
+      },
+      {
+        "i": "lemon",
+        "q": 1,
+        "t": "1, zested and halved"
+      },
+      {
+        "i": "butter",
+        "q": 20,
+        "t": "20g"
+      },
+      {
+        "i": "rocket",
+        "q": 30,
+        "t": "½ bag"
+      },
+      {
+        "i": "cherry_tomatoes",
+        "q": 100,
+        "t": "100g, halved"
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep and bash the chicken",
+        "text": "Put a pan of salted water on to boil. Put the chicken between two sheets of baking paper and bash with a rolling pin until about 5mm thin. Set out three plates: seasoned flour, beaten egg, and the panko mixed with the herbs and 10g of the parmesan. Zest the lemon, cut it in half and halve the tomatoes."
+      },
+      {
+        "title": "Crumb the chicken",
+        "text": "Dust each escalope in flour, dip in the egg, then press firmly into the crumbs so both sides are well coated. Put the spaghetti on to cook according to the pack."
+      },
+      {
+        "title": "Fry the chicken",
+        "text": "Heat the oil in a large frying pan over a medium-high heat until a crumb sizzles straight away. Fry the escalopes for 3 min each side until deep golden and cooked through with no pink. Drain on kitchen paper and sprinkle with salt."
+      },
+      {
+        "title": "Make the lemon spaghetti",
+        "text": "Drain the pasta, saving a mugful of water, and return it to the pan off the heat. Add the butter, lemon zest, the juice of half the lemon, the remaining parmesan and a splash of pasta water and toss until creamy and glossy."
+      },
+      {
+        "title": "Serve",
+        "text": "Toss the rocket and tomatoes with a squeeze of lemon and a drizzle of oil. Plate the chicken with the spaghetti, pile the salad on top and serve with the remaining lemon in wedges."
+      }
+    ],
+    "tags": [
+      "crispy"
+    ],
+    "basedOn": "Jamie Oliver — Chicken Milanese with spaghetti; HelloFresh UK Italian-inspired chicken Milanese"
+  },
+  {
+    "id": "it_tuscan_sausage_bean_stew",
+    "title": "Tuscan Sausage & Cannellini Bean Stew with Spinach & Garlic Toasts",
+    "icon": "🥘",
+    "cuisine": "Italian",
+    "category": "everyday",
+    "protein": "pork",
+    "time": 30,
+    "servings": 2,
+    "equipment": [
+      "hob",
+      "oven"
+    ],
+    "ingredients": [
+      {
+        "i": "sausages",
+        "q": 4,
+        "t": "4, cut into chunks"
+      },
+      {
+        "i": "cannellini_beans",
+        "q": 400,
+        "t": "1 tin, drained"
+      },
+      {
+        "i": "chopped_tomatoes",
+        "q": 400,
+        "t": "1 tin"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, chopped"
+      },
+      {
+        "i": "garlic",
+        "q": 3,
+        "t": "3 cloves"
+      },
+      {
+        "i": "mixed_herbs",
+        "q": 2,
+        "t": "1 tsp (rosemary if you have it)"
+      },
+      {
+        "i": "stock_cubes",
+        "q": 0.5,
+        "t": "½ chicken cube in 150ml water"
+      },
+      {
+        "i": "spinach",
+        "q": 80,
+        "t": "2 handfuls"
+      },
+      {
+        "i": "parmesan",
+        "q": 20,
+        "t": "20g, grated"
+      },
+      {
+        "i": "baguette",
+        "q": 1,
+        "t": "1 part-baked baguette"
+      },
+      {
+        "i": "oil",
+        "q": 20,
+        "t": "1½ tbsp"
+      },
+      {
+        "i": "salt",
+        "q": 1,
+        "t": "to season"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep",
+        "text": "Heat the oven for the baguette according to the pack. Cut the sausages into chunks, chop the onion and slice 2 garlic cloves, keeping 1 whole for the toasts. Drain the beans and dissolve the half stock cube in 150ml just-boiled water."
+      },
+      {
+        "title": "Brown the sausages",
+        "text": "Heat 1 tbsp oil in a large deep frying pan over a medium-high heat and fry the sausages for 6–8 min until golden all over. Push them to one side, add the onion and cook for 5 min until soft, then stir in the sliced garlic and herbs for 1 min."
+      },
+      {
+        "title": "Simmer the stew",
+        "text": "Add the tomatoes, beans and stock and bring to a bubble. Simmer for 12–15 min, crushing a few beans against the side of the pan to thicken it, until the sausages are cooked through and the sauce is thick and stew-like."
+      },
+      {
+        "title": "Make the garlic toasts",
+        "text": "While the stew simmers, bake the baguette for about 8 min until crisp. Slice it, drizzle with the remaining oil and rub the cut sides with the halved garlic clove."
+      },
+      {
+        "title": "Finish and serve",
+        "text": "Stir the spinach into the stew for 1–2 min until wilted and season to taste. Ladle into bowls, grate over the parmesan and serve with the garlic toasts for dunking."
+      }
+    ],
+    "tags": [
+      "one-pot",
+      "comfort"
+    ],
+    "basedOn": "BBC Good Food — Tuscan sausage & bean stew; Jamie Oliver sausage & bean casserole"
+  },
+  {
+    "id": "it_pasta_alla_norma",
+    "title": "Pasta alla Norma with Golden Aubergine, Basil & Pecorino",
+    "icon": "🍆",
+    "cuisine": "Italian",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 35,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "airFryer": "Toss the aubergine cubes in 1 tbsp oil and air-fry at 200°C for 12–15 min, shaking twice, until golden and soft.",
+    "ingredients": [
+      {
+        "i": "aubergine",
+        "q": 1,
+        "t": "1, cut into 2cm cubes"
+      },
+      {
+        "i": "oil",
+        "q": 45,
+        "t": "3 tbsp"
+      },
+      {
+        "i": "garlic",
+        "q": 3,
+        "t": "3 cloves, sliced"
+      },
+      {
+        "i": "chilli_flakes",
+        "q": 1,
+        "t": "½ tsp",
+        "swap": "Leave the chilli out of the pan and sprinkle it over one plate only at the end."
+      },
+      {
+        "i": "tomato_puree",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "chopped_tomatoes",
+        "q": 400,
+        "t": "1 tin"
+      },
+      {
+        "i": "basil",
+        "q": 15,
+        "t": "½ pack"
+      },
+      {
+        "i": "pasta",
+        "q": 180,
+        "t": "180g penne, rigatoni or spaghetti"
+      },
+      {
+        "i": "pecorino",
+        "q": 30,
+        "t": "30g, grated or shaved"
+      },
+      {
+        "i": "salt",
+        "q": 3,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep",
+        "text": "Cut the aubergine into 2cm cubes and toss with a pinch of salt. Slice the garlic. Put a pan of salted water on to boil."
+      },
+      {
+        "title": "Fry the aubergine",
+        "text": "Heat 2 tbsp oil in a large frying pan over a medium-high heat. Fry the aubergine in a single layer for 10–12 min, turning now and then, until deep golden outside and soft all the way through. Tip onto kitchen paper."
+      },
+      {
+        "title": "Make the sauce",
+        "text": "Turn the heat down to medium-low, add the remaining oil, the garlic and chilli and cook for 1 min. Stir in the purée for 30 seconds, then the tomatoes, and simmer for 10 min until thick. Meanwhile, cook the pasta according to the pack."
+      },
+      {
+        "title": "Bring it together",
+        "text": "Return two-thirds of the aubergine to the sauce with half the basil, torn. Add the drained pasta with a splash of cooking water and toss until everything is coated."
+      },
+      {
+        "title": "Serve",
+        "text": "Divide between bowls and top with the remaining aubergine, the pecorino and the rest of the basil leaves."
+      }
+    ],
+    "tags": [],
+    "basedOn": "Jamie Oliver — Sicilian spaghetti alla Norma; BBC Good Food pasta alla Norma"
+  },
+  {
+    "id": "it_crispy_gnocchi_garlic_mushrooms",
+    "title": "Crispy Pan-Fried Gnocchi with Creamy Garlic Mushrooms, Spinach & Parmesan",
+    "icon": "🍄",
+    "cuisine": "Italian",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 20,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "gnocchi",
+        "q": 500,
+        "t": "1 pack"
+      },
+      {
+        "i": "mushrooms",
+        "q": 250,
+        "t": "1 pack, sliced",
+        "swap": "Fry the mushrooms in a separate pan with a little butter and garlic, make the creamy sauce without them and spoon the mushrooms onto one plate only."
+      },
+      {
+        "i": "garlic",
+        "q": 2,
+        "t": "2 cloves, sliced"
+      },
+      {
+        "i": "double_cream",
+        "q": 100,
+        "t": "100ml"
+      },
+      {
+        "i": "spinach",
+        "q": 80,
+        "t": "2 handfuls"
+      },
+      {
+        "i": "parmesan",
+        "q": 30,
+        "t": "30g, grated"
+      },
+      {
+        "i": "butter",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "oil",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "mixed_herbs",
+        "q": 1,
+        "t": "½ tsp"
+      },
+      {
+        "i": "lemon",
+        "q": 0.5,
+        "t": "½, for squeezing"
+      },
+      {
+        "i": "salt",
+        "q": 1,
+        "t": "to season"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep",
+        "text": "Slice the mushrooms and garlic and grate the parmesan. Separate the gnocchi so none are stuck together – no need to boil them."
+      },
+      {
+        "title": "Crisp the gnocchi",
+        "text": "Heat the oil in a large non-stick frying pan over a medium-high heat. Add the gnocchi in a single layer and fry for 6–8 min, turning occasionally, until golden and crisp on the outside. Tip into a bowl."
+      },
+      {
+        "title": "Fry the mushrooms",
+        "text": "Add the butter and mushrooms to the same pan and cook over a high heat for 5 min until golden and any liquid has cooked off. Add the garlic and herbs for 1 min."
+      },
+      {
+        "title": "Make it creamy",
+        "text": "Turn the heat down to medium, pour in the cream with 3 tbsp water and bubble for 1–2 min until it coats the back of a spoon. Stir in the spinach until wilted, then half the parmesan and a squeeze of lemon."
+      },
+      {
+        "title": "Toss and serve",
+        "text": "Return the gnocchi to the pan and toss for 1 min to coat – they'll stay crisp at the edges. Season, then serve topped with the rest of the parmesan and plenty of black pepper."
+      }
+    ],
+    "tags": [
+      "quick"
+    ],
+    "basedOn": "BBC Good Food — Crispy gnocchi with mushrooms & spinach; HelloFresh UK creamy mushroom gnocchi"
+  },
+  {
+    "id": "it_salmon_basil_salsa_verde",
+    "title": "Roast Salmon with Basil & Caper Salsa Verde, Crushed Potatoes & Rocket",
+    "icon": "🐟",
+    "cuisine": "Italian",
+    "category": "everyday",
+    "protein": "fish",
+    "time": 30,
+    "servings": 2,
+    "equipment": [
+      "hob",
+      "oven"
+    ],
+    "airFryer": "Air-fry the oiled, seasoned salmon at 190°C for 9–11 min until it flakes easily, with the tomatoes alongside for the last 5 min.",
+    "ingredients": [
+      {
+        "i": "salmon",
+        "q": 2,
+        "t": "2 fillets"
+      },
+      {
+        "i": "potatoes",
+        "q": 500,
+        "t": "500g, cut into bite-sized chunks"
+      },
+      {
+        "i": "cherry_tomatoes",
+        "q": 100,
+        "t": "100g"
+      },
+      {
+        "i": "basil",
+        "q": 15,
+        "t": "½ pack"
+      },
+      {
+        "i": "capers",
+        "q": 15,
+        "t": "1 tbsp, drained"
+      },
+      {
+        "i": "anchovies",
+        "q": 5,
+        "t": "1 fillet (optional)"
+      },
+      {
+        "i": "garlic",
+        "q": 1,
+        "t": "1 small clove"
+      },
+      {
+        "i": "lemon",
+        "q": 1,
+        "t": "1, zested and juiced"
+      },
+      {
+        "i": "oil",
+        "q": 45,
+        "t": "3 tbsp"
+      },
+      {
+        "i": "butter",
+        "q": 10,
+        "t": "a knob"
+      },
+      {
+        "i": "rocket",
+        "q": 30,
+        "t": "½ bag"
+      },
+      {
+        "i": "salt",
+        "q": 2,
+        "t": "to season"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep",
+        "text": "Heat the oven to 220°C (200°C fan) and boil a full kettle. Cut the potatoes into bite-sized chunks and put them in a pan of salted boiling water to cook for 15 min until tender."
+      },
+      {
+        "title": "Roast the salmon",
+        "text": "Season the salmon, drizzle with a little oil and lay it skin-side down on a lined baking tray with the cherry tomatoes. Roast for 10–12 min until it flakes easily and is just opaque in the centre."
+      },
+      {
+        "title": "Make the salsa verde",
+        "text": "While it roasts, finely chop the basil, capers, anchovy and garlic together on a board until almost a paste. Scrape into a bowl and stir in the remaining oil, the lemon zest and the juice of half the lemon – it should be loose and spoonable. Season to taste."
+      },
+      {
+        "title": "Crush the potatoes",
+        "text": "Drain the potatoes and return them to the pan with the butter, a pinch of salt and pepper and a spoonful of the salsa verde. Crush lightly with a fork so they're still chunky."
+      },
+      {
+        "title": "Serve",
+        "text": "Plate the crushed potatoes with the salmon, roasted tomatoes and a handful of rocket. Spoon over the rest of the salsa verde and serve with lemon wedges."
+      }
+    ],
+    "tags": [
+      "light"
+    ],
+    "basedOn": "BBC Good Food — Salmon with salsa verde & crushed potatoes; Jamie Oliver salsa verde (basil version)"
+  },
+  {
+    "id": "it_pasta_e_ceci",
+    "title": "Pasta e Ceci – Roman Chickpea & Pasta Stew with Rosemary, Chilli & Parmesan",
+    "icon": "🍲",
+    "cuisine": "Italian",
+    "category": "everyday",
+    "protein": "veggie",
+    "time": 30,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "chickpeas",
+        "q": 400,
+        "t": "1 tin, drained"
+      },
+      {
+        "i": "pasta",
+        "q": 120,
+        "t": "120g small pasta or broken spaghetti"
+      },
+      {
+        "i": "onion",
+        "q": 1,
+        "t": "1, finely chopped"
+      },
+      {
+        "i": "carrots",
+        "q": 80,
+        "t": "1 medium, finely chopped"
+      },
+      {
+        "i": "garlic",
+        "q": 2,
+        "t": "2 cloves, finely chopped"
+      },
+      {
+        "i": "chopped_tomatoes",
+        "q": 200,
+        "t": "½ tin"
+      },
+      {
+        "i": "tomato_puree",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "stock_cubes",
+        "q": 1,
+        "t": "1 veg cube in 750ml water"
+      },
+      {
+        "i": "mixed_herbs",
+        "q": 1,
+        "t": "½ tsp (or a sprig of rosemary)"
+      },
+      {
+        "i": "chilli_flakes",
+        "q": 1,
+        "t": "½ tsp",
+        "swap": "Leave the chilli out of the pan and sprinkle it over one plate only at the end."
+      },
+      {
+        "i": "parmesan",
+        "q": 30,
+        "t": "30g, grated"
+      },
+      {
+        "i": "oil",
+        "q": 30,
+        "t": "2 tbsp"
+      },
+      {
+        "i": "salt",
+        "q": 1,
+        "t": "to season"
+      },
+      {
+        "i": "black_pepper",
+        "q": 1,
+        "t": "to season"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep",
+        "text": "Dissolve the stock cube in 750ml boiling water. Finely chop the onion, carrot and garlic. Drain the chickpeas."
+      },
+      {
+        "title": "Cook the soffritto",
+        "text": "Heat 1 tbsp oil in a large saucepan over a medium heat and cook the onion and carrot for 8 min until soft and sweet. Add the garlic, herbs and chilli for 1 min, then the tomato purée for 1 min."
+      },
+      {
+        "title": "Simmer and thicken",
+        "text": "Add the chickpeas, chopped tomatoes and stock and simmer for 10 min. Scoop out a ladle of chickpeas and liquid, mash or blitz until smooth and stir it back in – this gives the stew its creamy body."
+      },
+      {
+        "title": "Cook the pasta in the pot",
+        "text": "Add the pasta and simmer for 10–12 min, stirring often so it doesn't stick, until tender and the stew is thick enough to hold a spoon upright for a second. Add a splash of hot water if it gets too stiff."
+      },
+      {
+        "title": "Serve",
+        "text": "Season, rest for 2 min, then ladle into bowls. Finish each with a drizzle of the remaining oil, plenty of parmesan and black pepper."
+      }
+    ],
+    "tags": [
+      "one-pot"
+    ],
+    "basedOn": "Nigella Lawson — Pasta e ceci (Cook, Eat, Repeat); Rachel Roddy (Guardian) pasta e ceci"
+  },
+  {
+    "id": "it_sausage_broccoli_orecchiette",
+    "title": "Sausage & Broccoli Orecchiette with Garlic, Chilli & Lemon",
+    "icon": "🥦",
+    "cuisine": "Italian",
+    "category": "everyday",
+    "protein": "pork",
+    "time": 25,
+    "servings": 2,
+    "equipment": [
+      "hob"
+    ],
+    "ingredients": [
+      {
+        "i": "sausages",
+        "q": 3,
+        "t": "3, skins removed"
+      },
+      {
+        "i": "broccoli",
+        "q": 200,
+        "t": "about ½ head, small florets"
+      },
+      {
+        "i": "pasta",
+        "q": 160,
+        "t": "160g orecchiette or penne"
+      },
+      {
+        "i": "garlic",
+        "q": 3,
+        "t": "3 cloves, sliced"
+      },
+      {
+        "i": "chilli_flakes",
+        "q": 1,
+        "t": "½ tsp",
+        "swap": "Leave the chilli out of the pan and sprinkle it over one plate only at the end."
+      },
+      {
+        "i": "fennel_seeds",
+        "q": 1,
+        "t": "½ tsp"
+      },
+      {
+        "i": "lemon",
+        "q": 0.5,
+        "t": "½, zested and squeezed"
+      },
+      {
+        "i": "parmesan",
+        "q": 25,
+        "t": "25g, grated"
+      },
+      {
+        "i": "oil",
+        "q": 15,
+        "t": "1 tbsp"
+      },
+      {
+        "i": "salt",
+        "q": 3,
+        "t": "for the pasta water"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Prep",
+        "text": "Put a large pan of salted water on to boil. Squeeze the sausagemeat out of the skins. Cut the broccoli into small florets and thinly slice the stalk, slice the garlic and zest the lemon."
+      },
+      {
+        "title": "Fry the sausage",
+        "text": "Heat the oil in a large frying pan over a medium-high heat. Add the sausagemeat and fennel seeds and fry for 6–8 min, breaking it up with a wooden spoon, until golden and crisp."
+      },
+      {
+        "title": "Cook the pasta and broccoli",
+        "text": "Meanwhile, cook the pasta according to the pack, adding the broccoli for the last 4 min so it's very tender."
+      },
+      {
+        "title": "Bring it together",
+        "text": "Add the garlic and chilli to the sausage for 1 min. Scoop the pasta and broccoli into the frying pan with a ladle of cooking water and toss hard over a medium heat for 2 min, crushing some of the broccoli so it breaks down into a green sauce."
+      },
+      {
+        "title": "Finish and serve",
+        "text": "Take off the heat and add the parmesan, lemon zest and a squeeze of juice. Toss until glossy and serve straight away."
+      }
+    ],
+    "tags": [
+      "quick"
+    ],
+    "basedOn": "Orecchiette con salsiccia e broccoli (Puglian classic) — Jamie Oliver / BBC Good Food sausage & broccoli pasta"
+  }
+]

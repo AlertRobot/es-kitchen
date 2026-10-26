@@ -1,0 +1,376 @@
+[
+ {
+  "id": "as_chicken_laksa",
+  "title": "Quick Chicken Laksa with Coconut, Rice Noodles & Beansprouts",
+  "icon": "🍜",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 30,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 300,
+    "t": "2 breasts (300g), thinly sliced"
+   },
+   {
+    "i": "thai_red_paste",
+    "q": 45,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "curry_powder",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "turmeric",
+    "q": 1,
+    "t": "½ tsp (optional)",
+    "opt": true
+   },
+   {
+    "i": "ginger_paste",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "coconut_milk",
+    "q": 400,
+    "t": "1 tin (400ml)"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 chicken"
+   },
+   {
+    "i": "fish_sauce",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "rice_noodles",
+    "q": 120,
+    "t": "120g"
+   },
+   {
+    "i": "beansprouts",
+    "q": 100,
+    "t": "100g",
+    "swap": "Lift the beansprouts out with a slotted spoon and add them to one bowl only."
+   },
+   {
+    "i": "pak_choi",
+    "q": 125,
+    "t": "½ pack, halved"
+   },
+   {
+    "i": "eggs",
+    "q": 2,
+    "t": "2"
+   },
+   {
+    "i": "lime",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a handful, to serve",
+    "opt": true,
+    "swap": "Scatter the coriander over one plate only, or serve it in a little bowl on the side."
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Put the kettle on. Thinly slice the chicken, halve the pak choi and crush the garlic. Cut the lime in half."
+   },
+   {
+    "title": "Boil the eggs",
+    "text": "Lower the eggs into a small pan of boiling water and cook for 7 min. Cool them in cold water, then peel and halve."
+   },
+   {
+    "title": "Fry the paste",
+    "text": "While the eggs cook, heat the oil in a large saucepan over a medium heat. Fry the red curry paste, curry powder, turmeric (optional), ginger paste and garlic for 2 min, stirring, until fragrant."
+   },
+   {
+    "title": "Simmer the broth",
+    "text": "Pour in the coconut milk and 400ml boiling water, crumble in the stock cube and bring to a simmer. Add the chicken and simmer for 6–8 min until cooked through."
+   },
+   {
+    "title": "Soak the noodles",
+    "text": "While the chicken simmers, soak the rice noodles in boiling water from the kettle for 6 min until tender. Drain well."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Add the pak choi to the broth for the final 2 min, and the beansprouts for the last minute so they heat through but keep a little crunch. Season with the fish sauce, honey and juice of half the lime. Divide the noodles between deep bowls and ladle over the broth and veg. Top with the eggs, coriander (optional) and lime wedges."
+   }
+  ],
+  "tags": [
+   "one-pot",
+   "spicy",
+   "comfort"
+  ],
+  "basedOn": "BBC Good Food — Quick chicken laksa; RecipeTin Eats — Laksa"
+ },
+ {
+  "servings": 2,
+  "id": "mx_cheesy_chicken_rice_bake",
+  "title": "One-Pot Cheesy Mexican Chicken & Rice Bake",
+  "icon": "🥘",
+  "cuisine": "Mexican",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 55,
+  "equipment": [
+   "hob",
+   "oven"
+  ],
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 300,
+    "t": "3–4 thighs (300g), diced"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, chopped"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, diced"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "cumin",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "chipotle_paste",
+    "q": 15,
+    "t": "1 tbsp",
+    "swap": "For a milder portion, halve the chipotle paste and serve extra on the side for whoever likes it hot."
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 200,
+    "t": "½ tin"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 chicken cube in 250ml water"
+   },
+   {
+    "i": "kidney_beans",
+    "q": 200,
+    "t": "½ tin, drained"
+   },
+   {
+    "i": "sweetcorn",
+    "q": 80,
+    "t": "80g",
+    "swap": "Leave the sweetcorn out of the bake; microwave it for 2 min and stir it into one portion when serving."
+   },
+   {
+    "i": "cheddar",
+    "q": 60,
+    "t": "60g, grated"
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced, to serve",
+    "opt": true,
+    "swap": "Slice the spring onions and scatter them over one portion only at the table."
+   },
+   {
+    "i": "sour_cream",
+    "q": 50,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, to serve",
+    "opt": true,
+    "swap": "Chop the coriander and scatter it over one portion only at the table."
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to taste"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Heat the oven to 180°C fan. Dice the chicken into bite-sized pieces and season with salt. Chop the onion, dice the pepper, crush the garlic and make up 250ml stock. Rinse the rice, grate the cheddar and slice the spring onions."
+   },
+   {
+    "title": "Brown the chicken",
+    "text": "Heat the oil in a lidded ovenproof casserole over a medium-high heat. Fry the chicken for 5 min until golden all over. Add the onion and pepper and cook for 4 min until softening."
+   },
+   {
+    "title": "Add the rice and spices",
+    "text": "Stir in the garlic, cumin, smoked paprika and chipotle paste for 1 min. Add the rice and stir to coat in the spices. Pour in the chopped tomatoes, stock, drained beans and sweetcorn and bring to the boil."
+   },
+   {
+    "title": "Bake",
+    "text": "Cover with the lid, or tightly with foil, and bake for 25 min until the rice is tender and has soaked up the liquid. Uncover, scatter over the cheddar and bake for 5 min more until melted and bubbling."
+   },
+   {
+    "title": "Rest and serve",
+    "text": "Rest for 5 min so the rice settles. Scatter with the spring onions (optional) and coriander (optional). Spoon into bowls and top with soured cream."
+   }
+  ],
+  "tags": [
+   "one-pot",
+   "comfort",
+   "kid-friendly"
+  ],
+  "basedOn": "Pinch of Nom — Mexican chicken & rice bake; BBC Good Food — One-pot Mexican chicken & rice"
+ },
+ {
+  "id": "it_aubergine_parmigiana",
+  "title": "Melting Aubergine Parmigiana with Garlic Bread",
+  "icon": "🍆",
+  "cuisine": "Italian",
+  "category": "treat",
+  "protein": "veggie",
+  "time": 75,
+  "servings": 2,
+  "equipment": [
+   "hob",
+   "oven"
+  ],
+  "airFryer": "Brush the aubergine slices lightly with oil and air-fry at 200°C for 10–12 min in batches, turning halfway, until soft and golden – it uses far less oil.",
+  "ingredients": [
+   {
+    "i": "aubergine",
+    "q": 2,
+    "t": "2, sliced lengthways 1cm thick"
+   },
+   {
+    "i": "oil",
+    "q": 60,
+    "t": "4 tbsp"
+   },
+   {
+    "i": "passata",
+    "q": 500,
+    "t": "1 carton"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves"
+   },
+   {
+    "i": "basil",
+    "q": 20,
+    "t": "most of a pack",
+    "swap": "Leave the basil out of the sauce and layers, then scatter it over one half of the dish only."
+   },
+   {
+    "i": "mozzarella",
+    "q": 125,
+    "t": "1 ball, torn"
+   },
+   {
+    "i": "parmesan",
+    "q": 50,
+    "t": "50g, grated"
+   },
+   {
+    "i": "baguette",
+    "q": 1,
+    "t": "1 part-baked baguette"
+   },
+   {
+    "i": "butter",
+    "q": 20,
+    "t": "20g, softened"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Heat the oven to 200°C fan and line 2 baking trays. Slice the aubergines lengthways about 8mm thick, brush both sides with 3 tbsp of the oil and season with salt. Slice 2 garlic cloves and crush the third into the softened butter. Tear the mozzarella and grate the parmesan."
+   },
+   {
+    "title": "Roast the aubergine",
+    "text": "Lay the slices on the trays in a single layer. Roast for 30–35 min, turning halfway, until soft, collapsing and golden brown. Turn the oven down to 180°C fan."
+   },
+   {
+    "title": "Make the tomato sauce",
+    "text": "While the aubergine roasts, warm the remaining 1 tbsp oil in a saucepan over a medium-low heat. Cook the sliced garlic for 1 min until fragrant. Add the passata, a pinch of salt and half the basil, torn, and simmer for 15 min until thick."
+   },
+   {
+    "title": "Layer the parmigiana",
+    "text": "Spoon a thin layer of sauce into a small ovenproof dish, then add a layer of aubergine, some mozzarella, parmesan and a few basil leaves. Repeat until everything is used, finishing with sauce, mozzarella and parmesan. Keep a few basil leaves back to serve."
+   },
+   {
+    "title": "Bake the parmigiana",
+    "text": "Bake for 25 min until bubbling and golden on top. Meanwhile, split the baguette and spread the cut sides with the garlic butter."
+   },
+   {
+    "title": "Garlic bread and serve",
+    "text": "For the last 10 min, bake the garlic bread on the shelf below until crisp. Rest the parmigiana for 5 min, scatter with the remaining basil and serve with the bread."
+   }
+  ],
+  "tags": [
+   "comfort"
+  ],
+  "basedOn": "Tesco Real Food — Aubergine parmigiana; Felicity Cloake perfect melanzane alla parmigiana (roasted rather than fried)"
+ }
+]

@@ -1,0 +1,355 @@
+{
+  "mx_chipotle_chilli_con_carne": {
+    "title": "Chilli Con Carne",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/chilli-con-carne/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "mx_sizzling_chicken_fajitas": {
+    "title": "Chicken Fajitas",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/chicken-fajitas/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "mx_chipotle_chicken_burrito_bowl": {
+    "title": "Chipotle Chicken Burrito Bowl",
+    "site": "HelloFresh (Ireland)",
+    "url": "https://www.hellofresh.ie/recipes/chipotle-black-bean-chicken-bowl-665edf8fa1553dfae6b0bde9",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "mx_cheesy_chicken_enchiladas": {
+    "title": "Chicken Enchiladas",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/chicken-enchiladas/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "mx_black_bean_jalapeno_quesadillas": {
+    "title": "Smoky, Cheesy Sweetcorn and Black Bean Quesadillas",
+    "site": "Vegetarian Society (with Mob Kitchen)",
+    "url": "https://vegsoc.org/recipes/smoky-cheesy-sweetcorn-and-black-bean-quesadillas",
+    "author": "Mob Kitchen",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "mx_chicken_tinga_tacos": {
+    "title": "Shredded Chicken Tacos (Tinga de Pollo)",
+    "site": "America's Test Kitchen",
+    "url": "https://www.americastestkitchen.com/recipes/8891-shredded-chicken-tacos-tinga-de-pollo",
+    "author": "Steve Dunn",
+    "match": "close",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "mx_crispy_pork_carnitas_tacos": {
+    "title": "Carnitas (Mexican Slow Cooker Pulled Pork)",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/pork-carnitas-mexican-slow-cooker-pulled-pork/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "mx_panko_fish_tacos": {
+    "title": "Crispy Baked Fish Tacos",
+    "site": "Gimme Some Oven",
+    "url": "https://www.gimmesomeoven.com/print/crispy-baked-fish-tacos",
+    "author": "Ali",
+    "match": "close",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "mx_sweet_potato_black_bean_tacos": {
+    "title": "Sweet Potato, Black Bean & Feta Tacos",
+    "site": "HelloFresh UK",
+    "url": "https://hellofresh.co.uk/recipes/sweet-potato-black-bean-and-feta-tacos-5da9c60f2b4127328d599964",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "mx_huevos_rancheros": {
+    "title": "Huevos Rancheros Tortilla Bowls",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/huevos-rancheros-tortilla-bowls/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "mx_cheesy_chicken_rice_bake": {
+    "title": "One Pot Mexican Chicken and Rice",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/one-pot-mexican-chicken-rice/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "mx_loaded_beef_nachos": {
+    "title": "Ripper Beef Nachos",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/ripper-beef-nachos/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "mx_birria_beef_tacos": {
+    "title": "Birria Tacos",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/birria-tacos/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "mx_crispy_beef_chimichangas": {
+    "title": "Baked Beef and Bean Chimichangas",
+    "site": "Six Sisters' Stuff",
+    "url": "https://www.sixsistersstuff.com/wprm_print/96613",
+    "author": "Steph Loaiza",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "mx_beef_crunchwrap": {
+    "title": "Crunchwrap Supreme Recipe",
+    "site": "The Cookie Rookie",
+    "url": "https://thecookierookie.com/crunchwrap-supreme/",
+    "author": "Becky Hardin",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "mx_chicken_tortilla_soup": {
+    "title": "Chicken Tortilla Soup Recipe",
+    "site": "Chili Pepper Madness",
+    "url": "https://www.chilipeppermadness.com/wprm_print/7485",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "mx_chilli_lime_prawn_tacos": {
+    "title": "Prawn Tacos (Shrimp) with Chipotle Lime Marinade",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/prawn-tacos-shrimp/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "mx_smoky_pork_burritos": {
+    "title": "Chicken Burrito",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/chicken-burrito/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "mx_chipotle_honey_salmon": {
+    "title": "Easy Honey Chipotle Salmon",
+    "site": "Sally's Baking Addiction",
+    "url": "https://sallysbakingaddiction.com/easy-honey-chipotle-salmon",
+    "author": "Sally McKenney",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "mx_spiced_chicken_taco_salad": {
+    "title": "Loaded Chicken Taco Salad with Creamy Lime-Cilantro Dressing",
+    "site": "Averie Cooks",
+    "url": "https://www.averiecooks.com/wprm_print/67750",
+    "author": "Averie Sunshine",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "me_harissa_shakshuka_feta": {
+    "title": "Shakshuka (Middle Eastern Baked Eggs)",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/shakshuka-baked-eggs/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "me_chicken_shawarma_traybake": {
+    "title": "Chicken Shawarma (Middle Eastern)",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/chicken-sharwama-middle-eastern/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "me_crispy_chicken_shawarma_wraps": {
+    "title": "Chicken Shawarma (Middle Eastern)",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/chicken-sharwama-middle-eastern/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "me_lamb_koftas_herby_couscous": {
+    "title": "Turkish Lamb Kofta Kebabs",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/turkish-lamb-kebab-koftas/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "me_crispy_falafel_wraps": {
+    "title": "Falafel Wraps (with Grilled Veg & Salsa)",
+    "site": "Jamie Oliver",
+    "url": "https://www.jamieoliver.com/recipes/vegetables/falafel-wraps-with-grilled-veg-salsa",
+    "author": "Jamie Oliver",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "me_halloumi_harissa_veg_wraps": {
+    "title": "Halloumi, Red Pepper, Spinach and Harissa Wrap",
+    "site": "Vegetarian Society",
+    "url": "https://vegsoc.org/recipes/halloumi-red-pepper-spinach-and-harissa-wrap",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "me_sticky_harissa_chicken_traybake": {
+    "title": "Sticky Harissa Chicken Traybake with Chickpeas and Kale",
+    "site": "Easy Peasy Foodie",
+    "url": "https://www.easypeasyfoodie.com/wprm_print/sticky-harissa-chicken-traybake-with-chickpeas-and-kale",
+    "author": "Eb Gargano",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "me_chicken_apricot_tagine": {
+    "title": "Chicken Tagine",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/chicken-tagine/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "me_harissa_couscous_stuffed_peppers": {
+    "title": "Stuffed peppers with harissa chickpeas",
+    "site": "Slimming World",
+    "url": "https://slimmingworldkitchen.co.uk/recipes/harissa-chickpea-stuffed-peppers",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "me_turkish_eggs_cilbir": {
+    "title": "Turkish Eggs",
+    "site": "Nigella Lawson",
+    "url": "https://www.nigella.com/recipes/turkish-eggs",
+    "author": "Nigella Lawson",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "me_lahmacun_lamb_flatbreads": {
+    "title": "8 minute Lebanese Pizzas (Lahmacun!)",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/8-minute-lebanese-pizza-chicken-mince-recipe/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "me_zaatar_chicken_fattoush": {
+    "title": "Lebanese Fattoush Salad",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/lebanese-fattoush-salad/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "me_smoky_chickpea_spinach_stew": {
+    "title": "Spanish Chickpea & Almond Stew (from Eat Happy)",
+    "site": "WWF-UK",
+    "url": "https://wwf.org.uk/node/40576",
+    "author": "Melissa Hemsley",
+    "match": "close",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "me_homemade_lamb_doner": {
+    "title": "Homemade Rotisserie Doner Kebab Meat (beef or lamb)",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/doner-kebab-meat-recipe-beef-or-lamb/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "me_zaatar_salmon_herby_couscous": {
+    "title": "Za'atar salmon and tahini (Ottolenghi Test Kitchen: Shelf Love)",
+    "site": "loveFOOD",
+    "url": "https://www.lovefood.com/recipes/116626/yotam-ottolenghi-zaatar-salmon-and-tahini-recipe",
+    "author": "Noor Murad and Yotam Ottolenghi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "me_harissa_prawns_butter_beans": {
+    "title": "Epic Prawns & Beans (from 5 Ingredients Mediterranean)",
+    "site": "Penguin Books NZ",
+    "url": "https://www.penguin.co.nz/recipes/4118-epic-prawns-beans",
+    "author": "Jamie Oliver",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "me_crispy_halloumi_burgers": {
+    "title": "Crumbed Haloumi Burger with Sweet Chilli Mayo & Fries",
+    "site": "HelloFresh (Australia)",
+    "url": "https://www.hellofresh.com.au/recipes/crumbed-haloumi-burger-67f855c74264524ca979599d",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "me_spinach_feta_gozleme": {
+    "title": "Gozleme",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/gozleme/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "me_chicken_pastilla_pie": {
+    "title": "Pastilla",
+    "site": "No Recipes",
+    "url": "https://norecipes.com/wprm_print/pastilla",
+    "author": "Marc Matsumoto",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": "Missing defining ingredient: pastilla needs its almond layer (source fries almonds with cinnamon and sugar and layers them with the egg-set chicken filling). Fixed version adds 30g ground_almonds to the filling."
+  },
+  "me_beef_kofta_meatballs_feta": {
+    "title": "Moroccan Meatballs",
+    "site": "Tesco Real Food",
+    "url": "https://www.tesco.com/recipes/en-GB/recipe/morroccan-meatballs",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  }
+}

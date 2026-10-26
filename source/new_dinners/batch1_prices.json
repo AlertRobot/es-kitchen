@@ -1,0 +1,307 @@
+[
+ {
+  "id": "gammon_steaks",
+  "tescoPack": 450,
+  "prices": {
+   "tesco": {
+    "pack": 450,
+    "price": 4.5,
+    "loyalty": 3,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Unsmoked Gammon Steaks 2 Pack 450G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=gammon%20steaks",
+    "note": "Product 291125367. Woodside Farms Unsmoked Gammon Steaks 300g £2.39 (Aldi Price Match)."
+   },
+   "sainsburys": {
+    "pack": 450,
+    "price": 4.75,
+    "loyalty": 3.5,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Unsmoked Gammon Steaks x2 450g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/gammon%20steaks",
+    "note": "Stamford Street Co. Unsmoked Gammon Steaks x2 300g £2.38 (Aldi price match)."
+   },
+   "asda": {
+    "pack": 450,
+    "price": 4.5,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "ASDA Unsmoked Gammon Steaks (est.)",
+    "src": "",
+    "note": "trolley.co.uk could not be fetched this session (permission not granted); estimate, re-check. Assumed in line with Tesco/Sainsbury's 450g twin packs."
+   },
+   "aldi": {
+    "pack": 300,
+    "price": 2.39,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Aldi unsmoked gammon steaks 300g (est.)",
+    "src": "",
+    "note": "aldi.co.uk could not be fetched this session (permission not granted); estimate, re-check. Price taken from Tesco/Sainsbury's Aldi Price Match badges on their 300g value packs today."
+   },
+   "lidl": {
+    "pack": 300,
+    "price": 2.39,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl unsmoked gammon steaks 300g (est.)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi."
+   }
+  }
+ },
+ {
+  "id": "corned_beef",
+  "tescoPack": 340,
+  "prices": {
+   "tesco": {
+    "pack": 200,
+    "price": 3.2,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Princes Corned Beef 200G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=corned%20beef",
+    "note": "Product 258859585. No Tesco own-brand tin; Ship Corned Beef 340g £3.50 (better value), Princes 340g £4.10."
+   },
+   "sainsburys": {
+    "pack": 200,
+    "price": 3.5,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Princes Corned Beef 200g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/corned%20beef",
+    "note": "Princes 340g £4.50 (Nectar £4.25); Sainsbury's Irish Corned Beef 175g £3.75."
+   },
+   "asda": {
+    "pack": 200,
+    "price": 3.2,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Princes Corned Beef 200g (est.)",
+    "src": "",
+    "note": "trolley.co.uk could not be fetched this session (permission not granted); estimate, re-check. Assumed same as Tesco for the branded tin."
+   },
+   "aldi": {
+    "pack": 340,
+    "price": 2.99,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Aldi corned beef 340g (est.)",
+    "src": "",
+    "note": "aldi.co.uk could not be fetched this session (permission not granted); estimate, re-check."
+   },
+   "lidl": {
+    "pack": 340,
+    "price": 2.99,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl corned beef 340g (est.)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi."
+   }
+  }
+ },
+ {
+  "id": "chorizo",
+  "tescoPack": 200,
+  "prices": {
+   "tesco": {
+    "pack": 200,
+    "price": 2.7,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Chorizo Sausages For Cooking 200G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=chorizo",
+    "note": "Product 308453188. Rings are Finest only (225g £2.65; spicy £2.40, Clubcard £2.00)."
+   },
+   "sainsburys": {
+    "pack": 225,
+    "price": 2.6,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Spanish Chorizo Ring 225g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/chorizo",
+    "note": "Sainsbury's Chorizo Ring Mild 225g £2.60 (Nectar £2.25); Inspire to Cook Cooking Spanish Chorizo 190g £2.75 (Nectar £2.25)."
+   },
+   "asda": {
+    "pack": 225,
+    "price": 2.5,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "ASDA chorizo ring 225g (est.)",
+    "src": "",
+    "note": "trolley.co.uk could not be fetched this session (permission not granted); estimate, re-check."
+   },
+   "aldi": {
+    "pack": 225,
+    "price": 2.19,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Aldi chorizo ring 225g (est.)",
+    "src": "",
+    "note": "aldi.co.uk could not be fetched this session (permission not granted); estimate, re-check."
+   },
+   "lidl": {
+    "pack": 225,
+    "price": 2.19,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl chorizo ring 225g (est.)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi."
+   }
+  }
+ },
+ {
+  "id": "pork_crackling_joint",
+  "tescoPack": 700,
+  "prices": {
+   "tesco": {
+    "pack": 700,
+    "price": 5.25,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Pork Loin Crackling Joint 700g-1.3kg",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=pork%20joint%20crackling",
+    "note": "Product 315068294; sold by weight at £7.50/kg, 0.7kg option shown."
+   },
+   "sainsburys": {
+    "pack": 800,
+    "price": 5.8,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's (Approx. 800G) British Small Pork Crackling Leg Joint",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/pork%20loin%20joint",
+    "note": "Sold by weight, 600g–1kg at £7.25/kg; £5.80 is the price shown at the lower end. Large crackling loin joint ~1.8kg is £3.75/kg (half price with Nectar)."
+   },
+   "asda": {
+    "pack": 800,
+    "price": 5.6,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "ASDA pork crackling joint (est.)",
+    "src": "",
+    "note": "trolley.co.uk could not be fetched this session (permission not granted); estimate, re-check. Assumed ~£7/kg."
+   },
+   "aldi": {
+    "pack": 800,
+    "price": 5.2,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Aldi pork crackling joint (est.)",
+    "src": "",
+    "note": "aldi.co.uk could not be fetched this session (permission not granted); estimate, re-check. Assumed ~£6.50/kg."
+   },
+   "lidl": {
+    "pack": 800,
+    "price": 5.2,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl pork crackling joint (est.)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi."
+   }
+  }
+ },
+ {
+  "id": "ale",
+  "tescoPack": 500,
+  "prices": {
+   "tesco": {
+    "pack": 500,
+    "price": 0.99,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Banks's Amber Ale Beer Bottle 500ml",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=ale%20500ml",
+    "note": "Product 270965544, Aldi Price Match. No Tesco own-brand ale; most 500ml ales £2.00–£2.85 or 3 for £6 (multibuy)."
+   },
+   "sainsburys": {
+    "pack": 500,
+    "price": 2,
+    "loyalty": null,
+    "checked": "2026-10-24",
+    "verified": true,
+    "est": false,
+    "label": "Hobgoblin Ruby Ale Beer Bottle 500ml",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/ale",
+    "note": "Cheapest bottled 500ml ale on page 1; buy any 4 for £7.50 with Nectar (multibuy)."
+   },
+   "asda": {
+    "pack": 500,
+    "price": 1,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Amber ale 500ml (est.)",
+    "src": "",
+    "note": "trolley.co.uk could not be fetched this session (permission not granted); estimate, re-check."
+   },
+   "aldi": {
+    "pack": 500,
+    "price": 0.99,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Aldi amber ale 500ml (est.)",
+    "src": "",
+    "note": "aldi.co.uk could not be fetched this session (permission not granted); estimate, re-check. Price from the Aldi Price Match badge on Banks's Amber Ale at Tesco."
+   },
+   "lidl": {
+    "pack": 500,
+    "price": 0.99,
+    "loyalty": null,
+    "checked": null,
+    "verified": false,
+    "est": true,
+    "label": "Lidl amber ale 500ml (est.)",
+    "src": "",
+    "note": "Lidl GB publishes no online prices; estimated from Aldi."
+   }
+  }
+ }
+]

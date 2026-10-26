@@ -1,0 +1,359 @@
+{
+ "lu_chicken_pesto_pasta_salad": {
+  "title": "Chicken Pesto Pasta Salad",
+  "site": "The BakerMama",
+  "url": "https://thebakermama.com/recipes/chicken-pesto-pasta-salad/",
+  "author": "Maegan (The BakerMama)",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "lu_lemon_chicken_orzo_feta": {
+  "title": "Greek Lemon Orzo Salad (Risoni)",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/greek-lemon-orzo-salad-risoni/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "lu_chicken_tikka_rice_box": {
+  "title": "Chicken Tikka Kebabs",
+  "site": "Pinch of Nom",
+  "url": "https://pinchofnom.com/recipes/chicken-tikka-kebabs/",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": "Food safety: the pouch rice was microwaved before packing and then reheated again at work (two reheats); now packed straight from the pouch and reheated once, with peas softened in boiling water instead."
+ },
+ "lu_chicken_burrito_quinoa_bowl": {
+  "title": "Chicken Quinoa Burrito Bowl",
+  "site": "Tried and True Recipes",
+  "url": "https://www.triedandtruerecipe.com/chicken-quinoa-burrito-bowl/",
+  "author": "Kylie Perrotti",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "lu_tuna_sweetcorn_pasta_salad": {
+  "title": "Tuna and Sweetcorn Pasta",
+  "site": "NHS Grampian (Healthy Weight Grampian)",
+  "url": "https://www.healthyweightgrampian.scot.nhs.uk/confidence-2-cook/recipes/light-meals/tuna-and-sweetcorn-pasta/",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "lu_peanut_chicken_noodle_salad": {
+  "title": "Spicy Peanut Noodles with Shredded Chicken",
+  "site": "Pinch of Nom",
+  "url": "https://pinchofnom.com/recipes/spicy-peanut-noodles-with-shredded-chicken/",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "lu_miso_chicken_noodle_jar": {
+  "title": "Just-Add-Water Miso Chicken Noodle Soup",
+  "site": "Food Network",
+  "url": "https://www.foodnetwork.com/recipes/food-network-kitchen/just-add-water-miso-chicken-noodle-soup-3364240",
+  "author": "Food Network Kitchen",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "lu_falafel_hummus_box": {
+  "title": "Falafel bowls",
+  "site": "Tesco Recipes",
+  "url": "https://www.tesco.com/recipes/en-GB/recipe/falafel-bowls",
+  "author": "Tesco Recipes team",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "lu_harissa_chicken_couscous": {
+  "title": "Spicy chicken and couscous salad",
+  "site": "Tesco Recipes",
+  "url": "https://www.tesco.com/recipes/en-GB/recipe/spicy-chicken-and-couscous-salad",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "lu_spinach_feta_egg_muffins": {
+  "title": "Leek and feta breakfast bites",
+  "site": "Tesco Recipes",
+  "url": "https://www.tesco.com/recipes/en-GB/recipe/leek-and-feta-breakfast-bites",
+  "author": "Tesco Recipes team",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": "Overfilled tin: 3 eggs plus cottage cheese, spinach, pepper, spring onion and feta went into only 3 muffin holes, more than the roughly one egg per hole that Tesco's egg-muffin recipes use (4 eggs in 4 holes; 12 eggs in 12 holes, fillings included), so they would overflow; now 4 holes per portion filled to 3/4, batch is 12 muffins in one 12-hole tin."
+ },
+ "lu_chicken_caesar_wrap": {
+  "title": "Chicken Caesar salad wraps",
+  "site": "Asda Good Living",
+  "url": "https://asda.com/good-living/recipe/chicken-caesar-wraps",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "lu_ploughmans_lunchbox": {
+  "title": "Ploughman's Sandwich",
+  "site": "Flora",
+  "url": "https://www.flora.com/en-gb/recipes/ploughmans-sandwich-183596",
+  "match": "close",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "lu_smoked_mackerel_potato_salad": {
+  "title": "New potato and mackerel salad with lemon soured cream",
+  "site": "Tesco Recipes",
+  "url": "https://www.tesco.com/recipes/en-GB/recipe/new-potato-and-mackerel-salad-with-lemon-soured-cream",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "lu_spiced_lentil_tomato_soup": {
+  "title": "Spiced carrot and lentil soup with cheesy pesto toasties",
+  "site": "Tesco Recipes",
+  "url": "https://www.tesco.com/recipes/en-GB/recipe/spiced-carrot-and-lentil-soup-with-cheesy-pesto-toasties",
+  "author": "Tesco Recipes team",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "lu_ginger_chicken_noodle_soup": {
+  "title": "Foolproof Poached Chicken Noodle Soup",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/foolproof-poached-chicken-noodle-soup/",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "lu_sweet_chilli_prawn_noodle_salad": {
+  "title": "Sweet chilli prawn & soba noodle salad",
+  "site": "WW (WeightWatchers UK)",
+  "url": "https://weightwatchers.com/uk/recipe/sweet-chilli-prawn-and-soba-noodle-salad/574e689c07f8e3d1144c2e3a",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "lu_zaatar_chickpea_quinoa_feta": {
+  "title": "Za'atar Chicken Skewers with Chickpea-Quinoa Salad",
+  "site": "Fitness Blender",
+  "url": "https://www.fitnessblender.com/articles/za-atar-chicken-skewers-with-chickpea-quinoa-salad",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "lu_chicken_shawarma_pitta_box": {
+  "title": "Chicken Shawarma",
+  "site": "Pinch of Nom",
+  "url": "https://pinchofnom.com/recipes/chicken-shawarma/",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "lu_cottage_cheese_protein_pot": {
+  "title": "Herby Ham & Egg Cottage Cheese Pot",
+  "site": "Mob",
+  "url": "https://www.mob.co.uk/recipes/herby-ham-and-egg-cottage-cheese-pot",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "lu_gochujang_beef_kimchi_rice": {
+  "title": "Korean Beef Mince Rice Bowls",
+  "site": "Rachel Phipps",
+  "url": "https://www.rachelphipps.com/2026/03/korean-beef-rice-bowls-gochujang-drizzle.html",
+  "author": "Rachel Phipps",
+  "match": "close",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "lu_beef_bean_chilli_pot": {
+  "title": "Chilli Con Carne",
+  "site": "Pinch of Nom",
+  "url": "https://pinchofnom.com/recipes/chilli-con-carne/",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "lu_honey_soy_salmon_noodles": {
+  "title": "Teriyaki Salmon Noodles",
+  "site": "Tesco Recipes",
+  "url": "https://www.tesco.com/recipes/en-GB/recipe/teriyaki-salmon-noodles",
+  "author": "Tesco Recipes team",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "lu_coronation_chicken_pot": {
+  "title": "Coronation chicken",
+  "site": "Tesco Recipes",
+  "url": "https://www.tesco.com/recipes/en-GB/recipe/coronation-chicken",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "lu_cajun_chicken_sweet_potato_box": {
+  "title": "Cajun-Style Chicken Thighs",
+  "site": "Pinch of Nom",
+  "url": "https://pinchofnom.com/recipes/cajun-chicken-thighs/",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "lu_loaded_beans_on_toast": {
+  "title": "Spinach beans on toast",
+  "site": "Tesco Recipes",
+  "url": "https://www.tesco.com/recipes/en-GB/recipe/spinach-beans-on-toast",
+  "author": "Tesco Recipes team",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "lu_tomato_mozzarella_frittata": {
+  "title": "Pea and mozzarella frittata",
+  "site": "Tesco Recipes",
+  "url": "https://www.tesco.com/recipes/en-GB/recipe/pea-and-mozzarella-frittata",
+  "author": "Tesco Recipes team",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "lu_smoked_salmon_egg_bagel": {
+  "title": "Scrambled egg and smoked salmon bagel",
+  "site": "British Lion Eggs (egginfo.co.uk)",
+  "url": "https://www.egginfo.co.uk/videos/scrambled-egg-and-smoked-salmon-bagel",
+  "match": "close",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "lu_tuna_melt_jacket": {
+  "title": "Tuna melt potato skins",
+  "site": "Tesco Real Food",
+  "url": "https://realfood.tesco.com/recipes/tuna-melt-potato-skins.html",
+  "author": "Tesco Real Food team",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "lu_halloumi_hummus_pitta": {
+  "title": "Piri-piri halloumi pittas",
+  "site": "Tesco Recipes",
+  "url": "https://www.tesco.com/recipes/en-GB/recipe/piri-piri-halloumi-pittas",
+  "author": "Tesco Recipes team",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "lu_chicken_fajita_quesadilla": {
+  "title": "BBQ chicken quesadilla",
+  "site": "Tesco Recipes",
+  "url": "https://www.tesco.com/recipes/en-GB/recipe/bbq-chicken-quesadilla",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "bf_overnight_oats_berry": {
+  "title": "Almond and raspberry protein overnight oats",
+  "site": "Tesco Recipes",
+  "url": "https://www.tesco.com/recipes/en-GB/recipe/almond-and-raspberry-protein-overnight-oats",
+  "match": "close",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "bf_overnight_oats_pb_banana": {
+  "title": "Chocolate and banana overnight oats",
+  "site": "Tesco Recipes",
+  "url": "https://www.tesco.com/recipes/en-GB/recipe/chocolate-and-banana-overnight-oats",
+  "author": "Tesco Recipes team",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "bf_overnight_oats_apple_cinnamon": {
+  "title": "Overnight Oats Recipe (Apple Pie variation)",
+  "site": "Love and Lemons",
+  "url": "https://www.loveandlemons.com/overnight-oats-recipe/",
+  "author": "Jeanine Donofrio",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "bf_protein_porridge": {
+  "title": "Peanut butter and raspberry porridge",
+  "site": "Tesco Recipes",
+  "url": "https://www.tesco.com/recipes/en-GB/recipe/peanut-butter-and-raspberry-porridge",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "bf_egg_muffins_spinach_feta": {
+  "title": "Leek and feta breakfast bites",
+  "site": "Tesco Recipes",
+  "url": "https://www.tesco.com/recipes/en-GB/recipe/leek-and-feta-breakfast-bites",
+  "author": "Tesco Recipes team",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "bf_egg_muffins_ham_pepper": {
+  "title": "Courgette and egg muffins",
+  "site": "Tesco Recipes",
+  "url": "https://www.tesco.com/recipes/en-GB/recipe/courgette-and-egg-muffins",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "bf_scrambled_eggs_toast": {
+  "title": "How to make scrambled eggs",
+  "site": "British Lion Eggs (egginfo.co.uk)",
+  "url": "https://www.egginfo.co.uk/recipes/how-make-scrambled-eggs",
+  "author": "Anna Stanford",
+  "match": "close",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "bf_cottage_cheese_toast": {
+  "title": "Whipped cottage cheese bruschetta",
+  "site": "Tesco Recipes",
+  "url": "https://www.tesco.com/recipes/en-GB/recipe/whipped-cottage-cheese-bruschetta",
+  "author": "Tesco Recipes team",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "bf_avocado_egg_toast": {
+  "title": "Smashed avocado on toast with poached eggs and tomatoes",
+  "site": "Tesco Recipes",
+  "url": "https://www.tesco.com/recipes/en-GB/recipe/smashed-avocado-on-toast-with-poached-eggs-and-tomatoes",
+  "author": "Tesco Recipes team",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "bf_mushroom_spinach_omelette": {
+  "title": "Mushroom omelette",
+  "site": "Tesco Recipes",
+  "url": "https://www.tesco.com/recipes/en-GB/recipe/mushroom-omelette",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "bf_breakfast_wrap": {
+  "title": "Breakfast Burritos",
+  "site": "Pinch of Nom",
+  "url": "https://pinchofnom.com/recipes/breakfast-burritos/",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ },
+ "bf_skyr_berry_parfait": {
+  "title": "Banana and oat pots",
+  "site": "Tesco Real Food",
+  "url": "https://realfood.tesco.com/recipes/banana-yogurt-and-toasted-oat-pots.html",
+  "author": "Tesco Real Food team",
+  "match": "adapted",
+  "checked": "2026-10-23",
+  "fix": ""
+ }
+}

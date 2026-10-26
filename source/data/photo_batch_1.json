@@ -1,0 +1,422 @@
+[
+ {
+  "id": "am_double_smash_burgers",
+  "title": "Double Smash Cheeseburgers with Burger Sauce & Quick Pickles",
+  "cuisine": "American",
+  "main": "beef_mince,burger_buns,cheddar,onion,little_gem"
+ },
+ {
+  "id": "am_buttermilk_chicken_burger",
+  "title": "Crispy Buttermilk Chicken Burger with Hot Honey Mayo & Slaw",
+  "cuisine": "American",
+  "main": "chicken_thighs,greek_yogurt,milk,hot_sauce,garlic"
+ },
+ {
+  "id": "am_nashville_hot_chicken_burger",
+  "title": "Nashville-Style Hot Chicken Burger with Pickles & Cool Mayo",
+  "cuisine": "American",
+  "main": "chicken_thighs,greek_yogurt,milk,hot_sauce,plain_flour"
+ },
+ {
+  "id": "am_homemade_meat_feast_pizza",
+  "title": "Homemade Meat Feast Pizza with Sausage, Pepperoni & Peppers",
+  "cuisine": "American",
+  "main": "plain_flour,dried_yeast,honey,oil,chopped_tomatoes"
+ },
+ {
+  "id": "am_pan_pepperoni_pizza",
+  "title": "Crispy Pan Pepperoni Pizza with Hot Honey Drizzle",
+  "cuisine": "American",
+  "main": "plain_flour,dried_yeast,oil,chopped_tomatoes,tomato_puree"
+ },
+ {
+  "id": "am_bbq_chicken_naan_pizza",
+  "title": "BBQ Chicken Naan Pizzas with Sweetcorn, Red Onion & Coriander",
+  "cuisine": "American",
+  "main": "naan,chicken_breast,smoked_paprika,oil,bbq_sauce"
+ },
+ {
+  "id": "am_stovetop_mac_and_cheese",
+  "title": "Ultra-Creamy Stovetop Mac & Cheese with Garlic Panko Crunch",
+  "cuisine": "American",
+  "main": "pasta,broccoli,milk,cheddar,cornflour"
+ },
+ {
+  "id": "am_slow_cooker_pulled_pork",
+  "title": "Slow Cooker BBQ Pulled Pork Buns with Crunchy Slaw & Wedges",
+  "cuisine": "American",
+  "main": "pork_shoulder,smoked_paprika,cumin,onion,garlic"
+ },
+ {
+  "id": "am_buffalo_wings",
+  "title": "Crispy Baked Buffalo Wings with Feta Ranch Dip & Veg Sticks",
+  "cuisine": "American",
+  "main": "chicken_wings,cornflour,hot_sauce,butter,honey"
+ },
+ {
+  "id": "am_loaded_bacon_cheese_fries",
+  "title": "Loaded Bacon Cheese Fries with Spring Onions & Green Chilli",
+  "cuisine": "American",
+  "main": "potatoes,oil,smoked_paprika,bacon,cheddar"
+ },
+ {
+  "id": "am_sausage_hot_dogs",
+  "title": "Butcher's Sausage Hot Dogs with Sticky Onions, Mustard Mayo & Skinny Fries",
+  "cuisine": "American",
+  "main": "sausages,hot_dog_rolls,potatoes,oil,onion"
+ },
+ {
+  "id": "am_philly_cheesesteak",
+  "title": "Philly Cheesesteak with Charred Peppers, Onions & Melted Cheese",
+  "cuisine": "American",
+  "main": "beef_steak,onion,peppers,mushrooms,worcestershire"
+ },
+ {
+  "id": "am_sloppy_joes",
+  "title": "Sloppy Joes with Sweet Potato Fries & Quick Pickles",
+  "cuisine": "American",
+  "main": "beef_mince,onion,peppers,garlic,ketchup"
+ },
+ {
+  "id": "am_crispy_chicken_tenders",
+  "title": "Crispy Parmesan Chicken Tenders with Honey Mustard Dip & Corn Slaw",
+  "cuisine": "American",
+  "main": "chicken_breast,plain_flour,eggs,panko,parmesan"
+ },
+ {
+  "id": "am_meatball_subs",
+  "title": "Meatball Marinara Subs with Bubbling Mozzarella",
+  "cuisine": "American",
+  "main": "beef_mince,panko,milk,parmesan,garlic"
+ },
+ {
+  "id": "am_chilli_cheese_fries",
+  "title": "Chilli Cheese Fries with Beef & Bean Chilli and Melted Cheddar",
+  "cuisine": "American",
+  "main": "potatoes,oil,beef_mince,onion,garlic"
+ },
+ {
+  "id": "am_chicken_pot_pie",
+  "title": "Creamy Chicken & Leek Pot Pie with a Puff Pastry Lid",
+  "cuisine": "American",
+  "main": "chicken_thighs,butter,leeks,carrots,garlic"
+ },
+ {
+  "id": "am_cheeseburger_quesadillas",
+  "title": "Smashed Cheeseburger Quesadillas with Burger Sauce Dip",
+  "cuisine": "American",
+  "main": "beef_mince,onion,wraps,cheddar,cucumber"
+ },
+ {
+  "id": "am_bbq_bacon_burger",
+  "title": "BBQ Bacon Cheeseburgers with Crispy Panko Onion Rings",
+  "cuisine": "American",
+  "main": "beef_mince,bacon,cheddar,bbq_sauce,burger_buns"
+ },
+ {
+  "id": "am_buffalo_cauliflower",
+  "title": "Crispy Buffalo Cauliflower Bites with Feta Ranch & Skinny Fries",
+  "cuisine": "American",
+  "main": "cauliflower,plain_flour,cornflour,smoked_paprika,milk"
+ },
+ {
+  "id": "am_southern_fried_chicken_gravy",
+  "title": "Southern Fried Chicken with Buttery Mash, Gravy & Sweetcorn",
+  "cuisine": "American",
+  "main": "chicken_thighs,greek_yogurt,milk,garlic,smoked_paprika"
+ },
+ {
+  "id": "am_blackened_salmon_tacos",
+  "title": "Blackened Cajun Salmon Tacos with Charred Corn & Lime Slaw",
+  "cuisine": "American",
+  "main": "salmon,smoked_paprika,cumin,mixed_herbs,chilli_flakes"
+ },
+ {
+  "id": "am_bbq_chicken_traybake",
+  "title": "Sticky BBQ Chicken Traybake with Sweet Potato, Corn & Peppers",
+  "cuisine": "American",
+  "main": "chicken_thighs,bbq_sauce,sweet_potato,peppers,red_onion"
+ },
+ {
+  "id": "am_jambalaya",
+  "title": "Chicken & Smoky Sausage Jambalaya",
+  "cuisine": "American",
+  "main": "chicken_thighs,sausages,oil,onion,peppers"
+ },
+ {
+  "id": "am_cajun_chicken_dirty_rice",
+  "title": "Blackened Cajun Chicken with Dirty Rice",
+  "cuisine": "American",
+  "main": "chicken_breast,beef_mince,rice,onion,peppers"
+ },
+ {
+  "id": "am_buffalo_chicken_wraps",
+  "title": "Buffalo Chicken Wraps with Crunchy Feta Ranch Slaw",
+  "cuisine": "American",
+  "main": "chicken_breast,smoked_paprika,oil,hot_sauce,butter"
+ },
+ {
+  "id": "am_chicken_caesar_wraps",
+  "title": "Chicken Caesar Wraps with Crispy Bacon & Parmesan Crumbs",
+  "cuisine": "American",
+  "main": "chicken_breast,oil,garlic,lemon,bacon"
+ },
+ {
+  "id": "am_chicken_cobb_salad",
+  "title": "Grilled Chicken Cobb Salad with Bacon, Egg, Avocado & Feta Ranch",
+  "cuisine": "American",
+  "main": "chicken_breast,smoked_paprika,oil,eggs,bacon"
+ },
+ {
+  "id": "am_chicken_sweetcorn_chowder",
+  "title": "Chicken, Bacon & Sweetcorn Chowder with Crusty Bread",
+  "cuisine": "American",
+  "main": "chicken_breast,bacon,butter,onion,potatoes"
+ },
+ {
+  "id": "am_bbq_glazed_salmon",
+  "title": "Sticky BBQ Salmon with Sweet Potato Mash & Charred Corn Salsa",
+  "cuisine": "American",
+  "main": "salmon,bbq_sauce,honey,soy_sauce,sweet_potato"
+ },
+ {
+  "id": "am_honey_mustard_chicken_burgers",
+  "title": "Honey Mustard Grilled Chicken Burgers with Smashed Avocado",
+  "cuisine": "American",
+  "main": "chicken_breast,honey,wholegrain_mustard,garlic,smoked_paprika"
+ },
+ {
+  "id": "am_cajun_prawn_pasta",
+  "title": "Creamy Cajun Prawn Pasta with Peppers & Spinach",
+  "cuisine": "American",
+  "main": "prawns,pasta,peppers,spring_onions,garlic"
+ },
+ {
+  "id": "am_bbq_pork_steaks",
+  "title": "BBQ-Rubbed Pork Steaks with Mustard Potato Salad & Buttered Corn",
+  "cuisine": "American",
+  "main": "pork_shoulder,smoked_paprika,cumin,oil,bbq_sauce"
+ },
+ {
+  "id": "am_mini_meatloaves",
+  "title": "Ketchup-Glazed Mini Meatloaves with Garlic Mash & Broccoli",
+  "cuisine": "American",
+  "main": "beef_mince,onion,panko,eggs,worcestershire"
+ },
+ {
+  "id": "am_garlic_butter_steak_bites",
+  "title": "Garlic Butter Steak Bites with Crispy Potatoes & Charred Broccoli",
+  "cuisine": "American",
+  "main": "beef_steak,potatoes,broccoli,oil,butter"
+ },
+ {
+  "id": "as_sweet_sour_chicken",
+  "title": "Takeaway Crispy Sweet & Sour Chicken with Pineapple, Peppers & Fluffy Rice",
+  "cuisine": "Asian",
+  "main": "chicken_breast,eggs,cornflour,rice,peppers"
+ },
+ {
+  "id": "as_salt_pepper_chicken_chips",
+  "title": "Salt & Pepper Chicken with Chilli, Peppers & Crispy Chips",
+  "cuisine": "Asian",
+  "main": "potatoes,chicken_breast,eggs,cornflour,salt"
+ },
+ {
+  "id": "as_crispy_chilli_beef",
+  "title": "Crispy Chilli Beef with Peppers, Carrot Ribbons & Rice",
+  "cuisine": "Asian",
+  "main": "beef_stir_fry_strips,cornflour,salt,rice,peppers"
+ },
+ {
+  "id": "as_chicken_katsu_curry",
+  "title": "Crispy Chicken Katsu Curry with Sticky Rice & Pickled Cucumber",
+  "cuisine": "Asian",
+  "main": "chicken_breast,plain_flour,eggs,panko,rice"
+ },
+ {
+  "id": "as_korean_fried_chicken",
+  "title": "Sticky Gochujang Korean Fried Chicken with Sesame Rice & Quick Pickles",
+  "cuisine": "Asian",
+  "main": "chicken_thighs,cornflour,plain_flour,salt,black_pepper"
+ },
+ {
+  "id": "as_char_siu_pork",
+  "title": "Sticky Char Siu Pork with Garlicky Pak Choi & Rice",
+  "cuisine": "Asian",
+  "main": "pork_loin_steaks,hoisin_sauce,soy_sauce,honey,tomato_puree"
+ },
+ {
+  "id": "as_special_egg_fried_rice",
+  "title": "Takeaway Special Egg-Fried Rice with Chicken, King Prawns & Bacon",
+  "cuisine": "Asian",
+  "main": "rice,chicken_breast,prawns,bacon,eggs"
+ },
+ {
+  "id": "as_korean_fried_chicken_burger",
+  "title": "Korean Fried Chicken Burger with Kimchi Slaw & Gochujang Mayo",
+  "cuisine": "Asian",
+  "main": "chicken_thighs,greek_yogurt,garlic,plain_flour,cornflour"
+ },
+ {
+  "id": "as_chinese_curry_chips",
+  "title": "Chip-Shop Chinese Chicken Curry with Peas, Onions & Half-and-Half",
+  "cuisine": "Asian",
+  "main": "potatoes,rice,chicken_breast,onion,garlic"
+ },
+ {
+  "id": "as_honey_sesame_chicken",
+  "title": "Crispy Honey Sesame Chicken with Broccoli & Rice",
+  "cuisine": "Asian",
+  "main": "chicken_breast,eggs,cornflour,rice,broccoli"
+ },
+ {
+  "id": "as_halloumi_katsu_curry",
+  "title": "Panko Halloumi Katsu Curry with Sticky Rice & Sesame Slaw",
+  "cuisine": "Asian",
+  "main": "halloumi,plain_flour,eggs,panko,rice"
+ },
+ {
+  "id": "as_crispy_hoisin_pork_pancakes",
+  "title": "Crispy Hoisin Pork 'Duck-Style' Pancake Wraps with Cucumber & Spring Onion",
+  "cuisine": "Asian",
+  "main": "pork_mince,ground_cinnamon,chilli_flakes,garlic,ginger_paste"
+ },
+ {
+  "id": "as_kung_pao_chicken",
+  "title": "Kung Pao Chicken with Peppers, Peanuts & Spring Onion Rice",
+  "cuisine": "Asian",
+  "main": "chicken_thighs,soy_sauce,cornflour,rice,peppers"
+ },
+ {
+  "id": "as_chicken_chow_mein",
+  "title": "Takeaway-Style Chicken Chow Mein with Beansprouts & Mushrooms",
+  "cuisine": "Asian",
+  "main": "egg_noodles,chicken_breast,cornflour,soy_sauce,oyster_sauce"
+ },
+ {
+  "id": "as_black_bean_beef",
+  "title": "Black Bean Beef with Peppers, Onion & Steamed Rice",
+  "cuisine": "Asian",
+  "main": "beef_stir_fry_strips,soy_sauce,cornflour,rice,peppers"
+ },
+ {
+  "id": "as_beef_broccoli",
+  "title": "Garlicky Beef & Broccoli in Oyster Sauce with Steamed Rice",
+  "cuisine": "Asian",
+  "main": "beef_stir_fry_strips,soy_sauce,cornflour,rice,broccoli"
+ },
+ {
+  "id": "as_dan_dan_noodles",
+  "title": "Sichuan-Style Dan Dan Pork Noodles with Peanut Chilli Sauce & Pak Choi",
+  "cuisine": "Asian",
+  "main": "egg_noodles,pork_mince,hoisin_sauce,soy_sauce,garlic"
+ },
+ {
+  "id": "as_sticky_sesame_tofu",
+  "title": "Crispy Sticky Sesame Tofu with Garlic Greens & Rice",
+  "cuisine": "Asian",
+  "main": "tofu,cornflour,rice,broccoli,pak_choi"
+ },
+ {
+  "id": "as_thai_green_chicken_curry",
+  "title": "Thai Green Chicken Curry with Courgette, Spinach, Thai Basil & Rice",
+  "cuisine": "Asian",
+  "main": "chicken_thighs,thai_green_paste,coconut_milk,fish_sauce,honey"
+ },
+ {
+  "id": "as_thai_red_prawn_curry",
+  "title": "Thai Red Prawn & Coconut Curry with Pak Choi & Lime",
+  "cuisine": "Asian",
+  "main": "prawns,thai_red_paste,coconut_milk,red_onion,peppers"
+ },
+ {
+  "id": "as_massaman_chicken",
+  "title": "Massaman Chicken Curry with Potatoes, Peanuts & Cinnamon",
+  "cuisine": "Asian",
+  "main": "chicken_thighs,potatoes,onion,thai_red_paste,curry_powder"
+ },
+ {
+  "id": "as_chicken_pad_thai",
+  "title": "Chicken & Prawn Pad Thai-Style Noodles with Peanuts & Lime",
+  "cuisine": "Asian",
+  "main": "rice_noodles,chicken_breast,prawns,eggs,garlic"
+ },
+ {
+  "id": "as_chicken_larb",
+  "title": "Zingy Thai Chicken Larb Lettuce Cups with Sticky Rice",
+  "cuisine": "Asian",
+  "main": "chicken_thighs,rice,red_onion,garlic,fish_sauce"
+ },
+ {
+  "id": "as_chicken_satay",
+  "title": "Grilled Chicken Satay with Peanut Sauce & Smashed Cucumber Salad",
+  "cuisine": "Asian",
+  "main": "chicken_thighs,greek_yogurt,curry_powder,turmeric,soy_sauce"
+ },
+ {
+  "id": "as_thai_basil_pork",
+  "title": "Thai Basil Pork (Pad Kra Pao) with Crispy Fried Egg & Rice",
+  "cuisine": "Asian",
+  "main": "pork_mince,garlic,green_chillies,red_onion,peppers"
+ },
+ {
+  "id": "as_thai_red_tofu_curry",
+  "title": "Thai Red Curry with Crispy Tofu, Sweet Potato & Spinach",
+  "cuisine": "Asian",
+  "main": "tofu,cornflour,sweet_potato,red_onion,thai_red_paste"
+ },
+ {
+  "id": "as_honey_garlic_chicken",
+  "title": "Sticky Honey Garlic Chicken Thighs with Sesame Broccoli & Rice",
+  "cuisine": "Asian",
+  "main": "chicken_thighs,cornflour,rice,broccoli,garlic"
+ },
+ {
+  "id": "as_teriyaki_salmon",
+  "title": "Glossy Teriyaki Salmon with Sesame Pak Choi & Rice",
+  "cuisine": "Asian",
+  "main": "salmon,soy_sauce,honey,rice_vinegar,ginger_paste"
+ },
+ {
+  "id": "as_miso_salmon",
+  "title": "Miso-Glazed Salmon with Sticky Rice, Sesame Peas & Pickled Cucumber",
+  "cuisine": "Asian",
+  "main": "salmon,miso_paste,honey,soy_sauce,rice_vinegar"
+ },
+ {
+  "id": "as_oyakodon",
+  "title": "Oyakodon — Japanese Chicken & Egg Rice Bowl with Spring Onions",
+  "cuisine": "Asian",
+  "main": "chicken_thighs,onion,eggs,soy_sauce,honey"
+ },
+ {
+  "id": "as_yaki_udon",
+  "title": "Yaki Udon with Crispy Pork, Pak Choi & Mushrooms",
+  "cuisine": "Asian",
+  "main": "udon_noodles,pork_mince,mushrooms,carrots,pak_choi"
+ },
+ {
+  "id": "as_gyoza_pork_bowl",
+  "title": "Gyoza-Filling Pork Rice Bowl with Crispy Garlic, Mushrooms & Dipping Sauce",
+  "cuisine": "Asian",
+  "main": "pork_mince,pak_choi,mushrooms,garlic,ginger_paste"
+ },
+ {
+  "id": "as_bulgogi_beef_bowls",
+  "title": "Korean Beef Bulgogi Rice Bowls with Quick Pickled Cucumber & Kimchi",
+  "cuisine": "Asian",
+  "main": "beef_mince,garlic,ginger_paste,soy_sauce,honey"
+ },
+ {
+  "id": "as_gochujang_chicken",
+  "title": "Sticky Gochujang Chicken Thighs with Sesame Greens & Rice",
+  "cuisine": "Asian",
+  "main": "chicken_thighs,gochujang,honey,soy_sauce,garlic"
+ },
+ {
+  "id": "as_bibimbap",
+  "title": "Beef Bibimbap Bowls with Garlic Spinach, Carrot, Mushrooms & Fried Egg",
+  "cuisine": "Asian",
+  "main": "beef_mince,rice,spinach,carrots,mushrooms"
+ }
+]

@@ -1,0 +1,524 @@
+[
+ {
+  "id": "dried_yeast",
+  "name": "Fast action dried yeast (6 x 7g sachets)",
+  "aisle": "Dry goods",
+  "unit": "g",
+  "packs": [
+   42
+  ],
+  "staple": false
+ },
+ {
+  "id": "pepperoni",
+  "name": "Sliced pepperoni",
+  "aisle": "Meat & fish",
+  "unit": "g",
+  "packs": [
+   100
+  ],
+  "staple": false
+ },
+ {
+  "id": "bbq_sauce",
+  "name": "Smoky BBQ sauce",
+  "aisle": "Oils & sauces",
+  "unit": "g",
+  "packs": [
+   480
+  ],
+  "staple": false
+ },
+ {
+  "id": "hot_sauce",
+  "name": "Cayenne pepper hot sauce (buffalo-style)",
+  "aisle": "Oils & sauces",
+  "unit": "ml",
+  "packs": [
+   148
+  ],
+  "staple": false
+ },
+ {
+  "id": "mayonnaise",
+  "name": "Real mayonnaise",
+  "aisle": "Oils & sauces",
+  "unit": "g",
+  "packs": [
+   400
+  ],
+  "staple": true
+ },
+ {
+  "id": "ketchup",
+  "name": "Tomato ketchup",
+  "aisle": "Oils & sauces",
+  "unit": "g",
+  "packs": [
+   460
+  ],
+  "staple": true
+ },
+ {
+  "id": "chicken_wings",
+  "name": "Chicken wings",
+  "aisle": "Meat & fish",
+  "unit": "g",
+  "packs": [
+   1000
+  ],
+  "staple": false
+ },
+ {
+  "id": "pork_shoulder",
+  "name": "Boneless pork shoulder steaks",
+  "aisle": "Meat & fish",
+  "unit": "g",
+  "packs": [
+   500
+  ],
+  "staple": false
+ },
+ {
+  "id": "beef_steak",
+  "name": "Thin-cut beef frying steaks",
+  "aisle": "Meat & fish",
+  "unit": "g",
+  "packs": [
+   250
+  ],
+  "staple": false
+ },
+ {
+  "id": "hot_dog_rolls",
+  "name": "Soft white hot dog rolls",
+  "aisle": "Bakery",
+  "unit": "each",
+  "packs": [
+   6
+  ],
+  "staple": false
+ },
+ {
+  "id": "sesame_oil",
+  "name": "Toasted sesame oil",
+  "aisle": "World foods",
+  "unit": "ml",
+  "packs": [
+   250
+  ],
+  "staple": true
+ },
+ {
+  "id": "rice_vinegar",
+  "name": "Rice vinegar",
+  "aisle": "World foods",
+  "unit": "ml",
+  "packs": [
+   150
+  ],
+  "staple": true
+ },
+ {
+  "id": "fish_sauce",
+  "name": "Thai fish sauce",
+  "aisle": "World foods",
+  "unit": "ml",
+  "packs": [
+   150
+  ],
+  "staple": false
+ },
+ {
+  "id": "oyster_sauce",
+  "name": "Oyster sauce",
+  "aisle": "World foods",
+  "unit": "g",
+  "packs": [
+   255
+  ],
+  "staple": false
+ },
+ {
+  "id": "black_bean_sauce",
+  "name": "Black bean garlic sauce",
+  "aisle": "World foods",
+  "unit": "g",
+  "packs": [
+   368
+  ],
+  "staple": false
+ },
+ {
+  "id": "beef_stir_fry_strips",
+  "name": "Beef stir-fry strips",
+  "aisle": "Meat & fish",
+  "unit": "g",
+  "packs": [
+   300
+  ],
+  "staple": false
+ },
+ {
+  "id": "pork_loin_steaks",
+  "name": "Pork loin steaks",
+  "aisle": "Meat & fish",
+  "unit": "g",
+  "packs": [
+   500
+  ],
+  "staple": false
+ },
+ {
+  "id": "salted_peanuts",
+  "name": "Salted roasted peanuts",
+  "aisle": "Dry goods",
+  "unit": "g",
+  "packs": [
+   200
+  ],
+  "staple": false
+ },
+ {
+  "id": "pineapple_chunks",
+  "name": "Pineapple chunks in juice (tin)",
+  "aisle": "Tins & jars",
+  "unit": "g",
+  "packs": [
+   432
+  ],
+  "staple": false
+ },
+ {
+  "id": "cod_fillets",
+  "name": "White fish fillets (cod or haddock)",
+  "aisle": "Meat & fish",
+  "unit": "g",
+  "packs": [
+   280
+  ],
+  "staple": false
+ },
+ {
+  "id": "smoked_haddock",
+  "name": "Boneless smoked haddock fillets",
+  "aisle": "Meat & fish",
+  "unit": "g",
+  "packs": [
+   280,
+   560
+  ],
+  "staple": false
+ },
+ {
+  "id": "diced_beef",
+  "name": "Diced beef (casserole steak)",
+  "aisle": "Meat & fish",
+  "unit": "g",
+  "packs": [
+   400
+  ],
+  "staple": false
+ },
+ {
+  "id": "sirloin_steak",
+  "name": "Sirloin steak",
+  "aisle": "Meat & fish",
+  "unit": "g",
+  "packs": [
+   227
+  ],
+  "staple": false
+ },
+ {
+  "id": "chicken_legs",
+  "name": "Chicken legs (bone-in, skin-on)",
+  "aisle": "Meat & fish",
+  "unit": "g",
+  "packs": [
+   1000
+  ],
+  "staple": false
+ },
+ {
+  "id": "apples",
+  "name": "Braeburn apples",
+  "aisle": "Fruit & veg",
+  "unit": "each",
+  "packs": [
+   6
+  ],
+  "staple": false
+ },
+ {
+  "id": "gherkins",
+  "name": "Sliced gherkins (jar)",
+  "aisle": "Tins & jars",
+  "unit": "g",
+  "packs": [
+   340
+  ],
+  "staple": false
+ },
+ {
+  "id": "branston_pickle",
+  "name": "Original pickle (Branston-style)",
+  "aisle": "Tins & jars",
+  "unit": "g",
+  "packs": [
+   360
+  ],
+  "staple": false
+ },
+ {
+  "id": "self_raising_flour",
+  "name": "Self-raising flour",
+  "aisle": "Dry goods",
+  "unit": "g",
+  "packs": [
+   1500
+  ],
+  "staple": true
+ },
+ {
+  "id": "chilli_powder",
+  "name": "Hot chilli powder",
+  "aisle": "Herbs & spices",
+  "unit": "g",
+  "packs": [
+   40
+  ],
+  "staple": true
+ },
+ {
+  "id": "mustard_seeds",
+  "name": "Black mustard seeds",
+  "aisle": "Herbs & spices",
+  "unit": "g",
+  "packs": [
+   100
+  ],
+  "staple": false
+ },
+ {
+  "id": "kasoori_methi",
+  "name": "Dried fenugreek leaves (kasoori methi)",
+  "aisle": "World foods",
+  "unit": "g",
+  "packs": [
+   100
+  ],
+  "staple": false
+ },
+ {
+  "id": "gram_flour",
+  "name": "Gram flour (chickpea flour)",
+  "aisle": "World foods",
+  "unit": "g",
+  "packs": [
+   1000
+  ],
+  "staple": false
+ },
+ {
+  "id": "ground_almonds",
+  "name": "Ground almonds",
+  "aisle": "Dry goods",
+  "unit": "g",
+  "packs": [
+   200
+  ],
+  "staple": false
+ },
+ {
+  "id": "mango_chutney",
+  "name": "Mango chutney",
+  "aisle": "World foods",
+  "unit": "g",
+  "packs": [
+   340
+  ],
+  "staple": false
+ },
+ {
+  "id": "diced_lamb",
+  "name": "Diced lamb leg",
+  "aisle": "Meat & fish",
+  "unit": "g",
+  "packs": [
+   300
+  ],
+  "staple": false
+ },
+ {
+  "id": "orzo",
+  "name": "Orzo pasta",
+  "aisle": "Dry goods",
+  "unit": "g",
+  "packs": [
+   500
+  ],
+  "staple": false
+ },
+ {
+  "id": "passata",
+  "name": "Passata (sieved tomatoes)",
+  "aisle": "Tins & jars",
+  "unit": "g",
+  "packs": [
+   500
+  ],
+  "staple": false
+ },
+ {
+  "id": "pancetta",
+  "name": "Smoked pancetta cubes",
+  "aisle": "Meat & fish",
+  "unit": "g",
+  "packs": [
+   130
+  ],
+  "staple": false
+ },
+ {
+  "id": "capers",
+  "name": "Capers in brine",
+  "aisle": "Tins & jars",
+  "unit": "g",
+  "packs": [
+   100
+  ],
+  "staple": false
+ },
+ {
+  "id": "sun_dried_tomatoes",
+  "name": "Sun-dried tomatoes in oil",
+  "aisle": "Tins & jars",
+  "unit": "g",
+  "packs": [
+   280
+  ],
+  "staple": false
+ },
+ {
+  "id": "pecorino",
+  "name": "Pecorino Romano",
+  "aisle": "Dairy & eggs",
+  "unit": "g",
+  "packs": [
+   180
+  ],
+  "staple": false
+ },
+ {
+  "id": "rocket",
+  "name": "Wild rocket",
+  "aisle": "Fruit & veg",
+  "unit": "g",
+  "packs": [
+   60
+  ],
+  "staple": false
+ },
+ {
+  "id": "fennel_seeds",
+  "name": "Fennel seeds",
+  "aisle": "Herbs & spices",
+  "unit": "g",
+  "packs": [
+   38
+  ],
+  "staple": true
+ },
+ {
+  "id": "anchovies",
+  "name": "Anchovy fillets in olive oil (tin)",
+  "aisle": "Tins & jars",
+  "unit": "g",
+  "packs": [
+   50
+  ],
+  "staple": false
+ },
+ {
+  "id": "chipotle_paste",
+  "name": "Chipotle chilli paste",
+  "aisle": "World foods",
+  "unit": "g",
+  "packs": [
+   100
+  ],
+  "staple": false
+ },
+ {
+  "id": "pork_shoulder_steaks",
+  "name": "Pork shoulder steaks",
+  "aisle": "Meat & fish",
+  "unit": "g",
+  "packs": [
+   400,
+   700
+  ],
+  "staple": false
+ },
+ {
+  "id": "sour_cream",
+  "name": "Soured cream",
+  "aisle": "Dairy & eggs",
+  "unit": "ml",
+  "packs": [
+   300
+  ],
+  "staple": false
+ },
+ {
+  "id": "jalapenos",
+  "name": "Sliced green jalapeños (jar)",
+  "aisle": "Tins & jars",
+  "unit": "g",
+  "packs": [
+   215
+  ],
+  "staple": false
+ },
+ {
+  "id": "red_cabbage",
+  "name": "Red cabbage",
+  "aisle": "Fruit & veg",
+  "unit": "each",
+  "packs": [
+   1
+  ],
+  "staple": false
+ },
+ {
+  "id": "zaatar",
+  "name": "Za'atar spice blend",
+  "aisle": "Herbs & spices",
+  "unit": "g",
+  "packs": [
+   40
+  ],
+  "staple": false
+ },
+ {
+  "id": "dried_apricots",
+  "name": "Soft dried apricots",
+  "aisle": "Dry goods",
+  "unit": "g",
+  "packs": [
+   250
+  ],
+  "staple": false
+ },
+ {
+  "id": "olives",
+  "name": "Pitted black olives",
+  "aisle": "Tins & jars",
+  "unit": "g",
+  "packs": [
+   160
+  ],
+  "staple": false
+ }
+]

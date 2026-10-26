@@ -1,0 +1,12 @@
+[
+ {"id": "dried_yeast", "name": "Fast action dried yeast (6 x 7g sachets)", "aisle": "Dry goods", "unit": "g", "packs": [42], "staple": false, "freeze": false, "keeps": 120, "life": 365, "tags": []},
+ {"id": "pepperoni", "name": "Sliced pepperoni", "aisle": "Meat & fish", "unit": "g", "packs": [100], "staple": false, "freeze": true, "keeps": 5, "life": 30, "tags": ["pork", "meat"]},
+ {"id": "bbq_sauce", "name": "Smoky BBQ sauce", "aisle": "Oils & sauces", "unit": "g", "packs": [480], "staple": false, "freeze": false, "keeps": 60, "life": 365, "tags": ["tomato"]},
+ {"id": "hot_sauce", "name": "Cayenne pepper hot sauce (buffalo-style)", "aisle": "Oils & sauces", "unit": "ml", "packs": [148], "staple": false, "freeze": false, "keeps": 180, "life": 365, "tags": ["chilli"]},
+ {"id": "mayonnaise", "name": "Real mayonnaise", "aisle": "Oils & sauces", "unit": "g", "packs": [400], "staple": true, "freeze": false, "keeps": 60, "life": 180, "tags": ["egg"]},
+ {"id": "ketchup", "name": "Tomato ketchup", "aisle": "Oils & sauces", "unit": "g", "packs": [460], "staple": true, "freeze": false, "keeps": 90, "life": 365, "tags": ["tomato"]},
+ {"id": "chicken_wings", "name": "Chicken wings", "aisle": "Meat & fish", "unit": "g", "packs": [1000], "staple": false, "freeze": true, "keeps": 1, "life": 5, "tags": ["chicken", "meat"]},
+ {"id": "pork_shoulder", "name": "Boneless pork shoulder steaks", "aisle": "Meat & fish", "unit": "g", "packs": [500], "staple": false, "freeze": true, "keeps": 1, "life": 6, "tags": ["pork", "meat"]},
+ {"id": "beef_steak", "name": "Thin-cut beef frying steaks", "aisle": "Meat & fish", "unit": "g", "packs": [250], "staple": false, "freeze": true, "keeps": 1, "life": 5, "tags": ["beef", "meat"]},
+ {"id": "hot_dog_rolls", "name": "Soft white hot dog rolls", "aisle": "Bakery", "unit": "each", "packs": [6], "staple": false, "freeze": true, "keeps": 3, "life": 5, "tags": ["bread", "gluten"]}
+]

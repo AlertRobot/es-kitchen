@@ -1,0 +1,47 @@
+const { JSDOM } = require('jsdom'); const fs = require('fs');
+const html = fs.readFileSync(__dirname + '/../public/index.html', 'utf8').replace(/<script src="(app|firebase-config)\.js[^"]*"><\/script>/g, '');
+const lib = fs.readFileSync(__dirname + '/../public/data/library.json', 'utf8');
+const dom = new JSDOM(html, { runScripts: 'dangerously', pretendToBeVisual: true, url: 'https://x.github.io/es-kitchen/', beforeParse(w) { w.fetch = async () => ({ ok: true, json: async () => JSON.parse(lib) }); w.scrollTo = () => {}; w.console.error = (...a) => console.log('PAGE ERROR', ...a); } });
+const w = dom.window, d = w.document; w.addEventListener('error', e => console.log('UNCAUGHT', e.message));
+const s = d.createElement('script'); s.textContent = fs.readFileSync(__dirname + '/app.test.js', 'utf8'); d.body.appendChild(s);
+const wait = ms => new Promise(r => setTimeout(r, ms));
+const click = q => { const el = d.querySelector(q); if (!el) { console.log('MISSING', q); return; } el.click(); };
+const txt = q => (d.querySelector(q) || { textContent: 'MISSING ' + q }).textContent.replace(/\s+/g, ' ').trim();
+const change = (q, val) => { const el = d.querySelector(q); if (!el) { console.log('MISSING', q); return; } if (el.type === 'checkbox') el.checked = val; else el.value = val; el.dispatchEvent(new w.Event('change', { bubbles: true })); };
+(async () => {
+  await wait(150); d.querySelector('#cr-wont').value = 'mushrooms'; d.querySelector('[data-form="create"]').dispatchEvent(new w.Event('submit', { bubbles: true, cancelable: true })); await wait(400);
+  // all staples low
+  const L = JSON.parse(lib); const status = {}; L.ingredients.filter(i => i.staple).forEach(i => status[i.id] = 'low');
+  await w.Store.set('config/pantry', { status, always: {} }); await wait(200);
+  click('[data-act="fill"]'); await wait(6000);
+  console.log('1 header:', txt('.statline'));
+  click('[data-act="tab"][data-v="shop"]'); await wait(300);
+  console.log('2 subtotals:', [...d.querySelectorAll('.subtot')].map(x => x.textContent.replace(/\s+/g, ' ')).join(' | '));
+  console.log('  top-ups:', [...d.querySelectorAll('.topups .item .muted.small')].slice(0, 4).map(x => x.textContent).join(' ; '));
+  console.log('  skipped:', txt('#app p.muted.small:last-of-type').slice(0, 10), [...d.querySelectorAll('#app p')].find(p => /optional and you/.test(p.textContent))?.textContent.slice(0, 160));
+  click('.topups [data-act="have"]'); await wait(200); console.log('  after skip one:', [...d.querySelectorAll('.subtot')].map(x => x.textContent.replace(/\s+/g, ' ')).join(' | '));
+  click('[data-act="expand"]'); await wait(100); d.querySelector('.paidrow input').value = '0.99'; d.querySelector('.paidrow').dispatchEvent(new w.Event('submit', { bubbles: true, cancelable: true })); await wait(200);
+  console.log('3 paid saved:', [...w.__docs.keys()].filter(k => k.includes('/ingredients/')).length, 'household price docs');
+  // settings: plan breakfast+lunch for Ethan, portion 3/4, target 1400
+  click('[data-act="tab"][data-v="settings"]'); await wait(200); click('[data-act="set-page"][data-v="people"]'); await wait(200);
+  change('[data-change="p-plan"][data-s="b"]', true); await wait(150);
+  change('[data-change="p-plan"][data-s="l"]', true); await wait(150);
+  change('[data-change="p-kcal"]', 1400); await wait(150);
+  click('[data-act="p-portion"][data-n="0.75"]'); await wait(150);
+  click('[data-act="tab"][data-v="week"]'); await wait(300); click('[data-act="week-view"][data-v="bl"]'); await wait(300);
+  console.log('4 BL section:', txt('.blpanel').slice(0, 200));
+  click('[data-act="bl-pick"][data-v$="|b|0"]'); await wait(800);
+  console.log('5 picker:', txt('#sheet .sbody').slice(0, 220));
+  const wb = [...d.querySelectorAll('#sheet [data-act="bl-add"]')].find(b => /Weetabix with Milk/.test(b.textContent)); wb.click(); await wait(500);
+  click('#sheet [data-act="bl-usual"]'); await wait(200); click('#sheet [data-act="sheet-back"]'); await wait(200);
+  click('[data-act="bl-pick"][data-v$="|l|0"]'); await wait(800);
+  const pb = [...d.querySelectorAll('#sheet [data-act="bl-add"]')].find(b => /Protein Bar/.test(b.textContent)); pb.click(); await wait(400);
+  click('#sheet [data-act="bl-usual"]'); await wait(200); click('#sheet [data-act="sheet-back"]'); await wait(300);
+  console.log('6 days:', [...d.querySelectorAll('.blday')].slice(0, 3).map(x => x.textContent.replace(/\s+/g, ' ')).join(' || '));
+  console.log('  avg:', [...d.querySelectorAll('.blpanel p')].map(p => p.textContent).pop());
+  const t0 = Date.now(); click('[data-act="bl-auto"]'); await wait(500); console.log('7 auto lunches', Date.now() - t0, 'ms:', [...d.querySelectorAll('.blday')].map(x => { const sl = x.querySelectorAll('.blslot'); return (sl[1] ? sl[1].textContent : '').replace('Lunch', '') || '-'; }).join(' | '));
+  click('[data-act="tab"][data-v="shop"]'); await wait(300); console.log('8 shop has weetabix/bars:', [...d.querySelectorAll('.iname')].filter(x => /Weetabix|protein bar/i.test(x.textContent)).map(x => x.textContent).join(', '));
+  click('[data-act="tab"][data-v="recipes"]'); await wait(200); console.log('9 recipe sections:', [...d.querySelectorAll('#app section h2')].map(x => x.textContent).join(', '));
+  click('[data-act="f-meal-set"][data-v="lunch"]'); await wait(150); click('.vcard'); await wait(200); console.log('10 lunch sheet add rows:', d.querySelectorAll('#sheet [data-act="bl-add-day"]').length, '| note', txt('#sheet .note').slice(0, 80));
+  process.exit(0);
+})();

@@ -1,0 +1,4521 @@
+[
+ {
+  "id": "as_sweet_sour_chicken",
+  "title": "Takeaway Crispy Sweet & Sour Chicken with Pineapple, Peppers & Fluffy Rice",
+  "icon": "🍍",
+  "cuisine": "Asian",
+  "category": "treat",
+  "protein": "chicken",
+  "time": 35,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "airFryer": "Toss the coated chicken with 1 tbsp oil and air-fry at 200°C for 12–14 min, shaking halfway, until crisp, then stir it through the sauce at the end.",
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 300,
+    "t": "2 breasts (300g), in bite-size chunks"
+   },
+   {
+    "i": "eggs",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "cornflour",
+    "q": 45,
+    "t": "4½ tbsp"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, in chunks"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, in chunks"
+   },
+   {
+    "i": "pineapple_chunks",
+    "q": 216,
+    "t": "½ tin, plus 4 tbsp of the juice"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "rice_vinegar",
+    "q": 45,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, finely chopped"
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced"
+   },
+   {
+    "i": "oil",
+    "q": 60,
+    "t": "4 tbsp, for frying"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Put the kettle on. Cut the chicken into 3cm chunks and the pepper and onion into similar-sized pieces, then finely chop the garlic and slice the spring onions. Drain the pineapple, saving 4 tbsp of the juice."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "Rinse the rice, then tip it into a saucepan with 300ml boiling water and a pinch of salt. Cover and simmer on a low heat for 10 min, then turn off the heat and leave it covered for 5 min to steam until fluffy."
+   },
+   {
+    "title": "Mix the sauce",
+    "text": "In a jug, whisk the saved pineapple juice with the tomato purée, rice vinegar, honey, soy, 1 tsp of the cornflour and 4 tbsp water until smooth. Taste it: it should be sharp and sweet in equal measure, so add a splash more vinegar or honey to balance."
+   },
+   {
+    "title": "Fry the chicken",
+    "text": "Beat the egg in one bowl and put the rest of the cornflour and a big pinch of salt in another. Coat the chicken in egg, then toss it in the cornflour until every piece is dusty. Heat the oil in a large frying pan or wok over a medium-high heat and fry the chicken in one layer for 6–8 min, turning, until crisp, golden and cooked through, then lift onto kitchen paper."
+   },
+   {
+    "title": "Toss it together",
+    "text": "Pour off all but 1 tbsp of oil and stir-fry the pepper and onion over a high heat for 3 min until just catching at the edges. Add the garlic and pineapple for 1 min, pour in the sauce and bubble for 1–2 min until thick and glossy. Tip the chicken back in, toss to coat, scatter with spring onions and serve with the rice."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "crispy",
+   "kid-friendly"
+  ],
+  "basedOn": "RecipeTin Eats — Sweet and sour chicken (oven-baked, hugely reviewed); BBC Good Food — Sweet & sour chicken"
+ },
+ {
+  "id": "as_salt_pepper_chicken_chips",
+  "title": "Salt & Pepper Chicken with Chilli, Peppers & Crispy Chips",
+  "icon": "🍟",
+  "cuisine": "Asian",
+  "category": "treat",
+  "protein": "chicken",
+  "time": 45,
+  "servings": 2,
+  "equipment": [
+   "oven",
+   "hob"
+  ],
+  "airFryer": "Air-fry the oiled chips at 200°C for 20–25 min, shaking twice; air-fry the coated chicken at 200°C for 10–12 min, turning halfway, then toss both with the veg in the pan.",
+  "ingredients": [
+   {
+    "i": "potatoes",
+    "q": 500,
+    "t": "2 large (500g), cut into chips"
+   },
+   {
+    "i": "chicken_breast",
+    "q": 300,
+    "t": "2 breasts (300g), in strips"
+   },
+   {
+    "i": "eggs",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "cornflour",
+    "q": 40,
+    "t": "4 tbsp"
+   },
+   {
+    "i": "salt",
+    "q": 4,
+    "t": "1 tsp, plus extra"
+   },
+   {
+    "i": "black_pepper",
+    "q": 3,
+    "t": "1½ tsp, coarsely ground"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "ground_cinnamon",
+    "q": 0.5,
+    "t": "a pinch"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "green_chillies",
+    "q": 10,
+    "t": "1, sliced",
+    "swap": "Leave the chilli out of the pan and serve it sliced on the side so each plate can be as hot as you like."
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, sliced"
+   },
+   {
+    "i": "spring_onions",
+    "q": 3,
+    "t": "3, sliced"
+   },
+   {
+    "i": "oil",
+    "q": 75,
+    "t": "5 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Start the chips",
+    "text": "Heat the oven to 220°C (200°C fan). Toss the chips with 1 tbsp oil and a pinch of salt on a large baking tray, spread them out in one layer and roast for 35–40 min, turning halfway, until golden and crisp."
+   },
+   {
+    "title": "Make the seasoning",
+    "text": "Mix the salt, black pepper, chilli flakes and a tiny pinch of cinnamon in a small bowl — this is your salt-and-pepper mix. Slice the onion, pepper, chilli, garlic and spring onions so they're ready to go."
+   },
+   {
+    "title": "Coat the chicken",
+    "text": "Beat the egg in a bowl and toss the chicken strips through it. Lift them into a second bowl with the cornflour and half the seasoning and toss until thoroughly coated."
+   },
+   {
+    "title": "Fry the chicken",
+    "text": "When the chips have 15 min left, heat 3 tbsp oil in a large frying pan or wok over a medium-high heat. Fry the chicken in a single layer for 6–8 min, turning, until crunchy, golden and cooked through, then lift out onto kitchen paper."
+   },
+   {
+    "title": "Toss with the veg",
+    "text": "Wipe the pan, add the last 1 tbsp oil and stir-fry the onion and pepper over a high heat for 3 min until softened but still bright. Add the garlic, chilli and spring onions for 1 min, then tip in the chicken and chips, sprinkle over the rest of the seasoning and toss everything together. Serve straight away, takeaway-box style."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "crispy",
+   "spicy"
+  ],
+  "basedOn": "Krumpli — Salt and pepper chicken (UK Chinese takeaway style); The Dinner Bite — Salt and pepper chicken"
+ },
+ {
+  "id": "as_crispy_chilli_beef",
+  "title": "Crispy Chilli Beef with Peppers, Carrot Ribbons & Rice",
+  "icon": "🌶️",
+  "cuisine": "Asian",
+  "category": "treat",
+  "protein": "beef",
+  "time": 35,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "airFryer": "Toss the coated beef with 1 tbsp oil and air-fry at 200°C for 8–10 min, shaking halfway, until crunchy, then add it to the sauce at the end.",
+  "ingredients": [
+   {
+    "i": "beef_stir_fry_strips",
+    "q": 300,
+    "t": "1 pack (300g)"
+   },
+   {
+    "i": "cornflour",
+    "q": 40,
+    "t": "4 tbsp"
+   },
+   {
+    "i": "salt",
+    "q": 1,
+    "t": "a pinch"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, thinly sliced"
+   },
+   {
+    "i": "carrots",
+    "q": 80,
+    "t": "1 small, in matchsticks"
+   },
+   {
+    "i": "red_onion",
+    "q": 1,
+    "t": "1, thinly sliced"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, finely chopped"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "green_chillies",
+    "q": 10,
+    "t": "1, sliced",
+    "swap": "Leave the chilli out of the pan and serve it sliced on the side so each plate can be as hot as you like."
+   },
+   {
+    "i": "sweet_chilli_sauce",
+    "q": 60,
+    "t": "4 tbsp"
+   },
+   {
+    "i": "rice_vinegar",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced"
+   },
+   {
+    "i": "oil",
+    "q": 60,
+    "t": "4 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep everything",
+    "text": "Put the kettle on. Slice the pepper and onion thinly, cut the carrot into matchsticks and finely chop the garlic. Pat the beef strips dry with kitchen paper — dry beef crisps up far better."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "Rinse the rice, then tip it into a saucepan with 300ml boiling water and a pinch of salt. Cover and simmer on a low heat for 10 min, then turn off the heat and leave it covered for 5 min to steam until fluffy."
+   },
+   {
+    "title": "Mix the sauce",
+    "text": "Stir together the sweet chilli sauce, rice vinegar, soy, tomato purée, honey and 2 tbsp water in a small jug. It should taste sticky, tangy and a little hot."
+   },
+   {
+    "title": "Crisp the beef",
+    "text": "Toss the beef in the cornflour and a pinch of salt until each strip is coated. Heat 3 tbsp oil in a wok or large frying pan over a high heat and fry the beef in two batches for 3–4 min each, turning, until deep golden and crunchy. Lift onto kitchen paper."
+   },
+   {
+    "title": "Finish and toss",
+    "text": "Add the last 1 tbsp oil and stir-fry the pepper, carrot and onion for 2–3 min until just tender. Add the garlic, ginger and chilli for 30 seconds, then pour in the sauce and let it bubble for 1 min until syrupy. Toss the beef back through, scatter with spring onions and serve on the rice."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "crispy",
+   "spicy"
+  ],
+  "basedOn": "BBC Good Food — Crispy chilli beef; Emma Chung's crispy chilli beef"
+ },
+ {
+  "id": "as_chicken_katsu_curry",
+  "title": "Crispy Chicken Katsu Curry with Sticky Rice & Pickled Cucumber",
+  "icon": "🍛",
+  "cuisine": "Asian",
+  "category": "treat",
+  "protein": "chicken",
+  "time": 45,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "airFryer": "Spray the crumbed chicken with oil and air-fry at 200°C for 12–14 min, turning halfway, until golden and cooked through.",
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 300,
+    "t": "2 breasts (300g)"
+   },
+   {
+    "i": "plain_flour",
+    "q": 30,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "eggs",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "panko",
+    "q": 60,
+    "t": "60g"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, finely chopped"
+   },
+   {
+    "i": "carrots",
+    "q": 100,
+    "t": "1, finely chopped"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "curry_powder",
+    "q": 8,
+    "t": "1 heaped tbsp"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "honey",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.5,
+    "t": "½, thinly sliced"
+   },
+   {
+    "i": "rice_vinegar",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "oil",
+    "q": 75,
+    "t": "5 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep and pickle",
+    "text": "Put the kettle on. Finely chop the onion and carrot and crush the garlic. Toss the cucumber slices with the rice vinegar and a pinch each of salt and sugar (or a drop of honey) and leave to pickle."
+   },
+   {
+    "title": "Make the katsu sauce",
+    "text": "Heat 1 tbsp oil in a saucepan over a medium heat and soften the onion and carrot for 6–8 min until golden. Stir in the garlic, ginger, curry powder and 1 tbsp of the flour for 1 min, then gradually whisk in 400ml hot water with the stock cube crumbled in. Add the honey and soy and simmer for 10–12 min, stirring now and then, until it coats the back of a spoon. Blend it smooth with a stick blender if you like it silky."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "Rinse the rice, then tip it into a saucepan with 300ml boiling water and a pinch of salt. Cover and simmer on a low heat for 10 min, then turn off the heat and leave it covered for 5 min to steam until fluffy."
+   },
+   {
+    "title": "Crumb the chicken",
+    "text": "Place each breast between two sheets of cling film or baking paper and bash with a rolling pin until about 1.5cm thick. Set out three plates: the remaining flour seasoned with salt and pepper, the beaten egg, then the panko. Coat each breast in flour, then egg, then press firmly into the panko on both sides."
+   },
+   {
+    "title": "Fry and serve",
+    "text": "Heat 4 tbsp oil in a large frying pan over a medium heat. Fry the chicken for 4–5 min each side until deep golden and cooked through with no pink in the middle, then rest on kitchen paper for 2 min. Slice into strips and serve on the rice with the curry sauce poured alongside and the pickled cucumber on top."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "crispy",
+   "comfort",
+   "kid-friendly"
+  ],
+  "basedOn": "BBC Good Food — Katsu curry; Great British Chefs — Chicken katsu curry; Wagamama-style chicken katsu"
+ },
+ {
+  "id": "as_korean_fried_chicken",
+  "title": "Sticky Gochujang Korean Fried Chicken with Sesame Rice & Quick Pickles",
+  "icon": "🍗",
+  "cuisine": "Asian",
+  "category": "treat",
+  "protein": "chicken",
+  "time": 45,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "airFryer": "Toss the battered chicken with 1 tbsp oil and air-fry at 200°C for 16–18 min, shaking twice, until crisp and cooked through, then toss in the glaze.",
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 400,
+    "t": "4 thighs (400g), in large chunks"
+   },
+   {
+    "i": "cornflour",
+    "q": 50,
+    "t": "5 tbsp"
+   },
+   {
+    "i": "plain_flour",
+    "q": 20,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "½ tsp"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, crushed"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "gochujang",
+    "q": 45,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 35,
+    "t": "2½ tbsp"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "rice_vinegar",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "sesame_oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.5,
+    "t": "½, in chunks"
+   },
+   {
+    "i": "salted_peanuts",
+    "q": 20,
+    "t": "a small handful, crushed"
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced"
+   },
+   {
+    "i": "oil",
+    "q": 200,
+    "t": "about 1.5cm depth in the pan (200ml)"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Season and pickle",
+    "text": "Put the kettle on. Toss the chicken with half the garlic, the ginger, salt and pepper. Mix the cucumber with 1 tbsp of the rice vinegar and a pinch of salt and set aside to pickle."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "Rinse the rice, then tip it into a saucepan with 300ml boiling water and a pinch of salt. Cover and simmer on a low heat for 10 min, then turn off the heat and leave it covered for 5 min to steam until fluffy. Stir 1 tsp sesame oil through just before serving."
+   },
+   {
+    "title": "Make the glaze",
+    "text": "In a small saucepan, warm the gochujang, honey, soy, the rest of the rice vinegar and garlic with 2 tbsp water over a low heat. Simmer for 2–3 min until glossy and thick enough to coat a spoon, then turn off the heat."
+   },
+   {
+    "title": "Double-fry the chicken",
+    "text": "Mix the cornflour and flour, add 3 tbsp cold water to make a thin, lumpy paste and toss the chicken through it. Heat the oil in a deep frying pan or wok over a medium-high heat (a cube of bread should sizzle and brown in 30 seconds). Fry the chicken in batches for 5–6 min until pale golden, lift out for 2 min, then fry again for 2–3 min until very crunchy, deep golden and cooked through."
+   },
+   {
+    "title": "Glaze and serve",
+    "text": "Drain the chicken on kitchen paper, then tip it into the warm glaze and toss until every piece is lacquered. Pile onto the sesame rice, scatter with crushed peanuts and spring onions and serve with the pickled cucumber."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "crispy",
+   "spicy"
+  ],
+  "basedOn": "Mob — Sweet and spicy gochujang fried chicken; Great British Chefs — Korean fried chicken with gochujang glaze"
+ },
+ {
+  "id": "as_char_siu_pork",
+  "title": "Sticky Char Siu Pork with Garlicky Pak Choi & Rice",
+  "icon": "🥡",
+  "cuisine": "Asian",
+  "category": "treat",
+  "protein": "pork",
+  "time": 40,
+  "servings": 2,
+  "equipment": [
+   "oven",
+   "hob"
+  ],
+  "airFryer": "Air-fry the marinated pork at 190°C for 12–14 min, brushing with the extra glaze and turning halfway, until sticky and cooked through.",
+  "ingredients": [
+   {
+    "i": "pork_loin_steaks",
+    "q": 300,
+    "t": "2–3 steaks (300g), fat trimmed"
+   },
+   {
+    "i": "hoisin_sauce",
+    "q": 45,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 25,
+    "t": "1½ tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 40,
+    "t": "2½ tbsp"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "ground_cinnamon",
+    "q": 0.5,
+    "t": "a pinch"
+   },
+   {
+    "i": "garlic",
+    "q": 4,
+    "t": "4 cloves, crushed"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "sesame_oil",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "pak_choi",
+    "q": 250,
+    "t": "1 pack (250g), halved"
+   },
+   {
+    "i": "oyster_sauce",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Marinate the pork",
+    "text": "Heat the oven to 220°C (200°C fan) and line a small roasting tin with foil. Mix the hoisin, 1 tbsp soy, 2 tbsp honey, tomato purée, cinnamon, half the garlic, the ginger and sesame oil. Toss the pork steaks in it and leave for at least 10 min (or overnight in the fridge)."
+   },
+   {
+    "title": "Roast the pork",
+    "text": "Lift the pork onto the tin, keeping the leftover marinade. Roast for 10 min, then mix the leftover marinade with the last ½ tbsp honey, brush it thickly over the pork and roast for another 8–10 min until sticky, charred at the edges and cooked through."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "While the pork roasts, rinse the rice, then tip it into a saucepan with 300ml boiling water and a pinch of salt. Cover and simmer on a low heat for 10 min, then turn off the heat and leave it covered for 5 min to steam until fluffy."
+   },
+   {
+    "title": "Cook the pak choi",
+    "text": "Heat the oil in a frying pan or wok over a high heat. Add the pak choi and remaining garlic and stir-fry for 2–3 min until the leaves wilt but the stems still have bite, then toss with the oyster sauce, the rest of the soy and a splash of water."
+   },
+   {
+    "title": "Slice and serve",
+    "text": "Rest the pork for 3 min, then slice thickly on an angle. Serve on the rice with the pak choi, spoon any sticky juices from the tin over the top and scatter with spring onions."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "comfort"
+  ],
+  "basedOn": "RecipeTin Eats — Chinese barbecue pork (char siu); The Woks of Life — Chinese BBQ pork (cha siu)"
+ },
+ {
+  "id": "as_special_egg_fried_rice",
+  "title": "Takeaway Special Egg-Fried Rice with Chicken, King Prawns & Bacon",
+  "icon": "🍚",
+  "cuisine": "Asian",
+  "category": "treat",
+  "protein": "chicken",
+  "time": 30,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "chicken_breast",
+    "q": 150,
+    "t": "1 breast (150g), diced small"
+   },
+   {
+    "i": "prawns",
+    "q": 100,
+    "t": "100g, defrosted"
+   },
+   {
+    "i": "bacon",
+    "q": 100,
+    "t": "3 rashers, diced"
+   },
+   {
+    "i": "eggs",
+    "q": 3,
+    "t": "3, beaten"
+   },
+   {
+    "i": "frozen_peas",
+    "q": 80,
+    "t": "80g"
+   },
+   {
+    "i": "beansprouts",
+    "q": 100,
+    "t": "a big handful"
+   },
+   {
+    "i": "spring_onions",
+    "q": 4,
+    "t": "4, sliced"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, finely chopped"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "oyster_sauce",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "sesame_oil",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "black_pepper",
+    "q": 0.5,
+    "t": "a pinch"
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Cook and cool the rice",
+    "text": "Cook the rice in a pan of 300ml boiling salted water, covered, on a low heat for 10 min. Spread it out on a large plate or tray straight away and leave to steam-dry for 10 min — drier rice fries into separate grains instead of clumping."
+   },
+   {
+    "title": "Prep the extras",
+    "text": "Dice the chicken and bacon small, slice the spring onions (keep the green tops separate) and finely chop the garlic. Pat the defrosted prawns dry and beat the eggs with a pinch of salt."
+   },
+   {
+    "title": "Cook the meat",
+    "text": "Heat 1 tbsp oil in a wok or large frying pan over a high heat. Fry the bacon and chicken for 4–5 min until golden and the chicken is cooked through, add the prawns for 2 min until pink, then tip everything onto a plate."
+   },
+   {
+    "title": "Scramble the egg",
+    "text": "Add the last 1 tbsp oil to the wok, pour in the egg and leave for 20 seconds, then stir gently until just set in soft curds. Push it to one side."
+   },
+   {
+    "title": "Fry the rice",
+    "text": "Add the rice, garlic, white spring onions and peas and stir-fry over a high heat for 3–4 min, pressing the rice against the hot wok so it toasts a little. Return the meat, add the beansprouts, soy, oyster sauce, sesame oil and pepper and toss for 1–2 min until piping hot and evenly coloured. Scatter with the green spring onions."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "quick",
+   "one-pot"
+  ],
+  "basedOn": "RecipeTin Eats — Chinese fried rice; HelloFresh UK — Special egg fried rice (takeaway style)"
+ },
+ {
+  "id": "as_korean_fried_chicken_burger",
+  "title": "Korean Fried Chicken Burger with Kimchi Slaw & Gochujang Mayo",
+  "icon": "🍔",
+  "cuisine": "Asian",
+  "category": "treat",
+  "protein": "chicken",
+  "time": 40,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "airFryer": "Spray the coated chicken generously with oil and air-fry at 200°C for 14–16 min, turning halfway, until golden and cooked through, then brush with the glaze.",
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 300,
+    "t": "2 large thighs (300g)"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 50,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, crushed"
+   },
+   {
+    "i": "plain_flour",
+    "q": 60,
+    "t": "6 tbsp"
+   },
+   {
+    "i": "cornflour",
+    "q": 20,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "½ tsp"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "gochujang",
+    "q": 40,
+    "t": "2½ tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 20,
+    "t": "1½ tbsp"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "burger_buns",
+    "q": 2,
+    "t": "2, split"
+   },
+   {
+    "i": "kimchi",
+    "q": 80,
+    "t": "80g, roughly chopped"
+   },
+   {
+    "i": "carrots",
+    "q": 60,
+    "t": "1 small, grated"
+   },
+   {
+    "i": "mayonnaise",
+    "q": 45,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, leaves separated"
+   },
+   {
+    "i": "oil",
+    "q": 200,
+    "t": "about 1.5cm depth in the pan (200ml)"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Marinate the chicken",
+    "text": "Open the thighs out flat and trim any big bits of fat. Mix the yogurt with the garlic, a pinch of salt and 1 tbsp water, coat the chicken in it and leave for 10 min while you prep."
+   },
+   {
+    "title": "Make the slaw and mayo",
+    "text": "Mix the chopped kimchi and grated carrot with 1 tbsp of the mayo. In a separate bowl, stir 2 tsp of the gochujang into the remaining mayo. Mix the rest of the gochujang with the honey, soy and 1 tbsp water in a small bowl for the glaze."
+   },
+   {
+    "title": "Coat the chicken",
+    "text": "Mix the flour, cornflour, salt and pepper in a wide bowl. Lift the chicken from the yogurt and press it into the flour, drizzle over 1 tsp of the yogurt marinade to make craggy bits, then press into the flour again so it's thickly coated."
+   },
+   {
+    "title": "Fry the chicken",
+    "text": "Heat the oil in a deep frying pan over a medium heat until a pinch of flour sizzles instantly. Fry the chicken for 5–6 min each side until deep golden, crunchy and cooked through (no pink when cut in the thickest part). Drain on kitchen paper, then brush all over with the gochujang glaze."
+   },
+   {
+    "title": "Build the burgers",
+    "text": "Toast the buns cut-side down in a dry pan for 1 min. Spread the bases with gochujang mayo, add lettuce and the glazed chicken, then pile on the kimchi slaw and press on the lids."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "crispy",
+   "spicy"
+  ],
+  "basedOn": "Mob — Sweet and spicy gochujang fried chicken; BBC Good Food — Korean fried chicken burger"
+ },
+ {
+  "id": "as_chinese_curry_chips",
+  "title": "Chip-Shop Chinese Chicken Curry with Peas, Onions & Half-and-Half",
+  "icon": "🍛",
+  "cuisine": "Asian",
+  "category": "treat",
+  "protein": "chicken",
+  "time": 45,
+  "servings": 2,
+  "equipment": [
+   "oven",
+   "hob"
+  ],
+  "airFryer": "Air-fry the oiled chips at 200°C for 20–25 min, shaking twice, until golden and crisp.",
+  "ingredients": [
+   {
+    "i": "potatoes",
+    "q": 400,
+    "t": "2 medium (400g), cut into chips"
+   },
+   {
+    "i": "rice",
+    "q": 120,
+    "t": "120g"
+   },
+   {
+    "i": "chicken_breast",
+    "q": 300,
+    "t": "2 breasts (300g), sliced"
+   },
+   {
+    "i": "onion",
+    "q": 2,
+    "t": "2, in chunks"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "butter",
+    "q": 25,
+    "t": "25g"
+   },
+   {
+    "i": "plain_flour",
+    "q": 20,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "curry_powder",
+    "q": 10,
+    "t": "1½ tbsp"
+   },
+   {
+    "i": "turmeric",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "ground_cinnamon",
+    "q": 0.5,
+    "t": "a pinch"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 chicken"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "honey",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "frozen_peas",
+    "q": 80,
+    "t": "80g"
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Start the chips",
+    "text": "Heat the oven to 220°C (200°C fan) and put the kettle on. Toss the chips with 1 tbsp oil and a pinch of salt on a baking tray in a single layer and roast for 35–40 min, turning halfway, until golden and crisp."
+   },
+   {
+    "title": "Make the curry base",
+    "text": "Melt the butter in a saucepan over a medium-low heat. Stir in the flour, curry powder, turmeric and cinnamon and cook for 2 min, stirring, until it smells toasty and looks like wet sand. Gradually whisk in 450ml boiling water with the stock cube crumbled in, then add the soy and honey and simmer gently for 10 min until it's glossy and thick enough to coat a spoon."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "When the chips have 20 min left, rinse the rice, then tip it into a saucepan with 250ml boiling water and a pinch of salt. Cover and simmer on a low heat for 10 min, then turn off the heat and leave it covered for 5 min to steam until fluffy."
+   },
+   {
+    "title": "Stir-fry the chicken",
+    "text": "Heat the remaining 1 tbsp oil in a wok or frying pan over a high heat. Stir-fry the chicken for 4 min until golden, add the onion chunks, garlic and ginger and cook for 3 min more so the onion softens but keeps a little bite."
+   },
+   {
+    "title": "Bring it together",
+    "text": "Tip the chicken and onions into the curry sauce with the peas and simmer for 3–4 min until the chicken is cooked through and the peas are tender. Serve takeaway-style — half rice, half chips — with plenty of sauce spooned over."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "comfort",
+   "kid-friendly"
+  ],
+  "basedOn": "UK Chinese takeaway chicken curry (Krumpli / Hairy Bikers 'Chinese chicken curry' style)"
+ },
+ {
+  "id": "as_honey_sesame_chicken",
+  "title": "Crispy Honey Sesame Chicken with Broccoli & Rice",
+  "icon": "🍯",
+  "cuisine": "Asian",
+  "category": "treat",
+  "protein": "chicken",
+  "time": 30,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "airFryer": "Toss the coated chicken with 1 tbsp oil and air-fry at 200°C for 12–14 min, shaking halfway, then toss in the hot sauce.",
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 300,
+    "t": "2 breasts (300g), in chunks"
+   },
+   {
+    "i": "eggs",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "cornflour",
+    "q": 45,
+    "t": "4½ tbsp"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "broccoli",
+    "q": 200,
+    "t": "½ head (200g), in florets"
+   },
+   {
+    "i": "honey",
+    "q": 45,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "rice_vinegar",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "sesame_oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "a pinch (optional)",
+    "swap": "Sprinkle the chilli flakes over one plate only at the end."
+   },
+   {
+    "i": "oil",
+    "q": 60,
+    "t": "4 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep and start the rice",
+    "text": "Put the kettle on. Rinse the rice, then tip it into a saucepan with 300ml boiling water and a pinch of salt. Cover and simmer on a low heat for 10 min, then turn off the heat and leave it covered for 5 min to steam until fluffy."
+   },
+   {
+    "title": "Mix the sauce",
+    "text": "Whisk the honey, soy, rice vinegar, tomato purée, garlic, sesame oil, 1 tsp of the cornflour and 3 tbsp water in a jug until smooth. Set it right by the hob — once the chicken is fried, everything moves fast."
+   },
+   {
+    "title": "Cook the broccoli",
+    "text": "Cook the broccoli florets in a pan of boiling water for 3 min until bright green and just tender, then drain. Leave it in the colander with the lid of the pan on top so it stays warm."
+   },
+   {
+    "title": "Fry the chicken",
+    "text": "Beat the egg in a bowl, toss the chicken through it, then coat in the remaining cornflour with a pinch of salt. Heat the oil in a wok or large frying pan over a medium-high heat and fry the chicken in one layer for 6–8 min, turning, until golden, crisp and cooked through. Lift onto kitchen paper."
+   },
+   {
+    "title": "Glaze and serve",
+    "text": "Pour off the oil, leaving a thin film, then add the sauce and bubble for 1 min until it turns thick and sticky. Tip in the chicken and toss until glossy. Serve over the rice with the broccoli, scattered with spring onions and a pinch of chilli flakes if you like."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "crispy",
+   "kid-friendly"
+  ],
+  "basedOn": "RecipeTin Eats — Honey garlic chicken / Chinese honey sesame chicken (takeaway style)"
+ },
+ {
+  "id": "as_halloumi_katsu_curry",
+  "title": "Panko Halloumi Katsu Curry with Sticky Rice & Sesame Slaw",
+  "icon": "🧀",
+  "cuisine": "Asian",
+  "category": "treat",
+  "protein": "veggie",
+  "time": 40,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "airFryer": "Spray the crumbed halloumi with oil and air-fry at 200°C for 8–10 min, turning halfway, until golden.",
+  "ingredients": [
+   {
+    "i": "halloumi",
+    "q": 225,
+    "t": "1 block (225g), in 6 slices"
+   },
+   {
+    "i": "plain_flour",
+    "q": 30,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "eggs",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "panko",
+    "q": 50,
+    "t": "50g"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, finely chopped"
+   },
+   {
+    "i": "carrots",
+    "q": 160,
+    "t": "2 — 1 finely chopped, 1 grated"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "curry_powder",
+    "q": 8,
+    "t": "1 heaped tbsp"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 vegetable"
+   },
+   {
+    "i": "honey",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, shredded"
+   },
+   {
+    "i": "rice_vinegar",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "sesame_oil",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "oil",
+    "q": 60,
+    "t": "4 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Put the kettle on. Finely chop the onion and one carrot, grate the other carrot and crush the garlic. Pat the halloumi slices dry with kitchen paper."
+   },
+   {
+    "title": "Make the katsu sauce",
+    "text": "Heat 1 tbsp oil in a saucepan over a medium heat and soften the onion and carrot for 6–8 min until golden. Stir in the garlic, ginger, curry powder and 1 tbsp of the flour for 1 min, then gradually whisk in 350ml hot water with the stock cube crumbled in. Add the honey and 2 tsp of the soy and simmer for 10–12 min, stirring now and then, until it coats the back of a spoon."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "Rinse the rice, then tip it into a saucepan with 300ml boiling water and a pinch of salt. Cover and simmer on a low heat for 10 min, then turn off the heat and leave it covered for 5 min to steam until fluffy."
+   },
+   {
+    "title": "Crumb and fry the halloumi",
+    "text": "Set out three plates: the remaining flour, the beaten egg and the panko. Coat each halloumi slice in flour, then egg, then press firmly into the panko. Heat 3 tbsp oil in a large frying pan over a medium heat and fry for 2–3 min each side until deep golden and the cheese is soft inside."
+   },
+   {
+    "title": "Dress the slaw and serve",
+    "text": "Toss the shredded lettuce and grated carrot with the rice vinegar, sesame oil and remaining soy. Serve the halloumi on the rice with the katsu sauce poured over the side and the slaw piled alongside."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "crispy",
+   "comfort"
+  ],
+  "basedOn": "BBC Good Food — Halloumi katsu curry; Wagamama-style katsu curry"
+ },
+ {
+  "id": "as_crispy_hoisin_pork_pancakes",
+  "title": "Crispy Hoisin Pork 'Duck-Style' Pancake Wraps with Cucumber & Spring Onion",
+  "icon": "🌯",
+  "cuisine": "Asian",
+  "category": "treat",
+  "protein": "pork",
+  "time": 25,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "pork_mince",
+    "q": 400,
+    "t": "400g"
+   },
+   {
+    "i": "ground_cinnamon",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 0.5,
+    "t": "a pinch"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "hoisin_sauce",
+    "q": 75,
+    "t": "5 tbsp, divided"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "wraps",
+    "q": 4,
+    "t": "4"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.5,
+    "t": "½, in matchsticks"
+   },
+   {
+    "i": "spring_onions",
+    "q": 4,
+    "t": "4, in fine strips"
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, shredded"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the fillings",
+    "text": "Cut the cucumber into thin matchsticks and the spring onions into fine strips about 6cm long. Shred the lettuce and set everything out on a board, takeaway-style."
+   },
+   {
+    "title": "Crisp the pork",
+    "text": "Heat the oil in a large frying pan over a high heat. Add the mince, flatten it into one layer and leave it for 4–5 min without stirring so it gets a deep brown crust, then break it up and fry for 5 min more until really crisp and the fat has rendered out."
+   },
+   {
+    "title": "Season it",
+    "text": "Stir in the cinnamon, chilli flakes, garlic and ginger and fry for 1 min. Add 3 tbsp of the hoisin, the soy and honey and toss for 2 min until the pork is dark, sticky and clinging together in crunchy clusters."
+   },
+   {
+    "title": "Warm the wraps",
+    "text": "Warm the wraps one at a time in a dry frying pan for 20 seconds each side, or stack them wrapped in a damp sheet of kitchen paper and microwave for 30 seconds, so they're soft and pliable. Keep them wrapped in a clean tea towel so they don't dry out while you build."
+   },
+   {
+    "title": "Roll them up",
+    "text": "Spread each wrap with a little of the remaining hoisin, then pile on lettuce, crispy pork, cucumber and spring onion. Roll up tightly, cut in half on the diagonal and eat straight away."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "quick",
+   "crispy"
+  ],
+  "basedOn": "Crispy aromatic duck pancakes (Chinese takeaway) — Pinch of Nom / Mob 'crispy hoisin pork' pancake style"
+ },
+ {
+  "id": "as_kung_pao_chicken",
+  "title": "Kung Pao Chicken with Peppers, Peanuts & Spring Onion Rice",
+  "icon": "🥜",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 25,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 350,
+    "t": "350g, in 2cm pieces"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 35,
+    "t": "2½ tbsp, divided"
+   },
+   {
+    "i": "cornflour",
+    "q": 10,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, in 2cm pieces"
+   },
+   {
+    "i": "spring_onions",
+    "q": 4,
+    "t": "4, in 3cm lengths"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, sliced"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1.5,
+    "t": "¾ tsp",
+    "swap": "Halve the chilli flakes in the pan and sprinkle the rest over one plate only."
+   },
+   {
+    "i": "rice_vinegar",
+    "q": 20,
+    "t": "4 tsp"
+   },
+   {
+    "i": "honey",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "sesame_oil",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "salted_peanuts",
+    "q": 40,
+    "t": "40g"
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Marinate and start the rice",
+    "text": "Put the kettle on. Toss the chicken with 1 tbsp soy and the cornflour and leave to sit. Rinse the rice, then tip it into a saucepan with 300ml boiling water and a pinch of salt. Cover and simmer on a low heat for 10 min, then turn off the heat and leave it covered for 5 min to steam until fluffy."
+   },
+   {
+    "title": "Mix the sauce",
+    "text": "Stir the remaining soy, rice vinegar, honey, sesame oil and 3 tbsp water together in a small jug. It should taste salty, sharp and just sweet — classic kung pao balance."
+   },
+   {
+    "title": "Sear the chicken",
+    "text": "Heat 1½ tbsp oil in a wok or large frying pan over a high heat. Add the chicken in one layer and leave for 2 min to brown, then stir-fry for 3–4 min until golden all over and cooked through. Tip onto a plate."
+   },
+   {
+    "title": "Cook the aromatics",
+    "text": "Lower the heat to medium, add the last ½ tbsp oil with the chilli flakes, garlic and ginger and sizzle for 30 seconds until fragrant but not burnt. Turn the heat back up, add the pepper and white spring onion pieces and stir-fry for 2 min until just softened."
+   },
+   {
+    "title": "Toss and serve",
+    "text": "Return the chicken, pour in the sauce and bubble for 1 min until it thickens and coats everything in a glossy glaze. Toss through the peanuts and green spring onions and serve over the rice."
+   }
+  ],
+  "tags": [
+   "quick",
+   "spicy"
+  ],
+  "basedOn": "RecipeTin Eats — Kung pao chicken (thousands of 5★ reviews)"
+ },
+ {
+  "id": "as_chicken_chow_mein",
+  "title": "Takeaway-Style Chicken Chow Mein with Beansprouts & Mushrooms",
+  "icon": "🍜",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 25,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "egg_noodles",
+    "q": 150,
+    "t": "2 nests (150g)"
+   },
+   {
+    "i": "chicken_breast",
+    "q": 300,
+    "t": "2 breasts (300g), thinly sliced"
+   },
+   {
+    "i": "cornflour",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 35,
+    "t": "2½ tbsp, divided"
+   },
+   {
+    "i": "oyster_sauce",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "sesame_oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, finely chopped"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "carrots",
+    "q": 80,
+    "t": "1 small, in matchsticks"
+   },
+   {
+    "i": "mushrooms",
+    "q": 100,
+    "t": "100g, sliced",
+    "swap": "Stir-fry the mushrooms in a separate small pan with a drop of oil and a splash of soy until golden, then spoon them over one portion only."
+   },
+   {
+    "i": "beansprouts",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "spring_onions",
+    "q": 4,
+    "t": "4, in 4cm lengths"
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep and soak",
+    "text": "Put the kettle on. Toss the chicken with the cornflour and 1 tbsp soy. Cook the noodles in boiling water for 3–4 min until just tender, drain, rinse under cold water and toss with 1 tsp sesame oil so they don't stick."
+   },
+   {
+    "title": "Mix the sauce",
+    "text": "Stir the oyster sauce, remaining soy, the rest of the sesame oil, honey and 2 tbsp water in a small bowl. Have it next to the hob, as the stir-fry only takes a few minutes once the wok is hot."
+   },
+   {
+    "title": "Cook the chicken",
+    "text": "Heat 1 tbsp oil in a wok or large frying pan over a high heat. Stir-fry the chicken for 4–5 min until golden and cooked through, then tip onto a plate."
+   },
+   {
+    "title": "Fry the veg",
+    "text": "Add the remaining oil, then the garlic, ginger, carrot and mushrooms and stir-fry for 2–3 min until the mushrooms are golden. Add the beansprouts and spring onions for 1 min — they should stay crunchy."
+   },
+   {
+    "title": "Toss the noodles",
+    "text": "Add the noodles, chicken and sauce and toss constantly over a high heat for 2 min, lifting with tongs, until the noodles are evenly coated, glossy and piping hot. Serve straight away."
+   }
+  ],
+  "tags": [
+   "quick",
+   "one-pot",
+   "kid-friendly"
+  ],
+  "basedOn": "RecipeTin Eats — Chow mein; BBC Good Food — Chicken chow mein"
+ },
+ {
+  "id": "as_black_bean_beef",
+  "title": "Black Bean Beef with Peppers, Onion & Steamed Rice",
+  "icon": "🫑",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "beef",
+  "time": 25,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "beef_stir_fry_strips",
+    "q": 300,
+    "t": "1 pack (300g)"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "cornflour",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "peppers",
+    "q": 2,
+    "t": "2 (ideally 1 green), in chunks"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, in chunks"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, sliced"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "black_bean_sauce",
+    "q": 90,
+    "t": "6 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced"
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Marinate and start the rice",
+    "text": "Put the kettle on. Toss the beef strips with the soy and 1 tsp cornflour and set aside. Rinse the rice, then tip it into a saucepan with 300ml boiling water and a pinch of salt. Cover and simmer on a low heat for 10 min, then turn off the heat and leave it covered for 5 min to steam until fluffy."
+   },
+   {
+    "title": "Prep the veg and sauce",
+    "text": "Cut the peppers and onion into 2–3cm chunks so they cook at the same speed. Stir the black bean sauce, honey, remaining cornflour and 4 tbsp water together in a jug."
+   },
+   {
+    "title": "Sear the beef",
+    "text": "Heat 1 tbsp oil in a wok or large frying pan until smoking hot. Add the beef in one layer, leave for 1 min to char, then stir-fry for 1–2 min more until browned outside but still a little pink. Tip onto a plate."
+   },
+   {
+    "title": "Fry the veg",
+    "text": "Add the last 1 tbsp oil and stir-fry the peppers and onion for 3 min over a high heat until scorched at the edges but still crisp. Add the garlic and ginger for 30 seconds."
+   },
+   {
+    "title": "Sauce and serve",
+    "text": "Pour in the sauce mix and bubble for 1 min until thickened and glossy, then return the beef and its juices and toss for 30 seconds to heat through. Scatter with spring onions and serve over the rice."
+   }
+  ],
+  "tags": [
+   "quick"
+  ],
+  "basedOn": "RecipeTin Eats — Chinese beef and black bean sauce stir-fry; BBC Good Food — Beef in black bean sauce"
+ },
+ {
+  "id": "as_beef_broccoli",
+  "title": "Garlicky Beef & Broccoli in Oyster Sauce with Steamed Rice",
+  "icon": "🥦",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "beef",
+  "time": 25,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "beef_stir_fry_strips",
+    "q": 300,
+    "t": "1 pack (300g)"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 30,
+    "t": "2 tbsp, divided"
+   },
+   {
+    "i": "cornflour",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "broccoli",
+    "q": 300,
+    "t": "1 small head (300g), in small florets"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, finely chopped"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "oyster_sauce",
+    "q": 45,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "sesame_oil",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Marinate and start the rice",
+    "text": "Put the kettle on. Toss the beef with 1 tbsp soy and 1 tsp cornflour. Rinse the rice, then tip it into a saucepan with 300ml boiling water and a pinch of salt. Cover and simmer on a low heat for 10 min, then turn off the heat and leave it covered for 5 min to steam until fluffy."
+   },
+   {
+    "title": "Make the sauce",
+    "text": "Whisk the oyster sauce, remaining soy, honey, sesame oil, remaining cornflour and 5 tbsp water in a jug until smooth. Give it another stir just before it goes in, as the cornflour settles to the bottom."
+   },
+   {
+    "title": "Steam-fry the broccoli",
+    "text": "Heat 1 tbsp oil in a wok over a high heat, add the broccoli and stir-fry for 1 min, then add 3 tbsp water and cover for 2 min until bright green and just tender. Tip onto a plate."
+   },
+   {
+    "title": "Sear the beef",
+    "text": "Add the last 1 tbsp oil to the wok and get it smoking hot. Fry the beef in one layer for 1 min without moving, then stir-fry for 1 min more until browned. Add the garlic and ginger for 30 seconds."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Return the broccoli, pour in the sauce and toss for 1 min until it thickens and clings to everything. Serve over the rice."
+   }
+  ],
+  "tags": [
+   "quick"
+  ],
+  "basedOn": "RecipeTin Eats — Chinese beef and broccoli; The Woks of Life — Beef with broccoli"
+ },
+ {
+  "id": "as_dan_dan_noodles",
+  "title": "Sichuan-Style Dan Dan Pork Noodles with Peanut Chilli Sauce & Pak Choi",
+  "icon": "🍜",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "pork",
+  "time": 20,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "egg_noodles",
+    "q": 150,
+    "t": "2 nests (150g)"
+   },
+   {
+    "i": "pork_mince",
+    "q": 250,
+    "t": "250g"
+   },
+   {
+    "i": "hoisin_sauce",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 40,
+    "t": "2½ tbsp, divided"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "peanut_butter",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "rice_vinegar",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "sesame_oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 2,
+    "t": "1 tsp",
+    "swap": "Stir the chilli flakes into one bowl's sauce only, or serve them at the table."
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "pak_choi",
+    "q": 200,
+    "t": "200g, halved lengthways"
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced"
+   },
+   {
+    "i": "salted_peanuts",
+    "q": 20,
+    "t": "a small handful, chopped"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Make the sauce",
+    "text": "Put the kettle on. In each of two serving bowls, mix half the peanut butter, 2 tsp soy, half the rice vinegar, sesame oil, chilli flakes and honey with 2 tbsp of hot water until smooth and pourable."
+   },
+   {
+    "title": "Crisp the pork",
+    "text": "Heat the oil in a frying pan over a high heat. Fry the mince for 6–8 min, breaking it up, until well browned and crispy at the edges. Stir in the garlic, ginger, hoisin and the remaining soy for 1 min until sticky."
+   },
+   {
+    "title": "Cook the noodles and greens",
+    "text": "Cook the noodles in a large pan of boiling water for 4 min, adding the pak choi for the final 1½ min, until the noodles are tender and the pak choi stems are just soft. Scoop out a mugful of the starchy cooking water before you drain them."
+   },
+   {
+    "title": "Build the bowls",
+    "text": "Lift the noodles and pak choi into the bowls with a splash of the cooking water and toss through the sauce. Top with the crispy pork, chopped peanuts and spring onions and mix it all up at the table."
+   }
+  ],
+  "tags": [
+   "quick",
+   "spicy"
+  ],
+  "basedOn": "RecipeTin Eats — Dan dan noodles; The Woks of Life — Dan dan noodles"
+ },
+ {
+  "id": "as_sticky_sesame_tofu",
+  "title": "Crispy Sticky Sesame Tofu with Garlic Greens & Rice",
+  "icon": "🥢",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 30,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "tofu",
+    "q": 280,
+    "t": "1 block (280g)"
+   },
+   {
+    "i": "cornflour",
+    "q": 20,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "broccoli",
+    "q": 200,
+    "t": "½ head (200g), in florets"
+   },
+   {
+    "i": "pak_choi",
+    "q": 125,
+    "t": "½ pack, halved"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 40,
+    "t": "2½ tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "rice_vinegar",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, finely chopped"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "sesame_oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced"
+   },
+   {
+    "i": "oil",
+    "q": 45,
+    "t": "3 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Press the tofu",
+    "text": "Put the kettle on. Wrap the tofu in a clean tea towel and press under a heavy pan for 5 min, then cut into 2cm cubes and toss with the cornflour and a pinch of salt."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "Rinse the rice, then tip it into a saucepan with 300ml boiling water and a pinch of salt. Cover and simmer on a low heat for 10 min, then turn off the heat and leave it covered for 5 min to steam until fluffy."
+   },
+   {
+    "title": "Fry the tofu",
+    "text": "Heat 2 tbsp oil in a large non-stick frying pan over a medium-high heat. Fry the tofu for 8–10 min, turning every couple of minutes, until golden and crisp on all sides. Lift onto a plate."
+   },
+   {
+    "title": "Cook the greens",
+    "text": "Add the last 1 tbsp oil, the broccoli and 3 tbsp water and cover for 2 min, then add the pak choi and half the garlic and stir-fry for 2 min until wilted and tender-crisp. Season with a pinch of salt and keep them in the pan."
+   },
+   {
+    "title": "Glaze and serve",
+    "text": "Push the greens to one side, add the soy, honey, vinegar, the rest of the garlic, ginger and sesame oil and bubble for 1 min until syrupy. Return the tofu and toss until coated and sticky. Serve over rice with spring onions."
+   }
+  ],
+  "tags": [
+   "quick",
+   "crispy"
+  ],
+  "basedOn": "BBC Good Food — Sticky sesame tofu; Bosh!/Mob — Crispy sesame tofu"
+ },
+ {
+  "id": "as_thai_green_chicken_curry",
+  "title": "Thai Green Chicken Curry with Courgette, Spinach, Thai Basil & Rice",
+  "icon": "🍲",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 30,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 350,
+    "t": "350g, sliced"
+   },
+   {
+    "i": "thai_green_paste",
+    "q": 45,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "coconut_milk",
+    "q": 400,
+    "t": "1 tin (400ml)"
+   },
+   {
+    "i": "fish_sauce",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "lime",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "courgette",
+    "q": 1,
+    "t": "1, in half-moons"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "spinach",
+    "q": 80,
+    "t": "2 big handfuls"
+   },
+   {
+    "i": "basil",
+    "q": 15,
+    "t": "½ pack, leaves picked"
+   },
+   {
+    "i": "green_chillies",
+    "q": 10,
+    "t": "1, sliced",
+    "swap": "Leave the chilli out of the pan and serve it sliced on the side so each plate can be as hot as you like."
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep and start the rice",
+    "text": "Put the kettle on. Slice the chicken, courgette and pepper. Rinse the rice, then tip it into a saucepan with 300ml boiling water and a pinch of salt. Cover and simmer on a low heat for 10 min, then turn off the heat and leave it covered for 5 min to steam until fluffy."
+   },
+   {
+    "title": "Fry the paste",
+    "text": "Heat the oil in a large saucepan or deep frying pan over a medium heat. Add the curry paste and 3 tbsp of the thick coconut cream from the top of the tin and fry for 2 min, stirring, until it smells fragrant and the oil starts to split out."
+   },
+   {
+    "title": "Simmer the curry",
+    "text": "Add the chicken and stir to coat for 2 min, then pour in the rest of the coconut milk and the courgette. Simmer gently for 10 min until the chicken is cooked through and the sauce has thickened slightly."
+   },
+   {
+    "title": "Season it",
+    "text": "Add the pepper and simmer for 2 min more, then stir in the spinach until wilted. Season with the fish sauce, honey and the juice of half the lime — taste and adjust until it's salty, a little sweet and fresh."
+   },
+   {
+    "title": "Serve",
+    "text": "Tear in most of the basil and ladle the curry over the rice. Top with the remaining basil, the sliced chilli and lime wedges for squeezing."
+   }
+  ],
+  "tags": [
+   "quick",
+   "one-pot",
+   "spicy"
+  ],
+  "basedOn": "RecipeTin Eats — Thai green curry; BBC Good Food — Thai green chicken curry (4.7★)"
+ },
+ {
+  "id": "as_thai_red_prawn_curry",
+  "title": "Thai Red Prawn & Coconut Curry with Pak Choi & Lime",
+  "icon": "🦐",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "prawns",
+  "time": 20,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "prawns",
+    "q": 170,
+    "t": "1 pack (170g), defrosted"
+   },
+   {
+    "i": "thai_red_paste",
+    "q": 40,
+    "t": "2½ tbsp"
+   },
+   {
+    "i": "coconut_milk",
+    "q": 400,
+    "t": "1 tin (400ml)"
+   },
+   {
+    "i": "red_onion",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 150,
+    "t": "150g, halved"
+   },
+   {
+    "i": "pak_choi",
+    "q": 125,
+    "t": "½ pack, quartered"
+   },
+   {
+    "i": "fish_sauce",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "lime",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a handful, chopped",
+    "swap": "Scatter the coriander over one plate only, or serve it in a little bowl on the side."
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Start the rice",
+    "text": "Put the kettle on. Rinse the rice, then tip it into a saucepan with 300ml boiling water and a pinch of salt. Cover and simmer on a low heat for 10 min, then turn off the heat and leave it covered for 5 min to steam until fluffy."
+   },
+   {
+    "title": "Soften the veg",
+    "text": "Heat the oil in a large frying pan over a medium heat. Fry the onion and pepper for 4–5 min until softened, then stir in the curry paste and cook for 1 min until fragrant."
+   },
+   {
+    "title": "Build the sauce",
+    "text": "Pour in the coconut milk, add the tomatoes and simmer for 5 min until the tomatoes start to collapse and the sauce turns a rich orange. Season with the fish sauce, honey and half the lime juice."
+   },
+   {
+    "title": "Cook the prawns",
+    "text": "Add the prawns and pak choi and simmer for 3 min until the prawns are pink all the way through and the pak choi has just wilted. Don't overcook or the prawns turn rubbery."
+   },
+   {
+    "title": "Serve",
+    "text": "Spoon over the rice and scatter with coriander, with the remaining lime cut into wedges. Squeeze the lime over at the table to freshen up the rich sauce."
+   }
+  ],
+  "tags": [
+   "quick",
+   "one-pot",
+   "light"
+  ],
+  "basedOn": "BBC Good Food — Thai red prawn curry; Jamie Oliver — Thai red prawn curry"
+ },
+ {
+  "id": "as_massaman_chicken",
+  "title": "Massaman Chicken Curry with Potatoes, Peanuts & Cinnamon",
+  "icon": "🥔",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 40,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 400,
+    "t": "400g, in large chunks"
+   },
+   {
+    "i": "potatoes",
+    "q": 300,
+    "t": "2 medium (300g), in 3cm chunks"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, in wedges"
+   },
+   {
+    "i": "thai_red_paste",
+    "q": 40,
+    "t": "2½ tbsp"
+   },
+   {
+    "i": "curry_powder",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "ground_cinnamon",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "coconut_milk",
+    "q": 400,
+    "t": "1 tin (400ml)"
+   },
+   {
+    "i": "peanut_butter",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "fish_sauce",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "lime",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "salted_peanuts",
+    "q": 30,
+    "t": "30g, roughly chopped"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a handful",
+    "swap": "Scatter the coriander over one plate only, or serve it in a little bowl on the side."
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Put the kettle on. Cut the chicken and potatoes into large chunks and the onion into wedges. Mix the red curry paste with the curry powder and cinnamon — this mimics the warm spices of a massaman paste."
+   },
+   {
+    "title": "Brown the chicken",
+    "text": "Heat the oil in a large lidded saucepan over a medium-high heat. Brown the chicken for 4–5 min until coloured all over, then add the onion and spice paste and fry for 2 min, stirring, until fragrant."
+   },
+   {
+    "title": "Simmer with potatoes",
+    "text": "Stir in the coconut milk, peanut butter and 150ml water, then add the potatoes. Bring to a simmer, cover and cook for 20 min, stirring now and then, until the potatoes are tender when poked with a knife."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "While the curry simmers, rinse the rice, then tip it into a saucepan with 300ml boiling water and a pinch of salt. Cover and simmer on a low heat for 10 min, then turn off the heat and leave it covered for 5 min to steam until fluffy."
+   },
+   {
+    "title": "Season and serve",
+    "text": "Uncover the curry and bubble for 3–4 min until it's thick enough to coat the potatoes. Season with the fish sauce, honey and half the lime juice, then serve over the rice topped with chopped peanuts, coriander and lime wedges."
+   }
+  ],
+  "tags": [
+   "comfort",
+   "freezable"
+  ],
+  "basedOn": "RecipeTin Eats — Massaman curry; BBC Good Food — Massaman chicken curry"
+ },
+ {
+  "id": "as_chicken_pad_thai",
+  "title": "Chicken & Prawn Pad Thai-Style Noodles with Peanuts & Lime",
+  "icon": "🍤",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 25,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "rice_noodles",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "chicken_breast",
+    "q": 150,
+    "t": "1 breast (150g), thinly sliced"
+   },
+   {
+    "i": "prawns",
+    "q": 80,
+    "t": "80g, defrosted"
+   },
+   {
+    "i": "eggs",
+    "q": 2,
+    "t": "2, beaten"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, finely chopped"
+   },
+   {
+    "i": "beansprouts",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "spring_onions",
+    "q": 4,
+    "t": "4, in 4cm lengths"
+   },
+   {
+    "i": "fish_sauce",
+    "q": 25,
+    "t": "1½ tbsp"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "honey",
+    "q": 20,
+    "t": "1½ tbsp"
+   },
+   {
+    "i": "rice_vinegar",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "lime",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "salted_peanuts",
+    "q": 30,
+    "t": "30g, chopped"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "½ tsp",
+    "swap": "Serve the chilli flakes on the side rather than in the pan."
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Soak the noodles",
+    "text": "Put the kettle on. Pour boiling water over the rice noodles in a bowl and soak for 6–8 min until pliable but still a little firm — they finish cooking in the pan. Drain and rinse under cold water."
+   },
+   {
+    "title": "Mix the sauce",
+    "text": "Stir the fish sauce, soy, honey, rice vinegar, tomato purée and the juice of half the lime together. It should be tangy, salty and sweet all at once — this stands in for the usual tamarind."
+   },
+   {
+    "title": "Cook the chicken and prawns",
+    "text": "Heat 1 tbsp oil in a wok or large frying pan over a high heat. Stir-fry the chicken for 3–4 min until cooked through, add the garlic and prawns for 1–2 min until pink, then push everything to one side."
+   },
+   {
+    "title": "Scramble the egg",
+    "text": "Add the remaining oil to the empty side, pour in the egg and scramble for 30 seconds until just set, then break it up through the chicken. Keep the heat high so the egg sets quickly rather than turning watery."
+   },
+   {
+    "title": "Toss and serve",
+    "text": "Add the noodles and sauce and toss with tongs for 2 min until the noodles soak it up. Add the beansprouts and spring onions for 30 seconds, then serve topped with peanuts, chilli flakes and lime wedges."
+   }
+  ],
+  "tags": [
+   "quick"
+  ],
+  "basedOn": "RecipeTin Eats — Pad Thai; Hot Thai Kitchen — Pad Thai"
+ },
+ {
+  "id": "as_chicken_larb",
+  "title": "Zingy Thai Chicken Larb Lettuce Cups with Sticky Rice",
+  "icon": "🥬",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 25,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 350,
+    "t": "350g, very finely chopped"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "red_onion",
+    "q": 1,
+    "t": "1, very thinly sliced"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "fish_sauce",
+    "q": 25,
+    "t": "1½ tbsp"
+   },
+   {
+    "i": "lime",
+    "q": 2,
+    "t": "2, juiced"
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "½ tsp",
+    "swap": "Add the chilli flakes to one portion only."
+   },
+   {
+    "i": "spring_onions",
+    "q": 3,
+    "t": "3, sliced"
+   },
+   {
+    "i": "coriander",
+    "q": 15,
+    "t": "½ pack, chopped",
+    "swap": "Scatter the coriander over one plate only, or serve it in a little bowl on the side."
+   },
+   {
+    "i": "basil",
+    "q": 10,
+    "t": "a handful, torn"
+   },
+   {
+    "i": "little_gem",
+    "q": 2,
+    "t": "2, leaves separated"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.5,
+    "t": "½, in batons"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Toast the rice",
+    "text": "Put the kettle on. Toast 1 tbsp of the uncooked rice in a dry frying pan over a medium heat for 4–5 min until golden, then crush it with a rolling pin — this gives larb its signature crunch. Cook the rest of the rice: rinse the rice, then tip it into a saucepan with 300ml boiling water and a pinch of salt. Cover and simmer on a low heat for 10 min, then turn off the heat and leave it covered for 5 min to steam until fluffy."
+   },
+   {
+    "title": "Chop the chicken",
+    "text": "Very finely chop the chicken thighs (or pulse in short bursts in a food processor) so you get a coarse mince. Thinly slice the onion and soak it in the lime juice while you cook."
+   },
+   {
+    "title": "Cook the chicken",
+    "text": "Heat the oil in the frying pan over a high heat and fry the chicken for 5–6 min, breaking it up, until cooked through with no pink left. Add the garlic for 1 min."
+   },
+   {
+    "title": "Dress the larb",
+    "text": "Take the pan off the heat and stir in the fish sauce, honey, chilli flakes and the onions with all their lime juice. Fold through the spring onions, coriander, basil and most of the toasted rice powder, then taste — it should be punchy, salty and sour."
+   },
+   {
+    "title": "Serve",
+    "text": "Spoon the larb into lettuce cups and sprinkle with the remaining toasted rice. Serve with the rice and cucumber batons on the side."
+   }
+  ],
+  "tags": [
+   "quick",
+   "light",
+   "spicy"
+  ],
+  "basedOn": "RecipeTin Eats — Larb (Thai minced chicken salad); Hot Thai Kitchen — Larb gai"
+ },
+ {
+  "id": "as_chicken_satay",
+  "title": "Grilled Chicken Satay with Peanut Sauce & Smashed Cucumber Salad",
+  "icon": "🍢",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 30,
+  "servings": 2,
+  "equipment": [
+   "grill",
+   "hob"
+  ],
+  "airFryer": "Air-fry the marinated chicken at 200°C for 10–12 min, turning halfway, until charred and cooked through.",
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 400,
+    "t": "400g, in long strips"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "curry_powder",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "turmeric",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 25,
+    "t": "1½ tbsp, divided"
+   },
+   {
+    "i": "honey",
+    "q": 20,
+    "t": "1½ tbsp, divided"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "peanut_butter",
+    "q": 60,
+    "t": "4 tbsp"
+   },
+   {
+    "i": "coconut_milk",
+    "q": 150,
+    "t": "150ml"
+   },
+   {
+    "i": "thai_red_paste",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "lime",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "cucumber",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "rice_vinegar",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a handful",
+    "swap": "Scatter the coriander over one plate only, or serve it in a little bowl on the side."
+   }
+  ],
+  "steps": [
+   {
+    "title": "Marinate the chicken",
+    "text": "Put the kettle on. Mix the yogurt, curry powder, turmeric, 1 tbsp soy, 1 tbsp honey and half the garlic, then coat the chicken strips and thread onto skewers (or leave loose). Heat the grill to high and line a tray with foil."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "Rinse the rice, then tip it into a saucepan with 300ml boiling water and a pinch of salt. Cover and simmer on a low heat for 10 min, then turn off the heat and leave it covered for 5 min to steam until fluffy."
+   },
+   {
+    "title": "Grill the chicken",
+    "text": "Grill the chicken for 10–12 min, turning halfway, until charred at the edges and cooked through with the juices running clear. Brush with any marinade left in the bowl at the halfway turn for extra colour."
+   },
+   {
+    "title": "Make the peanut sauce",
+    "text": "Meanwhile, warm the peanut butter, coconut milk, red curry paste, remaining garlic, soy and honey in a small saucepan over a low heat, stirring for 3–4 min until smooth and thick enough to coat a spoon. Add a squeeze of lime and a splash of water if it gets too thick."
+   },
+   {
+    "title": "Smash the cucumber",
+    "text": "Bash the cucumber with a rolling pin until it splits, then tear into chunks and toss with the rice vinegar and a pinch of salt. Serve the satay with the rice, peanut sauce for dipping, cucumber salad, coriander and lime wedges."
+   }
+  ],
+  "tags": [
+   "quick",
+   "kid-friendly"
+  ],
+  "basedOn": "RecipeTin Eats — Thai chicken satay with peanut sauce"
+ },
+ {
+  "id": "as_thai_basil_pork",
+  "title": "Thai Basil Pork (Pad Kra Pao) with Crispy Fried Egg & Rice",
+  "icon": "🍳",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "pork",
+  "time": 20,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "pork_mince",
+    "q": 350,
+    "t": "350g"
+   },
+   {
+    "i": "garlic",
+    "q": 4,
+    "t": "4 cloves, finely chopped"
+   },
+   {
+    "i": "green_chillies",
+    "q": 15,
+    "t": "1–2, finely chopped",
+    "swap": "Leave the chilli out of the pan and serve it sliced on the side so each plate can be as hot as you like."
+   },
+   {
+    "i": "red_onion",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "oyster_sauce",
+    "q": 20,
+    "t": "1½ tbsp"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "fish_sauce",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "basil",
+    "q": 30,
+    "t": "1 pack, leaves picked"
+   },
+   {
+    "i": "eggs",
+    "q": 2,
+    "t": "2"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "oil",
+    "q": 45,
+    "t": "3 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Start the rice",
+    "text": "Put the kettle on. Rinse the rice, then tip it into a saucepan with 300ml boiling water and a pinch of salt. Cover and simmer on a low heat for 10 min, then turn off the heat and leave it covered for 5 min to steam until fluffy. Meanwhile, mix the oyster sauce, soy, fish sauce, honey and 2 tbsp water in a small bowl."
+   },
+   {
+    "title": "Fry the eggs",
+    "text": "Heat 2 tbsp oil in a wok or frying pan over a medium-high heat until shimmering. Crack in the eggs and fry for 2–3 min, spooning the hot oil over the whites, until the edges are lacy and crisp and the yolks still runny. Lift onto a plate."
+   },
+   {
+    "title": "Cook the pork",
+    "text": "Pour away most of the oil, leaving 1 tbsp, and turn the heat up high. Fry the garlic and chilli for 20 seconds, then add the pork and fry for 5–6 min, breaking it up, until browned and slightly crispy."
+   },
+   {
+    "title": "Add the veg and sauce",
+    "text": "Add the onion and pepper and stir-fry for 2 min, then pour in the sauce and toss for 1 min until it's absorbed and the pork looks glossy. Take off the heat and stir through the basil leaves until just wilted."
+   },
+   {
+    "title": "Serve",
+    "text": "Spoon the pork over the rice and top each plate with a crispy fried egg. Break the yolk into the rice and mix it through the pork as you eat."
+   }
+  ],
+  "tags": [
+   "quick",
+   "spicy"
+  ],
+  "basedOn": "RecipeTin Eats — Thai basil pork (pad kra pao); Hot Thai Kitchen — Pad kra pao"
+ },
+ {
+  "id": "as_thai_red_tofu_curry",
+  "title": "Thai Red Curry with Crispy Tofu, Sweet Potato & Spinach",
+  "icon": "🍠",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 30,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "tofu",
+    "q": 280,
+    "t": "1 block (280g), cubed"
+   },
+   {
+    "i": "cornflour",
+    "q": 10,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "sweet_potato",
+    "q": 300,
+    "t": "1 large (300g), in 2cm cubes"
+   },
+   {
+    "i": "red_onion",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "thai_red_paste",
+    "q": 45,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "coconut_milk",
+    "q": 400,
+    "t": "1 tin (400ml)"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "lime",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "spinach",
+    "q": 100,
+    "t": "100g"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a handful",
+    "swap": "Scatter the coriander over one plate only, or serve it in a little bowl on the side."
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Put the kettle on. Pat the tofu dry, cut into cubes and toss with the cornflour and a pinch of salt. Peel and cube the sweet potato and slice the onion."
+   },
+   {
+    "title": "Crisp the tofu",
+    "text": "Heat 1½ tbsp oil in a large deep frying pan over a medium-high heat and fry the tofu for 8 min, turning, until golden and crisp on all sides. Lift onto a plate."
+   },
+   {
+    "title": "Start the curry",
+    "text": "Add the remaining oil and the onion and fry for 3 min until softening, then stir in the curry paste for 1 min. Pour in the coconut milk and 100ml water, add the sweet potato and simmer for 12–15 min until it's tender and the sauce has thickened."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "While the curry simmers, rinse the rice, then tip it into a saucepan with 300ml boiling water and a pinch of salt. Cover and simmer on a low heat for 10 min, then turn off the heat and leave it covered for 5 min to steam until fluffy."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Stir the spinach into the curry until wilted, then season with the soy, honey and half the lime juice. Ladle over the rice, top with the crispy tofu so it stays crunchy, and scatter with coriander and lime wedges."
+   }
+  ],
+  "tags": [
+   "one-pot",
+   "comfort"
+  ],
+  "basedOn": "BBC Good Food — Thai red curry with sweet potato & tofu; Mob — Thai red curry"
+ },
+ {
+  "id": "as_honey_garlic_chicken",
+  "title": "Sticky Honey Garlic Chicken Thighs with Sesame Broccoli & Rice",
+  "icon": "🧄",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 25,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 400,
+    "t": "4 thighs (400g)"
+   },
+   {
+    "i": "cornflour",
+    "q": 10,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "broccoli",
+    "q": 250,
+    "t": "250g, in florets"
+   },
+   {
+    "i": "garlic",
+    "q": 4,
+    "t": "4 cloves, finely chopped"
+   },
+   {
+    "i": "honey",
+    "q": 40,
+    "t": "2½ tbsp"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "rice_vinegar",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "sesame_oil",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep and start the rice",
+    "text": "Put the kettle on. Pat the chicken dry, season with salt and pepper and dust lightly with the cornflour. Rinse the rice, then tip it into a saucepan with 300ml boiling water and a pinch of salt. Cover and simmer on a low heat for 10 min, then turn off the heat and leave it covered for 5 min to steam until fluffy."
+   },
+   {
+    "title": "Sear the chicken",
+    "text": "Heat the oil in a large frying pan over a medium-high heat. Lay the thighs in smooth-side down and fry for 5–6 min without moving until deep golden, then turn and cook for 4–5 min more until cooked through."
+   },
+   {
+    "title": "Cook the broccoli",
+    "text": "Meanwhile, cook the broccoli in boiling water for 3 min until just tender, drain and toss with the sesame oil and a pinch of salt. Keep it warm in the colander under the upturned pan lid."
+   },
+   {
+    "title": "Make the glaze",
+    "text": "Turn the heat down to medium and add the garlic to the chicken pan for 30 seconds. Pour in the honey, soy, vinegar and 2 tbsp water and let it bubble for 1–2 min, turning the chicken, until the sauce reduces to a thick, shiny glaze."
+   },
+   {
+    "title": "Serve",
+    "text": "Slice the chicken and serve over the rice with the broccoli, spooning the sticky garlic sauce over the top and scattering with spring onions. Any leftover glaze in the pan is great spooned over the broccoli too."
+   }
+  ],
+  "tags": [
+   "quick",
+   "kid-friendly"
+  ],
+  "basedOn": "RecipeTin Eats — Honey garlic chicken (one of the site's most popular recipes)"
+ },
+ {
+  "id": "as_teriyaki_salmon",
+  "title": "Glossy Teriyaki Salmon with Sesame Pak Choi & Rice",
+  "icon": "🐟",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "fish",
+  "time": 20,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "salmon",
+    "q": 2,
+    "t": "2 fillets"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 40,
+    "t": "2½ tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "rice_vinegar",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, crushed"
+   },
+   {
+    "i": "cornflour",
+    "q": 3,
+    "t": "½ tsp"
+   },
+   {
+    "i": "pak_choi",
+    "q": 250,
+    "t": "1 pack (250g), halved"
+   },
+   {
+    "i": "sesame_oil",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Start the rice",
+    "text": "Put the kettle on. Rinse the rice, then tip it into a saucepan with 300ml boiling water and a pinch of salt. Cover and simmer on a low heat for 10 min, then turn off the heat and leave it covered for 5 min to steam until fluffy. Meanwhile, whisk the soy, honey, vinegar, ginger, garlic, cornflour and 2 tbsp water together for the teriyaki sauce."
+   },
+   {
+    "title": "Sear the salmon",
+    "text": "Pat the salmon dry. Heat the oil in a non-stick frying pan over a medium-high heat and cook the salmon skin-side down for 4 min until the skin is crisp, then turn and cook for 2 min more."
+   },
+   {
+    "title": "Glaze it",
+    "text": "Pour the teriyaki sauce into the pan and let it bubble for 1–2 min, spooning it over the salmon constantly, until it's thick and glossy and the fish flakes easily in the middle. Take it off the heat as soon as the sauce turns syrupy, as the honey can burn."
+   },
+   {
+    "title": "Cook the pak choi",
+    "text": "In a second pan, stir-fry the pak choi in the sesame oil over a high heat for 2 min with a splash of water until wilted but still crunchy at the stems. Season with a pinch of salt and keep warm."
+   },
+   {
+    "title": "Serve",
+    "text": "Serve the salmon on the rice with the pak choi, drizzling any extra sauce from the pan over the top and scattering with spring onions. Fluff the rice with a fork first so it soaks up the teriyaki."
+   }
+  ],
+  "tags": [
+   "quick",
+   "light"
+  ],
+  "basedOn": "BBC Good Food — Teriyaki salmon; Just One Cookbook — Salmon teriyaki"
+ },
+ {
+  "id": "as_miso_salmon",
+  "title": "Miso-Glazed Salmon with Sticky Rice, Sesame Peas & Pickled Cucumber",
+  "icon": "🍱",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "fish",
+  "time": 20,
+  "servings": 2,
+  "equipment": [
+   "grill",
+   "hob"
+  ],
+  "airFryer": "Air-fry the glazed salmon at 190°C for 8–9 min until caramelised and just cooked through.",
+  "ingredients": [
+   {
+    "i": "salmon",
+    "q": 2,
+    "t": "2 fillets"
+   },
+   {
+    "i": "miso_paste",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "rice_vinegar",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "sesame_oil",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "frozen_peas",
+    "q": 120,
+    "t": "120g"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.5,
+    "t": "½, thinly sliced"
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Make the glaze",
+    "text": "Heat the grill to high and line a small tray with foil. Mix the miso, honey, soy, ginger and 1 tsp of the vinegar into a thick paste, then spread it over the tops of the salmon fillets."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "Put the kettle on. Rinse the rice, then tip it into a saucepan with 300ml boiling water and a pinch of salt. Cover and simmer on a low heat for 10 min, then turn off the heat and leave it covered for 5 min to steam until fluffy."
+   },
+   {
+    "title": "Pickle the cucumber",
+    "text": "Toss the cucumber with the rest of the vinegar and a pinch of salt and leave to soften. Squeeze out any excess liquid just before serving so it stays crunchy."
+   },
+   {
+    "title": "Grill the salmon",
+    "text": "Grill the salmon 10cm from the heat for 8–10 min until the glaze is bubbling and caramelised in spots and the fish flakes easily. Keep an eye on it in the last few minutes — miso catches quickly."
+   },
+   {
+    "title": "Serve",
+    "text": "Cook the peas in boiling water for 2 min, drain and toss with the sesame oil. Serve the salmon on the rice with the peas, pickled cucumber and spring onions."
+   }
+  ],
+  "tags": [
+   "quick",
+   "light"
+  ],
+  "basedOn": "BBC Good Food — Miso salmon; Nobu-style miso-glazed fish (home version)"
+ },
+ {
+  "id": "as_oyakodon",
+  "title": "Oyakodon — Japanese Chicken & Egg Rice Bowl with Spring Onions",
+  "icon": "🥚",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 25,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 300,
+    "t": "300g, in bite-size pieces"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, thinly sliced"
+   },
+   {
+    "i": "eggs",
+    "q": 4,
+    "t": "4"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 40,
+    "t": "2½ tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 20,
+    "t": "1½ tbsp"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 0.5,
+    "t": "½ chicken stock cube"
+   },
+   {
+    "i": "spring_onions",
+    "q": 3,
+    "t": "3, sliced"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Start the rice",
+    "text": "Put the kettle on. Rinse the rice, then tip it into a saucepan with 300ml boiling water and a pinch of salt. Cover and simmer on a low heat for 10 min, then turn off the heat and leave it covered for 5 min to steam until fluffy."
+   },
+   {
+    "title": "Make the broth",
+    "text": "Dissolve the half stock cube in 200ml boiling water, then stir in the soy and honey. This sweet-salty broth stands in for dashi, mirin and sake."
+   },
+   {
+    "title": "Simmer the chicken",
+    "text": "Pour the broth into a medium frying pan with the sliced onion and bring to a simmer over a medium heat for 3 min until the onion softens. Add the chicken in one layer and simmer for 6–7 min, turning once, until cooked through."
+   },
+   {
+    "title": "Add the egg",
+    "text": "Lightly beat the eggs — just a few strokes so the whites and yolks are still streaky. Pour two thirds over the chicken, cover and cook for 1 min, then pour over the rest and add the spring onions. Cover for 30 seconds more and take off the heat while the top is still soft and silky."
+   },
+   {
+    "title": "Serve",
+    "text": "Spoon the rice into deep bowls and slide the chicken, egg and broth over the top. Spoon over any extra broth so the rice soaks it up, and eat while the egg is still soft."
+   }
+  ],
+  "tags": [
+   "quick",
+   "comfort",
+   "one-pot"
+  ],
+  "basedOn": "Just One Cookbook — Oyakodon (chicken and egg bowl); RecipeTin Japan — Oyakodon"
+ },
+ {
+  "id": "as_yaki_udon",
+  "title": "Yaki Udon with Crispy Pork, Pak Choi & Mushrooms",
+  "icon": "🍜",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "pork",
+  "time": 20,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "udon_noodles",
+    "q": 300,
+    "t": "1 pack (2 x 150g)"
+   },
+   {
+    "i": "pork_mince",
+    "q": 200,
+    "t": "200g"
+   },
+   {
+    "i": "mushrooms",
+    "q": 100,
+    "t": "100g, sliced",
+    "swap": "Stir-fry the mushrooms in a separate small pan with a drop of oil and a splash of soy until golden, then spoon them over one portion only."
+   },
+   {
+    "i": "carrots",
+    "q": 80,
+    "t": "1 small, in matchsticks"
+   },
+   {
+    "i": "pak_choi",
+    "q": 125,
+    "t": "½ pack, sliced"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "oyster_sauce",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "worcestershire",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Slice the onion, carrot, pak choi and mushrooms. Mix the soy, oyster sauce, Worcestershire and honey — the Worcestershire gives the fruity tang of Japanese yakisoba sauce."
+   },
+   {
+    "title": "Loosen the noodles",
+    "text": "Put the udon in a heatproof bowl, cover with boiling water for 1 min, then gently separate the strands with a fork and drain. Don't leave them soaking any longer or they'll go soft and break up in the pan."
+   },
+   {
+    "title": "Brown the pork",
+    "text": "Heat the oil in a wok or large frying pan over a high heat. Fry the pork for 5 min, breaking it up, until browned and crispy in places."
+   },
+   {
+    "title": "Fry the veg",
+    "text": "Add the onion, carrot and mushrooms and stir-fry for 3 min until the mushrooms are golden, then add the pak choi for 1 min until wilted. Keep everything moving so the carrot softens without browning too much."
+   },
+   {
+    "title": "Toss the udon",
+    "text": "Add the noodles and sauce and toss for 2 min over a high heat until the noodles are glossy and starting to catch. Serve scattered with spring onions."
+   }
+  ],
+  "tags": [
+   "quick",
+   "one-pot"
+  ],
+  "basedOn": "Just One Cookbook — Yaki udon; BBC Good Food — Yaki udon"
+ },
+ {
+  "id": "as_gyoza_pork_bowl",
+  "title": "Gyoza-Filling Pork Rice Bowl with Crispy Garlic, Mushrooms & Dipping Sauce",
+  "icon": "🥟",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "pork",
+  "time": 25,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "pork_mince",
+    "q": 300,
+    "t": "300g"
+   },
+   {
+    "i": "pak_choi",
+    "q": 200,
+    "t": "200g, finely shredded"
+   },
+   {
+    "i": "mushrooms",
+    "q": 80,
+    "t": "80g, finely chopped",
+    "swap": "Fry the chopped mushrooms in a separate small pan with a drop of oil until golden and stir them into one bowl only."
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves — 1 crushed, 2 thinly sliced"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "spring_onions",
+    "q": 4,
+    "t": "4, sliced"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 40,
+    "t": "2½ tbsp, divided"
+   },
+   {
+    "i": "sesame_oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "rice_vinegar",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "½ tsp",
+    "swap": "Stir the chilli flakes into one dipping sauce only."
+   },
+   {
+    "i": "eggs",
+    "q": 2,
+    "t": "2"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Start the rice",
+    "text": "Put the kettle on. Rinse the rice, then tip it into a saucepan with 300ml boiling water and a pinch of salt. Cover and simmer on a low heat for 10 min, then turn off the heat and leave it covered for 5 min to steam until fluffy. Mix 1 tbsp soy with the rice vinegar, 1 tsp sesame oil and the chilli flakes for a gyoza dipping sauce."
+   },
+   {
+    "title": "Fry the garlic chips",
+    "text": "Heat the oil in a frying pan over a medium-low heat and fry the sliced garlic for 2 min until pale golden, then lift out with a slotted spoon onto kitchen paper. Keep the garlicky oil in the pan."
+   },
+   {
+    "title": "Cook the filling",
+    "text": "Turn the heat to high. Add the pork and fry for 5 min until browned, then add the shredded pak choi, crushed garlic, ginger and most of the spring onions and stir-fry for 3 min until the greens wilt down. Season with the remaining soy and sesame oil."
+   },
+   {
+    "title": "Fry the eggs",
+    "text": "Push the pork to one side, crack in the eggs and fry for 2–3 min until the whites are set and crispy at the edges. Season the eggs with a pinch of salt and pepper."
+   },
+   {
+    "title": "Serve",
+    "text": "Spoon the rice into bowls, top with the pork, a fried egg each and the garlic chips. Drizzle over the dipping sauce and finish with the remaining spring onions."
+   }
+  ],
+  "tags": [
+   "quick"
+  ],
+  "basedOn": "Kavey Eats — Gyoza-filling rice bowl (gyoza no tane donburi); HelloFresh — Pork gyoza noodle stir-fry"
+ },
+ {
+  "id": "as_bulgogi_beef_bowls",
+  "title": "Korean Beef Bulgogi Rice Bowls with Quick Pickled Cucumber & Kimchi",
+  "icon": "🥩",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "beef",
+  "time": 20,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "beef_mince",
+    "q": 400,
+    "t": "400g (or 300g stir-fry strips)"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, crushed"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 40,
+    "t": "2½ tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 25,
+    "t": "1½ tbsp"
+   },
+   {
+    "i": "sesame_oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "½ tsp",
+    "swap": "Sprinkle the chilli flakes over one bowl only."
+   },
+   {
+    "i": "cucumber",
+    "q": 0.5,
+    "t": "½, in thin rounds"
+   },
+   {
+    "i": "rice_vinegar",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "carrots",
+    "q": 80,
+    "t": "1 small, grated"
+   },
+   {
+    "i": "kimchi",
+    "q": 80,
+    "t": "80g"
+   },
+   {
+    "i": "spring_onions",
+    "q": 3,
+    "t": "3, sliced"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 tsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Start the rice",
+    "text": "Put the kettle on. Rinse the rice, then tip it into a saucepan with 300ml boiling water and a pinch of salt. Cover and simmer on a low heat for 10 min, then turn off the heat and leave it covered for 5 min to steam until fluffy."
+   },
+   {
+    "title": "Pickle the cucumber",
+    "text": "Toss the cucumber with the rice vinegar and a pinch each of salt and sugar (or a drop of honey) and set aside. Grate the carrot."
+   },
+   {
+    "title": "Mix the bulgogi sauce",
+    "text": "Stir together the soy, honey, sesame oil, garlic, ginger and chilli flakes — sweet, savoury and garlicky. Taste it and add a splash more honey if you like it sweeter."
+   },
+   {
+    "title": "Cook the beef",
+    "text": "Heat the oil in a large frying pan over a high heat. Fry the beef for 5–6 min, breaking it up, until well browned and crisp in places. Pour in the sauce and cook for 2 min until it has reduced and the beef is sticky and glossy."
+   },
+   {
+    "title": "Build the bowls",
+    "text": "Divide the rice between bowls and top with the bulgogi beef, pickled cucumber, grated carrot and kimchi. Finish with plenty of spring onions."
+   }
+  ],
+  "tags": [
+   "quick",
+   "kid-friendly"
+  ],
+  "basedOn": "RecipeTin Eats — Korean beef bulgogi rice bowls (the easy way)"
+ },
+ {
+  "id": "as_gochujang_chicken",
+  "title": "Sticky Gochujang Chicken Thighs with Sesame Greens & Rice",
+  "icon": "🔥",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 30,
+  "servings": 2,
+  "equipment": [
+   "oven",
+   "hob"
+  ],
+  "airFryer": "Air-fry the marinated thighs at 200°C for 16–18 min, brushing with the rest of the sauce for the last 4 min, until sticky and cooked through.",
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 400,
+    "t": "4 thighs (400g)"
+   },
+   {
+    "i": "gochujang",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 20,
+    "t": "1½ tbsp"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 25,
+    "t": "1½ tbsp"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "rice_vinegar",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "sesame_oil",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "broccoli",
+    "q": 200,
+    "t": "½ head, in florets"
+   },
+   {
+    "i": "spinach",
+    "q": 80,
+    "t": "2 handfuls"
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 tsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Marinate the chicken",
+    "text": "Heat the oven to 220°C (200°C fan) and line a roasting tin with baking paper. Mix the gochujang, honey, soy, garlic, ginger and vinegar, then toss the chicken thighs in half of it."
+   },
+   {
+    "title": "Roast the chicken",
+    "text": "Lay the chicken in the tin and roast for 20 min. Brush with the remaining sauce and roast for 5 min more until sticky, charred at the edges and cooked through."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "Meanwhile, put the kettle on. Rinse the rice, then tip it into a saucepan with 300ml boiling water and a pinch of salt. Cover and simmer on a low heat for 10 min, then turn off the heat and leave it covered for 5 min to steam until fluffy."
+   },
+   {
+    "title": "Cook the greens",
+    "text": "Heat the oil in a frying pan over a high heat and stir-fry the broccoli with 3 tbsp water for 3 min until tender, then add the spinach for 1 min until wilted and season with the sesame oil and a pinch of salt. Keep them warm in the pan off the heat until the chicken is ready."
+   },
+   {
+    "title": "Serve",
+    "text": "Slice the chicken and serve over the rice with the greens, spooning over any sticky juices from the tin and scattering with spring onions. Add an extra drizzle of sesame oil if you like a nutty finish."
+   }
+  ],
+  "tags": [
+   "spicy",
+   "traybake"
+  ],
+  "basedOn": "BBC Good Food — Gochujang chicken; Mob — Korean BBQ chicken rice box"
+ },
+ {
+  "id": "as_bibimbap",
+  "title": "Beef Bibimbap Bowls with Garlic Spinach, Carrot, Mushrooms & Fried Egg",
+  "icon": "🍳",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "beef",
+  "time": 30,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "beef_mince",
+    "q": 250,
+    "t": "250g"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "spinach",
+    "q": 100,
+    "t": "100g"
+   },
+   {
+    "i": "carrots",
+    "q": 100,
+    "t": "1, in matchsticks"
+   },
+   {
+    "i": "mushrooms",
+    "q": 100,
+    "t": "100g, sliced",
+    "swap": "Stir-fry the mushrooms in a separate small pan with a drop of oil and a splash of soy until golden, then spoon them over one portion only."
+   },
+   {
+    "i": "beansprouts",
+    "q": 100,
+    "t": "100g"
+   },
+   {
+    "i": "eggs",
+    "q": 2,
+    "t": "2"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, crushed"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "sesame_oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "gochujang",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "rice_vinegar",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Start the rice and sauce",
+    "text": "Put the kettle on. Rinse the rice, then tip it into a saucepan with 300ml boiling water and a pinch of salt. Cover and simmer on a low heat for 10 min, then turn off the heat and leave it covered for 5 min to steam until fluffy. Mix the gochujang with 1 tsp sesame oil, 1 tsp honey, the vinegar and 1 tbsp water to make the bibimbap sauce."
+   },
+   {
+    "title": "Cook the veg",
+    "text": "Heat 1 tsp oil in a large frying pan over a medium-high heat. Cook each veg separately and set aside in its own pile: beansprouts for 1 min, carrot for 2 min, then the spinach with 1 clove garlic for 1 min until wilted. Season each with a drop of sesame oil and a pinch of salt."
+   },
+   {
+    "title": "Cook the beef",
+    "text": "Add 1 tbsp oil and fry the beef for 5 min until browned, then add the rest of the garlic, the soy and the remaining honey and cook for 2 min until sticky. Keep it in the pan until the eggs are ready, then tip it into its own pile."
+   },
+   {
+    "title": "Fry the eggs",
+    "text": "Wipe the pan, add the remaining oil and fry the eggs for 2–3 min until the whites are set and crispy and the yolks are still runny. Spoon a little of the hot oil over the yolks to just set the tops."
+   },
+   {
+    "title": "Build the bowls",
+    "text": "Divide the rice between bowls and arrange the veg and beef on top in neat sections. Top with a fried egg and a spoonful of gochujang sauce, then mix everything together at the table."
+   }
+  ],
+  "tags": [
+   "spicy"
+  ],
+  "basedOn": "RecipeTin Eats — Bibimbap; Maangchi — Bibimbap"
+ },
+ {
+  "id": "as_kimchi_fried_rice",
+  "title": "Kimchi Fried Rice with Crispy Bacon, Melty Cheddar & Fried Eggs",
+  "icon": "🥓",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "pork",
+  "time": 20,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "kimchi",
+    "q": 150,
+    "t": "150g, chopped, plus 2 tbsp juice"
+   },
+   {
+    "i": "bacon",
+    "q": 150,
+    "t": "5 rashers, chopped"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, diced"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, finely chopped"
+   },
+   {
+    "i": "gochujang",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "sesame_oil",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "frozen_peas",
+    "q": 60,
+    "t": "60g"
+   },
+   {
+    "i": "eggs",
+    "q": 2,
+    "t": "2"
+   },
+   {
+    "i": "cheddar",
+    "q": 40,
+    "t": "40g, grated"
+   },
+   {
+    "i": "spring_onions",
+    "q": 3,
+    "t": "3, sliced"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Cook and cool the rice",
+    "text": "Cook the rice in 300ml boiling salted water, covered, on a low heat for 10 min, then spread it out on a plate to steam-dry for 5 min (or use leftover rice). Dry rice is the key — wet rice turns gluey when fried."
+   },
+   {
+    "title": "Crisp the bacon",
+    "text": "Heat a large non-stick frying pan over a medium-high heat and fry the bacon for 4–5 min until golden and the fat has rendered. Add the onion and fry for 3 min until soft, then the garlic for 30 seconds."
+   },
+   {
+    "title": "Fry the kimchi",
+    "text": "Add the chopped kimchi and gochujang and fry for 2 min until it smells sour-sweet and is starting to caramelise. Let it catch a little on the bottom of the pan — those dark bits are the best part."
+   },
+   {
+    "title": "Fry the rice",
+    "text": "Add the rice, peas, soy and kimchi juice and stir-fry over a high heat for 3–4 min until every grain is red and piping hot. Scatter the cheese over the top, cover for 1 min to melt, then drizzle with the sesame oil."
+   },
+   {
+    "title": "Fry the eggs and serve",
+    "text": "In a second pan, fry the eggs in the oil until the edges are crispy and the yolks runny. Spoon the rice into bowls, top each with an egg and finish with spring onions."
+   }
+  ],
+  "tags": [
+   "quick",
+   "one-pot",
+   "comfort"
+  ],
+  "basedOn": "Maangchi — Kimchi fried rice; Mob — Kimchi fried rice with cheese"
+ },
+ {
+  "id": "as_bun_cha",
+  "title": "Bun Cha — Vietnamese Caramelised Pork Patties with Rice Noodles & Herbs",
+  "icon": "🥗",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "pork",
+  "time": 30,
+  "servings": 2,
+  "equipment": [
+   "grill"
+  ],
+  "airFryer": "Air-fry the patties at 200°C for 9–10 min, turning halfway, until caramelised and cooked through.",
+  "ingredients": [
+   {
+    "i": "pork_mince",
+    "q": 350,
+    "t": "350g"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, crushed"
+   },
+   {
+    "i": "spring_onions",
+    "q": 3,
+    "t": "3, finely sliced"
+   },
+   {
+    "i": "fish_sauce",
+    "q": 45,
+    "t": "3 tbsp, divided"
+   },
+   {
+    "i": "honey",
+    "q": 35,
+    "t": "2½ tbsp, divided"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "rice_noodles",
+    "q": 120,
+    "t": "120g"
+   },
+   {
+    "i": "lime",
+    "q": 1,
+    "t": "1, juiced"
+   },
+   {
+    "i": "rice_vinegar",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "carrots",
+    "q": 80,
+    "t": "1 small, in matchsticks"
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, leaves separated"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.5,
+    "t": "½, in batons"
+   },
+   {
+    "i": "basil",
+    "q": 10,
+    "t": "a handful"
+   },
+   {
+    "i": "coriander",
+    "q": 15,
+    "t": "½ pack",
+    "swap": "Scatter the coriander over one plate only, or serve it in a little bowl on the side."
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 0.5,
+    "t": "a pinch",
+    "swap": "Add the chilli to one bowl of dipping sauce only."
+   }
+  ],
+  "steps": [
+   {
+    "title": "Make the patties",
+    "text": "Heat the grill to high and line a tray with foil. Mix the pork with 2 cloves garlic, half the spring onions, 1 tbsp fish sauce, 1 tbsp honey and the pepper, then shape into 10 small flat patties."
+   },
+   {
+    "title": "Make the dipping sauce",
+    "text": "Stir the remaining fish sauce, 1½ tbsp honey, lime juice, rice vinegar, last clove of garlic and chilli with 6 tbsp warm water until the honey dissolves. Add the carrot matchsticks to soak — they lightly pickle in the sauce."
+   },
+   {
+    "title": "Grill the patties",
+    "text": "Grill the patties for 8–10 min, turning halfway, until caramelised and charred at the edges and cooked through. They should look sticky and dark brown from the honey — that's what you want."
+   },
+   {
+    "title": "Prepare the noodles",
+    "text": "Pour boiling water over the rice noodles and soak for 5–6 min until tender, then drain and rinse under cold water. Shake well so they don't water down the dipping sauce."
+   },
+   {
+    "title": "Serve",
+    "text": "Divide the dipping sauce between two bowls and drop in the hot patties. Serve with plates of noodles, lettuce, cucumber and herbs — dip the noodles and herbs into the sauce as you go."
+   }
+  ],
+  "tags": [
+   "light",
+   "quick"
+  ],
+  "basedOn": "RecipeTin Eats — Bun cha (Vietnamese meatballs); Uyen Luu — Bun cha Hanoi"
+ },
+ {
+  "id": "as_banh_mi_bowls",
+  "title": "Caramelised Chicken Banh Mi Bowls with Pickled Carrot & Sweet Chilli Mayo",
+  "icon": "🥖",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 30,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 350,
+    "t": "350g, sliced"
+   },
+   {
+    "i": "fish_sauce",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "lime",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "carrots",
+    "q": 120,
+    "t": "1 large, in matchsticks"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.5,
+    "t": "½, sliced"
+   },
+   {
+    "i": "rice_vinegar",
+    "q": 45,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "mayonnaise",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "sweet_chilli_sauce",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 0.5,
+    "t": "a pinch",
+    "swap": "Leave the chilli out of the mayo and sprinkle it over one bowl only."
+   },
+   {
+    "i": "coriander",
+    "q": 15,
+    "t": "½ pack",
+    "swap": "Scatter the coriander over one plate only, or serve it in a little bowl on the side."
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Marinate and pickle",
+    "text": "Put the kettle on. Mix the chicken with the fish sauce, soy, honey, garlic, ginger and zest of the lime. Toss the carrot and cucumber with the rice vinegar and a big pinch of salt and sugar (or a little honey) and leave to pickle."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "Rinse the rice, then tip it into a saucepan with 300ml boiling water and a pinch of salt. Cover and simmer on a low heat for 10 min, then turn off the heat and leave it covered for 5 min to steam until fluffy."
+   },
+   {
+    "title": "Fry the chicken",
+    "text": "Heat the oil in a large frying pan over a medium-high heat. Fry the chicken in one layer for 3 min without moving until caramelised, then stir-fry for 4–5 min more until sticky and cooked through. Squeeze in half the lime juice."
+   },
+   {
+    "title": "Make the spicy mayo",
+    "text": "Mix the mayo with the sweet chilli sauce, chilli flakes and a squeeze of lime. Loosen with a splash of water if you want it drizzly."
+   },
+   {
+    "title": "Build the bowls",
+    "text": "Divide the rice between bowls, top with the chicken and drained pickles, drizzle with the spicy mayo and finish with coriander and lime wedges. Drain the pickles well first so they don't make the rice soggy."
+   }
+  ],
+  "tags": [
+   "quick"
+  ],
+  "basedOn": "RecipeTin Eats — Vietnamese caramelised chicken / banh mi; BBC Good Food — Banh mi bowls"
+ },
+ {
+  "id": "as_chicken_laksa",
+  "title": "Quick Chicken Laksa with Coconut, Rice Noodles & Beansprouts",
+  "icon": "🍜",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 30,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 300,
+    "t": "2 breasts (300g), thinly sliced"
+   },
+   {
+    "i": "thai_red_paste",
+    "q": 45,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "curry_powder",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "turmeric",
+    "q": 1,
+    "t": "½ tsp"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "coconut_milk",
+    "q": 400,
+    "t": "1 tin (400ml)"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 chicken"
+   },
+   {
+    "i": "fish_sauce",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "rice_noodles",
+    "q": 120,
+    "t": "120g"
+   },
+   {
+    "i": "beansprouts",
+    "q": 100,
+    "t": "100g"
+   },
+   {
+    "i": "pak_choi",
+    "q": 125,
+    "t": "½ pack, halved"
+   },
+   {
+    "i": "eggs",
+    "q": 2,
+    "t": "2"
+   },
+   {
+    "i": "lime",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a handful",
+    "swap": "Scatter the coriander over one plate only, or serve it in a little bowl on the side."
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Boil the eggs and noodles",
+    "text": "Put the kettle on. Boil the eggs for 7 min, then cool in cold water and peel. Soak the rice noodles in boiling water for 6 min until tender, then drain."
+   },
+   {
+    "title": "Fry the paste",
+    "text": "Heat the oil in a large saucepan over a medium heat. Fry the curry paste, curry powder, turmeric, ginger and garlic for 2 min, stirring, until really fragrant and starting to stick."
+   },
+   {
+    "title": "Simmer the broth",
+    "text": "Pour in the coconut milk and 400ml boiling water with the stock cube, stir well and bring to a simmer. Add the chicken and simmer for 6–8 min until cooked through."
+   },
+   {
+    "title": "Add the greens",
+    "text": "Add the pak choi for the final 2 min. Season with the fish sauce, honey and half the lime juice — it should be rich, spicy and a little sour."
+   },
+   {
+    "title": "Serve",
+    "text": "Divide the noodles between deep bowls and ladle over the broth and chicken. Top with beansprouts, halved eggs, coriander and lime wedges."
+   }
+  ],
+  "tags": [
+   "one-pot",
+   "spicy",
+   "comfort"
+  ],
+  "basedOn": "BBC Good Food — Quick chicken laksa; RecipeTin Eats — Laksa"
+ },
+ {
+  "id": "as_nasi_goreng",
+  "title": "Nasi Goreng with Chicken, Prawns, Fried Egg & Cucumber",
+  "icon": "🍤",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 25,
+  "servings": 2,
+  "equipment": [
+   "hob"
+  ],
+  "ingredients": [
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "chicken_thighs",
+    "q": 200,
+    "t": "200g, diced"
+   },
+   {
+    "i": "prawns",
+    "q": 70,
+    "t": "70g, defrosted"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, finely chopped"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, crushed"
+   },
+   {
+    "i": "thai_red_paste",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 20,
+    "t": "1½ tbsp"
+   },
+   {
+    "i": "fish_sauce",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "eggs",
+    "q": 2,
+    "t": "2"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.5,
+    "t": "½, sliced"
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 100,
+    "t": "100g, halved"
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Cook and cool the rice",
+    "text": "Cook the rice in 300ml boiling salted water, covered, on a low heat for 10 min, then spread on a plate to steam-dry for 5 min. Mix the soy and honey — this makes a quick kecap manis (sweet soy)."
+   },
+   {
+    "title": "Fry the spice paste",
+    "text": "Heat 1 tbsp oil in a wok or large frying pan over a medium-high heat. Fry the onion for 3 min until soft, then add the garlic, red curry paste and tomato purée and fry for 1 min until dark and fragrant."
+   },
+   {
+    "title": "Cook the chicken and prawns",
+    "text": "Add the chicken and stir-fry for 4–5 min until browned and cooked through, then add the prawns for 2 min until pink. Keep the heat high so they colour instead of stewing."
+   },
+   {
+    "title": "Fry the rice",
+    "text": "Add the rice, sweet soy and fish sauce and toss over a high heat for 3–4 min until every grain is coated, dark and slightly smoky. Press the rice against the hot pan now and then so it toasts in places."
+   },
+   {
+    "title": "Fry the eggs and serve",
+    "text": "In a second pan, fry the eggs in the remaining oil until crispy at the edges with runny yolks. Pile the rice into bowls, top with an egg each and serve with cucumber, tomatoes and spring onions."
+   }
+  ],
+  "tags": [
+   "quick",
+   "one-pot"
+  ],
+  "basedOn": "RecipeTin Eats — Nasi goreng (Indonesian fried rice); BBC Good Food — Nasi goreng"
+ }
+]

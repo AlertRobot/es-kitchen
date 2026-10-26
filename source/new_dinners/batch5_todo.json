@@ -1,0 +1,83 @@
+[
+ {
+  "name": "Lamb keema and naan",
+  "cuisine": "Indian",
+  "protein": "lamb",
+  "base": "bread",
+  "family": "curry",
+  "category": "everyday",
+  "why": "Mince curry, made without peas"
+ },
+ {
+  "name": "One-pot chicken pilau",
+  "cuisine": "Indian",
+  "protein": "chicken",
+  "base": "rice",
+  "family": "rice_bowl",
+  "category": "everyday",
+  "why": "Easy rice dish replacing the pea-heavy pilau"
+ },
+ {
+  "name": "Chicken tikka kebab and naan",
+  "cuisine": "Indian",
+  "protein": "chicken",
+  "base": "bread",
+  "family": "tacos_wraps",
+  "category": "treat",
+  "why": "Takeaway-style kebab night"
+ },
+ {
+  "name": "Chicken balti",
+  "cuisine": "Indian",
+  "protein": "chicken",
+  "base": "bread",
+  "family": "curry",
+  "category": "everyday",
+  "why": "UK curry-house classic, without the mushrooms"
+ },
+ {
+  "name": "Margherita pizza",
+  "cuisine": "Italian",
+  "protein": "veggie",
+  "base": "bread",
+  "family": "pizza",
+  "category": "treat",
+  "why": "The basic homemade pizza; veggie treat"
+ },
+ {
+  "name": "Ham and pineapple pizza",
+  "cuisine": "Italian",
+  "protein": "pork",
+  "base": "bread",
+  "family": "pizza",
+  "category": "treat",
+  "why": "Familiar pizza-night choice"
+ },
+ {
+  "name": "Cheesy chicken pasta bake",
+  "cuisine": "Italian",
+  "protein": "chicken",
+  "base": "pasta",
+  "family": "pasta",
+  "category": "everyday",
+  "why": "UK's go-to pasta bake, tomato-based, no mushrooms"
+ },
+ {
+  "name": "Tuna pasta bake",
+  "cuisine": "Italian",
+  "protein": "fish",
+  "base": "pasta",
+  "family": "pasta",
+  "category": "everyday",
+  "why": "Student-days classic; cheap fish dinner"
+ },
+ {
+  "name": "Chicken and bacon risotto",
+  "cuisine": "Italian",
+  "protein": "chicken",
+  "base": "rice",
+  "family": "rice_bowl",
+  "category": "everyday",
+  "why": "Risotto with no mushrooms or peas"
+ }
+]

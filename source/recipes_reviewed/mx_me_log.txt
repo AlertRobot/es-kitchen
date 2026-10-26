@@ -1,0 +1,40 @@
+mx_chipotle_chilli_con_carne: 6 steps (was 5): split mince browning from veg softening, prep now covers lime and stock; cinnamon and coriander marked optional; time 45→50; title tightened.
+mx_sizzling_chicken_fajitas: 6 steps (was 5): added a proper prep step, marinade now its own step; ground coriander, chilli flakes and coriander marked optional; coriander swap reworded for the guacamole; time 25→30; title tightened.
+mx_chipotle_chicken_burrito_bowl: 6 steps (was 5): added prep step, marinade separated; sweetcorn swap added; coriander swap now targets the rice; title tightened.
+mx_cheesy_chicken_enchiladas: 6 steps (was 5): rolling and baking split; spring onion garnish got a swap and optional flag, coriander optional; oven given as 180°C fan; time 45→50; title tightened.
+mx_black_bean_jalapeno_quesadillas: 6 steps (was 5): added prep step; sweetcorn swap added, jalapeño swap made one-quesadilla; coriander optional with salsa-aware swap; pico de gallo explained; time 20→25; title tightened.
+mx_chicken_tinga_tacos: 6 steps (was 5): added prep step; mixed herbs and coriander marked optional; overlap timing made explicit; time 35→40; title tightened.
+mx_crispy_pork_carnitas_tacos: 7 steps (was 5): seasoning/browning separated from braise, shredding/reducing separated from grilling, added prep step; mixed herbs, cinnamon and coriander marked optional; coriander swap made slaw-aware; time 105→110; title tightened.
+mx_panko_fish_tacos: 6 steps (was 5): crumbing set-up and crumbing split; white_fish_fillets (not in catalogue) replaced with cod_fillets 280g; wraps now warmed in foil in the oven (no hob needed); coriander optional with slaw-aware swap; time 30→35.
+mx_sweet_potato_black_bean_tacos: Steps reworked (still 5): bean timing made explicit, wraps warmed in foil in the oven (recipe is oven-only); chilli flakes and coriander optional; chilli swap reworded for the tray; time 35→40; title tightened.
+mx_huevos_rancheros: 6 steps (was 5): sauce split into soften + simmer; feta, coriander and spring onion garnish marked optional, spring onion swap added; time 25→30; title tightened.
+mx_cheesy_chicken_rice_bake: Steps tightened (still 5); sweetcorn swap added; spring onion and coriander garnish optional, spring onion swap added; casserole must be ovenproof; time 45→50.
+mx_loaded_beef_nachos: 6 steps (was 5): beef browning and saucing split; jalapeños, spring onions and coriander marked optional with half-tray swaps; title tightened.
+mx_birria_beef_tacos: 7 steps (was 5): browning, sauce-building and braising split; "consommé" replaced with plain "dipping broth"; cinnamon, mixed herbs, coriander and lime wedges marked optional; time 165→175; title tightened.
+mx_crispy_beef_chimichangas: 6 steps (was 5): salsa and serving split, all chopping moved to prep; jalapeños and coriander marked optional, coriander swap made salsa-aware; time 40→45; title tightened.
+mx_beef_crunchwrap: Steps reordered (still 5): new prep step up front, layer prep merged into it; milk 30→60ml so the cheese sauce actually pours; time 30→35; title tightened.
+mx_chicken_tortilla_soup: 6 steps (was 5): poaching and finishing split; sweetcorn swap added; coriander optional; time 35→40; title tightened.
+mx_chilli_lime_prawn_tacos: 6 steps (was 5): added prep step, marinade separated; sweetcorn swap added; chilli flakes and coriander optional, coriander swap made salsa-aware; time 20→25.
+mx_smoky_pork_burritos: 6 steps (was 5): added prep step, rice no longer crammed with chopping; mixed herbs and coriander optional, coriander swap targets one burrito; title tightened.
+mx_chipotle_honey_salmon: 6 steps (was 5): added prep step; sweetcorn swap added; coriander optional with salsa/rice swap; title tightened.
+mx_spiced_chicken_taco_salad: 6 steps (was 5): added prep step; "escalopes" replaced with plain wording; sweetcorn swap added; coriander optional with dressing-aware swap; time 20→25; title tightened.
+me_harissa_shakshuka_feta: Steps tightened (still 5): prep now covers coriander and feta, pitta toasting timed with the eggs; time 30→35.
+me_chicken_shawarma_traybake: Steps reworked (still 5): all chopping moved to a real prep step, marinade sentence split; turmeric and cinnamon marked optional; time 40→45; title tightened.
+me_crispy_chicken_shawarma_wraps: 7 steps (was 5): prep, marinade, rolling and toasting split out; chicken timed against the fries; turmeric, cinnamon and chilli flakes optional, chilli swap now one wrap; time 45→50; title tightened.
+me_lamb_koftas_herby_couscous: 6 steps (was 5): tahini yogurt and serving split, veg chopping moved to prep, long kofta sentence split; cinnamon and chilli flakes optional; coriander swap added; title tightened.
+me_crispy_falafel_wraps: 6 steps (was 5): shaping split from blitzing, salad chopping moved to prep; frying oil leftover now handled in the step; ground coriander and chilli flakes optional; coriander swap added; wraps warmed in the pan; time 30→35; title tightened.
+me_halloumi_harissa_veg_wraps: Steps tightened (still 5); harissa swap rewritten so it no longer needs smoked paprika (not in the list); coriander optional.
+me_sticky_harissa_chicken_traybake: 6 steps (was 5): added prep step, marinade separated; lemon zested before juicing; coriander optional; time 45→50; title tightened.
+me_chicken_apricot_tagine: 6 steps (was 5): browning and onion softening split; ground coriander, olives and coriander marked optional; time 50→55; title tightened.
+me_harissa_couscous_stuffed_peppers: 6 steps (was 5): prep separated from roasting; coriander optional; time 40→45; title tightened. Note: recipe has no tags array in the source (left as is).
+me_turkish_eggs_cilbir: 6 steps (was 5): added prep step (kettle, eggs into cups), pitta toasting moved out of the butter step; time 20→25; title tightened.
+me_lahmacun_lamb_flatbreads: Steps reworked (still 5): all chopping moved to prep, topping sentence split; cinnamon and chilli flakes optional; coriander swap reworded for topping vs salad; time 25→30; title tightened.
+me_zaatar_chicken_fattoush: 6 steps (was 5): added prep step, marinade separated; "escalopes" replaced with plain wording; chicken time corrected for thin fillets; coriander swap made salad-aware; time 25→30.
+me_smoky_chickpea_spinach_stew: Steps tightened (still 5); cinnamon and feta topping marked optional; time 25→30; title tightened.
+me_homemade_lamb_doner: 7 steps (was 5): prep added, slicing/frying and stuffing split; chips timed to finish with the rested loaf; mixed herbs and chilli flakes optional; time 75→80; title tightened.
+me_zaatar_salmon_herby_couscous: 6 steps (was 5): prep now covers all chopping, tahini and serving split; coriander swap added.
+me_harissa_prawns_butter_beans: Steps tightened (still 5); coriander optional; time 20→25; title tightened.
+me_crispy_halloumi_burgers: 6 steps (was 5): added prep step, crumbing moved before the pepper so timings line up with the chips; smoked paprika optional; time 40→45; title tightened.
+me_spinach_feta_gozleme: 6 steps (was 5): added prep step; gözleme explained; salad timed during the second batch; chilli flakes optional; title tightened.
+me_chicken_pastilla_pie: 7 steps (was 5): added prep step, reducing/shredding split from setting with egg; turmeric optional; coriander swap added; time 70→80; title tightened.
+me_beef_kofta_meatballs_feta: 7 steps (was 5): added prep step, shaping/browning split, sauce and simmer split; coriander swap added; time 35→40; title tightened.

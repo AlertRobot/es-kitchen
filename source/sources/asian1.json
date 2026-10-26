@@ -1,0 +1,181 @@
+{
+  "as_sweet_sour_chicken": {
+    "title": "Baked Sweet and Sour Chicken",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/oven-baked-sweet-sour-chicken/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "as_salt_pepper_chicken_chips": {
+    "title": "Salt and Pepper Chicken Chinese Takeaway Style",
+    "site": "Krumpli",
+    "url": "https://www.krumpli.co.uk/chinese-salt-and-pepper-chicken/",
+    "author": "Brian Jones",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "as_crispy_chilli_beef": {
+    "title": "Chinese Shredded Crispy Chilli Beef Fakeaway",
+    "site": "Krumpli",
+    "url": "https://www.krumpli.co.uk/sticky-chili-beef/",
+    "author": "Brian Jones",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "as_chicken_katsu_curry": {
+    "title": "Chicken Katsu Curry",
+    "site": "Great British Chefs",
+    "url": "https://www.greatbritishchefs.com/recipes/chicken-katsu-curry-recipe",
+    "author": "Sally Abé",
+    "match": "close",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "as_korean_fried_chicken": {
+    "title": "Maangchi's Fried Chicken (Yangnyeom-tongdak)",
+    "site": "Maangchi",
+    "url": "https://www.maangchi.com/recipe/yangnyeom-tongdak",
+    "author": "Maangchi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "as_char_siu_pork": {
+    "title": "Char Siu Pork (Chinese BBQ Pork)",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/chinese-barbecue-pork-char-siu/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "as_special_egg_fried_rice": {
+    "title": "Fried Rice",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/egg-fried-rice/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "as_korean_fried_chicken_burger": {
+    "title": "Korean Fried Chicken Burger with Gochujang Mayonnaise",
+    "site": "Krumpli",
+    "url": "https://www.krumpli.co.uk/wprm_print/korean-fried-chicken-burger-recipe-with-gochujang-mayonnaise",
+    "author": "Brian Jones",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "as_chinese_curry_chips": {
+    "title": "Chinese Chicken Curry (British Takeaway Style)",
+    "site": "Krumpli",
+    "url": "https://www.krumpli.co.uk/chinese-chicken-curry-takeaway-style/",
+    "author": "Brian Jones",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "as_honey_sesame_chicken": {
+    "title": "Easy Chinese Honey Sesame Chicken",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/easy-chinese-honey-sesame-chicken/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "as_halloumi_katsu_curry": {
+    "title": "Chicken Katsu Curry",
+    "site": "Great British Chefs",
+    "url": "https://www.greatbritishchefs.com/recipes/chicken-katsu-curry-recipe",
+    "author": "Sally Abé",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "as_crispy_hoisin_pork_pancakes": {
+    "title": "Hoisin Pork Wraps with Cucumber and Sweet Potato Fries",
+    "site": "HelloFresh UK",
+    "url": "https://www.hellofresh.co.uk/recipes/hoisin-pork-wraps-5dfb8767a5211525e95d1527",
+    "match": "close",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "as_kung_pao_chicken": {
+    "title": "Kung Pao Chicken",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/kung-pao-chicken/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "as_chicken_chow_mein": {
+    "title": "Chow Mein",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/chicken-chow-mein/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "as_black_bean_beef": {
+    "title": "Beef in Black Bean Sauce",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/beef-in-black-bean-sauce/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "as_beef_broccoli": {
+    "title": "Chinese Beef and Broccoli",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/chinese-beef-and-broccoli-extra-saucy-take-out-style/",
+    "author": "Nagi Maehashi",
+    "match": "close",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "as_dan_dan_noodles": {
+    "title": "Dan Dan Noodles (Spicy Sichuan Noodles)",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/dan-dan-noodles/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "as_sticky_sesame_tofu": {
+    "title": "Sticky Soy and Sesame Tofu with Broccoli Rice",
+    "site": "Sainsbury's Magazine",
+    "url": "https://www.sainsburysmagazine.co.uk/recipes/mains/sticky-soy-and-sesame-tofu-with-broccoli-rice",
+    "author": "Sarah Akhurst",
+    "match": "close",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "as_thai_green_chicken_curry": {
+    "title": "Thai Green Curry",
+    "site": "RecipeTin Eats",
+    "url": "https://www.recipetineats.com/thai-green-curry/",
+    "author": "Nagi Maehashi",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  },
+  "as_thai_red_prawn_curry": {
+    "title": "Thai Red Prawn Curry",
+    "site": "Khin's Kitchen",
+    "url": "https://khinskitchen.com/wprm_print/thai-red-prawn-curry",
+    "author": "Khin",
+    "match": "adapted",
+    "checked": "2026-10-23",
+    "fix": ""
+  }
+}

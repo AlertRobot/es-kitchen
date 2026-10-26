@@ -1,0 +1,12 @@
+[
+  {"id":"cod_fillets","name":"Skinless & boneless cod loins","aisle":"Meat & fish","unit":"g","packs":[280],"staple":false,"freeze":true,"keeps":1,"life":4,"tags":["fish"]},
+  {"id":"smoked_haddock","name":"Boneless smoked haddock fillets","aisle":"Meat & fish","unit":"g","packs":[280,560],"staple":false,"freeze":true,"keeps":1,"life":5,"tags":["fish"]},
+  {"id":"diced_beef","name":"Diced beef (casserole steak)","aisle":"Meat & fish","unit":"g","packs":[400],"staple":false,"freeze":true,"keeps":1,"life":5,"tags":["beef","meat"]},
+  {"id":"sirloin_steak","name":"Sirloin steak","aisle":"Meat & fish","unit":"g","packs":[227],"staple":false,"freeze":true,"keeps":1,"life":6,"tags":["beef","meat"]},
+  {"id":"pork_loin_steaks","name":"Pork loin steaks","aisle":"Meat & fish","unit":"g","packs":[500],"staple":false,"freeze":true,"keeps":1,"life":5,"tags":["pork","meat"]},
+  {"id":"chicken_legs","name":"Chicken legs (bone-in, skin-on)","aisle":"Meat & fish","unit":"g","packs":[1000],"staple":false,"freeze":true,"keeps":1,"life":5,"tags":["chicken","meat"]},
+  {"id":"apples","name":"Braeburn apples","aisle":"Fruit & veg","unit":"each","packs":[6],"staple":false,"freeze":false,"keeps":14,"life":21,"tags":["fruit"]},
+  {"id":"gherkins","name":"Sliced gherkins (jar)","aisle":"Tins & jars","unit":"g","packs":[340],"staple":false,"freeze":false,"keeps":60,"life":365,"tags":[]},
+  {"id":"branston_pickle","name":"Original pickle (Branston-style)","aisle":"Tins & jars","unit":"g","packs":[360],"staple":false,"freeze":false,"keeps":90,"life":365,"tags":[]},
+  {"id":"self_raising_flour","name":"Self-raising flour","aisle":"Dry goods","unit":"g","packs":[1500],"staple":true,"freeze":false,"keeps":240,"life":300,"tags":["gluten"]}
+]

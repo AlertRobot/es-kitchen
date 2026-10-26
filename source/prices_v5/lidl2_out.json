@@ -1,0 +1,708 @@
+[
+ {
+  "id": "peanut_butter",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched peanut butter, smooth peanut butter, peanut - no peanut butter listed"
+   }
+  }
+ },
+ {
+  "id": "peppers",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched peppers, sweet peppers, mixed peppers - only Eridanous green peppers in brine (Greek special from 29.10)"
+   }
+  }
+ },
+ {
+  "id": "pesto",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched pesto - none listed"
+   }
+  }
+ },
+ {
+  "id": "pitta",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched pitta - none listed"
+   }
+  }
+ },
+ {
+  "id": "plain_flour",
+  "prices": {
+   "lidl": {
+    "pack": 1500,
+    "price": 0.7,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "BELBAKE Plain Flour 1.5kg",
+    "src": "https://www.lidl.co.uk/p/belbake-plain-flour/p10055445",
+    "note": ""
+   }
+  }
+ },
+ {
+  "id": "pork_mince",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched pork mince, mince - only High Protein Mince (from 29.10 special, not pork-specific)"
+   }
+  }
+ },
+ {
+  "id": "potatoes",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched potatoes - only sweet potatoes and McCain jacket potatoes; no white potatoes listed"
+   }
+  }
+ },
+ {
+  "id": "prawns",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched king prawns, frozen prawns - only party prawn ring / tempura prawns"
+   }
+  }
+ },
+ {
+  "id": "puff_pastry",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched puff pastry - none listed"
+   }
+  }
+ },
+ {
+  "id": "red_lentils",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched lentils - none listed"
+   }
+  }
+ },
+ {
+  "id": "red_onion",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched red onions, red onion - only Pink Onions 750g (Pick of the Week, different variety)"
+   }
+  }
+ },
+ {
+  "id": "rice",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched basmati rice - only LAILA Xtra Long Basmati 5kg bulk sack (£8.99, Lidl Plus £7.49); no 1kg pack listed"
+   }
+  }
+ },
+ {
+  "id": "rice_noodles",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched rice noodles, noodles - none listed"
+   }
+  }
+ },
+ {
+  "id": "ricotta",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched ricotta - none listed"
+   }
+  }
+ },
+ {
+  "id": "salmon",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched salmon fillets, salmon - only LIGHTHOUSE BAY frozen 4 fillets 440g £5.99 listed 'In store from 29.10' (short-term Top Pick)"
+   }
+  }
+ },
+ {
+  "id": "salt",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched salt - none listed"
+   }
+  }
+ },
+ {
+  "id": "sausages",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched pork sausages, sausages - only DELUXE XXL 20-pack (from 29.10) and hot dog sausages"
+   }
+  }
+ },
+ {
+  "id": "smoked_paprika",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched paprika, spices - none listed"
+   }
+  }
+ },
+ {
+  "id": "soy_sauce",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched soy sauce - none listed"
+   }
+  }
+ },
+ {
+  "id": "spinach",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched spinach - none listed"
+   }
+  }
+ },
+ {
+  "id": "spring_onions",
+  "prices": {
+   "lidl": {
+    "pack": 8,
+    "price": 0.65,
+    "loyalty": 0.45,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Spring Onions (per bunch)",
+    "src": "https://www.lidl.co.uk/p/spring-onions/p10055847",
+    "note": "Sold per bunch; onion count not stated, 8 per bunch assumed as catalogue"
+   }
+  }
+ },
+ {
+  "id": "stock_cubes",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched stock cubes, chicken stock - none listed"
+   }
+  }
+ },
+ {
+  "id": "sweet_chilli_sauce",
+  "prices": {
+   "lidl": {
+    "pack": 455,
+    "price": 2.49,
+    "loyalty": 1.99,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "THAI DRAGON Sweet Chilli Sauce 455ml",
+    "src": "https://www.lidl.co.uk/p/thai-dragon-sweet-chilli-sauce-sriracha-hot-chilli-sauce-or-mayo-sauce/p10056461",
+    "note": "455ml bottle (pack is ml, recorded as g); combined listing with Sriracha/Mayo variants; Lidl Plus £1.99 22.10-04.11"
+   }
+  }
+ },
+ {
+  "id": "sweet_potato",
+  "prices": {
+   "lidl": {
+    "pack": 1000,
+    "price": 1.19,
+    "loyalty": 0.89,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Sweet Potatoes 1kg",
+    "src": "https://www.lidl.co.uk/p/sweet-potatoes/p11029936",
+    "note": "Regular £1.19/kg; Lidl Plus £0.89 (weekly app offer)"
+   }
+  }
+ },
+ {
+  "id": "sweetcorn",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched sweetcorn - none listed"
+   }
+  }
+ },
+ {
+  "id": "tahini",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched tahini - only ERIDANOUS Sesame Paste 350g (Greek-week special, in store from 29.10)"
+   }
+  }
+ },
+ {
+  "id": "thai_green_paste",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched curry paste - none listed"
+   }
+  }
+ },
+ {
+  "id": "thai_red_paste",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched curry paste - none listed"
+   }
+  }
+ },
+ {
+  "id": "tikka_paste",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched curry paste - none listed"
+   }
+  }
+ },
+ {
+  "id": "tinned_tuna",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched tuna - only ERIDANOUS Tuna 160g (Greek special from 29.10); no tuna chunks in spring water"
+   }
+  }
+ },
+ {
+  "id": "tofu",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched tofu - none listed"
+   }
+  }
+ },
+ {
+  "id": "tomato_puree",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched tomato puree - none listed"
+   }
+  }
+ },
+ {
+  "id": "tortilla_chips",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched tortilla chips - none listed (only Mcennedy tortilla rolls snack)"
+   }
+  }
+ },
+ {
+  "id": "turmeric",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched turmeric, spices - none listed"
+   }
+  }
+ },
+ {
+  "id": "udon_noodles",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched udon noodles, noodles - none listed"
+   }
+  }
+ },
+ {
+  "id": "wholegrain_mustard",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched mustard - only MCENNEDY American Style Mustard 500g, not wholegrain"
+   }
+  }
+ },
+ {
+  "id": "worcestershire",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched worcestershire sauce - none listed"
+   }
+  }
+ },
+ {
+  "id": "wraps",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched tortilla wraps, wraps - none listed"
+   }
+  }
+ },
+ {
+  "id": "dried_yeast",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched yeast - none listed"
+   }
+  }
+ },
+ {
+  "id": "pepperoni",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched pepperoni - none listed"
+   }
+  }
+ },
+ {
+  "id": "bbq_sauce",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched bbq sauce - none listed (Mcennedy Sauces are Mayo-Ketchup/Smokey-Ranch)"
+   }
+  }
+ },
+ {
+  "id": "hot_sauce",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched hot sauce - only THAI DRAGON Sriracha, not cayenne/buffalo-style"
+   }
+  }
+ },
+ {
+  "id": "mayonnaise",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched mayonnaise - none listed"
+   }
+  }
+ },
+ {
+  "id": "ketchup",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched ketchup - none listed"
+   }
+  }
+ },
+ {
+  "id": "chicken_wings",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched chicken wings - only seasoned 'pre-prepared' wings 1kg (Rotisserie/Spicy) listed from 29.10; no plain wings"
+   }
+  }
+ },
+ {
+  "id": "pork_shoulder",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched pork shoulder, pork - none listed"
+   }
+  }
+ },
+ {
+  "id": "beef_steak",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched beef steak, beef - no thin-cut frying steaks listed"
+   }
+  }
+ },
+ {
+  "id": "hot_dog_rolls",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched hot dog rolls, rolls - none listed"
+   }
+  }
+ },
+ {
+  "id": "sesame_oil",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched sesame oil - none listed"
+   }
+  }
+ },
+ {
+  "id": "rice_vinegar",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched rice vinegar - none listed"
+   }
+  }
+ },
+ {
+  "id": "fish_sauce",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched fish sauce - none listed"
+   }
+  }
+ },
+ {
+  "id": "oyster_sauce",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched oyster sauce - none listed"
+   }
+  }
+ },
+ {
+  "id": "black_bean_sauce",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched black bean sauce - none listed"
+   }
+  }
+ },
+ {
+  "id": "beef_stir_fry_strips",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched beef stir fry strips, beef - none listed"
+   }
+  }
+ },
+ {
+  "id": "pork_loin_steaks",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched pork loin steaks, pork - only XXL 12 Pork Loin Medallions 1.35kg (bulk Pick of the Week)"
+   }
+  }
+ },
+ {
+  "id": "salted_peanuts",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched salted peanuts, peanut - only Mcennedy roasted peanuts in shells"
+   }
+  }
+ },
+ {
+  "id": "pineapple_chunks",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched pineapple - none listed"
+   }
+  }
+ },
+ {
+  "id": "cod_fillets",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched cod - none listed"
+   }
+  }
+ },
+ {
+  "id": "smoked_haddock",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched haddock - none listed"
+   }
+  }
+ },
+ {
+  "id": "diced_beef",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched diced beef, beef - none listed"
+   }
+  }
+ },
+ {
+  "id": "sirloin_steak",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched beef steak, beef - only '4 British Beef Sirloin Steaks' 800g £19.99, a Pick of the Week listing valid 22.10-28.10 (short-term)"
+   }
+  }
+ },
+ {
+  "id": "chicken_legs",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched chicken legs - none listed"
+   }
+  }
+ },
+ {
+  "id": "apples",
+  "prices": {
+   "lidl": {
+    "pack": 6,
+    "price": 1.39,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "British Apples 6 Pack",
+    "src": "https://www.lidl.co.uk/p/british-apples/p11491819",
+    "note": "Variety not named (not specifically Braeburn); page gives regular price 23.2p/apple = £1.39 for 6; Lidl Plus £0.99 from 29.10"
+   }
+  }
+ },
+ {
+  "id": "gherkins",
+  "prices": {
+   "lidl": {
+    "pack": 360,
+    "price": 1.99,
+    "loyalty": 1.49,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "MCENNEDY Sliced Pickled Gherkins 720ml (360g)",
+    "src": "https://www.lidl.co.uk/p/mcennedy-sliced-pickled-gherkins/p10056453",
+    "note": "720ml jar, 360g drained weight; Lidl Plus £1.49 22.10-28.10"
+   }
+  }
+ },
+ {
+  "id": "branston_pickle",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched pickle, chutney - none listed"
+   }
+  }
+ },
+ {
+  "id": "self_raising_flour",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched self raising flour - only plain flour listed"
+   }
+  }
+ },
+ {
+  "id": "chilli_powder",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched chilli powder - none listed"
+   }
+  }
+ },
+ {
+  "id": "mustard_seeds",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched mustard seeds - none listed"
+   }
+  }
+ },
+ {
+  "id": "kasoori_methi",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched fenugreek - none listed"
+   }
+  }
+ },
+ {
+  "id": "gram_flour",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched gram flour - none listed"
+   }
+  }
+ },
+ {
+  "id": "ground_almonds",
+  "prices": {
+   "lidl": {
+    "pack": 150,
+    "price": 1.19,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "BELBAKE Ground Almonds 150g",
+    "src": "https://www.lidl.co.uk/p/belbake-ground-almonds/p10055458",
+    "note": ""
+   }
+  }
+ },
+ {
+  "id": "mango_chutney",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched mango chutney, chutney - none listed"
+   }
+  }
+ },
+ {
+  "id": "diced_lamb",
+  "prices": {
+   "lidl": {
+    "unlisted": true,
+    "note": "searched lamb - only XXL 4 Lamb Leg Chops and minted lamb steaks; no diced lamb"
+   }
+  }
+ }
+]

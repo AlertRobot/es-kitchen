@@ -1,0 +1,609 @@
+[
+ {
+  "id": "arborio_rice",
+  "prices": {
+   "aldi": {
+    "pack": 1000,
+    "price": 2.49,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Cucina Arborio Rice 1kg",
+    "src": "https://www.aldi.co.uk/product/cucina-arborio-rice-000000000000262588",
+    "note": ""
+   }
+  }
+ },
+ {
+  "id": "aubergine",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "Nature's Pick Aubergine each page exists (nature-s-pick-aubergine-each-000000000000334366) but says \"currently not available\", no price shown"
+   }
+  }
+ },
+ {
+  "id": "baguette",
+  "prices": {
+   "aldi": {
+    "pack": 2,
+    "price": 0.85,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Village Bakery Bake at Home White Baguettes (2 each)",
+    "src": "https://www.aldi.co.uk/products/bakery/bread-rolls/k/1588161416978049002",
+    "note": "product: https://www.aldi.co.uk/product/village-bakery-bake-at-home-white-baguettes-000000000000279031"
+   }
+  }
+ },
+ {
+  "id": "black_pepper",
+  "prices": {
+   "aldi": {
+    "pack": 100,
+    "price": 1.59,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Ready, Set…Cook! Ground Black Pepper 100g",
+    "src": "https://www.aldi.co.uk/product/ready-set-cook-ground-black-pepper-000000000335929003",
+    "note": ""
+   }
+  }
+ },
+ {
+  "id": "cannellini_beans",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "Four Seasons Cannellini Beans in Water 400g page exists (four-seasons-cannellini-beans-in-water-000000000285956002) but says \"currently not available\", no price shown"
+   }
+  }
+ },
+ {
+  "id": "carrots",
+  "prices": {
+   "aldi": {
+    "pack": 500,
+    "price": 0.44,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Nature's Pick British Carrots 500g",
+    "src": "https://www.aldi.co.uk/product/nature-s-pick-british-carrots-000000000000339792",
+    "note": "£0.88/kg; no 1kg bag found"
+   }
+  }
+ },
+ {
+  "id": "couscous",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched aldi.co.uk for plain cous cous 500g; only Make in Minutes flavoured 100g packets (£0.47) found"
+   }
+  }
+ },
+ {
+  "id": "cumin_seeds",
+  "prices": {
+   "aldi": {
+    "pack": 40,
+    "price": 0.65,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Ready, Set…Cook! Cumin 40g",
+    "src": "https://www.aldi.co.uk/products/food-cupboard/herbs-spices/k/1588161416978053007",
+    "note": "product: https://www.aldi.co.uk/product/ready-set-cook-cumin-000000000000335731; listing does not say seeds vs ground"
+   }
+  }
+ },
+ {
+  "id": "egg_noodles",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "Asia Specialities Medium Egg Noodles 250g (dried) page says \"currently not available\", no price. Alternative: Ready, Set…Cook! fresh Egg Noodles 410g £1.09 (was £1.29) on https://www.aldi.co.uk/products/fresh-food/stir-fry-vegetables-sauce-noodles/k/1588161416978050003"
+   }
+  }
+ },
+ {
+  "id": "eggs",
+  "prices": {
+   "aldi": {
+    "pack": 12,
+    "price": 2.49,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Merevale British Medium Free Range Eggs 12 Pack",
+    "src": "https://www.aldi.co.uk/products/chilled-food/eggs/k/1588161416978051003",
+    "note": "product: https://www.aldi.co.uk/product/merevale-british-medium-free-range-eggs-12-pack-000000000000417633; 6 pack £1.49"
+   }
+  }
+ },
+ {
+  "id": "garam_masala",
+  "prices": {
+   "aldi": {
+    "pack": 90,
+    "price": 0.89,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Ready, Set…Cook! Garam Malasa Powder 90g",
+    "src": "https://www.aldi.co.uk/product/ready-set-cook-garam-malasa-powder-000000000336690003",
+    "note": ""
+   }
+  }
+ },
+ {
+  "id": "ginger_paste",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched aldi.co.uk for ginger puree/paste; no product found (fresh Nature's Pick Ginger 125g £0.99 only)"
+   }
+  }
+ },
+ {
+  "id": "gochujang",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched aldi.co.uk for gochujang; no product found"
+   }
+  }
+ },
+ {
+  "id": "gravy",
+  "prices": {
+   "aldi": {
+    "pack": 200,
+    "price": 0.99,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Quixo Standard Gravy Granules",
+    "src": "https://www.aldi.co.uk/product/quixo-standard-gravy-granules-000000000336594002",
+    "note": "PACK SIZE NOT SHOWN on page; 200g assumed - check",
+    "pack_verified": false
+   }
+  }
+ },
+ {
+  "id": "green_chillies",
+  "prices": {
+   "aldi": {
+    "pack": 50,
+    "price": 0.79,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Nature's Pick Finger Chillies",
+    "src": "https://www.aldi.co.uk/product/nature-s-pick-finger-chillies-000000000556893002",
+    "note": "PACK SIZE and colour NOT SHOWN on page; 50g assumed - check",
+    "pack_verified": false
+   }
+  }
+ },
+ {
+  "id": "ground_coriander",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "Ready, Set…Cook! Ground Coriander 29g page exists (ready-set-cook-ground-coriander-000000000000559010) but says \"currently not available\", no price"
+   }
+  }
+ },
+ {
+  "id": "harissa",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched aldi.co.uk for harissa paste; no product found"
+   }
+  }
+ },
+ {
+  "id": "kimchi",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched aldi.co.uk for kimchi; no product found"
+   }
+  }
+ },
+ {
+  "id": "miso_paste",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched aldi.co.uk for miso paste; no product found"
+   }
+  }
+ },
+ {
+  "id": "mixed_herbs",
+  "prices": {
+   "aldi": {
+    "pack": 11,
+    "price": 0.59,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Ready, Set…Cook! Mixed Herbs 11g",
+    "src": "https://www.aldi.co.uk/products/food-cupboard/herbs-spices/k/1588161416978053007",
+    "note": "product: https://www.aldi.co.uk/product/ready-set-cook-mixed-herbs-000000000000335977"
+   }
+  }
+ },
+ {
+  "id": "naan",
+  "prices": {
+   "aldi": {
+    "pack": 2,
+    "price": 0.69,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Bilash Plain Naan Breads (2 each)",
+    "src": "https://www.aldi.co.uk/products/bakery/wraps-naans-pittas-thins/k/1588161416978049007",
+    "note": "product: https://www.aldi.co.uk/product/bilash-plain-naan-breads-000000000000383275"
+   }
+  }
+ },
+ {
+  "id": "oil",
+  "prices": {
+   "aldi": {
+    "pack": 1000,
+    "price": 1.45,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Solesta Vegetable Oil 1l",
+    "src": "https://www.aldi.co.uk/products/food-cupboard/sauces-oils-dressings/k/1588161416978053010",
+    "note": "product: https://www.aldi.co.uk/product/solesta-vegetable-oil-000000000000335872"
+   }
+  }
+ },
+ {
+  "id": "pak_choi",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched aldi.co.uk (vegetables category page 1 and site search) for pak choi; no product found"
+   }
+  }
+ },
+ {
+  "id": "paneer",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched aldi.co.uk for paneer; not in cheese category page 1 or search results"
+   }
+  }
+ },
+ {
+  "id": "panko",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "Bramwells Panko Breadcrumbs page found by search (bramwells-panko-breadcrumbs-000000000724269001) but the page failed to load (client error), so no price could be read"
+   }
+  }
+ },
+ {
+  "id": "pasta",
+  "prices": {
+   "aldi": {
+    "pack": 500,
+    "price": 0.69,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Cucina Penne Pasta 500g",
+    "src": "https://www.aldi.co.uk/products/food-cupboard/rice-pasta-noodles/k/1588161416978053008",
+    "note": "product: https://www.aldi.co.uk/product/cucina-penne-pasta-500g-000000000000308638; Cucina Spaghetti 500g £0.75; Everyday Essentials Spaghetti 500g £0.28"
+   }
+  }
+ },
+ {
+  "id": "peanut_butter",
+  "prices": {
+   "aldi": {
+    "pack": 340,
+    "price": 0.95,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Grandessa Smooth Peanut Butter 340g",
+    "src": "https://www.aldi.co.uk/product/grandessa-smooth-peanut-butter-000000000283841001",
+    "note": ""
+   }
+  }
+ },
+ {
+  "id": "potatoes",
+  "prices": {
+   "aldi": {
+    "pack": 2000,
+    "price": 1.32,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Nature's Pick White Potatoes 2kg",
+    "src": "https://www.aldi.co.uk/product/nature-s-pick-white-potatoes-2kg-000000000000340017",
+    "note": "£0.66/kg"
+   }
+  }
+ },
+ {
+  "id": "prawns",
+  "prices": {
+   "aldi": {
+    "pack": 250,
+    "price": 3.89,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Specially Selected Raw Peeled Argentinian Prawns 250g (frozen)",
+    "src": "https://www.aldi.co.uk/products/frozen-food/fish-seafood/k/1588161416978056002",
+    "note": "only raw frozen prawns listed (premium line); product: https://www.aldi.co.uk/product/specially-selected-raw-peeled-argentinian-prawns-000000000457636002. Chilled alternative: The Fishmonger Cooked & Peeled King Prawns 150g £2.49"
+   }
+  }
+ },
+ {
+  "id": "red_onion",
+  "prices": {
+   "aldi": {
+    "pack": 6,
+    "price": 0.95,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Nature's Pick Red Onions 1kg",
+    "src": "https://www.aldi.co.uk/product/nature-s-pick-red-onions-000000000000339914",
+    "note": "1kg bag ≈ 6 onions at 160g"
+   }
+  }
+ },
+ {
+  "id": "ricotta",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched aldi.co.uk for ricotta; not in cheese category page 1 or search results"
+   }
+  }
+ },
+ {
+  "id": "sausages",
+  "prices": {
+   "aldi": {
+    "pack": 6,
+    "price": 2.29,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Specially Selected Pork Sausages 6 Pack 400g",
+    "src": "https://www.aldi.co.uk/products/fresh-food/bacon-sausages/k/1588161416978050007",
+    "note": "no plain 8-pack found; only plain pork pack with a stated count (premium line). Cheaper: Ashfields Irish Style Pork Sausages 410g £1.29 (count not shown). product: https://www.aldi.co.uk/product/specially-selected-pork-sausages-6-pack-000000000000386876"
+   }
+  }
+ },
+ {
+  "id": "smoked_paprika",
+  "prices": {
+   "aldi": {
+    "pack": 40,
+    "price": 0.69,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Ready, Set…Cook! Smoked Paprika 40g",
+    "src": "https://www.aldi.co.uk/product/ready-set-cook-smoked-paprika-000000000000575323",
+    "note": ""
+   }
+  }
+ },
+ {
+  "id": "sweet_potato",
+  "prices": {
+   "aldi": {
+    "pack": 1000,
+    "price": 1.19,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Nature's Pick Sweet Potatoes 1kg",
+    "src": "https://www.aldi.co.uk/products/fresh-food/vegetables/k/1588161416978050002",
+    "note": "product: https://www.aldi.co.uk/product/nature-s-pick-sweet-potatoes-000000000000272328"
+   }
+  }
+ },
+ {
+  "id": "tahini",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched aldi.co.uk for tahini; no product found"
+   }
+  }
+ },
+ {
+  "id": "thai_green_paste",
+  "prices": {
+   "aldi": {
+    "pack": 180,
+    "price": 1.39,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Ready, Set…Cook! Thai Green Curry Paste",
+    "src": "https://www.aldi.co.uk/product/ready-set-cook-thai-green-curry-paste-000000000557102002",
+    "note": "PACK SIZE NOT SHOWN on page; 180g assumed - check",
+    "pack_verified": false
+   }
+  }
+ },
+ {
+  "id": "thai_red_paste",
+  "prices": {
+   "aldi": {
+    "pack": 180,
+    "price": 1.39,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Ready, Set…Cook! Thai Red Curry Paste",
+    "src": "https://www.aldi.co.uk/product/ready-set-cook-thai-red-curry-paste-000000000557102001",
+    "note": "PACK SIZE NOT SHOWN on page; 180g assumed - check",
+    "pack_verified": false
+   }
+  }
+ },
+ {
+  "id": "tikka_paste",
+  "prices": {
+   "aldi": {
+    "pack": 185,
+    "price": 1.39,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Ready, Set…Cook! Tikka Masala Curry Paste 185g",
+    "src": "https://www.aldi.co.uk/product/ready-set-cook-tikka-masala-curry-paste-000000000556914001",
+    "note": ""
+   }
+  }
+ },
+ {
+  "id": "tomato_puree",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "Cucina Double Concentrate Tomato Purée 200g page exists (cucina-double-concentrate-tomato-puree-000000000000278743) but says \"currently not available\", no price"
+   }
+  }
+ },
+ {
+  "id": "udon_noodles",
+  "prices": {
+   "aldi": {
+    "pack": 300,
+    "price": 0.85,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Asia Green Garden Ready to Wok Udon Noodles 300g",
+    "src": "https://www.aldi.co.uk/product/asia-green-garden-ready-to-wok-udon-noodles-000000000621112001",
+    "note": "£2.83/kg"
+   }
+  }
+ },
+ {
+  "id": "worcestershire",
+  "prices": {
+   "aldi": {
+    "pack": 150,
+    "price": 1.09,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Bramwells Worcester Sauce 150ml",
+    "src": "https://www.aldi.co.uk/products/food-cupboard/sauces-oils-dressings/k/1588161416978053010",
+    "note": "product: https://www.aldi.co.uk/product/bramwells-worcester-sauce-000000000000687863"
+   }
+  }
+ },
+ {
+  "id": "hot_sauce",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched aldi.co.uk for cayenne/buffalo hot sauce; no product found"
+   }
+  }
+ },
+ {
+  "id": "mayonnaise",
+  "prices": {
+   "aldi": {
+    "pack": 460,
+    "price": 0.89,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Bramwells Real Mayonnaise 500ml",
+    "src": "https://www.aldi.co.uk/products/food-cupboard/sauces-oils-dressings/k/1588161416978053010",
+    "note": "500ml jar ≈ 460g; product: https://www.aldi.co.uk/product/bramwells-real-mayonnaise-000000000279901001"
+   }
+  }
+ },
+ {
+  "id": "beef_steak",
+  "prices": {
+   "aldi": {
+    "pack": 227,
+    "price": 3.19,
+    "loyalty": null,
+    "checked": "2026-10-26",
+    "verified": true,
+    "est": false,
+    "label": "Everyday Essentials British Beef Steak 21 Day Matured 227g",
+    "src": "https://www.aldi.co.uk/products/fresh-food/beef/k/1588161416978050005",
+    "note": "was £3.25; no thin-cut frying steak line found; product: https://www.aldi.co.uk/product/everyday-essentials-british-beef-steak-21-day-matured-000000000000384519"
+   }
+  }
+ },
+ {
+  "id": "sesame_oil",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched aldi.co.uk for toasted sesame oil; no product found"
+   }
+  }
+ },
+ {
+  "id": "rice_vinegar",
+  "prices": {
+   "aldi": {
+    "unlisted": true,
+    "note": "searched aldi.co.uk for rice vinegar; no product found"
+   }
+  }
+ }
+]

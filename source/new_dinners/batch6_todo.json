@@ -1,0 +1,83 @@
+[
+ {
+  "name": "Chicken and chorizo pasta",
+  "cuisine": "Italian",
+  "protein": "chicken",
+  "base": "pasta",
+  "family": "pasta",
+  "category": "everyday",
+  "why": "One of BBC Good Food's most popular pastas"
+ },
+ {
+  "name": "Tomato and mozzarella gnocchi bake",
+  "cuisine": "Italian",
+  "protein": "veggie",
+  "base": "potato",
+  "family": "pie_bake",
+  "category": "everyday",
+  "why": "Cheesy veggie bake meat-eaters enjoy; not pasta"
+ },
+ {
+  "name": "Crunchy beef tacos",
+  "cuisine": "Mexican",
+  "protein": "beef",
+  "base": "bread",
+  "family": "tacos_wraps",
+  "category": "everyday",
+  "why": "Old El Paso-style taco night; no beef tacos in library"
+ },
+ {
+  "name": "Veggie bean chilli",
+  "cuisine": "Mexican",
+  "protein": "veggie",
+  "base": "rice",
+  "family": "stew_soup",
+  "category": "everyday",
+  "why": "Hearty veggie night that doesn't feel like a compromise"
+ },
+ {
+  "name": "Steak fajitas",
+  "cuisine": "Mexican",
+  "protein": "beef",
+  "base": "bread",
+  "family": "tacos_wraps",
+  "category": "everyday",
+  "why": "Beef take on the fajita night"
+ },
+ {
+  "name": "Chicken shish kebab and rice",
+  "cuisine": "Middle Eastern",
+  "protein": "chicken",
+  "base": "rice",
+  "family": "grill_steak",
+  "category": "everyday",
+  "why": "Turkish-takeaway favourite"
+ },
+ {
+  "name": "Chicken gyros with chips",
+  "cuisine": "Middle Eastern",
+  "protein": "chicken",
+  "base": "bread",
+  "family": "tacos_wraps",
+  "category": "treat",
+  "why": "Greek-style pitta wrap treat"
+ },
+ {
+  "name": "Moussaka",
+  "cuisine": "Middle Eastern",
+  "protein": "lamb",
+  "base": "potato",
+  "family": "pie_bake",
+  "category": "treat",
+  "why": "Familiar Greek bake; lamb comfort food"
+ },
+ {
+  "name": "Greek lamb burgers",
+  "cuisine": "Middle Eastern",
+  "protein": "lamb",
+  "base": "bread",
+  "family": "burger_sandwich",
+  "category": "treat",
+  "why": "Lamb burger with tzatziki; new burger protein"
+ }
+]

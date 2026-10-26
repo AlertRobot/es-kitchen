@@ -1,0 +1,92 @@
+{
+ "as_teriyaki_chicken_noodles": {
+  "title": "Teriyaki chicken noodles",
+  "site": "Tesco Real Food",
+  "url": "https://realfood.tesco.com/recipes/teriyaki-chicken-noodles.html",
+  "author": "",
+  "match": "adapted",
+  "checked": "2026-10-24",
+  "fix": "",
+  "note": "Source uses bottled teriyaki, griddled breast strips, broccoli + mangetout; ours makes a quick teriyaki glaze from soy, honey, rice vinegar, garlic and ginger and drops the mangetout."
+ },
+ "as_chicken_ramen": {
+  "title": "Quick Chicken Ramen",
+  "site": "Kitchen Sanctuary",
+  "url": "https://www.kitchensanctuary.com/easy-chicken-ramen-ready-in-20-mins/comment-page-1/",
+  "author": "Nicky",
+  "match": "adapted",
+  "checked": "2026-10-24",
+  "fix": "",
+  "note": "Same butter/sesame, garlic-ginger, stock and soy broth with soft eggs and spring onions; ours poaches raw breasts in the broth instead of using cooked chicken, uses egg noodles instead of instant, honey for brown sugar, adds pak choi, drops sriracha/rice wine."
+ },
+ "as_chicken_cashew_nuts": {
+  "title": "Cashew Chicken",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/chinese-cashew-chicken",
+  "author": "Nagi Maehashi",
+  "match": "close",
+  "checked": "2026-10-24",
+  "fix": "",
+  "note": "Same cornflour-soy-oyster-sesame sauce, marinate-then-stir-fry method with onion, green pepper and cashews, scaled to 2; Shaoxing wine omitted; chicken cooked 4–5 min (vs 2) to be sure 2.5cm thigh pieces are cooked through."
+ },
+ "as_hoisin_beef_noodles": {
+  "title": "Hoisin Beef Noodle Stir-Fry",
+  "site": "Abel & Cole",
+  "url": "https://www.abelandcole.co.uk/box-recipes/hoisin-beef-noodle-stir-fry",
+  "author": "",
+  "match": "adapted",
+  "checked": "2026-10-24",
+  "fix": "",
+  "note": "Same beef stir-fry strips, hoisin, garlic and ginger, quick sear then toss with noodles; ours uses egg noodles instead of udon, peppers/carrot/pak choi instead of cabbage, soy + honey instead of orange juice."
+ },
+ "as_crispy_shredded_chicken": {
+  "title": "Crispy Shredded Chicken",
+  "site": "Khin's Kitchen",
+  "url": "https://khinskitchen.com/crispy-shredded-chicken/",
+  "author": "Khin",
+  "match": "adapted",
+  "checked": "2026-10-24",
+  "fix": "",
+  "note": "Same soy/sesame/garlic marinade, egg-white and cornflour coating, fry then toss with pepper, spring onion and a soy-honey-lemon sauce; ours shallow-fries instead of deep-frying, adds carrot and sweet chilli sauce for the British takeaway flavour."
+ },
+ "as_sweet_chilli_salmon_noodles": {
+  "title": "Sweet Chilli Salmon Noodle Bowl",
+  "site": "HelloFresh UK",
+  "url": "https://www.hellofresh.co.uk/recipes/sweet-chilli-salmon-noodle-bowl-68b87a74f655999316ff5537",
+  "author": "",
+  "match": "adapted",
+  "checked": "2026-10-24",
+  "fix": "",
+  "note": "Same oven-roasted salmon on stir-fried egg noodles in a hoisin-soy sauce with a sweet chilli drizzle; ours uses sweet chilli + lime in the sauce instead of teriyaki and spice mix, peppers/carrot/pak choi instead of sugar snaps and slaw mix."
+ },
+ "as_chicken_pho": {
+  "title": "Vietnamese Chicken Pho Soup (Pho Ga)",
+  "site": "RecipeTin Eats",
+  "url": "https://www.recipetineats.com/vietnamese-chicken-pho-soup-pho-ga/comment-page-4",
+  "author": "Nagi Maehashi",
+  "match": "adapted",
+  "checked": "2026-10-24",
+  "fix": "",
+  "note": "Same charred onion, star anise/cinnamon/fennel, fish sauce and sugar broth with shredded chicken, flat rice noodles, beansprouts, herbs and lime; weeknight version uses boneless thighs + stock cubes for a 25 min simmer instead of 1.5 h bone-in, ground cinnamon, ginger paste, no cloves/coriander seeds; beansprouts blanched in broth."
+ },
+ "as_bang_bang_chicken_noodles": {
+  "title": "Bang bang chicken noodle stir-fry",
+  "site": "Tesco Real Food",
+  "url": "https://www.tesco.com/recipes/en-GB/recipe/bang-bang-chicken-noodle-stir-fry",
+  "author": "The Tesco Recipes team",
+  "match": "adapted",
+  "checked": "2026-10-24",
+  "fix": "",
+  "note": "Same crispy chicken thighs on egg noodles cooked in stock, with peppers, courgette ribbons, garlic, chilli flakes and a soy-sugar-lime sauce; ours crisps boneless thigh strips in cornflour (no skin-on thighs) and adds a peanut-sweet chilli drizzle."
+ },
+ "in_chicken_bhuna": {
+  "title": "Chicken Bhuna",
+  "site": "Fuss Free Flavours",
+  "url": "https://fussfreeflavours.com/chicken-bhuna/",
+  "author": "Helen Best-Shaw",
+  "match": "close",
+  "checked": "2026-10-24",
+  "fix": "",
+  "note": "Same method and spices: onions fried golden ~15 min, garlic-ginger and chilli/garam masala/turmeric/coriander/cumin, tomatoes reduced by half, chicken thigh simmered 15 min covered, butter and coriander/green chilli to finish; scaled to 2 (full tin kept as it reduces)."
+ }
+}

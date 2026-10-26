@@ -1,0 +1,731 @@
+{
+ "bf_protein_bar": {
+  "url": "https://images.unsplash.com/photo-1704650311540-e3b58fa6dc74?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1704650311540-e3b58fa6dc74?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Alex Saks on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-couple-of-pieces-of-chocolate-sitting-on-top-of-each-other-5L4dq92nKxI",
+  "alt": "Chocolate protein bar cut in half",
+  "confidence": "medium"
+ },
+ "bf_weetabix_milk": {
+  "url": "https://images.unsplash.com/photo-1541634412512-34e187a1ad15?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1541634412512-34e187a1ad15?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Maritza Brunt on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/cookies-in-white-bowl-u-PKEXnQOH8",
+  "alt": "Bowl of wholegrain wheat biscuit cereal for breakfast",
+  "confidence": "medium"
+ },
+ "bf_weetabix_milk_x2": {
+  "url": "https://images.unsplash.com/photo-1579029746681-b88914be04be?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1579029746681-b88914be04be?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Tamas Pap on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/white-ceramic-mug-on-white-surface-FCuZooh0G_k",
+  "alt": "White bowl of wholegrain cereal with milk",
+  "confidence": "medium"
+ },
+ "bf_banana": {
+  "url": "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Giorgio Trovato on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/yellow-bananas-fczCr7MdE7U",
+  "alt": "Bunch of ripe yellow bananas",
+  "confidence": "high"
+ },
+ "bf_greek_yogurt_berries": {
+  "url": "https://images.unsplash.com/photo-1559826521-abd2bdc6d026?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1559826521-abd2bdc6d026?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Dietmar Hannebohn on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-glass-bowl-filled-with-berries-and-yogurt-vSBskWdd3gk",
+  "alt": "Glass bowl of yogurt topped with mixed berries",
+  "confidence": "medium"
+ },
+ "bf_boiled_eggs_x2": {
+  "url": "https://images.unsplash.com/photo-1577111064880-4601019411fe?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1577111064880-4601019411fe?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Faris Mohammed on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/two-sliced-boiled-eggs-pVO700FnVH8",
+  "alt": "Two halved boiled eggs",
+  "confidence": "high"
+ },
+ "bf_overnight_oats_berry": {
+  "url": "https://images.unsplash.com/photo-1533007414914-8f8f2510939e?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1533007414914-8f8f2510939e?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Irina Grigoraş on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/two-strawberry-shakes-on-table-ZzZzXCsgl3w",
+  "alt": "Two jars of berry overnight oats",
+  "confidence": "high"
+ },
+ "bf_overnight_oats_pb_banana": {
+  "url": "https://images.unsplash.com/photo-1756457144649-51b00c269554?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1756457144649-51b00c269554?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Tyraan Lopes on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/peanut-butter-drizzled-over-stacked-jars-of-oatmeal-with-bananas-RMmJU0wCQwQ",
+  "alt": "Peanut butter drizzled over jars of overnight oats with banana",
+  "confidence": "high"
+ },
+ "bf_overnight_oats_apple_cinnamon": {
+  "url": "https://images.unsplash.com/photo-1586851891423-af95b9e36af6?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1586851891423-af95b9e36af6?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Maira Salazar on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/sliced-apple-on-white-ceramic-bowl-4Mx_nfbIARg",
+  "alt": "Apple and cinnamon oats topped with sliced apple",
+  "confidence": "medium"
+ },
+ "bf_protein_porridge": {
+  "url": "https://images.unsplash.com/photo-1603128663198-31073b909d39?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1603128663198-31073b909d39?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Denisa Zamfir on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/banana-fruit-on-white-ceramic-bowl-ptwYjJvCl9o",
+  "alt": "Creamy porridge bowl topped with banana",
+  "confidence": "high"
+ },
+ "bf_egg_muffins_spinach_feta": {
+  "url": "https://images.unsplash.com/photo-1518310532637-f5225f94f3c3?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1518310532637-f5225f94f3c3?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Kaitlyn Chow on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/grilled-patties-with-tomato-toppings-tIElrLKqdjo",
+  "alt": "Veggie egg muffins with spinach and tomato",
+  "confidence": "high"
+ },
+ "bf_egg_muffins_ham_pepper": {
+  "url": "https://images.unsplash.com/photo-1642463045543-55998f3174fc?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1642463045543-55998f3174fc?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Thembi Johnson on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-white-plate-topped-with-mini-quiches-covered-in-cheese-ZPmla97f7fk",
+  "alt": "Plate of cheesy mini egg frittatas",
+  "confidence": "medium"
+ },
+ "bf_scrambled_eggs_toast": {
+  "url": "https://images.unsplash.com/photo-1733105666420-729679827ba1?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1733105666420-729679827ba1?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Tadahiro Higuchi on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-piece-of-bread-topped-with-scrambled-eggs-on-a-white-plate-2PuGJE8n5Eo",
+  "alt": "Soft scrambled eggs on toast",
+  "confidence": "high"
+ },
+ "bf_cottage_cheese_toast": {
+  "url": "https://images.unsplash.com/photo-1648711717590-7cbae3ed089e?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1648711717590-7cbae3ed089e?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Pat Moin on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-couple-of-burgers-with-tomatoes-and-cheese-on-a-plate-g5145XiLfok",
+  "alt": "Toast topped with cottage cheese and tomato",
+  "confidence": "high"
+ },
+ "bf_pb_banana_toast": {
+  "url": "https://images.unsplash.com/photo-1676976197477-766884b9fb53?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1676976197477-766884b9fb53?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Kashish Lamba on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-peanut-butter-and-banana-sandwich-on-a-blue-surface-ZpLI1QFNHU8",
+  "alt": "Peanut butter and banana on bread",
+  "confidence": "high"
+ },
+ "bf_avocado_egg_toast": {
+  "url": "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Wesual Click on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/rectangular-white-platter-of-sliced-food-and-eggs-HK4n3W95F2c",
+  "alt": "Avocado toast with soft-boiled egg",
+  "confidence": "high"
+ },
+ "bf_mushroom_spinach_omelette": {
+  "url": "https://images.unsplash.com/photo-1609272270052-5aa27050b578?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1609272270052-5aa27050b578?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Melissia Ohol on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/pizza-with-green-vegetable-on-white-ceramic-plate-ll--JgIgKb8",
+  "alt": "Spinach and tomato omelette",
+  "confidence": "medium"
+ },
+ "bf_breakfast_wrap": {
+  "url": "https://images.unsplash.com/photo-1626026671041-ee71c3bbf735?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1626026671041-ee71c3bbf735?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Mikey Frost on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/brown-bread-on-white-ceramic-plate-kp8vmhqytuM",
+  "alt": "Grilled egg breakfast wrap",
+  "confidence": "medium"
+ },
+ "bf_skyr_berry_parfait": {
+  "url": "https://images.unsplash.com/photo-1600648832373-6f5e75b71ce3?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1600648832373-6f5e75b71ce3?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Silvia Mc Donald on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/strawberries-in-clear-glass-cup-XGanQ3jivhg",
+  "alt": "Berry and yogurt parfait in a glass",
+  "confidence": "high"
+ },
+ "bf_berry_smoothie": {
+  "url": "https://images.unsplash.com/photo-1615478503562-ec2d8aa0e24e?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1615478503562-ec2d8aa0e24e?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Sara Julie on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/purple-smoothie-with-floating-fruit-9Gz5bMWdGYE",
+  "alt": "Purple berry smoothie with strawberries, banana and blackberries",
+  "confidence": "high"
+ },
+ "lu_chicken_pesto_pasta_salad": {
+  "url": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Eaters Collective on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/pesto-pasta-with-sliced-tomatoes-served-on-white-ceramic-plate-12eHC6FxPyg",
+  "alt": "Pesto pasta with cherry tomatoes",
+  "confidence": "medium"
+ },
+ "lu_lemon_chicken_orzo_feta": {
+  "url": "https://images.unsplash.com/photo-1787087090329-63d501db683c?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1787087090329-63d501db683c?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Chloë Forbes-Kindlen on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/chicken-salad-with-feta-and-olives-a32qDsxmR8Q",
+  "alt": "Chicken salad with feta, olives, cucumber and tomatoes",
+  "confidence": "medium"
+ },
+ "lu_chicken_tikka_rice_box": {
+  "url": "https://images.unsplash.com/photo-1788462613018-40916ff6415c?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1788462613018-40916ff6415c?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "gabbiistudios on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/chicken-tikka-masala-dinner-plate-7ZGOtqVZtAk",
+  "alt": "Chicken tikka masala with white rice",
+  "confidence": "high"
+ },
+ "lu_chicken_burrito_quinoa_bowl": {
+  "url": "https://images.unsplash.com/photo-1716392976013-66d90cac4411?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1716392976013-66d90cac4411?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "AnaCristina Smith on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-plate-of-chicken-black-beans-corn-and-salsa-cIXQYJ8V0Gw",
+  "alt": "Chicken burrito bowl with black beans, corn and salsa",
+  "confidence": "medium"
+ },
+ "lu_tuna_sweetcorn_pasta_salad": {
+  "url": "https://images.unsplash.com/photo-1525002631860-f11325f6da17?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1525002631860-f11325f6da17?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Eiliv Aceron on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/pasta-with-meat-on-plate-Ljq9NMq6jTM",
+  "alt": "Tuna pasta lunch",
+  "confidence": "medium"
+ },
+ "lu_peanut_chicken_noodle_salad": {
+  "url": "https://images.unsplash.com/photo-1692304285751-d0801719d2c5?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1692304285751-d0801719d2c5?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Sven Lippmann on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-white-plate-topped-with-meat-and-veggies-T81kPzb2k1M",
+  "alt": "Chicken noodle salad",
+  "confidence": "medium"
+ },
+ "lu_miso_chicken_noodle_jar": {
+  "url": "https://images.unsplash.com/photo-1761846352355-ae006c7dd3ff?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1761846352355-ae006c7dd3ff?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Andrey Strizhkov on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/bowl-of-noodles-with-chicken-eggs-and-vegetables-PY7yO3GrTaw",
+  "alt": "Bowl of noodles with chicken, egg and vegetables",
+  "confidence": "medium"
+ },
+ "lu_falafel_hummus_box": {
+  "url": "https://images.unsplash.com/photo-1788795567489-22430aa94402?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1788795567489-22430aa94402?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Wera Durakova on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/falafel-and-hummus-lunch-plate-zUMeZl7oxsA",
+  "alt": "Falafel balls with houmous, pitta bread and chopped tomatoes",
+  "confidence": "high"
+ },
+ "lu_harissa_chicken_couscous": {
+  "url": "https://images.unsplash.com/photo-1778850790390-c1ba244fbc85?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1778850790390-c1ba244fbc85?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Arne Buss on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/roasted-chicken-with-vegetable-couscous-on-a-white-plate-X9OO5_vjZGk",
+  "alt": "Spiced roast chicken with vegetable couscous",
+  "confidence": "medium"
+ },
+ "lu_spinach_feta_egg_muffins": {
+  "url": "https://images.unsplash.com/photo-1636044990861-a540e33f9c5f?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1636044990861-a540e33f9c5f?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "nrd on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-white-plate-topped-with-a-quiche-next-to-a-cup-of-coffee-RVPjkE7gKZo",
+  "alt": "A crustless egg bake on a white plate",
+  "confidence": "medium"
+ },
+ "lu_chicken_caesar_wrap": {
+  "url": "https://images.unsplash.com/photo-1581570378527-9585a11deea2?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1581570378527-9585a11deea2?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Cymo Tome on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/two-wraps-with-lettuce-and-vegetables-on-a-plate-b-DjqHZEARE",
+  "alt": "Two lettuce-filled wraps on a plate",
+  "confidence": "medium"
+ },
+ "lu_ploughmans_lunchbox": {
+  "url": "https://images.unsplash.com/photo-1758972573607-509448e9f3e4?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1758972573607-509448e9f3e4?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Luna Wang on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/charcuterie-board-with-cured-meats-cheese-and-pickles-EK9FWSXIS3k",
+  "alt": "Board of sliced meats, cheese and pickles",
+  "confidence": "medium"
+ },
+ "lu_smoked_mackerel_potato_salad": {
+  "url": "https://images.unsplash.com/photo-1790777720426-42228aa256a6?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1790777720426-42228aa256a6?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Rosalie Gdy on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/potato-salad-with-mustard-seeds-DPHtOdPfFjc",
+  "alt": "Mustard potato salad with fresh dill in a bowl",
+  "confidence": "medium"
+ },
+ "lu_spiced_lentil_tomato_soup": {
+  "url": "https://images.unsplash.com/photo-1642497394078-4794e837019c?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1642497394078-4794e837019c?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Karyna Panchenko on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-bowl-of-carrot-soup-with-parsley-on-top-2beCqCd8mAc",
+  "alt": "Bowl of smooth lentil soup topped with herbs",
+  "confidence": "medium"
+ },
+ "lu_ginger_chicken_noodle_soup": {
+  "url": "https://images.unsplash.com/photo-1512003867696-6d5ce6835040?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1512003867696-6d5ce6835040?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Stacey Doyle on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/vegetable-soup-with-beans-and-lemon-grass-dOdtMzvjoc4",
+  "alt": "Chinese-style chicken noodle soup",
+  "confidence": "high"
+ },
+ "lu_sweet_chilli_prawn_noodle_salad": {
+  "url": "https://images.unsplash.com/photo-1584913394604-47399f277ad4?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1584913394604-47399f277ad4?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Yoav Aziz on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/green-vegetable-on-white-ceramic-plate-0XUR3PG-vo4",
+  "alt": "Prawn noodle salad with carrots, peanuts and coriander",
+  "confidence": "high"
+ },
+ "lu_zaatar_chickpea_quinoa_feta": {
+  "url": "https://images.unsplash.com/photo-1754652327512-3a4166c84cce?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1754652327512-3a4166c84cce?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Dillon Lobo on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/quinoa-salad-with-pomegranate-seeds-and-feta-cheese-X2-R25T1A2A",
+  "alt": "Quinoa salad with feta cheese",
+  "confidence": "medium"
+ },
+ "lu_chicken_shawarma_pitta_box": {
+  "url": "https://images.unsplash.com/photo-1676300187264-bec8e83c1780?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1676300187264-bec8e83c1780?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Orkun Orcan on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-pita-sandwich-on-a-plate-with-a-small-bowl-of-dip-L9Co77Tt3Vs",
+  "alt": "Chicken pitta with a small bowl of garlic dip",
+  "confidence": "medium"
+ },
+ "lu_cottage_cheese_protein_pot": {
+  "url": "https://images.unsplash.com/photo-1780915112780-26e80f8744cb?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1780915112780-26e80f8744cb?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Katya Azimova on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/plate-with-deviled-eggs-cheese-sliced-cucumber-and-tomato-9r9l_LypQCU",
+  "alt": "Plate of eggs, cheese, sliced cucumber and tomato",
+  "confidence": "medium"
+ },
+ "lu_gochujang_beef_kimchi_rice": {
+  "url": "https://images.unsplash.com/photo-1718777791262-c66d11baaa3b?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1718777791262-c66d11baaa3b?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Maria Klichik on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-table-topped-with-bowls-of-food-and-chopsticks--UUkXJIXgy4",
+  "alt": "Korean beef rice bowl with vegetables",
+  "confidence": "medium"
+ },
+ "lu_beef_bean_chilli_pot": {
+  "url": "https://images.unsplash.com/photo-1659603606213-cb19636f9f34?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1659603606213-cb19636f9f34?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Green And Great on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-bowl-of-soup-aHko8K3U7as",
+  "alt": "Bowl of bean chilli topped with yogurt and coriander",
+  "confidence": "medium"
+ },
+ "lu_honey_soy_salmon_noodles": {
+  "url": "https://images.unsplash.com/photo-1771384552858-feb0574f958d?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1771384552858-feb0574f958d?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Jonathan Majam on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-delicious-meal-of-grilled-salmon-with-rice-and-vegetables-fahnPDK0GQA",
+  "alt": "Glazed grilled salmon with vegetables",
+  "confidence": "medium"
+ },
+ "lu_coronation_chicken_pot": {
+  "url": "https://images.unsplash.com/photo-1752095809096-f09d22c466c5?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1752095809096-f09d22c466c5?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Giorgio Trovato on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-wrap-and-salad-on-a-white-plate--KLZWBqfq6c",
+  "alt": "Chicken wrap with salad on a white plate",
+  "confidence": "medium"
+ },
+ "lu_cajun_chicken_sweet_potato_box": {
+  "url": "https://images.unsplash.com/photo-1564636242997-77953084df48?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1564636242997-77953084df48?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Leilani Angel on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/cooked-foods-in-plate-np4NAgeXXzc",
+  "alt": "Spiced grilled chicken with roasted sweet potato and greens",
+  "confidence": "medium"
+ },
+ "lu_loaded_beans_on_toast": {
+  "url": "https://images.unsplash.com/photo-1543550494-debcbdb812ac?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1543550494-debcbdb812ac?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Eiliv Aceron on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/beans-and-fried-egg-on-plate-fHrdQ0X8ee8",
+  "alt": "Baked beans with an egg on a plate",
+  "confidence": "medium"
+ },
+ "lu_tomato_mozzarella_frittata": {
+  "url": "https://images.unsplash.com/photo-1673960729830-76830e8b3db4?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1673960729830-76830e8b3db4?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Sandie Clarke on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-square-casserole-dish-with-cheese-and-vegetables-zPjFI7oxJRw",
+  "alt": "Baked egg frittata with cheese and vegetables",
+  "confidence": "medium"
+ },
+ "lu_smoked_salmon_egg_bagel": {
+  "url": "https://images.unsplash.com/photo-1743104750646-cfd7a48192ee?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1743104750646-cfd7a48192ee?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Janet Ganbold on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/delicious-bagel-with-salmon-and-coffee-NuVBjuzUmBQ",
+  "alt": "Bagel filled with smoked salmon",
+  "confidence": "medium"
+ },
+ "lu_tuna_melt_jacket": {
+  "url": "https://images.unsplash.com/photo-1741983202166-889ab12cf4f0?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1741983202166-889ab12cf4f0?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Gennady Zakharin on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/stuffed-potato-with-side-salad-and-avocado-8XYGE9edzl8",
+  "alt": "Filled jacket potato with side salad",
+  "confidence": "medium"
+ },
+ "lu_halloumi_hummus_pitta": {
+  "url": "https://images.unsplash.com/photo-1578172397201-efaa902004a3?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1578172397201-efaa902004a3?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Yulia Khlebnikova on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/two-plates-of-food-on-a-wooden-table-AN5Wva4kIJQ",
+  "alt": "Grilled halloumi and vegetables on houmous-spread bread",
+  "confidence": "medium"
+ },
+ "lu_chicken_fajita_quesadilla": {
+  "url": "https://images.unsplash.com/photo-1678781283125-de3eb701167b?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1678781283125-de3eb701167b?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Nidhin K S on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-white-plate-topped-with-quesadillas-and-sauce-l9g-2ZMws8I",
+  "alt": "Quesadilla wedges with dipping sauce",
+  "confidence": "medium"
+ },
+ "bf_cheerios_milk": {
+  "url": "https://images.unsplash.com/photo-1470909752008-c78c7f6423a3?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1470909752008-c78c7f6423a3?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "freestocks on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/biscuit-lot-on-white-ceramic-bowl-N56qCB6v4Kw",
+  "alt": "Bowl of oat hoop cereal in milk",
+  "confidence": "high"
+ },
+ "bf_crunchy_nut_milk": {
+  "url": "https://images.unsplash.com/photo-1506368197720-c242fdaa44dc?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1506368197720-c242fdaa44dc?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Calum Lewis on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/ceramic-bowl-filled-with-cereals-and-spoon-KMx5YilipX0",
+  "alt": "A bowl of crunchy cereal with a spoon",
+  "confidence": "medium"
+ },
+ "bf_special_k_milk": {
+  "url": "https://images.unsplash.com/photo-1736605406266-dbb985ef3325?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1736605406266-dbb985ef3325?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Tuccera LLC on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-bowl-of-cereal-next-to-a-glass-of-milk-9Ox2TAJj9Yc",
+  "alt": "Square bowl of crisp cereal flakes with a glass of milk",
+  "confidence": "medium"
+ },
+ "bf_cornflakes_milk": {
+  "url": "https://images.unsplash.com/photo-1748370973875-4f75b2f3d4db?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1748370973875-4f75b2f3d4db?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Tuccera LLC on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/cornflakes-and-milk-sit-in-a-bowl-xvc4m8GCibY",
+  "alt": "Black bowl of corn flakes with milk and a spoon",
+  "confidence": "high"
+ },
+ "bf_bran_flakes_milk": {
+  "url": "https://images.unsplash.com/photo-1588710920403-dacfbae1a640?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1588710920403-dacfbae1a640?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "engin akyurt on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/white-ceramic-bowl-with-soup-hGsq0aOZM_w",
+  "alt": "White bowl of cereal flakes with milk",
+  "confidence": "medium"
+ },
+ "bf_fruit_fibre_milk": {
+  "url": "https://images.unsplash.com/photo-1658402218013-18ccf3336bb5?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1658402218013-18ccf3336bb5?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Lisa Weinstein on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-bowl-of-cereal-with-milk-and-berries-Xw_oQ3pVBP0",
+  "alt": "Bowl of fruity muesli-style cereal with milk",
+  "confidence": "medium"
+ },
+ "bf_granola_yogurt": {
+  "url": "https://images.unsplash.com/photo-1763686483398-730a9555b3f5?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1763686483398-730a9555b3f5?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Nikita Khowala on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/greek-yogurt-with-granola-and-a-spoon-ua_qOi2M_80",
+  "alt": "Greek yogurt topped with granola and a spoon",
+  "confidence": "high"
+ },
+ "bf_cheerios_banana": {
+  "url": "https://images.unsplash.com/photo-1431536037963-5c282b753c25?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1431536037963-5c282b753c25?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Federica Diliberto on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/bowl-of-fruits-topping-with-cereal-i2eYyFeTfwc",
+  "alt": "A bowl of cereal topped with fruit",
+  "confidence": "medium"
+ },
+ "bf_toast_butter_jam": {
+  "url": "https://images.unsplash.com/photo-1468577760773-139c2f1c335f?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1468577760773-139c2f1c335f?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Jonathan Pielmayer on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/photo-of-bread-with-strawberry-jam-c69HK1HKHYs",
+  "alt": "Toast spread with strawberry jam",
+  "confidence": "high"
+ },
+ "bf_bagel_cream_cheese": {
+  "url": "https://images.unsplash.com/photo-1585841393012-e4ded4a6e2d0?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1585841393012-e4ded4a6e2d0?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Rachel McDermott on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/bread-with-white-cream-on-black-round-plate-CO5GqJi47dY",
+  "alt": "Bagel spread with soft cream cheese",
+  "confidence": "medium"
+ },
+ "bf_croissant": {
+  "url": "https://images.unsplash.com/photo-1681218079567-35aef7c8e7e4?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1681218079567-35aef7c8e7e4?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Vicky Nguyen on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-croissant-sitting-on-top-of-a-cork-coaster-a4xoMVKzbak",
+  "alt": "A golden butter croissant",
+  "confidence": "high"
+ },
+ "bf_granola_berry_pot": {
+  "url": "https://images.unsplash.com/photo-1692071106919-01bc0b9b0919?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1692071106919-01bc0b9b0919?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Natalie Behn on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-bowl-of-yogurt-with-blackberries-and-granola-qj_zfYm-sdI",
+  "alt": "Thick yogurt with berries and granola",
+  "confidence": "medium"
+ },
+ "bf_fruit_yogurt_pot": {
+  "url": "https://images.unsplash.com/photo-1619683984330-b4604a0554f9?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1619683984330-b4604a0554f9?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Lynnsey Schneider on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/red-apple-fruit-on-blue-ceramic-bowl-J-ltVrZ2Z0o",
+  "alt": "Bowl of yogurt with apple",
+  "confidence": "medium"
+ },
+ "lu_ham_cheese_sandwich": {
+  "url": "https://images.unsplash.com/photo-1647505794572-0a6d945d664d?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1647505794572-0a6d945d664d?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Glenn Diaz on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-ham-and-cheese-sandwich-cut-in-half-87HPR8VlDfg",
+  "alt": "Ham and cheese sandwich cut in half",
+  "confidence": "high"
+ },
+ "lu_chicken_sweetcorn_sandwich": {
+  "url": "https://images.unsplash.com/photo-1754652327590-634bfebc7cf0?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1754652327590-634bfebc7cf0?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Dillon Lobo on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/chicken-salad-sandwich-with-lettuce-on-white-bread-BmP0dv6WfSo",
+  "alt": "Creamy chicken mayo sandwich with lettuce",
+  "confidence": "medium"
+ },
+ "lu_blt": {
+  "url": "https://images.unsplash.com/photo-1722041220514-f6a26e286f2e?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1722041220514-f6a26e286f2e?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "David Trinks on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-bacon-tomato-and-lettuce-sandwich-on-a-plate-p5K85hCgf2w",
+  "alt": "Bacon, lettuce and tomato sandwich on a plate",
+  "confidence": "high"
+ },
+ "lu_cheese_pickle_sandwich": {
+  "url": "https://images.unsplash.com/photo-1630330159773-4b2e6e5b8a56?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1630330159773-4b2e6e5b8a56?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Llio Angharad on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/burger-with-cheese-and-lettuce-AKxNTx-QGhw",
+  "alt": "Cheese sandwich on a plate",
+  "confidence": "medium"
+ },
+ "lu_tuna_mayo_wrap": {
+  "url": "https://images.unsplash.com/photo-1563282397-cdc218eccfda?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1563282397-cdc218eccfda?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Michu Đăng Quang on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/wrapped-food-4icpQA-5eJY",
+  "alt": "A filled tortilla wrap cut in half",
+  "confidence": "medium"
+ },
+ "lu_chicken_salad_wrap": {
+  "url": "https://images.unsplash.com/photo-1574350211910-57ff8da5a209?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1574350211910-57ff8da5a209?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Toa Heftiba on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/wrapped-food-on-black-plate-zJNrEGsgT2s",
+  "alt": "Filled salad wrap halves on a black plate",
+  "confidence": "medium"
+ },
+ "lu_houmous_veg_pitta": {
+  "url": "https://images.unsplash.com/photo-1683725519288-eab9fa352335?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1683725519288-eab9fa352335?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Riddhi K on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-plate-of-hummus-carrots-and-pita-bread-enRLKyJLxrk",
+  "alt": "Houmous with carrot sticks and pitta bread",
+  "confidence": "high"
+ },
+ "lu_cheese_crackers_grapes": {
+  "url": "https://images.unsplash.com/photo-1632001605595-a8b79b435e7e?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1632001605595-a8b79b435e7e?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Content Pixie on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/grapes-crackers-and-cheese-on-a-marble-surface-WQu-SpFWiKU",
+  "alt": "Cheese, crackers and grapes",
+  "confidence": "high"
+ },
+ "lu_tomato_soup_roll": {
+  "url": "https://images.unsplash.com/photo-1775870226585-65e37f70dad7?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1775870226585-65e37f70dad7?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "aubin 47 on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/bowl-of-tomato-soup-with-bread-and-butter-yn_ep5Xrgjw",
+  "alt": "Bowl of tomato soup with buttered bread",
+  "confidence": "high"
+ },
+ "lu_ham_sweetcorn_pasta_salad": {
+  "url": "https://images.unsplash.com/photo-1543339494-b4cd4f7ba686?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1543339494-b4cd4f7ba686?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Hermes Rivera on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/bowlful-of-elbow-salad-4qzaeR_sTYA",
+  "alt": "Bowl of creamy pasta salad",
+  "confidence": "medium"
+ },
+ "lu_ham_cheese_toastie": {
+  "url": "https://images.unsplash.com/photo-1641848421637-713a3eb9c6cc?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1641848421637-713a3eb9c6cc?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Léo Roza on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-sandwich-on-a-plate-next-to-a-cup-of-coffee-WfMUQGnO1hk",
+  "alt": "Toasted ham and cheese sandwich (misto quente)",
+  "confidence": "high"
+ },
+ "bf_shreddies_milk": {
+  "url": "https://images.unsplash.com/photo-1644305660228-16b96b9f4be2?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1644305660228-16b96b9f4be2?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "M Alazia on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/MNSFYU2FTsw",
+  "alt": "A bowl of cereal with milk",
+  "confidence": "medium"
+ },
+ "bf_rice_krispies_milk": {
+  "url": "https://images.unsplash.com/photo-1573500020648-b3ec03fc6e42?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1573500020648-b3ec03fc6e42?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Tati Visual on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/aaxbMvOKWLQ",
+  "alt": "A bowl of crisp rice cereal with milk",
+  "confidence": "medium"
+ },
+ "bf_shredded_wheat_milk": {
+  "url": "https://images.unsplash.com/photo-1575445744788-d77f5e02044a?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1575445744788-d77f5e02044a?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Oleh Aleinyk on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/bowl-of-cereal-on-table-xa5EHM3r_i4",
+  "alt": "A bowl of wholegrain cereal on a table",
+  "confidence": "medium"
+ },
+ "bf_crumpets_butter": {
+  "url": "https://images.unsplash.com/photo-1617588097664-a70eca187267?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1617588097664-a70eca187267?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Jojo Yuen (sharemyfoodd) on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/cooked-food-on-white-ceramic-plate-_UbpslgjBi8",
+  "alt": "Toasted crumpets on a white plate",
+  "confidence": "medium"
+ },
+ "bf_teacake_toasted": {
+  "url": "https://images.unsplash.com/photo-1742308323215-88694157f90b?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1742308323215-88694157f90b?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Carolyn Delacorte on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/freshly-baked-fruit-bread-is-served-with-jam-BtfXBJcj3xc",
+  "alt": "Toasted fruit bread with butter and jam",
+  "confidence": "medium"
+ },
+ "lu_egg_mayo_sandwich": {
+  "url": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Joseph Gonzalez on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/sandwich-with-boiled-egg-fdlZBWIP0aM",
+  "alt": "A sandwich with boiled egg",
+  "confidence": "medium"
+ },
+ "lu_jacket_beans_cheese": {
+  "url": "https://images.unsplash.com/photo-1642522685167-cf414ea225be?auto=format&fit=crop&w=1080&q=75",
+  "thumb": "https://images.unsplash.com/photo-1642522685167-cf414ea225be?auto=format&fit=crop&w=300&h=300&q=70",
+  "credit": "Yolanda Djajakesukma on Unsplash",
+  "licence": "Unsplash Licence",
+  "source": "https://unsplash.com/photos/a-baked-potato-covered-in-cheese-and-broccoli-ZarbohKJIQ8",
+  "alt": "A jacket potato covered in melted cheese",
+  "confidence": "medium"
+ }
+}

@@ -1,0 +1,1122 @@
+[
+ {
+  "id": "lemon",
+  "tescoPack": 1,
+  "prices": {
+   "tesco": {
+    "pack": 1,
+    "price": 0.37,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Lemons Each",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=lemons",
+    "note": "Tesco Lemons 4 Pack £1.45"
+   },
+   "sainsburys": {
+    "pack": 1,
+    "price": 0.37,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Lemons",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/lemons",
+    "note": ""
+   },
+   "asda": {
+    "pack": 1,
+    "price": 0.37,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Lemons",
+    "src": "https://www.trolley.co.uk/product/asda-tangy-zesty-lemons/XSQ850",
+    "note": "price from 'ASDA Lemons' alternative listed on this trolley page; ASDA Tangy & Zesty Lemons pack £1.40"
+   },
+   "aldi": {
+    "pack": 4,
+    "price": 0.89,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Everyday Essentials Wonky Lemons 4 pack",
+    "src": "https://www.aldi.co.uk/product/everyday-essentials-wonky-lemons-000000000000268496",
+    "note": "Aldi sells no single lemons"
+   },
+   "lidl": {
+    "pack": 4,
+    "price": 0.89,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "black_pepper",
+  "tescoPack": 100,
+  "prices": {
+   "tesco": {
+    "pack": 100,
+    "price": 2.55,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Ground Black Pepper 100G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=black%20pepper",
+    "note": "Clubcard 'Any 4 for 3' cooking ingredients multibuy to 26/10/2026; no single-item Clubcard price"
+   },
+   "sainsburys": {
+    "pack": 100,
+    "price": 2.55,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Ground Black Pepper 100g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/black%20pepper",
+    "note": "Stamford Street Co. Ground Black Pepper 55g 87p also stocked"
+   },
+   "asda": {
+    "pack": 104,
+    "price": 2.7,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "COOK by ASDA Ground Black Pepper 104g",
+    "src": "https://www.trolley.co.uk/product/asda-ground-black-pepper/YUP409",
+    "note": "trolley 'usual' price shown as £1.51"
+   },
+   "aldi": {
+    "pack": 100,
+    "price": 3.35,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Ready, Set…Cook! Ground Black Pepper 100g",
+    "src": "https://www.trolley.co.uk/product/stonemill-ground-black-pepper/CQX613",
+    "note": "trolley.co.uk price range £3.35–£3.40; item shown out of stock online; not on aldi.co.uk herbs & spices page 1; page 2 blocked"
+   },
+   "lidl": {
+    "pack": 100,
+    "price": 3.35,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Ready, Set…Cook! Ground Black Pepper 100g",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "eggs",
+  "tescoPack": 12,
+  "prices": {
+   "tesco": {
+    "pack": 12,
+    "price": 2.95,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Medium Free Range Eggs 12 Pack",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=free%20range%20eggs",
+    "note": "Tesco Free Range Eggs Medium 6 Pack £1.80"
+   },
+   "sainsburys": {
+    "pack": 12,
+    "price": 2.95,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's British Free Range Eggs Medium x12",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/free%20range%20eggs",
+    "note": "Medium x6 £1.85"
+   },
+   "asda": {
+    "pack": 12,
+    "price": 2.95,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA 12 Free Range Medium Eggs",
+    "src": "https://www.trolley.co.uk/product/asda-12-medium-free-range-eggs/YDR153",
+    "note": "ASDA 6 Free Range Medium Eggs £1.80 (trolley AKL087)"
+   },
+   "aldi": {
+    "pack": 12,
+    "price": 2.49,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": false,
+    "label": "Merevale British Medium Free Range Eggs 12 Pack",
+    "src": "https://allsupers.co.uk/browse/dairy-eggs-and-butter/eggs/free-range-eggs",
+    "note": "no aldi.co.uk egg page found"
+   },
+   "lidl": {
+    "pack": 12,
+    "price": 2.49,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "spinach",
+  "tescoPack": 250,
+  "prices": {
+   "tesco": {
+    "pack": 250,
+    "price": 1.3,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Baby Spinach 250G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=baby%20spinach",
+    "note": ""
+   },
+   "sainsburys": {
+    "pack": 200,
+    "price": 1.5,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Baby Leaf Spinach 200g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/baby%20spinach",
+    "note": "Nectar multibuy 'buy 3 get cheapest free'; Sainsbury's Young Spinach 260g £1.35"
+   },
+   "asda": {
+    "pack": 180,
+    "price": 1,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Mild & Tender Baby Spinach 180g",
+    "src": "https://www.trolley.co.uk/product/asda-mild-tender-baby-spinach/XZZ370",
+    "note": "trolley usual £1.10"
+   },
+   "aldi": {
+    "pack": 240,
+    "price": 1.09,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Nature's Pick Baby Spinach 240g",
+    "src": "https://www.aldi.co.uk/product/nature-s-pick-baby-spinach-000000000000339750",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 240,
+    "price": 1.09,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl baby spinach 240g (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "turmeric",
+  "tescoPack": 45,
+  "prices": {
+   "tesco": {
+    "pack": 45,
+    "price": 1,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Ground Turmeric 45G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=ground%20turmeric",
+    "note": "Clubcard 'Any 4 for 3' cooking ingredients multibuy to 26/10/2026"
+   },
+   "sainsburys": {
+    "pack": 48,
+    "price": 1.15,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Turmeric 48g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/turmeric",
+    "note": "Sainsbury's Ground Turmeric 120g £1.95"
+   },
+   "asda": {
+    "pack": 45,
+    "price": 0.95,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "COOK by ASDA Ground Turmeric 45g",
+    "src": "https://www.trolley.co.uk/product/asda-ground-turmeric/XZM309",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 40,
+    "price": 0.75,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Ready, Set…Cook! Ground Turmeric 40g",
+    "src": "https://www.aldi.co.uk/product/ready-set-cook-ground-turmeric-000000000488554001",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 40,
+    "price": 0.75,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent of Ready, Set...Cook! Ground Turmeric 40g",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "ground_cinnamon",
+  "tescoPack": 36,
+  "prices": {
+   "tesco": {
+    "pack": 36,
+    "price": 1,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Ground Cinnamon 36g",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=ground%20cinnamon",
+    "note": "Clubcard 'Any 4 for 3' cooking ingredients multibuy to 26/10/2026"
+   },
+   "sainsburys": {
+    "pack": 38,
+    "price": 1.15,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Ground Cinnamon 38g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/ground%20cinnamon",
+    "note": "Stamford Street Co. Ground Cinnamon 38g 85p also stocked"
+   },
+   "asda": {
+    "pack": 34,
+    "price": 0.95,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "COOK by ASDA Ground Cinnamon 34g",
+    "src": "https://www.trolley.co.uk/product/asda-ground-cinnamon/JYB566",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 40,
+    "price": 0.89,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Ready, Set…Cook! Ground Cinnamon 40g",
+    "src": "https://www.aldi.co.uk/product/ready-set-cook-ground-cinnamon-000000000000335976",
+    "note": "pack now shown as 40g (was assumed 38g)"
+   },
+   "lidl": {
+    "pack": 38,
+    "price": 0.89,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "worcestershire",
+  "tescoPack": 150,
+  "prices": {
+   "tesco": {
+    "pack": 150,
+    "price": 1.3,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Worcester Sauce 150Ml",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=worcestershire%20sauce",
+    "note": ""
+   },
+   "sainsburys": {
+    "pack": 150,
+    "price": 1.3,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Worcester Sauce 150ml",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/worcester%20sauce",
+    "note": "'Low everyday price'; Nectar label shown with no amount"
+   },
+   "asda": {
+    "pack": 150,
+    "price": 1.3,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Savoury Worcester Sauce 150ml",
+    "src": "https://www.trolley.co.uk/product/asda-worcester-sauce/ONV554",
+    "note": "trolley usual £1.14"
+   },
+   "aldi": {
+    "pack": 150,
+    "price": 0.69,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Bramwells Worcestershire Sauce 150ml",
+    "src": "https://www.trolley.co.uk/product/bramwells-worcestershire-sauce/UBI176",
+    "note": "out of stock online; trolley usual price"
+   },
+   "lidl": {
+    "pack": 150,
+    "price": 0.69,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent of Bramwells Worcestershire Sauce 150ml",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "chilli_powder",
+  "tescoPack": 50,
+  "prices": {
+   "tesco": {
+    "pack": 50,
+    "price": 1,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Hot Chilli Powder 50G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=chilli%20powder",
+    "note": "Clubcard 'Any 4 for 3' cooking ingredients multibuy to 26/10/2026"
+   },
+   "sainsburys": {
+    "pack": 44,
+    "price": 1.15,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Hot Chilli Powder 44g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/chilli%20powder",
+    "note": ""
+   },
+   "asda": {
+    "pack": 44,
+    "price": 0.95,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "COOK by ASDA Hot Chilli Powder 44g",
+    "src": "https://www.trolley.co.uk/product/asda-hot-chilli-powder/SHP185",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 40,
+    "price": 0.79,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Ready, Set…Cook! Chilli Powder 40g",
+    "src": "https://www.aldi.co.uk/products/food-cupboard/herbs-spices/k/1588161416978053007",
+    "note": "heat level not stated"
+   },
+   "lidl": {
+    "pack": 40,
+    "price": 0.79,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "baguette",
+  "tescoPack": 2,
+  "prices": {
+   "tesco": {
+    "pack": 2,
+    "price": 1.5,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Homebake Part Baked White Baguettes 2 Pack",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=part%20baked%20baguettes",
+    "note": "multibuy any 2 for £2 (not a loyalty price); H.W. Nevill's Part Baked White Baguette 2 Pack £0.85 (Aldi Price Match)"
+   },
+   "sainsburys": {
+    "pack": 2,
+    "price": 1.5,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Bake at Home White Baguettes x2",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/part%20baked%20baguettes",
+    "note": "Nectar multibuy any 2 for £2 (not a single-pack price)"
+   },
+   "asda": {
+    "pack": 2,
+    "price": 1.18,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Bake at Home 2 Baguettes 300g",
+    "src": "https://www.trolley.co.uk/product/bake-at-home-2-baguettes/RPN058",
+    "note": "trolley usual £0.98"
+   },
+   "aldi": {
+    "pack": 2,
+    "price": 0.85,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": true,
+    "label": "Village Bakery Bake at Home White Baguettes",
+    "src": "https://www.aldi.co.uk/product/village-bakery-bake-at-home-white-baguettes-000000000000279031",
+    "note": "pack count not stated on page; 2-pack assumed"
+   },
+   "lidl": {
+    "pack": 2,
+    "price": 0.85,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent of Village Bakery Bake at Home White Baguettes 2 pack",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "fish_sauce",
+  "tescoPack": 150,
+  "prices": {
+   "tesco": {
+    "pack": 150,
+    "price": 1.85,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Blue Dragon Fish Sauce 150Ml",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=fish%20sauce",
+    "note": "no Tesco own-brand; Thai Dragon Fish Sauce 200ml £1.85 also stocked"
+   },
+   "sainsburys": {
+    "pack": 150,
+    "price": 1.85,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Blue Dragon Fish Sauce 150ml",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/fish%20sauce",
+    "note": "no own-brand; Squid Brand Fish Sauce 725ml £2.40"
+   },
+   "asda": {
+    "pack": 150,
+    "price": 1.66,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Blue Dragon Fish Sauce 150ml",
+    "src": "https://www.trolley.co.uk/product/blue-dragon-fish-sauce/KOA873",
+    "note": "Asda price from trolley comparison; no Asda own-brand found"
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "tikka_paste",
+  "tescoPack": 283,
+  "prices": {
+   "tesco": {
+    "pack": 283,
+    "price": 3.35,
+    "loyalty": 2.6,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Patak's Indian Tikka Masala Curry Paste 283g",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=tikka%20masala%20paste",
+    "note": "no Tesco own-brand tikka paste; Clubcard price valid to 26/10/2026"
+   },
+   "sainsburys": {
+    "pack": 200,
+    "price": 2.15,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Fragrant Tikka Curry Paste, Inspired to Cook 200g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/tikka%20paste",
+    "note": "Patak's 283g £3.35 (likely Nectar £2.75)"
+   },
+   "asda": {
+    "pack": 200,
+    "price": 2.3,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "COOK by ASDA Tikka Masala Curry Paste 200g",
+    "src": "https://www.trolley.co.uk/product/asda-tikka-masala-curry-paste/NZG921",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 190,
+    "price": 1.39,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": true,
+    "label": "Ready, Set…Cook! Tikka Masala Curry Paste",
+    "src": "https://www.aldi.co.uk/product/ready-set-cook-tikka-masala-curry-paste-000000000556914001",
+    "note": "price direct; pack size not shown on Aldi page, ~190g assumed"
+   },
+   "lidl": {
+    "pack": 190,
+    "price": 1.39,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl own-brand equivalent (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "gochujang",
+  "tescoPack": 90,
+  "prices": {
+   "tesco": {
+    "pack": 90,
+    "price": 1.8,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Gochujang Paste 90G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=gochujang",
+    "note": "Clubcard 'Any 4 for 3' cooking ingredients multibuy to 26/10/2026"
+   },
+   "sainsburys": {
+    "pack": 170,
+    "price": 2.25,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sun Hee Gochujang Sun Dried Red Chilli Paste 170g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/gochujang%20paste",
+    "note": "no Sainsbury's own-brand gochujang listed; Blue Dragon 135g £2.60"
+   },
+   "asda": {
+    "pack": 110,
+    "price": 2.32,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "COOK by ASDA Gochujang Paste 110g",
+    "src": "https://www.trolley.co.uk/product/cook-by-asda-gochujang-paste/LPJ985",
+    "note": ""
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "halloumi",
+  "tescoPack": 225,
+  "prices": {
+   "tesco": {
+    "pack": 225,
+    "price": 1.99,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Halloumi 225G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=halloumi",
+    "note": "Aldi Price Match"
+   },
+   "sainsburys": {
+    "pack": 225,
+    "price": 1.99,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Cypriot Halloumi Cheese 225g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/halloumi",
+    "note": "Aldi price match"
+   },
+   "asda": {
+    "pack": 225,
+    "price": 1.97,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Halloumi 225g",
+    "src": "https://www.trolley.co.uk/product/asda-halloumi/OUD520",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 225,
+    "price": 1.99,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Emporium Halloumi Plain 225g",
+    "src": "https://www.aldi.co.uk/product/emporium-halloumi-plain-225g-000000000000612513",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 225,
+    "price": 1.99,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl halloumi 225g (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "courgette",
+  "tescoPack": 1,
+  "prices": {
+   "tesco": {
+    "pack": 1,
+    "price": 0.7,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Courgettes Loose (£2.78/kg, ~250g)",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=courgette",
+    "note": "loose £2.78/kg priced at 250g; Pre Packed 500G £1.39"
+   },
+   "sainsburys": {
+    "pack": 1,
+    "price": 0.7,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Courgettes Loose (£2.78/kg, ~250g)",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/courgettes",
+    "note": "loose £2.78/kg priced at 250g; 500g pack £1.45"
+   },
+   "asda": {
+    "pack": 1.32,
+    "price": 0.83,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Mild & Delicate Courgettes 330g",
+    "src": "https://www.trolley.co.uk/product/courgettes/NYQ560",
+    "note": "330g pack = 1.32 courgettes at 250g each (pack corrected from 1)"
+   },
+   "aldi": {
+    "pack": 2,
+    "price": 1.39,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Nature's Pick Courgettes 500g",
+    "src": "https://www.aldi.co.uk/product/nature-s-pick-courgettes-000000000000339808",
+    "note": "500g pack ≈ 2 courgettes; Aldi sells no loose/single"
+   },
+   "lidl": {
+    "pack": 2,
+    "price": 1.39,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "beef_stir_fry_strips",
+  "tescoPack": 357,
+  "prices": {
+   "tesco": {
+    "pack": 357,
+    "price": 6.4,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Beef Stir Fry Strips 357G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=beef%20stir%20fry%20strips",
+    "note": ""
+   },
+   "sainsburys": {
+    "pack": 350,
+    "price": 6.25,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's British or Irish Stir Fry Beef 350g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/beef%20stir%20fry%20strips",
+    "note": ""
+   },
+   "asda": {
+    "pack": 300,
+    "price": 5.27,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Beef Stir-Fry Strips 300g",
+    "src": "https://www.trolley.co.uk/product/asda-tender-beef-stir-fry-strips/EBE183",
+    "note": ""
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "butter_beans",
+  "tescoPack": 400,
+  "prices": {
+   "tesco": {
+    "pack": 400,
+    "price": 0.45,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Butter Beans In Water 400G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=butter%20beans",
+    "note": "Aldi Price Match"
+   },
+   "sainsburys": {
+    "pack": 400,
+    "price": 0.45,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Butter Beans In Water 400g (235g drained)",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/butter%20beans",
+    "note": ""
+   },
+   "asda": {
+    "pack": 400,
+    "price": 0.5,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Butter Beans in Water 400g",
+    "src": "https://www.trolley.co.uk/product/asda-butter-beans-in-water/NYM112",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 400,
+    "price": 0.45,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Four Seasons Butter Beans 400g (240g drained)",
+    "src": "https://www.aldi.co.uk/product/four-seasons-butter-beans-000000000625454001",
+    "note": "page gives 240g drained weight (400g tin)"
+   },
+   "lidl": {
+    "pack": 400,
+    "price": 0.45,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent of Four Seasons Butter Beans 400g",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "pepperoni",
+  "tescoPack": 120,
+  "prices": {
+   "tesco": {
+    "pack": 120,
+    "price": 0.99,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Pizza Pepperoni 120G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=tesco%20pepperoni",
+    "note": "Aldi Price Match"
+   },
+   "sainsburys": {
+    "pack": 100,
+    "price": 1,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's German Pizza Pepperoni Slices x32 100g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/pepperoni",
+    "note": "Nectar label shown with no amount"
+   },
+   "asda": {
+    "pack": 125,
+    "price": 1.25,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Pizza Pepperoni 125g",
+    "src": "https://www.trolley.co.uk/product/asda-danish-pepperoni/EST742",
+    "note": ""
+   },
+   "aldi": {
+    "pack": 120,
+    "price": 0.99,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Cucina Mild Pepperoni 24 Slices 120g",
+    "src": "https://www.aldi.co.uk/product/cucina-mild-pepperoni-24-slices-000000000399316002",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 120,
+    "price": 0.99,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ },
+ {
+  "id": "gram_flour",
+  "tescoPack": 1000,
+  "prices": {
+   "tesco": {
+    "pack": 1000,
+    "price": 2.65,
+    "loyalty": 2,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Koh-I-Noor Besan Gram Flour 1Kg",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=gram%20flour",
+    "note": "no Tesco own-brand; Clubcard price valid to 10/11/2026; Virani Gram Flour 2Kg £4.50 (Clubcard £3.00)"
+   },
+   "sainsburys": {
+    "pack": 1000,
+    "price": 2,
+    "loyalty": 1.7,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "East End Gram Flour 1kg",
+    "src": "https://www.sainsburys.co.uk/groceries/product/east-end-gram-flour-1kg",
+    "note": "Nectar price until 08/11/2026 (page shows £1.70 and £2.00; lower taken as Nectar)"
+   },
+   "asda": {
+    "pack": 2000,
+    "price": 2.44,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "KTC Superfine Gram Flour 2kg",
+    "src": "https://www.trolley.co.uk/product/ktc-gram-flour/ZXA962",
+    "note": "no 1kg found at Asda"
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "udon_noodles",
+  "tescoPack": 300,
+  "prices": {
+   "tesco": {
+    "pack": 300,
+    "price": 1,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Straight To Wok Udon Noodles 300G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=udon%20noodles",
+    "note": ""
+   },
+   "sainsburys": {
+    "pack": 300,
+    "price": 1.1,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Udon Noodles Quick To Cook x2 300g",
+    "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/udon%20noodles",
+    "note": "Nectar label shown with no amount"
+   },
+   "asda": {
+    "pack": 300,
+    "price": 2.15,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Amoy Straight to Wok Thick Udon Noodles 2x150g",
+    "src": "https://www.trolley.co.uk/product/amoy-straight-to-wok-udon-thick-noodles/FAZ305",
+    "note": "no Asda own-brand udon; 'Asda Straight to Wok Noodles' 300g £1.00 not described as udon"
+   },
+   "aldi": null,
+   "lidl": null
+  }
+ },
+ {
+  "id": "ground_almonds",
+  "tescoPack": 250,
+  "prices": {
+   "tesco": {
+    "pack": 250,
+    "price": 4.25,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Tesco Ground Almonds 250G",
+    "src": "https://www.tesco.com/groceries/en-GB/search?query=ground%20almonds",
+    "note": "Tesco Ground Almonds 500G £6.60"
+   },
+   "sainsburys": {
+    "pack": 200,
+    "price": 3.5,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "Sainsbury's Ground Almonds 200g",
+    "src": "https://www.sainsburys.co.uk/groceries/product/sainsburys-ground-almonds-200g",
+    "note": "500g £6.80"
+   },
+   "asda": {
+    "pack": 150,
+    "price": 1.71,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "ASDA Ground Almonds 150g",
+    "src": "https://www.trolley.co.uk/product/asda-ground-almonds/QPD154",
+    "note": "trolley usual £1.42"
+   },
+   "aldi": {
+    "pack": 150,
+    "price": 1.19,
+    "loyalty": null,
+    "checked": "2026-10-23",
+    "verified": true,
+    "est": false,
+    "label": "The Pantry Ground Almonds 150g",
+    "src": "https://www.aldi.co.uk/product/the-pantry-ground-almonds-000000000496633001",
+    "note": ""
+   },
+   "lidl": {
+    "pack": 150,
+    "price": 1.19,
+    "loyalty": null,
+    "checked": "2026-10-22",
+    "verified": false,
+    "est": true,
+    "label": "Lidl equivalent (est.)",
+    "src": "",
+    "note": "estimate from Aldi"
+   }
+  }
+ }
+]
