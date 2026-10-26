@@ -242,7 +242,8 @@ function tidyShop(t) { return { ...t, amount: num(t.amount, 0), date: isoOk(t.da
 function rebuild() {
   if (!S.lib) return;
   const recipes = {}; for (const r of S.lib.recipes) recipes[r.id] = r;
-  for (const id in RAW.myR) { const x = RAW.myR[id]; if (x.hidden) delete recipes[id]; else recipes[id] = { ...tidyRecipe(x), id }; }
+  // a recipe you've added or edited keeps the library's stock photo (if it has one), never a web address saved with it
+  for (const id in RAW.myR) { const x = RAW.myR[id]; if (x.hidden) delete recipes[id]; else { const lib = recipes[id] && !RAW.myR[id].custom ? S.lib.recipes.find(r => r.id === id) : null; recipes[id] = { ...tidyRecipe(x), id, photo: lib ? lib.photo : undefined }; } }
   const all = Object.values(recipes).filter(r => r && r.title && Array.isArray(r.ingredients)).sort((a, b) => a.title.localeCompare(b.title));
   all.forEach(spellRecipe);
   S.RMAP = {}; all.forEach(r => S.RMAP[r.id] = r);
@@ -271,7 +272,7 @@ function subscribeHousehold(hid) {
   Store.setHousehold(hid); pruneWeekCopies(hid); linkScope(hid);
   RAW.myR = {}; RAW.myI = {}; RAW.gotR = false; RAW.gotI = false; S.thumbs = {}; S.fullPhotos = {};
   // nothing from the household you were in carries over while this one loads
-  RAW.people = {}; S.people = []; S.settings = clone(DEFAULTS); S.pantry = { status: {} }; S.pantryRaw = null; S.photoPrefs = { hidden: {} }; S.ratings = {}; S.shopsLog = null; S.thisWeekDoc = null; S.histAll = null; S.histCost = {};
+  S.pendingRestore = null; RAW.people = {}; S.people = []; S.settings = clone(DEFAULTS); S.pantry = { status: {} }; S.pantryRaw = null; S.photoPrefs = { hidden: {} }; S.ratings = {}; S.shopsLog = null; S.thisWeekDoc = null; S.histAll = null; S.histCost = {};
   unsub.hh = Store.watchHousehold(hid, hh => { S.household = hh; if (hh && Store.touchMember && S.user) Store.touchMember(hh, S.user); schedule(); }, onSubErr);
   unsub.backup = Store.sub('config/backup', d => { S.backup = d || null; schedule(); maybeAutoBackup(); }, () => {});
   unsub.recipes = Store.sub('recipes', docs => { RAW.myR = {}; docs.forEach(d => RAW.myR[d.id] = d); RAW.gotR = true; rebuild(); }, onSubErr);

@@ -215,6 +215,31 @@ const signedIn = (name) => ({ 'users/u_ethan': { households: ['h1'], current: 'h
     ok(posts === n0 && ![...A.w.__docs.keys()].some(k => k.includes('/shops/')), 'leaving: Budgie stops syncing into the household you left');
     ok(/Set up your kitchen/.test(A.d.querySelector('#app').textContent), 'leaving: and you\u2019re back at the start');
   }
+  // ---- 8. a recipe record can't bring in a picture from another website ----
+  if (!only || only === 8) {
+    const pre = signedIn(); pre['households/h1/people/u_ethan'] = { name: 'Ethan', uid: 'u_ethan', order: 1 };
+    const libR = JSON.parse(lib).recipes.find(r => r.photo && r.photo.url);
+    pre['households/h1/recipes/my_pic'] = { title: 'Pixel pie', icon: 'x', cuisine: 'British', protein: 'veggie', time: 20, servings: 2, equipment: [], custom: true, ingredients: [{ i: 'onion', q: 1 }], steps: [{ text: 'Cook' }], photo: { thumb: 'https://tracker.example/t.gif', url: 'https://tracker.example/big.gif', source: 'https://tracker.example/' } };
+    pre['households/h1/recipes/' + libR.id] = { ...libR, title: libR.title + ' (ours)', photo: { thumb: 'https://tracker.example/t2.gif', url: 'https://tracker.example/big2.gif' } };
+    const A = boot({ pre }); await wait(1500);
+    await A.act('tab', 'recipes', null, 500); await A.act('open-recipe', 'my_pic', null, 400); await A.act('sheet-back'); await A.act('open-recipe', libR.id, null, 400);
+    const html = A.d.body.innerHTML;
+    ok(!/tracker\.example/.test(html), 'photos: a recipe record\u2019s own picture address isn\u2019t loaded');
+    ok(html.includes(libR.photo.url.split('?')[0].slice(0, 40)), 'photos: an edited library recipe keeps the library\u2019s photo');
+  }
+  // ---- 9. a restore waiting to be confirmed doesn't follow you into another household ----
+  if (!only || only === 9) {
+    const pre = signedIn(); pre['users/u_ethan'] = { households: ['h1', 'h2'], current: 'h1', names: { h1: 'Home', h2: 'Mum\u2019s' } };
+    pre['households/h2'] = { name: 'Mum\u2019s', members: ['u_ethan'], memberNames: { u_ethan: 'Ethan' }, inviteCode: 'MUMMUM' };
+    const A = boot({ pre }); await wait(1500);
+    await A.act('tab', 'settings'); await A.act('set-page', 'backup', null, 300);
+    const inp = A.d.querySelector('#restore-file'); const file = { name: 'b.json', text: async () => JSON.stringify({ app: 'Peckish', docs: [{ path: 'ratings/it_tuna_puttanesca', data: { u_ethan: { stars: 5 } } }] }) };
+    Object.defineProperty(inp, 'files', { value: [file] }); inp.dispatchEvent(new A.w.Event('change', { bubbles: true })); await wait(500);
+    const staged = !!A.d.querySelector('[data-act="restore-yes"]');
+    A.w.__docs.set('users/u_ethan', { ...A.w.__docs.get('users/u_ethan'), current: 'h2' }); await A.w.__refreshMe(); await wait(800);
+    await A.act('restore-yes', null, null, 800);
+    ok(staged && !A.w.__docs.has('households/h2/ratings/it_tuna_puttanesca'), 'restore: one staged in one household isn\u2019t put into another');
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();
