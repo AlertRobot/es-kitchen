@@ -113,6 +113,29 @@ const CAL = { household: { dinnerTime: '19:00' }, people: [{ id: 'ethan', name: 
     await A.click('[data-act="sheet-back"]'); await A.click('[data-act="tab"][data-v="recipes"]', 400);
     ok(!A.d.querySelector('#app img[src*="tracker.example"]'), 'photos: nor on the recipe cards');
   }
+  // ---- 5. odd record ids (from a crafted backup, or typed in the console) can't add markup to the page ----
+  {
+    const bad = 'x"><b id="pwn">';
+    const sheet = async (url, opt) => {
+      if (!/script\.google\.com/.test(url)) return { ok: true, json: async () => JSON.parse(lib) };
+      const b = JSON.parse(opt.body); let r = { ok: true, sheetUrl: 'https://docs.google.com/x' };
+      if (b.action === 'restore') r = { ok: true, docs: [{ path: 'ingredients/' + bad.replace('x', 'y'), data: { name: 'Odd beans', unit: 'g', packs: [400], aisle: 'Tins & jars', prices: {}, custom: true } }, { path: 'ratings/it_tuna_puttanesca', data: { u_ethan: { stars: 5 } } }], at: '2026-10-26T10:00:00Z', by: 'Ethan' };
+      return { ok: true, text: async () => JSON.stringify(r) };
+    };
+    const A = boot({ fetch: sheet, pre: { ['households/h1/ingredients/' + bad]: { name: 'Odd peas', unit: 'g', packs: [400], aisle: 'Tins & jars', prices: {}, custom: true, staple: false } } }); await A.start();
+    await A.click('[data-act="tab"][data-v="settings"]'); await A.click('[data-act="set-page"][data-v="prices"]');
+    const q = A.d.querySelector('#pq'); q.value = 'odd'; q.dispatchEvent(new A.w.Event('input', { bubbles: true })); await wait(200);
+    await A.click('[data-act="expand"]', 300); A.d.activeElement && A.d.activeElement.blur && A.d.activeElement.blur(); await wait(100);
+    const pricesOk = !A.d.querySelector('#pwn') && !!A.d.querySelector('.pricetable');
+    await A.click('[data-act="tab"][data-v="kitchen"]'); await A.click('[data-act="kit-view"][data-v="left"]');
+    ok(pricesOk && !A.d.querySelector('#pwn'), 'ids: an odd ingredient id shows as text, not markup');
+    await A.click('[data-act="tab"][data-v="settings"]'); await A.click('[data-act="set-page"][data-v=""]'); await A.click('[data-act="set-page"][data-v="backup"]');
+    A.d.querySelector('#bk-url').value = 'https://script.google.com/macros/s/abc/exec'; A.d.querySelector('#bk-key').value = 'k';
+    await A.submit('[data-form="backup-connect"]', 1500);
+    await A.click('[data-act="restore-sheet"]', 600); await A.click('[data-act="restore-yes"]', 800);
+    ok(!A.w.__docs.has('households/h1/ingredients/' + bad.replace('x', 'y')), 'restore: a record with an odd id is left out');
+    ok(A.w.__docs.has('households/h1/ratings/it_tuna_puttanesca'), 'restore: the rest comes back');
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();

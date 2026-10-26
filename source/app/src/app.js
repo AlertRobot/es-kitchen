@@ -543,7 +543,7 @@ function renderWeek() {
       if (day.freezer) tags.push('<span class="tag">' + ICON.snow + ' From the freezer</span>');
       if (r.category === 'treat') tags.push('<span class="tag treat">Treat</span>');
       pc.swaps.forEach(s => tags.push('<span class="tag swap">Swap for ' + h(s.person) + '</span>'));
-      if (day.extra) tags.push('<span class="tag">+' + day.extra + ' ' + (day.extraUse === 'freeze' ? 'to freeze' : 'for lunch') + '</span>');
+      if (day.extra) tags.push('<span class="tag">+' + (Number(day.extra) || 0) + ' ' + (day.extraUse === 'freeze' ? 'to freeze' : 'for lunch') + '</span>');
       if (!hasEquipment(r, S.settings)) tags.push('<span class="tag warn">Needs ' + h(missingEquipment(r).join(', ')) + '</span>');
       const rs = ratingSummary()[r.id]; if (rs) tags.push('<span class="tag ' + (rs.avg < 3 ? 'bad' : 'good') + '">' + rs.avg.toFixed(1) + '★</span>');
       out += '<div class="mealwrap"><button class="meal" data-act="open-day" data-v="' + d + '">' + tileHtml(r) + '<span class="body"><span class="ttl">' + h(rt(r)) + '</span>' +
@@ -1080,11 +1080,11 @@ function shopRowHtml(row, B, w) {
   } else why = 'need ' + fmtQty(row.need, ing.unit);
   let out = '<div class="item ' + (done ? 'done' : '') + '"><button class="check ' + (done ? 'on' : '') + '" data-act="tick" data-v="' + h(row.i) + '" aria-label="' + (done ? 'Untick ' : 'Tick ') + h(ing.name) + '" aria-pressed="' + done + '">' + (done ? ICON.tick : '') + '</button>' +
     '<div style="min-width:0"><div class="iname">' + h(ing.name) + '</div><div class="muted small">' + packTxt + ' · ' + why + '</div>' + (row.staple ? '<button class="linkish small" data-act="have" data-v="' + h(row.i) + '">Skip this week</button>' : '') + '</div>' +
-    '<button class="more" data-act="expand" data-v="s:' + row.i + '" aria-expanded="' + !!open + '">' + (ps.missing ? '<span class="tag warn">add price</span>' : '<span class="money">' + fmtMoney(ps.cost) + '</span>' + (ps.stale ? ' <span class="tag warn">old</span>' : '')) + '</button>';
+    '<button class="more" data-act="expand" data-v="s:' + h(row.i) + '" aria-expanded="' + !!open + '">' + (ps.missing ? '<span class="tag warn">add price</span>' : '<span class="money">' + fmtMoney(ps.cost) + '</span>' + (ps.stale ? ' <span class="tag warn">old</span>' : '')) + '</button>';
   if (open) {
     const sp = shopPrice(ing, weekShop(), false);
     out += '<div class="shopprices">' + B.keys.map(k => { const x = row.byShop[k.key]; return '<div><span>' + SHOP_KEY_NAMES[k.key] + (x.pack && !x.missing ? ' <span class="muted">' + x.count + ' × ' + packLabel(ing, x.pack) + '</span>' : '') + '</span><span><span class="money">' + fmtMoney(x.cost) + '</span>' + (x.missing ? ' <span class="tag">no price</span>' : x.stale ? ' <span class="tag warn">old</span>' : x.est ? ' <span class="tag">est.</span>' : '') + '</span></div>'; }).join('') +
-      '<form class="row paidrow" data-form="paid" data-v="' + h(row.i) + '"><label for="paid-' + row.i + '" class="small">I paid £</label><input class="input" id="paid-' + row.i + '" type="number" step="0.01" min="0" inputmode="decimal" placeholder="' + (sp ? sp.price.toFixed(2) : '') + '"><span class="small muted">for ' + (sp ? packLabel(ing, sp.pack) : 'one pack') + ' at ' + h((SHOPS.find(x => x.id === weekShop()) || SHOPS[0]).name) + '</span><button class="btn small-btn" type="submit">Save</button></form>' +
+      '<form class="row paidrow" data-form="paid" data-v="' + h(row.i) + '"><label for="paid-' + h(row.i) + '" class="small">I paid £</label><input class="input" id="paid-' + h(row.i) + '" type="number" step="0.01" min="0" inputmode="decimal" placeholder="' + (sp ? sp.price.toFixed(2) : '') + '"><span class="small muted">for ' + (sp ? packLabel(ing, sp.pack) : 'one pack') + ' at ' + h((SHOPS.find(x => x.id === weekShop()) || SHOPS[0]).name) + '</span><button class="btn small-btn" type="submit">Save</button></form>' +
       '<div><span class="muted">Prices last checked ' + lastChecked(ing) + '</span><span class="row" style="gap:6px"><button class="chip" data-act="have" data-v="' + h(row.i) + '">We have it</button><button class="chip" data-act="edit-price" data-v="' + h(row.i) + '">Edit prices</button></span></div></div>';
   }
   return out + '</div>';
@@ -1128,11 +1128,11 @@ function renderComparison(B) {
 function carryRow(c, k) {
   const ing = S.ING[c.i]; if (!ing) return '';
   return '<div class="stack ruled"><div class="row between"><b>' + h(ing.name) + '</b><button class="icon-btn" data-act="del-carry" data-v="' + k + '" aria-label="Remove ' + h(ing.name) + '">' + ICON.close + '</button></div>' +
-    '<div class="grid2"><label class="field"><span>Amount (' + (ing.unit === 'each' ? 'items' : ing.unit) + ')</span><input class="input" type="number" min="0" step="any" id="cq-' + k + '" data-change="carry-q" data-v="' + k + '" value="' + c.q + '"></label>' +
+    '<div class="grid2"><label class="field"><span>Amount (' + (ing.unit === 'each' ? 'items' : ing.unit) + ')</span><input class="input" type="number" min="0" step="any" id="cq-' + k + '" data-change="carry-q" data-v="' + k + '" value="' + (Number(c.q) || 0) + '"></label>' +
     '<label class="field"><span>' + (c.frozen ? 'In the freezer' : 'Use by') + '</span>' + (c.frozen ? '<button class="btn" data-act="carry-thaw" data-v="' + k + '">Mark thawed</button>' : '<input class="input" type="date" id="ce-' + k + '" data-change="carry-exp" data-v="' + k + '" value="' + (c.exp || '') + '">') + '</label></div></div>';
 }
 function carryAddForm(w, frozen) {
-  const ingOpts = Object.values(S.ING).filter(i => !i.staple && (!frozen || i.freeze)).sort((a, b) => a.name.localeCompare(b.name)).map(i => '<option value="' + i.id + '">' + h(i.name) + '</option>').join('');
+  const ingOpts = Object.values(S.ING).filter(i => !i.staple && (!frozen || i.freeze)).sort((a, b) => a.name.localeCompare(b.name)).map(i => '<option value="' + h(i.id) + '">' + h(i.name) + '</option>').join('');
   return '<details class="fold"><summary><span class="row" style="gap:8px">' + ICON.plus + ' Add something ' + (frozen ? 'from the freezer' : 'you have') + '</span></summary><div class="in"><form class="stack" data-form="carry-add"><select class="input" id="ca-i" aria-label="Ingredient">' + ingOpts + '</select>' +
     '<div class="grid2"><input class="input" id="ca-q" type="number" min="0" step="any" placeholder="Amount" aria-label="Amount"><input class="input" id="ca-e" type="date" aria-label="Use by" value="' + addDays(w.start, 2) + '"></div>' +
     '<label class="row"><input type="checkbox" id="ca-f" class="cb"' + (frozen ? ' checked' : '') + '> It’s in the freezer</label><button class="btn" type="submit">Add</button></form></div></details>';
@@ -1165,11 +1165,11 @@ function renderKitchen() {
       (cap ? '<span class="row" style="gap:4px"><button class="icon-btn" data-act="freezer-space" data-v="' + Math.max(1, cap - 1) + '" aria-label="Less room">\u2212</button><b class="num">' + cap + '</b><button class="icon-btn" data-act="freezer-space" data-v="' + (cap + 1) + '" aria-label="More room">+</button></span>' : '') + '</div></div></section>';
     out += '<section class="panel"><h2>Cooked meals</h2>';
     if (!w.freezerMeals.length) out += '<p class="muted">No cooked meals in the freezer. Add extra portions to a dinner and choose “to freeze” to bank some.</p>';
-    w.freezerMeals.forEach((m, k) => { const r = S.RMAP[m.r]; out += '<div class="row between ruled-sm"><span>' + h(r ? rt(r) : m.r) + ' · ' + m.portions + ' portion' + (m.portions > 1 ? 's' : '') + '</span><button class="icon-btn" data-act="del-fm" data-v="' + k + '" aria-label="Remove">' + ICON.close + '</button></div>'; });
+    w.freezerMeals.forEach((m, k) => { const r = S.RMAP[m.r]; out += '<div class="row between ruled-sm"><span>' + h(r ? rt(r) : m.r) + ' · ' + (Number(m.portions) || 0) + ' portion' + (m.portions > 1 ? 's' : '') + '</span><button class="icon-btn" data-act="del-fm" data-v="' + k + '" aria-label="Remove">' + ICON.close + '</button></div>'; });
     out += '</section><section class="panel">' + carryHead('Frozen ingredients') + (frozen.length ? frozen.map(([c, k]) => carryRow(c, k)).join('') : '<p class="muted">Nothing frozen. Spare meat, fish and bread get frozen automatically when a plan leaves some over.</p>') + '</section>';
     out += carryAddForm(w, true);
     const outs = sim.carryOut.filter(L => L.frozen);
-    if (outs.length || sim.freezerOut.length) out += '<section class="panel"><h2>Still frozen next week</h2>' + outs.map(L => '<div class="left"><span>' + h(leftText(L.i, L.q)) + '</span><span class="muted small">frozen</span></div>').join('') + sim.freezerOut.map(m => { const r = S.RMAP[m.r]; return '<div class="left"><span>' + h(r ? rt(r) : m.r) + '</span><span class="muted small">' + m.portions + ' portion' + (m.portions > 1 ? 's' : '') + '</span></div>'; }).join('') + '</section>';
+    if (outs.length || sim.freezerOut.length) out += '<section class="panel"><h2>Still frozen next week</h2>' + outs.map(L => '<div class="left"><span>' + h(leftText(L.i, L.q)) + '</span><span class="muted small">frozen</span></div>').join('') + sim.freezerOut.map(m => { const r = S.RMAP[m.r]; return '<div class="left"><span>' + h(r ? rt(r) : m.r) + '</span><span class="muted small">' + (Number(m.portions) || 0) + ' portion' + (m.portions > 1 ? 's' : '') + '</span></div>'; }).join('') + '</section>';
     return out;
   }
   const always = S.pantry.always || { milk: true };
@@ -1622,7 +1622,7 @@ function setPeople() {
     out += '<section class="panel">';
     for (const [key, label] of [['wontEat', 'Won’t eat'], ['dislikes', 'Dislikes'], ['likes', 'Likes']]) {
       out += '<div class="stack" style="gap:6px"><span class="label">' + label + '</span><div class="pchips">' + (p[key] || []).map((t, k) => '<span class="chip">' + h(t) + '<button data-act="pref-del" data-v="' + h(p.id) + '" data-k="' + key + '" data-i="' + k + '" aria-label="Remove ' + h(t) + '">' + ICON.close + '</button></span>').join('') + '</div>' +
-        '<form class="row" data-form="pref-add" data-v="' + h(p.id) + '" data-k="' + key + '"><input class="input grow" id="pa-' + p.id + '-' + key + '" placeholder="' + (key === 'wontEat' ? 'e.g. mushrooms, prawns' : key === 'likes' ? 'e.g. Thai, halloumi, spicy' : 'e.g. peppers, coriander') + '" aria-label="Add to ' + label + ' for ' + h(p.name) + '"><button class="btn" type="submit">Add</button></form></div>';
+        '<form class="row" data-form="pref-add" data-v="' + h(p.id) + '" data-k="' + key + '"><input class="input grow" id="pa-' + h(p.id) + '-' + key + '" placeholder="' + (key === 'wontEat' ? 'e.g. mushrooms, prawns' : key === 'likes' ? 'e.g. Thai, halloumi, spicy' : 'e.g. peppers, coriander') + '" aria-label="Add to ' + label + ' for ' + h(p.name) + '"><button class="btn" type="submit">Add</button></form></div>';
     }
     out += '</section><section class="panel">' + personPlanHtml(p) + '</section>';
     out += '<div class="row">' + (S.confirm['rmp:' + p.id] ? '<button class="btn danger" data-act="rm-person-yes" data-v="' + h(p.id) + '">Yes, remove ' + h(p.name) + '</button>' : '<button class="linkish small" data-act="rm-person" data-v="' + h(p.id) + '">Remove ' + h(p.name) + ' from the plan</button>') + '</div>';
@@ -1671,7 +1671,7 @@ function setPrices() {
   for (const ing of shown) {
     const p = shopPrice(ing, S.settings.shop, false), rec = p && p.rec;
     const open = S.expanded['p:' + ing.id];
-    out += '<button class="prow" data-act="expand" data-v="p:' + ing.id + '" aria-expanded="' + !!open + '"><span style="min-width:0"><b>' + h(ing.name) + '</b>' + (ing.staple ? ' <span class="tag">staple</span>' : '') + '<br><span class="muted small">' + (ing.packs || []).map(x => packLabel(ing, x)).join(' / ') + ' · keeps ' + ing.keeps + ' day' + (ing.keeps === 1 ? '' : 's') + ' once opened' + (ing.freeze ? ' · freezes' : '') + '</span></span>' +
+    out += '<button class="prow" data-act="expand" data-v="p:' + h(ing.id) + '" aria-expanded="' + !!open + '"><span style="min-width:0"><b>' + h(ing.name) + '</b>' + (ing.staple ? ' <span class="tag">staple</span>' : '') + '<br><span class="muted small">' + (ing.packs || []).map(x => packLabel(ing, x)).join(' / ') + ' · keeps ' + ing.keeps + ' day' + (ing.keeps === 1 ? '' : 's') + ' once opened' + (ing.freeze ? ' · freezes' : '') + '</span></span>' +
       '<span class="right"><span class="money">' + (rec ? fmtMoney(rec.price) : '–') + '</span><br>' + (stale(ing) ? '<span class="tag warn">old</span>' : rec && rec.est ? '<span class="tag">est.</span>' : '') + '</span></button>';
     if (open) out += priceEditor(ing);
   }
@@ -1698,13 +1698,13 @@ function priceSources(ing) {
   return rows ? '<ul class="small muted srclist">' + rows + '</ul>' : '';
 }
 function priceEditor(ing) {
-  let out = '<form class="stack" data-form="prices" data-v="' + h(ing.id) + '" style="padding:10px 0 14px"><div class="scrollx"><table class="pricetable"><thead><tr><th>Shop</th><th>Pack (' + ing.unit + ')</th><th>Price £</th><th>Offer £</th><th>Checked</th></tr></thead><tbody>';
+  let out = '<form class="stack" data-form="prices" data-v="' + h(ing.id) + '" style="padding:10px 0 14px"><div class="scrollx"><table class="pricetable"><thead><tr><th>Shop</th><th>Pack (' + h(ing.unit) + ')</th><th>Price £</th><th>Offer £</th><th>Checked</th></tr></thead><tbody>';
   for (const s of SHOPS) {
     const p = (ing.prices && ing.prices[s.id]) || {}; const age = ageDays(p.checked, TODAY);
     out += '<tr><td><b>' + s.name + '</b></td>' +
-      '<td><input type="number" step="any" min="0" id="pe-' + ing.id + '-' + s.id + '-pack" value="' + (p.pack != null ? p.pack : '') + '" aria-label="' + s.name + ' pack size"></td>' +
-      '<td><input type="number" step="0.01" min="0" id="pe-' + ing.id + '-' + s.id + '-price" value="' + (p.price != null ? p.price : '') + '" aria-label="' + s.name + ' price"></td>' +
-      '<td>' + (s.loyalty ? '<input type="number" step="0.01" min="0" id="pe-' + ing.id + '-' + s.id + '-loy" value="' + (p.loyalty != null ? p.loyalty : '') + '" placeholder="' + s.loyalty + '" aria-label="' + s.name + ' ' + s.loyalty + ' price">' : '<span class="muted">–</span>') + '</td>' +
+      '<td><input type="number" step="any" min="0" id="pe-' + h(ing.id) + '-' + s.id + '-pack" value="' + (p.pack != null ? p.pack : '') + '" aria-label="' + s.name + ' pack size"></td>' +
+      '<td><input type="number" step="0.01" min="0" id="pe-' + h(ing.id) + '-' + s.id + '-price" value="' + (p.price != null ? p.price : '') + '" aria-label="' + s.name + ' price"></td>' +
+      '<td>' + (s.loyalty ? '<input type="number" step="0.01" min="0" id="pe-' + h(ing.id) + '-' + s.id + '-loy" value="' + (p.loyalty != null ? p.loyalty : '') + '" placeholder="' + s.loyalty + '" aria-label="' + s.name + ' ' + s.loyalty + ' price">' : '<span class="muted">–</span>') + '</td>' +
       '<td class="small">' + (p.checked ? '<span class="' + (age > STALE_DAYS ? 'tag warn' : '') + '">' + parseIso(p.checked).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' }) + '</span>' + (p.est ? ' <span class="tag">est.</span>' : '') : '<span class="muted">–</span>') + '</td></tr>';
   }
   out += '</tbody></table></div>' + priceSources(ing) + '<div class="row wrap"><button class="btn primary" type="submit">Save prices</button><button class="btn" type="button" data-act="toggle-staple" data-v="' + h(ing.id) + '">' + (ing.staple ? 'Not a staple' : 'Make it a staple') + '</button></div></form>';
@@ -1866,7 +1866,7 @@ async function saveBackupFile(share) {
   } catch (e) { if (!(e && e.name === 'AbortError')) toast('Couldn’t make the file: ' + ((e && e.message) || e)); }
 }
 function stageRestore(obj, source) {
-  const docs = (obj && Array.isArray(obj.docs) ? obj.docs : []).filter(d => d && typeof d.path === 'string' && d.data && typeof d.data === 'object' && /^(people|weeks|recipes|ingredients|ratings|shops|config)\/[^/]+$/.test(d.path) && d.path !== 'config/backup');
+  const docs = (obj && Array.isArray(obj.docs) ? obj.docs : []).filter(d => d && typeof d.path === 'string' && d.data && typeof d.data === 'object' && /^(people|weeks|recipes|ingredients|ratings|shops|config)\/[A-Za-z0-9_-]{1,120}$/.test(d.path) && d.path !== 'config/backup');
   if (!docs.length) { toast('That doesn’t look like a Peckish backup.'); return; }
   S.pendingRestore = { docs, at: obj.exported || obj.at || '', by: obj.by || '', source, from: (obj.household && obj.household.name) || '' };
   S.tab = 'settings'; S.setPage = 'backup'; render(); window.scrollTo(0, 0);
@@ -1963,7 +1963,7 @@ function sheetPick(top) {
   if (isTreat) out += '<div class="note treatnote">★ <b>' + DAY_LONG[d] + ' is a treat night</b>, so treats come first.</div>';
   if (spareIds.length) out += '<div class="note"><b>You’ll have spare:</b> ' + spareIds.slice(0, 6).map(id => h(leftText(id, spare[id]))).join(', ') + (spareIds.length > 6 ? ' and more' : '') + '. The top picks use these up.</div>';
   const fm = (w.freezerMeals || []).filter(m => m.portions >= 1);
-  if (fm.length) out += '<section class="stack"><h3>From the freezer</h3>' + fm.map(m => { const r = S.RMAP[m.r]; return r ? '<div class="sugg"><span class="tile ' + cuisineClass(r.cuisine) + '">' + h(r.icon) + '</span><button class="pick" data-act="choose-freezer" data-v="' + h(r.id) + '"><b>' + h(r.title) + '</b><span class="why">' + m.portions + ' portion' + (m.portions > 1 ? 's' : '') + ' frozen · nothing to buy</span></button><span></span></div>' : ''; }).join('') + '</section>';
+  if (fm.length) out += '<section class="stack"><h3>From the freezer</h3>' + fm.map(m => { const r = S.RMAP[m.r]; return r ? '<div class="sugg"><span class="tile ' + cuisineClass(r.cuisine) + '">' + h(r.icon) + '</span><button class="pick" data-act="choose-freezer" data-v="' + h(r.id) + '"><b>' + h(r.title) + '</b><span class="why">' + (Number(m.portions) || 0) + ' portion' + (m.portions > 1 ? 's' : '') + ' frozen · nothing to buy</span></button><span></span></div>' : ''; }).join('') + '</section>';
   // rows that each show something different, without repeating a recipe or (within a row) a cuisine
   const used = new Set();
   const row = (title, list, n) => {
@@ -2255,7 +2255,7 @@ function sheetForm(top) {
   top.lines = lines;
   const steps = r ? r.steps.map(s => ({ title: stepTitle(s), text: stepText(s) })) : [];
   while (steps.length < 8) steps.push({ title: '', text: '' });
-  const opts = sel => '<option value="">Choose…</option>' + Object.values(S.ING).sort((a, b) => a.name.localeCompare(b.name)).map(i => '<option value="' + i.id + '" ' + (sel === i.id ? 'selected' : '') + '>' + h(i.name) + ' (' + i.unit + ')</option>').join('');
+  const opts = sel => '<option value="">Choose…</option>' + Object.values(S.ING).sort((a, b) => a.name.localeCompare(b.name)).map(i => '<option value="' + h(i.id) + '" ' + (sel === i.id ? 'selected' : '') + '>' + h(i.name) + ' (' + h(i.unit) + ')</option>').join('');
   const eq = r ? (r.equipment || []) : ['hob'];
   let out = importBox(top) + '<form class="stack" data-form="recipe" data-v="' + (r && r.id ? r.id : '') + '">' +
     '<label class="field"><span>Name</span><input class="input" id="rf-title" required value="' + h(r ? r.title : '') + '" placeholder="e.g. Nan’s sausage casserole"></label>' +
