@@ -365,8 +365,19 @@ function saveIng(id, flat) {
 function savePhotoPref(id, hide) { if (Store.patch && SAFE_KEY.test(id)) Store.patch('config/photoPrefs', { ['hidden.' + id]: hide ? true : Store.DEL }).catch(e => console.warn(e)); else save('config/photoPrefs', S.photoPrefs); }
 function savePerson(p) { const d = clone(p); delete d.id; RAW.people = RAW.people || {}; const before = RAW.people[p.id] || null; RAW.people[p.id] = clone(d); saveDiff('people/' + p.id, before, d); }
 function saveSettings(patch) {
+  const before = S.settings;
   S.settings = { ...S.settings, ...patch }; resetCaches(); schedule();
-  if (Store.patch && Object.keys(patch).every(k => SAFE_KEY.test(k))) { const flat = {}; for (const k in patch) flat[k] = patch[k] === undefined ? Store.DEL : patch[k]; Store.patch('config/settings', flat).catch(e => { console.warn(e); toast('Couldn\u2019t save that change.'); }); }
+  if (Store.patch && Object.keys(patch).every(k => SAFE_KEY.test(k))) {
+    const flat = {};
+    // a group of settings (equipment, reminders, who's who) is written item by item, so two phones changing
+    // different items at once both keep theirs
+    for (const k in patch) {
+      const a = before[k], b = patch[k];
+      if (isObj(a) && isObj(b) && Object.keys(a).concat(Object.keys(b)).every(x => SAFE_KEY.test(x))) { for (const x of new Set([...Object.keys(a), ...Object.keys(b)])) if (stable(a[x]) !== stable(b[x])) flat[k + '.' + x] = b[x] === undefined ? Store.DEL : b[x]; }
+      else flat[k] = b === undefined ? Store.DEL : b;
+    }
+    if (!Object.keys(flat).length) return;
+    Store.patch('config/settings', flat).catch(e => { console.warn(e); toast('Couldn\u2019t save that change.'); }); }
   else save('config/settings', S.settings);
 }
 function savePantry() { const before = S.pantryRaw; S.pantryRaw = clone(S.pantry); saveDiff('config/pantry', before, S.pantry); schedule(); }

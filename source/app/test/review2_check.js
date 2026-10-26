@@ -162,6 +162,16 @@ const CAL = { household: { dinnerTime: '19:00' }, people: [{ id: 'ethan', name: 
     const aw = (A.w.__docs.get(key).away || {})[sid] || {};
     ok(aw['1'] === 'dinner' && aw['2'] === 'dinner' && aw['4'] === 'dinner', 'who\u2019s in: a change on each phone for different nights both stay (' + JSON.stringify(aw) + ')');
   }
+  // ---- 9. kitchen equipment changed on both phones at once keeps both changes ----
+  {
+    const A = boot(); await A.start();
+    await A.click('[data-act="tab"][data-v="settings"]'); await A.click('[data-act="set-page"][data-v="equipment"]');
+    await A.click('[data-act="eq"][data-v="grill"]', 300);
+    const key = 'households/h1/config/settings'; A.w.__docs.get(key).equipment.air_fryer = true; // from the other phone, not here yet
+    await A.click('[data-act="eq"][data-v="oven"]', 300);
+    const eq = A.w.__docs.get(key).equipment;
+    ok(eq.grill === false && eq.oven === false && eq.air_fryer === true, 'equipment: a change on each phone both stay (' + JSON.stringify(eq) + ')');
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();
