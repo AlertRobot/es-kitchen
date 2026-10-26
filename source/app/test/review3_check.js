@@ -240,6 +240,24 @@ const signedIn = (name) => ({ 'users/u_ethan': { households: ['h1'], current: 'h
     await A.act('restore-yes', null, null, 800);
     ok(staged && !A.w.__docs.has('households/h2/ratings/it_tuna_puttanesca'), 'restore: one staged in one household isn\u2019t put into another');
   }
+  // ---- 10. breakfasts and lunches are saved, so the other phone sees them ----
+  if (!only || only === 10) {
+    const pre = signedIn(); pre['households/h1/people/u_ethan'] = { name: 'Ethan', uid: 'u_ethan', order: 1, plan: { b: true, l: true }, days: { b: [0, 1, 2, 3, 4, 5, 6], l: [0, 1, 2, 3, 4] } };
+    const A = boot({ pre }); await wait(1500); A.w.console.warn = (...a) => A.errs.push(a.map(String).join(' '));
+    await A.act('week-view', 'bl', null, 300); await A.act('bl-pick', 'u_ethan|b|0', null, 800);
+    const add = A.d.querySelector('#sheet [data-act="bl-add"]:not([data-v="lo"])'), rid = add && add.dataset.v; add && add.click(); await wait(500);
+    await A.act('sheet-back'); await A.act('bl-auto', 'u_ethan', null, 1500);
+    const wk = A.w.__docs.get('households/h1/weeks/' + MON) || {}, bl = (wk.bl || {}).u_ethan || {};
+    const b0 = bl.b && bl.b[0], lunches = bl.l ? Object.keys(bl.l).filter(k => Array.isArray(bl.l[k]) && bl.l[k].length) : [];
+    ok(Array.isArray(b0) && b0.includes(rid), 'breakfast: a breakfast added for Monday is saved (' + JSON.stringify(b0) + ')');
+    ok(lunches.length === 5, 'lunches: the week\u2019s lunches are saved (' + lunches.length + ' days)');
+    ok(!A.errs.some(e => /Nested arrays|Couldn/.test(e)) && !/Couldn/.test(A.d.querySelector('#toast').textContent), 'breakfast & lunch: the database takes them (' + A.errs.slice(0, 2).join(' | ') + ')');
+    const here = [...A.d.querySelectorAll('.blday')].map(x => x.textContent);
+    const docs = Object.fromEntries([...A.w.__docs.entries()]);
+    const B = boot({ pre: docs }); await wait(1500); await B.act('week-view', 'bl', null, 300);
+    const cells = [...B.d.querySelectorAll('.blday')].map(x => x.textContent);
+    ok(cells.length === 7 && cells.join('|') === here.join('|') && /Weetabix/i.test(cells[0]), 'breakfast & lunch: the other phone shows the same');
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();

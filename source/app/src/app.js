@@ -327,8 +327,14 @@ function saveWeekCopy(start, d) { if (!d) return; try { localStorage.setItem(wee
 function loadWeekCopy(start) { try { const x = localStorage.getItem(weekKey(start)); return x ? decWeek(JSON.parse(x)) : null; } catch (e) { return null; } }
 // Weeks are stored with days and extras as maps (days.d0 … days.d6, extras.<id>) so each phone writes only the night or item it
 // changed. Older weeks stored them as arrays; the app works with arrays, and the first edit converts an old week.
+// Breakfasts and lunches are a list for each day, so they're stored by day ({"0": [...], "3": [...]}): the database can't
+// hold a list of lists.
+const blMap = (o, f) => { const x = {}; for (const k in o) x[k] = f(o[k]); return x; };
+const blDec = v => (isObj(v) ? Array.from({ length: 7 }, (_, k) => (Array.isArray(v[k]) ? v[k] : null)) : v);
+const blEnc = v => { if (!Array.isArray(v)) return v; const m = {}; v.forEach((x, k) => { if (Array.isArray(x)) m[k] = x; }); return m; };
 function decWeek(d) {
   if (!d) return d; const x = { ...d };
+  if (isObj(x.bl)) x.bl = blMap(x.bl, s => (isObj(s) ? blMap(s, blDec) : s));
   if (x.days && !Array.isArray(x.days)) x.days = Array.from({ length: 7 }, (_, k) => x.days['d' + k] || {});
   if (Array.isArray(x.extras)) x.extras = x.extras.map((e, k) => ({ id: e.id || 'x' + k, ...e }));
   else if (x.extras) x.extras = Object.keys(x.extras).map(id => ({ ...x.extras[id], id })).sort((a, b) => (a.o || 0) - (b.o || 0) || (a.id < b.id ? -1 : 1));
@@ -336,6 +342,7 @@ function decWeek(d) {
 }
 function encWeek(w) {
   if (!w) return w; const x = { ...w };
+  if (isObj(x.bl)) x.bl = blMap(x.bl, s => (isObj(s) ? blMap(s, blEnc) : s));
   if (Array.isArray(x.days)) { const m = {}; x.days.forEach((d, k) => { if (d && Object.keys(d).length) m['d' + k] = d; }); x.days = m; }
   if (Array.isArray(x.extras)) { const m = {}; x.extras.forEach((e, k) => { const { id, ...rest } = e; m[SAFE_KEY.test(id || '') ? id : 'x' + k] = { ...rest, o: rest.o != null ? rest.o : k }; }); x.extras = m; }
   return x;

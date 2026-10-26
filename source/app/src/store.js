@@ -29,6 +29,7 @@ const segs = p => p.split('/').filter(Boolean);
 function ref(rel) { const p = ['households', hid, ...segs(rel)].join('/'); return segs(p).length % 2 === 0 ? doc(db, p) : collection(db, p); }
 // Firestore rejects undefined values; strip them
 function clean(x) { return JSON.parse(JSON.stringify(x)); }
+function safe(fn) { try { return fn(); } catch (e) { return Promise.reject(e); } }
 function friendly(e) {
   const c = (e && e.code) || '';
   if (c.includes('popup-closed') || c.includes('cancelled-popup')) return 'Sign-in was cancelled.';
@@ -144,7 +145,7 @@ window.Store = !configured ? { kind: 'unconfigured', onUser(cb) { setTimeout(() 
   // ----- shared across every household (recipe and step photos) -----
   subG(col, cb, err) { return onSnapshot(collection(db, col), s => cb(s.docs.map(d => ({ ...d.data(), id: d.id }))), e => err && err(e)); },
   getG(path) { return getDoc(doc(db, path)).then(s => (s.exists() ? s.data() : null)).catch(() => null); },
-  setG(path, data) { return setDoc(doc(db, path), clean(data)); },
+  setG(path, data) { return safe(() => setDoc(doc(db, path), clean(data))); },
   delG(path) { return deleteDoc(doc(db, path)); },
   uid() { return auth.currentUser ? auth.currentUser.uid : null; },
 
@@ -155,8 +156,9 @@ window.Store = !configured ? { kind: 'unconfigured', onUser(cb) { setTimeout(() 
     return onSnapshot(r, s => cb(s.docs.map(d => ({ ...d.data(), id: d.id })), { pending: s.metadata.hasPendingWrites, cache: s.metadata.fromCache }), e => err && err(e));
   },
   get(rel) { return getDoc(ref(rel)).then(s => (s.exists() ? s.data() : null)).catch(() => null); },
-  set(rel, data) { return setDoc(ref(rel), clean(data)); },
-  merge(rel, data) { return setDoc(ref(rel), clean(data), { merge: true }); },
+  // a record the database won't take (it checks before sending) comes back as a failed save, not an error on the page
+  set(rel, data) { return safe(() => setDoc(ref(rel), clean(data))); },
+  merge(rel, data) { return safe(() => setDoc(ref(rel), clean(data), { merge: true })); },
   del(rel) { return deleteDoc(ref(rel)); },
   // change only the named fields ("checked.milk"), so two phones editing the same document don't overwrite each other
   DEL: { __delete: true },
@@ -168,7 +170,7 @@ window.Store = !configured ? { kind: 'unconfigured', onUser(cb) { setTimeout(() 
       const v = flat[k]; o[parts[parts.length - 1]] = v && v.__delete ? deleteField() : (v === undefined ? deleteField() : clean(v));
       fields.push(k);
     }
-    return setDoc(ref(rel), data, { mergeFields: fields });
+    return safe(() => setDoc(ref(rel), data, { mergeFields: fields }));
   },
   // every document in a household collection, read once (used by Backup)
   async list(rel) { const s = await getDocs(ref(rel)); return s.docs.map(d => ({ id: d.id, data: d.data() })); },
