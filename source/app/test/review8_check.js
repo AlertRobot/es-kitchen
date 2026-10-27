@@ -173,6 +173,23 @@ const twice = B => B.puts.filter((x, i, a) => a.indexOf(x) !== i);
     ok(!dup.length, 'nothing sent twice (' + dup.join(',') + ')');
     ok(![E, So].some(p => p.errs.length), 'no page errors ' + [E, So].map(p => p.errs.join(' | ')).join(''));
   }
+  // ---- 5. a shop logged while the payer's phone is in the middle of a sync still goes straight after ----
+  if (!only || only === 5) {
+    phones.length = 0;
+    const docs = household(), B = budgie();
+    let slow = 0; const fetch = async (u, o) => { if (slow && /script\.google/.test(u)) await wait(slow); return B.fetch(u, o); };
+    const E = phone('ethan', docs, B, { fetch }), So = phone('sophie', docs, B, { fetch });
+    await wait(4000);
+    await E.logShop(40, 'u_ethan', true); await So.logShop(31, 'u_sophie', true, 3000);
+    await So.logShop(22, 'u_ethan', true, 1000); await E.act('bg-sync', null, null, 3000);
+    const id = a => (shopsIn(docs).find(t => t.amount === a) || {}).id, tidOf = a => ((shopsIn(docs).find(t => t.amount === a) || {}).budgie || {}).tid;
+    // a sync with nothing to send is running when Sophie logs one for Ethan: it still goes straight after
+    slow = 2000; E.act('bg-sync', null, null, 10); await wait(2300);
+    await So.logShop(12, 'u_ethan', true, 300); await wait(6000); slow = 0;
+    ok(((shopsIn(docs).find(t => t.amount === 12) || {}).budgie || {}).state === 'sent', 'a shop logged while the payer’s phone was mid-sync still goes (' + ((shopsIn(docs).find(t => t.amount === 12) || {}).budgie || {}).state + ')');
+    ok(!twice(B).length, 'nothing sent twice (' + twice(B).join(',') + ')');
+    ok(![E, So].some(p => p.errs.length), 'no page errors ' + [E, So].map(p => p.errs.join(' | ')).join(''));
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();

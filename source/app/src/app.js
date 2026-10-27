@@ -1520,10 +1520,12 @@ async function bgLink(cfg) {
 function bgUnlink() { S.bg.cfg = null; LINK.set('budgie', null); LINK.set('budgieData', null); S.bg.data = { since: 0, me: '', rows: {} }; schedule(); }
 // Shops paid by whoever's phone this is go to Budgie as a food payment split half each; Budgie food payments come back as shops.
 async function bgSyncShops() {
-  if (!S.bg.cfg || S.bg.busy || !S.household) return;
+  if (!S.bg.cfg || !S.household) return;
+  // one already going: it goes round again when it's done (a shop logged meanwhile isn't left waiting till next time)
+  if (S.bg.busy) { S.bg.again = true; return; }
   // wait for this household's shops before comparing them with Budgie's
   if (!S.shopsLog) { S.bg.wantSync = true; return; }
-  S.bg.busy = true;
+  S.bg.busy = true; S.bg.again = false;
   const hid0 = curHid, here = () => { if (curHid !== hid0) throw new Error('Switched household'); };
   try {
     const me = S.bg.data.me, fb = bgFoodBudget(), ops = [], mePk = me ? peckFromBg(me) : null;
@@ -1580,8 +1582,9 @@ async function bgSyncShops() {
     // taken off by the phone that brought it in, or by the payer's (who always sees all of their own that the other phone can)
     if (sent.full === true) for (const tid in imported) { const t = imported[tid]; if (!seen.has(tid) && ((t.via && t.via === me) || (t.budgie && t.budgie.person === me)) && String(t.date || '') >= since) here(), await Store.del('shops/' + t.id); }
     S.bg.err = '';
-  } catch (e) { if (curHid !== hid0) { S.bg.busy = false; return; } S.bg.err = navigator.onLine === false ? 'Offline: it’ll sync when you’re back online' : (e.message || String(e)); console.warn(e); }
+  } catch (e) { if (curHid !== hid0) { S.bg.busy = false; S.bg.again = false; return; } S.bg.err = navigator.onLine === false ? 'Offline: it’ll sync when you’re back online' : (e.message || String(e)); console.warn(e); }
   S.bg.busy = false; schedule();
+  if (S.bg.again) { S.bg.again = false; setTimeout(bgSyncShops, 300); }
 }
 // a shop logged by you, or by your Budgie partner's account, or by an older copy of the app (which didn't say who; the
 // database won't take a new waiting shop like that, or let who logged one be changed)
