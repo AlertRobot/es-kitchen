@@ -2071,7 +2071,7 @@ async function applyRestore() {
   S.pendingRestore = null; S.restoring = false; render();
 }
 // code: the invite code of another household in the same sheet, to restore its backup into this one (a new household,
-// after the old one was lost). Only its members ever had the code, so nobody can take another household's backup.
+// after the old one was lost). (The sheet's key is what guards backups: see apps-script/Code.gs.)
 async function restoreFromSheet(code) {
   const b = S.backup; if (!b || !b.url) return;
   const hid0 = S.household.id;

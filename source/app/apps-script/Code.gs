@@ -10,7 +10,10 @@
  *      (or type the address and key into the app: Settings > Backup & restore). Both phones share the connection.
  *
  * Security: every request must carry the backup key, which lives only in this script's properties and in the
- * household's settings in the app. To change it, run "newKey" and reconnect the app.
+ * settings of each household connected to this sheet. To change it, run "newKey" and reconnect the app.
+ * The key covers the whole sheet: anyone who has it can back up into, or restore, any household in it by that
+ * household's id. So connect a sheet only to households whose members may see each other's backups (give family
+ * their own sheet and key).
  */
 
 var SHEET_ID = ""; // the backup spreadsheet's id (from its address); leave blank when the script is opened from the sheet's Extensions menu
@@ -125,9 +128,11 @@ function pad_(r, n) { while (r.length < n) r.push(""); return r; }
 function trimLog_(ss) { var sh = ss.getSheetByName(LOG_TAB); var n = sh.getLastRow(); if (n > 1001) sh.deleteRows(2, n - 1001); }
 
 // ---------- restore: put the raw records back together ----------
-// "code" restores another household's backup into this one (a new household, after the old one was lost). That household
-// is found by its invite code, which only its members ever had, so the backup key alone never shows or hands over another
-// household's backup. When this household isn't in the sheet and no code was given, the answer says a code is needed.
+// Restores the household whose id is sent ("hid"). Nothing here checks that the caller is in that household: the backup
+// key alone hands over any household's backup in this sheet to whoever sends its id. "code" restores another
+// household's backup into this one (a new household, after the old one was lost), found by the invite code it had at its
+// last backup; that's a convenience for finding it, not a lock. When this household isn't in the sheet and no code was
+// given, the answer says a code is needed.
 function restore_(ss, hid, code) {
   if (!hid) throw new Error("No household id");
   var sh = ss.getSheetByName("Docs");
