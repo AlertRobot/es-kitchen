@@ -186,6 +186,16 @@ const home = (hid, name, extra) => ({ ['households/' + hid]: { name, members: ['
     ok(days.d2 && days.d2.r === R[0] && !days.d2.guests && days.d0 && !days.d0.r && days.d0.guests === 2, 'move: the dinner moves, the guests stay on their night (' + JSON.stringify([days.d0, days.d2]) + ')');
     ok(!A.errs.length, 'move: no page errors ' + A.errs.join(' | '));
   }
+  // ---- 8. no leftover styles or icons that nothing uses ----
+  if (!only || only === 8) {
+    const src = fs.readFileSync(__dirname + '/../src/app.js', 'utf8'), css = html.match(/<style>([\s\S]*?)<\/style>/)[1], markup = html.replace(css, '');
+    const classes = [...new Set([...css.replace(/url\([^)]*\)/g, '').matchAll(/\.([a-zA-Z][\w-]*)/g)].map(m => m[1]))].filter(c => !/^c-/.test(c));
+    const unused = classes.filter(c => !new RegExp('[\'" ]' + c + '[\'" ]').test(src) && !new RegExp('class="[^"]*\\b' + c + '\\b').test(markup) && !src.includes("'" + c) && !src.includes(c + "'"));
+    ok(!unused.length, 'dead code: every style is used (' + unused.join(' ') + ')');
+    const icons = [...src.match(/const ICON = \{([\s\S]*?)\n\};/)[1].matchAll(/^\s+([a-z]+):/gm)].map(m => m[1]);
+    const tabs = ['week', 'recipes', 'shop', 'kitchen', 'settings'];
+    ok(icons.every(k => tabs.includes(k) || new RegExp('ICON\\.' + k + '\\b').test(src)), 'dead code: every icon is used (' + icons.filter(k => !tabs.includes(k) && !new RegExp('ICON\\.' + k + '\\b').test(src)).join(' ') + ')');
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();
