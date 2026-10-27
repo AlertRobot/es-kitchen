@@ -288,6 +288,9 @@ const home = (hid, name, extra) => ({ ['households/' + hid]: { name, members: ['
     const t0 = Date.now(); const A = boot({ pre }); await wait(3000);
     await A.act('tab', 'shop', null, 600); await A.act('tab', 'kitchen', null, 400); await A.act('tab', 'week', null, 400);
     ok(!A.errs.length && /Tuna puttanesca/.test(A.d.querySelector('#app').textContent) && Date.now() - t0 < 20000, 'huge numbers: the week, list and kitchen still open (' + A.errs.slice(0, 1).join('') + ')');
+    const B = boot({ pre: { 'users/u_ethan': { households: ['h1'], current: 'h1', names: { h1: 'Home' } }, ...home('h1', 'Home', { ['households/h1/weeks/' + MON]: { ...planned(), carryEdited: true, freezerMeals: [{ r: 'br_cottage_pie', portions: 1.25 }] } }) } });
+    await wait(2500); await B.act('tab', 'kitchen', null, 400); await B.act('kit-view', 'freezer', null, 400);
+    ok(/1\.25 portions/.test(B.d.querySelector('#app').textContent), 'huge numbers: a freezer meal\u2019s part portions are kept');
   }
   // ---- 15. ticking or removing an extra item hits that item, even if the other phone added one above it meanwhile ----
   if (!only || only === 15) {
@@ -308,6 +311,11 @@ const home = (hid, name, extra) => ({ ['households/' + hid]: { name, members: ['
     const A = boot({ pre }); await wait(2500);
     await A.act('cook', 'my_bare', null, 300); await A.act('cook-next', null, null, 200);
     ok(!A.errs.length && /no method yet/.test(A.d.querySelector('#cook').textContent), 'cooking: a recipe with no steps opens and says so (' + A.errs.slice(0, 1).join('') + ')');
+  }
+  // ---- 17. leaving a household takes your sign-in email off it as well as your name ----
+  if (!only || only === 17) {
+    const st = fs.readFileSync(__dirname + '/../src/store.js', 'utf8'), leave = (st.match(/async leaveHousehold\([\s\S]*?\n  \},/) || [''])[0];
+    ok(/'memberNames\.' \+ user\.uid\]: deleteField\(\)/.test(leave) && /'memberEmails\.' \+ user\.uid\]: deleteField\(\)/.test(leave), 'leaving: your name and sign-in email are both taken off the household');
   }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);

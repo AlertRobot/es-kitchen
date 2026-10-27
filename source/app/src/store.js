@@ -138,7 +138,8 @@ window.Store = !configured ? { kind: 'unconfigured', onUser(cb) { setTimeout(() 
     await setDoc(doc(db, 'users', user.uid), { names: { [h.id]: name } }, { merge: true });
   },
   async leaveHousehold(user, h) {
-    await updateDoc(doc(db, 'households', h.id), { members: arrayRemove(user.uid), ['memberNames.' + user.uid]: deleteField() });
+    // your name and sign-in email go with you (they were only kept so the household could see whose account is whose)
+    await updateDoc(doc(db, 'households', h.id), { members: arrayRemove(user.uid), ['memberNames.' + user.uid]: deleteField(), ['memberEmails.' + user.uid]: deleteField() });
     await setDoc(doc(db, 'users', user.uid), { households: arrayRemove(h.id), current: null }, { merge: true });
   },
 

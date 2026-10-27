@@ -217,7 +217,7 @@ function tidyRecipe(x) {
 }
 function tidyWeek(w) {
   w.carryIn = (Array.isArray(w.carryIn) ? w.carryIn : []).filter(c => c && typeof c === 'object').map(c => ({ ...c, i: txt(c.i), q: upTo(c.q, 100000, 0), exp: isoOk(c.exp) ? c.exp : null }));
-  w.freezerMeals = (Array.isArray(w.freezerMeals) ? w.freezerMeals : []).filter(m => m && typeof m === 'object').map(m => ({ ...m, r: txt(m.r), portions: Math.round(upTo(m.portions, 100, 0)) }));
+  w.freezerMeals = (Array.isArray(w.freezerMeals) ? w.freezerMeals : []).filter(m => m && typeof m === 'object').map(m => ({ ...m, r: txt(m.r), portions: upTo(m.portions, 100, 0) }));
   w.days = w.days.map(d => { if (!d || typeof d !== 'object') return {}; const x = { ...d }; if ('r' in x) x.r = txt(x.r); if ('guests' in x) x.guests = Math.round(upTo(x.guests, 20, 0)); if ('extra' in x) x.extra = Math.round(upTo(x.extra, 20, 0)); if ('extraUse' in x && x.extraUse !== 'freeze') x.extraUse = 'lunch'; return x; });
   w.extras = (Array.isArray(w.extras) ? w.extras : []).filter(e => e && typeof e === 'object').map(e => ({ ...e, name: txt(e.name) }));
   if (w.locked && typeof w.locked === 'object') w.locked = { ...w.locked, by: txt(w.locked.by) };
@@ -2797,7 +2797,7 @@ document.addEventListener('click', e => {
     // a library recipe is only marked removed (your edits to it are kept), so it can be brought back
     case 'del-recipe-yes': if (S.RMAP[v] && S.RMAP[v].custom) Store.del('recipes/' + v).catch(() => {}); else Store.merge('recipes/' + v, { hidden: true }).catch(e => { console.warn(e); toast('Couldn’t save that change.'); }); closeSheets(); toast('Recipe removed'); break;
     case 'restore-recipe': { const x = RAW.myR[v] || {}, edited = Object.keys(x).some(k => k !== 'hidden' && k !== 'id');
-      (edited ? Store.patch('recipes/' + v, { hidden: Store.DEL }) : Store.del('recipes/' + v)).catch(e => { console.warn(e); toast('Couldn’t save that change.'); });
+      (edited ? (Store.patch ? Store.patch('recipes/' + v, { hidden: Store.DEL }) : Store.set('recipes/' + v, (({ hidden, id, ...rest }) => rest)(x))) : Store.del('recipes/' + v)).catch(e => { console.warn(e); toast('Couldn’t save that change.'); });
       toast('Back in the library'); break; }
     case 'del-photo': delete S.thumbs[v]; delete S.fullPhotos[v]; Store.delG('dishThumbs/' + v).catch(() => {}); Store.delG('dishPhotos/' + v).catch(() => {}); renderSheet(true); schedule(); break;
     case 'timer': startTimer(Number(v), b.dataset.l || 'Timer'); toast(v + ' min timer started'); break;
