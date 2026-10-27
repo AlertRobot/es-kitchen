@@ -1484,7 +1484,9 @@ function bgRows(t) { return Object.values((S.bg.data.rows || {})[t] || {}).filte
 function bgFoodBudget() {
   // Budgie only takes shops into one of your own food budgets
   const mine = bgFoodBudgets();
-  return mine.find(b => b.id === S.settings.budgieBudget) || mine[0] || null;
+  // each of you picks your own (both phones share the settings): yours, else the choice saved before that, else your first
+  const pick = (S.settings.budgieBudgets || {})[S.bg.data.me] || S.settings.budgieBudget;
+  return mine.find(b => b.id === pick) || mine[0] || null;
 }
 // Peckish person ↔ Budgie person, by name
 function bgPidFor(p) { const x = bgRows('people').find(q => (q.name || '').toLowerCase() === (p.name || '').toLowerCase()); return x ? x.id : (p.name || '').toLowerCase(); }
@@ -1535,7 +1537,8 @@ async function bgSyncShops() {
     const foodIds = new Set(bgRows('budgets').filter(b => /food|grocer/i.test(b.name)).map(b => b.id)); if (fb) foodIds.add(fb.id);
     const since = addDays(mondayOf(TODAY), -120), seen = new Set();
     for (const tx of bgRows('transactions')) {
-      if (tx.source === 'peckish' || /^t-pk-/.test(String(tx.id)) || !(foodIds.has(tx.budget) || /food/i.test(tx.budget || ''))) continue;
+      // yours in your food budgets; your partner's are already only the food ones Budgie shares (Peckish can't see their budgets)
+      if (tx.source === 'peckish' || /^t-pk-/.test(String(tx.id)) || !(foodIds.has(tx.budget) || /food/i.test(tx.budget || '') || (tx.person && tx.person !== me))) continue;
       if (!tx.date || String(tx.date).slice(0, 10) < since) continue;
       const cur = imported[tx.id]; if (!cur && known.has(tx.id)) continue;
       seen.add(tx.id);
@@ -2841,7 +2844,7 @@ document.addEventListener('change', e => {
   if (k === 'calmap') { saveSettings({ calMap: { ...(S.settings.calMap || {}), [e.target.dataset.p]: e.target.value } }); calRefresh(true); return; }
   if (k === 'lunch-shifts') { const p = clone(personById(e.target.dataset.p)); p.lunchOnShifts = e.target.checked; S.people = S.people.map(x => x.id === p.id ? p : x); savePerson(p); render(); return; }
   if (k === 'remind') { saveSettings({ remind: { cook: true, defrost: true, plates: true, cookAt: '18:00', ...(S.settings.remind || {}), [e.target.dataset.k]: e.target.checked } }); calSoon(500); render(); return; }
-  if (k === 'bg-budget') { saveSettings({ budgieBudget: e.target.value }); return; }
+  if (k === 'bg-budget') { if (S.bg.data.me) saveSettings({ budgieBudgets: { ...(S.settings.budgieBudgets || {}), [S.bg.data.me]: e.target.value } }); return; }
   if (k === 'backup-auto') { Store.merge('config/backup', { auto: e.target.checked }).catch(() => toast('Couldn’t save that.')); return; }
   if (k === 'restore-file') { const file = e.target.files && e.target.files[0]; e.target.value = ''; if (!file) return; file.text().then(t => { let j = null; try { j = JSON.parse(t); } catch (x) {} stageRestore(j, 'the file ' + file.name); }); return; }
   if (k === 'carry-q') { const q = Number(e.target.value); mutateCarry(w => { if (q > 0) w.carryIn[Number(v)].q = q; else w.carryIn.splice(Number(v), 1); }); }
