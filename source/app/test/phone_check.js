@@ -28,6 +28,8 @@ let fails = 0; const ok = (c, what) => { console.log((c ? 'ok   ' : 'FAIL ') + w
         const out = [], VW = document.documentElement.clientWidth;
         if (document.documentElement.scrollWidth > VW + 1) out.push('scrolls sideways');
         document.querySelectorAll('.seg button').forEach(x => { if (x.offsetParent && x.scrollWidth > x.clientWidth + 1) out.push('"' + x.textContent.trim() + '" cut off'); });
+        // a recipe card's time, calories and price are never cut short
+        document.querySelectorAll('.vcard .vb .small').forEach(x => { if (x.offsetParent && x.scrollWidth > x.clientWidth + 1) out.push('card "' + x.textContent.trim() + '" cut off'); });
         return out;
       });
       r.forEach(x => bad.push(name + ': ' + x));
@@ -35,7 +37,7 @@ let fails = 0; const ok = (c, what) => { console.log((c ? 'ok   ' : 'FAIL ') + w
     await submit('[data-form="create"]', 800);
     await act('tab', 'settings'); await act('set-page', 'people'); await ev(() => { document.querySelector('#np-name').value = 'Sophie'; }); await submit('[data-form="add-person"]');
     await act('tab', 'week'); await act('fill', null, 7000); await look('week');
-    await act('tab', 'recipes', 600); await look('recipes');
+    await act('tab', 'recipes', 600); await look('recipes'); await act('f-meal-set', 'lunch', 600); await look('recipes lunches'); await act('f-meal-set', '', 300);
     await act('tab', 'shop', 600); await look('shop');
     await act('tab', 'kitchen', 500); await look('kitchen');
     await act('tab', 'settings', 400); for (const p of ['planning', 'linked', 'look']) { await act('set-page', p, 400); await look('settings ' + p); await act('set-page', ''); }
