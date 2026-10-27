@@ -1595,7 +1595,7 @@ function shopLogPanel(B) {
     // a shop logged here can be taken off (a typo, a duplicate); one from Budgie is changed there
     (t.source === 'budgie' ? '' : S.confirm['rmshop:' + t.id] ? ' · Remove it? <button class="linkish small" style="color:var(--bad)" data-act="rm-shop-yes" data-v="' + h(t.id) + '">Yes</button> <button class="linkish small" data-act="rm-shop-no">No</button>' : ' · <button class="linkish small" data-act="rm-shop" data-v="' + h(t.id) + '">Remove</button>') + '</span></span><span class="money">' + fmtMoney(t.amount) + '</span></div>'; }).join('') + '</div>' : '<p class="muted small">Nothing logged this month yet.</p>';
   out += '<form class="stack" data-form="logshop" style="gap:8px"><span class="label">Done a shop? Log what you paid</span><div class="lsrow"><input class="input" id="ls-amt" type="number" step="0.01" min="0" inputmode="decimal" placeholder="' + (est ? est.toFixed(2) : '0.00') + '" aria-label="Amount paid in pounds"><select class="input" id="ls-shop" aria-label="Shop">' + SHOPS.map(s => '<option value="' + s.id + '"' + (s.id === weekShop() ? ' selected' : '') + '>' + h(s.name) + '</option>').join('') + '</select></div>' +
-    (S.people.length > 1 ? '<div class="row wrap" style="gap:6px"><span class="small">Paid by</span>' + S.people.map(p => '<label class="chip"><input type="radio" name="ls-who" value="' + h(p.id) + '"' + ((me ? me.id === p.id : p === S.people[0]) ? ' checked' : '') + '> ' + h(p.name) + '</label>').join('') + '<label class="chip"><input type="checkbox" id="ls-split" checked> Half each</label></div>' : '') +
+    (S.people.length > 1 ? '<div class="row wrap" style="gap:6px"><span class="small">Paid by</span>' + S.people.map(p => '<label class="chip"><input type="radio" name="ls-who" value="' + h(p.id) + '"' + (me && me.id === p.id ? ' checked' : '') + '> ' + h(p.name) + '</label>').join('') + '<label class="chip"><input type="checkbox" id="ls-split" checked> Half each</label></div>' : '') +
     '<button class="btn primary" type="submit">Log it</button>' + (S.bg.cfg ? '' : '<p class="muted small">Link Budgie in Settings → Linked apps and shops go there too, split half each.</p>') + '</form></section>';
   return out;
 }
@@ -2927,7 +2927,9 @@ document.addEventListener('submit', e => {
   if (k === 'bg-link') { const c = bgParseLink($('#bg-url').value); if (!c) { toast('That isn\u2019t a Peckish link from Budgie. In Budgie, go to Settings, then Linked apps, and tap Link Peckish.'); return; } bgLink(c); return; }
   if (k === 'logshop') {
     const amt = Number($('#ls-amt').value); if (!(amt > 0)) { toast('Enter what you paid, e.g. 48.20'); return; }
-    const who = (document.querySelector('input[name="ls-who"]:checked') || {}).value || (mePerson() || S.people[0] || {}).id, split = $('#ls-split') ? $('#ls-split').checked : false;
+    // who paid decides whose Budgie it goes to, so it's never guessed: yours when this phone knows which one is you
+    const who = (document.querySelector('input[name="ls-who"]:checked') || {}).value || (S.people.length > 1 ? '' : (mePerson() || S.people[0] || {}).id), split = $('#ls-split') ? $('#ls-split').checked : false;
+    if (!who) { toast('Tap who paid first.'); return; }
     logShop(amt, $('#ls-shop').value, who, split); toast('Logged ' + fmtMoney(amt) + (split ? ', half each' : '') + (S.bg.cfg ? '. Sending to Budgie\u2026' : '')); return;
   }
   if (k === 'extra') { const n = $('#extra-name').value.trim(); if (!n) return; mutateWeek(w => { w.extras.push({ id: 'x' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6), o: Date.now(), name: n, done: false }); }); }
