@@ -536,7 +536,7 @@ new MutationObserver(fitRows).observe(document.body, { childList: true, subtree:
 window.addEventListener('resize', fitRows);
 // The phone's Back button closes whatever is on top (cooking, a sheet, a settings page) instead of leaving the app.
 let histDepth = 0, ignorePop = 0, histT = 0;
-function layerDepth() { return (S.cook ? 1 : 0) + S.sheets.length + (S.tab === 'settings' && S.setPage ? 1 : 0) + (S.tab !== 'week' && !$('body').classList.contains('gated') ? 1 : 0); }
+function layerDepth() { return (S.cook ? 1 : 0) + S.sheets.length + (S.tab === 'settings' && S.setPage ? 1 : 0) + (S.tab !== 'week' && !$('body').classList.contains('gated') ? 1 : 0) + (canGoBack() ? 1 : 0); }
 function syncHistory() {
   const d = layerDepth();
   try {
@@ -548,7 +548,8 @@ function histSoon() { if (!histT) histT = setTimeout(() => { histT = 0; syncHist
 window.addEventListener('popstate', () => {
   if (ignorePop) { ignorePop--; return; }
   histDepth = Math.max(0, histDepth - 1);
-  if (S.cook) stopCook();
+  if (canGoBack()) { S.onboard = 'choose'; S.authMsg = ''; render(); }
+  else if (S.cook) stopCook();
   else if (S.sheets.length) { S.sheets.pop(); renderSheet(true); }
   else if (S.tab === 'settings' && S.setPage) { S.setPage = null; render(); window.scrollTo(0, 0); }
   else if (S.tab !== 'week') { S.tab = 'week'; render(); window.scrollTo(0, 0); }
@@ -591,10 +592,13 @@ function renderInviteOnly() {
     (S.authMsg ? '<p class="note ' + (S.authMsgOk ? 'good' : 'warn') + ' small">' + h(S.authMsg) + '</p>' : '') + '</section>' +
     '<button class="linkish center" data-act="sign-out">Sign out</button></div>';
 }
+// opened from Settings, Other households: the kitchen you came from is still loaded, so you can go back to it
+function canGoBack() { return S.onboard === 'force' && !!S.userDoc && !!S.userDoc.current && !!S.household && S.household.id === S.userDoc.current && !S.hhError; }
 function renderOnboard() {
   const names = (S.userDoc && S.userDoc.names) || {};
   const others = ((S.userDoc && S.userDoc.households) || []);
-  let out = '<div class="auth"><div class="brand"><span class="brand-mark" aria-hidden="true"><img src="icons/icon.svg" alt=""></span><h1>Set up your kitchen</h1><p class="muted">A household shares one meal plan, shopping list and pantry.</p></div>';
+  const back = canGoBack();
+  let out = '<div class="auth">' + (back ? '<button class="linkish backlink" data-act="hh-back">' + ICON.left + ' Back to ' + h(S.household.name || 'your kitchen') + '</button>' : '') + '<div class="brand"><span class="brand-mark" aria-hidden="true"><img src="icons/icon.svg" alt=""></span><h1>Set up your kitchen</h1><p class="muted">A household shares one meal plan, shopping list and pantry.</p></div>';
   if (S.authMsg) out += '<p class="note warn" role="alert">' + h(S.authMsg) + '</p>';
   if (S.authBusy) out += '<p class="note"><span class="spinner sm" aria-hidden="true"></span> Working on it\u2026</p>';
   if (others.length) out += '<section class="panel"><h2>Your households</h2>' + others.map(id => '<button class="btn block" data-act="hh-switch" data-v="' + h(id) + '"><span class="ellip">' + h(names[id] || 'Household') + '</span></button>').join('') + '</section>';
@@ -2960,6 +2964,7 @@ document.addEventListener('click', e => {
     case 'sign-out': unsubAll(Object.keys(unsub)); S.household = null; S.userDoc = undefined; Store.signOut(); break;
     case 'copy-code': copyText(S.household.inviteCode, 'Invite code copied'); break;
     case 'new-code': Store.newInviteCode(S.household).then(c => toast('New code: ' + c)).catch(() => toast('Couldn’t make a new code. Are you online?')); break;
+    case 'hh-back': S.onboard = 'choose'; S.authMsg = ''; render(); window.scrollTo(0, 0); break;
     case 'hh-other': case 'hh-reset': S.onboard = 'force'; S.hhError = null; render(); break;
     case 'hh-switch': withBusy(async () => { await Store.switchHousehold(S.user, v); S.onboard = 'choose'; if (window.__refreshMe) await window.__refreshMe(); }); break;
     case 'verify-done': S.authMsg = ''; if (window.__recheckAccess) window.__recheckAccess(); break;
