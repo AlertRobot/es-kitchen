@@ -103,6 +103,7 @@ window.Store = !configured ? { kind: 'unconfigured', onUser(cb) { setTimeout(() 
   },
   async joinHousehold(user, code, myName) {
     code = String(code || '').toUpperCase().replace(/[^A-Z0-9]/g, '');
+    if (!code) throw new Error('Enter the invite code you were sent (letters and numbers).');
     const inv = await getDoc(doc(db, 'invites', code));
     if (!inv.exists()) throw new Error('That invite code wasn’t found. Check it and try again.');
     const id = inv.data().hid;

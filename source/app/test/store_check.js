@@ -29,6 +29,9 @@ let fails = 0; const ok = (c, what) => { console.log((c ? 'ok   ' : 'FAIL ') + w
   ok(db.get(F).sendAfter === later + 1800e3, 'reminders: one for later moves when its time changes');
   db.set(F, { ...db.get(F), sent: true }); w0 = writes();
   ok(await Store.cal.notify('pk-y', { ...base, title: 'x', sendAfter: later }) === 'sent' && writes() === w0, 'reminders: one already sent is never written again');
+  // ---- joining: a code that's only punctuation gets a plain answer, not a database error ----
+  let msg = ''; try { await Store.joinHousehold({ uid: 'u_x' }, ' - . ', 'Sam'); } catch (e) { msg = e.message; }
+  ok(/invite code/i.test(msg) && !/reference|segments/i.test(msg), 'join: an empty code says to enter the code (' + msg + ')');
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })().catch(e => { console.error(e); process.exit(1); });
