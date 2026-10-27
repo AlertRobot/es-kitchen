@@ -2725,7 +2725,8 @@ document.addEventListener('click', e => {
     case 'choose-freezer': { const pick = S.sheets.find(s => s.type === 'pick'); setDay(pick.d, { r: v, freezer: true, guests: currentWeek().days[pick.d].guests }); closeSheets(); break; }
     case 'add-to-day': { if (guardLocked()) break; const d = Number(v); setDay(d, { r: b.dataset.r, ...nightKeep(currentWeek().days[d]) }); toast('Added to ' + DAY_LONG[d]); renderSheet(true); break; }
     case 'change-day': { if (guardLocked()) break; const d = Number(v); S.sheets = []; pushSheet({ type: 'pick', d }); break; }
-    case 'remove-day': if (guardLocked()) break; setDay(Number(v), {}); closeSheets(); break;
+    // the dinner goes; guests coming that night (and extra portions wanted) stay for whatever's chosen instead
+    case 'remove-day': { if (guardLocked()) break; const d = Number(v), keep = nightKeep(currentWeek().days[d]); setDay(d, keep.extra || keep.guests ? keep : {}); closeSheets(); break; }
     case 'takeaway': pushSheet({ type: 'rescue', d: Number(v) }); break;
     case 'rescue-apply': {
       const o = top.plans.options[Number(v)];

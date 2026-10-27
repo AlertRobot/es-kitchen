@@ -125,6 +125,19 @@ const calMock = (CAL, NOTIFS, opts) => ({ onUser(cb) { setTimeout(() => cb({ ema
     const wk = A.docAt('households/h1/weeks/' + MON) || {};
     ok(((wk.days || {}).d2 || {}).r === 'it_tuna_puttanesca' && !('bumped' in wk), 'no signal: adding a dinner writes that night, not an empty "moved from last week" list (' + Object.keys(wk).join(',') + ')');
   }
+  // ---- 8. removing a night's dinner keeps the guests coming that night ----
+  if (!only || only === 8) {
+    const wk = planned(); wk.days.d2.guests = 2;
+    const pre = { 'users/u_ethan': { households: ['h1'], current: 'h1', names: { h1: 'Home' } }, ...home('h1', 'Home', { ['households/h1/weeks/' + MON]: wk }) };
+    const A = boot({ pre }); await wait(2500);
+    await A.act('open-day', '2', null, 400); await A.act('remove-day', '2', null, 500);
+    const d2 = ((A.docAt('households/h1/weeks/' + MON) || {}).days || {}).d2 || {};
+    ok(!d2.r && d2.guests === 2, 'remove: the dinner goes, the guests stay on their night (' + JSON.stringify(d2) + ')');
+    await A.act('pick', '2', null, 1500); const sugg = A.d.querySelector('#sheet [data-act="choose"]'); if (sugg) { sugg.click(); await wait(500); }
+    const d2b = ((A.docAt('households/h1/weeks/' + MON) || {}).days || {}).d2 || {};
+    ok(!!d2b.r && d2b.guests === 2, 'remove: and whatever is chosen instead is cooked for them too (' + JSON.stringify(d2b) + ')');
+    ok(!A.errs.length, 'remove: no page errors ' + A.errs.join(' | '));
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();
