@@ -686,7 +686,7 @@ function renderWeek() {
     out += '<div class="day ' + (d === todayIdx ? 'today' : '') + '"><div class="when"><b>' + DAY_NAMES[d] + '</b><span>' + parseIso(addDays(w.start, d)).getDate() + '</span>' + (isTreat ? '<span class="treatdot" title="Treat night">★</span>' : '') + (eaters.length > 1 && !locked ? '<button class="whochip" data-act="who-cycle" data-n="' + d + '" aria-label="Who\u2019s in for dinner on ' + DAY_LONG[d] + ': ' + (none ? 'nobody' : h(inN.map(p => p.name).join(' and '))) + '. Tap to change">' + eaters.map(p => '<i class="' + (awayOn(w, p, d) ? 'off' : '') + '">' + h((p.name || '?').charAt(0).toUpperCase()) + '</i>').join('') + '</button>' : '') + '</div>';
     if (day.takeaway) {
       const was = day.was && S.RMAP[day.was];
-      out += '<div class="meal takeaway"><span class="tile c-Other" aria-hidden="true">🥡</span><span class="body"><span class="ttl">Takeaway night</span>' + (was ? '<span class="muted small">Instead of ' + h(was.title) + '</span>' : '') + '<span><button class="chip" data-act="undo-takeaway" data-v="' + d + '">Undo</button></span></span></div>';
+      out += '<div class="meal takeaway"><span class="tile c-Other" aria-hidden="true">🥡</span><span class="body"><span class="ttl">Takeaway night</span>' + (was ? '<span class="muted small">Instead of ' + h(rt(was)) + '</span>' : '') + '<span><button class="chip" data-act="undo-takeaway" data-v="' + d + '">Undo</button></span></span></div>';
     } else if (r) {
       const pc = checkPrefs(r, S.people, S.ING), info = sim.dayInfo[d], n = nut(r);
       const tags = [];
@@ -866,7 +866,7 @@ function tonightAndRatings(w, todayIdx) {
   const tonight = todayIdx >= 0 && todayIdx < 7 ? w.days[todayIdx] : null;
   if (tonight && tonight.r && !tonight.takeaway && S.RMAP[tonight.r]) {
     const r = S.RMAP[tonight.r];
-    out += '<section class="tonight slim"><div class="row" style="gap:12px">' + tileHtml(r) + '<div class="grow" style="min-width:0"><div class="label">Tonight \u00b7 ' + r.time + ' min</div><div class="rtitle">' + h(rt(r)) + '</div><button class="linkish small" data-act="takeaway" data-v="' + todayIdx + '" style="min-height:32px;padding:0">Get a takeaway</button></div>' +
+    out += '<section class="tonight slim"><div class="row" style="gap:12px">' + tileHtml(r) + '<div class="grow" style="min-width:0"><div class="label">Tonight \u00b7 ' + r.time + ' min</div><div class="rtitle">' + h(rt(r)) + '</div><button class="linkish small" data-act="takeaway" data-v="' + todayIdx + '" style="min-height:32px;padding:0">Takeaway?</button></div>' +
       '<button class="btn primary" data-act="cook" data-v="' + h(r.id) + '">Cook</button></div></section>';
   }
   // ask about dinners from the last few days that I haven't rated yet
@@ -945,7 +945,7 @@ function blSection(w) {
     const t = personDay(w, p, d);
     const slots = ['b', 'l'];
     const cell = sl => '<button class="blslot" data-act="bl-pick" data-v="' + h(p.id) + '|' + sl + '|' + d + '"><span class="label">' + SLOT_NAME[sl] + '</span>' +
-      (t[sl].length ? t[sl].map(x => '<span class="blitem">' + (x.lo ? 'Leftovers' + (x.r ? '' : ' (no dinner the night before)') : h(x.r.title)) + '</span>').join('') : '<span class="muted">+ Add</span>') + '</button>';
+      (t[sl].length ? t[sl].map(x => '<span class="blitem">' + (x.lo ? 'Leftovers' + (x.r ? '' : ' (no dinner the night before)') : h(rt(x.r))) + '</span>').join('') : '<span class="muted">+ Add</span>') + '</button>';
     const known = t.dinner || t.b.length || t.l.length;
     if (known && !t.unknown) { sumK += t.kcal; sumP += t.protein; n++; }
     const over = target && t.kcal > target * 1.05;
@@ -968,13 +968,13 @@ function sheetBlPick(top) {
   items.forEach((it, k) => {
     const r = it === 'lo' ? null : S.RMAP[it];
     const prev = w.days[d - 1]; const lr = it === 'lo' && prev && prev.r && S.RMAP[prev.r];
-    out += '<div class="row between ruled-sm"><span>' + (it === 'lo' ? 'Leftovers' + (lr ? ': ' + h(lr.title) : '') : r ? h(r.title) : h(it)) + ' <span class="muted small">' + (r ? nut(r).kcal + ' kcal' : lr ? nut(lr).kcal + ' kcal' : '') + '</span></span><button class="icon-btn" data-act="bl-remove" data-v="' + k + '" aria-label="Remove">' + ICON.close + '</button></div>';
+    out += '<div class="row between ruled-sm"><span>' + (it === 'lo' ? 'Leftovers' + (lr ? ': ' + h(rt(lr)) : '') : r ? h(rt(r)) : h(it)) + ' <span class="muted small">' + (r ? nut(r).kcal + ' kcal' : lr ? nut(lr).kcal + ' kcal' : '') + '</span></span><button class="icon-btn" data-act="bl-remove" data-v="' + k + '" aria-label="Remove">' + ICON.close + '</button></div>';
   });
   out += '<div class="row wrap"><button class="btn small-btn" data-act="bl-usual">Make this my usual</button><button class="btn small-btn" data-act="bl-alldays">Same every ' + (slot === 'l' ? 'lunch' : 'breakfast') + ' day</button>' + (items.length ? '<button class="btn small-btn" data-act="bl-none">Nothing</button>' : '') + '</div></section>';
   const usual = (p.usual && p.usual[slot]) || [];
-  if (usual.length) out += '<p class="muted small">Usual: ' + usual.map(id => id === 'lo' ? 'leftovers' : h((S.RMAP[id] || {}).title || id)).join(' + ') + '</p>';
+  if (usual.length) out += '<p class="muted small">Usual: ' + usual.map(id => id === 'lo' ? 'leftovers' : h(S.RMAP[id] ? rt(S.RMAP[id]) : id)).join(' + ') + '</p>';
   // leftovers option for lunch
-  if (slot === 'l' && d > 0) { const prev = w.days[d - 1]; const r = prev && !prev.takeaway && prev.r && S.RMAP[prev.r]; if (r) out += '<div class="sugg"><span class="tile c-Other" aria-hidden="true">🍱</span><button class="pick" data-act="bl-add" data-v="lo"><b>Leftovers from last night</b><span class="why">' + h(r.title) + ' · ' + nut(r).kcal + ' kcal · cooks one extra portion</span></button><span></span></div>'; }
+  if (slot === 'l' && d > 0) { const prev = w.days[d - 1]; const r = prev && !prev.takeaway && prev.r && S.RMAP[prev.r]; if (r) out += '<div class="sugg"><span class="tile c-Other" aria-hidden="true">🍱</span><button class="pick" data-act="bl-add" data-v="lo"><b>Leftovers from last night</b><span class="why">' + h(rt(r)) + ' · ' + nut(r).kcal + ' kcal · cooks one extra portion</span></button><span></span></div>'; }
   // ranked options
   const C = ctx(); const meal = SLOT_MEAL[slot];
   const base = simulate(w, C);
@@ -997,7 +997,7 @@ function sheetBlPick(top) {
   out += '<input class="search" type="search" id="blq" placeholder="Search ' + (meal === 'lunch' ? 'lunches' : 'breakfasts') + '" value="' + h(top.q || '') + '" data-input="blq" aria-label="Search">';
   const cats = meal === 'breakfast' ? [['', 'All'], ['cereal', 'Cereals'], ['quick', 'Quick'], ['cooked', 'Cooked']] : [['', 'All'], ['quick', 'Quick'], ['batch', 'Make ahead'], ['hot', 'Hot']];
   out += '<div class="chips wrapchips">' + cats.map(([k, n]) => '<button class="chip ' + ((top.cat || '') === k ? 'on' : '') + '" data-act="bl-cat" data-v="' + k + '">' + n + '</button>').join('') + '</div>';
-  out += '<section class="stack"><h3>Add ' + (items.length ? 'something else' : 'something') + '</h3>' + opts.slice(0, 40).map(x => '<div class="sugg">' + tileHtml(x.r) + '<button class="pick" data-act="bl-add" data-v="' + h(x.r.id) + '"><b>' + h(x.r.title) + '</b><span class="muted small">' + x.n.kcal + ' kcal · ' + x.n.protein + 'g protein · ' + (x.r.time ? x.r.time + ' min' : 'no cooking') + '</span><span class="why">' +
+  out += '<section class="stack"><h3>Add ' + (items.length ? 'something else' : 'something') + '</h3>' + opts.slice(0, 40).map(x => '<div class="sugg">' + tileHtml(x.r) + '<button class="pick" data-act="bl-add" data-v="' + h(x.r.id) + '"><b>' + h(rt(x.r)) + '</b><span class="muted small">' + x.n.kcal + ' kcal · ' + x.n.protein + 'g protein · ' + (x.r.time ? x.r.time + ' min' : 'no cooking') + '</span><span class="why">' +
     (x.extra < 0.05 ? '<b>nothing extra to buy</b>' : 'adds <span class="money">' + fmtMoney(x.extra) + '</span>') + (x.r.packable ? ' · packable' : '') + (x.r.keepsDays > 1 ? ' · keeps ' + x.r.keepsDays + ' days' : '') + (remaining > 0 && x.n.kcal > remaining ? ' · <span class="warnt">over target</span>' : '') + '</span></button><button class="icon-btn" data-act="peek" data-v="' + h(x.r.id) + '" aria-label="See the recipe">' + ICON.info + '</button></div>').join('') + '</section>';
   return out;
 }
@@ -2010,7 +2010,7 @@ function ingForm() {
 function personPlanHtml(p) {
   const plan = p.plan || {}, days = p.days || {};
   const dayChips = slot => '<div class="chips wrapchips">' + DAY_NAMES.map((n, d) => { const on = (days[slot] || (slot === 'l' ? [0, 1, 2, 3, 4] : [0, 1, 2, 3, 4, 5, 6])).includes(d); return '<button class="chip ' + (on ? 'on' : '') + '" data-act="p-day" data-v="' + h(p.id) + '" data-s="' + slot + '" data-n="' + d + '" aria-pressed="' + on + '">' + n + '</button>'; }).join('') + '</div>';
-  const usual = slot => { const u = (p.usual && p.usual[slot]) || []; return '<span class="muted small">Usual: ' + (u.length ? u.map(id => id === 'lo' ? 'leftovers' : h((S.RMAP[id] || {}).title || id)).join(' + ') : 'none yet. Pick one on the Week tab and tap \u201cMake this my usual\u201d.') + '</span>'; };
+  const usual = slot => { const u = (p.usual && p.usual[slot]) || []; return '<span class="muted small">Usual: ' + (u.length ? u.map(id => id === 'lo' ? 'leftovers' : h(S.RMAP[id] ? rt(S.RMAP[id]) : id)).join(' + ') : 'none yet. Pick one on the Week tab and tap \u201cMake this my usual\u201d.') + '</span>'; };
   return '<div class="stack" style="gap:8px"><span class="label">Portions &amp; daily plan</span>' +
     '<div class="stack" style="gap:6px"><span class="small">Dinner portion</span><span class="seg full">' + [[0.5, '½'], [0.75, '¾'], [1, 'Normal'], [1.25, '1¼'], [1.5, '1½']].map(([v, n]) => '<button class="' + (portionOf(p) === v ? 'on' : '') + '" data-act="p-portion" data-v="' + h(p.id) + '" data-n="' + v + '">' + n + '</button>').join('') + '</span></div>' +
     '<label class="row small"><input type="checkbox" class="cb" data-change="p-dinner" data-v="' + h(p.id) + '" ' + (p.dinner === false ? '' : 'checked') + '> Eats the planned dinners</label>' +
@@ -2253,7 +2253,7 @@ function renderSheet(force, keep) {
   const scroll = force && !keep ? 0 : el.scrollTop;
   let title = '', body = '';
   if (top.type === 'pick') { title = DAY_LONG[top.d] + '’s dinner'; body = sheetPick(top); }
-  else if (top.type === 'recipe') { const r = S.RMAP[top.id]; title = r ? r.title : 'Recipe'; body = r ? sheetRecipe(r, top) : '<p>Recipe not found.</p>'; }
+  else if (top.type === 'recipe') { const r = S.RMAP[top.id]; title = r ? rt(r) : 'Recipe'; body = r ? sheetRecipe(r, top) : '<p>Recipe not found.</p>'; }
   else if (top.type === 'form') { title = top.id ? 'Edit recipe' : 'Add a recipe'; body = sheetForm(top); }
   else if (top.type === 'votes') { title = 'Thumbs up or down'; body = sheetVotes(top); }
   else if (top.type === 'whosin') { title = 'Who\u2019s in each night'; body = sheetWhosIn(top); }
@@ -2277,7 +2277,7 @@ function sheetPick(top) {
   if (isTreat) out += '<div class="note treatnote">★ <b>' + DAY_LONG[d] + ' is a treat night</b>, so treats come first.</div>';
   if (spareIds.length) out += '<div class="note"><b>You’ll have spare:</b> ' + spareIds.slice(0, 6).map(id => h(leftText(id, spare[id]))).join(', ') + (spareIds.length > 6 ? ' and more' : '') + '. The top picks use these up.</div>';
   const fm = (w.freezerMeals || []).filter(m => m.portions >= 1);
-  if (fm.length) out += '<section class="stack"><h3>From the freezer</h3>' + fm.map(m => { const r = S.RMAP[m.r]; return r ? '<div class="sugg"><span class="tile ' + cuisineClass(r.cuisine) + '">' + h(r.icon) + '</span><button class="pick" data-act="choose-freezer" data-v="' + h(r.id) + '"><b>' + h(r.title) + '</b><span class="why">' + (Number(m.portions) || 0) + ' portion' + (m.portions > 1 ? 's' : '') + ' frozen · nothing to buy</span></button><span></span></div>' : ''; }).join('') + '</section>';
+  if (fm.length) out += '<section class="stack"><h3>From the freezer</h3>' + fm.map(m => { const r = S.RMAP[m.r]; return r ? '<div class="sugg"><span class="tile ' + cuisineClass(r.cuisine) + '">' + h(r.icon) + '</span><button class="pick" data-act="choose-freezer" data-v="' + h(r.id) + '"><b>' + h(rt(r)) + '</b><span class="why">' + (Number(m.portions) || 0) + ' portion' + (m.portions > 1 ? 's' : '') + ' frozen · nothing to buy</span></button><span></span></div>' : ''; }).join('') + '</section>';
   // rows that each show something different, without repeating a recipe or (within a row) a cuisine
   const used = new Set();
   const row = (title, list, n) => {
@@ -2458,7 +2458,7 @@ function sheetRescue(top) {
     const bits = [];
     if (o.detail.shift) bits.push('Each dinner from ' + DAY_LONG[d] + ' onwards moves one day later.');
     if (o.detail.to != null) bits.push((r ? h(rt(r)) : 'Tonight’s dinner') + ' moves to ' + DAY_LONG[o.detail.to] + '.');
-    if (o.bumped.length) bits.push(o.bumped.map(id => '<b>' + h((S.RMAP[id] || {}).title || id) + '</b>').join(', ') + ' moves to next week (it’ll be suggested first).');
+    if (o.bumped.length) bits.push(o.bumped.map(id => '<b>' + h(S.RMAP[id] ? rt(S.RMAP[id]) : id) + '</b>').join(', ') + ' moves to next week (it’ll be suggested first).');
     if (o.detail.skip !== undefined) bits.push('Nothing moves. ' + (tn ? 'Tonight\u2019s' : 'That night\u2019s') + ' ingredients are left over.');
     return bits.join(' ');
   };
@@ -2829,7 +2829,7 @@ document.addEventListener('click', e => {
     case 'p-day': { const p = clone(personById(v)); const slot = b.dataset.s, d = Number(b.dataset.n); p.days = { ...(p.days || {}) }; const cur = new Set(p.days[slot] || (slot === 'l' ? [0, 1, 2, 3, 4] : [0, 1, 2, 3, 4, 5, 6])); cur.has(d) ? cur.delete(d) : cur.add(d); p.days[slot] = Array.from(cur).sort(); S.people = S.people.map(x => x.id === v ? p : x); savePerson(p); render(); break; }
     case 'choose': {
       const pick = S.sheets.slice().reverse().find(s => s.type === 'pick');
-      if (pick) { const d = pick.d; const old = currentWeek().days[d]; setDay(d, { r: v, ...nightKeep(old) }); closeSheets(); toast((S.RMAP[v] || {}).title + ' added to ' + DAY_LONG[d]); }
+      if (pick) { const d = pick.d; const old = currentWeek().days[d]; setDay(d, { r: v, ...nightKeep(old) }); closeSheets(); toast(rt(S.RMAP[v]) + ' added to ' + DAY_LONG[d]); }
       break;
     }
     case 'choose-freezer': { const pick = S.sheets.find(s => s.type === 'pick'); setDay(pick.d, { r: v, freezer: true, guests: currentWeek().days[pick.d].guests }); closeSheets(); break; }
@@ -2943,7 +2943,7 @@ document.addEventListener('click', e => {
       const sg = suggest(w, d, ctx(), { seed: 'swap' + Math.random(), hard: true, filter: r => r.id !== cur && !skipped.includes(r.id) && (!S.RMAP[cur] || r.cuisine !== S.RMAP[cur].cuisine || Math.random() < 0.3) });
       const pick = sg[0]; if (!pick) { toast('Nothing else fits that day.'); break; }
       mutateWeek(x => { x.days[d] = { r: pick.r.id, auto: true, skipped, ...nightKeep(day) }; });
-      toast(DAY_LONG[d] + ': ' + pick.r.title); break;
+      toast(DAY_LONG[d] + ': ' + rt(pick.r)); break;
     }
     case 'move-day': { if (guardLocked()) break; const a = Number(v), t = Number(b.dataset.to);
       // the dinners swap nights; guests are coming on a night, so they stay where they were (as with a takeaway re-plan)
