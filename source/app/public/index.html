@@ -290,6 +290,9 @@ a.btn { text-decoration: none; color: inherit; }
 .row.wrap > .btn.grow { flex: 1 1 auto; }
 /* a row of a heading and its button lets the button drop under it rather than run off the card */
 .row.between { flex-wrap: wrap; row-gap: 6px; }
+/* a row of buttons that doesn't fit on one line stacks, each button the full width (fitRows in app.js) */
+.row.wrap.stacked { flex-direction: column; align-items: stretch; }
+.row.wrap.stacked > .btn { width: 100%; }
 .stack > *, .panel > *, .sbody > * { min-width: 0; }
 .pantryrow > span:first-child, .meal .body > .muted, .panel p { overflow-wrap: anywhere; }
 .meal .ttl { hyphens: auto; overflow-wrap: anywhere; }

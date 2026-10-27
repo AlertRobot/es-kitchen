@@ -521,6 +521,19 @@ function render() {
   requestAnimationFrame(() => { const t = document.querySelector('#app > .top'); if (t) document.documentElement.style.setProperty('--toph', t.offsetHeight + 'px'); });
 }
 document.addEventListener('focusout', () => setTimeout(() => { if (pendingMain) schedule(); }, 0));
+// A row of buttons either fits on one line or stacks as full-width buttons, one under another: never two with one left
+// over underneath. Checked whenever anything is drawn (the tab, a sheet, cooking) and when the screen changes size.
+function fitRows() {
+  document.querySelectorAll('.row.wrap').forEach(row => {
+    const kids = [...row.children].filter(k => k.getClientRects().length);
+    if (kids.length < 2 || !kids.every(k => k.classList.contains('btn'))) return;
+    row.classList.remove('stacked');
+    const top = kids[0].getBoundingClientRect().top;
+    if (kids.some(k => Math.abs(k.getBoundingClientRect().top - top) > 1)) row.classList.add('stacked');
+  });
+}
+new MutationObserver(fitRows).observe(document.body, { childList: true, subtree: true });
+window.addEventListener('resize', fitRows);
 // The phone's Back button closes whatever is on top (cooking, a sheet, a settings page) instead of leaving the app.
 let histDepth = 0, ignorePop = 0, histT = 0;
 function layerDepth() { return (S.cook ? 1 : 0) + S.sheets.length + (S.tab === 'settings' && S.setPage ? 1 : 0) + (S.tab !== 'week' && !$('body').classList.contains('gated') ? 1 : 0); }
