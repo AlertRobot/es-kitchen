@@ -117,8 +117,10 @@ window.Store = !configured ? { kind: 'unconfigured', onUser(cb) { setTimeout(() 
     const ps = await getDocs(collection(db, 'households', id, 'people')).catch(() => null);
     const docs = ps ? ps.docs : [];
     if (!docs.some(d => d.id === user.uid || (d.data() || {}).uid === user.uid)) {
-      const nm = String(myName || '').trim().toLowerCase();
-      const same = docs.find(d => !(d.data() || {}).uid && String((d.data() || {}).name || '').trim().toLowerCase() === nm);
+      // (by first name too, when only one fits: Google signs Sophie in as "Sophie Smith", and she was added as "Sophie")
+      const low = x => String(x || '').trim().toLowerCase(), first = x => low(x).split(/\s+/)[0], nm = low(myName);
+      const free = docs.filter(d => !(d.data() || {}).uid), byFirst = free.filter(d => nm && first((d.data() || {}).name) === first(nm));
+      const same = free.find(d => low((d.data() || {}).name) === nm) || (byFirst.length === 1 ? byFirst[0] : null);
       if (same) await setDoc(same.ref, { uid: user.uid }, { merge: true });
       else await setDoc(doc(db, 'households', id, 'people', user.uid), { name: myName, uid: user.uid, order: docs.length + 1, wontEat: [], dislikes: [], likes: [] });
     }

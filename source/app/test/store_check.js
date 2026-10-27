@@ -32,6 +32,19 @@ let fails = 0; const ok = (c, what) => { console.log((c ? 'ok   ' : 'FAIL ') + w
   // ---- joining: a code that's only punctuation gets a plain answer, not a database error ----
   let msg = ''; try { await Store.joinHousehold({ uid: 'u_x' }, ' - . ', 'Sam'); } catch (e) { msg = e.message; }
   ok(/invite code/i.test(msg) && !/reference|segments/i.test(msg), 'join: an empty code says to enter the code (' + msg + ')');
+  // ---- joining: Sophie, added under Who's eating as "Sophie", joins as "Sophie Smith" (her Google name): her record is linked,
+  // not a second Sophie that dinners get planned for ----
+  db.set('invites/JN7Q2R', { hid: 'h9' });
+  db.set('households/h9', { name: 'Home', members: ['u_e'], memberNames: { u_e: 'Ethan Dunning' }, inviteCode: 'JN7Q2R' });
+  db.set('households/h9/people/u_e', { name: 'Ethan Dunning', uid: 'u_e', order: 1 });
+  db.set('households/h9/people/p_s', { name: 'Sophie', order: 2, wontEat: ['mushrooms'] });
+  await Store.joinHousehold({ uid: 'u_s' }, 'jn7q2r', 'Sophie Smith');
+  const ppl = [...db.keys()].filter(k => k.startsWith('households/h9/people/'));
+  ok(ppl.length === 2 && (db.get('households/h9/people/p_s') || {}).uid === 'u_s', 'join: a full name links the person added by first name (' + ppl.join(', ') + ')');
+  // (two people it could be: neither is guessed)
+  db.set('households/h9/people/p_s2', { name: 'Sam', order: 3 }); db.set('households/h9/people/p_s3', { name: 'Sam Jones', order: 4 });
+  await Store.joinHousehold({ uid: 'u_sam' }, 'JN7Q2R', 'Sam Smith');
+  ok(!(db.get('households/h9/people/p_s2') || {}).uid && !(db.get('households/h9/people/p_s3') || {}).uid && db.has('households/h9/people/u_sam'), 'join: with two it could be, neither is claimed');
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })().catch(e => { console.error(e); process.exit(1); });
