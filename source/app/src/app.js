@@ -205,7 +205,8 @@ function tidyIng(over) {
   return x;
 }
 function tidyRecipe(x) {
-  const r = { ...x, time: upTo(x.time, 1440, 0), servings: num(x.servings, 0) > 0 ? upTo(x.servings, 50, 2) : 2 }; delete r.removed;
+  // (a recipe serves at least one: a tiny "serves" would multiply every amount by thousands)
+  const r = { ...x, time: upTo(x.time, 1440, 0), servings: num(x.servings, 0) > 0 ? Math.max(1, upTo(x.servings, 50, 2)) : 2 }; delete r.removed;
   ['title', 'icon', 'cuisine', 'protein', 'category', 'meal', 'short', 'airFryer', 'batch', 'base', 'family'].forEach(k => { if (k in r) r[k] = txt(r[k]); });
   if ('keepsDays' in r) r.keepsDays = num(r.keepsDays, 0);
   ['equipment', 'tags'].forEach(k => { if (k in r) r[k] = (Array.isArray(r[k]) ? r[k] : []).map(txt); });

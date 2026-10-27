@@ -13,6 +13,7 @@ const AISLE_ORDER = ['Fruit & veg', 'Meat & fish', 'Dairy & eggs', 'Chilled', 'B
 const STALE_DAYS = 60;
 const PEOPLE_SERVINGS = 2;
 const EPS = 1e-6;
+const MAX_PACKS = 5000;
 
 // ---------- dates ----------
 function isoDate(d) { const z = new Date(d); return z.getFullYear() + '-' + String(z.getMonth() + 1).padStart(2, '0') + '-' + String(z.getDate()).padStart(2, '0'); }
@@ -125,7 +126,8 @@ function choosePacks(ing, need, shop) {
   if (need <= EPS) return [];
   // a need of hundreds of packs (an odd amount in a recipe or record) just takes the biggest packs: trying every mix
   // of sizes would hold up the planner for seconds on each night it tries
-  if (sizes.reduce((a, s) => a * (need / s + 2), 1) > 50000) return Array(Math.ceil(need / sizes[0] - EPS)).fill(sizes[0]);
+  // (and never more than a few thousand packs: a stray amount far beyond any shop can't run the phone out of memory)
+  if (sizes.reduce((a, s) => a * (need / s + 2), 1) > 50000) return Array(Math.min(MAX_PACKS, Math.ceil(need / sizes[0] - EPS))).fill(sizes[0]);
   let best = null;
   const maxCount = sizes.map(s => Math.ceil(need / s) + 1);
   function rec(k, counts, total) {
@@ -277,7 +279,7 @@ function simulate(week, ctx) {
       const packs = choosePacks(ing, remain, shopId);
       const total = packs.reduce((a, b) => a + b, 0);
       const P = purchases[l.i] || (purchases[l.i] = { need: 0, packs: [], bought: 0 });
-      P.need += remain; P.packs.push(...packs); P.bought += total;
+      P.need += remain; for (const x of packs) P.packs.push(x); P.bought += total;
       if (d > ing.life) {
         if (ing.freeze && roomFor(1)) { addFrozen(1); freezeNotes.push({ d: -1, i: l.i, q: total, onArrival: true, forDay: d }); if (ing.aisle === 'Meat & fish') defrostNotes.push({ d, i: l.i, q: remain }); }
         else if (ing.freeze) { freezerFullSkips++; warnings.push({ d, i: l.i, full: true, msg: 'No room in the freezer for the ' + ing.name.toLowerCase() + ': buy it nearer ' + DAY_LONG[d] }); }
