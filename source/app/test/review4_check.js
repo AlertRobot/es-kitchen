@@ -65,6 +65,41 @@ const home = (hid, name, extra) => ({ ['households/' + hid]: { name, members: ['
     ok(mark() === h1Text && left.length === h1.length, 'reminders: unlinking Caledonite in one household takes back its waiting reminders and keeps the other’s (' + left.length + ' of ' + h1.length + ')');
     ok(!A.errs.length, 'reminders: no page errors ' + A.errs.join(' | '));
   }
+  // ---- 2. a recipe removed from the library: still on the weeks it was planned in, and can be brought back ----
+  if (!only || only === 2) {
+    const days = planned().days; days.d1 = { r: 'my_deleted_one' }; // a recipe of yours that's since been deleted
+    const pre = { 'users/u_ethan': { households: ['h1'], current: 'h1', names: { h1: 'Home' } }, ...home('h1', 'Home', { ['households/h1/weeks/' + MON]: { days },
+      'households/h1/recipes/br_cottage_pie': { ...JSON.parse(lib).recipes.find(r => r.id === 'br_cottage_pie'), title: 'Nan’s cottage pie', short: undefined } }) };
+    const A = boot({ pre }); await wait(2500);
+    const seg = () => (A.d.querySelector('[data-act="week-view"][data-v="dinners"]') || {}).textContent || '';
+    ok(/6\/7/.test(seg()) && !!A.d.querySelector('[data-act="fill"]'), 'removed: a night whose recipe was deleted counts as one still to choose (' + seg() + ')');
+    await A.act('fill', null, null, 6000);
+    const n1 = ((A.docAt('households/h1/weeks/' + MON).days || {}).d1 || {}).r;
+    ok(!!n1 && n1 !== 'my_deleted_one' && !!JSON.parse(lib).recipes.find(r => r.id === n1), 'removed: and "Fill the rest" gives it a dinner (' + n1 + ')');
+    for (const id of ['it_tuna_puttanesca', 'br_cottage_pie']) { await A.act('open-recipe', id, null, 400); await A.act('del-recipe', id, null, 300); await A.act('del-recipe-yes', id, null, 600); }
+    const titles = () => [...A.d.querySelectorAll('.meal .ttl')].map(x => x.textContent).join(' | ');
+    ok(/Tuna puttanesca/.test(titles()) && /Nan.s cottage pie/i.test(titles()), 'removed: dinners already planned stay on the week (' + titles().slice(0, 80) + ')');
+    const pie = A.docAt('households/h1/recipes/br_cottage_pie') || {};
+    ok(pie.hidden === true && /Nan/.test(pie.title || ''), 'removed: your edits to a library recipe are kept when it’s removed');
+    const search = async q => { const el = A.d.querySelector('#rq'); el.value = q; el.dispatchEvent(new A.w.Event('input', { bubbles: true })); await wait(300); const f = A.d.activeElement; if (f && f.blur) f.blur(); if (f) f.dispatchEvent(new A.w.FocusEvent('focusout', { bubbles: true })); await wait(100); };
+    await A.act('tab', 'recipes', null, 500); await search('tuna');
+    const listed = () => [...A.d.querySelectorAll('.vcard')].map(x => x.dataset.v);
+    ok(!listed().includes('it_tuna_puttanesca') && /you removed/.test(A.d.querySelector('#app').textContent), 'removed: it isn’t listed, and the page says how many you removed');
+    await A.act('show-hidden', null, null, 300);
+    ok(listed().includes('it_tuna_puttanesca'), 'removed: "Show them" lists it');
+    await A.act('open-recipe', 'it_tuna_puttanesca', null, 400);
+    ok(!!A.d.querySelector('[data-act="restore-recipe"]'), 'removed: its page offers to bring it back');
+    await A.act('restore-recipe', 'it_tuna_puttanesca', null, 600); await A.act('sheet-back');
+    await A.act('open-recipe', 'br_cottage_pie', null, 400); await A.act('restore-recipe', 'br_cottage_pie', null, 600); await A.act('sheet-back');
+    const pie2 = A.docAt('households/h1/recipes/br_cottage_pie') || {};
+    ok(!A.docAt('households/h1/recipes/it_tuna_puttanesca') && !pie2.hidden && /Nan/.test(pie2.title || '') && !('removed' in pie2), 'removed: bringing them back keeps your edits');
+    await A.act('show-hidden', null, null, 300); await search('tuna'); const t1 = listed(); await search('cottage'); const t2 = listed();
+    ok(t1.includes('it_tuna_puttanesca') && t2.includes('br_cottage_pie'), 'removed: and they’re back in the library');
+    await A.act('edit-recipe', 'it_tuna_puttanesca', null, 400); A.d.querySelector('#rf-title').value = 'Ethan’s puttanesca'; await A.submit('[data-form="recipe"]', 600);
+    await A.act('tab', 'week', null, 500);
+    ok(/Ethan.s puttanesca/.test(titles()), 'recipes: a library recipe you rename shows its new name on the week (' + titles().slice(0, 40) + ')');
+    ok(!A.errs.length, 'removed: no page errors ' + A.errs.join(' | '));
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();

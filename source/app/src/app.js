@@ -203,7 +203,7 @@ function tidyIng(over) {
   return x;
 }
 function tidyRecipe(x) {
-  const r = { ...x, time: num(x.time, 0), servings: num(x.servings, 0) > 0 ? num(x.servings, 2) : 2 };
+  const r = { ...x, time: num(x.time, 0), servings: num(x.servings, 0) > 0 ? num(x.servings, 2) : 2 }; delete r.removed;
   ['title', 'icon', 'cuisine', 'protein', 'category', 'meal', 'short', 'airFryer', 'batch', 'base', 'family'].forEach(k => { if (k in r) r[k] = txt(r[k]); });
   if ('keepsDays' in r) r.keepsDays = num(r.keepsDays, 0);
   ['equipment', 'tags'].forEach(k => { if (k in r) r[k] = (Array.isArray(r[k]) ? r[k] : []).map(txt); });
@@ -243,11 +243,17 @@ function rebuild() {
   if (!S.lib) return;
   const recipes = {}; for (const r of S.lib.recipes) recipes[r.id] = r;
   // a recipe you've added or edited keeps the library's stock photo (if it has one), never a web address saved with it
-  for (const id in RAW.myR) { const x = RAW.myR[id]; if (x.hidden) delete recipes[id]; else { const lib = recipes[id] && !RAW.myR[id].custom ? S.lib.recipes.find(r => r.id === id) : null; recipes[id] = { ...tidyRecipe(x), id, photo: lib ? lib.photo : undefined }; } }
+  for (const id in RAW.myR) {
+    const x = RAW.myR[id], lib = recipes[id] && !x.custom ? S.lib.recipes.find(r => r.id === id) : null;
+    const mine = x.title && Array.isArray(x.ingredients) ? { ...tidyRecipe(x), id, photo: lib ? lib.photo : undefined } : lib;
+    if (!mine) { delete recipes[id]; continue; }
+    // one removed from the library still opens from the weeks it was planned in, and can be brought back
+    recipes[id] = x.hidden ? { ...mine, removed: true } : mine;
+  }
   const all = Object.values(recipes).filter(r => r && r.title && Array.isArray(r.ingredients)).sort((a, b) => a.title.localeCompare(b.title));
   all.forEach(spellRecipe);
   S.RMAP = {}; all.forEach(r => S.RMAP[r.id] = r);
-  S.recipes = all.filter(r => !r.retired); // retired recipes still open from old weeks, but aren't offered any more
+  S.recipes = all.filter(r => !r.retired && !r.removed); // retired and removed recipes still open from old weeks, but aren't offered any more
   const ing = {}; for (const i of S.lib.ingredients) ing[i.id] = i;
   for (const id in RAW.myI) {
     const lib = ing[id], over = tidyIng(RAW.myI[id]);
@@ -609,8 +615,9 @@ function renderWeek() {
   const w = currentWeek(), C = ctx();
   const sim = simulate(w, C);
   const list = weekList(w, sim, C);
-  const Cw = ctx(), outN = w.days.filter((x, d) => !x.r && !x.takeaway && nobodyIn(w, d, Cw)).length;
-  const filled = w.days.filter(d => d.r || d.takeaway).length + outN;
+  // a night whose dinner has since been deleted from your recipes shows (and counts) as a night still to choose
+  const Cw = ctx(), outN = w.days.filter((x, d) => !(x.r && S.RMAP[x.r]) && !x.takeaway && nobodyIn(w, d, Cw)).length;
+  const filled = w.days.filter(d => (d.r && S.RMAP[d.r]) || d.takeaway).length + outN;
   const locked = !!w.locked;
   let out = headerWeek(sim, list);
   out += tonightElsewhere();
@@ -1035,13 +1042,14 @@ function cardImg(r) {
 function vcardHtml(r, act) {
   const pc = checkPrefs(r, S.people, S.ING), n = nut(r), rs = ratingSummary()[r.id], eq = hasEquipment(r, S.settings);
   let badge = '';
-  if (!pc.ok) badge = '<span class="tag bad vtag">' + h(pc.blocked[0].person) + ' won’t eat ' + h(pc.blocked[0].what.toLowerCase()) + '</span>';
+  if (r.removed) badge = '<span class="tag onimg vtag">Removed</span>';
+  else if (!pc.ok) badge = '<span class="tag bad vtag">' + h(pc.blocked[0].person) + ' won’t eat ' + h(pc.blocked[0].what.toLowerCase()) + '</span>';
   else if (!eq) badge = '<span class="tag warn vtag">Needs ' + h(missingEquipment(r).join(', ')) + '</span>';
   else if (pc.swaps.length) badge = '<span class="tag onimg vtag">Easy swap for ' + h(pc.swaps.map(s => s.person).filter((x, i, a) => a.indexOf(x) === i).join(' & ')) + '</span>';
   else if (r.category === 'treat') badge = '<span class="tag treat vtag">Treat</span>';
   else if (r.custom) badge = '<span class="tag onimg vtag">Yours</span>';
   const star = rs ? '<span class="tag onimg vstar">' + rs.avg.toFixed(1) + '★</span>' : '';
-  const dim = !pc.ok || !eq || (rs && rs.avg < 3);
+  const dim = !pc.ok || !eq || (rs && rs.avg < 3) || r.removed;
   return '<button class="vcard' + (dim ? ' blocked' : '') + '" data-act="' + act + '" data-v="' + h(r.id) + '"><span class="fimg">' + cardImg(r) + badge + star + '</span>' +
     '<span class="vb"><b>' + h(rt(r)) + '</b><span class="muted small">' + (r.time ? r.time + ' min · ' : '') + (n.kcal ? n.kcal + ' kcal · ' : '') + '<span class="money">' + fmtMoney(recipeCost(r)) + '</span></span></span></button>';
 }
@@ -1068,9 +1076,12 @@ function renderRecipes(nr) {
   if (nr) return out + nr;
   // recipes you can't make (missing equipment) or someone won't eat are tucked away unless you ask to see them
   const canMake = r => hasEquipment(r, S.settings) && checkPrefs(r, S.people, S.ING).ok;
-  const all = S.recipes.filter(r => recipeMatches(r, f)), hiddenN = all.filter(r => !canMake(r)).length;
-  const list = S.showHidden ? all : all.filter(canMake);
-  const hiddenNote = hiddenN ? '<p class="muted small center">' + (S.showHidden ? 'Showing ' + hiddenN + ' you can\u2019t make as things stand. <button class="linkish small" data-act="show-hidden">Hide them</button>' : hiddenN + ' hidden because they need kit you don\u2019t have or someone won\u2019t eat them. <button class="linkish small" data-act="show-hidden">Show them</button>') + '</p>' : '';
+  // ...and so are the ones you removed from the library (they can be brought back from their page)
+  const removed = Object.values(S.RMAP).filter(r => r.removed && recipeMatches(r, f));
+  const all = S.recipes.filter(r => recipeMatches(r, f)), cantN = all.filter(r => !canMake(r)).length, hiddenN = cantN + removed.length;
+  const list = S.showHidden ? all.concat(removed) : all.filter(canMake);
+  const why = cantN && removed.length ? cantN + ' need kit you don\u2019t have or someone won\u2019t eat them, and ' + removed.length + ' you removed' : cantN ? 'they need kit you don\u2019t have or someone won\u2019t eat them' : 'you removed ' + (hiddenN > 1 ? 'them' : 'it') + ' from the library';
+  const hiddenNote = hiddenN ? '<p class="muted small center">' + (S.showHidden ? 'Showing ' + hiddenN + ' you can\u2019t make as things stand' + (removed.length ? ' or removed' : '') + '. <button class="linkish small" data-act="show-hidden">Hide them</button>' : hiddenN + ' hidden because ' + why + '. <button class="linkish small" data-act="show-hidden">Show them</button>') + '</p>' : '';
   const browsing = !f.q && !active && (meal === '' || meal === 'dinner');
   if (browsing) {
     const RS = ratingSummary(), cap = S.settings.weeknightCap || 30;
@@ -2253,7 +2264,8 @@ function sheetRecipe(r, top) {
   // only the person who added a photo, or their household, can replace it
   if (own && !ourPhoto(own)) out += '<section class="panel"><h3>Your photo</h3><p class="muted small">Someone else using Peckish has added a photo of this dish, so yours can\u2019t go on the card. You can hide theirs for your household.</p></section>';
   else out += '<section class="panel"><h3>Your photo</h3><p class="muted small">' + (own ? 'This photo shows on the card for everyone using the app.' : 'Made it? Add a photo of how yours turned out. It shows on the card for everyone using the app.') + '</p><div class="row wrap"><label class="btn soft">' + ICON.camera + (own ? ' Replace photo' : ' Add a photo') + '<input type="file" accept="image/*" capture="environment" data-photo="' + h(r.id) + '" hidden></label>' + (own && own.uid === myUid() ? '<button class="btn danger" data-act="del-photo" data-v="' + h(r.id) + '">Remove</button>' : '') + '</div></section>';
-  out += '<div class="row wrap"><button class="btn" data-act="edit-recipe" data-v="' + h(r.id) + '">Edit recipe</button>' + (top.confirmDel ? '<button class="btn danger" data-act="del-recipe-yes" data-v="' + h(r.id) + '">Yes, remove it</button>' : '<button class="btn danger" data-act="del-recipe" data-v="' + h(r.id) + '">Remove from library</button>') + '</div>';
+  if (r.removed) out += '<p class="note small">You removed this from the library, so it isn’t suggested or listed. <button class="linkish" data-act="restore-recipe" data-v="' + h(r.id) + '">Bring it back</button></p>';
+  out += '<div class="row wrap"><button class="btn" data-act="edit-recipe" data-v="' + h(r.id) + '">Edit recipe</button>' + (r.removed ? '' : top.confirmDel ? '<button class="btn danger" data-act="del-recipe-yes" data-v="' + h(r.id) + '">Yes, remove it</button>' : '<button class="btn danger" data-act="del-recipe" data-v="' + h(r.id) + '">Remove from library</button>') + '</div>';
   return out;
 }
 // tap a name to cycle: in for dinner -> out for dinner (night shift, out with friends) -> away all day (no breakfast or lunch either)
@@ -2550,6 +2562,9 @@ function doFill(jitter, clearAuto) {
   S.busy = true; render();
   const C = ctx(); const w = clone(currentWeek());
   if (clearAuto) w.days = w.days.map(x => x.auto ? {} : x);
+  // a night whose dinner has since been deleted from your recipes is filled like an empty one
+  const gone = x => !!(x.r && !S.RMAP[x.r] && !x.takeaway);
+  w.days = w.days.map(x => (gone(x) ? nightKeep(x) : x));
   autoFillAsync(w, C, { jitter, beam: 3, branch: 5 }).then(filled => {
     try {
       const empties = w.days.map((x, d) => (!x.r && !x.takeaway && !nobodyIn(w, d, C)) ? d : -1).filter(d => d >= 0);
@@ -2558,7 +2573,7 @@ function doFill(jitter, clearAuto) {
       if (S.weekStart !== w.start) { toast('You moved to another week, so nothing was filled in. Tap Fill again here.'); render(); return; }
       if (!empties.some(d => filled.days[d].r)) { toast('No recipes fit the remaining days. Try loosening the weeknight time, equipment or preferences.'); render(); return; }
       // only nights that are still empty (the other phone may have chosen one meanwhile)
-      mutateWeek(x => { empties.forEach(d => { if (filled.days[d].r && !x.days[d].r && !x.days[d].takeaway) x.days[d] = { ...x.days[d], ...filled.days[d], auto: true }; }); });
+      mutateWeek(x => { empties.forEach(d => { if (filled.days[d].r && (!x.days[d].r || gone(x.days[d])) && !x.days[d].takeaway) x.days[d] = { ...(gone(x.days[d]) ? nightKeep(x.days[d]) : x.days[d]), ...filled.days[d], auto: true }; }); });
       toast('Week planned. Swap any day you don’t fancy.');
     } catch (e) { S.busy = false; render(); toast('Couldn’t plan the week.'); console.error(e); }
   });
@@ -2734,7 +2749,11 @@ document.addEventListener('click', e => {
     case 'edit-recipe': pushSheet({ type: 'form', id: v }); break;
     case 'rf-more': top.lines = readFormLines(top); top.lines.push({ i: '', q: '', t: '' }); renderSheet(true); break;
     case 'del-recipe': top.confirmDel = true; renderSheet(true); break;
-    case 'del-recipe-yes': if (S.RMAP[v] && S.RMAP[v].custom) Store.del('recipes/' + v).catch(() => {}); else save('recipes/' + v, { hidden: true }); closeSheets(); toast('Recipe removed'); break;
+    // a library recipe is only marked removed (your edits to it are kept), so it can be brought back
+    case 'del-recipe-yes': if (S.RMAP[v] && S.RMAP[v].custom) Store.del('recipes/' + v).catch(() => {}); else Store.merge('recipes/' + v, { hidden: true }).catch(e => { console.warn(e); toast('Couldn’t save that change.'); }); closeSheets(); toast('Recipe removed'); break;
+    case 'restore-recipe': { const x = RAW.myR[v] || {}, edited = Object.keys(x).some(k => k !== 'hidden' && k !== 'id');
+      (edited ? Store.patch('recipes/' + v, { hidden: Store.DEL }) : Store.del('recipes/' + v)).catch(e => { console.warn(e); toast('Couldn’t save that change.'); });
+      toast('Back in the library'); break; }
     case 'del-photo': delete S.thumbs[v]; delete S.fullPhotos[v]; Store.delG('dishThumbs/' + v).catch(() => {}); Store.delG('dishPhotos/' + v).catch(() => {}); renderSheet(true); schedule(); break;
     case 'timer': startTimer(Number(v), b.dataset.l || 'Timer'); toast(v + ' min timer started'); break;
     case 'timer-stop': S.timers = S.timers.filter(t => t.id !== v); renderCook(); break;
@@ -2907,7 +2926,10 @@ document.addEventListener('submit', e => {
     const equipment = EQUIPMENT.map(x => x[0]).filter(x => $('#rf-eq-' + x).checked);
     const doc = { ...(old || {}), title, icon: $('#rf-icon').value.trim() || '🍽️', cuisine: $('#rf-cuisine').value, category: $('#rf-category').value, protein: $('#rf-protein').value, time: Number($('#rf-time').value) || 30, servings: old ? (old.servings || 2) : 2, equipment, ingredients: ings, steps, tags: old ? (old.tags || []) : [], custom: old ? !!old.custom : true };
     const dr = top.draft; if (!old && dr && dr.source) doc.source = dr.source;
-    delete doc.id;
+    // "removed" is worked out from the record's "hidden" when it's read back, never saved itself
+    delete doc.id; delete doc.removed; if (old && old.removed) doc.hidden = true;
+    // a library recipe's short name follows a new name you give it
+    if (old && doc.short && title !== old.title) delete doc.short;
     RAW.myR[id] = doc; rebuild(); save('recipes/' + id, doc); toast(old ? 'Recipe updated' : 'Recipe added'); S.sheets.pop(); renderSheet(true);
   }
 });
