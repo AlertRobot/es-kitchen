@@ -25,7 +25,8 @@ function boot(opts) {
   if (opts.cal) w.Store.cal = opts.cal;
   const act = async (a, v, extra, ms) => { const b = d.createElement('button'); b.dataset.act = a; if (v != null) b.dataset.v = v; Object.assign(b.dataset, extra || {}); d.body.appendChild(b); b.click(); b.remove(); await wait(ms || 250); };
   const docAt = p => w.__docs.get(p);
-  return { w, d, errs, act, docAt };
+  const switchTo = async (hid, ms) => { w.__docs.set('users/u_ethan', { ...w.__docs.get('users/u_ethan'), current: hid }); await w.__refreshMe(); await wait(ms == null ? 3000 : ms); };
+  return { w, d, errs, act, docAt, switchTo };
 }
 const R = ['it_tuna_puttanesca', 'in_chicken_tikka_masala', 'br_cottage_pie', 'am_sloppy_joes', 'as_sweet_sour_chicken', 'am_double_smash_burgers', 'am_jambalaya'];
 const planned = list => { const days = {}; (list || R).forEach((r, k) => { days['d' + k] = { r }; }); return { days }; };
@@ -114,6 +115,20 @@ function budgieMock(B, OPS, opts) {
     ok(st('s_a') === 'queued' && st('s_bb') === 'queued', 'budgie: after a hiccup both shops are still waiting, not marked as turned down (' + st('s_a') + ', ' + st('s_bb') + ')');
     hiccup = false; await A.act('bg-sync', null, null, 2500);
     ok(st('s_a') === 'sent' && st('s_bb') === 'sent' && B.transactions.length === 2, 'budgie: ...and they go on the next sync');
+    ok(!A.errs.length, 'no page errors ' + A.errs.join(' | '));
+  }
+  // ---- 4. History & stats opened just before switching household shows the household you switched to ----
+  if (!only || only === 4) {
+    const old = iso(day(-21));
+    const pre = { 'users/u_ethan': { households: ['h1', 'h2'], current: 'h1', names: { h1: 'Home', h2: 'Mum' } },
+      ...home('h1', 'Home', { ['households/h1/weeks/' + MON]: planned(), ['households/h1/weeks/' + old]: planned() }), ...home('h2', 'Mum', { ['households/h2/weeks/' + MON]: planned() }) };
+    const A = boot({ pre }); await wait(2500);
+    const list0 = A.w.Store.list; A.w.Store.list = rel => list0.call(A.w.Store, rel).then(x => (rel === 'weeks' ? wait(1500) : null).then(() => x));
+    await A.act('tab', 'settings', null, 200); await A.act('set-page', 'history', null, 200);
+    await A.switchTo('h2', 3500);
+    await A.act('tab', 'settings', null, 200); await A.act('set-page', '', null, 100); await A.act('set-page', 'history', null, 2500);
+    const rows = A.d.querySelectorAll('.histrow').length;
+    ok(rows === 1, 'history: after switching, it shows this household’s weeks, not the last one’s (' + rows + ' weeks)');
     ok(!A.errs.length, 'no page errors ' + A.errs.join(' | '));
   }
   console.log(fails ? fails + ' FAILED' : 'all passed');

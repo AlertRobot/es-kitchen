@@ -288,7 +288,7 @@ function subscribeHousehold(hid) {
   Store.setHousehold(hid); pruneWeekCopies(hid); linkScope(hid);
   RAW.myR = {}; RAW.myI = {}; RAW.gotR = false; RAW.gotI = false; S.thumbs = {}; S.fullPhotos = {};
   // nothing from the household you were in carries over while this one loads
-  S.pendingRestore = null; S.restoreAsk = false; RAW.people = {}; S.people = []; S.settings = clone(DEFAULTS); S.pantry = { status: {} }; S.pantryRaw = null; S.photoPrefs = { hidden: {} }; S.ratings = {}; S.shopsLog = null; S.thisWeekDoc = null; S.histAll = null; S.histCost = {};
+  S.pendingRestore = null; S.restoreAsk = false; RAW.people = {}; S.people = []; S.settings = clone(DEFAULTS); S.pantry = { status: {} }; S.pantryRaw = null; S.photoPrefs = { hidden: {} }; S.ratings = {}; S.shopsLog = null; S.thisWeekDoc = null; S.histAll = null; S.histLoading = false; S.histCost = {};
   unsub.hh = Store.watchHousehold(hid, hh => { S.household = hh; if (hh && Store.touchMember && S.user) Store.touchMember(hh, S.user); schedule(); }, onSubErr);
   unsub.backup = Store.sub('config/backup', d => { S.backup = d || null; schedule(); maybeAutoBackup(); }, () => {});
   unsub.recipes = Store.sub('recipes', docs => { RAW.myR = {}; docs.forEach(d => RAW.myR[d.id] = d); RAW.gotR = true; rebuild(); }, onSubErr);
@@ -379,7 +379,8 @@ function subscribeWeek() {
   }, e => { onSubErr(e); if (start !== S.weekStart) return; const c = loadWeekCopy(start); if (c && !S.week) S.week = normWeek(clone(c), start); S.weekLoaded = true; schedule(); });
   unsub.prev = Store.sub('weeks/' + addDays(start, -7), d => { if (start !== S.weekStart) return; d = decWeek(d); S.prevWeek = d ? normWeek(clone(d), addDays(start, -7)) : null; schedule(); }, onSubErr);
   S.hist = {};
-  [2, 3].forEach(k => Store.get('weeks/' + addDays(start, -7 * k)).then(d => { if (start !== S.weekStart) return; S.hist[k] = decWeek(d); schedule(); }));
+  const hid0 = curHid;
+  [2, 3].forEach(k => Store.get('weeks/' + addDays(start, -7 * k)).then(d => { if (start !== S.weekStart || curHid !== hid0) return; S.hist[k] = decWeek(d); schedule(); }));
 }
 function normWeek(w, start) {
   w = Object.assign(w, decWeek(w)); w.start = start; w.days = Array.from({ length: 7 }, (_, k) => (w.days && w.days[k]) || {});
@@ -1748,9 +1749,10 @@ const SET_PAGES = [
 function histSummary() { const n = S.histAll ? S.histAll.filter(x => weekHasDinners(x.w)).length : 0; return n ? n + ' weeks planned' : 'What you’ve cooked and spent'; }
 function loadHistory(force) {
   if (S.histLoading || (S.histAll && !force) || !Store.list) return;
-  S.histLoading = true;
-  Store.list('weeks').then(rows => { S.histAll = rows.map(x => ({ start: x.id, w: normWeek(decWeek(clone(x.data)), x.id) })).filter(x => /^\d{4}-\d{2}-\d{2}$/.test(x.start)).sort((a, b) => b.start < a.start ? -1 : 1); S.histLoading = false; S.histCost = {}; schedule(); })
-    .catch(e => { console.warn(e); S.histLoading = false; S.histAll = []; schedule(); });
+  S.histLoading = true; const hid0 = curHid;
+  // (switched household meanwhile: these weeks are the other household's, and this one's are fetched afresh)
+  Store.list('weeks').then(rows => { if (curHid !== hid0) return; S.histAll = rows.map(x => ({ start: x.id, w: normWeek(decWeek(clone(x.data)), x.id) })).filter(x => /^\d{4}-\d{2}-\d{2}$/.test(x.start)).sort((a, b) => b.start < a.start ? -1 : 1); S.histLoading = false; S.histCost = {}; schedule(); })
+    .catch(e => { if (curHid !== hid0) return; console.warn(e); S.histLoading = false; S.histAll = []; schedule(); });
 }
 function weekCost(x) { S.histCost = S.histCost || {}; if (S.histCost[x.start] == null) { try { S.histCost[x.start] = simulate(x.w, { ...ctx(), settings: S.settings }).buy.prefTotal; } catch (e) { S.histCost[x.start] = 0; } } return S.histCost[x.start]; }
 function setHistory() {
