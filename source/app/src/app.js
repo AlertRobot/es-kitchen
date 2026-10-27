@@ -1562,8 +1562,10 @@ async function bgSyncShops() {
     const oursSeen = new Set(done.map(x => x[1]));
     for (const tx of bgRows('transactions')) {
       const t = ours[tx.id]; if (!t) continue; oursSeen.add(tx.id);
-      const amount = Math.round((Number(tx.amount) || 0) * 100) / 100, date = String(tx.date || '').slice(0, 10);
-      if (/^\d{4}-\d{2}-\d{2}$/.test(date) && (amount !== Number(t.amount) || date !== t.date)) here(), await Store.patch('shops/' + t.id, { amount, date, week: mondayOf(date) });
+      const amount = Math.round((Number(tx.amount) || 0) * 100) / 100, date = String(tx.date || '').slice(0, 10), split = String(tx.split || '');
+      // (and split half each or not, as set there: Budgie is what says who owes who)
+      // (the week it was shopped for only moves with a new date: a shop logged for next week stays next week's)
+      if (/^\d{4}-\d{2}-\d{2}$/.test(date) && (amount !== Number(t.amount) || date !== t.date || split !== String(t.split || ''))) here(), await Store.patch('shops/' + t.id, { amount, date, split, ...(date !== t.date ? { week: mondayOf(date) } : {}) });
     }
     if (sent.full === true) for (const tid in ours) { const t = ours[tid]; if (!oursSeen.has(tid) && t.budgie.person === me && String(t.date || '') >= addDays(mondayOf(TODAY), -120)) here(), await Store.del('shops/' + t.id); }
     // food payments logged in Budgie (by either of you) show up here too, and follow it when they're changed or taken off there

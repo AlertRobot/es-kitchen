@@ -173,6 +173,36 @@ const twice = B => B.puts.filter((x, i, a) => a.indexOf(x) !== i);
     ok(!dup.length, 'nothing sent twice (' + dup.join(',') + ')');
     ok(![E, So].some(p => p.errs.length), 'no page errors ' + [E, So].map(p => p.errs.join(' | ')).join(''));
   }
+  // ---- 3. removing a shop on either phone, and Budgie changing (amount, date, split) or removing one ----
+  if (!only || only === 3) {
+    phones.length = 0;
+    const docs = household(), B = budgie();
+    let slow = 0; const fetch = async (u, o) => { if (slow && /script\.google/.test(u)) await wait(slow); return B.fetch(u, o); };
+    const E = phone('ethan', docs, B, { fetch }), So = phone('sophie', docs, B, { fetch });
+    await wait(4000);
+    await E.logShop(40, 'u_ethan', true); await So.logShop(31, 'u_sophie', true, 3000);
+    await So.logShop(22, 'u_ethan', true, 1000); await E.act('bg-sync', null, null, 3000);
+    const id = a => (shopsIn(docs).find(t => t.amount === a) || {}).id, tidOf = a => ((shopsIn(docs).find(t => t.amount === a) || {}).budgie || {}).tid;
+    // Sophie removes one Ethan paid that's in his Budgie: it comes off there (from his phone) and then here
+    const t40 = tidOf(40);
+    await So.act('go-cost', null, null, 300); await So.act('rm-shop-yes', id(40), null, 1500); await E.act('bg-sync', null, null, 3000);
+    ok(!id(40) && (B.transactions.find(t => t.id === t40) || {}).deleted === true, 'Sophie removing a shop Ethan paid takes it off his Budgie and Peckish');
+    // Ethan changes one in Budgie: both phones follow
+    B.transactions.find(t => t.id === tidOf(22)).amount = 25; await E.act('bg-sync', null, null, 3000);
+    ok(!!id(25) && !id(22), 'a new amount in Budgie comes back to the shop');
+    // Ethan turns "split" off in Budgie: the shop no longer says half each
+    B.transactions.find(t => t.id === tidOf(25)).split = ''; await E.act('bg-sync', null, null, 3000);
+    ok((shopsIn(docs).find(t => t.amount === 25) || {}).split === '', 'split turned off in Budgie comes back too (' + (shopsIn(docs).find(t => t.amount === 25) || {}).split + ')');
+    // Ethan removes it in Budgie: it goes from Peckish
+    B.transactions.find(t => t.id === tidOf(25)).deleted = true; await E.act('bg-sync', null, null, 3000);
+    ok(!id(25), 'one removed in Budgie goes from Peckish');
+    // a shop logged for next week (from next week's list) stays next week's when the bank puts in the exact amount
+    await E.act('wk', '1', null, 600); await E.logShop(60, 'u_ethan', true, 3000); await E.act('wk', '-1', null, 600);
+    B.transactions.find(t => t.id === tidOf(60)).amount = 61.2; await E.act('bg-sync', null, null, 3000);
+    ok(id(61.2) && (shopsIn(docs).find(t => t.amount === 61.2) || {}).week === NEXT, 'a new amount from Budgie leaves the shop in the week it was shopped for (' + (shopsIn(docs).find(t => t.amount === 61.2) || {}).week + ')');
+    ok(!twice(B).length, 'nothing sent twice (' + twice(B).join(',') + ')');
+    ok(![E, So].some(p => p.errs.length), 'no page errors ' + [E, So].map(p => p.errs.join(' | ')).join(''));
+  }
   // ---- 4. a shop taken off while the payer's phone is sending it comes back off Budgie, and isn't written back ----
   if (!only || only === 4) {
     phones.length = 0;
