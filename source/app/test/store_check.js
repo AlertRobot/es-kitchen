@@ -35,8 +35,8 @@ let fails = 0; const ok = (c, what) => { console.log((c ? 'ok   ' : 'FAIL ') + w
   // ---- joining: Sophie, added under Who's eating as "Sophie", joins as "Sophie Smith" (her Google name): her record is linked,
   // not a second Sophie that dinners get planned for ----
   db.set('invites/JN7Q2R', { hid: 'h9' });
-  db.set('households/h9', { name: 'Home', members: ['u_e'], memberNames: { u_e: 'Ethan Dunning' }, inviteCode: 'JN7Q2R' });
-  db.set('households/h9/people/u_e', { name: 'Ethan Dunning', uid: 'u_e', order: 1 });
+  db.set('households/h9', { name: 'Home', members: ['u_e'], memberNames: { u_e: 'Ethan Whitfield' }, inviteCode: 'JN7Q2R' });
+  db.set('households/h9/people/u_e', { name: 'Ethan Whitfield', uid: 'u_e', order: 1 });
   db.set('households/h9/people/p_s', { name: 'Sophie', order: 2, wontEat: ['mushrooms'] });
   await Store.joinHousehold({ uid: 'u_s' }, 'jn7q2r', 'Sophie Smith');
   const ppl = [...db.keys()].filter(k => k.startsWith('households/h9/people/'));

@@ -12,8 +12,8 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
 let fails = 0; const ok = (cond, what) => { console.log((cond ? 'ok   ' : 'FAIL ') + what); if (!cond) fails++; };
 const only = process.argv[2] ? Number(process.argv[2]) : 0;
 const KEY = { ethan: 'app_peckish_' + 'e'.repeat(64), sophie: 'app_peckish_' + '5'.repeat(64) };
-const USERS = { ethan: { uid: 'u_ethan', name: 'Ethan Dunning', email: 'ethan@example.com' }, sophie: { uid: 'u_sophie', name: 'Sophie Smith', email: 'sophie@example.com' }, mum: { uid: 'u_mum', name: 'Mum', email: 'mum@example.com' },
-  dad: { uid: 'u_dad', name: 'Ethan Dunning Sr', email: 'dad@example.com' }, cousin: { uid: 'u_cousin', name: 'Sophie Jones', email: 'cousin@example.com' } };
+const USERS = { ethan: { uid: 'u_ethan', name: 'Ethan Whitfield', email: 'ethan@example.com' }, sophie: { uid: 'u_sophie', name: 'Sophie Smith', email: 'sophie@example.com' }, mum: { uid: 'u_mum', name: 'Mum', email: 'mum@example.com' },
+  dad: { uid: 'u_dad', name: 'Ethan Whitfield Sr', email: 'dad@example.com' }, cousin: { uid: 'u_cousin', name: 'Sophie Jones', email: 'cousin@example.com' } };
 const linkFor = who => 'https://alertrobot.github.io/es-kitchen/#connect=' + Buffer.from(JSON.stringify({ u: 'https://script.google.com/macros/s/B/exec', k: KEY[who] })).toString('base64url');
 
 // ---- a stand-in for Budgie's side of the Peckish link (apps-script/Code.gs: appAllowed_, appRowOk_, appSync_) ----
@@ -101,10 +101,10 @@ const shopsIn = docs => [...docs.keys()].filter(k => /^households\/h1\/shops\//.
 const stuck = docs => shopsIn(docs).filter(t => t.budgie && t.budgie.state === 'queued');
 const twice = B => B.puts.filter((x, i, a) => a.indexOf(x) !== i);
 
-// Peckish names from a Google sign-in ("Ethan Dunning"), Budgie's from its own setup ("Ethan")
+// Peckish names from a Google sign-in ("Ethan Whitfield"), Budgie's from its own setup ("Ethan")
 function fullNames(docs) {
-  for (const [id, n] of [['u_ethan', 'Ethan Dunning'], ['u_sophie', 'Sophie Smith']]) docs.set('households/h1/people/' + id, { ...docs.get('households/h1/people/' + id), name: n });
-  docs.set('households/h1', { ...docs.get('households/h1'), memberNames: { u_ethan: 'Ethan Dunning', u_sophie: 'Sophie Smith', u_mum: 'Mum' } });
+  for (const [id, n] of [['u_ethan', 'Ethan Whitfield'], ['u_sophie', 'Sophie Smith']]) docs.set('households/h1/people/' + id, { ...docs.get('households/h1/people/' + id), name: n });
+  docs.set('households/h1', { ...docs.get('households/h1'), memberNames: { u_ethan: 'Ethan Whitfield', u_sophie: 'Sophie Smith', u_mum: 'Mum' } });
   return docs;
 }
 
@@ -131,12 +131,12 @@ const goLinked = async P => { await P.act('tab', 'settings', null, 200); await P
 const pasteBudgie = async (P, who, ms) => { await goLinked(P); P.d.querySelector('#bg-url').value = linkFor(who); P.d.querySelector('form[data-form="bg-link"]').dispatchEvent(new P.w.Event('submit', { bubbles: true, cancelable: true })); await wait(ms || 3000); };
 const shopsOf = docs => [...docs.keys()].filter(k => /^households\/h1\/shops\//.test(k)).map(k => ({ id: k.split('/').pop(), ...docs.get(k) }));
 const peopleOf = docs => [...docs.keys()].filter(k => /^households\/h1\/people\//.test(k)).map(k => ({ id: k.split('/').pop(), ...docs.get(k) }));
-// before any link: Ethan made the household (Google calls him "Ethan Dunning") and added Sophie under Who's eating
+// before any link: Ethan made the household (Google calls him "Ethan Whitfield") and added Sophie under Who's eating
 function fresh(extra) {
   return new Map(Object.entries(JSON.parse(JSON.stringify({
     'users/u_ethan': { households: ['h1'], current: 'h1', names: { h1: 'Home' } },
-    'households/h1': { name: 'Home', members: ['u_ethan'], memberNames: { u_ethan: 'Ethan Dunning' }, inviteCode: 'K7RM2Q' }, 'invites/K7RM2Q': { hid: 'h1' },
-    'households/h1/people/u_ethan': { name: 'Ethan Dunning', uid: 'u_ethan', order: 1 }, 'households/h1/people/p_soph': { name: 'Sophie', order: 2, wontEat: ['mushrooms'] },
+    'households/h1': { name: 'Home', members: ['u_ethan'], memberNames: { u_ethan: 'Ethan Whitfield' }, inviteCode: 'K7RM2Q' }, 'invites/K7RM2Q': { hid: 'h1' },
+    'households/h1/people/u_ethan': { name: 'Ethan Whitfield', uid: 'u_ethan', order: 1 }, 'households/h1/people/p_soph': { name: 'Sophie', order: 2, wontEat: ['mushrooms'] },
     ['households/h1/weeks/' + MON]: planned(), ['households/h1/weeks/' + NEXT]: planned(),
     ...(extra || {}) }))));
 }
@@ -190,8 +190,8 @@ function fresh(extra) {
   // ---- 2. Ethan's dad, also an Ethan, in the household: never taken for Ethan by Budgie, Caledonite or "who paid" ----
   if (!only || only === 2) {
     phones.length = 0;
-    const docs = fresh({ 'households/h1': { name: 'Home', members: ['u_ethan', 'u_sophie', 'u_dad'], memberNames: { u_ethan: 'Ethan Dunning', u_sophie: 'Sophie Smith', u_dad: 'Ethan Dunning Sr' }, memberEmails: { u_ethan: 'ethan@example.com', u_sophie: 'sophie@example.com', u_dad: 'dad@example.com' }, inviteCode: 'K7RM2Q' },
-      'households/h1/people/p_soph': { name: 'Sophie Smith', uid: 'u_sophie', order: 2 }, 'households/h1/people/u_dad': { name: 'Ethan Dunning Sr', uid: 'u_dad', order: 3 },
+    const docs = fresh({ 'households/h1': { name: 'Home', members: ['u_ethan', 'u_sophie', 'u_dad'], memberNames: { u_ethan: 'Ethan Whitfield', u_sophie: 'Sophie Smith', u_dad: 'Ethan Whitfield Sr' }, memberEmails: { u_ethan: 'ethan@example.com', u_sophie: 'sophie@example.com', u_dad: 'dad@example.com' }, inviteCode: 'K7RM2Q' },
+      'households/h1/people/p_soph': { name: 'Sophie Smith', uid: 'u_sophie', order: 2 }, 'households/h1/people/u_dad': { name: 'Ethan Whitfield Sr', uid: 'u_dad', order: 3 },
       'users/u_sophie': { households: ['h1'], current: 'h1', names: { h1: 'Home' } }, 'users/u_dad': { households: ['h1'], current: 'h1', names: { h1: 'Home' } } });
     const B = budgie(), C = caledonite();
     const E = phone('ethan', docs, B, { cal: C.for('ethan@example.com') }), So = phone('sophie', docs, B), D = phone('dad', docs, B, { budgie: false });

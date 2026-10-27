@@ -100,15 +100,15 @@ const shopsIn = docs => [...docs.keys()].filter(k => /^households\/h1\/shops\//.
 const stuck = docs => shopsIn(docs).filter(t => t.budgie && t.budgie.state === 'queued');
 const twice = B => B.puts.filter((x, i, a) => a.indexOf(x) !== i);
 
-// Peckish names from a Google sign-in ("Ethan Dunning"), Budgie's from its own setup ("Ethan")
+// Peckish names from a Google sign-in ("Ethan Whitfield"), Budgie's from its own setup ("Ethan")
 function fullNames(docs) {
-  for (const [id, n] of [['u_ethan', 'Ethan Dunning'], ['u_sophie', 'Sophie Smith']]) docs.set('households/h1/people/' + id, { ...docs.get('households/h1/people/' + id), name: n });
-  docs.set('households/h1', { ...docs.get('households/h1'), memberNames: { u_ethan: 'Ethan Dunning', u_sophie: 'Sophie Smith', u_mum: 'Mum' } });
+  for (const [id, n] of [['u_ethan', 'Ethan Whitfield'], ['u_sophie', 'Sophie Smith']]) docs.set('households/h1/people/' + id, { ...docs.get('households/h1/people/' + id), name: n });
+  docs.set('households/h1', { ...docs.get('households/h1'), memberNames: { u_ethan: 'Ethan Whitfield', u_sophie: 'Sophie Smith', u_mum: 'Mum' } });
   return docs;
 }
 
 (async () => {
-  // ---- 1. signed in with Google, so named "Ethan Dunning" in Peckish and "Ethan" in Budgie: shops still go ----
+  // ---- 1. signed in with Google, so named "Ethan Whitfield" in Peckish and "Ethan" in Budgie: shops still go ----
   if (!only || only === 1) {
     phones.length = 0;
     const docs = fullNames(household()), B = budgie();

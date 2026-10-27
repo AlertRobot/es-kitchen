@@ -1,7 +1,7 @@
 // Phone-size check in a real browser (Playwright + Chromium) with the in-memory store: no screen scrolls sideways,
 // and no tab or option label is cut off, at the narrowest common width and on a Galaxy (412px), each with and without
 // the larger text setting, and on a Galaxy with Chrome's text zoom at 130%. The household has its real, longer names
-// (Ethan Dunning, Sophie Magill, Ethan Dunning Sr), so no button, tab, chip or tag runs past its edge or its card, and
+// (Ethan Whitfield, Sophie Marchetti, Ethan Whitfield Sr), so no button, tab, chip or tag runs past its edge or its card, and
 // no one-line button wraps; and a row of buttons is never left ragged (two on a line and one under them).
 // Needs test/app.test.js built first. Exits 1 if anything fails.
 const { chromium } = require('playwright');
@@ -59,10 +59,10 @@ let fails = 0; const ok = (c, what) => { console.log((c ? 'ok   ' : 'FAIL ') + w
       });
       r.forEach(x => bad.push(name + ': ' + x));
     };
-    await ev(() => { document.querySelector('#cr-me').value = 'Ethan Dunning'; document.querySelector('#cr-wont').value = 'mushrooms, onion'; });
+    await ev(() => { document.querySelector('#cr-me').value = 'Ethan Whitfield'; document.querySelector('#cr-wont').value = 'mushrooms, onion'; });
     await submit('[data-form="create"]', 800);
     await act('tab', 'settings'); await act('set-page', 'people');
-    for (const n of ['Sophie Magill', 'Ethan Dunning Sr']) { await ev(n => { document.querySelector('#np-name').value = n; }, n); await submit('[data-form="add-person"]'); }
+    for (const n of ['Sophie Marchetti', 'Ethan Whitfield Sr']) { await ev(n => { document.querySelector('#np-name').value = n; }, n); await submit('[data-form="add-person"]'); }
     const ids = await ev(() => [...document.querySelectorAll('[data-act="set-person"]')].map(b => b.dataset.v));
     await act('set-person', ids[1]); await ev(id => { document.querySelector('#pa-' + id + '-wontEat').value = 'onion'; }, ids[1]); await submit('[data-form="pref-add"][data-k="wontEat"][data-v="' + ids[1] + '"]');
     await look('settings people'); await act('rm-person', ids[2]); await act('set-person', ids[2]); await act('rm-person', ids[2]); await look('settings people, remove'); await act('set-page', '');
