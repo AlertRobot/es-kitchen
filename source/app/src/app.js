@@ -412,7 +412,9 @@ function save(rel, data) { Store.set(rel, data).catch(e => { console.warn(e); to
 const isObj = x => !!x && typeof x === 'object' && !Array.isArray(x);
 function stable(x) { return isObj(x) ? '{' + Object.keys(x).sort().map(k => JSON.stringify(k) + ':' + stable(x[k])).join(',') + '}' : Array.isArray(x) ? '[' + x.map(stable).join(',') + ']' : JSON.stringify(x === undefined ? null : x); }
 const SAFE_KEY = /^[A-Za-z0-9_]+$/;
-const DEEP = { away: true, plates: true };
+// (and each night's dinner, guests and extra portions on their own, so a dinner chosen on one phone and guests added on the
+// other for the same night are both kept)
+const DEEP = { away: true, plates: true, days: true };
 function diffFields(a, b) {
   a = a || {}; b = b || {}; const out = {};
   for (const k of new Set([...Object.keys(a), ...Object.keys(b)])) {

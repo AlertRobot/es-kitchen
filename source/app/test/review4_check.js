@@ -246,6 +246,18 @@ const home = (hid, name, extra) => ({ ['households/' + hid]: { name, members: ['
     const t = A.d.querySelector('#app').textContent;
     ok(/Spending by month/.test(t) && !/Invalid/.test(t), 'history: no "Invalid Date" month from a shop without a proper date');
   }
+  // ---- 12. the same night changed on both phones at once: a dinner swapped on one and guests added on the other both stay ----
+  if (!only || only === 12) {
+    const pre = { 'users/u_ethan': { households: ['h1'], current: 'h1', names: { h1: 'Home' } }, ...home('h1', 'Home', { ['households/h1/weeks/' + MON]: planned() }) };
+    const A = boot({ pre }); await wait(2000);
+    // B shares A's database (as two phones do); neither sees the other's change before saving its own
+    const shared = A.w.__docs; const C = (() => { const dom = new JSDOM(html, { runScripts: 'dangerously', pretendToBeVisual: true, url: 'https://x.github.io/es-kitchen/', beforeParse(w) { w.__preDocs = shared; w.fetch = async () => ({ ok: true, json: async () => JSON.parse(lib) }); w.scrollTo = () => {}; w.console.warn = () => {}; } }); const s2 = dom.window.document.createElement('script'); s2.textContent = bundle; dom.window.document.body.appendChild(s2); return dom.window; })();
+    await wait(2000);
+    await A.act('open-day', '0', null, 400); await A.act('guests', '0', { n: '2' }, 300);
+    const b = C.document.createElement('button'); b.dataset.act = 'swap-day'; b.dataset.v = '0'; C.document.body.appendChild(b); b.click(); await wait(500);
+    const d0 = ((shared.get('households/h1/weeks/' + MON) || {}).days || {}).d0 || {};
+    ok(d0.r && d0.r !== R[0] && d0.guests === 2, 'same night: the swap on one phone and the guests on the other are both kept (' + JSON.stringify(d0).slice(0, 90) + ')');
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();
