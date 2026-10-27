@@ -123,6 +123,9 @@ function packsAt(ing, shop) {
 function choosePacks(ing, need, shop) {
   const sizes = Array.from(new Set(packsAt(ing, shop))).sort((a, b) => b - a);
   if (need <= EPS) return [];
+  // a need of hundreds of packs (an odd amount in a recipe or record) just takes the biggest packs: trying every mix
+  // of sizes would hold up the planner for seconds on each night it tries
+  if (sizes.reduce((a, s) => a * (need / s + 2), 1) > 50000) return Array(Math.ceil(need / sizes[0] - EPS)).fill(sizes[0]);
   let best = null;
   const maxCount = sizes.map(s => Math.ceil(need / s) + 1);
   function rec(k, counts, total) {

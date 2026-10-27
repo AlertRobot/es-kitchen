@@ -109,6 +109,14 @@ const calMock = (CAL, NOTIFS, opts) => ({ onUser(cb) { setTimeout(() => cb({ ema
     ok(!!sh && Object.keys(sh).length === 7, 'shifts: the household you switch to while shifts are being checked gets its own (' + JSON.stringify(sh || null).slice(0, 60) + ')');
     ok(!((A.docAt('households/h1/weeks/' + MON) || {}).shifts), 'shifts: and the one you left isn’t given them after you’ve gone');
   }
+  // ---- 6. a huge amount of something with several pack sizes doesn't hold up the planner ----
+  if (!only || only === 6) {
+    const Core = require('../src/core.js');
+    const t0 = Date.now(); const packs = Core.choosePacks({ unit: 'g', packs: [400, 250, 100] }, 100000, 'tesco'); const ms = Date.now() - t0;
+    ok(ms < 50 && packs.reduce((a, b) => a + b, 0) >= 100000, 'packs: 100kg of something with three pack sizes is worked out at once (' + ms + 'ms, ' + packs.length + ' packs)');
+    const usual = Core.choosePacks({ unit: 'g', packs: [500, 250] }, 600, 'tesco');
+    ok(usual.slice().sort().join() === '250,500', 'packs: ordinary amounts still get the best mix (' + usual.join('+') + ')');
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();
