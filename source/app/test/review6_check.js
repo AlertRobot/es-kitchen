@@ -6,7 +6,7 @@ const bundle = fs.readFileSync(__dirname + '/app.test.js', 'utf8');
 const pad = n => String(n).padStart(2, '0');
 const iso = d => d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate());
 const now = new Date(); const mon = new Date(now); mon.setDate(now.getDate() - ((now.getDay() + 6) % 7)); const day = k => { const x = new Date(mon); x.setDate(mon.getDate() + k); return x; };
-const MON = iso(day(0));
+const MON = iso(day(0)), TODAY_ = iso(now);
 const wait = ms => new Promise(r => setTimeout(r, ms));
 let fails = 0; const ok = (cond, what) => { console.log((cond ? 'ok   ' : 'FAIL ') + what); if (!cond) fails++; };
 const only = process.argv[2] ? Number(process.argv[2]) : 0;
@@ -66,6 +66,28 @@ const calMock = (CAL, NOTIFS, opts) => ({ onUser(cb) { setTimeout(() => cb({ ema
     const tags = [...A.d.querySelectorAll('#sheet .tag')].map(x => x.textContent).join(' | ');
     ok(/Serves 1\b/.test(tags), 'planner: a recipe saved as serving a tiny fraction counts as serving one (' + tags.slice(0, 60) + ')');
     ok(!A.errs.length, 'planner: no page errors ' + A.errs.join(' | '));
+  }
+  // ---- 3. Budgie: a shop someone outside your Budgie (family) logs as paid by you waits until you add it ----
+  if (!only || only === 3) {
+    const B = { people: [{ id: 'ethan', name: 'Ethan' }, { id: 'sophie', name: 'Sophie' }], budgets: [{ id: 'e-food', person: 'ethan', name: 'Food' }], transactions: [], splits: [], accounts: [] };
+    const OPS = [];
+    const fetch = async (url, opt) => { if (!/script\.google\.com/.test(url)) return { ok: true, json: async () => JSON.parse(lib) }; const b = JSON.parse(opt.body); (b.ops || []).forEach(o => OPS.push(o));
+      return { ok: true, json: async () => ({ ok: true, person: 'ethan', keyType: 'app', now: Date.now(), full: false, rows: B }) }; };
+    const shop = (by, extra) => ({ date: TODAY_, amount: 30, shop: 'tesco', paidBy: 'u_ethan', split: 'half', week: MON, source: 'peckish', by: by.n, ...(by.u ? { byUid: by.u } : {}), budgie: { state: 'queued', person: 'ethan' }, ...(extra || {}) });
+    const pre = { 'users/u_ethan': { households: ['h1'], current: 'h1', names: { h1: 'Family' } }, ...home('h1', 'Family', {
+      'households/h1/people/u_sophie': { name: 'Sophie', uid: 'u_sophie', order: 2 }, 'households/h1/people/u_mum': { name: 'Mum', uid: 'u_mum', order: 3 },
+      'households/h1/shops/s_soph': shop({ n: 'Sophie', u: 'u_sophie' }), 'households/h1/shops/s_mum': shop({ n: 'Mum', u: 'u_mum' }), 'households/h1/shops/s_mine': shop({ n: 'Ethan', u: 'u_ethan' }), 'households/h1/shops/s_old': shop({ n: 'Sophie' }), ['households/h1/weeks/' + MON]: planned() }) };
+    pre['households/h1'].members = ['u_ethan', 'u_sophie', 'u_mum'];
+    const A = boot({ pre, fetch, local: { 'peckish.budgie': JSON.stringify({ u: 'https://script.google.com/macros/s/B/exec', k: 'app_peckish_' + 'e'.repeat(64), hid: 'h1' }), 'peckish.budgieData': JSON.stringify({ since: 1, me: 'ethan', rows: { people: { ethan: B.people[0], sophie: B.people[1] }, budgets: { 'e-food': B.budgets[0] } } }) } });
+    await wait(5000);
+    const sentIds = () => OPS.filter(o => o.op === 'put').map(o => o.row.id);
+    ok(sentIds().includes('t-pk-s_soph') && sentIds().includes('t-pk-s_mine') && sentIds().includes('t-pk-s_old'), 'budgie: shops you or your Budgie partner logged go to your Budgie by themselves (' + sentIds().join(',') + ')');
+    ok(!sentIds().includes('t-pk-s_mum'), 'budgie: one family logged as paid by you doesn\u2019t go into your Budgie by itself');
+    await A.act('go-cost', null, null, 600);
+    ok(!!A.d.querySelector('[data-act="bg-mine"][data-v="s_mum"]') && /logged by Mum/.test(A.d.querySelector('#app').textContent), 'budgie: it shows who logged it, with Add to my Budgie');
+    await A.act('bg-mine', 's_mum', null, 2500);
+    ok(sentIds().includes('t-pk-s_mum') && ((A.docAt('households/h1/shops/s_mum') || {}).budgie || {}).state === 'sent', 'budgie: once you add it, it goes');
+    ok(!A.errs.length, 'budgie: no page errors ' + A.errs.join(' | '));
   }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);

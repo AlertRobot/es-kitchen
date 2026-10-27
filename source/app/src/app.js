@@ -1532,6 +1532,9 @@ async function bgSyncShops() {
       // a shop taken off in Peckish comes off in Budgie too, then goes from here
       if (t.removed) { if (t.budgie.tid) ops.push({ op: 'delete', table: 'transactions', id: t.budgie.tid, shop: t.id }); return; }
       if (t.budgie.state !== 'queued' || !t.date) return;
+      // only shops logged by you or your Budgie partner go into your Budgie by themselves; one logged by anyone else
+      // in the household (family) waits until you say it's yours
+      if (!bgAuthorOk(t) && t.budgie.ok !== me) return;
       const tid = 't-pk-' + t.id;
       ops.push({ op: 'put', table: 'transactions', row: { id: tid, date: t.date, person: me, amount: Number(t.amount), budget: fb.id, account: fb.account || '', split: t.split === 'half' ? 'half' : '', note: (SHOP_KEY_NAMES[t.shop] || t.shop || 'Food') + ' shop (Peckish)', source: 'peckish' }, shop: t.id });
     });
@@ -1575,6 +1578,13 @@ async function bgSyncShops() {
   } catch (e) { if (curHid !== hid0) { S.bg.busy = false; return; } S.bg.err = navigator.onLine === false ? 'Offline: it’ll sync when you’re back online' : (e.message || String(e)); console.warn(e); }
   S.bg.busy = false; schedule();
 }
+// a shop logged by you, or by someone who's in your Budgie (your partner), or by an older copy of the app
+function bgAuthorOk(t) {
+  if (!t.byUid || t.byUid === myUid()) return true;
+  const a = S.people.find(p => p.uid === t.byUid) || S.people.find(p => p.id === t.byUid); if (!a) return false;
+  const n = String(a.name || '').trim().toLowerCase();
+  return !!n && bgRows('people').some(q => String(q.name || '').trim().toLowerCase() === n);
+}
 function pickKeys(o, keys) { const x = {}; keys.forEach(k => { if (o[k] !== undefined) x[k] = o[k]; }); return x; }
 function guessShop(note) { const n = String(note || '').toLowerCase(); return (SHOPS.find(s => n.includes(s.id) || n.includes(s.name.toLowerCase().replace(/[^a-z]/g, '').slice(0, 5))) || {}).id || ''; }
 function liveShops() { return (S.shopsLog || []).filter(t => !t.removed); }
@@ -1582,16 +1592,22 @@ function shopsThisMonth() { const m = TODAY.slice(0, 7); return liveShops().filt
 // log what you paid for a shop (Shop tab). Saved in Peckish for both phones, and sent to Budgie by the payer's phone.
 function logShop(amount, shop, paidBy, split, date) {
   const id = 's' + Date.now().toString(36) + Math.random().toString(36).slice(2, 5), p = personById(paidBy);
-  const doc = { date: date || TODAY, amount: Math.round(amount * 100) / 100, shop, paidBy, split: split ? 'half' : '', week: S.weekStart, source: 'peckish', by: myName(), budgie: { state: 'queued', person: p ? bgPidFor(p) : '' } };
+  const doc = { date: date || TODAY, amount: Math.round(amount * 100) / 100, shop, paidBy, split: split ? 'half' : '', week: S.weekStart, source: 'peckish', by: myName(), byUid: myUid(), budgie: { state: 'queued', person: p ? bgPidFor(p) : '' } };
   S.shopsLog = (S.shopsLog || []).concat({ id, ...doc });
   Store.set('shops/' + id, doc).then(() => bgSyncShops()).catch(e => { console.warn(e); toast('Couldn’t save that.'); });
   schedule();
+}
+// a shop waiting to go to Budgie: from the payer's phone, or, logged by someone who isn't in Budgie, once the payer adds it
+function bgQueuedText(t, who, me) {
+  if (bgAuthorOk(t) || t.budgie.ok) return ' · goes to Budgie from ' + h(who ? who.name : '') + '’s phone';
+  const mine = (me && who && me.id === who.id) || (S.bg.data.me && t.budgie.person === S.bg.data.me);
+  return mine ? ' · logged by ' + h(t.by || 'someone') + ' · <button class="linkish small" data-act="bg-mine" data-v="' + h(t.id) + '">Add to my Budgie</button>' : ' · goes to Budgie once ' + h(who ? who.name : 'they') + ' adds it';
 }
 function shopLogPanel(B) {
   const list = shopsThisMonth().sort((a, b) => a.date < b.date ? 1 : -1), total = list.reduce((a, t) => a + (Number(t.amount) || 0), 0), bud = Number(S.settings.monthlyBudget) || 450;
   const me = mePerson(), est = B ? B.prefTotal : 0;
   let out = '<section class="panel"><div class="row between"><h2>Shops this month</h2><span class="small money">' + fmtMoney(total) + ' of ' + fmtMoney(bud) + '</span></div><div class="meter"><i class="' + (total > bud ? 'over' : '') + '" style="width:' + Math.min(100, total / bud * 100).toFixed(0) + '%"></i></div>';
-  out += list.length ? '<div class="leftlist">' + list.map(t => { const who = personById(t.paidBy); return '<div class="left"><span style="flex:1;min-width:0">' + h(niceDate(t.date)) + ' · ' + h(SHOP_KEY_NAMES[t.shop] || t.shop || 'Shop') + '<span class="small muted" style="display:block">' + (who ? h(who.name) + ' paid' : '') + (t.split === 'half' ? ' · half each, ' + fmtMoney(t.amount / 2) + ' each' : '') + (t.source === 'budgie' ? ' · from Budgie' : t.budgie && t.budgie.state === 'sent' ? ' · in Budgie' : t.budgie && t.budgie.state === 'refused' ? ' · Budgie didn’t take this one' : S.bg.cfg && t.budgie && t.budgie.state === 'queued' ? ' · goes to Budgie from ' + h(who ? who.name : '') + '’s phone' : '') +
+  out += list.length ? '<div class="leftlist">' + list.map(t => { const who = personById(t.paidBy); return '<div class="left"><span style="flex:1;min-width:0">' + h(niceDate(t.date)) + ' · ' + h(SHOP_KEY_NAMES[t.shop] || t.shop || 'Shop') + '<span class="small muted" style="display:block">' + (who ? h(who.name) + ' paid' : '') + (t.split === 'half' ? ' · half each, ' + fmtMoney(t.amount / 2) + ' each' : '') + (t.source === 'budgie' ? ' · from Budgie' : t.budgie && t.budgie.state === 'sent' ? ' · in Budgie' : t.budgie && t.budgie.state === 'refused' ? ' · Budgie didn’t take this one' : S.bg.cfg && t.budgie && t.budgie.state === 'queued' ? bgQueuedText(t, who, me) : '') +
     // a shop logged here can be taken off (a typo, a duplicate); one from Budgie is changed there
     (t.source === 'budgie' ? '' : S.confirm['rmshop:' + t.id] ? ' · Remove it? <button class="linkish small" style="color:var(--bad)" data-act="rm-shop-yes" data-v="' + h(t.id) + '">Yes</button> <button class="linkish small" data-act="rm-shop-no">No</button>' : ' · <button class="linkish small" data-act="rm-shop" data-v="' + h(t.id) + '">Remove</button>') + '</span></span><span class="money">' + fmtMoney(t.amount) + '</span></div>'; }).join('') + '</div>' : '<p class="muted small">Nothing logged this month yet.</p>';
   out += '<form class="stack" data-form="logshop" style="gap:8px"><span class="label">Done a shop? Log what you paid</span><div class="lsrow"><input class="input" id="ls-amt" type="number" step="0.01" min="0" inputmode="decimal" placeholder="' + (est ? est.toFixed(2) : '0.00') + '" aria-label="Amount paid in pounds"><select class="input" id="ls-shop" aria-label="Shop">' + SHOPS.map(s => '<option value="' + s.id + '"' + (s.id === weekShop() ? ' selected' : '') + '>' + h(s.name) + '</option>').join('') + '</select></div>' +
@@ -1637,7 +1653,7 @@ function setLinked() {
     out += '<p class="small">Linked as <b>' + h(me ? me.name : S.bg.data.me || '…') + '</b>' + (S.bg.at ? ' · synced ' + new Date(S.bg.at).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' }) : '') + (S.bg.busy ? ' · syncing…' : '') + '</p>' + (S.bg.err ? '<p class="note warn small">' + h(S.bg.err) + '</p>' : '');
     if (mine.length) out += '<label class="row between small"><span>Food shops go to</span><select class="input" data-change="bg-budget">' + mine.map(b => '<option value="' + h(b.id) + '"' + (fb && fb.id === b.id ? ' selected' : '') + '>' + h(b.name) + '</option>').join('') + '</select></label>';
     else if (!S.bg.busy) out += '<p class="note small">Budgie has no food budget for you yet. Add one called Food or Groceries in Budgie and shops go there.</p>';
-    out += '<p class="muted small">Each phone sends the shops its owner paid for. A shop Sophie paid for goes to Budgie from her phone when she next opens Peckish.</p><div class="row wrap"><button class="btn" data-act="bg-sync">Sync now</button><button class="btn danger" data-act="bg-unlink">Unlink</button></div>';
+    out += '<p class="muted small">Each phone sends the shops its owner paid for. A shop Sophie paid for goes to Budgie from her phone when she next opens Peckish. One logged by someone who isn\u2019t in your Budgie (family) waits for you to tap Add to my Budgie.</p><div class="row wrap"><button class="btn" data-act="bg-sync">Sync now</button><button class="btn danger" data-act="bg-unlink">Unlink</button></div>';
   }
   out += '</section>';
   return out;
@@ -2791,6 +2807,7 @@ document.addEventListener('click', e => {
     case 'pantry': S.pantry.status[v] = b.dataset.s; savePantry(); break;
     case 'pref-del': { const p = clone(S.people.find(x => x.id === v)); p[b.dataset.k].splice(Number(b.dataset.i), 1); S.people = S.people.map(x => x.id === v ? p : x); savePerson(p); render(); break; }
     case 'rm-shop': S.confirm = { ['rmshop:' + v]: true }; render(); break;
+    case 'bg-mine': { const me = S.bg.data.me; if (!me) break; S.shopsLog = (S.shopsLog || []).map(x => x.id === v ? { ...x, budgie: { ...x.budgie, ok: me } } : x); Store.patch('shops/' + v, { 'budgie.ok': me }).then(() => bgSyncShops()).catch(e => { console.warn(e); toast('Couldn\u2019t save that.'); }); render(); break; }
     case 'rm-shop-no': S.confirm = {}; render(); break;
     case 'rm-shop-yes': { S.confirm = {}; const t = (S.shopsLog || []).find(x => x.id === v); if (!t) break;
       // sent to Budgie: marked, and the payer's phone takes it off there and then here; otherwise it just goes
