@@ -1339,7 +1339,7 @@ function linkScope(hid) {
   if (!S.cal.on) { if (S.cal.unsub) { S.cal.unsub(); S.cal.unsub = null; } S.cal.user = null; S.cal.data = null; S.cal.at = 0; }
   // (and with the account it was linked by: someone else signing in on this phone doesn't send shops with your link)
   let b = LINK.get('budgie', null); if (b && (!b.hid || !b.uid)) { b = { ...b, hid: b.hid || hid, uid: b.uid || myUid() }; LINK.set('budgie', b); }
-  S.bg.cfg = b && b.hid === hid && b.uid === myUid() ? b : null; S.bg.err = ''; S.bg.at = 0;
+  S.bg.cfg = b && b.hid === hid && b.uid === myUid() ? b : null; S.bg.err = ''; S.bg.at = 0; S.bg.gen = (S.bg.gen || 0) + 1;
   S.bg.data = S.bg.cfg ? LINK.get('budgieData', null) || { since: 0, me: '', rows: {} } : { since: 0, me: '', rows: {} };
 }
 function calStart() {
@@ -1369,7 +1369,7 @@ async function calUnlink() {
 const calTag = hid => 'h' + String(hid || '').replace(/[^A-Za-z0-9]/g, '').slice(0, 10);
 const calLegacy = id => /^pk-\d{4}-\d{2}-\d{2}-\d/.test(id);
 // Peckish person → Caledonite person: by name unless set in Settings → Linked apps
-function calPidFor(p) { const m = (S.settings.calMap || {})[p.id]; if (m) return m === '-' ? null : m; const D = S.cal.data; if (!D) return null; const x = D.people.find(q => (q.name || '').toLowerCase() === (p.name || '').toLowerCase()); return x ? x.id : null; }
+function calPidFor(p) { const m = (S.settings.calMap || {})[p.id]; if (m) return m === '-' ? null : m; const D = S.cal.data; if (!D) return null; const x = D.people.find(q => lowName(q.name) === lowName(p.name)) || D.people.find(q => sameName(q, p.name)); return x ? x.id : null; }
 const hm = dt => String(dt.getHours()).padStart(2, '0') + ':' + String(dt.getMinutes()).padStart(2, '0');
 const toMins = t => { const [a, b] = String(t || '0:0').split(':').map(Number); return a * 60 + (b || 0); };
 function calInfer(ev) {
@@ -1512,8 +1512,16 @@ function bgFoodBudget() {
   return mine.find(b => b.id === pick) || mine[0] || null;
 }
 // Peckish person ↔ Budgie person, by name
-function bgPidFor(p) { const x = bgRows('people').find(q => (q.name || '').toLowerCase() === (p.name || '').toLowerCase()); return x ? x.id : (p.name || '').toLowerCase(); }
-function peckFromBg(pid) { const x = bgRows('people').find(q => q.id === pid); const name = (x ? x.name : pid || '').toLowerCase(); return S.people.find(p => (p.name || '').toLowerCase() === name) || null; }
+// (the whole name, or the first name: signing in with Google names you "Ethan Dunning" here, and Budgie calls you "Ethan")
+const lowName = s => String(s || '').trim().toLowerCase(), firstName = s => lowName(s).split(/\s+/)[0] || '';
+function sameName(q, name) { const a = lowName(name), b = lowName(q && q.name); return !!a && (a === b || (!!b && firstName(a) === firstName(b)) || firstName(a) === lowName(q && q.id)); }
+function bgPidFor(p) { const ps = bgRows('people'), x = ps.find(q => lowName(q.name) === lowName(p.name)) || ps.find(q => sameName(q, p.name)); return x ? x.id : lowName(p.name); }
+function peckFromBg(pid) {
+  const x = bgRows('people').find(q => q.id === pid) || { id: pid, name: pid }, me = mePerson();
+  // this phone's own person, when it's this phone's Budgie person (someone else calling themselves "Ethan" doesn't count)
+  if (pid && pid === S.bg.data.me && me && sameName(x, me.name)) return me;
+  return S.people.find(p => lowName(p.name) === lowName(x.name)) || S.people.find(p => sameName(x, p.name)) || null;
+}
 async function bgLink(cfg) {
   cfg = { ...cfg, hid: curHid, uid: myUid() }; S.bg.cfg = cfg; LINK.set('budgie', cfg); S.bg.data = { since: 0, me: '', rows: {} }; S.bg.err = ''; schedule();
   try { await bgCall([], true); toast('Budgie linked'); await bgSyncShops(); } catch (e) { S.bg.err = e.message || String(e); }
@@ -1528,7 +1536,8 @@ async function bgSyncShops() {
   // wait for this household's shops before comparing them with Budgie's
   if (!S.shopsLog) { S.bg.wantSync = true; return; }
   S.bg.busy = true; S.bg.again = false;
-  const hid0 = curHid, here = () => { if (curHid !== hid0) throw new Error('Switched household'); };
+  // (switching household, even away and straight back, stops it: this household's shops are read afresh meanwhile)
+  const hid0 = curHid, gen0 = S.bg.gen, moved = () => curHid !== hid0 || S.bg.gen !== gen0, here = () => { if (moved()) throw new Error('Switched household'); };
   try {
     const me = S.bg.data.me, fb = bgFoodBudget(), ops = [], mePk = me ? peckFromBg(me) : null;
     if (me && fb) (S.shopsLog || []).forEach(t => {
@@ -1552,7 +1561,8 @@ async function bgSyncShops() {
     // (a shop taken off in Peckish while it was on its way comes straight back off Budgie, and isn't written back here)
     const gone = [];
     for (const [id, tid] of done) {
-      here(); let there = (S.shopsLog || []).some(t => t.id === id);
+      // (whether it's still there is the database's answer, not this phone's list)
+      here(); let there = Store.update ? true : (S.shopsLog || []).some(t => t.id === id);
       if (there) { try { await (Store.update || Store.patch)('shops/' + id, { budgie: refused[tid] ? { state: 'refused', why: String(refused[tid]).slice(0, 120), person: me } : { state: 'sent', tid, person: me } }); } catch (e) { if (!(e && e.code === 'not-found')) throw e; there = false; } }
       if (!there && !refused[tid]) gone.push({ op: 'delete', table: 'transactions', id: tid });
     }
@@ -1567,7 +1577,7 @@ async function bgSyncShops() {
       const amount = Math.round((Number(tx.amount) || 0) * 100) / 100, date = String(tx.date || '').slice(0, 10), split = String(tx.split || '');
       // (and split half each or not, as set there: Budgie is what says who owes who)
       // (the week it was shopped for only moves with a new date: a shop logged for next week stays next week's)
-      if (/^\d{4}-\d{2}-\d{2}$/.test(date) && (amount !== Number(t.amount) || date !== t.date || split !== String(t.split || ''))) here(), await Store.patch('shops/' + t.id, { amount, date, split, ...(date !== t.date ? { week: mondayOf(date) } : {}) });
+      if (/^\d{4}-\d{2}-\d{2}$/.test(date) && (amount !== Number(t.amount) || date !== t.date || split !== String(t.split || ''))) here(), await (Store.update || Store.patch)('shops/' + t.id, { amount, date, split, ...(date !== t.date ? { week: mondayOf(date) } : {}) }).catch(e => { if (!(e && e.code === 'not-found')) throw e; });
     }
     if (sent.full === true) for (const tid in ours) { const t = ours[tid]; if (!oursSeen.has(tid) && t.budgie.person === me && String(t.date || '') >= addDays(mondayOf(TODAY), -120)) here(), await Store.del('shops/' + t.id); }
     // food payments logged in Budgie (by either of you) show up here too, and follow it when they're changed or taken off there
@@ -1584,7 +1594,7 @@ async function bgSyncShops() {
       const who = peckFromBg(tx.person), date = String(tx.date).slice(0, 10);
       // (one brought in doesn't name an account, so both phones can bring in the same payment; one that does keeps it,
       // as the database won't let that change)
-      const doc = { date, amount: Number(tx.amount) || 0, shop: guessShop(tx.note), note: tx.note || '', paidBy: who ? who.id : '', split: tx.split || '', week: mondayOf(date), source: 'budgie', budgie: { state: 'sent', tid: tx.id, person: tx.person }, by: 'Budgie', ...(cur && cur.byUid ? { byUid: cur.byUid } : {}) };
+      const doc = { date, amount: Number(tx.amount) || 0, shop: guessShop(tx.note), note: tx.note || '', paidBy: who ? who.id : '', split: tx.split || '', week: mondayOf(date), source: 'budgie', budgie: { state: 'sent', tid: tx.id, person: tx.person }, by: 'Budgie', ...(cur && cur.byUid ? { byUid: cur.byUid } : {}), ...(cur && cur.okBy ? { okBy: cur.okBy } : {}) };
       // "via": the phone that brought it in, which is the one that can tell when it's gone (each of you sees a slightly different set)
       here();
       if (cur) { if (stable({ ...doc, via: cur.via || me }) !== stable({ ...doc, ...pickKeys(cur, Object.keys(doc)), via: cur.via })) await Store.set('shops/' + cur.id, { ...doc, via: cur.via || me }); }
@@ -1593,8 +1603,9 @@ async function bgSyncShops() {
     // taken off by the phone that brought it in, or by the payer's (who always sees all of their own that the other phone can)
     if (sent.full === true) for (const tid in imported) { const t = imported[tid]; if (!seen.has(tid) && ((t.via && t.via === me) || (t.budgie && t.budgie.person === me)) && String(t.date || '') >= since) here(), await Store.del('shops/' + t.id); }
     S.bg.err = '';
-  } catch (e) { if (curHid !== hid0) { S.bg.busy = false; S.bg.again = false; return; } S.bg.err = navigator.onLine === false ? 'Offline: it’ll sync when you’re back online' : (e.message || String(e)); console.warn(e); }
+  } catch (e) { if (!moved()) { S.bg.err = navigator.onLine === false ? 'Offline: it’ll sync when you’re back online' : (e.message || String(e)); console.warn(e); } }
   S.bg.busy = false; schedule();
+  // (one asked for meanwhile goes now, for the household open now if it has Budgie)
   if (S.bg.again) { S.bg.again = false; setTimeout(bgSyncShops, 300); }
 }
 // a shop logged by you, or by your Budgie partner's account, or by an older copy of the app (which didn't say who; the
@@ -1628,10 +1639,11 @@ function logShop(amount, shop, paidBy, split, date) {
 // a shop waiting to go to Budgie: from the payer's phone, or, logged by someone who isn't in Budgie, once the payer adds it
 function bgQueuedText(t, who, me) {
   // paid by someone who isn't in Budgie (family): it never goes there, so nothing's said about it
-  const bp = bgRows('people'); if (bp.length && !bp.some(q => q.id === t.budgie.person || (who && String(q.name || '').toLowerCase() === String(who.name || '').toLowerCase()))) return '';
+  const bp = bgRows('people'); if (bp.length && !bp.some(q => q.id === t.budgie.person || (who && sameName(q, who.name)))) return '';
   const mine = (me && who && me.id === who.id) || (S.bg.data.me && t.budgie.person === S.bg.data.me);
-  // (on the payer's phone only their own "it's mine" counts, as when it's sent: anyone else's still leaves them the button)
-  if (bgAuthorOk(t) || (mine ? t.okBy === myUid() : t.okBy)) return ' · goes to Budgie from ' + h(who ? who.name : '') + '’s phone';
+  // (on the payer's phone only their own "it's mine" counts, as when it's sent: anyone else's still leaves them the button;
+  // and one the payer logged themselves goes from their phone by itself)
+  if (bgAuthorOk(t) || (who && who.uid && t.byUid === who.uid) || (mine ? t.okBy === myUid() : t.okBy)) return ' · goes to Budgie from ' + h(who ? who.name : '') + '’s phone';
   return mine ? ' · logged by ' + h(t.by || 'someone') + ' · <button class="linkish small" data-act="bg-mine" data-v="' + h(t.id) + '">Add to my Budgie</button>' : ' · goes to Budgie once ' + (who ? h(who.name) + ' adds it' : 'whoever paid adds it');
 }
 function shopLogPanel(B) {
@@ -2841,11 +2853,11 @@ document.addEventListener('click', e => {
     case 'pantry': S.pantry.status[v] = b.dataset.s; savePantry(); break;
     case 'pref-del': { const p = clone(S.people.find(x => x.id === v)); p[b.dataset.k].splice(Number(b.dataset.i), 1); S.people = S.people.map(x => x.id === v ? p : x); savePerson(p); render(); break; }
     case 'rm-shop': S.confirm = { ['rmshop:' + v]: true }; render(); break;
-    case 'bg-mine': { if (!S.bg.data.me) break; const u = myUid(); S.shopsLog = (S.shopsLog || []).map(x => x.id === v ? { ...x, okBy: u } : x); Store.patch('shops/' + v, { okBy: u }).then(() => bgSyncShops()).catch(e => { console.warn(e); toast('Couldn\u2019t save that.'); }); render(); break; }
+    case 'bg-mine': { if (!S.bg.data.me) break; const u = myUid(); S.shopsLog = (S.shopsLog || []).map(x => x.id === v ? { ...x, okBy: u } : x); (Store.update || Store.patch)('shops/' + v, { okBy: u }).then(() => bgSyncShops()).catch(e => { console.warn(e); toast('Couldn\u2019t save that.'); }); render(); break; }
     case 'rm-shop-no': S.confirm = {}; render(); break;
     case 'rm-shop-yes': { S.confirm = {}; const t = (S.shopsLog || []).find(x => x.id === v); if (!t) break;
       // sent to Budgie: marked, and the payer's phone takes it off there and then here; otherwise it just goes
-      if (t.budgie && t.budgie.state === 'sent' && t.budgie.tid) { S.shopsLog = S.shopsLog.map(x => x.id === v ? { ...x, removed: true } : x); Store.patch('shops/' + v, { removed: true }).then(() => bgSyncShops()).catch(e => { console.warn(e); toast('Couldn\u2019t remove that.'); }); toast('Removed. It comes off in Budgie too.'); }
+      if (t.budgie && t.budgie.state === 'sent' && t.budgie.tid) { S.shopsLog = S.shopsLog.map(x => x.id === v ? { ...x, removed: true } : x); (Store.update || Store.patch)('shops/' + v, { removed: true }).then(() => bgSyncShops()).catch(e => { console.warn(e); toast('Couldn\u2019t remove that.'); }); toast('Removed. It comes off in Budgie too.'); }
       else { S.shopsLog = S.shopsLog.filter(x => x.id !== v); Store.del('shops/' + v).catch(e => { console.warn(e); toast('Couldn\u2019t remove that.'); }); toast('Removed'); }
       render(); break; }
     case 'this-is-me': { const p = personById(v); if (!p || p.uid || mePerson()) break; const x = { ...clone(p), uid: myUid() }; S.people = S.people.map(y => y.id === v ? x : y); S.setPerson = v; savePerson(x); toast('Got it: you\u2019re ' + (x.name || 'that one')); render(); break; }
