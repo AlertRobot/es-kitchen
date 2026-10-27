@@ -37,7 +37,27 @@ window.Store = {
   setHousehold(id) { hid = id; },
   async createHousehold(u, name, me) { const id = 'h1'; docs.set('households/' + id, { name, members: [u.uid], memberNames: { [u.uid]: me.name }, inviteCode: 'K7RM2Q' }); hid = id; docs.set(full('people/' + u.uid), { name: me.name, order: 1, wontEat: me.wontEat || [], dislikes: [], likes: [] }); docs.set('users/' + u.uid, { households: [id], current: id, names: { [id]: name } }); notify(); return id; },
   async getUser(uid) { return docs.get('users/' + uid) || null; }, async resetLocal() {},
-  async joinHousehold() { throw new Error('nope'); },
+  // as src/store.js: the invite code, then the person already added with the same name (or the only one with the same
+  // first name) is linked rather than a second one made
+  async joinHousehold(u, code, myName) {
+    code = String(code || '').toUpperCase().replace(/[^A-Z0-9]/g, '');
+    if (!code) throw new Error('Enter the invite code you were sent (letters and numbers).');
+    const inv = docs.get('invites/' + code); if (!inv) throw new Error('That invite code wasn’t found. Check it and try again.');
+    const id = inv.hid, h = docs.get('households/' + id);
+    if (!h || h.inviteCode !== code) throw new Error('Couldn’t join with that code. Ask for a fresh one.');
+    docs.set('households/' + id, { ...h, members: [...new Set([...(h.members || []), u.uid])], joinCode: code + '.' + u.uid, memberNames: { ...(h.memberNames || {}), [u.uid]: myName } });
+    const pre = 'households/' + id + '/people/', ps = [...docs.keys()].filter(k => k.startsWith(pre) && k.split('/').length === 4).map(k => ({ id: k.slice(pre.length), data: docs.get(k) }));
+    if (!ps.some(d => d.id === u.uid || d.data.uid === u.uid)) {
+      const low = x => String(x || '').trim().toLowerCase(), first = x => low(x).split(/\s+/)[0], nm = low(myName);
+      const free = ps.filter(d => !d.data.uid), byFirst = free.filter(d => nm && first(d.data.name) === first(nm));
+      const same = free.find(d => low(d.data.name) === nm) || (byFirst.length === 1 ? byFirst[0] : null);
+      if (same) docs.set(pre + same.id, { ...same.data, uid: u.uid });
+      else docs.set(pre + u.uid, { name: myName, uid: u.uid, order: ps.length + 1, wontEat: [], dislikes: [], likes: [] });
+    }
+    const ud = docs.get('users/' + u.uid) || {};
+    docs.set('users/' + u.uid, { ...ud, households: [...new Set([...(ud.households || []), id])], current: id, names: { ...(ud.names || {}), [id]: h.name || 'Household' } });
+    notify(); return id;
+  },
   async switchHousehold(u, id) { hid = id; },
   async newInviteCode() { return 'NEWCOD'; }, async renameHousehold() {}, async leaveHousehold() {},
   sub(rel, cb) { if (window.__offlineWeeks && rel.startsWith('weeks/')) { const p = full(rel); const f = () => cb(docs.get(p) || null, { cache: true, pending: docs.has(p) }); subs.add(f); setTimeout(f, 0); return () => subs.delete(f); } if (window.__noCache && rel.startsWith('weeks/')) { setTimeout(() => cb(null, { cache: true }), 0); return () => {}; } const p = full(rel); const f = isDoc(p) ? () => cb(docs.get(p) || null, {}) : () => cb(col(p), {}); if ((window.__slowWeeks && rel.startsWith('weeks/')) || (window.__slowShops && rel === 'shops')) { let on = true; setTimeout(() => { if (on) { subs.add(f); f(); } }, rel === 'shops' ? window.__slowShops : window.__slowWeeks); return () => { on = false; subs.delete(f); }; } subs.add(f); setTimeout(f, 0); return () => subs.delete(f); },

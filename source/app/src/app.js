@@ -1369,7 +1369,9 @@ async function calUnlink() {
 const calTag = hid => 'h' + String(hid || '').replace(/[^A-Za-z0-9]/g, '').slice(0, 10);
 const calLegacy = id => /^pk-\d{4}-\d{2}-\d{2}-\d/.test(id);
 // Peckish person → Caledonite person: by name unless set in Settings → Linked apps
-function calPidFor(p) { const m = (S.settings.calMap || {})[p.id]; if (m) return m === '-' ? null : m; const D = S.cal.data; if (!D) return null; const x = D.people.find(q => lowName(q.name) === lowName(p.name)) || D.people.find(q => sameName(q, p.name)); return x ? x.id : null; }
+// (two here with the same first name: the one signed in to Peckish with that Caledonite person's email)
+function calPidFor(p) { const m = (S.settings.calMap || {})[p.id]; if (m) return m === '-' ? null : m; const D = S.cal.data; if (!D) return null; const x = nameMatch(D.people, p, calAcct); return x ? x.id : null; }
+function calAcct(q) { const em = lowName(q && q.email), M = (S.household && S.household.memberEmails) || {}; return em ? Object.keys(M).find(u => lowName(M[u]) === em) || null : null; }
 const hm = dt => String(dt.getHours()).padStart(2, '0') + ':' + String(dt.getMinutes()).padStart(2, '0');
 const toMins = t => { const [a, b] = String(t || '0:0').split(':').map(Number); return a * 60 + (b || 0); };
 function calInfer(ev) {
@@ -1515,9 +1517,27 @@ function bgFoodBudget() {
 // (the whole name, or the first name: signing in with Google names you "Ethan Dunning" here, and Budgie calls you "Ethan")
 const lowName = s => String(s || '').trim().toLowerCase(), firstName = s => lowName(s).split(/\s+/)[0] || '';
 function sameName(q, name) { const a = lowName(name), b = lowName(q && q.name); return !!a && (a === b || (!!b && firstName(a) === firstName(b)) || firstName(a) === lowName(q && q.id)); }
-function bgPidFor(p) { const ps = bgRows('people'), x = ps.find(q => lowName(q.name) === lowName(p.name)) || ps.find(q => sameName(q, p.name)); return x ? x.id : lowName(p.name); }
+// A first name only counts when nobody else here has it: Ethan's dad, also an Ethan, is never taken for him. With two
+// of them, it's the one whose account that app is known to be (acct: the account, from what's shared with every phone).
+function onlyFirst(name) { const f = firstName(name); return !!f && S.people.filter(p => firstName(p.name) === f).length === 1; }
+function nameMatch(list, p, acct) {
+  const full = list.find(q => lowName(q.name) === lowName(p.name)); if (full) return full;
+  const xs = list.filter(q => sameName(q, p.name)); if (!xs.length) return null;
+  return onlyFirst(p.name) ? xs[0] : xs.find(q => !!p.uid && acct(q) === p.uid) || null;
+}
+// the account a Budgie person sends shops from: in the ids of the shops their phone has sent ("t-pk-<shop>-u<account>")
+function bgAcct(pid) { for (const t of S.shopsLog || []) { const b = t.budgie || {}, m = t.source !== 'budgie' && b.state === 'sent' && b.person === pid && TID_RE.exec(String(b.tid || '')); if (m) return m[1]; } return null; }
+function bgPidFor(p) { const x = nameMatch(bgRows('people'), p, q => bgAcct(q.id)); return x ? x.id : lowName(p.name); }
 // (worked out the same on every phone, so two phones bringing in the same payment agree on who paid)
-function peckFromBg(pid) { const x = bgRows('people').find(q => q.id === pid) || { id: pid, name: pid }; return S.people.find(p => lowName(p.name) === lowName(x.name)) || S.people.find(p => sameName(x, p.name)) || null; }
+function peckFromBg(pid) {
+  const x = bgRows('people').find(q => q.id === pid) || { id: pid, name: pid };
+  const full = S.people.find(p => lowName(p.name) === lowName(x.name)); if (full) return full;
+  const xs = S.people.filter(p => sameName(x, p.name)), a = xs.length > 1 ? bgAcct(pid) : null;
+  return xs.length === 1 ? xs[0] : xs.find(p => !!a && p.uid === a) || null;
+}
+// paid for by this phone's Budgie person: by who paid, as they're matched now (so a namesake's shop isn't taken for
+// yours), or as it was logged when who paid is no longer one of the household's people
+function bgPaidByMe(t, mePk) { const me = S.bg.data.me, who = personById(t.paidBy); if (!me) return false; return who ? (!!mePk && who.id === mePk.id) || bgPidFor(who) === me : t.budgie.person === me; }
 // this phone's own person, when it's this phone's Budgie person (someone else calling themselves "Ethan" doesn't count)
 function bgMePerson() { const me = S.bg.data.me, mp = mePerson(); if (!me) return null; return mp && sameName(bgRows('people').find(q => q.id === me) || { id: me, name: me }, mp.name) ? mp : peckFromBg(me); }
 async function bgLink(cfg) {
@@ -1539,11 +1559,11 @@ async function bgSyncShops() {
   try {
     const me = S.bg.data.me, fb = bgFoodBudget(), ops = [], mePk = bgMePerson();
     if (me && fb) (S.shopsLog || []).forEach(t => {
+      if (!t.budgie) return;
+      // a shop taken off in Peckish comes off in Budgie too (from the phone that sent it), then goes from here
+      if (t.removed) { if (t.budgie.tid && (t.budgie.person === me || (mePk && t.paidBy === mePk.id))) ops.push({ op: 'delete', table: 'transactions', id: t.budgie.tid, shop: t.id }); return; }
       // the payer's phone sends it (matched by who paid, in case the phone that logged it didn't know their Budgie name)
-      if (!t.budgie || (t.budgie.person !== me && !(mePk && t.paidBy === mePk.id))) return;
-      // a shop taken off in Peckish comes off in Budgie too, then goes from here
-      if (t.removed) { if (t.budgie.tid) ops.push({ op: 'delete', table: 'transactions', id: t.budgie.tid, shop: t.id }); return; }
-      if (t.budgie.state !== 'queued' || !t.date) return;
+      if (t.budgie.state !== 'queued' || !t.date || !bgPaidByMe(t, mePk)) return;
       // only shops logged by you or your Budgie partner go into your Budgie by themselves; one logged by anyone else
       // in the household (family) waits until you say it's yours
       // ("it's mine" counts only when this account said it: the database won't let anyone else write okBy as you)
@@ -1637,8 +1657,9 @@ function logShop(amount, shop, paidBy, split, date) {
 // a shop waiting to go to Budgie: from the payer's phone, or, logged by someone who isn't in Budgie, once the payer adds it
 function bgQueuedText(t, who, me) {
   // paid by someone who isn't in Budgie (family): it never goes there, so nothing's said about it
-  const bp = bgRows('people'); if (bp.length && !bp.some(q => q.id === t.budgie.person || (who && sameName(q, who.name)))) return '';
-  const mine = (me && who && me.id === who.id) || (S.bg.data.me && t.budgie.person === S.bg.data.me);
+  // (who paid, as they're matched now: a namesake of yours isn't you)
+  const bp = bgRows('people'), pid = who ? bgPidFor(who) : t.budgie.person; if (bp.length && !bp.some(q => q.id === pid)) return '';
+  const mine = (me && who && me.id === who.id) || (S.bg.data.me && pid === S.bg.data.me);
   // (on the payer's phone only their own "it's mine" counts, as when it's sent: anyone else's still leaves them the button;
   // and one the payer logged themselves goes from their phone by itself)
   if (bgAuthorOk(t) || (who && who.uid && t.byUid === who.uid) || (mine ? t.okBy === myUid() : t.okBy)) return ' · goes to Budgie from ' + h(who ? who.name : '') + '’s phone';
