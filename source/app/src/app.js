@@ -1784,6 +1784,9 @@ function setPeople() {
   let out = '<span class="seg full" role="tablist">' + S.people.map(x => '<button role="tab" class="' + (x.id === S.setPerson ? 'on' : '') + '" data-act="set-person" data-v="' + h(x.id) + '" aria-selected="' + (x.id === S.setPerson) + '">' + h(x.name) + (dupes0.includes(String(x.name || '').trim().toLowerCase()) ? (x.uid ? ' \u00b7 account' : ' \u00b7 added') : '') + '</button>').join('') + '</span>';
   const dupes = S.people.filter((x, i, a) => a.findIndex(y => String(y.name || '').trim().toLowerCase() === String(x.name || '').trim().toLowerCase()) !== i);
   if (dupes.length) out += '<p class="note warn small">' + dupes.map(x => h(x.name)).join(', ') + ' ' + (dupes.length > 1 ? 'are' : 'is') + ' here twice, so dinners are being planned for an extra person. Open the one without the settings you want and remove it.</p>';
+  // nobody here is you (your own record was removed, or you joined under another name): say which one is you
+  const free = S.people.filter(x => !x.uid);
+  if (!mePerson() && S.user && free.length) out += '<div class="note small">Which of these is you? Tap your name, so your thumbs up or down, plates and calories follow you.<div class="row wrap" style="gap:6px;margin-top:8px">' + free.map(x => '<button class="chip" data-act="this-is-me" data-v="' + h(x.id) + '">' + h(x.name) + '</button>').join('') + '</div></div>';
   out += '<p class="muted small">Recipes with something on a “won’t eat” list are hidden, unless the card has a simple swap (like leaving it off one plate). Dislikes push a recipe down the list; likes push it up.</p>';
   if (p) {
     out += '<section class="panel">';
@@ -2784,6 +2787,7 @@ document.addEventListener('click', e => {
       if (t.budgie && t.budgie.state === 'sent' && t.budgie.tid) { S.shopsLog = S.shopsLog.map(x => x.id === v ? { ...x, removed: true } : x); Store.patch('shops/' + v, { removed: true }).then(() => bgSyncShops()).catch(e => { console.warn(e); toast('Couldn\u2019t remove that.'); }); toast('Removed. It comes off in Budgie too.'); }
       else { S.shopsLog = S.shopsLog.filter(x => x.id !== v); Store.del('shops/' + v).catch(e => { console.warn(e); toast('Couldn\u2019t remove that.'); }); toast('Removed'); }
       render(); break; }
+    case 'this-is-me': { const p = personById(v); if (!p || p.uid || mePerson()) break; const x = { ...clone(p), uid: myUid() }; S.people = S.people.map(y => y.id === v ? x : y); S.setPerson = v; savePerson(x); toast('Got it: you\u2019re ' + (x.name || 'that one')); render(); break; }
     case 'rm-person': S.confirm['rmp:' + v] = true; render(); break;
     case 'rm-person-yes': S.confirm = {}; S.people = S.people.filter(x => x.id !== v); Store.del('people/' + v).catch(() => {}); render(); break;
     case 'eq': { const eq = { ...S.settings.equipment, [v]: S.settings.equipment[v] === false }; saveSettings({ equipment: eq }); break; }

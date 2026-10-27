@@ -48,6 +48,21 @@ const calMock = (CAL, NOTIFS, opts) => ({ onUser(cb) { setTimeout(() => cb({ ema
     ok(/joinCode: code \+ '\.' \+ user\.uid/.test(store), 'joining saves the code with who used it');
     ok(fs.readFileSync(__dirname + '/../../../firestore.rules', 'utf8') === fs.readFileSync(__dirname + '/../firestore.rules', 'utf8'), 'join rule: both copies of the rules are the same');
   }
+  // ---- 2. nobody in "Who's eating" is you: you can say which one is ----
+  if (!only || only === 2) {
+    const pre = { 'users/u_ethan': { households: ['h1'], current: 'h1', names: { h1: 'Home' } }, 'households/h1': { name: 'Home', members: ['u_ethan'], memberNames: { u_ethan: 'Ethan' }, inviteCode: 'C1' },
+      'households/h1/people/p_e': { name: 'Ethan', order: 1 }, 'households/h1/people/p_s': { name: 'Sophie', order: 2 }, ['households/h1/weeks/' + MON]: planned() };
+    const A = boot({ pre }); await wait(2500);
+    await A.act('tab', 'settings'); await A.act('set-page', 'people', null, 400);
+    const picks = [...A.d.querySelectorAll('[data-act="this-is-me"]')].map(b => b.dataset.v);
+    ok(picks.includes('p_e') && picks.includes('p_s'), 'who you are: with nobody here linked to your account, Who’s eating asks which one is you (' + picks.join(',') + ')');
+    await A.act('this-is-me', 'p_e', null, 500);
+    ok((A.docAt('households/h1/people/p_e') || {}).uid === 'u_ethan' && !A.d.querySelector('[data-act="this-is-me"]'), 'who you are: tapping your name links it to your account, and the question goes');
+    await A.act('tab', 'week', null, 400); await A.act('vote', '0', { n: '1' }, 400);
+    const v = ((A.docAt('households/h1/weeks/' + MON) || {}).votes || {}).p_e || {};
+    ok(v[0] && v[0].v === 1, 'who you are: and thumbs up or down then work (' + JSON.stringify(v) + ')');
+    ok(!A.errs.length, 'who you are: no page errors ' + A.errs.join(' | '));
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();
