@@ -1568,8 +1568,9 @@ async function bgSyncShops() {
       const cur = imported[tx.id]; if (!cur && known.has(tx.id)) continue;
       seen.add(tx.id);
       const who = peckFromBg(tx.person), date = String(tx.date).slice(0, 10);
-      // (who brought it in stays as it was: the database won't let it change)
-      const doc = { date, amount: Number(tx.amount) || 0, shop: guessShop(tx.note), note: tx.note || '', paidBy: who ? who.id : '', split: tx.split || '', week: mondayOf(date), source: 'budgie', budgie: { state: 'sent', tid: tx.id, person: tx.person }, by: 'Budgie', ...(cur ? (cur.byUid ? { byUid: cur.byUid } : {}) : { byUid: myUid() }) };
+      // (one brought in doesn't name an account, so both phones can bring in the same payment; one that does keeps it,
+      // as the database won't let that change)
+      const doc = { date, amount: Number(tx.amount) || 0, shop: guessShop(tx.note), note: tx.note || '', paidBy: who ? who.id : '', split: tx.split || '', week: mondayOf(date), source: 'budgie', budgie: { state: 'sent', tid: tx.id, person: tx.person }, by: 'Budgie', ...(cur && cur.byUid ? { byUid: cur.byUid } : {}) };
       // "via": the phone that brought it in, which is the one that can tell when it's gone (each of you sees a slightly different set)
       here();
       if (cur) { if (stable({ ...doc, via: cur.via || me }) !== stable({ ...doc, ...pickKeys(cur, Object.keys(doc)), via: cur.via })) await Store.set('shops/' + cur.id, { ...doc, via: cur.via || me }); }

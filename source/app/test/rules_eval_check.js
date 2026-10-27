@@ -107,6 +107,8 @@ let fails = 0; const ok = (c, what) => { console.log((c ? 'ok   ' : 'FAIL ') + w
   ok(!can(MUM, 'create', S1, shopDoc({ byUid: 'u_mum', okBy: 'u_ethan' }), fam) && can(MUM, 'create', S1, shopDoc({ byUid: 'u_mum' }), fam), 'shops: ...or say Ethan has added it; logging it as herself is fine');
   ok(can(ETHAN, 'create', H + '/shops/b_t1', { date: '2026-10-27', amount: 12, source: 'budgie', byUid: 'u_ethan', budgie: { state: 'sent', tid: 't1', person: 'sophie' } }, fam), 'shops: a Budgie payment brought in');
   ok(can(ETHAN, 'create', S1, shopDoc({ budgie: { state: 'sent', tid: 't-pk-s1', person: 'ethan' } }), fam), 'shops: restoring one that’s already in Budgie');
+  const impB = { date: '2026-10-27', amount: 12, source: 'budgie', via: 'sophie', budgie: { state: 'sent', tid: 't1', person: 'sophie' } };
+  ok(can(ME, 'create', H + '/shops/b_t1', impB, fam) && can(ETHAN, 'update', H + '/shops/b_t1', { ...impB, via: 'ethan' }, { ...fam, [H + '/shops/b_t1']: impB }), 'shops: both phones can bring in the same Budgie payment');
   ok(!can(ETHAN, 'create', S1, shopDoc(), fam), 'shops: ...but not one still waiting to go that someone else logged');
   ok(upd(ETHAN, { budgie: { state: 'sent', tid: 't-pk-s1-uu_ethan', person: 'ethan' } }) && upd(ETHAN, { budgie: { state: 'refused', why: 'x', person: 'ethan' } }), 'shops: the payer’s phone marks it sent or refused');
   ok(upd(ETHAN, { okBy: 'u_ethan' }), 'shops: the payer says it’s theirs (Add to my Budgie)');
