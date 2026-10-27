@@ -289,6 +289,19 @@ const home = (hid, name, extra) => ({ ['households/' + hid]: { name, members: ['
     await A.act('tab', 'shop', null, 600); await A.act('tab', 'kitchen', null, 400); await A.act('tab', 'week', null, 400);
     ok(!A.errs.length && /Tuna puttanesca/.test(A.d.querySelector('#app').textContent) && Date.now() - t0 < 20000, 'huge numbers: the week, list and kitchen still open (' + A.errs.slice(0, 1).join('') + ')');
   }
+  // ---- 15. ticking or removing an extra item hits that item, even if the other phone added one above it meanwhile ----
+  if (!only || only === 15) {
+    const wk = planned(); wk.extras = { xa: { name: 'foil', done: false, o: 10 }, xb: { name: 'bin bags', done: false, o: 20 } };
+    const pre = { 'users/u_ethan': { households: ['h1'], current: 'h1', names: { h1: 'Home' } }, ...home('h1', 'Home', { ['households/h1/weeks/' + MON]: wk }) };
+    const A = boot({ pre }); await wait(2500); await A.act('tab', 'shop', null, 500);
+    const btn = (act, name) => [...A.d.querySelectorAll('[data-act="' + act + '"]')].find(b => (b.getAttribute('aria-label') || '').includes(name));
+    const tickBags = btn('tick-extra', 'bin bags').dataset.v, delFoil = btn('del-extra', 'foil').dataset.v;
+    // the other phone adds "milk" at the top of the list before this phone's taps arrive
+    await A.w.Store.patch('weeks/' + MON, { 'extras.xm': { name: 'milk', done: false, o: 1 } }); await wait(400);
+    await A.act('tick-extra', tickBags, null, 300); await A.act('del-extra', delFoil, null, 300);
+    const ex = (A.docAt('households/h1/weeks/' + MON) || {}).extras || {};
+    ok(ex.xb && ex.xb.done === true && ex.xm && !ex.xm.done && !ex.xa, 'extras: the item you tapped is the one ticked or removed (' + JSON.stringify(ex) + ')');
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();

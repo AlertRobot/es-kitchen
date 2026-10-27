@@ -1176,7 +1176,7 @@ function renderShop() {
   }
   if (sim.skippedOpt && sim.skippedOpt.length) { const ids = Array.from(new Set(sim.skippedOpt.map(x => x.i))); out += '<p class="muted small">Left off because they’re optional and you’re low: ' + ids.map(id => h(lowerName(id))).join(', ') + '.</p>'; }
   out += '<section class="panel" id="sec-extras"><h3>Anything else?</h3>';
-  w.extras.forEach((x, k) => { out += '<div class="item ' + (x.done ? 'done' : '') + '" style="border-top:0;padding:4px 0"><button class="check ' + (x.done ? 'on' : '') + '" data-act="tick-extra" data-v="' + k + '" aria-label="Tick ' + h(x.name) + '">' + (x.done ? ICON.tick : '') + '</button><div class="iname">' + h(x.name) + '</div><button class="icon-btn" data-act="del-extra" data-v="' + k + '" aria-label="Remove ' + h(x.name) + '">' + ICON.close + '</button></div>'; });
+  w.extras.forEach((x, k) => { out += '<div class="item ' + (x.done ? 'done' : '') + '" style="border-top:0;padding:4px 0"><button class="check ' + (x.done ? 'on' : '') + '" data-act="tick-extra" data-v="' + h(x.id) + '" aria-label="Tick ' + h(x.name) + '">' + (x.done ? ICON.tick : '') + '</button><div class="iname">' + h(x.name) + '</div><button class="icon-btn" data-act="del-extra" data-v="' + h(x.id) + '" aria-label="Remove ' + h(x.name) + '">' + ICON.close + '</button></div>'; });
   const haveIds = Object.keys(w.have || {}).filter(id => S.ING[id]);
   if (haveIds.length) out += '<details class="havebox"><summary>Already at home (' + haveIds.length + ')</summary>' + haveIds.map(id => '<div class="row between ruled-sm"><span>' + h(ingName(id)) + '</span><button class="chip" data-act="unhave" data-v="' + h(id) + '">Put back on list</button></div>').join('') + '</details>';
   out += '<form class="row" data-form="extra"><input class="input grow" id="extra-name" placeholder="e.g. toilet roll, milk for tea" aria-label="Add an item"><button class="btn" type="submit">Add</button></form><p class="muted small">Extra items aren’t priced.</p></section>';
@@ -2763,8 +2763,9 @@ document.addEventListener('click', e => {
     case 'p-cuisine': case 'p-protein': case 'p-category': case 'p-kcal': case 'p-rated': { const k = a.slice(2); S.pick[k] = S.pick[k] === v ? '' : v; renderSheet(true, true); break; }
     case 'expand': S.expanded[v] = !S.expanded[v]; render(); break;
     case 'tick': mutateWeek(w => { w.checked[v] = !w.checked[v]; }); break;
-    case 'tick-extra': mutateWeek(w => { w.extras[Number(v)].done = !w.extras[Number(v)].done; }); break;
-    case 'del-extra': mutateWeek(w => { w.extras.splice(Number(v), 1); }); break;
+    // by the item's id, not its place in the list: the other phone may have added one above it meanwhile
+    case 'tick-extra': mutateWeek(w => { const x = w.extras.find(e => e.id === v); if (x) x.done = !x.done; }); break;
+    case 'del-extra': mutateWeek(w => { w.extras = w.extras.filter(e => e.id !== v); }); break;
     case 'copy-list': { const w = currentWeek(); const list = weekList(w, simulate(w, ctx()), ctx()); copyText(listText(list, w), 'List copied. Paste it into Notes or WhatsApp.'); break; }
     case 'edit-price': S.tab = 'settings'; S.setPage = 'prices'; S.priceAisle = ''; S.priceQ = ingName(v); S.expanded['p:' + v] = true; render(); window.scrollTo(0, 0); break;
     case 'del-carry': mutateCarry(w => { w.carryIn.splice(Number(v), 1); }); break;
