@@ -6,7 +6,7 @@ const dom = new JSDOM(html, { runScripts: 'dangerously', pretendToBeVisual: true
 const w = dom.window, d = w.document; w.addEventListener('error', e => console.log('UNCAUGHT', e.message));
 const s = d.createElement('script'); s.textContent = fs.readFileSync(__dirname + '/app.test.js', 'utf8'); d.body.appendChild(s);
 const wait = ms => new Promise(r => setTimeout(r, ms));
-const screen = () => /Set up your kitchen/.test(d.querySelector('#app').textContent) ? 'JOIN SCREEN' : /Opening your kitchen/.test(d.querySelector('#app').textContent) ? 'loading' + (/Still trying/.test(d.querySelector('#app').textContent) ? ' (retrying)' : '') : /Continue with Google/.test(d.querySelector('#app').textContent) ? 'SIGN-IN' : 'KITCHEN';
+const screen = () => /Set up your kitchen/.test(d.querySelector('#app').textContent) ? 'JOIN SCREEN' : /Opening your kitchen/.test(d.querySelector('#app').textContent) ? 'loading' + (/Still trying/.test(d.querySelector('#app').textContent) ? ' (retrying)' : '') : /Sign in with Google/.test(d.querySelector('#app').textContent) ? 'SIGN-IN' : 'KITCHEN';
 (async () => {
   await wait(150); d.querySelector('[data-form="create"]').dispatchEvent(new w.Event('submit', { bubbles: true, cancelable: true })); await wait(500);
   console.log('after creating household:', screen());

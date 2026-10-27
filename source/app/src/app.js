@@ -72,7 +72,7 @@ function ingName(id) { return S.ING[id] ? S.ING[id].name : id; }
 function lowerName(id) { const n = ingName(id); return /^([A-Z]{2}|(Greek|Italian|Thai|Worcestershire|Cajun|Dijon|Chinese|Indian|Mexican|Bramley|Cumberland|Lincolnshire|Jersey)\b)/.test(n) ? n : n.charAt(0).toLowerCase() + n.slice(1); }
 function myName() { return (S.user && S.user.name) || 'Someone'; }
 // A name as a button, tab or tag shows it: the first name, or with just enough more to tell two of you apart
-// ("Ethan Dunning" and "Ethan Dunning Sr" are "Ethan" and "Ethan Sr"; "Sophie Magill" and "Sophie Jones", "Sophie M" and "Sophie J").
+// ("Ethan Whitfield" and "Ethan Whitfield Sr" are "Ethan" and "Ethan Sr"; "Sophie Marchetti" and "Sophie Jones", "Sophie M" and "Sophie J").
 function nick(name) {
   const full = String(name || '').trim(), words = full.split(/\s+/), low = w => w.toLowerCase();
   if (words.length < 2) return full;
@@ -572,14 +572,14 @@ function renderAuth() {
   const m = S.authMode;
   return '<div class="auth"><div class="brand"><span class="brand-mark" aria-hidden="true"><img src="icons/icon.svg" alt=""></span><h1>Peckish</h1><p class="muted">Plan the week, use every pack, shop for less.</p></div>' +
     '<section class="panel">' +
-    '<button class="btn block google" data-act="auth-google" ' + (S.authBusy ? 'disabled' : '') + '>' + ICON.google + ' Continue with Google</button>' +
+    '<button class="btn block google" data-act="auth-google" ' + (S.authBusy ? 'disabled' : '') + '>' + ICON.google + ' Sign in with Google</button>' +
     '<div class="or"><span>or use email</span></div>' +
     '<form class="stack" data-form="auth">' + (m === 'signup' ? '<label class="field"><span>Your name</span><input class="input" id="au-name" autocomplete="name" required></label>' : '') +
     '<label class="field"><span>Email</span><input class="input" id="au-email" type="email" autocomplete="email" required></label>' +
     (m !== 'reset' ? '<label class="field"><span>Password</span><input class="input" id="au-pw" type="password" autocomplete="' + (m === 'signup' ? 'new-password' : 'current-password') + '" minlength="6" required></label>' : '') +
     '<button class="btn primary block" type="submit" ' + (S.authBusy ? 'disabled' : '') + '>' + (m === 'signup' ? 'Create account' : m === 'reset' ? 'Send reset link' : 'Sign in') + '</button></form>' +
     (S.authMsg ? '<p class="note ' + (S.authMsgOk ? 'good' : 'warn') + '">' + h(S.authMsg) + '</p>' : '') +
-    '<div class="row wrap between small">' + (m === 'signin' ? '<button class="linkish" data-act="auth-mode" data-v="signup">New here? Create an account</button><button class="linkish" data-act="auth-mode" data-v="reset">Forgot password?</button>' : '<button class="linkish" data-act="auth-mode" data-v="signin">I already have an account</button>') + '</div>' +
+    '<div class="row wrap between small">' + (m === 'signin' ? '<button class="linkish" data-act="auth-mode" data-v="signup">Create an account</button><button class="linkish" data-act="auth-mode" data-v="reset">Forgot password?</button>' : '<button class="linkish" data-act="auth-mode" data-v="signin">I already have an account</button>') + '</div>' +
     '</section><p class="muted small center">Sign in once on each phone. After that it works offline too.</p></div>';
 }
 function renderInviteOnly() {
@@ -1090,7 +1090,7 @@ function vcardHtml(r, act) {
   if (r.removed) badge = '<span class="tag onimg vtag">Removed</span>';
   else if (!pc.ok) badge = '<span class="tag bad vtag">' + h(nick(pc.blocked[0].person)) + ' won’t eat ' + h(pc.blocked[0].what.toLowerCase()) + '</span>';
   else if (!eq) badge = '<span class="tag warn vtag">Needs ' + h(missingEquipment(r).join(', ')) + '</span>';
-  else if (pc.swaps.length) badge = '<span class="tag onimg vtag">Easy swap for ' + h(pc.swaps.map(s => nick(s.person)).filter((x, i, a) => a.indexOf(x) === i).join(' & ')) + '</span>';
+  else if (pc.swaps.length) badge = '<span class="tag onimg vtag">Swap for ' + h(pc.swaps.map(s => nick(s.person)).filter((x, i, a) => a.indexOf(x) === i).join(' & ')) + '</span>';
   else if (r.category === 'treat') badge = '<span class="tag treat vtag">Treat</span>';
   else if (r.custom) badge = '<span class="tag onimg vtag">Yours</span>';
   const star = rs ? '<span class="tag onimg vstar">' + rs.avg.toFixed(1) + '★</span>' : '';
@@ -1187,7 +1187,7 @@ function renderShop() {
   if (view === 'cost') return out + shopLogPanel(B) + '<section class="panel"><h2>Waste and cost</h2><div class="grid2">' +
     '<div><div class="label">Dinners cost</div><div class="money big-num">' + fmtMoney(sim.consumed) + '</div><div class="muted small">' + sim.portions + ' portions · ' + fmtMoney(sim.perPortion) + ' each' + (sim.blPortions ? '<br>Breakfasts &amp; lunches ' + fmtMoney(sim.blCost) + ' for ' + sim.blPortions : '') + '</div></div>' +
     '<div><div class="label">Likely unused</div><div class="money big-num" style="color:' + (sim.wasteValue > 1 ? 'var(--warn)' : 'inherit') + '">' + fmtMoney(sim.wasteValue) + '</div><div class="muted small">' + (Object.keys(sim.waste).length ? Object.keys(sim.waste).length + ' item' + (Object.keys(sim.waste).length > 1 ? 's' : '') : 'nothing') + '</div></div></div>' +
-    (Object.keys(sim.waste).length ? '<div class="leftlist">' + Object.keys(sim.waste).map(id => '<div class="left"><span>' + h(leftText(id, sim.waste[id])) + '<br><button class="linkish small" data-act="use-up" data-v="' + h(id) + '">Find a meal or lunch that uses it</button></span><span class="money">' + fmtMoney(sim.waste[id] * unitPrice(S.ING[id], weekShop(), S.settings.useLoyalty !== false)) + '</span></div>').join('') + '</div>' : '') +
+    (Object.keys(sim.waste).length ? '<div class="leftlist">' + Object.keys(sim.waste).map(id => '<div class="left"><span>' + h(leftText(id, sim.waste[id])) + '<br><button class="linkish small" data-act="use-up" data-v="' + h(id) + '">Find a use for it</button></span><span class="money">' + fmtMoney(sim.waste[id] * unitPrice(S.ING[id], weekShop(), S.settings.useLoyalty !== false)) + '</span></div>').join('') + '</div>' : '') +
     (() => { const n = sim.carryOut.filter(L => S.ING[L.i] && !S.ING[L.i].staple).length; return n ? '<p class="muted small">' + n + ' spare thing' + (n > 1 ? 's carry' : ' carries') + ' into next week, and suggestions there use ' + (n > 1 ? 'them' : 'it') + ' first. <button class="linkish small" data-act="go-left">See what\u2019s left</button></p>' : ''; })() +
     '<p class="muted small">Meal costs include a share of pantry staples. Spare food that keeps or freezes carries into next week and isn’t counted as waste.</p></section>';
   const isTop = row => row.staple;
@@ -1254,7 +1254,7 @@ function renderComparison(B) {
   if (best !== pref && !worth) out += '<div class="note good"><b>' + SHOP_KEY_NAMES[pref] + ' is within <span class="money">' + fmtMoney(saving) + '</span> of the cheapest</b> (' + SHOP_KEY_NAMES[best] + '), so it\u2019s not worth switching this week.</div><div class="compare">';
   else out += '<div class="note ' + (best === pref ? 'good' : '') + '">' + (best === pref ? '<b>' + SHOP_KEY_NAMES[pref] + ' is already the cheapest</b> for this list.' :
     'Cheapest: <b>' + SHOP_KEY_NAMES[best] + ' at <span class="money">' + fmtMoney(B.totals[best].total) + '</span></b>, saving <span class="money">' + fmtMoney(B.totals[pref].total - B.totals[best].total) + '</span> on ' + SHOP_KEY_NAMES[pref] + '.' +
-      (!currentWeek().locked && best.replace('+', '') !== weekShop() ? '<div style="margin-top:8px"><button class="btn small-btn primary" data-act="week-shop" data-v="' + best.replace('+', '') + '">Shop at ' + h((SHOPS.find(x => x.id === best.replace('+', '')) || {}).name) + ' this week</button></div>' : '')) + '</div><div class="compare">';
+      (!currentWeek().locked && best.replace('+', '') !== weekShop() ? '<div style="margin-top:8px"><button class="btn small-btn primary block" data-act="week-shop" data-v="' + best.replace('+', '') + '">Shop at ' + h((SHOPS.find(x => x.id === best.replace('+', '')) || {}).name) + ' this week</button></div>' : '')) + '</div><div class="compare">';
   for (const k of order) {
     const T = B.totals[k]; const flags = [];
     if (!T.comparable && k.includes('+')) continue;
@@ -1541,7 +1541,7 @@ function bgFoodBudget() {
   return mine.find(b => b.id === pick) || mine[0] || null;
 }
 // Peckish person ↔ Budgie person, by name
-// (the whole name, or the first name: signing in with Google names you "Ethan Dunning" here, and Budgie calls you "Ethan")
+// (the whole name, or the first name: signing in with Google names you "Ethan Whitfield" here, and Budgie calls you "Ethan")
 const lowName = s => String(s || '').trim().toLowerCase(), firstName = s => lowName(s).split(/\s+/)[0] || '';
 function sameName(q, name) { const a = lowName(name), b = lowName(q && q.name); return !!a && (a === b || (!!b && firstName(a) === firstName(b)) || firstName(a) === lowName(q && q.id)); }
 // A first name only counts when nobody else here has it: Ethan's dad, also an Ethan, is never taken for him. With two
@@ -1804,7 +1804,7 @@ const MI = {
 };
 function hhSummary() { const hh = S.household; if (!hh) return ''; const n = Object.values(hh.memberNames || {}); return n.map(nick).join(', ') + (hh.inviteCode ? ' · code ' + hh.inviteCode : ''); }
 function eatSummary() { const w = []; S.people.forEach(p => (p.wontEat || []).forEach(t => w.push(t))); return S.people.map(p => nick(p.name)).join(', ') + (w.length ? ' · won’t eat ' + Array.from(new Set(w)).slice(0, 3).join(', ') : ''); }
-function planSummary() { const st = S.settings; return ({ save: 'Cheapest', balanced: 'Balanced', variety: 'Variety' })[st.style || 'balanced'] + ' · ' + st.weeknightCap + ' min weeknights · ' + (SHOPS.find(x => x.id === st.shop) || SHOPS[0]).name + ' · ' + fmtMoney(Number(st.monthlyBudget) || 0) + '/month'; }
+function planSummary() { const st = S.settings; return ({ save: 'Cheapest', balanced: 'Balanced', variety: 'Variety' })[st.style || 'balanced'] + ' · ' + st.weeknightCap + ' min · ' + (SHOPS.find(x => x.id === st.shop) || SHOPS[0]).name + ' · £' + Math.round(Number(st.monthlyBudget) || 0).toLocaleString('en-GB') + ' a month'; }
 function eqSummary() { const eq = S.settings.equipment || {}; const have = EQUIPMENT.filter(([k]) => eq[k] !== false).map(x => x[1]); return have.length + ' of ' + EQUIPMENT.length + ': ' + have.slice(0, 4).join(', ') + (have.length > 4 ? '…' : ''); }
 function treatSummary() { const t = (S.settings.treatDays || []).slice().sort(); return t.length ? t.map(d => DAY_NAMES[d]).join(', ') : 'None'; }
 const SET_PAGES = [
@@ -1814,7 +1814,7 @@ const SET_PAGES = [
   { k: 'planning', g: 'Planning', t: 'Planning & budget', i: 'sliders', sum: planSummary },
   { k: 'treats', g: 'Planning', t: 'Treat nights', i: 'star', sum: treatSummary },
   { k: 'equipment', g: 'Planning', t: 'Kitchen equipment', i: 'pot', sum: eqSummary },
-  { k: 'prices', g: 'Food', t: 'Ingredients & prices', i: 'tag', sum: () => Object.keys(S.ING).length + ' ingredients' + (S.lib && S.lib.updated ? ' \u00b7 prices checked ' + niceDate(S.lib.updated) : '') },
+  { k: 'prices', g: 'Food', t: 'Ingredients & prices', i: 'tag', sum: () => Object.keys(S.ING).length + ' ingredients' + (S.lib && S.lib.updated ? ' \u00b7 checked ' + niceDate(S.lib.updated) : '') },
   { k: 'history', g: 'Food', t: 'History & stats', i: 'chart', sum: histSummary },
   { k: 'look', g: 'This phone', t: 'Look & feel', i: 'palette', sum: lookName },
   { k: 'backup', g: 'This phone', t: 'Backup & restore', i: 'cloud', sum: backupSummary },
@@ -1930,7 +1930,7 @@ function setPlanning() {
   return '<section class="panel"><h2>How to plan</h2>' +
     '<div class="stack" style="gap:6px"><span class="label">Planning style</span><span class="seg full">' + [['save', 'Cheapest'], ['balanced', 'Balanced'], ['variety', 'Variety']].map(([k, n]) => '<button class="' + ((st.style || 'balanced') === k ? 'on' : '') + '" data-act="set-style" data-v="' + k + '">' + n + '</button>').join('') + '</span>' +
     '<span class="muted small">' + ({ save: 'Cheapest weeks, using every pack. Expect more repeats.', balanced: 'Uses packs up, but rotates cuisines and avoids repeats from recent weeks.', variety: 'Something different most nights. Costs a bit more.' })[st.style || 'balanced'] + '</span></div>' +
-    '<div class="stack" style="gap:6px"><span class="label">Weeknight cooking time (Mon–Fri)</span><span class="seg full">' + [20, 30, 45, 60].map(v => '<button class="' + (Number(st.weeknightCap) === v ? 'on' : '') + '" data-act="set-cap" data-v="' + h(v) + '">' + v + ' min</button>').join('') + '</span></div>' +
+    '<div class="stack" style="gap:6px"><span class="label">Weeknight cooking time, in minutes</span><span class="seg full">' + [20, 30, 45, 60].map(v => '<button class="' + (Number(st.weeknightCap) === v ? 'on' : '') + '" data-act="set-cap" data-v="' + h(v) + '" aria-label="' + v + ' minutes">' + v + '</button>').join('') + '</span></div>' +
     '<label class="row"><input type="checkbox" id="set-skipopt" class="cb" data-change="set-skipopt" ' + (st.skipOptional ? 'checked' : '') + '> Leave out optional extras (garnishes) when they’d mean buying a pack</label></section>' +
     '<section class="panel"><h2>Shop &amp; budget</h2>' +
     '<label class="field"><span>Your usual shop (sets the list prices)</span><select class="input" id="set-shop" data-change="set-shop">' + SHOPS.map(s => '<option value="' + s.id + '" ' + (st.shop === s.id ? 'selected' : '') + '>' + s.name + '</option>').join('') + '</select></label>' +
@@ -2027,7 +2027,7 @@ let backupBusy = false, autoTried = false;
 const libVersion = () => (S.lib ? (S.lib.updated || '') + '/' + (S.lib.recipes || []).length : '');
 function backupSummary() {
   const b = S.backup;
-  if (!b || !b.url) return 'Not connected · you can still save a backup file';
+  if (!b || !b.url) return 'Not connected';
   if (b.lastOk === false && b.lastTry && (!b.last || b.lastTry > b.last)) return 'Last try failed · ' + fmtWhen(b.lastTry);
   return b.last ? 'Backed up ' + fmtWhen(b.last) : 'Connected · not backed up yet';
 }
@@ -2301,7 +2301,7 @@ function sheetPick(top) {
   sections.push(row('Your favourites', favs, 3));
   sections.push(row('Not tried yet', sugg.filter(x => !ratingSummary()[x.r.id]), 2));
   out += sections.join('') || '<p class="muted">No recipes fit. Try allowing longer recipes below, or check your equipment and preferences in Settings.</p>';
-  if (d < 5) out += '<button class="btn" data-act="pick-anytime" data-v="' + d + '">' + (top.anyTime ? 'Only show recipes that fit the time limit' : 'Show longer recipes too') + '</button>';
+  if (d < 5) out += '<button class="btn" data-act="pick-anytime" data-v="' + d + '">' + (top.anyTime ? 'Hide longer recipes' : 'Show longer recipes too') + '</button>';
   const f = { ...S.pick, quick: false };
   const rest = sugg.filter(s => !used.has(s.r.id) && recipeMatches(s.r, f));
   out += '<section class="stack"><h3>Browse everything that fits</h3><input class="search" type="search" id="pickq" placeholder="Search" value="' + h(S.pick.q) + '" data-input="pickq" aria-label="Search recipes">' + filterChips(f, 'p-', { noQuick: true }) +
@@ -2963,8 +2963,8 @@ document.addEventListener('click', e => {
     case 'sign-out': unsubAll(Object.keys(unsub)); S.household = null; S.userDoc = undefined; Store.signOut(); break;
     case 'copy-code': copyText(S.household.inviteCode, 'Invite code copied'); break;
     case 'new-code': Store.newInviteCode(S.household).then(c => toast('New code: ' + c)).catch(() => toast('Couldn’t make a new code. Are you online?')); break;
-    case 'hh-back': S.onboard = 'choose'; S.authMsg = ''; render(); window.scrollTo(0, 0); break;
     case 'hh-other': case 'hh-reset': S.onboard = 'force'; S.hhError = null; render(); break;
+    case 'hh-back': S.onboard = 'choose'; S.authMsg = ''; render(); window.scrollTo(0, 0); break;
     case 'hh-switch': withBusy(async () => { await Store.switchHousehold(S.user, v); S.onboard = 'choose'; if (window.__refreshMe) await window.__refreshMe(); }); break;
     case 'verify-done': S.authMsg = ''; if (window.__recheckAccess) window.__recheckAccess(); break;
     case 'verify-send': withBusy(async () => { await Store.sendVerify(); S.authMsg = 'Sent. Check your inbox (and spam) for the link.'; S.authMsgOk = true; }); break;
