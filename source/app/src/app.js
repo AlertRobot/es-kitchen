@@ -2494,12 +2494,14 @@ function renderCook() {
   const el = $('#cook');
   if (!S.cook) { el.hidden = true; el.innerHTML = ''; return; }
   const r = S.RMAP[S.cook.id]; if (!r) { el.hidden = true; return; }
-  const k = S.cook.step, n = r.steps.length, s = r.steps[k];
+  // a recipe saved without a method (an import, an older copy) still opens: one step saying so
+  const steps = r.steps && r.steps.length ? r.steps : [{ title: '', text: 'This recipe has no method yet. Edit it to add the steps.' }];
+  const k = Math.min(S.cook.step, steps.length - 1), n = steps.length, s = steps[k];
   loadStepPhotos(r);
   el.innerHTML = '<div class="chead"><button class="icon-btn" data-act="cook-close" aria-label="Stop cooking">' + ICON.close + '</button><b class="grow ellip">' + h(rt(r)) + '</b><span id="tmrs" class="tmrs">' + timersHtml() + '</span>' + ('speechSynthesis' in window ? '<button class="chip ' + (S.cook.speak ? 'on' : '') + '" data-act="cook-speak" aria-pressed="' + !!S.cook.speak + '">' + (S.cook.speak ? 'Reading aloud' : 'Read aloud') + '</button>' : '') + '<button class="chip ' + (S.cook.showIngs ? 'on' : '') + '" data-act="cook-ings">Ingredients</button></div>' +
     '<div class="cbody">' + (S.cook.showIngs ? '<div class="ings" style="font-size:1.15rem">' + (cookF(r) !== 1 ? '<p class="muted small">Amounts for ' + S.cook.serv + '. The steps are written for ' + (r.servings || 2) + '.</p>' : '') + r.ingredients.map(l => '<div class="ing"><span>' + h(ingName(l.i)) + '</span><span class="amt">' + h(amtFor(l, cookF(r))) + '</span></div>').join('') + '</div>' :
       '<div class="stepno">Step ' + (k + 1) + ' of ' + n + '</div>' + (stepTitle(s) ? '<div class="steptitle">' + h(stepTitle(s)) + '</div>' : '') + '<div class="steptext">' + h(stepText(s)) + '</div>' + cookSwaps(r, k, s) + cookExtras(r, k, s) + (S.settings.equipment && S.settings.equipment.air_fryer && r.airFryer && /oven|fry|crisp|chips|wedges/i.test(stepText(s)) ? '<div class="note"><b>Air fryer:</b> ' + h(r.airFryer) + '</div>' : '')) + '</div>' +
-    '<div class="cfoot"><button class="btn" data-act="cook-prev" ' + (k === 0 ? 'disabled' : '') + '>Back</button><div class="dots" aria-hidden="true">' + r.steps.map((_, j) => '<i class="' + (j === k ? 'on' : '') + '"></i>').join('') + '</div><button class="btn primary" data-act="' + (k === n - 1 ? 'cook-close' : 'cook-next') + '">' + (k === n - 1 ? 'Done' : 'Next') + '</button></div>';
+    '<div class="cfoot"><button class="btn" data-act="cook-prev" ' + (k === 0 ? 'disabled' : '') + '>Back</button><div class="dots" aria-hidden="true">' + steps.map((_, j) => '<i class="' + (j === k ? 'on' : '') + '"></i>').join('') + '</div><button class="btn primary" data-act="' + (k === n - 1 ? 'cook-close' : 'cook-next') + '">' + (k === n - 1 ? 'Done' : 'Next') + '</button></div>';
   el.hidden = false;
 }
 

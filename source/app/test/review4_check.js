@@ -302,6 +302,13 @@ const home = (hid, name, extra) => ({ ['households/' + hid]: { name, members: ['
     const ex = (A.docAt('households/h1/weeks/' + MON) || {}).extras || {};
     ok(ex.xb && ex.xb.done === true && ex.xm && !ex.xm.done && !ex.xa, 'extras: the item you tapped is the one ticked or removed (' + JSON.stringify(ex) + ')');
   }
+  // ---- 16. cooking a recipe saved without a method opens rather than breaking ----
+  if (!only || only === 16) {
+    const pre = { 'users/u_ethan': { households: ['h1'], current: 'h1', names: { h1: 'Home' } }, ...home('h1', 'Home', { 'households/h1/recipes/my_bare': { title: 'Bare', cuisine: 'British', protein: 'beef', time: 20, custom: true, ingredients: [{ i: 'beef_mince', q: 400 }], steps: [] } }) };
+    const A = boot({ pre }); await wait(2500);
+    await A.act('cook', 'my_bare', null, 300); await A.act('cook-next', null, null, 200);
+    ok(!A.errs.length && /no method yet/.test(A.d.querySelector('#cook').textContent), 'cooking: a recipe with no steps opens and says so (' + A.errs.slice(0, 1).join('') + ')');
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();
