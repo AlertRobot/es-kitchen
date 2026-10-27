@@ -1303,7 +1303,8 @@ S.cal = { on: false, user: null, data: null, err: '', busy: false, at: 0 };
 function calHids() { const c = LINK.get('cal', false); return Array.isArray(c) ? c : typeof c === 'string' ? [c] : []; }
 function linkScope(hid) {
   if (LINK.get('cal', false) === true) LINK.set('cal', [hid]);
-  S.cal.on = calHids().includes(hid);
+  // the household just opened gets its shifts (and reminders) checked as soon as its people arrive
+  S.cal.on = calHids().includes(hid); S.cal.at = 0;
   if (!S.cal.on) { if (S.cal.unsub) { S.cal.unsub(); S.cal.unsub = null; } S.cal.user = null; S.cal.data = null; S.cal.at = 0; }
   let b = LINK.get('budgie', null); if (b && !b.hid) { b = { ...b, hid }; LINK.set('budgie', b); }
   S.bg.cfg = b && b.hid === hid ? b : null; S.bg.err = ''; S.bg.at = 0;
@@ -1318,7 +1319,23 @@ async function calLink() {
   LINK.set('cal', Array.from(new Set(calHids().concat(curHid ? [curHid] : [])))); S.cal.on = true; S.cal.err = ''; calStart();
   try { await Store.cal.signIn(); } catch (e) { S.cal.err = e.message || String(e); schedule(); }
 }
-async function calUnlink() { const rest = calHids().filter(x => x !== curHid); LINK.set('cal', rest.length ? rest : false); LINK.set('calNotes', null); S.cal.on = false; try { if (Store.cal && !rest.length) await Store.cal.signOut(); } catch (e) {} if (S.cal.unsub) { S.cal.unsub(); S.cal.unsub = null; } S.cal.user = null; S.cal.data = null; schedule(); }
+async function calUnlink() {
+  const rest = calHids().filter(x => x !== curHid), tag = calTag(curHid), sent = LINK.get('calNotes', {});
+  // this household's reminders still waiting in Caledonite are taken back, so none arrive after unlinking
+  // (one from before reminders named their household goes too when no other household is linked)
+  for (const id in sent) {
+    if (!(id.slice(14).startsWith(tag + '-') || (calLegacy(id) && !rest.length))) continue;
+    if (Store.cal && S.cal.user) { try { await Store.cal.unnotify(id); } catch (e) { console.warn(e); } }
+    delete sent[id];
+  }
+  LINK.set('cal', rest.length ? rest : false); LINK.set('calNotes', rest.length ? sent : null); S.cal.on = false;
+  try { if (Store.cal && !rest.length) await Store.cal.signOut(); } catch (e) {}
+  if (S.cal.unsub) { S.cal.unsub(); S.cal.unsub = null; } S.cal.user = null; S.cal.data = null; schedule();
+}
+// Each household's reminders have their own ids ("pk-<week>-h<household>-…"), so two households linked to Caledonite never
+// replace or take back each other's. Ids from before that ("pk-<week>-<day>-…") are looked after by whichever runs first.
+const calTag = hid => 'h' + String(hid || '').replace(/[^A-Za-z0-9]/g, '').slice(0, 10);
+const calLegacy = id => /^pk-\d{4}-\d{2}-\d{2}-\d/.test(id);
 // Peckish person → Caledonite person: by name unless set in Settings → Linked apps
 function calPidFor(p) { const m = (S.settings.calMap || {})[p.id]; if (m) return m === '-' ? null : m; const D = S.cal.data; if (!D) return null; const x = D.people.find(q => (q.name || '').toLowerCase() === (p.name || '').toLowerCase()); return x ? x.id : null; }
 const hm = dt => String(dt.getHours()).padStart(2, '0') + ':' + String(dt.getMinutes()).padStart(2, '0');
@@ -1384,7 +1401,7 @@ function wantedReminders(w) {
   const R = { cook: true, defrost: true, plates: true, cookAt: '18:00', ...(S.settings.remind || {}) }, want = {}, past = {}, now = Date.now();
   const at = (d, t) => { const x = parseIso(addDays(w.start, d)); const [a, b] = t.split(':').map(Number); x.setHours(a, b, 0, 0); return x.getTime(); };
   // one whose time has come is left alone: Caledonite may not have sent it yet (it sends within about 10 minutes)
-  const add = (key, p, title, body, when) => { const cp = calPidFor(p); if (!cp) return; const id = 'pk-' + w.start + '-' + key + '-' + cp; if (when < now - 60000) { past[id] = true; return; } want[id] = { to: cp, kind: 'reminders', title, body, link: '../es-kitchen/', sendAfter: Math.max(when, now) }; };
+  const add = (key, p, title, body, when) => { const cp = calPidFor(p); if (!cp) return; const id = 'pk-' + w.start + '-' + calTag(curHid) + '-' + key + '-' + cp; if (when < now - 60000) { past[id] = true; return; } want[id] = { to: cp, kind: 'reminders', title, body, link: '../es-kitchen/', sendAfter: Math.max(when, now) }; };
   const eaters = S.people.filter(p => p.dinner !== false);
   const sim = simulate(w, ctx());
   for (let d = 0; d < 7; d++) {
@@ -1402,18 +1419,24 @@ function wantedReminders(w) {
       const cook = cookOn(w, d, S.people); (cook ? [cook] : eaters.filter(p => !awayOn(w, p, d))).forEach(p => add(d + '-defrost', p, d === 0 ? 'Out of the freezer this morning' : 'Out of the freezer tonight', 'Take ' + what + ' out to thaw in the fridge for ' + (r ? rt(r) : 'dinner') + (d === 0 ? ' tonight.' : ' tomorrow.'), when));
     });
   }
-  return { want, past };
+  return { want, past, now };
 }
 async function calReminders() {
   if (!S.cal.user || !S.cal.data || !S.week || !Store.cal) return;
   const w = currentWeek(), thisW = mondayOf(TODAY);
   if (w.start !== thisW && w.start !== addDays(thisW, 7)) return;
-  const { want, past } = wantedReminders(w), sent = LINK.get('calNotes', {});
+  const { want, past, now } = wantedReminders(w), sent = LINK.get('calNotes', {}), wk = 'pk-' + w.start + '-', mine = wk + calTag(curHid) + '-';
   // Caledonite saying no (its rules don't let Peckish queue reminders) shows in Linked apps rather than failing quietly
   let refused = false, through = false;
   const no = e => { console.warn(e); if (e && e.code === 'permission-denied') refused = true; };
-  for (const id in want) { const hsh = stable(want[id]); if (sent[id] === hsh) continue; try { await Store.cal.notify(id, want[id]); sent[id] = hsh; through = true; } catch (e) { no(e); } }
-  for (const id in sent) if (id.startsWith('pk-' + w.start + '-') && !want[id] && !past[id]) { try { await Store.cal.unnotify(id); delete sent[id]; } catch (e) { no(e); if (!(e && e.code === 'permission-denied')) delete sent[id]; } }
+  // one that's due straight away ("save you a plate?") isn't queued again just because the time has moved on
+  for (const id in want) { const hsh = stable({ ...want[id], sendAfter: want[id].sendAfter <= now ? 0 : want[id].sendAfter }); if (sent[id] === hsh) continue; try { await Store.cal.notify(id, want[id]); sent[id] = hsh; through = true; } catch (e) { no(e); } }
+  for (const id in sent) {
+    // an old-style id stands for this household's reminder with the same week, day and person
+    const legacy = calLegacy(id) && id.startsWith(wk), as = legacy ? mine + id.slice(wk.length) : id;
+    if (!(legacy || id.startsWith(mine)) || (want[as] && !legacy) || past[as]) continue;
+    try { await Store.cal.unnotify(id); delete sent[id]; } catch (e) { no(e); if (!(e && e.code === 'permission-denied')) delete sent[id]; }
+  }
   if (refused !== !!S.cal.refused && (refused || through)) { S.cal.refused = refused; schedule(); }
   // forget old weeks
   Object.keys(sent).forEach(id => { const st = id.slice(3, 13); if (st < addDays(thisW, -7)) delete sent[id]; });
