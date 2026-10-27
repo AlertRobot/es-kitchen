@@ -1308,7 +1308,9 @@ function renderKitchen() {
   const q = (S.pantryQ || '').toLowerCase();
   const staples = Object.values(S.ING).filter(i => i.staple && (!q || i.name.toLowerCase().includes(q))).sort((a, b) => a.name.localeCompare(b.name));
   if (!S.pantry.checkedOnce) out += '<div class="note"><b>Quick cupboard check.</b> Everything starts as \u201cGot it\u201d, so the first list assumes you have it all. Open each group and tap <b>Low</b> on anything you\u2019re out of.<div style="margin-top:8px"><button class="btn small-btn" data-act="pantry-checked">Done, that\u2019s everything</button></div></div>';
-  out += '<p class="muted small">Mark something <b>Low</b> and it goes on the shopping list only in a week where a meal needs it. Turn on <b>Always buy</b> for things you use every day, like milk for tea.</p>' +
+  // (how Low and Always buy work: said in full until the first cupboard check, then folded away)
+  const howLow = 'Mark something <b>Low</b> and it goes on the shopping list only in a week where a meal needs it. Turn on <b>Always buy</b> for things you use every day, like milk for tea.';
+  out += (S.pantry.checkedOnce ? '<details class="small muted"><summary>How Low and Always buy work</summary><p style="margin:0">' + howLow + '</p></details>' : '<p class="muted small">' + howLow + '</p>') +
     '<input class="search" type="search" id="pantryq" placeholder="Search your staples" value="' + h(S.pantryQ || '') + '" data-input="pantryq" aria-label="Search staples">';
   const groups = {}; staples.forEach(i => (groups[i.aisle || 'Other'] = groups[i.aisle || 'Other'] || []).push(i));
   const order = AISLE_ORDER.filter(a => groups[a]).concat(Object.keys(groups).filter(a => !AISLE_ORDER.includes(a)));
@@ -1691,7 +1693,7 @@ function bgElsewhere() { const b = LINK.get('budgie', null); return b && b.hid &
 function linkedSummary() { return [S.cal.user ? 'Caledonite' : '', S.bg.cfg ? 'Budgie' : ''].filter(Boolean).join(' · ') || 'Caledonite and Budgie'; }
 function setLinked() {
   const D = S.cal.data, R = { cook: true, defrost: true, plates: true, cookAt: '18:00', ...(S.settings.remind || {}) };
-  let out = '<p class="muted small">Your three apps share what they know, so nothing gets typed twice.</p>';
+  let out = '';
   // Caledonite
   out += '<section class="panel"><div class="row between"><h2>Caledonite</h2>' + (S.cal.user ? '<span class="tag good">Linked</span>' : '') + '</div>';
   if (!S.cal.user) {
@@ -1724,7 +1726,7 @@ function setLinked() {
     out += '<p class="small">Linked as <b>' + h(me ? me.name : S.bg.data.me || '…') + '</b>' + (S.bg.at ? ' · synced ' + new Date(S.bg.at).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' }) : '') + (S.bg.busy ? ' · syncing…' : '') + '</p>' + (S.bg.err ? '<p class="note warn small">' + h(S.bg.err) + '</p>' : '');
     if (mine.length) out += '<label class="row between small"><span>Food shops go to</span><select class="input" data-change="bg-budget">' + mine.map(b => '<option value="' + h(b.id) + '"' + (fb && fb.id === b.id ? ' selected' : '') + '>' + h(b.name) + '</option>').join('') + '</select></label>';
     else if (!S.bg.busy) out += '<p class="note small">Budgie has no food budget for you yet. Add one called Food or Groceries in Budgie and shops go there.</p>';
-    out += '<p class="muted small">Each phone sends the shops its owner paid for. A shop Sophie paid for goes to Budgie from her phone when she next opens Peckish. One your partner logs goes in by itself once their phone has sent a half-each shop of their own (that\u2019s how Budgie shows it\u2019s them); one logged by anyone else (family) waits for you to tap Add to my Budgie.</p><div class="row wrap"><button class="btn" data-act="bg-sync">Sync now</button><button class="btn danger" data-act="bg-unlink">Unlink</button></div>';
+    out += '<details class="small muted"><summary>Which phone sends a shop to Budgie</summary><p style="margin:0">Each phone sends the shops its owner paid for. A shop Sophie paid for goes to Budgie from her phone when she next opens Peckish. One your partner logs goes in by itself once their phone has sent a half-each shop of their own (that\u2019s how Budgie shows it\u2019s them); one logged by anyone else (family) waits for you to tap Add to my Budgie.</p></details><div class="row wrap"><button class="btn" data-act="bg-sync">Sync now</button><button class="btn danger" data-act="bg-unlink">Unlink</button></div>';
   }
   out += '</section>';
   return out;
