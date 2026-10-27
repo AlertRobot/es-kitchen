@@ -2,7 +2,7 @@
 // and no tab or option label is cut off, at the narrowest common width and on a Galaxy (412px), each with and without
 // the larger text setting, and on a Galaxy with Chrome's text zoom at 130%. The household has its real, longer names
 // (Ethan Dunning, Sophie Magill, Ethan Dunning Sr), so no button, tab, chip or tag runs past its edge or its card, and
-// no one-line button wraps.
+// no one-line button wraps; and a row of buttons is never left ragged (two on a line and one under them).
 // Needs test/app.test.js built first. Exits 1 if anything fails.
 const { chromium } = require('playwright');
 const http = require('http'), fs = require('fs'), path = require('path'), os = require('os');
@@ -47,6 +47,14 @@ let fails = 0; const ok = (c, what) => { console.log((c ? 'ok   ' : 'FAIL ') + w
           const card = [...x.querySelectorAll('*')].some(d => !d.closest('svg') && /^(block|grid|flex)$/.test(getComputedStyle(d).display) && d.textContent.trim());
           if (!card && !x.matches('.tag, .seg') && lines(x) > 1) out.push(say + ' wraps onto ' + lines(x) + ' lines');
         });
+        // a row of buttons is all on one line, or stacked one a line at the full width: never two with one left over
+        top.querySelectorAll('*').forEach(row => {
+          const kids = [...row.children].filter(k => k.getClientRects().length);
+          if (kids.length < 2 || !kids.every(k => k.classList.contains('btn'))) return;
+          const at = kids.map(k => Math.round(k.getBoundingClientRect().top)), ws = kids.map(k => Math.round(k.getBoundingClientRect().width));
+          const lineN = new Set(at).size;
+          if (lineN > 1 && (lineN < kids.length || Math.max(...ws) - Math.min(...ws) > 1)) out.push('buttons "' + kids.map(k => k.textContent.trim()).join('", "') + '" sit ' + lineN + ' lines for ' + kids.length);
+        });
         return out;
       });
       r.forEach(x => bad.push(name + ': ' + x));
@@ -65,6 +73,7 @@ let fails = 0; const ok = (c, what) => { console.log((c ? 'ok   ' : 'FAIL ') + w
     await act('open-day', '2', 600); await look('a dinner'); await act('sheet-back');
     await act('pick', '0', 700); await look('choosing a dinner'); await act('sheet-back');
     await act('whosin', null, 500); await look('who\u2019s in'); await act('sheet-back');
+    await act('wk', '1', 600); await look('next week'); await act('wk-this', null, 500);
     await act('tab', 'recipes', 600); await look('recipes'); await act('f-meal-set', 'lunch', 600); await look('recipes lunches'); await act('f-meal-set', '', 300);
     await act('tab', 'shop', 600); await look('shop'); await act('shop-view', 'cost', 600); await look('shop costs'); await act('shop-view', 'list', 300);
     await act('tab', 'kitchen', 500); await look('kitchen');
