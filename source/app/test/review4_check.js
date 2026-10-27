@@ -114,6 +114,35 @@ const home = (hid, name, extra) => ({ ['households/' + hid]: { name, members: ['
     ok(Object.keys((B.docAt('households/h1/weeks/' + MON) || {}).days || {}).length > 0 && !/fetch this week/.test(B.d.querySelector('#app').textContent), 'with signal: one tap fills the week as before');
     ok(!A.errs.length && !B.errs.length, 'no signal: no page errors ' + A.errs.concat(B.errs).join(' | '));
   }
+  // ---- 4. a new household can be restored from the backup sheet, from the household it replaces ----
+  if (!only || only === 4) {
+    // the sheet script: this household isn't in it, so it says which are; naming one gives that one's records
+    const vm = require('vm'), gs = {}; vm.createContext(gs); vm.runInContext(fs.readFileSync(__dirname + '/../../../apps-script/Code.gs', 'utf8'), gs);
+    const tab = rows => ({ getLastRow: () => rows.length + 1, getRange: (r, c, nr, nc) => ({ getValues: () => rows.slice(r - 2, r - 2 + nr).map(x => x.slice(c - 1, c - 1 + nc)) }) });
+    const rec = JSON.stringify({ title: 'Nan\u2019s stew', ingredients: [], steps: [] });
+    const ss = { getSheetByName: n => ({ Docs: tab([['hOld', 'recipes/my_stew', 1, 2, rec.slice(0, 10), '2026-10-01T10:00:00Z'], ['hOld', 'recipes/my_stew', 2, 2, rec.slice(10), '2026-10-01T10:00:00Z']]),
+      Households: tab([['hOld', 'Old home', 'ABC']]), BackupLog: tab([['2026-10-01', 'hOld', 'Old home', 'Ethan']]) })[n] || null };
+    const listed = gs.restore_(ss, 'hNew', ''), got = gs.restore_(ss, 'hNew', 'hOld');
+    ok(listed.ok && !listed.docs.length && listed.households.length === 1 && listed.households[0].name === 'Old home', 'restore: the sheet says which households it has when this one isn\u2019t there');
+    ok(got.docs.length === 1 && got.docs[0].data.title === 'Nan\u2019s stew' && got.by === 'Ethan', 'restore: and gives back the one asked for');
+    // the app: offers them, and restores the chosen one into this household
+    const posts = [];
+    const fetch = async (url, opt) => {
+      if (!/script\.google\.com/.test(url)) return { ok: true, json: async () => JSON.parse(lib) };
+      const b = JSON.parse(opt.body); posts.push(b); let r = { ok: true };
+      if (b.action === 'restore') r = gs.restore_(ss, b.hid, b.from || '');
+      return { ok: true, text: async () => JSON.stringify(r), json: async () => r };
+    };
+    const pre = { 'users/u_ethan': { households: ['h1'], current: 'h1', names: { h1: 'Home' } }, ...home('h1', 'Home', { 'households/h1/config/backup': { url: 'https://script.google.com/macros/s/x/exec', key: 'k', auto: false } }) };
+    const A = boot({ pre, fetch }); await wait(2500);
+    await A.act('tab', 'settings'); await A.act('set-page', 'backup'); await A.act('restore-sheet', null, null, 800);
+    ok(!!A.d.querySelector('[data-act="restore-sheet-from"][data-v="hOld"]') && /Old home/.test(A.d.querySelector('#app').textContent), 'restore: the app offers the household that is in the sheet');
+    await A.act('restore-sheet-from', 'hOld', null, 800);
+    ok(/Restore this backup/.test(A.d.querySelector('#app').textContent) && /Old home/.test(A.d.querySelector('#app').textContent), 'restore: and shows what it would restore before changing anything');
+    await A.act('restore-yes', null, null, 800);
+    ok(((A.docAt('households/h1/recipes/my_stew') || {}).title || '') === 'Nan\u2019s stew', 'restore: the old household\u2019s records are put into this one');
+    ok(!A.errs.length, 'restore: no page errors ' + A.errs.join(' | '));
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();
