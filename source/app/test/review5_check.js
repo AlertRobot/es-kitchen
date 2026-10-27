@@ -81,6 +81,22 @@ const calMock = (CAL, NOTIFS, opts) => ({ onUser(cb) { setTimeout(() => cb({ ema
     ok(!back.hidden && /stew/i.test(back.title || '') && Array.isArray(back.ingredients), 'own recipe removed: bringing it back keeps it whole');
     ok(!A.errs.length, 'own recipe removed: no page errors ' + A.errs.join(' | '));
   }
+  // ---- 4. Caledonite: reminders the other phone took back (by unlinking) are put back by this phone ----
+  if (!only || only === 4) {
+    const NOTIFS = {};
+    const CAL = { household: { dinnerTime: '19:00' }, people: [{ id: 'ethan', name: 'Ethan', email: 'ethan@example.com', settings: {} }], calendars: [], shifts: [], feeds: [], me: 'ethan' };
+    const pre = { 'users/u_ethan': { households: ['h1'], current: 'h1', names: { h1: 'Home' } }, ...home('h1', 'Home', { ['households/h1/weeks/' + MON]: planned(), 'households/h1/config/settings': { remind: { cook: true, defrost: true, plates: true, cookAt: '23:59' } } }) };
+    const A = boot({ pre, cal: calMock(CAL, NOTIFS), local: { 'peckish.cal': JSON.stringify(['h1']) } });
+    await wait(9000);
+    const first = Object.keys(NOTIFS).length;
+    // the other phone unlinks: this household's waiting reminders are taken back from Caledonite
+    Object.keys(NOTIFS).forEach(k => delete NOTIFS[k]);
+    const real = A.w.Date.now.bind(A.w.Date); A.w.Date.now = () => real() + 3.2 * 3600e3;
+    await A.act('tick', 'milk', null, 7000);
+    const back = Object.keys(NOTIFS).length;
+    ok(first > 0 && back > 0, 'reminders: ones the other phone took back are queued again by this phone a few hours on (' + first + ' then ' + back + ')');
+    A.w.Date.now = real;
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();

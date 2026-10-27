@@ -1454,8 +1454,11 @@ async function calReminders() {
   // Caledonite saying no (its rules don't let Peckish queue reminders) shows in Linked apps rather than failing quietly
   let refused = false, through = false;
   const no = e => { console.warn(e); if (e && e.code === 'permission-denied') refused = true; };
-  // one that's due straight away ("save you a plate?") isn't queued again just because the time has moved on
-  for (const id in want) { const hsh = stable({ ...want[id], sendAfter: want[id].sendAfter <= now ? 0 : want[id].sendAfter }); if (sent[id] === hsh) continue; try { await Store.cal.notify(id, want[id]); sent[id] = hsh; through = true; } catch (e) { no(e); } }
+  // one that's due straight away ("save you a plate?") isn't queued again just because the time has moved on.
+  // Each is checked again every few hours: the other phone unlinking takes back this household's waiting reminders,
+  // and this phone then puts back the ones still wanted (one already sent is never sent again).
+  const recheck = '@' + Math.floor(now / (3 * 3600e3));
+  for (const id in want) { const hsh = stable({ ...want[id], sendAfter: want[id].sendAfter <= now ? 0 : want[id].sendAfter }) + recheck; if (sent[id] === hsh) continue; try { await Store.cal.notify(id, want[id]); sent[id] = hsh; through = true; } catch (e) { no(e); } }
   for (const id in sent) {
     // an old-style id stands for this household's reminder with the same week, day and person
     const legacy = calLegacy(id) && id.startsWith(wk), as = legacy ? mine + id.slice(wk.length) : id;

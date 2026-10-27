@@ -221,7 +221,12 @@ window.Store.cal = {
   // Never re-sends one that's gone; updates or removes one that's still waiting.
   async notify(id, data) {
     calInit(); const ref2 = doc(calDb, CAL_HH + '/notify/' + id);
-    return runTransaction(calDb, async tx => { const cur = await tx.get(ref2); if (cur.exists() && cur.data().sent) return 'sent'; tx.set(ref2, { ...data, sent: false, created: (cur.exists() && cur.data().created) || Date.now() }); return 'ok'; });
+    return runTransaction(calDb, async tx => {
+      const cur = await tx.get(ref2); if (cur.exists() && cur.data().sent) return 'sent';
+      // already waiting just like this: nothing to write (the app checks its reminders are still there now and then)
+      if (cur.exists() && Object.keys(data).every(k => JSON.stringify(cur.data()[k]) === JSON.stringify(data[k]))) return 'same';
+      tx.set(ref2, { ...data, sent: false, created: (cur.exists() && cur.data().created) || Date.now() }); return 'ok';
+    });
   },
   async unnotify(id) {
     calInit(); const ref2 = doc(calDb, CAL_HH + '/notify/' + id);
