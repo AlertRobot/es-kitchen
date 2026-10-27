@@ -138,6 +138,12 @@ const calMock = (CAL, NOTIFS, opts) => ({ onUser(cb) { setTimeout(() => cb({ ema
     ok(!!d2b.r && d2b.guests === 2, 'remove: and whatever is chosen instead is cooked for them too (' + JSON.stringify(d2b) + ')');
     ok(!A.errs.length, 'remove: no page errors ' + A.errs.join(' | '));
   }
+  // ---- 9. switching, joining or starting a household: the database paths move over only when the app moves over ----
+  if (!only || only === 9) {
+    const store = fs.readFileSync(__dirname + '/../src/store.js', 'utf8');
+    const sets = [...store.matchAll(/\bhid = id\b/g)].length;
+    ok(sets === 1 && /setHousehold\(id\) \{ hid = id; \}/.test(store), 'switching: only the app (setHousehold) changes which household reads and writes go to, so a save still finishing can’t land in the new one (' + sets + ')');
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();

@@ -97,7 +97,6 @@ window.Store = !configured ? { kind: 'unconfigured', onUser(cb) { setTimeout(() 
     const id = newId(), code = newCode();
     await setDoc(doc(db, 'households', id), { name, members: [user.uid], memberNames: { [user.uid]: me.name }, inviteCode: code, created: new Date().toISOString() });
     await setDoc(doc(db, 'invites', code), { hid: id });
-    hid = id;
     await setDoc(doc(db, 'households', id, 'people', user.uid), clean({ name: me.name, uid: user.uid, order: 1, wontEat: me.wontEat || [], dislikes: [], likes: [] }));
     await setDoc(doc(db, 'users', user.uid), { households: arrayUnion(id), current: id, names: { [id]: name } }, { merge: true });
     return id;
@@ -112,7 +111,6 @@ window.Store = !configured ? { kind: 'unconfigured', onUser(cb) { setTimeout(() 
       await updateDoc(doc(db, 'households', id), { members: arrayUnion(user.uid), joinCode: code + '.' + user.uid, ['memberNames.' + user.uid]: myName });
     } catch (e) { throw new Error('Couldn’t join with that code. Ask for a fresh one.'); }
     const h = await getDoc(doc(db, 'households', id));
-    hid = id;
     // If someone already added this person under "Who's eating" (same name, no account yet), link that record
     // instead of making a second one, so dinners aren't planned for an extra person.
     const ps = await getDocs(collection(db, 'households', id, 'people')).catch(() => null);
@@ -126,7 +124,9 @@ window.Store = !configured ? { kind: 'unconfigured', onUser(cb) { setTimeout(() 
     await setDoc(doc(db, 'users', user.uid), { households: arrayUnion(id), current: id, names: { [id]: (h.data() || {}).name || 'Household' } }, { merge: true });
     return id;
   },
-  async switchHousehold(user, id) { hid = id; await setDoc(doc(db, 'users', user.uid), { current: id }, { merge: true }); },
+  // (the app moves its reads and writes over when the account says which household is current, all at once, so
+  // anything still finishing in the old household never lands in the new one)
+  async switchHousehold(user, id) { await setDoc(doc(db, 'users', user.uid), { current: id }, { merge: true }); },
   async newInviteCode(h) {
     const code = newCode();
     await setDoc(doc(db, 'invites', code), { hid: h.id });
