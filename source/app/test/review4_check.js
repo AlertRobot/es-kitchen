@@ -230,7 +230,12 @@ const home = (hid, name, extra) => ({ ['households/' + hid]: { name, members: ['
       const A = boot({ pre: two(), fetch }); await wait(2500);
       await A.act('tab', 'settings'); await A.act('set-page', 'backup'); await A.act('backup-now', null, null, 200); await A.switchTo('h2'); await wait(2500);
       const b2 = A.docAt('households/h2/config/backup') || {};
-      ok(!b2.last && !b2.lastTry && !b2.counts, 'switching: the other household\u2019s backup isn\u2019t marked as done (or failed) by this one\u2019s (' + JSON.stringify(b2).slice(0, 90) + ')'); }
+      ok(!b2.last && !b2.lastTry && !b2.counts, 'switching: the other household\u2019s backup isn\u2019t marked as done (or failed) by this one\u2019s (' + JSON.stringify(b2).slice(0, 90) + ')');
+      // connecting a backup sheet: the answer comes back after you've switched
+      await A.switchTo('h1'); await A.act('tab', 'settings'); await A.act('set-page', 'backup', null, 300);
+      A.d.querySelector('#bk-url').value = 'https://script.google.com/macros/s/new/exec'; A.d.querySelector('#bk-key').value = 'newkey';
+      await A.submit('[data-form="backup-connect"]', 200); await A.switchTo('h2'); await wait(2000);
+      ok((A.docAt('households/h2/config/backup') || {}).key === 'k2', 'switching: a backup sheet being connected in one household isn\u2019t connected to the other'); }
   }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);

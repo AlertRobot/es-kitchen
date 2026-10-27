@@ -2064,7 +2064,8 @@ async function connectBackup(url, key) {
   url = String(url || '').trim(); key = String(key || '').trim();
   if (!/^https:\/\/script\.google\.com\/.+\/exec$/.test(url)) { toast('The web address should start https://script.google.com and end /exec'); return; }
   S.backupBusy = true; render();
-  try { const r = await postScript(url, { key, action: 'ping' }); await Store.merge('config/backup', { url, key, auto: true, sheetUrl: r.sheetUrl || '', connectedBy: myName(), connected: new Date().toISOString() }); S.backupDraft = null; toast('Connected to ' + (r.sheetName || 'the backup sheet')); autoTried = false; setTimeout(() => runBackup(true), 300); }
+  const hid0 = curHid;
+  try { const r = await postScript(url, { key, action: 'ping' }); if (curHid !== hid0) throw new Error(SWITCHED); await Store.merge('config/backup', { url, key, auto: true, sheetUrl: r.sheetUrl || '', connectedBy: myName(), connected: new Date().toISOString() }); S.backupDraft = null; toast('Connected to ' + (r.sheetName || 'the backup sheet')); autoTried = false; setTimeout(() => runBackup(true), 300); }
   catch (e) { toast((e && e.message) || String(e)); }
   S.backupBusy = false; render();
 }
