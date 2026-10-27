@@ -84,8 +84,9 @@ service cloud.firestore {
             && request.resource.data.get('memberNames', {}).diff(resource.data.get('memberNames', {})).affectedKeys().hasOnly([request.auth.uid]))
       );
 
-      // weeks, people, config, recipes, ingredients, ratings, shops
-      match /{document=**} {
+      // weeks, people, config, recipes, ingredients, ratings, shops (only what's under the household: a bare
+      // {document=**} would match the household document too, and let any member delete it)
+      match /{coll}/{document=**} {
         allow read, write: if isMember(hid);
       }
     }
