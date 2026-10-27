@@ -253,6 +253,20 @@ const twice = B => B.puts.filter((x, i, a) => a.indexOf(x) !== i);
     ok(B.transactions.some(t => t.amount === 27 && t.person === 'ethan'), '...and the shop logged goes to Budgie');
     ok(!E.errs.length, 'no page errors ' + E.errs.join(' | '));
   }
+  // ---- 7. Mum saying "it's mine" for a shop Ethan paid doesn't take away his Add to my Budgie ----
+  if (!only || only === 7) {
+    phones.length = 0;
+    const docs = household(), B = budgie();
+    docs.set('households/h1/shops/s_x', { date: TODAY_, amount: 6, shop: 'tesco', paidBy: 'p_gone', split: 'half', week: MON, source: 'peckish', by: 'Mum', byUid: 'u_mum', budgie: { state: 'queued', person: 'sophie' } });
+    docs.set('households/h1/shops/s_m', { date: TODAY_, amount: 18, shop: 'tesco', paidBy: 'u_ethan', split: 'half', week: MON, source: 'peckish', by: 'Mum', byUid: 'u_mum', okBy: 'u_mum', budgie: { state: 'queued', person: 'ethan' } });
+    const E = phone('ethan', docs, B);
+    await wait(4000); await E.act('go-cost', null, null, 400);
+    ok(!!E.d.querySelector('[data-act="bg-mine"][data-v="s_m"]'), 'a shop Mum marked as Ethan’s still offers him Add to my Budgie (' + E.lines().join(' | ').slice(0, 120) + ')');
+    ok(E.lines().some(l => /£6\.00/.test(l) && /goes to Budgie once whoever paid adds it/.test(l)), 'a waiting shop whose payer isn’t in the household any more reads properly (' + E.lines().filter(l => /£6/.test(l)).join('') + ')');
+    await E.act('bg-mine', 's_m', null, 3000);
+    ok(B.transactions.some(t => t.amount === 18) && (docs.get('households/h1/shops/s_m') || {}).okBy === 'u_ethan', '...and Add to my Budgie sends Mum’s once he says so');
+    ok(!E.errs.length, 'no page errors ' + E.errs.join(' | '));
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();

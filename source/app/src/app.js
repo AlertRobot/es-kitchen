@@ -1628,9 +1628,10 @@ function logShop(amount, shop, paidBy, split, date) {
 function bgQueuedText(t, who, me) {
   // paid by someone who isn't in Budgie (family): it never goes there, so nothing's said about it
   const bp = bgRows('people'); if (bp.length && !bp.some(q => q.id === t.budgie.person || (who && String(q.name || '').toLowerCase() === String(who.name || '').toLowerCase()))) return '';
-  if (bgAuthorOk(t) || t.okBy) return ' · goes to Budgie from ' + h(who ? who.name : '') + '’s phone';
   const mine = (me && who && me.id === who.id) || (S.bg.data.me && t.budgie.person === S.bg.data.me);
-  return mine ? ' · logged by ' + h(t.by || 'someone') + ' · <button class="linkish small" data-act="bg-mine" data-v="' + h(t.id) + '">Add to my Budgie</button>' : ' · goes to Budgie once ' + h(who ? who.name : 'they') + ' adds it';
+  // (on the payer's phone only their own "it's mine" counts, as when it's sent: anyone else's still leaves them the button)
+  if (bgAuthorOk(t) || (mine ? t.okBy === myUid() : t.okBy)) return ' · goes to Budgie from ' + h(who ? who.name : '') + '’s phone';
+  return mine ? ' · logged by ' + h(t.by || 'someone') + ' · <button class="linkish small" data-act="bg-mine" data-v="' + h(t.id) + '">Add to my Budgie</button>' : ' · goes to Budgie once ' + (who ? h(who.name) + ' adds it' : 'whoever paid adds it');
 }
 function shopLogPanel(B) {
   const list = shopsThisMonth().sort((a, b) => a.date < b.date ? 1 : -1), total = list.reduce((a, t) => a + (Number(t.amount) || 0), 0), bud = Number(S.settings.monthlyBudget) || 450;
