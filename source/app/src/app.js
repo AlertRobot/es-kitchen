@@ -429,6 +429,9 @@ function diffFields(a, b) {
   a = a || {}; b = b || {}; const out = {};
   for (const k of new Set([...Object.keys(a), ...Object.keys(b)])) {
     if (stable(a[k]) === stable(b[k])) continue;
+    // an empty list or group this phone filled in for a field it hasn't got isn't a change (a week it couldn't fetch
+    // would otherwise blank the other phone's "moved from last week" list)
+    if (a[k] === undefined && (Array.isArray(b[k]) ? !b[k].length : isObj(b[k]) && !Object.keys(b[k]).length)) continue;
     if (!SAFE_KEY.test(k)) return null; // can't address this field on its own: write the whole document
     const A = isObj(a[k]) ? a[k] : a[k] === undefined ? {} : null;
     if (A && isObj(b[k]) && Object.keys(b[k]).concat(Object.keys(A)).every(x => SAFE_KEY.test(x))) {

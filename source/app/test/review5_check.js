@@ -117,6 +117,14 @@ const calMock = (CAL, NOTIFS, opts) => ({ onUser(cb) { setTimeout(() => cb({ ema
     const usual = Core.choosePacks({ unit: 'g', packs: [500, 250] }, 600, 'tesco');
     ok(usual.slice().sort().join() === '250,500', 'packs: ordinary amounts still get the best mix (' + usual.join('+') + ')');
   }
+  // ---- 7. no signal: a dinner added to a week this phone couldn't fetch doesn't blank the other phone's lists ----
+  if (!only || only === 7) {
+    const A = boot({ win: { __noCache: true } }); await wait(150);
+    A.d.querySelector('[data-form="create"]').dispatchEvent(new A.w.Event('submit', { bubbles: true, cancelable: true })); await wait(1500);
+    await A.act('add-to-day', '2', { r: 'it_tuna_puttanesca' }, 500);
+    const wk = A.docAt('households/h1/weeks/' + MON) || {};
+    ok(((wk.days || {}).d2 || {}).r === 'it_tuna_puttanesca' && !('bumped' in wk), 'no signal: adding a dinner writes that night, not an empty "moved from last week" list (' + Object.keys(wk).join(',') + ')');
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();
