@@ -241,6 +241,18 @@ const twice = B => B.puts.filter((x, i, a) => a.indexOf(x) !== i);
     ok(!twice(B).length, 'nothing sent twice (' + twice(B).join(',') + ')');
     ok(![E, So].some(p => p.errs.length), 'no page errors ' + [E, So].map(p => p.errs.join(' | ')).join(''));
   }
+  // ---- 6. with nothing planned this week a shop can still be logged (and so taken off or added to Budgie) ----
+  if (!only || only === 6) {
+    phones.length = 0;
+    const docs = household(), B = budgie();
+    docs.delete('households/h1/weeks/' + MON); docs.delete('households/h1/weeks/' + NEXT);
+    const E = phone('ethan', docs, B);
+    await wait(4000); await E.act('tab', 'shop', null, 400);
+    ok(!!E.d.querySelector('form[data-form="logshop"]') && /Nothing to buy yet/.test(E.d.body.textContent), 'nothing planned: the Shop tab still lets you log a shop');
+    if (E.d.querySelector('form[data-form="logshop"]')) await E.logShop(27, 'u_ethan', true, 3000);
+    ok(B.transactions.some(t => t.amount === 27 && t.person === 'ethan'), '...and the shop logged goes to Budgie');
+    ok(!E.errs.length, 'no page errors ' + E.errs.join(' | '));
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();

@@ -1153,7 +1153,8 @@ function renderShop() {
   let out = headerWeek(sim, list);
   const prefKey = B.prefKey;
   const nItems = B.rows.length, nDone = B.rows.filter(r => w.checked[r.i]).length;
-  if (!nItems) return out + '<div class="panel empty-state"><h2>Nothing to buy yet</h2><p class="muted">Plan some dinners on the Week tab and the list builds itself, rounded up to whole packs.</p><button class="btn primary" data-act="tab" data-v="week">Plan the week</button></div>';
+  // (a shop already done can still be logged, taken off or added to Budgie with nothing planned this week)
+  if (!nItems) return out + '<div class="panel empty-state"><h2>Nothing to buy yet</h2><p class="muted">Plan some dinners on the Week tab and the list builds itself, rounded up to whole packs.</p><button class="btn primary" data-act="tab" data-v="week">Plan the week</button></div>' + shopLogPanel(null);
   const view = S.shopView || 'list';
   out += segHtml('shop-view', view, [['list', 'List', nDone + '/' + nItems], ['compare', 'Compare'], ['cost', 'Costs']]);
   if (view === 'compare') return out + renderComparison(B);

@@ -36,9 +36,11 @@ let fails = 0; const ok = (c, what) => { console.log((c ? 'ok   ' : 'FAIL ') + w
     };
     await submit('[data-form="create"]', 800);
     await act('tab', 'settings'); await act('set-page', 'people'); await ev(() => { document.querySelector('#np-name').value = 'Sophie'; }); await submit('[data-form="add-person"]');
+    // (nothing planned yet: the Shop tab still has the shop log)
+    await act('tab', 'shop', 600); await look('shop, nothing planned');
     await act('tab', 'week'); await act('fill', null, 7000); await look('week');
     await act('tab', 'recipes', 600); await look('recipes'); await act('f-meal-set', 'lunch', 600); await look('recipes lunches'); await act('f-meal-set', '', 300);
-    await act('tab', 'shop', 600); await look('shop');
+    await act('tab', 'shop', 600); await look('shop'); await act('shop-view', 'cost', 600); await look('shop costs'); await act('shop-view', 'list', 300);
     await act('tab', 'kitchen', 500); await look('kitchen');
     await act('tab', 'settings', 400); for (const p of ['planning', 'linked', 'look']) { await act('set-page', p, 400); await look('settings ' + p); await act('set-page', ''); }
     ok(!bad.length, w + 'px' + (large ? ', larger text' : '') + ': every label fits and nothing scrolls sideways' + (bad.length ? ' (' + bad.slice(0, 6).join('; ') + ')' : ''));
