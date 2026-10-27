@@ -71,6 +71,16 @@ function prefShopName() { const s = SHOPS.find(x => x.id === weekShop()) || SHOP
 function ingName(id) { return S.ING[id] ? S.ING[id].name : id; }
 function lowerName(id) { const n = ingName(id); return /^([A-Z]{2}|(Greek|Italian|Thai|Worcestershire|Cajun|Dijon|Chinese|Indian|Mexican|Bramley|Cumberland|Lincolnshire|Jersey)\b)/.test(n) ? n : n.charAt(0).toLowerCase() + n.slice(1); }
 function myName() { return (S.user && S.user.name) || 'Someone'; }
+// A name as a button, tab or tag shows it: the first name, or with just enough more to tell two of you apart
+// ("Ethan Dunning" and "Ethan Dunning Sr" are "Ethan" and "Ethan Sr"; "Sophie Magill" and "Sophie Jones", "Sophie M" and "Sophie J").
+function nick(name) {
+  const full = String(name || '').trim(), words = full.split(/\s+/), low = w => w.toLowerCase();
+  if (words.length < 2) return full;
+  const twins = S.people.map(p => String(p.name || '').trim()).filter(n => low(n) !== low(full) && low(n.split(/\s+/)[0]) === low(words[0]));
+  if (!twins.length) return words[0];
+  const extra = words.slice(1).find(w => !twins.every(t => t.split(/\s+/).slice(1).map(low).includes(low(w))));
+  return extra ? words[0] + ' ' + (extra.length <= 4 ? extra : extra.charAt(0).toUpperCase()) : words[0];
+}
 // "pork sausages" -> "pork sausage" (only the last word before any brackets)
 function singular(name) {
   return String(name).replace(/^([^(]*?)([A-Za-z]+)(\s*(\(.*)?)$/, (m, pre, wd, rest) => {
@@ -539,7 +549,7 @@ function gateScreen() {
   if (S.access === 'no' || S.access === 'verify') return renderInviteOnly();
   if (S.access === undefined) return '<div class="empty-state"><div class="spinner" aria-hidden="true"></div><p class="muted">Opening your kitchen…</p></div>';
   if (S.userDoc === undefined) return '<div class="empty-state"><div class="spinner" aria-hidden="true"></div><p class="muted">Opening your kitchen…</p>' +
-    (S.userErr ? '<p class="small muted">Having trouble reaching your account (' + h(S.userErr) + '). Still trying…</p><button class="btn" data-act="me-retry">Try again</button><button class="linkish small" data-act="reset-local">Reset this phone\u2019s saved copy</button>' : '') + '</div>';
+    (S.userErr ? '<p class="small muted">Having trouble reaching your account (' + h(S.userErr) + '). Still trying…</p><button class="btn" data-act="me-retry">Try again</button><button class="linkish small" data-act="reset-local">Reset saved copy</button>' : '') + '</div>';
   if (!S.userDoc || !S.userDoc.current || S.onboard === 'force') return renderOnboard();
   if (S.hhError) return '<div class="panel empty-state"><h2>' + h(S.hhError) + '</h2><button class="btn" data-act="hh-reset">Choose another household</button></div>';
   return '';
@@ -574,14 +584,14 @@ function renderOnboard() {
   let out = '<div class="auth"><div class="brand"><span class="brand-mark" aria-hidden="true"><img src="icons/icon.svg" alt=""></span><h1>Set up your kitchen</h1><p class="muted">A household shares one meal plan, shopping list and pantry.</p></div>';
   if (S.authMsg) out += '<p class="note warn" role="alert">' + h(S.authMsg) + '</p>';
   if (S.authBusy) out += '<p class="note"><span class="spinner sm" aria-hidden="true"></span> Working on it\u2026</p>';
-  if (others.length) out += '<section class="panel"><h2>Your households</h2>' + others.map(id => '<button class="btn block" data-act="hh-switch" data-v="' + h(id) + '">' + h(names[id] || 'Household') + '</button>').join('') + '</section>';
+  if (others.length) out += '<section class="panel"><h2>Your households</h2>' + others.map(id => '<button class="btn block" data-act="hh-switch" data-v="' + h(id) + '"><span class="ellip">' + h(names[id] || 'Household') + '</span></button>').join('') + '</section>';
   out += '<section class="panel"><h2>Join a household</h2><p class="muted small">Got an invite code from Ethan, Sophie or family? Enter it here.</p><form class="stack" data-form="join"><input class="input code-input" id="jn-code" placeholder="e.g. K7RM2Q" autocapitalize="characters" autocomplete="off" maxlength="8" required aria-label="Invite code"><label class="field"><span>Your name</span><input class="input" id="jn-name" value="' + h(myName()) + '" required></label><button class="btn primary" type="submit" ' + (S.authBusy ? 'disabled' : '') + '>Join</button></form></section>' +
     '<section class="panel"><h2>Start a new household</h2><form class="stack" data-form="create"><label class="field"><span>Household name</span><input class="input" id="cr-name" value="' + h(myName() + '’s kitchen') + '" required></label><label class="field"><span>Your name</span><input class="input" id="cr-me" value="' + h(myName()) + '" required></label><label class="field"><span>Anything you won’t eat? <span class="muted">(optional, comma separated)</span></span><input class="input" id="cr-wont" placeholder="e.g. mushrooms"></label><button class="btn primary" type="submit" ' + (S.authBusy ? 'disabled' : '') + '>Create household</button></form></section>';
   const dg = window.__meDiag || {};
   out += '<details class="small muted"><summary>Already in a household but it\u2019s not showing?</summary><div class="stack" style="padding-top:6px">' +
     '<p>Signed in as <b>' + h((S.user && S.user.email) || '?') + '</b> (' + h(((S.user && S.user.uid) || '').slice(0, 6)) + '\u2026). ' +
     (dg.src ? 'Account check at ' + h(dg.at) + ': ' + (dg.src === 'server' ? (dg.found ? 'found on the server.' : 'no household on the server.') : 'couldn\u2019t reach the server (' + h(dg.err || '') + ').') : '') + (S.userErr ? ' Last error: ' + h(S.userErr) + '.' : '') + '</p>' +
-    '<div class="row wrap"><button class="btn small-btn" data-act="me-retry">Check again</button><button class="btn small-btn" data-act="reset-local">Reset this phone\u2019s saved copy</button></div>' +
+    '<div class="row wrap"><button class="btn small-btn" data-act="me-retry">Check again</button><button class="btn small-btn" data-act="reset-local">Reset saved copy</button></div>' +
     '<p>Resetting only clears the copy kept on this phone. Your plans are safe online. App version ' + h(((document.querySelector('script[src*="app.js"]') || {}).src || '').split('v=')[1] || '?') + '.</p></div></details>';
   out += '<button class="linkish center" data-act="sign-out">Sign out</button></div>';
   return out;
@@ -640,8 +650,7 @@ function renderWeek() {
   let out = headerWeek(sim, list);
   out += tonightElsewhere();
   const view = S.weekView || 'dinners';
-  const blOn = S.people.filter(p => p.plan && (p.plan.b || p.plan.l)).length;
-  out += segHtml('week-view', view, [['dinners', 'Dinners', (filled - outN) + '/' + (7 - outN)], ['bl', 'Breakfast & lunch', blOn ? '' : 'off']]);
+  out += segHtml('week-view', view, [['dinners', 'Dinners', (filled - outN) + '/' + (7 - outN)], ['bl', 'Breakfast & lunch']]);
   if (view === 'bl') return out + blSection(w);
   const emptyN = 7 - filled, planned = filled - outN;
   const arrival = filled ? sim.freezeNotes.filter(n => n.onArrival) : [];
@@ -656,7 +665,7 @@ function renderWeek() {
     const day = w.days[d], r = day.r && S.RMAP[day.r];
     const isTreat = treatDays.includes(d);
     const eaters = S.people.filter(p => p.dinner !== false), inN = eaters.filter(p => !awayOn(w, p, d)), none = eaters.length > 0 && !inN.length;
-    const whoTag = inN.length && inN.length < eaters.length ? '<span class="tag who">Just ' + h(inN.map(p => p.name).join(' & ')) + '</span>' : '';
+    const whoTag = inN.length && inN.length < eaters.length ? '<span class="tag who">Just ' + h(inN.map(p => nick(p.name)).join(' & ')) + '</span>' : '';
     out += '<div class="day ' + (d === todayIdx ? 'today' : '') + '"><div class="when"><b>' + DAY_NAMES[d] + '</b><span>' + parseIso(addDays(w.start, d)).getDate() + '</span>' + (isTreat ? '<span class="treatdot" title="Treat night">★</span>' : '') + (eaters.length > 1 && !locked ? '<button class="whochip" data-act="who-cycle" data-n="' + d + '" aria-label="Who\u2019s in for dinner on ' + DAY_LONG[d] + ': ' + (none ? 'nobody' : h(inN.map(p => p.name).join(' and '))) + '. Tap to change">' + eaters.map(p => '<i class="' + (awayOn(w, p, d) ? 'off' : '') + '">' + h((p.name || '?').charAt(0).toUpperCase()) + '</i>').join('') + '</button>' : '') + '</div>';
     if (day.takeaway) {
       const was = day.was && S.RMAP[day.was];
@@ -665,25 +674,25 @@ function renderWeek() {
       const pc = checkPrefs(r, S.people, S.ING), info = sim.dayInfo[d], n = nut(r);
       const tags = [];
       if (whoTag) tags.push(whoTag); else if (none) tags.push('<span class="tag warn">Nobody in</span>');
-      const cook = cookOn(w, d, S.people); if (cook) tags.push('<span class="tag whocooks">' + h(cook.name) + ' cooks</span>');
-      eaters.filter(p => { const sh = shiftOn(w, p, d); return sh && sh.miss && !awayOn(w, p, d); }).forEach(p => tags.push('<span class="tag">Plate for ' + h(p.name) + '</span>'));
+      const cook = cookOn(w, d, S.people); if (cook) tags.push('<span class="tag whocooks">' + h(nick(cook.name)) + ' cooks</span>');
+      eaters.filter(p => { const sh = shiftOn(w, p, d); return sh && sh.miss && !awayOn(w, p, d); }).forEach(p => tags.push('<span class="tag">Plate for ' + h(nick(p.name)) + '</span>'));
       const downs = eaters.filter(p => voteOf(w, p.id, d) < 0);
-      if (downs.length) tags.push('<span class="tag bad">' + h(downs.map(p => p.name).join(' & ')) + ' isn\u2019t keen</span>');
+      if (downs.length) tags.push('<span class="tag bad">' + h(downs.map(p => nick(p.name)).join(' & ')) + (downs.length > 1 ? ' aren\u2019t keen' : ' isn\u2019t keen') + '</span>');
       else if (eaters.length > 1 && eaters.every(p => voteOf(w, p.id, d) > 0)) tags.push('<span class="tag good">\ud83d\udc4d Both keen</span>');
       if (guestsOn(w, d)) tags.push('<span class="tag">+' + guestsOn(w, d) + ' guest' + (guestsOn(w, d) > 1 ? 's' : '') + '</span>');
       if (day.freezer) tags.push('<span class="tag">' + ICON.snow + ' From the freezer</span>');
       if (r.category === 'treat') tags.push('<span class="tag treat">Treat</span>');
-      pc.swaps.forEach(s => tags.push('<span class="tag swap">Swap for ' + h(s.person) + '</span>'));
+      pc.swaps.map(s => nick(s.person)).filter((x, i, all) => all.indexOf(x) === i).forEach(n => tags.push('<span class="tag swap">Swap for ' + h(n) + '</span>'));
       if (day.extra) tags.push('<span class="tag">+' + (Number(day.extra) || 0) + ' ' + (day.extraUse === 'freeze' ? 'to freeze' : 'for lunch') + '</span>');
       if (!hasEquipment(r, S.settings)) tags.push('<span class="tag warn">Needs ' + h(missingEquipment(r).join(', ')) + '</span>');
       const rs = ratingSummary()[r.id]; if (rs) tags.push('<span class="tag ' + (rs.avg < 3 ? 'bad' : 'good') + '">' + rs.avg.toFixed(1) + '★</span>');
       out += '<div class="mealwrap"><button class="meal" data-act="open-day" data-v="' + d + '">' + tileHtml(r) + '<span class="body"><span class="ttl">' + h(rt(r)) + '</span>' +
-        '<span class="muted small">' + r.time + ' min · ' + (n.kcal ? n.kcal + ' kcal · ' : '') + (info && !day.freezer ? '<span class="money">' + fmtMoney(info.perPortion) + '</span>/portion' : h(r.cuisine)) + '</span>' + (tags.length ? '<span class="row wrap tagrow">' + tags.join('') + '</span>' : '') + '</span></button>' +
+        '<span class="muted small">' + r.time + ' min · ' + (n.kcal ? n.kcal + ' kcal · ' : '') + (info && !day.freezer ? '<span class="money">' + fmtMoney(info.perPortion) + '</span>/portion' : h(r.cuisine)) + '</span>' + '</span>' + (tags.length ? '<span class="row wrap tagrow">' + tags.join('') + '</span>' : '') + '</button>' +
         (locked || day.freezer ? '' : '<button class="icon-btn swapbtn" data-act="swap-day" data-v="' + d + '" aria-label="Swap ' + DAY_LONG[d] + '\u2019s dinner for something else" title="Swap for something else">' + ICON.swap + '</button>') + '</div>';
     } else if (none) {
       out += '<button class="meal empty out" data-act="whosin" ' + (locked ? 'disabled' : '') + '>Nobody in for dinner <span class="small" style="font-weight:400">' + h(eaters.map(p => awayOn(w, p, d) === 'day' ? p.name + ' away' : p.name + ' out').join(' \u00b7 ')) + '</span></button>';
     } else {
-      out += '<button class="meal empty" data-act="pick" data-v="' + d + '" ' + (locked ? 'disabled' : '') + '>' + (whoTag ? whoTag + ' ' : '') + (locked ? 'Nothing planned' : '+ Choose ' + DAY_LONG[d] + '’s dinner' + (isTreat ? ' <span class="small" style="font-weight:400">(treat night)</span>' : d < 5 ? ' <span class="small" style="font-weight:400">(≤' + S.settings.weeknightCap + ' min)</span>' : '')) + '</button>';
+      out += '<button class="meal empty" data-act="pick" data-v="' + d + '" ' + (locked ? 'disabled' : '') + '>' + (whoTag ? whoTag + ' ' : '') + (locked ? 'Nothing planned' : '+ Choose dinner' + (isTreat ? ' <span class="small" style="font-weight:400">(treat night)</span>' : d < 5 ? ' <span class="small" style="font-weight:400">(≤' + S.settings.weeknightCap + ' min)</span>' : '')) + '</button>';
     }
     if (filled) defrost.filter(n => n.d === d + 1 || (d === 0 && n.d === 0)).forEach(n => { const what = n.meal ? 'the frozen ' + h(rt(S.RMAP[n.meal] || { title: 'meal' })) : h(leftText(n.i, n.q)); out += '<div class="daynote">' + ICON.snow + '<span>' + (n.d === d ? 'Defrost ' + what + ' in the fridge first thing (for tonight)' : 'Take ' + what + ' out of the freezer tonight, to thaw in the fridge for ' + DAY_LONG[n.d]) + '</span></div>'; });
     if (filled) sim.freezeNotes.filter(n => !n.onArrival && n.d === d).forEach(n => { out += '<div class="daynote">' + ICON.snow + '<span>Freeze the spare ' + h(leftText(n.i, n.q)) + ' tonight</span></div>'; });
@@ -701,7 +710,7 @@ function renderWeek() {
       if (emptyN && planned) links.push('<button class="linkish small" data-act="lock">Lock in as it is</button>');
       if (planned) links.push(S.confirm.clear ? '<span class="small">Clear every night? <button class="linkish small" style="color:var(--bad)" data-act="clear-yes">Yes, clear</button> <button class="linkish small" data-act="clear-no">No</button></span>' : '<button class="linkish small" data-act="clear">Clear week</button>');
       const ev = S.people.filter(p => p.dinner !== false);
-      if (planned && ev.length > 1) { const pend = ev.filter(p => w.days.some((x, k) => x.r && !x.takeaway && !voteOf(w, p.id, k))); links.unshift('<button class="linkish small" data-act="votes">' + (pend.length ? 'Thumbs up or down' + (pend.length < ev.length ? ' (' + h(pend.map(p => p.name).join(' & ')) + ' to do)' : '') : '\ud83d\udc4d Everyone\u2019s had a say') + '</button>'); }
+      if (planned && ev.length > 1) { const pend = ev.filter(p => w.days.some((x, k) => x.r && !x.takeaway && !voteOf(w, p.id, k))); links.unshift('<button class="linkish small" data-act="votes">' + (pend.length ? 'Thumbs up or down' + (pend.length < ev.length ? ' (' + h(pend.map(p => nick(p.name)).join(' & ')) + ' to do)' : '') : '\ud83d\udc4d Everyone\u2019s had a say') + '</button>'); }
       if (links.length) out += '<div class="weekfoot-links">' + links.join('<span class="dotsep" aria-hidden="true">\u00b7</span>') + '</div>';
     }
     out += '</div>';
@@ -840,7 +849,7 @@ function tonightAndRatings(w, todayIdx) {
   const tonight = todayIdx >= 0 && todayIdx < 7 ? w.days[todayIdx] : null;
   if (tonight && tonight.r && !tonight.takeaway && S.RMAP[tonight.r]) {
     const r = S.RMAP[tonight.r];
-    out += '<section class="tonight slim"><div class="row" style="gap:12px">' + tileHtml(r) + '<div class="grow" style="min-width:0"><div class="label">Tonight \u00b7 ' + r.time + ' min</div><div class="rtitle">' + h(rt(r)) + '</div><button class="linkish small" data-act="takeaway" data-v="' + todayIdx + '" style="min-height:32px;padding:0">Takeaway instead?</button></div>' +
+    out += '<section class="tonight slim"><div class="row" style="gap:12px">' + tileHtml(r) + '<div class="grow" style="min-width:0"><div class="label">Tonight \u00b7 ' + r.time + ' min</div><div class="rtitle">' + h(rt(r)) + '</div><button class="linkish small" data-act="takeaway" data-v="' + todayIdx + '" style="min-height:32px;padding:0">Get a takeaway</button></div>' +
       '<button class="btn primary" data-act="cook" data-v="' + h(r.id) + '">Cook</button></div></section>';
   }
   // ask about dinners from the last few days that I haven't rated yet
@@ -910,7 +919,7 @@ function blSection(w) {
   const p = personById(S.blPerson);
   const target = Number(p.kcalTarget) || 0, ptarget = Number(p.proteinTarget) || 0;
   p.plan = p.plan || {};
-  let out = (ps.length > 1 ? '<span class="seg full">' + ps.map(x => '<button class="' + (x.id === p.id ? 'on' : '') + '" data-act="bl-person" data-v="' + h(x.id) + '">' + h(x.name) + '</button>').join('') + '</span>' : '') + '<section class="panel blpanel">';
+  let out = (ps.length > 1 ? '<span class="seg full">' + ps.map(x => '<button class="' + (x.id === p.id ? 'on' : '') + '" data-act="bl-person" data-v="' + h(x.id) + '">' + h(nick(x.name)) + '</button>').join('') + '</span>' : '') + '<section class="panel blpanel">';
   if (!(p.plan && (p.plan.b || p.plan.l))) out += '<p class="note small">' + h(p.name) + '’s breakfasts and lunches aren’t being planned. <button class="linkish" data-act="go-set" data-v="people" data-p="' + h(p.id) + '">Turn it on</button></p>';
   out += '<p class="muted small">' + (target ? 'Daily target ' + target.toLocaleString('en-GB') + ' kcal' + (ptarget ? ' · ' + ptarget + 'g protein' : '') + '. ' : '') + 'Totals include ' + h(p.name) + '’s share of dinner' + (portionOf(p) !== 1 ? ' (' + (portionOf(p) === 0.75 ? '¾' : portionOf(p) === 0.5 ? '½' : portionOf(p)) + ' portion)' : '') + '.</p>';
   out += '<div class="blgrid">';
@@ -928,7 +937,7 @@ function blSection(w) {
   }
   out += '</div>';
   if (n) out += '<p class="small">Average <b>' + Math.round(sumK / n).toLocaleString('en-GB') + ' kcal</b> and <b>' + Math.round(sumP / n) + 'g protein</b> a day' + (target ? ' (target ' + target.toLocaleString('en-GB') + ')' : '') + '.</p>';
-  out += '<div class="row wrap">' + (p.plan && p.plan.l ? '<button class="btn soft grow" data-act="bl-auto" data-v="' + h(p.id) + '" ' + (w.locked ? 'disabled' : '') + '>Pick lunches for the week</button>' : '') + ((w.bl && w.bl[p.id]) ? '<button class="btn grow" data-act="bl-reset" data-v="' + h(p.id) + '">Back to usual</button>' : '') + '</div>';
+  out += '<div class="row wrap">' + (p.plan && p.plan.l ? '<button class="btn soft grow" data-act="bl-auto" data-v="' + h(p.id) + '" ' + (w.locked ? 'disabled' : '') + '>Pick lunches</button>' : '') + ((w.bl && w.bl[p.id]) ? '<button class="btn grow" data-act="bl-reset" data-v="' + h(p.id) + '">Back to usual</button>' : '') + '</div>';
   out += prepPlan(w, p);
   return out + '</section>';
 }
@@ -1062,9 +1071,9 @@ function vcardHtml(r, act) {
   const pc = checkPrefs(r, S.people, S.ING), n = nut(r), rs = ratingSummary()[r.id], eq = hasEquipment(r, S.settings);
   let badge = '';
   if (r.removed) badge = '<span class="tag onimg vtag">Removed</span>';
-  else if (!pc.ok) badge = '<span class="tag bad vtag">' + h(pc.blocked[0].person) + ' won’t eat ' + h(pc.blocked[0].what.toLowerCase()) + '</span>';
+  else if (!pc.ok) badge = '<span class="tag bad vtag">' + h(nick(pc.blocked[0].person)) + ' won’t eat ' + h(pc.blocked[0].what.toLowerCase()) + '</span>';
   else if (!eq) badge = '<span class="tag warn vtag">Needs ' + h(missingEquipment(r).join(', ')) + '</span>';
-  else if (pc.swaps.length) badge = '<span class="tag onimg vtag">Easy swap for ' + h(pc.swaps.map(s => s.person).filter((x, i, a) => a.indexOf(x) === i).join(' & ')) + '</span>';
+  else if (pc.swaps.length) badge = '<span class="tag onimg vtag">Easy swap for ' + h(pc.swaps.map(s => nick(s.person)).filter((x, i, a) => a.indexOf(x) === i).join(' & ')) + '</span>';
   else if (r.category === 'treat') badge = '<span class="tag treat vtag">Treat</span>';
   else if (r.custom) badge = '<span class="tag onimg vtag">Yours</span>';
   const star = rs ? '<span class="tag onimg vstar">' + rs.avg.toFixed(1) + '★</span>' : '';
@@ -1208,7 +1217,7 @@ function shopRowHtml(row, B, w) {
     const sp = shopPrice(ing, weekShop(), false);
     out += '<div class="shopprices">' + B.keys.map(k => { const x = row.byShop[k.key]; return '<div><span>' + SHOP_KEY_NAMES[k.key] + (x.pack && !x.missing ? ' <span class="muted">' + x.count + ' × ' + packLabel(ing, x.pack) + '</span>' : '') + '</span><span><span class="money">' + fmtMoney(x.cost) + '</span>' + (x.missing ? ' <span class="tag">no price</span>' : x.stale ? ' <span class="tag warn">old</span>' : x.est ? ' <span class="tag">est.</span>' : '') + '</span></div>'; }).join('') +
       '<form class="row paidrow" data-form="paid" data-v="' + h(row.i) + '"><label for="paid-' + h(row.i) + '" class="small">I paid £</label><input class="input" id="paid-' + h(row.i) + '" type="number" step="0.01" min="0" inputmode="decimal" placeholder="' + (sp ? sp.price.toFixed(2) : '') + '"><span class="small muted">for ' + (sp ? packLabel(ing, sp.pack) : 'one pack') + ' at ' + h((SHOPS.find(x => x.id === weekShop()) || SHOPS[0]).name) + '</span><button class="btn small-btn" type="submit">Save</button></form>' +
-      '<div><span class="muted">Prices last checked ' + lastChecked(ing) + '</span><span class="row" style="gap:6px"><button class="chip" data-act="have" data-v="' + h(row.i) + '">We have it</button><button class="chip" data-act="edit-price" data-v="' + h(row.i) + '">Edit prices</button></span></div></div>';
+      '<div><span class="muted">Prices last checked ' + lastChecked(ing) + '</span><span class="row wrap" style="gap:6px"><button class="chip" data-act="have" data-v="' + h(row.i) + '">We have it</button><button class="chip" data-act="edit-price" data-v="' + h(row.i) + '">Edit prices</button></span></div></div>';
   }
   return out + '</div>';
 }
@@ -1673,7 +1682,7 @@ function shopLogPanel(B) {
     // a shop logged here can be taken off (a typo, a duplicate); one from Budgie is changed there
     (t.source === 'budgie' ? '' : S.confirm['rmshop:' + t.id] ? ' · Remove it? <button class="linkish small" style="color:var(--bad)" data-act="rm-shop-yes" data-v="' + h(t.id) + '">Yes</button> <button class="linkish small" data-act="rm-shop-no">No</button>' : ' · <button class="linkish small" data-act="rm-shop" data-v="' + h(t.id) + '">Remove</button>') + '</span></span><span class="money">' + fmtMoney(t.amount) + '</span></div>'; }).join('') + '</div>' : '<p class="muted small">Nothing logged this month yet.</p>';
   out += '<form class="stack" data-form="logshop" style="gap:8px"><span class="label">Done a shop? Log what you paid</span><div class="lsrow"><input class="input" id="ls-amt" type="number" step="0.01" min="0" inputmode="decimal" placeholder="' + (est ? est.toFixed(2) : '0.00') + '" aria-label="Amount paid in pounds"><select class="input" id="ls-shop" aria-label="Shop">' + SHOPS.map(s => '<option value="' + s.id + '"' + (s.id === weekShop() ? ' selected' : '') + '>' + h(s.name) + '</option>').join('') + '</select></div>' +
-    (S.people.length > 1 ? '<div class="row wrap" style="gap:6px"><span class="small">Paid by</span>' + S.people.map(p => '<label class="chip"><input type="radio" name="ls-who" value="' + h(p.id) + '"' + (me && me.id === p.id ? ' checked' : '') + '> ' + h(p.name) + '</label>').join('') + '<label class="chip"><input type="checkbox" id="ls-split" checked> Half each</label></div>' : '') +
+    (S.people.length > 1 ? '<div class="row wrap" style="gap:6px"><span class="small">Paid by</span>' + S.people.map(p => '<label class="chip"><input type="radio" name="ls-who" value="' + h(p.id) + '"' + (me && me.id === p.id ? ' checked' : '') + '> ' + h(nick(p.name)) + '</label>').join('') + '<label class="chip"><input type="checkbox" id="ls-split" checked> Half each</label></div>' : '') +
     '<button class="btn primary" type="submit">Log it</button>' + (S.bg.cfg ? '' : '<p class="muted small">Link Budgie in Settings → Linked apps and shops go there too, split half each.</p>') + '</form></section>';
   return out;
 }
@@ -1775,9 +1784,9 @@ const MI = {
   cloud: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4.5 4.5 0 0 1-.6-9 6 6 0 0 1 11.4 1.5A3.8 3.8 0 0 1 17.5 18z"/><path d="M12 11v5M9.5 13.5L12 11l2.5 2.5"/></svg>',
   phone: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>',
 };
-function hhSummary() { const hh = S.household; if (!hh) return ''; const n = Object.values(hh.memberNames || {}); return n.join(', ') + (hh.inviteCode ? ' · code ' + hh.inviteCode : ''); }
-function eatSummary() { const w = []; S.people.forEach(p => (p.wontEat || []).forEach(t => w.push(t))); return S.people.map(p => p.name).join(', ') + (w.length ? ' · won’t eat ' + Array.from(new Set(w)).slice(0, 3).join(', ') : ''); }
-function planSummary() { const st = S.settings; return ({ save: 'Save money', balanced: 'Balanced', variety: 'Mix it up' })[st.style || 'balanced'] + ' · ' + st.weeknightCap + ' min weeknights · ' + (SHOPS.find(x => x.id === st.shop) || SHOPS[0]).name + ' · ' + fmtMoney(Number(st.monthlyBudget) || 0) + '/month'; }
+function hhSummary() { const hh = S.household; if (!hh) return ''; const n = Object.values(hh.memberNames || {}); return n.map(nick).join(', ') + (hh.inviteCode ? ' · code ' + hh.inviteCode : ''); }
+function eatSummary() { const w = []; S.people.forEach(p => (p.wontEat || []).forEach(t => w.push(t))); return S.people.map(p => nick(p.name)).join(', ') + (w.length ? ' · won’t eat ' + Array.from(new Set(w)).slice(0, 3).join(', ') : ''); }
+function planSummary() { const st = S.settings; return ({ save: 'Cheapest', balanced: 'Balanced', variety: 'Variety' })[st.style || 'balanced'] + ' · ' + st.weeknightCap + ' min weeknights · ' + (SHOPS.find(x => x.id === st.shop) || SHOPS[0]).name + ' · ' + fmtMoney(Number(st.monthlyBudget) || 0) + '/month'; }
 function eqSummary() { const eq = S.settings.equipment || {}; const have = EQUIPMENT.filter(([k]) => eq[k] !== false).map(x => x[1]); return have.length + ' of ' + EQUIPMENT.length + ': ' + have.slice(0, 4).join(', ') + (have.length > 4 ? '…' : ''); }
 function treatSummary() { const t = (S.settings.treatDays || []).slice().sort(); return t.length ? t.map(d => DAY_NAMES[d]).join(', ') : 'None'; }
 const SET_PAGES = [
@@ -1862,19 +1871,19 @@ function setHousehold() {
     '<section class="panel"><div class="invite"><div><div class="label">Invite code</div><div class="code">' + h(hh.inviteCode || '') + '</div></div><div class="row wrap"><button class="btn" data-act="copy-code">Copy</button><a class="btn" target="_blank" rel="noopener" href="https://wa.me/?text=' + encodeURIComponent('Join our meal plan on Peckish: open ' + location.origin + location.pathname + ' , sign in, and enter the code ' + (hh.inviteCode || '')) + '">WhatsApp</a></div></div>' +
     '<p class="muted small">Send this to Sophie to join this household. For family, ask them to start their own household instead, so their plan stays separate.</p></section>' +
     '<section class="panel"><h2>Manage</h2><form class="row" data-form="hh-rename"><input class="input grow" id="hh-name" value="' + h(hh.name) + '" aria-label="Household name"><button class="btn" type="submit">Rename</button></form>' +
-    '<button class="btn" data-act="new-code">Make a new invite code</button><button class="btn" data-act="hh-other">Switch, join or start another household</button>' +
-    (S.confirm.leave ? ((hh.members || []).length <= 1 ? '<p class="note warn small">You\u2019re the only one in it. Once you leave, nobody can open it again, though a backup can be restored into another household.</p>' : '') + '<button class="btn danger" data-act="leave-yes">Yes, leave ' + h(hh.name) + '</button>' : '<button class="btn danger" data-act="leave">Leave this household</button>') + '</section>';
+    '<button class="btn" data-act="new-code">New invite code</button><button class="btn" data-act="hh-other">Other households</button>' +
+    (S.confirm.leave ? ((hh.members || []).length <= 1 ? '<p class="note warn small">You\u2019re the only one in it. Once you leave, nobody can open it again, though a backup can be restored into another household.</p>' : '') + '<button class="btn danger" data-act="leave-yes">Yes, leave it</button>' : '<button class="btn danger" data-act="leave">Leave this household</button>') + '</section>';
 }
 function setPeople() {
   if (!S.setPerson || !S.people.find(p => p.id === S.setPerson)) S.setPerson = (S.people.find(p => p.uid === myUid()) || S.people[0] || {}).id || '';
   const p = S.people.find(x => x.id === S.setPerson);
   const names0 = S.people.map(x => String(x.name || '').trim().toLowerCase()); const dupes0 = names0.filter((n, i) => names0.indexOf(n) !== i);
-  let out = '<span class="seg full" role="tablist">' + S.people.map(x => '<button role="tab" class="' + (x.id === S.setPerson ? 'on' : '') + '" data-act="set-person" data-v="' + h(x.id) + '" aria-selected="' + (x.id === S.setPerson) + '">' + h(x.name) + (dupes0.includes(String(x.name || '').trim().toLowerCase()) ? (x.uid ? ' \u00b7 account' : ' \u00b7 added') : '') + '</button>').join('') + '</span>';
+  let out = '<span class="seg full" role="tablist">' + S.people.map(x => '<button role="tab" class="' + (x.id === S.setPerson ? 'on' : '') + '" data-act="set-person" data-v="' + h(x.id) + '" aria-selected="' + (x.id === S.setPerson) + '">' + h(nick(x.name)) + (dupes0.includes(String(x.name || '').trim().toLowerCase()) ? (x.uid ? ' \u00b7 account' : ' \u00b7 added') : '') + '</button>').join('') + '</span>';
   const dupes = S.people.filter((x, i, a) => a.findIndex(y => String(y.name || '').trim().toLowerCase() === String(x.name || '').trim().toLowerCase()) !== i);
   if (dupes.length) out += '<p class="note warn small">' + dupes.map(x => h(x.name)).join(', ') + ' ' + (dupes.length > 1 ? 'are' : 'is') + ' here twice, so dinners are being planned for an extra person. Open the one without the settings you want and remove it.</p>';
   // nobody here is you (your own record was removed, or you joined under another name): say which one is you
   const free = S.people.filter(x => !x.uid);
-  if (!mePerson() && S.user && free.length) out += '<div class="note small">Which of these is you? Tap your name, so your thumbs up or down, plates and calories follow you.<div class="row wrap" style="gap:6px;margin-top:8px">' + free.map(x => '<button class="chip" data-act="this-is-me" data-v="' + h(x.id) + '">' + h(x.name) + '</button>').join('') + '</div></div>';
+  if (!mePerson() && S.user && free.length) out += '<div class="note small">Which of these is you? Tap your name, so your thumbs up or down, plates and calories follow you.<div class="row wrap" style="gap:6px;margin-top:8px">' + free.map(x => '<button class="chip" data-act="this-is-me" data-v="' + h(x.id) + '">' + h(nick(x.name)) + '</button>').join('') + '</div></div>';
   out += '<p class="muted small">Recipes with something on a “won’t eat” list are hidden, unless the card has a simple swap (like leaving it off one plate). Dislikes push a recipe down the list; likes push it up.</p>';
   if (p) {
     out += '<section class="panel">';
@@ -1883,7 +1892,7 @@ function setPeople() {
         '<form class="row" data-form="pref-add" data-v="' + h(p.id) + '" data-k="' + key + '"><input class="input grow" id="pa-' + h(p.id) + '-' + key + '" placeholder="' + (key === 'wontEat' ? 'e.g. mushrooms, prawns' : key === 'likes' ? 'e.g. Thai, halloumi, spicy' : 'e.g. peppers, coriander') + '" aria-label="Add to ' + label + ' for ' + h(p.name) + '"><button class="btn" type="submit">Add</button></form></div>';
     }
     out += '</section><section class="panel">' + personPlanHtml(p) + '</section>';
-    out += '<div class="row">' + (S.confirm['rmp:' + p.id] ? '<button class="btn danger" data-act="rm-person-yes" data-v="' + h(p.id) + '">Yes, remove ' + h(p.name) + '</button>' : '<button class="linkish small" data-act="rm-person" data-v="' + h(p.id) + '">Remove ' + h(p.name) + ' from the plan</button>') + '</div>';
+    out += '<div class="row">' + (S.confirm['rmp:' + p.id] ? '<button class="btn danger" data-act="rm-person-yes" data-v="' + h(p.id) + '">Yes, remove ' + h(nick(p.name)) + '</button>' : '<button class="linkish small" data-act="rm-person" data-v="' + h(p.id) + '">Remove ' + h(nick(p.name)) + ' from the plan</button>') + '</div>';
   }
   out += '<form class="row" data-form="add-person"><input class="input grow" id="np-name" placeholder="Add someone else who eats with you" aria-label="Name"><button class="btn" type="submit">Add</button></form>';
   return out;
@@ -1901,7 +1910,7 @@ function setTreats() {
 function setPlanning() {
   const st = S.settings;
   return '<section class="panel"><h2>How to plan</h2>' +
-    '<div class="stack" style="gap:6px"><span class="label">Planning style</span><span class="seg full">' + [['save', 'Save money'], ['balanced', 'Balanced'], ['variety', 'Mix it up']].map(([k, n]) => '<button class="' + ((st.style || 'balanced') === k ? 'on' : '') + '" data-act="set-style" data-v="' + k + '">' + n + '</button>').join('') + '</span>' +
+    '<div class="stack" style="gap:6px"><span class="label">Planning style</span><span class="seg full">' + [['save', 'Cheapest'], ['balanced', 'Balanced'], ['variety', 'Variety']].map(([k, n]) => '<button class="' + ((st.style || 'balanced') === k ? 'on' : '') + '" data-act="set-style" data-v="' + k + '">' + n + '</button>').join('') + '</span>' +
     '<span class="muted small">' + ({ save: 'Cheapest weeks, using every pack. Expect more repeats.', balanced: 'Uses packs up, but rotates cuisines and avoids repeats from recent weeks.', variety: 'Something different most nights. Costs a bit more.' })[st.style || 'balanced'] + '</span></div>' +
     '<div class="stack" style="gap:6px"><span class="label">Weeknight cooking time (Mon–Fri)</span><span class="seg full">' + [20, 30, 45, 60].map(v => '<button class="' + (Number(st.weeknightCap) === v ? 'on' : '') + '" data-act="set-cap" data-v="' + h(v) + '">' + v + ' min</button>').join('') + '</span></div>' +
     '<label class="row"><input type="checkbox" id="set-skipopt" class="cb" data-change="set-skipopt" ' + (st.skipOptional ? 'checked' : '') + '> Leave out optional extras (garnishes) when they’d mean buying a pack</label></section>' +
@@ -1943,7 +1952,7 @@ function setAccount() {
     '<p class="small">To install it: in Chrome on Android tap ⋮ → Install app (or Add to Home screen). On iPhone, Share → Add to Home Screen.</p>' +
     '<dl class="kv"><dt>Connection</dt><dd>' + (S.online ? 'online' : 'offline') + '</dd><dt>App version</dt><dd>' + h(APP_VERSION) + '</dd><dt>Recipes on this phone</dt><dd>' + (S.lib ? S.recipes.length : 'not loaded') + '</dd></dl></section>' +
     (Store.kind === 'artifact' ? '' : '<section class="panel"><h2>Account</h2><p class="small">Signed in as <b>' + h(S.user ? (S.user.email || S.user.name) : '') + '</b></p><div class="row wrap"><button class="btn" data-act="sign-out">Sign out</button></div>' +
-      '<details><summary class="small">Something stuck?</summary><div class="stack" style="padding-top:8px"><p class="small muted">Resetting clears only the copy kept on this phone and reloads. Your plans are safe online, but anything changed offline and not yet synced would be lost.</p><button class="btn" data-act="reset-local">Reset this phone’s saved copy</button></div></details></section>');
+      '<details><summary class="small">Something stuck?</summary><div class="stack" style="padding-top:8px"><p class="small muted">Resetting clears only the copy kept on this phone and reloads. Your plans are safe online, but anything changed offline and not yet synced would be lost.</p><button class="btn" data-act="reset-local">Reset saved copy</button></div></details></section>');
 }
 // where each shop's price came from, in plain words
 const BASIS = { shop: 'the shop\u2019s website', compare: 'a price-comparison site', app: 'the shop on a delivery app', crowd: 'shoppers\u2019 receipts and shelf photos', news: 'a dated article or leaflet', match: 'Tesco\u2019s Aldi Price Match', model: 'worked out from a matched price at another shop', receipt: 'your receipt' };
@@ -1984,7 +1993,7 @@ function personPlanHtml(p) {
   const dayChips = slot => '<div class="chips wrapchips">' + DAY_NAMES.map((n, d) => { const on = (days[slot] || (slot === 'l' ? [0, 1, 2, 3, 4] : [0, 1, 2, 3, 4, 5, 6])).includes(d); return '<button class="chip ' + (on ? 'on' : '') + '" data-act="p-day" data-v="' + h(p.id) + '" data-s="' + slot + '" data-n="' + d + '" aria-pressed="' + on + '">' + n + '</button>'; }).join('') + '</div>';
   const usual = slot => { const u = (p.usual && p.usual[slot]) || []; return '<span class="muted small">Usual: ' + (u.length ? u.map(id => id === 'lo' ? 'leftovers' : h((S.RMAP[id] || {}).title || id)).join(' + ') : 'none yet. Pick one on the Week tab and tap \u201cMake this my usual\u201d.') + '</span>'; };
   return '<div class="stack" style="gap:8px"><span class="label">Portions &amp; daily plan</span>' +
-    '<div class="row wrap between"><span class="small">Dinner portion</span><span class="seg">' + [[0.5, '½'], [0.75, '¾'], [1, 'Normal'], [1.25, '1¼'], [1.5, '1½']].map(([v, n]) => '<button class="' + (portionOf(p) === v ? 'on' : '') + '" data-act="p-portion" data-v="' + h(p.id) + '" data-n="' + v + '">' + n + '</button>').join('') + '</span></div>' +
+    '<div class="stack" style="gap:6px"><span class="small">Dinner portion</span><span class="seg full">' + [[0.5, '½'], [0.75, '¾'], [1, 'Normal'], [1.25, '1¼'], [1.5, '1½']].map(([v, n]) => '<button class="' + (portionOf(p) === v ? 'on' : '') + '" data-act="p-portion" data-v="' + h(p.id) + '" data-n="' + v + '">' + n + '</button>').join('') + '</span></div>' +
     '<label class="row small"><input type="checkbox" class="cb" data-change="p-dinner" data-v="' + h(p.id) + '" ' + (p.dinner === false ? '' : 'checked') + '> Eats the planned dinners</label>' +
     '<div class="grid2"><label class="field"><span>Daily calories <span class="muted">(optional)</span></span><input class="input" type="number" min="0" step="50" id="pk-' + h(p.id) + '" data-change="p-kcal" data-v="' + h(p.id) + '" value="' + (p.kcalTarget || '') + '"></label><label class="field"><span>Protein, g <span class="muted">(optional)</span></span><input class="input" type="number" min="0" step="5" id="pp-' + h(p.id) + '" data-change="p-protein" data-v="' + h(p.id) + '" value="' + (p.proteinTarget || '') + '"></label></div>' +
     '<label class="row"><input type="checkbox" class="cb" data-change="p-plan" data-s="b" data-v="' + h(p.id) + '" ' + (plan.b ? 'checked' : '') + '> Plan breakfasts</label>' + (plan.b ? dayChips('b') + usual('b') : '') +
@@ -2230,7 +2239,7 @@ function renderSheet(force, keep) {
   else if (top.type === 'votes') { title = 'Thumbs up or down'; body = sheetVotes(top); }
   else if (top.type === 'whosin') { title = 'Who\u2019s in each night'; body = sheetWhosIn(top); }
   else if (top.type === 'rescue') { title = isTonight(top.d) ? 'Takeaway tonight' : 'Takeaway on ' + DAY_LONG[top.d]; body = sheetRescue(top); }
-  else if (top.type === 'blpick') { const p = personById(top.pid); title = (p ? p.name + '\u2019s ' : '') + SLOT_NAME[top.slot].toLowerCase() + ' · ' + DAY_NAMES[top.d]; body = sheetBlPick(top); }
+  else if (top.type === 'blpick') { const p = personById(top.pid); title = (p ? nick(p.name) + '\u2019s ' : '') + SLOT_NAME[top.slot].toLowerCase() + ' · ' + DAY_NAMES[top.d]; body = sheetBlPick(top); }
   el.innerHTML = '<div class="shead"><div class="in"><button class="icon-btn" data-act="sheet-back" aria-label="' + (S.sheets.length > 1 ? 'Back' : 'Close') + '">' + (S.sheets.length > 1 ? ICON.left : ICON.close) + '</button><h2 class="grow ellip">' + h(title) + '</h2></div></div><div class="sbody">' + body + '</div>';
   el.hidden = false; document.body.style.overflow = 'hidden'; el.scrollTop = scroll;
 }
@@ -2292,9 +2301,9 @@ function suggHtml(s, best) {
   if (s.clash) tags.push('<span class="tag warn">' + h(s.clash) + '</span>');
   if (r.category === 'treat') tags.push('<span class="tag treat">Treat</span>');
   if ((currentWeek().suggestFirst || []).includes(r.id)) tags.push('<span class="tag good">Moved from last week</span>');
-  s.pc.swaps.forEach(x => tags.push('<span class="tag swap">Swap for ' + h(x.person) + '</span>'));
-  s.pc.dislikes.forEach(x => tags.push('<span class="tag warn">' + h(x.person) + ' dislikes ' + h(x.what) + '</span>'));
-  s.pc.likes.slice(0, 1).forEach(x => tags.push('<span class="tag good">' + h(x.person) + ' likes ' + h(x.what) + '</span>'));
+  s.pc.swaps.map(x => nick(x.person)).filter((x, i, all) => all.indexOf(x) === i).forEach(n => tags.push('<span class="tag swap">Swap for ' + h(n) + '</span>'));
+  s.pc.dislikes.forEach(x => tags.push('<span class="tag warn">' + h(nick(x.person)) + ' dislikes ' + h(x.what) + '</span>'));
+  s.pc.likes.slice(0, 1).forEach(x => tags.push('<span class="tag good">' + h(nick(x.person)) + ' likes ' + h(x.what) + '</span>'));
   return '<div class="sugg ' + (best ? 'top' : '') + '">' + tileHtml(r) +
     '<button class="pick" data-act="choose" data-v="' + h(r.id) + '"><b>' + h(rt(r)) + '</b><span class="muted small">' + r.time + ' min · ' + (n.kcal ? n.kcal + ' kcal · ' : '') + h(r.cuisine) + '</span><span class="why">' + parts.join(' · ') + '</span>' + (tags.length ? '<span class="row wrap tagrow">' + tags.join('') + '</span>' : '') + '</button>' +
     '<button class="icon-btn" data-act="peek" data-v="' + h(r.id) + '" aria-label="See the recipe for ' + h(r.title) + '">' + ICON.info + '</button></div>';
@@ -2361,9 +2370,9 @@ function sheetRecipe(r, top) {
     const day = w.days[top.d];
     const eat = S.people.filter(p => p.dinner !== false);
     out += '<section class="panel"><div class="row between"><h3>' + DAY_LONG[top.d] + '</h3><button class="btn primary" data-act="cook" data-v="' + h(r.id) + '">Start cooking</button></div>' +
-      (eat.length > 1 && !locked ? '<div class="stack" style="gap:6px"><span class="label">Who\u2019s eating</span><div class="row wrap" style="gap:6px">' + eat.map(p => { const a = awayOn(w, p, top.d); return '<button class="chip ' + (a ? 'outd' : 'on') + '" data-act="away-toggle" data-v="' + h(p.id) + '" data-n="' + top.d + '">' + h(p.name) + (a ? ' \u00b7 out' : '') + '</button>'; }).join('') + '</div></div>' : '') +
+      (eat.length > 1 && !locked ? '<div class="stack" style="gap:6px"><span class="label">Who\u2019s eating</span><div class="row wrap" style="gap:6px">' + eat.map(p => { const a = awayOn(w, p, top.d); return '<button class="chip ' + (a ? 'outd' : 'on') + '" data-act="away-toggle" data-v="' + h(p.id) + '" data-n="' + top.d + '">' + h(nick(p.name)) + (a ? ' \u00b7 out' : '') + '</button>'; }).join('') + '</div></div>' : '') +
       dayVoteRow(w, top.d) + dayPlateRows(w, top.d) +
-      '<button class="btn block takeaway-btn" data-act="takeaway" data-v="' + top.d + '">' + ICON.bag + ' Getting a takeaway instead?</button>' +
+      '<button class="btn block takeaway-btn" data-act="takeaway" data-v="' + top.d + '">' + ICON.bag + ' Takeaway instead?</button>' +
       (locked ? '<p class="muted small">This week is locked in. Unlock it on the Week tab to change dinners.</p>' :
         '<div class="stack" style="gap:6px"><span class="label">Guests for dinner</span><div class="row wrap"><span class="seg">' + [0, 1, 2, 3, 4].map(k => '<button class="' + ((day.guests || 0) === k ? 'on' : '') + '" data-act="guests" data-v="' + top.d + '" data-n="' + k + '">' + (k ? '+' + k : 'None') + '</button>').join('') + '</span></div></div>' +
         '<div class="stack" style="gap:6px"><span class="label">Extra portions</span><div class="row wrap"><span class="seg">' + [0, 1, 2, 4].map(k => '<button class="' + ((day.extra || 0) === k ? 'on' : '') + '" data-act="extra" data-v="' + top.d + '" data-n="' + k + '">' + (k ? '+' + k : 'None') + '</button>').join('') + '</span>' +
@@ -2372,15 +2381,15 @@ function sheetRecipe(r, top) {
         '<div class="row wrap"><button class="btn" data-act="change-day" data-v="' + top.d + '">Change dinner</button><button class="btn danger" data-act="remove-day" data-v="' + top.d + '">Remove</button></div>') + '</section>';
   } else if (!isDinner(r)) {
     const slot = r.meal === 'breakfast' ? 'b' : 'l';
-    out += '<div class="row wrap"><button class="btn primary" data-act="cook" data-v="' + h(r.id) + '">Start cooking</button>' + (top.fromBl ? '<button class="btn soft" data-act="bl-add-from" data-v="' + h(r.id) + '">Add to ' + h((personById(top.fromBl.pid) || {}).name || '') + '\u2019s ' + DAY_LONG[top.fromBl.d] + '</button>' : '') + '</div>';
+    out += '<div class="row wrap"><button class="btn primary" data-act="cook" data-v="' + h(r.id) + '">Start cooking</button>' + (top.fromBl ? '<button class="btn soft" data-act="bl-add-from" data-v="' + h(r.id) + '">Add to ' + h(nick((personById(top.fromBl.pid) || {}).name || '')) + '\u2019s ' + DAY_LONG[top.fromBl.d] + '</button>' : '') + '</div>';
     if (r.batch) out += '<p class="note">' + h(r.batch) + '</p>';
-    if (!top.fromBl) out += S.people.map(p => '<div class="stack" style="gap:6px"><span class="label">Add to ' + h(p.name) + '\u2019s ' + SLOT_NAME[slot].toLowerCase() + ' (' + weekRange(S.weekStart) + ')</span><div class="chips">' + DAY_NAMES.map((nm, d) => { const on = blItems(w, p, slot, d).includes(r.id); return '<button class="chip ' + (on ? 'on' : '') + '" data-act="bl-add-day" data-v="' + h(p.id) + '|' + slot + '|' + d + '" data-r="' + h(r.id) + '" aria-pressed="' + on + '">' + nm + '</button>'; }).join('') + '</div></div>').join('');
+    if (!top.fromBl) out += S.people.map(p => '<div class="stack" style="gap:6px"><span class="label">Add to ' + h(nick(p.name)) + '\u2019s ' + SLOT_NAME[slot].toLowerCase() + ' (' + weekRange(S.weekStart) + ')</span><div class="chips">' + DAY_NAMES.map((nm, d) => { const on = blItems(w, p, slot, d).includes(r.id); return '<button class="chip ' + (on ? 'on' : '') + '" data-act="bl-add-day" data-v="' + h(p.id) + '|' + slot + '|' + d + '" data-r="' + h(r.id) + '" aria-pressed="' + on + '">' + nm + '</button>'; }).join('') + '</div></div>').join('');
   } else {
     out += '<div class="row wrap"><button class="btn primary" data-act="cook" data-v="' + h(r.id) + '">Start cooking</button>' + (top.fromPick != null ? '<button class="btn soft" data-act="choose" data-v="' + h(r.id) + '">Add to ' + DAY_LONG[top.fromPick] + '</button>' : '') + '</div>';
     if (top.fromPick == null && !locked) out += '<div class="stack" style="gap:6px"><span class="label">Add to ' + weekLabel().toLowerCase() + ' (' + weekRange(S.weekStart) + ')</span><div class="chips">' + DAY_NAMES.map((nm, d) => '<button class="chip ' + (w.days[d].r === r.id ? 'on' : '') + '" data-act="add-to-day" data-v="' + d + '" data-r="' + h(r.id) + '">' + nm + (w.days[d].r && w.days[d].r !== r.id ? ' •' : '') + '</button>').join('') + '</div><span class="muted small">• already has a dinner (it’ll be replaced)</span></div>';
   }
   out += '<section class="stack" style="gap:6px"><div class="row between"><h2>Ingredients</h2><span class="seg" aria-label="Servings">' + Array.from(new Set((isDinner(r) ? [2, 3, 4] : [1, 2, 3]).concat([serv]))).sort((a, b) => a - b).map(k => '<button class="' + (serv === k ? 'on' : '') + '" data-act="serv" data-v="' + k + '">' + k + '</button>').join('') + '</span></div><div class="ings">' +
-    r.ingredients.map(l => { const ing = S.ING[l.i]; const amt = amtFor(l, f); const low = ing && ing.staple && ['low', 'out'].includes((S.pantry.status || {})[l.i]); return '<div class="ing"><span>' + h(ing ? ing.name : l.i) + (ing && ing.staple ? ' <span class="tag ' + (low ? 'warn' : '') + '">' + (low ? 'pantry · low' : 'pantry') + '</span>' : '') + (l.opt ? ' <span class="tag">optional</span>' : '') + (ing && pc.swaps.some(x => x.ingName === ing.name) ? ' <span class="tag swap">swap for ' + h(pc.swaps.filter(x => x.ingName === ing.name).map(x => x.person).join(' & ')) + '</span>' : '') + '</span><span class="amt">' + h(amt) + '</span></div>'; }).join('') + '</div></section>';
+    r.ingredients.map(l => { const ing = S.ING[l.i]; const amt = amtFor(l, f); const low = ing && ing.staple && ['low', 'out'].includes((S.pantry.status || {})[l.i]); return '<div class="ing"><span>' + h(ing ? ing.name : l.i) + (ing && ing.staple ? ' <span class="tag ' + (low ? 'warn' : '') + '">' + (low ? 'pantry · low' : 'pantry') + '</span>' : '') + (l.opt ? ' <span class="tag">optional</span>' : '') + (ing && pc.swaps.some(x => x.ingName === ing.name) ? ' <span class="tag swap">swap for ' + h(pc.swaps.filter(x => x.ingName === ing.name).map(x => nick(x.person)).join(' & ')) + '</span>' : '') + '</span><span class="amt">' + h(amt) + '</span></div>'; }).join('') + '</div></section>';
   loadStepPhotos(r);
   out += '<section class="stack"><h2>Method</h2>' + (Math.abs(f - 1) > 0.01 ? '<p class="note small">The method is written for ' + (r.servings || 2) + '. Use the amounts above for ' + serv + '.</p>' : '') + '<ol class="steps">' + r.steps.map((s, k) => { const sp = stepPhoto(r, k); return '<li><div>' + (stepTitle(s) ? '<b class="stitle">' + h(stepTitle(s)) + '</b>' : '') + '<p>' + h(stepText(s)) + '</p>' +
     (sp && !sp.hidden ? '<figure class="stepimg"><img src="' + h(sp.x.img) + '" alt="How step ' + (k + 1) + ' should look" loading="lazy"><figcaption>' + h(sp.x.by || '') + (sp.x.uid === myUid() ? ' · <button class="linkish small" data-act="del-step-photo" data-v="' + h(r.id) + '" data-n="' + k + '">Remove</button>' : '') + stepPhotoNote(r, k, sp) + '</figcaption></figure>' : '') +
@@ -2403,12 +2412,12 @@ function sheetWhosIn(top) {
   const w = currentWeek(), ps = S.people.filter(p => p.dinner !== false);
   if (!ps.length) return '<p class="muted">Add who\u2019s eating in Settings first.</p>';
   let out = '<p class="muted small">Tap a name to change it. Dinners are cooked for whoever\u2019s in, so a night for one buys and cooks for one. <b>Out</b> means no dinner that night (a night shift, a night out). <b>Away</b> also skips their breakfast and lunch.</p>';
-  out += '<div class="row wrap" style="gap:6px">' + ps.map(p => '<button class="chip" data-act="away-week" data-v="' + h(p.id) + '">' + h(p.name) + ' away all week</button>').join('') + (w.away && Object.keys(w.away).length ? '<button class="chip" data-act="away-clear">Everyone in</button>' : '') + '</div>';
+  out += '<div class="row wrap" style="gap:6px">' + ps.map(p => '<button class="chip" data-act="away-week" data-v="' + h(p.id) + '">' + h(nick(p.name)) + ' away all week</button>').join('') + (w.away && Object.keys(w.away).length ? '<button class="chip" data-act="away-clear">Everyone in</button>' : '') + '</div>';
   out += '<div class="mgroup">';
   for (let d = 0; d < 7; d++) {
     out += '<div class="whorow"><b>' + DAY_NAMES[d] + ' <span class="muted small">' + parseIso(addDays(w.start, d)).getDate() + '</span></b><span class="row wrap" style="gap:6px">' + ps.map(p => {
       const a = awayOn(w, p, d);
-      return '<button class="chip ' + (a ? (a === 'day' ? 'away' : 'outd') : 'on') + '" data-act="away-cycle" data-v="' + h(p.id) + '" data-n="' + d + '" aria-label="' + h(p.name) + ' on ' + DAY_LONG[d] + ': ' + (a === 'day' ? 'away' : a ? 'out for dinner' : 'in') + '">' + h(p.name) + (a === 'day' ? ' \u00b7 away' : a ? ' \u00b7 out' : '') + '</button>';
+      return '<button class="chip ' + (a ? (a === 'day' ? 'away' : 'outd') : 'on') + '" data-act="away-cycle" data-v="' + h(p.id) + '" data-n="' + d + '" aria-label="' + h(p.name) + ' on ' + DAY_LONG[d] + ': ' + (a === 'day' ? 'away' : a ? 'out for dinner' : 'in') + '">' + h(nick(p.name)) + (a === 'day' ? ' \u00b7 away' : a ? ' \u00b7 out' : '') + '</button>';
     }).join('') + '</span></div>';
   }
   out += '</div><button class="btn primary block" data-act="sheet-back">Done</button>';
@@ -2530,7 +2539,7 @@ function importBox(top) {
   if (top.id) return '';
   return '<section class="panel importbox"><h3>Import a recipe</h3><p class="muted small">Paste a link to a recipe page, or take a photo of a page in one of your cookbooks. It fills in the form below for you to check.</p>' +
     '<form class="row" data-form="import-url" style="gap:8px"><input class="input grow" id="imp-url" type="url" placeholder="https://…" aria-label="Recipe web link"><button class="btn" type="submit"' + (top.importing ? ' disabled' : '') + '>Import</button></form>' +
-    '<label class="btn soft block">' + ICON.camera + ' Photo of a cookbook page<input type="file" accept="image/*" capture="environment" data-import-photo="1" hidden></label>' +
+    '<label class="btn soft block">' + ICON.camera + ' Scan a page<input type="file" accept="image/*" capture="environment" data-import-photo="1" hidden></label>' +
     (top.importing ? '<p class="small"><span class="spinner sm" aria-hidden="true"></span> Reading the recipe…</p>' : '') + (top.importErr ? '<p class="note warn small">' + h(top.importErr) + '</p>' : '') +
     (top.draft && top.draft.servedOrig && top.draft.servedOrig !== 2 ? '<p class="note small">The original serves ' + top.draft.servedOrig + '; amounts below are scaled for 2.</p>' : '') +
     (top.draft && top.lines.some(l => !l.i) ? '<p class="note warn small">Couldn’t match: ' + h(top.lines.filter(l => !l.i).map(l => l.missing).join('; ')) + '. Pick the closest for each, or add it in Settings → Ingredients &amp; prices.</p>' : '') + '</section>';
