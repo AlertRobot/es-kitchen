@@ -1713,7 +1713,7 @@ function setHistory() {
   // money by month: logged shops (from Budgie or this app) and what the plans cost
   const months = {}; const mk = iso => String(iso || '').slice(0, 7);
   weeks.forEach(x => { const m = mk(x.start); months[m] = months[m] || { plan: 0, paid: 0 }; months[m].plan += weekCost(x); });
-  liveShops().forEach(t => { const m = mk(t.date); months[m] = months[m] || { plan: 0, paid: 0 }; months[m].paid += Number(t.amount) || 0; });
+  liveShops().forEach(t => { const m = mk(t.date); if (!/^\d{4}-\d{2}$/.test(m)) return; months[m] = months[m] || { plan: 0, paid: 0 }; months[m].paid += Number(t.amount) || 0; });
   const mkeys = Object.keys(months).sort().slice(-6), mmax = Math.max(1, ...mkeys.map(m => Math.max(months[m].plan, months[m].paid)));
   const monthName = m => parseIso(m + '-01').toLocaleDateString('en-GB', { month: 'short' });
   const budget = Number(S.settings.monthlyBudget) || 450;

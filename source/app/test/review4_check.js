@@ -237,6 +237,15 @@ const home = (hid, name, extra) => ({ ['households/' + hid]: { name, members: ['
       await A.submit('[data-form="backup-connect"]', 200); await A.switchTo('h2'); await wait(2000);
       ok((A.docAt('households/h2/config/backup') || {}).key === 'k2', 'switching: a backup sheet being connected in one household isn\u2019t connected to the other'); }
   }
+  // ---- 11. history: a logged shop with no proper date doesn't make an "Invalid Date" month ----
+  if (!only || only === 11) {
+    const pre = { 'users/u_ethan': { households: ['h1'], current: 'h1', names: { h1: 'Home' } }, ...home('h1', 'Home', { ['households/h1/weeks/' + MON]: planned(),
+      'households/h1/shops/s1': { date: 'soon', amount: 12, shop: 'tesco', source: 'peckish' }, 'households/h1/shops/s2': { date: TODAY, amount: 30, shop: 'tesco', source: 'peckish' } }) };
+    const A = boot({ pre }); await wait(2500);
+    await A.act('tab', 'settings'); await A.act('set-page', 'history', null, 1200);
+    const t = A.d.querySelector('#app').textContent;
+    ok(/Spending by month/.test(t) && !/Invalid/.test(t), 'history: no "Invalid Date" month from a shop without a proper date');
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();
