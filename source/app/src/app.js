@@ -1560,7 +1560,8 @@ async function bgSyncShops() {
       if (cur) { if (stable({ ...doc, via: cur.via || me }) !== stable({ ...doc, ...pickKeys(cur, Object.keys(doc)), via: cur.via })) await Store.set('shops/' + cur.id, { ...doc, via: cur.via || me }); }
       else await Store.set('shops/' + 'b_' + String(tx.id).replace(/[^A-Za-z0-9_]/g, '_'), { ...doc, via: me });
     }
-    if (sent.full === true) for (const tid in imported) { const t = imported[tid]; if (!seen.has(tid) && t.via && t.via === me && String(t.date || '') >= since) here(), await Store.del('shops/' + t.id); }
+    // taken off by the phone that brought it in, or by the payer's (who always sees all of their own that the other phone can)
+    if (sent.full === true) for (const tid in imported) { const t = imported[tid]; if (!seen.has(tid) && ((t.via && t.via === me) || (t.budgie && t.budgie.person === me)) && String(t.date || '') >= since) here(), await Store.del('shops/' + t.id); }
     S.bg.err = '';
   } catch (e) { if (curHid !== hid0) { S.bg.busy = false; return; } S.bg.err = navigator.onLine === false ? 'Offline: it’ll sync when you’re back online' : (e.message || String(e)); console.warn(e); }
   S.bg.busy = false; schedule();

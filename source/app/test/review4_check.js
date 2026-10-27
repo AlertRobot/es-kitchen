@@ -175,6 +175,10 @@ const home = (hid, name, extra) => ({ ['households/' + hid]: { name, members: ['
     const sent = posts.flatMap(b => b.ops || []).find(o => o.row && o.row.amount === 41.2);
     ok(sent && sent.row.budget === 'bud-e2', 'budgie: and your shops go to the budget you chose (' + (sent && sent.row.budget) + ')');
     ok(!A.errs.length, 'budgie: no page errors ' + A.errs.join(' | '));
+    // one of Ethan's own that Sophie's phone brought in, since taken off in Budgie: Ethan's phone takes it off here too
+    await A.w.Store.set('shops/b_t_gone', { date: TODAY, amount: 9, shop: 'tesco', paidBy: 'u_ethan', source: 'budgie', budgie: { state: 'sent', tid: 't-gone', person: 'ethan' }, via: 'sophie', week: MON }); await wait(300);
+    await A.act('tab', 'settings'); await A.act('set-page', 'linked', null, 300); await A.act('bg-sync', null, null, 2500);
+    ok(!A.docAt('households/h1/shops/b_t_gone'), 'budgie: a payment taken off in Budgie goes from the payer\u2019s phone, whichever phone brought it in');
   }
   // ---- 7. moving a dinner to another night: guests stay on the night they're coming ----
   if (!only || only === 7) {
