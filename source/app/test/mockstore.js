@@ -10,6 +10,19 @@ window.__docs = docs;
 // like Firestore's own check before it sends anything: no list directly inside a list
 function noNested(v, inList) { if (Array.isArray(v)) { if (inList) throw Object.assign(new Error('Function setDoc() called with invalid data. Nested arrays are not supported'), { code: 'invalid-argument' }); v.forEach(x => noNested(x, true)); } else if (v && typeof v === 'object') Object.values(v).forEach(x => noNested(x, false)); }
 const checked = f => function (rel, data) { noNested(data, false); return f.apply(this, arguments); };
+// like firestore.rules for logged shops (households/{hid}/shops/{id}): who logged one is the account writing it and never
+// changes, okBy is only ever the writer's own account, and a shop waiting to go to Budgie can't be changed or made to wait again
+const state = d => ((d && d.budgie) || {}).state || '';
+const same = (a, b) => JSON.stringify(a === undefined ? null : a) === JSON.stringify(b === undefined ? null : b);
+function shopRule(rel, before, after) {
+  if (!/^shops\/[^/]+$/.test(rel)) return;
+  const me = 'u_ethan', no = () => { throw Object.assign(new Error('Missing or insufficient permissions.'), { code: 'permission-denied' }); };
+  if (!(same(after.okBy, before && before.okBy) || after.okBy === me)) no();
+  if (!before) { if (!(after.byUid === me || state(after) !== 'queued')) no(); return; }
+  if (!same(after.byUid, before.byUid)) no();
+  if (state(after) === 'queued' && (state(before) !== 'queued' || ['amount', 'date', 'paidBy', 'split', 'shop', 'source', 'budgie', 'removed'].some(k => !same(after[k], before[k])))) no();
+}
+window.__shopRule = shopRule;
 window.Store = {
   kind: 'mock',
   onUser(cb) { userCb = cb; setTimeout(() => cb(window.__signedOut ? null : user), 0); return () => {}; },
@@ -29,11 +42,11 @@ window.Store = {
   subG(col, cb) { const f = () => cb(col_(col)); subs.add(f); setTimeout(f, 0); return () => subs.delete(f); },
   async getG(p) { return docs.get(p) || null; }, async setG(p, d) { docs.set(p, JSON.parse(JSON.stringify(d))); notify(); }, async delG(p) { docs.delete(p); notify(); }, uid() { return 'u_ethan'; },
   async get(rel) { return docs.get(full(rel)) || null; },
-  set: checked(async function (rel, data) { docs.set(full(rel), JSON.parse(JSON.stringify(data))); window.__writes = (window.__writes || 0) + 1; notify(); }),
-  merge: checked(async function (rel, data) { docs.set(full(rel), { ...(docs.get(full(rel)) || {}), ...data }); notify(); }),
+  set: checked(async function (rel, data) { shopRule(rel, docs.get(full(rel)), JSON.parse(JSON.stringify(data))); docs.set(full(rel), JSON.parse(JSON.stringify(data))); window.__writes = (window.__writes || 0) + 1; notify(); }),
+  merge: checked(async function (rel, data) { const nx = { ...(docs.get(full(rel)) || {}), ...data }; shopRule(rel, docs.get(full(rel)), JSON.parse(JSON.stringify(nx))); docs.set(full(rel), nx); notify(); }),
   async del(rel) { docs.delete(full(rel)); notify(); },
   DEL: { __delete: true },
-  patch: checked(async function (rel, flat) { const p = full(rel); const d = JSON.parse(JSON.stringify(docs.get(p) || {})); for (const k of Object.keys(flat)) { const parts = k.split('.'); let o = d; for (let i = 0; i < parts.length - 1; i++) o = o[parts[i]] = (o[parts[i]] && typeof o[parts[i]] === 'object') ? o[parts[i]] : {}; const v = flat[k]; if (v && v.__delete) delete o[parts[parts.length - 1]]; else o[parts[parts.length - 1]] = JSON.parse(JSON.stringify(v)); } docs.set(p, d); window.__writes = (window.__writes || 0) + 1; window.__patches = (window.__patches || 0) + 1; notify(); }),
+  patch: checked(async function (rel, flat) { const p = full(rel); const d = JSON.parse(JSON.stringify(docs.get(p) || {})); for (const k of Object.keys(flat)) { const parts = k.split('.'); let o = d; for (let i = 0; i < parts.length - 1; i++) o = o[parts[i]] = (o[parts[i]] && typeof o[parts[i]] === 'object') ? o[parts[i]] : {}; const v = flat[k]; if (v && v.__delete) delete o[parts[parts.length - 1]]; else o[parts[parts.length - 1]] = JSON.parse(JSON.stringify(v)); } shopRule(rel, docs.get(p), d); docs.set(p, d); window.__writes = (window.__writes || 0) + 1; window.__patches = (window.__patches || 0) + 1; notify(); }),
   async list(rel) { return col(full(rel)).map(d => { const x = { ...d }; delete x.id; return { id: d.id, data: x }; }); },
   async touchMember(h, u) { const d = docs.get('households/' + h.id); if (d) { d.memberEmails = { ...(d.memberEmails || {}), [u.uid]: u.email }; } },
 };

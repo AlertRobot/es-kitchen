@@ -113,7 +113,7 @@ const CAL = { household: { dinnerTime: '19:00' }, people: [{ id: 'ethan', name: 
     A.d.querySelector('#bg-url').value = 'https://alertrobot.github.io/es-kitchen/#connect=' + Buffer.from(JSON.stringify({ u: 'https://script.google.com/macros/s/BUDGIE/exec', k: 'app_peckish_' + 'e'.repeat(64) })).toString('base64url');
     await A.submit('[data-form="bg-link"]', 2000);
     const imp = () => A.w.__docs.get('households/h1/shops/b_t_abc');
-    ok(OPS.some(o => o.row.id === 't-pk-sold1' && o.row.person === 'ethan'), 'budgie: the payer’s phone sends a shop logged under another spelling of their name');
+    ok(OPS.some(o => /^t-pk-sold1(-u|$)/.test(o.row.id) && o.row.person === 'ethan'), 'budgie: the payer’s phone sends a shop logged under another spelling of their name');
     ok(imp() && imp().amount === 31.4, 'budgie: Sophie’s Budgie food shop shows here');
     B.transactions[0].amount = 33.9; await A.click('[data-act="bg-sync"]', 1200);
     ok(imp() && imp().amount === 33.9, 'budgie: a change made in Budgie follows here');

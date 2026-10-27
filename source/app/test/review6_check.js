@@ -69,7 +69,7 @@ const calMock = (CAL, NOTIFS, opts) => ({ onUser(cb) { setTimeout(() => cb({ ema
   }
   // ---- 3. Budgie: a shop someone outside your Budgie (family) logs as paid by you waits until you add it ----
   if (!only || only === 3) {
-    const B = { people: [{ id: 'ethan', name: 'Ethan' }, { id: 'sophie', name: 'Sophie Smith' }], budgets: [{ id: 'e-food', person: 'ethan', name: 'Food' }], transactions: [], splits: [], accounts: [] };
+    const B = { people: [{ id: 'ethan', name: 'Ethan' }, { id: 'sophie', name: 'Sophie Smith' }], budgets: [{ id: 'e-food', person: 'ethan', name: 'Food' }], transactions: [{ id: 't-pk-sx-uu_sophie', date: TODAY_, person: 'sophie', amount: 9, budget: 's-food', split: 'half', note: 'Tesco shop (Peckish)', source: 'peckish' }], splits: [], accounts: [] };
     const OPS = [];
     const fetch = async (url, opt) => { if (!/script\.google\.com/.test(url)) return { ok: true, json: async () => JSON.parse(lib) }; const b = JSON.parse(opt.body); (b.ops || []).forEach(o => OPS.push(o));
       return { ok: true, json: async () => ({ ok: true, person: 'ethan', keyType: 'app', now: Date.now(), full: false, rows: B }) }; };
@@ -80,7 +80,7 @@ const calMock = (CAL, NOTIFS, opts) => ({ onUser(cb) { setTimeout(() => cb({ ema
     pre['households/h1'].members = ['u_ethan', 'u_sophie', 'u_mum'];
     const A = boot({ pre, fetch, local: { 'peckish.budgie': JSON.stringify({ u: 'https://script.google.com/macros/s/B/exec', k: 'app_peckish_' + 'e'.repeat(64), hid: 'h1' }), 'peckish.budgieData': JSON.stringify({ since: 1, me: 'ethan', rows: { people: { ethan: B.people[0], sophie: B.people[1] }, budgets: { 'e-food': B.budgets[0] } } }) } });
     await wait(5000);
-    const sentIds = () => OPS.filter(o => o.op === 'put').map(o => o.row.id);
+    const sentIds = () => OPS.filter(o => o.op === 'put').map(o => o.row.id.replace(/-u[A-Za-z0-9_]+$/, ''));
     ok(sentIds().includes('t-pk-s_soph') && sentIds().includes('t-pk-s_mine') && sentIds().includes('t-pk-s_old'), 'budgie: shops you or your Budgie partner logged go to your Budgie by themselves (' + sentIds().join(',') + ')');
     ok(!sentIds().includes('t-pk-s_mum'), 'budgie: one family logged as paid by you doesn\u2019t go into your Budgie by itself');
     await A.act('go-cost', null, null, 600);

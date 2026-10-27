@@ -84,10 +84,29 @@ service cloud.firestore {
             && request.resource.data.get('memberNames', {}).diff(resource.data.get('memberNames', {})).affectedKeys().hasOnly([request.auth.uid]))
       );
 
-      // weeks, people, config, recipes, ingredients, ratings, shops (only what's under the household: a bare
+      // weeks, people, config, recipes, ingredients, ratings (only what's under the household: a bare
       // {document=**} would match the household document too, and let any member delete it)
       match /{coll}/{document=**} {
-        allow read, write: if isMember(hid);
+        allow read, write: if coll != 'shops' && isMember(hid);
+      }
+
+      // logged shops: the payer's phone sends a shop to the payer's Budgie by itself only when the payer or their Budgie
+      // partner logged it, or when the payer said it's theirs. So who logged a shop is always the account that wrote it
+      // and never changes; "it's mine" (okBy) can only be said by the account saying it; and a shop still waiting to go
+      // (budgie.state 'queued') can't be made to wait again, or have what it would send changed, by anyone.
+      // (A shop that isn't waiting to go, like a restored copy or one brought in from Budgie, can say who logged it.)
+      function shopState(d) { return d.get('budgie', {}).get('state', ''); }
+      function okByFine(before) {
+        return request.resource.data.get('okBy', null) == before.get('okBy', null) || request.resource.data.get('okBy', '') == request.auth.uid;
+      }
+      match /shops/{sid} {
+        allow read, delete: if isMember(hid);
+        allow create: if isMember(hid) && okByFine({})
+          && (request.resource.data.get('byUid', '') == request.auth.uid || shopState(request.resource.data) != 'queued');
+        allow update: if isMember(hid) && okByFine(resource.data)
+          && request.resource.data.get('byUid', null) == resource.data.get('byUid', null)
+          && (shopState(request.resource.data) != 'queued' || (shopState(resource.data) == 'queued'
+            && !request.resource.data.diff(resource.data).affectedKeys().hasAny(['amount', 'date', 'paidBy', 'split', 'shop', 'source', 'budgie', 'removed'])));
       }
     }
   }

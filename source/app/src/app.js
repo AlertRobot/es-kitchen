@@ -248,7 +248,7 @@ function tidySettings(s) {
   if (!SHOPS.some(sh => sh.id === x.shop)) x.shop = DEFAULTS.shop;
   return x;
 }
-function tidyShop(t) { return { ...t, amount: num(t.amount, 0), date: isoOk(t.date) ? t.date : '', shop: txt(t.shop), note: txt(t.note) }; }
+function tidyShop(t) { const x = { ...t, amount: num(t.amount, 0), date: isoOk(t.date) ? t.date : '', shop: txt(t.shop), note: txt(t.note) }; ['byUid', 'okBy'].forEach(k => { if (k in x) x[k] = txt(x[k]); }); return x; }
 function rebuild() {
   if (!S.lib) return;
   const recipes = {}; for (const r of S.lib.recipes) recipes[r.id] = r;
@@ -1534,8 +1534,9 @@ async function bgSyncShops() {
       if (t.budgie.state !== 'queued' || !t.date) return;
       // only shops logged by you or your Budgie partner go into your Budgie by themselves; one logged by anyone else
       // in the household (family) waits until you say it's yours
-      if (!bgAuthorOk(t) && t.budgie.ok !== me) return;
-      const tid = 't-pk-' + t.id;
+      // ("it's mine" counts only when this account said it: the database won't let anyone else write okBy as you)
+      if (!bgAuthorOk(t) && t.okBy !== myUid()) return;
+      const tid = bgTid(t.id);
       ops.push({ op: 'put', table: 'transactions', row: { id: tid, date: t.date, person: me, amount: Number(t.amount), budget: fb.id, account: fb.account || '', split: t.split === 'half' ? 'half' : '', note: (SHOP_KEY_NAMES[t.shop] || t.shop || 'Food') + ' shop (Peckish)', source: 'peckish' }, shop: t.id });
     });
     // at most 40 at a time; the rest go next time. Only what Budgie took is marked sent, or taken off here.
@@ -1566,7 +1567,8 @@ async function bgSyncShops() {
       const cur = imported[tx.id]; if (!cur && known.has(tx.id)) continue;
       seen.add(tx.id);
       const who = peckFromBg(tx.person), date = String(tx.date).slice(0, 10);
-      const doc = { date, amount: Number(tx.amount) || 0, shop: guessShop(tx.note), note: tx.note || '', paidBy: who ? who.id : '', split: tx.split || '', week: mondayOf(date), source: 'budgie', budgie: { state: 'sent', tid: tx.id, person: tx.person }, by: 'Budgie' };
+      // (who brought it in stays as it was: the database won't let it change)
+      const doc = { date, amount: Number(tx.amount) || 0, shop: guessShop(tx.note), note: tx.note || '', paidBy: who ? who.id : '', split: tx.split || '', week: mondayOf(date), source: 'budgie', budgie: { state: 'sent', tid: tx.id, person: tx.person }, by: 'Budgie', ...(cur ? (cur.byUid ? { byUid: cur.byUid } : {}) : { byUid: myUid() }) };
       // "via": the phone that brought it in, which is the one that can tell when it's gone (each of you sees a slightly different set)
       here();
       if (cur) { if (stable({ ...doc, via: cur.via || me }) !== stable({ ...doc, ...pickKeys(cur, Object.keys(doc)), via: cur.via })) await Store.set('shops/' + cur.id, { ...doc, via: cur.via || me }); }
@@ -1578,13 +1580,21 @@ async function bgSyncShops() {
   } catch (e) { if (curHid !== hid0) { S.bg.busy = false; return; } S.bg.err = navigator.onLine === false ? 'Offline: it’ll sync when you’re back online' : (e.message || String(e)); console.warn(e); }
   S.bg.busy = false; schedule();
 }
-// a shop logged by you, or by someone who's in your Budgie (your partner), or by an older copy of the app
+// a shop logged by you, or by your Budgie partner's account, or by an older copy of the app (which didn't say who; the
+// database won't take a new waiting shop like that, or let who logged one be changed)
 function bgAuthorOk(t) {
   if (!t.byUid || t.byUid === myUid()) return true;
-  const a = S.people.find(p => p.uid === t.byUid) || S.people.find(p => p.id === t.byUid); if (!a) return false;
-  const n = String(a.name || '').trim().toLowerCase();
-  // (by name, as elsewhere: "Sophie" here is Budgie's "Sophie", "Sophie Smith" or its person "sophie")
-  return !!n && bgRows('people').some(q => { const bn = String(q.name || '').trim().toLowerCase(); return bn === n || bn.split(/\s+/)[0] === n || String(q.id || '').toLowerCase() === n; });
+  return bgPartnerUids().has(t.byUid);
+}
+// Each phone's own shops go to Budgie named with its account ("t-pk-<shop>-u<account>"), so the account of your Budgie
+// partner is the one on the shops Budgie shows you as theirs. Names can't be used: anyone in the household can call
+// themselves "Sophie" in Peckish, but only Sophie's phone, with her own link, can put a shop in Budgie as hers.
+const TID_RE = /^t-pk-[A-Za-z0-9_]+-u([A-Za-z0-9_]{1,128})$/;
+function bgTid(id) { const u = myUid(); return 't-pk-' + id + (/^[A-Za-z0-9_]{1,128}$/.test(u) && u !== 'me' ? '-u' + u : ''); }
+function bgPartnerUids() {
+  const me = S.bg.data.me, out = new Set();
+  bgRows('transactions').forEach(tx => { const m = TID_RE.exec(String(tx.id || '')); if (m && tx.person && tx.person !== me && m[1] !== myUid()) out.add(m[1]); });
+  return out;
 }
 function pickKeys(o, keys) { const x = {}; keys.forEach(k => { if (o[k] !== undefined) x[k] = o[k]; }); return x; }
 function guessShop(note) { const n = String(note || '').toLowerCase(); return (SHOPS.find(s => n.includes(s.id) || n.includes(s.name.toLowerCase().replace(/[^a-z]/g, '').slice(0, 5))) || {}).id || ''; }
@@ -1600,7 +1610,7 @@ function logShop(amount, shop, paidBy, split, date) {
 }
 // a shop waiting to go to Budgie: from the payer's phone, or, logged by someone who isn't in Budgie, once the payer adds it
 function bgQueuedText(t, who, me) {
-  if (bgAuthorOk(t) || t.budgie.ok) return ' · goes to Budgie from ' + h(who ? who.name : '') + '’s phone';
+  if (bgAuthorOk(t) || t.okBy) return ' · goes to Budgie from ' + h(who ? who.name : '') + '’s phone';
   const mine = (me && who && me.id === who.id) || (S.bg.data.me && t.budgie.person === S.bg.data.me);
   return mine ? ' · logged by ' + h(t.by || 'someone') + ' · <button class="linkish small" data-act="bg-mine" data-v="' + h(t.id) + '">Add to my Budgie</button>' : ' · goes to Budgie once ' + h(who ? who.name : 'they') + ' adds it';
 }
@@ -1654,7 +1664,7 @@ function setLinked() {
     out += '<p class="small">Linked as <b>' + h(me ? me.name : S.bg.data.me || '…') + '</b>' + (S.bg.at ? ' · synced ' + new Date(S.bg.at).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' }) : '') + (S.bg.busy ? ' · syncing…' : '') + '</p>' + (S.bg.err ? '<p class="note warn small">' + h(S.bg.err) + '</p>' : '');
     if (mine.length) out += '<label class="row between small"><span>Food shops go to</span><select class="input" data-change="bg-budget">' + mine.map(b => '<option value="' + h(b.id) + '"' + (fb && fb.id === b.id ? ' selected' : '') + '>' + h(b.name) + '</option>').join('') + '</select></label>';
     else if (!S.bg.busy) out += '<p class="note small">Budgie has no food budget for you yet. Add one called Food or Groceries in Budgie and shops go there.</p>';
-    out += '<p class="muted small">Each phone sends the shops its owner paid for. A shop Sophie paid for goes to Budgie from her phone when she next opens Peckish. One logged by someone who isn\u2019t in your Budgie (family) waits for you to tap Add to my Budgie.</p><div class="row wrap"><button class="btn" data-act="bg-sync">Sync now</button><button class="btn danger" data-act="bg-unlink">Unlink</button></div>';
+    out += '<p class="muted small">Each phone sends the shops its owner paid for. A shop Sophie paid for goes to Budgie from her phone when she next opens Peckish. One your partner logs goes in by itself once their phone has sent a shop of their own; one logged by anyone else (family) waits for you to tap Add to my Budgie.</p><div class="row wrap"><button class="btn" data-act="bg-sync">Sync now</button><button class="btn danger" data-act="bg-unlink">Unlink</button></div>';
   }
   out += '</section>';
   return out;
@@ -2083,8 +2093,10 @@ function stageRestore(obj, source) {
 async function applyRestore() {
   const pr = S.pendingRestore; if (!pr) return;
   S.restoring = true; render();
-  let n = 0; const hid0 = curHid;
-  try { for (const d of pr.docs) { if (curHid !== hid0) throw new Error(SWITCHED); await Store.set(d.path, d.data); n++; } toast('Restored ' + n + ' records'); }
+  let n = 0, skip = 0; const hid0 = curHid;
+  // (a logged shop the database won't take back, like an old copy of one that's since gone to Budgie, or one waiting to
+  // go that someone else logged, is left as it is now rather than stopping the rest)
+  try { for (const d of pr.docs) { if (curHid !== hid0) throw new Error(SWITCHED); try { await Store.set(d.path, d.data); n++; } catch (e) { if (!(d.path.startsWith('shops/') && e && e.code === 'permission-denied')) throw e; skip++; } } toast('Restored ' + n + ' records' + (skip ? ' (' + skip + ' logged shop' + (skip > 1 ? 's' : '') + ' kept as ' + (skip > 1 ? 'they are' : 'it is') + ' now)' : '')); }
   catch (e) { toast('Restore stopped after ' + n + ' records: ' + ((e && e.message) || e)); }
   S.pendingRestore = null; S.restoring = false; render();
 }
@@ -2808,7 +2820,7 @@ document.addEventListener('click', e => {
     case 'pantry': S.pantry.status[v] = b.dataset.s; savePantry(); break;
     case 'pref-del': { const p = clone(S.people.find(x => x.id === v)); p[b.dataset.k].splice(Number(b.dataset.i), 1); S.people = S.people.map(x => x.id === v ? p : x); savePerson(p); render(); break; }
     case 'rm-shop': S.confirm = { ['rmshop:' + v]: true }; render(); break;
-    case 'bg-mine': { const me = S.bg.data.me; if (!me) break; S.shopsLog = (S.shopsLog || []).map(x => x.id === v ? { ...x, budgie: { ...x.budgie, ok: me } } : x); Store.patch('shops/' + v, { 'budgie.ok': me }).then(() => bgSyncShops()).catch(e => { console.warn(e); toast('Couldn\u2019t save that.'); }); render(); break; }
+    case 'bg-mine': { if (!S.bg.data.me) break; const u = myUid(); S.shopsLog = (S.shopsLog || []).map(x => x.id === v ? { ...x, okBy: u } : x); Store.patch('shops/' + v, { okBy: u }).then(() => bgSyncShops()).catch(e => { console.warn(e); toast('Couldn\u2019t save that.'); }); render(); break; }
     case 'rm-shop-no': S.confirm = {}; render(); break;
     case 'rm-shop-yes': { S.confirm = {}; const t = (S.shopsLog || []).find(x => x.id === v); if (!t) break;
       // sent to Budgie: marked, and the payer's phone takes it off there and then here; otherwise it just goes
