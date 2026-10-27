@@ -64,7 +64,7 @@ function doPost(e) {
     checkKey_(body.key);
     var ss = ss_();
     if (body.action === "ping") return json_({ ok: true, sheetUrl: ss.getUrl(), sheetName: ss.getName() });
-    if (body.action === "restore") return json_(restore_(ss, String(body.hid || ""), String(body.from || "")));
+    if (body.action === "restore") return json_(restore_(ss, String(body.hid || ""), String(body.code || "")));
     if (body.action === "recipe") return json_(recipe_(body)); // Recipes.gs
     if (body.action !== "backup") throw new Error("Unknown action");
     var lock = LockService.getScriptLock();
@@ -125,15 +125,17 @@ function pad_(r, n) { while (r.length < n) r.push(""); return r; }
 function trimLog_(ss) { var sh = ss.getSheetByName(LOG_TAB); var n = sh.getLastRow(); if (n > 1001) sh.deleteRows(2, n - 1001); }
 
 // ---------- restore: put the raw records back together ----------
-// "from" restores another household's backup into this one (a new household, after the old one was lost). When this
-// household isn't in the sheet and none was named, the answer lists the households that are, so the app can offer them.
-function restore_(ss, hid, from) {
+// "code" restores another household's backup into this one (a new household, after the old one was lost). That household
+// is found by its invite code, which only its members ever had, so the backup key alone never shows or hands over another
+// household's backup. When this household isn't in the sheet and no code was given, the answer says a code is needed.
+function restore_(ss, hid, code) {
   if (!hid) throw new Error("No household id");
   var sh = ss.getSheetByName("Docs");
   if (!sh || sh.getLastRow() < 2) throw new Error("There's no backup in the sheet yet.");
   var vals = sh.getRange(2, 1, sh.getLastRow() - 1, 6).getValues();
-  var want = from || hid;
-  if (!from && !vals.some(function (r) { return String(r[0]) === hid; })) return { ok: true, docs: [], households: households_(ss, vals) };
+  var want = hid, from = null;
+  if (code) { from = householdByCode_(ss, code); if (!from) throw new Error("No household in the backup sheet has that invite code."); want = from.id; }
+  else if (!vals.some(function (r) { return String(r[0]) === hid; })) return { ok: true, docs: [], needCode: true };
   var parts = {}, at = "";
   vals.forEach(function (r) {
     if (String(r[0]) !== want) return;
@@ -146,14 +148,15 @@ function restore_(ss, hid, from) {
   if (!docs.length) throw new Error("This household isn't in the backup sheet.");
   var by = "", log = ss.getSheetByName(LOG_TAB);
   if (log && log.getLastRow() > 1) { var lv = log.getRange(2, 1, log.getLastRow() - 1, 4).getValues(); for (var i = lv.length - 1; i >= 0; i--) if (String(lv[i][1]) === want) { by = String(lv[i][3]); break; } }
-  return { ok: true, docs: docs, at: at, by: by };
+  return { ok: true, docs: docs, at: at, by: by, name: from ? from.name : "" };
 }
-// the households with a backup in the sheet: id, name and when they were last backed up
-function households_(ss, vals) {
-  var names = {}, hs = ss.getSheetByName("Households");
-  if (hs && hs.getLastRow() > 1) hs.getRange(2, 1, hs.getLastRow() - 1, 2).getValues().forEach(function (r) { names[String(r[0])] = String(r[1] || ""); });
-  var out = {}; vals.forEach(function (r) { var id = String(r[0]); if (!id) return; var at = String(r[5] || ""); if (!out[id] || at > out[id].at) out[id] = { id: id, name: names[id] || "", at: at }; });
-  return Object.keys(out).map(function (k) { return out[k]; });
+// the household whose invite code (as last backed up) this is
+function householdByCode_(ss, code) {
+  var c = String(code).toUpperCase().replace(/[^A-Z0-9]/g, ""), hs = ss.getSheetByName("Households");
+  if (!c || !hs || hs.getLastRow() < 2) return null;
+  var rows = hs.getRange(2, 1, hs.getLastRow() - 1, 3).getValues();
+  for (var i = 0; i < rows.length; i++) if (String(rows[i][2]).toUpperCase() === c && String(rows[i][0])) return { id: String(rows[i][0]), name: String(rows[i][1] || "") };
+  return null;
 }
 
 // ---------- helpers ----------

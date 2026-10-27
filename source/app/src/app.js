@@ -277,7 +277,7 @@ function subscribeHousehold(hid) {
   Store.setHousehold(hid); pruneWeekCopies(hid); linkScope(hid);
   RAW.myR = {}; RAW.myI = {}; RAW.gotR = false; RAW.gotI = false; S.thumbs = {}; S.fullPhotos = {};
   // nothing from the household you were in carries over while this one loads
-  S.pendingRestore = null; S.restoreFrom = null; RAW.people = {}; S.people = []; S.settings = clone(DEFAULTS); S.pantry = { status: {} }; S.pantryRaw = null; S.photoPrefs = { hidden: {} }; S.ratings = {}; S.shopsLog = null; S.thisWeekDoc = null; S.histAll = null; S.histCost = {};
+  S.pendingRestore = null; S.restoreAsk = false; RAW.people = {}; S.people = []; S.settings = clone(DEFAULTS); S.pantry = { status: {} }; S.pantryRaw = null; S.photoPrefs = { hidden: {} }; S.ratings = {}; S.shopsLog = null; S.thisWeekDoc = null; S.histAll = null; S.histCost = {};
   unsub.hh = Store.watchHousehold(hid, hh => { S.household = hh; if (hh && Store.touchMember && S.user) Store.touchMember(hh, S.user); schedule(); }, onSubErr);
   unsub.backup = Store.sub('config/backup', d => { S.backup = d || null; schedule(); maybeAutoBackup(); }, () => {});
   unsub.recipes = Store.sub('recipes', docs => { RAW.myR = {}; docs.forEach(d => RAW.myR[d.id] = d); RAW.gotR = true; rebuild(); }, onSubErr);
@@ -2048,17 +2048,18 @@ async function applyRestore() {
   catch (e) { toast('Restore stopped after ' + n + ' records: ' + ((e && e.message) || e)); }
   S.pendingRestore = null; S.restoring = false; render();
 }
-// from: another household's backup in the same sheet (this household is new, after the old one was lost)
-async function restoreFromSheet(from) {
+// code: the invite code of another household in the same sheet, to restore its backup into this one (a new household,
+// after the old one was lost). Only its members ever had the code, so nobody can take another household's backup.
+async function restoreFromSheet(code) {
   const b = S.backup; if (!b || !b.url) return;
-  const hid0 = S.household.id; S.restoreFrom = null;
+  const hid0 = S.household.id;
   try {
-    S.restoring = true; render(); const r = await postScript(b.url, { key: b.key, action: 'restore', hid: hid0, from: from || '' }); S.restoring = false;
+    S.restoring = true; render(); const r = await postScript(b.url, { key: b.key, action: 'restore', hid: hid0, code: code || '' }); S.restoring = false;
     if (!S.household || S.household.id !== hid0) { render(); return; }
-    // this household isn't in the sheet: offer the ones that are
-    if (!from && Array.isArray(r.households)) { S.restoreFrom = r.households.filter(x => x && typeof x.id === 'string' && x.id !== hid0).slice(0, 12); if (!S.restoreFrom.length) toast('There\u2019s no backup of this household in the sheet yet.'); render(); return; }
-    const was = from && (S.restoreFrom0 || []).find(x => x.id === from);
-    stageRestore({ docs: r.docs, exported: r.at, by: r.by, household: { name: was ? txt(was.name) || 'another household' : S.household.name } }, 'the Google Sheet');
+    // this household isn't in the sheet yet: ask for the code of the one it replaces
+    if (!code && r.needCode) { S.restoreAsk = true; render(); return; }
+    S.restoreAsk = false;
+    stageRestore({ docs: r.docs, exported: r.at, by: r.by, household: { name: code ? txt(r.name) || 'another household' : S.household.name } }, 'the Google Sheet');
   }
   catch (e) { S.restoring = false; render(); toast((e && e.message) || String(e)); }
 }
@@ -2093,8 +2094,8 @@ function setBackup() {
     '<p class="muted small">The sheet and its script live in the Google account that set them up. The key stops anyone else writing to it. Both phones share this connection.</p></form></div></details></section>';
   out += '<section class="panel"><h2>A file you keep</h2><p class="small">Saves everything to one file on this phone (or Google Drive, WhatsApp, email). Works without the sheet, and can be restored on any phone.</p>' +
     '<div class="row wrap"><button class="btn grow" data-act="backup-file">Save a backup file</button>' + (navigator.canShare ? '<button class="btn grow" data-act="backup-share">Share…</button>' : '') + '</div></section>';
-  if (S.restoreFrom && S.restoreFrom.length) out += '<section class="panel"><h2>Restore from another household</h2><p class="small">This household isn\u2019t in the backup sheet yet. These are. Restoring one copies its plans, recipes and settings into this household.</p>' +
-    S.restoreFrom.map(x => '<button class="mrow1" data-act="restore-sheet-from" data-v="' + h(x.id) + '"><span class="grow"><b>' + h(txt(x.name) || 'Household') + '</b><span class="small muted" style="display:block">' + (txt(x.at) ? 'Backed up ' + h(fmtWhen(txt(x.at))) : '') + '</span></span></button>').join('') + '<button class="linkish small" data-act="restore-from-no">Cancel</button></section>';
+  if (S.restoreAsk) out += '<section class="panel"><h2>Restore another household</h2><p class="small">This household isn\u2019t in the backup sheet yet. To restore the household it replaces, enter that household\u2019s invite code. It\u2019s in the sheet\u2019s Households tab, or the message you shared it in.</p>' +
+    '<form class="row" data-form="restore-code"><input class="input grow code-input" id="rs-code" autocapitalize="characters" autocomplete="off" maxlength="8" placeholder="e.g. K7RM2Q" aria-label="Invite code of the household to restore"><button class="btn" type="submit"' + (S.restoring ? ' disabled' : '') + '>Restore</button></form><button class="linkish small" data-act="restore-ask-no">Cancel</button></section>';
   out += '<section class="panel"><h2>Restore</h2><div class="row wrap">' + (on ? '<button class="btn grow" data-act="restore-sheet" ' + (S.restoring || !S.online ? 'disabled' : '') + '>From the Google Sheet</button>' : '') +
     '<label class="btn grow" for="restore-file">From a file<input type="file" id="restore-file" accept="application/json,.json" data-change="restore-file" hidden></label></div><p class="muted small">You’ll see what’s in it before anything changes.</p></section>';
   out += '<details class="fold"><summary>Why the app keeps working without Claude</summary><div class="in small"><p>Claude built the app, but doesn’t run it. The app is a website on GitHub Pages, the data is in your own Firebase project, and each phone keeps a full copy for offline use. The Google Sheet is a third copy, and the file a fourth.</p><p>If GitHub Pages or Firebase ever went away, the sheet and the file still have every recipe, plan and price in plain tables.</p></div></details>';
@@ -2644,8 +2645,7 @@ document.addEventListener('click', e => {
     case 'backup-file': saveBackupFile(false); break;
     case 'backup-share': saveBackupFile(true); break;
     case 'restore-sheet': restoreFromSheet(); break;
-    case 'restore-sheet-from': S.restoreFrom0 = S.restoreFrom; restoreFromSheet(v); break;
-    case 'restore-from-no': S.restoreFrom = null; render(); break;
+    case 'restore-ask-no': S.restoreAsk = false; render(); break;
     case 'restore-yes': applyRestore(); break;
     case 'restore-no': S.pendingRestore = null; render(); break;
     case 'backup-off': S.confirm.bkoff = true; render(); break;
@@ -2893,6 +2893,7 @@ document.addEventListener('submit', e => {
   }
   if (k === 'join') { const code = $('#jn-code').value, me = $('#jn-name').value.trim(); withBusy(async () => { await Store.joinHousehold(S.user, code, me); S.onboard = 'choose'; if (window.__refreshMe) await window.__refreshMe(); }); }
   if (k === 'hh-rename') { const n = $('#hh-name').value.trim(); if (n) Store.renameHousehold(S.user, S.household, n).then(() => toast('Renamed')).catch(() => toast('Couldn’t rename.')); }
+  if (k === 'restore-code') { const c = String(($('#rs-code') || {}).value || '').toUpperCase().replace(/[^A-Z0-9]/g, ''); if (!c) { toast('Enter the invite code of the household to restore.'); return; } restoreFromSheet(c); return; }
   if (k === 'import-url') { const u = $('#imp-url').value.trim(); if (!/^https?:\/\//i.test(u)) { toast('Paste a web link that starts with https://'); return; } importRecipe({ url: u }); return; }
   if (k === 'bg-link') { const c = bgParseLink($('#bg-url').value); if (!c) { toast('That isn\u2019t a Peckish link from Budgie. In Budgie, go to Settings, then Linked apps, and tap Link Peckish.'); return; } bgLink(c); return; }
   if (k === 'logshop') {
