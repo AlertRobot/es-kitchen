@@ -265,6 +265,9 @@ const twice = B => B.puts.filter((x, i, a) => a.indexOf(x) !== i);
     ok(E.lines().some(l => /£6\.00/.test(l) && /goes to Budgie once whoever paid adds it/.test(l)), 'a waiting shop whose payer isn’t in the household any more reads properly (' + E.lines().filter(l => /£6/.test(l)).join('') + ')');
     await E.act('bg-mine', 's_m', null, 3000);
     ok(B.transactions.some(t => t.amount === 18) && (docs.get('households/h1/shops/s_m') || {}).okBy === 'u_ethan', '...and Add to my Budgie sends Mum’s once he says so');
+    // (Linked apps says what lets a partner's shops go in by themselves: Budgie only shows the partner's half-each ones)
+    await E.act('tab', 'settings', null, 300); await E.act('set-page', 'linked', null, 300);
+    ok(/once their phone has sent a half-each shop of their own/.test(E.d.body.textContent), 'Linked apps says a partner’s half-each shop is what lets theirs go in by themselves');
     ok(!E.errs.length, 'no page errors ' + E.errs.join(' | '));
   }
   console.log(fails ? fails + ' FAILED' : 'all passed');
