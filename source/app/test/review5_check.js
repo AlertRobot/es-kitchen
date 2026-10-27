@@ -97,6 +97,18 @@ const calMock = (CAL, NOTIFS, opts) => ({ onUser(cb) { setTimeout(() => cb({ ema
     ok(first > 0 && back > 0, 'reminders: ones the other phone took back are queued again by this phone a few hours on (' + first + ' then ' + back + ')');
     A.w.Date.now = real;
   }
+  // ---- 5. Caledonite: switching household while shifts are being checked still checks the household you switch to ----
+  if (!only || only === 5) {
+    const NOTIFS = {};
+    const CAL = { household: { dinnerTime: '19:00' }, people: [{ id: 'ethan', name: 'Ethan', email: 'ethan@example.com', settings: { hasShifts: true } }], calendars: [],
+      shifts: [0, 1, 2, 3, 4, 5, 6].map(k => ({ person: 'ethan', day: iso(day(k)), type: 'night' })), feeds: [], me: 'ethan' };
+    const pre = { 'users/u_ethan': { households: ['h1', 'h2'], current: 'h1', names: { h1: 'Home', h2: 'Mum’s' } }, ...home('h1', 'Home'), ...home('h2', 'Mum’s') };
+    const A = boot({ pre, cal: calMock(CAL, NOTIFS, { slow: 2500 }), local: { 'peckish.cal': JSON.stringify(['h1', 'h2']) } });
+    await wait(3300); await A.switchTo('h2', 9000);
+    const sh = ((A.docAt('households/h2/weeks/' + MON) || {}).shifts || {}).u_ethan;
+    ok(!!sh && Object.keys(sh).length === 7, 'shifts: the household you switch to while shifts are being checked gets its own (' + JSON.stringify(sh || null).slice(0, 60) + ')');
+    ok(!((A.docAt('households/h1/weeks/' + MON) || {}).shifts), 'shifts: and the one you left isn’t given them after you’ve gone');
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();

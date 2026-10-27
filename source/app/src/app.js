@@ -1404,7 +1404,7 @@ async function calRefresh(force) {
     const months = [...new Set([thisW, addDays(thisW, 13)].map(x => x.slice(0, 7)))];
     const D = await Store.cal.read(months, thisW);
     // switched to another household meanwhile: its weeks don't get these shifts
-    if (curHid !== hid0 || !S.cal.on) { S.cal.busy = false; return; }
+    if (curHid !== hid0 || !S.cal.on) { S.cal.busy = false; calAgain(hid0); return; }
     S.cal.data = D; S.cal.err = ''; S.cal.at = Date.now();
     for (const start of starts) {
       const want = {};
@@ -1416,9 +1416,11 @@ async function calRefresh(force) {
       if (Object.keys(flat).length && Store.patch) await Store.patch('weeks/' + start, flat);
     }
     calSoon(1500);
-  } catch (e) { S.cal.err = e.message || String(e); console.warn(e); }
-  S.cal.busy = false; schedule();
+  } catch (e) { if (curHid === hid0) S.cal.err = e.message || String(e); console.warn(e); }
+  S.cal.busy = false; schedule(); calAgain(hid0);
 }
+// the household you're in now, if it's linked too, gets its own check (its people arrived while the other one's ran)
+function calAgain(hid0) { if (curHid !== hid0 && S.cal.on) setTimeout(() => calRefresh(true), 0); }
 // Reminders go through Caledonite's notifications (it sends them within about 10 minutes of the time).
 let calT = 0;
 function calSoon(ms) { clearTimeout(calT); calT = setTimeout(() => { calReminders().catch(e => console.warn(e)); }, ms || 5000); }
