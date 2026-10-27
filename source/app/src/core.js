@@ -488,7 +488,7 @@ function varietyClash(r, d, days, RMAP) {
     const n = days[k] && days[k].r && RMAP[days[k].r]; if (!n) continue;
     const nb = baseOf(n);
     if (STRINGY[rb] && STRINGY[nb]) return (nb === 'pasta' ? 'Pasta' : 'Noodles') + ' the night ' + (k < d ? 'before' : 'after');
-    if (r.family && n.family === r.family && r.family !== 'other') return 'Similar to the night ' + (k < d ? 'before' : 'after');
+    if (r.family && n.family === r.family && r.family !== 'other') return 'Like the night ' + (k < d ? 'before' : 'after');
   }
   let sameBase = 0, stringy = 0; days.forEach((x, k) => { if (k !== d && x && x.r && RMAP[x.r]) { const b = baseOf(RMAP[x.r]); if (b === rb) sameBase++; if (STRINGY[b]) stringy++; } });
   if (BASE_WEEK[rb] && sameBase >= BASE_WEEK[rb]) return 'Already ' + sameBase + ' ' + rb + ' dinners this week';
