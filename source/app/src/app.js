@@ -218,6 +218,8 @@ function tidyWeek(w) {
   w.days = w.days.map(d => { if (!d || typeof d !== 'object') return {}; const x = { ...d }; if ('r' in x) x.r = txt(x.r); if ('guests' in x) x.guests = num(x.guests, 0); if ('extra' in x) x.extra = num(x.extra, 0); if ('extraUse' in x && x.extraUse !== 'freeze') x.extraUse = 'lunch'; return x; });
   w.extras = (Array.isArray(w.extras) ? w.extras : []).filter(e => e && typeof e === 'object').map(e => ({ ...e, name: txt(e.name) }));
   if (w.locked && typeof w.locked === 'object') w.locked = { ...w.locked, by: txt(w.locked.by) };
+  // a shop the app doesn't know (a typo, or a newer version's) means the usual one, rather than a week that won't open
+  if ('shop' in w && !SHOPS.some(sh => sh.id === w.shop)) delete w.shop;
   return w;
 }
 function tidyPerson(p) {
@@ -225,6 +227,11 @@ function tidyPerson(p) {
   ['wontEat', 'dislikes', 'likes'].forEach(k => { x[k] = (Array.isArray(p[k]) ? p[k] : []).map(txt).filter(Boolean); });
   ['kcalTarget', 'proteinTarget'].forEach(k => { if (k in x) x[k] = num(x[k], null); });
   if ('portion' in x) x.portion = num(x.portion, 1);
+  // breakfast and lunch plans: which days (0-6) and the usual items, as lists
+  const days = d => (Array.isArray(d) ? d.map(v => num(v, -1)).filter(v => v >= 0 && v < 7) : undefined);
+  if ('days' in x) x.days = isObj(p.days) ? { b: days(p.days.b), l: days(p.days.l) } : {};
+  if ('usual' in x) x.usual = isObj(p.usual) ? { b: Array.isArray(p.usual.b) ? p.usual.b.map(txt) : [], l: Array.isArray(p.usual.l) ? p.usual.l.map(txt) : [] } : {};
+  if ('plan' in x) x.plan = isObj(p.plan) ? { b: !!p.plan.b, l: !!p.plan.l } : {};
   return x;
 }
 function tidySettings(s) {

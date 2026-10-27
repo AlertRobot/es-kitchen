@@ -258,6 +258,20 @@ const home = (hid, name, extra) => ({ ['households/' + hid]: { name, members: ['
     const d0 = ((shared.get('households/h1/weeks/' + MON) || {}).days || {}).d0 || {};
     ok(d0.r && d0.r !== R[0] && d0.guests === 2, 'same night: the swap on one phone and the guests on the other are both kept (' + JSON.stringify(d0).slice(0, 90) + ')');
   }
+  // ---- 13. odd values in a week or a person don't stop the app opening ----
+  if (!only || only === 13) {
+    const wk = planned(); wk.shop = 'morrisons';
+    const pre = { 'users/u_ethan': { households: ['h1'], current: 'h1', names: { h1: 'Home' } }, ...home('h1', 'Home', { ['households/h1/weeks/' + MON]: wk,
+      'households/h1/people/p_s': { name: 'Sophie', order: 2, plan: { b: true, l: true }, days: { b: 5, l: [0, 1, 2, 3, 4] }, usual: { b: ['lo'], l: 7 } } }) };
+    const A = boot({ pre }); await wait(2500);
+    const t = () => A.d.querySelector('#app').textContent;
+    ok(/Tuna puttanesca/.test(t()) && !A.errs.length, 'odd values: a week saved with a shop the app doesn\u2019t know still opens (' + A.errs.slice(0, 1).join('') + ')');
+    await A.act('tab', 'shop', null, 500);
+    ok(/Prices at Tesco/.test(t()), 'odd values: and its list is priced at your usual shop');
+    await A.act('tab', 'week', null, 300); await A.act('week-view', 'bl', null, 400); await A.act('bl-person', 'p_s', null, 400);
+    await A.act('tab', 'settings'); await A.act('set-page', 'people'); await A.act('set-person', 'p_s', null, 300);
+    ok(!A.errs.length, 'odd values: a person saved with odd breakfast and lunch days doesn\u2019t break the pages that show them ' + A.errs.slice(0, 2).join(' | '));
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();
