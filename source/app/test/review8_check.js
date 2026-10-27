@@ -270,6 +270,24 @@ const twice = B => B.puts.filter((x, i, a) => a.indexOf(x) !== i);
     ok(/once their phone has sent a half-each shop of their own/.test(E.d.body.textContent), 'Linked apps says a partner’s half-each shop is what lets theirs go in by themselves');
     ok(!E.errs.length, 'no page errors ' + E.errs.join(' | '));
   }
+  // ---- 8. Mum signing in on Ethan's phone (he signed out) doesn't get his Budgie link: her shops don't go into his Budgie ----
+  if (!only || only === 8) {
+    phones.length = 0;
+    const docs = household(), B = budgie();
+    const M = phone('mum', docs, B, { link: { k: KEY.ethan, uid: 'u_ethan' } });
+    await wait(4000);
+    await M.logShop(44, 'u_ethan', true, 3000); await M.act('bg-sync', null, null, 2500);
+    ok(!B.transactions.some(t => t.amount === 44), 'a shop Mum logs as paid by Ethan, on his phone, doesn’t use his link (' + B.transactions.map(t => t.amount).join(',') + ')');
+    await M.act('tab', 'settings', null, 300); await M.act('set-page', 'linked', null, 300);
+    ok(!!M.d.querySelector('form[data-form="bg-link"]'), '...and Linked apps shows Budgie as not linked for her');
+    // an older link (made before links named their account) goes with whoever opens it first: Ethan, on his own phone
+    phones.length = 0;
+    const docs2 = household(), B2 = budgie();
+    const E = phone('ethan', docs2, B2);
+    await wait(4000); await E.logShop(12, 'u_ethan', true, 3000);
+    ok(B2.transactions.some(t => t.amount === 12) && JSON.parse(E.w.localStorage.getItem('peckish.budgie')).uid === 'u_ethan', '...while Ethan’s own phone keeps sending his');
+    ok(![M, E].some(p => p.errs.length), 'no page errors ' + [M, E].map(p => p.errs.join(' | ')).join(''));
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();

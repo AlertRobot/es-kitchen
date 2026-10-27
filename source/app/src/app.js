@@ -1337,8 +1337,9 @@ function linkScope(hid) {
   // the household just opened gets its shifts (and reminders) checked as soon as its people arrive
   S.cal.on = calHids().includes(hid); S.cal.at = 0;
   if (!S.cal.on) { if (S.cal.unsub) { S.cal.unsub(); S.cal.unsub = null; } S.cal.user = null; S.cal.data = null; S.cal.at = 0; }
-  let b = LINK.get('budgie', null); if (b && !b.hid) { b = { ...b, hid }; LINK.set('budgie', b); }
-  S.bg.cfg = b && b.hid === hid ? b : null; S.bg.err = ''; S.bg.at = 0;
+  // (and with the account it was linked by: someone else signing in on this phone doesn't send shops with your link)
+  let b = LINK.get('budgie', null); if (b && (!b.hid || !b.uid)) { b = { ...b, hid: b.hid || hid, uid: b.uid || myUid() }; LINK.set('budgie', b); }
+  S.bg.cfg = b && b.hid === hid && b.uid === myUid() ? b : null; S.bg.err = ''; S.bg.at = 0;
   S.bg.data = S.bg.cfg ? LINK.get('budgieData', null) || { since: 0, me: '', rows: {} } : { since: 0, me: '', rows: {} };
 }
 function calStart() {
@@ -1514,7 +1515,7 @@ function bgFoodBudget() {
 function bgPidFor(p) { const x = bgRows('people').find(q => (q.name || '').toLowerCase() === (p.name || '').toLowerCase()); return x ? x.id : (p.name || '').toLowerCase(); }
 function peckFromBg(pid) { const x = bgRows('people').find(q => q.id === pid); const name = (x ? x.name : pid || '').toLowerCase(); return S.people.find(p => (p.name || '').toLowerCase() === name) || null; }
 async function bgLink(cfg) {
-  cfg = { ...cfg, hid: curHid }; S.bg.cfg = cfg; LINK.set('budgie', cfg); S.bg.data = { since: 0, me: '', rows: {} }; S.bg.err = ''; schedule();
+  cfg = { ...cfg, hid: curHid, uid: myUid() }; S.bg.cfg = cfg; LINK.set('budgie', cfg); S.bg.data = { since: 0, me: '', rows: {} }; S.bg.err = ''; schedule();
   try { await bgCall([], true); toast('Budgie linked'); await bgSyncShops(); } catch (e) { S.bg.err = e.message || String(e); }
   schedule();
 }
@@ -1646,7 +1647,7 @@ function shopLogPanel(B) {
   return out;
 }
 
-function bgElsewhere() { const b = LINK.get('budgie', null); return b && b.hid && b.hid !== curHid ? b.hid : null; }
+function bgElsewhere() { const b = LINK.get('budgie', null); return b && b.hid && b.hid !== curHid && (!b.uid || b.uid === myUid()) ? b.hid : null; }
 function linkedSummary() { return [S.cal.user ? 'Caledonite' : '', S.bg.cfg ? 'Budgie' : ''].filter(Boolean).join(' · ') || 'Caledonite and Budgie'; }
 function setLinked() {
   const D = S.cal.data, R = { cook: true, defrost: true, plates: true, cookAt: '18:00', ...(S.settings.remind || {}) };
