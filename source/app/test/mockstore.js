@@ -1,7 +1,9 @@
 // In-memory stand-in for the Firebase store, used only by the smoke test.
 const docs = window.__preDocs || new Map(); const subs = new Set(); let hid = null; let userCb = null;
-const user = { uid: 'u_ethan', name: 'Ethan', email: 'ethan@example.com' };
-function notify() { setTimeout(() => subs.forEach(f => f()), 0); }
+// (window.__user signs in as someone else; window.__onWrite hears every write, so two phones can share one store)
+const user = window.__user || { uid: 'u_ethan', name: 'Ethan', email: 'ethan@example.com' };
+function notify() { setTimeout(() => subs.forEach(f => f()), 0); if (window.__onWrite) window.__onWrite(); }
+window.__notify = () => setTimeout(() => subs.forEach(f => f()), 0);
 function full(rel) { return 'households/' + hid + '/' + rel; }
 function isDoc(p) { return p.split('/').length % 2 === 0; }
 function col_(p) { return col(p); }
@@ -16,7 +18,7 @@ const state = d => ((d && d.budgie) || {}).state || '';
 const same = (a, b) => JSON.stringify(a === undefined ? null : a) === JSON.stringify(b === undefined ? null : b);
 function shopRule(rel, before, after) {
   if (!/^shops\/[^/]+$/.test(rel)) return;
-  const me = 'u_ethan', no = () => { throw Object.assign(new Error('Missing or insufficient permissions.'), { code: 'permission-denied' }); };
+  const me = user.uid, no = () => { throw Object.assign(new Error('Missing or insufficient permissions.'), { code: 'permission-denied' }); };
   if (!(same(after.okBy, before && before.okBy) || after.okBy === me)) no();
   if (!before) { if (!(after.byUid === me || state(after) !== 'queued')) no(); return; }
   if (!same(after.byUid, before.byUid)) no();
@@ -40,7 +42,7 @@ window.Store = {
   async newInviteCode() { return 'NEWCOD'; }, async renameHousehold() {}, async leaveHousehold() {},
   sub(rel, cb) { if (window.__offlineWeeks && rel.startsWith('weeks/')) { const p = full(rel); const f = () => cb(docs.get(p) || null, { cache: true, pending: docs.has(p) }); subs.add(f); setTimeout(f, 0); return () => subs.delete(f); } if (window.__noCache && rel.startsWith('weeks/')) { setTimeout(() => cb(null, { cache: true }), 0); return () => {}; } const p = full(rel); const f = isDoc(p) ? () => cb(docs.get(p) || null, {}) : () => cb(col(p), {}); if (window.__slowWeeks && rel.startsWith('weeks/')) { let on = true; setTimeout(() => { if (on) { subs.add(f); f(); } }, window.__slowWeeks); return () => { on = false; subs.delete(f); }; } subs.add(f); setTimeout(f, 0); return () => subs.delete(f); },
   subG(col, cb) { const f = () => cb(col_(col)); subs.add(f); setTimeout(f, 0); return () => subs.delete(f); },
-  async getG(p) { return docs.get(p) || null; }, async setG(p, d) { docs.set(p, JSON.parse(JSON.stringify(d))); notify(); }, async delG(p) { docs.delete(p); notify(); }, uid() { return 'u_ethan'; },
+  async getG(p) { return docs.get(p) || null; }, async setG(p, d) { docs.set(p, JSON.parse(JSON.stringify(d))); notify(); }, async delG(p) { docs.delete(p); notify(); }, uid() { return user.uid; },
   async get(rel) { return docs.get(full(rel)) || null; },
   set: checked(async function (rel, data) { shopRule(rel, docs.get(full(rel)), JSON.parse(JSON.stringify(data))); docs.set(full(rel), JSON.parse(JSON.stringify(data))); window.__writes = (window.__writes || 0) + 1; notify(); }),
   merge: checked(async function (rel, data) { const nx = { ...(docs.get(full(rel)) || {}), ...data }; shopRule(rel, docs.get(full(rel)), JSON.parse(JSON.stringify(nx))); docs.set(full(rel), nx); notify(); }),
