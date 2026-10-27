@@ -131,6 +131,17 @@ function budgieMock(B, OPS, opts) {
     ok(rows === 1, 'history: after switching, it shows this household’s weeks, not the last one’s (' + rows + ' weeks)');
     ok(!A.errs.length, 'no page errors ' + A.errs.join(' | '));
   }
+  // ---- 5. a shop paid by someone who isn't in Budgie (family) doesn't say it's waiting to go there ----
+  if (!only || only === 5) {
+    const B = { people: [{ id: 'ethan', name: 'Ethan' }, { id: 'sophie', name: 'Sophie' }], budgets: [{ id: 'e-food', person: 'ethan', name: 'Food' }], transactions: [], splits: [], accounts: [] };
+    const pre = { 'users/u_ethan': { households: ['h1'], current: 'h1', names: { h1: 'Home' } }, ...home('h1', 'Home', {
+      'households/h1/people/u_mum': { name: 'Mum', uid: 'u_mum', order: 2 }, ['households/h1/weeks/' + MON]: planned(),
+      'households/h1/shops/s_m': { date: TODAY_, amount: 25, shop: 'tesco', paidBy: 'u_mum', split: '', week: MON, source: 'peckish', by: 'Mum', byUid: 'u_mum', budgie: { state: 'queued', person: 'mum' } } }) };
+    const A = boot({ pre, fetch: budgieMock(B, []), local: { ...BG, 'peckish.budgieData': JSON.stringify({ since: 1, me: 'ethan', rows: {} }) } });
+    await wait(4000); await A.act('go-cost', null, null, 600);
+    const line = [...A.d.querySelectorAll('.leftlist .left')].map(x => x.textContent).join(' | ');
+    ok(/Mum paid/.test(line) && !/Budgie/.test(line), 'budgie: a shop Mum paid says nothing about going to Budgie (' + line.slice(0, 80) + ')');
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();

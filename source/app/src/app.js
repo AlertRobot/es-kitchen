@@ -1613,6 +1613,8 @@ function logShop(amount, shop, paidBy, split, date) {
 }
 // a shop waiting to go to Budgie: from the payer's phone, or, logged by someone who isn't in Budgie, once the payer adds it
 function bgQueuedText(t, who, me) {
+  // paid by someone who isn't in Budgie (family): it never goes there, so nothing's said about it
+  const bp = bgRows('people'); if (bp.length && !bp.some(q => q.id === t.budgie.person || (who && String(q.name || '').toLowerCase() === String(who.name || '').toLowerCase()))) return '';
   if (bgAuthorOk(t) || t.okBy) return ' · goes to Budgie from ' + h(who ? who.name : '') + '’s phone';
   const mine = (me && who && me.id === who.id) || (S.bg.data.me && t.budgie.person === S.bg.data.me);
   return mine ? ' · logged by ' + h(t.by || 'someone') + ' · <button class="linkish small" data-act="bg-mine" data-v="' + h(t.id) + '">Add to my Budgie</button>' : ' · goes to Budgie once ' + h(who ? who.name : 'they') + ' adds it';
