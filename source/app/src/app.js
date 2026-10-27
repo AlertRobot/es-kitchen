@@ -1516,12 +1516,10 @@ function bgFoodBudget() {
 const lowName = s => String(s || '').trim().toLowerCase(), firstName = s => lowName(s).split(/\s+/)[0] || '';
 function sameName(q, name) { const a = lowName(name), b = lowName(q && q.name); return !!a && (a === b || (!!b && firstName(a) === firstName(b)) || firstName(a) === lowName(q && q.id)); }
 function bgPidFor(p) { const ps = bgRows('people'), x = ps.find(q => lowName(q.name) === lowName(p.name)) || ps.find(q => sameName(q, p.name)); return x ? x.id : lowName(p.name); }
-function peckFromBg(pid) {
-  const x = bgRows('people').find(q => q.id === pid) || { id: pid, name: pid }, me = mePerson();
-  // this phone's own person, when it's this phone's Budgie person (someone else calling themselves "Ethan" doesn't count)
-  if (pid && pid === S.bg.data.me && me && sameName(x, me.name)) return me;
-  return S.people.find(p => lowName(p.name) === lowName(x.name)) || S.people.find(p => sameName(x, p.name)) || null;
-}
+// (worked out the same on every phone, so two phones bringing in the same payment agree on who paid)
+function peckFromBg(pid) { const x = bgRows('people').find(q => q.id === pid) || { id: pid, name: pid }; return S.people.find(p => lowName(p.name) === lowName(x.name)) || S.people.find(p => sameName(x, p.name)) || null; }
+// this phone's own person, when it's this phone's Budgie person (someone else calling themselves "Ethan" doesn't count)
+function bgMePerson() { const me = S.bg.data.me, mp = mePerson(); if (!me) return null; return mp && sameName(bgRows('people').find(q => q.id === me) || { id: me, name: me }, mp.name) ? mp : peckFromBg(me); }
 async function bgLink(cfg) {
   cfg = { ...cfg, hid: curHid, uid: myUid() }; S.bg.cfg = cfg; LINK.set('budgie', cfg); S.bg.data = { since: 0, me: '', rows: {} }; S.bg.err = ''; schedule();
   try { await bgCall([], true); toast('Budgie linked'); await bgSyncShops(); } catch (e) { S.bg.err = e.message || String(e); }
@@ -1539,7 +1537,7 @@ async function bgSyncShops() {
   // (switching household, even away and straight back, stops it: this household's shops are read afresh meanwhile)
   const hid0 = curHid, gen0 = S.bg.gen, moved = () => curHid !== hid0 || S.bg.gen !== gen0, here = () => { if (moved()) throw new Error('Switched household'); };
   try {
-    const me = S.bg.data.me, fb = bgFoodBudget(), ops = [], mePk = me ? peckFromBg(me) : null;
+    const me = S.bg.data.me, fb = bgFoodBudget(), ops = [], mePk = bgMePerson();
     if (me && fb) (S.shopsLog || []).forEach(t => {
       // the payer's phone sends it (matched by who paid, in case the phone that logged it didn't know their Budgie name)
       if (!t.budgie || (t.budgie.person !== me && !(mePk && t.paidBy === mePk.id))) return;
