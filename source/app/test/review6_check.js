@@ -69,7 +69,7 @@ const calMock = (CAL, NOTIFS, opts) => ({ onUser(cb) { setTimeout(() => cb({ ema
   }
   // ---- 3. Budgie: a shop someone outside your Budgie (family) logs as paid by you waits until you add it ----
   if (!only || only === 3) {
-    const B = { people: [{ id: 'ethan', name: 'Ethan' }, { id: 'sophie', name: 'Sophie' }], budgets: [{ id: 'e-food', person: 'ethan', name: 'Food' }], transactions: [], splits: [], accounts: [] };
+    const B = { people: [{ id: 'ethan', name: 'Ethan' }, { id: 'sophie', name: 'Sophie Smith' }], budgets: [{ id: 'e-food', person: 'ethan', name: 'Food' }], transactions: [], splits: [], accounts: [] };
     const OPS = [];
     const fetch = async (url, opt) => { if (!/script\.google\.com/.test(url)) return { ok: true, json: async () => JSON.parse(lib) }; const b = JSON.parse(opt.body); (b.ops || []).forEach(o => OPS.push(o));
       return { ok: true, json: async () => ({ ok: true, person: 'ethan', keyType: 'app', now: Date.now(), full: false, rows: B }) }; };

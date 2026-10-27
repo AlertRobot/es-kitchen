@@ -1583,7 +1583,8 @@ function bgAuthorOk(t) {
   if (!t.byUid || t.byUid === myUid()) return true;
   const a = S.people.find(p => p.uid === t.byUid) || S.people.find(p => p.id === t.byUid); if (!a) return false;
   const n = String(a.name || '').trim().toLowerCase();
-  return !!n && bgRows('people').some(q => String(q.name || '').trim().toLowerCase() === n);
+  // (by name, as elsewhere: "Sophie" here is Budgie's "Sophie", "Sophie Smith" or its person "sophie")
+  return !!n && bgRows('people').some(q => { const bn = String(q.name || '').trim().toLowerCase(); return bn === n || bn.split(/\s+/)[0] === n || String(q.id || '').toLowerCase() === n; });
 }
 function pickKeys(o, keys) { const x = {}; keys.forEach(k => { if (o[k] !== undefined) x[k] = o[k]; }); return x; }
 function guessShop(note) { const n = String(note || '').toLowerCase(); return (SHOPS.find(s => n.includes(s.id) || n.includes(s.name.toLowerCase().replace(/[^a-z]/g, '').slice(0, 5))) || {}).id || ''; }
