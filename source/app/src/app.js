@@ -1762,7 +1762,7 @@ function setHousehold() {
     '<p class="muted small">Send this to Sophie to join this household. For family, ask them to start their own household instead, so their plan stays separate.</p></section>' +
     '<section class="panel"><h2>Manage</h2><form class="row" data-form="hh-rename"><input class="input grow" id="hh-name" value="' + h(hh.name) + '" aria-label="Household name"><button class="btn" type="submit">Rename</button></form>' +
     '<button class="btn" data-act="new-code">Make a new invite code</button><button class="btn" data-act="hh-other">Switch, join or start another household</button>' +
-    (S.confirm.leave ? '<button class="btn danger" data-act="leave-yes">Yes, leave ' + h(hh.name) + '</button>' : '<button class="btn danger" data-act="leave">Leave this household</button>') + '</section>';
+    (S.confirm.leave ? ((hh.members || []).length <= 1 ? '<p class="note warn small">You\u2019re the only one in it. Once you leave, nobody can open it again, though a backup can be restored into another household.</p>' : '') + '<button class="btn danger" data-act="leave-yes">Yes, leave ' + h(hh.name) + '</button>' : '<button class="btn danger" data-act="leave">Leave this household</button>') + '</section>';
 }
 function setPeople() {
   if (!S.setPerson || !S.people.find(p => p.id === S.setPerson)) S.setPerson = (S.people.find(p => p.uid === myUid()) || S.people[0] || {}).id || '';

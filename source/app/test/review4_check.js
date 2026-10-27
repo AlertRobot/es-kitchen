@@ -196,6 +196,16 @@ const home = (hid, name, extra) => ({ ['households/' + hid]: { name, members: ['
     const tabs = ['week', 'recipes', 'shop', 'kitchen', 'settings'];
     ok(icons.every(k => tabs.includes(k) || new RegExp('ICON\\.' + k + '\\b').test(src)), 'dead code: every icon is used (' + icons.filter(k => !tabs.includes(k) && !new RegExp('ICON\\.' + k + '\\b').test(src)).join(' ') + ')');
   }
+  // ---- 9. leaving a household you're the only one in says it can't be opened again ----
+  if (!only || only === 9) {
+    const pre = { 'users/u_ethan': { households: ['h1', 'h2'], current: 'h1', names: { h1: 'Home', h2: 'Shared' } }, ...home('h1', 'Home'),
+      'households/h2': { name: 'Shared', members: ['u_ethan', 'u_s'], memberNames: { u_ethan: 'Ethan', u_s: 'Sophie' }, inviteCode: 'SHARED' }, 'households/h2/people/u_ethan': { name: 'Ethan', uid: 'u_ethan', order: 1 } };
+    const A = boot({ pre }); await wait(2500);
+    await A.act('tab', 'settings'); await A.act('set-page', 'household'); await A.act('leave');
+    ok(/only one in it/.test(A.d.querySelector('#app').textContent), 'leaving: the last one in a household is told nobody can open it again');
+    await A.switchTo('h2'); await A.act('tab', 'settings'); await A.act('set-page', 'household'); await A.act('leave');
+    ok(!/only one in it/.test(A.d.querySelector('#app').textContent) && !!A.d.querySelector('[data-act="leave-yes"]'), 'leaving: with others still in it, there\u2019s no such note');
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();
