@@ -1547,7 +1547,14 @@ async function bgSyncShops() {
     // (one Budgie couldn't save just then, a hiccup or behind one, says retry: it stays waiting and goes next time)
     const later = {}; (sent.rejected || []).forEach(r => { if (r.retry) later[r.id] = true; else refused[r.id] = r.error || 'Budgie didn’t take it'; });
     const done = batch.filter(o => o.op === 'put' && !later[o.row.id]).map(o => [o.shop, o.row.id]);
-    for (const [id, tid] of done) { here(); if ((S.shopsLog || []).some(t => t.id === id)) await Store.patch('shops/' + id, { budgie: refused[tid] ? { state: 'refused', why: String(refused[tid]).slice(0, 120), person: me } : { state: 'sent', tid, person: me } }); }
+    // (a shop taken off in Peckish while it was on its way comes straight back off Budgie, and isn't written back here)
+    const gone = [];
+    for (const [id, tid] of done) {
+      here(); let there = (S.shopsLog || []).some(t => t.id === id);
+      if (there) { try { await (Store.update || Store.patch)('shops/' + id, { budgie: refused[tid] ? { state: 'refused', why: String(refused[tid]).slice(0, 120), person: me } : { state: 'sent', tid, person: me } }); } catch (e) { if (!(e && e.code === 'not-found')) throw e; there = false; } }
+      if (!there && !refused[tid]) gone.push({ op: 'delete', table: 'transactions', id: tid });
+    }
+    if (gone.length) { here(); await bgCall(gone, false); }
     for (const o of batch) if (o.op === 'delete' && !refused[o.id] && !later[o.id]) { here(); await Store.del('shops/' + o.shop); }
     // shops Peckish sent follow Budgie too: a new amount or date (fixed there, or matched to the bank) comes back here,
     // and one taken off there goes from here (told by the payer's phone, which sees all of its own)

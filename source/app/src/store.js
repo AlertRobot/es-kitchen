@@ -175,6 +175,12 @@ window.Store = !configured ? { kind: 'unconfigured', onUser(cb) { setTimeout(() 
     }
     return safe(() => setDoc(ref(rel), data, { mergeFields: fields }));
   },
+  // the same, for a record that must still be there: one someone has deleted meanwhile isn't brought back (not-found)
+  update(rel, flat) {
+    const data = {};
+    for (const k of Object.keys(flat)) { const v = flat[k]; data[k] = v && v.__delete ? deleteField() : (v === undefined ? deleteField() : clean(v)); }
+    return safe(() => updateDoc(ref(rel), data));
+  },
   // every document in a household collection, read once (used by Backup)
   async list(rel) { const s = await getDocs(ref(rel)); return s.docs.map(d => ({ id: d.id, data: d.data() })); },
   // keep each member's sign-in email on the household, so a backup can say whose account is whose

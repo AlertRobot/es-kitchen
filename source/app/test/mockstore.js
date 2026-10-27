@@ -49,6 +49,7 @@ window.Store = {
   async del(rel) { docs.delete(full(rel)); notify(); },
   DEL: { __delete: true },
   patch: checked(async function (rel, flat) { const p = full(rel); const d = JSON.parse(JSON.stringify(docs.get(p) || {})); for (const k of Object.keys(flat)) { const parts = k.split('.'); let o = d; for (let i = 0; i < parts.length - 1; i++) o = o[parts[i]] = (o[parts[i]] && typeof o[parts[i]] === 'object') ? o[parts[i]] : {}; const v = flat[k]; if (v && v.__delete) delete o[parts[parts.length - 1]]; else o[parts[parts.length - 1]] = JSON.parse(JSON.stringify(v)); } shopRule(rel, docs.get(p), d); docs.set(p, d); window.__writes = (window.__writes || 0) + 1; window.__patches = (window.__patches || 0) + 1; notify(); }),
+  update: checked(async function (rel, flat) { if (!docs.has(full(rel))) throw Object.assign(new Error('No document to update'), { code: 'not-found' }); return window.Store.patch(rel, flat); }),
   async list(rel) { return col(full(rel)).map(d => { const x = { ...d }; delete x.id; return { id: d.id, data: x }; }); },
   async touchMember(h, u) { const d = docs.get('households/' + h.id); if (d) { d.memberEmails = { ...(d.memberEmails || {}), [u.uid]: u.email }; } },
 };

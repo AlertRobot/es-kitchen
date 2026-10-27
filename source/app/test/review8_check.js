@@ -173,6 +173,27 @@ const twice = B => B.puts.filter((x, i, a) => a.indexOf(x) !== i);
     ok(!dup.length, 'nothing sent twice (' + dup.join(',') + ')');
     ok(![E, So].some(p => p.errs.length), 'no page errors ' + [E, So].map(p => p.errs.join(' | ')).join(''));
   }
+  // ---- 4. a shop taken off while the payer's phone is sending it comes back off Budgie, and isn't written back ----
+  if (!only || only === 4) {
+    phones.length = 0;
+    const docs = household(), B = budgie();
+    let slow = 0; const fetch = async (u, o) => { if (slow && /script\.google/.test(u)) await wait(slow); return B.fetch(u, o); };
+    const E = phone('ethan', docs, B, { fetch }), So = phone('sophie', docs, B, { fetch });
+    await wait(4000);
+    await E.logShop(40, 'u_ethan', true); await So.logShop(31, 'u_sophie', true, 3000);
+    await So.logShop(22, 'u_ethan', true, 1000); await E.act('bg-sync', null, null, 3000);
+    const id = a => (shopsIn(docs).find(t => t.amount === a) || {}).id, tidOf = a => ((shopsIn(docs).find(t => t.amount === a) || {}).budgie || {}).tid;
+    // Sophie logs one for Ethan and takes it off straight away, while Ethan's phone is sending it
+    slow = 1500;
+    await So.logShop(17, 'u_ethan', true, 1400);
+    const t17 = shopsIn(docs).find(t => t.amount === 17);
+    await So.act('go-cost', null, null, 50); await So.act('rm-shop-yes', t17 && t17.id, null, 200);
+    await wait(6000); slow = 0; await E.act('bg-sync', null, null, 3000);
+    ok(!B.transactions.some(t => t.amount === 17 && !t.deleted), 'a shop taken off while it was being sent doesn’t stay in Budgie (' + JSON.stringify(B.transactions.filter(t => t.amount === 17)) + ')');
+    ok(!shopsIn(docs).some(t => t.amount === 17 || (t.budgie && !t.date)), '...or come back in Peckish');
+    ok(!twice(B).length, 'nothing sent twice (' + twice(B).join(',') + ')');
+    ok(![E, So].some(p => p.errs.length), 'no page errors ' + [E, So].map(p => p.errs.join(' | ')).join(''));
+  }
   // ---- 5. a shop logged while the payer's phone is in the middle of a sync still goes straight after ----
   if (!only || only === 5) {
     phones.length = 0;
