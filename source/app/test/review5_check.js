@@ -63,6 +63,24 @@ const calMock = (CAL, NOTIFS, opts) => ({ onUser(cb) { setTimeout(() => cb({ ema
     ok(v[0] && v[0].v === 1, 'who you are: and thumbs up or down then work (' + JSON.stringify(v) + ')');
     ok(!A.errs.length, 'who you are: no page errors ' + A.errs.join(' | '));
   }
+  // ---- 3. a recipe of your own that you remove stays on the weeks it's planned in, and can be brought back ----
+  if (!only || only === 3) {
+    const mine = { title: 'Nan’s stew', custom: true, cuisine: 'British', protein: 'beef', time: 30, servings: 2, icon: '🍲', equipment: ['hob'], ingredients: [{ i: 'onion', q: 1, t: '1' }], steps: [{ title: '', text: 'Stew it.' }] };
+    const days = planned().days; days.d1 = { r: 'my_stew' };
+    const pre = { 'users/u_ethan': { households: ['h1'], current: 'h1', names: { h1: 'Home' } }, ...home('h1', 'Home', { ['households/h1/weeks/' + MON]: { days }, 'households/h1/recipes/my_stew': mine }) };
+    const A = boot({ pre }); await wait(2500);
+    await A.act('open-recipe', 'my_stew', null, 400); await A.act('del-recipe', 'my_stew', null, 300); await A.act('del-recipe-yes', 'my_stew', null, 600);
+    const titles = () => [...A.d.querySelectorAll('.meal .ttl')].map(x => x.textContent).join(' | ');
+    ok(/Nan.s stew/i.test(titles()), 'own recipe removed: the night it’s planned on keeps it (' + titles().slice(0, 60) + ')');
+    const rec = A.docAt('households/h1/recipes/my_stew') || {};
+    ok(rec.hidden === true && /stew/i.test(rec.title || ''), 'own recipe removed: it’s kept, marked removed');
+    await A.act('open-recipe', 'my_stew', null, 400);
+    ok(!!A.d.querySelector('[data-act="restore-recipe"]'), 'own recipe removed: its page offers to bring it back');
+    await A.act('restore-recipe', 'my_stew', null, 600);
+    const back = A.docAt('households/h1/recipes/my_stew') || {};
+    ok(!back.hidden && /stew/i.test(back.title || '') && Array.isArray(back.ingredients), 'own recipe removed: bringing it back keeps it whole');
+    ok(!A.errs.length, 'own recipe removed: no page errors ' + A.errs.join(' | '));
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();

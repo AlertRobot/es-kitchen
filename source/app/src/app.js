@@ -2799,7 +2799,8 @@ document.addEventListener('click', e => {
     case 'rf-more': top.lines = readFormLines(top); top.lines.push({ i: '', q: '', t: '' }); renderSheet(true); break;
     case 'del-recipe': top.confirmDel = true; renderSheet(true); break;
     // a library recipe is only marked removed (your edits to it are kept), so it can be brought back
-    case 'del-recipe-yes': if (S.RMAP[v] && S.RMAP[v].custom) Store.del('recipes/' + v).catch(() => {}); else Store.merge('recipes/' + v, { hidden: true }).catch(e => { console.warn(e); toast('Couldn’t save that change.'); }); closeSheets(); toast('Recipe removed'); break;
+    // (one of your own too, so the weeks it's planned in keep it and it can be brought back)
+    case 'del-recipe-yes': Store.merge('recipes/' + v, { hidden: true }).catch(e => { console.warn(e); toast('Couldn’t save that change.'); }); closeSheets(); toast('Recipe removed'); break;
     case 'restore-recipe': { const x = RAW.myR[v] || {}, edited = Object.keys(x).some(k => k !== 'hidden' && k !== 'id');
       (edited ? (Store.patch ? Store.patch('recipes/' + v, { hidden: Store.DEL }) : Store.set('recipes/' + v, (({ hidden, id, ...rest }) => rest)(x))) : Store.del('recipes/' + v)).catch(e => { console.warn(e); toast('Couldn’t save that change.'); });
       toast('Back in the library'); break; }
