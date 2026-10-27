@@ -99,7 +99,10 @@ function writeTable_(sh, cols, rows, owner) {
     var cur = sh.getRange(2, 1, last - 1, width).getValues();
     keep = cur.filter(function (r) { return String(r[0]) !== owner && String(r[0]) !== ""; });
   }
-  var all = keep.map(function (r) { return pad_(r.slice(0, cols.length), cols.length); }).concat(rows.map(function (r) { return pad_(r.map(cell_), cols.length); }));
+  // rows kept from other households (or the library) are read back as plain values, so they're made safe again too:
+  // text that starts like a formula ("=IMPORTXML(...)" as someone's name) must never become one when it's written back
+  var all = keep.map(function (r) { return pad_(r.slice(0, cols.length).map(function (v) { return typeof v === "string" ? cell_(v) : v; }), cols.length); })
+    .concat(rows.map(function (r) { return pad_(r.map(cell_), cols.length); }));
   sh.clearContents();
   sh.getRange(1, 1, 1, cols.length).setValues([cols]).setFontWeight("bold");
   sh.setFrozenRows(1);

