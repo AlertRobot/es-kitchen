@@ -1900,10 +1900,14 @@ function backupSummary() {
   if (b.lastOk === false && b.lastTry && (!b.last || b.lastTry > b.last)) return 'Last try failed · ' + fmtWhen(b.lastTry);
   return b.last ? 'Backed up ' + fmtWhen(b.last) : 'Connected · not backed up yet';
 }
+// Reads, writes and saves that take a while stop if you switch household meanwhile: the database paths follow the
+// household you're in, so carrying on would mix two households or write into the wrong one
+const SWITCHED = 'You switched household, so this was stopped.';
 async function collectDocs() {
-  const out = [];
+  const out = [], hid0 = curHid;
   for (const c of ['people', 'weeks', 'recipes', 'ingredients', 'ratings', 'shops', 'config']) {
     const ds = await Store.list(c);
+    if (curHid !== hid0) throw new Error(SWITCHED);
     ds.forEach(d => { if (c === 'config' && d.id === 'backup') return; out.push({ path: c + '/' + d.id, data: d.data }); });
   }
   return out;
@@ -1987,17 +1991,19 @@ async function runBackup(manual) {
   const b = S.backup; if (!b || !b.url || backupBusy || !S.household) return;
   if (!S.online) { if (manual) toast('You’re offline. Back up when you have signal.'); return; }
   backupBusy = true; S.backupBusy = true; schedule();
-  const t0 = Date.now();
+  const t0 = Date.now(), hid0 = curHid, hh = S.household;
   try {
     const docs = await collectDocs();
     const withLib = manual || b.libVersion !== libVersion();
     const tables = buildTables(docs, withLib);
-    const r = await postScript(b.url, { key: b.key, action: 'backup', hid: S.household.id, household: S.household.name || '', by: myName(), at: new Date().toISOString(), tables });
+    const r = await postScript(b.url, { key: b.key, action: 'backup', hid: hh.id, household: hh.name || '', by: myName(), at: new Date().toISOString(), tables });
     const counts = {}; for (const k in tables) counts[k] = tables[k].rows.length;
+    if (curHid !== hid0) throw new Error(SWITCHED);
     await Store.merge('config/backup', { last: new Date().toISOString(), lastBy: myName(), lastOk: true, lastErr: '', counts, libVersion: withLib ? libVersion() : (b.libVersion || ''), ms: Date.now() - t0, sheetUrl: r.sheetUrl || b.sheetUrl || '' });
     if (manual) toast('Backed up to Google Sheets');
   } catch (e) {
-    await Store.merge('config/backup', { lastTry: new Date().toISOString(), lastOk: false, lastErr: String((e && e.message) || e).slice(0, 240) }).catch(() => {});
+    // (when you've switched household, its backup record isn't the one to mark)
+    if (curHid === hid0) await Store.merge('config/backup', { lastTry: new Date().toISOString(), lastOk: false, lastErr: String((e && e.message) || e).slice(0, 240) }).catch(() => {});
     if (manual) toast('Backup didn’t work: ' + ((e && e.message) || e));
   }
   backupBusy = false; S.backupBusy = false; schedule();
@@ -2035,8 +2041,8 @@ function stageRestore(obj, source) {
 async function applyRestore() {
   const pr = S.pendingRestore; if (!pr) return;
   S.restoring = true; render();
-  let n = 0;
-  try { for (const d of pr.docs) { await Store.set(d.path, d.data); n++; } toast('Restored ' + n + ' records'); }
+  let n = 0; const hid0 = curHid;
+  try { for (const d of pr.docs) { if (curHid !== hid0) throw new Error(SWITCHED); await Store.set(d.path, d.data); n++; } toast('Restored ' + n + ' records'); }
   catch (e) { toast('Restore stopped after ' + n + ' records: ' + ((e && e.message) || e)); }
   S.pendingRestore = null; S.restoring = false; render();
 }
@@ -2583,10 +2589,12 @@ function doFill(jitter, clearAuto) {
   // a night whose dinner has since been deleted from your recipes is filled like an empty one
   const gone = x => !!(x.r && !S.RMAP[x.r] && !x.takeaway);
   w.days = w.days.map(x => (gone(x) ? nightKeep(x) : x));
+  const hid0 = curHid;
   autoFillAsync(w, C, { jitter, beam: 3, branch: 5 }).then(filled => {
     try {
       const empties = w.days.map((x, d) => (!x.r && !x.takeaway && !nobodyIn(w, d, C)) ? d : -1).filter(d => d >= 0);
       S.busy = false;
+      if (curHid !== hid0) { toast('You switched household, so nothing was filled in.'); render(); return; }
       // planning takes a moment: if you've gone to another week meanwhile, don't put this plan on it
       if (S.weekStart !== w.start) { toast('You moved to another week, so nothing was filled in. Tap Fill again here.'); render(); return; }
       if (!empties.some(d => filled.days[d].r)) { toast('No recipes fit the remaining days. Try loosening the weeknight time, equipment or preferences.'); render(); return; }

@@ -206,6 +206,32 @@ const home = (hid, name, extra) => ({ ['households/' + hid]: { name, members: ['
     await A.switchTo('h2'); await A.act('tab', 'settings'); await A.act('set-page', 'household'); await A.act('leave');
     ok(!/only one in it/.test(A.d.querySelector('#app').textContent) && !!A.d.querySelector('[data-act="leave-yes"]'), 'leaving: with others still in it, there\u2019s no such note');
   }
+  // ---- 10. switching household while something slow is going on doesn't write into (or mix in) the other household ----
+  if (!only || only === 10) {
+    const two = () => ({ 'users/u_ethan': { households: ['h1', 'h2'], current: 'h1', names: { h1: 'Home', h2: 'Mum\u2019s' } }, ...home('h1', 'Home', { 'households/h1/config/backup': { url: 'https://script.google.com/macros/s/x/exec', key: 'k', auto: false } }),
+      ...home('h2', 'Mum\u2019s', { 'households/h2/config/backup': { url: 'https://script.google.com/macros/s/y/exec', key: 'k2', auto: false }, 'households/h2/people/u_mum': { name: 'Mum', order: 2 } }) });
+    const daysIn = (A, hid) => Object.keys(((A.docAt('households/' + hid + '/weeks/' + MON) || {}).days) || {}).length;
+    // "Fill it for me" still working
+    { const A = boot({ pre: two() }); await wait(2500);
+      const sw = A.switchTo('h2'); await A.act('fill', null, null, 1); await sw; await wait(6000);
+      ok(daysIn(A, 'h2') === 0, 'switching: a plan still being worked out isn\u2019t put on the other household\u2019s week (' + daysIn(A, 'h2') + ' nights)'); }
+    // a restore going on
+    { const A = boot({ pre: two() }); await wait(2500);
+      const set0 = A.w.Store.set; A.w.Store.set = function () { const p = set0.apply(this, arguments); return new Promise(r => setTimeout(r, 60)).then(() => p); }; // the path is fixed when it's called, as in Firestore; the answer is slow
+      const docs = []; for (let k = 0; k < 30; k++) docs.push({ path: 'recipes/my_r' + k, data: { title: 'R' + k, ingredients: [], steps: [] } });
+      const f = { name: 'b.json', text: async () => JSON.stringify({ app: 'Peckish', docs }) };
+      await A.act('tab', 'settings'); await A.act('set-page', 'backup');
+      const inp = A.d.querySelector('#restore-file'); Object.defineProperty(inp, 'files', { value: [f] }); inp.dispatchEvent(new A.w.Event('change', { bubbles: true })); await wait(400);
+      await A.act('restore-yes', null, null, 300); await A.switchTo('h2'); await wait(3000);
+      const inH2 = [...A.w.__docs.keys()].filter(k => k.startsWith('households/h2/recipes/my_r')).length, inH1 = [...A.w.__docs.keys()].filter(k => k.startsWith('households/h1/recipes/my_r')).length;
+      ok(inH1 > 0 && inH2 === 0, 'switching: a restore under way stops rather than carrying on into the other household (' + inH1 + ' here, ' + inH2 + ' there)'); }
+    // a backup going on
+    { let slow = null; const fetch = async (url, opt) => { if (!/script\.google\.com/.test(url)) return { ok: true, json: async () => JSON.parse(lib) }; await new Promise(r => { slow = r; setTimeout(r, 1500); }); const r = { ok: true, sheetUrl: 'https://docs.google.com/x' }; return { ok: true, text: async () => JSON.stringify(r), json: async () => r }; };
+      const A = boot({ pre: two(), fetch }); await wait(2500);
+      await A.act('tab', 'settings'); await A.act('set-page', 'backup'); await A.act('backup-now', null, null, 200); await A.switchTo('h2'); await wait(2500);
+      const b2 = A.docAt('households/h2/config/backup') || {};
+      ok(!b2.last && !b2.lastTry && !b2.counts, 'switching: the other household\u2019s backup isn\u2019t marked as done (or failed) by this one\u2019s (' + JSON.stringify(b2).slice(0, 90) + ')'); }
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();
