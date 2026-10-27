@@ -181,20 +181,23 @@ const num = (x, d) => { const n = typeof x === 'number' ? x : typeof x === 'stri
 const txt = x => (typeof x === 'string' ? x : typeof x === 'number' ? String(x) : '');
 const isoOk = x => typeof x === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(x);
 const hhmm = x => typeof x === 'string' && /^\d{1,2}:\d{2}$/.test(x);
+// a count kept to what the app could ever set, so a stray huge number can't make the planner buy a billion packs
+const upTo = (x, max, d) => Math.min(max, Math.max(0, num(x, d)));
 function tidyPrice(p) {
   if (!p || typeof p !== 'object' || Array.isArray(p)) return null;
   const x = { ...p };
   ['pack', 'price', 'loyalty', 'was'].forEach(k => { if (k in x) x[k] = num(x[k], null); });
+  if (x.pack != null && !(x.pack >= 0.1 && x.pack <= 100000)) x.pack = null;
   ['checked', 'seen'].forEach(k => { if (k in x && !isoOk(x[k])) delete x[k]; });
   ['src', 'label', 'note', 'basis', 'conf'].forEach(k => { if (k in x) x[k] = txt(x[k]); });
-  if ('alt' in x) x.alt = (Array.isArray(x.alt) ? x.alt : []).map(a => ({ pack: num(a && a.pack, 0) })).filter(a => a.pack > 0);
+  if ('alt' in x) x.alt = (Array.isArray(x.alt) ? x.alt : []).map(a => ({ pack: num(a && a.pack, 0) })).filter(a => a.pack >= 0.1 && a.pack <= 100000);
   return x;
 }
 function tidyIng(over) {
   const x = { ...over };
   ['name', 'aisle', 'separable'].forEach(k => { if (k in x) x[k] = txt(x[k]); });
   if ('unit' in x && !UNITS.includes(x.unit)) x.unit = 'each';
-  if ('packs' in x) { x.packs = (Array.isArray(x.packs) ? x.packs : []).map(p => num(p, 0)).filter(p => p > 0); if (!x.packs.length) x.packs = [1]; }
+  if ('packs' in x) { x.packs = (Array.isArray(x.packs) ? x.packs : []).map(p => num(p, 0)).filter(p => p >= 0.1 && p <= 100000); if (!x.packs.length) x.packs = [1]; }
   ['keeps', 'life'].forEach(k => { if (k in x) x[k] = num(x[k], 3); });
   if ('tags' in x) x.tags = (Array.isArray(x.tags) ? x.tags : []).map(txt);
   if ('nut' in x) x.nut = x.nut && typeof x.nut === 'object' ? { per: num(x.nut.per, 100), kcal: num(x.nut.kcal, 0), protein: num(x.nut.protein, 0), carbs: num(x.nut.carbs, 0), fat: num(x.nut.fat, 0) } : undefined;
@@ -202,20 +205,20 @@ function tidyIng(over) {
   return x;
 }
 function tidyRecipe(x) {
-  const r = { ...x, time: num(x.time, 0), servings: num(x.servings, 0) > 0 ? num(x.servings, 2) : 2 }; delete r.removed;
+  const r = { ...x, time: upTo(x.time, 1440, 0), servings: num(x.servings, 0) > 0 ? upTo(x.servings, 50, 2) : 2 }; delete r.removed;
   ['title', 'icon', 'cuisine', 'protein', 'category', 'meal', 'short', 'airFryer', 'batch', 'base', 'family'].forEach(k => { if (k in r) r[k] = txt(r[k]); });
   if ('keepsDays' in r) r.keepsDays = num(r.keepsDays, 0);
   ['equipment', 'tags'].forEach(k => { if (k in r) r[k] = (Array.isArray(r[k]) ? r[k] : []).map(txt); });
-  if (Array.isArray(r.ingredients)) r.ingredients = r.ingredients.filter(l => l && typeof l === 'object').map(l => { const o = { ...l, i: txt(l.i), q: num(l.q, 0), t: txt(l.t) }; if ('swap' in l) o.swap = txt(l.swap) || undefined; return o; });
+  if (Array.isArray(r.ingredients)) r.ingredients = r.ingredients.filter(l => l && typeof l === 'object').map(l => { const o = { ...l, i: txt(l.i), q: upTo(l.q, 100000, 0), t: txt(l.t) }; if ('swap' in l) o.swap = txt(l.swap) || undefined; return o; });
   if ('steps' in r) r.steps = (Array.isArray(r.steps) ? r.steps : []).map(s => (s && typeof s === 'object' ? { ...s, title: txt(s.title), text: txt(s.text) } : txt(s)));
   if (r.source && typeof r.source === 'object') r.source = { ...r.source, title: txt(r.source.title), site: txt(r.source.site), author: txt(r.source.author), url: txt(r.source.url) };
   else delete r.source;
   return r;
 }
 function tidyWeek(w) {
-  w.carryIn = (Array.isArray(w.carryIn) ? w.carryIn : []).filter(c => c && typeof c === 'object').map(c => ({ ...c, i: txt(c.i), q: num(c.q, 0), exp: isoOk(c.exp) ? c.exp : null }));
-  w.freezerMeals = (Array.isArray(w.freezerMeals) ? w.freezerMeals : []).filter(m => m && typeof m === 'object').map(m => ({ ...m, r: txt(m.r), portions: num(m.portions, 0) }));
-  w.days = w.days.map(d => { if (!d || typeof d !== 'object') return {}; const x = { ...d }; if ('r' in x) x.r = txt(x.r); if ('guests' in x) x.guests = num(x.guests, 0); if ('extra' in x) x.extra = num(x.extra, 0); if ('extraUse' in x && x.extraUse !== 'freeze') x.extraUse = 'lunch'; return x; });
+  w.carryIn = (Array.isArray(w.carryIn) ? w.carryIn : []).filter(c => c && typeof c === 'object').map(c => ({ ...c, i: txt(c.i), q: upTo(c.q, 100000, 0), exp: isoOk(c.exp) ? c.exp : null }));
+  w.freezerMeals = (Array.isArray(w.freezerMeals) ? w.freezerMeals : []).filter(m => m && typeof m === 'object').map(m => ({ ...m, r: txt(m.r), portions: Math.round(upTo(m.portions, 100, 0)) }));
+  w.days = w.days.map(d => { if (!d || typeof d !== 'object') return {}; const x = { ...d }; if ('r' in x) x.r = txt(x.r); if ('guests' in x) x.guests = Math.round(upTo(x.guests, 20, 0)); if ('extra' in x) x.extra = Math.round(upTo(x.extra, 20, 0)); if ('extraUse' in x && x.extraUse !== 'freeze') x.extraUse = 'lunch'; return x; });
   w.extras = (Array.isArray(w.extras) ? w.extras : []).filter(e => e && typeof e === 'object').map(e => ({ ...e, name: txt(e.name) }));
   if (w.locked && typeof w.locked === 'object') w.locked = { ...w.locked, by: txt(w.locked.by) };
   // a shop the app doesn't know (a typo, or a newer version's) means the usual one, rather than a week that won't open
@@ -226,7 +229,7 @@ function tidyPerson(p) {
   const x = { ...p, name: txt(p.name) };
   ['wontEat', 'dislikes', 'likes'].forEach(k => { x[k] = (Array.isArray(p[k]) ? p[k] : []).map(txt).filter(Boolean); });
   ['kcalTarget', 'proteinTarget'].forEach(k => { if (k in x) x[k] = num(x[k], null); });
-  if ('portion' in x) x.portion = num(x.portion, 1);
+  if ('portion' in x) x.portion = upTo(x.portion, 4, 1);
   // breakfast and lunch plans: which days (0-6) and the usual items, as lists
   const days = d => (Array.isArray(d) ? d.map(v => num(v, -1)).filter(v => v >= 0 && v < 7) : undefined);
   if ('days' in x) x.days = isObj(p.days) ? { b: days(p.days.b), l: days(p.days.l) } : {};

@@ -272,6 +272,19 @@ const home = (hid, name, extra) => ({ ['households/' + hid]: { name, members: ['
     await A.act('tab', 'settings'); await A.act('set-page', 'people'); await A.act('set-person', 'p_s', null, 300);
     ok(!A.errs.length, 'odd values: a person saved with odd breakfast and lunch days doesn\u2019t break the pages that show them ' + A.errs.slice(0, 2).join(' | '));
   }
+  // ---- 14. a huge number in a record (guests, portions, amounts, pack sizes) doesn't freeze or break the planner ----
+  if (!only || only === 14) {
+    const wk = planned(); wk.days.d0.guests = 1e9; wk.days.d1.extra = 1e12; wk.carryEdited = true; wk.carryIn = [{ i: 'beef_mince', q: 1e15, exp: MON }]; wk.freezerMeals = [{ r: 'br_cottage_pie', portions: 1e9 }];
+    const pre = { 'users/u_ethan': { households: ['h1'], current: 'h1', names: { h1: 'Home' } }, ...home('h1', 'Home', { ['households/h1/weeks/' + MON]: wk,
+      'households/h1/people/p_s': { name: 'Sophie', order: 2, portion: 1e9 },
+      'households/h1/ingredients/beef_mince': { prices: { tesco: { pack: 1e-9, price: 4, checked: MON, src: 'Your receipt' } } },
+      'households/h1/ingredients/ing_tiny': { name: 'Tiny', unit: 'g', packs: [1e-9], custom: true, prices: { tesco: { pack: 1e-9, price: 1 } } },
+      'households/h1/recipes/my_big': { title: 'Big', cuisine: 'British', protein: 'beef', time: 1e9, servings: 1e9, custom: true, ingredients: [{ i: 'ing_tiny', q: 1e12 }], steps: [{ text: 'Cook' }] } }) };
+    pre['households/h1/weeks/' + MON].days.d2 = { r: 'my_big' };
+    const t0 = Date.now(); const A = boot({ pre }); await wait(3000);
+    await A.act('tab', 'shop', null, 600); await A.act('tab', 'kitchen', null, 400); await A.act('tab', 'week', null, 400);
+    ok(!A.errs.length && /Tuna puttanesca/.test(A.d.querySelector('#app').textContent) && Date.now() - t0 < 20000, 'huge numbers: the week, list and kitchen still open (' + A.errs.slice(0, 1).join('') + ')');
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();
