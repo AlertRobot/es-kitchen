@@ -224,7 +224,9 @@ window.Store.cal = {
     return runTransaction(calDb, async tx => {
       const cur = await tx.get(ref2); if (cur.exists() && cur.data().sent) return 'sent';
       // already waiting just like this: nothing to write (the app checks its reminders are still there now and then)
-      if (cur.exists() && Object.keys(data).every(k => JSON.stringify(cur.data()[k]) === JSON.stringify(data[k]))) return 'same';
+      // (one wanted straight away keeps the time it has: Caledonite may be holding it back for quiet hours or a retry)
+      const asap = k => k === 'sendAfter' && typeof data[k] === 'number' && data[k] <= Date.now() + 60000 && typeof cur.data()[k] === 'number';
+      if (cur.exists() && Object.keys(data).every(k => asap(k) || JSON.stringify(cur.data()[k]) === JSON.stringify(data[k]))) return 'same';
       tx.set(ref2, { ...data, sent: false, created: (cur.exists() && cur.data().created) || Date.now() }); return 'ok';
     });
   },
