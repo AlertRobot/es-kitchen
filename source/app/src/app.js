@@ -362,6 +362,8 @@ function subscribeWeek() {
     const legacy = !!(d && Array.isArray(d.days)); d = decWeek(d);
     if (d) saveWeekCopy(start, d);
     else if (!S.online || (meta && meta.cache)) { const c = loadWeekCopy(start); if (c) d = c; }
+    // nothing on this phone and the database couldn't be asked (no signal): the other phone may already have planned it
+    S.weekUnsure = !d && !!(meta && meta.cache); if (!S.weekUnsure) S.confirm.fillAnyway = false;
     S.weekRaw = d ? { start, doc: clone(d), legacy } : null;
     S.week = d ? normWeek(clone(d), start) : null; S.weekLoaded = true; schedule();
   }, e => { onSubErr(e); if (start !== S.weekStart) return; const c = loadWeekCopy(start); if (c && !S.week) S.week = normWeek(clone(c), start); S.weekLoaded = true; schedule(); });
@@ -629,6 +631,7 @@ function renderWeek() {
   const arrival = filled ? sim.freezeNotes.filter(n => n.onArrival) : [];
   if (arrival.length) out += '<div class="note">' + ICON.snow + ' <b>When you unpack the shop:</b> freeze ' + arrival.map(n => h(leftText(n.i, n.q)) + ' (for ' + DAY_LONG[n.forDay] + ')').join(', ') + '.</div>';
   const todayIdx = daysBetween(w.start, TODAY);
+  if (S.weekUnsure && !planned) out += '<div class="note warn">No signal, so this phone hasn\u2019t been able to fetch this week yet. If it\u2019s been planned on another phone, the plan shows here once you\u2019re back online. Planning it here now would replace theirs.</div>';
   out += tonightAndRatings(w, todayIdx) + plateAsks(w) + kcalGlance(w, todayIdx) + makeWithWhatYouHave(w, sim);
   const defrost = []; (sim.defrostNotes || []).forEach(n => { const k = defrost.find(x => x.d === n.d && x.i === n.i && x.meal === n.meal); if (k) k.q += n.q; else defrost.push({ ...n }); });
   out += '<div class="days">';
@@ -675,7 +678,7 @@ function renderWeek() {
     out += '<div class="weekfoot">';
     if (S.busy) out += '<button class="btn primary block" disabled><span class="spinner sm" aria-hidden="true"></span> Planning\u2026</button>';
     else if (locked) out += '<div class="lockline">' + ICON.lock + '<span class="grow">Locked in by <b>' + h(w.locked.by) + '</b></span>' + (S.confirm.unlock ? '<button class="btn small-btn danger" data-act="unlock-yes">Unlock</button><button class="btn small-btn" data-act="unlock-no">Keep</button>' : '<button class="linkish small" data-act="unlock">Unlock</button>') + '</div>';
-    else if (emptyN) out += '<button class="btn primary block" data-act="fill">Fill ' + (planned ? 'the rest' : 'the week') + ' for me</button>';
+    else if (emptyN) out += '<button class="btn primary block" data-act="fill">' + (S.weekUnsure && S.confirm.fillAnyway ? 'Plan it anyway' : 'Fill ' + (planned ? 'the rest' : 'the week') + ' for me') + '</button>';
     else if (planned) out += '<button class="btn primary block" data-act="lock">' + ICON.lock + ' Lock in this week</button>';
     if (!locked && !S.busy) {
       const links = [];
@@ -2559,6 +2562,8 @@ function autoFillAsync(w, C, opts) {
 function doFill(jitter, clearAuto) {
   if (S.busy || guardLocked()) return;
   if (!S.weekLoaded) { toast('This week is still loading. Try again in a moment.'); return; }
+  // a week this phone couldn't fetch (no signal) is only filled on a second tap, so another phone's plan isn't replaced by accident
+  if (S.weekUnsure && !S.confirm.fillAnyway) { S.confirm.fillAnyway = true; toast('No signal: this week may already be planned on another phone. Tap again to plan it anyway.'); render(); return; }
   S.busy = true; render();
   const C = ctx(); const w = clone(currentWeek());
   if (clearAuto) w.days = w.days.map(x => x.auto ? {} : x);

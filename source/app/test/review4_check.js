@@ -15,6 +15,7 @@ function boot(opts) {
   const dom = new JSDOM(html, { runScripts: 'dangerously', pretendToBeVisual: true, url: 'https://x.github.io/es-kitchen/', beforeParse(w) {
     if (opts.pre) w.__preDocs = new Map(Object.entries(JSON.parse(JSON.stringify(opts.pre))));
     for (const k in (opts.local || {})) w.localStorage.setItem(k, opts.local[k]);
+    Object.assign(w, opts.win || {});
     w.fetch = opts.fetch || (async () => ({ ok: true, json: async () => JSON.parse(lib) }));
     w.scrollTo = () => {};
   } });
@@ -99,6 +100,19 @@ const home = (hid, name, extra) => ({ ['households/' + hid]: { name, members: ['
     await A.act('tab', 'week', null, 500);
     ok(/Ethan.s puttanesca/.test(titles()), 'recipes: a library recipe you rename shows its new name on the week (' + titles().slice(0, 40) + ')');
     ok(!A.errs.length, 'removed: no page errors ' + A.errs.join(' | '));
+  }
+  // ---- 3. no signal and a week this phone has never fetched: it isn't planned over the other phone's plan by accident ----
+  if (!only || only === 3) {
+    const A = boot({ win: { __noCache: true } }); await wait(150); await A.submit('[data-form="create"]', 1500);
+    const txt = () => A.d.querySelector('#app').textContent, days = () => Object.keys((A.docAt('households/h1/weeks/' + MON) || {}).days || {}).length;
+    ok(/hasn.t been able to fetch this week/.test(txt()), 'no signal: the week says it couldn\u2019t be fetched yet');
+    await A.act('fill', null, null, 3000);
+    ok(days() === 0 && /Plan it anyway/.test(txt()), 'no signal: the first tap on Fill plans nothing and asks again (' + days() + ' nights written)');
+    await A.act('fill', null, null, 6000);
+    ok(days() > 0, 'no signal: a second tap plans it (' + days() + ' nights)');
+    const B = boot(); await wait(150); await B.submit('[data-form="create"]', 1500); await B.act('fill', null, null, 6000);
+    ok(Object.keys((B.docAt('households/h1/weeks/' + MON) || {}).days || {}).length > 0 && !/fetch this week/.test(B.d.querySelector('#app').textContent), 'with signal: one tap fills the week as before');
+    ok(!A.errs.length && !B.errs.length, 'no signal: no page errors ' + A.errs.concat(B.errs).join(' | '));
   }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
