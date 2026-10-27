@@ -1211,7 +1211,7 @@ function renderShop() {
   w.extras.forEach((x, k) => { out += '<div class="item ' + (x.done ? 'done' : '') + '" style="border-top:0;padding:4px 0"><button class="check ' + (x.done ? 'on' : '') + '" data-act="tick-extra" data-v="' + h(x.id) + '" aria-label="Tick ' + h(x.name) + '">' + (x.done ? ICON.tick : '') + '</button><div class="iname">' + h(x.name) + '</div><button class="icon-btn" data-act="del-extra" data-v="' + h(x.id) + '" aria-label="Remove ' + h(x.name) + '">' + ICON.close + '</button></div>'; });
   const haveIds = Object.keys(w.have || {}).filter(id => S.ING[id]);
   if (haveIds.length) out += '<details class="havebox"><summary>Already at home (' + haveIds.length + ')</summary>' + haveIds.map(id => '<div class="row between ruled-sm"><span>' + h(ingName(id)) + '</span><button class="chip" data-act="unhave" data-v="' + h(id) + '">Put back on list</button></div>').join('') + '</details>';
-  out += '<form class="row" data-form="extra"><input class="input grow" id="extra-name" placeholder="e.g. toilet roll, milk for tea" aria-label="Add an item"><button class="btn" type="submit">Add</button></form><p class="muted small">Extra items aren’t priced.</p></section>';
+  out += '<form class="row" data-form="extra"><input class="input grow" id="extra-name" placeholder="e.g. toilet roll, milk for tea" aria-label="Add an item"><button class="btn" type="submit">Add</button></form></section>';
   out += '<p class="muted small">Tap a price to compare shops. Ticks sync between your phones and work offline.</p>';
   if (nDone && nDone >= nItems * 0.6) out += '<button class="btn block" data-act="go-cost">Done the shop? Log what you paid</button>';
   return out;
@@ -1328,7 +1328,7 @@ function renderKitchen() {
   // (how Low and Always buy work: said in full until the first cupboard check, then folded away)
   const howLow = 'Mark something <b>Low</b> and it goes on the shopping list only in a week where a meal needs it. Turn on <b>Always buy</b> for things you use every day, like milk for tea.';
   out += (S.pantry.checkedOnce ? '<details class="small muted"><summary>How Low and Always buy work</summary><p style="margin:0">' + howLow + '</p></details>' : '<p class="muted small">' + howLow + '</p>') +
-    '<input class="search" type="search" id="pantryq" placeholder="Search your staples" value="' + h(S.pantryQ || '') + '" data-input="pantryq" aria-label="Search staples">';
+    '<input class="search" type="search" id="pantryq" placeholder="Search your staples, or add one" value="' + h(S.pantryQ || '') + '" data-input="pantryq" aria-label="Search your staples, or find one to add">';
   const groups = {}; staples.forEach(i => (groups[i.aisle || 'Other'] = groups[i.aisle || 'Other'] || []).push(i));
   const order = AISLE_ORDER.filter(a => groups[a]).concat(Object.keys(groups).filter(a => !AISLE_ORDER.includes(a)));
   out += '<section class="panel pantrylist">';
@@ -1347,7 +1347,6 @@ function renderKitchen() {
   if (q && !staples.length) out += '<p class="muted small">No staples match “' + h(S.pantryQ) + '”.</p>';
   const addable = q ? Object.values(S.ING).filter(i => !i.staple && i.name.toLowerCase().includes(q)).slice(0, 6) : [];
   if (addable.length) out += '<div class="stack" style="gap:6px"><span class="label">Add as a staple</span>' + addable.map(i => '<div class="row between ruled-sm"><span>' + h(i.name) + '</span><button class="chip" data-act="make-staple" data-v="' + h(i.id) + '">' + ICON.plus + ' Add</button></div>').join('') + '</div>';
-  else if (!q) out += '<p class="muted small">Missing something? Search for it above to add it as a staple.</p>';
   return out;
 }
 
@@ -1780,8 +1779,8 @@ function lookHtml() {
   return '<p class="muted small">Just for this phone, so you and Sophie can each have your own.</p>' +
     '<section class="panel"><h2>Colours</h2><div class="swatches">' + PALETTES.map(([k, n, lc, dc]) => '<button class="swatch ' + (!special && (L.palette || '') === k ? 'on' : '') + '" data-act="look" data-k="palette" data-v="' + k + '" aria-pressed="' + (!special && (L.palette || '') === k) + '"><i style="background:' + (dark ? dc : lc) + '"></i>' + n + '</button>').join('') + '</div>' +
     '<div class="stack" style="gap:6px"><span class="label">Light or dark</span>' + (special ? '<span class="muted small">Special themes have their own look. Pick a colour above to use light or dark mode.</span>' :
-      '<span class="seg full">' + [['', 'Auto'], ['light', 'Light'], ['dark', 'Dark']].map(([k, n]) => '<button class="' + ((L.theme || '') === k ? 'on' : '') + '" data-act="look" data-k="theme" data-v="' + k + '">' + n + '</button>').join('') + '</span><span class="muted small">Auto follows your phone\u2019s setting.</span>' +
-      (L.theme !== 'light' ? '<span class="label" style="margin-top:6px">Dark mode</span><span class="seg full">' + [['', 'Soft dark'], ['1', 'Pure black']].map(([k, n]) => '<button class="' + ((L.oled || '') === k ? 'on' : '') + '" data-act="look" data-k="oled" data-v="' + k + '">' + n + '</button>').join('') + '</span><span class="muted small">Pure black looks sharp and saves battery on Galaxy screens.</span>' : '')) + '</div></section>' +
+      '<span class="seg full">' + [['', 'Auto'], ['light', 'Light'], ['dark', 'Dark']].map(([k, n]) => '<button class="' + ((L.theme || '') === k ? 'on' : '') + '" data-act="look" data-k="theme" data-v="' + k + '">' + n + '</button>').join('') + '</span>' +
+      (L.theme !== 'light' ? '<span class="label" style="margin-top:6px">Dark mode</span><span class="seg full">' + [['', 'Soft dark'], ['1', 'Pure black']].map(([k, n]) => '<button class="' + ((L.oled || '') === k ? 'on' : '') + '" data-act="look" data-k="oled" data-v="' + k + '">' + n + '</button>').join('') + '</span>' : '')) + '</div></section>' +
     '<section class="panel"><h2>Special themes</h2><div class="themegrid">' + THEMES.map(([k, n, blurb, bg, a1, a2]) => '<button class="theme ' + (L.palette === k ? 'on' : '') + '" data-act="look" data-k="palette" data-v="' + k + '" aria-pressed="' + (L.palette === k) + '"><span class="tprev" style="background:' + bg + '"><i style="background:' + a1 + '"></i><i style="background:' + a2 + '"></i></span><span class="tname"><b>' + n + '</b><span>' + blurb + '</span></span></button>').join('') + '</div></section>' +
     '<section class="panel"><h2>Text size</h2><span class="seg full">' + [['', 'Normal'], ['large', 'Larger']].map(([k, n]) => '<button class="' + ((L.size || '') === k ? 'on' : '') + '" data-act="look" data-k="size" data-v="' + k + '">' + n + '</button>').join('') + '</span></section>';
 }
@@ -1903,7 +1902,7 @@ function setPeople() {
   // nobody here is you (your own record was removed, or you joined under another name): say which one is you
   const free = S.people.filter(x => !x.uid);
   if (!mePerson() && S.user && free.length) out += '<div class="note small">Which of these is you? Tap your name, so your thumbs up or down, plates and calories follow you.<div class="row wrap" style="gap:6px;margin-top:8px">' + free.map(x => '<button class="chip" data-act="this-is-me" data-v="' + h(x.id) + '">' + h(nick(x.name)) + '</button>').join('') + '</div></div>';
-  out += '<p class="muted small">Recipes with something on a “won’t eat” list are hidden, unless the card has a simple swap (like leaving it off one plate). Dislikes push a recipe down the list; likes push it up.</p>';
+  out += '<p class="muted small">“Won’t eat” hides a recipe unless it has a simple swap. Dislikes push it down the list; likes push it up.</p>';
   if (p) {
     out += '<section class="panel">';
     for (const [key, label] of [['wontEat', 'Won’t eat'], ['dislikes', 'Dislikes'], ['likes', 'Likes']]) {
@@ -1923,7 +1922,7 @@ function setEquipment() {
 }
 function setTreats() {
   const st = S.settings;
-  return '<p class="muted small">On these nights the planner picks a treat: burgers, fried chicken, pizza, curry-house favourites. Other nights stay everyday. Treat nights can take up to an hour.</p><div class="chips wrapchips">' +
+  return '<p class="muted small">On these nights the planner picks a treat, like burgers, pizza or a curry, and it can take up to an hour.</p><div class="chips wrapchips">' +
     DAY_NAMES.map((n, d) => '<button class="chip ' + ((st.treatDays || []).includes(d) ? 'on' : '') + '" data-act="treat-day" data-v="' + d + '" aria-pressed="' + (st.treatDays || []).includes(d) + '">' + n + '</button>').join('') + '</div>';
 }
 function setPlanning() {
@@ -1938,7 +1937,7 @@ function setPlanning() {
     '<label class="row"><input type="checkbox" id="set-loy" class="cb" data-change="set-loy" ' + (st.useLoyalty !== false ? 'checked' : '') + '> Use Clubcard / Nectar / Lidl Plus prices where there’s an offer</label>' +
     '<div class="grid2"><label class="field"><span>Monthly food budget (£)</span><input class="input" type="number" min="0" step="10" id="set-budget" data-change="set-budget" value="' + h(st.monthlyBudget) + '"></label>' +
     '<label class="field"><span>Cupboard top-ups a week (£)</span><input class="input" type="number" min="0" step="1" id="set-staple-budget" data-change="set-staple-budget" value="' + h(st.stapleBudget == null ? 8 : st.stapleBudget) + '"></label></div>' +
-    '<p class="muted small">That’s about ' + fmtMoney(weeklyBudget()) + ' a week. When you’re low on staples, the planner favours meals that use what you’ve got, so restocking is spread over a few weeks.</p></section>';
+    '<p class="muted small">That’s about ' + fmtMoney(weeklyBudget()) + ' a week.</p></section>';
 }
 const PRICE_PAGE = 40;
 function setPrices() {
