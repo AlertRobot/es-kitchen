@@ -176,6 +176,16 @@ const home = (hid, name, extra) => ({ ['households/' + hid]: { name, members: ['
     ok(sent && sent.row.budget === 'bud-e2', 'budgie: and your shops go to the budget you chose (' + (sent && sent.row.budget) + ')');
     ok(!A.errs.length, 'budgie: no page errors ' + A.errs.join(' | '));
   }
+  // ---- 7. moving a dinner to another night: guests stay on the night they're coming ----
+  if (!only || only === 7) {
+    const wk = planned(); wk.days.d0.guests = 2; delete wk.days.d2;
+    const pre = { 'users/u_ethan': { households: ['h1'], current: 'h1', names: { h1: 'Home' } }, ...home('h1', 'Home', { ['households/h1/weeks/' + MON]: wk }) };
+    const A = boot({ pre }); await wait(2500);
+    await A.act('open-day', '0', null, 400); await A.act('move-day', '0', { to: '2' }, 500);
+    const days = (A.docAt('households/h1/weeks/' + MON) || {}).days || {};
+    ok(days.d2 && days.d2.r === R[0] && !days.d2.guests && days.d0 && !days.d0.r && days.d0.guests === 2, 'move: the dinner moves, the guests stay on their night (' + JSON.stringify([days.d0, days.d2]) + ')');
+    ok(!A.errs.length, 'move: no page errors ' + A.errs.join(' | '));
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();

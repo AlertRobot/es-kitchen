@@ -2796,7 +2796,10 @@ document.addEventListener('click', e => {
       mutateWeek(x => { x.days[d] = { r: pick.r.id, auto: true, skipped, ...nightKeep(day) }; });
       toast(DAY_LONG[d] + ': ' + pick.r.title); break;
     }
-    case 'move-day': { if (guardLocked()) break; const a = Number(v), t = Number(b.dataset.to); mutateWeek(x => { const tmp = x.days[a]; x.days[a] = x.days[t]; x.days[t] = tmp; }); closeSheets(); toast('Moved to ' + DAY_LONG[t]); break; }
+    case 'move-day': { if (guardLocked()) break; const a = Number(v), t = Number(b.dataset.to);
+      // the dinners swap nights; guests are coming on a night, so they stay where they were (as with a takeaway re-plan)
+      mutateWeek(x => { const A = x.days[a], T = x.days[t]; x.days[a] = { ...T }; x.days[t] = { ...A }; [[a, A], [t, T]].forEach(([k, was]) => { if (was.guests) x.days[k].guests = was.guests; else delete x.days[k].guests; }); });
+      closeSheets(); toast('Moved to ' + DAY_LONG[t]); break; }
     case 'del-step-photo': { const k = Number(b.dataset.n); const m = { ...(S.stepPhotos[v] || {}) }; delete m[k]; S.stepPhotos[v] = m; Store.delG('stepPhotos/' + v + '__' + k).catch(() => {}); renderSheet(true); break; }
     case 'have': mutateWeek(w => { w.have = { ...(w.have || {}), [v]: true }; }); toast('Taken off the list'); break;
     case 'unhave': mutateWeek(w => { const hv = { ...(w.have || {}) }; delete hv[v]; w.have = hv; }); break;
