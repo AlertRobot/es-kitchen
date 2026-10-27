@@ -108,7 +108,8 @@ window.Store = !configured ? { kind: 'unconfigured', onUser(cb) { setTimeout(() 
     if (!inv.exists()) throw new Error('That invite code wasn’t found. Check it and try again.');
     const id = inv.data().hid;
     try {
-      await updateDoc(doc(db, 'households', id), { members: arrayUnion(user.uid), joinCode: code, ['memberNames.' + user.uid]: myName });
+      // the code is saved with who used it, so the next person to join still has to know the code (the database checks)
+      await updateDoc(doc(db, 'households', id), { members: arrayUnion(user.uid), joinCode: code + '.' + user.uid, ['memberNames.' + user.uid]: myName });
     } catch (e) { throw new Error('Couldn’t join with that code. Ask for a fresh one.'); }
     const h = await getDoc(doc(db, 'households', id));
     hid = id;

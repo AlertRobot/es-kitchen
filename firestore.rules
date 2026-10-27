@@ -71,8 +71,11 @@ service cloud.firestore {
       allow update: if allowed() && (
         // members can change anything
         request.auth.uid in resource.data.members
-        // someone on the allowlist with the invite code may add only themselves
-        || (request.resource.data.joinCode == resource.data.inviteCode
+        // someone on the allowlist with the invite code may add only themselves. The code is saved with who used it
+        // ("CODE.uid"), so the one left there by the last person to join never lets in someone who doesn't know it.
+        // (A plain code, from an older copy of the app, counts only when it's written now, not when it's already there.)
+        || ((request.resource.data.joinCode == resource.data.inviteCode + '.' + request.auth.uid
+              || (request.resource.data.joinCode == resource.data.inviteCode && resource.data.get('joinCode', '') != resource.data.inviteCode))
             && request.resource.data.members.hasAll(resource.data.members)
             && request.resource.data.members.size() == resource.data.members.size() + 1
             && request.auth.uid in request.resource.data.members
