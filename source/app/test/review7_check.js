@@ -101,6 +101,21 @@ function budgieMock(B, OPS, opts) {
     ok((A.docAt('households/h1/config/settings') || {}).weeknightCap === 45, 'restore: ...and the rest of the backup still comes back');
     ok(!A.errs.length, 'no page errors ' + A.errs.join(' | '));
   }
+  // ---- 3. a shop Budgie couldn't save just then (a hiccup) stays waiting and goes next time ----
+  if (!only || only === 3) {
+    const B = { people: [{ id: 'ethan', name: 'Ethan' }], budgets: [{ id: 'e-food', person: 'ethan', name: 'Food' }], transactions: [], splits: [], accounts: [] };
+    const OPS = []; let hiccup = true;
+    const fetch = budgieMock(B, OPS, { reject: (o, i) => hiccup ? (i === 0 ? { error: 'Service Spreadsheets timed out', retry: true } : { error: 'Waiting for an earlier change', retry: true, notTried: true }) : null });
+    const shop = id => ({ date: TODAY_, amount: 30 + id.length, shop: 'tesco', paidBy: 'u_ethan', split: 'half', week: MON, source: 'peckish', by: 'Ethan', byUid: 'u_ethan', budgie: { state: 'queued', person: 'ethan' } });
+    const pre = { 'users/u_ethan': { households: ['h1'], current: 'h1', names: { h1: 'Home' } }, ...home('h1', 'Home', { 'households/h1/shops/s_a': shop('s_a'), 'households/h1/shops/s_bb': shop('s_bb'), ['households/h1/weeks/' + MON]: planned() }) };
+    const A = boot({ pre, fetch, local: { ...BG, 'peckish.budgieData': JSON.stringify({ since: 1, me: 'ethan', rows: {} }) } });
+    await wait(5000);
+    const st = id => ((A.docAt('households/h1/shops/' + id) || {}).budgie || {}).state;
+    ok(st('s_a') === 'queued' && st('s_bb') === 'queued', 'budgie: after a hiccup both shops are still waiting, not marked as turned down (' + st('s_a') + ', ' + st('s_bb') + ')');
+    hiccup = false; await A.act('bg-sync', null, null, 2500);
+    ok(st('s_a') === 'sent' && st('s_bb') === 'sent' && B.transactions.length === 2, 'budgie: ...and they go on the next sync');
+    ok(!A.errs.length, 'no page errors ' + A.errs.join(' | '));
+  }
   console.log(fails ? fails + ' FAILED' : 'all passed');
   process.exit(fails ? 1 : 0);
 })();

@@ -1541,10 +1541,11 @@ async function bgSyncShops() {
     });
     // at most 40 at a time; the rest go next time. Only what Budgie took is marked sent, or taken off here.
     const batch = ops.slice(0, 40), sent = await bgCall(batch.map(({ shop, ...o }) => o), false), refused = {};
-    (sent.rejected || []).forEach(r => { refused[r.id] = r.error || 'Budgie didn’t take it'; });
-    const done = batch.filter(o => o.op === 'put').map(o => [o.shop, o.row.id]);
+    // (one Budgie couldn't save just then, a hiccup or behind one, says retry: it stays waiting and goes next time)
+    const later = {}; (sent.rejected || []).forEach(r => { if (r.retry) later[r.id] = true; else refused[r.id] = r.error || 'Budgie didn’t take it'; });
+    const done = batch.filter(o => o.op === 'put' && !later[o.row.id]).map(o => [o.shop, o.row.id]);
     for (const [id, tid] of done) { here(); if ((S.shopsLog || []).some(t => t.id === id)) await Store.patch('shops/' + id, { budgie: refused[tid] ? { state: 'refused', why: String(refused[tid]).slice(0, 120), person: me } : { state: 'sent', tid, person: me } }); }
-    for (const o of batch) if (o.op === 'delete' && !refused[o.id]) { here(); await Store.del('shops/' + o.shop); }
+    for (const o of batch) if (o.op === 'delete' && !refused[o.id] && !later[o.id]) { here(); await Store.del('shops/' + o.shop); }
     // shops Peckish sent follow Budgie too: a new amount or date (fixed there, or matched to the bank) comes back here,
     // and one taken off there goes from here (told by the payer's phone, which sees all of its own)
     const ours = {}; (S.shopsLog || []).forEach(t => { if (t.source !== 'budgie' && !t.removed && t.budgie && t.budgie.state === 'sent' && t.budgie.tid) ours[t.budgie.tid] = t; });
