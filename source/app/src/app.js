@@ -598,7 +598,7 @@ function renderOnboard() {
   const names = (S.userDoc && S.userDoc.names) || {};
   const others = ((S.userDoc && S.userDoc.households) || []);
   const back = canGoBack();
-  let out = '<div class="auth">' + (back ? '<button class="linkish backlink" data-act="hh-back">' + ICON.left + ' Back to ' + h(S.household.name || 'your kitchen') + '</button>' : '') + '<div class="brand"><span class="brand-mark" aria-hidden="true"><img src="icons/icon.svg" alt=""></span><h1>Set up your kitchen</h1><p class="muted">A household shares one meal plan, shopping list and pantry.</p></div>';
+  let out = '<div class="auth">' + (back ? '<button class="linkish backlink" data-act="hh-back">' + ICON.left + ' Back to your kitchen</button>' : '') + '<div class="brand"><span class="brand-mark" aria-hidden="true"><img src="icons/icon.svg" alt=""></span><h1>Set up your kitchen</h1><p class="muted">A household shares one meal plan, shopping list and pantry.</p></div>';
   if (S.authMsg) out += '<p class="note warn" role="alert">' + h(S.authMsg) + '</p>';
   if (S.authBusy) out += '<p class="note"><span class="spinner sm" aria-hidden="true"></span> Working on it\u2026</p>';
   if (others.length) out += '<section class="panel"><h2>Your households</h2>' + others.map(id => '<button class="btn block" data-act="hh-switch" data-v="' + h(id) + '"><span class="ellip">' + h(names[id] || 'Household') + '</span></button>').join('') + '</section>';
@@ -1254,7 +1254,7 @@ function renderComparison(B) {
   if (best !== pref && !worth) out += '<div class="note good"><b>' + SHOP_KEY_NAMES[pref] + ' is within <span class="money">' + fmtMoney(saving) + '</span> of the cheapest</b> (' + SHOP_KEY_NAMES[best] + '), so it\u2019s not worth switching this week.</div><div class="compare">';
   else out += '<div class="note ' + (best === pref ? 'good' : '') + '">' + (best === pref ? '<b>' + SHOP_KEY_NAMES[pref] + ' is already the cheapest</b> for this list.' :
     'Cheapest: <b>' + SHOP_KEY_NAMES[best] + ' at <span class="money">' + fmtMoney(B.totals[best].total) + '</span></b>, saving <span class="money">' + fmtMoney(B.totals[pref].total - B.totals[best].total) + '</span> on ' + SHOP_KEY_NAMES[pref] + '.' +
-      (!currentWeek().locked && best.replace('+', '') !== weekShop() ? '<div style="margin-top:8px"><button class="btn small-btn primary block" data-act="week-shop" data-v="' + best.replace('+', '') + '">Shop at ' + h((SHOPS.find(x => x.id === best.replace('+', '')) || {}).name) + ' this week</button></div>' : '')) + '</div><div class="compare">';
+      (!currentWeek().locked && best.replace('+', '') !== weekShop() ? '<div style="margin-top:8px"><button class="btn small-btn primary block" data-act="week-shop" data-v="' + best.replace('+', '') + '">Switch to ' + h((SHOPS.find(x => x.id === best.replace('+', '')) || {}).name) + '</button></div>' : '')) + '</div><div class="compare">';
   for (const k of order) {
     const T = B.totals[k]; const flags = [];
     if (!T.comparable && k.includes('+')) continue;

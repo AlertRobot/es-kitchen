@@ -22,7 +22,7 @@ let fails = 0; const ok = (c, what) => { console.log((c ? 'ok   ' : 'FAIL ') + w
   await act('tab', 'settings'); await act('set-page', 'household');
   await tap('[data-act="hh-other"]');
   ok(/Set up your kitchen/.test(T('#app')), 'other households: the household page shows');
-  ok(/Back to Whitfield kitchen/.test(T('[data-act="hh-back"]')), 'other households: says where Back goes');
+  ok(/Back to your kitchen/.test(T('[data-act="hh-back"]')), 'other households: there\u2019s a way back');
   await tap('[data-act="hh-back"]');
   ok(/Household & invites/.test(T('#app h1')) && !d.querySelector('[data-act="hh-back"]'), 'other households: Back returns to the settings page');
   await tap('[data-act="hh-other"]'); await wait(30);
