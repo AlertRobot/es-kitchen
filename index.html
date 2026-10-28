@@ -188,7 +188,7 @@ textarea.input { min-height: 72px; resize: vertical; }
 /* bottom nav */
 .nav { position: fixed; left: 0; right: 0; bottom: 0; z-index: 25; background: var(--bg); border-top: 1px solid var(--line); padding-bottom: env(safe-area-inset-bottom, 0px); padding-left: max(8px, env(safe-area-inset-left, 0px)); padding-right: max(8px, env(safe-area-inset-right, 0px)); }
 .nav .in { max-width: 760px; margin: 0 auto; display: grid; grid-template-columns: repeat(5, 1fr); }
-.nav button { border: 0; background: none; min-height: 62px; display: grid; justify-items: center; align-content: center; gap: 3px; font-size: 0.75rem; font-weight: 700; color: var(--muted); }
+.nav button { border: 0; background: none; min-height: 62px; min-width: 0; display: grid; justify-items: center; align-content: center; gap: 3px; font-size: min(0.75rem, 3.6vw); font-weight: 700; color: var(--muted); }
 .nav button svg { width: 24px; height: 24px; }
 .nav button.on { color: var(--accent); }
 
@@ -264,6 +264,7 @@ details > summary { cursor: pointer; font-weight: 700; min-height: 44px; display
 .chips.wrapchips .chip { min-height: 38px; }
 .spinner.sm { width: 20px; height: 20px; border-width: 3px; }
 .eqgrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+@media (max-width: 300px) { .eqgrid { grid-template-columns: minmax(0, 1fr); } }
 @media (min-width: 560px) { .eqgrid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 .eq { min-height: 56px; border-radius: var(--r-sm); border: 1.5px solid var(--line); background: var(--surface); display: flex; align-items: center; gap: 8px; padding: 0 12px; font-weight: 700; text-align: left; }
 .eq svg { width: 20px; height: 20px; flex: none; }
@@ -272,6 +273,7 @@ details > summary { cursor: pointer; font-weight: 700; min-height: 44px; display
 .code { font-family: var(--f-data); font-size: 1.6rem; letter-spacing: 0.18em; }
 .code-input { font-family: var(--f-data); font-size: 1.4rem; letter-spacing: 0.2em; text-transform: uppercase; text-align: center; }
 .auth { display: grid; gap: 16px; max-width: 460px; margin: 0 auto; padding-top: 24px; }
+.auth .backlink { justify-self: start; display: inline-flex; align-items: center; gap: 4px; padding: 0; }
 .brand { text-align: center; display: grid; justify-items: center; gap: 8px; }
 .brand-mark img { width: 100%; height: 100%; display: block; }
 .brand-mark { width: 72px; height: 72px; border-radius: 20px; background: var(--accent); color: var(--accent-fg); display: grid; place-items: center; font-family: var(--f-display); font-weight: 800; font-size: 1.4rem; }
@@ -349,6 +351,7 @@ details > summary svg { width: 18px; height: 18px; }
 .cook .chead > b.grow { flex: 1 1 160px; }
 .cook .chead .btn, .cook .chead .icon-btn, .cook .chead .chip { flex: none; }
 .cook .steptext, .cook .steptitle { overflow-wrap: anywhere; }
+.cook .ings .ing > span { min-width: 0; overflow-wrap: break-word; }
 @media (max-height: 500px) { .cook .chead, .cook .cfoot { padding-block: 6px; } .cook .cfoot .btn { min-height: 48px; } .cook .steptext { font-size: 1.15rem; } .cook .steptitle { font-size: 1.25rem; } .cookimg img { max-height: 30vh; } }
 
 .fimg { position: relative; display: block; aspect-ratio: 4 / 3; background: var(--surface-2); overflow: hidden; }
@@ -386,7 +389,7 @@ details > summary svg { width: 18px; height: 18px; }
 @media (prefers-color-scheme: dark) { :root[data-oled]:not([data-theme="light"]) { --bg: #000000; } }
 :root[data-oled][data-theme="dark"] { --bg: #000000; }
 :root[data-size="large"] { font-size: 18px; } :root[data-size="large"] body { font-size: 19px; }
-.swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 8px; }
+.swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(6rem, 1fr)); gap: 8px; }
 .swatch { display: grid; gap: 6px; justify-items: center; padding: 10px 6px; border-radius: var(--r-sm); border: 1.5px solid var(--line); background: var(--surface); font-weight: 700; font-size: 0.85rem; }
 .swatch.on { border-color: var(--fg); box-shadow: inset 0 0 0 1px var(--fg); }
 .swatch i { width: 40px; height: 40px; border-radius: 50%; display: block; border: 1px solid rgba(0,0,0,0.08); }
@@ -396,6 +399,8 @@ details > summary svg { width: 18px; height: 18px; }
 .statline b { color: var(--fg); font-size: 1rem; }
 .meter.slim { height: 3px; margin: 0 auto; width: min(260px, 70%); }
 .lockline { display: flex; align-items: center; gap: 8px; min-height: 48px; padding: 0 14px; border-radius: 999px; background: var(--accent-soft); font-size: 0.95rem; }
+/* asking "Unlock?": the two buttons go under the name when they don't fit beside it */
+.lockline:has(.btn) { flex-wrap: wrap; row-gap: 6px; border-radius: var(--r); padding: 8px 12px; }
 .tonight.slim { padding: 10px 12px; gap: 0; }
 /* calmer Week layouts */
 .day .when .whochip { margin: 6px auto 0; }
@@ -430,7 +435,7 @@ details > summary svg { width: 18px; height: 18px; }
 .mrow .mi { width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent); }
 .mrow .mt { display: grid; gap: 1px; min-width: 0; }
 .mrow .mt b { font-size: 1rem; }
-.mrow .mt span { color: var(--muted); font-size: 0.85rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mrow .mt span { color: var(--muted); font-size: 0.85rem; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
 .mrow > svg { color: var(--muted); }
 .seg.full { display: flex; width: 100%; }
 /* full-width segments share the room by how long their labels are, each on one line */
@@ -453,7 +458,7 @@ details.fold > .in { padding: 0 16px 16px; display: grid; gap: 10px; }
 /* recipe carousels and photo cards */
 .shelf { display: grid; gap: 8px; min-width: 0; }
 .shelf .row h2 { font-size: 1.1rem; }
-.carousel { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(150px, 42%); gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; margin-inline: -16px; padding: 2px 16px 6px; scroll-padding-inline: 16px; }
+.carousel { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(max(150px, 9.5rem), 42%); gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; margin-inline: -16px; padding: 2px 16px 6px; scroll-padding-inline: 16px; }
 .carousel::-webkit-scrollbar { display: none; }
 @media (min-width: 620px) { .carousel { grid-auto-columns: minmax(170px, 28%); } }
 .carousel > * { scroll-snap-align: start; }
@@ -465,7 +470,7 @@ details.fold > .in { padding: 0 16px 16px; display: grid; gap: 10px; }
 .vcard .vb { display: grid; gap: 2px; padding: 8px 10px 10px; align-content: start; min-width: 0; }
 .vcard .vb b { font-size: 0.95rem; line-height: 1.25; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .vcard .vb .small { overflow-wrap: anywhere; }
-.vcard .vtag { position: absolute; left: 8px; bottom: 8px; max-width: calc(100% - 16px); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.vcard .vtag { position: absolute; left: 8px; bottom: 8px; max-width: calc(100% - 16px); white-space: normal; line-height: 1.2; padding-block: 3px; border-radius: 10px; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
 .vcard .vstar { position: absolute; right: 8px; top: 8px; }
 .tag.onimg { background: rgba(0,0,0,0.62); color: #fff; }
 .backupstat { display: grid; grid-template-columns: auto 1fr; gap: 10px; align-items: center; }
@@ -642,6 +647,6 @@ details.fold > .in { padding: 0 16px 16px; display: grid; gap: 10px; }
 <nav class="nav" aria-label="Sections"><div class="in" id="nav"></div></nav>
 <div id="toast" class="toast" hidden role="status"></div>
 <script src="firebase-config.js"></script>
-<script src="app.js?v=mvr4l7nu"></script>
+<script src="app.js?v=mvrddyv4"></script>
 </body>
 </html>
