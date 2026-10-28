@@ -32,10 +32,10 @@ const change = (q, val) => { const el = d.querySelector(q); if (!el) { console.l
   console.log('4 BL section:', txt('.blpanel').slice(0, 200));
   click('[data-act="bl-pick"][data-v$="|b|0"]'); await wait(800);
   console.log('5 picker:', txt('#sheet .sbody').slice(0, 220));
-  const wb = [...d.querySelectorAll('#sheet [data-act="bl-add"]')].find(b => /Weetabix with Milk/.test(b.textContent)); wb.click(); await wait(500);
+  const wb = [...d.querySelectorAll('#sheet [data-act="bl-add"]')].find(b => /Weetabix with milk/i.test(b.textContent)); wb.click(); await wait(500);
   click('#sheet [data-act="bl-usual"]'); await wait(200); click('#sheet [data-act="sheet-back"]'); await wait(200);
   click('[data-act="bl-pick"][data-v$="|l|0"]'); await wait(800);
-  const pb = [...d.querySelectorAll('#sheet [data-act="bl-add"]')].find(b => /Protein Bar/.test(b.textContent)); pb.click(); await wait(400);
+  const pb = [...d.querySelectorAll('#sheet [data-act="bl-add"]')].find(b => /Protein bar/i.test(b.textContent)); pb.click(); await wait(400);
   click('#sheet [data-act="bl-usual"]'); await wait(200); click('#sheet [data-act="sheet-back"]'); await wait(300);
   console.log('6 days:', [...d.querySelectorAll('.blday')].slice(0, 3).map(x => x.textContent.replace(/\s+/g, ' ')).join(' || '));
   console.log('  avg:', [...d.querySelectorAll('.blpanel p')].map(p => p.textContent).pop());
