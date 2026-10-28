@@ -675,6 +675,9 @@ function renderWeek() {
   const todayIdx = daysBetween(w.start, TODAY);
   if (S.weekUnsure && !planned) out += '<div class="note warn">No signal, so this phone hasn\u2019t been able to fetch this week yet. If it\u2019s been planned on another phone, the plan shows here once you\u2019re back online. Planning it here now would replace theirs.</div>';
   out += tonightAndRatings(w, todayIdx) + plateAsks(w) + kcalGlance(w, todayIdx) + makeWithWhatYouHave(w, sim);
+  // nothing planned yet: the one thing to do is plan it, so that comes first rather than under seven empty nights
+  const footFirst = !planned && !locked;
+  if (footFirst) out += weekFoot(w, emptyN, planned, locked);
   const defrost = []; (sim.defrostNotes || []).forEach(n => { const k = defrost.find(x => x.d === n.d && x.i === n.i && x.meal === n.meal); if (k) k.q += n.q; else defrost.push({ ...n }); });
   out += '<div class="days">';
   const treatDays = S.settings.treatDays || [];
@@ -709,7 +712,7 @@ function renderWeek() {
     } else if (none) {
       out += '<button class="meal empty out" data-act="whosin" ' + (locked ? 'disabled' : '') + '>Nobody in for dinner <span class="small" style="font-weight:400">' + h(eaters.map(p => awayOn(w, p, d) === 'day' ? p.name + ' away' : p.name + ' out').join(' \u00b7 ')) + '</span></button>';
     } else {
-      out += '<button class="meal empty" data-act="pick" data-v="' + d + '" ' + (locked ? 'disabled' : '') + '>' + (whoTag ? whoTag + ' ' : '') + (locked ? 'Nothing planned' : '+ Choose dinner' + (isTreat ? ' <span class="small" style="font-weight:400">(treat night)</span>' : d < 5 ? ' <span class="small" style="font-weight:400">(≤' + S.settings.weeknightCap + ' min)</span>' : '')) + '</button>';
+      out += '<button class="meal empty" data-act="pick" data-v="' + d + '" ' + (locked ? 'disabled' : '') + '>' + (whoTag ? whoTag + ' ' : '') + (locked ? '<span>Nothing planned</span>' : '<span>+ Choose dinner</span>' + (isTreat ? '<span class="small hint">Treat night</span>' : d < 5 ? '<span class="small hint">≤' + S.settings.weeknightCap + ' min</span>' : '')) + '</button>';
     }
     if (filled) defrost.filter(n => n.d === d + 1 || (d === 0 && n.d === 0)).forEach(n => { const what = n.meal ? 'the frozen ' + h(rt(S.RMAP[n.meal] || { title: 'meal' })) : h(leftText(n.i, n.q)); out += '<div class="daynote">' + ICON.snow + '<span>' + (n.d === d ? 'Defrost ' + what + ' in the fridge first thing (for tonight)' : 'Take ' + what + ' out of the freezer tonight, to thaw in the fridge for ' + DAY_LONG[n.d]) + '</span></div>'; });
     if (filled) sim.freezeNotes.filter(n => !n.onArrival && n.d === d).forEach(n => { out += '<div class="daynote">' + ICON.snow + '<span>Freeze the spare ' + h(leftText(n.i, n.q)) + ' tonight</span></div>'; });
@@ -717,7 +720,12 @@ function renderWeek() {
     out += '</div>';
   }
   out += '</div>';
-    out += '<div class="weekfoot">';
+  return footFirst ? out : out + weekFoot(w, emptyN, planned, locked);
+}
+// what to do next with the week: plan it, lock it in, or (once locked) who did and how to unlock
+function weekFoot(w, emptyN, planned, locked) {
+    const todayIdx = daysBetween(w.start, TODAY);
+    let out = '<div class="weekfoot">';
     if (S.busy) out += '<button class="btn primary block" disabled><span class="spinner sm" aria-hidden="true"></span> Planning\u2026</button>';
     else if (locked) out += '<div class="lockline">' + ICON.lock + '<span class="grow">Locked in by <b>' + h(w.locked.by) + '</b></span>' + (S.confirm.unlock ? '<button class="btn small-btn danger" data-act="unlock-yes">Unlock</button><button class="btn small-btn" data-act="unlock-no">Keep</button>' : '<button class="linkish small" data-act="unlock">Unlock</button>') + '</div>';
     else if (emptyN) out += '<button class="btn primary block" data-act="fill">' + (S.weekUnsure && S.confirm.fillAnyway ? 'Plan it anyway' : 'Fill ' + (planned ? 'the rest' : 'the week') + ' for me') + '</button>';
@@ -727,7 +735,7 @@ function renderWeek() {
       if (emptyN && planned) links.push('<button class="linkish small" data-act="lock">Lock in as it is</button>');
       if (planned) links.push(S.confirm.clear ? '<span class="small">Clear every night? <button class="linkish small" style="color:var(--bad)" data-act="clear-yes">Yes, clear</button> <button class="linkish small" data-act="clear-no">No</button></span>' : '<button class="linkish small" data-act="clear">Clear week</button>');
       const ev = S.people.filter(p => p.dinner !== false);
-      if (planned && ev.length > 1) { const pend = ev.filter(p => w.days.some((x, k) => x.r && !x.takeaway && !voteOf(w, p.id, k))); links.unshift('<button class="linkish small" data-act="votes">' + (pend.length ? 'Thumbs up or down' + (pend.length < ev.length ? ' (' + h(pend.map(p => nick(p.name)).join(' & ')) + ' to do)' : '') : '\ud83d\udc4d Everyone\u2019s had a say') + '</button>'); }
+      if (planned && ev.length > 1) { const pend = ev.filter(p => w.days.some((x, k) => k >= todayIdx && x.r && !x.takeaway && !voteOf(w, p.id, k))); links.unshift('<button class="linkish small" data-act="votes">' + (pend.length ? 'Thumbs up or down' + (pend.length < ev.length ? ' (' + h(pend.map(p => nick(p.name)).join(' & ')) + ' to do)' : '') : '\ud83d\udc4d Everyone\u2019s had a say') + '</button>'); }
       if (links.length) out += '<div class="weekfoot-links">' + links.join('<span class="dotsep" aria-hidden="true">\u00b7</span>') + '</div>';
     }
     out += '</div>';
@@ -759,8 +767,10 @@ function sheetVotes() {
   const w = currentWeek(), me = mePerson();
   if (!me) return '<p class="muted">Choose who you are first: Settings → Who’s eating.</p>';
   let out = '<p class="muted small">Give each dinner a thumbs up or down. Anything one of you isn’t keen on shows on the Week tab, so you can swap it before locking in.</p><div class="mgroup">';
+  // (nights already gone have nothing left to decide)
+  const t0 = daysBetween(w.start, TODAY);
   w.days.forEach((x, d) => {
-    const r = x.r && !x.takeaway && S.RMAP[x.r]; if (!r) return;
+    const r = x.r && !x.takeaway && d >= t0 && S.RMAP[x.r]; if (!r) return;
     const o = othersVotes(w, d), mine = voteOf(w, me.id, d);
     out += '<div class="voterow">' + tileHtml(r) + '<span class="grow" style="min-width:0"><span class="label">' + DAY_LONG[d] + '</span><b class="ellip" style="display:block">' + h(rt(r)) + '</b>' + (o ? '<span class="small muted">' + o + '</span>' : '') +
       (mine < 0 && !w.locked ? ' <button class="linkish small" data-act="swap-day" data-v="' + d + '">Swap it</button>' : '') + '</span>' + voteBtns(w, me.id, d) + '</div>';
@@ -932,13 +942,14 @@ function prepPlan(w, p) {
 function blSection(w) {
   const ps = blPeople();
   if (!ps.length) return '<section class="panel"><p class="muted small">Plan breakfasts and packed lunches per person, with calories and protein for the whole day. Turn it on for each of you in Settings → Who’s eating.</p><button class="btn" data-act="go-set" data-v="people">Set it up</button></section>';
-  if (!S.blPerson || !ps.find(p => p.id === S.blPerson)) S.blPerson = ps[0].id;
+  // (opens on whoever is using this phone)
+  if (!S.blPerson || !ps.find(p => p.id === S.blPerson)) S.blPerson = (mePerson() || ps[0]).id;
   const p = personById(S.blPerson);
   const target = Number(p.kcalTarget) || 0, ptarget = Number(p.proteinTarget) || 0;
   p.plan = p.plan || {};
   let out = (ps.length > 1 ? '<span class="seg full">' + ps.map(x => '<button class="' + (x.id === p.id ? 'on' : '') + '" data-act="bl-person" data-v="' + h(x.id) + '">' + h(nick(x.name)) + '</button>').join('') + '</span>' : '') + '<section class="panel blpanel">';
-  if (!(p.plan && (p.plan.b || p.plan.l))) out += '<p class="note small">' + h(p.name) + '’s breakfasts and lunches aren’t being planned. <button class="linkish" data-act="go-set" data-v="people" data-p="' + h(p.id) + '">Turn it on</button></p>';
-  out += '<p class="muted small">' + (target ? 'Daily target ' + target.toLocaleString('en-GB') + ' kcal' + (ptarget ? ' · ' + ptarget + 'g protein' : '') + '. ' : '') + 'Totals include ' + h(p.name) + '’s share of dinner' + (portionOf(p) !== 1 ? ' (' + (portionOf(p) === 0.75 ? '¾' : portionOf(p) === 0.5 ? '½' : portionOf(p)) + ' portion)' : '') + '.</p>';
+  if (!(p.plan && (p.plan.b || p.plan.l))) out += '<p class="note small">' + h(nick(p.name)) + '’s breakfasts and lunches aren’t being planned. <button class="linkish" data-act="go-set" data-v="people" data-p="' + h(p.id) + '" data-s="pplan">Turn it on</button></p>';
+  out += '<p class="muted small">' + (target ? 'Daily target ' + target.toLocaleString('en-GB') + ' kcal' + (ptarget ? ' · ' + ptarget + 'g protein' : '') + '. ' : '') + 'Totals include ' + h(nick(p.name)) + '’s share of dinner' + (portionOf(p) !== 1 ? ' (' + (portionOf(p) === 0.75 ? '¾' : portionOf(p) === 0.5 ? '½' : portionOf(p)) + ' portion)' : '') + '.</p>';
   out += '<div class="blgrid">';
   let sumK = 0, sumP = 0, n = 0;
   for (let d = 0; d < 7; d++) {
@@ -1208,7 +1219,7 @@ function renderShop() {
   }
   if (sim.skippedOpt && sim.skippedOpt.length) { const ids = Array.from(new Set(sim.skippedOpt.map(x => x.i))); out += '<p class="muted small">Left off because they’re optional and you’re low: ' + ids.map(id => h(lowerName(id))).join(', ') + '.</p>'; }
   out += '<section class="panel" id="sec-extras"><h3>Anything else?</h3>';
-  w.extras.forEach((x, k) => { out += '<div class="item ' + (x.done ? 'done' : '') + '" style="border-top:0;padding:4px 0"><button class="check ' + (x.done ? 'on' : '') + '" data-act="tick-extra" data-v="' + h(x.id) + '" aria-label="Tick ' + h(x.name) + '">' + (x.done ? ICON.tick : '') + '</button><div class="iname">' + h(x.name) + '</div><button class="icon-btn" data-act="del-extra" data-v="' + h(x.id) + '" aria-label="Remove ' + h(x.name) + '">' + ICON.close + '</button></div>'; });
+  w.extras.forEach((x, k) => { out += '<div class="item ' + (x.done ? 'done' : '') + '" style="border-top:0;padding:4px 0"><button class="check ' + (x.done ? 'on' : '') + '" data-act="tick-extra" data-v="' + h(x.id) + '" aria-label="Tick ' + h(x.name) + '">' + (x.done ? ICON.tick : '') + '</button><div class="iname itap" data-act="tick-extra" data-v="' + h(x.id) + '">' + h(x.name) + '</div><button class="icon-btn" data-act="del-extra" data-v="' + h(x.id) + '" aria-label="Remove ' + h(x.name) + '">' + ICON.close + '</button></div>'; });
   const haveIds = Object.keys(w.have || {}).filter(id => S.ING[id]);
   if (haveIds.length) out += '<details class="havebox"><summary>Already at home (' + haveIds.length + ')</summary>' + haveIds.map(id => '<div class="row between ruled-sm"><span>' + h(ingName(id)) + '</span><button class="chip" data-act="unhave" data-v="' + h(id) + '">Put back on list</button></div>').join('') + '</details>';
   out += '<form class="row" data-form="extra"><input class="input grow" id="extra-name" placeholder="e.g. toilet roll, milk for tea" aria-label="Add an item"><button class="btn" type="submit">Add</button></form></section>';
@@ -1228,7 +1239,7 @@ function shopRowHtml(row, B, w) {
     why = row.always ? 'always buy when low' : 'for ' + Array.from(new Set(row.forDays)).map(x => DAY_NAMES[x]).join(', ') + (forR.length ? ' (' + h(forR[0].split(/ with | & |,/)[0]) + (forR.length > 1 ? ' +' + (forR.length - 1) : '') + ')' : '');
   } else why = 'need ' + fmtQty(row.need, ing.unit);
   let out = '<div class="item ' + (done ? 'done' : '') + '"><button class="check ' + (done ? 'on' : '') + '" data-act="tick" data-v="' + h(row.i) + '" aria-label="' + (done ? 'Untick ' : 'Tick ') + h(ing.name) + '" aria-pressed="' + done + '">' + (done ? ICON.tick : '') + '</button>' +
-    '<div style="min-width:0"><div class="iname">' + h(ing.name) + '</div><div class="muted small">' + packTxt + ' · ' + why + '</div>' + (row.staple ? '<button class="linkish small" data-act="have" data-v="' + h(row.i) + '">Skip this week</button>' : '') + '</div>' +
+    '<div class="itap" data-act="tick" data-v="' + h(row.i) + '" style="min-width:0"><div class="iname">' + h(ing.name) + '</div><div class="muted small">' + packTxt + ' · ' + why + '</div>' + (row.staple ? '<button class="linkish small" data-act="have" data-v="' + h(row.i) + '">Skip this week</button>' : '') + '</div>' +
     '<button class="more" data-act="expand" data-v="s:' + h(row.i) + '" aria-expanded="' + !!open + '">' + (ps.missing ? '<span class="tag warn">add price</span>' : '<span class="money">' + fmtMoney(ps.cost) + '</span>' + (ps.stale ? ' <span class="tag warn">old</span>' : '')) + '</button>';
   if (open) {
     const sp = shopPrice(ing, weekShop(), false);
@@ -1325,9 +1336,9 @@ function renderKitchen() {
   const q = (S.pantryQ || '').toLowerCase();
   const staples = Object.values(S.ING).filter(i => i.staple && (!q || i.name.toLowerCase().includes(q))).sort((a, b) => a.name.localeCompare(b.name));
   if (!S.pantry.checkedOnce) out += '<div class="note"><b>Quick cupboard check.</b> Everything starts as \u201cGot it\u201d, so the first list assumes you have it all. Open each group and tap <b>Low</b> on anything you\u2019re out of.<div style="margin-top:8px"><button class="btn small-btn" data-act="pantry-checked">Done, that\u2019s everything</button></div></div>';
-  // (how Low and Always buy work: said in full until the first cupboard check, then folded away)
+  // (how Low and Always buy work: folded away, so the first cupboard check isn't two notes saying much the same)
   const howLow = 'Mark something <b>Low</b> and it goes on the shopping list only in a week where a meal needs it. Turn on <b>Always buy</b> for things you use every day, like milk for tea.';
-  out += (S.pantry.checkedOnce ? '<details class="small muted"><summary>How Low and Always buy work</summary><p style="margin:0">' + howLow + '</p></details>' : '<p class="muted small">' + howLow + '</p>') +
+  out += '<details class="small muted"><summary>How Low and Always buy work</summary><p style="margin:0">' + howLow + '</p></details>' +
     '<input class="search" type="search" id="pantryq" placeholder="Search your staples, or add one" value="' + h(S.pantryQ || '') + '" data-input="pantryq" aria-label="Search your staples, or find one to add">';
   const groups = {}; staples.forEach(i => (groups[i.aisle || 'Other'] = groups[i.aisle || 'Other'] || []).push(i));
   const order = AISLE_ORDER.filter(a => groups[a]).concat(Object.keys(groups).filter(a => !AISLE_ORDER.includes(a)));
@@ -1696,7 +1707,7 @@ function shopLogPanel(B) {
   const list = shopsThisMonth().sort((a, b) => a.date < b.date ? 1 : -1), total = list.reduce((a, t) => a + (Number(t.amount) || 0), 0), bud = Number(S.settings.monthlyBudget) || 450;
   const me = mePerson(), est = B ? B.prefTotal : 0;
   let out = '<section class="panel"><div class="row between"><h2>Shops this month</h2><span class="small money">' + fmtMoney(total) + ' of ' + fmtMoney(bud) + '</span></div><div class="meter"><i class="' + (total > bud ? 'over' : '') + '" style="width:' + Math.min(100, total / bud * 100).toFixed(0) + '%"></i></div>';
-  out += list.length ? '<div class="leftlist">' + list.map(t => { const who = personById(t.paidBy); return '<div class="left"><span style="flex:1;min-width:0">' + h(niceDate(t.date)) + ' · ' + h(SHOP_KEY_NAMES[t.shop] || t.shop || 'Shop') + '<span class="small muted" style="display:block">' + (who ? h(who.name) + ' paid' : '') + (t.split === 'half' ? ' · half each, ' + fmtMoney(t.amount / 2) + ' each' : '') + (t.source === 'budgie' ? ' · from Budgie' : t.budgie && t.budgie.state === 'sent' ? ' · in Budgie' : t.budgie && t.budgie.state === 'refused' ? ' · Budgie didn’t take this one' : S.bg.cfg && t.budgie && t.budgie.state === 'queued' ? bgQueuedText(t, who, me) : '') +
+  out += list.length ? '<div class="leftlist">' + list.map(t => { const who = personById(t.paidBy); return '<div class="left"><span style="flex:1;min-width:0">' + h(niceDate(t.date)) + ' · ' + h(SHOP_KEY_NAMES[t.shop] || t.shop || 'Shop') + '<span class="small muted" style="display:block">' + (who ? h(nick(who.name)) + ' paid' : '') + (t.split === 'half' ? ' · ' + fmtMoney(t.amount / 2) + ' each' : '') + (t.source === 'budgie' ? ' · from Budgie' : t.budgie && t.budgie.state === 'sent' ? ' · in Budgie' : t.budgie && t.budgie.state === 'refused' ? ' · Budgie didn’t take this one' : S.bg.cfg && t.budgie && t.budgie.state === 'queued' ? bgQueuedText(t, who, me) : '') +
     // a shop logged here can be taken off (a typo, a duplicate); one from Budgie is changed there
     (t.source === 'budgie' ? '' : S.confirm['rmshop:' + t.id] ? ' · Remove it? <button class="linkish small" style="color:var(--bad)" data-act="rm-shop-yes" data-v="' + h(t.id) + '">Yes</button> <button class="linkish small" data-act="rm-shop-no">No</button>' : ' · <button class="linkish small" data-act="rm-shop" data-v="' + h(t.id) + '">Remove</button>') + '</span></span><span class="money">' + fmtMoney(t.amount) + '</span></div>'; }).join('') + '</div>' : '<p class="muted small">Nothing logged this month yet.</p>';
   out += '<form class="stack" data-form="logshop" style="gap:8px"><span class="label">Done a shop? Log what you paid</span><div class="lsrow"><input class="input" id="ls-amt" type="number" step="0.01" min="0" inputmode="decimal" placeholder="' + (est ? est.toFixed(2) : '0.00') + '" aria-label="Amount paid in pounds"><select class="input" id="ls-shop" aria-label="Shop">' + SHOPS.map(s => '<option value="' + s.id + '"' + (s.id === weekShop() ? ' selected' : '') + '>' + h(s.name) + '</option>').join('') + '</select></div>' +
@@ -1909,10 +1920,10 @@ function setPeople() {
       out += '<div class="stack" style="gap:6px"><span class="label">' + label + '</span><div class="pchips">' + (p[key] || []).map((t, k) => '<span class="chip">' + h(t) + '<button data-act="pref-del" data-v="' + h(p.id) + '" data-k="' + key + '" data-i="' + k + '" aria-label="Remove ' + h(t) + '">' + ICON.close + '</button></span>').join('') + '</div>' +
         '<form class="row" data-form="pref-add" data-v="' + h(p.id) + '" data-k="' + key + '"><input class="input grow" id="pa-' + h(p.id) + '-' + key + '" placeholder="' + (key === 'wontEat' ? 'e.g. mushrooms, prawns' : key === 'likes' ? 'e.g. Thai, halloumi, spicy' : 'e.g. peppers, coriander') + '" aria-label="Add to ' + label + ' for ' + h(p.name) + '"><button class="btn" type="submit">Add</button></form></div>';
     }
-    out += '</section><section class="panel">' + personPlanHtml(p) + '</section>';
+    out += '</section><section class="panel" id="pplan">' + personPlanHtml(p) + '</section>';
     out += '<div class="row">' + (S.confirm['rmp:' + p.id] ? '<button class="btn danger" data-act="rm-person-yes" data-v="' + h(p.id) + '">Yes, remove ' + h(nick(p.name)) + '</button>' : '<button class="linkish small" data-act="rm-person" data-v="' + h(p.id) + '">Remove ' + h(nick(p.name)) + ' from the plan</button>') + '</div>';
   }
-  out += '<form class="row" data-form="add-person"><input class="input grow" id="np-name" placeholder="Add someone else who eats with you" aria-label="Name"><button class="btn" type="submit">Add</button></form>';
+  out += '<form class="row" data-form="add-person"><input class="input grow" id="np-name" placeholder="Add someone else" aria-label="Name of someone else who eats with you"><button class="btn" type="submit">Add</button></form>';
   return out;
 }
 function setEquipment() {
@@ -2013,7 +2024,7 @@ function personPlanHtml(p) {
   return '<div class="stack" style="gap:8px"><span class="label">Portions &amp; daily plan</span>' +
     '<div class="stack" style="gap:6px"><span class="small">Dinner portion</span><span class="seg full">' + [[0.5, '½'], [0.75, '¾'], [1, 'Normal'], [1.25, '1¼'], [1.5, '1½']].map(([v, n]) => '<button class="' + (portionOf(p) === v ? 'on' : '') + '" data-act="p-portion" data-v="' + h(p.id) + '" data-n="' + v + '">' + n + '</button>').join('') + '</span></div>' +
     '<label class="row small"><input type="checkbox" class="cb" data-change="p-dinner" data-v="' + h(p.id) + '" ' + (p.dinner === false ? '' : 'checked') + '> Eats the planned dinners</label>' +
-    '<div class="grid2"><label class="field"><span>Daily calories <span class="muted">(optional)</span></span><input class="input" type="number" min="0" step="50" id="pk-' + h(p.id) + '" data-change="p-kcal" data-v="' + h(p.id) + '" value="' + (p.kcalTarget || '') + '"></label><label class="field"><span>Protein, g <span class="muted">(optional)</span></span><input class="input" type="number" min="0" step="5" id="pp-' + h(p.id) + '" data-change="p-protein" data-v="' + h(p.id) + '" value="' + (p.proteinTarget || '') + '"></label></div>' +
+    '<div class="grid2"><label class="field"><span>Daily calories</span><input class="input" type="number" min="0" step="50" placeholder="Optional" id="pk-' + h(p.id) + '" data-change="p-kcal" data-v="' + h(p.id) + '" value="' + (p.kcalTarget || '') + '"></label><label class="field"><span>Daily protein (g)</span><input class="input" type="number" min="0" step="5" placeholder="Optional" id="pp-' + h(p.id) + '" data-change="p-protein" data-v="' + h(p.id) + '" value="' + (p.proteinTarget || '') + '"></label></div>' +
     '<label class="row"><input type="checkbox" class="cb" data-change="p-plan" data-s="b" data-v="' + h(p.id) + '" ' + (plan.b ? 'checked' : '') + '> Plan breakfasts</label>' + (plan.b ? dayChips('b') + usual('b') : '') +
     '<label class="row"><input type="checkbox" class="cb" data-change="p-plan" data-s="l" data-v="' + h(p.id) + '" ' + (plan.l ? 'checked' : '') + '> Plan lunches</label>' + (plan.l ? dayChips('l') + '<label class="row small"><input type="checkbox" class="cb" data-change="p-packed" data-v="' + h(p.id) + '" ' + (p.packed ? 'checked' : '') + '> Packed lunches to take to work (favours ones that travel)</label>' + usual('l') : '') +
     '</div>';
@@ -2274,7 +2285,7 @@ function sheetPick(top) {
   const isTreat = (S.settings.treatDays || []).includes(d);
   let out = '';
   if (isTreat) out += '<div class="note treatnote">★ <b>' + DAY_LONG[d] + ' is a treat night</b>, so treats come first.</div>';
-  if (spareIds.length) out += '<div class="note"><b>You’ll have spare:</b> ' + spareIds.slice(0, 6).map(id => h(leftText(id, spare[id]))).join(', ') + (spareIds.length > 6 ? ' and more' : '') + '. The top picks use these up.</div>';
+  if (spareIds.length) out += '<div class="note"><b>You’ll have spare:</b> ' + spareIds.slice(0, 3).map(id => h(leftText(id, spare[id]))).join(', ') + (spareIds.length > 3 ? ' and ' + (spareIds.length - 3) + ' more' : '') + '. The top picks use these up.</div>';
   const fm = (w.freezerMeals || []).filter(m => m.portions >= 1);
   if (fm.length) out += '<section class="stack"><h3>From the freezer</h3>' + fm.map(m => { const r = S.RMAP[m.r]; return r ? '<div class="sugg"><span class="tile ' + cuisineClass(r.cuisine) + '">' + h(r.icon) + '</span><button class="pick" data-act="choose-freezer" data-v="' + h(r.id) + '"><b>' + h(rt(r)) + '</b><span class="why">' + (Number(m.portions) || 0) + ' portion' + (m.portions > 1 ? 's' : '') + ' frozen · nothing to buy</span></button><span></span></div>' : ''; }).join('') + '</section>';
   // rows that each show something different, without repeating a recipe or (within a row) a cuisine
@@ -2310,7 +2321,10 @@ function sheetPick(top) {
 }
 function suggHtml(s, best) {
   const r = s.r; const parts = [];
-  if (s.uses.length) parts.push('Uses <b>' + s.uses.map(u => h(leftText(u.i, u.q))).join(', ') + '</b>');
+  // (the two that matter most, so each choice stays a few lines long)
+  const worth = u => (S.ING[u.i] ? u.q * unitPrice(S.ING[u.i], S.settings.shop, true) : 0);
+  const uses = s.uses.filter(u => S.ING[u.i]).sort((a, b) => worth(b) - worth(a));
+  if (uses.length) parts.push('Uses <b>' + uses.slice(0, 2).map(u => h(leftText(u.i, u.q))).join(', ') + '</b>' + (uses.length > 2 ? ' and ' + (uses.length - 2) + ' more' : ''));
   parts.push(s.dBuy < 0.05 ? '<b>nothing extra to buy</b>' : 'adds <span class="money">' + fmtMoney(s.dBuy) + '</span> to the shop');
   if (s.dWaste < -0.1) parts.push('cuts waste by <span class="money">' + fmtMoney(-s.dWaste) + '</span>');
   else if (s.dWaste > 0.1) parts.push('leaves <span class="money">' + fmtMoney(s.dWaste) + '</span> likely unused');
@@ -2370,33 +2384,36 @@ function sheetRecipe(r, top) {
   let out = heroHtml(r);
   out += '<div class="row" style="align-items:flex-start;gap:16px">' + (out ? '' : tileHtml(r, true)) + '<div class="stack" style="gap:6px;min-width:0"><h1>' + h(r.title) + '</h1>' +
     '<div class="row wrap tagrow"><span class="tag">' + r.time + ' min</span><span class="tag">Serves ' + serv + '</span><span class="tag">' + h(r.cuisine) + '</span>' + (r.category === 'treat' ? '<span class="tag treat">Treat</span>' : '') + '<span class="tag"><span class="money">' + fmtMoney(recipeCost(r)) + '</span>/portion</span></div></div></div>';
-  if (n.kcal) out += '<div class="nutri"><div><b>' + n.kcal + '</b><span>kcal</span></div><div><b>' + n.protein + 'g</b><span>protein</span></div><div><b>' + n.carbs + 'g</b><span>carbs</span></div><div><b>' + n.fat + 'g</b><span>fat</span></div></div><p class="muted small center">Per portion, estimated from the ingredients.</p>';
+  // what you came to do (cook it, change the night, add it to a day) comes right under the name; the numbers and rating after
+  let more = '';
+  if (n.kcal) more += '<div class="nutri"><div><b>' + n.kcal + '</b><span>kcal</span></div><div><b>' + n.protein + 'g</b><span>protein</span></div><div><b>' + n.carbs + 'g</b><span>carbs</span></div><div><b>' + n.fat + 'g</b><span>fat</span></div></div><p class="muted small center">Per portion, estimated from the ingredients.</p>';
   pc.blocked.forEach(b => { out += '<div class="note warn"><b>' + h(b.person) + ' won’t eat ' + h(b.what.toLowerCase()) + '</b>, and there’s no simple swap, so this won’t be suggested.</div>'; });
   pc.swaps.forEach(s => { out += '<div class="note good"><b>Swap for ' + h(s.person) + ':</b> ' + h(s.note) + ' (' + h(s.ingName.toLowerCase()) + ').</div>'; });
   {
     const rr = S.ratings[r.id] || {}; const me = myUid(); const mine = num(rr[me] && rr[me].stars, 0);
     const others = Object.keys(rr).filter(k => k !== me && rr[k] && num(rr[k].stars, 0) >= 1).map(k => h(rr[k].name || 'Someone') + ' ' + Math.round(num(rr[k].stars, 0)) + '★');
     const rs = ratingSummary()[r.id];
-    out += '<section class="ratebox"><div class="row wrap between"><span class="label">' + (mine ? 'Your rating' : 'Made it? Rate it') + '</span>' + rateButtons(r.id, mine) + '</div>' +
+    more += '<section class="ratebox"><div class="row wrap between"><span class="label">' + (mine ? 'Your rating' : 'Made it? Rate it') + '</span>' + rateButtons(r.id, mine) + '</div>' +
       (rr[me] ? '<div><button class="linkish small" data-act="rate-clear" data-v="' + h(r.id) + '">Clear my rating</button></div>' : '') +
       (others.length ? '<p class="small muted">' + others.join(' · ') + '</p>' : '') +
       (rs && rs.avg < 3 ? '<p class="small">Rated under 3★, so it won\u2019t be suggested or added to your weeks. Change the rating to bring it back.</p>' : '') + '</section>';
   }
   if (!hasEquipment(r, S.settings)) out += '<div class="note warn">Needs a ' + h(missingEquipment(r).join(' and a ')) + ', which isn’t in your kitchen settings.</div>';
-  if (r.airFryer && S.settings.equipment && S.settings.equipment.air_fryer) out += '<div class="note"><b>Air fryer:</b> ' + h(r.airFryer) + '</div>';
+  if (r.airFryer && S.settings.equipment && S.settings.equipment.air_fryer) more += '<div class="note"><b>Air fryer:</b> ' + h(r.airFryer) + '</div>';
   if (top.d != null && w.days[top.d] && w.days[top.d].r === r.id) {
     const day = w.days[top.d];
     const eat = S.people.filter(p => p.dinner !== false);
     out += '<section class="panel"><div class="row between"><h3>' + DAY_LONG[top.d] + '</h3><button class="btn primary" data-act="cook" data-v="' + h(r.id) + '">Start cooking</button></div>' +
       (eat.length > 1 && !locked ? '<div class="stack" style="gap:6px"><span class="label">Who\u2019s eating</span><div class="row wrap" style="gap:6px">' + eat.map(p => { const a = awayOn(w, p, top.d); return '<button class="chip ' + (a ? 'outd' : 'on') + '" data-act="away-toggle" data-v="' + h(p.id) + '" data-n="' + top.d + '">' + h(nick(p.name)) + (a ? ' \u00b7 out' : '') + '</button>'; }).join('') + '</div></div>' : '') +
       dayVoteRow(w, top.d) + dayPlateRows(w, top.d) +
+      // (changing the dinner is what's most often wanted here, so it sits with the quick choices, not under the extras)
+      (locked ? '' : '<div class="row wrap"><button class="btn" data-act="change-day" data-v="' + top.d + '">Change dinner</button><button class="btn danger" data-act="remove-day" data-v="' + top.d + '">Remove</button></div>') +
       '<button class="btn block takeaway-btn" data-act="takeaway" data-v="' + top.d + '">' + ICON.bag + ' Takeaway instead?</button>' +
       (locked ? '<p class="muted small">This week is locked in. Unlock it on the Week tab to change dinners.</p>' :
         '<div class="stack" style="gap:6px"><span class="label">Guests for dinner</span><div class="row wrap"><span class="seg">' + [0, 1, 2, 3, 4].map(k => '<button class="' + ((day.guests || 0) === k ? 'on' : '') + '" data-act="guests" data-v="' + top.d + '" data-n="' + k + '">' + (k ? '+' + k : 'None') + '</button>').join('') + '</span></div></div>' +
         '<div class="stack" style="gap:6px"><span class="label">Extra portions</span><div class="row wrap"><span class="seg">' + [0, 1, 2, 4].map(k => '<button class="' + ((day.extra || 0) === k ? 'on' : '') + '" data-act="extra" data-v="' + top.d + '" data-n="' + k + '">' + (k ? '+' + k : 'None') + '</button>').join('') + '</span>' +
         ((day.extra || 0) ? '<span class="seg"><button class="' + (day.extraUse !== 'freeze' ? 'on' : '') + '" data-act="extra-use" data-v="' + top.d + '" data-s="lunch">Lunch</button><button class="' + (day.extraUse === 'freeze' ? 'on' : '') + '" data-act="extra-use" data-v="' + top.d + '" data-s="freeze">Freeze</button></span>' : '') + '</div></div>' +
-        '<div class="stack" style="gap:6px"><span class="label">Move to another day</span><div class="chips">' + DAY_NAMES.map((nm, k) => k === top.d ? '' : '<button class="chip" data-act="move-day" data-v="' + top.d + '" data-to="' + k + '">' + nm + (w.days[k].r || w.days[k].takeaway ? ' ⇄' : '') + '</button>').join('') + '</div><span class="muted small">⇄ swaps the two days</span></div>' +
-        '<div class="row wrap"><button class="btn" data-act="change-day" data-v="' + top.d + '">Change dinner</button><button class="btn danger" data-act="remove-day" data-v="' + top.d + '">Remove</button></div>') + '</section>';
+        '<div class="stack" style="gap:6px"><span class="label">Move to another day</span><div class="chips">' + DAY_NAMES.map((nm, k) => k === top.d ? '' : '<button class="chip" data-act="move-day" data-v="' + top.d + '" data-to="' + k + '">' + nm + (w.days[k].r || w.days[k].takeaway ? ' ⇄' : '') + '</button>').join('') + '</div><span class="muted small">⇄ swaps the two days</span></div>') + '</section>';
   } else if (!isDinner(r)) {
     const slot = r.meal === 'breakfast' ? 'b' : 'l';
     out += '<div class="row wrap"><button class="btn primary" data-act="cook" data-v="' + h(r.id) + '">Start cooking</button>' + (top.fromBl ? '<button class="btn soft" data-act="bl-add-from" data-v="' + h(r.id) + '">Add to ' + h(nick((personById(top.fromBl.pid) || {}).name || '')) + '\u2019s ' + DAY_LONG[top.fromBl.d] + '</button>' : '') + '</div>';
@@ -2406,6 +2423,7 @@ function sheetRecipe(r, top) {
     out += '<div class="row wrap"><button class="btn primary" data-act="cook" data-v="' + h(r.id) + '">Start cooking</button>' + (top.fromPick != null ? '<button class="btn soft" data-act="choose" data-v="' + h(r.id) + '">Add to ' + DAY_LONG[top.fromPick] + '</button>' : '') + '</div>';
     if (top.fromPick == null && !locked) out += '<div class="stack" style="gap:6px"><span class="label">Add to ' + weekLabel().toLowerCase() + ' (' + weekRange(S.weekStart) + ')</span><div class="chips">' + DAY_NAMES.map((nm, d) => '<button class="chip ' + (w.days[d].r === r.id ? 'on' : '') + '" data-act="add-to-day" data-v="' + d + '" data-r="' + h(r.id) + '">' + nm + (w.days[d].r && w.days[d].r !== r.id ? ' •' : '') + '</button>').join('') + '</div><span class="muted small">• already has a dinner (it’ll be replaced)</span></div>';
   }
+  out += more;
   out += '<section class="stack" style="gap:6px"><div class="row between"><h2>Ingredients</h2><span class="seg" aria-label="Servings">' + Array.from(new Set((isDinner(r) ? [2, 3, 4] : [1, 2, 3]).concat([serv]))).sort((a, b) => a - b).map(k => '<button class="' + (serv === k ? 'on' : '') + '" data-act="serv" data-v="' + k + '">' + k + '</button>').join('') + '</span></div><div class="ings">' +
     r.ingredients.map(l => { const ing = S.ING[l.i]; const amt = amtFor(l, f); const low = ing && ing.staple && ['low', 'out'].includes((S.pantry.status || {})[l.i]); return '<div class="ing"><span>' + h(ing ? ing.name : l.i) + (ing && ing.staple ? ' <span class="tag ' + (low ? 'warn' : '') + '">' + (low ? 'pantry · low' : 'pantry') + '</span>' : '') + (l.opt ? ' <span class="tag">optional</span>' : '') + (ing && pc.swaps.some(x => x.ingName === ing.name) ? ' <span class="tag swap">swap for ' + h(pc.swaps.filter(x => x.ingName === ing.name).map(x => nick(x.person)).join(' & ')) + '</span>' : '') + '</span><span class="amt">' + h(amt) + '</span></div>'; }).join('') + '</div></section>';
   loadStepPhotos(r);
@@ -2618,10 +2636,10 @@ function renderCook() {
   const steps = r.steps && r.steps.length ? r.steps : [{ title: '', text: 'This recipe has no method yet. Edit it to add the steps.' }];
   const k = Math.min(S.cook.step, steps.length - 1), n = steps.length, s = steps[k];
   loadStepPhotos(r);
-  el.innerHTML = '<div class="chead"><button class="icon-btn" data-act="cook-close" aria-label="Stop cooking">' + ICON.close + '</button><b class="grow ellip">' + h(rt(r)) + '</b><span id="tmrs" class="tmrs">' + timersHtml() + '</span>' + ('speechSynthesis' in window ? '<button class="chip ' + (S.cook.speak ? 'on' : '') + '" data-act="cook-speak" aria-pressed="' + !!S.cook.speak + '">' + (S.cook.speak ? 'Reading aloud' : 'Read aloud') + '</button>' : '') + '<button class="chip ' + (S.cook.showIngs ? 'on' : '') + '" data-act="cook-ings">Ingredients</button></div>' +
+  el.innerHTML = '<div class="chead"><button class="icon-btn" data-act="cook-close" aria-label="Stop cooking">' + ICON.close + '</button><b class="grow ellip">' + h(rt(r)) + '</b><span id="tmrs" class="tmrs">' + timersHtml() + '</span><span class="cchips">' + ('speechSynthesis' in window ? '<button class="chip ' + (S.cook.speak ? 'on' : '') + '" data-act="cook-speak" aria-pressed="' + !!S.cook.speak + '">' + (S.cook.speak ? 'Reading aloud' : 'Read aloud') + '</button>' : '') + '<button class="chip ' + (S.cook.showIngs ? 'on' : '') + '" data-act="cook-ings">Ingredients</button></span></div>' +
     '<div class="cbody">' + (S.cook.showIngs ? '<div class="ings" style="font-size:1.15rem">' + (cookF(r) !== 1 ? '<p class="muted small">Amounts for ' + S.cook.serv + '. The steps are written for ' + (r.servings || 2) + '.</p>' : '') + r.ingredients.map(l => '<div class="ing"><span>' + h(ingName(l.i)) + '</span><span class="amt">' + h(amtFor(l, cookF(r))) + '</span></div>').join('') + '</div>' :
       '<div class="stepno">Step ' + (k + 1) + ' of ' + n + '</div>' + (stepTitle(s) ? '<div class="steptitle">' + h(stepTitle(s)) + '</div>' : '') + '<div class="steptext">' + h(stepText(s)) + '</div>' + cookSwaps(r, k, s) + cookExtras(r, k, s) + (S.settings.equipment && S.settings.equipment.air_fryer && r.airFryer && /oven|fry|crisp|chips|wedges/i.test(stepText(s)) ? '<div class="note"><b>Air fryer:</b> ' + h(r.airFryer) + '</div>' : '')) + '</div>' +
-    '<div class="cfoot"><button class="btn" data-act="cook-prev" ' + (k === 0 ? 'disabled' : '') + '>Back</button><div class="dots" aria-hidden="true">' + steps.map((_, j) => '<i class="' + (j === k ? 'on' : '') + '"></i>').join('') + '</div><button class="btn primary" data-act="' + (k === n - 1 ? 'cook-close' : 'cook-next') + '">' + (k === n - 1 ? 'Done' : 'Next') + '</button></div>';
+    '<div class="cfoot"><button class="btn" data-act="cook-prev" ' + (k === 0 ? 'disabled' : '') + '>Back</button><div class="dots" aria-hidden="true">' + steps.map((_, j) => '<i class="' + (j === k ? 'on' : '') + '"></i>').join('') + '</div><button class="btn primary" data-act="' + (k === n - 1 ? 'cook-close' : 'cook-next') + '"' + (k === n - 1 ? ' data-v="done"' : '') + '>' + (k === n - 1 ? 'Done' : 'Next') + '</button></div>';
   el.hidden = false;
 }
 
@@ -2737,6 +2755,8 @@ function doFill(jitter, clearAuto) {
       if (!empties.some(d => filled.days[d].r)) { toast('No recipes fit the remaining days. Try loosening the weeknight time, equipment or preferences.'); render(); return; }
       // only nights that are still empty (the other phone may have chosen one meanwhile)
       mutateWeek(x => { empties.forEach(d => { if (filled.days[d].r && (!x.days[d].r || gone(x.days[d])) && !x.days[d].takeaway) x.days[d] = { ...(gone(x.days[d]) ? nightKeep(x.days[d]) : x.days[d]), ...filled.days[d], auto: true }; }); });
+      // (the button may have been under the week: show the plan from the start)
+      window.scrollTo(0, 0);
       toast('Week planned. Swap any day you don’t fancy.');
     } catch (e) { S.busy = false; render(); toast('Couldn’t plan the week.'); console.error(e); }
   });
@@ -2784,7 +2804,9 @@ document.addEventListener('click', e => {
     case 'backup-off': S.confirm.bkoff = true; render(); break;
     case 'backup-off-yes': S.confirm = {}; Store.set('config/backup', { auto: false, disconnected: new Date().toISOString(), disconnectedBy: myName() }).then(() => toast('Backup sheet disconnected')); break;
     case 'set-page': S.setPage = v || null; S.confirm = {}; S.ingNew = false; S.priceMore = 0; window.scrollTo(0, 0); render(); break;
-    case 'go-set': S.tab = 'settings'; S.setPage = v; if (b.dataset.p) S.setPerson = b.dataset.p; closeSheets(); window.scrollTo(0, 0); render(); break;
+    case 'go-set': S.tab = 'settings'; S.setPage = v; if (b.dataset.p) S.setPerson = b.dataset.p; closeSheets(); window.scrollTo(0, 0); render();
+      // (straight to the part you came to change)
+      if (b.dataset.s) { const to = $('#' + b.dataset.s); if (to && to.scrollIntoView) to.scrollIntoView({ block: 'start' }); } break;
     case 'set-person': S.setPerson = v; S.confirm = {}; render(); break;
     case 'price-aisle': S.priceAisle = v; S.priceMore = 0; render(); break;
     case 'price-more': S.priceMore = (S.priceMore || PRICE_PAGE) + PRICE_PAGE; render(); break;
@@ -2872,7 +2894,7 @@ document.addEventListener('click', e => {
       if (top && top.type === 'recipe' && top.id === v && top.serv) serv = top.serv;
       else if (r) { const thisW = mondayOf(TODAY), d0 = daysBetween(thisW, TODAY); serv = plannedPortions(r, thisW, d0); }
       startCook(v, serv); break; }
-    case 'cook-close': stopCook(); break;
+    case 'cook-close': stopCook(); if (v === 'done') toast('Enjoy your dinner!'); break;
     case 'cook-next': S.cook.step++; S.cook.showIngs = false; renderCook(); speakStep(); break;
     case 'cook-prev': S.cook.step = Math.max(0, S.cook.step - 1); S.cook.showIngs = false; renderCook(); speakStep(); break;
     case 'cook-speak': S.cook.speak = !S.cook.speak; renderCook(); if (S.cook.speak) speakStep(); else try { speechSynthesis.cancel(); } catch (e) {} break;
@@ -3056,7 +3078,9 @@ document.addEventListener('submit', e => {
   if (k === 'add-person') {
     const n = $('#np-name').value.trim(); if (!n) return;
     const id = 'p_' + Date.now().toString(36); const p = { id, name: n, order: S.people.length + 1, wontEat: [], dislikes: [], likes: [] };
-    S.people = S.people.concat(p); savePerson(p); render();
+    S.people = S.people.concat(p); savePerson(p);
+    // straight to their page (it was under everyone else's settings), to add what they won't eat
+    S.setPerson = id; window.scrollTo(0, 0); render(); toast(nick(n) + ' added');
   }
   if (k === 'paid') {
     const id = f.dataset.v, ing = S.ING[id], val = Number(($('#paid-' + id) || {}).value);

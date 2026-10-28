@@ -121,7 +121,8 @@ h3 { font-size: 1.05rem; font-weight: 600; }
 .day .when span { font-size: 0.8rem; color: var(--muted); }
 .day.today .when b { color: var(--accent); }
 .meal { display: grid; grid-template-columns: 64px 1fr; gap: 12px; align-items: center; padding: 10px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); text-align: left; width: 100%; min-height: 84px; min-width: 0; }
-.meal.empty { grid-template-columns: 1fr; border-style: dashed; background: transparent; color: var(--muted); font-weight: 700; justify-items: start; padding-left: 18px; }
+.meal.empty { display: flex; flex-wrap: wrap; align-items: baseline; align-content: center; gap: 2px 8px; min-height: 64px; border-style: dashed; background: transparent; color: var(--muted); font-weight: 700; padding-left: 18px; }
+.meal.empty .hint { font-weight: 400; }
 .meal .body { min-width: 0; display: grid; gap: 4px; }
 .meal .ttl { font-weight: 700; line-height: 1.25; }
 .tile { width: 64px; height: 64px; border-radius: 12px; display: grid; place-items: center; font-size: 34px; line-height: 1; flex: none; }
@@ -171,6 +172,8 @@ h3 { font-size: 1.05rem; font-weight: 600; }
 .input, select.input, textarea.input { min-height: 48px; border-radius: var(--r-sm); border: 1.5px solid var(--line); background: var(--surface); padding: 8px 12px; width: 100%; min-width: 0; }
 textarea.input { min-height: 72px; resize: vertical; }
 .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+/* two fields side by side: their boxes line up even when one label takes two lines */
+.grid2:has(> label.field) { align-items: end; }
 .seg { display: inline-flex; border: 1.5px solid var(--line); border-radius: 999px; overflow: hidden; background: var(--surface); }
 .seg { flex: none; }
 .seg button { min-height: 44px; padding: 0 14px; border: 0; background: none; font-weight: 700; white-space: nowrap; }
@@ -227,7 +230,7 @@ details > summary { cursor: pointer; font-weight: 700; min-height: 44px; display
 .tile.photo { overflow: hidden; background: var(--surface-2); }
 .tile.photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .hero { margin: 0; border-radius: var(--r); overflow: hidden; background: var(--surface-2); }
-.hero img { width: 100%; max-height: 52vh; object-fit: cover; display: block; aspect-ratio: 4 / 3; }
+.hero img { width: 100%; max-height: 40vh; object-fit: cover; display: block; aspect-ratio: 16 / 10; }
 .hero figcaption { font-size: 0.75rem; color: var(--muted); padding: 6px 10px; }
 .hero figcaption a { color: inherit; }
 .nutri { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
@@ -244,11 +247,15 @@ details > summary { cursor: pointer; font-weight: 700; min-height: 44px; display
 .meal.empty[disabled] { opacity: 0.6; }
 .takeaway-btn { justify-content: center; }
 .bestplan { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
+.bestplan > .tag { justify-self: start; }
 .acts { margin: 0; padding-left: 0; list-style: none; display: grid; gap: 6px; font-size: 0.92rem; }
 .acts li { display: flex; gap: 6px; align-items: flex-start; }
 .acts svg { width: 18px; height: 18px; flex: none; margin-top: 2px; }
 .steps li > div { display: grid; gap: 4px; }
 .steps li p { margin: 0; }
+/* a paragraph in a card or a list of sections is spaced by the gap like everything else, not by its own margins too */
+:is(.app, .panel, .stack, .sbody, .auth, .cbody) > p { margin: 0; }
+.itap { cursor: pointer; }
 .stitle { font-family: var(--f-display); font-size: 1.05rem; }
 .cook .steptitle { font-family: var(--f-display); font-weight: 800; font-size: clamp(1.4rem, 5vw, 2rem); line-height: 1.2; }
 .cook .steptext { font-weight: 400; font-size: clamp(1.25rem, 4.6vw, 1.9rem); }
@@ -258,6 +265,10 @@ details > summary { cursor: pointer; font-weight: 700; min-height: 44px; display
 .ruled { border-top: 1px solid var(--line); padding-top: 12px; }
 .ruled-sm { border-top: 1px solid var(--line); padding-top: 8px; }
 .cb { width: 22px; height: 22px; accent-color: var(--accent); }
+/* every tick box and choice in the app's own green, not the browser's blue */
+input[type="checkbox"], input[type="radio"] { accent-color: var(--accent); }
+/* the search box's clear button in the app's quiet grey */
+input[type="search"]::-webkit-search-cancel-button { filter: grayscale(1); opacity: 0.6; }
 .chip.static { padding: 0 14px; }
 .chip.danger { color: var(--bad); }
 .chips.wrapchips { flex-wrap: wrap; overflow: visible; margin-inline: 0; padding-inline: 0; }
@@ -272,6 +283,7 @@ details > summary { cursor: pointer; font-weight: 700; min-height: 44px; display
 .invite { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding: 12px; border-radius: var(--r-sm); background: var(--surface-2); }
 .code { font-family: var(--f-data); font-size: 1.6rem; letter-spacing: 0.18em; }
 .code-input { font-family: var(--f-data); font-size: 1.4rem; letter-spacing: 0.2em; text-transform: uppercase; text-align: center; }
+.code-input::placeholder { text-transform: none; letter-spacing: 0.05em; }
 .auth { display: grid; gap: 16px; max-width: 460px; margin: 0 auto; padding-top: 24px; }
 .auth .backlink { justify-self: start; display: inline-flex; align-items: center; gap: 4px; padding: 0; }
 .brand { text-align: center; display: grid; justify-items: center; gap: 8px; }
@@ -349,6 +361,8 @@ details > summary svg { width: 18px; height: 18px; }
 .note svg, .why svg { width: 16px; height: 16px; vertical-align: -3px; }
 .cook .chead { flex-wrap: wrap; row-gap: 6px; }
 .cook .chead > b.grow { flex: 1 1 160px; }
+/* Read aloud and Ingredients always on their own line, so the header doesn't change shape from step to step */
+.cook .chead .cchips { flex: 1 0 100%; display: flex; flex-wrap: wrap; gap: 8px; }
 .cook .chead .btn, .cook .chead .icon-btn, .cook .chead .chip { flex: none; }
 .cook .steptext, .cook .steptitle { overflow-wrap: anywhere; }
 .cook .ings .ing > span { min-width: 0; overflow-wrap: break-word; }
@@ -406,7 +420,8 @@ details > summary svg { width: 18px; height: 18px; }
 .day .when .whochip { margin: 6px auto 0; }
 .whochip { display: flex; flex-wrap: wrap; justify-content: center; max-width: 100%; gap: 2px 0; margin-top: 6px; padding: 2px; border-radius: 15px; border: 1px solid var(--line); background: var(--surface); min-height: 30px; align-items: center; }
 /* (the initials overlap a little, so three of you still fit the day's column) */
-.whochip i + i { margin-left: -7px; box-shadow: 0 0 0 2px var(--surface); }
+.whochip i + i { margin-left: 2px; }
+.whochip:has(i:nth-child(3)) i + i { margin-left: -7px; box-shadow: 0 0 0 2px var(--surface); }
 .whochip i { font-style: normal; width: 20px; height: 20px; border-radius: 50%; display: grid; place-items: center; font-size: 0.72rem; font-weight: 700; background: var(--accent); color: var(--accent-fg); }
 .whochip i.off { background: var(--surface); color: var(--muted); text-decoration: line-through; border: 1px dashed var(--line); }
 .weekfoot { display: grid; gap: 8px; padding-top: 4px; }
