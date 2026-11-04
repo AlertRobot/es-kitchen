@@ -1,0 +1,3721 @@
+[
+ {
+  "id": "am_double_smash_burgers",
+  "ingredients": [
+   {
+    "i": "beef_mince",
+    "q": 400,
+    "t": "400g, rolled into 4 loose balls"
+   },
+   {
+    "i": "burger_buns",
+    "q": 2,
+    "t": "2 brioche buns"
+   },
+   {
+    "i": "cheddar",
+    "q": 60,
+    "t": "60g, very thinly sliced"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, sliced paper-thin"
+   },
+   {
+    "i": "little_gem",
+    "q": 0.5,
+    "t": "½, shredded",
+    "swap": "Leave the lettuce off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "gherkins",
+    "q": 40,
+    "t": "a few slices from a jar",
+    "opt": true,
+    "swap": "Add the gherkins to one burger only."
+   },
+   {
+    "i": "mayonnaise",
+    "q": 45,
+    "t": "3 tablespoons"
+   },
+   {
+    "i": "ketchup",
+    "q": 15,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "wholegrain_mustard",
+    "q": 5,
+    "t": "1 teaspoon"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Thinly slice the onion, shred the little gem and halve the buns. Roll the mince into 4 loose balls and season them with salt and pepper."
+   },
+   {
+    "title": "Make the burger sauce",
+    "text": "In a small bowl, mix the mayo, ketchup and mustard. Set aside."
+   },
+   {
+    "title": "Toast the buns",
+    "text": "Toast the buns cut-side down in your largest dry frying pan over a medium heat for 1 minute until golden. Spread with the burger sauce and pile the little gem onto the bases."
+   },
+   {
+    "title": "Smash the patties",
+    "text": "Turn the heat up to high and wait until the pan just starts to smoke. Add 2 mince balls, cover each with a square of baking paper and press down hard with a sturdy spatula until really thin. Peel off the paper, press a little onion on top and leave for 2 minutes until a deep brown crust forms underneath."
+   },
+   {
+    "title": "Flip and add the cheese",
+    "text": "Scrape under each patty, flip so the onion is underneath and lay a quarter of the cheddar on each. Cook for 1 minute until melted, then stack one patty on the other and lift onto a bun base. Repeat with the remaining 2 balls and cheddar."
+   },
+   {
+    "title": "Serve",
+    "text": "Top each stack with a few gherkins (optional), close with the bun lids and eat straight away while the cheese is molten."
+   }
+  ],
+  "time": 20,
+  "title": "Double Smash Cheeseburgers with Burger Sauce",
+  "changed": "Jarred gherkins (optional) instead of homemade quick pickles; no lemon, honey or butter on the buns."
+ },
+ {
+  "id": "am_buttermilk_chicken_burger",
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 300,
+    "t": "2 large thighs (300g)"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 100,
+    "t": "100g"
+   },
+   {
+    "i": "milk",
+    "q": 50,
+    "t": "50ml"
+   },
+   {
+    "i": "hot_sauce",
+    "q": 15,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "plain_flour",
+    "q": 80,
+    "t": "80g"
+   },
+   {
+    "i": "cornflour",
+    "q": 20,
+    "t": "2 tablespoons"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 2,
+    "t": "1 teaspoon"
+   },
+   {
+    "i": "oil",
+    "q": 60,
+    "t": "60ml, for frying"
+   },
+   {
+    "i": "burger_buns",
+    "q": 2,
+    "t": "2 brioche buns"
+   },
+   {
+    "i": "mayonnaise",
+    "q": 30,
+    "t": "2 tablespoons"
+   },
+   {
+    "i": "honey",
+    "q": 10,
+    "t": "2 teaspoons"
+   },
+   {
+    "i": "little_gem",
+    "q": 0.5,
+    "t": "½, shredded",
+    "swap": "Leave the lettuce off one plate.",
+    "autoSwap": true
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the chicken",
+    "text": "Lay the chicken thighs between two sheets of baking paper and bash with a rolling pin until evenly thick. Shred the little gem."
+   },
+   {
+    "title": "Marinate the chicken",
+    "text": "In a bowl, mix the yogurt, milk, half the hot sauce and a pinch of salt to make a quick 'buttermilk'. Add the chicken and turn to coat. Leave for at least 15 minutes (or covered in the fridge overnight)."
+   },
+   {
+    "title": "Make the hot honey mayo",
+    "text": "While the chicken marinates, mix the mayo with the honey and the rest of the hot sauce in a small bowl."
+   },
+   {
+    "title": "Coat the chicken",
+    "text": "In a shallow dish, mix the flour, cornflour, paprika, 1 teaspoon of salt and plenty of pepper. Drizzle in 1 tablespoon of the marinade and rub it in with your fingertips to make craggy clumps. Lift the chicken out, let the excess drip off, then press it firmly into the flour on both sides."
+   },
+   {
+    "title": "Fry the chicken",
+    "text": "Heat the oil in a large non-stick frying pan over a medium-high heat until a pinch of flour sizzles straight away. Fry the chicken for 5 to 6 minutes each side until deep golden and the juices run clear when you pierce the thickest part. Drain on kitchen paper."
+   },
+   {
+    "title": "Toast the buns and serve",
+    "text": "Carefully pour the frying oil into a heatproof bowl to cool, then throw it away. Wipe out the pan and toast the halved buns cut-side down over a medium heat for 1 minute. Spread the bases with hot honey mayo, then add the little gem, crispy chicken and bun lids."
+   }
+  ],
+  "time": 40,
+  "title": "Crispy Buttermilk Chicken Burger with Hot Honey Mayo",
+  "changed": "Shredded lettuce instead of a carrot and red onion slaw; no garlic, lemon or dried herbs."
+ },
+ {
+  "id": "am_nashville_hot_chicken_burger",
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 300,
+    "t": "2 large thighs (300g)"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 100,
+    "t": "100g"
+   },
+   {
+    "i": "milk",
+    "q": 50,
+    "t": "50ml"
+   },
+   {
+    "i": "hot_sauce",
+    "q": 15,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "plain_flour",
+    "q": 80,
+    "t": "80g"
+   },
+   {
+    "i": "cornflour",
+    "q": 20,
+    "t": "2 tablespoons"
+   },
+   {
+    "i": "oil",
+    "q": 60,
+    "t": "60ml, for frying"
+   },
+   {
+    "i": "chilli_powder",
+    "q": 4,
+    "t": "2 teaspoons",
+    "swap": "For a milder burger, brush one piece of chicken with a little plain honey and keep the hot paste for the other."
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 4,
+    "t": "2 teaspoons"
+   },
+   {
+    "i": "honey",
+    "q": 15,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "butter",
+    "q": 20,
+    "t": "20g, softened"
+   },
+   {
+    "i": "gherkins",
+    "q": 40,
+    "t": "a few slices from a jar",
+    "swap": "Keep the gherkins in a bowl on the table so they only go on one burger."
+   },
+   {
+    "i": "burger_buns",
+    "q": 2,
+    "t": "2 brioche buns"
+   },
+   {
+    "i": "mayonnaise",
+    "q": 30,
+    "t": "2 tablespoons"
+   },
+   {
+    "i": "little_gem",
+    "q": 0.5,
+    "t": "½, shredded",
+    "swap": "Leave the lettuce off one plate.",
+    "autoSwap": true
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Flatten the chicken thighs between baking paper with a rolling pin until evenly thick. Shred the little gem. Put the butter in a small heatproof bowl ready for the hot paste."
+   },
+   {
+    "title": "Marinate the chicken",
+    "text": "In a bowl, mix the yogurt, milk, hot sauce and a pinch of salt. Add the chicken, turn to coat and leave for 15 minutes."
+   },
+   {
+    "title": "Coat the chicken",
+    "text": "In a shallow dish, mix the flour, cornflour, 1 teaspoon of salt and plenty of pepper. Work in a spoonful of the marinade with your fingers to make crunchy clumps. Lift the chicken from the marinade and press it hard into the flour on both sides."
+   },
+   {
+    "title": "Fry the chicken",
+    "text": "Heat the oil in a large frying pan over a medium-high heat. Fry the chicken for 5 to 6 minutes each side until deep golden, crunchy and cooked through with no pink in the middle. Lift onto kitchen paper, keeping the hot oil in the pan."
+   },
+   {
+    "title": "Make the hot paste",
+    "text": "Add the chilli powder, paprika, honey and a pinch of salt to the bowl with the butter. Carefully spoon in 2 tablespoons of the hot frying oil and stir until the butter melts into a glossy red paste. Brush it all over the hot chicken. Let the rest of the frying oil cool, then throw it away."
+   },
+   {
+    "title": "Toast the buns and serve",
+    "text": "Wipe out the pan and toast the halved buns cut-side down over a medium heat for 1 minute. Spread the bases with mayo and add the little gem and hot chicken. Top with the gherkins and close with the lids."
+   }
+  ],
+  "time": 40,
+  "changed": "Chilli powder instead of grinding chilli flakes; jarred gherkins instead of homemade quick pickles; no garlic or lemon."
+ },
+ {
+  "id": "am_homemade_meat_feast_pizza",
+  "ingredients": [
+   {
+    "i": "plain_flour",
+    "q": 250,
+    "t": "250g, plus extra for dusting"
+   },
+   {
+    "i": "dried_yeast",
+    "q": 7,
+    "t": "1 sachet (7g)"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "passata",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 2,
+    "t": "1 teaspoon"
+   },
+   {
+    "i": "mozzarella",
+    "q": 125,
+    "t": "1 ball, torn and patted dry"
+   },
+   {
+    "i": "pepperoni",
+    "q": 40,
+    "t": "40g"
+   },
+   {
+    "i": "sausages",
+    "q": 2,
+    "t": "2, skins removed"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, thinly sliced",
+    "swap": "Leave the peppers off half the pizza.",
+    "autoSwap": true
+   },
+   {
+    "i": "red_onion",
+    "q": 0.5,
+    "t": "½, thinly sliced",
+    "swap": "Leave the onions off half the pizza.",
+    "autoSwap": true
+   }
+  ],
+  "steps": [
+   {
+    "title": "Make the dough",
+    "text": "In a large bowl, mix the flour, yeast and 1 teaspoon of salt. Add 160 millilitres of warm water and half the oil and stir into a shaggy dough. Knead on a lightly floured surface for 8 to 10 minutes until smooth and springy. Return to the bowl rubbed with the remaining oil, cover and leave somewhere warm for 1 hour until doubled."
+   },
+   {
+    "title": "Mix the sauce",
+    "text": "While the dough rises, stir the herbs and a pinch of salt into the passata. There's no need to cook it."
+   },
+   {
+    "title": "Prep the toppings",
+    "text": "Squeeze the sausage meat out of the skins and pinch it into small nuggets. Fry in a dry frying pan over a medium-high heat for 5 minutes until browned. Thinly slice the pepper and red onion, and tear the mozzarella, patting it dry."
+   },
+   {
+    "title": "Shape the bases",
+    "text": "About 15 minutes before the dough is ready, heat the oven to its highest setting (at least 240°C, 220°C fan) with two baking trays inside. Knock the air out of the dough and halve it. On two sheets of baking paper, stretch each piece into a large thin round, keeping the edge slightly thicker."
+   },
+   {
+    "title": "Top the pizzas",
+    "text": "Spread the sauce thinly over each base, leaving a small border. Scatter over the mozzarella, sausage, pepperoni, pepper and red onion."
+   },
+   {
+    "title": "Bake and serve",
+    "text": "Slide the pizzas, still on their paper, onto the hot trays. Bake for 10 to 12 minutes until the crust is puffed and the cheese is bubbling and golden. Rest for 1 minute before slicing."
+   }
+  ],
+  "time": 90,
+  "changed": "No-cook passata sauce instead of simmered tomatoes, purée and garlic; mozzarella only (no cheddar); no honey in the dough."
+ },
+ {
+  "id": "am_pan_pepperoni_pizza",
+  "ingredients": [
+   {
+    "i": "plain_flour",
+    "q": 200,
+    "t": "200g, plus extra for dusting"
+   },
+   {
+    "i": "dried_yeast",
+    "q": 7,
+    "t": "1 sachet (7g)"
+   },
+   {
+    "i": "oil",
+    "q": 35,
+    "t": "2 tablespoons plus 1 teaspoon"
+   },
+   {
+    "i": "passata",
+    "q": 120,
+    "t": "120g"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 1,
+    "t": "½ teaspoon"
+   },
+   {
+    "i": "mozzarella",
+    "q": 125,
+    "t": "1 ball, torn and patted dry"
+   },
+   {
+    "i": "pepperoni",
+    "q": 60,
+    "t": "60g"
+   },
+   {
+    "i": "honey",
+    "q": 20,
+    "t": "1 heaped tablespoon"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "½ teaspoon",
+    "swap": "Drizzle one pizza with plain honey, then stir the chilli flakes into the rest of the honey for the other."
+   }
+  ],
+  "steps": [
+   {
+    "title": "Make a quick dough",
+    "text": "In a bowl, mix the flour, yeast and 1 teaspoon of salt. Add 130 millilitres of warm water and 1 teaspoon of the oil and bring together into a soft dough. Knead for 5 minutes until smooth. Cover and leave somewhere warm for 45 minutes until puffy and nearly doubled."
+   },
+   {
+    "title": "Sauce and hot honey",
+    "text": "While the dough rises, stir the herbs and a pinch of salt into the passata. In a small bowl, stir the chilli flakes into the honey. Tear the mozzarella and pat it dry."
+   },
+   {
+    "title": "Stretch the dough",
+    "text": "Heat the grill to high. Halve the dough and, on a floured surface, press and stretch each piece into a round slightly smaller than your largest ovenproof frying pan."
+   },
+   {
+    "title": "Fry the first base",
+    "text": "Heat 1 tablespoon of the oil in the ovenproof frying pan over a medium-high heat. Lay in one dough round and cook for 3 to 4 minutes until the underside is golden and crisp (lift an edge to check). Quickly spread over half the sauce, then scatter with half the mozzarella and pepperoni."
+   },
+   {
+    "title": "Grill and serve",
+    "text": "Slide the pan under the grill for 3 to 5 minutes until the cheese is blistered and the pepperoni edges curl and crisp. Use oven gloves, as the handle will be very hot. Slide onto a board, drizzle with hot honey and slice. Repeat with the remaining oil and second base while you tuck into the first."
+   }
+  ],
+  "time": 70,
+  "changed": "No-cook passata sauce instead of simmered tomatoes, purée and garlic; mozzarella only (no cheddar); hot honey stirred together in a bowl, no pan."
+ },
+ {
+  "id": "am_bbq_chicken_naan_pizza",
+  "ingredients": [
+   {
+    "i": "naan",
+    "q": 2,
+    "t": "2 plain naans"
+   },
+   {
+    "i": "chicken_breast",
+    "q": 250,
+    "t": "1 large breast (250g), cut into small strips"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 2,
+    "t": "1 teaspoon"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 teaspoons"
+   },
+   {
+    "i": "bbq_sauce",
+    "q": 60,
+    "t": "4 tablespoons"
+   },
+   {
+    "i": "mozzarella",
+    "q": 125,
+    "t": "1 ball, torn"
+   },
+   {
+    "i": "sweetcorn",
+    "q": 60,
+    "t": "60g",
+    "swap": "Scatter the sweetcorn over one pizza only."
+   },
+   {
+    "i": "red_onion",
+    "q": 0.5,
+    "t": "½, thinly sliced",
+    "swap": "Leave the onions off half the pizza.",
+    "autoSwap": true
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Heat the oven to 220°C (200°C fan). Toss the chicken strips with the paprika and a pinch of salt and pepper. Thinly slice the red onion and tear the mozzarella."
+   },
+   {
+    "title": "Cook the chicken",
+    "text": "Heat the oil in a frying pan over a high heat. Fry the chicken for 5 to 6 minutes, turning, until golden and cooked through. Take off the heat and stir in 1 tablespoon of the BBQ sauce so it's glazed and sticky."
+   },
+   {
+    "title": "Top the naans",
+    "text": "Lay the naans on a baking tray and spread with the remaining BBQ sauce, right to the edges. Scatter over the mozzarella, chicken, sweetcorn (straight from frozen is fine) and red onion."
+   },
+   {
+    "title": "Bake and serve",
+    "text": "Bake for 8 to 10 minutes until the cheese is melted and golden in spots and the naan edges are crisp. Cut into slices and serve straight away."
+   }
+  ],
+  "changed": "Mozzarella only (no cheddar) and no coriander garnish."
+ },
+ {
+  "id": "am_stovetop_mac_and_cheese",
+  "ingredients": [
+   {
+    "i": "pasta",
+    "q": 180,
+    "t": "180g penne or macaroni"
+   },
+   {
+    "i": "broccoli",
+    "q": 150,
+    "t": "150g, in small florets"
+   },
+   {
+    "i": "milk",
+    "q": 250,
+    "t": "250ml"
+   },
+   {
+    "i": "cheddar",
+    "q": 150,
+    "t": "150g, grated"
+   },
+   {
+    "i": "cornflour",
+    "q": 8,
+    "t": "2 teaspoons"
+   },
+   {
+    "i": "butter",
+    "q": 10,
+    "t": "10g"
+   },
+   {
+    "i": "wholegrain_mustard",
+    "q": 5,
+    "t": "1 teaspoon"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Boil the kettle. Grate the cheddar and toss it with the cornflour in a bowl, as this stops the sauce turning grainy. Cut the broccoli into small florets."
+   },
+   {
+    "title": "Cook the pasta",
+    "text": "Pour boiling water from the kettle into a large saucepan, add a good pinch of salt and bring back to the boil. Cook the pasta for 1 minute less than the pack says, adding the broccoli for the last 3 minutes. Scoop out a mugful of the cooking water, then drain."
+   },
+   {
+    "title": "Make the cheese sauce",
+    "text": "Pour the milk into the empty pan and warm over a medium heat until steaming but not boiling. Add the cheddar a handful at a time, stirring all the time, until smooth and it coats the back of a spoon. Stir in the mustard and butter."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Turn the heat to low and tip the pasta and broccoli into the sauce. Stir for 1 minute, adding splashes of pasta water until glossy. Season with black pepper and spoon into bowls."
+   }
+  ],
+  "time": 20,
+  "title": "Ultra-Creamy Stovetop Mac & Cheese with Broccoli",
+  "changed": "No garlic panko topping, parmesan, hot sauce or paprika: just a smooth cheddar sauce with pasta and broccoli."
+ },
+ {
+  "id": "am_slow_cooker_pulled_pork",
+  "ingredients": [
+   {
+    "i": "pork_shoulder",
+    "q": 500,
+    "t": "500g"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 5,
+    "t": "2½ teaspoons"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, thickly sliced"
+   },
+   {
+    "i": "bbq_sauce",
+    "q": 120,
+    "t": "8 tablespoons"
+   },
+   {
+    "i": "potatoes",
+    "q": 500,
+    "t": "500g, cut into wedges"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "burger_buns",
+    "q": 2,
+    "t": "2 brioche buns"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the pork",
+    "text": "Mix 2 teaspoons of the paprika with 1 teaspoon of salt and some pepper. Rub it all over the pork. Thickly slice the onion."
+   },
+   {
+    "title": "Load the slow cooker",
+    "text": "Lay the onion slices in the slow cooker and sit the pork on top. Stir half the BBQ sauce with 50 millilitres of water and pour it over. Cover and cook on low for 8 hours (or high for 5 hours) until the pork falls apart when pressed with a fork."
+   },
+   {
+    "title": "Roast the wedges",
+    "text": "About 45 minutes before you want to eat, heat the oven to 220°C (200°C fan). Cut the potatoes into wedges and toss on a baking tray with the oil, the remaining paprika and a pinch of salt. Roast for 30 to 35 minutes, turning halfway, until golden and crisp at the edges."
+   },
+   {
+    "title": "Shred the pork",
+    "text": "Lift the pork onto a board and pull it apart with two forks, throwing away any fatty bits. Skim the fat off the juices in the slow cooker and stir in the remaining BBQ sauce. Return the pork and toss until glossy and sticky."
+   },
+   {
+    "title": "Toast the buns and serve",
+    "text": "Toast the halved buns cut-side down in a dry frying pan over a medium heat for 1 minute. Pile in the pulled pork and serve with the wedges on the side."
+   }
+  ],
+  "title": "Slow Cooker BBQ Pulled Pork Buns with Wedges",
+  "changed": "Paprika rub and BBQ sauce only (no cumin, garlic, honey, Worcestershire or purée); no homemade slaw."
+ },
+ {
+  "id": "am_buffalo_wings",
+  "ingredients": [
+   {
+    "i": "chicken_wings",
+    "q": 1000,
+    "t": "1kg"
+   },
+   {
+    "i": "cornflour",
+    "q": 15,
+    "t": "1½ tablespoons"
+   },
+   {
+    "i": "hot_sauce",
+    "q": 60,
+    "t": "4 tablespoons",
+    "swap": "Toss half the wings in the buffalo sauce and leave the rest salted and plain for a milder plate."
+   },
+   {
+    "i": "butter",
+    "q": 30,
+    "t": "30g"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 100,
+    "t": "100g"
+   },
+   {
+    "i": "mayonnaise",
+    "q": 15,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "carrots",
+    "q": 150,
+    "t": "2, cut into sticks"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Heat the oven to 220°C (200°C fan) and line a large baking tray (set a wire rack on it if you have one). Pat the wings very dry with kitchen paper, as dry skin is the secret to crunch. Cut the carrots into sticks."
+   },
+   {
+    "title": "Roast the wings",
+    "text": "Toss the wings in a bowl with the cornflour and 1 teaspoon of salt until evenly coated. Spread out on the tray, leaving space between each one. Roast for 45 to 50 minutes, turning halfway, until deep golden and crackly and the meat pulls easily from the bone."
+   },
+   {
+    "title": "Make the dip",
+    "text": "While the wings roast, stir the yogurt and mayo together with a pinch of salt and plenty of black pepper. Chill until needed."
+   },
+   {
+    "title": "Make the buffalo sauce",
+    "text": "When the wings have 5 minutes left, melt the butter with the hot sauce in a small saucepan over a low heat. Whisk until glossy and smooth, then take off the heat."
+   },
+   {
+    "title": "Toss and serve",
+    "text": "Tip the hot wings into a large bowl, pour over the buffalo sauce and toss until every wing is coated. Serve straight away with the dip, carrot sticks and plenty of napkins."
+   }
+  ],
+  "title": "Crispy Baked Buffalo Wings with Cool Yogurt Dip & Carrot Sticks",
+  "changed": "Simple yogurt and mayo dip instead of feta ranch; buffalo sauce is just butter and hot sauce; carrot sticks only."
+ },
+ {
+  "id": "am_loaded_bacon_cheese_fries",
+  "ingredients": [
+   {
+    "i": "potatoes",
+    "q": 700,
+    "t": "700g, cut into thin fries"
+   },
+   {
+    "i": "oil",
+    "q": 20,
+    "t": "1½ tablespoons"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 2,
+    "t": "1 teaspoon"
+   },
+   {
+    "i": "bacon",
+    "q": 150,
+    "t": "150g, chopped"
+   },
+   {
+    "i": "cheddar",
+    "q": 100,
+    "t": "100g, grated"
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced, to serve",
+    "swap": "Scatter the spring onions over one side of the platter only.",
+    "opt": true
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Heat the oven to 220°C (200°C fan) and line two baking trays. Cut the potatoes into thin fries, rinse in cold water and pat completely dry with a clean tea towel. Chop the bacon, grate the cheddar and slice the spring onions (optional)."
+   },
+   {
+    "title": "Bake the fries",
+    "text": "Toss the fries with the oil, paprika and a good pinch of salt and spread over the trays in a single layer. Bake for 35 to 40 minutes until golden and crisp at the edges, turning them halfway."
+   },
+   {
+    "title": "Crisp the bacon",
+    "text": "When the fries have 15 minutes left, put the bacon in a dry frying pan over a medium-high heat. Fry for 6 to 8 minutes, stirring, until crisp and golden. Drain on kitchen paper."
+   },
+   {
+    "title": "Load and melt",
+    "text": "Pile all the hot fries onto one tray. Scatter over the cheddar and bacon and return to the oven for 3 to 4 minutes until the cheese has melted."
+   },
+   {
+    "title": "Serve",
+    "text": "Scatter with the spring onions (optional) and dig in straight from the tray."
+   }
+  ],
+  "time": 45,
+  "title": "Loaded Bacon Cheese Fries with Spring Onions",
+  "changed": "Cheddar melted straight onto the fries instead of a cheese sauce; no green chilli or yogurt."
+ },
+ {
+  "id": "am_sausage_hot_dogs",
+  "ingredients": [
+   {
+    "i": "sausages",
+    "q": 4,
+    "t": "4 pork sausages"
+   },
+   {
+    "i": "hot_dog_rolls",
+    "q": 4,
+    "t": "4"
+   },
+   {
+    "i": "potatoes",
+    "q": 500,
+    "t": "500g, cut into thin fries"
+   },
+   {
+    "i": "oil",
+    "q": 20,
+    "t": "1½ tablespoons"
+   },
+   {
+    "i": "onion",
+    "q": 2,
+    "t": "2, thinly sliced"
+   },
+   {
+    "i": "worcestershire",
+    "q": 5,
+    "t": "1 teaspoon"
+   },
+   {
+    "i": "wholegrain_mustard",
+    "q": 10,
+    "t": "2 teaspoons"
+   },
+   {
+    "i": "ketchup",
+    "q": 30,
+    "t": "2 tablespoons"
+   },
+   {
+    "i": "cheddar",
+    "q": 40,
+    "t": "40g, grated",
+    "opt": true
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Heat the oven to 220°C (200°C fan) and line a large baking tray. Cut the potatoes into skinny fries and pat dry. Thinly slice the onions and grate the cheddar (optional)."
+   },
+   {
+    "title": "Bake the fries",
+    "text": "Toss the fries with 1 tablespoon of the oil and a pinch of salt and spread over the tray in one layer. Bake for 25 minutes, turning halfway, until golden and crisp."
+   },
+   {
+    "title": "Cook the sausages and onions",
+    "text": "While the fries bake, heat the remaining oil in a large frying pan over a medium heat. Add the sausages and, after 3 minutes, the onions with a pinch of salt. Cook for 12 to 15 minutes, turning the sausages and stirring the onions often, until the sausages are cooked through with no pink in the middle and the onions are soft and golden."
+   },
+   {
+    "title": "Make the onions sticky",
+    "text": "Stir the Worcestershire and a splash of water into the onions and bubble for 1 to 2 minutes until dark and sticky."
+   },
+   {
+    "title": "Warm the rolls",
+    "text": "Split the rolls along the top. Pop them in the oven for the last 2 to 3 minutes of the fries' cooking time to warm through."
+   },
+   {
+    "title": "Load the hot dogs",
+    "text": "Spread the inside of each roll with mustard, add a sausage and pile on the sticky onions. Scatter with the cheddar (optional) and zigzag over the ketchup. Serve with the fries."
+   }
+  ],
+  "time": 30,
+  "changed": "Onions cooked in the sausage pan with just Worcestershire (no butter or honey); plain mustard instead of mustard mayo; cheddar optional."
+ },
+ {
+  "id": "am_philly_cheesesteak",
+  "ingredients": [
+   {
+    "i": "beef_steak",
+    "q": 250,
+    "t": "250g thin-cut frying steak"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, thinly sliced"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1 (green if you have it), thinly sliced"
+   },
+   {
+    "i": "worcestershire",
+    "q": 5,
+    "t": "1 teaspoon"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "mozzarella",
+    "q": 125,
+    "t": "1 ball, sliced"
+   },
+   {
+    "i": "baguette",
+    "q": 2,
+    "t": "2 part-baked baguettes"
+   },
+   {
+    "i": "mayonnaise",
+    "q": 15,
+    "t": "1 tablespoon"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the steak and veg",
+    "text": "Heat the oven for the baguettes as the pack says. Put the steak in the freezer for 10 minutes to firm up. Meanwhile, thinly slice the onion, pepper and mozzarella. Slice the firm steak as thinly as you can, cutting across the lines in the meat."
+   },
+   {
+    "title": "Bake the bread",
+    "text": "Bake the baguettes for 8 to 10 minutes until crisp and golden. Split each one lengthways, leaving one side attached like a hinge."
+   },
+   {
+    "title": "Char the onion and pepper",
+    "text": "While the bread bakes, heat the oil in a large frying pan over a medium-high heat. Fry the onion and pepper for 8 minutes until soft and charred at the edges, then push to one side."
+   },
+   {
+    "title": "Cook the steak and cheese",
+    "text": "Turn the heat to high and add the steak in a single layer. Season and splash over the Worcestershire, then cook for 1 to 2 minutes, chopping and tossing, until just browned. Mix through the onion and pepper and shape into two baguette-length piles. Lay the mozzarella on top, cover with a lid or foil and cook for 1 minute until melted."
+   },
+   {
+    "title": "Fill and serve",
+    "text": "Spread the inside of the baguettes with mayo. Slide a spatula under each cheesy pile and flip it into the bread. Eat straight away."
+   }
+  ],
+  "time": 25,
+  "changed": "No separate pan of mushrooms and no butter; mozzarella only (no cheddar)."
+ },
+ {
+  "id": "am_sloppy_joes",
+  "ingredients": [
+   {
+    "i": "beef_mince",
+    "q": 400,
+    "t": "400g"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, finely diced"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, finely diced"
+   },
+   {
+    "i": "ketchup",
+    "q": 60,
+    "t": "4 tablespoons"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "worcestershire",
+    "q": 15,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 3,
+    "t": "1½ teaspoons"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 beef stock cube"
+   },
+   {
+    "i": "sweet_potato",
+    "q": 400,
+    "t": "400g, cut into fries"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "burger_buns",
+    "q": 2,
+    "t": "2 brioche buns"
+   },
+   {
+    "i": "cheddar",
+    "q": 40,
+    "t": "40g, grated"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Heat the oven to 220°C (200°C fan) and line a baking tray. Cut the sweet potato into fries, finely dice the onion and pepper and grate the cheddar."
+   },
+   {
+    "title": "Bake the fries",
+    "text": "Toss the sweet potato fries on the tray with the oil, ½ teaspoon of the paprika and a pinch of salt, spacing them out. Bake for 25 minutes, turning halfway, until crisp at the edges."
+   },
+   {
+    "title": "Brown the mince and veg",
+    "text": "While the fries bake, put the mince in a large dry frying pan over a high heat. Cook for 5 minutes, breaking it up, until browned, then spoon away any excess fat. Turn the heat to medium, add the onion and pepper and cook for 5 minutes until softened. Stir in the remaining paprika for 30 seconds."
+   },
+   {
+    "title": "Simmer the sauce",
+    "text": "Dissolve the stock cube in 150 millilitres of boiling water. Add it to the pan with the ketchup, purée and Worcestershire and stir well. Simmer for 8 to 10 minutes until thick and glossy and the mince clings together on a spoon. Taste and season."
+   },
+   {
+    "title": "Fill the buns and serve",
+    "text": "Warm the halved buns in the oven for 2 minutes. Spoon the mince onto the bases, top with the cheddar and pop the lids on. Serve with the sweet potato fries and lots of napkins."
+   }
+  ],
+  "time": 30,
+  "title": "Sloppy Joes with Sweet Potato Fries",
+  "changed": "No quick pickles, garlic, mustard or honey; the mince and veg cook in one go."
+ },
+ {
+  "id": "am_crispy_chicken_tenders",
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 350,
+    "t": "2 breasts (350g)"
+   },
+   {
+    "i": "plain_flour",
+    "q": 30,
+    "t": "3 tablespoons"
+   },
+   {
+    "i": "eggs",
+    "q": 1,
+    "t": "1, beaten"
+   },
+   {
+    "i": "panko",
+    "q": 80,
+    "t": "80g"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 2,
+    "t": "1 teaspoon"
+   },
+   {
+    "i": "oil",
+    "q": 45,
+    "t": "3 tablespoons, for frying"
+   },
+   {
+    "i": "mayonnaise",
+    "q": 30,
+    "t": "2 tablespoons"
+   },
+   {
+    "i": "honey",
+    "q": 15,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "wholegrain_mustard",
+    "q": 10,
+    "t": "2 teaspoons"
+   },
+   {
+    "i": "sweetcorn",
+    "q": 100,
+    "t": "100g",
+    "swap": "It's cooked as a separate side, so serve the sweetcorn to one plate only."
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, leaves separated",
+    "swap": "Leave the lettuce off one plate.",
+    "autoSwap": true
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Boil the kettle. Slice the chicken breasts lengthways into finger-width strips. Separate the little gem leaves."
+   },
+   {
+    "title": "Set up a crumbing station",
+    "text": "Set out three shallow bowls. Put the flour in the first and season with salt and pepper. Pour the beaten egg into the second. Mix the panko, paprika and a pinch of salt in the third."
+   },
+   {
+    "title": "Crumb the chicken",
+    "text": "Dip each strip into the flour, then the egg, then the panko, pressing so the crumbs stick all over. Lay the tenders on a plate in a single layer."
+   },
+   {
+    "title": "Fry the tenders",
+    "text": "Heat the oil in a large frying pan over a medium-high heat. Fry the tenders in two batches for 2 to 3 minutes each side until deep golden and crisp. Cut the thickest one to check there's no pink, then drain on kitchen paper."
+   },
+   {
+    "title": "Corn and dip",
+    "text": "While the tenders fry, put the sweetcorn in a heatproof bowl, cover with boiling water from the kettle and leave for 2 minutes, then drain and season. Stir the mayo, honey and mustard together to make the dip."
+   },
+   {
+    "title": "Serve",
+    "text": "Serve the tenders with the sweetcorn, little gem leaves and the honey mustard on the side."
+   }
+  ],
+  "time": 30,
+  "title": "Crispy Chicken Tenders with Honey Mustard & Sweetcorn",
+  "changed": "No parmesan in the crumb and no corn slaw (carrot, lemon): just warm sweetcorn and lettuce on the side."
+ },
+ {
+  "id": "am_meatball_subs",
+  "ingredients": [
+   {
+    "i": "beef_mince",
+    "q": 300,
+    "t": "300g"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 2,
+    "t": "1 teaspoon"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 400,
+    "t": "1 tin"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "baguette",
+    "q": 2,
+    "t": "2 part-baked baguettes"
+   },
+   {
+    "i": "mozzarella",
+    "q": 125,
+    "t": "1 ball, torn"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Heat the oven for the baguettes as the pack says. Crush the garlic and tear the mozzarella."
+   },
+   {
+    "title": "Roll the meatballs",
+    "text": "Mix the mince with half the garlic, half the herbs and a good pinch of salt and pepper. With damp hands, roll into 10 to 12 walnut-sized balls."
+   },
+   {
+    "title": "Brown the meatballs",
+    "text": "Heat the oil in a large deep frying pan over a medium-high heat. Fry the meatballs for 5 minutes, turning, until browned all over. They don't need to be cooked through yet."
+   },
+   {
+    "title": "Simmer in the sauce",
+    "text": "Push the meatballs to one side and sizzle the remaining garlic for 30 seconds. Add the tomatoes, purée, remaining herbs and a pinch of salt. Simmer for 10 to 12 minutes, turning the meatballs, until the sauce is thick and they're cooked through. Meanwhile, bake the baguettes for 8 to 10 minutes until crisp, then split them lengthways, keeping one side attached. Heat the grill to high."
+   },
+   {
+    "title": "Fill and grill",
+    "text": "Sit the baguettes on a baking tray and fill with the meatballs and plenty of sauce. Top with the mozzarella and grill for 2 to 3 minutes until bubbling and golden in spots."
+   }
+  ],
+  "time": 30,
+  "changed": "Simpler meatballs (no breadcrumbs, milk or parmesan); no chilli or honey in the sauce."
+ },
+ {
+  "id": "am_chilli_cheese_fries",
+  "ingredients": [
+   {
+    "i": "potatoes",
+    "q": 600,
+    "t": "600g, cut into thin fries"
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tablespoons"
+   },
+   {
+    "i": "beef_mince",
+    "q": 250,
+    "t": "250g"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, finely chopped"
+   },
+   {
+    "i": "chilli_mix",
+    "q": 1,
+    "t": "1 sachet"
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 200,
+    "t": "½ tin"
+   },
+   {
+    "i": "kidney_beans",
+    "q": 200,
+    "t": "½ tin, drained"
+   },
+   {
+    "i": "cheddar",
+    "q": 80,
+    "t": "80g, grated"
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced, to serve",
+    "swap": "Scatter the spring onions over one half of the dish only.",
+    "opt": true
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 50,
+    "t": "3 tablespoons, to serve",
+    "opt": true
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Heat the oven to 220°C (200°C fan) and line two baking trays. Cut the potatoes into thin fries, rinse and pat really dry. Finely chop the onion, drain the kidney beans, grate the cheddar and slice the spring onions (optional)."
+   },
+   {
+    "title": "Bake the fries",
+    "text": "Toss the fries with 1½ tablespoons of the oil and a pinch of salt and spread over the trays. Bake for 35 to 40 minutes, turning halfway, until golden and crisp."
+   },
+   {
+    "title": "Brown the mince",
+    "text": "While the fries bake, heat the remaining oil in a saucepan over a medium-high heat. Brown the mince for 5 minutes, breaking it up. Add the onion and cook for 5 minutes until soft."
+   },
+   {
+    "title": "Simmer the chilli",
+    "text": "Sprinkle over the chilli mix and stir to coat. Add the chopped tomatoes, kidney beans and 100 millilitres of water. Simmer for 15 minutes, stirring now and then, until thick rather than runny, so the fries stay crisp."
+   },
+   {
+    "title": "Melt the cheese",
+    "text": "Pile the fries into an ovenproof dish, spoon over the chilli and scatter with the cheddar. Return to the oven for 3 to 4 minutes until the cheese has melted."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Scatter over the spring onions (optional) and add a few spoonfuls of yogurt (optional). Bring the dish to the table and dig in."
+   }
+  ],
+  "time": 50,
+  "changed": "Chilli mix sachet instead of cumin, paprika, chilli flakes, garlic, purée and stock; no fresh chilli."
+ },
+ {
+  "id": "am_bbq_bacon_burger",
+  "ingredients": [
+   {
+    "i": "beef_mince",
+    "q": 400,
+    "t": "400g"
+   },
+   {
+    "i": "bacon",
+    "q": 100,
+    "t": "4 rashers"
+   },
+   {
+    "i": "cheddar",
+    "q": 60,
+    "t": "60g, sliced"
+   },
+   {
+    "i": "bbq_sauce",
+    "q": 45,
+    "t": "3 tablespoons"
+   },
+   {
+    "i": "burger_buns",
+    "q": 2,
+    "t": "2 brioche buns"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1 large, sliced into rings"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 teaspoons"
+   },
+   {
+    "i": "little_gem",
+    "q": 0.5,
+    "t": "½, leaves separated",
+    "swap": "Leave the lettuce off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "mayonnaise",
+    "q": 20,
+    "t": "1½ tablespoons"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Slice the onion into rings. Shape the mince into 2 patties a little wider than the buns. Press a dimple into the middle of each with your thumb so they stay flat, then season both sides. Slice the cheddar and separate the little gem leaves."
+   },
+   {
+    "title": "Fry the onions",
+    "text": "Heat the oil in a large frying pan over a medium heat. Fry the onion rings for 8 to 10 minutes, stirring now and then, until soft and golden. Tip onto a plate."
+   },
+   {
+    "title": "Crisp the bacon",
+    "text": "Turn the heat to medium-high and fry the bacon in the same pan for 3 to 4 minutes each side until crisp. Lift onto kitchen paper, leaving the fat in the pan."
+   },
+   {
+    "title": "Cook the burgers",
+    "text": "Cook the patties in the bacon fat for 5 to 6 minutes each side until well browned and cooked through with no pink. Brush with 2 tablespoons of the BBQ sauce for the last minute. Top with the cheddar, cover with a lid and cook until melted."
+   },
+   {
+    "title": "Build and serve",
+    "text": "Lift the patties onto a plate and toast the halved buns cut-side down in the pan for 1 minute. Spread with mayo and add the little gem. Stack on the cheesy patties, bacon, fried onions and the remaining BBQ sauce."
+   }
+  ],
+  "time": 30,
+  "title": "BBQ Bacon Cheeseburgers with Fried Onions",
+  "changed": "Simple fried onions instead of breaded panko onion rings, so no flour, egg, panko or pan of frying oil."
+ },
+ {
+  "id": "am_bbq_chicken_traybake",
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 500,
+    "t": "500g"
+   },
+   {
+    "i": "bbq_sauce",
+    "q": 60,
+    "t": "4 tablespoons"
+   },
+   {
+    "i": "sweet_potato",
+    "q": 400,
+    "t": "400g, cut into bite-sized chunks"
+   },
+   {
+    "i": "peppers",
+    "q": 2,
+    "t": "2, cut into strips"
+   },
+   {
+    "i": "red_onion",
+    "q": 1,
+    "t": "1, cut into wedges",
+    "swap": "Leave the onions off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "sweetcorn",
+    "q": 100,
+    "t": "100g",
+    "swap": "Scatter the sweetcorn over one end of the tray only and serve it to one plate."
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 2,
+    "t": "1 teaspoon"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Heat the oven to 220°C (200°C fan). Cut the sweet potato into bite-sized chunks, the peppers into thick strips and the red onion into wedges."
+   },
+   {
+    "title": "Roast the veg",
+    "text": "Toss the veg with the oil, paprika and a good pinch of salt on your largest roasting tray. Spread it out so it roasts rather than steams. Roast for 15 minutes."
+   },
+   {
+    "title": "Glaze the chicken",
+    "text": "While the veg roasts, toss the chicken thighs in a bowl with 3 tablespoons of the BBQ sauce and a pinch of salt and pepper."
+   },
+   {
+    "title": "Roast the chicken and corn",
+    "text": "Push the veg to the edges of the tray and nestle the chicken in the middle. Scatter the sweetcorn over the veg. Roast for 20 to 25 minutes until the chicken is sticky, charred at the edges and cooked through. Brush with the remaining BBQ sauce for the last 5 minutes."
+   },
+   {
+    "title": "Serve",
+    "text": "Spoon the traybake onto plates and spoon over any sticky juices from the tray."
+   }
+  ],
+  "changed": "No lime yogurt drizzle or spring onion garnish; everything stays on one tray."
+ },
+ {
+  "id": "am_jambalaya",
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 300,
+    "t": "300g, cut into bite-sized pieces"
+   },
+   {
+    "i": "sausages",
+    "q": 3,
+    "t": "3, cut into chunks"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 teaspoons"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, diced"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, diced"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 4,
+    "t": "2 teaspoons"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 2,
+    "t": "1 teaspoon"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 200,
+    "t": "½ tin"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 chicken stock cube"
+   },
+   {
+    "i": "hot_sauce",
+    "q": 5,
+    "t": "a few dashes, to serve",
+    "opt": true
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Dice the onion and pepper, crush the garlic and cut the chicken and sausages into bite-sized chunks. Dissolve the stock cube in 300 millilitres of boiling water. Rinse the rice in a sieve until the water runs clear."
+   },
+   {
+    "title": "Brown the meats",
+    "text": "Heat the oil in a large deep pan or casserole with a lid over a medium-high heat. Brown the sausage chunks for 4 minutes. Add the chicken and cook for 4 minutes more until golden all over."
+   },
+   {
+    "title": "Soften the veg",
+    "text": "Add the onion and pepper and cook for 5 minutes until softened. Stir in the garlic, paprika and herbs for 1 minute until fragrant."
+   },
+   {
+    "title": "Simmer the rice",
+    "text": "Stir in the rice to coat it, then add the tomatoes, purée and stock. Bring to the boil, cover and turn the heat to its lowest setting. Cook for 15 to 18 minutes, stirring once halfway so the bottom doesn't catch, until the rice is tender and the liquid is absorbed."
+   },
+   {
+    "title": "Rest and serve",
+    "text": "Take off the heat and leave covered for 5 minutes. Fluff up with a fork and season. Serve with a few dashes of hot sauce (optional) if you like it spicy."
+   }
+  ],
+  "time": 45,
+  "changed": "No chilli flakes, Worcestershire or spring onion garnish; hot sauce at the table if you want heat."
+ },
+ {
+  "id": "am_cajun_chicken_dirty_rice",
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 350,
+    "t": "2 breasts (350g)"
+   },
+   {
+    "i": "beef_mince",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, finely diced"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, finely diced"
+   },
+   {
+    "i": "spring_onions",
+    "q": 3,
+    "t": "3, sliced",
+    "swap": "Fork the spring onions through one portion only."
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 4,
+    "t": "2 teaspoons"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 2,
+    "t": "1 teaspoon"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 chicken stock cube"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 teaspoons"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Rinse the rice in a sieve and dissolve the stock cube in 350 millilitres of boiling water. Finely dice the onion and pepper, crush the garlic and slice the spring onions. Mix the paprika, herbs and 1 teaspoon of salt to make a quick Cajun-style spice."
+   },
+   {
+    "title": "Spice the chicken",
+    "text": "Slice each chicken breast in half horizontally to make two thin fillets. Rub them with the oil and half the spice and set aside on a plate."
+   },
+   {
+    "title": "Brown the mince",
+    "text": "Put the mince in a saucepan with a lid over a high heat. Fry for 4 minutes, breaking it up, until browned with crispy bits. Add the onion and pepper and cook for 4 minutes until softened. Stir in the garlic and remaining spice for 1 minute."
+   },
+   {
+    "title": "Simmer the rice",
+    "text": "Stir in the rice, pour in the stock and bring to the boil. Cover, turn the heat to low and cook for 12 minutes until the rice is tender and the liquid absorbed. Take off the heat and leave to steam, lid on, for 5 minutes."
+   },
+   {
+    "title": "Cook the chicken",
+    "text": "While the rice cooks, heat a frying pan over a medium-high heat. Cook the chicken for 4 to 5 minutes each side until the spice crust is dark and the chicken is cooked through. Rest for 2 minutes, then slice."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Fork the spring onions through the rice and spoon onto plates. Top with the sliced chicken."
+   }
+  ],
+  "time": 30,
+  "changed": "Spice mix cut to paprika and mixed herbs (no cumin or chilli flakes); no butter baste or lemon wedges."
+ },
+ {
+  "id": "am_buffalo_chicken_wraps",
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 300,
+    "t": "2 small breasts (300g), cut into thin strips"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 2,
+    "t": "1 teaspoon"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 teaspoons"
+   },
+   {
+    "i": "hot_sauce",
+    "q": 30,
+    "t": "2 tablespoons",
+    "swap": "Take one portion of chicken out of the pan before adding the buffalo sauce."
+   },
+   {
+    "i": "butter",
+    "q": 10,
+    "t": "a knob"
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, shredded",
+    "swap": "Leave the lettuce out of one person's wraps.",
+    "autoSwap": true
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 100,
+    "t": "100g, halved",
+    "swap": "Leave the tomatoes out of one person's wraps.",
+    "autoSwap": true
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 60,
+    "t": "4 tablespoons"
+   },
+   {
+    "i": "mayonnaise",
+    "q": 15,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "cheddar",
+    "q": 40,
+    "t": "40g, grated"
+   },
+   {
+    "i": "wraps",
+    "q": 4,
+    "t": "4"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Cut the chicken into thin strips and toss with the paprika and a pinch of salt. Shred the little gem, halve the tomatoes and grate the cheddar. Stir the yogurt and mayo together with plenty of black pepper for a cool dressing."
+   },
+   {
+    "title": "Cook the chicken",
+    "text": "Heat the oil in a large frying pan over a high heat. Fry the chicken for 5 to 6 minutes, turning, until golden and cooked through. Spread the strips out so they brown rather than stew."
+   },
+   {
+    "title": "Make it buffalo",
+    "text": "Turn the heat to low and add the butter and hot sauce. Toss for 1 minute until the sauce is glossy and clings to every strip. Tip onto a plate and wipe out the pan."
+   },
+   {
+    "title": "Fill and serve",
+    "text": "Warm the wraps in the dry pan over a medium heat for 10 seconds each side so they roll without cracking. Fill with the little gem, buffalo chicken, tomatoes, cheddar and a drizzle of the dressing. Roll up tightly, cut in half and serve."
+   }
+  ],
+  "time": 20,
+  "title": "Buffalo Chicken Wraps with Cool Yogurt Dressing",
+  "changed": "Simple yogurt and mayo dressing instead of a feta ranch slaw; no carrot, cucumber, lemon, honey or toasting step."
+ },
+ {
+  "id": "am_chicken_caesar_wraps",
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 300,
+    "t": "2 small breasts (300g)"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 teaspoons"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, grated"
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "½, juiced"
+   },
+   {
+    "i": "bacon",
+    "q": 80,
+    "t": "3 rashers"
+   },
+   {
+    "i": "mayonnaise",
+    "q": 40,
+    "t": "2½ tablespoons"
+   },
+   {
+    "i": "parmesan",
+    "q": 30,
+    "t": "30g, finely grated"
+   },
+   {
+    "i": "worcestershire",
+    "q": 5,
+    "t": "1 teaspoon"
+   },
+   {
+    "i": "little_gem",
+    "q": 2,
+    "t": "2, shredded",
+    "swap": "Leave the lettuce off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 100,
+    "t": "100g, halved"
+   },
+   {
+    "i": "wraps",
+    "q": 4,
+    "t": "4"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Slice each chicken breast in half horizontally to make two thin fillets and rub with the oil and some salt and pepper. Grate the garlic, finely grate the parmesan, juice the lemon, shred the little gems and halve the tomatoes."
+   },
+   {
+    "title": "Make the Caesar dressing",
+    "text": "Mix the mayo, garlic, half the parmesan, the lemon juice and Worcestershire with lots of black pepper. Loosen with a splash of water until it will drizzle off a spoon."
+   },
+   {
+    "title": "Crisp the bacon",
+    "text": "Fry the bacon in a dry frying pan over a medium-high heat for 5 minutes until crisp. Lift onto kitchen paper, then chop."
+   },
+   {
+    "title": "Cook the chicken",
+    "text": "Cook the chicken in the same pan over a medium-high heat for 4 to 5 minutes each side until golden and cooked through. Rest for 2 minutes, then slice."
+   },
+   {
+    "title": "Wrap and serve",
+    "text": "Toss the little gem with most of the dressing. Warm the wraps in the pan for 10 seconds each side. Layer on the little gem, chicken, bacon, tomatoes and remaining parmesan, then drizzle with the last of the dressing. Roll up tightly and halve."
+   }
+  ],
+  "time": 25,
+  "title": "Chicken Caesar Wraps with Crispy Bacon & Parmesan",
+  "changed": "No toasted panko crumbs; quicker Caesar dressing of mayo, garlic, parmesan, lemon and Worcestershire (no yogurt or mustard)."
+ },
+ {
+  "id": "am_chicken_cobb_salad",
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 300,
+    "t": "2 small breasts (300g)"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 1,
+    "t": "½ teaspoon"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 teaspoons"
+   },
+   {
+    "i": "eggs",
+    "q": 2,
+    "t": "2"
+   },
+   {
+    "i": "bacon",
+    "q": 80,
+    "t": "3 rashers"
+   },
+   {
+    "i": "little_gem",
+    "q": 2,
+    "t": "2, chopped",
+    "swap": "Leave the lettuce off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 150,
+    "t": "150g, halved"
+   },
+   {
+    "i": "avocado",
+    "q": 1,
+    "t": "1, diced"
+   },
+   {
+    "i": "feta",
+    "q": 50,
+    "t": "50g, crumbled",
+    "swap": "Crumble the feta over one half of the platter only."
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 60,
+    "t": "4 tablespoons"
+   },
+   {
+    "i": "mayonnaise",
+    "q": 15,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1, juiced"
+   },
+   {
+    "i": "wholegrain_mustard",
+    "q": 5,
+    "t": "1 teaspoon"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Boil the kettle. Halve the tomatoes, chop the little gem and juice the lemon. Whisk the yogurt, mayo, three-quarters of the lemon juice, the mustard and a pinch of salt for the dressing. Rub the chicken with the oil, paprika, salt and pepper."
+   },
+   {
+    "title": "Boil the eggs",
+    "text": "Pour boiling water from the kettle into a small pan over a high heat and lower in the eggs. Cook for 8 minutes, then move to a bowl of cold water to cool."
+   },
+   {
+    "title": "Crisp the bacon",
+    "text": "Fry the bacon in a griddle or frying pan over a medium-high heat for 5 minutes until crisp. Drain on kitchen paper, then chop. Keep the fat in the pan for the chicken."
+   },
+   {
+    "title": "Cook the chicken",
+    "text": "Cook the chicken in the same pan over a medium-high heat for 5 to 6 minutes each side until charred and cooked through. While it cooks, peel and quarter the eggs. Dice the avocado and toss with the remaining lemon juice so it doesn't brown. Rest the chicken for 2 minutes, then slice."
+   },
+   {
+    "title": "Build the Cobb",
+    "text": "Spread the little gem over a large platter or two plates. Arrange the chicken, bacon, egg, avocado, tomatoes and feta in neat rows. Drizzle with the dressing just before eating."
+   }
+  ],
+  "time": 25,
+  "changed": "No charred sweetcorn, red onion or honey; the classic Cobb toppings stay."
+ },
+ {
+  "id": "am_bbq_glazed_salmon",
+  "ingredients": [
+   {
+    "i": "salmon",
+    "q": 2,
+    "t": "2 fillets"
+   },
+   {
+    "i": "bbq_sauce",
+    "q": 45,
+    "t": "3 tablespoons"
+   },
+   {
+    "i": "sweet_potato",
+    "q": 500,
+    "t": "500g, peeled and chunked"
+   },
+   {
+    "i": "butter",
+    "q": 10,
+    "t": "a knob"
+   },
+   {
+    "i": "sweetcorn",
+    "q": 120,
+    "t": "120g",
+    "swap": "It's cooked as a separate side, so serve the sweetcorn to one plate only."
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Heat the oven to 200°C (180°C fan), line a small baking tray and boil the kettle. Peel the sweet potato and cut into chunks."
+   },
+   {
+    "title": "Boil the sweet potato",
+    "text": "Put the sweet potato in a saucepan, cover with boiling water from the kettle and add a pinch of salt. Simmer over a medium-high heat for 12 to 15 minutes until very tender."
+   },
+   {
+    "title": "Glaze and bake the salmon",
+    "text": "Meanwhile, sit the salmon skin-side down on the tray and spoon over half the BBQ sauce. Bake for 12 to 14 minutes, brushing with the rest halfway, until sticky and the fish flakes easily."
+   },
+   {
+    "title": "Char the sweetcorn",
+    "text": "While the salmon bakes, dry-fry the sweetcorn in a frying pan over a high heat for 4 to 5 minutes until charred in spots. Season with a pinch of salt."
+   },
+   {
+    "title": "Mash and serve",
+    "text": "Drain the sweet potato well and mash with the butter, a pinch of salt and plenty of black pepper. Spoon onto plates, sit the salmon on top and serve the sweetcorn alongside."
+   }
+  ],
+  "time": 25,
+  "title": "Sticky BBQ Salmon with Sweet Potato Mash & Charred Sweetcorn",
+  "changed": "BBQ sauce on its own for the glaze; charred sweetcorn instead of a homemade salsa with tomatoes, red onion, lime and coriander."
+ },
+ {
+  "id": "am_honey_mustard_chicken_burgers",
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 300,
+    "t": "2 small breasts (300g)"
+   },
+   {
+    "i": "honey",
+    "q": 15,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "wholegrain_mustard",
+    "q": 15,
+    "t": "3 teaspoons"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 teaspoons"
+   },
+   {
+    "i": "avocado",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "½, juiced"
+   },
+   {
+    "i": "burger_buns",
+    "q": 2,
+    "t": "2 brioche buns"
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, leaves separated",
+    "swap": "Leave the lettuce off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 150,
+    "t": "150g, halved"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Lay the chicken between two sheets of baking paper and bash to an even thickness. Juice the lemon, halve the tomatoes and separate the little gem leaves."
+   },
+   {
+    "title": "Marinate the chicken",
+    "text": "Mix the honey, mustard, oil and a pinch of salt. Keep 1 tablespoon back for glazing and coat the chicken in the rest."
+   },
+   {
+    "title": "Smash the avocado",
+    "text": "Mash the avocado with the lemon juice and a pinch of salt until chunky."
+   },
+   {
+    "title": "Cook the chicken",
+    "text": "Heat a griddle or frying pan over a medium-high heat. Cook the chicken for 4 to 5 minutes each side until charred and cooked through. Brush with the reserved glaze for the last minute so it turns sticky."
+   },
+   {
+    "title": "Build the burgers",
+    "text": "Lift the chicken onto a plate and toast the halved buns cut-side down in the pan for 1 minute. Spread the bases with smashed avocado, then add little gem, chicken and some of the tomatoes. Serve the rest of the tomatoes and little gem on the side."
+   }
+  ],
+  "time": 20,
+  "changed": "Honey mustard glaze without garlic or paprika; no yogurt sauce, red onion or cucumber side salad."
+ },
+ {
+  "id": "am_cajun_prawn_pasta",
+  "ingredients": [
+   {
+    "i": "prawns",
+    "q": 170,
+    "t": "170g, defrosted"
+   },
+   {
+    "i": "pasta",
+    "q": 180,
+    "t": "180g penne"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "spring_onions",
+    "q": 3,
+    "t": "3, whites and greens sliced separately",
+    "swap": "Cook the whites in the sauce as normal, then scatter the green tops over one bowl only."
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, sliced"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 3,
+    "t": "1½ teaspoons"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 teaspoons"
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 200,
+    "t": "½ tin"
+   },
+   {
+    "i": "double_cream",
+    "q": 75,
+    "t": "75ml"
+   },
+   {
+    "i": "spinach",
+    "q": 80,
+    "t": "80g"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Boil the kettle. If your prawns are frozen, sit them in a bowl of cold water for 10 minutes to defrost, then pat dry. Slice the pepper and garlic, and slice the spring onions, keeping the whites and greens separate."
+   },
+   {
+    "title": "Cook the pasta",
+    "text": "Pour boiling water into a large saucepan, add a pinch of salt and bring back to the boil over a high heat. Cook the pasta for 10 to 12 minutes until just tender. Scoop out a mugful of the water before draining."
+   },
+   {
+    "title": "Make the sauce",
+    "text": "Meanwhile, heat the oil in a large frying pan over a medium heat. Fry the pepper and spring onion whites for 4 minutes until softened. Add the garlic and paprika for 1 minute. Pour in the tomatoes and cream and bubble for 3 to 4 minutes until slightly thickened."
+   },
+   {
+    "title": "Add the prawns and spinach",
+    "text": "Add the prawns and cook for 2 to 3 minutes until pink all the way through. Stir in the spinach until wilted and season with salt and pepper."
+   },
+   {
+    "title": "Toss and serve",
+    "text": "Add the drained pasta and a splash of pasta water to the sauce. Toss until silky and coated. Serve topped with the spring onion greens."
+   }
+  ],
+  "time": 20,
+  "changed": "Smoked paprika instead of a four-spice Cajun mix; prawns cook straight in the sauce; no parmesan or lemon."
+ },
+ {
+  "id": "am_bbq_pork_steaks",
+  "ingredients": [
+   {
+    "i": "pork_shoulder",
+    "q": 400,
+    "t": "2 large steaks (about 400g)"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 3,
+    "t": "1½ teaspoons"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 teaspoons"
+   },
+   {
+    "i": "bbq_sauce",
+    "q": 30,
+    "t": "2 tablespoons"
+   },
+   {
+    "i": "potatoes",
+    "q": 500,
+    "t": "500g, in chunks"
+   },
+   {
+    "i": "spring_onions",
+    "q": 3,
+    "t": "3, sliced",
+    "swap": "Fold the spring onions through half the potato salad only."
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 50,
+    "t": "3 tablespoons"
+   },
+   {
+    "i": "mayonnaise",
+    "q": 20,
+    "t": "1½ tablespoons"
+   },
+   {
+    "i": "wholegrain_mustard",
+    "q": 10,
+    "t": "2 teaspoons"
+   },
+   {
+    "i": "sweetcorn",
+    "q": 150,
+    "t": "150g",
+    "swap": "It's cooked as a separate side, so serve the sweetcorn to one plate only."
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Boil the kettle. Cut the potatoes into chunks and slice the spring onions. Pat the pork dry, rub with the oil, then season with the paprika, 1 teaspoon of salt and some pepper."
+   },
+   {
+    "title": "Boil the potatoes",
+    "text": "Put the potatoes in a saucepan, cover with boiling water and add a pinch of salt. Simmer over a medium-high heat for 12 to 15 minutes until tender. Drain and leave to steam dry."
+   },
+   {
+    "title": "Cook the pork",
+    "text": "Heat a griddle or large frying pan over a medium-high heat. Cook the steaks for 4 to 5 minutes each side until charred and cooked through. Brush with the BBQ sauce for the last 2 minutes, flipping a couple of times so it caramelises. Rest for 3 minutes."
+   },
+   {
+    "title": "Cook the corn",
+    "text": "While the pork cooks, cook the sweetcorn in a small pan of boiling water for 3 minutes. Drain and season with a pinch of salt."
+   },
+   {
+    "title": "Make the potato salad",
+    "text": "Mix the yogurt, mayo and mustard in a large bowl. Fold through the warm potatoes and spring onions. Season to taste."
+   },
+   {
+    "title": "Slice and serve",
+    "text": "Slice the pork and plate up with the potato salad and sweetcorn."
+   }
+  ],
+  "time": 30,
+  "changed": "Paprika rub and plain BBQ glaze (no cumin or honey); no lemon in the potato salad, no butter on the corn and no lettuce."
+ },
+ {
+  "id": "as_sweet_sour_chicken",
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 300,
+    "t": "2 breasts (300g), in bite-size chunks"
+   },
+   {
+    "i": "cornflour",
+    "q": 45,
+    "t": "4½ tablespoons"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, in chunks"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, in chunks"
+   },
+   {
+    "i": "pineapple_chunks",
+    "q": 216,
+    "t": "½ tin, plus 4 tablespoons of the juice"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 30,
+    "t": "2 tablespoons"
+   },
+   {
+    "i": "rice_vinegar",
+    "q": 45,
+    "t": "3 tablespoons"
+   },
+   {
+    "i": "honey",
+    "q": 30,
+    "t": "2 tablespoons"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 15,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, finely chopped"
+   },
+   {
+    "i": "oil",
+    "q": 60,
+    "t": "4 tablespoons, for frying"
+   },
+   {
+    "i": "salt",
+    "q": 3,
+    "t": "a few pinches"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Put the kettle on. Cut the chicken into bite-sized chunks and the pepper and onion into similar-sized pieces. Finely chop the garlic. Drain the pineapple, saving 4 tablespoons of the juice."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "Rinse the rice and tip it into a saucepan with 300 millilitres of boiling water and a pinch of salt. Cover and simmer on a low heat for 10 minutes. Turn off the heat and leave it covered for 5 minutes until fluffy."
+   },
+   {
+    "title": "Mix the sauce",
+    "text": "While the rice cooks, whisk the saved pineapple juice, tomato purée, rice vinegar, honey and soy sauce in a jug with 1 teaspoon of the cornflour and 4 tablespoons of water until smooth."
+   },
+   {
+    "title": "Fry the chicken",
+    "text": "Toss the chicken with the rest of the cornflour and a big pinch of salt until every piece is coated. Heat the oil in a large frying pan or wok over a medium-high heat. Fry the chicken in one layer, in two batches if needed, for 6 to 8 minutes, turning, until crisp and cooked through. Lift onto kitchen paper."
+   },
+   {
+    "title": "Cook the veg",
+    "text": "Pour off and throw away all but 1 tablespoon of the oil. Stir-fry the pepper and onion over a high heat for 3 minutes until just catching at the edges. Add the garlic and pineapple for 1 minute."
+   },
+   {
+    "title": "Sauce and serve",
+    "text": "Pour in the sauce and bubble for 1 to 2 minutes until thick and glossy. Tip the chicken back in, toss to coat and serve on the rice."
+   }
+  ],
+  "time": 35,
+  "changed": "Chicken simply tossed in cornflour (no egg dip); no spring onion garnish."
+ },
+ {
+  "id": "as_salt_pepper_chicken_chips",
+  "ingredients": [
+   {
+    "i": "potatoes",
+    "q": 500,
+    "t": "2 large (500g), cut into chips"
+   },
+   {
+    "i": "chicken_breast",
+    "q": 300,
+    "t": "2 breasts (300g), in strips"
+   },
+   {
+    "i": "cornflour",
+    "q": 40,
+    "t": "4 tablespoons"
+   },
+   {
+    "i": "salt",
+    "q": 6,
+    "t": "1 teaspoon, plus a pinch"
+   },
+   {
+    "i": "black_pepper",
+    "q": 3,
+    "t": "1½ teaspoons, coarsely ground"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "green_chillies",
+    "q": 10,
+    "t": "1, sliced",
+    "swap": "Leave the chilli out of the pan and serve it sliced on the side so each plate can be as hot as you like."
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, sliced"
+   },
+   {
+    "i": "spring_onions",
+    "q": 3,
+    "t": "3, sliced"
+   },
+   {
+    "i": "oil",
+    "q": 75,
+    "t": "5 tablespoons, for frying"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Heat the oven to 220°C (200°C fan). Cut the potatoes into chips and the chicken into strips. Slice the onion, pepper, green chilli, garlic and spring onions. Mix 1 teaspoon of the salt with the black pepper: this is your salt-and-pepper mix."
+   },
+   {
+    "title": "Roast the chips",
+    "text": "Toss the chips with 1 tablespoon of the oil and a pinch of salt on a large baking tray. Spread them out in one layer. Roast for 35 to 40 minutes, turning halfway, until golden and crisp."
+   },
+   {
+    "title": "Coat the chicken",
+    "text": "Toss the chicken strips with the cornflour and half the salt-and-pepper mix until thoroughly coated."
+   },
+   {
+    "title": "Fry the chicken",
+    "text": "When the chips have 15 minutes left, heat 3 tablespoons of the oil in a large frying pan or wok over a medium-high heat. Fry the chicken in one layer for 6 to 8 minutes, turning, until crunchy and cooked through. Lift onto kitchen paper."
+   },
+   {
+    "title": "Fry the veg",
+    "text": "Wipe out the pan and heat the last tablespoon of oil over a high heat. Stir-fry the onion and pepper for 3 minutes until softened but still bright. Add the garlic, green chilli and spring onions for 1 minute."
+   },
+   {
+    "title": "Toss and serve",
+    "text": "Tip in the chicken and chips and sprinkle over the rest of the salt-and-pepper mix. Toss everything together for 1 minute. Serve straight away, takeaway-box style."
+   }
+  ],
+  "time": 45,
+  "changed": "No egg dip, chilli flakes or cinnamon: just salt, pepper and cornflour on the chicken."
+ },
+ {
+  "id": "as_crispy_chilli_beef",
+  "ingredients": [
+   {
+    "i": "beef_stir_fry_strips",
+    "q": 300,
+    "t": "1 pack (300g)"
+   },
+   {
+    "i": "cornflour",
+    "q": 40,
+    "t": "4 tablespoons"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a couple of pinches"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, thinly sliced"
+   },
+   {
+    "i": "carrots",
+    "q": 80,
+    "t": "1 small, in matchsticks"
+   },
+   {
+    "i": "red_onion",
+    "q": 1,
+    "t": "1, thinly sliced"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, finely chopped"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 5,
+    "t": "1 teaspoon"
+   },
+   {
+    "i": "sweet_chilli_sauce",
+    "q": 60,
+    "t": "4 tablespoons"
+   },
+   {
+    "i": "rice_vinegar",
+    "q": 30,
+    "t": "2 tablespoons"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 30,
+    "t": "2 tablespoons"
+   },
+   {
+    "i": "oil",
+    "q": 60,
+    "t": "4 tablespoons, for frying"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Put the kettle on. Thinly slice the pepper and red onion, cut the carrot into matchsticks and finely chop the garlic. Pat the beef strips dry with kitchen paper, as dry beef crisps up better."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "Rinse the rice and tip it into a saucepan with 300 millilitres of boiling water and a pinch of salt. Cover and simmer on a low heat for 10 minutes. Turn off the heat and leave it covered for 5 minutes until fluffy."
+   },
+   {
+    "title": "Mix the sauce",
+    "text": "While the rice cooks, stir the sweet chilli sauce, rice vinegar, soy sauce and 2 tablespoons of water together in a jug."
+   },
+   {
+    "title": "Crisp the beef",
+    "text": "Toss the beef in the cornflour and a pinch of salt until every strip is coated. Heat 3 tablespoons of the oil in a wok or large frying pan over a high heat. Fry the beef in two batches for 3 to 4 minutes each, turning, until deep golden and crunchy. Lift onto kitchen paper."
+   },
+   {
+    "title": "Fry the veg",
+    "text": "Add the last tablespoon of oil to the wok. Stir-fry the pepper, carrot and red onion over a high heat for 2 to 3 minutes until just tender. Add the garlic and ginger paste for 30 seconds."
+   },
+   {
+    "title": "Toss and serve",
+    "text": "Pour in the sauce and bubble for 1 minute until syrupy. Toss the beef back through so it stays crisp and serve on the rice."
+   }
+  ],
+  "time": 30,
+  "changed": "Simpler sauce of sweet chilli, soy and vinegar (no purée or honey); no fresh chilli or spring onion garnish."
+ },
+ {
+  "id": "as_chicken_katsu_curry",
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 300,
+    "t": "2 breasts (300g)"
+   },
+   {
+    "i": "plain_flour",
+    "q": 30,
+    "t": "3 tablespoons"
+   },
+   {
+    "i": "eggs",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "panko",
+    "q": 60,
+    "t": "60g"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, finely chopped"
+   },
+   {
+    "i": "carrots",
+    "q": 100,
+    "t": "1, finely chopped"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "curry_powder",
+    "q": 8,
+    "t": "1 heaped tablespoon"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "honey",
+    "q": 10,
+    "t": "2 teaspoons"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 10,
+    "t": "2 teaspoons"
+   },
+   {
+    "i": "oil",
+    "q": 75,
+    "t": "5 tablespoons, for frying"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch or two"
+   },
+   {
+    "i": "black_pepper",
+    "q": 0.5,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Put the kettle on. Finely chop the onion and carrot, crush the garlic and beat the egg."
+   },
+   {
+    "title": "Make the katsu sauce",
+    "text": "Heat 1 tablespoon of the oil in a saucepan over a medium heat. Cook the onion and carrot for 6 to 8 minutes, stirring, until soft. Stir in the garlic, curry powder and 1 tablespoon of the flour for 1 minute. Gradually whisk in 400 millilitres of boiling water with the stock cube crumbled in. Add the honey and soy sauce and simmer for 10 to 12 minutes until it coats the back of a spoon."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "While the sauce simmers, rinse the rice and tip it into a saucepan with 300 millilitres of boiling water and a pinch of salt. Cover and simmer on a low heat for 10 minutes. Turn off the heat and leave it covered for 5 minutes until fluffy."
+   },
+   {
+    "title": "Crumb the chicken",
+    "text": "Put each breast between two sheets of baking paper and bash with a rolling pin until evenly thin. Set out three plates: the remaining flour seasoned with salt and black pepper, the beaten egg, and the panko. Coat each breast in flour, then egg, then press firmly into the panko."
+   },
+   {
+    "title": "Fry the chicken",
+    "text": "Heat 4 tablespoons of the oil in a large frying pan over a medium heat. Fry the chicken for 4 to 5 minutes each side until deep golden and cooked through, with no pink in the middle. Rest on kitchen paper for 2 minutes."
+   },
+   {
+    "title": "Slice and serve",
+    "text": "Slice the chicken into strips. Serve on the rice with the katsu sauce poured alongside."
+   }
+  ],
+  "time": 40,
+  "title": "Crispy Chicken Katsu Curry with Rice",
+  "changed": "No pickled cucumber or ginger; sauce made in one go so it's down to 6 steps."
+ },
+ {
+  "id": "as_korean_fried_chicken",
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 400,
+    "t": "4 thighs (400g), in large chunks"
+   },
+   {
+    "i": "cornflour",
+    "q": 40,
+    "t": "4 tablespoons"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "½ teaspoon"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "½ teaspoon"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "gochujang",
+    "q": 45,
+    "t": "3 tablespoons"
+   },
+   {
+    "i": "honey",
+    "q": 35,
+    "t": "2½ tablespoons"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 15,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "rice_vinegar",
+    "q": 15,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "sesame_oil",
+    "q": 5,
+    "t": "1 teaspoon"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.5,
+    "t": "½, in chunks",
+    "swap": "Leave the cucumber off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced, to serve",
+    "swap": "Scatter the spring onions over one plate only.",
+    "opt": true
+   },
+   {
+    "i": "oil",
+    "q": 60,
+    "t": "4 tablespoons, for frying"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Put the kettle on. Cut the chicken into large chunks, crush the garlic, cut the cucumber into chunks and slice the spring onions (optional)."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "Rinse the rice and tip it into a saucepan with 300 millilitres of boiling water and a pinch of salt. Cover and simmer on a low heat for 10 minutes. Turn off the heat and leave it covered for 5 minutes until fluffy."
+   },
+   {
+    "title": "Make the glaze",
+    "text": "While the rice cooks, put the gochujang, honey, soy sauce, rice vinegar and garlic in a small saucepan with 2 tablespoons of water. Simmer over a low heat for 2 to 3 minutes until glossy and thick enough to coat a spoon. Turn off the heat."
+   },
+   {
+    "title": "Coat the chicken",
+    "text": "Toss the chicken with the salt and black pepper, then with the cornflour until every piece is well coated."
+   },
+   {
+    "title": "Fry the chicken",
+    "text": "Heat the oil in a large frying pan or wok over a medium-high heat. Fry the chicken in one layer, in two batches if needed, for 8 to 10 minutes, turning, until crisp, deep golden and cooked through. Drain on kitchen paper."
+   },
+   {
+    "title": "Glaze and serve",
+    "text": "Stir the sesame oil through the rice. Tip the chicken into the warm glaze and toss until every piece is coated. Pile onto the sesame rice with the cucumber and scatter with the spring onions (optional)."
+   }
+  ],
+  "time": 35,
+  "changed": "Fried once in a cornflour coating instead of a batter and double deep-fry; plain cucumber instead of pickled; no peanuts or ginger."
+ },
+ {
+  "id": "as_char_siu_pork",
+  "ingredients": [
+   {
+    "i": "pork_loin_steaks",
+    "q": 300,
+    "t": "2–3 steaks (300g), fat trimmed"
+   },
+   {
+    "i": "hoisin_sauce",
+    "q": 45,
+    "t": "3 tablespoons"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 25,
+    "t": "1½ tablespoons"
+   },
+   {
+    "i": "honey",
+    "q": 40,
+    "t": "2½ tablespoons"
+   },
+   {
+    "i": "garlic",
+    "q": 4,
+    "t": "4 cloves, crushed"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "pak_choi",
+    "q": 250,
+    "t": "1 pack (250g), halved"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch or two"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Heat the oven to 220°C (200°C fan) and line a small roasting tin with foil. Crush the garlic, halve the pak choi lengthways and trim any thick fat from the pork."
+   },
+   {
+    "title": "Marinate the pork",
+    "text": "Mix the hoisin, 1 tablespoon of the soy sauce, 2 tablespoons of the honey and half the garlic. Toss the pork in it. Leave for 10 minutes while the oven heats, or overnight in the fridge."
+   },
+   {
+    "title": "Roast the pork",
+    "text": "Lift the pork into the tin, keeping the leftover marinade, and roast for 10 minutes. Mix the leftover marinade with the last of the honey and brush it thickly over the pork. Roast for 8 to 10 minutes more until sticky, charred at the edges and cooked through."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "While the pork roasts, boil the kettle. rinse the rice and tip it into a saucepan with 300 millilitres of boiling water and a pinch of salt. Cover and simmer on a low heat for 10 minutes. Turn off the heat and leave it covered for 5 minutes until fluffy."
+   },
+   {
+    "title": "Cook the pak choi",
+    "text": "When the pork has 5 minutes left, heat the oil in a frying pan or wok over a high heat. Stir-fry the pak choi and remaining garlic for 2 to 3 minutes until the leaves wilt but the stems keep some bite. Toss with the rest of the soy sauce and a splash of water."
+   },
+   {
+    "title": "Slice and serve",
+    "text": "Rest the pork for 3 minutes, then slice it thickly on an angle. Serve on the rice with the pak choi and spoon over the sticky juices from the tin."
+   }
+  ],
+  "time": 40,
+  "changed": "Marinade cut to hoisin, soy, honey and garlic (no purée, cinnamon, ginger or sesame oil); soy instead of oyster sauce on the pak choi; no spring onions."
+ },
+ {
+  "id": "as_special_egg_fried_rice",
+  "ingredients": [
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "chicken_breast",
+    "q": 150,
+    "t": "1 breast (150g), diced small"
+   },
+   {
+    "i": "prawns",
+    "q": 100,
+    "t": "100g, defrosted"
+   },
+   {
+    "i": "bacon",
+    "q": 100,
+    "t": "3 rashers, diced"
+   },
+   {
+    "i": "eggs",
+    "q": 3,
+    "t": "3, beaten"
+   },
+   {
+    "i": "frozen_peas",
+    "q": 80,
+    "t": "80g",
+    "swap": "Leave the peas out of the wok. Cook them in a small pan of boiling water for 3 minutes and stir them into one portion only."
+   },
+   {
+    "i": "spring_onions",
+    "q": 4,
+    "t": "4, sliced",
+    "swap": "Scatter the green tops over one plate only."
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, finely chopped"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 30,
+    "t": "2 tablespoons"
+   },
+   {
+    "i": "sesame_oil",
+    "q": 5,
+    "t": "1 teaspoon"
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tablespoons"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch or two"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Put the kettle on. Dice the chicken and bacon small and finely chop the garlic. Slice the spring onions, keeping the white and green parts separate. Pat the prawns dry and beat the eggs with a pinch of salt."
+   },
+   {
+    "title": "Cook and cool the rice",
+    "text": "Rinse the rice and tip it into a saucepan with 300 millilitres of boiling water and a pinch of salt. Cover and simmer on a low heat for 10 minutes. Spread it out on a large plate to steam-dry for 10 minutes, so it fries into separate grains."
+   },
+   {
+    "title": "Cook the meat",
+    "text": "While the rice dries, heat 1 tablespoon of the oil in a wok or large frying pan over a high heat. Fry the bacon and chicken for 4 to 5 minutes until golden and the chicken is cooked through. Add the prawns for 2 minutes until pink, then tip everything onto a plate."
+   },
+   {
+    "title": "Scramble the eggs",
+    "text": "Add the last tablespoon of oil to the wok and pour in the eggs. Leave for 20 seconds, then stir gently until just set in soft curds. Push them to one side."
+   },
+   {
+    "title": "Fry the rice",
+    "text": "Add the rice, garlic, white spring onions and peas. Stir-fry over a high heat for 3 to 4 minutes, pressing the rice against the wok so it toasts a little."
+   },
+   {
+    "title": "Toss and serve",
+    "text": "Return the meat and add the soy sauce and sesame oil. Toss for 1 to 2 minutes until piping hot and evenly coloured. Serve scattered with the green spring onions."
+   }
+  ],
+  "changed": "No beansprouts or oyster sauce: just soy and sesame oil to season."
+ },
+ {
+  "id": "as_honey_sesame_chicken",
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 300,
+    "t": "2 breasts (300g), in chunks"
+   },
+   {
+    "i": "cornflour",
+    "q": 45,
+    "t": "4½ tablespoons"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "broccoli",
+    "q": 200,
+    "t": "½ head (200g), in florets"
+   },
+   {
+    "i": "honey",
+    "q": 45,
+    "t": "3 tablespoons"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 30,
+    "t": "2 tablespoons"
+   },
+   {
+    "i": "rice_vinegar",
+    "q": 15,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 10,
+    "t": "2 teaspoons"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "sesame_oil",
+    "q": 10,
+    "t": "2 teaspoons"
+   },
+   {
+    "i": "oil",
+    "q": 60,
+    "t": "4 tablespoons, for frying"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch or two"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Put the kettle on. Cut the chicken into chunks, cut the broccoli into florets and crush the garlic."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "Rinse the rice and tip it into a saucepan with 300 millilitres of boiling water and a pinch of salt. Cover and simmer on a low heat for 10 minutes. Turn off the heat and leave it covered for 5 minutes until fluffy."
+   },
+   {
+    "title": "Mix the sauce",
+    "text": "Whisk the honey, soy sauce, rice vinegar, tomato purée, garlic and sesame oil in a jug with 1 teaspoon of the cornflour and 3 tablespoons of water until smooth. Set it by the hob, as everything moves fast once the chicken is fried."
+   },
+   {
+    "title": "Fry the chicken",
+    "text": "Toss the chicken with the remaining cornflour and a pinch of salt until every piece is coated. Heat the oil in a wok or large frying pan over a medium-high heat. Fry the chicken in one layer for 6 to 8 minutes, turning, until golden, crisp and cooked through. Lift onto kitchen paper."
+   },
+   {
+    "title": "Cook the broccoli",
+    "text": "While the chicken fries, cook the broccoli in a pan of boiling water for 3 minutes until just tender. Drain and cover with the pan lid to keep warm."
+   },
+   {
+    "title": "Glaze and serve",
+    "text": "Pour off and throw away most of the oil, leaving a thin film in the wok. Add the sauce and bubble for 1 minute until thick and sticky, then toss in the chicken. Serve over the rice with the broccoli."
+   }
+  ],
+  "time": 25,
+  "changed": "Chicken simply tossed in cornflour (no egg dip); no spring onion or chilli flake garnish."
+ },
+ {
+  "id": "as_thai_green_chicken_curry",
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 350,
+    "t": "350g, sliced"
+   },
+   {
+    "i": "thai_green_paste",
+    "q": 45,
+    "t": "3 tablespoons"
+   },
+   {
+    "i": "coconut_milk",
+    "q": 400,
+    "t": "1 tin (400ml)"
+   },
+   {
+    "i": "fish_sauce",
+    "q": 15,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "lime",
+    "q": 0.5,
+    "t": "½, juiced"
+   },
+   {
+    "i": "courgette",
+    "q": 1,
+    "t": "1, in half-moons"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "spinach",
+    "q": 80,
+    "t": "2 big handfuls"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch or two"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Put the kettle on. Slice the chicken and pepper, cut the courgette into half-moons and juice the lime."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "Rinse the rice and tip it into a saucepan with 300 millilitres of boiling water and a pinch of salt. Cover and simmer on a low heat for 10 minutes. Turn off the heat and leave it covered for 5 minutes until fluffy."
+   },
+   {
+    "title": "Fry the paste",
+    "text": "Heat the oil in a large saucepan or deep frying pan over a medium heat. Add the green curry paste and 3 tablespoons of the thick cream from the top of the coconut milk tin. Fry for 2 minutes, stirring, until fragrant."
+   },
+   {
+    "title": "Simmer the curry",
+    "text": "Add the chicken and stir for 2 minutes to coat. Pour in the rest of the coconut milk and add the courgette and pepper. Simmer gently for 10 to 12 minutes until the chicken is cooked through."
+   },
+   {
+    "title": "Season and serve",
+    "text": "Stir in the spinach until wilted. Season with the fish sauce and lime juice, then taste: it should be salty and fresh. Ladle the curry over the rice."
+   }
+  ],
+  "time": 25,
+  "title": "Thai Green Chicken Curry with Courgette & Spinach",
+  "changed": "No basil, fresh chilli or honey; the pepper goes in with the courgette and half a lime is just for seasoning."
+ },
+ {
+  "id": "as_thai_red_prawn_curry",
+  "ingredients": [
+   {
+    "i": "prawns",
+    "q": 170,
+    "t": "1 pack (170g), defrosted"
+   },
+   {
+    "i": "thai_red_paste",
+    "q": 40,
+    "t": "2½ tablespoons"
+   },
+   {
+    "i": "coconut_milk",
+    "q": 400,
+    "t": "1 tin (400ml)"
+   },
+   {
+    "i": "red_onion",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 150,
+    "t": "150g, halved"
+   },
+   {
+    "i": "pak_choi",
+    "q": 125,
+    "t": "½ pack, quartered"
+   },
+   {
+    "i": "fish_sauce",
+    "q": 15,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "lime",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch or two"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Put the kettle on. Slice the red onion and pepper, halve the cherry tomatoes and quarter the pak choi. Cut the lime in half. Pat the defrosted prawns dry with kitchen paper."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "Rinse the rice and tip it into a saucepan with 300 millilitres of boiling water and a pinch of salt. Cover and simmer on a low heat for 10 minutes. Turn off the heat and leave it covered for 5 minutes until fluffy."
+   },
+   {
+    "title": "Soften the veg",
+    "text": "Heat the oil in a large frying pan over a medium heat. Fry the red onion and pepper for 4 to 5 minutes until softened. Stir in the red curry paste for 1 minute until fragrant."
+   },
+   {
+    "title": "Simmer the sauce",
+    "text": "Pour in the coconut milk and add the cherry tomatoes. Simmer for 5 minutes until the tomatoes start to collapse and the sauce turns a rich orange. Season with the fish sauce and the juice of half the lime."
+   },
+   {
+    "title": "Cook the prawns",
+    "text": "Add the prawns and pak choi and simmer for 3 minutes until the prawns are pink all the way through. Don't overcook them or they turn rubbery."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Spoon the curry over the rice. Cut the remaining lime half into wedges to squeeze over at the table."
+   }
+  ],
+  "changed": "No coriander garnish or honey."
+ },
+ {
+  "id": "as_massaman_chicken",
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 400,
+    "t": "400g, in large chunks"
+   },
+   {
+    "i": "potatoes",
+    "q": 300,
+    "t": "2 medium (300g), in chunks"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, in wedges"
+   },
+   {
+    "i": "thai_red_paste",
+    "q": 40,
+    "t": "2½ tablespoons"
+   },
+   {
+    "i": "ground_cinnamon",
+    "q": 1,
+    "t": "½ teaspoon"
+   },
+   {
+    "i": "coconut_milk",
+    "q": 400,
+    "t": "1 tin (400ml)"
+   },
+   {
+    "i": "peanut_butter",
+    "q": 15,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "fish_sauce",
+    "q": 15,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "honey",
+    "q": 15,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "lime",
+    "q": 0.5,
+    "t": "½, juiced"
+   },
+   {
+    "i": "salted_peanuts",
+    "q": 30,
+    "t": "30g, roughly chopped, to serve",
+    "opt": true
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch or two"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Cut the chicken into large chunks, the potatoes into bite-sized chunks and the onion into wedges. Juice the lime and roughly chop the peanuts (optional)."
+   },
+   {
+    "title": "Brown the chicken",
+    "text": "Heat the oil in a large lidded saucepan over a medium-high heat. Brown the chicken for 4 to 5 minutes until coloured all over. Add the onion, red curry paste and cinnamon and fry for 2 minutes, stirring, until fragrant."
+   },
+   {
+    "title": "Simmer the curry",
+    "text": "Stir in the coconut milk, peanut butter and 150 millilitres of water, then add the potatoes. Bring to a simmer, cover and cook for 20 minutes, stirring now and then, until the potatoes are tender."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "When the curry has 15 minutes left, boil the kettle. rinse the rice and tip it into a saucepan with 300 millilitres of boiling water and a pinch of salt. Cover and simmer on a low heat for 10 minutes. Turn off the heat and leave it covered for 5 minutes until fluffy."
+   },
+   {
+    "title": "Season and serve",
+    "text": "Uncover the curry and bubble for 3 to 4 minutes until thick enough to coat the potatoes. Season with the fish sauce, honey and lime juice. Serve over the rice with the peanuts (optional)."
+   }
+  ],
+  "changed": "Red curry paste and a pinch of cinnamon (no curry powder); no coriander or lime wedges."
+ },
+ {
+  "id": "as_chicken_pad_thai",
+  "ingredients": [
+   {
+    "i": "rice_noodles",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "chicken_breast",
+    "q": 150,
+    "t": "1 breast (150g), thinly sliced"
+   },
+   {
+    "i": "prawns",
+    "q": 80,
+    "t": "80g, defrosted"
+   },
+   {
+    "i": "eggs",
+    "q": 2,
+    "t": "2, beaten"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, finely chopped"
+   },
+   {
+    "i": "beansprouts",
+    "q": 150,
+    "t": "150g",
+    "swap": "Toss the beansprouts through one portion only, or scatter them raw over one plate."
+   },
+   {
+    "i": "spring_onions",
+    "q": 4,
+    "t": "4, in 4cm lengths"
+   },
+   {
+    "i": "fish_sauce",
+    "q": 25,
+    "t": "1½ tablespoons"
+   },
+   {
+    "i": "honey",
+    "q": 20,
+    "t": "1½ tablespoons"
+   },
+   {
+    "i": "rice_vinegar",
+    "q": 15,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "lime",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "salted_peanuts",
+    "q": 30,
+    "t": "30g, chopped, to serve",
+    "opt": true
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tablespoons"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Put the kettle on. Thinly slice the chicken, finely chop the garlic and cut the spring onions into short lengths. Beat the eggs, chop the peanuts (optional) and pat the prawns dry."
+   },
+   {
+    "title": "Soak the noodles",
+    "text": "Pour boiling water over the rice noodles in a bowl and soak for 6 to 8 minutes until pliable but still a little firm. Drain and rinse under cold water. They finish cooking in the pan."
+   },
+   {
+    "title": "Mix the sauce",
+    "text": "While the noodles soak, stir the fish sauce, honey, rice vinegar and the juice of half the lime together. It should taste tangy, salty and sweet all at once."
+   },
+   {
+    "title": "Cook the chicken and prawns",
+    "text": "Heat 1 tablespoon of the oil in a wok or large frying pan over a high heat. Stir-fry the chicken for 3 to 4 minutes until cooked through. Add the garlic and prawns for 1 to 2 minutes until pink, then push everything to one side."
+   },
+   {
+    "title": "Scramble the eggs",
+    "text": "Add the remaining oil to the empty side and pour in the eggs. Scramble for 30 seconds until just set, then break them up through the chicken."
+   },
+   {
+    "title": "Toss and serve",
+    "text": "Add the noodles and sauce and toss with tongs for 2 minutes until the noodles soak it up. Add the beansprouts and spring onions for 30 seconds. Serve with the peanuts (optional) and the remaining lime in wedges."
+   }
+  ],
+  "changed": "Simpler sauce of fish sauce, honey, vinegar and lime (no soy or purée); no chilli flakes."
+ },
+ {
+  "id": "as_chicken_satay",
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 400,
+    "t": "400g, in long strips"
+   },
+   {
+    "i": "curry_powder",
+    "q": 4,
+    "t": "2 teaspoons"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 25,
+    "t": "1½ tablespoons, divided"
+   },
+   {
+    "i": "honey",
+    "q": 20,
+    "t": "1½ tablespoons, divided"
+   },
+   {
+    "i": "peanut_butter",
+    "q": 60,
+    "t": "4 tablespoons"
+   },
+   {
+    "i": "coconut_milk",
+    "q": 150,
+    "t": "150ml"
+   },
+   {
+    "i": "thai_red_paste",
+    "q": 10,
+    "t": "2 teaspoons"
+   },
+   {
+    "i": "lime",
+    "q": 0.5,
+    "t": "½, juiced"
+   },
+   {
+    "i": "cucumber",
+    "q": 1,
+    "t": "1, sliced",
+    "swap": "Leave the cucumber off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch or two"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Heat the grill to high and line a tray with foil. Put the kettle on. Cut the chicken into long strips, slice the cucumber and juice the lime."
+   },
+   {
+    "title": "Marinate the chicken",
+    "text": "Mix the curry powder, 1 tablespoon of the soy sauce and 1 tablespoon of the honey. Coat the chicken strips in it. Thread them onto skewers if you have them, or leave them loose."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "Rinse the rice and tip it into a saucepan with 300 millilitres of boiling water and a pinch of salt. Cover and simmer on a low heat for 10 minutes. Turn off the heat and leave it covered for 5 minutes until fluffy."
+   },
+   {
+    "title": "Grill the chicken",
+    "text": "Lay the chicken on the tray and grill for 10 to 12 minutes, turning halfway, until charred at the edges and cooked through. Brush with any marinade left in the bowl when you turn it."
+   },
+   {
+    "title": "Make the peanut sauce",
+    "text": "While the chicken grills, put the peanut butter, coconut milk, red curry paste and the remaining soy sauce and honey in a small saucepan. Stir over a low heat for 3 to 4 minutes until smooth and thick enough to coat a spoon. Stir in the lime juice, plus a splash of water if it's too thick."
+   },
+   {
+    "title": "Serve",
+    "text": "Serve the satay with the rice, the sliced cucumber and a bowl of peanut sauce for dipping."
+   }
+  ],
+  "title": "Grilled Chicken Satay with Peanut Sauce & Cucumber",
+  "changed": "Simpler marinade (no yogurt, garlic or turmeric); sliced cucumber instead of smashed and pickled; no coriander."
+ },
+ {
+  "id": "as_thai_red_tofu_curry",
+  "ingredients": [
+   {
+    "i": "tofu",
+    "q": 280,
+    "t": "1 block (280g), cubed"
+   },
+   {
+    "i": "cornflour",
+    "q": 10,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "sweet_potato",
+    "q": 300,
+    "t": "1 large (300g), in bite-sized cubes"
+   },
+   {
+    "i": "red_onion",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "thai_red_paste",
+    "q": 45,
+    "t": "3 tablespoons"
+   },
+   {
+    "i": "coconut_milk",
+    "q": 400,
+    "t": "1 tin (400ml)"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 15,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "lime",
+    "q": 0.5,
+    "t": "½, juiced"
+   },
+   {
+    "i": "spinach",
+    "q": 100,
+    "t": "100g"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tablespoons"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch or two"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Pat the tofu dry, cut it into cubes and toss with the cornflour and a pinch of salt. Peel the sweet potato and cut it into bite-sized cubes. Slice the red onion and juice the lime."
+   },
+   {
+    "title": "Crisp the tofu",
+    "text": "Heat 1½ tablespoons of the oil in a large deep frying pan over a medium-high heat. Fry the tofu for 8 minutes, turning, until golden and crisp on all sides. Lift onto a plate."
+   },
+   {
+    "title": "Fry the paste",
+    "text": "Add the remaining oil and the red onion to the pan and fry for 3 minutes until softening. Stir in the red curry paste for 1 minute."
+   },
+   {
+    "title": "Simmer the curry",
+    "text": "Pour in the coconut milk and 100 millilitres of water and add the sweet potato. Simmer for 12 to 15 minutes until the sweet potato is tender and the sauce has thickened."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "While the curry simmers, boil the kettle. rinse the rice and tip it into a saucepan with 300 millilitres of boiling water and a pinch of salt. Cover and simmer on a low heat for 10 minutes. Turn off the heat and leave it covered for 5 minutes until fluffy."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Stir the spinach into the curry until wilted. Season with the soy sauce and lime juice. Ladle over the rice and top with the tofu so it stays crunchy."
+   }
+  ],
+  "changed": "No coriander garnish, honey or lime wedges; half a lime is just for seasoning."
+ },
+ {
+  "id": "am_garlic_butter_steak_bites",
+  "ingredients": [
+   {
+    "i": "beef_steak",
+    "q": 500,
+    "t": "2 packs (500g), cut into 3cm pieces"
+   },
+   {
+    "i": "potatoes",
+    "q": 500,
+    "t": "500g, in 2cm cubes"
+   },
+   {
+    "i": "broccoli",
+    "q": 200,
+    "t": "200g, in florets"
+   },
+   {
+    "i": "oil",
+    "q": 20,
+    "t": "1½ tablespoons"
+   },
+   {
+    "i": "butter",
+    "q": 25,
+    "t": "25g"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, sliced"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Boil the kettle. Cut the potatoes into small cubes and the broccoli into florets. Cut the steak into bite-sized pieces, pat very dry and season well with salt and pepper. Slice the garlic."
+   },
+   {
+    "title": "Parboil the potatoes",
+    "text": "Pour boiling water into a large saucepan, add a pinch of salt and bring back to the boil. Cook the potatoes for 6 to 7 minutes until just tender at the edges, adding the broccoli for the last 2 minutes. Drain well and leave to steam dry for 2 minutes."
+   },
+   {
+    "title": "Crisp the potatoes",
+    "text": "Heat 1 tablespoon of the oil in a large frying pan over a medium-high heat. Fry the potatoes for 10 to 12 minutes, turning every few minutes, until golden and crisp. Add the broccoli for the last 3 minutes to char, then season and spoon onto warm plates."
+   },
+   {
+    "title": "Sear the steak",
+    "text": "Wipe out the pan, add the remaining oil and heat over a high heat until just smoking. Add the steak in a single layer and cook for 1 to 2 minutes per side until browned outside and still pink in the middle. Give it a minute or two longer if you like it more done."
+   },
+   {
+    "title": "Finish in garlic butter",
+    "text": "Turn the heat to low and add the butter and garlic. Toss for 1 minute until the butter foams and the garlic is golden. Spoon the steak and garlic butter over the potatoes and broccoli."
+   }
+  ],
+  "changed": "Dropped the optional herbs, chilli flakes and lemon: just steak, garlic butter, potatoes and broccoli."
+ },
+ {
+  "id": "as_chinese_curry_chips",
+  "ingredients": [
+   {
+    "i": "potatoes",
+    "q": 400,
+    "t": "2 medium (400g), cut into chips"
+   },
+   {
+    "i": "rice",
+    "q": 120,
+    "t": "120g"
+   },
+   {
+    "i": "chicken_breast",
+    "q": 300,
+    "t": "2 breasts (300g), sliced"
+   },
+   {
+    "i": "onion",
+    "q": 2,
+    "t": "2, in chunks"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "butter",
+    "q": 25,
+    "t": "25g"
+   },
+   {
+    "i": "plain_flour",
+    "q": 20,
+    "t": "2 tablespoons"
+   },
+   {
+    "i": "curry_powder",
+    "q": 10,
+    "t": "1½ tablespoons"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 chicken stock cube"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 10,
+    "t": "2 teaspoons"
+   },
+   {
+    "i": "honey",
+    "q": 10,
+    "t": "2 teaspoons"
+   },
+   {
+    "i": "frozen_peas",
+    "q": 80,
+    "t": "80g",
+    "swap": "Leave the peas out of the sauce. Cook them in a small pan of boiling water for 3 minutes and stir them into one portion only."
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tablespoons"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch or two"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Heat the oven to 220°C (200°C fan) and put the kettle on. Cut the potatoes into chips and slice the chicken. Cut the onions into chunks and crush the garlic."
+   },
+   {
+    "title": "Roast the chips",
+    "text": "Toss the chips with 1 tablespoon of the oil and a pinch of salt on a baking tray in a single layer. Roast for 35 to 40 minutes, turning halfway, until golden and crisp."
+   },
+   {
+    "title": "Make the curry sauce",
+    "text": "When the chips have 25 minutes left, melt the butter in a saucepan over a medium-low heat. Stir in the flour and curry powder for 2 minutes until it smells toasty. Gradually whisk in 450 millilitres of boiling water with the stock cube crumbled in. Add the soy sauce and honey and simmer gently for 10 minutes until it coats a spoon."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "When the chips have 20 minutes left, rinse the rice and tip it into a saucepan with 250 millilitres of boiling water and a pinch of salt. Cover and simmer on a low heat for 10 minutes. Turn off the heat and leave it covered for 5 minutes until fluffy."
+   },
+   {
+    "title": "Stir-fry the chicken",
+    "text": "Heat the remaining oil in a wok or frying pan over a high heat. Stir-fry the chicken for 4 minutes until golden. Add the onions and garlic for 3 minutes more, so the onions soften but keep some bite."
+   },
+   {
+    "title": "Simmer and serve",
+    "text": "Tip the chicken and onions into the curry sauce with the peas. Simmer for 3 to 4 minutes until the chicken is cooked through and the peas are tender. Serve takeaway-style, half rice and half chips, with plenty of sauce spooned over."
+   }
+  ],
+  "changed": "Curry powder does all the work: no turmeric, cinnamon or ginger."
+ },
+ {
+  "id": "as_crispy_hoisin_pork_pancakes",
+  "ingredients": [
+   {
+    "i": "pork_mince",
+    "q": 400,
+    "t": "400g"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "hoisin_sauce",
+    "q": 75,
+    "t": "5 tablespoons, divided"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 15,
+    "t": "1 tablespoon"
+   },
+   {
+    "i": "wraps",
+    "q": 4,
+    "t": "4"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.5,
+    "t": "½, in matchsticks",
+    "swap": "Leave the cucumber off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "spring_onions",
+    "q": 4,
+    "t": "4, in fine strips",
+    "swap": "Add the spring onions to one person's wraps only and give the others extra cucumber."
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, shredded",
+    "swap": "Leave the lettuce off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tablespoon"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the fillings",
+    "text": "Cut the cucumber into thin matchsticks. Cut the spring onions into fine strips and shred the lettuce. Crush the garlic."
+   },
+   {
+    "title": "Crisp the pork",
+    "text": "Heat the oil in a large frying pan over a high heat. Add the pork mince, flatten it into one layer and leave for 4 to 5 minutes until a deep brown crust forms. Break it up and fry for 5 minutes more until crisp and the fat has rendered out."
+   },
+   {
+    "title": "Season the pork",
+    "text": "Stir in the garlic for 1 minute. Add 3 tablespoons of the hoisin and the soy sauce and toss for 2 minutes until dark, sticky and clumped into crunchy clusters."
+   },
+   {
+    "title": "Warm the wraps",
+    "text": "Warm the wraps one at a time in a dry frying pan for 20 seconds each side. Stack them in a clean tea towel so they stay soft while you build."
+   },
+   {
+    "title": "Roll them up",
+    "text": "Spread each wrap with a little of the remaining hoisin. Pile on lettuce, crispy pork, cucumber and spring onions. Roll up tightly, cut in half and eat straight away."
+   }
+  ],
+  "time": 20,
+  "changed": "Hoisin and soy season the pork on their own: no cinnamon, chilli flakes, ginger or honey."
+ }
+]
