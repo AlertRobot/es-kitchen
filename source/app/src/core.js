@@ -209,6 +209,7 @@ function simulate(week, ctx) {
   const skipOpt = !!ctx.settings.skipOptional;
   const up = id => unitPrice(ING[id], shop, loy);
   const lots = [];
+  const pastDays = Math.max(0, Math.min(7, daysBetween(week.start, ctx.today || isoDate(new Date()))));
   for (const c of week.carryIn || []) {
     if (!ING[c.i] || !(c.q > EPS)) continue;
     const exp = c.frozen || !c.exp ? 999 : daysBetween(week.start, c.exp);
@@ -325,6 +326,8 @@ function simulate(week, ctx) {
     for (const e of blPlan[d]) {
       if (e.lo) { const prev = (week.days || [])[d - 1] || {}; info.bl.push({ ...e, from: prev.r && !prev.takeaway ? prev.r : null }); continue; }
       const r = RMAP[e.r]; let c = 0;
+      // breakfasts and lunches on days already gone this week were eaten from what was in; there's nothing to buy for them now
+      if (d < pastDays) { info.bl.push({ ...e, cost: 0, past: true }); continue; }
       for (const l of r.ingredients) if (l.q > 0) c += use(l, l.q / (r.servings || 1), d, r.id);
       blCost += c; blPortions++; info.bl.push({ ...e, cost: c });
     }
