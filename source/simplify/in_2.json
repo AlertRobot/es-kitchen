@@ -1,0 +1,6447 @@
+[
+ {
+  "id": "as_teriyaki_salmon",
+  "title": "Glossy Teriyaki Salmon with Sesame Pak Choi & Rice",
+  "short": "Teriyaki salmon",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "fish",
+  "time": 25,
+  "ingredients": [
+   {
+    "i": "salmon",
+    "q": 2,
+    "t": "2 fillets"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 40,
+    "t": "2\u00bd tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "rice_vinegar",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, crushed"
+   },
+   {
+    "i": "cornflour",
+    "q": 3,
+    "t": "\u00bd tsp"
+   },
+   {
+    "i": "pak_choi",
+    "q": 250,
+    "t": "1 pack (250g), halved"
+   },
+   {
+    "i": "sesame_oil",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced, to serve",
+    "swap": "Scatter the spring onions over one plate only.",
+    "opt": true
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch or two"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Put the kettle on. Whisk the soy sauce, honey, rice vinegar, ginger paste, garlic, cornflour and 2 tbsp water for the teriyaki sauce. Halve the pak choi and slice the spring onions. Pat the salmon dry."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "Rinse the rice and tip it into a saucepan with 300ml boiling water and a pinch of salt. Cover and simmer on a low heat for 10 min. Turn off the heat and leave it covered for 5 min until fluffy."
+   },
+   {
+    "title": "Sear the salmon",
+    "text": "Heat the oil in a non-stick frying pan over a medium-high heat. Cook the salmon skin-side down for 4 min until the skin is crisp. Turn and cook for 2 min more."
+   },
+   {
+    "title": "Cook the pak choi",
+    "text": "While the salmon cooks, heat the sesame oil in a second pan over a medium-high heat. Stir-fry the pak choi with a splash of water for 2 min until wilted but crunchy at the stems. Season with a pinch of salt."
+   },
+   {
+    "title": "Glaze the salmon",
+    "text": "Pour the teriyaki sauce into the salmon pan and bubble for 1\u20132 min, spooning it over the fish. Take it off the heat as soon as the sauce is thick and glossy, as the honey can burn. The salmon should flake easily in the middle."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Fluff up the rice with a fork. Serve the salmon on the rice with the pak choi and drizzle over any sauce from the pan. Scatter with the spring onions (optional)."
+   }
+  ],
+  "tags": [
+   "quick",
+   "light"
+  ]
+ },
+ {
+  "id": "as_yaki_udon",
+  "title": "Yaki Udon with Crispy Pork, Pak Choi & Mushrooms",
+  "short": "Pork yaki udon",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "pork",
+  "time": 25,
+  "ingredients": [
+   {
+    "i": "udon_noodles",
+    "q": 300,
+    "t": "1 pack (2 x 150g)"
+   },
+   {
+    "i": "pork_mince",
+    "q": 200,
+    "t": "200g"
+   },
+   {
+    "i": "mushrooms",
+    "q": 100,
+    "t": "100g, sliced",
+    "swap": "Stir-fry the mushrooms in a separate small pan with a drop of oil and a splash of soy until golden, then spoon them over one portion only."
+   },
+   {
+    "i": "carrots",
+    "q": 80,
+    "t": "1 small, in matchsticks"
+   },
+   {
+    "i": "pak_choi",
+    "q": 125,
+    "t": "\u00bd pack, sliced"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "oyster_sauce",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "worcestershire",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced, to serve",
+    "swap": "Scatter the spring onions over one plate only.",
+    "opt": true
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Put the kettle on. Slice the onion, mushrooms, pak choi and spring onions and cut the carrot into matchsticks. Mix the soy sauce, oyster sauce, Worcestershire sauce and honey. The Worcestershire sauce gives the fruity tang of Japanese noodle sauce."
+   },
+   {
+    "title": "Loosen the noodles",
+    "text": "Put the udon in a heatproof bowl and cover with boiling water for 1 min. Gently separate the strands with a fork and drain straight away, so they don't go soft."
+   },
+   {
+    "title": "Brown the pork",
+    "text": "Heat the oil in a wok or large frying pan over a high heat. Fry the pork mince for 5 min, breaking it up, until browned and crispy in places."
+   },
+   {
+    "title": "Fry the veg",
+    "text": "Add the onion, carrot and mushrooms and stir-fry for 3 min until the mushrooms are golden. Add the pak choi for 1 min until wilted."
+   },
+   {
+    "title": "Toss and serve",
+    "text": "Add the noodles and sauce and toss over a high heat for 2 min until glossy and starting to catch. Serve scattered with the spring onions (optional)."
+   }
+  ],
+  "tags": [
+   "quick",
+   "one-pot"
+  ]
+ },
+ {
+  "id": "as_bulgogi_beef_bowls",
+  "title": "Beef Bulgogi Rice Bowls with Pickled Cucumber & Kimchi",
+  "short": "Korean beef rice bowl",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "beef",
+  "time": 25,
+  "ingredients": [
+   {
+    "i": "beef_mince",
+    "q": 400,
+    "t": "400g (or 300g stir-fry strips)"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, crushed"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 40,
+    "t": "2\u00bd tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "sesame_oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "\u00bd tsp (optional)",
+    "swap": "Sprinkle the chilli flakes over one bowl only.",
+    "opt": true
+   },
+   {
+    "i": "cucumber",
+    "q": 0.5,
+    "t": "\u00bd, in thin rounds",
+    "swap": "Leave the cucumber off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "rice_vinegar",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "carrots",
+    "q": 80,
+    "t": "1 small, grated"
+   },
+   {
+    "i": "kimchi",
+    "q": 80,
+    "t": "80g",
+    "swap": "Put the kimchi on one bowl only and give the other extra pickled cucumber."
+   },
+   {
+    "i": "spring_onions",
+    "q": 3,
+    "t": "3, sliced, to serve",
+    "swap": "Scatter the spring onions over one plate only.",
+    "opt": true
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch or two"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Put the kettle on. Slice the cucumber into thin rounds, grate the carrot, crush the garlic and slice the spring onions. Toss the cucumber with the rice vinegar, 1 tsp of the honey and a pinch of salt to pickle."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "Rinse the rice and tip it into a saucepan with 300ml boiling water and a pinch of salt. Cover and simmer on a low heat for 10 min. Turn off the heat and leave it covered for 5 min until fluffy."
+   },
+   {
+    "title": "Mix the bulgogi sauce",
+    "text": "Stir together the soy sauce, remaining honey, sesame oil, garlic, ginger paste and chilli flakes (optional). It should taste sweet, savoury and garlicky."
+   },
+   {
+    "title": "Cook the beef",
+    "text": "Heat the oil in a large frying pan over a high heat. Fry the beef mince for 5\u20136 min, breaking it up, until well browned and crisp in places. Pour in the sauce and cook for 2 min until sticky and glossy."
+   },
+   {
+    "title": "Build the bowls",
+    "text": "Divide the rice between bowls. Top with the bulgogi beef, drained pickled cucumber, grated carrot and kimchi. Scatter with the spring onions (optional)."
+   }
+  ],
+  "tags": [
+   "quick",
+   "kid-friendly"
+  ]
+ },
+ {
+  "id": "as_bibimbap",
+  "title": "Beef Bibimbap Bowls with Garlic Spinach & Fried Egg",
+  "short": "Bibimbap",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "beef",
+  "time": 35,
+  "ingredients": [
+   {
+    "i": "beef_mince",
+    "q": 250,
+    "t": "250g"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "spinach",
+    "q": 100,
+    "t": "100g"
+   },
+   {
+    "i": "carrots",
+    "q": 100,
+    "t": "1, in matchsticks"
+   },
+   {
+    "i": "mushrooms",
+    "q": 100,
+    "t": "100g, sliced",
+    "swap": "Cook the mushrooms in their own pile as normal and add them to one bowl only."
+   },
+   {
+    "i": "beansprouts",
+    "q": 100,
+    "t": "100g",
+    "swap": "Cook the beansprouts in their own pile as normal and add them to one bowl only."
+   },
+   {
+    "i": "eggs",
+    "q": 2,
+    "t": "2"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, crushed"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "sesame_oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "gochujang",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "rice_vinegar",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch or two"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Put the kettle on. Cut the carrot into matchsticks, slice the mushrooms and crush the garlic. Mix the gochujang with 1 tsp sesame oil, 1 tsp honey, the rice vinegar and 1 tbsp water for the bibimbap sauce."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "Rinse the rice and tip it into a saucepan with 300ml boiling water and a pinch of salt. Cover and simmer on a low heat for 10 min. Turn off the heat and leave it covered for 5 min until fluffy."
+   },
+   {
+    "title": "Cook the veg",
+    "text": "Heat 2 tsp of the oil in a large frying pan over a medium-high heat. Cook each veg separately, setting each aside in its own pile. Give the beansprouts 1 min, the carrot 2 min and the mushrooms 3 min, then wilt the spinach with 1 garlic clove for 1 min. Season each pile with a drop of sesame oil and a pinch of salt."
+   },
+   {
+    "title": "Cook the beef",
+    "text": "Add 1 tbsp oil to the pan and fry the beef mince for 5 min until browned. Add the rest of the garlic, the soy sauce and remaining honey and cook for 2 min until sticky. Tip it into its own pile."
+   },
+   {
+    "title": "Fry the eggs",
+    "text": "Wipe the pan and heat the last 1 tsp oil over a medium heat. Fry the eggs for 2\u20133 min until the whites are set and crispy but the yolks are still runny."
+   },
+   {
+    "title": "Build the bowls",
+    "text": "Divide the rice between bowls and arrange the veg and beef on top in sections. Top each with a fried egg and a spoonful of the gochujang sauce. Mix everything together at the table."
+   }
+  ],
+  "tags": [
+   "spicy"
+  ]
+ },
+ {
+  "id": "as_chicken_laksa",
+  "title": "Quick Chicken Laksa with Coconut, Rice Noodles & Beansprouts",
+  "short": "Chicken laksa",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 30,
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 300,
+    "t": "2 breasts (300g), thinly sliced"
+   },
+   {
+    "i": "thai_red_paste",
+    "q": 45,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "curry_powder",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "turmeric",
+    "q": 1,
+    "t": "\u00bd tsp (optional)",
+    "opt": true
+   },
+   {
+    "i": "ginger_paste",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "coconut_milk",
+    "q": 400,
+    "t": "1 tin (400ml)"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 chicken"
+   },
+   {
+    "i": "fish_sauce",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "rice_noodles",
+    "q": 120,
+    "t": "120g"
+   },
+   {
+    "i": "beansprouts",
+    "q": 100,
+    "t": "100g",
+    "swap": "Lift the beansprouts out with a slotted spoon and add them to one bowl only."
+   },
+   {
+    "i": "pak_choi",
+    "q": 125,
+    "t": "\u00bd pack, halved"
+   },
+   {
+    "i": "eggs",
+    "q": 2,
+    "t": "2"
+   },
+   {
+    "i": "lime",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a handful, to serve",
+    "swap": "Scatter the coriander over one plate only, or serve it in a little bowl on the side.",
+    "opt": true
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Put the kettle on. Thinly slice the chicken, halve the pak choi and crush the garlic. Cut the lime in half."
+   },
+   {
+    "title": "Boil the eggs",
+    "text": "Lower the eggs into a small pan of boiling water and cook for 7 min. Cool them in cold water, then peel and halve."
+   },
+   {
+    "title": "Fry the paste",
+    "text": "While the eggs cook, heat the oil in a large saucepan over a medium heat. Fry the red curry paste, curry powder, turmeric (optional), ginger paste and garlic for 2 min, stirring, until fragrant."
+   },
+   {
+    "title": "Simmer the broth",
+    "text": "Pour in the coconut milk and 400ml boiling water, crumble in the stock cube and bring to a simmer. Add the chicken and simmer for 6\u20138 min until cooked through."
+   },
+   {
+    "title": "Soak the noodles",
+    "text": "While the chicken simmers, soak the rice noodles in boiling water from the kettle for 6 min until tender. Drain well."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Add the pak choi to the broth for the final 2 min, and the beansprouts for the last minute so they heat through but keep a little crunch. Season with the fish sauce, honey and juice of half the lime. Divide the noodles between deep bowls and ladle over the broth and veg. Top with the eggs, coriander (optional) and lime wedges."
+   }
+  ],
+  "tags": [
+   "one-pot",
+   "spicy",
+   "comfort"
+  ]
+ },
+ {
+  "id": "as_nasi_goreng",
+  "title": "Nasi Goreng with Chicken, Prawns, Fried Egg & Cucumber",
+  "short": "Nasi goreng",
+  "cuisine": "Asian",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 30,
+  "ingredients": [
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "chicken_thighs",
+    "q": 200,
+    "t": "200g, diced"
+   },
+   {
+    "i": "prawns",
+    "q": 70,
+    "t": "70g, defrosted"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, finely chopped"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, crushed"
+   },
+   {
+    "i": "thai_red_paste",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 20,
+    "t": "1\u00bd tbsp"
+   },
+   {
+    "i": "fish_sauce",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "eggs",
+    "q": 2,
+    "t": "2"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.5,
+    "t": "\u00bd, sliced",
+    "swap": "Leave the cucumber off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced, to serve",
+    "swap": "Scatter the spring onions over one plate only.",
+    "opt": true
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 100,
+    "t": "100g, halved"
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch or two"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Put the kettle on. Finely chop the onion, crush the garlic and dice the chicken. Slice the cucumber and spring onions, halve the cherry tomatoes and pat the prawns dry. Mix the soy sauce and honey to make a quick sweet soy sauce."
+   },
+   {
+    "title": "Cook and cool the rice",
+    "text": "Rinse the rice and tip it into a saucepan with 300ml boiling water and a pinch of salt. Cover and simmer on a low heat for 10 min. Spread it out on a plate to steam-dry for 5 min."
+   },
+   {
+    "title": "Fry the spice paste",
+    "text": "Heat 1 tbsp oil in a wok or large frying pan over a medium-high heat. Fry the onion for 3 min until soft. Add the garlic, red curry paste and tomato pur\u00e9e for 1 min until dark and fragrant."
+   },
+   {
+    "title": "Cook the chicken and prawns",
+    "text": "Add the chicken and stir-fry for 4\u20135 min until browned and cooked through. Add the prawns for 2 min until pink. Keep the heat high so they colour rather than stew."
+   },
+   {
+    "title": "Fry the rice",
+    "text": "Add the rice, sweet soy sauce and fish sauce. Toss over a high heat for 3\u20134 min until every grain is coated and dark, pressing it against the pan so it toasts in places."
+   },
+   {
+    "title": "Fry the eggs and serve",
+    "text": "In a second pan, fry the eggs in the remaining oil until crispy at the edges with runny yolks. Pile the rice into bowls and top each with an egg. Serve with the cucumber, cherry tomatoes and spring onions (optional)."
+   }
+  ],
+  "tags": [
+   "quick",
+   "one-pot"
+  ]
+ },
+ {
+  "id": "br_crispy_oven_fish_chips",
+  "title": "Crispy Panko Cod & Oven Chips with Mushy Peas & Tartare",
+  "short": "Fish and chips",
+  "cuisine": "British",
+  "category": "treat",
+  "protein": "fish",
+  "time": 50,
+  "ingredients": [
+   {
+    "i": "potatoes",
+    "q": 600,
+    "t": "600g, cut into chunky chips"
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "cod_fillets",
+    "q": 280,
+    "t": "2 fillets (280g)"
+   },
+   {
+    "i": "plain_flour",
+    "q": 20,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "eggs",
+    "q": 1,
+    "t": "1, beaten"
+   },
+   {
+    "i": "panko",
+    "q": 50,
+    "t": "50g"
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1: zest, juice of half, rest in wedges"
+   },
+   {
+    "i": "frozen_peas",
+    "q": 200,
+    "t": "200g",
+    "swap": "Mushy peas are a side: make half the amount (100g) and serve them on one plate only."
+   },
+   {
+    "i": "butter",
+    "q": 15,
+    "t": "15g"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 60,
+    "t": "4 tbsp"
+   },
+   {
+    "i": "gherkins",
+    "q": 30,
+    "t": "2 tbsp, finely chopped",
+    "swap": "Spoon one portion of the lemony yogurt into a separate dish before stirring in the gherkins."
+   },
+   {
+    "i": "salt",
+    "q": 3,
+    "t": "a good pinch"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the chips",
+    "text": "Heat the oven to 220\u00b0C (200\u00b0C fan). Cut the potatoes into thick chips (no need to peel), rinse, then pat really dry with a clean tea towel. Zest the lemon, juice one half and cut the other half into wedges. Finely chop the gherkins."
+   },
+   {
+    "title": "Roast the chips",
+    "text": "Toss the chips on a large baking tray with 1\u00bd tbsp oil and a good pinch of salt. Spread them out in one layer. Roast on the top shelf for 35\u201340 min, turning halfway, until golden and crisp."
+   },
+   {
+    "title": "Crumb the cod",
+    "text": "While the chips roast, set out three plates: flour seasoned with salt and pepper, the beaten egg, and panko mixed with the lemon zest. Pat the cod dry, dust in flour, dip in egg and press firmly into the crumbs. Lay on a lined baking tray and drizzle with the remaining \u00bd tbsp oil."
+   },
+   {
+    "title": "Bake the cod",
+    "text": "When the chips have 15 min left, put the cod on the shelf below. Bake for 12\u201315 min until the crumb is golden and the fish flakes easily when pressed with a fork."
+   },
+   {
+    "title": "Make the tartare",
+    "text": "While the cod bakes, stir the gherkins into the yogurt with a squeeze of lemon juice and a pinch of pepper. Add a splash of the gherkin vinegar if you like it sharper."
+   },
+   {
+    "title": "Make the mushy peas",
+    "text": "Boil the peas in a small pan of water over a medium heat for 3\u20134 min until tender. Drain, keeping a splash of the water, and return to the pan. Add the butter, the rest of the lemon juice and a pinch of salt, then crush with a potato masher until thick and chunky."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Pile the chips onto plates, sprinkle with a little salt and set the cod alongside. Add a mound of mushy peas, a spoonful of tartare and the lemon wedges for squeezing."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "crispy",
+   "kid-friendly"
+  ]
+ },
+ {
+  "id": "br_chicken_leek_bacon_pie",
+  "title": "Creamy Chicken, Leek & Bacon Pie with a Puff Pastry Lid",
+  "short": "Chicken and leek pie",
+  "cuisine": "British",
+  "category": "treat",
+  "protein": "chicken",
+  "time": 60,
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 350,
+    "t": "350g, cut into bite-size pieces"
+   },
+   {
+    "i": "bacon",
+    "q": 75,
+    "t": "3 rashers, chopped"
+   },
+   {
+    "i": "leeks",
+    "q": 250,
+    "t": "2 small leeks (250g), sliced"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "butter",
+    "q": 15,
+    "t": "15g"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "plain_flour",
+    "q": 20,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 chicken cube in 250ml boiling water"
+   },
+   {
+    "i": "double_cream",
+    "q": 75,
+    "t": "5 tbsp"
+   },
+   {
+    "i": "wholegrain_mustard",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "opt": true
+   },
+   {
+    "i": "puff_pastry",
+    "q": 160,
+    "t": "\u00bd sheet"
+   },
+   {
+    "i": "eggs",
+    "q": 1,
+    "t": "1, beaten, to glaze"
+   },
+   {
+    "i": "broccoli",
+    "q": 200,
+    "t": "200g, in florets"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the filling",
+    "text": "Heat the oven to 200\u00b0C (180\u00b0C fan) and take the pastry out of the fridge. Dissolve the stock cube in 250ml boiling water. Slice the leeks, crush the garlic, chop the bacon and cut the chicken into bite-size pieces. Cut the broccoli into florets."
+   },
+   {
+    "title": "Brown the chicken and bacon",
+    "text": "Heat the oil in a large, deep frying pan over a medium-high heat. Fry the bacon and chicken for 6\u20138 min, stirring now and then, until the bacon is crisp and the chicken golden all over."
+   },
+   {
+    "title": "Soften the leeks",
+    "text": "Turn the heat down to medium and add the butter, leeks, garlic and mixed herbs (optional). Cook for 5 min until the leeks are soft and glossy. Sprinkle over the flour and stir for 1 min so there are no dry patches."
+   },
+   {
+    "title": "Make the creamy filling",
+    "text": "Gradually stir in the stock, then the cream and mustard. Bubble gently for 4\u20135 min until the sauce coats the back of a spoon. Season with pepper (the bacon is salty), tip into a small pie dish (about 1 litre) and leave to cool for 5 min."
+   },
+   {
+    "title": "Top the pie",
+    "text": "Lay the pastry over the dish, trim the overhang and press the edges down with a fork to seal. Brush with the beaten egg and cut a small slit in the middle for steam."
+   },
+   {
+    "title": "Bake the pie",
+    "text": "Bake on the middle shelf for 25 min until the pastry is puffed and deep golden. The filling should be bubbling at the edges."
+   },
+   {
+    "title": "Cook the broccoli and serve",
+    "text": "When the pie has 5 min left, boil the broccoli over a high heat for 4\u20135 min until just tender, then drain. Cut the pie in half and serve with the broccoli."
+   }
+  ],
+  "tags": [
+   "comfort",
+   "freezable"
+  ]
+ },
+ {
+  "id": "br_toad_in_the_hole",
+  "title": "Toad in the Hole with Sticky Red Onion Gravy",
+  "short": "Toad in the hole",
+  "cuisine": "British",
+  "category": "treat",
+  "protein": "pork",
+  "time": 60,
+  "ingredients": [
+   {
+    "i": "sausages",
+    "q": 6,
+    "t": "6 pork sausages"
+   },
+   {
+    "i": "plain_flour",
+    "q": 70,
+    "t": "70g"
+   },
+   {
+    "i": "eggs",
+    "q": 2,
+    "t": "2"
+   },
+   {
+    "i": "milk",
+    "q": 100,
+    "t": "100ml"
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "red_onion",
+    "q": 2,
+    "t": "2, thinly sliced"
+   },
+   {
+    "i": "butter",
+    "q": 15,
+    "t": "15g"
+   },
+   {
+    "i": "gravy",
+    "q": 30,
+    "t": "3 tbsp granules"
+   },
+   {
+    "i": "wholegrain_mustard",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "carrots",
+    "q": 200,
+    "t": "2, cut into batons"
+   },
+   {
+    "i": "frozen_peas",
+    "q": 100,
+    "t": "100g",
+    "swap": "Cook the peas in a separate small pan of boiling water for 2 min and add them to one plate only."
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch, plus extra for the veg water"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the veg",
+    "text": "Heat the oven to 220\u00b0C (200\u00b0C fan). Thinly slice the red onions. Peel the carrots and cut them into batons."
+   },
+   {
+    "title": "Make the batter",
+    "text": "Whisk the flour, eggs and a pinch of salt in a jug. Gradually whisk in the milk until smooth and about as thick as single cream. Leave to rest while the sausages cook."
+   },
+   {
+    "title": "Roast the sausages",
+    "text": "Put the oil and sausages in a roasting tin about 20 x 25cm. Roast on the top shelf for 15 min until browned and the oil is sizzling hot. A really hot tin is what makes the batter rise."
+   },
+   {
+    "title": "Bake the toad",
+    "text": "Working quickly, take the tin out, give the batter a final whisk and pour it around the sausages \u2013 it should sizzle. Return to the oven for 25\u201330 min without opening the door, until puffed, crisp and deep golden."
+   },
+   {
+    "title": "Cook the onions",
+    "text": "While the batter bakes, melt the butter in a saucepan over a medium-low heat. Cook the onions for 15 min, stirring often, until soft and sticky."
+   },
+   {
+    "title": "Finish the gravy",
+    "text": "Add 300ml boiling water to the onions, then stir in the gravy granules and mustard. Simmer for 2 min until thick and glossy, then keep warm on the lowest heat."
+   },
+   {
+    "title": "Cook the veg and serve",
+    "text": "When the toad has 6 min left, boil the carrots in a pan of salted water over a high heat. Add the peas for the final 2 min, then drain. Cut the toad in the hole in half and serve with the veg and plenty of onion gravy."
+   }
+  ],
+  "tags": [
+   "comfort",
+   "kid-friendly"
+  ]
+ },
+ {
+  "id": "br_steak_chips_peppercorn",
+  "title": "Sirloin Steak & Chips with Peppercorn Sauce & Mushrooms",
+  "short": "Steak and chips",
+  "cuisine": "British",
+  "category": "treat",
+  "protein": "beef",
+  "time": 50,
+  "ingredients": [
+   {
+    "i": "sirloin_steak",
+    "q": 454,
+    "t": "2 sirloin steaks (about 227g each)"
+   },
+   {
+    "i": "potatoes",
+    "q": 600,
+    "t": "600g, cut into chunky chips"
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 150,
+    "t": "150g, on the vine or loose"
+   },
+   {
+    "i": "mushrooms",
+    "q": 125,
+    "t": "125g, sliced",
+    "swap": "The mushrooms are cooked in their own pan and the sauce is made without them, so spoon them onto one plate only."
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, crushed"
+   },
+   {
+    "i": "butter",
+    "q": 20,
+    "t": "20g"
+   },
+   {
+    "i": "black_pepper",
+    "q": 4,
+    "t": "2 tsp, coarsely crushed"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 0.5,
+    "t": "\u00bd beef cube in 75ml boiling water"
+   },
+   {
+    "i": "double_cream",
+    "q": 100,
+    "t": "100ml"
+   },
+   {
+    "i": "worcestershire",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "salt",
+    "q": 3,
+    "t": "a good pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the chips",
+    "text": "Heat the oven to 220\u00b0C (200\u00b0C fan) and take the steaks out of the fridge. Cut the potatoes into thick chips and pat dry with a clean tea towel. Slice the mushrooms, crush the garlic and coarsely crush the black pepper. Dissolve \u00bd stock cube in 75ml boiling water."
+   },
+   {
+    "title": "Roast the chips",
+    "text": "Toss the chips on a large baking tray with 1\u00bd tbsp oil and a pinch of salt. Roast on the top shelf for 35\u201340 min, turning halfway, until golden. Add the tomatoes to a corner of the tray for the last 10 min."
+   },
+   {
+    "title": "Cook the mushrooms",
+    "text": "When the chips have 15 min left, melt half the butter in a small frying pan over a medium-high heat. Fry the mushrooms for 5\u20136 min until golden and any liquid has gone. Stir in the garlic for 1 min, season with salt and keep warm."
+   },
+   {
+    "title": "Sear the steaks",
+    "text": "Heat a large frying pan over a high heat until smoking. Rub the steaks with the remaining \u00bd tbsp oil and season with salt, then cook for 2\u20133 min each side for medium-rare. Move to a board, top with the remaining butter and rest for 5 min."
+   },
+   {
+    "title": "Make the peppercorn sauce",
+    "text": "Turn the steak pan down to medium and toast the crushed pepper for 30 seconds. Pour in the stock and Worcestershire and bubble, scraping up the browned bits, until reduced by half. Stir in the cream and simmer for 2\u20133 min until it coats a spoon, then add the resting juices."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Slice the steaks or leave them whole and plate up with the chips and roast tomatoes. Spoon the mushrooms alongside and pour over the peppercorn sauce."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "crispy"
+  ]
+ },
+ {
+  "id": "br_sunday_roast_chicken_for_two",
+  "title": "Roast Chicken for Two with Roasties, Yorkshires & Gravy",
+  "short": "Roast chicken dinner",
+  "cuisine": "British",
+  "category": "treat",
+  "protein": "chicken",
+  "time": 85,
+  "ingredients": [
+   {
+    "i": "chicken_legs",
+    "q": 500,
+    "t": "2 chicken legs (about 500g)"
+   },
+   {
+    "i": "potatoes",
+    "q": 600,
+    "t": "600g, peeled and halved"
+   },
+   {
+    "i": "carrots",
+    "q": 250,
+    "t": "3, halved lengthways"
+   },
+   {
+    "i": "broccoli",
+    "q": 200,
+    "t": "200g, in florets"
+   },
+   {
+    "i": "oil",
+    "q": 50,
+    "t": "3\u00bd tbsp"
+   },
+   {
+    "i": "garlic",
+    "q": 4,
+    "t": "4 cloves, unpeeled and bashed"
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1, halved"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 2,
+    "t": "1 tsp",
+    "opt": true
+   },
+   {
+    "i": "honey",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "plain_flour",
+    "q": 50,
+    "t": "50g"
+   },
+   {
+    "i": "eggs",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "milk",
+    "q": 60,
+    "t": "60ml"
+   },
+   {
+    "i": "gravy",
+    "q": 25,
+    "t": "2\u00bd tbsp granules"
+   },
+   {
+    "i": "salt",
+    "q": 4,
+    "t": "to season"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the veg",
+    "text": "Heat the oven to 220\u00b0C (200\u00b0C fan). Peel and halve the potatoes, halve the carrots lengthways and cut the broccoli into florets. Bash the unpeeled garlic cloves and halve the lemon."
+   },
+   {
+    "title": "Make the Yorkshire batter",
+    "text": "Whisk the flour, egg and a pinch of salt in a jug. Gradually whisk in the milk until smooth. Leave to rest at room temperature until needed."
+   },
+   {
+    "title": "Roast the chicken",
+    "text": "Rub the chicken legs with 1 tsp oil, the mixed herbs (optional), salt and pepper. Sit them in a roasting tin with the lemon halves and garlic. Roast on the top shelf for 45\u201350 min until the skin is crisp and the juices run clear."
+   },
+   {
+    "title": "Parboil the potatoes",
+    "text": "When the chicken has been in for 15 min, boil the potatoes in salted water for 8 min. Meanwhile, heat 2 tbsp oil in a second tray in the oven for 5 min. Drain the potatoes, steam for 2 min, then shake in the colander to rough up the edges."
+   },
+   {
+    "title": "Roast the potatoes and carrots",
+    "text": "Tip the potatoes into the hot oil, turn to coat and roast on the middle shelf for 40 min, turning once, until crunchy. At the same time, toss the carrots with the honey, 1 tsp oil and a pinch of salt and add them to the chicken tin."
+   },
+   {
+    "title": "Bake the Yorkshires",
+    "text": "When the chicken is done, lift it and the carrots onto a plate and cover with foil to rest. Put \u00bd tsp oil in each of 4 holes of a muffin tin and heat in the oven for 5 min. Pour in the batter (it should sizzle) and bake for 18\u201320 min without opening the door, until risen and crisp."
+   },
+   {
+    "title": "Make the gravy",
+    "text": "While the Yorkshires bake, squeeze the soft garlic out of its skins into the chicken tin and squeeze in the roasted lemon. Add 300ml boiling water, scrape up the sticky bits, then strain into a small saucepan. Whisk in the gravy granules over a medium heat and simmer for 1\u20132 min until thick."
+   },
+   {
+    "title": "Cook the broccoli and serve",
+    "text": "For the last 4 min, boil the broccoli in a pan of salted water until just tender, then drain. Pile everything onto plates and pour over plenty of gravy."
+   }
+  ],
+  "tags": [
+   "comfort"
+  ]
+ },
+ {
+  "id": "br_hunters_chicken",
+  "title": "Hunter's Chicken with BBQ Sauce, Cheddar & Paprika Wedges",
+  "short": "Hunter's chicken",
+  "cuisine": "British",
+  "category": "treat",
+  "protein": "chicken",
+  "time": 50,
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 350,
+    "t": "2 breasts (350g)"
+   },
+   {
+    "i": "bacon",
+    "q": 100,
+    "t": "4 rashers"
+   },
+   {
+    "i": "cheddar",
+    "q": 60,
+    "t": "60g, grated"
+   },
+   {
+    "i": "potatoes",
+    "q": 500,
+    "t": "500g, cut into wedges"
+   },
+   {
+    "i": "oil",
+    "q": 20,
+    "t": "4 tsp"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 45,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 20,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "worcestershire",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, crushed"
+   },
+   {
+    "i": "sweetcorn",
+    "q": 150,
+    "t": "150g",
+    "swap": "The corn is a side: cook half the amount (75g), toss with half the butter and add it to one plate only."
+   },
+   {
+    "i": "butter",
+    "q": 10,
+    "t": "10g"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the chicken",
+    "text": "Heat the oven to 220\u00b0C (200\u00b0C fan). Cut the potatoes into wedges, crush the garlic and grate the cheddar. Wrap each chicken breast in 2 rashers of bacon, tucking the ends underneath."
+   },
+   {
+    "title": "Roast the wedges",
+    "text": "Toss the wedges on a baking tray with 1 tbsp oil, 1 tsp smoked paprika and a pinch of salt. Roast on the top shelf for 35\u201340 min, turning halfway, until golden and crisp at the edges."
+   },
+   {
+    "title": "Bake the chicken",
+    "text": "When the wedges have been in for 15 min, put the chicken in a small ovenproof dish and rub with the remaining 1 tsp oil. Bake on the middle shelf for 20\u201325 min until the bacon is crisp and the chicken is cooked through with no pink in the middle."
+   },
+   {
+    "title": "Make the BBQ sauce",
+    "text": "While the chicken bakes, mix the tomato pur\u00e9e, honey, Worcestershire, garlic, the remaining 1 tsp paprika and 4 tbsp water in a small pan. Simmer over a low heat for 3\u20134 min, stirring, until thick and glossy. Add a splash more water if it gets too stiff to spoon."
+   },
+   {
+    "title": "Add the sauce and cheese",
+    "text": "Spoon the BBQ sauce over the chicken and scatter with the cheddar. Return to the oven for 5 min until the cheese is melted and bubbling."
+   },
+   {
+    "title": "Cook the corn and serve",
+    "text": "Meanwhile, boil the sweetcorn in a small pan of water for 3 min, then drain and toss with the butter. Serve the chicken with the wedges and buttery corn."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "kid-friendly"
+  ]
+ },
+ {
+  "id": "br_halloumi_burger",
+  "title": "Crispy Halloumi Burgers with Sweet Chilli & Carrot Slaw",
+  "short": "Halloumi burger",
+  "cuisine": "British",
+  "category": "treat",
+  "protein": "veggie",
+  "time": 30,
+  "ingredients": [
+   {
+    "i": "halloumi",
+    "q": 225,
+    "t": "1 block (225g), cut into 4 thick slices"
+   },
+   {
+    "i": "plain_flour",
+    "q": 10,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 2,
+    "t": "1 tsp",
+    "opt": true
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, sliced into strips"
+   },
+   {
+    "i": "burger_buns",
+    "q": 2,
+    "t": "2 brioche buns"
+   },
+   {
+    "i": "sweet_chilli_sauce",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 80,
+    "t": "5 tbsp"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 small clove, grated"
+   },
+   {
+    "i": "carrots",
+    "q": 120,
+    "t": "1 large, grated"
+   },
+   {
+    "i": "red_onion",
+    "q": 0.5,
+    "t": "\u00bd, very thinly sliced"
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "\u00bd, juiced"
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, leaves separated",
+    "swap": "Leave the lettuce off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "salt",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the veg",
+    "text": "Grate the carrot and very thinly slice the red onion. Slice the pepper into strips, grate the garlic and separate the little gem leaves. Cut the halloumi into 4 thick slices and pat dry. Juice the lemon half."
+   },
+   {
+    "title": "Mix the slaw and yogurt",
+    "text": "Toss the red onion with half the lemon juice and a pinch of salt and leave for 5 min to soften. Mix the yogurt with the garlic and the rest of the lemon juice. Stir the carrot and onion together with 2 tbsp of the garlic yogurt."
+   },
+   {
+    "title": "Char the peppers",
+    "text": "Heat \u00bd tbsp oil in a large frying pan over a high heat. Fry the pepper strips for 5\u20136 min until soft and charred in places, then tip onto a plate."
+   },
+   {
+    "title": "Fry the halloumi",
+    "text": "Mix the flour with the smoked paprika (optional) and dust the halloumi in it. Add the remaining \u00bd tbsp oil to the pan over a medium-high heat and fry the slices for 2 min each side until deep golden. Drizzle over half the sweet chilli sauce so it turns sticky, then lift out."
+   },
+   {
+    "title": "Toast the buns",
+    "text": "Halve the buns and toast them cut-side down in the same pan over a medium heat. They need about 30 seconds, until lightly golden."
+   },
+   {
+    "title": "Build the burgers",
+    "text": "Spread the bun bases with garlic yogurt and add the little gem leaves, peppers and two slices of halloumi each. Drizzle over the remaining sweet chilli sauce and add the lids. Serve with the slaw on the side."
+   }
+  ],
+  "tags": [
+   "quick",
+   "fakeaway",
+   "crispy"
+  ]
+ },
+ {
+  "id": "br_minced_beef_onion_pie",
+  "title": "Minced Beef & Onion Puff Pie with Mash, Peas & Gravy",
+  "short": "Mince and onion pie",
+  "cuisine": "British",
+  "category": "treat",
+  "protein": "beef",
+  "time": 60,
+  "ingredients": [
+   {
+    "i": "beef_mince",
+    "q": 250,
+    "t": "250g"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, finely chopped"
+   },
+   {
+    "i": "carrots",
+    "q": 80,
+    "t": "1, finely diced"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "plain_flour",
+    "q": 10,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "worcestershire",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 beef cube in 300ml boiling water"
+   },
+   {
+    "i": "gravy",
+    "q": 8,
+    "t": "2 heaped tsp granules"
+   },
+   {
+    "i": "puff_pastry",
+    "q": 160,
+    "t": "\u00bd sheet"
+   },
+   {
+    "i": "eggs",
+    "q": 1,
+    "t": "1, beaten, to glaze"
+   },
+   {
+    "i": "potatoes",
+    "q": 500,
+    "t": "500g, peeled and chopped"
+   },
+   {
+    "i": "butter",
+    "q": 20,
+    "t": "20g"
+   },
+   {
+    "i": "milk",
+    "q": 40,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "frozen_peas",
+    "q": 150,
+    "t": "150g",
+    "swap": "The peas are a side: cook 75g in their own small pan of boiling water for 3 min and serve them on one plate only."
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch, plus extra for the potato water"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the veg",
+    "text": "Heat the oven to 200\u00b0C (180\u00b0C fan) and take the pastry out of the fridge. Dissolve the stock cube in 300ml boiling water. Finely chop the onion, finely dice the carrot, and peel and chop the potatoes."
+   },
+   {
+    "title": "Brown the mince",
+    "text": "Heat the oil in a frying pan over a high heat. Brown the mince for 5 min, breaking it up, until no pink remains. Add the onion and carrot and cook for 5 min until soft."
+   },
+   {
+    "title": "Simmer the filling",
+    "text": "Stir in the flour and tomato pur\u00e9e for 1 min, then add the Worcestershire and 200ml of the stock. Simmer over a medium heat for 10 min until rich and thick. Season with pepper, spoon into a small pie dish and leave to cool for 5 min."
+   },
+   {
+    "title": "Top and bake the pie",
+    "text": "Lay the pastry over the filling and press the edges onto the rim with a fork. Brush with the beaten egg and cut a small steam hole in the middle. Bake on the middle shelf for 25 min until well risen and deep golden."
+   },
+   {
+    "title": "Make the mash",
+    "text": "While the pie bakes, boil the potatoes in a large pan of salted water for 15 min until a knife slides in easily. Drain, then mash with the butter and milk until smooth. Season with salt and pepper."
+   },
+   {
+    "title": "Make the gravy",
+    "text": "Bring the remaining 100ml stock to a simmer in a small pan. Whisk in the gravy granules and bubble for 1 min until thick and glossy."
+   },
+   {
+    "title": "Cook the peas and serve",
+    "text": "Boil the peas in a small pan of water for 3 min, then drain. Serve the pie with the mash, peas and gravy."
+   }
+  ],
+  "tags": [
+   "comfort",
+   "freezable"
+  ]
+ },
+ {
+  "id": "br_fish_pie",
+  "title": "Smoked Haddock, Salmon & Prawn Fish Pie with Cheddar Mash",
+  "short": "Fish pie",
+  "cuisine": "British",
+  "category": "treat",
+  "protein": "fish",
+  "time": 60,
+  "ingredients": [
+   {
+    "i": "smoked_haddock",
+    "q": 280,
+    "t": "280g"
+   },
+   {
+    "i": "salmon",
+    "q": 1,
+    "t": "1 fillet, skin removed"
+   },
+   {
+    "i": "prawns",
+    "q": 100,
+    "t": "100g, defrosted"
+   },
+   {
+    "i": "spinach",
+    "q": 80,
+    "t": "80g"
+   },
+   {
+    "i": "milk",
+    "q": 350,
+    "t": "350ml"
+   },
+   {
+    "i": "butter",
+    "q": 40,
+    "t": "40g"
+   },
+   {
+    "i": "plain_flour",
+    "q": 25,
+    "t": "2\u00bd tbsp"
+   },
+   {
+    "i": "double_cream",
+    "q": 50,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "\u00bd, zested"
+   },
+   {
+    "i": "wholegrain_mustard",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "potatoes",
+    "q": 600,
+    "t": "600g, peeled and chopped"
+   },
+   {
+    "i": "cheddar",
+    "q": 30,
+    "t": "30g, grated"
+   },
+   {
+    "i": "frozen_peas",
+    "q": 150,
+    "t": "150g",
+    "swap": "The peas are a side: cook 75g in their own small pan of boiling water for 3 min and serve them on one plate only."
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch, plus extra for the potato water"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the fish and veg",
+    "text": "Heat the oven to 200\u00b0C (180\u00b0C fan) and boil the kettle. Peel and chop the potatoes, zest the lemon half and grate the cheddar. Put the spinach in a colander, pour over boiling water to wilt it, then squeeze dry. Pat the defrosted prawns dry."
+   },
+   {
+    "title": "Boil the potatoes",
+    "text": "Put the potatoes in a large pan of boiling salted water over a high heat. Cook for 15 min until very tender, then drain and leave to steam dry."
+   },
+   {
+    "title": "Poach the fish",
+    "text": "While the potatoes boil, lay the haddock and salmon in a frying pan and pour over the milk. Bring to a gentle simmer over a medium heat and cook for 4\u20135 min until the fish just flakes. Lift onto a plate and pour the milk into a jug."
+   },
+   {
+    "title": "Make the sauce",
+    "text": "Melt 25g butter in a saucepan over a medium heat, stir in the flour and cook for 1 min. Gradually whisk in the warm poaching milk, then simmer for 3\u20134 min, stirring, until it coats a spoon. Stir in the cream, mustard, lemon zest and plenty of pepper."
+   },
+   {
+    "title": "Fill the dish",
+    "text": "Flake the fish into large chunks into a baking dish (about 1 litre), discarding any skin. Scatter over the prawns and spinach, then pour over the sauce."
+   },
+   {
+    "title": "Top with the mash",
+    "text": "Mash the potatoes with the remaining 15g butter and a pinch of salt. Spoon over the filling, rough up the top with a fork and sprinkle with the cheddar."
+   },
+   {
+    "title": "Bake the pie",
+    "text": "Bake on the middle shelf for 25 min until bubbling at the edges and golden on top. Raw prawns will turn pink and cook through in the oven."
+   },
+   {
+    "title": "Cook the peas and serve",
+    "text": "When the pie has 3 min left, boil the peas in a small pan of water, then drain. Leave the pie to settle for a couple of minutes and serve with the peas."
+   }
+  ],
+  "tags": [
+   "comfort",
+   "freezable"
+  ]
+ },
+ {
+  "id": "br_cottage_pie",
+  "title": "Cottage Pie with Worcestershire Gravy & a Cheddar Mash Crust",
+  "short": "Cottage pie",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "beef",
+  "time": 60,
+  "ingredients": [
+   {
+    "i": "beef_mince",
+    "q": 250,
+    "t": "250g"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, finely chopped"
+   },
+   {
+    "i": "carrots",
+    "q": 120,
+    "t": "1 large, finely diced"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, crushed"
+   },
+   {
+    "i": "plain_flour",
+    "q": 10,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "worcestershire",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "opt": true
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 beef cube in 250ml boiling water"
+   },
+   {
+    "i": "potatoes",
+    "q": 600,
+    "t": "600g, peeled and chopped"
+   },
+   {
+    "i": "butter",
+    "q": 20,
+    "t": "20g"
+   },
+   {
+    "i": "milk",
+    "q": 40,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "cheddar",
+    "q": 30,
+    "t": "30g, grated"
+   },
+   {
+    "i": "frozen_peas",
+    "q": 150,
+    "t": "150g",
+    "swap": "The peas are a side: cook 75g in their own small pan of boiling water for 3 min and serve them on one plate only."
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch, plus extra for the potato water"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the veg",
+    "text": "Heat the oven to 200\u00b0C (180\u00b0C fan). Peel and chop the potatoes, finely chop the onion, finely dice the carrot and crush the garlic. Dissolve the stock cube in 250ml boiling water and grate the cheddar."
+   },
+   {
+    "title": "Boil the potatoes",
+    "text": "Put the potatoes in a large pan of salted water and bring to the boil. Cook for 15 min until tender, then drain and leave to steam dry."
+   },
+   {
+    "title": "Brown the mince",
+    "text": "While the potatoes cook, heat the oil in a large frying pan over a high heat. Fry the mince for 5\u20136 min, breaking it up with a wooden spoon, until well browned and any liquid has cooked off. The browning is where the flavour comes from."
+   },
+   {
+    "title": "Simmer the filling",
+    "text": "Add the onion, carrot and garlic and cook over a medium heat for 5 min until soft. Stir in the flour, tomato pur\u00e9e and mixed herbs (optional) for 1 min, then pour in the stock and Worcestershire. Simmer for 15 min, stirring now and then, until thick and glossy, then season with pepper."
+   },
+   {
+    "title": "Mash and top",
+    "text": "Mash the potatoes with the butter, milk and a pinch of salt until smooth. Spoon the mince into a small baking dish and spread the mash over the top. Rake with a fork so it crisps up and scatter with the cheddar."
+   },
+   {
+    "title": "Bake the pie",
+    "text": "Bake on the middle shelf for 20 min until golden and bubbling at the edges. Leave to settle for a couple of minutes before serving."
+   },
+   {
+    "title": "Cook the peas and serve",
+    "text": "When the pie has 3 min left, boil the peas in a small pan of water, then drain. Serve the pie with the peas alongside."
+   }
+  ],
+  "tags": [
+   "comfort",
+   "freezable",
+   "kid-friendly"
+  ]
+ },
+ {
+  "id": "br_shepherds_pie",
+  "title": "Lamb Shepherd's Pie with Peas, Herby Gravy & Crispy Mash",
+  "short": "Shepherd's pie",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "lamb",
+  "time": 60,
+  "ingredients": [
+   {
+    "i": "lamb_mince",
+    "q": 250,
+    "t": "250g"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, finely chopped"
+   },
+   {
+    "i": "carrots",
+    "q": 120,
+    "t": "1 large, diced"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "plain_flour",
+    "q": 10,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "worcestershire",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 lamb or beef cube in 250ml boiling water"
+   },
+   {
+    "i": "frozen_peas",
+    "q": 80,
+    "t": "80g",
+    "swap": "Leave the peas out of the filling. Boil them in a small pan for 3 min and serve them on one plate only."
+   },
+   {
+    "i": "potatoes",
+    "q": 600,
+    "t": "600g, peeled and chopped"
+   },
+   {
+    "i": "butter",
+    "q": 25,
+    "t": "25g"
+   },
+   {
+    "i": "milk",
+    "q": 40,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "broccoli",
+    "q": 200,
+    "t": "200g, in florets"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch, plus extra for the potato water"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the veg",
+    "text": "Heat the oven to 200\u00b0C (180\u00b0C fan). Peel and chop the potatoes, finely chop the onion, dice the carrot and crush the garlic. Dissolve the stock cube in 250ml boiling water and cut the broccoli into florets."
+   },
+   {
+    "title": "Boil the potatoes",
+    "text": "Put the potatoes in a large pan of salted water and bring to the boil. Cook for 15 min until tender, then drain and leave to steam dry."
+   },
+   {
+    "title": "Brown the lamb",
+    "text": "While the potatoes cook, put the lamb mince in a large dry frying pan over a high heat. It has enough fat of its own. Fry for 6\u20138 min, breaking it up, until deeply browned. Spoon off any excess fat."
+   },
+   {
+    "title": "Simmer the filling",
+    "text": "Add the onion, carrot and garlic and cook over a medium heat for 5 min until soft. Stir in the flour, tomato pur\u00e9e and mixed herbs, then the stock and Worcestershire. Simmer for 15 min until thick, then stir in the peas, season with pepper and tip into a small baking dish."
+   },
+   {
+    "title": "Mash and top",
+    "text": "Mash the potatoes with the butter, milk and a pinch of salt until smooth. Spoon over the lamb and fluff up the surface with a fork so the peaks crisp."
+   },
+   {
+    "title": "Bake the pie",
+    "text": "Bake on the middle shelf for 20\u201325 min until the peaks are crisp and golden. Leave to settle for a couple of minutes before serving."
+   },
+   {
+    "title": "Cook the broccoli and serve",
+    "text": "When the pie has 5 min left, boil the broccoli in a pan of salted water until just tender, then drain. Serve the pie with the broccoli."
+   }
+  ],
+  "tags": [
+   "comfort",
+   "freezable"
+  ]
+ },
+ {
+  "id": "br_bangers_mash_onion_gravy",
+  "title": "Bangers & Mustard Mash with Red Onion Gravy & Peas",
+  "short": "Sausage and mash",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "pork",
+  "time": 40,
+  "ingredients": [
+   {
+    "i": "sausages",
+    "q": 6,
+    "t": "6 pork sausages"
+   },
+   {
+    "i": "potatoes",
+    "q": 600,
+    "t": "600g, peeled and chopped"
+   },
+   {
+    "i": "butter",
+    "q": 30,
+    "t": "30g"
+   },
+   {
+    "i": "milk",
+    "q": 50,
+    "t": "3\u20134 tbsp"
+   },
+   {
+    "i": "wholegrain_mustard",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "red_onion",
+    "q": 2,
+    "t": "2, thinly sliced"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "worcestershire",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "gravy",
+    "q": 30,
+    "t": "3 tbsp granules"
+   },
+   {
+    "i": "frozen_peas",
+    "q": 150,
+    "t": "150g",
+    "swap": "The peas are a side: cook 75g in their own small pan of boiling water for 3 min and serve them on one plate only."
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch, plus extra for the potato water"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the veg",
+    "text": "Heat the oven to 200\u00b0C (180\u00b0C fan) and boil the kettle. Peel and chop the potatoes and thinly slice the red onions."
+   },
+   {
+    "title": "Bake the sausages",
+    "text": "Put the sausages on a lined baking tray and bake on the middle shelf for 25 min, turning halfway. They're done when browned all over with no pink in the middle."
+   },
+   {
+    "title": "Boil the potatoes",
+    "text": "Meanwhile, put the potatoes in a large pan of salted water and bring to the boil. Cook for 15 min until soft, then drain and leave to steam for a minute."
+   },
+   {
+    "title": "Caramelise the onions",
+    "text": "Heat the oil and half the butter in a saucepan over a medium heat. Add the onions with a pinch of salt and cook for 12\u201315 min, stirring often, until soft and sticky. Stir in the honey for the last 2 min so they turn jammy."
+   },
+   {
+    "title": "Make the gravy",
+    "text": "Pour 300ml boiling water into the onions, add the Worcestershire and stir in the gravy granules. Simmer for 2 min until thick and glossy, adding a splash more water if needed."
+   },
+   {
+    "title": "Make the mustard mash",
+    "text": "Mash the potatoes with the rest of the butter, the milk and mustard until smooth and creamy. Season with salt to taste."
+   },
+   {
+    "title": "Cook the peas and serve",
+    "text": "Boil the peas in a small pan of water for 3 min, then drain. Pile the mash onto plates, top with the sausages and pour over the onion gravy, with the peas alongside."
+   }
+  ],
+  "tags": [
+   "comfort",
+   "kid-friendly"
+  ]
+ },
+ {
+  "id": "br_smoky_sausage_bean_casserole",
+  "title": "Smoky Sausage & Butter Bean Casserole with Garlic Baguette",
+  "short": "Sausage casserole",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "pork",
+  "time": 40,
+  "ingredients": [
+   {
+    "i": "sausages",
+    "q": 6,
+    "t": "6 pork sausages"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves (2 crushed, 1 grated for the bread)"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 400,
+    "t": "1 tin"
+   },
+   {
+    "i": "butter_beans",
+    "q": 400,
+    "t": "1 tin, drained"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "worcestershire",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 0.5,
+    "t": "\u00bd chicken cube in 150ml boiling water"
+   },
+   {
+    "i": "spinach",
+    "q": 80,
+    "t": "80g"
+   },
+   {
+    "i": "baguette",
+    "q": 1,
+    "t": "1 part-baked baguette"
+   },
+   {
+    "i": "butter",
+    "q": 20,
+    "t": "20g, softened"
+   },
+   {
+    "i": "salt",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the veg",
+    "text": "Heat the oven to 200\u00b0C (180\u00b0C fan) for the bread and take the butter out of the fridge. Slice the onion and pepper, crush 2 garlic cloves and grate the third. Dissolve \u00bd stock cube in 150ml boiling water and drain the butter beans."
+   },
+   {
+    "title": "Brown the sausages",
+    "text": "Heat the oil in a large deep pan or casserole over a medium-high heat. Brown the sausages for 6\u20138 min, turning, until golden all over. Lift out and cut each one in half on the diagonal."
+   },
+   {
+    "title": "Soften the veg",
+    "text": "Add the onion and pepper to the pan and cook for 5 min until soft and lightly charred. Stir in the crushed garlic and smoked paprika for 1 min until fragrant."
+   },
+   {
+    "title": "Simmer the casserole",
+    "text": "Add the chopped tomatoes, tomato pur\u00e9e, Worcestershire, stock and butter beans, then return the sausages. Bring to a bubble, then simmer over a low-medium heat for 15 min, stirring now and then. It's ready when thick and the sausages are cooked through."
+   },
+   {
+    "title": "Bake the garlic bread",
+    "text": "While it simmers, mash the softened butter with the grated garlic. Cut deep slashes along the baguette and spread the butter inside. Bake for 8\u201310 min until crisp and golden."
+   },
+   {
+    "title": "Wilt the spinach and serve",
+    "text": "Stir the spinach into the casserole for 1 min until just wilted, then taste and add a pinch of salt if needed. Ladle into bowls and serve with the hot garlic bread for dunking."
+   }
+  ],
+  "tags": [
+   "one-pot",
+   "comfort",
+   "freezable"
+  ]
+ },
+ {
+  "id": "br_lemon_herb_chicken_traybake",
+  "title": "Lemon, Garlic & Herb Chicken Traybake with Crispy Potatoes",
+  "short": "Lemon chicken traybake",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 55,
+  "ingredients": [
+   {
+    "i": "chicken_legs",
+    "q": 500,
+    "t": "2 chicken legs (about 500g)"
+   },
+   {
+    "i": "potatoes",
+    "q": 450,
+    "t": "450g, cut into 3cm chunks"
+   },
+   {
+    "i": "leeks",
+    "q": 200,
+    "t": "1 leek, cut into 3cm lengths"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, cut into chunks"
+   },
+   {
+    "i": "garlic",
+    "q": 4,
+    "t": "4 cloves, bashed"
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1, zested then quartered"
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 2,
+    "t": "1 tsp",
+    "opt": true
+   },
+   {
+    "i": "spinach",
+    "q": 80,
+    "t": "80g"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 60,
+    "t": "4 tbsp, to serve",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 3,
+    "t": "a good pinch"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the veg",
+    "text": "Heat the oven to 220\u00b0C (200\u00b0C fan). Cut the potatoes into 3cm chunks, the leek into 3cm lengths and the pepper into chunks. Bash the garlic cloves, then zest the lemon and cut it into quarters."
+   },
+   {
+    "title": "Season the tray",
+    "text": "In a large roasting tin, toss the potatoes, garlic and lemon quarters with the oil, mixed herbs, smoked paprika (optional), lemon zest, salt and pepper. Push to the sides and sit the chicken legs in the middle, skin-side up. Rub them in the oily seasoning."
+   },
+   {
+    "title": "Roast the chicken",
+    "text": "Roast on the top shelf for 20 min. Turn the potatoes and tuck the leek and pepper in around the chicken. Roast for 20\u201325 min more until the skin is crisp and the juices run clear when the thickest part is pierced."
+   },
+   {
+    "title": "Wilt the spinach",
+    "text": "Take the tin out and squeeze the roasted lemon over everything. Scatter in the spinach and toss it through the hot potatoes and juices until it just wilts."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Season the yogurt (optional) with a pinch of salt. Divide the traybake between plates, spooning over the pan juices, with a dollop of yogurt on the side."
+   }
+  ],
+  "tags": [
+   "traybake",
+   "one-pot"
+  ]
+ },
+ {
+  "id": "br_salmon_fishcakes",
+  "title": "Salmon & Spring Onion Fishcakes with Tartare & Lemon Salad",
+  "short": "Salmon fishcakes",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "fish",
+  "time": 40,
+  "ingredients": [
+   {
+    "i": "salmon",
+    "q": 2,
+    "t": "2 fillets, skin removed"
+   },
+   {
+    "i": "potatoes",
+    "q": 350,
+    "t": "350g, peeled and chopped"
+   },
+   {
+    "i": "spring_onions",
+    "q": 3,
+    "t": "3, finely sliced"
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1, zested, then halved"
+   },
+   {
+    "i": "wholegrain_mustard",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "plain_flour",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "eggs",
+    "q": 1,
+    "t": "1, beaten"
+   },
+   {
+    "i": "panko",
+    "q": 50,
+    "t": "50g"
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tbsp, for frying"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 60,
+    "t": "4 tbsp"
+   },
+   {
+    "i": "gherkins",
+    "q": 20,
+    "t": "1 tbsp, chopped",
+    "swap": "Spoon one portion of the lemony yogurt into a separate dish before stirring in the gherkins."
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, leaves torn",
+    "swap": "Leave the lettuce off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "cucumber",
+    "q": 0.5,
+    "t": "\u00bd, sliced",
+    "swap": "Leave the cucumber off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "frozen_peas",
+    "q": 80,
+    "t": "80g",
+    "swap": "Toss the defrosted peas through one portion of the salad only."
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch, plus extra for the potato water"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the salad and tartare",
+    "text": "Boil the kettle. Peel and chop the potatoes, finely slice the spring onions, chop the gherkins and slice the cucumber. Tear the little gem leaves, then zest the lemon and cut it in half. Cover the peas with boiling water for 2 min, then drain."
+   },
+   {
+    "title": "Boil the potatoes",
+    "text": "Put the potatoes in a pan of boiling salted water over a medium-high heat. Cook for 12 min until soft, then drain well and leave to steam dry for 2 min."
+   },
+   {
+    "title": "Cook the salmon",
+    "text": "While the potatoes boil, put the salmon on a plate, cover and microwave on high for 3\u20134 min until it flakes easily. Leave to cool slightly."
+   },
+   {
+    "title": "Shape the fishcakes",
+    "text": "Roughly mash the potatoes. Flake in the salmon, add the spring onions, lemon zest, mustard and a pinch of salt and mix gently so you keep some chunks. Shape into 4 thick patties."
+   },
+   {
+    "title": "Crumb the fishcakes",
+    "text": "Put the flour, beaten egg and panko on three separate plates. Dust each fishcake in flour, dip in egg and press into the panko until evenly coated."
+   },
+   {
+    "title": "Fry the fishcakes",
+    "text": "Heat the oil in a large non-stick frying pan over a medium heat. Fry the fishcakes for 3\u20134 min each side until deep golden, crisp and piping hot in the middle."
+   },
+   {
+    "title": "Make the tartare and serve",
+    "text": "While the fishcakes fry, mix the yogurt with the gherkins and a squeeze of lemon. Toss the little gem, cucumber and peas with the rest of the lemon juice. Serve the fishcakes with the salad and tartare."
+   }
+  ],
+  "tags": [
+   "crispy",
+   "kid-friendly",
+   "quick"
+  ]
+ },
+ {
+  "id": "br_tuna_sweetcorn_jackets",
+  "title": "Crispy Jacket Potatoes with Tuna, Sweetcorn & Cheddar",
+  "short": "Tuna jacket potatoes",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "fish",
+  "time": 30,
+  "ingredients": [
+   {
+    "i": "potatoes",
+    "q": 600,
+    "t": "2 large baking potatoes (about 300g each)"
+   },
+   {
+    "i": "oil",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch"
+   },
+   {
+    "i": "tinned_tuna",
+    "q": 145,
+    "t": "1 tin, drained"
+   },
+   {
+    "i": "sweetcorn",
+    "q": 100,
+    "t": "100g",
+    "swap": "Mix the tuna filling without the sweetcorn, then stir the corn into one portion only."
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 80,
+    "t": "5 tbsp"
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "\u00bd, juiced"
+   },
+   {
+    "i": "butter",
+    "q": 15,
+    "t": "15g"
+   },
+   {
+    "i": "cheddar",
+    "q": 40,
+    "t": "40g, grated"
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, shredded",
+    "swap": "Make one portion of the salad without the lettuce, or serve the lettuce on the side.",
+    "autoSwap": true
+   },
+   {
+    "i": "cucumber",
+    "q": 0.5,
+    "t": "\u00bd, diced",
+    "swap": "Make one portion of the salad without the cucumber, or serve the cucumber on the side.",
+    "autoSwap": true
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 100,
+    "t": "100g, halved"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the filling",
+    "text": "Heat the oven to 220\u00b0C (200\u00b0C fan) and boil the kettle. Prick the potatoes all over with a fork. Slice the spring onions, dice the cucumber, halve the tomatoes, shred the little gem and grate the cheddar. Cover the sweetcorn with boiling water for 2 min, then drain."
+   },
+   {
+    "title": "Microwave the potatoes",
+    "text": "Microwave the potatoes on high for 8\u201310 min, turning halfway, until a knife slides in easily. Take care, as they'll be very hot."
+   },
+   {
+    "title": "Crisp the skins",
+    "text": "Rub the hot potatoes with the oil and a pinch of salt and put them straight onto the oven shelf. Bake for 12\u201315 min until the skins are crisp and crackly."
+   },
+   {
+    "title": "Make the tuna filling",
+    "text": "While the skins crisp, flake the tuna into a bowl with the sweetcorn, spring onions, yogurt, a squeeze of lemon and plenty of pepper. Mix until creamy but still chunky."
+   },
+   {
+    "title": "Make the side salad",
+    "text": "Put the little gem, cucumber and tomatoes in a bowl. Toss with the rest of the lemon juice and a pinch of salt just before serving."
+   },
+   {
+    "title": "Fill and serve",
+    "text": "Split the jackets open with a cross and push the sides to fluff up the middles. Add a knob of butter to each, pile in the tuna mix and scatter over the cheddar. Serve with the salad."
+   }
+  ],
+  "tags": [
+   "quick",
+   "kid-friendly",
+   "light"
+  ]
+ },
+ {
+  "id": "br_coronation_chicken_jackets",
+  "title": "Coronation Chicken Jacket Potatoes with Cucumber Salad",
+  "short": "Coronation chicken jackets",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 35,
+  "ingredients": [
+   {
+    "i": "potatoes",
+    "q": 600,
+    "t": "2 large baking potatoes"
+   },
+   {
+    "i": "chicken_breast",
+    "q": 300,
+    "t": "2 small breasts (300g)"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "curry_powder",
+    "q": 6,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "turmeric",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "opt": true
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 120,
+    "t": "8 tbsp"
+   },
+   {
+    "i": "mango_chutney",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "\u00bd, juiced"
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, chopped, to serve",
+    "swap": "Scatter the coriander over one jacket only, or leave it out.",
+    "opt": true
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, shredded",
+    "swap": "Leave the lettuce off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "cucumber",
+    "q": 0.5,
+    "t": "\u00bd, diced",
+    "swap": "Leave the cucumber off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the chicken and salad",
+    "text": "Heat the oven to 220\u00b0C (200\u00b0C fan) and prick the potatoes all over. Slice the chicken into thin strips and toss with half the curry powder and a pinch of salt. Slice the spring onions, dice the cucumber and shred the little gem. Juice the lemon half and chop the coriander (optional)."
+   },
+   {
+    "title": "Start the jackets",
+    "text": "Microwave the potatoes on high for 8\u201310 min, turning halfway, until just soft. Rub with 1 tsp oil and a pinch of salt. Bake directly on the oven shelf for 15 min until the skins are crisp."
+   },
+   {
+    "title": "Cook the chicken",
+    "text": "While the jackets bake, heat the remaining 1 tsp oil in a frying pan over a medium-high heat. Fry the chicken for 6\u20138 min until golden and cooked through with no pink inside. Tip onto a plate to cool for a few minutes."
+   },
+   {
+    "title": "Make the coronation dressing",
+    "text": "Take the pan off the heat and add the rest of the curry powder and the turmeric (optional) for 30 seconds to toast. Scrape into a bowl and stir in the yogurt, mango chutney and a squeeze of lemon until smooth and golden."
+   },
+   {
+    "title": "Mix the filling",
+    "text": "Fold the chicken and most of the spring onions into the dressing. Taste and add a squeeze more lemon if it needs it."
+   },
+   {
+    "title": "Fill and serve",
+    "text": "Split the jackets and fluff up the insides. Spoon in the coronation chicken and scatter with the remaining spring onions and the coriander (optional). Serve with the little gem and cucumber, dressed with the rest of the lemon juice."
+   }
+  ],
+  "tags": [
+   "quick",
+   "light"
+  ]
+ },
+ {
+  "id": "br_leek_potato_soup_cheese_toasts",
+  "title": "Velvety Leek & Potato Soup with Cheddar & Mustard Toasts",
+  "short": "Leek and potato soup",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 35,
+  "ingredients": [
+   {
+    "i": "leeks",
+    "q": 300,
+    "t": "2 leeks (300g), sliced"
+   },
+   {
+    "i": "potatoes",
+    "q": 350,
+    "t": "350g, peeled and diced"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, chopped"
+   },
+   {
+    "i": "butter",
+    "q": 25,
+    "t": "25g"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, crushed"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 veg cube in 700ml boiling water"
+   },
+   {
+    "i": "double_cream",
+    "q": 50,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "baguette",
+    "q": 1,
+    "t": "1 part-baked baguette, sliced"
+   },
+   {
+    "i": "cheddar",
+    "q": 60,
+    "t": "60g, grated"
+   },
+   {
+    "i": "wholegrain_mustard",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "spring_onions",
+    "q": 1,
+    "t": "1, sliced, to serve",
+    "swap": "Scatter the spring onion over one bowl only.",
+    "opt": true
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the veg",
+    "text": "Boil the kettle and dissolve the stock cube in 700ml boiling water. Slice the leeks, rinsing out any grit, then dice the potatoes and chop the onion. Crush the garlic, grate the cheddar and slice the spring onion (optional)."
+   },
+   {
+    "title": "Sweat the leeks",
+    "text": "Melt the butter in a large saucepan over a medium-low heat. Add the leeks, onion and garlic, cover with a lid and cook for 8 min, stirring now and then, until very soft but not coloured."
+   },
+   {
+    "title": "Simmer the soup",
+    "text": "Add the potatoes and stock and bring to the boil. Lower to a simmer and cook for 12\u201315 min until the potatoes break apart when pressed with a spoon."
+   },
+   {
+    "title": "Make the cheese toasts",
+    "text": "While the soup simmers, heat the grill to high. Slice the baguette on the diagonal and toast one side under the grill until golden. Turn over, spread thinly with mustard, top with the cheddar and grill for 2\u20133 min until bubbling."
+   },
+   {
+    "title": "Blend the soup",
+    "text": "Blitz the soup with a stick blender until silky. Stir in the cream and season with pepper, adding a splash of water if it's too thick."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Ladle the soup into bowls and scatter with the spring onion (optional). Serve with the cheesy toasts for dunking."
+   }
+  ],
+  "tags": [
+   "quick",
+   "comfort",
+   "freezable"
+  ]
+ },
+ {
+  "id": "br_pork_steaks_apple_mustard",
+  "title": "Pork Steaks with Apples, Mustard Cream & Crushed Potatoes",
+  "short": "Pork steaks with apple",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "pork",
+  "time": 35,
+  "ingredients": [
+   {
+    "i": "pork_loin_steaks",
+    "q": 250,
+    "t": "2 pork loin steaks (250g)"
+   },
+   {
+    "i": "apples",
+    "q": 1,
+    "t": "1, cored and cut into wedges"
+   },
+   {
+    "i": "potatoes",
+    "q": 450,
+    "t": "450g, cut into chunks"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "butter",
+    "q": 25,
+    "t": "25g"
+   },
+   {
+    "i": "onion",
+    "q": 0.5,
+    "t": "\u00bd, thinly sliced"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 0.5,
+    "t": "\u00bd chicken cube in 100ml boiling water"
+   },
+   {
+    "i": "double_cream",
+    "q": 75,
+    "t": "5 tbsp"
+   },
+   {
+    "i": "wholegrain_mustard",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp",
+    "opt": true
+   },
+   {
+    "i": "broccoli",
+    "q": 200,
+    "t": "200g, in florets"
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch, plus extra for the potato water"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the pork and veg",
+    "text": "Cut the potatoes into chunks and the broccoli into florets. Core the apple and cut it into wedges, thinly slice the onion and slice the spring onions. Dissolve \u00bd stock cube in 100ml boiling water. Season the pork on both sides with salt and pepper."
+   },
+   {
+    "title": "Boil the potatoes",
+    "text": "Put the potatoes in a pan of boiling salted water and cook for 15 min until tender, adding the broccoli for the last 4 min. Drain and keep warm in the pan with the lid on."
+   },
+   {
+    "title": "Fry the pork",
+    "text": "While the potatoes cook, heat the oil in a large frying pan over a medium-high heat. Fry the pork steaks for 4\u20135 min each side until golden and cooked through, with clear juices. Move to a plate to rest."
+   },
+   {
+    "title": "Caramelise the apples",
+    "text": "Turn the heat down to medium and add 15g butter, the apple wedges and onion. Cook for 4\u20135 min, turning, until the apples are golden and just tender. Drizzle with the honey (optional)."
+   },
+   {
+    "title": "Make the mustard sauce",
+    "text": "Pour the stock into the pan and bubble for 1 min, scraping up the sticky bits. Stir in the cream and mustard and simmer for 2 min until it coats the back of a spoon. Return the pork and any resting juices to warm through."
+   },
+   {
+    "title": "Crush and serve",
+    "text": "Lift the broccoli out of the potato pan. Lightly crush the potatoes with the remaining butter, the spring onions and a pinch of salt. Serve the pork with the apples and sauce spooned over, with the crushed potatoes and broccoli alongside."
+   }
+  ],
+  "tags": [
+   "quick"
+  ]
+ },
+ {
+  "id": "br_beef_stew_dumplings",
+  "title": "Slow-Simmered Beef Stew with Fluffy Herb Dumplings",
+  "short": "Beef stew and dumplings",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "beef",
+  "time": 170,
+  "ingredients": [
+   {
+    "i": "diced_beef",
+    "q": 400,
+    "t": "400g"
+   },
+   {
+    "i": "plain_flour",
+    "q": 15,
+    "t": "1\u00bd tbsp"
+   },
+   {
+    "i": "oil",
+    "q": 20,
+    "t": "1\u00bd tbsp"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, chopped"
+   },
+   {
+    "i": "carrots",
+    "q": 200,
+    "t": "2, cut into chunks"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "worcestershire",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 beef cube in 500ml boiling water"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 2,
+    "t": "1 tsp, plus a pinch for the dumplings"
+   },
+   {
+    "i": "mushrooms",
+    "q": 125,
+    "t": "125g, quartered",
+    "swap": "The mushrooms are fried in their own pan, so spoon them onto one bowl only."
+   },
+   {
+    "i": "self_raising_flour",
+    "q": 100,
+    "t": "100g"
+   },
+   {
+    "i": "butter",
+    "q": 60,
+    "t": "60g (50g cold, for the dumplings)"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the beef and veg",
+    "text": "Chop the onion, cut the carrots into chunks and crush the garlic. Dissolve the stock cube in 500ml boiling water and quarter the mushrooms. Toss the beef in the plain flour with a pinch of salt and pepper."
+   },
+   {
+    "title": "Brown the beef",
+    "text": "Heat 1 tbsp oil in a large lidded casserole or deep pan over a high heat. Brown the beef in two batches for 4\u20135 min each, until well coloured on all sides. Lift out onto a plate."
+   },
+   {
+    "title": "Build the stew",
+    "text": "Turn the heat to medium and add the remaining \u00bd tbsp oil, the onion and carrots. Cook for 5 min until starting to soften, then stir in the garlic and tomato pur\u00e9e for 1 min. Return the beef with the stock, Worcestershire and 1 tsp mixed herbs and bring to the boil."
+   },
+   {
+    "title": "Simmer the stew",
+    "text": "Turn the heat right down, cover and simmer very gently for 2 hr, stirring now and then, until the beef breaks apart with a spoon. Add a splash of water if it gets too thick. In a slow cooker, cook on low for 7\u20138 hr instead."
+   },
+   {
+    "title": "Make the dumplings",
+    "text": "About 30 min before the end, grate 50g cold butter into the self-raising flour. Rub together with a pinch of salt and the remaining herbs, then stir in 4\u20135 tbsp cold water to make a soft, slightly sticky dough. Shape into 6 balls."
+   },
+   {
+    "title": "Steam the dumplings",
+    "text": "Sit the dumplings on top of the bubbling stew, cover and cook for 20\u201325 min until doubled in size and fluffy all the way through. Don't lift the lid early or they won't rise. In a slow cooker, turn to high and allow 30\u201340 min."
+   },
+   {
+    "title": "Fry the mushrooms and serve",
+    "text": "While the dumplings steam, melt the remaining butter in a small frying pan over a medium-high heat. Fry the mushrooms for 5 min until golden. Ladle the stew and dumplings into bowls and spoon the mushrooms on top."
+   }
+  ],
+  "tags": [
+   "comfort",
+   "freezable",
+   "one-pot"
+  ]
+ },
+ {
+  "id": "br_ploughmans_supper",
+  "title": "Ploughman's Supper with Warm Baguette, Cheddar & Pickle",
+  "short": "Ploughman's",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 25,
+  "ingredients": [
+   {
+    "i": "baguette",
+    "q": 2,
+    "t": "2 part-baked baguettes"
+   },
+   {
+    "i": "cheddar",
+    "q": 120,
+    "t": "120g, cut into chunks"
+   },
+   {
+    "i": "eggs",
+    "q": 4,
+    "t": "4"
+   },
+   {
+    "i": "branston_pickle",
+    "q": 60,
+    "t": "4 tbsp",
+    "swap": "Serve the pickle in a little dish on the side so it only goes on one plate."
+   },
+   {
+    "i": "gherkins",
+    "q": 50,
+    "t": "a handful",
+    "swap": "Keep the gherkins in a small dish on the side so they only go on one plate.",
+    "opt": true
+   },
+   {
+    "i": "apples",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 150,
+    "t": "150g",
+    "swap": "Leave the tomatoes off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, leaves separated",
+    "swap": "Leave the lettuce off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "cucumber",
+    "q": 0.5,
+    "t": "\u00bd, cut into sticks",
+    "swap": "Leave the cucumber off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "red_onion",
+    "q": 0.5,
+    "t": "\u00bd, thinly sliced",
+    "swap": "Leave the onions off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "\u00bd, juiced"
+   },
+   {
+    "i": "butter",
+    "q": 25,
+    "t": "25g"
+   },
+   {
+    "i": "wholegrain_mustard",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "salt",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the board",
+    "text": "Heat the oven according to the baguette pack (usually 200\u00b0C, 180\u00b0C fan). Thinly slice the red onion, slice the apple and cut the cucumber into sticks. Cut the cheddar into chunks, separate the little gem leaves and juice the lemon half."
+   },
+   {
+    "title": "Bake the bread",
+    "text": "Bake the baguettes for 8\u201310 min until crisp and golden. Wrap them in a clean tea towel so they stay warm."
+   },
+   {
+    "title": "Boil the eggs",
+    "text": "Meanwhile, lower the eggs into a pan of boiling water over a medium-high heat and cook for 8 min for firm-but-fudgy yolks. Drain and cool under cold water until you can peel them, then halve."
+   },
+   {
+    "title": "Quick-pickle the onion",
+    "text": "Toss the red onion with the lemon juice and a pinch of salt and leave for 5 min until it turns pink and softens. Toss the apple slices in any leftover juice so they don't brown."
+   },
+   {
+    "title": "Build the board and serve",
+    "text": "Arrange the cheddar, eggs, pickle, gherkins (optional), apple, tomatoes, little gem, cucumber and pickled onion on a board or two plates. Put the butter and mustard in little dishes. Slice the warm baguettes and let everyone butter and pile up their own."
+   }
+  ],
+  "tags": [
+   "quick",
+   "light"
+  ]
+ },
+ {
+  "id": "br_bubble_squeak_bacon_eggs",
+  "title": "Bubble & Squeak Cakes with Crispy Bacon & Fried Eggs",
+  "short": "Bubble and squeak",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "pork",
+  "time": 35,
+  "ingredients": [
+   {
+    "i": "potatoes",
+    "q": 450,
+    "t": "450g, peeled and chopped"
+   },
+   {
+    "i": "leeks",
+    "q": 150,
+    "t": "1 small leek, finely sliced"
+   },
+   {
+    "i": "broccoli",
+    "q": 120,
+    "t": "120g, finely chopped"
+   },
+   {
+    "i": "frozen_peas",
+    "q": 60,
+    "t": "60g",
+    "swap": "Boil the peas in a separate small pan for 3 min. Shape 2 cakes from the mash first, then fold the peas into the rest for the other 2."
+   },
+   {
+    "i": "butter",
+    "q": 25,
+    "t": "25g"
+   },
+   {
+    "i": "cheddar",
+    "q": 30,
+    "t": "30g, grated"
+   },
+   {
+    "i": "plain_flour",
+    "q": 10,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "oil",
+    "q": 22,
+    "t": "1\u00bd tbsp"
+   },
+   {
+    "i": "bacon",
+    "q": 150,
+    "t": "6 rashers"
+   },
+   {
+    "i": "eggs",
+    "q": 2,
+    "t": "2"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "worcestershire",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch, plus extra for the potato water"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the veg and relish",
+    "text": "Peel and chop the potatoes, finely slice the leek and finely chop the broccoli. Grate the cheddar. In a small bowl, stir the tomato pur\u00e9e, Worcestershire and honey with 1 tbsp water to make a quick tangy relish."
+   },
+   {
+    "title": "Boil the potatoes",
+    "text": "Boil the potatoes in salted water for 12\u201315 min until tender, adding the broccoli and peas for the last 3 min. Drain well and leave to steam dry for a couple of minutes."
+   },
+   {
+    "title": "Soften the leek",
+    "text": "While the potatoes cook, melt the butter in a large non-stick frying pan over a medium heat. Cook the leek for 5 min until soft, then tip into the potato pan."
+   },
+   {
+    "title": "Shape the cakes",
+    "text": "Roughly mash the potatoes with the veg, leek, cheddar and plenty of pepper, keeping it chunky. Shape into 4 thick cakes and dust lightly in the flour."
+   },
+   {
+    "title": "Fry the cakes",
+    "text": "Wipe out the frying pan and heat 1 tbsp oil over a medium heat. Fry the cakes for 4\u20135 min each side without moving them, until a deep golden crust forms."
+   },
+   {
+    "title": "Fry the bacon and eggs",
+    "text": "While the cakes fry, dry-fry the bacon in a second pan over a medium-high heat for 6\u20138 min until crisp. Move it to a plate. Add the remaining \u00bd tbsp oil and fry the eggs for 2\u20133 min until the whites are set and the yolks still runny."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Put two cakes on each plate and top with the bacon and a fried egg. Serve with the relish on the side."
+   }
+  ],
+  "tags": [
+   "comfort",
+   "crispy"
+  ]
+ },
+ {
+  "id": "br_lemon_butter_salmon_crushed_potatoes",
+  "title": "Crispy-Skin Salmon with Lemon Butter & Leek Crushed Potatoes",
+  "short": "Salmon and crushed potatoes",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "fish",
+  "time": 30,
+  "ingredients": [
+   {
+    "i": "salmon",
+    "q": 2,
+    "t": "2 fillets, skin on"
+   },
+   {
+    "i": "potatoes",
+    "q": 450,
+    "t": "450g, cut into chunks"
+   },
+   {
+    "i": "leeks",
+    "q": 150,
+    "t": "1 small leek, sliced"
+   },
+   {
+    "i": "frozen_peas",
+    "q": 120,
+    "t": "120g",
+    "swap": "Cook the peas in a separate small pan of boiling water for 2\u20133 min and stir them into one portion of the crushed potatoes only."
+   },
+   {
+    "i": "butter",
+    "q": 35,
+    "t": "35g"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1, zested and juiced"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, crushed"
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced"
+   },
+   {
+    "i": "wholegrain_mustard",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch, plus extra for the potato water"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the salmon and veg",
+    "text": "Cut the potatoes into chunks, slice the leek and spring onions and crush the garlic. Zest and juice the lemon. Pat the salmon skin really dry with kitchen paper and season with salt."
+   },
+   {
+    "title": "Boil the potatoes",
+    "text": "Put the potatoes in a pan of boiling salted water and cook for 15 min until tender, adding the peas for the last 2 min. Drain and keep in the pan."
+   },
+   {
+    "title": "Soften the leek",
+    "text": "While the potatoes cook, melt 15g butter in a small pan over a medium heat. Cook the leek for 5 min until soft and sweet, then stir in the mustard."
+   },
+   {
+    "title": "Fry the salmon",
+    "text": "When the potatoes have 8 min left, heat the oil in a non-stick frying pan over a medium-high heat. Lay the salmon in skin-side down and press for 10 seconds so it doesn't curl. Cook for 5\u20136 min until the skin is crisp and the flesh is opaque two-thirds of the way up, then flip for 1 min."
+   },
+   {
+    "title": "Make the lemon butter",
+    "text": "Lift the salmon onto a plate and turn the heat to low. Add the remaining butter and the garlic and cook until it foams and smells nutty. Take off the heat and stir in the lemon juice and zest."
+   },
+   {
+    "title": "Crush and serve",
+    "text": "Roughly crush the potatoes and peas with the leek, spring onions, a pinch of pepper and 1 tbsp of the lemon butter. Serve the salmon on top with the rest of the lemon butter spooned over."
+   }
+  ],
+  "tags": [
+   "quick"
+  ]
+ },
+ {
+  "id": "br_honey_mustard_chicken_traybake",
+  "title": "Sticky Honey & Mustard Chicken Traybake with Sweet Potato",
+  "short": "Honey mustard chicken",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 50,
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 400,
+    "t": "400g"
+   },
+   {
+    "i": "sweet_potato",
+    "q": 400,
+    "t": "1 large (400g), in chunks"
+   },
+   {
+    "i": "carrots",
+    "q": 200,
+    "t": "2, cut into batons"
+   },
+   {
+    "i": "red_onion",
+    "q": 1,
+    "t": "1, cut into wedges"
+   },
+   {
+    "i": "oil",
+    "q": 22,
+    "t": "1\u00bd tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "wholegrain_mustard",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "opt": true
+   },
+   {
+    "i": "broccoli",
+    "q": 200,
+    "t": "200g, in florets"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the veg and glaze",
+    "text": "Heat the oven to 220\u00b0C (200\u00b0C fan). Cut the sweet potato into chunks, the carrots into batons, the red onion into wedges and the broccoli into florets. Crush the garlic and mix it with the honey, mustard and soy sauce in a bowl to make the glaze."
+   },
+   {
+    "title": "Start the veg",
+    "text": "In a large roasting tin, toss the sweet potato, carrots and red onion with 1 tbsp oil, the mixed herbs (optional) and salt. Spread out in a single layer and roast on the top shelf for 10 min."
+   },
+   {
+    "title": "Add the chicken",
+    "text": "Toss the chicken in half the glaze, then nestle it among the veg. Roast for 15 min."
+   },
+   {
+    "title": "Glaze and add the broccoli",
+    "text": "Brush the chicken with the remaining glaze. Toss the broccoli with the remaining \u00bd tbsp oil and scatter it into the tin. Roast for 10\u201312 min more, until the chicken is sticky and cooked through with no pink inside and the broccoli is charred at the tips."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Give everything a stir in the sticky pan juices. Divide between plates and spoon over any glaze left in the tin."
+   }
+  ],
+  "tags": [
+   "traybake",
+   "kid-friendly"
+  ]
+ },
+ {
+  "id": "br_crispy_chicken_escalopes",
+  "title": "Crispy Parmesan Chicken Escalopes with Garlic Potatoes",
+  "short": "Crispy chicken escalopes",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 35,
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 300,
+    "t": "2 small breasts (300g)"
+   },
+   {
+    "i": "plain_flour",
+    "q": 15,
+    "t": "1\u00bd tbsp"
+   },
+   {
+    "i": "eggs",
+    "q": 1,
+    "t": "1, beaten"
+   },
+   {
+    "i": "panko",
+    "q": 50,
+    "t": "50g"
+   },
+   {
+    "i": "parmesan",
+    "q": 20,
+    "t": "20g, finely grated"
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tbsp, for frying"
+   },
+   {
+    "i": "potatoes",
+    "q": 400,
+    "t": "400g, cut into chunks"
+   },
+   {
+    "i": "butter",
+    "q": 30,
+    "t": "30g"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, crushed"
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1, zested, then cut into wedges"
+   },
+   {
+    "i": "frozen_peas",
+    "q": 150,
+    "t": "150g",
+    "swap": "Cook the peas in a separate small pan of boiling water for 3 min and stir them into one portion of the lettuce only."
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, shredded",
+    "swap": "Leave the lettuce off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch, plus extra for the potato water"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the veg",
+    "text": "Cut the potatoes into chunks, crush the garlic and slice the spring onions. Shred the little gem and finely grate the parmesan. Zest the lemon, then cut it into wedges."
+   },
+   {
+    "title": "Boil the potatoes",
+    "text": "Put the potatoes in a pan of boiling salted water and cook for 15\u201318 min until tender. Drain and keep in the pan."
+   },
+   {
+    "title": "Crumb the chicken",
+    "text": "While the potatoes cook, put the chicken between two sheets of baking paper and bash with a rolling pin until about 1cm thick. Set out three plates: seasoned flour, the beaten egg, and panko mixed with the parmesan and lemon zest. Dust the chicken in flour, dip in egg, then press firmly into the crumbs."
+   },
+   {
+    "title": "Fry the escalopes",
+    "text": "Heat the oil in a large frying pan over a medium heat. Fry the escalopes for 3\u20134 min each side until deep golden and the chicken is white all the way through. Drain on kitchen paper."
+   },
+   {
+    "title": "Cook the peas and lettuce",
+    "text": "Meanwhile, melt half the butter in a small pan over a medium heat. Add the spring onions, peas and 3 tbsp water and simmer for 3 min. Stir in the little gem for 1 min until just wilted and season with salt and pepper."
+   },
+   {
+    "title": "Garlic butter and serve",
+    "text": "Wipe out the escalope pan and melt the remaining butter with the garlic over a low heat for 30 seconds. Toss half through the potatoes. Serve the escalopes drizzled with the rest, with the potatoes, peas and lettuce, and lemon wedges for squeezing."
+   }
+  ],
+  "tags": [
+   "quick",
+   "crispy",
+   "kid-friendly"
+  ]
+ },
+ {
+  "id": "br_chilli_beef_jackets",
+  "title": "Smoky Beef Chilli Jacket Potatoes with Cheddar & Yogurt",
+  "short": "Chilli jacket potatoes",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "beef",
+  "time": 35,
+  "ingredients": [
+   {
+    "i": "potatoes",
+    "q": 600,
+    "t": "2 large baking potatoes"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "beef_mince",
+    "q": 250,
+    "t": "250g"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, finely chopped"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, diced"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "cumin",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "swap": "Leave the chilli flakes out of the pan and sprinkle them over one jacket only.",
+    "opt": true
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 400,
+    "t": "1 tin"
+   },
+   {
+    "i": "kidney_beans",
+    "q": 200,
+    "t": "\u00bd tin, drained"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 0.5,
+    "t": "\u00bd beef cube"
+   },
+   {
+    "i": "cheddar",
+    "q": 50,
+    "t": "50g, grated"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 60,
+    "t": "4 tbsp",
+    "swap": "Leave the yogurt off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced, to serve",
+    "swap": "Scatter the spring onions over one jacket only.",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the veg",
+    "text": "Heat the oven to 220\u00b0C (200\u00b0C fan) and prick the potatoes all over. Finely chop the onion, dice the pepper and crush the garlic. Drain the kidney beans, grate the cheddar and slice the spring onions (optional)."
+   },
+   {
+    "title": "Start the jackets",
+    "text": "Microwave the potatoes on high for 8\u201310 min until a knife slides in easily. Rub with 1 tsp oil and a pinch of salt. Bake directly on the oven shelf for 15 min until the skins are crisp."
+   },
+   {
+    "title": "Brown the mince",
+    "text": "Meanwhile, heat the remaining 1 tsp oil in a frying pan over a high heat. Fry the mince for 5 min, breaking it up, until browned. Add the onion and pepper and cook for 5 min more until soft."
+   },
+   {
+    "title": "Spice the chilli",
+    "text": "Stir in the garlic, smoked paprika, cumin and chilli flakes (optional) for 1 min until fragrant. Add the chopped tomatoes, tomato pur\u00e9e and kidney beans and crumble in the \u00bd stock cube."
+   },
+   {
+    "title": "Simmer the chilli",
+    "text": "Bubble over a medium heat for 10\u201312 min, stirring now and then, until thick enough to sit on a spoon. Season with salt to taste."
+   },
+   {
+    "title": "Fill and serve",
+    "text": "Split the jackets with a cross and fluff up the middles. Spoon over the chilli and scatter with the cheddar so it melts. Top with a dollop of yogurt and the spring onions (optional)."
+   }
+  ],
+  "tags": [
+   "quick",
+   "kid-friendly",
+   "freezable"
+  ]
+ },
+ {
+  "id": "in_chicken_tikka_masala",
+  "title": "Proper Chicken Tikka Masala with Fluffy Basmati Rice",
+  "short": "Chicken tikka masala",
+  "cuisine": "Indian",
+  "category": "treat",
+  "protein": "chicken",
+  "time": 40,
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 300,
+    "t": "2 breasts (300g), cut into chunks"
+   },
+   {
+    "i": "tikka_paste",
+    "q": 60,
+    "t": "4 tbsp"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 50,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, finely chopped"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, grated"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 200,
+    "t": "\u00bd tin"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "double_cream",
+    "q": 75,
+    "t": "5 tbsp"
+   },
+   {
+    "i": "garam_masala",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "butter",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, to serve",
+    "swap": "Keep the coriander in a little bowl on the table so it only goes on the plates that want it.",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep and marinate",
+    "text": "Heat the grill to high and boil the kettle. Cut the chicken into chunks, finely chop the onion and grate the garlic. Mix 2 tbsp tikka paste with the yogurt and a pinch of salt, then stir in the chicken. Leave it to marinate while you start the sauce."
+   },
+   {
+    "title": "Start the masala",
+    "text": "Melt the butter with the oil in a large frying pan over a medium heat. Add the onion with a pinch of salt and cook for 8\u201310 min until soft and golden. Stir in the garlic, ginger paste and remaining 2 tbsp tikka paste and fry for 1 min until fragrant."
+   },
+   {
+    "title": "Simmer the sauce",
+    "text": "Add the chopped tomatoes, tomato pur\u00e9e, honey and 100ml water. Simmer gently for 10 min, stirring now and then, until thick and jammy. For a smoother sauce, mash the onions in with a potato masher."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "While the sauce simmers, rinse the rice until the water runs clear. Tip it into a small pan with 300ml boiling water and a pinch of salt. Cover and cook on the lowest heat for 10 min. Turn off the heat and leave covered off the heat for 5 min, then fluff with a fork."
+   },
+   {
+    "title": "Grill the tikka",
+    "text": "While the rice cooks, spread the chicken on a foil-lined tray. Grill for 8\u201310 min, turning once, until blackened in places and cooked through with no pink inside."
+   },
+   {
+    "title": "Finish the sauce",
+    "text": "Stir the cream and garam masala into the sauce. Tip in the chicken and any juices and simmer for 2 min so the smoky flavour gets into the sauce. Season to taste."
+   },
+   {
+    "title": "Plate up",
+    "text": "Divide the rice between bowls. Spoon over the tikka masala and scatter with torn coriander (optional)."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "comfort",
+   "kid-friendly"
+  ]
+ },
+ {
+  "id": "in_butter_chicken",
+  "title": "Silky Butter Chicken with Fenugreek & Warm Buttered Naan",
+  "short": "Butter chicken",
+  "cuisine": "Indian",
+  "category": "treat",
+  "protein": "chicken",
+  "time": 40,
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 350,
+    "t": "350g thigh fillets, cut into chunks"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 50,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "garam_masala",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "chilli_powder",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, grated"
+   },
+   {
+    "i": "butter",
+    "q": 40,
+    "t": "40g"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, finely chopped"
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 200,
+    "t": "\u00bd tin"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "double_cream",
+    "q": 100,
+    "t": "100ml"
+   },
+   {
+    "i": "kasoori_methi",
+    "q": 2,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "cumin",
+    "q": 2,
+    "t": "1 tsp",
+    "opt": true
+   },
+   {
+    "i": "naan",
+    "q": 2,
+    "t": "2"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep and marinate",
+    "text": "Heat the grill to high. Cut the chicken into chunks, finely chop the onion and grate the garlic. Mix the yogurt with 1 tsp garam masala, the chilli powder, 1 tsp ginger paste, 1 garlic clove and a good pinch of salt. Stir in the chicken and leave for 10 min."
+   },
+   {
+    "title": "Make the onion base",
+    "text": "Melt 25g butter in a deep frying pan over a medium heat. Cook the onion for 8 min until soft and golden. Add the remaining garlic and ginger paste, the cumin (optional) and the remaining 1 tsp garam masala and stir for 1 min."
+   },
+   {
+    "title": "Simmer the sauce",
+    "text": "Add the chopped tomatoes, tomato pur\u00e9e, honey and 100ml water. Simmer for 10 min until thickened, then mash or stir hard until fairly smooth."
+   },
+   {
+    "title": "Grill the chicken",
+    "text": "While the sauce simmers, spread the chicken over a foil-lined tray. Grill for 10\u201312 min, turning once, until charred in spots and cooked through with no pink inside."
+   },
+   {
+    "title": "Add the cream",
+    "text": "Pour the cream into the sauce and rub the dried fenugreek (kasoori methi) between your palms over the pan. Bubble for 2 min until the sauce is a rich orange and coats the back of a spoon."
+   },
+   {
+    "title": "Finish the curry",
+    "text": "Stir the chicken and its juices into the sauce with the remaining 15g butter. Simmer for 2 min, then season to taste."
+   },
+   {
+    "title": "Warm the naan and serve",
+    "text": "Warm the naans under the grill for 1 min each side. Serve the butter chicken with the naan for scooping."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "comfort",
+   "kid-friendly"
+  ]
+ },
+ {
+  "id": "in_chicken_korma",
+  "title": "Creamy Almond Chicken Korma with Golden Pilau Rice",
+  "short": "Chicken korma",
+  "cuisine": "Indian",
+  "category": "treat",
+  "protein": "chicken",
+  "time": 35,
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 300,
+    "t": "2 breasts (300g), cut into chunks"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, finely chopped"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, grated"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "ground_coriander",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "cumin",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "turmeric",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "garam_masala",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "ground_almonds",
+    "q": 30,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "double_cream",
+    "q": 100,
+    "t": "100ml"
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "butter",
+    "q": 20,
+    "t": "20g"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "ground_cinnamon",
+    "q": 1,
+    "t": "a pinch",
+    "opt": true
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 chicken or veg cube"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the ingredients",
+    "text": "Boil the kettle. Finely chop the onion, grate the garlic and cut the chicken into chunks. Rinse the rice well and leave to drain. Make up 300ml stock with half the stock cube for the rice, and 150ml with the other half for the sauce."
+   },
+   {
+    "title": "Start the pilau",
+    "text": "Melt 10g butter in a small pan over a medium heat. Add the rice, a pinch of the turmeric and the cinnamon (optional) and stir for 1 min until glossy. Pour in the 300ml stock, cover and cook on the lowest heat for 10 min. Turn off the heat and leave covered."
+   },
+   {
+    "title": "Cook the onion base",
+    "text": "While the rice cooks, heat the oil and remaining 10g butter in a frying pan over a medium-low heat. Cook the onion gently for 8\u201310 min until very soft and pale gold without catching, which keeps the korma sweet. Stir in the garlic, ginger paste, ground coriander, cumin and remaining turmeric for 1 min."
+   },
+   {
+    "title": "Cook the chicken",
+    "text": "Turn the heat up to medium, add the chicken and stir for 3 min to coat it in the spices. Pour in the 150ml stock and stir in the ground almonds and honey. Simmer for 8\u201310 min until the chicken is cooked through and the sauce has thickened."
+   },
+   {
+    "title": "Make it creamy",
+    "text": "Stir in the cream and garam masala and warm through for 2 min without boiling hard. The sauce should be pale, silky and coat the chicken. Season with salt to taste."
+   },
+   {
+    "title": "Plate up",
+    "text": "Fluff the pilau with a fork and divide between plates. Spoon the korma alongside."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "comfort",
+   "kid-friendly"
+  ]
+ },
+ {
+  "id": "in_madras_onion_bhajis",
+  "title": "Fiery Chicken Madras with Crispy Onion Bhajis & Raita",
+  "short": "Chicken madras",
+  "cuisine": "Indian",
+  "category": "treat",
+  "protein": "chicken",
+  "time": 50,
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 300,
+    "t": "300g thigh fillets, cut into chunks"
+   },
+   {
+    "i": "onion",
+    "q": 2,
+    "t": "2 (1 chopped for the curry, 1 thinly sliced for bhajis)"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, grated"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "chilli_powder",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "curry_powder",
+    "q": 6,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "cumin",
+    "q": 2,
+    "t": "1 tsp",
+    "opt": true
+   },
+   {
+    "i": "garam_masala",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 200,
+    "t": "\u00bd tin"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1, to finish and serve",
+    "opt": true
+   },
+   {
+    "i": "gram_flour",
+    "q": 70,
+    "t": "70g"
+   },
+   {
+    "i": "turmeric",
+    "q": 1,
+    "t": "\u00bd tsp"
+   },
+   {
+    "i": "cumin_seeds",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "oil",
+    "q": 165,
+    "t": "1 tbsp for the curry, plus about 150ml for shallow frying"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 100,
+    "t": "100g"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.25,
+    "t": "\u00bc, grated",
+    "swap": "Make one portion of the raita without the cucumber, or serve the cucumber on the side.",
+    "autoSwap": true
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the ingredients",
+    "text": "Boil the kettle. Finely chop one onion and thinly slice the other. Cut the chicken into chunks, grate the garlic and grate the cucumber."
+   },
+   {
+    "title": "Make the raita",
+    "text": "Squeeze the grated cucumber in your hands to get rid of the water. Stir it into the yogurt with a pinch of salt, then chill until needed."
+   },
+   {
+    "title": "Start the madras",
+    "text": "Heat 1 tbsp oil in a saucepan over a medium heat and fry the chopped onion for 8 min until golden. Add the garlic, ginger paste, curry powder, ground cumin (optional) and all but a pinch of the chilli powder. Stir for 1 min until fragrant."
+   },
+   {
+    "title": "Simmer the curry",
+    "text": "Add the chicken and cook for 3 min until sealed all over. Tip in the chopped tomatoes, tomato pur\u00e9e and 150ml water. Cover and simmer for 20 min until thick and the chicken is tender."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "While the curry simmers, rinse the rice until the water runs clear. Tip it into a small pan with 300ml boiling water and a pinch of salt. Cover and cook on the lowest heat for 10 min. Turn off the heat and leave covered until needed."
+   },
+   {
+    "title": "Make the bhaji batter",
+    "text": "Mix the gram flour, turmeric, cumin seeds, the reserved pinch of chilli powder and \u00bd tsp salt in a bowl. Add the sliced onion and 4\u20135 tbsp cold water. Mix with your hands until every strand is coated in a thick, sticky batter."
+   },
+   {
+    "title": "Fry the bhajis",
+    "text": "Heat 1cm oil in a frying pan over a medium-high heat until a drop of batter sizzles straight away. Fry heaped tablespoons of the mixture, flattened slightly, for 3\u20134 min each side until deep golden and crisp. Drain on kitchen paper and sprinkle with salt. Let the leftover oil cool, then throw it away."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Stir the garam masala and a squeeze of lemon (optional) into the madras and season. Serve with the rice, hot bhajis, raita and the rest of the lemon in wedges (optional)."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "spicy",
+   "crispy"
+  ]
+ },
+ {
+  "id": "in_lamb_rogan_josh",
+  "title": "Slow-Simmered Lamb Rogan Josh with Cumin Rice",
+  "short": "Lamb rogan josh",
+  "cuisine": "Indian",
+  "category": "treat",
+  "protein": "lamb",
+  "time": 90,
+  "ingredients": [
+   {
+    "i": "diced_lamb",
+    "q": 300,
+    "t": "300g diced lamb leg"
+   },
+   {
+    "i": "onion",
+    "q": 2,
+    "t": "2, finely sliced"
+   },
+   {
+    "i": "garlic",
+    "q": 4,
+    "t": "4 cloves, grated"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "chilli_powder",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "ground_coriander",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "cumin",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "ground_cinnamon",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "opt": true
+   },
+   {
+    "i": "garam_masala",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 100,
+    "t": "100g"
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 200,
+    "t": "\u00bd tin"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 lamb or beef cube"
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "cumin_seeds",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, to serve",
+    "swap": "Keep the coriander in a little bowl on the table so it only goes on the plates that want it.",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the ingredients",
+    "text": "Boil the kettle and make up 300ml stock with the cube. Finely slice the onions and grate the garlic. Pat the lamb dry and season with salt. Mix the smoked paprika, chilli powder, ground coriander, cumin, cinnamon (optional) and 1 tsp garam masala in a small bowl."
+   },
+   {
+    "title": "Brown the lamb",
+    "text": "Heat 1 tbsp oil in a heavy casserole or saucepan over a high heat. Brown the lamb in one layer for 4\u20135 min until well coloured, then lift onto a plate."
+   },
+   {
+    "title": "Cook the onions",
+    "text": "Lower the heat to medium and add the remaining 1 tbsp oil and the onions. Cook for 10\u201312 min, stirring often, until deep golden and sticky."
+   },
+   {
+    "title": "Build the sauce",
+    "text": "Stir in the garlic, ginger paste and spice mix and cook for 1 min until fragrant. Take the pan off the heat and stir in the yogurt a spoonful at a time so it doesn't split. Add the chopped tomatoes, tomato pur\u00e9e and stock."
+   },
+   {
+    "title": "Simmer low and slow",
+    "text": "Return the lamb and its juices and bring to a gentle simmer. Cover and cook on a low heat for 1 hour, stirring now and then. Take the lid off for the last 10 min, until the lamb breaks apart with a spoon and the sauce is deep brick-red."
+   },
+   {
+    "title": "Cook the cumin rice",
+    "text": "With 20 min to go, rinse the rice. Toast the cumin seeds in a small dry pan over a medium heat for 30 sec. Add the rice, 300ml boiling water and a pinch of salt, cover and simmer on the lowest heat for 10 min. Rest off the heat, covered, for 5 min."
+   },
+   {
+    "title": "Plate up",
+    "text": "Stir the remaining 1 tsp garam masala into the rogan josh and season to taste. Spoon over the rice and scatter with coriander (optional)."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "comfort",
+   "freezable"
+  ]
+ },
+ {
+  "id": "in_chicken_biryani",
+  "title": "Layered Chicken Biryani with Crispy Onions & Cucumber Raita",
+  "short": "Chicken biryani",
+  "cuisine": "Indian",
+  "category": "treat",
+  "protein": "chicken",
+  "time": 65,
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 350,
+    "t": "350g thigh fillets, cut into large chunks"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 180,
+    "t": "180g (100g for marinade, 80g for raita)"
+   },
+   {
+    "i": "garam_masala",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "chilli_powder",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "turmeric",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, grated"
+   },
+   {
+    "i": "onion",
+    "q": 2,
+    "t": "2, thinly sliced"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "ground_cinnamon",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "opt": true
+   },
+   {
+    "i": "butter",
+    "q": 25,
+    "t": "25g"
+   },
+   {
+    "i": "oil",
+    "q": 45,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "\u00bd, juiced"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.25,
+    "t": "\u00bc, grated",
+    "swap": "Make one portion of the raita without the cucumber, or serve the cucumber on the side.",
+    "autoSwap": true
+   },
+   {
+    "i": "coriander",
+    "q": 15,
+    "t": "\u00bd pack, chopped",
+    "swap": "Leave the coriander out of the layers and keep it in a little bowl on the table so it only goes on the plates that want it.",
+    "opt": true
+   },
+   {
+    "i": "milk",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the ingredients",
+    "text": "Heat the oven to 180\u00b0C (160\u00b0C fan) and boil the kettle. Thinly slice the onions, grate the garlic and cut the chicken into large chunks. Chop the coriander and grate the cucumber."
+   },
+   {
+    "title": "Marinate the chicken",
+    "text": "Mix 100g yogurt with the garam masala, chilli powder, \u00bd tsp turmeric, the ginger paste, garlic, lemon juice and 1 tsp salt. Stir in the chicken and leave for 15 min while you fry the onions."
+   },
+   {
+    "title": "Fry the onions",
+    "text": "Heat the oil in a lidded ovenproof casserole over a medium-high heat. Fry the onions for 12\u201315 min, stirring often, until deep golden and crisp. Lift out half with a slotted spoon onto kitchen paper and leave the rest in the pan."
+   },
+   {
+    "title": "Par-boil the rice",
+    "text": "While the onions fry, rinse the rice. Cook it in a pan of salted boiling water with the cinnamon (optional) for 5 min, until softening outside but still firm in the middle. Drain well."
+   },
+   {
+    "title": "Cook the chicken layer",
+    "text": "Add the chicken and marinade to the onions in the casserole. Cook over a medium heat for 8 min, stirring, until sealed and the sauce has thickened. Meanwhile, stir the remaining \u00bd tsp turmeric into the milk."
+   },
+   {
+    "title": "Layer and bake",
+    "text": "Scatter half the coriander (optional) over the chicken, then spread the rice on top. Drizzle over the turmeric milk and dot with the butter. Cover tightly with foil, then the lid, and bake for 25 min until the rice is tender and the chicken is cooked through."
+   },
+   {
+    "title": "Make the raita",
+    "text": "While it bakes, squeeze the grated cucumber dry. Mix it into the remaining 80g yogurt with a pinch of salt and chill."
+   },
+   {
+    "title": "Plate up",
+    "text": "Fluff the biryani gently with a fork. Scatter with the crispy onions and the rest of the coriander (optional), and serve with the raita."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "comfort",
+   "one-pot"
+  ]
+ },
+ {
+  "id": "in_paneer_tikka",
+  "title": "Paneer & Mushroom Tikka Skewers with Garlic Naan",
+  "short": "Paneer tikka skewers",
+  "cuisine": "Indian",
+  "category": "treat",
+  "protein": "veggie",
+  "time": 40,
+  "ingredients": [
+   {
+    "i": "paneer",
+    "q": 200,
+    "t": "1 block, cut into 2.5cm cubes"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 150,
+    "t": "150g (80g marinade, 70g raita)"
+   },
+   {
+    "i": "tikka_paste",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, cut into chunks"
+   },
+   {
+    "i": "red_onion",
+    "q": 1,
+    "t": "1, cut into wedges"
+   },
+   {
+    "i": "mushrooms",
+    "q": 100,
+    "t": "100g, halved",
+    "swap": "Thread the mushrooms onto their own skewer and give it to one plate only; add extra pepper and onion to the other skewers."
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1, halved"
+   },
+   {
+    "i": "naan",
+    "q": 2,
+    "t": "2"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "butter",
+    "q": 20,
+    "t": "20g"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.25,
+    "t": "\u00bc, grated",
+    "swap": "Make one portion of the raita without the cucumber, or serve the cucumber on the side.",
+    "autoSwap": true
+   },
+   {
+    "i": "mango_chutney",
+    "q": 30,
+    "t": "2 tbsp",
+    "swap": "Make one portion of the raita without the chutney, or serve the chutney on the side.",
+    "autoSwap": true
+   },
+   {
+    "i": "kasoori_methi",
+    "q": 1,
+    "t": "1 tsp",
+    "opt": true
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, to serve",
+    "swap": "Keep the coriander in a little bowl on the table so it only goes on the plates that want it.",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the ingredients",
+    "text": "Cut the paneer into 2.5cm cubes, the pepper into chunks and the red onion into wedges. Halve the mushrooms, crush the garlic and grate the cucumber. If using wooden skewers, soak 4\u20136 in water."
+   },
+   {
+    "title": "Marinate the skewers",
+    "text": "Mix 80g yogurt with the tikka paste, kasoori methi (optional), the juice of half the lemon and a pinch of salt. Add the paneer, pepper, onion and mushrooms and toss gently until coated. Leave for 15 min, or longer if you have time."
+   },
+   {
+    "title": "Make the raita",
+    "text": "Squeeze the grated cucumber dry. Stir it into the remaining 70g yogurt with a pinch of salt and chill."
+   },
+   {
+    "title": "Thread the skewers",
+    "text": "Heat the grill to high. Thread the paneer and veg alternately onto the skewers and lay them on a foil-lined tray. Drizzle with any marinade left in the bowl."
+   },
+   {
+    "title": "Make the garlic butter",
+    "text": "Melt the butter with the crushed garlic in a small pan over a low heat for 2 min until fragrant. Stir in a few chopped coriander stalks (optional)."
+   },
+   {
+    "title": "Grill until charred",
+    "text": "Grill the skewers for 10\u201312 min, turning every few minutes, until the paneer is golden and the veg are charred at the edges. Warm the naans under the grill for the last minute and brush with the garlic butter."
+   },
+   {
+    "title": "Plate up",
+    "text": "Squeeze the rest of the lemon over the skewers and scatter with coriander leaves (optional). Serve with the garlic naans, raita and mango chutney."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "veggie"
+  ]
+ },
+ {
+  "id": "in_indo_chinese_chilli_chicken",
+  "title": "Indo-Chinese Chilli Chicken with Spring Onion Rice",
+  "short": "Chilli chicken",
+  "cuisine": "Indian",
+  "category": "treat",
+  "protein": "chicken",
+  "time": 35,
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 350,
+    "t": "350g thigh fillets, cut into bite-size pieces"
+   },
+   {
+    "i": "cornflour",
+    "q": 30,
+    "t": "3 tbsp plus 1 tsp"
+   },
+   {
+    "i": "eggs",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "soy_sauce",
+    "q": 45,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "garlic",
+    "q": 4,
+    "t": "4 cloves, finely chopped"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "green_chillies",
+    "q": 10,
+    "t": "2, slit lengthways",
+    "swap": "Fry the chillies separately for a minute and spoon them over one plate only."
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, cut into squares"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, cut into squares"
+   },
+   {
+    "i": "spring_onions",
+    "q": 4,
+    "t": "4, sliced (half for the rice, half to serve)",
+    "swap": "Stir the spring onions through one portion of rice only and scatter the rest over that plate."
+   },
+   {
+    "i": "sweet_chilli_sauce",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "\u00bd tsp"
+   },
+   {
+    "i": "oil",
+    "q": 100,
+    "t": "about 100ml for shallow frying"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the ingredients",
+    "text": "Boil the kettle. Cut the chicken into bite-size pieces and the pepper and onion into squares. Finely chop the garlic, slit the green chillies lengthways and slice the spring onions."
+   },
+   {
+    "title": "Coat the chicken",
+    "text": "Mix the chicken with the egg, 1 tbsp soy sauce, 1 tsp ginger paste and a pinch each of salt and black pepper. Sprinkle over 3 tbsp cornflour and mix until each piece has a sticky coating. For the sauce, mix the remaining 2 tbsp soy, the sweet chilli sauce, tomato pur\u00e9e, 1 tsp cornflour and 4 tbsp water in a cup."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "Rinse the rice until the water runs clear. Tip it into a small pan with 300ml boiling water and a pinch of salt. Cover and cook on the lowest heat for 10 min. Turn off the heat and leave covered for 5 min, then stir through half the spring onions."
+   },
+   {
+    "title": "Fry the chicken",
+    "text": "While the rice cooks, heat about 1cm oil in a wok or large frying pan over a medium-high heat. Fry the chicken in two batches for 5\u20136 min, turning, until deep golden, crisp and cooked through. Drain on kitchen paper. Carefully pour off all but 1 tbsp oil and throw it away once cool."
+   },
+   {
+    "title": "Stir-fry the veg",
+    "text": "Put the wok back over a high heat. Stir-fry the garlic, remaining 1 tsp ginger paste and green chillies for 30 sec. Add the onion and pepper and toss for 2\u20133 min until charred at the edges but still crunchy."
+   },
+   {
+    "title": "Make the sauce",
+    "text": "Pour in the sauce mix and bubble for 1 min until glossy and thick. Tip the crispy chicken back in and toss quickly so every piece is coated but stays crunchy."
+   },
+   {
+    "title": "Plate up",
+    "text": "Scatter with the rest of the spring onions and a pinch of black pepper. Serve straight away with the spring onion rice."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "crispy",
+   "spicy"
+  ]
+ },
+ {
+  "id": "in_lamb_seekh_kebab_wraps",
+  "title": "Lamb Seekh Kebab Wraps with Pickled Onions & Raita",
+  "short": "Lamb seekh kebab wraps",
+  "cuisine": "Indian",
+  "category": "treat",
+  "protein": "lamb",
+  "time": 30,
+  "ingredients": [
+   {
+    "i": "lamb_mince",
+    "q": 250,
+    "t": "\u00bd pack (250g)"
+   },
+   {
+    "i": "red_onion",
+    "q": 1,
+    "t": "1 (half thinly sliced, half grated)",
+    "swap": "Make one portion of the raita without the onions, or serve the onions on the side.",
+    "autoSwap": true
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, grated"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "garam_masala",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "cumin",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "swap": "Mix the chilli flakes into the raita for one portion instead of the kebabs.",
+    "opt": true
+   },
+   {
+    "i": "coriander",
+    "q": 15,
+    "t": "\u00bd pack, chopped",
+    "swap": "Leave the coriander out of the kebab mix and keep it in a little bowl on the table so it only goes on the plates that want it.",
+    "opt": true
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1",
+    "swap": "Leave the lemons off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "wraps",
+    "q": 4,
+    "t": "4"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 100,
+    "t": "100g"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.5,
+    "t": "\u00bd",
+    "swap": "Make one portion of the raita without the cucumber, or serve the cucumber on the side.",
+    "autoSwap": true
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, shredded",
+    "swap": "Make one portion of the raita without the lettuce, or serve the lettuce on the side.",
+    "autoSwap": true
+   },
+   {
+    "i": "mango_chutney",
+    "q": 30,
+    "t": "2 tbsp",
+    "swap": "Make one portion of the raita without the chutney, or serve the chutney on the side.",
+    "autoSwap": true
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the ingredients",
+    "text": "Heat the grill to high. Cut the red onion in half: thinly slice one half and grate the other. Grate the garlic, chop the coriander and shred the lettuce. Grate half the cucumber and cut the rest into sticks."
+   },
+   {
+    "title": "Pickle the onion",
+    "text": "Put the sliced red onion in a bowl with the juice of half the lemon and a big pinch of salt. Scrunch with your fingers and set aside to turn pink."
+   },
+   {
+    "title": "Mix the kebabs",
+    "text": "Squeeze the juice out of the grated onion. Mix it with the lamb, garlic, ginger paste, garam masala, cumin, chilli flakes (optional), half the coriander (optional) and \u00bd tsp salt. Knead for 1 min until sticky, then shape into 6 long sausage shapes, pressing firmly."
+   },
+   {
+    "title": "Grill the kebabs",
+    "text": "Lay the kebabs on a foil-lined tray. Grill for 10\u201312 min, turning every few minutes, until browned, sizzling and cooked through with no pink inside."
+   },
+   {
+    "title": "Make the raita",
+    "text": "While the kebabs grill, squeeze the grated cucumber dry. Mix it with the yogurt, a squeeze of lemon and a pinch of salt."
+   },
+   {
+    "title": "Wrap and serve",
+    "text": "Warm the wraps under the grill for 20 sec each side. Spread with raita and mango chutney, then add lettuce, cucumber sticks, kebabs, pickled onions and the rest of the coriander (optional). Roll up tightly and serve with the remaining lemon in wedges."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "quick"
+  ]
+ },
+ {
+  "id": "in_chicken_jalfrezi",
+  "title": "Smoky Chicken Jalfrezi with Charred Peppers & Green Chilli",
+  "short": "Chicken jalfrezi",
+  "cuisine": "Indian",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 35,
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 300,
+    "t": "2 breasts (300g), cut into chunks"
+   },
+   {
+    "i": "peppers",
+    "q": 2,
+    "t": "2, cut into chunky squares"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1 (half sliced into petals, half finely chopped)"
+   },
+   {
+    "i": "green_chillies",
+    "q": 10,
+    "t": "2, sliced",
+    "swap": "Slice the chilli and scatter it over one plate only instead of cooking it into the dish."
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, grated"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "cumin_seeds",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "curry_powder",
+    "q": 6,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "turmeric",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "opt": true
+   },
+   {
+    "i": "garam_masala",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 200,
+    "t": "\u00bd tin"
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, to serve",
+    "swap": "Keep the coriander in a little bowl on the table so it only goes on the plates that want it.",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the ingredients",
+    "text": "Boil the kettle. Cut the chicken into chunks and the peppers into chunky squares. Cut half the onion into chunky petals and finely chop the rest. Grate the garlic and slice the green chillies."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "Rinse the rice until the water runs clear. Tip it into a small pan with 300ml boiling water and a pinch of salt. Cover and cook on the lowest heat for 10 min. Turn off the heat and leave covered off the heat for 5 min, then fluff with a fork."
+   },
+   {
+    "title": "Char the veg",
+    "text": "While the rice cooks, heat 1 tbsp oil in a large frying pan or wok over a high heat. Stir-fry the peppers and onion petals for 4\u20135 min until blackened in patches but still crunchy. Tip onto a plate."
+   },
+   {
+    "title": "Sear the chicken",
+    "text": "Toss the chicken with the turmeric (optional), half the curry powder and a pinch of salt. Add the remaining 1 tbsp oil to the pan and fry the chicken for 4\u20135 min until browned all over."
+   },
+   {
+    "title": "Add the aromatics",
+    "text": "Push the chicken to one side. Add the cumin seeds, chopped onion, garlic, ginger paste and most of the chilli, and stir for 2 min until the onion softens."
+   },
+   {
+    "title": "Simmer the sauce",
+    "text": "Stir in the rest of the curry powder, then the chopped tomatoes and a splash of water. Simmer for 6\u20138 min until the sauce is thick and clinging and the chicken is cooked through. Fold the charred veg back in with the garam masala."
+   },
+   {
+    "title": "Plate up",
+    "text": "Spoon the rice onto plates. Serve the jalfrezi alongside, topped with the remaining chilli and coriander (optional)."
+   }
+  ],
+  "tags": [
+   "quick",
+   "spicy"
+  ]
+ },
+ {
+  "id": "in_saag_chicken",
+  "title": "Garlicky Saag Chicken with Spinach & Warm Naan",
+  "short": "Chicken saag",
+  "cuisine": "Indian",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 35,
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 350,
+    "t": "350g thigh fillets, cut into chunks"
+   },
+   {
+    "i": "spinach",
+    "q": 200,
+    "t": "200g"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, finely chopped"
+   },
+   {
+    "i": "garlic",
+    "q": 4,
+    "t": "4 cloves, sliced"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "green_chillies",
+    "q": 5,
+    "t": "1, finely chopped",
+    "swap": "Slice the chilli and scatter it over one plate only instead of cooking it into the dish."
+   },
+   {
+    "i": "cumin_seeds",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "cumin",
+    "q": 2,
+    "t": "1 tsp",
+    "opt": true
+   },
+   {
+    "i": "ground_coriander",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "garam_masala",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 100,
+    "t": "\u00bc tin"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "butter",
+    "q": 10,
+    "t": "10g"
+   },
+   {
+    "i": "naan",
+    "q": 2,
+    "t": "2"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the ingredients",
+    "text": "Boil the kettle. Cut the chicken into chunks, finely chop the onion and green chilli, and slice the garlic."
+   },
+   {
+    "title": "Wilt the spinach",
+    "text": "Put the spinach in a colander and pour over the kettle of boiling water until it collapses. Leave to cool for a minute, then squeeze out as much water as you can. Chop finely into a rough pur\u00e9e."
+   },
+   {
+    "title": "Brown the chicken",
+    "text": "Heat the oil in a large frying pan over a medium-high heat. Fry the chicken with a pinch of salt for 5 min until golden all over, then lift onto a plate."
+   },
+   {
+    "title": "Build the masala",
+    "text": "Lower the heat to medium, add the butter and cumin seeds and let them sizzle for 30 sec. Add the onion and cook for 6\u20137 min until golden. Stir in the garlic, ginger paste, chilli, ground cumin (optional) and ground coriander for 1 min."
+   },
+   {
+    "title": "Simmer the chicken",
+    "text": "Add the chopped tomatoes and cook for 3 min until jammy. Return the chicken with a splash of water and simmer for 8 min until cooked through with no pink inside."
+   },
+   {
+    "title": "Add the saag",
+    "text": "Stir in the spinach and garam masala and cook for 2 min until the sauce is thick and deep green. Take off the heat, swirl through the yogurt and season."
+   },
+   {
+    "title": "Warm the naan and serve",
+    "text": "Warm the naans in a dry frying pan over a medium heat for 1 min each side. Serve alongside the saag chicken."
+   }
+  ],
+  "tags": [
+   "quick"
+  ]
+ },
+ {
+  "id": "in_chana_masala",
+  "title": "Punjabi Chana Masala with Spinach & Lemony Rice",
+  "short": "Chana masala",
+  "cuisine": "Indian",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 30,
+  "ingredients": [
+   {
+    "i": "chickpeas",
+    "q": 400,
+    "t": "1 tin, drained"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, finely chopped"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, grated"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "green_chillies",
+    "q": 5,
+    "t": "1, slit",
+    "swap": "Slice the chilli and scatter it over one plate only instead of cooking it into the dish."
+   },
+   {
+    "i": "cumin_seeds",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "ground_coriander",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "turmeric",
+    "q": 1,
+    "t": "\u00bd tsp"
+   },
+   {
+    "i": "garam_masala",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "chilli_powder",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "opt": true
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 400,
+    "t": "1 tin"
+   },
+   {
+    "i": "spinach",
+    "q": 80,
+    "t": "2 big handfuls"
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, to serve",
+    "swap": "Keep the coriander in a little bowl on the table so it only goes on the plates that want it.",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the ingredients",
+    "text": "Boil the kettle. Finely chop the onion, grate the garlic and slit the green chilli. Drain and rinse the chickpeas."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "Rinse the rice until the water runs clear. Tip it into a small pan with 300ml boiling water and a pinch of salt. Cover and cook on the lowest heat for 10 min. Turn off the heat and leave covered off the heat for 5 min, then fluff with a fork."
+   },
+   {
+    "title": "Fry the masala",
+    "text": "While the rice cooks, heat the oil in a saucepan over a medium heat. Sizzle the cumin seeds for 30 sec, then add the onion and cook for 8 min until golden brown. Stir in the garlic, ginger paste, green chilli, ground coriander, turmeric, chilli powder (optional) and 1 tsp garam masala for 1 min."
+   },
+   {
+    "title": "Simmer the chickpeas",
+    "text": "Add the chopped tomatoes, chickpeas, 100ml water and a good pinch of salt. Simmer for 10 min, crushing a few chickpeas against the side of the pan, until the sauce is rich and glossy."
+   },
+   {
+    "title": "Finish the curry",
+    "text": "Stir in the spinach until wilted. Add the remaining 1 tsp garam masala and the juice of half the lemon, then season to taste."
+   },
+   {
+    "title": "Plate up",
+    "text": "Stir a squeeze of lemon through the rice. Spoon the chana masala alongside and top with coriander (optional) and the rest of the lemon in wedges."
+   }
+  ],
+  "tags": [
+   "quick",
+   "one-pot",
+   "veggie",
+   "freezable"
+  ]
+ },
+ {
+  "id": "in_tarka_dal",
+  "title": "Restaurant-Style Tarka Dal with Sizzling Garlic & Jeera Rice",
+  "short": "Tarka dal",
+  "cuisine": "Indian",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 35,
+  "ingredients": [
+   {
+    "i": "red_lentils",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "turmeric",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, finely chopped"
+   },
+   {
+    "i": "garlic",
+    "q": 4,
+    "t": "4 cloves, thinly sliced"
+   },
+   {
+    "i": "cumin_seeds",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "mustard_seeds",
+    "q": 2,
+    "t": "1 tsp",
+    "opt": true
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "swap": "Sprinkle the chilli flakes over one bowl at the end instead of adding them to the tarka.",
+    "opt": true
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 120,
+    "t": "120g, halved"
+   },
+   {
+    "i": "garam_masala",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "butter",
+    "q": 25,
+    "t": "25g"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "\u00bd, to finish",
+    "opt": true
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, to serve",
+    "swap": "Keep the coriander in a little bowl on the table so it only goes on the plates that want it.",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the ingredients",
+    "text": "Boil the kettle. Finely chop the onion, thinly slice the garlic and halve the cherry tomatoes. Rinse the lentils until the water runs clear, then rinse the rice."
+   },
+   {
+    "title": "Cook the lentils",
+    "text": "Tip the lentils into a saucepan with 700ml water, the turmeric and ginger paste. Bring to the boil and skim off any froth. Simmer for 20\u201325 min, stirring now and then, until completely soft and porridgey; add a splash more water if it gets too thick."
+   },
+   {
+    "title": "Make the jeera rice",
+    "text": "Meanwhile, toast 1 tsp cumin seeds in a small dry pan over a medium heat for 30 sec. Add the rice, 300ml boiling water and a pinch of salt. Cover and cook on the lowest heat for 10 min, then leave covered off the heat."
+   },
+   {
+    "title": "Cook the onion base",
+    "text": "Heat the oil in a frying pan over a medium heat and cook the onion for 8 min until golden. Add the tomatoes and cook for 3 min until they collapse. Stir everything into the soft lentils with the garam masala and 1 tsp salt, then whisk hard until creamy."
+   },
+   {
+    "title": "Make the tarka",
+    "text": "For the tarka (a sizzling spiced butter), wipe out the frying pan and melt the butter over a medium-high heat. Add the remaining 1 tsp cumin seeds, the mustard seeds (optional) and the garlic. Fry for 1\u20132 min until the seeds pop and the garlic is pale golden. Add the chilli flakes (optional) for the last few seconds."
+   },
+   {
+    "title": "Plate up",
+    "text": "Pour most of the tarka over the dal (it should hiss) and stir once. Squeeze in the lemon (optional). Serve with the jeera rice, the last of the tarka on top and coriander (optional)."
+   }
+  ],
+  "tags": [
+   "veggie",
+   "comfort",
+   "freezable"
+  ]
+ },
+ {
+  "id": "in_saag_paneer",
+  "title": "Saag Paneer with Crispy Paneer, Garlicky Spinach & Naan",
+  "short": "Saag paneer",
+  "cuisine": "Indian",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 30,
+  "ingredients": [
+   {
+    "i": "paneer",
+    "q": 200,
+    "t": "1 block, cubed"
+   },
+   {
+    "i": "spinach",
+    "q": 250,
+    "t": "1 bag (250g)"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, finely chopped"
+   },
+   {
+    "i": "garlic",
+    "q": 4,
+    "t": "4 cloves, grated"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "green_chillies",
+    "q": 5,
+    "t": "1, chopped",
+    "swap": "Slice the chilli and scatter it over one plate only instead of cooking it into the dish."
+   },
+   {
+    "i": "cumin_seeds",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "cumin",
+    "q": 2,
+    "t": "1 tsp",
+    "opt": true
+   },
+   {
+    "i": "garam_masala",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "turmeric",
+    "q": 1,
+    "t": "\u00bd tsp"
+   },
+   {
+    "i": "double_cream",
+    "q": 45,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "butter",
+    "q": 15,
+    "t": "15g"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "\u00bd, to finish",
+    "opt": true
+   },
+   {
+    "i": "naan",
+    "q": 2,
+    "t": "2"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the ingredients",
+    "text": "Boil the kettle. Cut the paneer into cubes, finely chop the onion and green chilli, and grate the garlic."
+   },
+   {
+    "title": "Blanch the spinach",
+    "text": "Put the spinach in a large bowl and pour over boiling water to cover. Leave for 1 min until wilted, then drain and rinse under cold water to keep it bright green. Squeeze out the water and blitz in a blender with a splash of water to a coarse pur\u00e9e."
+   },
+   {
+    "title": "Crisp the paneer",
+    "text": "Toss the paneer with the turmeric and a pinch of salt. Heat the oil in a large frying pan over a medium-high heat and fry for 4\u20135 min until golden and crisp. Lift onto a plate."
+   },
+   {
+    "title": "Cook the base",
+    "text": "Melt the butter in the same pan over a medium heat and sizzle the cumin seeds for 30 sec. Add the onion and cook for 7 min until soft and golden. Stir in the garlic, ginger paste, chilli and ground cumin (optional) for 1 min."
+   },
+   {
+    "title": "Bring it together",
+    "text": "Stir in the spinach pur\u00e9e with a splash of water and simmer for 3\u20134 min. Add the cream, garam masala and paneer and cook for 2 min until hot through. Season with salt and a squeeze of lemon (optional)."
+   },
+   {
+    "title": "Warm the naan and serve",
+    "text": "Warm the naans in a dry frying pan over a medium heat for 1 min each side. Serve with the saag paneer."
+   }
+  ],
+  "tags": [
+   "veggie",
+   "quick"
+  ]
+ },
+ {
+  "id": "in_goan_prawn_curry",
+  "title": "Tangy Goan Prawn Curry with Coconut & Lime",
+  "short": "Prawn curry",
+  "cuisine": "Indian",
+  "category": "everyday",
+  "protein": "prawns",
+  "time": 30,
+  "ingredients": [
+   {
+    "i": "prawns",
+    "q": 170,
+    "t": "1 pack (170g), defrosted"
+   },
+   {
+    "i": "coconut_milk",
+    "q": 400,
+    "t": "1 tin"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, finely sliced"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, grated"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "mustard_seeds",
+    "q": 2,
+    "t": "1 tsp",
+    "opt": true
+   },
+   {
+    "i": "chilli_powder",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "turmeric",
+    "q": 1,
+    "t": "\u00bd tsp"
+   },
+   {
+    "i": "ground_coriander",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "cumin",
+    "q": 2,
+    "t": "1 tsp",
+    "opt": true
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 150,
+    "t": "150g, halved"
+   },
+   {
+    "i": "green_chillies",
+    "q": 5,
+    "t": "1, slit",
+    "swap": "Slice the chilli and scatter it over one plate only instead of cooking it into the dish.",
+    "opt": true
+   },
+   {
+    "i": "lime",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, to serve",
+    "swap": "Keep the coriander in a little bowl on the table so it only goes on the plates that want it.",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the ingredients",
+    "text": "Boil the kettle. Finely slice the onion, grate the garlic, slit the green chilli and halve the cherry tomatoes. Pat the defrosted prawns dry and toss with a pinch each of turmeric and salt. Mix the chilli powder, smoked paprika, ground coriander, cumin (optional) and remaining turmeric with 2 tbsp water to make a paste."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "Rinse the rice until the water runs clear. Tip it into a small pan with 300ml boiling water and a pinch of salt. Cover and cook on the lowest heat for 10 min. Turn off the heat and leave covered off the heat for 5 min, then fluff with a fork."
+   },
+   {
+    "title": "Cook the onion",
+    "text": "While the rice cooks, heat the oil in a wide pan over a medium heat. Add the mustard seeds (optional) and, once they pop, the onion. Cook for 7 min until soft and golden."
+   },
+   {
+    "title": "Fry the spices",
+    "text": "Stir in the garlic, ginger paste and green chilli (optional) for 1 min. Add the spice paste and fry for 1 min until it darkens and smells rich."
+   },
+   {
+    "title": "Simmer the sauce",
+    "text": "Add the cherry tomatoes and cook for 2 min, then pour in the coconut milk. Simmer for 6\u20138 min until slightly thickened and a deep orange-red."
+   },
+   {
+    "title": "Cook the prawns",
+    "text": "Stir in the prawns and simmer for 2\u20133 min until pink and curled; don't overcook or they go rubbery. Squeeze in the juice of half the lime and season."
+   },
+   {
+    "title": "Plate up",
+    "text": "Divide the rice between bowls and ladle over the curry. Serve with the rest of the lime in wedges and coriander (optional)."
+   }
+  ],
+  "tags": [
+   "quick",
+   "spicy"
+  ]
+ },
+ {
+  "id": "in_keralan_fish_curry",
+  "title": "Keralan Coconut Fish Curry with Mustard Seeds & Lime",
+  "short": "Fish curry",
+  "cuisine": "Indian",
+  "category": "everyday",
+  "protein": "fish",
+  "time": 30,
+  "ingredients": [
+   {
+    "i": "cod_fillets",
+    "q": 280,
+    "t": "1 pack (280g), cut into large chunks"
+   },
+   {
+    "i": "coconut_milk",
+    "q": 400,
+    "t": "1 tin"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, thinly sliced"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, sliced"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "green_chillies",
+    "q": 10,
+    "t": "2, slit",
+    "swap": "Slice the chilli and scatter it over one plate only instead of cooking it into the dish."
+   },
+   {
+    "i": "mustard_seeds",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "turmeric",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "chilli_powder",
+    "q": 1,
+    "t": "\u00bd tsp"
+   },
+   {
+    "i": "ground_coriander",
+    "q": 2,
+    "t": "1 tsp",
+    "opt": true
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 120,
+    "t": "120g, halved"
+   },
+   {
+    "i": "lime",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, to serve",
+    "swap": "Keep the coriander in a little bowl on the table so it only goes on the plates that want it.",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the ingredients",
+    "text": "Boil the kettle. Thinly slice the onion, slice the garlic, slit the green chillies and halve the cherry tomatoes. Cut the fish into large chunks and toss with \u00bd tsp turmeric, the juice of half the lime and a pinch of salt."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "Rinse the rice until the water runs clear. Tip it into a small pan with 300ml boiling water and a pinch of salt. Cover and cook on the lowest heat for 10 min. Turn off the heat and leave covered off the heat for 5 min, then fluff with a fork."
+   },
+   {
+    "title": "Fry the aromatics",
+    "text": "While the rice cooks, heat the oil in a wide shallow pan over a medium heat. Add the mustard seeds and, once they start to pop, stir in the onion, garlic and chillies. Cook for 6\u20138 min until soft and lightly golden."
+   },
+   {
+    "title": "Make the sauce",
+    "text": "Add the ginger paste, remaining \u00bd tsp turmeric, chilli powder and ground coriander (optional) and stir for 1 min. Add the cherry tomatoes and coconut milk and simmer for 5 min until sunny yellow and slightly thickened."
+   },
+   {
+    "title": "Poach the fish",
+    "text": "Nestle the fish into the sauce and spoon some over the top. Simmer very gently for 5\u20136 min, shaking the pan rather than stirring, until the fish is opaque and flakes easily."
+   },
+   {
+    "title": "Plate up",
+    "text": "Season with salt and a squeeze more lime. Serve in shallow bowls over the rice with coriander (optional)."
+   }
+  ],
+  "tags": [
+   "quick",
+   "light"
+  ]
+ },
+ {
+  "id": "in_aloo_gobi",
+  "title": "Roasted Aloo Gobi with Chickpeas, Cumin & Lemony Yogurt",
+  "short": "Aloo gobi",
+  "cuisine": "Indian",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 40,
+  "ingredients": [
+   {
+    "i": "cauliflower",
+    "q": 0.5,
+    "t": "\u00bd, cut into florets"
+   },
+   {
+    "i": "potatoes",
+    "q": 300,
+    "t": "300g, cut into 2cm chunks"
+   },
+   {
+    "i": "chickpeas",
+    "q": 400,
+    "t": "1 tin, drained"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, grated"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "cumin_seeds",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "turmeric",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "curry_powder",
+    "q": 6,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "garam_masala",
+    "q": 2,
+    "t": "1 tsp",
+    "opt": true
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 120,
+    "t": "120g, halved"
+   },
+   {
+    "i": "oil",
+    "q": 45,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 100,
+    "t": "100g",
+    "swap": "Leave the yogurt off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "\u00bd"
+   },
+   {
+    "i": "naan",
+    "q": 2,
+    "t": "2"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, to serve",
+    "swap": "Keep the coriander in a little bowl on the table so it only goes on the plates that want it.",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the ingredients",
+    "text": "Heat the oven to 220\u00b0C (200\u00b0C fan). Cut the cauliflower into florets and the potatoes into 2cm chunks, and drain the chickpeas. Slice the onion, grate the garlic and halve the cherry tomatoes."
+   },
+   {
+    "title": "Roast the veg",
+    "text": "Toss the cauliflower, potatoes and chickpeas on a large roasting tray with 2 tbsp oil, the turmeric, half the curry powder and 1 tsp salt. Roast for 25 min, turning halfway, until the potatoes are tender and the cauliflower is charred at the edges."
+   },
+   {
+    "title": "Make the masala",
+    "text": "With 15 min of roasting left, heat the remaining 1 tbsp oil in a large frying pan over a medium heat. Sizzle the cumin seeds for 30 sec, add the onion and cook for 8 min until golden. Stir in the garlic, ginger paste and remaining curry powder for 1 min. Add the tomatoes and a splash of water and cook for 4 min until they collapse into a thick sauce."
+   },
+   {
+    "title": "Make the lemony yogurt",
+    "text": "Mix the yogurt with a squeeze of lemon and a pinch of salt. Set aside until serving."
+   },
+   {
+    "title": "Toss together",
+    "text": "Tip the roasted veg and chickpeas into the masala pan with the garam masala (optional). Toss over the heat for 2 min until coated, then add a squeeze of lemon and season. Meanwhile, warm the naans in the oven for 2 min."
+   },
+   {
+    "title": "Plate up",
+    "text": "Divide the aloo gobi between plates. Serve with the warm naans, lemony yogurt and coriander (optional)."
+   }
+  ],
+  "tags": [
+   "veggie",
+   "traybake"
+  ]
+ },
+ {
+  "id": "in_tandoori_chicken_traybake",
+  "title": "Tandoori Chicken Traybake with Bombay Potatoes & Kachumber",
+  "short": "Tandoori chicken traybake",
+  "cuisine": "Indian",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 50,
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 350,
+    "t": "350g thigh fillets"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 120,
+    "t": "120g"
+   },
+   {
+    "i": "garam_masala",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "chilli_powder",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "turmeric",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, grated"
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "potatoes",
+    "q": 450,
+    "t": "450g, cut into 2cm chunks"
+   },
+   {
+    "i": "mustard_seeds",
+    "q": 2,
+    "t": "1 tsp",
+    "opt": true
+   },
+   {
+    "i": "cumin_seeds",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "red_onion",
+    "q": 1,
+    "t": "1 (half in wedges, half finely chopped)"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 100,
+    "t": "100g, chopped"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.5,
+    "t": "\u00bd, diced",
+    "swap": "Leave the cucumber off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful",
+    "swap": "Leave the coriander out of the salad and keep it in a little bowl on the table so it only goes on the plates that want it.",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the ingredients",
+    "text": "Heat the oven to 220\u00b0C (200\u00b0C fan). Cut the potatoes into 2cm chunks. Cut half the red onion into wedges and finely chop the rest. Grate the garlic, chop the cherry tomatoes and coriander, and dice the cucumber."
+   },
+   {
+    "title": "Marinate the chicken",
+    "text": "Mix 80g yogurt with the garam masala, paprika, chilli powder and \u00bd tsp turmeric. Stir in the ginger paste, garlic, juice of half the lemon and 1 tsp salt. Slash each chicken thigh a couple of times and coat well in the marinade."
+   },
+   {
+    "title": "Start the Bombay potatoes",
+    "text": "Toss the potatoes on a large roasting tray with the oil, cumin seeds, mustard seeds (optional), remaining \u00bd tsp turmeric and a pinch of salt. Roast for 15 min until they start to colour."
+   },
+   {
+    "title": "Roast the chicken",
+    "text": "Push the potatoes to the edges, add the onion wedges and lay the chicken in the middle. Roast for 25 min until the chicken is charred at the edges and the juices run clear, and the potatoes are crisp."
+   },
+   {
+    "title": "Make the kachumber",
+    "text": "While it roasts, make the kachumber, a fresh chopped salad. Mix the tomatoes, cucumber and chopped red onion with a squeeze of lemon, a pinch of salt and the coriander (optional). Loosen the remaining 40g yogurt with a splash of water and a pinch of salt."
+   },
+   {
+    "title": "Plate up",
+    "text": "Pile the chicken and Bombay potatoes onto plates and drizzle with the yogurt. Serve with the kachumber and the rest of the lemon in wedges."
+   }
+  ],
+  "tags": [
+   "traybake",
+   "kid-friendly"
+  ]
+ },
+ {
+  "id": "in_chicken_kathi_rolls",
+  "title": "Chicken Kathi Rolls with Egg-Fried Wraps & Pickled Onion",
+  "short": "Chicken tikka wraps",
+  "cuisine": "Indian",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 30,
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 300,
+    "t": "2 breasts (300g), cut into strips"
+   },
+   {
+    "i": "tikka_paste",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 100,
+    "t": "100g"
+   },
+   {
+    "i": "eggs",
+    "q": 2,
+    "t": "2"
+   },
+   {
+    "i": "wraps",
+    "q": 4,
+    "t": "4"
+   },
+   {
+    "i": "red_onion",
+    "q": 1,
+    "t": "1, thinly sliced"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "chilli_powder",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "opt": true
+   },
+   {
+    "i": "cucumber",
+    "q": 0.25,
+    "t": "\u00bc, cut into sticks",
+    "swap": "Leave the cucumber off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "green_chillies",
+    "q": 5,
+    "t": "1, thinly sliced, to serve",
+    "swap": "Add the chilli to one person's rolls only.",
+    "opt": true
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful",
+    "swap": "Leave the coriander out of the yogurt and keep it in a little bowl on the table so it only goes on the plates that want it.",
+    "opt": true
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the ingredients",
+    "text": "Cut the chicken into strips and mix with the tikka paste, 2 tbsp yogurt and a pinch of salt. Thinly slice the red onion, pepper and green chilli, cut the cucumber into sticks and chop the coriander. Beat the eggs with a pinch of salt."
+   },
+   {
+    "title": "Make the toppings",
+    "text": "Toss the red onion with the juice of half the lemon, the chilli powder (optional) and a pinch of salt, and leave to soften. Stir the remaining yogurt with a squeeze of lemon, a pinch of salt and most of the coriander (optional)."
+   },
+   {
+    "title": "Cook the chicken",
+    "text": "Heat 1 tbsp oil in a large frying pan over a high heat. Fry the chicken and pepper for 6\u20137 min until the chicken is charred at the edges and cooked through. Tip into a bowl and wipe out the pan."
+   },
+   {
+    "title": "Make the egg-fried wraps",
+    "text": "Heat a little of the remaining oil in the pan over a medium heat. Pour in a quarter of the egg, swirl, and immediately press a wrap on top. Cook for 1 min until the egg sets and sticks, then flip for 30 sec. Repeat with the rest."
+   },
+   {
+    "title": "Roll and serve",
+    "text": "Lay each wrap egg-side up and add the chicken and pepper, pickled onion, cucumber, chilli (optional) and a spoonful of yogurt. Roll tightly and wrap the bottom in foil or baking paper like a street-food roll. Serve with the rest of the lemon in wedges."
+   }
+  ],
+  "tags": [
+   "quick",
+   "kid-friendly"
+  ]
+ },
+ {
+  "id": "in_masala_salmon_bombay_potatoes",
+  "title": "Masala-Crusted Salmon with Bombay Potatoes & Spinach",
+  "short": "Masala salmon",
+  "cuisine": "Indian",
+  "category": "everyday",
+  "protein": "fish",
+  "time": 30,
+  "ingredients": [
+   {
+    "i": "salmon",
+    "q": 2,
+    "t": "2 fillets"
+   },
+   {
+    "i": "tikka_paste",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 70,
+    "t": "4 tbsp"
+   },
+   {
+    "i": "potatoes",
+    "q": 400,
+    "t": "400g, cut into 2cm cubes"
+   },
+   {
+    "i": "mustard_seeds",
+    "q": 2,
+    "t": "1 tsp",
+    "opt": true
+   },
+   {
+    "i": "cumin_seeds",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "turmeric",
+    "q": 1,
+    "t": "\u00bd tsp"
+   },
+   {
+    "i": "chilli_powder",
+    "q": 1,
+    "t": "\u00bd tsp"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, sliced"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 100,
+    "t": "100g, halved",
+    "swap": "Leave the tomatoes off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "spinach",
+    "q": 100,
+    "t": "100g"
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1",
+    "swap": "Leave the lemons off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, to serve",
+    "swap": "Keep the coriander in a little bowl on the table so it only goes on the plates that want it.",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the ingredients",
+    "text": "Cut the potatoes into 2cm cubes, slice the garlic and halve the cherry tomatoes. Mix the tikka paste with 1 tbsp yogurt and spread over the top of the salmon."
+   },
+   {
+    "title": "Par-cook the potatoes",
+    "text": "Put the potatoes in a microwaveable bowl with a splash of water. Cover and microwave on high for 6\u20137 min until just tender, then drain well."
+   },
+   {
+    "title": "Crisp the Bombay potatoes",
+    "text": "Heat 1\u00bd tbsp oil in a large frying pan over a medium-high heat. Add the cumin seeds and mustard seeds (optional) and, when they pop, the potatoes, turmeric, chilli powder and a pinch of salt. Fry for 10 min, turning, until golden and crisp at the edges."
+   },
+   {
+    "title": "Cook the salmon",
+    "text": "Meanwhile, heat the remaining \u00bd tbsp oil in a second frying pan over a medium heat. Cook the salmon skin-side down for 4 min until crisp, then turn and cook for 3\u20134 min more. It's ready when the crust is charred and the salmon flakes easily."
+   },
+   {
+    "title": "Add the spinach",
+    "text": "Push the potatoes to one side, add the garlic and tomatoes and cook for 2 min until softening. Stir in the spinach until just wilted, then season with salt and a squeeze of lemon."
+   },
+   {
+    "title": "Plate up",
+    "text": "Loosen the rest of the yogurt with a little lemon juice and a pinch of salt. Serve the salmon on the potatoes and spinach with the yogurt, the rest of the lemon in wedges and coriander (optional)."
+   }
+  ],
+  "tags": [
+   "quick"
+  ]
+ },
+ {
+  "id": "in_sweet_potato_chickpea_curry",
+  "title": "Sweet Potato, Chickpea & Spinach Coconut Curry",
+  "short": "Sweet potato chickpea curry",
+  "cuisine": "Indian",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 35,
+  "ingredients": [
+   {
+    "i": "sweet_potato",
+    "q": 350,
+    "t": "1 large (350g), cut into 2cm chunks"
+   },
+   {
+    "i": "chickpeas",
+    "q": 400,
+    "t": "1 tin, drained"
+   },
+   {
+    "i": "coconut_milk",
+    "q": 200,
+    "t": "\u00bd tin"
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 200,
+    "t": "\u00bd tin"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, chopped"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, grated"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "curry_powder",
+    "q": 8,
+    "t": "4 tsp"
+   },
+   {
+    "i": "cumin_seeds",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "garam_masala",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "spinach",
+    "q": 100,
+    "t": "100g"
+   },
+   {
+    "i": "lime",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, to serve",
+    "swap": "Keep the coriander in a little bowl on the table so it only goes on the plates that want it.",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the ingredients",
+    "text": "Boil the kettle. Peel the sweet potato and cut into 2cm chunks. Chop the onion, grate the garlic and drain the chickpeas."
+   },
+   {
+    "title": "Fry the base",
+    "text": "Heat the oil in a large saucepan over a medium heat. Sizzle the cumin seeds for 30 sec, then add the onion and cook for 6 min until soft. Stir in the garlic, ginger paste and curry powder and cook for 1 min until fragrant."
+   },
+   {
+    "title": "Simmer the curry",
+    "text": "Add the sweet potato, chickpeas, chopped tomatoes, coconut milk, 100ml water and a good pinch of salt. Bring to a simmer, cover and cook for 15 min until the sweet potato is tender when pierced with a knife."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "While the curry simmers, rinse the rice until the water runs clear. Tip it into a small pan with 300ml boiling water and a pinch of salt. Cover and cook on the lowest heat for 10 min. Turn off the heat and leave covered off the heat for 5 min, then fluff with a fork."
+   },
+   {
+    "title": "Finish the curry",
+    "text": "Stir in the spinach and garam masala and cook for 2 min until wilted and the sauce is thick and creamy. Squeeze in the juice of half the lime and season."
+   },
+   {
+    "title": "Plate up",
+    "text": "Divide the rice between bowls and spoon over the curry. Serve with the rest of the lime in wedges and coriander (optional)."
+   }
+  ],
+  "tags": [
+   "veggie",
+   "one-pot",
+   "freezable",
+   "kid-friendly"
+  ]
+ }
+]

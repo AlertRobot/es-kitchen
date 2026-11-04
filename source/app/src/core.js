@@ -505,15 +505,23 @@ function isTreatDay(d, settings) { return (settings.treatDays || []).includes(d)
 function allowedOnDay(r, d, ctx) {
   const cap = ctx.settings.weeknightCap || 30;
   const dayCap = isTreatDay(d, ctx.settings) ? Math.max(cap, 60) : cap;
-  if (d < 5 && r.time > dayCap) return false;
+  // oven and freezer dinners count their hands-on time: a lasagne that bakes for 45 minutes is still a 5-minute job
+  const t = r.hands != null ? r.hands : r.time;
+  if (d < 5 && t > dayCap) return false;
   if (!hasEquipment(r, ctx.settings)) return false;
   return true;
 }
 // treat nights: treats are wanted on treat days and gently kept off the others
 function treatScore(r, d, settings) {
   const treat = r.category === 'treat';
-  if (isTreatDay(d, settings)) return treat ? 5 : -3;
-  return treat ? -2.5 : 0;
+  const t = isTreatDay(d, settings) ? (treat ? 5 : -3) : (treat ? -2.5 : 0);
+  return t + easyScore(r, d, settings);
+}
+// easy nights: kit, jar and freezer dinners come first; on other nights they're fine but cooking from scratch is preferred
+function isEasyDay(d, settings) { return (settings.easyDays || []).includes(d); }
+function easyScore(r, d, settings) {
+  if (isEasyDay(d, settings)) return r.easy ? 6 : -3;
+  return r.easy ? -1.5 : 0;
 }
 // ---------- nutrition (per portion) ----------
 function recipeNutrition(r, ING) {
@@ -737,7 +745,7 @@ function rescuePlans(week, d, ctx) {
 function arrangeWeek(week, ids, ctx) {
   const empty = []; week.days.forEach((x, d) => { if ((!x || (!x.r && !x.takeaway)) && !nobodyIn(week, d, ctx)) empty.push(d); });
   ids = ids.filter(id => ctx.RMAP[id]).slice(0, empty.length);
-  const treatDays = ctx.settings.treatDays || [];
+  const treatDays = ctx.settings.treatDays || [], easyDays = ctx.settings.easyDays || [];
   const build = slots => { const days = week.days.map(x => ({ ...(x || {}) })); slots.forEach((id, k) => { if (id) days[empty[k]] = { ...days[empty[k]], r: id }; }); return { ...week, days }; };
   const cost = slots => {
     const w = build(slots); let pen = 0;
@@ -746,6 +754,7 @@ function arrangeWeek(week, ids, ctx) {
       if (!allowedOnDay(r, d, ctx)) pen += 25;
       if (varietyClash(r, d, w.days, ctx.RMAP)) pen += 15;
       if (treatDays.length && (r.category === "treat") !== treatDays.includes(d)) pen += 3;
+      if (easyDays.length && !!r.easy !== easyDays.includes(d)) pen += 3;
     });
     return weekObjective(w, ctx).value + pen;
   };
@@ -772,4 +781,4 @@ function arrangeWeek(week, ids, ctx) {
 }
 
 if (typeof module !== 'undefined') module.exports = { dinnerPortionsOn, nobodyIn, awayOn, shiftOn, dayShift, cookOn, guestsOn, packsAt, withShop, SHOPS, DAY_NAMES, DAY_LONG, AISLE_ORDER, STALE_DAYS, isoDate, parseIso, addDays, daysBetween, mondayOf, ageDays, fmtMoney, fmtQty, packLabel,
-  termMatchesIng, checkPrefs, recipeNutrition, hasEquipment, isTreatDay, treatScore, rescuePlans, simulateBought, blItems, dinnerPortions, polish, seeded, tasteScore, breaksLimits, excludedByRating, ratingOf, shopPrice, unitPrice, choosePacks, simulate, basketTotals, shoppingList, varietyPenalty, varietyClash, baseOf, familyOf, suggest, weekObjective, autoFill, allowedOnDay, arrangeWeek };
+  termMatchesIng, checkPrefs, recipeNutrition, hasEquipment, isTreatDay, isEasyDay, treatScore, rescuePlans, simulateBought, blItems, dinnerPortions, polish, seeded, tasteScore, breaksLimits, excludedByRating, ratingOf, shopPrice, unitPrice, choosePacks, simulate, basketTotals, shoppingList, varietyPenalty, varietyClash, baseOf, familyOf, suggest, weekObjective, autoFill, allowedOnDay, arrangeWeek };

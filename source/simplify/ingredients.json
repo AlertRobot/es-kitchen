@@ -1,0 +1,1304 @@
+{
+"arborio_rice": {
+"name": "Risotto rice (arborio)",
+"aisle": "Dry goods",
+"unit": "g",
+"staple": false
+},
+"aubergine": {
+"name": "Aubergines",
+"aisle": "Fruit & veg",
+"unit": "each",
+"staple": false
+},
+"avocado": {
+"name": "Ripe & ready avocados",
+"aisle": "Fruit & veg",
+"unit": "each",
+"staple": false
+},
+"bacon": {
+"name": "Smoked back bacon",
+"aisle": "Meat & fish",
+"unit": "g",
+"staple": false
+},
+"baguette": {
+"name": "Part-baked white baguettes",
+"aisle": "Bakery",
+"unit": "each",
+"staple": false
+},
+"basil": {
+"name": "Fresh basil",
+"aisle": "Fruit & veg",
+"unit": "g",
+"staple": false
+},
+"beansprouts": {
+"name": "Beansprouts",
+"aisle": "Fruit & veg",
+"unit": "g",
+"staple": false
+},
+"beef_mince": {
+"name": "Beef mince (5% fat)",
+"aisle": "Meat & fish",
+"unit": "g",
+"staple": false
+},
+"black_beans": {
+"name": "Black beans (tin)",
+"aisle": "Tins & jars",
+"unit": "g",
+"staple": false
+},
+"black_pepper": {
+"name": "Black pepper",
+"aisle": "Herbs & spices",
+"unit": "g",
+"staple": true
+},
+"broccoli": {
+"name": "Broccoli",
+"aisle": "Fruit & veg",
+"unit": "g",
+"staple": false
+},
+"burger_buns": {
+"name": "Brioche burger buns",
+"aisle": "Bakery",
+"unit": "each",
+"staple": false
+},
+"butter": {
+"name": "Butter",
+"aisle": "Dairy & eggs",
+"unit": "g",
+"staple": true
+},
+"butter_beans": {
+"name": "Butter beans in water (tin)",
+"aisle": "Tins & jars",
+"unit": "g",
+"staple": false
+},
+"cannellini_beans": {
+"name": "Cannellini beans (tin)",
+"aisle": "Tins & jars",
+"unit": "g",
+"staple": false
+},
+"carrots": {
+"name": "Carrots",
+"aisle": "Fruit & veg",
+"unit": "g",
+"staple": false
+},
+"cauliflower": {
+"name": "Cauliflower",
+"aisle": "Fruit & veg",
+"unit": "each",
+"staple": false
+},
+"cheddar": {
+"name": "Mature cheddar",
+"aisle": "Dairy & eggs",
+"unit": "g",
+"staple": false
+},
+"cherry_tomatoes": {
+"name": "Cherry tomatoes",
+"aisle": "Fruit & veg",
+"unit": "g",
+"staple": false
+},
+"chicken_breast": {
+"name": "Chicken breast fillets",
+"aisle": "Meat & fish",
+"unit": "g",
+"staple": false
+},
+"chicken_thighs": {
+"name": "Chicken thigh fillets",
+"aisle": "Meat & fish",
+"unit": "g",
+"staple": false
+},
+"chickpeas": {
+"name": "Chickpeas (tin)",
+"aisle": "Tins & jars",
+"unit": "g",
+"staple": false
+},
+"chilli_flakes": {
+"name": "Chilli flakes",
+"aisle": "Herbs & spices",
+"unit": "g",
+"staple": true
+},
+"chopped_tomatoes": {
+"name": "Chopped tomatoes (tin)",
+"aisle": "Tins & jars",
+"unit": "g",
+"staple": false
+},
+"coconut_milk": {
+"name": "Coconut milk (tin)",
+"aisle": "Tins & jars",
+"unit": "ml",
+"staple": false
+},
+"coriander": {
+"name": "Fresh coriander",
+"aisle": "Fruit & veg",
+"unit": "g",
+"staple": false
+},
+"cornflour": {
+"name": "Cornflour",
+"aisle": "Dry goods",
+"unit": "g",
+"staple": true
+},
+"courgette": {
+"name": "Courgettes",
+"aisle": "Fruit & veg",
+"unit": "each",
+"staple": false
+},
+"couscous": {
+"name": "Couscous",
+"aisle": "Dry goods",
+"unit": "g",
+"staple": false
+},
+"cucumber": {
+"name": "Cucumber",
+"aisle": "Fruit & veg",
+"unit": "each",
+"staple": false
+},
+"cumin": {
+"name": "Ground cumin",
+"aisle": "Herbs & spices",
+"unit": "g",
+"staple": true
+},
+"cumin_seeds": {
+"name": "Cumin seeds",
+"aisle": "Herbs & spices",
+"unit": "g",
+"staple": true
+},
+"curry_powder": {
+"name": "Mild curry powder",
+"aisle": "Herbs & spices",
+"unit": "g",
+"staple": true
+},
+"double_cream": {
+"name": "Double cream",
+"aisle": "Dairy & eggs",
+"unit": "ml",
+"staple": false
+},
+"egg_noodles": {
+"name": "Medium egg noodles",
+"aisle": "World foods",
+"unit": "g",
+"staple": false
+},
+"eggs": {
+"name": "Free-range eggs",
+"aisle": "Dairy & eggs",
+"unit": "each",
+"staple": false
+},
+"feta": {
+"name": "Feta",
+"aisle": "Dairy & eggs",
+"unit": "g",
+"staple": false
+},
+"frozen_peas": {
+"name": "Frozen garden peas",
+"aisle": "Frozen",
+"unit": "g",
+"staple": false
+},
+"garam_masala": {
+"name": "Garam masala",
+"aisle": "Herbs & spices",
+"unit": "g",
+"staple": true
+},
+"garlic": {
+"name": "Garlic",
+"aisle": "Fruit & veg",
+"unit": "clove",
+"staple": true
+},
+"ginger_paste": {
+"name": "Ginger paste",
+"aisle": "World foods",
+"unit": "g",
+"staple": true
+},
+"gnocchi": {
+"name": "Potato gnocchi",
+"aisle": "Chilled",
+"unit": "g",
+"staple": false
+},
+"gochujang": {
+"name": "Gochujang Korean chilli paste",
+"aisle": "World foods",
+"unit": "g",
+"staple": false
+},
+"gravy": {
+"name": "Gravy granules",
+"aisle": "Dry goods",
+"unit": "g",
+"staple": true
+},
+"greek_yogurt": {
+"name": "Greek-style yogurt",
+"aisle": "Dairy & eggs",
+"unit": "g",
+"staple": false
+},
+"green_chillies": {
+"name": "Green chillies",
+"aisle": "Fruit & veg",
+"unit": "g",
+"staple": false
+},
+"ground_cinnamon": {
+"name": "Ground cinnamon",
+"aisle": "Herbs & spices",
+"unit": "g",
+"staple": true
+},
+"ground_coriander": {
+"name": "Ground coriander",
+"aisle": "Herbs & spices",
+"unit": "g",
+"staple": true
+},
+"halloumi": {
+"name": "Halloumi",
+"aisle": "Dairy & eggs",
+"unit": "g",
+"staple": false
+},
+"harissa": {
+"name": "Harissa paste",
+"aisle": "World foods",
+"unit": "g",
+"staple": false
+},
+"hoisin_sauce": {
+"name": "Hoisin sauce",
+"aisle": "World foods",
+"unit": "g",
+"staple": false
+},
+"honey": {
+"name": "Honey",
+"aisle": "Tins & jars",
+"unit": "g",
+"staple": true
+},
+"kidney_beans": {
+"name": "Red kidney beans (tin)",
+"aisle": "Tins & jars",
+"unit": "g",
+"staple": false
+},
+"kimchi": {
+"name": "Kimchi",
+"aisle": "Chilled",
+"unit": "g",
+"staple": false
+},
+"lamb_mince": {
+"name": "Lamb mince (20% fat)",
+"aisle": "Meat & fish",
+"unit": "g",
+"staple": false
+},
+"lasagne_sheets": {
+"name": "Dried lasagne sheets",
+"aisle": "Dry goods",
+"unit": "g",
+"staple": false
+},
+"leeks": {
+"name": "Leeks",
+"aisle": "Fruit & veg",
+"unit": "g",
+"staple": false
+},
+"lemon": {
+"name": "Lemons",
+"aisle": "Fruit & veg",
+"unit": "each",
+"staple": false
+},
+"lime": {
+"name": "Limes",
+"aisle": "Fruit & veg",
+"unit": "each",
+"staple": false
+},
+"little_gem": {
+"name": "Little gem lettuce",
+"aisle": "Fruit & veg",
+"unit": "each",
+"staple": false
+},
+"milk": {
+"name": "Semi-skimmed milk",
+"aisle": "Dairy & eggs",
+"unit": "ml",
+"staple": true
+},
+"miso_paste": {
+"name": "Miso paste",
+"aisle": "World foods",
+"unit": "g",
+"staple": false
+},
+"mixed_herbs": {
+"name": "Dried mixed herbs",
+"aisle": "Herbs & spices",
+"unit": "g",
+"staple": true
+},
+"mozzarella": {
+"name": "Mozzarella",
+"aisle": "Dairy & eggs",
+"unit": "g",
+"staple": false
+},
+"mushrooms": {
+"name": "Chestnut mushrooms",
+"aisle": "Fruit & veg",
+"unit": "g",
+"staple": false
+},
+"naan": {
+"name": "Plain naan",
+"aisle": "Bakery",
+"unit": "each",
+"staple": false
+},
+"oil": {
+"name": "Vegetable oil",
+"aisle": "Oils & sauces",
+"unit": "ml",
+"staple": true
+},
+"onion": {
+"name": "Brown onions",
+"aisle": "Fruit & veg",
+"unit": "each",
+"staple": false
+},
+"pak_choi": {
+"name": "Pak choi",
+"aisle": "Fruit & veg",
+"unit": "g",
+"staple": false
+},
+"paneer": {
+"name": "Paneer",
+"aisle": "Dairy & eggs",
+"unit": "g",
+"staple": false
+},
+"panko": {
+"name": "Panko breadcrumbs",
+"aisle": "World foods",
+"unit": "g",
+"staple": false
+},
+"parmesan": {
+"name": "Italian hard cheese (parmesan-style)",
+"aisle": "Dairy & eggs",
+"unit": "g",
+"staple": false
+},
+"pasta": {
+"name": "Dried pasta (spaghetti/penne)",
+"aisle": "Dry goods",
+"unit": "g",
+"staple": true
+},
+"peanut_butter": {
+"name": "Peanut butter",
+"aisle": "Tins & jars",
+"unit": "g",
+"staple": true
+},
+"peppers": {
+"name": "Mixed peppers",
+"aisle": "Fruit & veg",
+"unit": "each",
+"staple": false
+},
+"pesto": {
+"name": "Green pesto",
+"aisle": "Tins & jars",
+"unit": "g",
+"staple": false
+},
+"pitta": {
+"name": "Pitta breads",
+"aisle": "Bakery",
+"unit": "each",
+"staple": false
+},
+"plain_flour": {
+"name": "Plain flour",
+"aisle": "Dry goods",
+"unit": "g",
+"staple": true
+},
+"pork_mince": {
+"name": "Pork mince",
+"aisle": "Meat & fish",
+"unit": "g",
+"staple": false
+},
+"potatoes": {
+"name": "White potatoes",
+"aisle": "Fruit & veg",
+"unit": "g",
+"staple": false
+},
+"prawns": {
+"name": "Frozen king prawns",
+"aisle": "Frozen",
+"unit": "g",
+"staple": false
+},
+"puff_pastry": {
+"name": "Ready-rolled puff pastry",
+"aisle": "Chilled",
+"unit": "g",
+"staple": false
+},
+"red_lentils": {
+"name": "Red split lentils",
+"aisle": "Dry goods",
+"unit": "g",
+"staple": false
+},
+"red_onion": {
+"name": "Red onions",
+"aisle": "Fruit & veg",
+"unit": "each",
+"staple": false
+},
+"rice": {
+"name": "Basmati rice",
+"aisle": "Dry goods",
+"unit": "g",
+"staple": true
+},
+"rice_noodles": {
+"name": "Flat rice noodles (dried)",
+"aisle": "World foods",
+"unit": "g",
+"staple": false
+},
+"ricotta": {
+"name": "Ricotta",
+"aisle": "Dairy & eggs",
+"unit": "g",
+"staple": false
+},
+"salmon": {
+"name": "Salmon fillets",
+"aisle": "Meat & fish",
+"unit": "each",
+"staple": false
+},
+"salt": {
+"name": "Salt",
+"aisle": "Herbs & spices",
+"unit": "g",
+"staple": true
+},
+"sausages": {
+"name": "Pork sausages",
+"aisle": "Meat & fish",
+"unit": "each",
+"staple": false
+},
+"smoked_paprika": {
+"name": "Smoked paprika",
+"aisle": "Herbs & spices",
+"unit": "g",
+"staple": true
+},
+"soy_sauce": {
+"name": "Soy sauce",
+"aisle": "World foods",
+"unit": "ml",
+"staple": true
+},
+"spinach": {
+"name": "Baby spinach",
+"aisle": "Fruit & veg",
+"unit": "g",
+"staple": false
+},
+"spring_onions": {
+"name": "Spring onions",
+"aisle": "Fruit & veg",
+"unit": "each",
+"staple": false
+},
+"stock_cubes": {
+"name": "Stock cubes",
+"aisle": "Dry goods",
+"unit": "each",
+"staple": true
+},
+"sweet_chilli_sauce": {
+"name": "Sweet chilli sauce",
+"aisle": "World foods",
+"unit": "g",
+"staple": false
+},
+"sweet_potato": {
+"name": "Sweet potatoes",
+"aisle": "Fruit & veg",
+"unit": "g",
+"staple": false
+},
+"sweetcorn": {
+"name": "Frozen sweetcorn",
+"aisle": "Frozen",
+"unit": "g",
+"staple": false
+},
+"tahini": {
+"name": "Tahini",
+"aisle": "World foods",
+"unit": "g",
+"staple": false
+},
+"thai_green_paste": {
+"name": "Thai green curry paste",
+"aisle": "World foods",
+"unit": "g",
+"staple": false
+},
+"thai_red_paste": {
+"name": "Thai red curry paste",
+"aisle": "World foods",
+"unit": "g",
+"staple": false
+},
+"tikka_paste": {
+"name": "Tikka masala curry paste",
+"aisle": "World foods",
+"unit": "g",
+"staple": false
+},
+"tinned_tuna": {
+"name": "Tuna chunks in spring water (tin)",
+"aisle": "Tins & jars",
+"unit": "g",
+"staple": false
+},
+"tofu": {
+"name": "Extra firm tofu",
+"aisle": "Chilled",
+"unit": "g",
+"staple": false
+},
+"tomato_puree": {
+"name": "Tomato pur\u00e9e",
+"aisle": "Tins & jars",
+"unit": "g",
+"staple": true
+},
+"tortilla_chips": {
+"name": "Lightly salted tortilla chips",
+"aisle": "World foods",
+"unit": "g",
+"staple": false
+},
+"turmeric": {
+"name": "Ground turmeric",
+"aisle": "Herbs & spices",
+"unit": "g",
+"staple": true
+},
+"udon_noodles": {
+"name": "Straight-to-wok udon noodles (2 x 150g)",
+"aisle": "World foods",
+"unit": "g",
+"staple": false
+},
+"wholegrain_mustard": {
+"name": "Wholegrain mustard",
+"aisle": "Oils & sauces",
+"unit": "g",
+"staple": true
+},
+"worcestershire": {
+"name": "Worcestershire sauce",
+"aisle": "Oils & sauces",
+"unit": "ml",
+"staple": true
+},
+"wraps": {
+"name": "Plain tortilla wraps",
+"aisle": "Bakery",
+"unit": "each",
+"staple": false
+},
+"dried_yeast": {
+"name": "Fast action dried yeast (6 x 7g sachets)",
+"aisle": "Dry goods",
+"unit": "g",
+"staple": false
+},
+"pepperoni": {
+"name": "Sliced pepperoni",
+"aisle": "Meat & fish",
+"unit": "g",
+"staple": false
+},
+"bbq_sauce": {
+"name": "Smoky BBQ sauce",
+"aisle": "Oils & sauces",
+"unit": "g",
+"staple": false
+},
+"hot_sauce": {
+"name": "Cayenne pepper hot sauce (buffalo-style)",
+"aisle": "Oils & sauces",
+"unit": "ml",
+"staple": false
+},
+"mayonnaise": {
+"name": "Real mayonnaise",
+"aisle": "Oils & sauces",
+"unit": "g",
+"staple": true
+},
+"ketchup": {
+"name": "Tomato ketchup",
+"aisle": "Oils & sauces",
+"unit": "g",
+"staple": true
+},
+"chicken_wings": {
+"name": "Chicken wings",
+"aisle": "Meat & fish",
+"unit": "g",
+"staple": false
+},
+"pork_shoulder": {
+"name": "Boneless pork shoulder steaks",
+"aisle": "Meat & fish",
+"unit": "g",
+"staple": false
+},
+"beef_steak": {
+"name": "Thin-cut beef frying steaks",
+"aisle": "Meat & fish",
+"unit": "g",
+"staple": false
+},
+"hot_dog_rolls": {
+"name": "Soft white hot dog rolls",
+"aisle": "Bakery",
+"unit": "each",
+"staple": false
+},
+"sesame_oil": {
+"name": "Toasted sesame oil",
+"aisle": "World foods",
+"unit": "ml",
+"staple": true
+},
+"rice_vinegar": {
+"name": "Rice vinegar",
+"aisle": "World foods",
+"unit": "ml",
+"staple": true
+},
+"fish_sauce": {
+"name": "Thai fish sauce",
+"aisle": "World foods",
+"unit": "ml",
+"staple": false
+},
+"oyster_sauce": {
+"name": "Oyster sauce",
+"aisle": "World foods",
+"unit": "g",
+"staple": false
+},
+"black_bean_sauce": {
+"name": "Black bean garlic sauce",
+"aisle": "World foods",
+"unit": "g",
+"staple": false
+},
+"beef_stir_fry_strips": {
+"name": "Beef stir-fry strips",
+"aisle": "Meat & fish",
+"unit": "g",
+"staple": false
+},
+"pork_loin_steaks": {
+"name": "Pork loin steaks",
+"aisle": "Meat & fish",
+"unit": "g",
+"staple": false
+},
+"salted_peanuts": {
+"name": "Salted roasted peanuts",
+"aisle": "Dry goods",
+"unit": "g",
+"staple": false
+},
+"pineapple_chunks": {
+"name": "Pineapple chunks in juice (tin)",
+"aisle": "Tins & jars",
+"unit": "g",
+"staple": false
+},
+"cod_fillets": {
+"name": "White fish fillets (cod or haddock)",
+"aisle": "Meat & fish",
+"unit": "g",
+"staple": false
+},
+"smoked_haddock": {
+"name": "Boneless smoked haddock fillets",
+"aisle": "Meat & fish",
+"unit": "g",
+"staple": false
+},
+"diced_beef": {
+"name": "Diced beef (casserole steak)",
+"aisle": "Meat & fish",
+"unit": "g",
+"staple": false
+},
+"sirloin_steak": {
+"name": "Sirloin steak",
+"aisle": "Meat & fish",
+"unit": "g",
+"staple": false
+},
+"chicken_legs": {
+"name": "Chicken legs (bone-in, skin-on)",
+"aisle": "Meat & fish",
+"unit": "g",
+"staple": false
+},
+"apples": {
+"name": "Braeburn apples",
+"aisle": "Fruit & veg",
+"unit": "each",
+"staple": false
+},
+"gherkins": {
+"name": "Sliced gherkins (jar)",
+"aisle": "Tins & jars",
+"unit": "g",
+"staple": false
+},
+"branston_pickle": {
+"name": "Original pickle (Branston-style)",
+"aisle": "Tins & jars",
+"unit": "g",
+"staple": false
+},
+"self_raising_flour": {
+"name": "Self-raising flour",
+"aisle": "Dry goods",
+"unit": "g",
+"staple": true
+},
+"chilli_powder": {
+"name": "Hot chilli powder",
+"aisle": "Herbs & spices",
+"unit": "g",
+"staple": true
+},
+"mustard_seeds": {
+"name": "Black mustard seeds",
+"aisle": "Herbs & spices",
+"unit": "g",
+"staple": false
+},
+"kasoori_methi": {
+"name": "Dried fenugreek leaves (kasoori methi)",
+"aisle": "World foods",
+"unit": "g",
+"staple": false
+},
+"gram_flour": {
+"name": "Gram flour (chickpea flour)",
+"aisle": "World foods",
+"unit": "g",
+"staple": false
+},
+"ground_almonds": {
+"name": "Ground almonds",
+"aisle": "Dry goods",
+"unit": "g",
+"staple": false
+},
+"mango_chutney": {
+"name": "Mango chutney",
+"aisle": "World foods",
+"unit": "g",
+"staple": false
+},
+"diced_lamb": {
+"name": "Diced lamb leg",
+"aisle": "Meat & fish",
+"unit": "g",
+"staple": false
+},
+"orzo": {
+"name": "Orzo pasta",
+"aisle": "Dry goods",
+"unit": "g",
+"staple": false
+},
+"passata": {
+"name": "Passata (sieved tomatoes)",
+"aisle": "Tins & jars",
+"unit": "g",
+"staple": false
+},
+"pancetta": {
+"name": "Smoked pancetta cubes",
+"aisle": "Meat & fish",
+"unit": "g",
+"staple": false
+},
+"capers": {
+"name": "Capers in brine",
+"aisle": "Tins & jars",
+"unit": "g",
+"staple": false
+},
+"sun_dried_tomatoes": {
+"name": "Sun-dried tomatoes in oil",
+"aisle": "Tins & jars",
+"unit": "g",
+"staple": false
+},
+"pecorino": {
+"name": "Pecorino Romano",
+"aisle": "Dairy & eggs",
+"unit": "g",
+"staple": false
+},
+"rocket": {
+"name": "Wild rocket",
+"aisle": "Fruit & veg",
+"unit": "g",
+"staple": false
+},
+"fennel_seeds": {
+"name": "Fennel seeds",
+"aisle": "Herbs & spices",
+"unit": "g",
+"staple": true
+},
+"anchovies": {
+"name": "Anchovy fillets in olive oil (tin)",
+"aisle": "Tins & jars",
+"unit": "g",
+"staple": false
+},
+"chipotle_paste": {
+"name": "Chipotle chilli paste",
+"aisle": "World foods",
+"unit": "g",
+"staple": false
+},
+"pork_shoulder_steaks": {
+"name": "Pork shoulder steaks",
+"aisle": "Meat & fish",
+"unit": "g",
+"staple": false
+},
+"sour_cream": {
+"name": "Soured cream",
+"aisle": "Dairy & eggs",
+"unit": "ml",
+"staple": false
+},
+"jalapenos": {
+"name": "Sliced green jalape\u00f1os (jar)",
+"aisle": "Tins & jars",
+"unit": "g",
+"staple": false
+},
+"red_cabbage": {
+"name": "Red cabbage",
+"aisle": "Fruit & veg",
+"unit": "each",
+"staple": false
+},
+"zaatar": {
+"name": "Za'atar spice blend",
+"aisle": "Herbs & spices",
+"unit": "g",
+"staple": false
+},
+"dried_apricots": {
+"name": "Soft dried apricots",
+"aisle": "Dry goods",
+"unit": "g",
+"staple": false
+},
+"olives": {
+"name": "Pitted black olives",
+"aisle": "Tins & jars",
+"unit": "g",
+"staple": false
+},
+"cooked_chicken_slices": {
+"name": "Cooked chicken breast slices",
+"aisle": "Chilled",
+"unit": "g",
+"staple": false
+},
+"ham_slices": {
+"name": "Cooked ham slices",
+"aisle": "Chilled",
+"unit": "g",
+"staple": false
+},
+"hummus": {
+"name": "Classic houmous",
+"aisle": "Chilled",
+"unit": "g",
+"staple": false
+},
+"salad_leaves": {
+"name": "Mixed salad leaves",
+"aisle": "Fruit & veg",
+"unit": "g",
+"staple": false
+},
+"microwave_rice_pouch": {
+"name": "Microwave basmati rice pouch (250g)",
+"aisle": "Dry goods",
+"unit": "g",
+"staple": false
+},
+"quinoa": {
+"name": "Quinoa",
+"aisle": "Dry goods",
+"unit": "g",
+"staple": false
+},
+"light_mayonnaise": {
+"name": "Light mayonnaise",
+"aisle": "Oils & sauces",
+"unit": "g",
+"staple": false
+},
+"cottage_cheese": {
+"name": "Cottage cheese",
+"aisle": "Dairy & eggs",
+"unit": "g",
+"staple": false
+},
+"wholemeal_bread": {
+"name": "Wholemeal bread (800g loaf)",
+"aisle": "Bakery",
+"unit": "each",
+"staple": false
+},
+"skyr": {
+"name": "Skyr (natural, high-protein yogurt)",
+"aisle": "Dairy & eggs",
+"unit": "g",
+"staple": false
+},
+"frozen_edamame": {
+"name": "Frozen edamame soya beans",
+"aisle": "Frozen",
+"unit": "g",
+"staple": false
+},
+"smoked_mackerel": {
+"name": "Smoked mackerel fillets",
+"aisle": "Meat & fish",
+"unit": "g",
+"staple": false
+},
+"cooked_beetroot": {
+"name": "Cooked beetroot (vacuum pack, not in vinegar)",
+"aisle": "Fruit & veg",
+"unit": "g",
+"staple": false
+},
+"baked_beans": {
+"name": "Baked beans in tomato sauce (tin)",
+"aisle": "Tins & jars",
+"unit": "g",
+"staple": false
+},
+"smoked_salmon": {
+"name": "Smoked salmon slices",
+"aisle": "Meat & fish",
+"unit": "g",
+"staple": false
+},
+"bagel_thins": {
+"name": "Wholemeal bagel thins",
+"aisle": "Bakery",
+"unit": "each",
+"staple": false
+},
+"falafel": {
+"name": "Chilled falafel (ready to eat)",
+"aisle": "Chilled",
+"unit": "each",
+"staple": false
+},
+"weetabix": {
+"name": "Weetabix (wholegrain wheat biscuits)",
+"aisle": "Dry goods",
+"unit": "each",
+"staple": true
+},
+"protein_bar": {
+"name": "Protein bar (approx. 20g protein)",
+"aisle": "Dry goods",
+"unit": "each",
+"staple": false
+},
+"porridge_oats": {
+"name": "Porridge oats",
+"aisle": "Dry goods",
+"unit": "g",
+"staple": true
+},
+"banana": {
+"name": "Bananas",
+"aisle": "Fruit & veg",
+"unit": "each",
+"staple": false
+},
+"frozen_berries": {
+"name": "Frozen mixed berries",
+"aisle": "Frozen",
+"unit": "g",
+"staple": false
+},
+"cheerios": {
+"name": "Cheerios (Nestl\u00e9 Multigrain hoops)",
+"aisle": "Dry goods",
+"unit": "g",
+"staple": false
+},
+"crunchy_nut": {
+"name": "Crunchy Nut Corn Flakes (Kellogg's)",
+"aisle": "Dry goods",
+"unit": "g",
+"staple": false
+},
+"shreddies": {
+"name": "Shreddies Original (Nestl\u00e9)",
+"aisle": "Dry goods",
+"unit": "g",
+"staple": false
+},
+"rice_krispies": {
+"name": "Rice Krispies (Kellogg's)",
+"aisle": "Dry goods",
+"unit": "g",
+"staple": false
+},
+"special_k": {
+"name": "Special K Original (Kellogg's)",
+"aisle": "Dry goods",
+"unit": "g",
+"staple": false
+},
+"cornflakes": {
+"name": "Corn Flakes (Kellogg's)",
+"aisle": "Dry goods",
+"unit": "g",
+"staple": false
+},
+"bran_flakes": {
+"name": "Bran Flakes (Kellogg's)",
+"aisle": "Dry goods",
+"unit": "g",
+"staple": false
+},
+"fruit_and_fibre": {
+"name": "Fruit 'n Fibre (Kellogg's)",
+"aisle": "Dry goods",
+"unit": "g",
+"staple": false
+},
+"shredded_wheat": {
+"name": "Shredded Wheat Original biscuits (Nestl\u00e9, ~22.5g each)",
+"aisle": "Dry goods",
+"unit": "g",
+"staple": false
+},
+"granola": {
+"name": "Granola (own-brand, fruit & nut / honey & almond)",
+"aisle": "Dry goods",
+"unit": "g",
+"staple": false
+},
+"jam": {
+"name": "Strawberry jam",
+"aisle": "Tins & jars",
+"unit": "g",
+"staple": false
+},
+"crumpets": {
+"name": "Crumpets",
+"aisle": "Bakery",
+"unit": "each",
+"staple": false
+},
+"soft_cheese": {
+"name": "Light soft cheese (plain, 50% less fat)",
+"aisle": "Dairy & eggs",
+"unit": "g",
+"staple": false
+},
+"croissants": {
+"name": "All-butter croissants",
+"aisle": "Bakery",
+"unit": "each",
+"staple": false
+},
+"teacakes": {
+"name": "Fruited teacakes",
+"aisle": "Bakery",
+"unit": "each",
+"staple": false
+},
+"grapes": {
+"name": "Seedless grapes",
+"aisle": "Fruit & veg",
+"unit": "g",
+"staple": false
+},
+"cream_crackers": {
+"name": "Cream crackers (~8g each)",
+"aisle": "Dry goods",
+"unit": "g",
+"staple": false
+},
+"tomato_soup": {
+"name": "Cream of tomato soup (400g tin)",
+"aisle": "Tins & jars",
+"unit": "g",
+"staple": false
+},
+"bread_rolls": {
+"name": "Soft white bread rolls",
+"aisle": "Bakery",
+"unit": "each",
+"staple": false
+},
+"gammon_steaks": {
+"name": "Unsmoked gammon steaks",
+"aisle": "Meat & fish",
+"unit": "g",
+"staple": false
+},
+"corned_beef": {
+"name": "Corned beef (tin)",
+"aisle": "Tins & jars",
+"unit": "g",
+"staple": false
+},
+"chorizo": {
+"name": "Chorizo (cooking sausages or ring)",
+"aisle": "Meat & fish",
+"unit": "g",
+"staple": false
+},
+"pork_crackling_joint": {
+"name": "Pork crackling joint (small loin or leg)",
+"aisle": "Meat & fish",
+"unit": "g",
+"staple": false
+},
+"ale": {
+"name": "Amber ale or bitter (for cooking)",
+"aisle": "Drinks",
+"unit": "ml",
+"staple": false
+},
+"lamb_chops": {
+"name": "Lamb chops",
+"aisle": "Meat & fish",
+"unit": "g",
+"staple": false
+},
+"sea_bass_fillets": {
+"name": "Sea bass fillets (boneless)",
+"aisle": "Meat & fish",
+"unit": "g",
+"staple": false
+},
+"lamb_shanks": {
+"name": "Lamb shanks (raw)",
+"aisle": "Meat & fish",
+"unit": "each",
+"staple": false
+},
+"shortcrust_pastry": {
+"name": "Ready-rolled shortcrust pastry",
+"aisle": "Chilled",
+"unit": "g",
+"staple": false
+},
+"pork_ribs": {
+"name": "Pork ribs (uncooked, plain rack or individual ribs)",
+"aisle": "Meat & fish",
+"unit": "g",
+"staple": false
+},
+"cashew_nuts": {
+"name": "Cashew nuts",
+"aisle": "Dry goods",
+"unit": "g",
+"staple": false
+},
+"star_anise": {
+"name": "Star anise (whole)",
+"aisle": "Herbs & spices",
+"unit": "g",
+"staple": true
+},
+"taco_shells": {
+"name": "Crunchy taco shells",
+"aisle": "World foods",
+"unit": "each",
+"staple": false
+}
+}

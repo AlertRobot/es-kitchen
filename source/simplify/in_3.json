@@ -1,0 +1,6315 @@
+[
+ {
+  "id": "in_chicken_dhansak",
+  "title": "Sweet & Sour Chicken Dhansak with Lentils & Pilau Rice",
+  "short": "Chicken dhansak",
+  "cuisine": "Indian",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 45,
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 300,
+    "t": "300g thigh fillets, cut into chunks"
+   },
+   {
+    "i": "red_lentils",
+    "q": 80,
+    "t": "80g"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, chopped"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, grated"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "curry_powder",
+    "q": 8,
+    "t": "4 tsp"
+   },
+   {
+    "i": "chilli_powder",
+    "q": 1,
+    "t": "\u00bd tsp"
+   },
+   {
+    "i": "cumin_seeds",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "garam_masala",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 200,
+    "t": "\u00bd tin"
+   },
+   {
+    "i": "mango_chutney",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "\u00bd"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 chicken cube"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "turmeric",
+    "q": 1,
+    "t": "a pinch, for the rice",
+    "opt": true
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, to serve",
+    "swap": "Keep the coriander in a little bowl on the table so it only goes on the plates that want it.",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the ingredients",
+    "text": "Boil the kettle and make up 500ml stock with the cube. Rinse the lentils and the rice separately. Chop the onion, grate the garlic and cut the chicken into chunks."
+   },
+   {
+    "title": "Start the curry",
+    "text": "Heat the oil in a saucepan over a medium heat and fry the onion for 7 min until golden. Add the chicken and cook for 3 min until sealed. Stir in the garlic, ginger paste, curry powder and chilli powder for 1 min."
+   },
+   {
+    "title": "Simmer with lentils",
+    "text": "Add the lentils, chopped tomatoes and 400ml of the stock. Bring to the boil, then simmer gently, partly covered, for 25 min, stirring often. It's ready when the lentils have melted into a thick sauce and the chicken is tender; add more stock if it gets too thick."
+   },
+   {
+    "title": "Make the pilau",
+    "text": "With 15 min to go, toast the cumin seeds in a small pan over a medium heat for 30 sec. Add the rice, turmeric (optional), 300ml boiling water and a pinch of salt. Cover and cook on the lowest heat for 10 min, then rest off the heat."
+   },
+   {
+    "title": "Balance the flavours",
+    "text": "Stir the mango chutney, garam masala and lemon juice into the dhansak. It should taste hot, sweet and sour all at once, so add more chutney or lemon to taste. Season with salt."
+   },
+   {
+    "title": "Plate up",
+    "text": "Fluff the pilau with a fork and divide between plates. Spoon the dhansak alongside and scatter with coriander (optional)."
+   }
+  ],
+  "tags": [
+   "comfort",
+   "freezable"
+  ]
+ },
+ {
+  "id": "in_chicken_tikka_rice_bowls",
+  "title": "Chicken Tikka Rice Bowls with Kachumber & Mango Chutney",
+  "short": "Chicken tikka rice bowl",
+  "cuisine": "Indian",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 25,
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 300,
+    "t": "2 breasts (300g), cut into chunks"
+   },
+   {
+    "i": "tikka_paste",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 120,
+    "t": "120g"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.5,
+    "t": "\u00bd, diced",
+    "swap": "Leave the cucumber off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 150,
+    "t": "150g, quartered"
+   },
+   {
+    "i": "red_onion",
+    "q": 0.5,
+    "t": "\u00bd, finely chopped"
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, shredded",
+    "swap": "Leave the lettuce off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "mango_chutney",
+    "q": 30,
+    "t": "2 tbsp",
+    "swap": "Leave the chutney off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "turmeric",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "opt": true
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful",
+    "swap": "Leave the coriander out of the salad and keep it in a little bowl on the table so it only goes on the plates that want it.",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the ingredients",
+    "text": "Boil the kettle. Cut the chicken into chunks and mix with the tikka paste, 2 tbsp yogurt and a pinch of salt. Dice the cucumber, quarter the tomatoes, finely chop the red onion and coriander, and shred the lettuce. Rinse the rice."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "Tip the rice into a small pan with the turmeric (optional), 300ml boiling water and a pinch of salt. Cover and cook on the lowest heat for 10 min. Turn off the heat and leave covered for 5 min."
+   },
+   {
+    "title": "Make the kachumber",
+    "text": "While the rice cooks, mix the cucumber, tomatoes and red onion in a bowl. Stir in the juice of half the lemon, a pinch of salt and half the coriander (optional). Stir the rest of the yogurt with a squeeze of lemon and a pinch of salt."
+   },
+   {
+    "title": "Cook the tikka",
+    "text": "Heat the oil in a large frying pan over a high heat. Fry the chicken for 7\u20138 min, turning, until charred at the edges and cooked through with no pink inside."
+   },
+   {
+    "title": "Build the bowls",
+    "text": "Divide the rice between bowls and add the lettuce, kachumber and hot tikka chicken. Spoon over the yogurt and mango chutney, then finish with the rest of the coriander (optional) and lemon wedges."
+   }
+  ],
+  "tags": [
+   "quick",
+   "light"
+  ]
+ },
+ {
+  "id": "in_lamb_kofta_curry",
+  "title": "Lamb Kofta Curry with Spinach & Cumin-Buttered Naan",
+  "short": "Lamb kofta curry",
+  "cuisine": "Indian",
+  "category": "everyday",
+  "protein": "lamb",
+  "time": 40,
+  "ingredients": [
+   {
+    "i": "lamb_mince",
+    "q": 250,
+    "t": "\u00bd pack (250g)"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, finely chopped (2 tbsp kept for the koftas)"
+   },
+   {
+    "i": "garlic",
+    "q": 4,
+    "t": "4 cloves, grated"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "garam_masala",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "cumin",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "cumin_seeds",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "ground_coriander",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "turmeric",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "opt": true
+   },
+   {
+    "i": "chilli_powder",
+    "q": 1,
+    "t": "\u00bd tsp"
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 400,
+    "t": "1 tin"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 40,
+    "t": "2 tbsp, to finish",
+    "opt": true
+   },
+   {
+    "i": "spinach",
+    "q": 80,
+    "t": "2 handfuls"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "butter",
+    "q": 15,
+    "t": "15g"
+   },
+   {
+    "i": "naan",
+    "q": 2,
+    "t": "2"
+   },
+   {
+    "i": "coriander",
+    "q": 15,
+    "t": "\u00bd pack, chopped",
+    "swap": "Leave the coriander out of the kofta mix and keep it in a little bowl on the table so it only goes on the plates that want it.",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the ingredients",
+    "text": "Finely chop the onion and set aside 2 tbsp for the koftas. Grate the garlic and chop the coriander."
+   },
+   {
+    "title": "Make the koftas",
+    "text": "Put the lamb in a bowl with the 2 tbsp onion, a third of the garlic and \u00bd tsp salt. Add 1 tsp garam masala, the ground cumin and half the coriander (optional). Knead for 1 min, then roll into 12 walnut-sized balls."
+   },
+   {
+    "title": "Brown the koftas",
+    "text": "Heat the oil in a deep frying pan over a medium-high heat. Fry the koftas for 5\u20136 min, turning, until browned all over. Lift onto a plate, leaving the fat in the pan."
+   },
+   {
+    "title": "Make the sauce",
+    "text": "Lower the heat to medium, add the remaining onion and cook for 7 min until golden. Stir in the rest of the garlic, the ginger paste, ground coriander, turmeric (optional) and chilli powder for 1 min. Add the chopped tomatoes and 100ml water."
+   },
+   {
+    "title": "Simmer the koftas",
+    "text": "Return the koftas to the pan, cover and simmer gently for 12\u201315 min until cooked through and the sauce is thick. Stir in the spinach and remaining 1 tsp garam masala until wilted. Take off the heat, swirl through the yogurt (optional) and season."
+   },
+   {
+    "title": "Make the cumin naan",
+    "text": "While the koftas simmer, melt the butter with the cumin seeds in a small pan until they sizzle. Brush over the naans and warm them in a dry frying pan over a medium heat for 1 min each side."
+   },
+   {
+    "title": "Plate up",
+    "text": "Spoon the kofta curry into bowls and scatter with the rest of the coriander (optional). Serve with the cumin naan."
+   }
+  ],
+  "tags": [
+   "comfort",
+   "freezable"
+  ]
+ },
+ {
+  "id": "it_proper_ragu_bolognese",
+  "title": "Slow-Simmered Rag\u00f9 Bolognese with Spaghetti & Parmesan",
+  "short": "Spaghetti bolognese",
+  "cuisine": "Italian",
+  "category": "everyday",
+  "protein": "beef",
+  "time": 85,
+  "ingredients": [
+   {
+    "i": "beef_mince",
+    "q": 250,
+    "t": "250g (half a pack)"
+   },
+   {
+    "i": "bacon",
+    "q": 60,
+    "t": "2 rashers, finely chopped"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, finely diced"
+   },
+   {
+    "i": "carrots",
+    "q": 80,
+    "t": "1 medium, finely diced"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, finely chopped"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 400,
+    "t": "1 tin"
+   },
+   {
+    "i": "milk",
+    "q": 100,
+    "t": "100ml"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 beef cube in 200ml water"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "pasta",
+    "q": 180,
+    "t": "180g spaghetti or tagliatelle"
+   },
+   {
+    "i": "parmesan",
+    "q": 20,
+    "t": "20g, finely grated"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to season"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the soffritto",
+    "text": "Finely dice the onion and carrot as small as you can, so they melt into the sauce. Finely chop the bacon and garlic. Crumble the stock cube into 200ml just-boiled water and stir to dissolve."
+   },
+   {
+    "title": "Soften the base",
+    "text": "Heat the oil in a large heavy pan or casserole over a medium-low heat. Add the bacon and cook for 3 min until its fat runs. Add the onion, carrot and a pinch of salt and cook gently for 10 min until soft and sweet. Stir in the garlic for the last minute."
+   },
+   {
+    "title": "Brown the mince",
+    "text": "Turn the heat up to medium-high and add the mince, breaking it up with a wooden spoon. Fry for 6\u20138 min until no pink is left and it's browning in places \u2013 that colour is the flavour. Stir in the tomato pur\u00e9e and cook for 1 min."
+   },
+   {
+    "title": "Simmer the rag\u00f9",
+    "text": "Pour in the milk and bubble for 3 min until almost absorbed \u2013 it keeps the meat tender. Add the chopped tomatoes and stock, bring to a bubble, then turn the heat right down. Simmer with the lid ajar for at least 45 min (up to 1\u00bd hr), stirring every 15 min. Add a splash of water if it gets thick; it's ready when glossy with a little oil pooling on top."
+   },
+   {
+    "title": "Cook the spaghetti",
+    "text": "About 15 min before you want to eat, bring a large pan of salted water to the boil. Cook the pasta according to the pack. Scoop out a mugful of the cooking water, then drain."
+   },
+   {
+    "title": "Toss and serve",
+    "text": "Tip the pasta into the rag\u00f9 with a splash of the cooking water. Toss over the heat for 1 min until every strand is coated. Season with salt and pepper and serve with the parmesan grated over."
+   }
+  ],
+  "tags": [
+   "freezable",
+   "comfort"
+  ]
+ },
+ {
+  "id": "it_proper_carbonara",
+  "title": "Proper Spaghetti Carbonara with Crispy Pancetta & Pecorino",
+  "short": "Spaghetti carbonara",
+  "cuisine": "Italian",
+  "category": "treat",
+  "protein": "pork",
+  "time": 25,
+  "ingredients": [
+   {
+    "i": "pasta",
+    "q": 180,
+    "t": "180g spaghetti"
+   },
+   {
+    "i": "pancetta",
+    "q": 130,
+    "t": "1 pack (130g) cubes"
+   },
+   {
+    "i": "eggs",
+    "q": 3,
+    "t": "1 whole egg + 2 yolks"
+   },
+   {
+    "i": "pecorino",
+    "q": 40,
+    "t": "40g, finely grated"
+   },
+   {
+    "i": "parmesan",
+    "q": 20,
+    "t": "20g, finely grated"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, bashed",
+    "opt": true
+   },
+   {
+    "i": "black_pepper",
+    "q": 2,
+    "t": "1 tsp, coarsely ground"
+   },
+   {
+    "i": "salt",
+    "q": 1,
+    "t": "a small pinch for the pasta water"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the egg mix",
+    "text": "Put a large pan of water on to boil with just a small pinch of salt \u2013 the pancetta and cheese are salty. Finely grate the pecorino and parmesan into a bowl. Beat in the whole egg, the 2 yolks and the black pepper to make a thick paste. Bash the garlic clove (optional) with the flat of a knife."
+   },
+   {
+    "title": "Crisp the pancetta",
+    "text": "Put the pancetta and garlic into a large cold frying pan, then set it over a medium heat. Cook for 6\u20138 min, stirring, until the fat has melted out and the cubes are golden and crisp. Remove the garlic and take the pan off the heat, keeping all the fat."
+   },
+   {
+    "title": "Cook the spaghetti",
+    "text": "While the pancetta crisps, cook the spaghetti for 1 min less than the pack says. Just before draining, scoop out a mugful of the starchy cooking water \u2013 it makes the sauce."
+   },
+   {
+    "title": "Coat in the fat",
+    "text": "Tip the drained spaghetti into the pancetta pan with a splash of pasta water. Toss over a low heat for 30 seconds until coated in the fat. Take the pan off the heat and leave it for 30 seconds so the eggs won't scramble."
+   },
+   {
+    "title": "Make it silky",
+    "text": "Loosen the egg mix with 2 tbsp of the hot pasta water, pour it over the spaghetti and toss constantly with tongs for 1\u20132 min. Add more pasta water a splash at a time until glossy and clinging to every strand. Serve straight away with extra black pepper."
+   }
+  ],
+  "tags": [
+   "quick",
+   "comfort"
+  ]
+ },
+ {
+  "id": "it_pesto_potato_broccoli_pasta",
+  "title": "Genovese-Style Pesto Pasta with Potatoes & Broccoli",
+  "short": "Pesto pasta",
+  "cuisine": "Italian",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 25,
+  "ingredients": [
+   {
+    "i": "pasta",
+    "q": 180,
+    "t": "180g trofie, penne or spaghetti"
+   },
+   {
+    "i": "potatoes",
+    "q": 200,
+    "t": "1 medium, peeled and cut into 1cm cubes"
+   },
+   {
+    "i": "broccoli",
+    "q": 180,
+    "t": "\u00bd head, small florets"
+   },
+   {
+    "i": "pesto",
+    "q": 95,
+    "t": "\u00bd jar"
+   },
+   {
+    "i": "parmesan",
+    "q": 20,
+    "t": "20g, grated"
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "\u00bd, zested"
+   },
+   {
+    "i": "basil",
+    "q": 10,
+    "t": "a few leaves, to serve",
+    "swap": "Scatter the basil over one plate only.",
+    "opt": true
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "a drizzle, to serve",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 3,
+    "t": "for the pasta water"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the veg",
+    "text": "Boil a full kettle. Peel the potato and cut it into 1cm cubes. Cut the broccoli into small florets and thinly slice the stalk. Grate the parmesan and zest the lemon."
+   },
+   {
+    "title": "Cook potato and pasta",
+    "text": "Pour the boiled water into a large pan, salt it well and bring back to the boil over a high heat. Add the potato and pasta together and cook for the pasta's pack time."
+   },
+   {
+    "title": "Add the broccoli",
+    "text": "4 min before the end of the cooking time, drop the broccoli into the same pan. Everything should be ready together: pasta just tender, broccoli soft and potato starting to break up."
+   },
+   {
+    "title": "Toss with the pesto",
+    "text": "Scoop out a mugful of the cooking water, then drain. Return everything to the pan off the heat with the pesto, lemon zest, half the parmesan and a good splash of the water. Toss hard for 1 min \u2013 the potato starch makes the pesto creamy. Add more water if it looks dry."
+   },
+   {
+    "title": "Serve",
+    "text": "Season with black pepper and divide between bowls. Finish with the rest of the parmesan, the torn basil (optional) and a drizzle of oil (optional)."
+   }
+  ],
+  "tags": [
+   "quick"
+  ]
+ },
+ {
+  "id": "it_tuna_puttanesca",
+  "title": "Spaghetti Puttanesca with Tuna, Olives, Capers & Chilli",
+  "short": "Tuna puttanesca",
+  "cuisine": "Italian",
+  "category": "everyday",
+  "protein": "fish",
+  "time": 25,
+  "ingredients": [
+   {
+    "i": "pasta",
+    "q": 180,
+    "t": "180g spaghetti"
+   },
+   {
+    "i": "tinned_tuna",
+    "q": 145,
+    "t": "1 tin, drained"
+   },
+   {
+    "i": "anchovies",
+    "q": 15,
+    "t": "3 fillets, chopped"
+   },
+   {
+    "i": "olives",
+    "q": 50,
+    "t": "a handful, halved",
+    "swap": "Leave the olives out of the sauce and scatter them over one plate only when you serve."
+   },
+   {
+    "i": "capers",
+    "q": 15,
+    "t": "1 tbsp, drained",
+    "swap": "Leave the capers out of the sauce and scatter them over one plate only when you serve."
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 400,
+    "t": "1 tin"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, thinly sliced"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "swap": "Leave the chilli out of the pan and sprinkle it over one plate only at the end.",
+    "opt": true
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "salt",
+    "q": 3,
+    "t": "for the pasta water"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Put a large pan of salted water on to boil. Thinly slice the garlic, halve the olives and roughly chop the anchovies. Drain the capers and the tuna."
+   },
+   {
+    "title": "Melt the anchovies",
+    "text": "Heat the oil in a large frying pan over a medium-low heat. Add the garlic, anchovies and chilli (optional) and cook for 2 min. Mash the anchovies with a wooden spoon until they melt into the oil and the garlic is just turning golden."
+   },
+   {
+    "title": "Simmer the sauce",
+    "text": "Stir in the tomato pur\u00e9e for 30 seconds, then add the chopped tomatoes, olives and capers. Bubble over a medium heat for 10 min, stirring now and then, until thick and jammy."
+   },
+   {
+    "title": "Cook the spaghetti",
+    "text": "While the sauce simmers, cook the spaghetti according to the pack. Scoop out a mugful of the cooking water before draining."
+   },
+   {
+    "title": "Add tuna and toss",
+    "text": "Flake the tuna into the sauce in big chunks and warm through for 1 min. Toss in the drained spaghetti with a splash of pasta water until glossy. Taste before adding salt \u2013 the anchovies, olives and capers are already salty."
+   }
+  ],
+  "tags": [
+   "quick",
+   "spicy"
+  ]
+ },
+ {
+  "id": "it_penne_arrabbiata_mozzarella",
+  "title": "Fiery Penne all'Arrabbiata with Torn Mozzarella & Basil",
+  "short": "Penne arrabbiata",
+  "cuisine": "Italian",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 25,
+  "ingredients": [
+   {
+    "i": "pasta",
+    "q": 180,
+    "t": "180g penne"
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 400,
+    "t": "1 tin"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, thinly sliced"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 2,
+    "t": "1 tsp (to taste)",
+    "swap": "Cook the sauce with just a pinch of chilli, spoon out one portion, then stir the rest of the chilli into the pan for the hotter plate."
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "mozzarella",
+    "q": 125,
+    "t": "1 ball, torn"
+   },
+   {
+    "i": "basil",
+    "q": 15,
+    "t": "\u00bd pack",
+    "swap": "Leave the basil out of the sauce and scatter it over one plate only."
+   },
+   {
+    "i": "parmesan",
+    "q": 15,
+    "t": "15g, grated"
+   },
+   {
+    "i": "salt",
+    "q": 3,
+    "t": "for the pasta water"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Put a large pan of salted water on to boil. Thinly slice the garlic and grate the parmesan. Tear the mozzarella into bite-sized pieces and pat dry on kitchen paper. Pick the basil leaves."
+   },
+   {
+    "title": "Fry garlic and chilli",
+    "text": "Heat 1\u00bd tbsp of the oil in a large frying pan over a medium-low heat. Add the garlic and chilli and cook gently for 2 min until the garlic is pale golden. Don't let it brown or it turns bitter."
+   },
+   {
+    "title": "Simmer the sauce",
+    "text": "Stir in the tomato pur\u00e9e for 30 seconds, then add the chopped tomatoes, a splash of water and a pinch of salt. Simmer briskly over a medium heat for 12\u201315 min until thick and the oil shines on top. Tear in half the basil."
+   },
+   {
+    "title": "Cook the penne",
+    "text": "While the sauce simmers, cook the penne for 1 min less than the pack says. Scoop out a mugful of the cooking water, then drain."
+   },
+   {
+    "title": "Toss and serve",
+    "text": "Toss the penne into the sauce with a splash of pasta water and cook for 1 min until every tube is coated. Divide between bowls and top with the mozzarella, remaining basil, parmesan and the last \u00bd tbsp oil. The heat of the pasta softens the cheese."
+   }
+  ],
+  "tags": [
+   "quick",
+   "spicy"
+  ]
+ },
+ {
+  "id": "it_sausage_fennel_ragu",
+  "title": "Sausage & Fennel Rag\u00f9 with Rigatoni, Chilli & Parmesan",
+  "short": "Sausage ragu",
+  "cuisine": "Italian",
+  "category": "everyday",
+  "protein": "pork",
+  "time": 40,
+  "ingredients": [
+   {
+    "i": "sausages",
+    "q": 4,
+    "t": "4, skins removed"
+   },
+   {
+    "i": "fennel_seeds",
+    "q": 2,
+    "t": "1 tsp, crushed"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, finely chopped"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, finely chopped"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "swap": "Leave the chilli out of the pan and sprinkle it over one plate only at the end.",
+    "opt": true
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 400,
+    "t": "1 tin"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 0.5,
+    "t": "\u00bd chicken cube in 100ml water"
+   },
+   {
+    "i": "double_cream",
+    "q": 50,
+    "t": "50ml"
+   },
+   {
+    "i": "pasta",
+    "q": 180,
+    "t": "180g rigatoni or penne"
+   },
+   {
+    "i": "parmesan",
+    "q": 20,
+    "t": "20g, grated"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "salt",
+    "q": 3,
+    "t": "for the pasta water"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Finely chop the onion and garlic and squeeze the sausagemeat out of the skins into a bowl. Crush the fennel seeds with a pestle and mortar or the flat of a knife. Dissolve the half stock cube in 100ml just-boiled water. Grate the parmesan."
+   },
+   {
+    "title": "Brown the sausagemeat",
+    "text": "Heat the oil in a large deep frying pan over a medium-high heat. Add the sausagemeat and fennel seeds and fry for 8 min, breaking it into small nuggets, until golden and crisp in places. Lift out with a slotted spoon, leaving the fat behind."
+   },
+   {
+    "title": "Soften the onion",
+    "text": "Turn the heat down to medium-low and cook the onion in the sausage fat for 6\u20138 min until soft and golden. Add the garlic and chilli (optional) for 1 min, then the tomato pur\u00e9e for 1 min more."
+   },
+   {
+    "title": "Simmer the rag\u00f9",
+    "text": "Return the sausage to the pan with the chopped tomatoes and stock. Simmer uncovered for 15 min, stirring now and then, until thick and rich."
+   },
+   {
+    "title": "Cook the pasta",
+    "text": "While the rag\u00f9 simmers, cook the pasta in a large pan of salted boiling water according to the pack. Scoop out a mugful of the cooking water, then drain."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Stir the cream into the rag\u00f9 \u2013 it will turn a rosy orange. Toss in the pasta with half the parmesan and a splash of pasta water until glossy. Serve with the rest of the parmesan on top."
+   }
+  ],
+  "tags": [
+   "freezable",
+   "comfort"
+  ]
+ },
+ {
+  "id": "it_lemon_chicken_orzo",
+  "title": "One-Pan Lemon & Garlic Chicken Orzo with Spinach & Parmesan",
+  "short": "Lemon chicken orzo",
+  "cuisine": "Italian",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 35,
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 300,
+    "t": "300g (about 4 fillets), bite-sized pieces"
+   },
+   {
+    "i": "orzo",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1 small, finely chopped"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, finely chopped"
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1, zested and juiced"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 chicken cube in 500ml water"
+   },
+   {
+    "i": "spinach",
+    "q": 100,
+    "t": "2 big handfuls"
+   },
+   {
+    "i": "parmesan",
+    "q": 25,
+    "t": "25g, grated"
+   },
+   {
+    "i": "butter",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "opt": true
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "salt",
+    "q": 1,
+    "t": "to season"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Dissolve the stock cube in 500ml just-boiled water. Cut the chicken into bite-sized pieces and season with salt, pepper and the dried herbs (optional). Finely chop the onion and garlic. Zest the lemon and cut it in half."
+   },
+   {
+    "title": "Sear the chicken",
+    "text": "Heat the oil in a large deep frying pan with a lid over a medium-high heat. Fry the chicken in a single layer for 5\u20136 min, turning once, until golden. It doesn't need to be cooked through yet, so transfer it to a plate."
+   },
+   {
+    "title": "Toast the orzo",
+    "text": "Turn the heat to medium and add the butter and onion. Cook for 3 min until soft, then add the garlic for 1 min. Tip in the orzo and stir for 1\u20132 min until lightly toasted and smelling nutty."
+   },
+   {
+    "title": "Simmer",
+    "text": "Pour in the stock with the lemon zest, scraping up any browned bits. Return the chicken and its juices, bring to a simmer, cover and cook for 10\u201312 min. Stir every few minutes until the orzo is tender and the chicken is cooked through with no pink."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Take off the heat and stir in the spinach until wilted, then the parmesan and lemon juice to taste. It should be loose and creamy like a risotto \u2013 add a splash of hot water if it's too thick. Serve with plenty of black pepper."
+   }
+  ],
+  "tags": [
+   "one-pot",
+   "quick"
+  ]
+ },
+ {
+  "id": "it_creamy_tuscan_chicken",
+  "title": "Creamy Tuscan Chicken with Garlicky Crushed Potatoes",
+  "short": "Creamy Tuscan chicken",
+  "cuisine": "Italian",
+  "category": "treat",
+  "protein": "chicken",
+  "time": 35,
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 350,
+    "t": "2 breasts (350g pack)"
+   },
+   {
+    "i": "sun_dried_tomatoes",
+    "q": 60,
+    "t": "6 pieces, sliced, plus 1 tbsp of their oil",
+    "swap": "Leave the sun-dried tomatoes out of the sauce; warm them in a small pan with a little of their oil and spoon over one plate only."
+   },
+   {
+    "i": "garlic",
+    "q": 4,
+    "t": "4 cloves (3 sliced, 1 crushed)"
+   },
+   {
+    "i": "double_cream",
+    "q": 150,
+    "t": "150ml pot"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 0.5,
+    "t": "\u00bd chicken cube in 100ml water"
+   },
+   {
+    "i": "spinach",
+    "q": 80,
+    "t": "2 handfuls"
+   },
+   {
+    "i": "parmesan",
+    "q": 30,
+    "t": "30g, grated"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "opt": true
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "opt": true
+   },
+   {
+    "i": "potatoes",
+    "q": 500,
+    "t": "500g, cut into 3cm chunks"
+   },
+   {
+    "i": "butter",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to season"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Boil a full kettle. Cut the potatoes into 3cm chunks, skins on. Halve each chicken breast horizontally into 2 thin fillets and season with salt, pepper, the herbs (optional) and paprika (optional). Slice 3 garlic cloves and the sun-dried tomatoes, crush the last clove, and dissolve the half stock cube in 100ml just-boiled water."
+   },
+   {
+    "title": "Boil the potatoes",
+    "text": "Tip the potatoes into a pan, cover with boiling water from the kettle and add a pinch of salt. Cook over a medium-high heat for 15\u201318 min until a knife slides in easily."
+   },
+   {
+    "title": "Fry the chicken",
+    "text": "While the potatoes cook, heat the oil and 1 tbsp oil from the sun-dried tomato jar in a large frying pan over a medium-high heat. Fry the chicken for 3\u20134 min each side until golden and cooked through with no pink. Rest on a plate."
+   },
+   {
+    "title": "Make the Tuscan sauce",
+    "text": "Turn the heat to medium and fry the sliced garlic and sun-dried tomatoes for 1 min. Pour in the stock and scrape up the browned bits. Add the cream and simmer for 3 min until it coats the back of a spoon."
+   },
+   {
+    "title": "Add spinach and chicken",
+    "text": "Stir in the parmesan and spinach until the spinach wilts. Return the chicken and its juices and spoon the sauce over for 2 min to warm through."
+   },
+   {
+    "title": "Crush potatoes and serve",
+    "text": "Drain the potatoes and return them to the pan with the butter, the crushed garlic and a pinch of salt. Roughly crush with a fork. Plate up with the chicken and plenty of the creamy sauce."
+   }
+  ],
+  "tags": [
+   "comfort"
+  ]
+ },
+ {
+  "id": "it_sausage_pesto_gnocchi_traybake",
+  "title": "Sausage, Pesto & Cherry Tomato Gnocchi Traybake",
+  "short": "Sausage gnocchi traybake",
+  "cuisine": "Italian",
+  "category": "treat",
+  "protein": "pork",
+  "time": 40,
+  "ingredients": [
+   {
+    "i": "gnocchi",
+    "q": 500,
+    "t": "1 pack"
+   },
+   {
+    "i": "sausages",
+    "q": 4,
+    "t": "4, each cut into 3"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 250,
+    "t": "250g"
+   },
+   {
+    "i": "red_onion",
+    "q": 1,
+    "t": "1, cut into wedges"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, cut into chunks"
+   },
+   {
+    "i": "pesto",
+    "q": 95,
+    "t": "\u00bd jar"
+   },
+   {
+    "i": "mozzarella",
+    "q": 125,
+    "t": "1 ball, torn"
+   },
+   {
+    "i": "basil",
+    "q": 5,
+    "t": "a few leaves, to serve",
+    "swap": "Scatter the basil over one portion only.",
+    "opt": true
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "salt",
+    "q": 1,
+    "t": "to season"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Heat the oven to 200\u00b0C fan. Cut each sausage into 3 chunky pieces, the red onion into wedges and the pepper into bite-sized chunks. Tear the mozzarella into pieces."
+   },
+   {
+    "title": "Roast gnocchi and sausages",
+    "text": "Tip the gnocchi straight from the pack into a large roasting tray, breaking up any that are stuck. Add the sausages, onion and pepper and toss with the oil, salt and pepper. Spread out in a single layer and roast for 15 min."
+   },
+   {
+    "title": "Add the tomatoes",
+    "text": "Give everything a good toss, add the cherry tomatoes and roast for 10 min more. The gnocchi should be golden at the edges, the tomatoes starting to burst and the sausages cooked through."
+   },
+   {
+    "title": "Add pesto and mozzarella",
+    "text": "Take the tray out, dollop over the pesto and toss so everything is coated. Scatter the mozzarella over the top and return to the oven for 5\u20137 min until melted and bubbling."
+   },
+   {
+    "title": "Serve",
+    "text": "Scatter with the basil leaves (optional) and a crack of black pepper. Serve straight from the tray."
+   }
+  ],
+  "tags": [
+   "traybake",
+   "comfort"
+  ]
+ },
+ {
+  "id": "it_minestrone_pesto",
+  "title": "Hearty Minestrone with Cannellini Beans & Pasta",
+  "short": "Minestrone soup",
+  "cuisine": "Italian",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 50,
+  "ingredients": [
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, diced"
+   },
+   {
+    "i": "carrots",
+    "q": 120,
+    "t": "1 large, diced"
+   },
+   {
+    "i": "courgette",
+    "q": 1,
+    "t": "1, diced"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, chopped"
+   },
+   {
+    "i": "cannellini_beans",
+    "q": 400,
+    "t": "1 tin, drained"
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 400,
+    "t": "1 tin"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 2,
+    "t": "2 veg cubes in 1 litre water"
+   },
+   {
+    "i": "pasta",
+    "q": 60,
+    "t": "60g small pasta or broken spaghetti"
+   },
+   {
+    "i": "spinach",
+    "q": 60,
+    "t": "a big handful"
+   },
+   {
+    "i": "pesto",
+    "q": 30,
+    "t": "2 tbsp, to serve",
+    "opt": true
+   },
+   {
+    "i": "parmesan",
+    "q": 20,
+    "t": "20g, grated"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "opt": true
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "baguette",
+    "q": 1,
+    "t": "1 part-baked baguette"
+   },
+   {
+    "i": "salt",
+    "q": 1,
+    "t": "to season"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Dissolve the stock cubes in 1 litre of boiling water. Dice the onion, carrot and courgette into roughly 1cm pieces and chop the garlic. Drain and rinse the beans and grate the parmesan."
+   },
+   {
+    "title": "Sweat the veg",
+    "text": "Heat the oil in a large saucepan over a medium heat. Cook the onion and carrot with a pinch of salt for 8 min until softened. Add the courgette, garlic and herbs (optional) for 2 min."
+   },
+   {
+    "title": "Simmer the soup",
+    "text": "Stir in the tomato pur\u00e9e for 1 min, then add the chopped tomatoes, stock and beans. Bring to the boil, then simmer partly covered for 15 min until the carrots are tender. Heat the oven for the baguette now, following the pack."
+   },
+   {
+    "title": "Cook the pasta",
+    "text": "Stir in the pasta, snapping spaghetti into short lengths, and simmer for 10 min until tender. Stir often so it doesn't stick, and add a splash of water if the soup gets too thick. Stir in the spinach for the final minute."
+   },
+   {
+    "title": "Bake the bread",
+    "text": "While the pasta cooks, bake the baguette for 8\u201310 min (check the pack) until crisp and golden. Slice it just before serving."
+   },
+   {
+    "title": "Serve",
+    "text": "Season the soup with salt and pepper and ladle into deep bowls. Swirl a spoonful of pesto into each (optional), scatter over the parmesan and serve with the warm bread."
+   }
+  ],
+  "tags": [
+   "freezable",
+   "light"
+  ]
+ },
+ {
+  "id": "it_proper_beef_lasagne",
+  "title": "Beef Lasagne with Silky B\u00e9chamel & a Golden Cheese Crust",
+  "short": "Beef lasagne",
+  "cuisine": "Italian",
+  "category": "treat",
+  "protein": "beef",
+  "time": 110,
+  "ingredients": [
+   {
+    "i": "beef_mince",
+    "q": 250,
+    "t": "250g (half a pack)"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, finely diced"
+   },
+   {
+    "i": "carrots",
+    "q": 80,
+    "t": "1 medium, finely diced"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, finely chopped"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 400,
+    "t": "1 tin"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 0.5,
+    "t": "\u00bd beef cube in 150ml water"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "opt": true
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "butter",
+    "q": 30,
+    "t": "30g"
+   },
+   {
+    "i": "plain_flour",
+    "q": 30,
+    "t": "30g"
+   },
+   {
+    "i": "milk",
+    "q": 400,
+    "t": "400ml"
+   },
+   {
+    "i": "lasagne_sheets",
+    "q": 150,
+    "t": "150g (about 8 sheets)"
+   },
+   {
+    "i": "parmesan",
+    "q": 30,
+    "t": "30g, grated"
+   },
+   {
+    "i": "mozzarella",
+    "q": 125,
+    "t": "1 ball, torn"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to season"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the veg",
+    "text": "Finely dice the onion and carrot and finely chop the garlic. Grate the parmesan and tear the mozzarella. Dissolve the half stock cube in 150ml just-boiled water."
+   },
+   {
+    "title": "Soften the veg",
+    "text": "Heat the oil in a large pan over a medium heat. Cook the onion and carrot for 8 min until soft, adding the garlic for the last minute."
+   },
+   {
+    "title": "Brown the mince",
+    "text": "Turn the heat up to medium-high, add the mince and fry for 6\u20138 min, breaking it up, until browned all over. Stir in the tomato pur\u00e9e for 1 min."
+   },
+   {
+    "title": "Simmer the rag\u00f9",
+    "text": "Add the chopped tomatoes, stock and herbs (optional) and bring to a bubble. Simmer over a low heat with the lid ajar for 30 min until thick. A spoon dragged through should leave a clear trail."
+   },
+   {
+    "title": "Make the b\u00e9chamel",
+    "text": "While the rag\u00f9 simmers, melt the butter in a saucepan over a medium heat and stir in the flour for 1 min. Whisk in the milk a splash at a time until smooth, then simmer for 5 min, stirring, until it coats a spoon. Off the heat, stir in half the parmesan and season with salt and pepper. Heat the oven to 170\u00b0C fan."
+   },
+   {
+    "title": "Layer up",
+    "text": "Spread a thin layer of b\u00e9chamel in a small ovenproof dish (about 20 x 15cm), then add lasagne sheets, snapping them to fit. Spoon over a third of the rag\u00f9 and a little b\u00e9chamel, and repeat to make 3 layers. Finish with sheets covered in the remaining b\u00e9chamel, then the mozzarella and the rest of the parmesan."
+   },
+   {
+    "title": "Bake and rest",
+    "text": "Bake for 35\u201340 min until deep golden, bubbling at the edges and a knife slides easily through the pasta. Rest for 10 min before cutting so the layers hold together."
+   }
+  ],
+  "tags": [
+   "comfort",
+   "freezable"
+  ]
+ },
+ {
+  "id": "it_aubergine_parmigiana",
+  "title": "Melting Aubergine Parmigiana with Garlic Bread",
+  "short": "Aubergine parmigiana",
+  "cuisine": "Italian",
+  "category": "treat",
+  "protein": "veggie",
+  "time": 75,
+  "ingredients": [
+   {
+    "i": "aubergine",
+    "q": 2,
+    "t": "2, sliced lengthways 1cm thick"
+   },
+   {
+    "i": "oil",
+    "q": 60,
+    "t": "4 tbsp"
+   },
+   {
+    "i": "passata",
+    "q": 500,
+    "t": "1 carton"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves"
+   },
+   {
+    "i": "basil",
+    "q": 20,
+    "t": "most of a pack",
+    "swap": "Leave the basil out of the sauce and layers, then scatter it over one half of the dish only."
+   },
+   {
+    "i": "mozzarella",
+    "q": 125,
+    "t": "1 ball, torn"
+   },
+   {
+    "i": "parmesan",
+    "q": 50,
+    "t": "50g, grated"
+   },
+   {
+    "i": "baguette",
+    "q": 1,
+    "t": "1 part-baked baguette"
+   },
+   {
+    "i": "butter",
+    "q": 20,
+    "t": "20g, softened"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Heat the oven to 200\u00b0C fan and line 2 baking trays. Slice the aubergines lengthways about 8mm thick, brush both sides with 3 tbsp of the oil and season with salt. Slice 2 garlic cloves and crush the third into the softened butter. Tear the mozzarella and grate the parmesan."
+   },
+   {
+    "title": "Roast the aubergine",
+    "text": "Lay the slices on the trays in a single layer. Roast for 30\u201335 min, turning halfway, until soft, collapsing and golden brown. Turn the oven down to 180\u00b0C fan."
+   },
+   {
+    "title": "Make the tomato sauce",
+    "text": "While the aubergine roasts, warm the remaining 1 tbsp oil in a saucepan over a medium-low heat. Cook the sliced garlic for 1 min until fragrant. Add the passata, a pinch of salt and half the basil, torn, and simmer for 15 min until thick."
+   },
+   {
+    "title": "Layer the parmigiana",
+    "text": "Spoon a thin layer of sauce into a small ovenproof dish, then add a layer of aubergine, some mozzarella, parmesan and a few basil leaves. Repeat until everything is used, finishing with sauce, mozzarella and parmesan. Keep a few basil leaves back to serve."
+   },
+   {
+    "title": "Bake the parmigiana",
+    "text": "Bake for 25 min until bubbling and golden on top. Meanwhile, split the baguette and spread the cut sides with the garlic butter."
+   },
+   {
+    "title": "Garlic bread and serve",
+    "text": "For the last 10 min, bake the garlic bread on the shelf below until crisp. Rest the parmigiana for 5 min, scatter with the remaining basil and serve with the bread."
+   }
+  ],
+  "tags": [
+   "comfort"
+  ]
+ },
+ {
+  "id": "it_chicken_parmigiana",
+  "title": "Crispy Chicken Parmigiana with Spaghetti al Pomodoro",
+  "short": "Chicken parmigiana",
+  "cuisine": "Italian",
+  "category": "treat",
+  "protein": "chicken",
+  "time": 45,
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 350,
+    "t": "2 breasts (350g pack)"
+   },
+   {
+    "i": "plain_flour",
+    "q": 20,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "eggs",
+    "q": 1,
+    "t": "1, beaten"
+   },
+   {
+    "i": "panko",
+    "q": 60,
+    "t": "60g"
+   },
+   {
+    "i": "parmesan",
+    "q": 30,
+    "t": "30g, grated"
+   },
+   {
+    "i": "oil",
+    "q": 45,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "passata",
+    "q": 300,
+    "t": "300g"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, sliced"
+   },
+   {
+    "i": "basil",
+    "q": 10,
+    "t": "a few sprigs",
+    "swap": "Leave the basil out of the sauce and scatter it over one plate only.",
+    "opt": true
+   },
+   {
+    "i": "mozzarella",
+    "q": 125,
+    "t": "1 ball, torn"
+   },
+   {
+    "i": "pasta",
+    "q": 140,
+    "t": "140g spaghetti"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to season"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Heat the oven to 180\u00b0C fan. Put the chicken breasts between two sheets of baking paper and bash with a rolling pin to an even 1cm. Set out three plates: flour seasoned with salt and pepper, beaten egg, and the panko mixed with half the parmesan. Slice the garlic and tear the mozzarella."
+   },
+   {
+    "title": "Make the tomato sauce",
+    "text": "Heat 1 tbsp of the oil in a saucepan over a medium-low heat and cook the garlic for 1 min. Add the passata, a pinch of salt and a few torn basil leaves (optional). Simmer for 10 min until thickened, then keep warm on the lowest heat."
+   },
+   {
+    "title": "Crumb the chicken",
+    "text": "While the sauce simmers, dust each breast in flour, dip in the egg, then press firmly into the panko on both sides. Put a large pan of salted water on to boil for the pasta."
+   },
+   {
+    "title": "Fry the chicken",
+    "text": "Heat the remaining 2 tbsp oil in a large frying pan over a medium-high heat. Fry the chicken for 3 min each side until deep golden, then transfer to a baking tray."
+   },
+   {
+    "title": "Top and bake",
+    "text": "Spoon 2 tbsp of sauce over each piece, keeping the crispy edges clear. Top with the mozzarella and the rest of the parmesan. Bake for 10\u201312 min until bubbling and the chicken is cooked through with no pink when cut."
+   },
+   {
+    "title": "Cook the spaghetti",
+    "text": "While the chicken bakes, cook the spaghetti according to the pack. Drain, saving a splash of the cooking water."
+   },
+   {
+    "title": "Toss and serve",
+    "text": "Toss the spaghetti with the remaining sauce and the splash of water until glossy. Plate up with the chicken parmigiana and scatter over the rest of the basil (optional)."
+   }
+  ],
+  "tags": [
+   "crispy",
+   "comfort",
+   "fakeaway"
+  ]
+ },
+ {
+  "id": "it_spaghetti_meatballs",
+  "title": "Beef & Parmesan Meatballs in Tomato Sauce with Spaghetti",
+  "short": "Spaghetti and meatballs",
+  "cuisine": "Italian",
+  "category": "everyday",
+  "protein": "beef",
+  "time": 40,
+  "ingredients": [
+   {
+    "i": "beef_mince",
+    "q": 250,
+    "t": "250g (half a pack)"
+   },
+   {
+    "i": "panko",
+    "q": 20,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "milk",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "eggs",
+    "q": 1,
+    "t": "1 yolk"
+   },
+   {
+    "i": "parmesan",
+    "q": 30,
+    "t": "30g, grated"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves (1 grated, 2 chopped)"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "opt": true
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, finely chopped"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 400,
+    "t": "1 tin"
+   },
+   {
+    "i": "basil",
+    "q": 10,
+    "t": "a few leaves, to serve",
+    "swap": "Tear the basil over one plate only instead of into the sauce.",
+    "opt": true
+   },
+   {
+    "i": "pasta",
+    "q": 180,
+    "t": "180g spaghetti"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to season"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Finely chop the onion and 2 garlic cloves, and finely grate the third clove. Grate the parmesan. Soak the panko in the milk in a large bowl for 2 min."
+   },
+   {
+    "title": "Shape the meatballs",
+    "text": "Add the mince, egg yolk, 20g parmesan, grated garlic, herbs (optional) and a good pinch of salt and pepper to the panko. Mix gently with your hands \u2013 overworking makes them tough. Roll into 12 walnut-sized balls."
+   },
+   {
+    "title": "Brown the meatballs",
+    "text": "Heat the oil in a large deep frying pan with a lid over a medium-high heat. Fry the meatballs for 5\u20136 min, turning, until browned all over. Lift onto a plate \u2013 they finish cooking in the sauce."
+   },
+   {
+    "title": "Simmer in the sauce",
+    "text": "Turn the heat to medium-low and cook the onion in the same pan for 5 min until soft. Add the chopped garlic and tomato pur\u00e9e for 1 min, then the chopped tomatoes and a splash of water, scraping up the browned bits. Return the meatballs, cover and simmer for 12\u201315 min, turning once. They're ready when cooked through and the sauce has thickened."
+   },
+   {
+    "title": "Cook the spaghetti",
+    "text": "While the meatballs simmer, cook the spaghetti in a large pan of salted boiling water according to the pack. Drain, saving a splash of the cooking water."
+   },
+   {
+    "title": "Serve",
+    "text": "Toss the spaghetti with a few spoonfuls of sauce and the splash of pasta water. Top with the meatballs and remaining sauce, the rest of the parmesan and the torn basil (optional)."
+   }
+  ],
+  "tags": [
+   "comfort",
+   "freezable",
+   "kid-friendly"
+  ]
+ },
+ {
+  "id": "it_garlic_chilli_prawn_linguine",
+  "title": "Garlic, Chilli & Lemon Prawn Linguine with Rocket",
+  "short": "Garlic prawn linguine",
+  "cuisine": "Italian",
+  "category": "everyday",
+  "protein": "prawns",
+  "time": 25,
+  "ingredients": [
+   {
+    "i": "pasta",
+    "q": 180,
+    "t": "180g linguine or spaghetti"
+   },
+   {
+    "i": "prawns",
+    "q": 170,
+    "t": "1 pack, defrosted"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 150,
+    "t": "150g, halved"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, thinly sliced"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "swap": "Leave the chilli out of the pan and sprinkle it over one plate only at the end.",
+    "opt": true
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1, zested and halved"
+   },
+   {
+    "i": "butter",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "rocket",
+    "q": 30,
+    "t": "\u00bd bag",
+    "swap": "Don't toss the rocket through the pasta; pile it onto one plate only."
+   },
+   {
+    "i": "salt",
+    "q": 3,
+    "t": "for the pasta water"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "If the prawns are frozen, defrost them in a bowl of cold water for 15 min, then pat dry. Put a large pan of salted water on to boil. Thinly slice the garlic and halve the tomatoes. Zest the lemon and cut it in half."
+   },
+   {
+    "title": "Cook the linguine",
+    "text": "Cook the pasta according to the pack. Scoop out a mugful of the cooking water before draining."
+   },
+   {
+    "title": "Start the sauce",
+    "text": "About 5 min before the pasta is ready, heat the oil in a large frying pan over a medium heat. Add the garlic and chilli (optional) for 1 min until pale golden. Add the tomatoes and cook for 2\u20133 min until they start to burst."
+   },
+   {
+    "title": "Cook the prawns",
+    "text": "Add the prawns and cook for 2\u20133 min, turning, until pink all over and opaque \u2013 overcooking makes them rubbery. Stir in the butter, lemon zest and the juice of one lemon half."
+   },
+   {
+    "title": "Toss and serve",
+    "text": "Lift the linguine into the pan with tongs, add a splash of pasta water and toss over the heat for 1 min until silky. Take off the heat, toss through the rocket and season with salt and pepper. Serve with the other lemon half cut into wedges."
+   }
+  ],
+  "tags": [
+   "quick"
+  ]
+ },
+ {
+  "id": "it_creamy_lemon_salmon_penne",
+  "title": "Creamy Lemon & Garlic Salmon Penne with Spinach & Peas",
+  "short": "Creamy salmon pasta",
+  "cuisine": "Italian",
+  "category": "everyday",
+  "protein": "fish",
+  "time": 25,
+  "ingredients": [
+   {
+    "i": "salmon",
+    "q": 2,
+    "t": "2 fillets"
+   },
+   {
+    "i": "pasta",
+    "q": 160,
+    "t": "160g penne"
+   },
+   {
+    "i": "double_cream",
+    "q": 150,
+    "t": "150ml pot"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, finely chopped"
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1, zested and juiced"
+   },
+   {
+    "i": "spinach",
+    "q": 80,
+    "t": "2 handfuls"
+   },
+   {
+    "i": "frozen_peas",
+    "q": 80,
+    "t": "80g",
+    "swap": "Cook the peas in a small pan of boiling water for 3 min and stir them into one portion only."
+   },
+   {
+    "i": "parmesan",
+    "q": 20,
+    "t": "20g, grated"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to season"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Put a large pan of salted water on to boil. Season the salmon with salt and pepper. Finely chop the garlic and grate the parmesan. Zest the lemon and cut it in half."
+   },
+   {
+    "title": "Cook the salmon",
+    "text": "Heat the oil in a large non-stick frying pan over a medium-high heat. Cook the salmon skin-side down for 4 min until the skin is crisp, then flip and cook for 2\u20133 min more until it flakes easily. Lift out, remove the skin and break into big flakes."
+   },
+   {
+    "title": "Cook pasta and peas",
+    "text": "While the salmon cooks, cook the penne according to the pack, adding the peas for the last 2 min. Save a mugful of the cooking water, then drain."
+   },
+   {
+    "title": "Make the sauce",
+    "text": "Wipe out most of the fat from the salmon pan and set it over a medium-low heat. Add the garlic for 1 min, then the cream and lemon zest and bubble for 2 min until slightly thickened. Stir in the spinach until wilted."
+   },
+   {
+    "title": "Toss and serve",
+    "text": "Add the pasta and peas, the parmesan, a squeeze of lemon juice and a splash of pasta water and toss until glossy. Gently fold through the salmon so it stays in chunks. Season with black pepper and serve."
+   }
+  ],
+  "tags": [
+   "quick"
+  ]
+ },
+ {
+  "id": "it_potato_spinach_feta_frittata",
+  "title": "Potato, Spinach & Feta Frittata with Tomato & Rocket Salad",
+  "short": "Potato and feta frittata",
+  "cuisine": "Italian",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 35,
+  "ingredients": [
+   {
+    "i": "eggs",
+    "q": 6,
+    "t": "6"
+   },
+   {
+    "i": "potatoes",
+    "q": 300,
+    "t": "2 medium, thinly sliced"
+   },
+   {
+    "i": "spinach",
+    "q": 100,
+    "t": "2 big handfuls"
+   },
+   {
+    "i": "spring_onions",
+    "q": 3,
+    "t": "3, sliced"
+   },
+   {
+    "i": "feta",
+    "q": 100,
+    "t": "\u00bd pack, crumbled",
+    "swap": "Crumble the feta over one half of the frittata only before it goes under the grill."
+   },
+   {
+    "i": "parmesan",
+    "q": 15,
+    "t": "15g, grated"
+   },
+   {
+    "i": "oil",
+    "q": 20,
+    "t": "1\u00bd tbsp"
+   },
+   {
+    "i": "butter",
+    "q": 10,
+    "t": "a knob"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 150,
+    "t": "150g, halved"
+   },
+   {
+    "i": "rocket",
+    "q": 30,
+    "t": "\u00bd bag",
+    "swap": "Dress the tomatoes on their own and add the rocket to one plate only."
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "\u00bd, for dressing"
+   },
+   {
+    "i": "salt",
+    "q": 1,
+    "t": "to season"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Slice the potatoes about 3mm thick, leaving the skins on. Slice the spring onions and halve the tomatoes. Beat the eggs in a jug with the parmesan and a good pinch of salt and pepper."
+   },
+   {
+    "title": "Cook the potatoes",
+    "text": "Heat 1 tbsp of the oil and the butter in a 20\u201324cm ovenproof non-stick frying pan over a medium heat. Add the potatoes, cover and cook for 10\u201312 min, turning now and then, until tender and golden at the edges."
+   },
+   {
+    "title": "Wilt the spinach",
+    "text": "Add the spring onions for 1 min, then the spinach a handful at a time until wilted. Spread everything out evenly across the pan."
+   },
+   {
+    "title": "Set the frittata",
+    "text": "Heat the grill to high. Pour the eggs into the pan, tilting it to fill any gaps, then crumble over the feta. Cook over a low heat for 6\u20138 min without stirring until the edges are set but the top is still wobbly."
+   },
+   {
+    "title": "Finish under the grill",
+    "text": "Slide the pan under the grill for 3\u20134 min until puffed, golden and just set in the middle. The handle will be very hot, so use an oven glove."
+   },
+   {
+    "title": "Make salad and serve",
+    "text": "While it grills, toss the tomatoes and rocket with a squeeze of lemon, the remaining \u00bd tbsp oil and a pinch of salt. Rest the frittata for 2 min, then cut into wedges and serve with the salad."
+   }
+  ],
+  "tags": [
+   "light"
+  ]
+ },
+ {
+  "id": "it_spinach_ricotta_cannelloni",
+  "title": "Spinach & Ricotta Cannelloni with Golden Mozzarella",
+  "short": "Spinach ricotta cannelloni",
+  "cuisine": "Italian",
+  "category": "treat",
+  "protein": "veggie",
+  "time": 70,
+  "ingredients": [
+   {
+    "i": "lasagne_sheets",
+    "q": 125,
+    "t": "6 sheets"
+   },
+   {
+    "i": "ricotta",
+    "q": 250,
+    "t": "1 tub"
+   },
+   {
+    "i": "spinach",
+    "q": 200,
+    "t": "200g"
+   },
+   {
+    "i": "parmesan",
+    "q": 40,
+    "t": "40g, grated"
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "\u00bd, zested",
+    "opt": true
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves"
+   },
+   {
+    "i": "passata",
+    "q": 500,
+    "t": "1 carton"
+   },
+   {
+    "i": "basil",
+    "q": 15,
+    "t": "\u00bd pack",
+    "swap": "Leave the basil out of the sauce and scatter it over one half of the dish only."
+   },
+   {
+    "i": "mozzarella",
+    "q": 125,
+    "t": "1 ball, torn"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to season"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Heat the oven to 180\u00b0C fan and boil a full kettle. Put the spinach in a colander in the sink. Crush 1 garlic clove and slice the other 2, zest the lemon, grate the parmesan and tear the mozzarella."
+   },
+   {
+    "title": "Make the filling",
+    "text": "Pour boiling water over the spinach to wilt it, then cool under the cold tap and squeeze out as much water as you can. Chop it and mix in a bowl with the ricotta, half the parmesan, the lemon zest (optional), crushed garlic, salt and pepper. Re-boil the kettle."
+   },
+   {
+    "title": "Make the sauce",
+    "text": "Heat the oil in a saucepan over a medium-low heat and cook the sliced garlic for 1 min. Add the passata, a pinch of salt and half the basil, torn, and simmer for 10 min."
+   },
+   {
+    "title": "Soften the sheets",
+    "text": "While the sauce simmers, lay the lasagne sheets in a roasting tin and cover with just-boiled water. Leave for 5 min until bendy, then lift out onto a clean tea towel."
+   },
+   {
+    "title": "Roll the cannelloni",
+    "text": "Spread half the sauce over the base of a small ovenproof dish. Spoon a line of filling along the short edge of each sheet. Roll it into a tube and lay it seam-side down, packing them in snugly. Spoon over the remaining sauce so all the pasta is covered \u2013 exposed edges go hard."
+   },
+   {
+    "title": "Bake and serve",
+    "text": "Top with the mozzarella and the rest of the parmesan, then cover with foil and bake for 15 min. Uncover and bake for 15\u201320 min more until bubbling and golden and the pasta is tender when poked with a knife. Rest for 5 min and scatter with the remaining basil."
+   }
+  ],
+  "tags": [
+   "comfort",
+   "freezable"
+  ]
+ },
+ {
+  "id": "it_chicken_milanese_lemon_spaghetti",
+  "title": "Crispy Chicken Milanese with Lemon-Parmesan Spaghetti",
+  "short": "Chicken Milanese",
+  "cuisine": "Italian",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 35,
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 350,
+    "t": "2 breasts (350g pack)"
+   },
+   {
+    "i": "plain_flour",
+    "q": 20,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "eggs",
+    "q": 1,
+    "t": "1, beaten"
+   },
+   {
+    "i": "panko",
+    "q": 60,
+    "t": "60g"
+   },
+   {
+    "i": "parmesan",
+    "q": 40,
+    "t": "40g, grated"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "opt": true
+   },
+   {
+    "i": "oil",
+    "q": 50,
+    "t": "3 tbsp for frying, plus a drizzle for the salad"
+   },
+   {
+    "i": "pasta",
+    "q": 140,
+    "t": "140g spaghetti"
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1, zested and halved"
+   },
+   {
+    "i": "butter",
+    "q": 20,
+    "t": "20g"
+   },
+   {
+    "i": "rocket",
+    "q": 30,
+    "t": "\u00bd bag",
+    "swap": "Keep the rocket out of the tomato salad and add it to one plate only."
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 100,
+    "t": "100g, halved"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to season"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "to season"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Put a large pan of salted water on to boil. Put the chicken between two sheets of baking paper and bash with a rolling pin to about 5mm thick. Set out three plates: flour seasoned with salt and pepper, beaten egg, and the panko mixed with 10g parmesan and the herbs (optional). Zest the lemon, cut it in half and halve the tomatoes."
+   },
+   {
+    "title": "Crumb the chicken",
+    "text": "Dust each piece of chicken in flour, dip it in the egg, then press firmly into the crumbs so both sides are well coated. Lay on a clean plate."
+   },
+   {
+    "title": "Cook the spaghetti",
+    "text": "Cook the spaghetti according to the pack. Scoop out a mugful of the cooking water before draining."
+   },
+   {
+    "title": "Fry the chicken",
+    "text": "While the spaghetti cooks, heat 3 tbsp oil in a large frying pan over a medium-high heat until a crumb sizzles straight away. Fry the chicken for 3 min each side until deep golden and cooked through with no pink. Drain on kitchen paper and sprinkle with salt."
+   },
+   {
+    "title": "Make the lemon spaghetti",
+    "text": "Return the drained spaghetti to its pan off the heat. Add the butter, lemon zest, the juice of one lemon half, the remaining parmesan and a splash of pasta water. Toss until creamy and glossy."
+   },
+   {
+    "title": "Dress salad and serve",
+    "text": "Toss the rocket and tomatoes with a squeeze from the other lemon half and a drizzle of oil. Plate the chicken with the spaghetti and the salad alongside. Cut what's left of the lemon into wedges to serve."
+   }
+  ],
+  "tags": [
+   "crispy"
+  ]
+ },
+ {
+  "id": "it_sausage_broccoli_orecchiette",
+  "title": "Sausage & Broccoli Orecchiette with Garlic, Chilli & Lemon",
+  "short": "Sausage and broccoli pasta",
+  "cuisine": "Italian",
+  "category": "everyday",
+  "protein": "pork",
+  "time": 25,
+  "ingredients": [
+   {
+    "i": "sausages",
+    "q": 3,
+    "t": "3, skins removed"
+   },
+   {
+    "i": "broccoli",
+    "q": 200,
+    "t": "about \u00bd head, small florets"
+   },
+   {
+    "i": "pasta",
+    "q": 160,
+    "t": "160g orecchiette or penne"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, sliced"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "swap": "Leave the chilli out of the pan and sprinkle it over one plate only at the end.",
+    "opt": true
+   },
+   {
+    "i": "fennel_seeds",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "opt": true
+   },
+   {
+    "i": "lemon",
+    "q": 0.5,
+    "t": "\u00bd, zested and squeezed"
+   },
+   {
+    "i": "parmesan",
+    "q": 25,
+    "t": "25g, grated"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "salt",
+    "q": 3,
+    "t": "for the pasta water"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Put a large pan of salted water on to boil. Squeeze the sausagemeat out of the skins. Cut the broccoli into small florets and thinly slice the stalk. Slice the garlic, grate the parmesan and zest the lemon."
+   },
+   {
+    "title": "Fry the sausage",
+    "text": "Heat the oil in a large frying pan over a medium-high heat. Add the sausagemeat and fennel seeds (optional) and fry for 6\u20138 min, breaking it up with a wooden spoon, until golden and crisp."
+   },
+   {
+    "title": "Cook pasta and broccoli",
+    "text": "While the sausage fries, cook the pasta according to the pack. Add the broccoli for the last 4 min so it's very tender."
+   },
+   {
+    "title": "Bring it together",
+    "text": "Add the garlic and chilli (optional) to the sausage for 1 min. Scoop the pasta and broccoli into the frying pan with a ladle of the cooking water. Toss hard over a medium heat for 2 min, crushing some broccoli into a green sauce."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Take off the heat and add the parmesan, lemon zest and a squeeze of lemon juice. Toss until glossy and serve straight away."
+   }
+  ],
+  "tags": [
+   "quick"
+  ]
+ },
+ {
+  "id": "mx_chipotle_chilli_con_carne",
+  "title": "Chipotle Chilli Con Carne with Lime Rice & Soured Cream",
+  "short": "Chilli con carne",
+  "cuisine": "Mexican",
+  "category": "everyday",
+  "protein": "beef",
+  "time": 50,
+  "ingredients": [
+   {
+    "i": "beef_mince",
+    "q": 250,
+    "t": "250g"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, finely chopped"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, diced"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "cumin",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "ground_cinnamon",
+    "q": 0.5,
+    "t": "a pinch",
+    "opt": true
+   },
+   {
+    "i": "chipotle_paste",
+    "q": 15,
+    "t": "1 tbsp",
+    "swap": "For a milder portion, halve the chipotle paste and serve extra on the side for whoever likes it hot."
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 400,
+    "t": "1 tin"
+   },
+   {
+    "i": "kidney_beans",
+    "q": 400,
+    "t": "1 tin, drained"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 beef cube in 200ml water"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "lime",
+    "q": 1,
+    "t": "1, zested and cut into wedges"
+   },
+   {
+    "i": "sour_cream",
+    "q": 60,
+    "t": "4 tbsp"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, to serve",
+    "swap": "Chop the coriander and scatter it over one portion only at the table.",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to taste"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "to taste"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the veg",
+    "text": "Finely chop the onion, dice the pepper and crush the garlic. Crumble the stock cube into 200ml just-boiled water and stir to dissolve. Zest the lime, then cut it into wedges. Rinse the rice in a sieve until the water runs clear."
+   },
+   {
+    "title": "Brown the mince",
+    "text": "Heat the oil in a large deep frying pan or casserole over a high heat. Fry the mince for 5\u20136 min, breaking it up with a wooden spoon, until well browned. Scoop it into a bowl, leaving the fat in the pan."
+   },
+   {
+    "title": "Soften the veg",
+    "text": "Turn the heat down to medium and add the onion and pepper. Cook for 6\u20138 min, stirring now and then, until soft and just starting to colour."
+   },
+   {
+    "title": "Simmer the chilli",
+    "text": "Stir in the garlic, cumin, smoked paprika and cinnamon (optional) and cook for 1 min until fragrant. Add the tomato pur\u00e9e and chipotle paste and fry for 1 min more. Return the mince with the chopped tomatoes, stock and drained kidney beans. Cover and simmer gently for 25 min until thick, adding a splash of water if it catches."
+   },
+   {
+    "title": "Cook the lime rice",
+    "text": "About 15 min before the chilli is ready, put the rice in a small saucepan with 300ml boiling water and a pinch of salt. Cover and cook on a low heat for 10 min. Take off the heat and leave to steam, lid on, for 5 min. Fluff with a fork and stir through the lime zest."
+   },
+   {
+    "title": "Season and serve",
+    "text": "Taste the chilli and season with salt, pepper and a squeeze from a lime wedge. Spoon the rice into bowls and ladle the chilli alongside. Top with the soured cream and coriander (optional), with the remaining lime wedges for squeezing."
+   }
+  ],
+  "tags": [
+   "one-pot",
+   "freezable",
+   "comfort",
+   "spicy"
+  ]
+ },
+ {
+  "id": "mx_sizzling_chicken_fajitas",
+  "title": "Sizzling Chicken Fajitas with Guacamole & Soured Cream",
+  "short": "Chicken fajitas",
+  "cuisine": "Mexican",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 30,
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 300,
+    "t": "2 breasts (300g), cut into strips"
+   },
+   {
+    "i": "peppers",
+    "q": 2,
+    "t": "2, sliced"
+   },
+   {
+    "i": "red_onion",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "cumin",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "ground_coriander",
+    "q": 2,
+    "t": "1 tsp",
+    "opt": true
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, crushed"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "swap": "Leave the chilli flakes out while cooking and sprinkle them over one portion at the end.",
+    "opt": true
+   },
+   {
+    "i": "lime",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "avocado",
+    "q": 1,
+    "t": "1 ripe"
+   },
+   {
+    "i": "wraps",
+    "q": 4,
+    "t": "4"
+   },
+   {
+    "i": "cheddar",
+    "q": 40,
+    "t": "40g, grated"
+   },
+   {
+    "i": "sour_cream",
+    "q": 60,
+    "t": "4 tbsp"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, chopped",
+    "swap": "Leave the coriander out of the guacamole and scatter it over one portion only at the table.",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a good pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the veg",
+    "text": "Cut the chicken into finger-width strips. Thinly slice the peppers and red onion, and crush the garlic. Grate the cheddar, chop the coriander and halve the lime."
+   },
+   {
+    "title": "Marinate the chicken",
+    "text": "In a bowl, toss the chicken with the smoked paprika, cumin, ground coriander (optional), garlic and half the oil. Add the chilli flakes (optional), the juice of half the lime and a good pinch of salt. Leave to sit while you make the guacamole."
+   },
+   {
+    "title": "Smash the guacamole",
+    "text": "Halve and stone the avocado and scoop the flesh into a bowl. Mash with a fork, leaving it a little chunky. Stir in the rest of the lime juice, a pinch of salt and half the coriander."
+   },
+   {
+    "title": "Char the veg",
+    "text": "Heat the remaining oil in a large frying pan over a high heat until just smoking. Add the peppers and red onion and cook for 5\u20136 min, tossing now and then, until soft and blackened at the edges. Tip onto a plate."
+   },
+   {
+    "title": "Fry the chicken",
+    "text": "Lay the chicken in the same hot pan in a single layer. Cook for 5\u20137 min, turning once, until charred in places and no longer pink in the middle. Return the veg, toss for 1 min, then tip into a warm dish and wipe out the pan."
+   },
+   {
+    "title": "Warm the wraps and serve",
+    "text": "Warm the wraps one at a time in the dry pan over a medium heat for 20 sec each side. Build your fajitas at the table with the chicken and veg, guacamole, soured cream and cheddar. Scatter over the rest of the coriander (optional)."
+   }
+  ],
+  "tags": [
+   "quick",
+   "kid-friendly"
+  ]
+ },
+ {
+  "id": "mx_chipotle_chicken_burrito_bowl",
+  "title": "Chipotle Chicken Burrito Bowls with Coriander-Lime Rice",
+  "short": "Chicken burrito bowl",
+  "cuisine": "Mexican",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 30,
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 300,
+    "t": "3\u20134 thighs (300g)"
+   },
+   {
+    "i": "chipotle_paste",
+    "q": 20,
+    "t": "1 heaped tbsp",
+    "swap": "For a milder portion, halve the chipotle paste and serve extra on the side for whoever likes it hot."
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "cumin",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, crushed"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "lime",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "coriander",
+    "q": 15,
+    "t": "\u00bd pack, chopped",
+    "swap": "Stir the coriander into one portion of rice only and keep the other plain."
+   },
+   {
+    "i": "black_beans",
+    "q": 200,
+    "t": "\u00bd tin, drained"
+   },
+   {
+    "i": "sweetcorn",
+    "q": 100,
+    "t": "100g",
+    "swap": "Char the sweetcorn on its own and spoon it onto one bowl only, then warm the beans separately."
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, shredded",
+    "swap": "Leave the lettuce off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 100,
+    "t": "100g, quartered",
+    "swap": "Leave the tomatoes off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "avocado",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "sour_cream",
+    "q": 50,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to taste"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the veg",
+    "text": "Rinse the rice in a sieve until the water runs clear. Crush the garlic, chop the coriander and zest the lime. Shred the little gem, quarter the tomatoes and drain the beans."
+   },
+   {
+    "title": "Marinate the chicken",
+    "text": "In a bowl, mix the chipotle paste, honey, cumin, garlic, half the oil and a pinch of salt. Add the chicken thighs and turn to coat. Leave to sit while the rice goes on."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "Put the rice in a saucepan with 300ml boiling water and a pinch of salt. Cover and cook on a low heat for 10 min. Turn off the heat and leave to steam, lid on, for 5 min."
+   },
+   {
+    "title": "Griddle the chicken",
+    "text": "While the rice cooks, heat the remaining oil in a griddle or large frying pan over a medium-high heat. Cook the thighs for 6\u20137 min each side until charred and the juices run clear. Rest on a board for 5 min, then slice."
+   },
+   {
+    "title": "Char the corn and beans",
+    "text": "While the chicken rests, wipe out the pan and put it back over a high heat. Cook the sweetcorn from frozen for 4\u20135 min, stirring now and then, until blackened in spots. Add the beans and a pinch of salt and toss for 2 min until hot."
+   },
+   {
+    "title": "Build the bowls",
+    "text": "Fluff the rice and stir through the lime zest, the juice of half the lime and most of the coriander. Divide between bowls and top with the little gem, tomatoes, corn and beans, chicken and sliced avocado. Finish with soured cream, the last of the coriander and the rest of the lime in wedges."
+   }
+  ],
+  "tags": [
+   "quick",
+   "spicy"
+  ]
+ },
+ {
+  "id": "mx_cheesy_chicken_enchiladas",
+  "title": "Cheesy Chicken & Black Bean Enchiladas in Smoky Sauce",
+  "short": "Chicken enchiladas",
+  "cuisine": "Mexican",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 50,
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 250,
+    "t": "2 small breasts (250g), diced"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, chopped"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, diced"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "cumin",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "chipotle_paste",
+    "q": 15,
+    "t": "1 tbsp",
+    "swap": "For a milder portion, halve the chipotle paste and serve extra on the side for whoever likes it hot."
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 400,
+    "t": "1 tin"
+   },
+   {
+    "i": "black_beans",
+    "q": 200,
+    "t": "\u00bd tin, drained"
+   },
+   {
+    "i": "wraps",
+    "q": 4,
+    "t": "4"
+   },
+   {
+    "i": "cheddar",
+    "q": 80,
+    "t": "80g, grated"
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced, to serve",
+    "swap": "Slice the spring onions and scatter them over one portion only at the table.",
+    "opt": true
+   },
+   {
+    "i": "sour_cream",
+    "q": 50,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, to serve",
+    "swap": "Chop the coriander and scatter it over one portion only at the table.",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to taste"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Heat the oven to 180\u00b0C fan. Chop the onion, dice the pepper and crush the garlic. Cut the chicken into small bite-sized chunks. Grate the cheddar, slice the spring onions and chop the coriander."
+   },
+   {
+    "title": "Make the sauce",
+    "text": "Heat half the oil in a saucepan over a medium heat and cook half the onion for 5 min until soft. Stir in half the garlic, half the cumin, half the smoked paprika and the chipotle paste for 1 min. Add the chopped tomatoes and a pinch of salt and simmer for 10 min until slightly thickened."
+   },
+   {
+    "title": "Cook the filling",
+    "text": "While the sauce simmers, heat the remaining oil in a frying pan over a medium-high heat. Fry the chicken for 4\u20135 min until golden. Add the pepper with the rest of the onion, garlic and spices and cook for 4 min until the chicken is cooked through. Stir in the drained beans and 4 tbsp of the sauce, then season."
+   },
+   {
+    "title": "Roll the enchiladas",
+    "text": "Spread a few spoonfuls of sauce over the base of a small ovenproof dish. Divide the filling between the wraps and sprinkle each with a little cheddar. Roll up tightly and lay them seam-side down in the dish."
+   },
+   {
+    "title": "Bake",
+    "text": "Pour over the remaining sauce and scatter with the rest of the cheddar. Bake for 15\u201320 min until bubbling and golden at the edges. Leave to settle for 2 min so they hold together when you lift them out."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Scatter with the spring onions (optional) and coriander (optional). Serve with a spoonful of soured cream on top."
+   }
+  ],
+  "tags": [
+   "comfort",
+   "freezable",
+   "kid-friendly"
+  ]
+ },
+ {
+  "id": "mx_black_bean_jalapeno_quesadillas",
+  "title": "Crispy Black Bean, Sweetcorn & Jalape\u00f1o Quesadillas",
+  "short": "Bean and cheese quesadillas",
+  "cuisine": "Mexican",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 25,
+  "ingredients": [
+   {
+    "i": "black_beans",
+    "q": 200,
+    "t": "\u00bd tin, drained"
+   },
+   {
+    "i": "sweetcorn",
+    "q": 100,
+    "t": "100g, defrosted",
+    "swap": "Leave the sweetcorn out of the filling and scatter it over one quesadilla only before you put the top wrap on."
+   },
+   {
+    "i": "spring_onions",
+    "q": 3,
+    "t": "3, sliced"
+   },
+   {
+    "i": "cheddar",
+    "q": 100,
+    "t": "100g, grated"
+   },
+   {
+    "i": "jalapenos",
+    "q": 20,
+    "t": "a small handful, chopped",
+    "swap": "Scatter the jalape\u00f1os over one quesadilla only, or serve them in a small bowl on the side."
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "cumin",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "wraps",
+    "q": 4,
+    "t": "4"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "red_onion",
+    "q": 0.5,
+    "t": "\u00bd, finely diced"
+   },
+   {
+    "i": "lime",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, chopped",
+    "swap": "Leave the coriander out of the salsa and scatter it over one portion only at the table.",
+    "opt": true
+   },
+   {
+    "i": "sour_cream",
+    "q": 60,
+    "t": "4 tbsp"
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, leaves separated",
+    "swap": "Leave the lettuce off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to taste"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the veg",
+    "text": "Defrost the sweetcorn in a sieve under the hot tap and shake dry. Finely dice the cherry tomatoes and red onion. Slice the spring onions, grate the cheddar and chop the jalape\u00f1os and coriander. Separate the little gem leaves."
+   },
+   {
+    "title": "Make the tomato salsa",
+    "text": "Mix the tomatoes and red onion with half the coriander, the juice of half the lime and a pinch of salt. Set aside so the flavours mingle; this fresh salsa is called pico de gallo."
+   },
+   {
+    "title": "Mix the filling",
+    "text": "Tip the drained beans into a bowl and roughly mash about half with a fork. Stir in the sweetcorn, spring onions, smoked paprika, cumin, cheddar and a pinch of salt."
+   },
+   {
+    "title": "Fill the quesadillas",
+    "text": "Spread the filling over two of the wraps, right to the edges. Scatter the jalape\u00f1os over the top. Lay the other two wraps on top and press down firmly."
+   },
+   {
+    "title": "Fry until crisp",
+    "text": "Heat half the oil in a large frying pan over a medium heat. Cook one quesadilla for 2\u20133 min until golden underneath. Slide it onto a plate, flip it back into the pan and cook for 2\u20133 min more until the cheese melts. Repeat with the remaining oil and quesadilla."
+   },
+   {
+    "title": "Slice and serve",
+    "text": "Cut each quesadilla into wedges. Dress the little gem leaves with a squeeze of lime. Serve with the salsa, soured cream and the rest of the coriander (optional)."
+   }
+  ],
+  "tags": [
+   "quick",
+   "kid-friendly"
+  ]
+ },
+ {
+  "id": "mx_chicken_tinga_tacos",
+  "title": "Chicken Tinga Tacos with Avocado Crema & Pickled Onions",
+  "short": "Chicken tacos",
+  "cuisine": "Mexican",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 40,
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 350,
+    "t": "4 thighs (350g)"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, thinly sliced"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "cumin",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "opt": true
+   },
+   {
+    "i": "chipotle_paste",
+    "q": 25,
+    "t": "1\u00bd tbsp",
+    "swap": "For a milder portion, halve the chipotle paste and serve extra on the side for whoever likes it hot."
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 200,
+    "t": "\u00bd tin"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 0.5,
+    "t": "\u00bd chicken cube in 100ml water"
+   },
+   {
+    "i": "red_onion",
+    "q": 0.5,
+    "t": "\u00bd, very thinly sliced"
+   },
+   {
+    "i": "lime",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "avocado",
+    "q": 1,
+    "t": "1 ripe"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 50,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "wraps",
+    "q": 4,
+    "t": "4"
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, shredded",
+    "swap": "Leave the lettuce off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, to serve",
+    "swap": "Chop the coriander and scatter it over one portion only at the table.",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to taste"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the veg",
+    "text": "Very thinly slice the red onion and thinly slice the brown onion. Crush the garlic, shred the little gem and chop the coriander. Crumble the half stock cube into 100ml just-boiled water."
+   },
+   {
+    "title": "Pickle the red onion",
+    "text": "Put the red onion in a small bowl with the juice of half the lime and a big pinch of salt. Scrunch it with your fingers and leave for 20 min while you cook. It'll turn bright pink and soften."
+   },
+   {
+    "title": "Make the sauce",
+    "text": "Heat the oil in a deep frying pan over a medium heat. Cook the brown onion for 6\u20138 min until soft and golden. Stir in the garlic, cumin and mixed herbs (optional) for 1 min. Add the chipotle paste, chopped tomatoes and stock and bring to a simmer."
+   },
+   {
+    "title": "Simmer and shred the chicken",
+    "text": "Nestle the whole thighs into the sauce, cover and simmer gently for 20 min until cooked through. Lift onto a board and shred with two forks. Return to the pan and bubble uncovered for 3\u20134 min until the sauce clings to the chicken."
+   },
+   {
+    "title": "Make the avocado crema",
+    "text": "While the chicken simmers, mash the avocado with the yogurt, the remaining lime juice and a pinch of salt. Keep mashing until smooth; this is your creamy avocado sauce."
+   },
+   {
+    "title": "Build the tacos",
+    "text": "Warm the wraps in a dry frying pan over a medium heat for 20 sec each side. Top with the little gem, a generous pile of chicken and a spoonful of avocado crema. Finish with the pickled onion and coriander (optional)."
+   }
+  ],
+  "tags": [
+   "spicy"
+  ]
+ },
+ {
+  "id": "mx_crispy_pork_carnitas_tacos",
+  "title": "Crispy Pork Carnitas Tacos with Lime Slaw & Jalape\u00f1os",
+  "short": "Pulled pork tacos",
+  "cuisine": "Mexican",
+  "category": "treat",
+  "protein": "pork",
+  "time": 110,
+  "ingredients": [
+   {
+    "i": "pork_shoulder_steaks",
+    "q": 400,
+    "t": "400g"
+   },
+   {
+    "i": "cumin",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 2,
+    "t": "1 tsp",
+    "opt": true
+   },
+   {
+    "i": "ground_cinnamon",
+    "q": 0.5,
+    "t": "a pinch",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 3,
+    "t": "1 tsp"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, quartered"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, bashed"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 chicken cube in 400ml water"
+   },
+   {
+    "i": "lime",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "red_cabbage",
+    "q": 0.25,
+    "t": "\u00bc, finely shredded",
+    "swap": "Make one portion of the slaw without the cabbage, or serve the cabbage on the side.",
+    "autoSwap": true
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, chopped",
+    "swap": "Leave the coriander out of the slaw and scatter it over one portion only at the table.",
+    "opt": true
+   },
+   {
+    "i": "wraps",
+    "q": 4,
+    "t": "4"
+   },
+   {
+    "i": "sour_cream",
+    "q": 60,
+    "t": "4 tbsp"
+   },
+   {
+    "i": "jalapenos",
+    "q": 20,
+    "t": "a small handful",
+    "swap": "Serve the jalape\u00f1os in a small bowl on the side so they can be added to one portion only."
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Cut the pork steaks into large 5cm chunks. Quarter the onion and bash the garlic cloves with the flat of a knife. Make up 400ml stock with the cube. Finely shred the red cabbage and chop the coriander."
+   },
+   {
+    "title": "Brown the pork",
+    "text": "Toss the pork with the cumin, mixed herbs (optional), cinnamon (optional) and most of the salt. Heat the oil in a casserole or deep lidded pan over a medium-high heat. Brown the pork for 5 min until golden all over."
+   },
+   {
+    "title": "Braise until tender",
+    "text": "Add the onion, garlic, stock and the juice of half the lime and bring to a simmer. Cover and cook on the lowest heat for 1 hr 15 min. It's ready when the pork falls apart when prodded with a fork."
+   },
+   {
+    "title": "Make the lime slaw",
+    "text": "While the pork braises, toss the red cabbage with the juice of the remaining half lime, half the coriander and a pinch of salt. Leave it to soften slightly."
+   },
+   {
+    "title": "Shred and glaze the pork",
+    "text": "Heat the grill to high and line a baking tray with foil. Lift the pork out with a slotted spoon, shred with two forks and discard the onion. Boil the pan liquid hard for 5 min until reduced to about 4 tbsp. Stir in the honey and toss through the pork."
+   },
+   {
+    "title": "Crisp under the grill",
+    "text": "Spread the pork over the lined tray. Grill for 5\u20137 min, turning once, until the edges are crisp and caramelised."
+   },
+   {
+    "title": "Load the tacos",
+    "text": "Warm the wraps in a dry frying pan over a medium heat for 20 sec each side. Pile with slaw and crispy pork. Finish with soured cream, jalape\u00f1os and the rest of the coriander (optional)."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "crispy",
+   "comfort"
+  ]
+ },
+ {
+  "id": "mx_panko_fish_tacos",
+  "title": "Crispy Panko Fish Tacos with Lime Slaw & Chipotle Yogurt",
+  "short": "Fish tacos",
+  "cuisine": "Mexican",
+  "category": "everyday",
+  "protein": "fish",
+  "time": 35,
+  "ingredients": [
+   {
+    "i": "cod_fillets",
+    "q": 280,
+    "t": "1 pack (280g)"
+   },
+   {
+    "i": "plain_flour",
+    "q": 20,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "eggs",
+    "q": 1,
+    "t": "1, beaten"
+   },
+   {
+    "i": "panko",
+    "q": 50,
+    "t": "50g"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "red_cabbage",
+    "q": 0.25,
+    "t": "\u00bc, finely shredded",
+    "swap": "Make one portion of the slaw without the cabbage, or serve the cabbage on the side.",
+    "autoSwap": true
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced"
+   },
+   {
+    "i": "lime",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, chopped",
+    "swap": "Leave the coriander out of the slaw and scatter it over one portion only at the table.",
+    "opt": true
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 60,
+    "t": "4 tbsp"
+   },
+   {
+    "i": "chipotle_paste",
+    "q": 10,
+    "t": "2 tsp",
+    "swap": "Stir the chipotle into half the yogurt only and serve the other half plain."
+   },
+   {
+    "i": "wraps",
+    "q": 4,
+    "t": "4"
+   },
+   {
+    "i": "avocado",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Heat the oven to 200\u00b0C fan and brush a baking tray with half the oil. Finely shred the red cabbage, slice the spring onions and chop the coriander. Pat the fish dry with kitchen paper and cut into 8 chunky fingers."
+   },
+   {
+    "title": "Set up the crumbing station",
+    "text": "Set out three shallow bowls. Mix the flour with the smoked paprika and a pinch of salt in the first. Beat the egg in the second and tip the panko into the third."
+   },
+   {
+    "title": "Crumb the fish",
+    "text": "Dust each piece of fish in the flour, dip in the egg, then press firmly into the panko. Lay on the oiled tray and drizzle with the remaining oil."
+   },
+   {
+    "title": "Bake the fish",
+    "text": "Bake for 12\u201315 min, turning halfway, until the crumb is golden and the fish flakes easily. Wrap the wraps in foil and put them in the oven for the last 5 min to warm through."
+   },
+   {
+    "title": "Make the slaw and sauce",
+    "text": "While the fish bakes, toss the cabbage and spring onions with the juice of half the lime, half the coriander and a pinch of salt. Mix the yogurt with the chipotle paste and a squeeze of lime. Slice the avocado and cut the rest of the lime into wedges."
+   },
+   {
+    "title": "Assemble the tacos",
+    "text": "Fill each warm wrap with slaw, two crispy fish fingers and a few slices of avocado. Spoon over the chipotle yogurt. Finish with the rest of the coriander (optional) and the lime wedges."
+   }
+  ],
+  "tags": [
+   "quick",
+   "crispy"
+  ]
+ },
+ {
+  "id": "mx_sweet_potato_black_bean_tacos",
+  "title": "Sweet Potato & Black Bean Tacos with Feta & Lime Yogurt",
+  "short": "Sweet potato tacos",
+  "cuisine": "Mexican",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 40,
+  "ingredients": [
+   {
+    "i": "sweet_potato",
+    "q": 400,
+    "t": "2 medium (400g), cut into 2cm cubes"
+   },
+   {
+    "i": "red_onion",
+    "q": 1,
+    "t": "1, cut into wedges"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "cumin",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "swap": "Leave the chilli flakes off the tray and sprinkle them over one portion at the end.",
+    "opt": true
+   },
+   {
+    "i": "black_beans",
+    "q": 400,
+    "t": "1 tin, drained"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, crushed"
+   },
+   {
+    "i": "wraps",
+    "q": 4,
+    "t": "4"
+   },
+   {
+    "i": "feta",
+    "q": 60,
+    "t": "60g",
+    "swap": "Crumble the feta over one portion only, or serve it in a little bowl on the side."
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 80,
+    "t": "5 tbsp"
+   },
+   {
+    "i": "lime",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, to serve",
+    "swap": "Chop the coriander and scatter it over one portion only at the table.",
+    "opt": true
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, shredded",
+    "swap": "Leave the lettuce off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to taste"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the veg",
+    "text": "Heat the oven to 200\u00b0C fan. Cut the sweet potato into 2cm cubes and the red onion into wedges. Crush the garlic, drain the beans and shred the little gem. Chop the coriander and crumble the feta."
+   },
+   {
+    "title": "Roast the sweet potato",
+    "text": "Toss the sweet potato and onion on a roasting tray with the oil, cumin, smoked paprika, chilli flakes (optional) and a good pinch of salt. Roast for 25 min, turning halfway, until tender and caramelised at the edges."
+   },
+   {
+    "title": "Add the beans",
+    "text": "After 17 min, stir the black beans and garlic into the tray and roast for the final 8 min. The beans should warm through and crisp slightly. Wrap the wraps in foil and pop them in the oven for the last 5 min."
+   },
+   {
+    "title": "Make the lime yogurt",
+    "text": "While the veg roasts, mix the yogurt with the zest and juice of half the lime and a pinch of salt. Cut the rest of the lime into wedges."
+   },
+   {
+    "title": "Build the tacos",
+    "text": "Fill the warm wraps with little gem, the roasted sweet potato and beans and the feta. Add a spoonful of lime yogurt and the coriander (optional). Serve with lime wedges for squeezing."
+   }
+  ],
+  "tags": [
+   "traybake"
+  ]
+ },
+ {
+  "id": "mx_cheesy_chicken_rice_bake",
+  "title": "One-Pot Cheesy Mexican Chicken & Rice Bake",
+  "short": "Mexican chicken and rice",
+  "cuisine": "Mexican",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 55,
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 300,
+    "t": "3\u20134 thighs (300g), diced"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, chopped"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, diced"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "cumin",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "chipotle_paste",
+    "q": 15,
+    "t": "1 tbsp",
+    "swap": "For a milder portion, halve the chipotle paste and serve extra on the side for whoever likes it hot."
+   },
+   {
+    "i": "rice",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 200,
+    "t": "\u00bd tin"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 chicken cube in 250ml water"
+   },
+   {
+    "i": "kidney_beans",
+    "q": 200,
+    "t": "\u00bd tin, drained"
+   },
+   {
+    "i": "sweetcorn",
+    "q": 80,
+    "t": "80g",
+    "swap": "Leave the sweetcorn out of the bake; microwave it for 2 min and stir it into one portion when serving."
+   },
+   {
+    "i": "cheddar",
+    "q": 60,
+    "t": "60g, grated"
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced, to serve",
+    "swap": "Slice the spring onions and scatter them over one portion only at the table.",
+    "opt": true
+   },
+   {
+    "i": "sour_cream",
+    "q": 50,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, to serve",
+    "swap": "Chop the coriander and scatter it over one portion only at the table.",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to taste"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Heat the oven to 180\u00b0C fan. Dice the chicken into bite-sized pieces and season with salt. Chop the onion, dice the pepper, crush the garlic and make up 250ml stock. Rinse the rice, grate the cheddar and slice the spring onions."
+   },
+   {
+    "title": "Brown the chicken",
+    "text": "Heat the oil in a lidded ovenproof casserole over a medium-high heat. Fry the chicken for 5 min until golden all over. Add the onion and pepper and cook for 4 min until softening."
+   },
+   {
+    "title": "Add the rice and spices",
+    "text": "Stir in the garlic, cumin, smoked paprika and chipotle paste for 1 min. Add the rice and stir to coat in the spices. Pour in the chopped tomatoes, stock, drained beans and sweetcorn and bring to the boil."
+   },
+   {
+    "title": "Bake",
+    "text": "Cover with the lid, or tightly with foil, and bake for 25 min until the rice is tender and has soaked up the liquid. Uncover, scatter over the cheddar and bake for 5 min more until melted and bubbling."
+   },
+   {
+    "title": "Rest and serve",
+    "text": "Rest for 5 min so the rice settles. Scatter with the spring onions (optional) and coriander (optional). Spoon into bowls and top with soured cream."
+   }
+  ],
+  "tags": [
+   "one-pot",
+   "comfort",
+   "kid-friendly"
+  ]
+ },
+ {
+  "id": "mx_loaded_beef_nachos",
+  "title": "Loaded Beef Nachos with Melted Cheese & Guacamole",
+  "short": "Loaded beef nachos",
+  "cuisine": "Mexican",
+  "category": "treat",
+  "protein": "beef",
+  "time": 30,
+  "ingredients": [
+   {
+    "i": "beef_mince",
+    "q": 250,
+    "t": "250g"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "red_onion",
+    "q": 1,
+    "t": "1, finely chopped"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, crushed"
+   },
+   {
+    "i": "cumin",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "chipotle_paste",
+    "q": 10,
+    "t": "2 tsp",
+    "swap": "For a milder portion, halve the chipotle paste and serve extra on the side for whoever likes it hot."
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "kidney_beans",
+    "q": 200,
+    "t": "\u00bd tin, drained"
+   },
+   {
+    "i": "tortilla_chips",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "cheddar",
+    "q": 80,
+    "t": "80g, grated"
+   },
+   {
+    "i": "mozzarella",
+    "q": 60,
+    "t": "\u00bd ball, torn"
+   },
+   {
+    "i": "jalapenos",
+    "q": 30,
+    "t": "a handful, to serve",
+    "swap": "Scatter the jalape\u00f1os over one half of the tray only, or serve them in a bowl on the side.",
+    "opt": true
+   },
+   {
+    "i": "avocado",
+    "q": 1,
+    "t": "1 ripe"
+   },
+   {
+    "i": "lime",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 100,
+    "t": "100g"
+   },
+   {
+    "i": "sour_cream",
+    "q": 75,
+    "t": "5 tbsp"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, chopped",
+    "swap": "Leave the coriander out of the salsa and scatter it over one half of the tray only.",
+    "opt": true
+   },
+   {
+    "i": "spring_onions",
+    "q": 2,
+    "t": "2, sliced, to serve",
+    "swap": "Scatter the spring onions over one half of the tray only.",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to taste"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Heat the oven to 180\u00b0C fan. Finely chop the red onion, crush the garlic, grate the cheddar and tear the mozzarella into small pieces. Chop the cherry tomatoes and coriander and slice the spring onions."
+   },
+   {
+    "title": "Cook the beef",
+    "text": "Heat the oil in a frying pan over a high heat and fry the mince for 5 min, breaking it up, until well browned. Add half the red onion with the garlic, cumin and smoked paprika and cook for 2 min."
+   },
+   {
+    "title": "Simmer the sauce",
+    "text": "Stir in the tomato pur\u00e9e, chipotle paste, drained beans and 100ml water. Simmer for 5 min until thick and saucy but not wet. Season to taste."
+   },
+   {
+    "title": "Layer and bake",
+    "text": "Spread half the tortilla chips over a large baking tray and spoon over half the beef. Scatter with half the cheddar and mozzarella, then repeat the layers. Bake for 8\u201310 min until the cheese is bubbling and the chip edges are golden."
+   },
+   {
+    "title": "Make the salsa and guacamole",
+    "text": "While it bakes, mix the tomatoes with the remaining red onion, half the coriander, a squeeze of lime and a pinch of salt. Mash the avocado with the rest of the lime juice and a pinch of salt."
+   },
+   {
+    "title": "Load it up",
+    "text": "Spoon the guacamole, salsa and soured cream over the hot nachos. Scatter with the jalape\u00f1os (optional), spring onions (optional) and the rest of the coriander (optional). Take the tray straight to the table."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "comfort",
+   "quick"
+  ]
+ },
+ {
+  "id": "mx_crispy_beef_chimichangas",
+  "title": "Crispy Beef & Bean Chimichangas with Pico de Gallo",
+  "short": "Beef chimichangas",
+  "cuisine": "Mexican",
+  "category": "treat",
+  "protein": "beef",
+  "time": 45,
+  "ingredients": [
+   {
+    "i": "beef_mince",
+    "q": 250,
+    "t": "250g"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, finely chopped"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "cumin",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "chipotle_paste",
+    "q": 15,
+    "t": "1 tbsp",
+    "swap": "For a milder portion, halve the chipotle paste and serve extra on the side for whoever likes it hot."
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "black_beans",
+    "q": 200,
+    "t": "\u00bd tin, drained"
+   },
+   {
+    "i": "cheddar",
+    "q": 80,
+    "t": "80g, grated"
+   },
+   {
+    "i": "wraps",
+    "q": 4,
+    "t": "4"
+   },
+   {
+    "i": "butter",
+    "q": 25,
+    "t": "25g, melted"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "red_onion",
+    "q": 0.5,
+    "t": "\u00bd"
+   },
+   {
+    "i": "lime",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, chopped",
+    "swap": "Leave the coriander out of the salsa and scatter it over one portion only at the table.",
+    "opt": true
+   },
+   {
+    "i": "sour_cream",
+    "q": 60,
+    "t": "4 tbsp"
+   },
+   {
+    "i": "jalapenos",
+    "q": 20,
+    "t": "a small handful, to serve",
+    "swap": "Serve the jalape\u00f1os in a small bowl on the side so they can be added to one portion only.",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to taste"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Heat the oven to 200\u00b0C fan and line a baking tray with baking paper. Finely chop the onion and crush the garlic. Grate the cheddar and melt the butter in the microwave or a small pan. Dice the cherry tomatoes and red onion and chop the coriander."
+   },
+   {
+    "title": "Cook the filling",
+    "text": "Heat the oil in a frying pan over a high heat and brown the mince for 5 min, then add the onion for 4 min. Stir in the garlic, cumin, smoked paprika, chipotle paste and tomato pur\u00e9e for 1 min. Add the beans with 3 tbsp water, crush a few with a spoon and cook for 3 min until thick. Season and leave to cool for a few minutes."
+   },
+   {
+    "title": "Wrap the parcels",
+    "text": "Spoon a line of filling across the lower third of each wrap and top with the cheddar. Fold in the sides, then roll up tightly into neat parcels. Sit them seam-side down on the tray and brush all over with the melted butter."
+   },
+   {
+    "title": "Bake until crisp",
+    "text": "Bake for 15\u201318 min, turning halfway, until deep golden and crisp all over. Make the salsa while they bake."
+   },
+   {
+    "title": "Make the pico de gallo",
+    "text": "Mix the tomatoes, red onion and coriander (optional) with a squeeze of lime and a pinch of salt. This fresh tomato salsa is pico de gallo. Cut the rest of the lime into wedges."
+   },
+   {
+    "title": "Serve",
+    "text": "Serve the chimichangas hot with the pico de gallo and soured cream. Add the jalape\u00f1os (optional) and lime wedges on the side."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "crispy"
+  ]
+ },
+ {
+  "id": "mx_beef_crunchwrap",
+  "title": "Homemade Beef Crunchwrap with Nacho Cheese Sauce",
+  "short": "Beef crunchwrap",
+  "cuisine": "Mexican",
+  "category": "treat",
+  "protein": "beef",
+  "time": 35,
+  "ingredients": [
+   {
+    "i": "beef_mince",
+    "q": 250,
+    "t": "250g"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, crushed"
+   },
+   {
+    "i": "cumin",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "chipotle_paste",
+    "q": 10,
+    "t": "2 tsp",
+    "swap": "For a milder portion, halve the chipotle paste and serve extra on the side for whoever likes it hot."
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "milk",
+    "q": 60,
+    "t": "4 tbsp"
+   },
+   {
+    "i": "cornflour",
+    "q": 3,
+    "t": "1 tsp"
+   },
+   {
+    "i": "cheddar",
+    "q": 80,
+    "t": "80g, grated"
+   },
+   {
+    "i": "wraps",
+    "q": 4,
+    "t": "4"
+   },
+   {
+    "i": "tortilla_chips",
+    "q": 50,
+    "t": "a large handful (50g)"
+   },
+   {
+    "i": "sour_cream",
+    "q": 60,
+    "t": "4 tbsp"
+   },
+   {
+    "i": "little_gem",
+    "q": 0.5,
+    "t": "\u00bd, shredded",
+    "swap": "Leave the lettuce off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 80,
+    "t": "80g, chopped"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to taste"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Grate the cheddar, crush the garlic, shred the little gem and chop the cherry tomatoes. Using a side plate as a guide, cut a 15cm circle from two of the wraps. These circles are the inner lids; keep the other two wraps whole."
+   },
+   {
+    "title": "Spice the beef",
+    "text": "Heat the oil in a large frying pan over a high heat and fry the mince for 5\u20136 min, breaking it up, until browned. Stir in the garlic, cumin, smoked paprika, tomato pur\u00e9e, chipotle paste and 4 tbsp water. Cook for 2 min until the beef is coated and almost dry. Season, tip into a bowl and wipe out the pan."
+   },
+   {
+    "title": "Make the nacho cheese",
+    "text": "Whisk the milk and cornflour together in a small saucepan over a low heat. Add the cheddar and stir for 1\u20132 min until melted, smooth and glossy. Take off the heat."
+   },
+   {
+    "title": "Build the crunchwraps",
+    "text": "Lay the two whole wraps flat and spoon half the beef into the centre of each. Drizzle with nacho cheese, then add the tortilla chips, soured cream, little gem and tomatoes. Lay a cut circle on top. Fold the edges of the big wrap up and over in overlapping pleats to seal."
+   },
+   {
+    "title": "Toast until crisp",
+    "text": "Put the crunchwraps pleat-side down in the dry frying pan over a medium heat. Press down with a spatula and cook for 2\u20133 min each side until golden and crisp. Cut in half and serve straight away."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "crispy",
+   "quick"
+  ]
+ },
+ {
+  "id": "mx_chilli_lime_prawn_tacos",
+  "title": "Garlic, Chilli & Lime Prawn Tacos with Charred Corn Salsa",
+  "short": "Prawn tacos",
+  "cuisine": "Mexican",
+  "category": "everyday",
+  "protein": "prawns",
+  "time": 25,
+  "ingredients": [
+   {
+    "i": "prawns",
+    "q": 170,
+    "t": "1 pack (170g), defrosted"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "swap": "Leave the chilli flakes out while cooking and sprinkle them over one portion at the end.",
+    "opt": true
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "lime",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "sweetcorn",
+    "q": 150,
+    "t": "150g",
+    "swap": "Make the salsa without the sweetcorn, then char the corn and stir it into one portion of salsa only."
+   },
+   {
+    "i": "red_onion",
+    "q": 0.5,
+    "t": "\u00bd, finely chopped"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 100,
+    "t": "100g, chopped"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, chopped",
+    "swap": "Leave the coriander out of the salsa and scatter it over one portion only at the table.",
+    "opt": true
+   },
+   {
+    "i": "avocado",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 60,
+    "t": "4 tbsp",
+    "swap": "Leave the yogurt off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "wraps",
+    "q": 4,
+    "t": "4"
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, shredded",
+    "swap": "Make one portion of the salsa without the lettuce, or serve the lettuce on the side.",
+    "autoSwap": true
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to taste"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Pat the defrosted prawns dry with kitchen paper. Crush the garlic, zest the lime and finely chop the red onion. Chop the tomatoes and coriander, slice the avocado and shred the little gem."
+   },
+   {
+    "title": "Marinate the prawns",
+    "text": "Toss the prawns with the garlic, smoked paprika, chilli flakes (optional), half the oil, the lime zest and a pinch of salt. Leave to sit while you make the salsa."
+   },
+   {
+    "title": "Char the corn salsa",
+    "text": "Heat a large frying pan over a high heat with no oil. Cook the sweetcorn for 5\u20136 min, stirring now and then, until blackened in patches. Tip into a bowl with the tomatoes, red onion, half the coriander, the juice of half the lime and a pinch of salt."
+   },
+   {
+    "title": "Make the lime yogurt",
+    "text": "Stir a squeeze of lime and a pinch of salt into the yogurt. Loosen with a splash of water if it's too thick to drizzle."
+   },
+   {
+    "title": "Cook the prawns",
+    "text": "Add the remaining oil to the same pan over a high heat. Fry the prawns for 2\u20133 min, turning once, until pink all over and just firm. Don't overcook or they'll turn rubbery. Squeeze over a little lime."
+   },
+   {
+    "title": "Build the tacos",
+    "text": "Warm the wraps in a dry pan over a medium heat for 20 sec each side. Top with little gem, corn salsa, prawns and avocado. Drizzle with the lime yogurt and scatter with the rest of the coriander (optional)."
+   }
+  ],
+  "tags": [
+   "quick",
+   "light"
+  ]
+ },
+ {
+  "id": "mx_smoky_pork_burritos",
+  "title": "Smoky Pork & Black Bean Burritos with Chipotle Soured Cream",
+  "short": "Pork burritos",
+  "cuisine": "Mexican",
+  "category": "everyday",
+  "protein": "pork",
+  "time": 30,
+  "ingredients": [
+   {
+    "i": "rice",
+    "q": 100,
+    "t": "100g"
+   },
+   {
+    "i": "lime",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, chopped",
+    "swap": "Stir the coriander into half the rice only and use that for one burrito.",
+    "opt": true
+   },
+   {
+    "i": "pork_mince",
+    "q": 250,
+    "t": "250g"
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, chopped"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "cumin",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "opt": true
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "black_beans",
+    "q": 200,
+    "t": "\u00bd tin, drained"
+   },
+   {
+    "i": "sour_cream",
+    "q": 60,
+    "t": "4 tbsp"
+   },
+   {
+    "i": "chipotle_paste",
+    "q": 10,
+    "t": "2 tsp",
+    "swap": "Stir the chipotle into half the soured cream only and keep the rest plain."
+   },
+   {
+    "i": "cheddar",
+    "q": 60,
+    "t": "60g, grated"
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, shredded",
+    "swap": "Leave the lettuce off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "wraps",
+    "q": 2,
+    "t": "2 large"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to taste"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Rinse the rice in a sieve until the water runs clear. Chop the onion, crush the garlic and zest the lime. Chop the coriander, grate the cheddar and shred the little gem."
+   },
+   {
+    "title": "Cook the lime rice",
+    "text": "Put the rice in a small pan with 200ml boiling water and a pinch of salt. Cover and cook on a low heat for 10 min, then rest off the heat, lid on, for 5 min. Fluff with a fork and stir through the lime zest, a squeeze of lime and the coriander (optional)."
+   },
+   {
+    "title": "Brown the pork",
+    "text": "While the rice cooks, heat the oil in a large frying pan over a high heat. Fry the pork mince for 6\u20137 min, breaking it up, until golden with crisp edges. Add the onion and cook for 4 min until soft."
+   },
+   {
+    "title": "Season the filling",
+    "text": "Stir in the garlic, cumin, smoked paprika, mixed herbs (optional) and tomato pur\u00e9e for 1 min. Add the drained beans and 4 tbsp water and cook for 3 min until thick. Season with salt and a squeeze of lime, then tip into a bowl and wipe out the pan."
+   },
+   {
+    "title": "Make the chipotle soured cream",
+    "text": "Mix the soured cream with the chipotle paste in a small bowl. It should turn pale orange and taste gently smoky."
+   },
+   {
+    "title": "Roll and toast",
+    "text": "Warm the wraps in the dry pan for 20 sec, then layer rice, pork, cheddar, little gem and chipotle soured cream down the middle. Fold in the sides and roll up tightly. Toast seam-side down over a medium heat for 2 min each side until golden. Cut in half to serve."
+   }
+  ],
+  "tags": [
+   "quick",
+   "kid-friendly"
+  ]
+ },
+ {
+  "id": "mx_spiced_chicken_taco_salad",
+  "title": "Spiced Chicken Taco Salad with Lime-Yogurt Dressing",
+  "short": "Chicken taco salad",
+  "cuisine": "Mexican",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 25,
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 300,
+    "t": "2 breasts (300g)"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "cumin",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, crushed"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "sweetcorn",
+    "q": 100,
+    "t": "100g",
+    "swap": "Char the sweetcorn on its own and add it to one plate only."
+   },
+   {
+    "i": "black_beans",
+    "q": 200,
+    "t": "\u00bd tin, drained"
+   },
+   {
+    "i": "little_gem",
+    "q": 2,
+    "t": "2",
+    "swap": "Make one portion of the salad without the lettuce, or serve the lettuce on the side.",
+    "autoSwap": true
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 150,
+    "t": "150g, halved"
+   },
+   {
+    "i": "avocado",
+    "q": 1,
+    "t": "1, diced"
+   },
+   {
+    "i": "red_onion",
+    "q": 0.5,
+    "t": "\u00bd, thinly sliced"
+   },
+   {
+    "i": "tortilla_chips",
+    "q": 40,
+    "t": "a handful (40g)",
+    "swap": "Leave the chips off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "cheddar",
+    "q": 30,
+    "t": "30g, grated"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 80,
+    "t": "5 tbsp"
+   },
+   {
+    "i": "lime",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, chopped",
+    "swap": "Leave the coriander out of the dressing and scatter it over one plate only.",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to taste"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Slice each chicken breast in half horizontally to make 2 thin fillets, so they cook quickly. Crush the garlic and drain the beans. Chop the little gem, halve the tomatoes and thinly slice the red onion. Dice the avocado, grate the cheddar and chop the coriander."
+   },
+   {
+    "title": "Spice the chicken",
+    "text": "Rub the chicken with the smoked paprika, cumin, garlic, half the oil and a pinch of salt. Set aside on a plate while you char the corn."
+   },
+   {
+    "title": "Char the corn and beans",
+    "text": "Heat a large frying pan over a high heat with no oil. Cook the sweetcorn for 4\u20135 min until charred in places. Add the beans for the last minute to warm through, then tip into a bowl."
+   },
+   {
+    "title": "Cook the chicken",
+    "text": "Add the remaining oil to the pan over a medium-high heat. Cook the chicken for 3\u20134 min each side until golden and no longer pink inside. Rest for 2 min, then slice."
+   },
+   {
+    "title": "Make the dressing",
+    "text": "Whisk the yogurt with the lime zest and juice, 1 tbsp water, a pinch of salt and half the coriander. It should be thick but pourable."
+   },
+   {
+    "title": "Build the salad",
+    "text": "Divide the little gem, tomatoes, avocado and red onion between two plates. Top with the corn and beans and the sliced chicken. Crush over the tortilla chips, then scatter with cheddar and drizzle with the dressing and the rest of the coriander (optional)."
+   }
+  ],
+  "tags": [
+   "quick",
+   "light"
+  ]
+ },
+ {
+  "id": "me_harissa_shakshuka_feta",
+  "title": "Smoky Harissa Shakshuka with Feta, Coriander & Warm Pittas",
+  "short": "Shakshuka",
+  "cuisine": "Middle Eastern",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 35,
+  "ingredients": [
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "peppers",
+    "q": 2,
+    "t": "2, sliced"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "cumin",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "harissa",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 400,
+    "t": "1 tin"
+   },
+   {
+    "i": "eggs",
+    "q": 4,
+    "t": "4"
+   },
+   {
+    "i": "feta",
+    "q": 60,
+    "t": "60g",
+    "swap": "Crumble the feta over one portion only, or serve it in a little bowl on the side."
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful",
+    "swap": "Chop the coriander and scatter it over one portion only at the table."
+   },
+   {
+    "i": "pitta",
+    "q": 4,
+    "t": "4"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to taste"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "to taste"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the veg",
+    "text": "Thinly slice the onion and peppers and crush the garlic. Chop the coriander and crumble the feta."
+   },
+   {
+    "title": "Soften the peppers",
+    "text": "Heat the oil in a large, deep frying pan with a lid over a medium heat. Add the onion and peppers and cook for 10 min, stirring now and then, until very soft and sweet."
+   },
+   {
+    "title": "Build the sauce",
+    "text": "Stir in the garlic, cumin and smoked paprika for 1 min. Add the harissa, chopped tomatoes and a pinch of salt. Simmer for 8\u201310 min until thick enough that a spoon drawn through leaves a clear gap."
+   },
+   {
+    "title": "Cook the eggs",
+    "text": "Make four wells in the sauce with the back of a spoon and crack an egg into each. Cover and cook on a low heat for 5\u20137 min until the whites are set but the yolks are still runny."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "While the eggs cook, toast the pittas. Crumble the feta over the shakshuka and scatter with the coriander and a grind of black pepper. Bring the pan to the table with the pittas for scooping."
+   }
+  ],
+  "tags": [
+   "quick",
+   "one-pot"
+  ]
+ },
+ {
+  "id": "me_chicken_shawarma_traybake",
+  "title": "Chicken Shawarma Traybake with Garlic Yogurt & Pittas",
+  "short": "Chicken shawarma traybake",
+  "cuisine": "Middle Eastern",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 45,
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 400,
+    "t": "4\u20135 thighs (400g)"
+   },
+   {
+    "i": "cumin",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "ground_coriander",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "turmeric",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "opt": true
+   },
+   {
+    "i": "ground_cinnamon",
+    "q": 0.5,
+    "t": "a pinch",
+    "opt": true
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, crushed"
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "oil",
+    "q": 20,
+    "t": "1\u00bd tbsp"
+   },
+   {
+    "i": "salt",
+    "q": 3,
+    "t": "1 tsp"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, cut into strips"
+   },
+   {
+    "i": "red_onion",
+    "q": 1,
+    "t": "1, half in wedges, half thinly sliced"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 100,
+    "t": "100g",
+    "swap": "Make one portion of the salad without the yogurt, or serve the yogurt on the side.",
+    "autoSwap": true
+   },
+   {
+    "i": "cucumber",
+    "q": 0.5,
+    "t": "\u00bd, diced",
+    "swap": "Leave the cucumber off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 100,
+    "t": "100g, halved"
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, shredded",
+    "swap": "Leave the lettuce off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "pitta",
+    "q": 2,
+    "t": "2"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Heat the oven to 200\u00b0C fan. Crush the garlic and halve the lemon. Cut half the red onion into wedges and thinly slice the rest, then cut the pepper into strips. Dice the cucumber, halve the tomatoes and shred the little gem."
+   },
+   {
+    "title": "Marinate the chicken",
+    "text": "In a bowl, mix the cumin, ground coriander, smoked paprika, turmeric (optional) and cinnamon (optional). Stir in two of the garlic cloves, the juice of half the lemon, the oil and the salt. Add the thighs, turn to coat and leave for 10 min."
+   },
+   {
+    "title": "Roast",
+    "text": "Spread the chicken over a large roasting tray with the pepper strips and onion wedges. Roast for 25\u201330 min until the chicken is charred at the edges and the juices run clear."
+   },
+   {
+    "title": "Make the pickle and sauce",
+    "text": "While the chicken roasts, toss the sliced red onion with a squeeze of lemon and a pinch of salt. Mix the yogurt with the last garlic clove, a squeeze of lemon and a pinch of salt."
+   },
+   {
+    "title": "Slice and serve",
+    "text": "Pop the pittas in the oven for the last 2 min to warm through. Rest the chicken for 2 min, then slice. Split the pittas and stuff with salad, chicken and roasted veg, then spoon over the garlic yogurt, pickled onion and tray juices."
+   }
+  ],
+  "tags": [
+   "traybake"
+  ]
+ },
+ {
+  "id": "me_crispy_chicken_shawarma_wraps",
+  "title": "Crispy Chicken Shawarma Wraps with Garlic Sauce & Fries",
+  "short": "Chicken shawarma wraps",
+  "cuisine": "Middle Eastern",
+  "category": "treat",
+  "protein": "chicken",
+  "time": 50,
+  "ingredients": [
+   {
+    "i": "potatoes",
+    "q": 400,
+    "t": "2 medium (400g)"
+   },
+   {
+    "i": "oil",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "chicken_thighs",
+    "q": 350,
+    "t": "4 thighs (350g)"
+   },
+   {
+    "i": "cumin",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "ground_coriander",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "turmeric",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "opt": true
+   },
+   {
+    "i": "ground_cinnamon",
+    "q": 0.5,
+    "t": "a pinch",
+    "opt": true
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves"
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 80,
+    "t": "5 tbsp"
+   },
+   {
+    "i": "wraps",
+    "q": 2,
+    "t": "2 large"
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, shredded",
+    "swap": "Leave the lettuce off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 80,
+    "t": "80g, sliced",
+    "swap": "Leave the tomatoes off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "swap": "Sprinkle the chilli flakes into one wrap only.",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 3,
+    "t": "to taste"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Heat the oven to 200\u00b0C fan. Cut the potatoes into skinny fries. Slice the chicken into thin strips and crush two of the garlic cloves. Shred the little gem, slice the tomatoes and halve the lemon."
+   },
+   {
+    "title": "Bake the fries",
+    "text": "Toss the fries on a baking tray with 1 tsp of the oil and a pinch of salt. Bake for 25\u201330 min, turning halfway, until golden and crisp."
+   },
+   {
+    "title": "Marinate the chicken",
+    "text": "Toss the chicken with the cumin, smoked paprika, ground coriander, turmeric (optional) and cinnamon (optional). Add the crushed garlic, the juice of half the lemon, 1 tbsp oil and a pinch of salt. Leave while the fries bake."
+   },
+   {
+    "title": "Make the garlic sauce",
+    "text": "Grate the remaining garlic clove into the yogurt. Stir in a squeeze of lemon and a pinch of salt; it should be thick and punchy."
+   },
+   {
+    "title": "Fry the chicken",
+    "text": "About 10 min before the fries are done, heat the remaining 2 tsp oil in a large frying pan over a high heat. Add the chicken in a single layer and leave untouched for 3 min. Stir and cook for 4\u20135 min more until charred at the edges and cooked through."
+   },
+   {
+    "title": "Roll the wraps",
+    "text": "Spread each wrap with garlic sauce. Pile on the chicken, a handful of fries, little gem, tomatoes and chilli flakes (optional), then roll up tightly."
+   },
+   {
+    "title": "Toast and serve",
+    "text": "Wipe out the pan and toast the wraps seam-side down over a medium heat for 2 min each side. Press down with a spatula so they turn crisp and golden. Slice in half on the diagonal and serve with the rest of the fries."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "crispy"
+  ]
+ },
+ {
+  "id": "me_lamb_koftas_herby_couscous",
+  "title": "Grilled Lamb Koftas with Herby Couscous & Tahini Yogurt",
+  "short": "Lamb koftas and couscous",
+  "cuisine": "Middle Eastern",
+  "category": "everyday",
+  "protein": "lamb",
+  "time": 30,
+  "ingredients": [
+   {
+    "i": "lamb_mince",
+    "q": 300,
+    "t": "300g"
+   },
+   {
+    "i": "red_onion",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "cumin",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "ground_coriander",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "ground_cinnamon",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "opt": true
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "swap": "Leave the chilli flakes out while cooking and sprinkle them over one portion at the end.",
+    "opt": true
+   },
+   {
+    "i": "coriander",
+    "q": 20,
+    "t": "\u2154 pack, chopped",
+    "swap": "Leave the coriander out of the koftas and couscous, then stir it into one portion of couscous only."
+   },
+   {
+    "i": "oil",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "couscous",
+    "q": 120,
+    "t": "120g"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 veg cube in 180ml water"
+   },
+   {
+    "i": "cucumber",
+    "q": 0.5,
+    "t": "\u00bd, diced",
+    "swap": "Leave the cucumber off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 100,
+    "t": "100g, chopped"
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 80,
+    "t": "5 tbsp",
+    "swap": "Leave the yogurt off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "tahini",
+    "q": 15,
+    "t": "1 tbsp",
+    "swap": "Leave the tahini off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "pitta",
+    "q": 2,
+    "t": "2"
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to taste"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Boil the kettle and heat the grill to high; line a baking tray with foil. Grate half the red onion and finely chop the other half. Crush the garlic, chop the coriander, dice the cucumber and chop the tomatoes."
+   },
+   {
+    "title": "Shape the koftas",
+    "text": "Put the lamb in a bowl with the grated onion, one garlic clove, the cumin, ground coriander and a good pinch of salt. Add the cinnamon (optional), chilli flakes (optional) and half the fresh coriander. Squish together firmly for 1 min until sticky, then shape into 6 long sausage shapes."
+   },
+   {
+    "title": "Grill the koftas",
+    "text": "Lay the koftas on the tray and brush with the oil. Grill for 10\u201312 min, turning every few minutes, until charred all over and cooked through."
+   },
+   {
+    "title": "Make the herby couscous",
+    "text": "While the koftas grill, crumble the stock cube into 180ml boiling water and pour over the couscous in a bowl. Cover with a plate for 5 min, then fluff with a fork. Stir through the cucumber, tomatoes, chopped red onion, the rest of the coriander and the zest and juice of half the lemon."
+   },
+   {
+    "title": "Make the tahini yogurt",
+    "text": "Mix the yogurt with the tahini, the remaining garlic, a squeeze of lemon and a splash of water. It should be smooth and spoonable."
+   },
+   {
+    "title": "Serve",
+    "text": "Warm the pittas under the grill for 1 min. Serve with the koftas, couscous and a big spoonful of tahini yogurt."
+   }
+  ],
+  "tags": [
+   "quick"
+  ]
+ },
+ {
+  "id": "me_crispy_falafel_wraps",
+  "title": "Crispy Falafel Wraps with Tahini Sauce & Chopped Salad",
+  "short": "Falafel wraps",
+  "cuisine": "Middle Eastern",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 35,
+  "ingredients": [
+   {
+    "i": "chickpeas",
+    "q": 400,
+    "t": "1 tin, drained"
+   },
+   {
+    "i": "spring_onions",
+    "q": 3,
+    "t": "3, roughly chopped"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves"
+   },
+   {
+    "i": "cumin",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "ground_coriander",
+    "q": 2,
+    "t": "1 tsp",
+    "opt": true
+   },
+   {
+    "i": "coriander",
+    "q": 20,
+    "t": "\u2154 pack",
+    "swap": "Leave the coriander out of the falafel mix and add 1 extra spring onion instead; scatter the coriander over one wrap only."
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "swap": "Leave the chilli flakes out while cooking and sprinkle them over one portion at the end.",
+    "opt": true
+   },
+   {
+    "i": "plain_flour",
+    "q": 25,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "salt",
+    "q": 3,
+    "t": "1 tsp"
+   },
+   {
+    "i": "oil",
+    "q": 60,
+    "t": "4 tbsp, for frying"
+   },
+   {
+    "i": "tahini",
+    "q": 40,
+    "t": "2\u00bd tbsp",
+    "swap": "Leave the tahini off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "wraps",
+    "q": 2,
+    "t": "2 large"
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, shredded",
+    "swap": "Leave the lettuce off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "cucumber",
+    "q": 0.5,
+    "t": "\u00bd, diced",
+    "swap": "Leave the cucumber off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 100,
+    "t": "100g, chopped"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Drain and rinse the chickpeas, then pat them really dry on a clean tea towel. This helps the falafel crisp up rather than fall apart. Roughly chop the spring onions and peel the garlic. Shred the little gem, dice the cucumber and chop the tomatoes."
+   },
+   {
+    "title": "Blitz the falafel mix",
+    "text": "Put the chickpeas, spring onions, garlic, cumin, ground coriander (optional), chilli flakes (optional), flour and salt in a food processor. Add most of the fresh coriander. Pulse until it forms a coarse crumb that holds together when squeezed; stop before it turns to paste."
+   },
+   {
+    "title": "Shape the falafel",
+    "text": "Shape the mix into 10 small patties, about 1.5cm thick. Rest them on a plate while you make the sauce so they firm up."
+   },
+   {
+    "title": "Make the tahini sauce",
+    "text": "Whisk the tahini with the juice of half the lemon, a pinch of salt and 3\u20134 tbsp cold water. It'll thicken at first, then turn pale, smooth and pourable."
+   },
+   {
+    "title": "Fry the falafel",
+    "text": "Heat the oil in a large frying pan over a medium-high heat. Fry the patties for about 3 min each side until deep golden and crisp. Drain on kitchen paper, then pour away any oil left in the pan and wipe it out."
+   },
+   {
+    "title": "Wrap it up",
+    "text": "Toss the little gem, cucumber and tomatoes with a squeeze of lemon. Warm the wraps in the dry pan for 20 sec each side, then fill with salad and falafel, lightly crushing them. Drizzle with tahini sauce, scatter with the rest of the coriander and roll up."
+   }
+  ],
+  "tags": [
+   "quick",
+   "crispy"
+  ]
+ },
+ {
+  "id": "me_halloumi_harissa_veg_wraps",
+  "title": "Griddled Halloumi & Harissa Veg Wraps with Garlic Yogurt",
+  "short": "Halloumi wraps",
+  "cuisine": "Middle Eastern",
+  "category": "everyday",
+  "protein": "veggie",
+  "time": 25,
+  "ingredients": [
+   {
+    "i": "halloumi",
+    "q": 225,
+    "t": "1 block (225g)"
+   },
+   {
+    "i": "peppers",
+    "q": 1,
+    "t": "1, sliced"
+   },
+   {
+    "i": "courgette",
+    "q": 1,
+    "t": "1, sliced into half-moons"
+   },
+   {
+    "i": "red_onion",
+    "q": 1,
+    "t": "1, cut into wedges"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "harissa",
+    "q": 20,
+    "t": "1\u00bd tbsp",
+    "swap": "Brush the harissa honey over one portion's veg and halloumi only, and drizzle the other with plain honey."
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 80,
+    "t": "5 tbsp"
+   },
+   {
+    "i": "garlic",
+    "q": 1,
+    "t": "1 clove, grated"
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1",
+    "swap": "Leave the lemons off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "wraps",
+    "q": 4,
+    "t": "4"
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, shredded",
+    "swap": "Leave the lettuce off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, to serve",
+    "swap": "Chop the coriander and scatter it over one portion only at the table.",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Slice the pepper, cut the courgette into half-moons and the red onion into wedges. Cut the halloumi into 8 slices and pat dry. Grate the garlic, shred the little gem and chop the coriander. Mix the harissa with the honey and 1 tsp of the oil."
+   },
+   {
+    "title": "Char the veg",
+    "text": "Heat the rest of the oil in a griddle or large frying pan over a high heat. Cook the veg for 8\u201310 min, turning now and then, until charred and tender. Toss with half the harissa honey and tip into a bowl."
+   },
+   {
+    "title": "Make the garlic yogurt",
+    "text": "While the veg cooks, mix the yogurt with the grated garlic, a good squeeze of lemon and a pinch of salt. Cut the rest of the lemon into wedges."
+   },
+   {
+    "title": "Griddle the halloumi",
+    "text": "Return the pan to a medium-high heat and add the halloumi with no extra oil. Cook for 1\u20132 min each side until golden and just softening. Brush with the remaining harissa honey."
+   },
+   {
+    "title": "Wrap and serve",
+    "text": "Warm the wraps in the pan for 20 sec each side. Spread with garlic yogurt, then add little gem, the charred veg, halloumi and coriander (optional). Roll up and serve with the lemon wedges."
+   }
+  ],
+  "tags": [
+   "quick"
+  ]
+ },
+ {
+  "id": "me_sticky_harissa_chicken_traybake",
+  "title": "Sticky Harissa Chicken Traybake with Sweet Potato & Feta",
+  "short": "Harissa chicken traybake",
+  "cuisine": "Middle Eastern",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 50,
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 400,
+    "t": "4\u20135 thighs (400g)"
+   },
+   {
+    "i": "harissa",
+    "q": 45,
+    "t": "3 tbsp"
+   },
+   {
+    "i": "honey",
+    "q": 10,
+    "t": "2 tsp"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1",
+    "swap": "Leave the lemons off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "sweet_potato",
+    "q": 300,
+    "t": "1 large (300g), in 2cm chunks"
+   },
+   {
+    "i": "red_onion",
+    "q": 1,
+    "t": "1, cut into wedges"
+   },
+   {
+    "i": "chickpeas",
+    "q": 400,
+    "t": "1 tin, drained"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 150,
+    "t": "150g"
+   },
+   {
+    "i": "feta",
+    "q": 50,
+    "t": "50g",
+    "swap": "Crumble the feta over one portion only, or serve it in a little bowl on the side."
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 60,
+    "t": "4 tbsp",
+    "swap": "Leave the yogurt off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, to serve",
+    "swap": "Chop the coriander and scatter it over one portion only at the table.",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to taste"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Heat the oven to 200\u00b0C fan. Cut the sweet potato into 2cm chunks and the red onion into wedges. Drain the chickpeas, crush the garlic and chop the coriander. Zest the lemon, then halve it."
+   },
+   {
+    "title": "Marinate the chicken",
+    "text": "In a bowl, mix the harissa, honey, half the oil, the garlic, the juice of half the lemon and a pinch of salt. Add the chicken and turn to coat."
+   },
+   {
+    "title": "Start the veg",
+    "text": "Spread the sweet potato, red onion and chickpeas over a large roasting tray. Toss with the remaining oil and a pinch of salt and roast for 10 min."
+   },
+   {
+    "title": "Roast with the chicken",
+    "text": "Push the veg to the edges and nestle the chicken in the middle. Scrape the leftover marinade over everything and scatter in the tomatoes. Roast for 25\u201330 min until the chicken is sticky, the juices run clear and the sweet potato is tender."
+   },
+   {
+    "title": "Make the lemon yogurt",
+    "text": "While it roasts, mix the yogurt with the lemon zest and a squeeze of juice. Cut the rest of the lemon into wedges."
+   },
+   {
+    "title": "Serve",
+    "text": "Crumble the feta over the tray and scatter with the coriander (optional). Serve straight from the tray with dollops of lemon yogurt and the lemon wedges."
+   }
+  ],
+  "tags": [
+   "traybake",
+   "spicy"
+  ]
+ },
+ {
+  "id": "me_chicken_apricot_tagine",
+  "title": "Moroccan Chicken & Apricot Tagine with Lemon Couscous",
+  "short": "Chicken tagine",
+  "cuisine": "Middle Eastern",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 55,
+  "ingredients": [
+   {
+    "i": "chicken_thighs",
+    "q": 400,
+    "t": "4\u20135 thighs (400g), in large chunks"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1, chopped"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "ginger_paste",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "cumin",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "ground_cinnamon",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "turmeric",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "ground_coriander",
+    "q": 2,
+    "t": "1 tsp",
+    "opt": true
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 200,
+    "t": "\u00bd tin"
+   },
+   {
+    "i": "chickpeas",
+    "q": 200,
+    "t": "\u00bd tin, drained"
+   },
+   {
+    "i": "dried_apricots",
+    "q": 60,
+    "t": "8, halved"
+   },
+   {
+    "i": "stock_cubes",
+    "q": 1,
+    "t": "1 chicken cube in 300ml water"
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "olives",
+    "q": 40,
+    "t": "a small handful, to serve",
+    "swap": "Scatter the olives over one portion only once the dish is plated.",
+    "opt": true
+   },
+   {
+    "i": "couscous",
+    "q": 120,
+    "t": "120g"
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "coriander",
+    "q": 10,
+    "t": "a small handful, to serve",
+    "swap": "Chop the coriander and scatter it over one portion only at the table.",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "to taste"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Chop the onion, crush the garlic and halve the apricots. Cut the chicken into large chunks and season with salt. Make up 300ml stock and drain the chickpeas. Zest the lemon and chop the coriander."
+   },
+   {
+    "title": "Brown the chicken",
+    "text": "Heat the oil in a casserole or deep lidded pan over a medium-high heat. Brown the chicken for 5\u20136 min until golden, then lift onto a plate."
+   },
+   {
+    "title": "Soften the onion",
+    "text": "Turn the heat to medium and cook the onion in the same pan for 6\u20138 min until soft and golden. Stir in the garlic, ginger paste, cumin, cinnamon, turmeric and ground coriander (optional) for 1 min. Add the tomato pur\u00e9e and stir for 30 sec."
+   },
+   {
+    "title": "Simmer the tagine",
+    "text": "Return the chicken with the chopped tomatoes, stock, chickpeas, apricots and honey. Bring to a simmer, cover and cook gently for 25 min until the chicken is tender. Uncover for the last 5 min if the sauce is still thin."
+   },
+   {
+    "title": "Make the lemon couscous",
+    "text": "About 10 min before the tagine is ready, boil the kettle. Put the couscous in a bowl with the lemon zest and a pinch of salt and pour over 180ml boiling water. Cover with a plate for 5 min, then fluff with a fork and add a squeeze of lemon."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Taste the tagine and season with salt and a squeeze of lemon. Spoon over the couscous and scatter with the olives (optional) and coriander (optional)."
+   }
+  ],
+  "tags": [
+   "one-pot",
+   "freezable",
+   "comfort"
+  ]
+ },
+ {
+  "id": "me_lahmacun_lamb_flatbreads",
+  "title": "Crispy Lahmacun-Style Lamb Flatbreads with Herb Salad",
+  "short": "Turkish lamb flatbreads",
+  "cuisine": "Middle Eastern",
+  "category": "everyday",
+  "protein": "lamb",
+  "time": 30,
+  "ingredients": [
+   {
+    "i": "lamb_mince",
+    "q": 200,
+    "t": "200g"
+   },
+   {
+    "i": "red_onion",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "peppers",
+    "q": 0.5,
+    "t": "\u00bd, very finely chopped"
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 100,
+    "t": "100g"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "cumin",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "ground_cinnamon",
+    "q": 0.5,
+    "t": "a pinch",
+    "opt": true
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "swap": "Leave the chilli flakes out while cooking and sprinkle them over one portion at the end.",
+    "opt": true
+   },
+   {
+    "i": "coriander",
+    "q": 15,
+    "t": "\u00bd pack, chopped",
+    "swap": "Leave the coriander out of the lamb topping and toss it into one portion of salad only."
+   },
+   {
+    "i": "wraps",
+    "q": 4,
+    "t": "4"
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, shredded",
+    "swap": "Make one portion of the salad without the lettuce, or serve the lettuce on the side.",
+    "autoSwap": true
+   },
+   {
+    "i": "cucumber",
+    "q": 0.5,
+    "t": "\u00bd, sliced",
+    "swap": "Make one portion of the salad without the cucumber, or serve the cucumber on the side.",
+    "autoSwap": true
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 60,
+    "t": "4 tbsp",
+    "swap": "Make one portion of the salad without the yogurt, or serve the yogurt on the side.",
+    "autoSwap": true
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a good pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Heat the oven to 200\u00b0C fan and put two large baking trays in to heat. Very finely chop half the red onion, the pepper and half the cherry tomatoes. Thinly slice the remaining red onion, halve the rest of the tomatoes and slice the cucumber. Crush the garlic, chop the coriander and shred the little gem."
+   },
+   {
+    "title": "Make the topping",
+    "text": "Put the lamb in a bowl with the chopped onion, pepper and tomatoes, the garlic and tomato pur\u00e9e. Add the cumin, smoked paprika, cinnamon (optional), chilli flakes (optional), half the coriander and a good pinch of salt. Squish together with your hands into a soft, spreadable paste."
+   },
+   {
+    "title": "Spread and bake",
+    "text": "Carefully lay the wraps on the hot trays. Spread a thin layer of the lamb mixture right to the edges so it cooks quickly. Bake for 8\u201310 min until the lamb is cooked through and the edges are crisp."
+   },
+   {
+    "title": "Make the salad",
+    "text": "While they bake, toss the little gem, sliced red onion, halved tomatoes and cucumber with the rest of the coriander. Dress with the juice of half the lemon and a pinch of salt."
+   },
+   {
+    "title": "Serve",
+    "text": "Pile the salad onto the hot flatbreads and drizzle with the yogurt. Squeeze over more lemon, then roll up or fold in half to eat."
+   }
+  ],
+  "tags": [
+   "quick"
+  ]
+ },
+ {
+  "id": "me_homemade_lamb_doner",
+  "title": "Homemade Lamb Doner Kebab with Chilli Sauce & Chips",
+  "short": "Doner kebab",
+  "cuisine": "Middle Eastern",
+  "category": "treat",
+  "protein": "lamb",
+  "time": 80,
+  "ingredients": [
+   {
+    "i": "lamb_mince",
+    "q": 400,
+    "t": "400g"
+   },
+   {
+    "i": "onion",
+    "q": 0.5,
+    "t": "\u00bd, grated"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, crushed"
+   },
+   {
+    "i": "cumin",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "ground_coriander",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 2,
+    "t": "1 tsp",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 4,
+    "t": "1 tsp, plus extra"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "\u00bd tsp"
+   },
+   {
+    "i": "potatoes",
+    "q": 400,
+    "t": "2 medium (400g)"
+   },
+   {
+    "i": "oil",
+    "q": 20,
+    "t": "1\u00bd tbsp"
+   },
+   {
+    "i": "pitta",
+    "q": 4,
+    "t": "4"
+   },
+   {
+    "i": "red_cabbage",
+    "q": 0.25,
+    "t": "\u00bc, finely shredded",
+    "swap": "Leave the cabbage off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, shredded",
+    "swap": "Leave the lettuce off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "cucumber",
+    "q": 0.5,
+    "t": "\u00bd, sliced",
+    "swap": "Leave the cucumber off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "cherry_tomatoes",
+    "q": 80,
+    "t": "80g, sliced"
+   },
+   {
+    "i": "greek_yogurt",
+    "q": 80,
+    "t": "5 tbsp"
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 30,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "sweet_chilli_sauce",
+    "q": 30,
+    "t": "2 tbsp",
+    "swap": "Make one portion of the salad without the sauce, or serve the sauce on the side.",
+    "autoSwap": true
+   },
+   {
+    "i": "chilli_flakes",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "swap": "Keep the chilli sauce in a bowl on the side so it goes on one kebab only.",
+    "opt": true
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Heat the oven to 180\u00b0C fan and line a baking tray with baking paper. Grate the onion and crush the garlic. Cut the potatoes into chunky chips. Shred the red cabbage and little gem, and slice the cucumber and tomatoes."
+   },
+   {
+    "title": "Make the doner mix",
+    "text": "Put the lamb, grated onion and two garlic cloves in a bowl. Add the cumin, ground coriander, smoked paprika, mixed herbs (optional), 1 tsp salt and the black pepper. Knead hard for 3\u20134 min, squeezing and slapping it against the bowl. Stop when it's very smooth and sticky; this gives doner its dense, sliceable texture."
+   },
+   {
+    "title": "Bake the loaf",
+    "text": "Shape the mix into a tight log about 20cm long on the lined tray. Bake for 40\u201345 min until browned and cooked through with clear juices. Cover loosely with foil and rest for 10 min."
+   },
+   {
+    "title": "Roast the chips",
+    "text": "About 10 min after the loaf goes in, toss the chips with 1 tbsp oil and a pinch of salt on a second tray. Roast for 35\u201340 min, turning once, until golden and crisp."
+   },
+   {
+    "title": "Make the sauces",
+    "text": "Mix the yogurt with the remaining garlic, a squeeze of lemon and a pinch of salt. For the chilli sauce, stir together the tomato pur\u00e9e, sweet chilli sauce, chilli flakes (optional), a squeeze of lemon and 1 tbsp water. Toss the cabbage, little gem, cucumber and tomatoes together."
+   },
+   {
+    "title": "Slice and crisp the doner",
+    "text": "Slice the loaf as thinly as you can. Heat the remaining 2 tsp oil in a frying pan over a high heat. Fry the slices for 1\u20132 min until the edges are crisp, in batches if needed."
+   },
+   {
+    "title": "Stuff the pittas",
+    "text": "Warm the pittas in the oven for 2 min, then split them. Stuff with salad and doner, drizzle with both sauces and serve with the chips."
+   }
+  ],
+  "tags": [
+   "fakeaway",
+   "comfort",
+   "crispy"
+  ]
+ },
+ {
+  "id": "me_beef_kofta_meatballs_feta",
+  "title": "Spiced Beef Kofta Meatballs with Feta & Lemony Couscous",
+  "short": "Beef kofta meatballs",
+  "cuisine": "Middle Eastern",
+  "category": "everyday",
+  "protein": "beef",
+  "time": 40,
+  "ingredients": [
+   {
+    "i": "beef_mince",
+    "q": 300,
+    "t": "300g"
+   },
+   {
+    "i": "onion",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "garlic",
+    "q": 3,
+    "t": "3 cloves, crushed"
+   },
+   {
+    "i": "cumin",
+    "q": 4,
+    "t": "2 tsp"
+   },
+   {
+    "i": "ground_cinnamon",
+    "q": 1,
+    "t": "\u00bd tsp"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 2,
+    "t": "1 tsp"
+   },
+   {
+    "i": "coriander",
+    "q": 15,
+    "t": "\u00bd pack, chopped",
+    "swap": "Leave the coriander out of the meatballs and scatter it over one portion only at the table."
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a good pinch"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "to taste"
+   },
+   {
+    "i": "oil",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "tomato_puree",
+    "q": 15,
+    "t": "1 tbsp"
+   },
+   {
+    "i": "chopped_tomatoes",
+    "q": 400,
+    "t": "1 tin"
+   },
+   {
+    "i": "honey",
+    "q": 5,
+    "t": "1 tsp"
+   },
+   {
+    "i": "spinach",
+    "q": 60,
+    "t": "2 handfuls"
+   },
+   {
+    "i": "couscous",
+    "q": 120,
+    "t": "120g"
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1"
+   },
+   {
+    "i": "feta",
+    "q": 60,
+    "t": "60g",
+    "swap": "Crumble the feta over one portion only, or serve it in a little bowl on the side."
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Boil the kettle. Grate half the onion and finely chop the rest. Crush the garlic, chop the coriander and zest the lemon."
+   },
+   {
+    "title": "Shape the meatballs",
+    "text": "In a bowl, mix the mince with the grated onion, one garlic clove, the cumin, half the cinnamon, half the coriander, the salt and pepper. Roll into 12 walnut-sized balls."
+   },
+   {
+    "title": "Brown the meatballs",
+    "text": "Heat the oil in a large, deep frying pan over a medium-high heat. Fry the meatballs for 6\u20138 min, turning, until browned all over; they'll finish cooking in the sauce. Lift onto a plate."
+   },
+   {
+    "title": "Make the sauce",
+    "text": "Cook the chopped onion in the same pan over a medium heat for 5 min until soft. Stir in the remaining garlic, smoked paprika and the rest of the cinnamon for 1 min. Add the tomato pur\u00e9e, chopped tomatoes, honey and 100ml water and bring to a simmer."
+   },
+   {
+    "title": "Simmer the meatballs",
+    "text": "Return the meatballs, cover and cook for 12\u201315 min until cooked through and the sauce is thick. Stir in the spinach for the last 2 min until wilted."
+   },
+   {
+    "title": "Make the lemony couscous",
+    "text": "While the meatballs simmer, put the couscous in a bowl with the lemon zest and a pinch of salt. Pour over 180ml boiling water and cover for 5 min. Fluff with a fork and add a squeeze of lemon juice."
+   },
+   {
+    "title": "Serve",
+    "text": "Spoon the meatballs and sauce over the couscous. Crumble over the feta and scatter with the rest of the coriander."
+   }
+  ],
+  "tags": [
+   "freezable",
+   "kid-friendly",
+   "comfort"
+  ]
+ },
+ {
+  "id": "br_chicken_kiev_wedges",
+  "title": "Garlic Butter Chicken Kievs with Wedges & Broccoli",
+  "short": "Chicken Kiev",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "chicken",
+  "time": 70,
+  "ingredients": [
+   {
+    "i": "chicken_breast",
+    "q": 350,
+    "t": "2 large breasts (about 350g)"
+   },
+   {
+    "i": "butter",
+    "q": 50,
+    "t": "50g, softened"
+   },
+   {
+    "i": "garlic",
+    "q": 2,
+    "t": "2 cloves, crushed"
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1: zest, rest cut into wedges"
+   },
+   {
+    "i": "mixed_herbs",
+    "q": 1,
+    "t": "\u00bd tsp",
+    "opt": true
+   },
+   {
+    "i": "plain_flour",
+    "q": 20,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "eggs",
+    "q": 1,
+    "t": "1, beaten"
+   },
+   {
+    "i": "panko",
+    "q": 60,
+    "t": "60g"
+   },
+   {
+    "i": "oil",
+    "q": 40,
+    "t": "2\u00bd tbsp"
+   },
+   {
+    "i": "potatoes",
+    "q": 600,
+    "t": "600g, cut into wedges"
+   },
+   {
+    "i": "smoked_paprika",
+    "q": 2,
+    "t": "1 tsp",
+    "opt": true
+   },
+   {
+    "i": "broccoli",
+    "q": 200,
+    "t": "200g, in florets"
+   },
+   {
+    "i": "salt",
+    "q": 3,
+    "t": "a good pinch"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep and make the butter",
+    "text": "Heat the oven to 220\u00b0C (200\u00b0C fan). Mash the softened butter with the garlic, lemon zest, mixed herbs (optional) and a pinch of salt. Shape it into a short log on cling film, wrap and freeze for 15 min. Cut the potatoes into wedges, the broccoli into florets and the zested lemon into wedges."
+   },
+   {
+    "title": "Roast the wedges",
+    "text": "Toss the wedges on a large baking tray with 1\u00bd tbsp oil, the smoked paprika (optional) and a pinch of salt. Spread out in one layer and roast on the top shelf for 40\u201345 min, turning halfway, until golden and crisp."
+   },
+   {
+    "title": "Fill the chicken",
+    "text": "Lay each breast between two sheets of baking paper and bash with a rolling pin to an even 1cm thickness, avoiding thin spots. Put half the frozen butter in the middle of each, fold in the sides and roll up into a tight parcel. Sit seam-side down and freeze for 15 min to firm up."
+   },
+   {
+    "title": "Toast the crumbs",
+    "text": "While the chicken chills, put the panko and the remaining 1 tbsp oil in a frying pan over a medium heat. Stir for 3\u20134 min until evenly golden. Tip onto a plate to cool."
+   },
+   {
+    "title": "Coat the kievs",
+    "text": "Set out three plates: the flour seasoned with salt and pepper, the beaten egg and the toasted crumbs. Roll each parcel in flour, then egg, then press firmly into the crumbs, covering the ends well. Put seam-side down on a lined baking tray."
+   },
+   {
+    "title": "Bake the kievs",
+    "text": "Bake on the shelf below the wedges for 25\u201330 min until golden and the chicken is cooked through, with no pink in the middle. Rest for 3 min before serving, as the butter inside is very hot."
+   },
+   {
+    "title": "Cook the broccoli and serve",
+    "text": "For the last 4 min, boil the broccoli in a pan of salted water over a high heat until just tender, then drain. Plate the kievs with the wedges, broccoli and lemon wedges. Cut into the kiev at the table so the garlic butter spills out."
+   }
+  ],
+  "tags": [
+   "crispy",
+   "kid-friendly",
+   "comfort"
+  ]
+ },
+ {
+  "id": "br_gammon_egg_chips",
+  "title": "Gammon Steak, Fried Egg & Chunky Chips with Peas",
+  "short": "Gammon, egg & chips",
+  "cuisine": "British",
+  "category": "everyday",
+  "protein": "pork",
+  "time": 50,
+  "ingredients": [
+   {
+    "i": "gammon_steaks",
+    "q": 450,
+    "t": "2 steaks (450g pack)"
+   },
+   {
+    "i": "potatoes",
+    "q": 600,
+    "t": "600g, cut into chunky chips"
+   },
+   {
+    "i": "oil",
+    "q": 35,
+    "t": "2 tbsp + 1 tsp"
+   },
+   {
+    "i": "eggs",
+    "q": 2,
+    "t": "2"
+   },
+   {
+    "i": "frozen_peas",
+    "q": 160,
+    "t": "160g",
+    "swap": "Cook the peas in their own small pan and serve them on one plate only; cook the same amount of sweetcorn the same way for the other plate."
+   },
+   {
+    "i": "butter",
+    "q": 10,
+    "t": "10g"
+   },
+   {
+    "i": "pineapple_chunks",
+    "q": 100,
+    "t": "100g (about \u00bc tin), drained",
+    "opt": true
+   },
+   {
+    "i": "salt",
+    "q": 3,
+    "t": "a good pinch"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the chips",
+    "text": "Heat the oven to 220\u00b0C (200\u00b0C fan). Cut the potatoes into thick chips (no need to peel), rinse and pat really dry with a clean tea towel. Snip through the fat on the gammon every 2cm so the steaks stay flat. Drain the pineapple (optional)."
+   },
+   {
+    "title": "Roast the chips",
+    "text": "Toss the chips on a large baking tray with 1\u00bd tbsp oil and a good pinch of salt. Spread out in one layer and roast on the top shelf for 35\u201340 min, turning halfway, until golden and crisp."
+   },
+   {
+    "title": "Fry the gammon",
+    "text": "When the chips have 12 min left, heat 1 tsp oil in a large frying pan over a medium-high heat. Fry the gammon for 4\u20135 min each side until golden at the edges and cooked through, with no pink juices. Add the pineapple (optional) for the last 2 min to caramelise, then move it all to a plate and cover with foil."
+   },
+   {
+    "title": "Cook the peas",
+    "text": "While the gammon cooks, boil the peas in a small pan of water for 3 min until tender. Drain and stir through the butter and a pinch of pepper."
+   },
+   {
+    "title": "Fry the eggs",
+    "text": "Wipe out the gammon pan and heat the remaining 1 tsp oil over a medium heat. Crack in the eggs and fry for 3\u20134 min until the whites are set and the edges are lacy. Season with pepper."
+   },
+   {
+    "title": "Finish and serve",
+    "text": "Pile the chips onto plates with a little salt and lay the gammon alongside. Top each steak with an egg and add the pineapple (optional) and peas. Gammon is salty, so taste before adding more salt."
+   }
+  ],
+  "tags": [
+   "comfort",
+   "kid-friendly"
+  ]
+ },
+ {
+  "id": "br_fish_finger_sandwiches",
+  "title": "Crispy Homemade Fish Finger Sandwiches with Tartare",
+  "short": "Fish finger sandwich",
+  "cuisine": "British",
+  "category": "treat",
+  "protein": "fish",
+  "time": 30,
+  "ingredients": [
+   {
+    "i": "cod_fillets",
+    "q": 280,
+    "t": "2 fillets (280g)"
+   },
+   {
+    "i": "plain_flour",
+    "q": 25,
+    "t": "2 tbsp"
+   },
+   {
+    "i": "eggs",
+    "q": 1,
+    "t": "1, beaten"
+   },
+   {
+    "i": "panko",
+    "q": 60,
+    "t": "60g"
+   },
+   {
+    "i": "oil",
+    "q": 60,
+    "t": "4 tbsp, for shallow-frying"
+   },
+   {
+    "i": "wholemeal_bread",
+    "q": 4,
+    "t": "4 slices"
+   },
+   {
+    "i": "butter",
+    "q": 15,
+    "t": "15g, for spreading"
+   },
+   {
+    "i": "mayonnaise",
+    "q": 60,
+    "t": "4 tbsp"
+   },
+   {
+    "i": "gherkins",
+    "q": 30,
+    "t": "2 tbsp, finely chopped",
+    "swap": "Spoon half the lemony mayo into a separate bowl before stirring in the gherkins and capers, and use it for one sandwich."
+   },
+   {
+    "i": "capers",
+    "q": 10,
+    "t": "2 tsp, chopped",
+    "swap": "Leave the capers out of the plain portion of mayo, as with the gherkins.",
+    "opt": true
+   },
+   {
+    "i": "lemon",
+    "q": 1,
+    "t": "1: juice of half, rest in wedges"
+   },
+   {
+    "i": "little_gem",
+    "q": 1,
+    "t": "1, leaves separated",
+    "swap": "Leave the lettuce off one plate.",
+    "autoSwap": true
+   },
+   {
+    "i": "salt",
+    "q": 2,
+    "t": "a pinch"
+   },
+   {
+    "i": "black_pepper",
+    "q": 1,
+    "t": "a pinch"
+   }
+  ],
+  "steps": [
+   {
+    "title": "Prep the fish",
+    "text": "Pat the cod dry and cut it into 8 thick fingers, about 2cm wide. Season with salt and pepper. Finely chop the gherkins and capers, juice half the lemon and cut the rest into wedges. Separate the lettuce leaves."
+   },
+   {
+    "title": "Make the tartare",
+    "text": "Stir the mayonnaise with a squeeze of the lemon juice and a pinch of pepper. Stir in the gherkins and the capers (optional). Chill until needed."
+   },
+   {
+    "title": "Crumb the fish",
+    "text": "Set out three plates: the flour, the beaten egg and the panko. Dust each finger in flour, dip in egg, then press into the panko so it is coated all over."
+   },
+   {
+    "title": "Fry the fish fingers",
+    "text": "Heat the oil in a large frying pan over a medium-high heat until a crumb sizzles straight away. Fry the fingers for 2\u20133 min each side until deep golden and the fish is white and flakes when pressed. Drain on kitchen paper; most of the oil stays in the pan, so let it cool and discard it."
+   },
+   {
+    "title": "Butter the bread",
+    "text": "While the fish drains, butter the bread (toast it first if you like). Spread the tartare thickly over two of the slices."
+   },
+   {
+    "title": "Build and serve",
+    "text": "Lay lettuce leaves over the tartare and top each with 4 fish fingers and a squeeze of lemon. Close with the remaining bread and cut in half. Serve with the lemon wedges."
+   }
+  ],
+  "tags": [
+   "quick",
+   "crispy",
+   "fakeaway",
+   "kid-friendly"
+  ]
+ }
+]

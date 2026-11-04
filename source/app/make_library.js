@@ -25,6 +25,17 @@ for (const f of extraNew) if (ex(f)) for (const i of rd(f)) {
   if (i.nutrition) BLNUT[i.id] = i.nutrition;
   if (ING[i.id]) continue; const o = { tags: [], prices: {}, ...i }; delete o.nutrition; ING[i.id] = o;
 }
+// easy-meal products (kits, jars, frozen, 4 Nov 2026): new ingredients with nutrition; prices load with the v6 set below
+const EASY_PRICES = [];
+if (ex(V2 + '/easy')) for (const f of fs.readdirSync(V2 + '/easy').filter(f => /^prices_.*\.json$/.test(f))) {
+  const d = rd(V2 + '/easy/' + f);
+  for (const i of d.ingredients || []) {
+    if (i.nutrition) BLNUT[i.id] = { per: i.nutrition.per, kcal: i.nutrition.kcal, protein: i.nutrition.protein, carbs: i.nutrition.carbs, fat: i.nutrition.fat };
+    if (ING[i.id]) continue;
+    const o = { tags: [], prices: {}, ...i }; delete o.nutrition; delete o.nutritionSrc; ING[i.id] = o;
+  }
+  EASY_PRICES.push(...(d.prices || []));
+}
 // extra prices for new ingredients
 if (ex(V2 + '/prices')) for (const f of fs.readdirSync(V2 + '/prices').filter(f => f.endsWith('.json'))) for (const p of rd(V2 + '/prices/' + f)) {
   const ing = ING[p.id]; if (!ing) continue; ing.prices = ing.prices || {};
@@ -63,7 +74,8 @@ if (ex(V2 + '/prices_v5')) for (const f of fs.readdirSync(V2 + '/prices_v5').fil
 // and how sure we are (conf: high/medium/low). Gaps get filled; a cross-check replaces a price only when it's better evidence.
 const RANK = { shop: 5, app: 4, compare: 4, match: 3, crowd: 3, news: 3, model: 1 }, CONF = { high: 3, medium: 2, low: 1 };
 let v6filled = 0, v6replaced = 0;
-if (ex(V2 + '/prices_v6')) for (const f of fs.readdirSync(V2 + '/prices_v6').filter(f => /_out\.json$/.test(f))) for (const p of rd(V2 + '/prices_v6/' + f)) {
+const V6 = (ex(V2 + '/prices_v6') ? fs.readdirSync(V2 + '/prices_v6').filter(f => /_out\.json$/.test(f)).flatMap(f => rd(V2 + '/prices_v6/' + f)) : []).concat(EASY_PRICES);
+for (const p of V6) {
   const ing = ING[p.id]; if (!ing) continue; ing.prices = ing.prices || {};
   for (const [shop, x] of Object.entries(p.prices || {})) {
     if (!x || x.unlisted || !(x.price > 0) || !(x.pack > 0) || !x.src) continue;
@@ -138,17 +150,24 @@ if (ex(V2 + '/sources')) for (const f of fs.readdirSync(V2 + '/sources').filter(
   const d = rd(V2 + '/sources/' + f);
   if (f.endsWith('_fixed.json')) { for (const r of d) FIXED[r.id] = r; } else Object.assign(SRC, d);
 }
+// simplified versions (4 Nov 2026): the everyday way to make each dish, fewer spices and extras; the credit becomes "Inspired by"
+const SIMPLE = {};
+if (ex(V2 + '/simplify')) for (const f of fs.readdirSync(V2 + '/simplify').filter(f => /^out_\d+\.json$/.test(f))) for (const x of rd(V2 + '/simplify/' + f)) SIMPLE[x.id] = x;
 const recipes = [], seen = new Set(), problems = [], dropped = [];
 for (const f of recipeFiles) for (const r0 of rd(f)) {
-  const r = FIXED[r0.id] ? { ...r0, ...FIXED[r0.id] } : r0;
+  let r = FIXED[r0.id] ? { ...r0, ...FIXED[r0.id] } : r0;
+  const sx = SIMPLE[r.id];
+  if (sx) { r = { ...r, ingredients: sx.ingredients, steps: sx.steps }; ['time', 'title', 'short'].forEach(k => { if (sx[k]) r[k] = sx[k]; }); r.simplified = true; }
   const au = AUDIT[r.id];
   if (au && au.verdict === 'replace') { dropped.push(r.id); r.retired = true; } // hidden from browsing and suggestions; kept so old plans still open
   if (au) { r.base = r.base || au.base; r.family = r.family || au.family; r.short = r.short || au.short; }
   if (r.photo && !(/^https:\/\/images\.unsplash\.com\//.test(r.photo.url || '') && /^https:\/\/images\.unsplash\.com\//.test(r.photo.thumb || r.photo.url || ''))) delete r.photo;
   if (r.photo && !r.photo.thumb) r.photo.thumb = r.photo.url.replace(/([?&])w=\d+/, '$1w=400');
   const sc = SRC[r.id];
-  if (sc && sc.site && sc.title && sc.url && ['close', 'adapted', 'loose'].includes(sc.match)) { r.source = { title: sc.title, site: sc.site, match: sc.match }; if (sc.author) r.source.author = sc.author; }
-  else if (ex(V2 + '/sources') && !(r.tags || []).includes('quick')) problems.push('no source ' + r.id);
+  if (sc && sc.site && sc.title && sc.url && ['close', 'adapted', 'loose'].includes(sc.match)) { r.source = { title: sc.title, site: sc.site, match: r.simplified ? 'loose' : sc.match }; if (sc.author) r.source.author = sc.author; }
+  else if (ex(V2 + '/sources') && !(r.tags || []).includes('quick') && !r.easy) problems.push('no source ' + r.id);
+  if (r.simplified && r.source) r.source = { ...r.source, match: 'loose' };
+  delete r.simplified;
   if (seen.has(r.id)) { problems.push('dup ' + r.id); continue; }
   const merged = [];
   for (const l of r.ingredients) { const i = ALIAS[l.i] || l.i; const x = merged.find(m => m.i === i); if (x) { x.q = (Number(x.q) || 0) + (Number(l.q) || 0); } else merged.push({ ...l, i }); }

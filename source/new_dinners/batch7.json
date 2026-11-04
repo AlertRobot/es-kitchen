@@ -1,0 +1,407 @@
+[
+  {
+    "id": "ez_chicken_fajitas_kit", "short": "Chicken fajitas (kit)", "title": "Chicken Fajitas from a Kit", "icon": "🌯",
+    "cuisine": "Mexican", "category": "everyday", "easy": true, "protein": "chicken", "base": "bread", "family": "tacos_wraps",
+    "time": 25, "servings": 2, "equipment": ["hob"],
+    "ingredients": [
+      { "i": "fajita_kit", "q": 1, "t": "1 kit (wraps, seasoning and salsa)" },
+      { "i": "chicken_breast", "q": 350, "t": "about 350g, cut into strips" },
+      { "i": "peppers", "q": 2, "t": "2, sliced" },
+      { "i": "onion", "q": 1, "t": "1, sliced" },
+      { "i": "oil", "q": 10, "t": "2 teaspoons" },
+      { "i": "sour_cream", "q": 100, "t": "4 tablespoons, to serve" }
+    ],
+    "steps": [
+      { "title": "Slice everything", "text": "Cut the chicken into thin strips. Slice the peppers and onion." },
+      { "title": "Fry the chicken", "text": "Heat the oil in a large frying pan over a high heat. Add the chicken and fry for 5 to 6 minutes, stirring now and then, until browned and no longer pink in the middle." },
+      { "title": "Add the veg and seasoning", "text": "Add the peppers and onion and cook for 4 to 5 minutes until softened. Sprinkle over the seasoning from the kit with a splash of water (about 3 tablespoons) and stir for 1 minute until everything is coated." },
+      { "title": "Warm the wraps", "text": "Warm the wraps one at a time in a dry frying pan for about 20 seconds each side, or wrap them in foil and put them in the oven at 160°C for 10 minutes." },
+      { "title": "Build your fajitas", "text": "Spoon the chicken and veg into the wraps and top with the salsa from the kit and the soured cream." }
+    ],
+    "tags": ["quick", "kid-friendly", "fakeaway"]
+  },
+  {
+    "id": "ez_beef_tacos_kit", "short": "Beef tacos (kit)", "title": "Crunchy Beef Tacos from a Kit", "icon": "🌮",
+    "cuisine": "Mexican", "category": "everyday", "easy": true, "protein": "beef", "base": "bread", "family": "tacos_wraps",
+    "time": 20, "servings": 2, "equipment": ["hob", "oven"],
+    "ingredients": [
+      { "i": "taco_kit", "q": 1, "t": "1 kit (shells, seasoning and salsa)" },
+      { "i": "beef_mince", "q": 250, "t": "250g" },
+      { "i": "little_gem", "q": 1, "t": "1, shredded" },
+      { "i": "cheddar", "q": 50, "t": "50g, grated" },
+      { "i": "sour_cream", "q": 60, "t": "2 tablespoons, to serve", "opt": true }
+    ],
+    "steps": [
+      { "title": "Brown the mince", "text": "Heat the oven to 180°C. Fry the mince in a frying pan over a medium-high heat for 5 to 6 minutes, breaking it up, until browned all over. Pour off any fat." },
+      { "title": "Season it", "text": "Stir in the seasoning from the kit and the amount of water the packet says (usually about 100 millilitres). Simmer for 3 to 4 minutes until thick." },
+      { "title": "Warm the shells", "text": "Stand the shells on a baking tray and warm them in the oven for 2 to 3 minutes." },
+      { "title": "Fill and serve", "text": "Fill the shells with the mince, then the lettuce, cheese and salsa. Add a spoonful of soured cream if you like." }
+    ],
+    "tags": ["quick", "kid-friendly", "fakeaway"]
+  },
+  {
+    "id": "ez_chilli_sachet", "short": "Chilli con carne (sachet)", "title": "Easy Chilli Con Carne with Rice", "icon": "🌶️",
+    "cuisine": "Mexican", "category": "everyday", "easy": true, "protein": "beef", "base": "rice", "family": "stew_soup",
+    "time": 30, "servings": 2, "equipment": ["hob"],
+    "ingredients": [
+      { "i": "beef_mince", "q": 250, "t": "250g" },
+      { "i": "onion", "q": 1, "t": "1, chopped" },
+      { "i": "chilli_mix", "q": 0.5, "t": "half a sachet of chilli con carne mix" },
+      { "i": "chopped_tomatoes", "q": 400, "t": "1 tin (400g)" },
+      { "i": "kidney_beans", "q": 400, "t": "1 tin, drained" },
+      { "i": "rice", "q": 150, "t": "150g" },
+      { "i": "sour_cream", "q": 60, "t": "2 tablespoons, to serve", "opt": true }
+    ],
+    "steps": [
+      { "title": "Brown the mince", "text": "Fry the mince and onion in a large pan over a medium-high heat for 6 to 8 minutes, breaking up the mince, until browned." },
+      { "title": "Make the chilli", "text": "Stir in half the chilli mix, then the chopped tomatoes and drained kidney beans. Bring to the boil, then simmer for 15 minutes, stirring now and then. Fold the rest of the sachet shut and keep it in the cupboard for next time." },
+      { "title": "Cook the rice", "text": "While the chilli simmers, cook the rice in a pan of boiling water following the packet, then drain." },
+      { "title": "Serve", "text": "Spoon the chilli over the rice, with a dollop of soured cream if you like." }
+    ],
+    "tags": ["quick", "comfort", "one-pot", "freezable"]
+  },
+  {
+    "id": "ez_spag_bol_jar", "short": "Spaghetti bolognese (jar)", "title": "Easy Spaghetti Bolognese", "icon": "🍝",
+    "cuisine": "Italian", "category": "everyday", "easy": true, "protein": "beef", "base": "pasta", "family": "pasta",
+    "time": 25, "servings": 2, "equipment": ["hob"],
+    "ingredients": [
+      { "i": "beef_mince", "q": 250, "t": "250g" },
+      { "i": "onion", "q": 1, "t": "1, chopped" },
+      { "i": "bolognese_sauce", "q": 500, "t": "1 jar" },
+      { "i": "pasta", "q": 180, "t": "180g spaghetti" },
+      { "i": "parmesan", "q": 15, "t": "a little, grated, to serve", "opt": true }
+    ],
+    "steps": [
+      { "title": "Brown the mince", "text": "Fry the mince and onion in a large pan over a medium-high heat for 6 to 8 minutes, breaking up the mince, until browned." },
+      { "title": "Add the sauce", "text": "Pour in the jar of sauce, bring to a gentle bubble and simmer for 10 minutes." },
+      { "title": "Cook the spaghetti", "text": "Meanwhile, cook the spaghetti in a big pan of boiling water for about 10 minutes (check the packet), then drain." },
+      { "title": "Serve", "text": "Pile the spaghetti into bowls and spoon over the sauce. Grate over a little cheese if you like." }
+    ],
+    "tags": ["quick", "comfort", "kid-friendly", "freezable"]
+  },
+  {
+    "id": "ez_tikka_masala_kit", "short": "Chicken tikka masala (kit)", "title": "Chicken Tikka Masala from a Curry Kit", "icon": "🍛",
+    "cuisine": "Indian", "category": "everyday", "easy": true, "protein": "chicken", "base": "rice", "family": "curry",
+    "time": 25, "servings": 2, "equipment": ["hob"],
+    "ingredients": [
+      { "i": "tikka_curry_kit", "q": 1, "t": "1 kit (spices, paste and sauce)" },
+      { "i": "chicken_breast", "q": 350, "t": "about 350g, diced" },
+      { "i": "onion", "q": 1, "t": "1, chopped", "opt": true },
+      { "i": "oil", "q": 10, "t": "2 teaspoons" },
+      { "i": "rice", "q": 150, "t": "150g" }
+    ],
+    "steps": [
+      { "title": "Start the rice", "text": "Cook the rice in a pan of boiling water following the packet, then drain." },
+      { "title": "Toast the spices", "text": "Heat the oil in a large frying pan over a medium heat. If you're using the onion, fry it for 5 minutes until soft. Add the spices (step 1 of the kit) and stir for 30 seconds." },
+      { "title": "Fry the chicken in the paste", "text": "Add the chicken and the paste (step 2) and fry for 5 to 6 minutes, stirring, until the chicken is sealed all over." },
+      { "title": "Simmer in the sauce", "text": "Pour in the sauce (step 3), bring to a gentle bubble and simmer for 10 to 12 minutes until the chicken is cooked through. Serve with the rice." }
+    ],
+    "tags": ["quick", "fakeaway", "comfort"]
+  },
+  {
+    "id": "ez_korma_jar", "short": "Chicken korma (jar)", "title": "Easy Chicken Korma with Rice", "icon": "🍛",
+    "cuisine": "Indian", "category": "everyday", "easy": true, "protein": "chicken", "base": "rice", "family": "curry",
+    "time": 25, "servings": 2, "equipment": ["hob"],
+    "ingredients": [
+      { "i": "chicken_breast", "q": 350, "t": "about 350g, diced" },
+      { "i": "onion", "q": 1, "t": "1, chopped", "opt": true },
+      { "i": "korma_sauce", "q": 450, "t": "1 jar" },
+      { "i": "oil", "q": 10, "t": "2 teaspoons" },
+      { "i": "rice", "q": 150, "t": "150g" }
+    ],
+    "steps": [
+      { "title": "Start the rice", "text": "Cook the rice in a pan of boiling water following the packet, then drain." },
+      { "title": "Fry the chicken", "text": "Heat the oil in a large frying pan over a medium-high heat. Fry the chicken (and the onion, if using) for 5 to 6 minutes until sealed all over." },
+      { "title": "Simmer in the sauce", "text": "Pour in the jar of sauce, bring to a gentle bubble and simmer for 10 to 12 minutes until the chicken is cooked through. Serve with the rice." }
+    ],
+    "tags": ["quick", "fakeaway", "comfort", "kid-friendly"]
+  },
+  {
+    "id": "ez_sweet_sour_jar", "short": "Sweet & sour chicken (jar)", "title": "Easy Sweet & Sour Chicken with Rice", "icon": "🍍",
+    "cuisine": "Asian", "category": "everyday", "easy": true, "protein": "chicken", "base": "rice", "family": "stir_fry",
+    "time": 20, "servings": 2, "equipment": ["hob"],
+    "ingredients": [
+      { "i": "chicken_breast", "q": 350, "t": "about 350g, diced" },
+      { "i": "peppers", "q": 1, "t": "1, chopped" },
+      { "i": "onion", "q": 1, "t": "1, chopped" },
+      { "i": "sweet_sour_sauce", "q": 450, "t": "1 jar" },
+      { "i": "oil", "q": 10, "t": "2 teaspoons" },
+      { "i": "rice", "q": 150, "t": "150g" }
+    ],
+    "steps": [
+      { "title": "Start the rice", "text": "Cook the rice in a pan of boiling water following the packet, then drain." },
+      { "title": "Fry the chicken and veg", "text": "Heat the oil in a large frying pan or wok over a high heat. Fry the chicken for 5 minutes, then add the pepper and onion and fry for 3 to 4 minutes more." },
+      { "title": "Add the sauce", "text": "Pour in the jar of sauce and simmer for 5 to 6 minutes until the chicken is cooked through. Serve with the rice." }
+    ],
+    "tags": ["quick", "fakeaway", "kid-friendly"]
+  },
+  {
+    "id": "ez_chicken_noodles_pouch", "short": "Chicken noodle stir-fry", "title": "Chicken Noodle Stir-Fry with a Sauce Pouch", "icon": "🍜",
+    "cuisine": "Asian", "category": "everyday", "easy": true, "protein": "chicken", "base": "noodles", "family": "stir_fry",
+    "time": 15, "servings": 2, "equipment": ["hob"],
+    "ingredients": [
+      { "i": "chicken_breast", "q": 300, "t": "about 300g, cut into strips" },
+      { "i": "stir_fry_veg", "q": 300, "t": "1 pack" },
+      { "i": "straight_to_wok_noodles", "q": 300, "t": "300g (2 pouches)" },
+      { "i": "stir_fry_sauce", "q": 120, "t": "1 pouch" },
+      { "i": "oil", "q": 15, "t": "1 tablespoon" }
+    ],
+    "steps": [
+      { "title": "Fry the chicken", "text": "Heat the oil in a wok or large frying pan over a high heat. Fry the chicken for 5 to 6 minutes until golden and cooked through." },
+      { "title": "Add the veg", "text": "Tip in the stir-fry veg and toss for 2 to 3 minutes until just softened." },
+      { "title": "Noodles and sauce", "text": "Loosen the noodles with your fingers, add them with the sauce and toss for 2 minutes until hot. Serve straight away." }
+    ],
+    "tags": ["quick", "fakeaway", "high-protein"]
+  },
+  {
+    "id": "ez_chicken_katsu", "short": "Chicken katsu curry", "title": "Easy Chicken Katsu Curry", "icon": "🍛",
+    "cuisine": "Asian", "category": "everyday", "easy": true, "protein": "chicken", "base": "rice", "family": "fried",
+    "time": 30, "hands": 10, "servings": 2, "equipment": ["oven", "hob"],
+    "ingredients": [
+      { "i": "breaded_chicken_fillets", "q": 2, "t": "2 frozen breaded chicken fillets" },
+      { "i": "katsu_sauce", "q": 200, "t": "about 200g (half a jar, or 1 pouch)" },
+      { "i": "rice", "q": 150, "t": "150g" },
+      { "i": "salad_leaves", "q": 40, "t": "a handful, to serve", "opt": true }
+    ],
+    "steps": [
+      { "title": "Bake the chicken", "text": "Heat the oven following the packet (usually 200°C) and bake the breaded chicken for the time it says, about 25 minutes, turning halfway." },
+      { "title": "Cook the rice", "text": "Meanwhile, cook the rice in a pan of boiling water following the packet, then drain." },
+      { "title": "Warm the sauce", "text": "Warm the katsu sauce in a small pan for 3 to 4 minutes until bubbling." },
+      { "title": "Serve", "text": "Slice the chicken and lay it over the rice. Pour the sauce alongside and add a few salad leaves if you like." }
+    ],
+    "tags": ["quick", "fakeaway", "crispy"]
+  },
+  {
+    "id": "ez_chicken_pasta_bake_jar", "short": "Chicken pasta bake (jar)", "title": "Easy Cheesy Chicken Pasta Bake", "icon": "🧀",
+    "cuisine": "Italian", "category": "everyday", "easy": true, "protein": "chicken", "base": "pasta", "family": "pie_bake",
+    "time": 30, "hands": 15, "servings": 2, "equipment": ["hob", "oven"],
+    "ingredients": [
+      { "i": "chicken_breast", "q": 300, "t": "about 300g, diced" },
+      { "i": "pasta", "q": 180, "t": "180g penne" },
+      { "i": "pasta_bake_sauce", "q": 490, "t": "1 jar" },
+      { "i": "cheddar", "q": 60, "t": "60g, grated" },
+      { "i": "oil", "q": 10, "t": "2 teaspoons" }
+    ],
+    "steps": [
+      { "title": "Cook the pasta", "text": "Heat the oven to 200°C (180°C fan). Cook the pasta in a big pan of boiling water for 2 minutes less than the packet says, then drain." },
+      { "title": "Fry the chicken", "text": "Meanwhile, heat the oil in a frying pan over a medium-high heat and fry the chicken for 6 to 8 minutes until cooked through." },
+      { "title": "Mix and bake", "text": "Stir the pasta, chicken and jar of sauce together in an ovenproof dish. Scatter over the cheese and bake for 15 minutes until golden and bubbling." }
+    ],
+    "tags": ["comfort", "kid-friendly"]
+  },
+  {
+    "id": "ez_pesto_chicken_pasta", "short": "Pesto chicken pasta", "title": "Pesto Chicken Pasta", "icon": "🌿",
+    "cuisine": "Italian", "category": "everyday", "easy": true, "protein": "chicken", "base": "pasta", "family": "pasta",
+    "time": 20, "servings": 2, "equipment": ["hob"],
+    "ingredients": [
+      { "i": "chicken_breast", "q": 250, "t": "about 250g, diced" },
+      { "i": "pasta", "q": 180, "t": "180g" },
+      { "i": "pesto", "q": 95, "t": "half a jar" },
+      { "i": "cherry_tomatoes", "q": 150, "t": "a handful, halved", "opt": true },
+      { "i": "oil", "q": 10, "t": "2 teaspoons" },
+      { "i": "parmesan", "q": 15, "t": "a little, grated, to serve", "opt": true }
+    ],
+    "steps": [
+      { "title": "Cook the pasta", "text": "Cook the pasta in a big pan of boiling water following the packet. Save a mugful of the water, then drain." },
+      { "title": "Fry the chicken", "text": "Meanwhile, heat the oil in a frying pan over a medium-high heat and fry the chicken for 6 to 8 minutes until golden and cooked through. Add the tomatoes for the last 2 minutes if using." },
+      { "title": "Toss together", "text": "Tip the pasta into the chicken pan with the pesto and a splash of the saved water. Toss until glossy, then serve with a little grated cheese if you like." }
+    ],
+    "tags": ["quick", "kid-friendly"]
+  },
+  {
+    "id": "ez_frozen_pizza", "short": "Pizza night (frozen)", "title": "Frozen Pizza Night", "icon": "🍕",
+    "cuisine": "Italian", "category": "treat", "easy": true, "protein": "veggie", "base": "bread", "family": "pizza",
+    "time": 20, "hands": 2, "servings": 2, "equipment": ["oven"],
+    "ingredients": [
+      { "i": "frozen_pizza", "q": 2, "t": "2 pizzas, one each" },
+      { "i": "salad_leaves", "q": 60, "t": "a bag, to serve", "opt": true }
+    ],
+    "steps": [
+      { "title": "Heat the oven", "text": "Heat the oven to the temperature on the pizza box, usually 200 to 220°C." },
+      { "title": "Bake", "text": "Take off all the packaging and bake the pizzas straight on the oven shelves for the time on the box, usually 12 to 15 minutes, until the cheese is bubbling." },
+      { "title": "Serve", "text": "Slice and serve, with a little salad on the side if you like." }
+    ],
+    "tags": ["quick", "fakeaway", "kid-friendly"]
+  },
+  {
+    "id": "ez_sausage_mash", "short": "Sausage & mash", "title": "Sausage & Mash with Gravy", "icon": "🌭",
+    "cuisine": "British", "category": "everyday", "easy": true, "protein": "pork", "base": "potato", "family": "roast_traybake",
+    "time": 30, "hands": 15, "servings": 2, "equipment": ["oven", "hob"],
+    "ingredients": [
+      { "i": "sausages", "q": 6, "t": "6" },
+      { "i": "potatoes", "q": 600, "t": "600g, peeled and chopped" },
+      { "i": "butter", "q": 15, "t": "a knob (15g)" },
+      { "i": "milk", "q": 50, "t": "a splash (50 millilitres)" },
+      { "i": "gravy", "q": 30, "t": "4 heaped teaspoons of granules" },
+      { "i": "frozen_mixed_veg", "q": 200, "t": "200g" }
+    ],
+    "steps": [
+      { "title": "Bake the sausages", "text": "Heat the oven to 200°C (180°C fan). Put the sausages on a baking tray and bake for 25 minutes, turning halfway, until golden and cooked through." },
+      { "title": "Boil the potatoes", "text": "Meanwhile, put the potatoes in a pan of cold salted water, bring to the boil and simmer for 15 minutes until soft." },
+      { "title": "Cook the veg", "text": "Cook the frozen veg in a small pan of boiling water for 3 to 4 minutes, then drain." },
+      { "title": "Mash and make the gravy", "text": "Drain the potatoes and mash with the butter and milk. Make the gravy by stirring the granules into about 280 millilitres of boiling water from the kettle. Serve the sausages on the mash with the veg and plenty of gravy." }
+    ],
+    "tags": ["comfort", "kid-friendly"]
+  },
+  {
+    "id": "ez_kievs_chips_beans", "short": "Kievs, chips & beans", "title": "Chicken Kievs with Chips & Beans", "icon": "🍗",
+    "cuisine": "British", "category": "everyday", "easy": true, "protein": "chicken", "base": "potato", "family": "fried",
+    "time": 30, "hands": 5, "servings": 2, "equipment": ["oven", "hob"],
+    "ingredients": [
+      { "i": "chicken_kievs", "q": 2, "t": "2" },
+      { "i": "oven_chips", "q": 300, "t": "300g" },
+      { "i": "baked_beans", "q": 420, "t": "1 tin" }
+    ],
+    "steps": [
+      { "title": "Oven on", "text": "Heat the oven following the kiev packet, usually 200°C (180°C fan)." },
+      { "title": "Bake", "text": "Put the kievs on one tray and spread the chips on another. Bake both for the time on the packets, usually 25 to 30 minutes, turning the chips halfway." },
+      { "title": "Beans and serve", "text": "Warm the beans in a small pan for the last 5 minutes. Serve everything together." }
+    ],
+    "tags": ["quick", "comfort", "kid-friendly", "crispy"]
+  },
+  {
+    "id": "ez_fish_fingers_chips", "short": "Fish fingers, chips & beans", "title": "Fish Fingers, Chips & Beans", "icon": "🐟",
+    "cuisine": "British", "category": "everyday", "easy": true, "protein": "fish", "base": "potato", "family": "fried",
+    "time": 25, "hands": 5, "servings": 2, "equipment": ["oven", "hob"],
+    "ingredients": [
+      { "i": "fish_fingers", "q": 8, "t": "8, four each" },
+      { "i": "oven_chips", "q": 300, "t": "300g" },
+      { "i": "baked_beans", "q": 420, "t": "1 tin" },
+      { "i": "ketchup", "q": 30, "t": "to serve", "opt": true }
+    ],
+    "steps": [
+      { "title": "Oven on", "text": "Heat the oven to 220°C (200°C fan), or whatever the chip packet says." },
+      { "title": "Chips first", "text": "Spread the chips on a baking tray and bake for 10 minutes." },
+      { "title": "Add the fish fingers", "text": "Put the fish fingers on another tray and bake for 15 to 18 minutes (check the packet), turning halfway. Give the chips a shake at the same time." },
+      { "title": "Beans and serve", "text": "Warm the beans in a small pan for the last 5 minutes. Serve everything together." }
+    ],
+    "tags": ["quick", "comfort", "kid-friendly", "crispy"]
+  },
+  {
+    "id": "ez_gammon_egg_chips", "short": "Gammon, egg & chips", "title": "Gammon, Egg & Chips", "icon": "🍳",
+    "cuisine": "British", "category": "everyday", "easy": true, "protein": "pork", "base": "potato", "family": "grill_steak",
+    "time": 25, "hands": 10, "servings": 2, "equipment": ["oven", "hob"],
+    "ingredients": [
+      { "i": "gammon_steaks", "q": 300, "t": "2 steaks (about 300g)" },
+      { "i": "eggs", "q": 2, "t": "2" },
+      { "i": "oven_chips", "q": 300, "t": "300g" },
+      { "i": "oil", "q": 10, "t": "2 teaspoons" },
+      { "i": "pineapple_chunks", "q": 140, "t": "a few chunks, to serve", "opt": true }
+    ],
+    "steps": [
+      { "title": "Chips in", "text": "Heat the oven to 220°C (200°C fan). Spread the chips on a baking tray and bake for 20 to 25 minutes (check the packet), shaking halfway." },
+      { "title": "Fry the gammon", "text": "With 10 minutes to go, snip the fat on the gammon every few centimetres so it stays flat. Heat half the oil in a frying pan over a medium-high heat and fry the gammon for 3 to 4 minutes each side until cooked through. Keep it warm on a plate." },
+      { "title": "Fry the eggs", "text": "Add the rest of the oil to the pan and fry the eggs for 2 to 3 minutes until the whites are set. Serve with the gammon and chips, and a few pineapple chunks if you like." }
+    ],
+    "tags": ["quick", "comfort", "high-protein"]
+  },
+  {
+    "id": "ez_lasagne_garlic_bread", "short": "Lasagne & garlic bread", "title": "Shop-Bought Lasagne with Garlic Bread", "icon": "🍝",
+    "cuisine": "Italian", "category": "everyday", "easy": true, "protein": "beef", "base": "pasta", "family": "pie_bake",
+    "time": 50, "hands": 5, "servings": 2, "equipment": ["oven"],
+    "ingredients": [
+      { "i": "ready_lasagne", "q": 1, "t": "1 lasagne (for two)" },
+      { "i": "garlic_bread", "q": 1, "t": "1 garlic baguette" },
+      { "i": "salad_leaves", "q": 60, "t": "a bag, to serve", "opt": true }
+    ],
+    "steps": [
+      { "title": "Bake the lasagne", "text": "Heat the oven following the lasagne packet, usually 190 to 200°C. Pierce the film and bake for the time it says, usually 40 to 45 minutes, until piping hot all the way through." },
+      { "title": "Add the garlic bread", "text": "Put the garlic bread in for the last 10 to 12 minutes (check its packet)." },
+      { "title": "Serve", "text": "Let the lasagne stand for 2 minutes, then serve with the garlic bread and a little salad if you like." }
+    ],
+    "tags": ["comfort", "kid-friendly"]
+  },
+  {
+    "id": "ez_steak_pie_mash", "short": "Steak pie & mash", "title": "Steak Pie with Mash, Veg & Gravy", "icon": "🥧",
+    "cuisine": "British", "category": "everyday", "easy": true, "protein": "beef", "base": "potato", "family": "pie_bake",
+    "time": 40, "hands": 15, "servings": 2, "equipment": ["oven", "hob"],
+    "ingredients": [
+      { "i": "steak_pie", "q": 2, "t": "2 individual steak pies (or 1 pie for two)" },
+      { "i": "potatoes", "q": 600, "t": "600g, peeled and chopped" },
+      { "i": "butter", "q": 15, "t": "a knob (15g)" },
+      { "i": "milk", "q": 50, "t": "a splash (50 millilitres)" },
+      { "i": "frozen_mixed_veg", "q": 200, "t": "200g" },
+      { "i": "gravy", "q": 25, "t": "3 heaped teaspoons of granules" }
+    ],
+    "steps": [
+      { "title": "Bake the pies", "text": "Heat the oven following the pie packet, usually 200°C (180°C fan), and bake the pies for the time it says, usually 30 to 35 minutes, until golden and piping hot." },
+      { "title": "Boil the potatoes", "text": "Meanwhile, put the potatoes in a pan of cold salted water, bring to the boil and simmer for 15 minutes until soft." },
+      { "title": "Cook the veg", "text": "Cook the frozen veg in a small pan of boiling water for 3 to 4 minutes, then drain." },
+      { "title": "Mash and gravy", "text": "Drain the potatoes and mash with the butter and milk. Stir the gravy granules into about 230 millilitres of boiling water from the kettle. Serve the pies with the mash, veg and gravy." }
+    ],
+    "tags": ["comfort"]
+  },
+  {
+    "id": "ez_chicken_burgers_chips", "short": "Crispy chicken burgers", "title": "Crispy Chicken Burgers & Chips", "icon": "🍔",
+    "cuisine": "American", "category": "treat", "easy": true, "protein": "chicken", "base": "bread", "family": "burger_sandwich",
+    "time": 25, "hands": 5, "servings": 2, "equipment": ["oven"],
+    "ingredients": [
+      { "i": "breaded_chicken_fillets", "q": 2, "t": "2 frozen breaded chicken fillets" },
+      { "i": "burger_buns", "q": 2, "t": "2" },
+      { "i": "little_gem", "q": 0.5, "t": "a few leaves" },
+      { "i": "light_mayonnaise", "q": 30, "t": "2 tablespoons" },
+      { "i": "oven_chips", "q": 300, "t": "300g" }
+    ],
+    "steps": [
+      { "title": "Bake", "text": "Heat the oven following the packets, usually 200 to 220°C. Bake the chicken and the chips on separate trays for the times on their packets, usually about 25 minutes, turning halfway." },
+      { "title": "Toast the buns", "text": "Split the buns and toast them, cut side up, in the oven for the last 2 minutes." },
+      { "title": "Build", "text": "Spread the buns with mayo, add the lettuce and the chicken, and serve with the chips." }
+    ],
+    "tags": ["quick", "fakeaway", "kid-friendly", "crispy"]
+  },
+  {
+    "id": "ez_beef_burgers_chips", "short": "Cheeseburgers & chips", "title": "Easy Cheeseburgers & Chips", "icon": "🍔",
+    "cuisine": "American", "category": "treat", "easy": true, "protein": "beef", "base": "bread", "family": "burger_sandwich",
+    "time": 25, "hands": 10, "servings": 2, "equipment": ["oven", "hob"],
+    "ingredients": [
+      { "i": "beef_burgers", "q": 2, "t": "2 quarter-pounders" },
+      { "i": "burger_buns", "q": 2, "t": "2" },
+      { "i": "cheddar", "q": 40, "t": "2 slices (40g)" },
+      { "i": "little_gem", "q": 0.5, "t": "a few leaves" },
+      { "i": "ketchup", "q": 20, "t": "to serve" },
+      { "i": "oven_chips", "q": 300, "t": "300g" }
+    ],
+    "steps": [
+      { "title": "Chips in", "text": "Heat the oven to 220°C (200°C fan), or whatever the chip packet says, and bake the chips for 20 to 25 minutes, shaking halfway." },
+      { "title": "Fry the burgers", "text": "With 12 minutes to go, fry the burgers in a dry frying pan over a medium-high heat for 5 to 6 minutes each side until cooked through. Lay the cheese on top for the last minute and cover the pan so it melts." },
+      { "title": "Build", "text": "Toast the buns, then fill with lettuce, the burgers and ketchup. Serve with the chips." }
+    ],
+    "tags": ["quick", "fakeaway", "kid-friendly"]
+  },
+  {
+    "id": "ez_southern_fried_chicken", "short": "Southern fried chicken", "title": "Southern Fried Chicken, Chips & Coleslaw", "icon": "🍗",
+    "cuisine": "American", "category": "treat", "easy": true, "protein": "chicken", "base": "potato", "family": "fried",
+    "time": 25, "hands": 5, "servings": 2, "equipment": ["oven", "hob"],
+    "ingredients": [
+      { "i": "southern_fried_chicken", "q": 350, "t": "about 350g" },
+      { "i": "oven_chips", "q": 300, "t": "300g" },
+      { "i": "coleslaw", "q": 150, "t": "150g" },
+      { "i": "sweetcorn", "q": 150, "t": "150g" }
+    ],
+    "steps": [
+      { "title": "Bake", "text": "Heat the oven following the chicken packet, usually 200°C (180°C fan). Bake the chicken and chips on separate trays for the times on their packets, usually 20 to 25 minutes, turning halfway." },
+      { "title": "Sweetcorn", "text": "Cook the sweetcorn in a small pan of boiling water for 3 minutes, then drain." },
+      { "title": "Serve", "text": "Serve the chicken and chips with the sweetcorn and coleslaw." }
+    ],
+    "tags": ["quick", "fakeaway", "kid-friendly", "crispy"]
+  },
+  {
+    "id": "ez_easy_roast", "short": "Easy roast chicken dinner", "title": "Easy Roast Chicken Dinner", "icon": "🍗",
+    "cuisine": "British", "category": "everyday", "easy": true, "protein": "chicken", "base": "potato", "family": "roast_traybake",
+    "time": 45, "hands": 10, "servings": 2, "equipment": ["oven", "hob"],
+    "ingredients": [
+      { "i": "cooked_whole_chicken", "q": 0.5, "t": "half a cooked whole chicken" },
+      { "i": "frozen_roast_potatoes", "q": 400, "t": "400g" },
+      { "i": "frozen_yorkshires", "q": 4, "t": "4" },
+      { "i": "frozen_mixed_veg", "q": 250, "t": "250g" },
+      { "i": "gravy", "q": 30, "t": "4 heaped teaspoons of granules" }
+    ],
+    "steps": [
+      { "title": "Roast potatoes in", "text": "Heat the oven following the roast potato packet, usually 220°C (200°C fan). Spread the potatoes on a tray and bake for the time it says, usually 35 to 40 minutes, turning halfway." },
+      { "title": "Warm the chicken", "text": "Carve half the chicken into pieces, put it in a small dish, cover with foil and warm it in the oven for the last 15 minutes. Keep the rest of the chicken in the fridge for lunches." },
+      { "title": "Yorkshires and veg", "text": "Put the Yorkshire puddings in for the last 4 to 5 minutes. Cook the frozen veg in a pan of boiling water for 3 to 4 minutes, then drain." },
+      { "title": "Gravy and serve", "text": "Stir the gravy granules into about 280 millilitres of boiling water from the kettle. Serve everything with plenty of gravy." }
+    ],
+    "tags": ["comfort"]
+  }
+]

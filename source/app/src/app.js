@@ -8,7 +8,7 @@ const Store = window.Store;
 
 const TODAY = isoDate(new Date());
 const EQUIPMENT = [['hob', 'Hob'], ['oven', 'Oven'], ['grill', 'Grill'], ['microwave', 'Microwave'], ['air_fryer', 'Air fryer'], ['slow_cooker', 'Slow cooker'], ['blender', 'Blender'], ['food_processor', 'Food processor']];
-const DEFAULTS = { shop: 'tesco', useLoyalty: true, weeknightCap: 30, monthlyBudget: 450, treatDays: [5], style: 'balanced',
+const DEFAULTS = { shop: 'tesco', useLoyalty: true, weeknightCap: 30, monthlyBudget: 450, treatDays: [5], easyDays: [], style: 'balanced',
   equipment: { hob: true, oven: true, grill: true, microwave: true, air_fryer: false, slow_cooker: false, blender: false, food_processor: false } };
 const CUISINES = ['Italian', 'British', 'American', 'Mexican', 'Middle Eastern', 'Indian', 'Asian'];
 const PROTEINS = ['beef', 'pork', 'chicken', 'lamb', 'fish', 'prawns', 'veggie'];
@@ -219,6 +219,8 @@ function tidyRecipe(x) {
   const r = { ...x, time: upTo(x.time, 1440, 0), servings: num(x.servings, 0) > 0 ? Math.max(1, upTo(x.servings, 50, 2)) : 2 }; delete r.removed;
   ['title', 'icon', 'cuisine', 'protein', 'category', 'meal', 'short', 'airFryer', 'batch', 'base', 'family'].forEach(k => { if (k in r) r[k] = txt(r[k]); });
   if ('keepsDays' in r) r.keepsDays = num(r.keepsDays, 0);
+  if ('easy' in r) r.easy = r.easy === true;
+  if ('hands' in r) { if (r.hands == null || r.hands === '') delete r.hands; else r.hands = upTo(r.hands, 1440, 0); }
   ['equipment', 'tags'].forEach(k => { if (k in r) r[k] = (Array.isArray(r[k]) ? r[k] : []).map(txt); });
   if (Array.isArray(r.ingredients)) r.ingredients = r.ingredients.filter(l => l && typeof l === 'object').map(l => { const o = { ...l, i: txt(l.i), q: upTo(l.q, 100000, 0), t: txt(l.t) }; if ('swap' in l) o.swap = txt(l.swap) || undefined; return o; });
   if ('steps' in r) r.steps = (Array.isArray(r.steps) ? r.steps : []).map(s => (s && typeof s === 'object' ? { ...s, title: txt(s.title), text: txt(s.text) } : txt(s)));
@@ -253,6 +255,7 @@ function tidySettings(s) {
   ['weeknightCap', 'monthlyBudget'].forEach(k => { x[k] = num(x[k], DEFAULTS[k]); });
   ['stapleBudget', 'freezerSpace'].forEach(k => { if (k in x) x[k] = num(x[k], k === 'stapleBudget' ? 8 : 0); });
   x.treatDays = (Array.isArray(x.treatDays) ? x.treatDays : []).map(d => num(d, -1)).filter(d => d >= 0 && d < 7);
+  x.easyDays = (Array.isArray(x.easyDays) ? x.easyDays : []).map(d => num(d, -1)).filter(d => d >= 0 && d < 7);
   if ('lateCutoff' in x && !hhmm(x.lateCutoff)) delete x.lateCutoff;
   if (x.remind && typeof x.remind === 'object' && 'cookAt' in x.remind && !hhmm(x.remind.cookAt)) x.remind = { ...x.remind, cookAt: '18:00' };
   if (!SHOPS.some(sh => sh.id === x.shop)) x.shop = DEFAULTS.shop;
@@ -680,13 +683,13 @@ function renderWeek() {
   if (footFirst) out += weekFoot(w, emptyN, planned, locked);
   const defrost = []; (sim.defrostNotes || []).forEach(n => { const k = defrost.find(x => x.d === n.d && x.i === n.i && x.meal === n.meal); if (k) k.q += n.q; else defrost.push({ ...n }); });
   out += '<div class="days">';
-  const treatDays = S.settings.treatDays || [];
+  const treatDays = S.settings.treatDays || [], easyDays = S.settings.easyDays || [];
   for (let d = 0; d < 7; d++) {
     const day = w.days[d], r = day.r && S.RMAP[day.r];
     const isTreat = treatDays.includes(d);
     const eaters = S.people.filter(p => p.dinner !== false), inN = eaters.filter(p => !awayOn(w, p, d)), none = eaters.length > 0 && !inN.length;
     const whoTag = inN.length && inN.length < eaters.length ? '<span class="tag who">Just ' + h(inN.map(p => nick(p.name)).join(' & ')) + '</span>' : '';
-    out += '<div class="day ' + (d === todayIdx ? 'today' : '') + '"><div class="when"><b>' + DAY_NAMES[d] + '</b><span>' + parseIso(addDays(w.start, d)).getDate() + '</span>' + (isTreat ? '<span class="treatdot" title="Treat night">★</span>' : '') + (eaters.length > 1 && !locked ? '<button class="whochip" data-act="who-cycle" data-n="' + d + '" aria-label="Who\u2019s in for dinner on ' + DAY_LONG[d] + ': ' + (none ? 'nobody' : h(inN.map(p => p.name).join(' and '))) + '. Tap to change">' + eaters.map(p => '<i class="' + (awayOn(w, p, d) ? 'off' : '') + '">' + h((p.name || '?').charAt(0).toUpperCase()) + '</i>').join('') + '</button>' : '') + '</div>';
+    out += '<div class="day ' + (d === todayIdx ? 'today' : '') + '"><div class="when"><b>' + DAY_NAMES[d] + '</b><span>' + parseIso(addDays(w.start, d)).getDate() + '</span>' + (isTreat ? '<span class="treatdot" title="Treat night">★</span>' : '') + (easyDays.includes(d) ? '<span class="easydot" title="Easy night">easy</span>' : '') + (eaters.length > 1 && !locked ? '<button class="whochip" data-act="who-cycle" data-n="' + d + '" aria-label="Who\u2019s in for dinner on ' + DAY_LONG[d] + ': ' + (none ? 'nobody' : h(inN.map(p => p.name).join(' and '))) + '. Tap to change">' + eaters.map(p => '<i class="' + (awayOn(w, p, d) ? 'off' : '') + '">' + h((p.name || '?').charAt(0).toUpperCase()) + '</i>').join('') + '</button>' : '') + '</div>';
     if (day.takeaway) {
       const was = day.was && S.RMAP[day.was];
       out += '<div class="meal takeaway"><span class="tile c-Other" aria-hidden="true">🥡</span><span class="body"><span class="ttl">Takeaway night</span>' + (was ? '<span class="muted small">Instead of ' + h(rt(was)) + '</span>' : '') + '<span><button class="chip" data-act="undo-takeaway" data-v="' + d + '">Undo</button></span></span></div>';
@@ -1059,18 +1062,18 @@ function recipeMatches(r, f) {
   if (f.meal && (r.meal || 'dinner') !== f.meal) return false;
   if (f.cuisine && r.cuisine !== f.cuisine) return false;
   if (f.protein && r.protein !== f.protein) return false;
-  if (f.category && (r.category || 'everyday') !== f.category) return false;
+  if (f.category && (f.category === 'easy' ? !r.easy : (r.category || 'everyday') !== f.category)) return false;
   if (f.quick && r.time > (S.settings.weeknightCap || 30)) return false;
   if (f.rated) { const rs = ratingSummary()[r.id]; if (f.rated === 'fav' && !(rs && rs.avg >= 4)) return false; if (f.rated === 'new' && rs) return false; }
   if (f.kcal) { const b = KCAL_BANDS.find(x => x[0] === f.kcal); const k = nut(r).kcal; if (b && !(k >= b[2] && k < b[3])) return false; }
-  if (f.q) { const q = f.q.toLowerCase(); const hay = (r.title + ' ' + r.cuisine + ' ' + r.protein + ' ' + (r.category || '') + ' ' + (r.tags || []).join(' ') + ' ' + r.ingredients.map(l => ingName(l.i)).join(' ')).toLowerCase(); if (!q.split(/\s+/).every(t => hay.includes(t))) return false; }
+  if (f.q) { const q = f.q.toLowerCase(); const hay = (r.title + ' ' + r.cuisine + ' ' + r.protein + ' ' + (r.category || '') + (r.easy ? ' easy' : '') + ' ' + (r.tags || []).join(' ') + ' ' + r.ingredients.map(l => ingName(l.i)).join(' ')).toLowerCase(); if (!q.split(/\s+/).every(t => hay.includes(t))) return false; }
   return true;
 }
 function activeFilterCount(f) { return ['category', 'rated', 'kcal', 'cuisine', 'protein'].filter(k => f[k]).length + (f.quick ? 1 : 0); }
 function filterPanel(f, prefix, opts) {
   opts = opts || {};
   const chip = (act, v, label, on) => '<button class="chip ' + (on ? 'on' : '') + '" data-act="' + prefix + act + '" data-v="' + h(v) + '" aria-pressed="' + !!on + '">' + label + '</button>';
-  let out = '<div class="chips wrapchips">' + chip('category', 'treat', 'Treats', f.category === 'treat') + chip('category', 'everyday', 'Everyday', f.category === 'everyday') + chip('rated', 'fav', '★ Favourites', f.rated === 'fav') + chip('rated', 'new', 'Not tried yet', f.rated === 'new') +
+  let out = '<div class="chips wrapchips">' + chip('category', 'easy', 'Easy', f.category === 'easy') + chip('category', 'treat', 'Treats', f.category === 'treat') + chip('category', 'everyday', 'Everyday', f.category === 'everyday') + chip('rated', 'fav', '★ Favourites', f.rated === 'fav') + chip('rated', 'new', 'Not tried yet', f.rated === 'new') +
     (opts.noQuick ? '' : chip('quick', '1', '≤' + (S.settings.weeknightCap || 30) + ' min', f.quick)) + KCAL_BANDS.map(b => chip('kcal', b[0], b[1], f.kcal === b[0])).join('') + '</div>';
   out += '<div class="chips wrapchips">' + CUISINES.map(c => chip('cuisine', c, c, f.cuisine === c)).join('') + '</div>';
   out += '<div class="chips wrapchips">' + PROTEINS.map(p => chip('protein', p, p.charAt(0).toUpperCase() + p.slice(1), f.protein === p)).join('') + '</div>';
@@ -1103,6 +1106,7 @@ function vcardHtml(r, act) {
   else if (!eq) badge = '<span class="tag warn vtag">Needs ' + h(missingEquipment(r).join(', ')) + '</span>';
   else if (pc.swaps.length) badge = '<span class="tag onimg vtag">Swap for ' + h(pc.swaps.map(s => nick(s.person)).filter((x, i, a) => a.indexOf(x) === i).join(' & ')) + '</span>';
   else if (r.category === 'treat') badge = '<span class="tag treat vtag">Treat</span>';
+  else if (r.easy) badge = '<span class="tag onimg vtag">Easy</span>';
   else if (r.custom) badge = '<span class="tag onimg vtag">Yours</span>';
   const star = rs ? '<span class="tag onimg vstar">' + rs.avg.toFixed(1) + '★</span>' : '';
   const dim = !pc.ok || !eq || (rs && rs.avg < 3) || r.removed;
@@ -1143,7 +1147,8 @@ function renderRecipes(nr) {
     const RS = ratingSummary(), cap = S.settings.weeknightCap || 30;
     const din = list.filter(isDinner);
     out += shelfHtml('Your favourites', list.filter(r => RS[r.id] && RS[r.id].avg >= 4), 'rated=fav');
-    out += shelfHtml('Quick weeknights', din.filter(r => r.time <= cap && r.category !== 'treat'), 'quick=1,meal=dinner');
+    out += shelfHtml('Easy dinners', din.filter(r => r.easy), 'category=easy,meal=dinner');
+    out += shelfHtml('Quick weeknights', din.filter(r => r.time <= cap && r.category !== 'treat' && !r.easy), 'quick=1,meal=dinner');
     out += shelfHtml('Treat nights', din.filter(r => r.category === 'treat'), 'category=treat,meal=dinner');
     for (const c of CUISINES) out += shelfHtml(c, din.filter(r => r.cuisine === c), 'cuisine=' + c + ',meal=dinner');
     const other = din.filter(r => !CUISINES.includes(r.cuisine)); if (other.length) out += shelfHtml('Other', other, 'meal=dinner');
@@ -1817,13 +1822,13 @@ function hhSummary() { const hh = S.household; if (!hh) return ''; const n = Obj
 function eatSummary() { const w = []; S.people.forEach(p => (p.wontEat || []).forEach(t => w.push(t))); return S.people.map(p => nick(p.name)).join(', ') + (w.length ? ' · won’t eat ' + Array.from(new Set(w)).slice(0, 3).join(', ') : ''); }
 function planSummary() { const st = S.settings; return ({ save: 'Cheapest', balanced: 'Balanced', variety: 'Variety' })[st.style || 'balanced'] + ' · ' + st.weeknightCap + ' min · ' + (SHOPS.find(x => x.id === st.shop) || SHOPS[0]).name + ' · £' + Math.round(Number(st.monthlyBudget) || 0).toLocaleString('en-GB') + ' a month'; }
 function eqSummary() { const eq = S.settings.equipment || {}; const have = EQUIPMENT.filter(([k]) => eq[k] !== false).map(x => x[1]); return have.length + ' of ' + EQUIPMENT.length + ': ' + have.slice(0, 4).join(', ') + (have.length > 4 ? '…' : ''); }
-function treatSummary() { const t = (S.settings.treatDays || []).slice().sort(); return t.length ? t.map(d => DAY_NAMES[d]).join(', ') : 'None'; }
+function treatSummary() { const days = k => (S.settings[k] || []).slice().sort().map(d => DAY_NAMES[d]).join(', '); const t = days('treatDays'), e = days('easyDays'); return (t ? 'Treats ' + t : 'No treat nights') + (e ? ' · Easy ' + e : ''); }
 const SET_PAGES = [
   { k: 'household', g: 'Household', t: 'Household & invites', i: 'home', sum: hhSummary, show: () => !!S.household },
   { k: 'people', g: 'Household', t: 'Who’s eating', i: 'people', sum: eatSummary },
   { k: 'linked', g: 'Household', t: 'Linked apps', i: 'link', sum: linkedSummary },
   { k: 'planning', g: 'Planning', t: 'Planning & budget', i: 'sliders', sum: planSummary },
-  { k: 'treats', g: 'Planning', t: 'Treat nights', i: 'star', sum: treatSummary },
+  { k: 'treats', g: 'Planning', t: 'Treat & easy nights', i: 'star', sum: treatSummary },
   { k: 'equipment', g: 'Planning', t: 'Kitchen equipment', i: 'pot', sum: eqSummary },
   { k: 'prices', g: 'Food', t: 'Ingredients & prices', i: 'tag', sum: () => Object.keys(S.ING).length + ' ingredients' + (S.lib && S.lib.updated ? ' \u00b7 checked ' + niceDate(S.lib.updated) : '') },
   { k: 'history', g: 'Food', t: 'History & stats', i: 'chart', sum: histSummary },
@@ -1933,8 +1938,9 @@ function setEquipment() {
 }
 function setTreats() {
   const st = S.settings;
-  return '<p class="muted small">On these nights the planner picks a treat, like burgers, pizza or a curry, and it can take up to an hour.</p><div class="chips wrapchips">' +
-    DAY_NAMES.map((n, d) => '<button class="chip ' + ((st.treatDays || []).includes(d) ? 'on' : '') + '" data-act="treat-day" data-v="' + d + '" aria-pressed="' + (st.treatDays || []).includes(d) + '">' + n + '</button>').join('') + '</div>';
+  const days = (key, act) => '<div class="chips wrapchips">' + DAY_NAMES.map((n, d) => { const on = (st[key] || []).includes(d); return '<button class="chip ' + (on ? 'on' : '') + '" data-act="' + act + '" data-v="' + d + '" aria-pressed="' + on + '">' + n + '</button>'; }).join('') + '</div>';
+  return '<section class="stack"><h2>Treat nights</h2><p class="muted small">The planner picks a treat, like burgers, pizza or a curry, and it can take up to an hour.</p>' + days('treatDays', 'treat-day') + '</section>' +
+    '<section class="stack"><h2>Easy nights</h2><p class="muted small">The planner picks something easy: a kit, a jar or the freezer.</p>' + days('easyDays', 'easy-day') + '</section>';
 }
 function setPlanning() {
   const st = S.settings;
@@ -2282,9 +2288,10 @@ function sheetPick(top) {
   base.carryOut.forEach(L => { if (S.ING[L.i] && !S.ING[L.i].staple) spare[L.i] = (spare[L.i] || 0) + L.q; });
   Object.keys(base.waste).forEach(id => spare[id] = (spare[id] || 0) + base.waste[id]);
   const spareIds = Object.keys(spare).sort((a, b) => spare[b] * unitPrice(S.ING[b], S.settings.shop, true) - spare[a] * unitPrice(S.ING[a], S.settings.shop, true));
-  const isTreat = (S.settings.treatDays || []).includes(d);
+  const isTreat = (S.settings.treatDays || []).includes(d), isEasy = (S.settings.easyDays || []).includes(d);
   let out = '';
   if (isTreat) out += '<div class="note treatnote">★ <b>' + DAY_LONG[d] + ' is a treat night</b>, so treats come first.</div>';
+  else if (isEasy) out += '<div class="note"><b>' + DAY_LONG[d] + ' is an easy night</b>, so easy ones come first.</div>';
   if (spareIds.length) out += '<div class="note"><b>You’ll have spare:</b> ' + spareIds.slice(0, 3).map(id => h(leftText(id, spare[id]))).join(', ') + (spareIds.length > 3 ? ' and ' + (spareIds.length - 3) + ' more' : '') + '. The top picks use these up.</div>';
   const fm = (w.freezerMeals || []).filter(m => m.portions >= 1);
   if (fm.length) out += '<section class="stack"><h3>From the freezer</h3>' + fm.map(m => { const r = S.RMAP[m.r]; return r ? '<div class="sugg"><span class="tile ' + cuisineClass(r.cuisine) + '">' + h(r.icon) + '</span><button class="pick" data-act="choose-freezer" data-v="' + h(r.id) + '"><b>' + h(rt(r)) + '</b><span class="why">' + (Number(m.portions) || 0) + ' portion' + (m.portions > 1 ? 's' : '') + ' frozen · nothing to buy</span></button><span></span></div>' : ''; }).join('') + '</section>';
@@ -2303,11 +2310,14 @@ function sheetPick(top) {
   const byMoney = sugg.slice().sort((a, b) => b.money - a.money);
   const different = sugg.filter(x => !weekCuisines.has(x.r.cuisine));
   const treats = sugg.filter(x => x.r.category === 'treat');
+  const easies = sugg.filter(x => x.r.easy);
   const favs = sugg.filter(x => { const rs = ratingSummary()[x.r.id]; return rs && rs.avg >= 4; });
   const sections = [];
   if (isTreat) sections.push(row('★ Treat yourself', treats, 3));
+  else if (isEasy) sections.push(row('Keep it easy', easies, 3));
   sections.push(row(spareIds.length ? 'Uses what you\u2019ve got' : 'Best value', byMoney, 3));
   sections.push(row('Something different', different, 3));
+  if (isTreat || !isEasy) sections.push(row('Keep it easy', easies, 2));
   if (!isTreat) sections.push(row('Treat yourself', treats, 2));
   sections.push(row('Your favourites', favs, 3));
   sections.push(row('Not tried yet', sugg.filter(x => !ratingSummary()[x.r.id]), 2));
@@ -2383,7 +2393,7 @@ function sheetRecipe(r, top) {
   const w = currentWeek(), locked = !!w.locked;
   let out = heroHtml(r);
   out += '<div class="row" style="align-items:flex-start;gap:16px">' + (out ? '' : tileHtml(r, true)) + '<div class="stack" style="gap:6px;min-width:0"><h1>' + h(r.title) + '</h1>' +
-    '<div class="row wrap tagrow"><span class="tag">' + r.time + ' min</span><span class="tag">Serves ' + serv + '</span><span class="tag">' + h(r.cuisine) + '</span>' + (r.category === 'treat' ? '<span class="tag treat">Treat</span>' : '') + '<span class="tag"><span class="money">' + fmtMoney(recipeCost(r)) + '</span>/portion</span></div></div></div>';
+    '<div class="row wrap tagrow"><span class="tag">' + r.time + ' min' + (r.hands != null && r.hands < r.time ? ' · ' + r.hands + ' hands-on' : '') + '</span><span class="tag">Serves ' + serv + '</span><span class="tag">' + h(r.cuisine) + '</span>' + (r.category === 'treat' ? '<span class="tag treat">Treat</span>' : '') + (r.easy ? '<span class="tag">Easy</span>' : '') + '<span class="tag"><span class="money">' + fmtMoney(recipeCost(r)) + '</span>/portion</span></div></div></div>';
   // what you came to do (cook it, change the night, add it to a day) comes right under the name; the numbers and rating after
   let more = '';
   if (n.kcal) more += '<div class="nutri"><div><b>' + n.kcal + '</b><span>kcal</span></div><div><b>' + n.protein + 'g</b><span>protein</span></div><div><b>' + n.carbs + 'g</b><span>carbs</span></div><div><b>' + n.fat + 'g</b><span>fat</span></div></div><p class="muted small center">Per portion, estimated from the ingredients.</p>';
@@ -2430,6 +2440,7 @@ function sheetRecipe(r, top) {
   out += '<section class="stack"><h2>Method</h2>' + (Math.abs(f - 1) > 0.01 ? '<p class="note small">The method is written for ' + (r.servings || 2) + '. Use the amounts above for ' + serv + '.</p>' : '') + '<ol class="steps">' + r.steps.map((s, k) => { const sp = stepPhoto(r, k); return '<li><div>' + (stepTitle(s) ? '<b class="stitle">' + h(stepTitle(s)) + '</b>' : '') + '<p>' + h(stepText(s)) + '</p>' +
     (sp && !sp.hidden ? '<figure class="stepimg"><img src="' + h(sp.x.img) + '" alt="How step ' + (k + 1) + ' should look" loading="lazy"><figcaption>' + h(sp.x.by || '') + (sp.x.uid === myUid() ? ' · <button class="linkish small" data-act="del-step-photo" data-v="' + h(r.id) + '" data-n="' + k + '">Remove</button>' : '') + stepPhotoNote(r, k, sp) + '</figcaption></figure>' : '') +
     stepPhotoLink(r, k, sp, 'small') + '</div></li>'; }).join('') + '</ol></section>';
+  if (r.easy && !(r.source && r.source.site) && !r.custom) out += '<p class="muted small credit">Made the way the packets say. Times vary a little by brand, so check yours.</p>';
   if (r.source && r.source.site) {
     const s = r.source, by = s.author ? ' by ' + h(s.author) : '';
     out += '<p class="muted small credit">' + (s.match === 'loose' ? 'Inspired by ' : 'Based on ') + '“' + h(s.title) + '”' + by + ' (' + h(s.site) + '). ' +
@@ -2593,7 +2604,7 @@ function sheetForm(top) {
     '<label class="field"><span>Name</span><input class="input" id="rf-title" required value="' + h(r ? r.title : '') + '" placeholder="e.g. Nan’s sausage casserole"></label>' +
     '<div class="grid2"><label class="field"><span>Icon (an emoji)</span><input class="input" id="rf-icon" value="' + h(r ? r.icon : '🍲') + '" maxlength="4"></label><label class="field"><span>Total time (min)</span><input class="input" id="rf-time" type="number" min="5" step="5" required value="' + (r ? r.time : 30) + '"></label></div>' +
     '<div class="grid2"><label class="field"><span>Cuisine</span><select class="input" id="rf-cuisine">' + CUISINES.map(c => '<option ' + (r && r.cuisine === c ? 'selected' : '') + '>' + c + '</option>').join('') + '</select></label><label class="field"><span>Main protein</span><select class="input" id="rf-protein">' + PROTEINS.map(p => '<option ' + (r && r.protein === p ? 'selected' : '') + '>' + p + '</option>').join('') + '</select></label></div>' +
-    '<label class="field"><span>Type</span><select class="input" id="rf-category"><option value="everyday" ' + (!r || r.category !== 'treat' ? 'selected' : '') + '>Everyday</option><option value="treat" ' + (r && r.category === 'treat' ? 'selected' : '') + '>Treat</option></select></label>' +
+    '<div class="grid2"><label class="field"><span>Type</span><select class="input" id="rf-category"><option value="everyday" ' + (!r || r.category !== 'treat' ? 'selected' : '') + '>Everyday</option><option value="treat" ' + (r && r.category === 'treat' ? 'selected' : '') + '>Treat</option></select></label><label class="row" style="align-self:end;min-height:44px"><input type="checkbox" class="cb" id="rf-easy" ' + (r && r.easy ? 'checked' : '') + '> Easy (kit, jar or freezer)</label></div>' +
     '<div class="stack" style="gap:6px"><span class="label">Equipment needed</span><div class="pchips">' + EQUIPMENT.map(([k, n]) => '<label class="chip"><input type="checkbox" class="cb" id="rf-eq-' + k + '" ' + (eq.includes(k) ? 'checked' : '') + '> ' + n + '</label>').join('') + '</div></div>' +
     '<h3>Ingredients (for ' + (r && r.servings === 1 ? '1' : '2') + ')</h3><p class="muted small">Missing an ingredient? Add it in Settings → Ingredients &amp; prices first. Amounts use the unit shown.</p>';
   lines.forEach((l, k) => {
@@ -2932,6 +2943,7 @@ document.addEventListener('click', e => {
     case 'rm-person': S.confirm['rmp:' + v] = true; render(); break;
     case 'rm-person-yes': S.confirm = {}; S.people = S.people.filter(x => x.id !== v); Store.del('people/' + v).catch(() => {}); render(); break;
     case 'eq': { const eq = { ...S.settings.equipment, [v]: S.settings.equipment[v] === false }; saveSettings({ equipment: eq }); break; }
+    case 'easy-day': { const d = Number(v); const t = new Set(S.settings.easyDays || []); t.has(d) ? t.delete(d) : t.add(d); saveSettings({ easyDays: Array.from(t).sort() }); break; }
     case 'treat-day': { const d = Number(v); const t = new Set(S.settings.treatDays || []); t.has(d) ? t.delete(d) : t.add(d); saveSettings({ treatDays: Array.from(t).sort() }); break; }
     case 'set-cap': saveSettings({ weeknightCap: Number(v) }); break;
     case 'toggle-staple': saveIng(v, { staple: !S.ING[v].staple }); break;
@@ -3124,7 +3136,7 @@ document.addEventListener('submit', e => {
     const old = f.dataset.v ? S.RMAP[f.dataset.v] : null;
     const id = old ? old.id : 'my_' + title.toLowerCase().replace(/[^a-z0-9]+/g, '_').slice(0, 40) + '_' + Date.now().toString(36);
     const equipment = EQUIPMENT.map(x => x[0]).filter(x => $('#rf-eq-' + x).checked);
-    const doc = { ...(old || {}), title, icon: $('#rf-icon').value.trim() || '🍽️', cuisine: $('#rf-cuisine').value, category: $('#rf-category').value, protein: $('#rf-protein').value, time: Number($('#rf-time').value) || 30, servings: old ? (old.servings || 2) : 2, equipment, ingredients: ings, steps, tags: old ? (old.tags || []) : [], custom: old ? !!old.custom : true };
+    const doc = { ...(old || {}), title, icon: $('#rf-icon').value.trim() || '🍽️', cuisine: $('#rf-cuisine').value, category: $('#rf-category').value, easy: $('#rf-easy').checked, protein: $('#rf-protein').value, time: Number($('#rf-time').value) || 30, servings: old ? (old.servings || 2) : 2, equipment, ingredients: ings, steps, tags: old ? (old.tags || []) : [], custom: old ? !!old.custom : true };
     const dr = top.draft; if (!old && dr && dr.source) doc.source = dr.source;
     // "removed" is worked out from the record's "hidden" when it's read back, never saved itself
     delete doc.id; delete doc.removed; if (old && old.removed) doc.hidden = true;
