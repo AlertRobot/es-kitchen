@@ -1,0 +1,644 @@
+{
+  "ingredients": [
+    {
+      "id": "stir_fry_veg",
+      "name": "Fresh stir-fry vegetable pack",
+      "aisle": "Fruit & veg",
+      "unit": "g",
+      "packs": [
+        300,
+        320
+      ],
+      "life": 5,
+      "keeps": 1,
+      "freeze": false,
+      "staple": false,
+      "tags": [],
+      "nutrition": {
+        "per": 100,
+        "kcal": 67,
+        "protein": 1.1,
+        "carbs": 5.9,
+        "fat": 3.7
+      },
+      "nutritionSrc": "https://www.tesco.com/groceries/en-GB/products/315375362 (Tesco Vegetable Stir Fry 320g, per 100g)"
+    },
+    {
+      "id": "straight_to_wok_noodles",
+      "name": "Straight-to-wok medium noodles",
+      "aisle": "World foods",
+      "unit": "g",
+      "packs": [
+        300
+      ],
+      "life": 180,
+      "keeps": 2,
+      "freeze": false,
+      "staple": false,
+      "tags": [],
+      "nutrition": {
+        "per": 100,
+        "kcal": 150,
+        "protein": 5.7,
+        "carbs": 27.0,
+        "fat": 1.5
+      },
+      "nutritionSrc": "https://www.tesco.com/groceries/en-GB/products/276056782 (Tesco Straight To Wok Medium Noodles 300g, per 100g; own-brand versions are wheat noodles with no egg)"
+    },
+    {
+      "id": "ready_lasagne",
+      "name": "Chilled beef lasagne ready meal for two",
+      "aisle": "Chilled",
+      "unit": "each",
+      "packs": [
+        1
+      ],
+      "life": 5,
+      "keeps": 1,
+      "freeze": true,
+      "staple": false,
+      "tags": [],
+      "nutrition": {
+        "per": 1,
+        "kcal": 1152,
+        "protein": 68.8,
+        "carbs": 92.8,
+        "fat": 53.6
+      },
+      "nutritionSrc": "https://www.tesco.com/groceries/en-GB/products/282978534 (Tesco Beef Lasagne 800g: 144 kcal, 8.6g protein, 11.6g carbs, 6.7g fat per 100g x 8 = one 800g pack)"
+    },
+    {
+      "id": "garlic_bread",
+      "name": "Garlic baguette",
+      "aisle": "Chilled",
+      "unit": "each",
+      "packs": [
+        2
+      ],
+      "life": 7,
+      "keeps": 1,
+      "freeze": true,
+      "staple": false,
+      "tags": [],
+      "nutrition": {
+        "per": 1,
+        "kcal": 672,
+        "protein": 16.0,
+        "carbs": 90.6,
+        "fat": 26.4
+      },
+      "nutritionSrc": "https://www.tesco.com/groceries/en-GB/products/322249675 (Tesco 2 Garlic Baguette 410g: 328 kcal, 7.8g protein, 44.2g carbs, 12.9g fat per 100g x 2.05 = one 205g baguette)"
+    },
+    {
+      "id": "steak_pie",
+      "name": "Steak pie (family size)",
+      "aisle": "Frozen",
+      "unit": "each",
+      "packs": [
+        1
+      ],
+      "life": 365,
+      "keeps": 90,
+      "freeze": true,
+      "staple": false,
+      "tags": [],
+      "nutrition": {
+        "per": 1,
+        "kcal": 1750,
+        "protein": 67.9,
+        "carbs": 157.5,
+        "fat": 92.4
+      },
+      "nutritionSrc": "https://www.tesco.com/groceries/en-GB/products/321675833 (Tesco Steak Family Pie 700g: 250 kcal, 9.7g protein, 22.5g carbs, 13.2g fat per 100g x 7 = one 700g pie)"
+    },
+    {
+      "id": "beef_burgers",
+      "name": "Beef quarter-pounder burgers",
+      "aisle": "Meat & fish",
+      "unit": "each",
+      "packs": [
+        4
+      ],
+      "life": 5,
+      "keeps": 1,
+      "freeze": true,
+      "staple": false,
+      "tags": [],
+      "nutrition": {
+        "per": 1,
+        "kcal": 281,
+        "protein": 17.6,
+        "carbs": 4.5,
+        "fat": 21.2
+      },
+      "nutritionSrc": "https://www.tesco.com/shop/en-GB/products/253609248 (Tesco Beef Quarter Pounders 4 Pack 454g, chilled; pack's own per-burger figures, grilled 93g)"
+    },
+    {
+      "id": "cooked_whole_chicken",
+      "name": "Cooked whole roast chicken",
+      "aisle": "Meat & fish",
+      "unit": "each",
+      "packs": [
+        1
+      ],
+      "life": 4,
+      "keeps": 2,
+      "freeze": false,
+      "staple": false,
+      "tags": [],
+      "nutrition": {
+        "per": 1,
+        "kcal": 1938,
+        "protein": 270.8,
+        "carbs": 1.0,
+        "fat": 94.1
+      },
+      "nutritionSrc": "https://www.tesco.com/groceries/en-GB/products/315857558 (Tesco Whole Roast Chicken 950g: 204 kcal, 28.5g protein, 0.1g carbs, 9.9g fat per 100g x 9.5 = whole 950g bird as labelled)"
+    },
+    {
+      "id": "coleslaw",
+      "name": "Coleslaw",
+      "aisle": "Chilled",
+      "unit": "g",
+      "packs": [
+        300,
+        600
+      ],
+      "life": 7,
+      "keeps": 3,
+      "freeze": false,
+      "staple": false,
+      "tags": [],
+      "nutrition": {
+        "per": 100,
+        "kcal": 155,
+        "protein": 0.9,
+        "carbs": 4.6,
+        "fat": 14.3
+      },
+      "nutritionSrc": "https://www.tesco.com/groceries/en-GB/products/320984325 (Tesco Coleslaw 300g, per 100g)"
+    }
+  ],
+  "prices": [
+    {
+      "id": "stir_fry_veg",
+      "prices": {
+        "tesco": {
+          "pack": 320,
+          "price": 1.75,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.tesco.com/groceries/en-GB/products/315375362",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Tesco Vegetable Stir Fry 320g",
+          "note": "Cabbage, carrot, pepper, onion; no mushrooms. Clubcard stir-fry meal deal (protein + noodles + sauce + veg) £5"
+        },
+        "sainsburys": {
+          "pack": 300,
+          "price": 1.75,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.trolley.co.uk/product/sainsburys-mixed-vegetable-stir-fry/BGH675",
+          "basis": "compare",
+          "conf": "high",
+          "label": "Sainsbury's Mixed Vegetable Stir Fry 300g",
+          "note": "Ingredients not shown on trolley; usual £1.50"
+        },
+        "asda": {
+          "pack": 320,
+          "price": 1.75,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.trolley.co.uk/product/asda-sweet-crunchy-oriental-style-stir-fry/MCM445",
+          "basis": "compare",
+          "conf": "high",
+          "label": "ASDA Oriental Style Vegetable 320g",
+          "note": "Ingredients not shown; non-mushroom variant chosen (Asda also sells a separate mushroom stir fry)"
+        },
+        "aldi": {
+          "pack": 320,
+          "price": 0.99,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/ready-set-cook-oriental-style-stir-fry-000000000334802001",
+          "basis": "shop",
+          "conf": "high",
+          "label": "READY, SET…COOK! Oriental Style Stir Fry 320g",
+          "note": "Separate Mushroom Stir Fry also sold; 600g Sweet & Crunchy £1.29"
+        },
+        "lidl": {
+          "pack": 320,
+          "price": 0.99,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/ready-set-cook-oriental-style-stir-fry-000000000334802001",
+          "basis": "model",
+          "conf": "low",
+          "label": "Vegetable stir fry (Lidl equivalent)",
+          "note": "No Lidl price found online; matched to Aldi's Oriental Style Stir Fry 320g"
+        }
+      }
+    },
+    {
+      "id": "straight_to_wok_noodles",
+      "prices": {
+        "tesco": {
+          "pack": 300,
+          "price": 1.1,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.tesco.com/groceries/en-GB/products/276056782",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Tesco Straight To Wok Medium Noodles 300G",
+          "note": "2 x 150g pouches; wheat noodles, no egg (vegan). Amoy Straight to Wok Medium 2x150g £2.15, Clubcard £1.50"
+        },
+        "sainsburys": {
+          "pack": 300,
+          "price": 1.1,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.sainsburys.co.uk/gol-ui/product/sainsburys-medium-noodles-quick-to-cook-x2-300g",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Sainsbury's Medium Noodles Quick To Cook x2 300g",
+          "note": "2 x 150g; wheat noodles, no egg. Amoy Straight to Wok Medium £2.15"
+        },
+        "asda": {
+          "pack": 300,
+          "price": 1.0,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.trolley.co.uk/product/asda-straight-to-wok-noodles/UEU932",
+          "basis": "compare",
+          "conf": "high",
+          "label": "ASDA Straight to Wok Noodles 300g",
+          "note": "Egg content not stated. Amoy Straight to Wok Medium £2.15"
+        },
+        "aldi": {
+          "pack": 410,
+          "price": 1.09,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/products/fresh-food/stir-fry-vegetables-sauce-noodles/k/1588161416978050003",
+          "basis": "shop",
+          "conf": "medium",
+          "label": "READY, SET…COOK! Egg Noodles 410g",
+          "note": "Listed in Aldi's fresh stir-fry veg & noodles aisle; page doesn't explicitly say straight-to-wok. Protein Egg Noodles 300g £0.99 also stocked"
+        },
+        "lidl": {
+          "pack": 410,
+          "price": 1.09,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/ready-set-cook-egg-noodles-000000000000339840",
+          "basis": "model",
+          "conf": "low",
+          "label": "Ready-to-wok noodles (Lidl equivalent)",
+          "note": "No current Lidl price found (only an expired hotukdeals 39p deal, undated); matched to Aldi's Egg Noodles 410g"
+        }
+      }
+    },
+    {
+      "id": "ready_lasagne",
+      "prices": {
+        "tesco": {
+          "pack": 1,
+          "price": 4.0,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.tesco.com/groceries/en-GB/products/282978534",
+          "basis": "shop",
+          "conf": "medium",
+          "label": "Tesco Beef Lasagne 800G",
+          "note": "800g, serves 2, chilled; shown out of stock online on 4 Nov"
+        },
+        "sainsburys": {
+          "pack": 1,
+          "price": 4.5,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.sainsburys.co.uk/gol-ui/product/sainsburys-beef-lasagne-ready-meal-for-2-750g",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Sainsbury's Beef Lasagne Ready Meal For 2 750g",
+          "note": "750g"
+        },
+        "asda": {
+          "pack": 1,
+          "price": 3.97,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://trolley.co.uk/product/asda-italian-beef-lasagne/LXJ557",
+          "basis": "compare",
+          "conf": "medium",
+          "label": "ASDA Meal For Two Italian Beef Lasagne",
+          "note": "Weight not stated on trolley (Asda's for-two lasagne is sold as 800g elsewhere)"
+        },
+        "aldi": {
+          "pack": 1,
+          "price": 4.59,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/cucina-beef-lasagne-family-pack-000000000000584243",
+          "basis": "shop",
+          "conf": "medium",
+          "label": "CUCINA Beef Lasagne Family Pack 1kg",
+          "note": "No ~800g size; this is 1kg (more than two portions). 400g single CUCINA Beef Lasange £2.79"
+        },
+        "lidl": {
+          "pack": 1,
+          "price": 2.79,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.lidl.co.uk/static/assets/Morrisons_Price_Conparison-Online-MainList-2134661.pdf",
+          "basis": "shop",
+          "conf": "low",
+          "label": "Chef Select Beef Lasagne 400g",
+          "note": "Only a 400g single found (one portion), from an undated Lidl price-comparison PDF on lidl.co.uk"
+        }
+      }
+    },
+    {
+      "id": "garlic_bread",
+      "prices": {
+        "tesco": {
+          "pack": 2,
+          "price": 1.9,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.tesco.com/groceries/en-GB/products/322249675",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Tesco 2 Garlic Baguette 410g",
+          "note": "Chilled. Clubcard £1.70 seen on an expired deal (to 27 Oct 2026), not current"
+        },
+        "sainsburys": {
+          "pack": 2,
+          "price": 1.8,
+          "loyalty": 1.35,
+          "checked": "2026-11-04",
+          "src": "https://www.trolley.co.uk/product/sainsburys-garlic-baguette/WRL826",
+          "basis": "compare",
+          "conf": "high",
+          "label": "Sainsbury's Garlic Baguette (2 x 390g)",
+          "note": "Trolley shows 390g with 2 baguettes"
+        },
+        "asda": {
+          "pack": 2,
+          "price": 0.86,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.trolley.co.uk/product/asda-2-garlic-baguettes/KOC159",
+          "basis": "compare",
+          "conf": "high",
+          "label": "ASDA 2 Garlic Baguettes 340g",
+          "note": "Frozen, part-baked"
+        },
+        "aldi": {
+          "pack": 2,
+          "price": 0.7,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/everyday-essentials-garlic-baguettes-2-pack-000000000000508698",
+          "basis": "shop",
+          "conf": "high",
+          "label": "EVERYDAY ESSENTIALS Garlic Baguettes 2 Pack 330g",
+          "note": "Chilled. Carlos Garlic Bread Baguette Twin Pack 420g £1.49 also stocked"
+        },
+        "lidl": {
+          "pack": 2,
+          "price": 0.7,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/everyday-essentials-garlic-baguettes-2-pack-000000000000508698",
+          "basis": "model",
+          "conf": "low",
+          "label": "Garlic baguettes 2 pack (Lidl equivalent)",
+          "note": "No Lidl price found (Chef Select Garlic Baguette page has no price); matched to Aldi's 2-pack"
+        }
+      }
+    },
+    {
+      "id": "steak_pie",
+      "prices": {
+        "tesco": {
+          "pack": 1,
+          "price": 3.5,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.tesco.com/groceries/en-GB/products/321675833",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Tesco Steak Family Pie 700g",
+          "note": "Frozen; serves 4 per pack (1/4 pie portion); no mushroom"
+        },
+        "sainsburys": {
+          "pack": 1,
+          "price": 3.4,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.sainsburys.co.uk/gol-ui/product/sainsburys-steak-family-pie-700g",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Sainsbury's Steak Family Pie 700g",
+          "note": "Frozen"
+        },
+        "asda": {
+          "pack": 1,
+          "price": 3.4,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.trolley.co.uk/product/asda-family-steak-gravy-pie/XOU988",
+          "basis": "compare",
+          "conf": "high",
+          "label": "ASDA Family Steak & Gravy Pie 700g",
+          "note": "Frozen (cooked from frozen)"
+        },
+        "aldi": {
+          "pack": 1,
+          "price": 2.99,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/crestwood-steak-family-pie-000000000571761001",
+          "basis": "shop",
+          "conf": "medium",
+          "label": "CRESTWOOD Steak Family Pie 500g",
+          "note": "Chilled, 500g (smaller than the 700g others); ingredients not listed so mushroom-free not confirmed"
+        },
+        "lidl": {
+          "pack": 1,
+          "price": 2.99,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/crestwood-steak-family-pie-000000000571761001",
+          "basis": "model",
+          "conf": "low",
+          "label": "Steak family pie (Lidl equivalent)",
+          "note": "No Lidl price found (McKinlay's steak pie page has no price and is Scotland-only); matched to Aldi's Steak Family Pie"
+        }
+      }
+    },
+    {
+      "id": "beef_burgers",
+      "prices": {
+        "tesco": {
+          "pack": 4,
+          "price": 4.0,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.tesco.com/shop/en-GB/products/253609248",
+          "basis": "shop",
+          "conf": "medium",
+          "label": "Tesco Beef Quarter Pounders 4 Pack 454g",
+          "note": "Chilled; shown out of stock online on 4 Nov. Frozen Tesco 4 Beef Quarter Pounders 454g £2.79 (Aldi Price Match)"
+        },
+        "sainsburys": {
+          "pack": 4,
+          "price": 4.0,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://sainsburys.co.uk/groceries/product/sainsburys-4-quarter-pounder-british-beef-burgers-454g",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Sainsbury's 4 Quarter Pounder British Beef Burgers 454g",
+          "note": "Chilled"
+        },
+        "asda": {
+          "pack": 4,
+          "price": 3.77,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.trolley.co.uk/product/asda-succulent-4-quarter-pounder-beef-burgers/MOA632",
+          "basis": "compare",
+          "conf": "medium",
+          "label": "Summer Grill by ASDA 4 Quarter Pounder Beef Burgers 454g",
+          "note": "Storage not stated on trolley; ASDA 4 Beef Quarter Pounders 454g £3.88 appears to be frozen"
+        },
+        "aldi": {
+          "pack": 4,
+          "price": 3.29,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/ashfields-british-beef-quarter-pounders-4-pack-000000000000387535",
+          "basis": "shop",
+          "conf": "high",
+          "label": "ASHFIELDS British Beef Quarter Pounders 4 Pack 454g",
+          "note": "Fresh beef aisle (chilled). Frozen Oakhurst Beef Quarter Pounders 4 Pack £2.79"
+        },
+        "lidl": {
+          "pack": 4,
+          "price": 3.29,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/ashfields-british-beef-quarter-pounders-4-pack-000000000000387535",
+          "basis": "model",
+          "conf": "low",
+          "label": "Beef quarter pounders 4 pack (Lidl equivalent)",
+          "note": "No Lidl price found; matched to Aldi's chilled 4-pack"
+        }
+      }
+    },
+    {
+      "id": "cooked_whole_chicken",
+      "prices": {
+        "tesco": {
+          "pack": 1,
+          "price": 6.1,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.tesco.com/groceries/en-GB/products/315857558",
+          "basis": "shop",
+          "conf": "medium",
+          "label": "Tesco Whole Roast Chicken 950g",
+          "note": "Shown out of stock online on 4 Nov. Tesco Whole Roast Chicken (1.16kg-1.47kg) £8.00 available"
+        },
+        "sainsburys": {
+          "pack": 1,
+          "price": 6.5,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://sainsburys.co.uk/groceries/product/sainsburys-roast-whole-cooked-british-chicken-894g-1112g",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Sainsbury's Roast Whole Cooked British Chicken 894g - 1112g",
+          "note": "Nectar £5.00 shown but it expired 27 Oct 2026, so not recorded"
+        },
+        "asda": {
+          "pack": 1,
+          "price": 6.22,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.trolley.co.uk/product/asda-extra-tasty-whole-roast-chicken/MOB386",
+          "basis": "compare",
+          "conf": "high",
+          "label": "ASDA Extra Tasty Whole Roast Chicken 950g"
+        }
+      }
+    },
+    {
+      "id": "coleslaw",
+      "prices": {
+        "tesco": {
+          "pack": 300,
+          "price": 1.4,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.tesco.com/groceries/en-GB/products/320984325",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Tesco Coleslaw 300g"
+        },
+        "sainsburys": {
+          "pack": 300,
+          "price": 1.4,
+          "loyalty": 1.0,
+          "checked": "2026-11-04",
+          "src": "https://www.sainsburys.co.uk/gol-ui/product/sainsburys-deli-style-traditional-coleslaw-300g",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Sainsbury's Deli-Style Traditional Coleslaw 300g",
+          "note": "Nectar price valid to 17 Nov 2026; 600g £2.00"
+        },
+        "asda": {
+          "pack": 300,
+          "price": 1.2,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.trolley.co.uk/product/asda-coleslaw/UVT503",
+          "basis": "compare",
+          "conf": "high",
+          "label": "ASDA Coleslaw 300g",
+          "note": "600g £1.80"
+        },
+        "aldi": {
+          "pack": 600,
+          "price": 1.29,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/the-deli-creamy-coleslaw-000000000000401538",
+          "basis": "shop",
+          "conf": "high",
+          "label": "THE DELI Creamy Coleslaw 600g",
+          "note": "Aldi's standard coleslaw only comes in 600g; the 300g is reduced fat (£0.79)"
+        },
+        "lidl": {
+          "pack": 300,
+          "price": 1.35,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.lidl.co.uk/static/assets/Morrisons_Price_Conparison-Online-MainList-2134661.pdf",
+          "basis": "shop",
+          "conf": "low",
+          "label": "Deluxe Premium Coleslaw 300g",
+          "note": "Premium (Deluxe) line, the only Lidl coleslaw price found; from an undated Lidl price-comparison PDF on lidl.co.uk"
+        }
+      }
+    }
+  ],
+  "missing": [
+    "cooked_whole_chicken aldi",
+    "cooked_whole_chicken lidl"
+  ]
+}
