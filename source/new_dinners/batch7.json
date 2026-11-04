@@ -390,7 +390,7 @@
    },
    {
     "i": "korma_sauce",
-    "q": 450,
+    "q": 500,
     "t": "1 jar"
    },
    {
@@ -459,7 +459,7 @@
    },
    {
     "i": "sweet_sour_sauce",
-    "q": 450,
+    "q": 500,
     "t": "1 jar"
    },
    {
@@ -582,8 +582,8 @@
    },
    {
     "i": "katsu_sauce",
-    "q": 200,
-    "t": "about 200g (half a jar, or 1 pouch)"
+    "q": 170,
+    "t": "half a jar (about 170g)"
    },
    {
     "i": "rice",
@@ -652,7 +652,7 @@
    },
    {
     "i": "pasta_bake_sauce",
-    "q": 490,
+    "q": 500,
     "t": "1 jar"
    },
    {
