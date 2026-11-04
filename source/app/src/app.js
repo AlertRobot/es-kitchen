@@ -1203,12 +1203,22 @@ function renderShop() {
   const view = S.shopView || 'list';
   out += segHtml('shop-view', view, [['list', 'List', nDone + '/' + nItems], ['compare', 'Compare'], ['cost', 'Costs']]);
   if (view === 'compare') return out + renderComparison(B);
-  if (view === 'cost') return out + shopLogPanel(B) + '<section class="panel"><h2>Waste and cost</h2><div class="grid2">' +
-    '<div><div class="label">Dinners cost</div><div class="money big-num">' + fmtMoney(sim.consumed) + '</div><div class="muted small">' + sim.portions + ' portions · ' + fmtMoney(sim.perPortion) + ' each' + (sim.blPortions ? '<br>Breakfasts &amp; lunches ' + fmtMoney(sim.blCost) + ' for ' + sim.blPortions : '') + '</div></div>' +
-    '<div><div class="label">Likely unused</div><div class="money big-num" style="color:' + (sim.wasteValue > 1 ? 'var(--warn)' : 'inherit') + '">' + fmtMoney(sim.wasteValue) + '</div><div class="muted small">' + (Object.keys(sim.waste).length ? Object.keys(sim.waste).length + ' item' + (Object.keys(sim.waste).length > 1 ? 's' : '') : 'nothing') + '</div></div></div>' +
-    (Object.keys(sim.waste).length ? '<div class="leftlist">' + Object.keys(sim.waste).map(id => '<div class="left"><span>' + h(leftText(id, sim.waste[id])) + '<br><button class="linkish small" data-act="use-up" data-v="' + h(id) + '">Find a use for it</button></span><span class="money">' + fmtMoney(sim.waste[id] * unitPrice(S.ING[id], weekShop(), S.settings.useLoyalty !== false)) + '</span></div>').join('') + '</div>' : '') +
-    (() => { const n = sim.carryOut.filter(L => S.ING[L.i] && !S.ING[L.i].staple).length; return n ? '<p class="muted small">' + n + ' spare thing' + (n > 1 ? 's carry' : ' carries') + ' into next week, and suggestions there use ' + (n > 1 ? 'them' : 'it') + ' first. <button class="linkish small" data-act="go-left">See what\u2019s left</button></p>' : ''; })() +
-    '<p class="muted small">Meal costs include a share of pantry staples. Spare food that keeps or freezes carries into next week and isn’t counted as waste.</p></section>';
+  if (view === 'cost') {
+    // where the shop's money goes: what this week's meals use, what's kept for next week, and what's likely wasted
+    const keptN = sim.carryOut.filter(L => S.ING[L.i] && !S.ING[L.i].staple).length;
+    const end = addDays(w.start, 6), paid = liveShops().filter(t => t.week === w.start || (t.date >= w.start && t.date <= end)).reduce((a, t) => a + (Number(t.amount) || 0), 0);
+    const line = (label, sub, v, warn) => '<div class="left"><span style="flex:1;min-width:0">' + label + (sub ? '<span class="small muted" style="display:block">' + sub + '</span>' : '') + '</span><span class="money"' + (warn ? ' style="color:var(--warn)"' : '') + '>' + fmtMoney(v) + '</span></div>';
+    return out + shopLogPanel(B) + '<section class="panel"><h2>Where the money goes</h2>' +
+      (paid > 0 ? '<p class="small">You paid <b class="money">' + fmtMoney(paid) + '</b> this week. Peckish priced the list at <span class="money">' + fmtMoney(B.prefTotal) + '</span>.</p>' : '') +
+      '<div class="leftlist">' +
+      line('Dinners', sim.portions + ' portions · ' + fmtMoney(sim.perPortion) + ' each', sim.consumed) +
+      (sim.blPortions ? line('Breakfasts & lunches', sim.blPortions + ' of them', sim.blCost) : '') +
+      (sim.leftoverValue > 0.005 ? line('Kept for next week', keptN + ' thing' + (keptN === 1 ? '' : 's') + ', used first next week', sim.leftoverValue) : '') +
+      line('Likely unused', Object.keys(sim.waste).length ? Object.keys(sim.waste).length + ' item' + (Object.keys(sim.waste).length > 1 ? 's' : '') : 'nothing', sim.wasteValue, sim.wasteValue > 1) + '</div>' +
+    (Object.keys(sim.waste).length ? '<div class="leftlist">' + Object.keys(sim.waste).map(id => '<div class="left"><span style="flex:1;min-width:0">' + h(leftText(id, sim.waste[id])) + '<br><button class="linkish small" data-act="use-up" data-v="' + h(id) + '">Find a use for it</button></span><span class="money">' + fmtMoney(sim.waste[id] * unitPrice(S.ING[id], weekShop(), S.settings.useLoyalty !== false)) + '</span></div>').join('') + '</div>' : '') +
+    (keptN ? '<p class="muted small"><button class="linkish small" data-act="go-left">See what’s kept for next week</button></p>' : '') +
+    '<p class="muted small">Each meal counts only what it uses, plus a share of pantry staples. Prices are Peckish’s, so they won’t match the till exactly.</p></section>';
+  }
   const isTop = row => row.staple;
   let foodTotal = 0, topTotal = 0;
   B.rows.forEach(r => { if (isTop(r)) topTotal += r.byShop[prefKey].cost; else foodTotal += r.byShop[prefKey].cost; });
