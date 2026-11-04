@@ -1,0 +1,932 @@
+{
+  "ingredients": [
+    {
+      "id": "fajita_kit",
+      "name": "Fajita kit (wraps, seasoning and salsa)",
+      "aisle": "World foods",
+      "unit": "each",
+      "packs": [
+        1
+      ],
+      "life": 365,
+      "keeps": 2,
+      "freeze": false,
+      "staple": false,
+      "tags": [],
+      "nutrition": {
+        "per": 1,
+        "kcal": 1131,
+        "protein": 30,
+        "carbs": 193,
+        "fat": 24
+      },
+      "nutritionSrc": "https://www.tesco.com/shop/en-GB/products/302471400 (Tesco Medium Fajita Kit 475g: 238kcal, 6.4g protein, 40.6g carbs, 5.0g fat per 100g x 4.75)"
+    },
+    {
+      "id": "fajita_seasoning",
+      "name": "Fajita seasoning mix sachet",
+      "aisle": "Dry goods",
+      "unit": "each",
+      "packs": [
+        1
+      ],
+      "life": 365,
+      "keeps": 1,
+      "freeze": false,
+      "staple": false,
+      "tags": [],
+      "nutrition": {
+        "per": 1,
+        "kcal": 85,
+        "protein": 2.3,
+        "carbs": 14.7,
+        "fat": 1.1
+      },
+      "nutritionSrc": "https://www.tesco.com/shop/en-GB/products/292761809 (Tesco Fajita Seasoning 30g: 282kcal, 7.7g protein, 49.0g carbs, 3.7g fat per 100g x 0.3)"
+    },
+    {
+      "id": "taco_kit",
+      "name": "Crunchy taco kit (shells, seasoning and salsa)",
+      "aisle": "World foods",
+      "unit": "each",
+      "packs": [
+        1
+      ],
+      "life": 365,
+      "keeps": 2,
+      "freeze": false,
+      "staple": false,
+      "tags": [],
+      "nutrition": {
+        "per": 1,
+        "kcal": 748,
+        "protein": 12,
+        "carbs": 116,
+        "fat": 24
+      },
+      "nutritionSrc": "https://www.tesco.com/shop/en-GB/products/251795098 (Tesco Medium Taco Kit 275g: 272kcal, 4.5g protein, 42.1g carbs, 8.8g fat per 100g x 2.75)"
+    },
+    {
+      "id": "chilli_mix",
+      "name": "Chilli con carne seasoning mix sachet",
+      "aisle": "Dry goods",
+      "unit": "each",
+      "packs": [
+        1
+      ],
+      "life": 365,
+      "keeps": 1,
+      "freeze": false,
+      "staple": false,
+      "tags": [],
+      "nutrition": {
+        "per": 1,
+        "kcal": 169,
+        "protein": 5.0,
+        "carbs": 31.5,
+        "fat": 1.9
+      },
+      "nutritionSrc": "https://www.tesco.com/shop/en-GB/products/254882418 (Colman's Chilli Con Carne Recipe Mix 50g, unprepared: 338kcal, 9.9g protein, 63g carbs, 3.8g fat per 100g x 0.5)"
+    },
+    {
+      "id": "bolognese_sauce",
+      "name": "Bolognese pasta sauce (jar)",
+      "aisle": "Tins & jars",
+      "unit": "g",
+      "packs": [
+        500
+      ],
+      "life": 365,
+      "keeps": 3,
+      "freeze": true,
+      "staple": false,
+      "tags": [],
+      "nutrition": {
+        "per": 100,
+        "kcal": 39,
+        "protein": 1.5,
+        "carbs": 6.0,
+        "fat": 0.7
+      },
+      "nutritionSrc": "https://www.tesco.com/shop/en-GB/products/257797970 (Tesco Bolognese Pasta Sauce Jar 500g, per 100g)"
+    },
+    {
+      "id": "tikka_curry_kit",
+      "name": "Tikka masala curry kit (spice mix, paste and sauce)",
+      "aisle": "World foods",
+      "unit": "each",
+      "packs": [
+        1
+      ],
+      "life": 365,
+      "keeps": 3,
+      "freeze": false,
+      "staple": false,
+      "tags": [],
+      "nutrition": {
+        "per": 1,
+        "kcal": 302,
+        "protein": 5.7,
+        "carbs": 23.5,
+        "fat": 18.9
+      },
+      "nutritionSrc": "https://www.tesco.com/shop/en-GB/products/314847330 (Patak's Tikka Masala Curry Sauce Meal Kit 270g: 112kcal, 2.1g protein, 8.7g carbs, 7.0g fat per 100g x 2.7)"
+    },
+    {
+      "id": "korma_sauce",
+      "name": "Korma curry cooking sauce (jar)",
+      "aisle": "World foods",
+      "unit": "g",
+      "packs": [
+        500,
+        450
+      ],
+      "life": 365,
+      "keeps": 3,
+      "freeze": false,
+      "staple": false,
+      "tags": [],
+      "nutrition": {
+        "per": 100,
+        "kcal": 92,
+        "protein": 1.0,
+        "carbs": 10.5,
+        "fat": 4.9
+      },
+      "nutritionSrc": "https://www.tesco.com/shop/en-GB/products/252548070 (Tesco Korma Cooking Sauce 500g, per 100g)"
+    },
+    {
+      "id": "sweet_sour_sauce",
+      "name": "Sweet & sour cooking sauce (jar)",
+      "aisle": "World foods",
+      "unit": "g",
+      "packs": [
+        500
+      ],
+      "life": 365,
+      "keeps": 3,
+      "freeze": false,
+      "staple": false,
+      "tags": [],
+      "nutrition": {
+        "per": 100,
+        "kcal": 89,
+        "protein": 0.5,
+        "carbs": 20.0,
+        "fat": 0.6
+      },
+      "nutritionSrc": "https://www.tesco.com/shop/en-GB/products/277466018 (Tesco Sweet & Sour Sauce 510g, per 100g)"
+    },
+    {
+      "id": "katsu_sauce",
+      "name": "Katsu curry cooking sauce",
+      "aisle": "World foods",
+      "unit": "g",
+      "packs": [
+        340,
+        415
+      ],
+      "life": 365,
+      "keeps": 3,
+      "freeze": false,
+      "staple": false,
+      "tags": [],
+      "nutrition": {
+        "per": 100,
+        "kcal": 65,
+        "protein": 1.0,
+        "carbs": 7.3,
+        "fat": 3.3
+      },
+      "nutritionSrc": "https://www.tesco.com/shop/en-GB/products/313958880 (Sharwood's Japanese Katsu Curry Sauce 415g, per 100g)"
+    },
+    {
+      "id": "stir_fry_sauce",
+      "name": "Stir-fry sauce pouch (sweet chilli)",
+      "aisle": "World foods",
+      "unit": "g",
+      "packs": [
+        120,
+        165
+      ],
+      "life": 365,
+      "keeps": 2,
+      "freeze": false,
+      "staple": false,
+      "tags": [],
+      "nutrition": {
+        "per": 100,
+        "kcal": 81,
+        "protein": 0.3,
+        "carbs": 16.1,
+        "fat": 1.6
+      },
+      "nutritionSrc": "https://www.tesco.com/shop/en-GB/products/315586763 (Tesco Sweet Chilli Stir Fry Sauce 165g, per 100g; 120g sweet chilli & garlic pouches run ~155-160kcal/100g)"
+    },
+    {
+      "id": "pasta_bake_sauce",
+      "name": "Creamy tomato pasta bake sauce (jar)",
+      "aisle": "Tins & jars",
+      "unit": "g",
+      "packs": [
+        480,
+        500
+      ],
+      "life": 365,
+      "keeps": 3,
+      "freeze": false,
+      "staple": false,
+      "tags": [],
+      "nutrition": {
+        "per": 100,
+        "kcal": 89,
+        "protein": 1.2,
+        "carbs": 7.0,
+        "fat": 6.1
+      },
+      "nutritionSrc": "https://www.tesco.com/shop/en-GB/products/264691387 (Tesco Creamy Tomato & Herb Pasta Bake Sauce 500g, per 100g)"
+    },
+    {
+      "id": "curry_powder",
+      "name": "Medium curry powder",
+      "aisle": "Dry goods",
+      "unit": "g",
+      "packs": [
+        80,
+        90
+      ],
+      "life": 365,
+      "keeps": 180,
+      "freeze": false,
+      "staple": true,
+      "tags": [],
+      "nutrition": {
+        "per": 100,
+        "kcal": 310,
+        "protein": 13.0,
+        "carbs": 19.4,
+        "fat": 12.1
+      },
+      "nutritionSrc": "https://www.tesco.com/shop/en-GB/products/255769961 (Tesco Medium Curry Powder 80g, per 100g)"
+    }
+  ],
+  "prices": [
+    {
+      "id": "fajita_kit",
+      "prices": {
+        "tesco": {
+          "pack": 1,
+          "price": 1.75,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.tesco.com/shop/en-GB/products/301419729",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Tesco Smoky Bbq Fajita Kit 475G",
+          "note": "Old El Paso Smoky BBQ Fajita Dinner Kit 500G £3.85 also stocked"
+        },
+        "sainsburys": {
+          "pack": 1,
+          "price": 2.1,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/fajita%20kit",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Sainsbury's Smoky BBQ Fajita Kit 500g",
+          "note": "Old El Paso Smoky BBQ 500g £3.85"
+        },
+        "asda": {
+          "pack": 1,
+          "price": 1.9,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.trolley.co.uk/product/asda-mexican-style-smoky-bbq-fajita-kit/OJO727",
+          "basis": "compare",
+          "conf": "high",
+          "label": "ASDA Fajita Kit Holy Smoky BBQ 475g"
+        },
+        "aldi": {
+          "pack": 1,
+          "price": 1.59,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/fiesta-smoky-bbq-fajita-kit-000000000335704002",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Fiesta Smoky BBQ Fajita Kit 475g"
+        },
+        "lidl": {
+          "pack": 1,
+          "price": 1.59,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/fiesta-smoky-bbq-fajita-kit-000000000335704002",
+          "basis": "model",
+          "conf": "low",
+          "label": "Fiesta Smoky BBQ Fajita Kit 475g",
+          "note": "No Lidl price found online; matched to Aldi's Fiesta Smoky BBQ Fajita Kit 475g"
+        }
+      }
+    },
+    {
+      "id": "fajita_seasoning",
+      "prices": {
+        "tesco": {
+          "pack": 1,
+          "price": 0.85,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.tesco.com/shop/en-GB/products/292761809",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Tesco Fajita Seasoning 30G",
+          "note": "Search page £0.85 today; product page showed an older £1.00. Old El Paso 35g £1.30 (Clubcard £1.10)"
+        },
+        "sainsburys": {
+          "pack": 1,
+          "price": 1.0,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/fajita%20seasoning",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Sainsbury's Fajita Spice Mix 30g"
+        },
+        "asda": {
+          "pack": 1,
+          "price": 1.02,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.trolley.co.uk/product/asda-sizzlin-fajita-seasoning/STS667",
+          "basis": "compare",
+          "conf": "high",
+          "label": "ASDA Sizzlin' Fajita Seasoning 30g"
+        },
+        "aldi": {
+          "pack": 1,
+          "price": 0.69,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/ready-set-cook-fajita-mix-seasonings-000000000738492002",
+          "basis": "shop",
+          "conf": "medium",
+          "label": "Ready, Set…Cook! Fajita Mix Seasonings 50g",
+          "note": "50g sachet, larger than others"
+        },
+        "lidl": {
+          "pack": 1,
+          "price": 0.69,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/ready-set-cook-fajita-mix-seasonings-000000000738492002",
+          "basis": "model",
+          "conf": "low",
+          "label": "Ready, Set…Cook! Fajita Mix Seasonings 50g",
+          "note": "No Lidl price found online; matched to Aldi's Ready, Set…Cook! Fajita Mix Seasonings 50g"
+        }
+      }
+    },
+    {
+      "id": "taco_kit",
+      "prices": {
+        "tesco": {
+          "pack": 1,
+          "price": 1.75,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.tesco.com/shop/en-GB/products/251795098",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Tesco Medium Taco Kit 275G",
+          "note": "Search page £1.75 today; product page showed an older £2.00. Old El Paso Smoky BBQ Crunchy Taco Kit 292g £3.85"
+        },
+        "sainsburys": {
+          "pack": 1,
+          "price": 3.85,
+          "loyalty": 2.95,
+          "checked": "2026-11-04",
+          "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/taco%20kit",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Old El Paso 292g Smoky BBQ Crunchy Taco Kit",
+          "note": "No Sainsbury's own-brand taco kit listed"
+        },
+        "asda": {
+          "pack": 1,
+          "price": 2.0,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.trolley.co.uk/product/asda-asda-taco-kit-crunchy/CAA946",
+          "basis": "compare",
+          "conf": "high",
+          "label": "ASDA Taco Kit Crunchy 313g"
+        }
+      }
+    },
+    {
+      "id": "chilli_mix",
+      "prices": {
+        "tesco": {
+          "pack": 1,
+          "price": 1.0,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.tesco.com/shop/en-GB/products/254882418",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Colman's Chilli Con Carne Recipe Mix 50G",
+          "note": "No Tesco own-brand mix listed; Clubcard multibuy any 4 for £2.85"
+        },
+        "sainsburys": {
+          "pack": 1,
+          "price": 0.65,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.sainsburys.co.uk/groceries/product/sainsburys-chilli-con-carne-inspired-to-cook-41g",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Sainsbury's Chilli Con Carne, Inspired to Cook 41g",
+          "note": "Colman's 50g £1.00"
+        },
+        "asda": {
+          "pack": 1,
+          "price": 0.65,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.trolley.co.uk/product/asda-chilli-con-carne-mix/ZRJ444",
+          "basis": "compare",
+          "conf": "high",
+          "label": "ASDA Chilli Con Carne Sauce Mix 45g"
+        },
+        "aldi": {
+          "pack": 1,
+          "price": 0.35,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/bramwells-chilli-con-carne-seasoning-mix-000000000335896005",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Bramwells Chilli Con Carne Seasoning Mix 50g"
+        },
+        "lidl": {
+          "pack": 1,
+          "price": 0.35,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/bramwells-chilli-con-carne-seasoning-mix-000000000335896005",
+          "basis": "model",
+          "conf": "low",
+          "label": "Bramwells Chilli Con Carne Seasoning Mix 50g",
+          "note": "No Lidl price found online; matched to Aldi's Bramwells Chilli Con Carne Seasoning Mix 50g"
+        }
+      }
+    },
+    {
+      "id": "bolognese_sauce",
+      "prices": {
+        "tesco": {
+          "pack": 500,
+          "price": 0.79,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.tesco.com/shop/en-GB/products/257797970",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Tesco Bolognese Pasta Sauce Jar 500G",
+          "note": "Dolmio Bolognese Original 450g £2.60"
+        },
+        "sainsburys": {
+          "pack": 500,
+          "price": 0.79,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/bolognese%20sauce",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Sainsbury's Tomato & Herb Bolognese Pasta Sauce 500g",
+          "note": "Aldi price match; Dolmio 450g £2.60"
+        },
+        "asda": {
+          "pack": 500,
+          "price": 0.79,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.trolley.co.uk/product/asda-bolognese-pasta-sauce/OEO456",
+          "basis": "compare",
+          "conf": "high",
+          "label": "ASDA Bolognese Pasta Sauce 500g"
+        },
+        "aldi": {
+          "pack": 500,
+          "price": 0.79,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/cucina-bolognese-pasta-sauce-000000000000463818",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Cucina Bolognese Pasta Sauce 500g"
+        },
+        "lidl": {
+          "pack": 500,
+          "price": 0.79,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/cucina-bolognese-pasta-sauce-000000000000463818",
+          "basis": "model",
+          "conf": "low",
+          "label": "Cucina Bolognese Pasta Sauce 500g",
+          "note": "No Lidl price found online; matched to Aldi's Cucina Bolognese Pasta Sauce 500g"
+        }
+      }
+    },
+    {
+      "id": "tikka_curry_kit",
+      "prices": {
+        "tesco": {
+          "pack": 1,
+          "price": 3.15,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.tesco.com/shop/en-GB/products/314847330",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Patak's Tikka Masala Indian Curry Sauce Meal Kit 270g"
+        },
+        "sainsburys": {
+          "pack": 1,
+          "price": 3.95,
+          "loyalty": 3.0,
+          "checked": "2026-11-04",
+          "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/tikka%20masala%20kit",
+          "basis": "shop",
+          "conf": "medium",
+          "label": "The Spice Tailor Tikka Masala Indian Curry Sauce Kit 300g",
+          "note": "Patak's meal kit not listed at Sainsbury's; Spice Tailor is the nearest kit. Kohinoor Tikka Masala Meal Kit 375g £3.85 (Nectar £3.00) also stocked"
+        },
+        "asda": {
+          "pack": 1,
+          "price": 2.68,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.trolley.co.uk/product/pataks-tikka-masala-rich-and-creamy-curry-meal-kit/KMY364",
+          "basis": "compare",
+          "conf": "high",
+          "label": "Patak's Tikka Masala Curry Kit 270g"
+        },
+        "aldi": {
+          "pack": 1,
+          "price": 1.49,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/specially-selected-2-step-tikka-masala-curry-sauce-000000000335898004",
+          "basis": "shop",
+          "conf": "medium",
+          "label": "Specially Selected 2 Step Tikka Masala Curry Sauce 360g",
+          "note": "Nearest Aldi equivalent: a 2-step paste + sauce rather than a 3-step kit with spice mix"
+        },
+        "lidl": {
+          "pack": 1,
+          "price": 1.49,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/specially-selected-2-step-tikka-masala-curry-sauce-000000000335898004",
+          "basis": "model",
+          "conf": "low",
+          "label": "Specially Selected 2 Step Tikka Masala Curry Sauce 360g",
+          "note": "No Lidl price found online; matched to Aldi's Specially Selected 2 Step Tikka Masala Curry Sauce 360g"
+        }
+      }
+    },
+    {
+      "id": "korma_sauce",
+      "prices": {
+        "tesco": {
+          "pack": 500,
+          "price": 0.85,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.tesco.com/shop/en-GB/products/252548070",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Tesco Korma Cooking Sauce 500G",
+          "note": "Patak's Korma 450g £2.65"
+        },
+        "sainsburys": {
+          "pack": 500,
+          "price": 0.85,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.sainsburys.co.uk/groceries/product/sainsburys-korma-curry-cooking-sauce-500g",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Sainsbury's Korma Curry Cooking Sauce 500g"
+        },
+        "asda": {
+          "pack": 490,
+          "price": 0.87,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.trolley.co.uk/product/asda-korma-cooking-sauce/LWR985",
+          "basis": "compare",
+          "conf": "medium",
+          "label": "ASDA Korma Cooking Sauce",
+          "note": "Trolley doesn't show the size; Asda's own korma jar is listed elsewhere as 490g"
+        },
+        "aldi": {
+          "pack": 500,
+          "price": 0.85,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/bilash-korma-cooking-sauce-000000000335819002",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Bilash Korma Cooking Sauce 500g"
+        },
+        "lidl": {
+          "pack": 500,
+          "price": 0.85,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/bilash-korma-cooking-sauce-000000000335819002",
+          "basis": "model",
+          "conf": "low",
+          "label": "Bilash Korma Cooking Sauce 500g",
+          "note": "No Lidl price found online; matched to Aldi's Bilash Korma Cooking Sauce 500g"
+        }
+      }
+    },
+    {
+      "id": "sweet_sour_sauce",
+      "prices": {
+        "tesco": {
+          "pack": 510,
+          "price": 1.3,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.tesco.com/shop/en-GB/products/277466018",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Tesco Sweet & Sour Sauce 510G",
+          "note": "Ben's Original 450g £2.60 (Clubcard £2.00)"
+        },
+        "sainsburys": {
+          "pack": 500,
+          "price": 1.3,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/sweet%20and%20sour%20sauce",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Sainsbury's Sweet & Sour Cooking Sauce 500g"
+        },
+        "asda": {
+          "pack": 500,
+          "price": 1.2,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.trolley.co.uk/product/asda-sweet-sour-cooking-sauce/CHQ846",
+          "basis": "compare",
+          "conf": "high",
+          "label": "ASDA Sweet & Sour Cooking Sauce 500g"
+        },
+        "aldi": {
+          "pack": 500,
+          "price": 0.99,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/asia-specialities-sweet-sour-cooking-sauce-000000000336685001",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Asia Specialities Sweet & Sour Cooking Sauce 500g"
+        },
+        "lidl": {
+          "pack": 500,
+          "price": 0.99,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/asia-specialities-sweet-sour-cooking-sauce-000000000336685001",
+          "basis": "model",
+          "conf": "low",
+          "label": "Asia Specialities Sweet & Sour Cooking Sauce 500g",
+          "note": "No Lidl price found online; matched to Aldi's Asia Specialities Sweet & Sour Cooking Sauce 500g"
+        }
+      }
+    },
+    {
+      "id": "katsu_sauce",
+      "prices": {
+        "tesco": {
+          "pack": 340,
+          "price": 1.3,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.tesco.com/shop/en-GB/products/307362700",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Tesco Katsu Cooking Sauce 340G",
+          "note": "Sharwood's 415g £2.65 (Clubcard £2.25)"
+        },
+        "sainsburys": {
+          "pack": 340,
+          "price": 1.3,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/katsu%20sauce",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Sainsbury's Katsu Curry Sauce 340g"
+        },
+        "asda": {
+          "pack": 415,
+          "price": 2.64,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.trolley.co.uk/product/sharwoods-katsu-curry-sauce/ULS596",
+          "basis": "compare",
+          "conf": "medium",
+          "label": "Sharwood's Japanese Katsu Curry Sauce 415g",
+          "note": "No Asda own-brand katsu jar found; Asda Katsu Curry Sauce Mix 160g (dry) £1.30 and Katsu Curry Stir-Fry 170g £1.18 also listed"
+        }
+      }
+    },
+    {
+      "id": "stir_fry_sauce",
+      "prices": {
+        "tesco": {
+          "pack": 165,
+          "price": 1.15,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.tesco.com/shop/en-GB/products/315586763",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Tesco Sweet Chilli Stir Fry Sauce 165g",
+          "note": "Blue Dragon Sweet Chilli & Garlic 120G £1.00; £5 stir-fry meal deal"
+        },
+        "sainsburys": {
+          "pack": 120,
+          "price": 0.75,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/stir%20fry%20sauce",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Sainsbury's Sweet Chilli & Garlic Stir Fry Sauce 120g"
+        },
+        "asda": {
+          "pack": 120,
+          "price": 0.7,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.trolley.co.uk/product/asda-sweet-chilli-garlic-stir-fry-sauce/BTS194",
+          "basis": "compare",
+          "conf": "high",
+          "label": "ASDA Sweet Chilli & Garlic Stir-Fry Sauce 120g"
+        },
+        "aldi": {
+          "pack": 120,
+          "price": 0.55,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/asia-specialities-sweet-chilli-garlic-stir-fry-sauce-000000000337348001",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Asia Specialities Sweet Chilli & Garlic Stir Fry Sauce 120g"
+        },
+        "lidl": {
+          "pack": 120,
+          "price": 0.55,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/asia-specialities-sweet-chilli-garlic-stir-fry-sauce-000000000337348001",
+          "basis": "model",
+          "conf": "low",
+          "label": "Asia Specialities Sweet Chilli & Garlic Stir Fry Sauce 120g",
+          "note": "No Lidl price found online; matched to Aldi's Asia Specialities Sweet Chilli & Garlic Stir Fry Sauce 120g"
+        }
+      }
+    },
+    {
+      "id": "pasta_bake_sauce",
+      "prices": {
+        "tesco": {
+          "pack": 500,
+          "price": 0.69,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.tesco.com/shop/en-GB/products/264691387",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Tesco Creamy Tomato & Herb Pasta Bake Sauce 500g",
+          "note": "Homepride 485g £2.65 (Clubcard £2.25)"
+        },
+        "sainsburys": {
+          "pack": 480,
+          "price": 0.69,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.sainsburys.co.uk/groceries/product/sainsburys-creamy-tomato-pasta-bake-sauce-480g",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Sainsbury's Creamy Tomato Pasta Bake Sauce 480g"
+        },
+        "asda": {
+          "pack": 500,
+          "price": 0.79,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.trolley.co.uk/product/asda-creamy-tomato-pasta-sauce/CHE243",
+          "basis": "compare",
+          "conf": "high",
+          "label": "ASDA Creamy Tomato Pasta Bake 500g"
+        },
+        "aldi": {
+          "pack": 480,
+          "price": 0.79,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/cucina-creamy-tomato-pasta-bake-sauce-000000000335812002",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Cucina Creamy Tomato Pasta Bake Sauce 480g"
+        },
+        "lidl": {
+          "pack": 480,
+          "price": 0.79,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/cucina-creamy-tomato-pasta-bake-sauce-000000000335812002",
+          "basis": "model",
+          "conf": "low",
+          "label": "Cucina Creamy Tomato Pasta Bake Sauce 480g",
+          "note": "No Lidl price found online; matched to Aldi's Cucina Creamy Tomato Pasta Bake Sauce 480g"
+        }
+      }
+    },
+    {
+      "id": "curry_powder",
+      "prices": {
+        "tesco": {
+          "pack": 80,
+          "price": 1.25,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.tesco.com/shop/en-GB/products/255769961",
+          "basis": "shop",
+          "conf": "medium",
+          "label": "Tesco Medium Curry Powder 80G",
+          "note": "Shown out of stock online today, £1.25 from product page/trolley; Schwartz Medium 90G £2.25"
+        },
+        "sainsburys": {
+          "pack": 80,
+          "price": 1.3,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/curry%20powder",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Sainsbury's Medium Curry Powder 80g",
+          "note": "Stamford Street Co. Medium 55g £0.54 also stocked"
+        },
+        "asda": {
+          "pack": 80,
+          "price": 1.35,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.trolley.co.uk/product/asda-medium-curry-powder/CJF522",
+          "basis": "compare",
+          "conf": "high",
+          "label": "COOK by ASDA Medium Curry Powder 80g"
+        },
+        "aldi": {
+          "pack": 90,
+          "price": 0.89,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/ready-set-cook-medium-curry-powder-000000000336690001",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Ready, Set…Cook! Medium Curry Powder 90g"
+        },
+        "lidl": {
+          "pack": 90,
+          "price": 0.89,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/ready-set-cook-medium-curry-powder-000000000336690001",
+          "basis": "model",
+          "conf": "low",
+          "label": "Ready, Set…Cook! Medium Curry Powder 90g",
+          "note": "No Lidl price found online; matched to Aldi's Ready, Set…Cook! Medium Curry Powder 90g"
+        }
+      }
+    }
+  ],
+  "missing": [
+    "taco_kit aldi",
+    "taco_kit lidl",
+    "katsu_sauce aldi",
+    "katsu_sauce lidl"
+  ]
+}
