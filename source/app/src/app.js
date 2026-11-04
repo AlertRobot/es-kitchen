@@ -651,8 +651,11 @@ function headerWeek(sim, list) {
   let stats = '';
   if (sim && (sim.portions || (list ? list.basket.prefTotal : sim.buy.prefTotal) > 0.005)) {
     const total = list ? list.basket.prefTotal : sim.buy.prefTotal, bud = weeklyBudget();
+    // once things are ticked off, the headline is what's still to buy
+    const ck = (currentWeek() || {}).checked || {}, B = list ? list.basket : null;
+    const ticked = B ? B.rows.filter(r => ck[r.i] && r.byShop[B.prefKey]).reduce((a, r) => a + (r.byShop[B.prefKey].cost || 0), 0) : 0;
     const pct = Math.min(100, total / bud * 100);
-    stats = '<button class="statline" data-act="go-cost" aria-label="See cost and waste"><span><b class="money">' + fmtMoney(total) + '</b> shop</span><span><b class="money">' + (sim.portions ? fmtMoney(sim.perPortion) : '\u2013') + '</b> a portion</span><span><b class="money" style="color:' + (sim.wasteValue > 1 ? 'var(--warn)' : 'inherit') + '">' + fmtMoney(sim.wasteValue) + '</b> waste</span></button>' +
+    stats = '<button class="statline" data-act="go-cost" aria-label="See cost and waste"><span><b class="money">' + fmtMoney(total - ticked) + '</b> ' + (ticked > 0.005 ? 'left to buy' : 'shop') + '</span><span><b class="money">' + (sim.portions ? fmtMoney(sim.perPortion) : '\u2013') + '</b> a portion</span><span><b class="money" style="color:' + (sim.wasteValue > 1 ? 'var(--warn)' : 'inherit') + '">' + fmtMoney(sim.wasteValue) + '</b> waste</span></button>' +
       '<div class="meter slim" title="Against your weekly budget"><i class="' + (total > bud ? 'over' : '') + '" style="width:' + pct.toFixed(0) + '%"></i></div>';
   }
   return '<div class="top"><div class="weeknav"><button class="icon-btn" data-act="wk" data-v="-1" aria-label="Previous week">' + ICON.left + '</button>' +
@@ -1242,7 +1245,13 @@ function shopRowHtml(row, B, w) {
   if (row.staple) {
     const forR = (row.forWhat || []).map(id => S.RMAP[id] && S.RMAP[id].title).filter(Boolean);
     why = row.always ? 'always buy when low' : 'for ' + Array.from(new Set(row.forDays)).map(x => DAY_NAMES[x]).join(', ') + (forR.length ? ' (' + h(forR[0].split(/ with | & |,/)[0]) + (forR.length > 1 ? ' +' + (forR.length - 1) : '') + ')' : '');
-  } else why = 'need ' + fmtQty(row.need, ing.unit);
+  } else {
+    // what it's for: each meal with its days, dinners first
+    const byR = []; (row.uses || []).forEach(u => { const r = S.RMAP[u.r]; if (!r) return; let x = byR.find(y => y.r === r); if (!x) byR.push(x = { r, days: [] }); if (!x.days.includes(u.d)) x.days.push(u.d); });
+    byR.sort((a, b) => (isDinner(b.r) - isDinner(a.r)) || (a.days[0] - b.days[0]));
+    const one = x => h(rt(x.r)) + ' (' + (x.days.length > 3 ? x.days.length + ' days' : x.days.sort((a, b) => a - b).map(d => DAY_NAMES[d]).join(', ')) + ')';
+    why = byR.length ? 'for ' + byR.slice(0, 2).map(one).join(', ') + (byR.length > 2 ? ' +' + (byR.length - 2) + ' more' : '') : 'need ' + fmtQty(row.need, ing.unit);
+  }
   let out = '<div class="item ' + (done ? 'done' : '') + '"><button class="check ' + (done ? 'on' : '') + '" data-act="tick" data-v="' + h(row.i) + '" aria-label="' + (done ? 'Untick ' : 'Tick ') + h(ing.name) + '" aria-pressed="' + done + '">' + (done ? ICON.tick : '') + '</button>' +
     '<div class="itap" data-act="tick" data-v="' + h(row.i) + '" style="min-width:0"><div class="iname">' + h(ing.name) + '</div><div class="muted small">' + packTxt + ' · ' + why + '</div>' + (row.staple ? '<button class="linkish small" data-act="have" data-v="' + h(row.i) + '">Skip this week</button>' : '') + '</div>' +
     '<button class="more" data-act="expand" data-v="s:' + h(row.i) + '" aria-expanded="' + !!open + '">' + (ps.missing ? '<span class="tag warn">add price</span>' : '<span class="money">' + fmtMoney(ps.cost) + '</span>' + (ps.stale ? ' <span class="tag warn">old</span>' : '')) + '</button>';

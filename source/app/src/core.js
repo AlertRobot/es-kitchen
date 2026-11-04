@@ -215,6 +215,7 @@ function simulate(week, ctx) {
     lots.push({ i: c.i, q: c.q, exp, frozen: !!c.frozen, opened: !!c.opened, carried: true });
   }
   const purchases = {}; // id -> {need, packs:[], bought, staple?, forDays?}
+  const usesOf = {}; // id -> [{r, d}]
   const waste = {};     // id -> qty
   const freezeNotes = [], warnings = [], dayInfo = [], defrostNotes = [];
   const freezerMeals = (week.freezerMeals || []).map(m => ({ ...m }));
@@ -247,6 +248,8 @@ function simulate(week, ctx) {
   // use `need` of an ingredient line on day d; returns the cost attributed to the meal
   function use(l, need, d, forWhat) {
     const ing = ING[l.i]; if (!ing || !(need > 0)) return 0;
+    // what each thing on the list is for (which meal on which day), so the list can say
+    if (forWhat) { const u = usesOf[l.i] || (usesOf[l.i] = []); if (!u.some(x => x.r === forWhat && x.d === d)) u.push({ r: forWhat, d }); }
     if (ing.staple) {
       (staplesUsed[l.i] = staplesUsed[l.i] || []).push(d);
       const st = pantryStatus(ctx, l.i);
@@ -322,7 +325,7 @@ function simulate(week, ctx) {
     for (const e of blPlan[d]) {
       if (e.lo) { const prev = (week.days || [])[d - 1] || {}; info.bl.push({ ...e, from: prev.r && !prev.takeaway ? prev.r : null }); continue; }
       const r = RMAP[e.r]; let c = 0;
-      for (const l of r.ingredients) if (l.q > 0) c += use(l, l.q / (r.servings || 1), d, null);
+      for (const l of r.ingredients) if (l.q > 0) c += use(l, l.q / (r.servings || 1), d, r.id);
       blCost += c; blPortions++; info.bl.push({ ...e, cost: c });
     }
     // evening: dinner
@@ -362,6 +365,7 @@ function simulate(week, ctx) {
   let consumed = 0, portions = 0; for (const x of dayInfo) { consumed += x.cost; portions += x.fromFreezer ? 0 : x.portions; }
   const buy = basketTotals(purchases, ctx);
   let stapleCost = 0; for (const row of buy.rows) if (row.staple) stapleCost += row.byShop[buy.prefKey].cost;
+  for (const id in purchases) purchases[id].uses = usesOf[id] || [];
   return { purchases, waste, wasteValue, carryOut, freezerOut: fmOut, leftoverValue, freezeNotes, defrostNotes, warnings, dayInfo, freezer: { start: freezerStart, peak: freezerPeak, end: inFreezer, cap: freezerCap, fullSkips: freezerFullSkips }, consumed, portions,
     perPortion: portions ? consumed / portions : 0, buy, usedFromCarry, staplesUsed, skippedOpt, stapleCost, blCost, blPortions };
 }
@@ -378,7 +382,7 @@ function basketTotals(purchases, ctx, extraRows) {
   const ids = Object.keys(purchases);
   for (const id of ids) {
     const ing = ING[id], P = purchases[id];
-    const row = { i: id, need: P.need, packs: P.packs, bought: P.bought, staple: !!P.staple, forDays: P.forDays || [], forWhat: P.forWhat || [], always: !!P.always, byShop: {} };
+    const row = { i: id, need: P.need, packs: P.packs, bought: P.bought, staple: !!P.staple, forDays: P.forDays || [], forWhat: P.forWhat || [], uses: P.uses || [], always: !!P.always, byShop: {} };
     for (const k of keys) {
       const sp = shopPrice(ing, k.shop, k.loyalty);
       let cost, missing = false, est = false, stale = false, rough = false, count = 0, pack = null;
