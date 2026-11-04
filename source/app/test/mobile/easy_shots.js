@@ -20,7 +20,7 @@ const srv = http.createServer((q, r) => { let p = decodeURIComponent(q.url.split
   for (const d of [2, 3, 4, 5, 6]) { await pg.click('[data-act="easy-day"][data-v="' + d + '"]'); await pg.waitForTimeout(150); }
   await shot('01-settings-easy'); await wide('settings');
   await pg.click('[data-act="tab"][data-v="week"]'); await pg.waitForTimeout(300);
-  await pg.click('[data-act="fill"]'); await pg.waitForTimeout(6000); await shot('02-week-filled'); await wide('week');
+  await pg.click('[data-act="fill"]'); await pg.waitForTimeout(6000); await shot('02-week-filled'); await wide('week'); await pg.evaluate(() => document.querySelector('.days').scrollIntoView()); await pg.waitForTimeout(200); await shot('02b-days');
   console.log('planned:', await pg.evaluate(() => [...document.querySelectorAll('.meal .ttl')].map(x => x.textContent).join(' | ')));
   await pg.click('[data-act="tab"][data-v="recipes"]'); await pg.waitForTimeout(500); await shot('03-recipes'); await wide('recipes');
   console.log('shelves:', await pg.evaluate(() => [...document.querySelectorAll('.shelf h2')].map(x => x.textContent).join(' | ')));

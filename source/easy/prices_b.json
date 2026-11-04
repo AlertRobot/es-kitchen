@@ -1,0 +1,732 @@
+{
+  "ingredients": [
+    {
+      "aisle": "Frozen",
+      "life": 365,
+      "keeps": 90,
+      "freeze": true,
+      "staple": false,
+      "tags": [],
+      "id": "frozen_pizza",
+      "name": "Frozen pizza, standard ~10 inch pepperoni (own standard range)",
+      "unit": "each",
+      "packs": [
+        1
+      ],
+      "nutrition": {
+        "per": 1,
+        "kcal": 852,
+        "protein": 34,
+        "carbs": 92,
+        "fat": 37
+      },
+      "nutritionSrc": "https://www.tesco.com/shop/en-GB/products/318192360 (Tesco Stonebaked Double Pepperoni 330g: per 1/2 pizza 426kcal, 17.0g protein, 46.1g carbs, 18.6g fat; doubled for one whole pizza)"
+    },
+    {
+      "aisle": "Frozen",
+      "life": 365,
+      "keeps": 90,
+      "freeze": true,
+      "staple": false,
+      "tags": [],
+      "id": "oven_chips",
+      "name": "Frozen straight-cut oven chips",
+      "unit": "g",
+      "packs": [
+        1500,
+        1000
+      ],
+      "nutrition": {
+        "per": 100,
+        "kcal": 197,
+        "protein": 3.8,
+        "carbs": 33.1,
+        "fat": 4.9
+      },
+      "nutritionSrc": "https://www.tesco.com/shop/en-GB/products/282060197 (Tesco Straight Cut Oven Chips 1.5kg, per 100g oven baked)"
+    },
+    {
+      "aisle": "Frozen",
+      "life": 365,
+      "keeps": 90,
+      "freeze": true,
+      "staple": false,
+      "tags": [],
+      "id": "chicken_kievs",
+      "name": "Garlic chicken kievs (breaded)",
+      "unit": "each",
+      "packs": [
+        4,
+        2
+      ],
+      "nutrition": {
+        "per": 1,
+        "kcal": 317,
+        "protein": 14.4,
+        "carbs": 14.9,
+        "fat": 21.9
+      },
+      "nutritionSrc": "https://www.tesco.com/shop/en-GB/products/264322746 (Tesco Breaded 4 Garlic Chicken Kievs 500g, per kiev 117g cooked)"
+    },
+    {
+      "aisle": "Frozen",
+      "life": 365,
+      "keeps": 90,
+      "freeze": true,
+      "staple": false,
+      "tags": [],
+      "id": "fish_fingers",
+      "name": "Cod fish fingers",
+      "unit": "each",
+      "packs": [
+        10
+      ],
+      "nutrition": {
+        "per": 1,
+        "kcal": 70,
+        "protein": 4.1,
+        "carbs": 5.3,
+        "fat": 3.5
+      },
+      "nutritionSrc": "https://www.tesco.com/shop/en-GB/products/289991420 (Tesco Cod Fish Fingers 10 Pack 300g: per 100g oven cooked 232kcal, 13.7g protein, 17.5g carbs, 11.6g fat; x 30g per finger)"
+    },
+    {
+      "aisle": "Frozen",
+      "life": 365,
+      "keeps": 90,
+      "freeze": true,
+      "staple": false,
+      "tags": [],
+      "id": "breaded_chicken_fillets",
+      "name": "Frozen breaded chicken breast fillet burgers (whole fillet)",
+      "unit": "each",
+      "packs": [
+        2,
+        4
+      ],
+      "nutrition": {
+        "per": 1,
+        "kcal": 188,
+        "protein": 16.5,
+        "carbs": 12.4,
+        "fat": 7.8
+      },
+      "nutritionSrc": "https://www.sainsburys.co.uk/gol-ui/product/sainsburys-southern-fried-fillet-burgers-210g (per burger, oven cooked)"
+    },
+    {
+      "aisle": "Frozen",
+      "life": 365,
+      "keeps": 90,
+      "freeze": true,
+      "staple": false,
+      "tags": [],
+      "id": "southern_fried_chicken",
+      "name": "Frozen southern fried chicken mini fillets / bites",
+      "unit": "g",
+      "packs": [
+        500,
+        300
+      ],
+      "nutrition": {
+        "per": 100,
+        "kcal": 278,
+        "protein": 12.7,
+        "carbs": 17.1,
+        "fat": 17.1
+      },
+      "nutritionSrc": "https://www.tesco.com/shop/en-GB/products/304795987 (Tesco Southern Fried Chicken Bites 500g, per 100g)"
+    },
+    {
+      "aisle": "Frozen",
+      "life": 365,
+      "keeps": 90,
+      "freeze": true,
+      "staple": false,
+      "tags": [],
+      "id": "frozen_roast_potatoes",
+      "name": "Frozen roast potatoes",
+      "unit": "g",
+      "packs": [
+        800,
+        900
+      ],
+      "nutrition": {
+        "per": 100,
+        "kcal": 135,
+        "protein": 2.0,
+        "carbs": 26.5,
+        "fat": 1.9
+      },
+      "nutritionSrc": "https://www.tesco.com/shop/en-GB/products/285679388 (Tesco Roast Potatoes 800g, per 100g)"
+    },
+    {
+      "aisle": "Frozen",
+      "life": 365,
+      "keeps": 90,
+      "freeze": true,
+      "staple": false,
+      "tags": [],
+      "id": "frozen_yorkshires",
+      "name": "Frozen Yorkshire puddings",
+      "unit": "each",
+      "packs": [
+        12,
+        15
+      ],
+      "nutrition": {
+        "per": 1,
+        "kcal": 47,
+        "protein": 1.8,
+        "carbs": 7.4,
+        "fat": 1.0
+      },
+      "nutritionSrc": "https://www.tesco.com/shop/en-GB/products/307749762 (Tesco 12 Yorkshire Puddings 220g, per 18g pudding)"
+    },
+    {
+      "aisle": "Frozen",
+      "life": 365,
+      "keeps": 90,
+      "freeze": true,
+      "staple": false,
+      "tags": [],
+      "id": "frozen_mixed_veg",
+      "name": "Frozen mixed vegetables",
+      "unit": "g",
+      "packs": [
+        1000
+      ],
+      "nutrition": {
+        "per": 100,
+        "kcal": 43,
+        "protein": 2.6,
+        "carbs": 4.8,
+        "fat": 0.5
+      },
+      "nutritionSrc": "https://www.tesco.com/shop/en-GB/products/264889062 (Tesco Farmhouse Mixed Vegetables 1kg: carrot, peas, broccoli, cauliflower; per 100g)"
+    }
+  ],
+  "prices": [
+    {
+      "id": "frozen_pizza",
+      "prices": {
+        "tesco": {
+          "pack": 1,
+          "price": 1.75,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.tesco.com/groceries/en-GB/search?query=frozen%20pepperoni%20pizza",
+          "basis": "shop",
+          "conf": "high",
+          "label": "TESCO STONEBAKED DOUBLE PEPPERONI PIZZA 330g",
+          "note": "Product page https://www.tesco.com/shop/en-GB/products/318192360 showed \u00a31.75; trolley shows \u00a31.65. Tesco Deep Pan Pepperoni 379g \u00a31.75 (Aldi Price Match). Hearty Food Thin Pepperoni 314g \u00a31.10 is the value line"
+        },
+        "sainsburys": {
+          "pack": 1,
+          "price": 1.85,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/sainsbury's%20double%20pepperoni%20thin%20pizza",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Sainsbury's Double Pepperoni Thin Pizza 339g",
+          "note": "Deep Pan Pepperoni 374g \u00a31.75; Stamford Street Co. 305g Pepperoni Pizza \u00a31.07 (Aldi price match, value line)"
+        },
+        "asda": {
+          "pack": 1,
+          "price": 1.72,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.trolley.co.uk/product/asda-stonebaked-double-pepperoni-pizza/RVS342",
+          "basis": "compare",
+          "conf": "medium",
+          "label": "ASDA Double Pepperoni Stonebaked Pizza 309g",
+          "note": "Trolley online price; ASDA Double Pepperoni Deep Pan \u00a31.70 also listed"
+        },
+        "aldi": {
+          "pack": 1,
+          "price": 1.49,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/carlos-stonebaked-pepperoni-pizza-000000000000698996",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Carlos Stonebaked Pepperoni Pizza 330g",
+          "note": "Everyday Essentials Pepperoni Pizza 314g \u00a31.10 (value line); Carlos Deep Pan Pepperoni 377g \u00a31.49"
+        },
+        "lidl": {
+          "pack": 1,
+          "price": 1.49,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/carlos-stonebaked-pepperoni-pizza-000000000000698996",
+          "basis": "model",
+          "conf": "low",
+          "label": "Carlos Stonebaked Pepperoni Pizza 330g",
+          "note": "No Lidl price found (Lidl search API, Lidl frozen pages, Open Prices, news); matched to Aldi equivalent Carlos Stonebaked Pepperoni Pizza 330g at Aldi price"
+        }
+      }
+    },
+    {
+      "id": "oven_chips",
+      "prices": {
+        "tesco": {
+          "pack": 1500,
+          "price": 1.65,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.tesco.com/groceries/en-GB/search?query=straight%20cut%20oven%20chips%201.5kg",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Hearty Food Co Straight Cut Chips 1.5Kg",
+          "note": "Tesco Straight Cut Oven Chips 1.5Kg \u00a31.50 is out of stock; Tesco Homestyle Straight Cut 950g \u00a32.65"
+        },
+        "sainsburys": {
+          "pack": 1500,
+          "price": 1.65,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/sainsbury's%20chips%201.5kg",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Stamford Street Co. Chips 1.5kg",
+          "note": "Straight cut oven chips, Aldi price match. Sainsbury's French Fries 1.5kg \u00a31.88 (out of stock)"
+        },
+        "asda": {
+          "pack": 1500,
+          "price": 2.2,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.trolley.co.uk/product/asda-straight-cut-chips/BTT077",
+          "basis": "compare",
+          "conf": "medium",
+          "label": "ASDA Straight Cut Chips 1.5kg",
+          "note": "Trolley online price; Just Essentials Chips \u00a31.65"
+        },
+        "aldi": {
+          "pack": 1500,
+          "price": 1.65,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/products/frozen-food/chips-potato/k/1588161416978056003",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Four Seasons Straight Cut Chips 1.5kg",
+          "note": "Homestyle Straight Cut Chips 1kg \u00a31.29"
+        },
+        "lidl": {
+          "pack": 1500,
+          "price": 1.65,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/products/frozen-food/chips-potato/k/1588161416978056003",
+          "basis": "model",
+          "conf": "low",
+          "label": "Four Seasons Straight Cut Chips 1.5kg",
+          "note": "No Lidl price found (Lidl search API, Lidl frozen pages, Open Prices, news); matched to Aldi equivalent Four Seasons Straight Cut Chips 1.5kg at Aldi price"
+        }
+      }
+    },
+    {
+      "id": "chicken_kievs",
+      "prices": {
+        "tesco": {
+          "pack": 4,
+          "price": 2.75,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.tesco.com/groceries/en-GB/search?query=garlic%20chicken%20kiev",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Tesco Breaded 4 Garlic Chicken Kievs 500g",
+          "note": "Frozen. Hearty Food Co 4 Garlic Chicken Kievs 500g \u00a32.30; Tesco 2 Garlic and Herb Chicken Kievs 270g \u00a33.40"
+        },
+        "sainsburys": {
+          "pack": 4,
+          "price": 2.7,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.sainsburys.co.uk/gol-ui/product/sainsburys-breaded-garlic-chicken-kyivs-490g",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Sainsbury's Breaded Garlic Chicken Kyivs 490g",
+          "note": "Frozen, Aldi price match; 4 kyivs (per-kyiv nutrition, 4 servings)"
+        },
+        "asda": {
+          "pack": 2,
+          "price": 3.13,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.trolley.co.uk/product/asda-2-garlic-herb-chicken-kievs/WMR255",
+          "basis": "compare",
+          "conf": "medium",
+          "label": "ASDA 2 Garlic & Herb Chicken Kievs",
+          "note": "No Asda 4-pack found; trolley usual price \u00a32.80"
+        },
+        "aldi": {
+          "pack": 4,
+          "price": 2.75,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/roosters-garlic-herb-chicken-kievs-4-pack-000000000366545002",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Roosters Garlic & Herb Chicken Kievs 4 Pack 500g",
+          "note": "Frozen"
+        },
+        "lidl": {
+          "pack": 4,
+          "price": 2.75,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/roosters-garlic-herb-chicken-kievs-4-pack-000000000366545002",
+          "basis": "model",
+          "conf": "low",
+          "label": "Roosters Garlic & Herb Chicken Kievs 4 Pack 500g",
+          "note": "No Lidl price found (Lidl search API, Lidl frozen pages, Open Prices, news); matched to Aldi equivalent Roosters Garlic & Herb Chicken Kievs 4 Pack 500g at Aldi price"
+        }
+      }
+    },
+    {
+      "id": "fish_fingers",
+      "prices": {
+        "tesco": {
+          "pack": 10,
+          "price": 2.5,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.tesco.com/groceries/en-GB/search?query=cod%20fish%20fingers",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Tesco Cod Fish Fingers 10 Pack 300G",
+          "note": "Hearty Food Co Fish Fingers 10 Pack 250g \u00a30.80 is not cod"
+        },
+        "sainsburys": {
+          "pack": 10,
+          "price": 2.25,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/cod%20fish%20fingers",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Sainsbury's Breaded Cod Fillet Fish Fingers x10 300g",
+          "note": ""
+        },
+        "asda": {
+          "pack": 10,
+          "price": 3.33,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.trolley.co.uk/product/asda-10-cod-fillet-fish-fingers/MOR324",
+          "basis": "compare",
+          "conf": "medium",
+          "label": "ASDA 10 Flaky Cod Fish Fingers",
+          "note": "Trolley online price looks high: usually \u00a31.85 per its price history"
+        },
+        "aldi": {
+          "pack": 10,
+          "price": 1.99,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/the-fishmonger-breaded-cod-fish-fingers-10-pack-000000000000368596",
+          "basis": "shop",
+          "conf": "high",
+          "label": "The Fishmonger Breaded Cod Fish Fingers 10 Pack 300g",
+          "note": ""
+        },
+        "lidl": {
+          "pack": 10,
+          "price": 1.99,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/the-fishmonger-breaded-cod-fish-fingers-10-pack-000000000000368596",
+          "basis": "model",
+          "conf": "low",
+          "label": "The Fishmonger Breaded Cod Fish Fingers 10 Pack 300g",
+          "note": "No Lidl price found (Lidl search API, Lidl frozen pages, Open Prices, news); matched to Aldi equivalent The Fishmonger Breaded Cod Fish Fingers 10 Pack 300g at Aldi price"
+        }
+      }
+    },
+    {
+      "id": "breaded_chicken_fillets",
+      "prices": {
+        "tesco": {
+          "pack": 2,
+          "price": 2.85,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.tesco.com/groceries/en-GB/search?query=breaded%20chicken%20breast%20fillets%20frozen",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Tesco Extra Tasty 2 Chicken Breast Fillets Burger 210g",
+          "note": "Frozen, 100% whole fillet. Product page showed \u00a32.75. Tesco Southern Fried 2 Chicken Breast Fillet Burgers 210g also \u00a32.85"
+        },
+        "sainsburys": {
+          "pack": 2,
+          "price": 2.75,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.sainsburys.co.uk/gol-ui/product/sainsburys-southern-fried-fillet-burgers-210g",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Sainsbury's Southern Fried Fillet Burgers 210g",
+          "note": "Frozen, 2 burgers"
+        },
+        "aldi": {
+          "pack": 4,
+          "price": 3.19,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/roosters-gastro-southern-fried-chicken-breast-fillet-burger-000000000490371002",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Gastro by Roosters Southern Fried Chicken Breast Fillet Burgers 4 Pack 400g",
+          "note": "Frozen"
+        },
+        "lidl": {
+          "pack": 4,
+          "price": 3.19,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/roosters-gastro-southern-fried-chicken-breast-fillet-burger-000000000490371002",
+          "basis": "model",
+          "conf": "low",
+          "label": "Gastro by Roosters Southern Fried Chicken Breast Fillet Burgers 4 Pack 400g",
+          "note": "No Lidl price found (Lidl search API, Lidl frozen pages, Open Prices, news); matched to Aldi equivalent Gastro by Roosters Southern Fried Chicken Breast Fillet Burgers 4 Pack 400g at Aldi price"
+        }
+      }
+    },
+    {
+      "id": "southern_fried_chicken",
+      "prices": {
+        "tesco": {
+          "pack": 500,
+          "price": 3.75,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.tesco.com/groceries/en-GB/search?query=southern%20fried%20chicken%20frozen",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Tesco Southern Fried Chicken Bites 500G",
+          "note": "Frozen, chopped and shaped. Tesco Southern Fried Chicken Breast Strips 400g \u00a34.20"
+        },
+        "sainsburys": {
+          "pack": 300,
+          "price": 3.5,
+          "loyalty": 2.75,
+          "checked": "2026-11-04",
+          "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/southern%20fried%20chicken%20frozen",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Sainsbury's Southern Fried Chicken Mini Fillets 300g",
+          "note": "Frozen"
+        },
+        "aldi": {
+          "pack": 320,
+          "price": 1.49,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/products/frozen-food/meat-poultry/k/1588161416978056001",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Roosters Chicken Goujons in Southern Fried Breadcrumbs 320g",
+          "note": "Gastro by Roosters Southern Fried Chicken Strips 600g \u00a33.99"
+        },
+        "lidl": {
+          "pack": 320,
+          "price": 1.49,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/products/frozen-food/meat-poultry/k/1588161416978056001",
+          "basis": "model",
+          "conf": "low",
+          "label": "Roosters Chicken Goujons in Southern Fried Breadcrumbs 320g",
+          "note": "No Lidl price found (Lidl search API, Lidl frozen pages, Open Prices, news); matched to Aldi equivalent Roosters Chicken Goujons in Southern Fried Breadcrumbs 320g at Aldi price"
+        }
+      }
+    },
+    {
+      "id": "frozen_roast_potatoes",
+      "prices": {
+        "tesco": {
+          "pack": 800,
+          "price": 1.35,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.tesco.com/groceries/en-GB/search?query=frozen%20roast%20potatoes",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Tesco Roast Potatoes 800G",
+          "note": "Aunt Bessie's Roast Potatoes 600g \u00a32.50"
+        },
+        "sainsburys": {
+          "pack": 900,
+          "price": 1.55,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/frozen%20roast%20potatoes",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Sainsbury's Roast Potatoes 900g",
+          "note": "Aunt Bessie's Roast Potatoes 600g shown at \u00a31.75/\u00a32.50"
+        },
+        "asda": {
+          "pack": 800,
+          "price": 1.23,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.trolley.co.uk/product/asda-crispy-roast-potatoes/OZD944",
+          "basis": "compare",
+          "conf": "medium",
+          "label": "ASDA Crispy Roast Potatoes 800g",
+          "note": "Trolley online price"
+        },
+        "aldi": {
+          "pack": 800,
+          "price": 1.09,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/products/frozen-food/chips-potato/k/1588161416978056003",
+          "basis": "shop",
+          "conf": "medium",
+          "label": "Four Seasons Roast Potatoes 800g",
+          "note": "Listed at \u00a31.09 on the category page, but the product page says currently not available online"
+        },
+        "lidl": {
+          "pack": 800,
+          "price": 1.09,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/products/frozen-food/chips-potato/k/1588161416978056003",
+          "basis": "model",
+          "conf": "low",
+          "label": "Four Seasons Roast Potatoes 800g",
+          "note": "No Lidl price found (Lidl search API, Lidl frozen pages, Open Prices, news); matched to Aldi equivalent Four Seasons Roast Potatoes 800g at Aldi price"
+        }
+      }
+    },
+    {
+      "id": "frozen_yorkshires",
+      "prices": {
+        "tesco": {
+          "pack": 12,
+          "price": 1.45,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.tesco.com/groceries/en-GB/search?query=frozen%20yorkshire%20puddings",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Tesco 12 Yorkshire Puddings 220G",
+          "note": "Product page showed \u00a31.40. Hearty Food Co. 15 Yorkshire Puddings 230g \u00a30.46 (Aldi Price Match)"
+        },
+        "sainsburys": {
+          "pack": 12,
+          "price": 1.4,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/yorkshire%20puddings",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Sainsbury's Yorkshire Puddings x12 220g",
+          "note": "Stamford Street Co. Yorkshire Puddings x15 220g 44p (Aldi price match)"
+        },
+        "asda": {
+          "pack": 12,
+          "price": 1.34,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.trolley.co.uk/product/asda-12-yorkshire-puddings/ZUE571",
+          "basis": "compare",
+          "conf": "medium",
+          "label": "ASDA 12 Golden Yorkshire Puddings 220g",
+          "note": "Trolley online price; usually \u00a31.15"
+        },
+        "aldi": {
+          "pack": 15,
+          "price": 0.46,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/products/frozen-food/vegetables-sides/k/1588161416978056004",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Everyday Essentials Yorkshire Puddings 15 Pack 230g",
+          "note": "Four Seasons Golden Yorkshire Puddings 230g \u00a30.99 also stocked (count not shown online)"
+        },
+        "lidl": {
+          "pack": 15,
+          "price": 0.46,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/products/frozen-food/vegetables-sides/k/1588161416978056004",
+          "basis": "model",
+          "conf": "low",
+          "label": "Everyday Essentials Yorkshire Puddings 15 Pack 230g",
+          "note": "No Lidl price found (Lidl search API, Lidl frozen pages, Open Prices, news); matched to Aldi equivalent Everyday Essentials Yorkshire Puddings 15 Pack 230g at Aldi price"
+        }
+      }
+    },
+    {
+      "id": "frozen_mixed_veg",
+      "prices": {
+        "tesco": {
+          "pack": 1000,
+          "price": 1.7,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.tesco.com/groceries/en-GB/search?query=frozen%20mixed%20vegetables",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Tesco Farmhouse Mixed Vegetables 1Kg",
+          "note": "Carrot, peas, broccoli, cauliflower. Tesco Mixed Vegetables 1kg \u00a31.75; Growers Harvest Mixed Vegetables 1kg \u00a30.99 (Aldi Price Match)"
+        },
+        "sainsburys": {
+          "pack": 1000,
+          "price": 1.65,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.sainsburys.co.uk/gol-ui/SearchResults/frozen%20mixed%20vegetables",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Sainsbury's Mixed Vegetables 1kg",
+          "note": "Vegetable Medley 1kg and Classic Vegetable Mix 1kg \u00a31.70; Stamford Street Mixed Vegetables 1kg 99p"
+        },
+        "asda": {
+          "pack": 1000,
+          "price": 1.6,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.trolley.co.uk/product/asda-frozen-for-freshness-mixed-vegetables/VHQ676",
+          "basis": "compare",
+          "conf": "medium",
+          "label": "ASDA Mixed Vegetables 1kg",
+          "note": "Trolley also shows an offer price \u00a31.50; Just Essentials Mixed Vegetables 1kg \u00a30.98"
+        },
+        "aldi": {
+          "pack": 1000,
+          "price": 0.99,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/four-seasons-mixed-vegetables-000000000000366028",
+          "basis": "shop",
+          "conf": "high",
+          "label": "Four Seasons Mixed Vegetables 1kg",
+          "note": "Country Vegetable Mix 1kg \u00a31.39"
+        },
+        "lidl": {
+          "pack": 1000,
+          "price": 0.99,
+          "loyalty": null,
+          "checked": "2026-11-04",
+          "src": "https://www.aldi.co.uk/product/four-seasons-mixed-vegetables-000000000000366028",
+          "basis": "model",
+          "conf": "low",
+          "label": "Four Seasons Mixed Vegetables 1kg",
+          "note": "No Lidl price found (Lidl search API, Lidl frozen pages, Open Prices, news); matched to Aldi equivalent Four Seasons Mixed Vegetables 1kg at Aldi price"
+        }
+      }
+    }
+  ],
+  "missing": [
+    "breaded_chicken_fillets asda",
+    "southern_fried_chicken asda"
+  ]
+}
