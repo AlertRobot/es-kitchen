@@ -2,7 +2,7 @@
 const {
   SHOPS, DAY_NAMES, DAY_LONG, AISLE_ORDER, STALE_DAYS, isoDate, parseIso, addDays, daysBetween, mondayOf, ageDays,
   fmtMoney, fmtQty, packLabel, checkPrefs, recipeNutrition, hasEquipment, shopPrice, unitPrice, simulate, shoppingList,
-  suggest, autoFill, rescuePlans, blItems, seeded, baseOf, nobodyIn, awayOn, shiftOn, cookOn, guestsOn,
+  suggest, autoFill, rescuePlans, blItems, seeded, baseOf, nobodyIn, awayOn, shiftOn, cookOn, guestsOn, dinnerPortionsOn,
 } = window.Core;
 const Store = window.Store;
 
@@ -426,7 +426,7 @@ function normWeek(w, start) {
 }
 // Carry-overs are worked out live from what last week actually planned. Nothing planned last week = nothing carried.
 // Only when someone edits the list in the Kitchen tab (carryEdited) is it kept as typed.
-function weekHasDinners(w) { return !!(w && w.days && w.days.some(d => d && (d.r || d.takeaway))); }
+function weekHasDinners(w) { return !!(w && ((w.days && w.days.some(d => d && (d.r || d.takeaway))) || (w.frozeOn || []).length)); }
 function carryFromPrev() {
   const p = S.prevWeek;
   if (!p || !S.lib) return { carryIn: [], freezerMeals: [], suggestFirst: [] };
@@ -705,7 +705,7 @@ function renderWeek() {
   if (arrival.length) out += '<div class="note">' + ICON.snow + ' <b>When you unpack the shop:</b> freeze ' + arrival.map(n => h(leftText(n.i, n.q)) + ' (for ' + DAY_LONG[n.forDay] + ')').join(', ') + '.</div>';
   const todayIdx = daysBetween(w.start, TODAY);
   if (S.weekUnsure && !planned) out += '<div class="note warn">No signal, so this phone hasn\u2019t been able to fetch this week yet. If it\u2019s been planned on another phone, the plan shows here once you\u2019re back online. Planning it here now would replace theirs.</div>';
-  out += stockCard(w, todayIdx) + tonightAndRatings(w, todayIdx) + plateAsks(w) + kcalGlance(w, todayIdx) + makeWithWhatYouHave(w, sim);
+  out += stockCard(w, todayIdx) + tonightAndRatings(w, todayIdx, todayJobs(w, sim, todayIdx)) + plateAsks(w) + kcalGlance(w, todayIdx) + makeWithWhatYouHave(w, sim);
   // nothing planned yet: the one thing to do is plan it, so that comes first rather than under seven empty nights
   const footFirst = !planned && !locked;
   if (footFirst) out += weekFoot(w, emptyN, planned, locked);
@@ -746,8 +746,9 @@ function renderWeek() {
     } else {
       out += '<button class="meal empty" data-act="pick" data-v="' + d + '" ' + (locked ? 'disabled' : '') + '>' + (whoTag ? whoTag + ' ' : '') + (locked ? '<span>Nothing planned</span>' : '<span>+ Choose dinner</span>' + (isTreat ? '<span class="small hint">Treat night</span>' : d < 5 ? '<span class="small hint">≤' + S.settings.weeknightCap + ' min</span>' : '')) + '</button>';
     }
-    if (filled) defrost.filter(n => n.d === d + 1 || (d === 0 && n.d === 0)).forEach(n => { const what = n.meal ? 'the frozen ' + h(rt(S.RMAP[n.meal] || { title: 'meal' })) : h(leftText(n.i, n.q)); out += '<div class="daynote">' + ICON.snow + '<span>' + (n.d === d ? 'Defrost ' + what + ' in the fridge first thing (for tonight)' : 'Take ' + what + ' out of the freezer tonight, to thaw in the fridge for ' + DAY_LONG[n.d]) + '</span></div>'; });
-    if (filled) sim.freezeNotes.filter(n => !n.onArrival && n.d === d).forEach(n => { out += '<div class="daynote">' + ICON.snow + '<span>Freeze the spare ' + h(leftText(n.i, n.q)) + ' tonight</span></div>'; });
+    // today's freezer jobs show at the top of the week instead, so they're not said twice
+    if (filled && d !== todayIdx) jobsFor(sim, defrost, d).forEach(t => { out += '<div class="daynote">' + ICON.snow + '<span>' + t + '</span></div>'; });
+    (w.frozeOn || []).filter(x => x.d === d && S.RMAP[x.r]).forEach(x => { const what = sim.freezeNotes.filter(n => n.skipped === x.r && n.d === d).map(n => h(leftText(n.i, n.q))); out += '<div class="daynote">' + ICON.snow + '<span>' + h(rt(S.RMAP[x.r])) + ' went in the freezer for another week' + (what.length ? ' (' + what.join(', ') + ')' : '') + ' \u00b7 <button class="linkish small" data-act="unfreeze-night" data-v="' + d + '" data-r="' + h(x.r) + '">Undo</button></span></div>'; });
     if (filled) sim.warnings.filter(x => x.d === d).forEach(x => { out += '<div class="daynote warn">' + ICON.info + '<span>' + h(x.msg) + '</span></div>'; });
     out += '</div>';
   }
@@ -903,21 +904,41 @@ function makeWithWhatYouHave(w, sim) {
   return '<div class="note good makeit"><span>' + ICON.info + '</span><span class="grow">You can make <b>' + h(rt(best.r)) + '</b> with what you’ve got. It uses up ' + h(best.uses.slice(0, 4).map(lowerName).join(', ')) + (best.missing.length ? ' (you’d just need ' + h(best.missing.map(lowerName).join(', ')) + ')' : '') + '. ' +
     '<button class="linkish small" data-act="make-it" data-v="' + h(best.r.id) + '" data-n="' + empty[0] + '">Have it on ' + DAY_LONG[empty[0]] + '</button></span></div>';
 }
-function tonightAndRatings(w, todayIdx) {
+// freezer jobs for a given evening: what to freeze, and what to take out to thaw (big things like a whole chicken need two nights)
+function thawLead(n) { const ing = !n.meal && S.ING[n.i]; return ing && ing.unit === 'g' && n.q >= 1000 ? 2 : 1; }
+function jobsFor(sim, defrost, d) {
+  const out = [];
+  sim.freezeNotes.filter(n => !n.onArrival && n.d === d && !n.skipped).forEach(n => out.push('Freeze the spare ' + h(leftText(n.i, n.q)) + ' tonight'));
+  defrost.filter(n => Math.max(0, n.d - thawLead(n)) === d).forEach(n => { const what = n.meal ? 'the frozen ' + h(rt(S.RMAP[n.meal] || { title: 'meal' })) : h(leftText(n.i, n.q));
+    out.push(n.d === d ? 'Defrost ' + what + ' in the fridge first thing (for tonight)' : 'Take ' + what + ' out of the freezer tonight, to thaw in the fridge for ' + (n.d === d + 1 ? 'tomorrow' : DAY_LONG[n.d]) + (thawLead(n) > 1 ? ' (it needs two nights)' : '')); });
+  return out;
+}
+function todayJobs(w, sim, todayIdx) {
+  if (!(todayIdx >= 0 && todayIdx < 7)) return [];
+  const defrost = []; (sim.defrostNotes || []).forEach(n => { const k = defrost.find(x => x.d === n.d && x.i === n.i && x.meal === n.meal); if (k) k.q += n.q; else defrost.push({ ...n }); });
+  const out = jobsFor(sim, defrost, todayIdx);
+  sim.freezeNotes.filter(n => n.skipped && n.d === todayIdx).forEach(n => out.unshift('Freeze ' + h(leftText(n.i, n.q)) + ' tonight (from the ' + h(rt(S.RMAP[n.skipped] || { title: 'dinner' }).toLowerCase()) + ')'));
+  return out;
+}
+function tonightAndRatings(w, todayIdx, jobs) {
   let out = '';
+  const jobsHtml = (jobs || []).length ? '<ul class="jobs">' + jobs.map(t => '<li>' + ICON.snow + '<span>' + t + '</span></li>').join('') + '</ul>' : '';
   const tonight = todayIdx >= 0 && todayIdx < 7 ? w.days[todayIdx] : null;
   if (tonight && tonight.r && !tonight.takeaway && S.RMAP[tonight.r]) {
     const r = S.RMAP[tonight.r];
-    out += '<section class="tonight slim"><div class="row" style="gap:12px">' + tileHtml(r) + '<div class="grow" style="min-width:0"><div class="label">Tonight \u00b7 ' + r.time + ' min</div><div class="rtitle">' + h(rt(r)) + '</div><button class="linkish small" data-act="takeaway" data-v="' + todayIdx + '" style="min-height:32px;padding:0">Takeaway?</button></div>' +
-      '<button class="btn primary" data-act="cook" data-v="' + h(r.id) + '">Cook</button></div></section>';
-  }
+    out += '<section class="tonight slim"><div class="row" style="gap:12px">' + tileHtml(r) + '<div class="grow" style="min-width:0"><div class="label">Tonight \u00b7 ' + r.time + ' min</div><div class="rtitle">' + h(rt(r)) + '</div><button class="linkish small" data-act="takeaway" data-v="' + todayIdx + '" style="min-height:32px;padding:0">Not having it?</button></div>' +
+      '<button class="btn primary" data-act="cook" data-v="' + h(r.id) + '">Cook</button></div>' + jobsHtml + '</section>';
+  } else if (jobsHtml) out += '<section class="tonight slim"><div class="label">Today</div>' + jobsHtml + '</section>';
   // ask about dinners from the last few days that I haven't rated yet
   const me = myUid(); const asks = [];
   const pool = [];
-  for (let d = Math.min(todayIdx - 1, 6); d >= 0; d--) pool.push(w.days[d]);
-  if (S.prevWeek && todayIdx >= 0 && todayIdx <= 2) for (let d = 6; d >= 4; d--) pool.push(S.prevWeek.days[d]);
-  for (const x of pool) { if (!x || !x.r || x.takeaway || !S.RMAP[x.r]) continue; const rr = S.ratings[x.r]; if (rr && rr[me]) continue; if (asks.find(a => a.id === x.r)) continue; asks.push(S.RMAP[x.r]); if (asks.length >= 2) break; }
-  for (const r of asks) out += '<div class="rateask"><span class="grow">How was <b>' + h(rt(r)) + '</b>?</span>' + rateButtons(r.id, 0) + '<button class="linkish small" data-act="rate-skip" data-v="' + h(r.id) + '">Didn\u2019t make it</button></div>';
+  const Cx = ctx();
+  for (let d = Math.min(todayIdx - 1, 6); d >= 0; d--) pool.push({ x: w.days[d], d, prev: false, p: dinnerPortionsOn(w, d, Cx) + ((w.days[d] || {}).extra || 0) });
+  if (S.prevWeek && todayIdx >= 0 && todayIdx <= 2) for (let d = 6; d >= 4; d--) pool.push({ x: S.prevWeek.days[d], d, prev: true, p: 2 });
+  for (const { x, d, prev, p } of pool) { if (!x || !x.r || x.takeaway || !S.RMAP[x.r]) continue; const rr = S.ratings[baseId(x.r)]; if (rr && rr[me]) continue; if (asks.find(a => a.r.id === x.r)) continue; asks.push({ r: S.RMAP[x.r], d, prev, p }); if (asks.length >= 2) break; }
+  for (const { r, d, prev, p } of asks) out += '<div class="rateask"><span class="grow">How was <b>' + h(rt(r)) + '</b>?</span>' + rateButtons(r.id, 0) + '<button class="linkish small" data-act="rate-skip" data-v="' + h(r.id) + '" data-n="' + d + '" data-w="' + (prev ? 'prev' : 'this') + '" data-p="' + (p || 2) + '">Didn\u2019t make it</button></div>';
+  const q = S.frzAsk, qr = q && S.RMAP[q.r];
+  if (qr && frozenFromPast(q.r, q.p).length) out += '<div class="rateask"><span class="grow">Did what you bought for <b>' + h(rt(qr)) + '</b> go in the freezer?</span><span class="row" style="gap:6px"><button class="btn small-btn primary" data-act="froze-yes">Yes</button><button class="btn small-btn" data-act="froze-no">No</button></span></div>';
   return out;
 }
 function clearRating(rid) {
@@ -1568,8 +1589,9 @@ function wantedReminders(w) {
     (sim.defrostNotes || []).forEach(n => { (byDay[n.d] = byDay[n.d] || []).push(n); });
     Object.keys(byDay).forEach(k => {
       const d = Number(k), what = byDay[d].map(n => n.meal ? 'the frozen ' + rt(S.RMAP[n.meal] || { title: 'meal' }) : leftText(n.i, n.q)).filter((x, i, a) => a.indexOf(x) === i).join(', ');
-      const r = w.days[d] && S.RMAP[w.days[d].r]; const when = d === 0 ? at(0, '07:30') : at(d - 1, '20:00');
-      const cook = cookOn(w, d, S.people); (cook ? [cook] : eaters.filter(p => !awayOn(w, p, d))).forEach(p => add(d + '-defrost', p, d === 0 ? 'Out of the freezer this morning' : 'Out of the freezer tonight', 'Take ' + what + ' out to thaw in the fridge for ' + (r ? rt(r) : 'dinner') + (d === 0 ? ' tonight.' : ' tomorrow.'), when));
+      const r = w.days[d] && S.RMAP[w.days[d].r]; const lead = Math.max(...byDay[d].map(thawLead)), morning = d - lead < 0;
+      const when = morning ? at(0, '07:30') : at(d - lead, '20:00');
+      const cook = cookOn(w, d, S.people); (cook ? [cook] : eaters.filter(p => !awayOn(w, p, d))).forEach(p => add(d + '-defrost', p, morning ? 'Out of the freezer this morning' : 'Out of the freezer tonight', 'Take ' + what + ' out to thaw in the fridge for ' + (r ? rt(r) : 'dinner') + (d === 0 && morning ? ' tonight.' : lead > 1 ? ' on ' + DAY_LONG[d] + '.' : ' tomorrow.'), when));
     });
   }
   return { want, past, now };
@@ -2350,7 +2372,7 @@ function renderSheet(force, keep) {
   else if (top.type === 'form') { title = top.id ? 'Edit recipe' : 'Add a recipe'; body = sheetForm(top); }
   else if (top.type === 'votes') { title = 'Thumbs up or down'; body = sheetVotes(top); }
   else if (top.type === 'whosin') { title = 'Who\u2019s in each night'; body = sheetWhosIn(top); }
-  else if (top.type === 'rescue') { title = isTonight(top.d) ? 'Takeaway tonight' : 'Takeaway on ' + DAY_LONG[top.d]; body = sheetRescue(top); }
+  else if (top.type === 'rescue') { title = isTonight(top.d) ? 'Not having it tonight' : 'Not having it on ' + DAY_LONG[top.d]; body = sheetRescue(top); }
   else if (top.type === 'stock') { title = 'What\u2019s left?'; body = sheetStock(top); }
   else if (top.type === 'blpick') { const p = personById(top.pid); title = (p ? nick(p.name) + '\u2019s ' : '') + SLOT_NAME[top.slot].toLowerCase() + ' · ' + DAY_NAMES[top.d]; body = sheetBlPick(top); }
   el.innerHTML = '<div class="shead"><div class="in"><button class="icon-btn" data-act="sheet-back" aria-label="' + (S.sheets.length > 1 ? 'Back' : 'Close') + '">' + (S.sheets.length > 1 ? ICON.left : ICON.close) + '</button><h2 class="grow ellip">' + h(title) + '</h2></div></div><div class="sbody">' + body + '</div>';
@@ -2370,9 +2392,16 @@ function sheetPick(top) {
   let out = '';
   if (isTreat) out += '<div class="note treatnote">★ <b>' + DAY_LONG[d] + ' is a treat night</b>, so treats come first.</div>';
   else if (isEasy) out += '<div class="note"><b>' + DAY_LONG[d] + ' is an easy night</b>, so easy ones come first.</div>';
-  if (spareIds.length) out += '<div class="note"><b>You’ll have spare:</b> ' + spareIds.slice(0, 3).map(id => h(leftText(id, spare[id]))).join(', ') + (spareIds.length > 3 ? ' and ' + (spareIds.length - 3) + ' more' : '') + '. The top picks use these up.</div>';
+  // what's in the freezer by then: frozen things brought into the week, and anything frozen earlier this week
+  const inFreezer = {};
+  (w.carryIn || []).filter(c => c.frozen && S.ING[c.i] && !S.ING[c.i].staple).forEach(c => { inFreezer[c.i] = (inFreezer[c.i] || 0) + c.q; });
+  base.freezeNotes.filter(n => !n.onArrival && n.d < d && S.ING[n.i] && !S.ING[n.i].staple).forEach(n => { inFreezer[n.i] = (inFreezer[n.i] || 0) + n.q; });
+  const frozenIds = Object.keys(inFreezer).filter(id => !/frozen|chips|pizza|yorkshire/i.test(id));
+  const spareFresh = spareIds.filter(id => !inFreezer[id]);
+  if (spareFresh.length) out += '<div class="note"><b>You’ll have spare:</b> ' + spareFresh.slice(0, 3).map(id => h(leftText(id, spare[id]))).join(', ') + (spareFresh.length > 3 ? ' and ' + (spareFresh.length - 3) + ' more' : '') + '. The top picks use these up.</div>';
+  if (frozenIds.length) out += '<div class="note">' + ICON.snow + ' <b>In your freezer:</b> ' + frozenIds.slice(0, 4).map(id => h(leftText(id, inFreezer[id]))).join(', ') + (frozenIds.length > 4 ? ' and ' + (frozenIds.length - 4) + ' more' : '') + '.</div>';
   const fm = (w.freezerMeals || []).filter(m => m.portions >= 1);
-  if (fm.length) out += '<section class="stack"><h3>From the freezer</h3>' + fm.map(m => { const r = S.RMAP[m.r]; return r ? '<div class="sugg"><span class="tile ' + cuisineClass(r.cuisine) + '">' + h(r.icon) + '</span><button class="pick" data-act="choose-freezer" data-v="' + h(r.id) + '"><b>' + h(rt(r)) + '</b><span class="why">' + (Number(m.portions) || 0) + ' portion' + (m.portions > 1 ? 's' : '') + ' frozen · nothing to buy</span></button><span></span></div>' : ''; }).join('') + '</section>';
+  if (fm.length) out += '<section class="stack"><h3>Cooked meals in the freezer</h3>' + fm.map(m => { const r = S.RMAP[m.r]; return r ? '<div class="sugg"><span class="tile ' + cuisineClass(r.cuisine) + '">' + h(r.icon) + '</span><button class="pick" data-act="choose-freezer" data-v="' + h(r.id) + '"><b>' + h(rt(r)) + '</b><span class="why">' + (Number(m.portions) || 0) + ' portion' + (m.portions > 1 ? 's' : '') + ' frozen · nothing to buy</span></button><span></span></div>' : ''; }).join('') + '</section>';
   // rows that each show something different, without repeating a recipe or (within a row) a cuisine
   const used = new Set();
   const row = (title, list, n) => {
@@ -2391,6 +2420,8 @@ function sheetPick(top) {
   const easies = sugg.filter(x => x.r.easy);
   const favs = sugg.filter(x => { const rs = ratingSummary()[x.r.id]; return rs && rs.avg >= 4; });
   const sections = [];
+  const fromFreezer = sugg.filter(x => x.r.ingredients.some(l => frozenIds.includes(l.i) && !l.opt));
+  if (frozenIds.length) sections.push(row('Uses what\u2019s in the freezer', fromFreezer, 3));
   if (isTreat) sections.push(row('★ Treat yourself', treats, 3));
   else if (isEasy) sections.push(row('Keep it easy', easies, 3));
   sections.push(row(spareIds.length ? 'Uses what you\u2019ve got' : 'Best value', byMoney, 3));
@@ -2496,7 +2527,7 @@ function sheetRecipe(r, top) {
       dayVoteRow(w, top.d) + dayPlateRows(w, top.d) +
       // (changing the dinner is what's most often wanted here, so it sits with the quick choices, not under the extras)
       (locked ? '' : '<div class="row wrap"><button class="btn" data-act="change-day" data-v="' + top.d + '">Change dinner</button><button class="btn danger" data-act="remove-day" data-v="' + top.d + '">Remove</button></div>') +
-      '<button class="btn block takeaway-btn" data-act="takeaway" data-v="' + top.d + '">' + ICON.bag + ' Takeaway instead?</button>' +
+      '<button class="btn block takeaway-btn" data-act="takeaway" data-v="' + top.d + '">' + ICON.bag + ' Not having this?</button>' +
       (!locked && hasSide(r.id) ? '<div class="stack" style="gap:6px"><span class="label">Veg on the side</span><span class="seg full"><button class="' + (r.variantOf ? '' : 'on') + '" data-act="side" data-v="' + top.d + '" data-n="fresh">Fresh veg</button><button class="' + (r.variantOf ? 'on' : '') + '" data-act="side" data-v="' + top.d + '" data-n="pack">Frozen veg pack</button></span></div>' : '') +
       (locked ? '<p class="muted small">This week is locked in. Unlock it on the Week tab to change dinners.</p>' :
         '<div class="stack" style="gap:6px"><span class="label">Guests for dinner</span><div class="row wrap"><span class="seg">' + [0, 1, 2, 3, 4].map(k => '<button class="' + ((day.guests || 0) === k ? 'on' : '') + '" data-act="guests" data-v="' + top.d + '" data-n="' + k + '">' + (k ? '+' + k : 'None') + '</button>').join('') + '</span></div></div>' +
@@ -2552,6 +2583,23 @@ function sheetWhosIn(top) {
 }
 function setAway(pid, d, val) { mutateWeek(w => { const a = { ...((w.away || {})[pid] || {}) }; const p = personById(pid); if (!val && p && naturalAway(w, p, d)) val = 'in'; if (val) a[d] = val; else delete a[d]; const all = { ...(w.away || {}) }; if (Object.keys(a).length) all[pid] = a; else delete all[pid]; w.away = all; if (!Object.keys(all).length) delete w.away; }); renderSheet(true, true); }
 function isTonight(d) { return S.weekStart === mondayOf(TODAY) && daysBetween(S.weekStart, TODAY) === d; }
+// what to freeze if a night's dinner isn't made: run the week with it frozen and read off what goes in the freezer that night
+function listAnd(a) { return a.length > 1 ? a.slice(0, -1).join(', ') + ' and ' + a[a.length - 1] : a.join(''); }
+function freezePlan(w, d) {
+  const day = w.days[d] || {}, r = S.RMAP[day.r]; if (!r) return null;
+  const C = ctx(), portions = Math.max(1, dinnerPortionsOn(w, d, C) + (day.extra || 0));
+  const entry = { d, r: r.id, portions };
+  const sim = simulate({ ...w, frozeOn: (w.frozeOn || []).concat(entry), days: w.days.map((x, k) => (k === d ? nightKeep(x) : x)) }, C);
+  const freeze = sim.freezeNotes.filter(n => n.skipped === r.id && n.d === d);
+  const fridge = r.ingredients.filter(l => S.ING[l.i] && !S.ING[l.i].staple && !S.ING[l.i].freeze && l.q > 0).map(l => ({ i: l.i }));
+  return { entry, freeze, fridge };
+}
+// a dinner that wasn't made, from the "how was it?" question: put what was bought for it in the freezer
+function frozenFromPast(rid, portions) {
+  const r = S.RMAP[rid]; if (!r) return [];
+  const f = (portions || r.servings || 2) / (r.servings || 2);
+  return r.ingredients.filter(l => { const ing = S.ING[l.i]; return ing && !ing.staple && ing.freeze && l.q > 0; }).map(l => ({ i: l.i, q: Math.round(l.q * f * 100) / 100, frozen: true, exp: null, opened: false }));
+}
 function sheetRescue(top) {
   const w = currentWeek(), d = top.d, r = S.RMAP[(w.days[d] || {}).r];
   if (!top.plans) top.plans = rescuePlans(w, d, ctx());
@@ -2560,8 +2608,12 @@ function sheetRescue(top) {
   const tn = isTonight(d), when = tn ? 'tonight' : 'on ' + DAY_LONG[d];
   const lowest = options.slice(0, 4).reduce((a, o) => (!a || o.waste + o.extra < a.waste + a.extra - 0.005 ? o : a), null);
   const label = o => tn ? o.label : o.label.replace('Skip tonight\u2019s dinner', 'Skip ' + DAY_LONG[d] + '\u2019s dinner').replace('Move tonight to tomorrow', 'Move it to ' + (DAY_LONG[d + 1] || 'the next day'));
-  let out = '<p>Enjoy it. Here\u2019s how to rearrange the rest of the week so nothing you\u2019ve bought goes to waste.</p>';
+  let out = '';
   if (r) out += '<div class="note">' + (tn ? 'Tonight' : DAY_LONG[d]) + ' was <b>' + h(rt(r)) + '</b>.</div>';
+  // freeze it for another week: what to put in the freezer tonight, worked out from what was bought for it
+  const fz = r ? freezePlan(w, d) : null;
+  if (fz && fz.freeze.length) out += '<section class="panel bestplan"><h3>' + ICON.snow + ' Freeze it for another week</h3><p class="small">Put ' + fz.freeze.map(n => '<b>' + h(leftText(n.i, n.q)) + '</b>').join(', ') + ' in the freezer ' + when + '.' + (fz.fridge.length ? ' The ' + listAnd(fz.fridge.map(n => h(lowerName(n.i))).slice(0, 3)) + ' stay' + (fz.fridge.length === 1 ? 's' : '') + ' in the fridge for other meals.' : '') + '</p><button class="btn primary block" data-act="freeze-night" data-v="' + d + '">Freeze it</button></section>';
+  out += '<p class="small">' + (fz && fz.freeze.length ? 'Or rearrange the week' : 'Here\u2019s how to rearrange the week') + ' so nothing you\u2019ve bought goes to waste.</p>';
   const describe = o => {
     const bits = [];
     if (o.detail.shift) bits.push('Each dinner from ' + DAY_LONG[d] + ' onwards moves one day later.');
@@ -3047,13 +3099,13 @@ document.addEventListener('click', e => {
     case 'timer-stop': S.timers = S.timers.filter(t => t.id !== v); renderCook(); break;
     case 'rate-clear': clearRating(v); toast('Rating cleared'); break;
     case 'rate': {
-      const n = Number(b.dataset.n); const cur = S.ratings[v] || {};
-      if (cur[myUid()] && cur[myUid()].stars === n) { clearRating(v); toast('Rating cleared'); break; }
+      const n = Number(b.dataset.n), rb = baseId(v); const cur = S.ratings[rb] || {};
+      if (cur[myUid()] && cur[myUid()].stars === n) { clearRating(rb); toast('Rating cleared'); break; }
       const doc = { ...cur, [myUid()]: { stars: n, name: myName(), at: new Date().toISOString() } };
-      S.ratings = { ...S.ratings, [v]: doc }; saveRating(v, doc[myUid()]); schedule(); renderSheet(true);
+      S.ratings = { ...S.ratings, [rb]: doc }; saveRating(rb, doc[myUid()]); schedule(); renderSheet(true);
       toast(n < 3 ? 'Got it. We won\u2019t suggest that again.' : n >= 4 ? 'Noted. It\u2019ll come up more often.' : 'Thanks, rating saved.'); break;
     }
-    case 'rate-skip': { const cur = S.ratings[v] || {}; const doc = { ...cur, [myUid()]: { skipped: true, name: myName(), at: new Date().toISOString() } }; S.ratings = { ...S.ratings, [v]: doc }; saveRating(v, doc[myUid()]); schedule(); break; }
+    case 'rate-skip': { if (b.dataset.n != null) S.frzAsk = { r: v, d: Number(b.dataset.n), prev: b.dataset.w === 'prev', p: Number(b.dataset.p) || 2 }; const rb = baseId(v), cur = S.ratings[rb] || {}; const doc = { ...cur, [myUid()]: { skipped: true, name: myName(), at: new Date().toISOString() } }; S.ratings = { ...S.ratings, [rb]: doc }; saveRating(rb, doc[myUid()]); schedule(); break; }
     case 'swap-day': {
       if (guardLocked()) break;
       const d = Number(v), w = currentWeek(), day = w.days[d], cur = day.r;
@@ -3083,6 +3135,15 @@ document.addEventListener('click', e => {
       const w = currentWeek(); if (w.locked) break; const from = Math.max(0, daysBetween(w.start, TODAY)); let n = 0;
       mutateWeek(x => { x.days.forEach((dy, d) => { if (d < from || !dy || !dy.r || !hasSide(dy.r)) return; const base = baseId(dy.r), id = on ? base + '~veg' : base; if (id !== dy.r) { x.days[d] = { ...dy, r: id }; n++; } }); });
       if (n) toast(n + ' dinner' + (n === 1 ? '' : 's') + ' this week switched'); break; }
+    case 'freeze-night': { const d = Number(v), fz = freezePlan(currentWeek(), d); if (!fz) break;
+      mutateWeek(w => { w.frozeOn = (w.frozeOn || []).concat(fz.entry); w.days[d] = nightKeep(w.days[d]); }); closeSheets();
+      toast(fz.freeze.length ? 'Into the freezer: ' + fz.freeze.map(n => leftText(n.i, n.q)).join(', ') : 'Saved for another week'); break; }
+    case 'unfreeze-night': { const d = Number(v); mutateWeek(w => { const k = (w.frozeOn || []).findIndex(x => x.d === d && x.r === b.dataset.r); if (k < 0) return; const fz = w.frozeOn[k]; w.frozeOn = w.frozeOn.filter((_, j) => j !== k); if (!w.days[d].r && !w.days[d].takeaway) w.days[d] = { ...w.days[d], r: fz.r }; }); toast('Put back on ' + DAY_LONG[Number(v)]); break; }
+    case 'froze-yes': { const q = S.frzAsk; S.frzAsk = null; if (!q) break; const w = currentWeek();
+      if (q.prev) { const items = frozenFromPast(q.r, q.p); if (items.length) mutateCarry(x => { x.carryIn = (x.carryIn || []).concat(items); }); toast(items.length ? 'Added to the freezer' : 'Nothing in it freezes'); }
+      else if (w.days[q.d] && w.days[q.d].r === q.r) { mutateWeek(x => { x.frozeOn = (x.frozeOn || []).concat({ d: q.d, r: q.r, portions: q.p }); x.days[q.d] = nightKeep(x.days[q.d]); }); toast('Added to the freezer'); }
+      render(); break; }
+    case 'froze-no': S.frzAsk = null; render(); break;
     case 'got-count': mutateWeek(w => { const g = { ...(w.bought || {}) }; if (g[v]) g[v] = { ...g[v], count: Math.max(1, Number(b.dataset.n) || 1) }; w.bought = g; }); break;
     case 'got-reset': mutateWeek(w => { const g = { ...(w.bought || {}) }; delete g[v]; w.bought = g; }); toast('Back to the suggested pack'); break;
     case 'have': mutateWeek(w => { w.have = { ...(w.have || {}), [v]: true }; }); toast('Taken off the list'); break;

@@ -340,6 +340,18 @@ function simulate(week, ctx) {
       for (const l of r.ingredients) if (l.q > 0) c += use(l, l.q / (r.servings || 1), d, r.id);
       blCost += c; blPortions++; info.bl.push({ ...e, cost: c });
     }
+    // a dinner you didn't have: what was bought for it goes in the freezer that night (or stays in the fridge if it doesn't
+    // freeze), ready for another week, and the night itself is free for something else
+    for (const fz of (week.frozeOn || [])) {
+      const fr = fz && fz.d === d && RMAP[fz.r]; if (!fr) continue;
+      const f = (fz.portions || fr.servings || 2) / (fr.servings || 2);
+      for (const l of fr.ingredients) {
+        const ing = ING[l.i]; if (!ing || ing.staple || !(l.q > 0) || (l.opt && skipOpt)) continue;
+        const q = l.q * f; use(l, q, d, fr.id);
+        if (ing.freeze && roomFor(1)) { lots.push({ i: l.i, q, exp: 999, frozen: true, opened: false }); addFrozen(1); freezeNotes.push({ d, i: l.i, q, skipped: fr.id }); }
+        else lots.push({ i: l.i, q, exp: Math.min(ing.life, d + ing.keeps), frozen: false, opened: true });
+      }
+    }
     // evening: dinner
     if (day.takeaway) { info.takeaway = true; continue; }
     if (!day.r || !RMAP[day.r]) continue;
