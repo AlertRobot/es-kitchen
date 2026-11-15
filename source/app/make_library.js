@@ -231,7 +231,7 @@ for (const r of recipes) {
   }
 }
 console.log('automatic swaps added:', autoSwaps);
-const used = new Set(); recipes.forEach(r => r.ingredients.forEach(l => used.add(l.i)));
+const used = new Set(); recipes.forEach(r => { r.ingredients.forEach(l => used.add(l.i)); if (r.side) used.add('frozen_veg_pack'); });
 const ingredients = Object.values(ING).filter(i => used.has(i.id) || i.staple).map(i => { const o = { ...i }; o.prices = o.prices || {}; return o; });
 const noNut = ingredients.filter(i => !i.nut).map(i => i.id), noPrice = ingredients.filter(i => !Object.keys(i.prices).length).map(i => i.id);
 const lib = { version: Date.now(), updated: process.env.LIB_DATE || new Date().toISOString().slice(0, 10), recipes, ingredients };

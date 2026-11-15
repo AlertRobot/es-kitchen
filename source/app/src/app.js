@@ -297,7 +297,7 @@ function rebuild() {
   S.RMAP = {}; all.forEach(r => S.RMAP[r.id] = r);
   // the same dinner with a frozen veg pack instead of the fresh veg side (opened from a planned night, never offered on its own)
   all.forEach(r => { const sd = r.side; if (!sd || !Array.isArray(sd.remove) || !Array.isArray(sd.steps) || r.custom || RAW.myR[r.id]) return;
-    S.RMAP[r.id + '~veg'] = { ...r, id: r.id + '~veg', variantOf: r.id, side: undefined, ingredients: r.ingredients.filter(l => !sd.remove.includes(l.i)).concat({ i: 'frozen_veg_pack', q: sd.q || 160, t: (sd.q || 160) + 'g frozen veg pack' }), steps: sd.steps }; });
+    S.RMAP[r.id + '~veg'] = { ...r, id: r.id + '~veg', variantOf: r.id, side: undefined, ingredients: r.ingredients.filter(l => !sd.remove.includes(l.i)).concat({ i: 'frozen_veg_pack', q: sd.q || 160, t: (sd.q || 160) <= 170 ? '1 bag (' + (sd.q || 160) + 'g)' : (sd.q || 160) + 'g (1 bag and a bit)' }), steps: sd.steps }; });
   S.recipes = all.filter(r => !r.retired && !r.removed); // retired and removed recipes still open from old weeks, but aren't offered any more
   const ing = {}; for (const i of S.lib.ingredients) ing[i.id] = i;
   for (const id in RAW.myI) {

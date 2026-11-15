@@ -1,0 +1,17 @@
+{
+  "ingredients": [
+    { "id": "frozen_veg_pack", "name": "Frozen veg steam bags (mixed veg)", "aisle": "Frozen", "unit": "g", "packs": [640, 540], "life": 365, "keeps": 90, "freeze": false, "staple": false, "tags": [],
+      "nutrition": { "per": 100, "kcal": 33, "protein": 0.7, "carbs": 5.2, "fat": 0.5 },
+      "nutritionSrc": "https://www.tesco.com/groceries/en-GB/products/271223759" }
+  ],
+  "prices": [
+    { "id": "frozen_veg_pack", "prices": {
+        "tesco": { "pack": 640, "price": 2.90, "loyalty": null, "checked": "2026-11-15", "src": "https://www.tesco.com/groceries/en-GB/products/271223759", "basis": "shop", "conf": "high", "label": "Tesco Steam Bags Carrot, Broccoli & Corn 4 x 160g (640g)", "note": "No Clubcard price shown. Tesco 4X Steam Bags Mixed Greens & Corn 640g is also £2.90 but out of stock." },
+        "sainsburys": { "pack": 540, "price": 2.90, "loyalty": null, "checked": "2026-11-15", "src": "https://www.sainsburys.co.uk/groceries/product/birds-eye-steamfresh-family-favourites-steam-bags-x4-540g", "basis": "shop", "conf": "high", "label": "Birds Eye Steamfresh Family Favourites Steam Bags x4 540g", "note": "Branded: Sainsbury's own-brand 4 microwaveable steam bags (carrots, broccoli & sweetcorn) shows out of stock in every store on trolley.co.uk, so no own-brand available. Nectar offer 'buy 3 get cheapest 1 free' until 17 Nov 2026." },
+        "asda": { "pack": 640, "price": 2.21, "loyalty": null, "checked": "2026-11-15", "src": "https://www.trolley.co.uk/product/asda-steam-bags-carrot-peas-sweetcorn/ZWG451", "basis": "compare", "conf": "medium", "label": "ASDA Steam Bags Carrot Peas & Sweetcorn 4 x 160g", "note": "Trolley online price, no date shown (lowest seen £2.12). ASDA Steam Bags Broccoli Cauliflower & Carrot 640g is £2.50." },
+        "aldi": { "pack": 640, "price": 1.69, "loyalty": null, "checked": "2026-11-15", "src": "https://www.aldi.co.uk/products/frozen-food/vegetables-sides/k/1588161416978056004", "basis": "shop", "conf": "high", "label": "Four Seasons Carrot, Broccoli & Sweetcorn Steam Bags 4 Pack 640g", "note": "Carrot, Peas & Sweetcorn 4 Pack 640g is also £1.69." },
+        "lidl": { "pack": 640, "price": 1.99, "loyalty": null, "checked": "2026-11-15", "src": "https://www.hotukdeals.com/deals/freshona-steam-bag-vegetables-assorted-get-40p-off-the-regular-price-with-the-lidl-plus-app-2310-0511-4718600", "basis": "crowd", "conf": "low", "label": "Freshona Steam Bag Vegetables Assorted 640g", "note": "Lidl's own page (lidl.co.uk/p/freshona-steam-bag-vegetables-assorted/p10006644) confirms the frozen 640g product (carrot/broccoli/sweetcorn or carrot/pea/sweetcorn) but says 'see in store for price'. £1.99 regular comes from an expired HotUKDeals post: Lidl Plus price £1.59 = 40p off the regular price; post undated (slug suggests 23 Oct-5 Nov, probably 2025). Price-tracker search snippets also show £1.99 but those pages couldn't be opened. May be stale." }
+    } }
+  ],
+  "missing": []
+}
