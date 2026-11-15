@@ -153,6 +153,9 @@ if (ex(V2 + '/sources')) for (const f of fs.readdirSync(V2 + '/sources').filter(
 // simplified versions (4 Nov 2026): the everyday way to make each dish, fewer spices and extras; the credit becomes "Inspired by"
 const SIMPLE = {};
 if (ex(V2 + '/simplify')) for (const f of fs.readdirSync(V2 + '/simplify').filter(f => /^out_\d+\.json$/.test(f))) for (const x of rd(V2 + '/simplify/' + f)) SIMPLE[x.id] = x;
+// veg sides (15 Nov 2026): which veg is a side, and the method with a frozen veg pack instead; the app builds that version
+const SIDES = {};
+if (ex(V2 + '/sides')) for (const f of fs.readdirSync(V2 + '/sides').filter(f => /^out_\d+\.json$/.test(f))) for (const x of rd(V2 + '/sides/' + f)) SIDES[x.id] = { remove: x.remove, q: x.q, steps: x.steps };
 const recipes = [], seen = new Set(), problems = [], dropped = [];
 for (const f of recipeFiles) for (const r0 of rd(f)) {
   let r = FIXED[r0.id] ? { ...r0, ...FIXED[r0.id] } : r0;
@@ -167,6 +170,7 @@ for (const f of recipeFiles) for (const r0 of rd(f)) {
   if (sc && sc.site && sc.title && sc.url && ['close', 'adapted', 'loose'].includes(sc.match)) { r.source = { title: sc.title, site: sc.site, match: r.simplified ? 'loose' : sc.match }; if (sc.author) r.source.author = sc.author; }
   else if (ex(V2 + '/sources') && !(r.tags || []).includes('quick') && !r.easy) problems.push('no source ' + r.id);
   if (r.simplified && r.source) r.source = { ...r.source, match: 'loose' };
+  if (SIDES[r.id] && ING.frozen_veg_pack) { const sd = SIDES[r.id]; if (sd.remove.every(i => r.ingredients.some(l => l.i === i))) r.side = sd; else problems.push('side doesn\'t match ' + r.id); }
   delete r.simplified;
   if (seen.has(r.id)) { problems.push('dup ' + r.id); continue; }
   const merged = [];

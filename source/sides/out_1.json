@@ -1,0 +1,716 @@
+[
+ {
+  "id": "am_crispy_chicken_tenders",
+  "remove": [
+   "sweetcorn"
+  ],
+  "q": 160,
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Slice the chicken breasts lengthways into finger-width strips. Separate the little gem leaves."
+   },
+   {
+    "title": "Set up a crumbing station",
+    "text": "Set out three shallow bowls. Put the flour in the first and season with salt and pepper. Pour the beaten egg into the second. Mix the panko, paprika and a pinch of salt in the third."
+   },
+   {
+    "title": "Crumb the chicken",
+    "text": "Dip each strip into the flour, then the egg, then the panko, pressing so the crumbs stick all over. Lay the tenders on a plate in a single layer."
+   },
+   {
+    "title": "Fry the tenders",
+    "text": "Heat the oil in a large frying pan over a medium-high heat. Fry the tenders in two batches for 2 to 3 minutes each side until deep golden and crisp. Cut the thickest one to check there's no pink, then drain on kitchen paper."
+   },
+   {
+    "title": "Veg and dip",
+    "text": "While the tenders fry, cook the frozen veg pack following the packet and season with a pinch of salt. Stir the mayo, honey and mustard together to make the dip."
+   },
+   {
+    "title": "Serve",
+    "text": "Serve the tenders with the veg, little gem leaves and the honey mustard on the side."
+   }
+  ],
+  "why": "Sweetcorn is soaked in boiling water separately and served on the side of the tenders.",
+  "note": "The kettle was only for the sweetcorn, so it's dropped from the prep. The little gem is a salad side and stays."
+ },
+ {
+  "id": "am_southern_fried_chicken_gravy",
+  "remove": [
+   "sweetcorn"
+  ],
+  "q": 160,
+  "steps": [
+   {
+    "title": "Prep and marinate",
+    "text": "Boil the kettle. Peel the potatoes, cut into chunks and grate the garlic. In a bowl, whisk the yogurt with 50 millilitres of the milk, the garlic, 1 teaspoon of the paprika and a pinch of salt. Add the chicken thighs, turn to coat and leave for at least 15 minutes."
+   },
+   {
+    "title": "Make the mash",
+    "text": "Put the potatoes in a saucepan, cover with boiling water and add a pinch of salt. Simmer over a medium heat for 15–18 minutes until a knife slides through easily. Drain, return to the pan and mash with 20 grams of the butter and the remaining 60 millilitres milk until smooth. Cover to keep warm."
+   },
+   {
+    "title": "Coat the chicken",
+    "text": "In a shallow dish, mix the flour, cornflour, remaining 1 teaspoon paprika, mixed herbs (optional), 1 teaspoon salt and lots of black pepper. Drizzle in a spoonful of marinade and rub it in to make little clumps. Press each thigh firmly into the coating on both sides."
+   },
+   {
+    "title": "Fry the chicken",
+    "text": "Heat the oil in a large frying pan over a medium-high heat. Fry the chicken for 6–7 minutes each side until deep golden and crunchy and the juices run clear when pierced. Drain on kitchen paper."
+   },
+   {
+    "title": "Cook the veg",
+    "text": "While the chicken fries, cook the frozen veg pack following the packet. Toss with the remaining 10 grams butter and a pinch of salt."
+   },
+   {
+    "title": "Make the gravy and serve",
+    "text": "Make up the gravy granules with 250 millilitres boiling water in a jug, stirring until thick and smooth. Plate up the chicken with a pile of mash and the buttery veg. Pour over the gravy."
+   }
+  ],
+  "why": "Sweetcorn is boiled in its own pan, buttered and served next to the chicken and mash.",
+  "note": "Butter stays: 20 grams goes in the mash and the last 10 grams is now tossed through the veg."
+ },
+ {
+  "id": "am_bbq_glazed_salmon",
+  "remove": [
+   "sweetcorn"
+  ],
+  "q": 160,
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Heat the oven to 200°C (180°C fan), line a small baking tray and boil the kettle. Peel the sweet potato and cut into chunks."
+   },
+   {
+    "title": "Boil the sweet potato",
+    "text": "Put the sweet potato in a saucepan, cover with boiling water from the kettle and add a pinch of salt. Simmer over a medium-high heat for 12 to 15 minutes until very tender."
+   },
+   {
+    "title": "Glaze and bake the salmon",
+    "text": "Meanwhile, sit the salmon skin-side down on the tray and spoon over half the BBQ sauce. Bake for 12 to 14 minutes, brushing with the rest halfway, until sticky and the fish flakes easily."
+   },
+   {
+    "title": "Cook the veg",
+    "text": "While the salmon bakes, cook the frozen veg pack following the packet. Season with a pinch of salt."
+   },
+   {
+    "title": "Mash and serve",
+    "text": "Drain the sweet potato well and mash with the butter, a pinch of salt and plenty of black pepper. Spoon onto plates, sit the salmon on top and serve the veg alongside."
+   }
+  ],
+  "why": "Sweetcorn is charred in a separate pan and served alongside the salmon and mash."
+ },
+ {
+  "id": "am_bbq_pork_steaks",
+  "remove": [
+   "sweetcorn"
+  ],
+  "q": 160,
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Boil the kettle. Cut the potatoes into chunks and slice the spring onions. Pat the pork dry, rub with the oil, then season with the paprika, 1 teaspoon of salt and some pepper."
+   },
+   {
+    "title": "Boil the potatoes",
+    "text": "Put the potatoes in a saucepan, cover with boiling water and add a pinch of salt. Simmer over a medium-high heat for 12 to 15 minutes until tender. Drain and leave to steam dry."
+   },
+   {
+    "title": "Cook the pork",
+    "text": "Heat a griddle or large frying pan over a medium-high heat. Cook the steaks for 4 to 5 minutes each side until charred and cooked through. Brush with the BBQ sauce for the last 2 minutes, flipping a couple of times so it caramelises. Rest for 3 minutes."
+   },
+   {
+    "title": "Cook the veg",
+    "text": "While the pork cooks, cook the frozen veg pack following the packet. Season with a pinch of salt."
+   },
+   {
+    "title": "Make the potato salad",
+    "text": "Mix the yogurt, mayo and mustard in a large bowl. Fold through the warm potatoes and spring onions. Season to taste."
+   },
+   {
+    "title": "Slice and serve",
+    "text": "Slice the pork and plate up with the potato salad and veg."
+   }
+  ],
+  "why": "Sweetcorn is boiled in its own pan and plated next to the pork and potato salad."
+ },
+ {
+  "id": "am_mini_meatloaves",
+  "remove": [
+   "broccoli"
+  ],
+  "q": 160,
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Heat the oven to 200°C (fan 180°C), line a baking tray and boil the kettle. Peel the potatoes and cut into chunks, and peel the garlic cloves. Finely grate the onion."
+   },
+   {
+    "title": "Shape the meatloaves",
+    "text": "In a large bowl, mix the mince, grated onion, panko, egg, Worcestershire, herbs and 1 tablespoon of the ketchup. Add ½ teaspoon salt and some pepper and mix with your hands until just combined. Shape into 4 small loaves and space them out on the tray."
+   },
+   {
+    "title": "Glaze and bake",
+    "text": "Stir the remaining 2 tablespoons ketchup with the honey and mustard and brush thickly over the loaves. Bake for 25 minutes until the glaze is sticky and dark at the edges and the meatloaves are cooked through."
+   },
+   {
+    "title": "Boil the potatoes",
+    "text": "Meanwhile, put the potatoes and whole garlic cloves in a saucepan and cover with boiling water from the kettle. Add a pinch of salt and simmer over a medium heat for 15–18 minutes until tender."
+   },
+   {
+    "title": "Cook the veg",
+    "text": "When the potatoes are nearly tender, cook the frozen veg pack following the packet. Season with a pinch of salt."
+   },
+   {
+    "title": "Mash and serve",
+    "text": "Drain the potatoes and garlic and return to the pan over a low heat with the butter and milk. Mash until smooth, squashing the soft garlic in as you go. Rest the meatloaves for 3 minutes, then plate up with the mash and veg. Spoon over any sticky juices from the tray."
+   }
+  ],
+  "why": "Broccoli is boiled in a small pan and served alongside the meatloaves and mash."
+ },
+ {
+  "id": "am_garlic_butter_steak_bites",
+  "remove": [
+   "broccoli"
+  ],
+  "q": 160,
+  "steps": [
+   {
+    "title": "Prep",
+    "text": "Boil the kettle. Cut the potatoes into small cubes. Cut the steak into bite-sized pieces, pat very dry and season well with salt and pepper. Slice the garlic."
+   },
+   {
+    "title": "Parboil the potatoes",
+    "text": "Pour boiling water into a large saucepan, add a pinch of salt and bring back to the boil. Cook the potatoes for 6 to 7 minutes until just tender at the edges. Drain well and leave to steam dry for 2 minutes."
+   },
+   {
+    "title": "Crisp the potatoes",
+    "text": "Heat 1 tablespoon of the oil in a large frying pan over a medium-high heat. Fry the potatoes for 10 to 12 minutes, turning every few minutes, until golden and crisp. While they fry, cook the frozen veg pack following the packet. Season the potatoes and spoon onto warm plates with the veg."
+   },
+   {
+    "title": "Sear the steak",
+    "text": "Wipe out the pan, add the remaining oil and heat over a high heat until just smoking. Add the steak in a single layer and cook for 1 to 2 minutes per side until browned outside and still pink in the middle. Give it a minute or two longer if you like it more done."
+   },
+   {
+    "title": "Finish in garlic butter",
+    "text": "Turn the heat to low and add the butter and garlic. Toss for 1 minute until the butter foams and the garlic is golden. Spoon the steak and garlic butter over the potatoes and veg."
+   }
+  ],
+  "why": "Broccoli is blanched with the potatoes and charred in the pan as the veg under the steak.",
+  "note": "Borderline: the broccoli shares the potato pans, but it is plated as the veg side rather than cooked into the steak."
+ },
+ {
+  "id": "as_char_siu_pork",
+  "remove": [
+   "pak_choi"
+  ],
+  "q": 160,
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Heat the oven to 220°C (200°C fan) and line a small roasting tin with foil. Crush the garlic and trim any thick fat from the pork."
+   },
+   {
+    "title": "Marinate the pork",
+    "text": "Mix the hoisin, 1 tablespoon of the soy sauce, 2 tablespoons of the honey and half the garlic. Toss the pork in it. Leave for 10 minutes while the oven heats, or overnight in the fridge."
+   },
+   {
+    "title": "Roast the pork",
+    "text": "Lift the pork into the tin, keeping the leftover marinade, and roast for 10 minutes. Mix the leftover marinade with the last of the honey and brush it thickly over the pork. Roast for 8 to 10 minutes more until sticky, charred at the edges and cooked through."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "While the pork roasts, boil the kettle. rinse the rice and tip it into a saucepan with 300 millilitres of boiling water and a pinch of salt. Cover and simmer on a low heat for 10 minutes. Turn off the heat and leave it covered for 5 minutes until fluffy."
+   },
+   {
+    "title": "Cook the veg",
+    "text": "When the pork has 5 minutes left, cook the frozen veg pack following the packet. Meanwhile, heat the oil in a frying pan or wok over a medium heat and fry the remaining garlic for 30 seconds until fragrant. Tip in the veg and toss with the rest of the soy sauce."
+   },
+   {
+    "title": "Slice and serve",
+    "text": "Rest the pork for 3 minutes, then slice it thickly on an angle. Serve on the rice with the garlicky veg and spoon over the sticky juices from the tin."
+   }
+  ],
+  "why": "Pak choi is stir-fried with garlic in a separate pan and served next to the pork and rice.",
+  "note": "Garlic and soy sauce stay, as they're also in the marinade; the leftover garlic and soy now go through the veg so it stays garlicky."
+ },
+ {
+  "id": "as_honey_sesame_chicken",
+  "remove": [
+   "broccoli"
+  ],
+  "q": 160,
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Put the kettle on. Cut the chicken into chunks and crush the garlic."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "Rinse the rice and tip it into a saucepan with 300 millilitres of boiling water and a pinch of salt. Cover and simmer on a low heat for 10 minutes. Turn off the heat and leave it covered for 5 minutes until fluffy."
+   },
+   {
+    "title": "Mix the sauce",
+    "text": "Whisk the honey, soy sauce, rice vinegar, tomato purée, garlic and sesame oil in a jug with 1 teaspoon of the cornflour and 3 tablespoons of water until smooth. Set it by the hob, as everything moves fast once the chicken is fried."
+   },
+   {
+    "title": "Fry the chicken",
+    "text": "Toss the chicken with the remaining cornflour and a pinch of salt until every piece is coated. Heat the oil in a wok or large frying pan over a medium-high heat. Fry the chicken in one layer for 6 to 8 minutes, turning, until golden, crisp and cooked through. Lift onto kitchen paper."
+   },
+   {
+    "title": "Cook the veg",
+    "text": "While the chicken fries, cook the frozen veg pack following the packet."
+   },
+   {
+    "title": "Glaze and serve",
+    "text": "Pour off and throw away most of the oil, leaving a thin film in the wok. Add the sauce and bubble for 1 minute until thick and sticky, then toss in the chicken. Serve over the rice with the veg."
+   }
+  ],
+  "why": "Broccoli is boiled on its own and served beside the glazed chicken, not tossed in the sauce."
+ },
+ {
+  "id": "as_teriyaki_salmon",
+  "remove": [
+   "pak_choi"
+  ],
+  "q": 160,
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Put the kettle on. Mix the soy sauce, honey, ginger paste and garlic with 2 tablespoons of water to make the teriyaki sauce. Slice the spring onions (optional) and pat the salmon dry."
+   },
+   {
+    "title": "Cook the rice",
+    "text": "Rinse the rice and tip it into a saucepan with 300 millilitres of boiling water and a pinch of salt. Cover and simmer on a low heat for 10 minutes. Turn off the heat and leave it covered for 5 minutes until fluffy."
+   },
+   {
+    "title": "Sear the salmon",
+    "text": "Heat the oil in a large non-stick frying pan over a medium-high heat. Cook the salmon skin-side down for 4 minutes until the skin is crisp, then turn it over."
+   },
+   {
+    "title": "Finish the salmon and veg",
+    "text": "Cook the salmon for 2 minutes more on the other side. Meanwhile, cook the frozen veg pack following the packet."
+   },
+   {
+    "title": "Glaze and serve",
+    "text": "Pour the teriyaki sauce into the pan and bubble for 1 to 2 minutes, spooning it over the fish, until thick and glossy. Take it off the heat straight away, as the honey can burn. Serve the salmon and veg on the rice with the sauce drizzled over and the spring onions on top (optional)."
+   }
+  ],
+  "why": "Pak choi is wilted next to the salmon and served alongside it on the rice.",
+  "note": "Borderline: the pak choi cooks in the salmon pan, but it's a separate veg on the plate, not part of the fish."
+ },
+ {
+  "id": "br_crispy_oven_fish_chips",
+  "remove": [
+   "frozen_peas"
+  ],
+  "q": 160,
+  "steps": [
+   {
+    "title": "Prep the chips",
+    "text": "Heat the oven to 220°C (200°C fan). Cut the potatoes into thick chips (no need to peel), rinse, then pat really dry with a clean tea towel."
+   },
+   {
+    "title": "Roast the chips",
+    "text": "Toss the chips on a large baking tray with 1½ tablespoons of the oil and a good pinch of salt. Spread them out in one layer and roast on the top shelf for 35 to 40 minutes, turning halfway, until golden and crisp."
+   },
+   {
+    "title": "Crumb the cod",
+    "text": "While the chips roast, set out three plates: the flour seasoned with salt and pepper, the beaten egg, and the panko. Pat the cod dry, dust in flour, dip in egg and press firmly into the crumbs. Lay on a lined baking tray and drizzle with the remaining oil."
+   },
+   {
+    "title": "Bake the cod",
+    "text": "When the chips have 15 minutes left, put the cod on the shelf below. Bake for 12 to 15 minutes until the crumb is golden and the fish flakes easily when pressed with a fork."
+   },
+   {
+    "title": "Cook the veg",
+    "text": "When the cod has 5 minutes left, cook the frozen veg pack following the packet. Toss with the butter and a pinch of salt."
+   },
+   {
+    "title": "Serve",
+    "text": "Pile the chips onto plates, sprinkle with a little salt and set the cod alongside with a pile of the buttery veg. Add lemon wedges for squeezing (optional)."
+   }
+  ],
+  "why": "Mushy peas are made in their own pan and served next to the fish and chips.",
+  "note": "Butter was only for the mushy peas; it stays and is tossed through the veg instead."
+ },
+ {
+  "id": "br_chicken_leek_bacon_pie",
+  "remove": [
+   "broccoli"
+  ],
+  "q": 160,
+  "steps": [
+   {
+    "title": "Prep the filling",
+    "text": "Heat the oven to 200°C (180°C fan) and take the pastry out of the fridge. Dissolve the stock cube in 250 millilitres boiling water. Slice the leeks, crush the garlic, chop the bacon and cut the chicken into bite-size pieces."
+   },
+   {
+    "title": "Brown the chicken and bacon",
+    "text": "Heat the oil in a large, deep frying pan over a medium-high heat. Fry the bacon and chicken for 6–8 minutes, stirring now and then, until the bacon is crisp and the chicken golden all over."
+   },
+   {
+    "title": "Soften the leeks",
+    "text": "Turn the heat down to medium and add the butter, leeks, garlic and mixed herbs (optional). Cook for 5 minutes until the leeks are soft and glossy. Sprinkle over the flour and stir for 1 minute so there are no dry patches."
+   },
+   {
+    "title": "Make the creamy filling",
+    "text": "Gradually stir in the stock, then the cream and mustard. Bubble gently for 4–5 minutes until the sauce coats the back of a spoon. Season with pepper (the bacon is salty), tip into a small pie dish (about 1 litre) and leave to cool for 5 minutes."
+   },
+   {
+    "title": "Top the pie",
+    "text": "Lay the pastry over the dish, trim the overhang and press the edges down with a fork to seal. Brush with the beaten egg and cut a small slit in the middle for steam."
+   },
+   {
+    "title": "Bake the pie and serve",
+    "text": "Bake on the middle shelf for 25 minutes until the pastry is puffed and deep golden. The filling should be bubbling at the edges. When the pie has 5 minutes left, cook the frozen veg pack following the packet. Cut the pie in half and serve with the veg."
+   }
+  ],
+  "why": "Broccoli is boiled while the pie bakes and served on the side.",
+  "note": "Original had 7 steps, so the bake step and the veg-and-serve step are merged to stay within 6."
+ },
+ {
+  "id": "br_toad_in_the_hole",
+  "remove": [
+   "carrots",
+   "frozen_peas"
+  ],
+  "q": 200,
+  "steps": [
+   {
+    "title": "Prep the onions",
+    "text": "Heat the oven to 220°C (200°C fan). Thinly slice the red onions."
+   },
+   {
+    "title": "Make the batter",
+    "text": "Whisk the flour, eggs and a pinch of salt in a jug. Gradually whisk in the milk until smooth and about as thick as single cream. Leave to rest while the sausages cook."
+   },
+   {
+    "title": "Roast the sausages",
+    "text": "Put the oil and sausages in a roasting tin about 20 x 25 centimetres. Roast on the top shelf for 15 minutes until browned and the oil is sizzling hot. A really hot tin is what makes the batter rise."
+   },
+   {
+    "title": "Bake the toad",
+    "text": "Working quickly, take the tin out, give the batter a final whisk and pour it around the sausages – it should sizzle. Return to the oven for 25–30 minutes without opening the door, until puffed, crisp and deep golden."
+   },
+   {
+    "title": "Cook the onions",
+    "text": "While the batter bakes, melt the butter in a saucepan over a medium-low heat. Cook the onions for 15 minutes, stirring often, until soft and sticky."
+   },
+   {
+    "title": "Finish the gravy and serve",
+    "text": "Add 300 millilitres boiling water to the onions, then stir in the gravy granules and mustard. Simmer for 2 minutes until thick and glossy, then keep warm on the lowest heat. When the toad has 5 minutes left, cook the frozen veg pack following the packet. Cut the toad in the hole in half and serve with the veg and plenty of onion gravy."
+   }
+  ],
+  "why": "Carrots and peas are boiled together and served on the side with the onion gravy.",
+  "note": "Carrots and peas together were 300 grams, so this uses 100 grams per serving. The salt stays for the batter. Original had 7 steps, so finishing the gravy and the veg-and-serve step are merged."
+ },
+ {
+  "id": "br_sunday_roast_chicken_for_two",
+  "remove": [
+   "carrots",
+   "broccoli"
+  ],
+  "q": 200,
+  "steps": [
+   {
+    "title": "Prep and make the batter",
+    "text": "Heat the oven to 220°C (200°C fan). Peel and halve the potatoes. Whisk the flour, egg and a pinch of salt in a jug, then gradually whisk in the milk until smooth. Leave the batter to rest."
+   },
+   {
+    "title": "Roast the chicken",
+    "text": "Rub the chicken legs with 1 teaspoon of the oil, salt and pepper and sit them in a roasting tin. Roast on the top shelf for 45 to 50 minutes until the skin is crisp and the juices run clear."
+   },
+   {
+    "title": "Parboil the potatoes",
+    "text": "When the chicken has been in for 15 minutes, boil the potatoes in salted water for 8 minutes. Meanwhile, heat 2 tablespoons of the oil in a second tray in the oven for 5 minutes. Drain the potatoes, then shake them in the colander to rough up the edges."
+   },
+   {
+    "title": "Roast the potatoes",
+    "text": "Tip the potatoes into the hot oil, turn to coat and roast on the middle shelf for 40 minutes, turning once, until crunchy."
+   },
+   {
+    "title": "Bake the Yorkshires",
+    "text": "When the chicken is done, lift it onto a plate and cover with foil to rest. Put ½ teaspoon of oil in each of 4 holes of a muffin tin and heat in the oven for 5 minutes. Pour in the batter (it should sizzle) and bake for 18 to 20 minutes without opening the door, until risen and crisp."
+   },
+   {
+    "title": "Gravy, veg and serve",
+    "text": "While the Yorkshires bake, pour 300 millilitres of boiling water into the chicken tin and scrape up the sticky bits. Pour it into a small saucepan, whisk in the gravy granules and simmer for 1 to 2 minutes until thick. For the last few minutes, cook the frozen veg pack following the packet. Pile everything onto plates and pour over plenty of gravy."
+   }
+  ],
+  "why": "Roasted carrots and boiled broccoli are the veg sides with the roast.",
+  "note": "A roast with lots of veg, so 100 grams per serving. The oil stays (it's for the chicken, potatoes and Yorkshires); the teaspoon that was for the carrots just isn't needed."
+ },
+ {
+  "id": "br_hunters_chicken",
+  "remove": [
+   "sweetcorn"
+  ],
+  "q": 160,
+  "steps": [
+   {
+    "title": "Prep the chicken",
+    "text": "Heat the oven to 220°C (200°C fan). Cut the potatoes into wedges and grate the cheddar. Wrap each chicken breast in 2 rashers of bacon, tucking the ends underneath."
+   },
+   {
+    "title": "Roast the wedges",
+    "text": "Toss the wedges on a baking tray with 1 tablespoon of the oil, the smoked paprika and a pinch of salt. Roast on the top shelf for 35 to 40 minutes, turning halfway, until golden and crisp at the edges."
+   },
+   {
+    "title": "Bake the chicken",
+    "text": "When the wedges have been in for 15 minutes, put the chicken in a small ovenproof dish and rub with the remaining oil. Bake on the middle shelf for 20 to 25 minutes until the bacon is crisp and the chicken is cooked through with no pink in the middle."
+   },
+   {
+    "title": "Add the sauce and cheese",
+    "text": "Spoon the BBQ sauce over the chicken and scatter with the cheddar. Return to the oven for 5 minutes until the cheese is melted and bubbling."
+   },
+   {
+    "title": "Cook the veg and serve",
+    "text": "Meanwhile, cook the frozen veg pack following the packet. Serve the chicken with the wedges and veg."
+   }
+  ],
+  "why": "Sweetcorn is boiled in a small pan and served beside the chicken and wedges."
+ },
+ {
+  "id": "br_minced_beef_onion_pie",
+  "remove": [
+   "frozen_peas"
+  ],
+  "q": 160,
+  "steps": [
+   {
+    "title": "Prep the veg",
+    "text": "Heat the oven to 200°C (180°C fan) and take the pastry out of the fridge. Dissolve the stock cube in 300 millilitres boiling water. Finely chop the onion, finely dice the carrot, and peel and chop the potatoes."
+   },
+   {
+    "title": "Brown the mince",
+    "text": "Heat the oil in a frying pan over a high heat. Brown the mince for 5 minutes, breaking it up, until no pink remains. Add the onion and carrot and cook for 5 minutes until soft."
+   },
+   {
+    "title": "Simmer the filling",
+    "text": "Stir in the flour and tomato purée for 1 minute, then add the Worcestershire and 200 millilitres of the stock. Simmer over a medium heat for 10 minutes until rich and thick. Season with pepper, spoon into a small pie dish and leave to cool for 5 minutes."
+   },
+   {
+    "title": "Top and bake the pie",
+    "text": "Lay the pastry over the filling and press the edges onto the rim with a fork. Brush with the beaten egg and cut a small steam hole in the middle. Bake on the middle shelf for 25 minutes until well risen and deep golden."
+   },
+   {
+    "title": "Make the mash",
+    "text": "While the pie bakes, boil the potatoes in a large pan of salted water for 15 minutes until a knife slides in easily. Drain, then mash with the butter and milk until smooth. Season with salt and pepper."
+   },
+   {
+    "title": "Make the gravy and serve",
+    "text": "Bring the remaining 100 millilitres stock to a simmer in a small pan. Whisk in the gravy granules and bubble for 1 minute until thick and glossy. Meanwhile, cook the frozen veg pack following the packet. Serve the pie with the mash, veg and gravy."
+   }
+  ],
+  "why": "Peas are boiled in their own pan and served with the pie, mash and gravy.",
+  "note": "The carrot is in the pie filling, so it stays. Original had 7 steps, so the gravy and the veg-and-serve step are merged."
+ },
+ {
+  "id": "br_fish_pie",
+  "remove": [
+   "frozen_peas"
+  ],
+  "q": 160,
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Heat the oven to 200°C (180°C fan) and boil the kettle. Peel and chop the potatoes and grate the cheddar. Put the spinach in a colander, pour over boiling water to wilt it, then squeeze dry. Pat the prawns dry."
+   },
+   {
+    "title": "Boil the potatoes and poach the fish",
+    "text": "Boil the potatoes in a large pan of salted water for 15 minutes until very tender, then drain. Meanwhile, lay the haddock and salmon in a frying pan, pour over the milk and simmer gently for 4 to 5 minutes until the fish just flakes. Lift the fish onto a plate and pour the milk into a jug."
+   },
+   {
+    "title": "Make the sauce",
+    "text": "Melt 25 grams of the butter in a saucepan over a medium heat, stir in the flour and cook for 1 minute. Gradually whisk in the warm poaching milk, then simmer for 3 to 4 minutes, stirring, until it coats a spoon. Stir in the mustard and plenty of pepper."
+   },
+   {
+    "title": "Fill and top the dish",
+    "text": "Flake the fish into large chunks into a baking dish (about 1 litre), discarding any skin. Scatter over the prawns and spinach and pour over the sauce. Mash the potatoes with the remaining butter and a pinch of salt, spoon over the top, rough it up with a fork and sprinkle with the cheddar."
+   },
+   {
+    "title": "Bake the pie",
+    "text": "Bake on the middle shelf for 25 minutes until bubbling at the edges and golden on top."
+   },
+   {
+    "title": "Cook the veg and serve",
+    "text": "When the pie has 5 minutes left, cook the frozen veg pack following the packet. Leave the pie to settle for a couple of minutes and serve with the veg."
+   }
+  ],
+  "why": "Peas are boiled separately at the end and served next to the fish pie, not in the filling.",
+  "note": "The spinach is in the pie filling, so it stays."
+ },
+ {
+  "id": "br_cottage_pie",
+  "remove": [
+   "frozen_peas"
+  ],
+  "q": 160,
+  "steps": [
+   {
+    "title": "Prep the veg",
+    "text": "Heat the oven to 200°C (180°C fan). Peel and chop the potatoes, finely chop the onion, finely dice the carrot and crush the garlic. Dissolve the stock cube in 250 millilitres boiling water and grate the cheddar."
+   },
+   {
+    "title": "Boil the potatoes",
+    "text": "Put the potatoes in a large pan of salted water and bring to the boil. Cook for 15 minutes until tender, then drain and leave to steam dry."
+   },
+   {
+    "title": "Brown the mince",
+    "text": "While the potatoes cook, heat the oil in a large frying pan over a high heat. Fry the mince for 5–6 minutes, breaking it up with a wooden spoon, until well browned and any liquid has cooked off. The browning is where the flavour comes from."
+   },
+   {
+    "title": "Simmer the filling",
+    "text": "Add the onion, carrot and garlic and cook over a medium heat for 5 minutes until soft. Stir in the flour, tomato purée and mixed herbs (optional) for 1 minute, then pour in the stock and Worcestershire. Simmer for 15 minutes, stirring now and then, until thick and glossy, then season with pepper."
+   },
+   {
+    "title": "Mash and top",
+    "text": "Mash the potatoes with the butter, milk and a pinch of salt until smooth. Spoon the mince into a small baking dish and spread the mash over the top. Rake with a fork so it crisps up and scatter with the cheddar."
+   },
+   {
+    "title": "Bake and serve",
+    "text": "Bake on the middle shelf for 20 minutes until golden and bubbling at the edges. When the pie has 5 minutes left, cook the frozen veg pack following the packet. Leave the pie to settle for a couple of minutes, then serve with the veg alongside."
+   }
+  ],
+  "why": "Peas are boiled in a small pan and served alongside the pie.",
+  "note": "The carrot is in the mince filling, so it stays. Original had 7 steps, so the bake step and the veg-and-serve step are merged."
+ },
+ {
+  "id": "br_shepherds_pie",
+  "remove": [
+   "broccoli"
+  ],
+  "q": 160,
+  "steps": [
+   {
+    "title": "Prep the veg",
+    "text": "Heat the oven to 200°C (180°C fan). Peel and chop the potatoes, finely chop the onion, dice the carrot and crush the garlic. Dissolve the stock cube in 250 millilitres boiling water."
+   },
+   {
+    "title": "Boil the potatoes",
+    "text": "Put the potatoes in a large pan of salted water and bring to the boil. Cook for 15 minutes until tender, then drain and leave to steam dry."
+   },
+   {
+    "title": "Brown the lamb",
+    "text": "While the potatoes cook, put the lamb mince in a large dry frying pan over a high heat. It has enough fat of its own. Fry for 6–8 minutes, breaking it up, until deeply browned. Spoon off any excess fat."
+   },
+   {
+    "title": "Simmer the filling",
+    "text": "Add the onion, carrot and garlic and cook over a medium heat for 5 minutes until soft. Stir in the flour, tomato purée and mixed herbs, then the stock and Worcestershire. Simmer for 15 minutes until thick, then stir in the peas, season with pepper and tip into a small baking dish."
+   },
+   {
+    "title": "Mash and top",
+    "text": "Mash the potatoes with the butter, milk and a pinch of salt until smooth. Spoon over the lamb and fluff up the surface with a fork so the peaks crisp."
+   },
+   {
+    "title": "Bake and serve",
+    "text": "Bake on the middle shelf for 20–25 minutes until the peaks are crisp and golden. When the pie has 5 minutes left, cook the frozen veg pack following the packet. Leave the pie to settle for a couple of minutes, then serve with the veg."
+   }
+  ],
+  "why": "Broccoli is boiled while the pie bakes and served on the side.",
+  "note": "Only the broccoli is a side: the peas and carrot are stirred into the lamb filling, so they stay. Original had 7 steps, so the bake step and the veg-and-serve step are merged."
+ },
+ {
+  "id": "br_bangers_mash_onion_gravy",
+  "remove": [
+   "frozen_peas"
+  ],
+  "q": 160,
+  "steps": [
+   {
+    "title": "Prep the veg",
+    "text": "Heat the oven to 200°C (180°C fan) and boil the kettle. Peel and chop the potatoes and thinly slice the red onions."
+   },
+   {
+    "title": "Bake the sausages",
+    "text": "Put the sausages on a lined baking tray and bake on the middle shelf for 25 minutes, turning halfway. They're done when browned all over with no pink in the middle."
+   },
+   {
+    "title": "Boil the potatoes",
+    "text": "Meanwhile, put the potatoes in a large pan of salted water and bring to the boil. Cook for 15 minutes until soft, then drain and leave to steam for a minute."
+   },
+   {
+    "title": "Caramelise the onions",
+    "text": "Heat the oil and half the butter in a saucepan over a medium heat. Add the onions with a pinch of salt and cook for 12–15 minutes, stirring often, until soft and sticky. Stir in the honey for the last 2 minutes so they turn jammy."
+   },
+   {
+    "title": "Make the gravy",
+    "text": "Pour 300 millilitres boiling water into the onions, add the Worcestershire and stir in the gravy granules. Simmer for 2 minutes until thick and glossy, adding a splash more water if needed."
+   },
+   {
+    "title": "Mash and serve",
+    "text": "Cook the frozen veg pack following the packet. While it cooks, mash the potatoes with the rest of the butter, the milk and mustard until smooth and creamy. Season with salt to taste. Pile the mash onto plates, top with the sausages and pour over the onion gravy, with the veg alongside."
+   }
+  ],
+  "why": "Peas are boiled in a small pan and served alongside the bangers and mash.",
+  "note": "Original had 7 steps, so the mash and the veg-and-serve step are merged."
+ },
+ {
+  "id": "br_pork_steaks_apple_mustard",
+  "remove": [
+   "broccoli"
+  ],
+  "q": 160,
+  "steps": [
+   {
+    "title": "Prep the pork and veg",
+    "text": "Cut the potatoes into chunks. Core the apple and cut it into wedges. Dissolve the stock cube in 100 millilitres of boiling water. Season the pork on both sides with salt and pepper."
+   },
+   {
+    "title": "Boil the potatoes",
+    "text": "Put the potatoes in a pan of boiling salted water and cook for 15 minutes until tender. Drain and keep warm in the pan with the lid on."
+   },
+   {
+    "title": "Fry the pork",
+    "text": "While the potatoes cook, heat the oil in a large frying pan over a medium-high heat. Fry the pork steaks for 4 to 5 minutes each side until golden and cooked through, with clear juices. Move to a plate to rest."
+   },
+   {
+    "title": "Caramelise the apples",
+    "text": "Turn the heat down to medium and add 15 grams of the butter and the apple wedges. Cook for 4 to 5 minutes, turning, until the apples are golden and just tender."
+   },
+   {
+    "title": "Make the mustard sauce",
+    "text": "Pour the stock into the pan and bubble for 1 minute, scraping up the sticky bits. Stir in the cream and mustard and simmer for 2 minutes until it coats the back of a spoon. Return the pork and any resting juices to warm through."
+   },
+   {
+    "title": "Crush and serve",
+    "text": "Cook the frozen veg pack following the packet. Meanwhile, lightly crush the potatoes with the remaining butter and a pinch of salt. Serve the pork with the apples and sauce spooned over, with the crushed potatoes and veg alongside."
+   }
+  ],
+  "why": "Broccoli is boiled with the potatoes but lifted out and served alongside the pork."
+ },
+ {
+  "id": "br_crispy_chicken_escalopes",
+  "remove": [
+   "frozen_peas"
+  ],
+  "q": 160,
+  "steps": [
+   {
+    "title": "Get prepped",
+    "text": "Cut the potatoes into chunks, crush the garlic and finely grate the parmesan."
+   },
+   {
+    "title": "Boil the potatoes",
+    "text": "Put the potatoes in a pan of boiling salted water and cook for 15 to 18 minutes until tender. Drain and keep in the pan."
+   },
+   {
+    "title": "Crumb the chicken",
+    "text": "While the potatoes cook, put the chicken between two sheets of baking paper and bash with a rolling pin until about 1 centimetre thick. Set out three plates: the flour seasoned with salt and pepper, the beaten egg, and the panko mixed with the parmesan. Dust the chicken in flour, dip in egg, then press firmly into the crumbs."
+   },
+   {
+    "title": "Fry the escalopes",
+    "text": "Heat the oil in a large frying pan over a medium heat. Fry the escalopes for 3 to 4 minutes each side until deep golden and the chicken is white all the way through. Drain on kitchen paper."
+   },
+   {
+    "title": "Cook the veg",
+    "text": "Meanwhile, cook the frozen veg pack following the packet."
+   },
+   {
+    "title": "Garlic butter and serve",
+    "text": "Wipe out the escalope pan and melt the butter with the garlic over a low heat for 30 seconds, then toss it through the potatoes. Serve the escalopes with the garlic potatoes and veg, with lemon wedges for squeezing (optional)."
+   }
+  ],
+  "why": "Peas are boiled in a small pan and served next to the escalopes and garlic potatoes."
+ }
+]

@@ -222,6 +222,8 @@ function simulate(week, ctx) {
   const freezerMeals = (week.freezerMeals || []).map(m => ({ ...m }));
   const newFreezerMeals = [];
   const usedFromCarry = {};
+  // what you actually bought, when it wasn't the suggested pack ("they only had 10-packs"): { id: { pack, count } }
+  const gotPacks = week.bought || {}, gotUsed = {};
   const staplesUsed = {}; // staple id -> day indices it's needed on
   const skippedOpt = [];  // optional lines left out because you'd have to buy them
   const people = ctx.people || [];
@@ -269,10 +271,11 @@ function simulate(week, ctx) {
       const take = Math.min(L.q, remain);
       L.q -= take; remain -= take;
       if (L.carried) usedFromCarry[l.i] = (usedFromCarry[l.i] || 0) + take;
+      if (L.got && purchases[l.i]) purchases[l.i].needAll = (purchases[l.i].needAll || 0) + take; // the week's meals using the pack you got
       if (!L.frozen && ing.unit === 'each') {
         // whole items in a multi-pack stay sealed; only a part-used item goes off quickly
         const whole = Math.floor(L.q + EPS), frac = L.q - whole;
-        if (frac > EPS) { L.q = whole; lots.push({ i: l.i, q: frac, exp: Math.min(L.exp, d + ing.keeps), frozen: false, opened: true, carried: L.carried }); }
+        if (frac > EPS) { L.q = whole; lots.push({ i: l.i, q: frac, exp: Math.min(L.exp, d + ing.keeps), frozen: false, opened: true, carried: L.carried, got: L.got }); }
       } else if (!L.frozen && !L.opened) { L.opened = true; L.exp = Math.min(L.exp, d + ing.keeps); }
       // only the amount used comes out of the freezer; the rest stays frozen (thawed raw food is never refrozen)
       if (L.frozen && ing.aisle === 'Meat & fish') defrostNotes.push({ d, i: l.i, q: take });
@@ -280,10 +283,16 @@ function simulate(week, ctx) {
     for (let k = lots.length - 1; k >= 0; k--) if (lots[k].q <= EPS) { if (lots[k].frozen) inFreezer--; lots.splice(k, 1); }
     if (remain > EPS) {
       if (l.opt && skipOpt) { skippedOpt.push({ i: l.i, d }); return (need - remain) * up(l.i); }
-      const packs = choosePacks(ing, remain, shopId);
+      const G = gotPacks[l.i] && gotPacks[l.i].pack > 0 ? gotPacks[l.i] : null;
+      if (G && gotUsed[l.i]) {
+        // you've already got what you bought and it's run out: nothing more goes on the list, the row says you're short
+        const P = purchases[l.i]; P.need += remain; P.needAll = (P.needAll || 0) + remain; P.short = (P.short || 0) + remain; return need * up(l.i);
+      }
+      const packs = G ? Array(Math.max(1, Math.round(G.count || 1))).fill(G.pack) : choosePacks(ing, remain, shopId);
       const total = packs.reduce((a, b) => a + b, 0);
       const P = purchases[l.i] || (purchases[l.i] = { need: 0, packs: [], bought: 0 });
       P.need += remain; for (const x of packs) P.packs.push(x); P.bought += total;
+      if (G) { gotUsed[l.i] = true; P.got = true; P.needAll = (P.needAll || 0) + remain; if (remain - total > EPS) { P.short = (P.short || 0) + remain - total; remain = total; } }
       if (d > ing.life) {
         if (ing.freeze && roomFor(1)) { addFrozen(1); freezeNotes.push({ d: -1, i: l.i, q: total, onArrival: true, forDay: d }); if (ing.aisle === 'Meat & fish') defrostNotes.push({ d, i: l.i, q: remain }); }
         else if (ing.freeze) { freezerFullSkips++; warnings.push({ d, i: l.i, full: true, msg: 'No room in the freezer for the ' + ing.name.toLowerCase() + ': buy it nearer ' + DAY_LONG[d] }); }
@@ -293,13 +302,13 @@ function simulate(week, ctx) {
       // frozen on arrival: only the amount needed is defrosted, the rest of the pack stays frozen
       const frozeOnArrival = d > ing.life && ing.freeze && freezeNotes.some(n => n.onArrival && n.i === l.i && n.forDay === d);
       if (frozeOnArrival && left <= EPS) inFreezer--; // the whole pack came out on the day it was needed
-      if (left > EPS && frozeOnArrival) lots.push({ i: l.i, q: left, exp: 999, frozen: true, opened: false });
+      if (left > EPS && frozeOnArrival) lots.push({ i: l.i, q: left, exp: 999, frozen: true, opened: false, got: !!G });
       else if (left > EPS) {
         if (ing.unit === 'each') {
           const whole = Math.floor(left + EPS), frac = left - whole;
-          if (whole > 0) lots.push({ i: l.i, q: whole, exp: ing.life, frozen: false, opened: false });
-          if (frac > EPS) lots.push({ i: l.i, q: frac, exp: Math.min(ing.life, d + ing.keeps), frozen: false, opened: true });
-        } else lots.push({ i: l.i, q: left, exp: Math.min(ing.life, d + ing.keeps), frozen: false, opened: true });
+          if (whole > 0) lots.push({ i: l.i, q: whole, exp: ing.life, frozen: false, opened: false, got: !!G });
+          if (frac > EPS) lots.push({ i: l.i, q: frac, exp: Math.min(ing.life, d + ing.keeps), frozen: false, opened: true, got: !!G });
+        } else lots.push({ i: l.i, q: left, exp: Math.min(ing.life, d + ing.keeps), frozen: false, opened: true, got: !!G });
       }
     }
     return need * up(l.i);
@@ -385,7 +394,7 @@ function basketTotals(purchases, ctx, extraRows) {
   const ids = Object.keys(purchases);
   for (const id of ids) {
     const ing = ING[id], P = purchases[id];
-    const row = { i: id, need: P.need, packs: P.packs, bought: P.bought, staple: !!P.staple, forDays: P.forDays || [], forWhat: P.forWhat || [], uses: P.uses || [], always: !!P.always, byShop: {} };
+    const row = { i: id, need: P.need, packs: P.packs, bought: P.bought, got: !!P.got, short: P.short || 0, needAll: P.needAll || P.need, staple: !!P.staple, forDays: P.forDays || [], forWhat: P.forWhat || [], uses: P.uses || [], always: !!P.always, byShop: {} };
     for (const k of keys) {
       const sp = shopPrice(ing, k.shop, k.loyalty);
       let cost, missing = false, est = false, stale = false, rough = false, count = 0, pack = null;
@@ -394,7 +403,7 @@ function basketTotals(purchases, ctx, extraRows) {
         if (k.shop === pref && P.packs.length) { // same shop as the plan: price the exact packs bought
           // price each planned pack proportionally to the shop's recorded pack
           cost = P.packs.reduce((a, size) => a + (Math.abs(size - sp.pack) < EPS ? sp.price : sp.unit * size), 0);
-          count = P.packs.length;
+          count = P.packs.length; if (P.got) pack = P.packs[0];
         } else { count = Math.max(1, Math.ceil(P.need / sp.pack - 1e-9)); cost = count * sp.price; }
         est = !!sp.rec.est; rough = sp.rec.conf === 'low' || sp.rec.basis === 'model'; stale = ageDays(sp.rec.checked, today) > STALE_DAYS;
       } else {

@@ -325,6 +325,17 @@ a.btn { text-decoration: none; color: inherit; }
 .cookimg img { width: 100%; max-height: 38vh; object-fit: cover; display: block; }
 .stepimg figcaption, .cookimg figcaption { font-size: 0.75rem; color: var(--muted); padding: 4px 8px; }
 .steplink { display: inline-flex; align-items: center; gap: 6px; padding: 0; cursor: pointer; }
+.steplinks { gap: 6px 18px; margin-top: 6px; }
+.gotnote { margin-top: 4px; }
+.stockrow { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 0; border-top: 1px solid var(--line); flex-wrap: wrap; }
+.stockrow .input { width: 76px; min-height: 40px; }
+.stockrow.gone b { text-decoration: line-through; color: var(--muted); }
+.stockunit { min-width: 2.2em; }
+.gotnote .btn { margin-left: 6px; }
+.notebox { display: flex; gap: 8px; align-items: flex-start; margin-top: 8px; padding: 8px 10px; border-radius: var(--r-sm); background: var(--surface-2); font-size: 0.92rem; }
+.notebox > svg { width: 16px; height: 16px; flex: none; margin-top: 3px; color: var(--accent); }
+.notebox.big { font-size: 1.05rem; }
+form.notebox { display: flex; background: none; padding: 0; }
 .steplink svg { width: 18px; height: 18px; }
 .tmrs { display: inline-flex; gap: 6px; flex-wrap: wrap; }
 .tmr { display: inline-flex; align-items: center; gap: 4px; min-height: 40px; padding: 0 10px; border-radius: 999px; border: 0; background: var(--accent); color: var(--accent-fg); font-family: var(--f-data); font-weight: 700; }

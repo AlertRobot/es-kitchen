@@ -21,7 +21,7 @@ const S = {
   tab: 'week', weekStart: mondayOf(TODAY),
   recipes: [], RMAP: {}, ING: {}, people: [], settings: clone(DEFAULTS), pantry: { status: {} },
   week: null, weekLoaded: false, prevWeek: null,
-  lib: null, libError: null, thumbs: {}, fullPhotos: {}, photoPrefs: { hidden: {} }, ratings: {}, hist: {}, stepPhotos: {}, timers: [],
+  lib: null, libError: null, thumbs: {}, fullPhotos: {}, photoPrefs: { hidden: {} }, ratings: {}, notes: {}, noteEdit: null, hist: {}, stepPhotos: {}, timers: [],
   loaded: { recipes: false, ing: false }, online: navigator.onLine,
   sheets: [], cook: null, filters: { q: '', cuisine: '', quick: false, protein: '', category: '', kcal: '', rated: '', meal: '' },
   pick: { q: '', cuisine: '', protein: '', category: '', kcal: '', rated: '' }, expanded: {}, priceQ: '', busy: false,
@@ -117,14 +117,31 @@ function ourPhoto(p) { return !!p && (p.uid === myUid() || (!!p.hid && !!S.house
 // a photo someone added is only ever shown as a picture saved in the app, never as a link to another website
 const imgOk = x => typeof x === 'string' && /^data:image\/(jpeg|png|webp|gif);base64,[A-Za-z0-9+/=]+$/.test(x);
 // a step photo: ours, or another household's (which says so and can be hidden for this household, like recipe photos)
-function stepPhoto(r, k) { const x = (S.stepPhotos[r.id] || {})[k]; if (!x || !imgOk(x.img)) return null; const ours = ourPhoto(x); return { x, ours, hidden: !ours && !!S.photoPrefs.hidden[r.id + '__' + k] }; }
+function stepPhoto(r, k) { const x = (S.stepPhotos[r.variantOf || r.id] || {})[k]; if (!x || !imgOk(x.img)) return null; const ours = ourPhoto(x); return { x, ours, hidden: !ours && !!S.photoPrefs.hidden[r.id + '__' + k] }; }
 function stepPhotoNote(r, k, sp) { return sp.ours ? '' : ' · <span class="muted">from someone else using Peckish</span> · <button class="linkish small" data-act="hide-photo" data-v="' + h(r.id + '__' + k) + '">Hide this photo</button>'; }
+// your own notes on a recipe and its steps ("cook the chips 5 minutes longer"): kept in the household, for both of you
+function noteId(r) { return r.variantOf || r.id; }
+function noteOf(r, k) { const x = ((S.notes[noteId(r)] || {})[k]) || null; return x && x.text ? x : null; }
+function noteHtml(r, k, big) {
+  const key = noteId(r) + ':' + k, x = noteOf(r, k);
+  if (S.noteEdit === key) return '<form class="stack notebox" data-form="note" data-v="' + h(noteId(r)) + '" data-k="' + h(String(k)) + '" style="gap:6px"><textarea class="input" id="note-text" rows="3" maxlength="600" aria-label="Your note" placeholder="' + (k === 'all' ? 'e.g. Double the sauce, we like it saucy' : 'e.g. Give the chips 5 more minutes so they\u2019re extra crispy') + '">' + h(x ? x.text : '') + '</textarea>' +
+    '<div class="row" style="gap:8px"><button class="btn primary small-btn" type="submit">Save note</button><button class="btn small-btn" type="button" data-act="note-cancel">Cancel</button>' + (x ? '<button class="linkish small" type="button" data-act="note-del" data-v="' + h(noteId(r)) + '" data-k="' + h(String(k)) + '" style="margin-left:auto">Delete</button>' : '') + '</div></form>';
+  if (!x) return '';
+  return '<div class="notebox' + (big ? ' big' : '') + '">' + ICON.note + '<div style="min-width:0"><span>' + h(x.text) + '</span><span class="muted small" style="display:block">' + h(x.by || '') + ' · <button class="linkish small" data-act="note-edit" data-v="' + h(key) + '">Edit</button></span></div></div>';
+}
+function noteLink(r, k) { if (noteOf(r, k) || S.noteEdit === noteId(r) + ':' + k) return ''; return '<button class="linkish small steplink" data-act="note-edit" data-v="' + h(noteId(r) + ':' + k) + '">' + ICON.note + ' Add a note</button>'; }
+function saveNote(rid, k, text) {
+  const cur = { ...(S.notes[rid] || {}) };
+  if (text) cur[k] = { text, by: myName(), at: new Date().toISOString() }; else delete cur[k];
+  S.notes = { ...S.notes, [rid]: cur };
+  (Object.keys(cur).length ? Store.set('notes/' + rid, cur) : Store.del('notes/' + rid)).catch(e => { console.warn(e); toast('Couldn\u2019t save the note.'); });
+}
 function stepPhotoLink(r, k, sp, cls) {
   if (sp && sp.hidden) return '<button class="linkish small steplink" data-act="unhide-photo" data-v="' + h(r.id + '__' + k) + '">Show the hidden step photo</button>';
   if (sp && !sp.ours) return ''; // only its household can replace it
-  return '<label class="linkish ' + cls + ' steplink">' + ICON.camera + (sp ? (cls ? ' Replace step photo' : ' Replace the photo of this step') : ' Add a photo of this step') + '<input type="file" accept="image/*" capture="environment" data-stepphoto="' + h(r.id) + '|' + k + '" hidden></label>';
+  return '<label class="linkish ' + cls + ' steplink">' + ICON.camera + (sp ? (cls ? ' Replace photo' : ' Replace the photo of this step') : cls ? ' Add a photo' : ' Add a photo of this step') + '<input type="file" accept="image/*" capture="environment" data-stepphoto="' + h(r.id) + '|' + k + '" hidden></label>';
 }
-function userPhoto(r) { const p = S.thumbs[r.id]; return p && imgOk(p.thumb) && (ourPhoto(p) || !S.photoPrefs.hidden[r.id]) ? p : null; }
+function userPhoto(r) { const id = r.variantOf || r.id, p = S.thumbs[id]; return p && imgOk(p.thumb) && (ourPhoto(p) || !S.photoPrefs.hidden[id]) ? p : null; }
 function photoFor(r) {
   const own = userPhoto(r);
   if (own) return { thumb: own.thumb, own: true };
@@ -152,6 +169,7 @@ const ICON = {
   lock: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>',
   camera: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>',
   swap: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h13l-3-3M20 16H7l3 3"/></svg>',
+  note: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13.5 6.5l4 4"/></svg>',
   timer: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2M9 2h6"/></svg>',
   share: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>',
   bag: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 13H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>',
@@ -233,6 +251,7 @@ function tidyWeek(w) {
   w.freezerMeals = (Array.isArray(w.freezerMeals) ? w.freezerMeals : []).filter(m => m && typeof m === 'object').map(m => ({ ...m, r: txt(m.r), portions: upTo(m.portions, 100, 0) }));
   w.days = w.days.map(d => { if (!d || typeof d !== 'object') return {}; const x = { ...d }; if ('r' in x) x.r = txt(x.r); if ('guests' in x) x.guests = Math.round(upTo(x.guests, 20, 0)); if ('extra' in x) x.extra = Math.round(upTo(x.extra, 20, 0)); if ('extraUse' in x && x.extraUse !== 'freeze') x.extraUse = 'lunch'; return x; });
   w.extras = (Array.isArray(w.extras) ? w.extras : []).filter(e => e && typeof e === 'object').map(e => ({ ...e, name: txt(e.name) }));
+  if (w.bought && typeof w.bought === 'object') { const g = {}; for (const id in w.bought) { const x = w.bought[id] || {}; const pk = num(x.pack, 0); if (pk > 0) g[txt(id)] = { pack: upTo(pk, 100000, 0), count: Math.max(1, Math.round(upTo(x.count, 50, 1))) }; } w.bought = g; } else delete w.bought;
   if (w.locked && typeof w.locked === 'object') w.locked = { ...w.locked, by: txt(w.locked.by) };
   // a shop the app doesn't know (a typo, or a newer version's) means the usual one, rather than a week that won't open
   if ('shop' in w && !SHOPS.some(sh => sh.id === w.shop)) delete w.shop;
@@ -276,6 +295,9 @@ function rebuild() {
   const all = Object.values(recipes).filter(r => r && r.title && Array.isArray(r.ingredients)).sort((a, b) => a.title.localeCompare(b.title));
   all.forEach(spellRecipe);
   S.RMAP = {}; all.forEach(r => S.RMAP[r.id] = r);
+  // the same dinner with a frozen veg pack instead of the fresh veg side (opened from a planned night, never offered on its own)
+  all.forEach(r => { const sd = r.side; if (!sd || !Array.isArray(sd.remove) || !Array.isArray(sd.steps) || r.custom || RAW.myR[r.id]) return;
+    S.RMAP[r.id + '~veg'] = { ...r, id: r.id + '~veg', variantOf: r.id, side: undefined, ingredients: r.ingredients.filter(l => !sd.remove.includes(l.i)).concat({ i: 'frozen_veg_pack', q: sd.q || 160, t: (sd.q || 160) + 'g frozen veg pack' }), steps: sd.steps }; });
   S.recipes = all.filter(r => !r.retired && !r.removed); // retired and removed recipes still open from old weeks, but aren't offered any more
   const ing = {}; for (const i of S.lib.ingredients) ing[i.id] = i;
   for (const id in RAW.myI) {
@@ -295,13 +317,13 @@ function rebuild() {
 function unsubAll(keys) { for (const k of keys) { if (unsub[k]) { try { unsub[k](); } catch (e) {} delete unsub[k]; } } }
 function onSubErr(e) { console.warn('sync error', e); if (e && e.code === 'permission-denied') { S.hhError = 'You don’t have access to this household any more.'; schedule(); } }
 function subscribeHousehold(hid) {
-  unsubAll(['hh', 'recipes', 'ing', 'people', 'settings', 'pantry', 'thumbs', 'photoPrefs', 'ratings', 'week', 'prev', 'thisW', 'nextW', 'backup', 'shops']);
+  unsubAll(['hh', 'recipes', 'ing', 'people', 'settings', 'pantry', 'thumbs', 'photoPrefs', 'ratings', 'notes', 'week', 'prev', 'thisW', 'nextW', 'backup', 'shops']);
   S.backup = null; autoTried = false;
   S.weekPicked = false; curHid = hid;
   Store.setHousehold(hid); pruneWeekCopies(hid); linkScope(hid);
   RAW.myR = {}; RAW.myI = {}; RAW.gotR = false; RAW.gotI = false; S.thumbs = {}; S.fullPhotos = {};
   // nothing from the household you were in carries over while this one loads
-  S.pendingRestore = null; S.restoreAsk = false; RAW.people = {}; S.people = []; S.settings = clone(DEFAULTS); S.pantry = { status: {} }; S.pantryRaw = null; S.photoPrefs = { hidden: {} }; S.ratings = {}; S.shopsLog = null; S.thisWeekDoc = null; S.histAll = null; S.histLoading = false; S.histCost = {};
+  S.pendingRestore = null; S.restoreAsk = false; RAW.people = {}; S.people = []; S.settings = clone(DEFAULTS); S.pantry = { status: {} }; S.pantryRaw = null; S.photoPrefs = { hidden: {} }; S.ratings = {}; S.notes = {}; S.noteEdit = null; S.shopsLog = null; S.thisWeekDoc = null; S.histAll = null; S.histLoading = false; S.histCost = {};
   unsub.hh = Store.watchHousehold(hid, hh => { S.household = hh; if (hh && Store.touchMember && S.user) Store.touchMember(hh, S.user); schedule(); }, onSubErr);
   unsub.backup = Store.sub('config/backup', d => { S.backup = d || null; schedule(); maybeAutoBackup(); }, () => {});
   unsub.recipes = Store.sub('recipes', docs => { RAW.myR = {}; docs.forEach(d => RAW.myR[d.id] = d); RAW.gotR = true; rebuild(); }, onSubErr);
@@ -313,6 +335,7 @@ function subscribeHousehold(hid) {
   unsub.thumbs = Store.subG('dishThumbs', docs => { S.thumbs = {}; docs.forEach(d => S.thumbs[d.id] = d); schedule(); }, () => {});
   unsub.shops = Store.sub('shops', docs => { S.shopsLog = docs.map(tidyShop); schedule(); if (S.bg.cfg && (S.bg.wantSync || docs.some(t => t.budgie && (t.budgie.state === 'queued' || (t.removed && t.budgie.tid))))) { S.bg.wantSync = false; setTimeout(bgSyncShops, 800); } }, onSubErr);
   unsub.ratings = Store.sub('ratings', docs => { const m = {}; docs.forEach(d => { const x = { ...d }; delete x.id; m[d.id] = x; }); S.ratings = m; schedule(); }, onSubErr);
+  unsub.notes = Store.sub('notes', docs => { const m = {}; docs.forEach(d => { const x = { ...d }; delete x.id; m[d.id] = x; }); S.notes = m; schedule(); renderCook(); }, onSubErr);
   subscribeWeek();
   // Always keep this week and next week on the phone, so the plan and list are there offline in the shop.
   const thisW = mondayOf(TODAY), nextW = addDays(thisW, 7); const seen = {};
@@ -504,7 +527,9 @@ function saveSettings(patch) {
   else save('config/settings', S.settings);
 }
 function savePantry() { const before = S.pantryRaw; S.pantryRaw = clone(S.pantry); saveDiff('config/pantry', before, S.pantry); schedule(); }
-function saveRating(rid, entry) { if (Store.patch && SAFE_KEY.test(myUid() || '')) Store.patch('ratings/' + rid, { [myUid()]: entry === null ? Store.DEL : entry }).catch(e => console.warn(e)); else { const d = { ...(S.ratings[rid] || {}) }; save('ratings/' + rid, d); } }
+function baseId(id) { const r = S.RMAP[id]; return (r && r.variantOf) || id; }
+function saveRating(rid0, entry) {
+  const rid = baseId(rid0); if (Store.patch && SAFE_KEY.test(myUid() || '')) Store.patch('ratings/' + rid, { [myUid()]: entry === null ? Store.DEL : entry }).catch(e => console.warn(e)); else { const d = { ...(S.ratings[rid] || {}) }; save('ratings/' + rid, d); } }
 
 // ---------- rendering ----------
 let raf = 0;
@@ -680,7 +705,7 @@ function renderWeek() {
   if (arrival.length) out += '<div class="note">' + ICON.snow + ' <b>When you unpack the shop:</b> freeze ' + arrival.map(n => h(leftText(n.i, n.q)) + ' (for ' + DAY_LONG[n.forDay] + ')').join(', ') + '.</div>';
   const todayIdx = daysBetween(w.start, TODAY);
   if (S.weekUnsure && !planned) out += '<div class="note warn">No signal, so this phone hasn\u2019t been able to fetch this week yet. If it\u2019s been planned on another phone, the plan shows here once you\u2019re back online. Planning it here now would replace theirs.</div>';
-  out += tonightAndRatings(w, todayIdx) + plateAsks(w) + kcalGlance(w, todayIdx) + makeWithWhatYouHave(w, sim);
+  out += stockCard(w, todayIdx) + tonightAndRatings(w, todayIdx) + plateAsks(w) + kcalGlance(w, todayIdx) + makeWithWhatYouHave(w, sim);
   // nothing planned yet: the one thing to do is plan it, so that comes first rather than under seven empty nights
   const footFirst = !planned && !locked;
   if (footFirst) out += weekFoot(w, emptyN, planned, locked);
@@ -705,6 +730,7 @@ function renderWeek() {
       const downs = eaters.filter(p => voteOf(w, p.id, d) < 0);
       if (downs.length) tags.push('<span class="tag bad">' + h(downs.map(p => nick(p.name)).join(' & ')) + (downs.length > 1 ? ' aren\u2019t keen' : ' isn\u2019t keen') + '</span>');
       else if (eaters.length > 1 && eaters.every(p => voteOf(w, p.id, d) > 0)) tags.push('<span class="tag good">\ud83d\udc4d Both keen</span>');
+      if (r.variantOf) tags.push('<span class="tag">Veg pack</span>');
       if (guestsOn(w, d)) tags.push('<span class="tag">+' + guestsOn(w, d) + ' guest' + (guestsOn(w, d) > 1 ? 's' : '') + '</span>');
       if (day.freezer) tags.push('<span class="tag">' + ICON.snow + ' From the freezer</span>');
       if (r.category === 'treat') tags.push('<span class="tag treat">Treat</span>');
@@ -1249,7 +1275,15 @@ function shopRowHtml(row, B, w) {
   const prefKey = B.prefKey;
   const ing = S.ING[row.i], done = !!w.checked[row.i], ps = row.byShop[prefKey];
   const counts = {}; row.packs.forEach(p => counts[p] = (counts[p] || 0) + 1);
-  const packTxt = Object.keys(counts).sort((x, y) => y - x).map(p => counts[p] + ' × ' + packLabel(ing, Number(p))).join(' + ');
+  const packTxt = Object.keys(counts).sort((x, y) => y - x).map(p => counts[p] + ' × ' + packLabel(ing, Number(p))).join(' + ') + (row.got ? ' (what you got)' : '');
+  // a different pack from the suggested one: say whether it's enough for the week, and if not how many to get
+  let gotNote = '';
+  if (row.got && row.packs.length) {
+    const all = row.needAll, pk = row.packs[0], n = Math.max(1, Math.ceil(all / pk - 1e-9)), spare = row.bought - (all - row.short);
+    gotNote = row.short > 1e-6
+      ? '<div class="note warn small gotnote">Not quite enough: this week needs ' + fmtQty(all, ing.unit) + '. <button class="btn small-btn" data-act="got-count" data-v="' + h(row.i) + '" data-n="' + n + '">Get ' + n + ' packs</button></div>'
+      : '<div class="muted small gotnote">That covers the week' + (spare > 1e-6 ? ', with ' + fmtQty(spare, ing.unit) + ' spare' : '') + '.</div>';
+  }
   const open = S.expanded['s:' + row.i];
   let why;
   if (row.staple) {
@@ -1263,12 +1297,13 @@ function shopRowHtml(row, B, w) {
     why = byR.length ? 'for ' + byR.slice(0, 2).map(one).join(', ') + (byR.length > 2 ? ' +' + (byR.length - 2) + ' more' : '') : 'need ' + fmtQty(row.need, ing.unit);
   }
   let out = '<div class="item ' + (done ? 'done' : '') + '"><button class="check ' + (done ? 'on' : '') + '" data-act="tick" data-v="' + h(row.i) + '" aria-label="' + (done ? 'Untick ' : 'Tick ') + h(ing.name) + '" aria-pressed="' + done + '">' + (done ? ICON.tick : '') + '</button>' +
-    '<div class="itap" data-act="tick" data-v="' + h(row.i) + '" style="min-width:0"><div class="iname">' + h(ing.name) + '</div><div class="muted small">' + packTxt + ' · ' + why + '</div>' + (row.staple ? '<button class="linkish small" data-act="have" data-v="' + h(row.i) + '">Skip this week</button>' : '') + '</div>' +
+    '<div class="itap" data-act="tick" data-v="' + h(row.i) + '" style="min-width:0"><div class="iname">' + h(ing.name) + '</div><div class="muted small">' + packTxt + ' · ' + why + '</div>' + (row.staple ? '<button class="linkish small" data-act="have" data-v="' + h(row.i) + '">Skip this week</button>' : '') + gotNote + '</div>' +
     '<button class="more" data-act="expand" data-v="s:' + h(row.i) + '" aria-expanded="' + !!open + '">' + (ps.missing ? '<span class="tag warn">add price</span>' : '<span class="money">' + fmtMoney(ps.cost) + '</span>' + (ps.stale ? ' <span class="tag warn">old</span>' : '')) + '</button>';
   if (open) {
     const sp = shopPrice(ing, weekShop(), false);
     out += '<div class="shopprices">' + B.keys.map(k => { const x = row.byShop[k.key]; return '<div><span>' + SHOP_KEY_NAMES[k.key] + (x.pack && !x.missing ? ' <span class="muted">' + x.count + ' × ' + packLabel(ing, x.pack) + '</span>' : '') + '</span><span><span class="money">' + fmtMoney(x.cost) + '</span>' + (x.missing ? ' <span class="tag">no price</span>' : x.stale ? ' <span class="tag warn">old</span>' : x.est ? ' <span class="tag">est.</span>' : '') + '</span></div>'; }).join('') +
       '<form class="row paidrow" data-form="paid" data-v="' + h(row.i) + '"><label for="paid-' + h(row.i) + '" class="small">I paid £</label><input class="input" id="paid-' + h(row.i) + '" type="number" step="0.01" min="0" inputmode="decimal" placeholder="' + (sp ? sp.price.toFixed(2) : '') + '"><span class="small muted">for ' + (sp ? packLabel(ing, sp.pack) : 'one pack') + ' at ' + h((SHOPS.find(x => x.id === weekShop()) || SHOPS[0]).name) + '</span><button class="btn small-btn" type="submit">Save</button></form>' +
+      (row.staple ? '' : '<form class="row paidrow" data-form="gotpack" data-v="' + h(row.i) + '"><label for="got-' + h(row.i) + '" class="small">Got a different pack?</label><input class="input" id="got-' + h(row.i) + '" type="number" step="any" min="0" inputmode="decimal" placeholder="' + h(String(row.packs[0] || '')) + '" value="' + (row.got ? h(String(row.packs[0])) : '') + '"><span class="small muted">' + ({ g: 'grams', ml: 'millilitres', clove: 'cloves' }[ing.unit] || 'in the pack') + '</span><button class="btn small-btn" type="submit">Use it</button>' + (row.got ? '<button class="linkish small" type="button" data-act="got-reset" data-v="' + h(row.i) + '">Back to the suggested pack</button>' : '') + '</form>') +
       '<div><span class="muted">Prices last checked ' + lastChecked(ing) + '</span><span class="row wrap" style="gap:6px"><button class="chip" data-act="have" data-v="' + h(row.i) + '">We have it</button><button class="chip" data-act="edit-price" data-v="' + h(row.i) + '">Edit prices</button></span></div></div>';
   }
   return out + '</div>';
@@ -1309,6 +1344,26 @@ function renderComparison(B) {
 }
 
 // ---------- KITCHEN ----------
+// ---------- stock check: what's really left from last week, before planning around it ----------
+// Peckish works out what should be left over from what was planned, but real weeks differ (a smaller pack, a second helping),
+// so at the start of a week it asks once. Ticking things off here is what next week's suggestions and list use.
+function stockItems(w) { return (w.carryIn || []).map((c, k) => ({ c, k })).filter(x => S.ING[x.c.i] && !S.ING[x.c.i].staple); }
+function stockCard(w, todayIdx) {
+  if (w.stockChecked || S.stockDismissed === w.start) return '';
+  const n = stockItems(w).length; if (!n) return '';
+  // this week (its first few days) or next week, while it's being planned
+  if (!(todayIdx >= -7 && todayIdx <= 3)) return '';
+  return '<div class="note row between" style="gap:10px"><span style="min-width:0"><b>Check what’s left?</b> Peckish thinks ' + n + ' thing' + (n === 1 ? ' is' : 's are') + ' left from last week.</span><span class="row" style="gap:6px;flex:none"><button class="btn small-btn primary" data-act="stock-open">Check</button><button class="icon-btn" data-act="stock-skip" aria-label="Not now">' + ICON.close + '</button></span></div>';
+}
+function sheetStock(top) {
+  const rows = top.items.map((c, k) => { const ing = S.ING[c.i]; if (!ing || ing.staple) return ''; const gone = !(c.q > 0);
+    return '<div class="stockrow' + (gone ? ' gone' : '') + '"><div style="min-width:0"><b>' + h(ing.name) + '</b>' + (c.frozen ? ' <span class="muted small">' + ICON.snow + ' frozen</span>' : '') + '</div>' +
+      '<div class="row" style="gap:6px;flex:none">' + (gone ? '<span class="muted small">All gone</span><button class="btn small-btn" data-act="stock-back" data-v="' + k + '">Undo</button>' :
+      '<input class="input" type="number" min="0" step="any" inputmode="decimal" data-change="stock-q" data-v="' + k + '" value="' + (Math.round(c.q * 100) / 100) + '" aria-label="How much ' + h(ing.name) + ' is left"><span class="small muted stockunit">' + ({ g: 'g', ml: 'ml', clove: 'cloves' }[ing.unit] || 'left') + '</span><button class="btn small-btn" data-act="stock-gone" data-v="' + k + '">All gone</button>') + '</div></div>'; }).join('');
+  return '<p class="small">Fix anything that’s wrong and tap <b>All gone</b> for what’s been used. Suggestions and the shopping list then use what’s really here.</p>' +
+    '<div class="stack" style="gap:0">' + rows + '</div>' +
+    '<button class="btn primary block" data-act="stock-save">That’s right</button><p class="muted small">Something else in the fridge? Add it in Kitchen → Leftovers.</p>';
+}
 function carryRow(c, k) {
   const ing = S.ING[c.i]; if (!ing) return '';
   return '<div class="stack ruled"><div class="row between"><b>' + h(ing.name) + '</b><button class="icon-btn" data-act="del-carry" data-v="' + k + '" aria-label="Remove ' + h(ing.name) + '">' + ICON.close + '</button></div>' +
@@ -1331,7 +1386,7 @@ function renderKitchen() {
   out += segHtml('kit-view', view, [['pantry', 'Pantry', nLow ? nLow + ' low' : ''], ['left', 'Leftovers', fresh.length || ''], ['freezer', 'Freezer', nFreezer || '']]);
   const carryHead = (title) => '<div class="row between"><h2>' + title + '</h2><span class="row" style="gap:6px">' + (w.carryEdited ? '<button class="chip" data-act="reload-carry">Work it out again</button>' : '') + (w.carryIn.length || w.freezerMeals.length ? '<button class="chip" data-act="clear-carry">Clear all</button>' : '') + '</span></div>';
   if (view === 'left') {
-    out += '<section class="panel">' + carryHead('Coming into this week') + '<p class="muted small">' + (w.carryEdited ? 'You’ve edited this list, so it stays as you set it.' : 'Worked out from what last week used and left over.') + ' Suggestions use these first.</p>' +
+    out += '<section class="panel">' + carryHead('Coming into this week') + '<p class="muted small">' + (w.stockChecked ? 'You checked this on ' + h(niceDate(w.stockChecked)) + '.' : w.carryEdited ? 'You’ve edited this list, so it stays as you set it.' : 'Worked out from what last week used and left over.') + ' Suggestions use these first.' + (stockItems(w).length ? ' <button class="linkish small" data-act="stock-open">Check what\u2019s left</button>' : '') + '</p>' +
       (fresh.length ? fresh.map(([c, k]) => carryRow(c, k)).join('') : '<p class="muted">Nothing left over from last week.</p>') + '</section>';
     out += carryAddForm(w, false);
     out += makePanel(w, sim);
@@ -1967,6 +2022,7 @@ function setPlanning() {
     '<div class="stack" style="gap:6px"><span class="label">Planning style</span><span class="seg full">' + [['save', 'Cheapest'], ['balanced', 'Balanced'], ['variety', 'Variety']].map(([k, n]) => '<button class="' + ((st.style || 'balanced') === k ? 'on' : '') + '" data-act="set-style" data-v="' + k + '">' + n + '</button>').join('') + '</span>' +
     '<span class="muted small">' + ({ save: 'Cheapest weeks, using every pack. Expect more repeats.', balanced: 'Uses packs up, but rotates cuisines and avoids repeats from recent weeks.', variety: 'Something different most nights. Costs a bit more.' })[st.style || 'balanced'] + '</span></div>' +
     '<div class="stack" style="gap:6px"><span class="label">Weeknight cooking time, in minutes</span><span class="seg full">' + [20, 30, 45, 60].map(v => '<button class="' + (Number(st.weeknightCap) === v ? 'on' : '') + '" data-act="set-cap" data-v="' + h(v) + '" aria-label="' + v + ' minutes">' + v + '</button>').join('') + '</span></div>' +
+    '<div class="stack" style="gap:6px"><span class="label">Veg on the side</span><span class="seg full"><button class="' + (st.vegPacks ? '' : 'on') + '" data-act="veg-packs" data-v="off">Fresh veg</button><button class="' + (st.vegPacks ? 'on' : '') + '" data-act="veg-packs" data-v="on">Frozen veg packs</button></span><span class="muted small">' + (st.vegPacks ? 'Dinners with a veg side use a frozen veg pack. You can still pick fresh for a night.' : 'You can swap any night to a frozen veg pack from its dinner.') + '</span></div>' +
     '<label class="row"><input type="checkbox" id="set-skipopt" class="cb" data-change="set-skipopt" ' + (st.skipOptional ? 'checked' : '') + '> Leave out optional extras (garnishes) when they’d mean buying a pack</label></section>' +
     '<section class="panel"><h2>Shop &amp; budget</h2>' +
     '<label class="field"><span>Your usual shop (sets the list prices)</span><select class="input" id="set-shop" data-change="set-shop">' + SHOPS.map(s => '<option value="' + s.id + '" ' + (st.shop === s.id ? 'selected' : '') + '>' + s.name + '</option>').join('') + '</select></label>' +
@@ -2072,7 +2128,7 @@ function backupSummary() {
 const SWITCHED = 'You switched household, so this was stopped.';
 async function collectDocs() {
   const out = [], hid0 = curHid;
-  for (const c of ['people', 'weeks', 'recipes', 'ingredients', 'ratings', 'shops', 'config']) {
+  for (const c of ['people', 'weeks', 'recipes', 'ingredients', 'ratings', 'notes', 'shops', 'config']) {
     const ds = await Store.list(c);
     if (curHid !== hid0) throw new Error(SWITCHED);
     ds.forEach(d => { if (c === 'config' && d.id === 'backup') return; out.push({ path: c + '/' + d.id, data: d.data }); });
@@ -2126,6 +2182,8 @@ function buildTables(docs, withLib) {
   const st = byPath['config/settings'] || {}; Object.keys(st).sort().forEach(k => ST.rows.push([hid, k, cellText(st[k])]));
   const RA = t('Ratings', ['household_id', 'recipe_id', 'recipe', 'person', 'stars']);
   coll('ratings').forEach(({ id, data }) => Object.keys(data).forEach(uid => RA.rows.push([hid, id, rname(id), (hh.memberNames || {})[uid] || uid, typeof data[uid] === 'object' ? data[uid].n || data[uid].stars || cellText(data[uid]) : data[uid]])));
+  const NO = t('Notes', ['household_id', 'recipe_id', 'recipe', 'step', 'note', 'by', 'when']);
+  coll('notes').forEach(({ id, data }) => Object.keys(data).sort().forEach(k => { const x = data[k] || {}; if (x.text) NO.rows.push([hid, id, rname(id), k === 'all' ? 'whole recipe' : Number(k) + 1, x.text, x.by || '', x.at || '']); }));
   const MR = t('MyRecipes', ['household_id', 'recipe_id', 'name', 'meal', 'cuisine', 'protein', 'minutes', 'ingredients', 'method', 'json']);
   coll('recipes').forEach(({ id, data: r }) => MR.rows.push([hid, id, r.title || '', r.meal || 'dinner', r.cuisine || '', r.protein || '', r.time || '', recipeLines(r), recipeMethod(r), cellText(r)]));
   const SL = t('Shops', ['household_id', 'shop_id', 'date', 'shop', 'amount', 'paid_by', 'split', 'week_start', 'from', 'budgie', 'note']);
@@ -2293,6 +2351,7 @@ function renderSheet(force, keep) {
   else if (top.type === 'votes') { title = 'Thumbs up or down'; body = sheetVotes(top); }
   else if (top.type === 'whosin') { title = 'Who\u2019s in each night'; body = sheetWhosIn(top); }
   else if (top.type === 'rescue') { title = isTonight(top.d) ? 'Takeaway tonight' : 'Takeaway on ' + DAY_LONG[top.d]; body = sheetRescue(top); }
+  else if (top.type === 'stock') { title = 'What\u2019s left?'; body = sheetStock(top); }
   else if (top.type === 'blpick') { const p = personById(top.pid); title = (p ? nick(p.name) + '\u2019s ' : '') + SLOT_NAME[top.slot].toLowerCase() + ' · ' + DAY_NAMES[top.d]; body = sheetBlPick(top); }
   el.innerHTML = '<div class="shead"><div class="in"><button class="icon-btn" data-act="sheet-back" aria-label="' + (S.sheets.length > 1 ? 'Back' : 'Close') + '">' + (S.sheets.length > 1 ? ICON.left : ICON.close) + '</button><h2 class="grow ellip">' + h(title) + '</h2></div></div><div class="sbody">' + body + '</div>';
   el.hidden = false; document.body.style.overflow = 'hidden'; el.scrollTop = scroll;
@@ -2438,6 +2497,7 @@ function sheetRecipe(r, top) {
       // (changing the dinner is what's most often wanted here, so it sits with the quick choices, not under the extras)
       (locked ? '' : '<div class="row wrap"><button class="btn" data-act="change-day" data-v="' + top.d + '">Change dinner</button><button class="btn danger" data-act="remove-day" data-v="' + top.d + '">Remove</button></div>') +
       '<button class="btn block takeaway-btn" data-act="takeaway" data-v="' + top.d + '">' + ICON.bag + ' Takeaway instead?</button>' +
+      (!locked && hasSide(r.id) ? '<div class="stack" style="gap:6px"><span class="label">Veg on the side</span><span class="seg full"><button class="' + (r.variantOf ? '' : 'on') + '" data-act="side" data-v="' + top.d + '" data-n="fresh">Fresh veg</button><button class="' + (r.variantOf ? 'on' : '') + '" data-act="side" data-v="' + top.d + '" data-n="pack">Frozen veg pack</button></span></div>' : '') +
       (locked ? '<p class="muted small">This week is locked in. Unlock it on the Week tab to change dinners.</p>' :
         '<div class="stack" style="gap:6px"><span class="label">Guests for dinner</span><div class="row wrap"><span class="seg">' + [0, 1, 2, 3, 4].map(k => '<button class="' + ((day.guests || 0) === k ? 'on' : '') + '" data-act="guests" data-v="' + top.d + '" data-n="' + k + '">' + (k ? '+' + k : 'None') + '</button>').join('') + '</span></div></div>' +
         '<div class="stack" style="gap:6px"><span class="label">Extra portions</span><div class="row wrap"><span class="seg">' + [0, 1, 2, 4].map(k => '<button class="' + ((day.extra || 0) === k ? 'on' : '') + '" data-act="extra" data-v="' + top.d + '" data-n="' + k + '">' + (k ? '+' + k : 'None') + '</button>').join('') + '</span>' +
@@ -2458,7 +2518,8 @@ function sheetRecipe(r, top) {
   loadStepPhotos(r);
   out += '<section class="stack"><h2>Method</h2>' + (Math.abs(f - 1) > 0.01 ? '<p class="note small">The method is written for ' + (r.servings || 2) + '. Use the amounts above for ' + serv + '.</p>' : '') + '<ol class="steps">' + r.steps.map((s, k) => { const sp = stepPhoto(r, k); return '<li><div>' + (stepTitle(s) ? '<b class="stitle">' + h(stepTitle(s)) + '</b>' : '') + '<p>' + h(stepText(s)) + '</p>' +
     (sp && !sp.hidden ? '<figure class="stepimg"><img src="' + h(sp.x.img) + '" alt="How step ' + (k + 1) + ' should look" loading="lazy"><figcaption>' + h(sp.x.by || '') + (sp.x.uid === myUid() ? ' · <button class="linkish small" data-act="del-step-photo" data-v="' + h(r.id) + '" data-n="' + k + '">Remove</button>' : '') + stepPhotoNote(r, k, sp) + '</figcaption></figure>' : '') +
-    stepPhotoLink(r, k, sp, 'small') + '</div></li>'; }).join('') + '</ol></section>';
+    noteHtml(r, k) + '<div class="row wrap steplinks">' + stepPhotoLink(r, k, sp, 'small') + noteLink(r, k) + '</div></div></li>'; }).join('') + '</ol>' +
+    '<div class="stack" style="gap:6px">' + (noteOf(r, 'all') || S.noteEdit === noteId(r) + ':all' ? '<span class="label">Our notes on this recipe</span>' + noteHtml(r, 'all', true) : '<button class="linkish small steplink" data-act="note-edit" data-v="' + h(noteId(r) + ':all') + '">' + ICON.note + ' Add a note about the whole recipe</button>') + '</div></section>';
   if (r.easy && !(r.source && r.source.site) && !r.custom) out += '<p class="muted small credit">Made the way the packets say. Times vary a little by brand, so check yours.</p>';
   if (r.source && r.source.site) {
     const s = r.source, by = s.author ? ' by ' + h(s.author) : '';
@@ -2661,6 +2722,7 @@ function renderCook() {
   histSoon();
   const el = $('#cook');
   if (!S.cook) { el.hidden = true; el.innerHTML = ''; return; }
+  if (typingIn(el)) return; // don't wipe a note being typed
   const r = S.RMAP[S.cook.id]; if (!r) { el.hidden = true; return; }
   // a recipe saved without a method (an import, an older copy) still opens: one step saying so
   const steps = r.steps && r.steps.length ? r.steps : [{ title: '', text: 'This recipe has no method yet. Edit it to add the steps.' }];
@@ -2684,7 +2746,7 @@ function cookExtras(r, k, s) {
   const times = stepTimes(stepText(s));
   return (times.length ? '<div class="row wrap">' + times.map(m => '<button class="btn soft" data-act="timer" data-v="' + m + '" data-l="' + h((stepTitle(s) || 'Step ' + (k + 1)).slice(0, 28)) + '">' + ICON.timer + ' ' + m + ' min timer</button>').join('') + '</div>' : '') +
     (sp && !sp.hidden ? '<figure class="cookimg"><img src="' + h(sp.x.img) + '" alt="How this step should look"><figcaption>How it looked for ' + h(sp.x.by || 'someone') + stepPhotoNote(r, k, sp) + '</figcaption></figure>' : '') +
-    stepPhotoLink(r, k, sp, '');
+    noteHtml(r, k, true) + '<div class="row wrap steplinks">' + stepPhotoLink(r, k, sp, '') + noteLink(r, k) + '</div>';
 }
 function timersHtml() {
   const now = Date.now();
@@ -2715,6 +2777,7 @@ function resize(file, max, q) {
   });
 }
 function loadStepPhotos(r) {
+  if (r.variantOf) r = S.RMAP[r.variantOf] || r;
   if (S.stepPhotos[r.id] !== undefined) return; S.stepPhotos[r.id] = {};
   Promise.all(r.steps.map((_, k) => Store.getG('stepPhotos/' + r.id + '__' + k))).then(list => {
     const m = {}; list.forEach((d, k) => { if (d && d.img) m[k] = d; }); S.stepPhotos[r.id] = m; renderSheet(); renderCook();
@@ -2746,7 +2809,10 @@ async function addPhoto(rid, file) {
 }
 
 // ---------- actions ----------
-function setDay(d, patch) { mutateWeek(w => { w.days[d] = { ...patch }; }); }
+function setDay(d, patch) { const x = { ...patch }; if (x.r) x.r = sided(x.r); mutateWeek(w => { w.days[d] = x; }); }
+// with "frozen veg packs" on, any dinner with a veg side gets the frozen pack version when it's chosen
+function sided(id) { const base = baseId(id); return S.settings.vegPacks && S.RMAP[base + '~veg'] ? base + '~veg' : id; }
+function hasSide(id) { return !!S.RMAP[baseId(id) + '~veg']; }
 // what belongs to the night rather than the dinner: guests coming, and extra portions for lunch or the freezer
 function nightKeep(old) { const o = old || {}; return { extra: o.extra || 0, extraUse: o.extraUse, guests: o.guests }; }
 function guardLocked() { if (currentWeek().locked) { toast('This week is locked in. Unlock it to change dinners.'); return true; } return false; }
@@ -2784,7 +2850,7 @@ function doFill(jitter, clearAuto) {
       if (S.weekStart !== w.start) { toast('You moved to another week, so nothing was filled in. Tap Fill again here.'); render(); return; }
       if (!empties.some(d => filled.days[d].r)) { toast('No recipes fit the remaining days. Try loosening the weeknight time, equipment or preferences.'); render(); return; }
       // only nights that are still empty (the other phone may have chosen one meanwhile)
-      mutateWeek(x => { empties.forEach(d => { if (filled.days[d].r && (!x.days[d].r || gone(x.days[d])) && !x.days[d].takeaway) x.days[d] = { ...(gone(x.days[d]) ? nightKeep(x.days[d]) : x.days[d]), ...filled.days[d], auto: true }; }); });
+      mutateWeek(x => { empties.forEach(d => { if (filled.days[d].r && (!x.days[d].r || gone(x.days[d])) && !x.days[d].takeaway) x.days[d] = { ...(gone(x.days[d]) ? nightKeep(x.days[d]) : x.days[d]), ...filled.days[d], r: sided(filled.days[d].r), auto: true }; }); });
       // (the button may have been under the week: show the plan from the start)
       window.scrollTo(0, 0);
       toast('Week planned. Swap any day you don’t fancy.');
@@ -2914,7 +2980,7 @@ document.addEventListener('click', e => {
       top && top.type === 'recipe' ? (top.serv = undefined, renderSheet(true)) : 0;
       toast(val === 'save' ? 'A plate will be saved on ' + DAY_LONG[d] : DAY_LONG[d] + ': dinner planned without you'); break; }
     case 'glance': { const me = mePerson(); if (me) { S.weekView = 'bl'; S.blPerson = me.id; render(); window.scrollTo(0, 0); } break; }
-    case 'make-it': { const d = Number(b.dataset.n); if (guardLocked()) break; mutateWeek(w => { w.days[d] = { ...w.days[d], r: v, auto: false }; }); toast(DAY_LONG[d] + ': ' + rt(S.RMAP[v])); break; }
+    case 'make-it': { const d = Number(b.dataset.n); if (guardLocked()) break; mutateWeek(w => { w.days[d] = { ...w.days[d], r: sided(v), auto: false }; }); toast(DAY_LONG[d] + ': ' + rt(S.RMAP[v])); break; }
     case 'guests': { const d = Number(v), n = Number(b.dataset.n); mutateWeek(w => { if (n) w.days[d].guests = n; else delete w.days[d].guests; }); top.serv = undefined; renderSheet(true); toast(n ? DAY_LONG[d] + ': cooking for ' + n + ' more' : 'No guests on ' + DAY_LONG[d]); break; }
     case 'extra': { const d = Number(v); mutateWeek(w => { w.days[d].extra = Number(b.dataset.n); if (!w.days[d].extraUse) w.days[d].extraUse = 'lunch'; }); renderSheet(true); break; }
     case 'extra-use': { const d = Number(v); mutateWeek(w => { w.days[d].extraUse = b.dataset.s; }); renderSheet(true); break; }
@@ -2994,14 +3060,31 @@ document.addEventListener('click', e => {
       const skipped = (day.skipped || []).concat(cur ? [cur] : []).slice(-12);
       const sg = suggest(w, d, ctx(), { seed: 'swap' + Math.random(), hard: true, filter: r => r.id !== cur && !skipped.includes(r.id) && (!S.RMAP[cur] || r.cuisine !== S.RMAP[cur].cuisine || Math.random() < 0.3) });
       const pick = sg[0]; if (!pick) { toast('Nothing else fits that day.'); break; }
-      mutateWeek(x => { x.days[d] = { r: pick.r.id, auto: true, skipped, ...nightKeep(day) }; });
+      mutateWeek(x => { x.days[d] = { r: sided(pick.r.id), auto: true, skipped, ...nightKeep(day) }; });
       toast(DAY_LONG[d] + ': ' + rt(pick.r)); break;
     }
     case 'move-day': { if (guardLocked()) break; const a = Number(v), t = Number(b.dataset.to);
       // the dinners swap nights; guests are coming on a night, so they stay where they were (as with a takeaway re-plan)
       mutateWeek(x => { const A = x.days[a], T = x.days[t]; x.days[a] = { ...T }; x.days[t] = { ...A }; [[a, A], [t, T]].forEach(([k, was]) => { if (was.guests) x.days[k].guests = was.guests; else delete x.days[k].guests; }); });
       closeSheets(); toast('Moved to ' + DAY_LONG[t]); break; }
+    case 'note-edit': S.noteEdit = v; renderSheet(true, true); renderCook(); setTimeout(() => { const t = $('#note-text'); if (t) t.focus(); }, 30); break;
+    case 'note-cancel': S.noteEdit = null; renderSheet(true, true); if (document.activeElement) document.activeElement.blur(); renderCook(); break;
+    case 'note-del': S.noteEdit = null; saveNote(v, b.dataset.k, ''); renderSheet(true, true); renderCook(); toast('Note deleted'); break;
     case 'del-step-photo': { const k = Number(b.dataset.n); const m = { ...(S.stepPhotos[v] || {}) }; delete m[k]; S.stepPhotos[v] = m; Store.delG('stepPhotos/' + v + '__' + k).catch(() => {}); renderSheet(true); break; }
+    case 'stock-open': { const w = currentWeek(); S.sheets.push({ type: 'stock', items: clone(w.carryIn || []) }); renderSheet(true); break; }
+    case 'stock-skip': S.stockDismissed = currentWeek().start; render(); break;
+    case 'stock-gone': case 'stock-back': { const top = S.sheets.find(x => x.type === 'stock'); if (!top) break; const c = top.items[Number(v)]; if (a === 'stock-gone') { c.was = c.q; c.q = 0; } else { c.q = c.was || 1; } renderSheet(true, true); break; }
+    case 'stock-save': { const top = S.sheets.find(x => x.type === 'stock'); if (!top) break; const items = top.items.filter(c => c.q > 0).map(c => { const x = { ...c }; delete x.was; return x; });
+      mutateCarry(w => { w.carryIn = items; w.stockChecked = TODAY; }); closeSheets(); toast('Thanks, Peckish will plan with what\u2019s really there'); break; }
+    case 'side': { if (guardLocked()) break; const d = Number(v), cur = currentWeek().days[d]; if (!cur || !cur.r) break; const base = baseId(cur.r), id = b.dataset.n === 'pack' ? base + '~veg' : base;
+      if (!S.RMAP[id] || id === cur.r) break; mutateWeek(w => { w.days[d] = { ...w.days[d], r: id }; }); S.sheets.forEach(x => { if (x.type === 'recipe' && x.d === d) x.id = id; }); renderSheet(true, true); toast(b.dataset.n === 'pack' ? 'Frozen veg pack instead, and the list’s updated' : 'Back to fresh veg'); break; }
+    case 'veg-packs': { const on = v === 'on'; saveSettings({ vegPacks: on });
+      // and this week's dinners from today on (not locked), so the list changes straight away
+      const w = currentWeek(); if (w.locked) break; const from = Math.max(0, daysBetween(w.start, TODAY)); let n = 0;
+      mutateWeek(x => { x.days.forEach((dy, d) => { if (d < from || !dy || !dy.r || !hasSide(dy.r)) return; const base = baseId(dy.r), id = on ? base + '~veg' : base; if (id !== dy.r) { x.days[d] = { ...dy, r: id }; n++; } }); });
+      if (n) toast(n + ' dinner' + (n === 1 ? '' : 's') + ' this week switched'); break; }
+    case 'got-count': mutateWeek(w => { const g = { ...(w.bought || {}) }; if (g[v]) g[v] = { ...g[v], count: Math.max(1, Number(b.dataset.n) || 1) }; w.bought = g; }); break;
+    case 'got-reset': mutateWeek(w => { const g = { ...(w.bought || {}) }; delete g[v]; w.bought = g; }); toast('Back to the suggested pack'); break;
     case 'have': mutateWeek(w => { w.have = { ...(w.have || {}), [v]: true }; }); toast('Taken off the list'); break;
     case 'unhave': mutateWeek(w => { const hv = { ...(w.have || {}) }; delete hv[v]; w.have = hv; }); break;
     case 'set-style': saveSettings({ style: v }); break;
@@ -3053,6 +3136,7 @@ document.addEventListener('change', e => {
   if (k === 'backup-auto') { Store.merge('config/backup', { auto: e.target.checked }).catch(() => toast('Couldn’t save that.')); return; }
   if (k === 'restore-file') { const file = e.target.files && e.target.files[0]; e.target.value = ''; if (!file) return; file.text().then(t => { let j = null; try { j = JSON.parse(t); } catch (x) {} stageRestore(j, 'the file ' + file.name); }); return; }
   if (k === 'carry-q') { const q = Number(e.target.value); mutateCarry(w => { if (q > 0) w.carryIn[Number(v)].q = q; else w.carryIn.splice(Number(v), 1); }); }
+  if (k === 'stock-q') { const top = S.sheets.find(x => x.type === 'stock'); if (top) { const q = Number(e.target.value); top.items[Number(v)].q = q > 0 ? q : 0; if (!(q > 0)) renderSheet(true, true); } }
   if (k === 'carry-exp') mutateCarry(w => { w.carryIn[Number(v)].exp = e.target.value || null; });
   if (k === 'pantry-always') { S.pantry.always = { ...(S.pantry.always || { milk: true }), [v]: e.target.checked }; savePantry(); }
   if (k === 'p-kcal' || k === 'p-protein' || k === 'p-plan' || k === 'p-packed' || k === 'p-dinner') {
@@ -3112,6 +3196,18 @@ document.addEventListener('submit', e => {
     S.people = S.people.concat(p); savePerson(p);
     // straight to their page (it was under everyone else's settings), to add what they won't eat
     S.setPerson = id; window.scrollTo(0, 0); render(); toast(nick(n) + ' added');
+  }
+  if (k === 'gotpack') {
+    const id = f.dataset.v, val = Number(($('#got-' + id) || {}).value);
+    if (!(val > 0)) { toast('Enter how much is in the pack, e.g. 10'); return; }
+    if (document.activeElement) document.activeElement.blur();
+    mutateWeek(w => { w.bought = { ...(w.bought || {}), [id]: { pack: val, count: 1 } }; });
+    return;
+  }
+  if (k === 'note') {
+    const text = (($('#note-text') || {}).value || '').trim().slice(0, 600);
+    S.noteEdit = null; if (document.activeElement) document.activeElement.blur();
+    saveNote(f.dataset.v, f.dataset.k, text); renderSheet(true, true); renderCook(); toast(text ? 'Note saved for you both' : 'Note deleted'); return;
   }
   if (k === 'paid') {
     const id = f.dataset.v, ing = S.ING[id], val = Number(($('#paid-' + id) || {}).value);
@@ -3216,7 +3312,7 @@ window.addEventListener('offline', () => { S.online = false; schedule(); });
     const cur = d && d.current;
     if (cur && cur !== prev) { S.hhError = null; S.household = null; subscribeHousehold(cur); }
     // left the household (or never had one): stop following it, so nothing more is read from or written to it
-    if (!cur) { unsubAll(['hh', 'recipes', 'ing', 'people', 'settings', 'pantry', 'thumbs', 'photoPrefs', 'ratings', 'week', 'prev', 'thisW', 'nextW', 'backup', 'shops']); S.household = null; curHid = null; S.bg.cfg = null; S.cal.on = false; }
+    if (!cur) { unsubAll(['hh', 'recipes', 'ing', 'people', 'settings', 'pantry', 'thumbs', 'photoPrefs', 'ratings', 'notes', 'week', 'prev', 'thisW', 'nextW', 'backup', 'shops']); S.household = null; curHid = null; S.bg.cfg = null; S.cal.on = false; }
     render();
   }
   // Listen to the signed-in person's record. If loading it fails, try a direct read and keep retrying,

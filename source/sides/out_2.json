@@ -1,0 +1,339 @@
+[
+  {
+    "id": "br_chicken_kiev_wedges",
+    "remove": [
+      "broccoli"
+    ],
+    "q": 160,
+    "steps": [
+      {
+        "title": "Make the garlic butter",
+        "text": "Heat the oven to 220°C (200°C fan). Mash the softened butter with the garlic and a pinch of salt. Shape it into a short log on cling film, wrap and freeze for 15 minutes. Cut the potatoes into wedges."
+      },
+      {
+        "title": "Roast the wedges",
+        "text": "Toss the wedges on a large baking tray with 1½ tablespoons of the oil and a pinch of salt. Spread out in one layer and roast on the top shelf for 40 to 45 minutes, turning halfway, until golden and crisp."
+      },
+      {
+        "title": "Fill the chicken",
+        "text": "Lay each breast between two sheets of baking paper and bash with a rolling pin to an even 1cm thickness, avoiding thin spots. Put half the frozen butter in the middle of each, fold in the sides and roll up into a tight parcel. Sit seam-side down and freeze for 15 minutes to firm up."
+      },
+      {
+        "title": "Coat the kievs",
+        "text": "Set out three plates: the flour seasoned with salt and pepper, the beaten egg, and the panko mixed with the remaining 1 tablespoon of oil. Roll each parcel in flour, then egg, then press firmly into the crumbs, covering the ends well. Put seam-side down on a lined baking tray."
+      },
+      {
+        "title": "Bake the kievs",
+        "text": "Bake on the shelf below the wedges for 25 to 30 minutes until golden and the chicken is cooked through, with no pink in the middle. Rest for 3 minutes before serving, as the butter inside is very hot."
+      },
+      {
+        "title": "Cook the veg and serve",
+        "text": "For the last few minutes, cook the frozen veg pack following the packet so it's ready with the kievs. Plate the kievs with the wedges and veg. Cut into the kiev at the table so the garlic butter spills out."
+      }
+    ],
+    "why": "Broccoli is boiled at the end and served on the side of the kievs and wedges."
+  },
+  {
+    "id": "br_gammon_egg_chips",
+    "remove": [
+      "frozen_peas"
+    ],
+    "q": 160,
+    "steps": [
+      {
+        "title": "Prep the chips",
+        "text": "Heat the oven to 220°C (200°C fan). Cut the potatoes into thick chips (no need to peel), rinse and pat really dry with a clean tea towel. Snip through the fat on the gammon every 2cm so the steaks stay flat. Drain the pineapple (optional)."
+      },
+      {
+        "title": "Roast the chips",
+        "text": "Toss the chips on a large baking tray with 1½ tablespoons of oil and a good pinch of salt. Spread out in one layer and roast on the top shelf for 35–40 minutes, turning halfway, until golden and crisp."
+      },
+      {
+        "title": "Fry the gammon",
+        "text": "When the chips have 12 minutes left, heat 1 teaspoon of oil in a large frying pan over a medium-high heat. Fry the gammon for 4–5 minutes each side until golden at the edges and cooked through, with no pink juices. Add the pineapple (optional) for the last 2 minutes to caramelise, then move it all to a plate and cover with foil."
+      },
+      {
+        "title": "Cook the veg",
+        "text": "While the gammon cooks, cook the frozen veg pack following the packet. Stir through the butter and a pinch of pepper."
+      },
+      {
+        "title": "Fry the eggs",
+        "text": "Wipe out the gammon pan and heat the remaining 1 teaspoon of oil over a medium heat. Crack in the eggs and fry for 3–4 minutes until the whites are set and the edges are lacy. Season with pepper."
+      },
+      {
+        "title": "Finish and serve",
+        "text": "Pile the chips onto plates with a little salt and lay the gammon alongside. Top each steak with an egg and add the pineapple (optional) and veg. Gammon is salty, so taste before adding more salt."
+      }
+    ],
+    "why": "The peas are boiled in their own pan and served alongside the gammon, egg and chips.",
+    "note": "Butter was only used for the peas; it is kept and stirred through the frozen veg instead."
+  },
+  {
+    "id": "br_roast_pork_crackling",
+    "remove": [
+      "carrots",
+      "broccoli"
+    ],
+    "q": 200,
+    "steps": [
+      {
+        "title": "Prep the pork and veg",
+        "text": "Heat the oven to 240°C (220°C fan). Pat the pork rind really dry with kitchen paper. Peel and halve the potatoes. Halve the onion, and peel, core and chop the apples."
+      },
+      {
+        "title": "Start the pork",
+        "text": "Rub the meat (not the rind) with 1 teaspoon of oil and a pinch of pepper. Rub the rind with 1 teaspoon of oil, then 2 teaspoons of salt, working it into the scores. Sit it rind-side up on the onion halves in a roasting tin and roast on the top shelf for 25 minutes, until the rind starts to bubble. Meanwhile, boil the potatoes in salted water for 8 minutes, drain, leave to steam for 2 minutes, then shake in the colander to rough up the edges."
+      },
+      {
+        "title": "Roast low and slow",
+        "text": "Turn the oven down to 200°C (180°C fan) and pour 100 millilitres of water into the pork tin, keeping the rind dry. Heat the remaining oil in a second tray for 5 minutes, tip in the potatoes with a pinch of salt and turn to coat. Roast both for 45 to 50 minutes, turning the potatoes once, until the pork juices run clear when the thickest part is pierced."
+      },
+      {
+        "title": "Rest and make the apple sauce",
+        "text": "Lift the pork onto a board and rest, uncovered, for 15 minutes (foil softens the crackling). Turn the oven up to 220°C (200°C fan) and give the potatoes 15 minutes more until crunchy. Meanwhile, put the apples, butter and 2 tablespoons of water in a small covered pan over a medium-low heat for 8 to 10 minutes until the apples collapse, then mash with a fork."
+      },
+      {
+        "title": "Make the gravy and veg",
+        "text": "Spoon the fat off the pork tin, add 300 millilitres of boiling water and scrape up the sticky bits. Strain into a small saucepan, pressing the onion. Whisk in the gravy granules over a medium heat and simmer for 1 to 2 minutes until thick. At the same time, cook the frozen veg pack following the packet."
+      },
+      {
+        "title": "Carve and serve",
+        "text": "Carve the pork into thick slices and break up the crackling. Serve with the roast potatoes, veg, apple sauce and gravy poured beside (not over) the crackling."
+      }
+    ],
+    "why": "The roast carrots and boiled broccoli are both served alongside the pork, roasties and apple sauce."
+  },
+  {
+    "id": "br_steak_ale_pie_mash",
+    "remove": [
+      "broccoli"
+    ],
+    "q": 160,
+    "steps": [
+      {
+        "title": "Brown the beef",
+        "text": "Chop the onion, cut the carrot into chunks and crush the garlic. Dissolve the stock cube in 200 millilitres of boiling water. Toss the beef with the flour and a pinch of salt and pepper. Heat the oil in a casserole or deep lidded pan over a high heat and brown the beef in two batches for 4 to 5 minutes each, until deep brown all over. Lift onto a plate."
+      },
+      {
+        "title": "Simmer the filling",
+        "text": "Turn the heat to medium, add the onion and carrot and cook for 5 minutes. Stir in the garlic and tomato purée for 1 minute, then pour in the ale, scraping the bottom. Add the stock, Worcestershire sauce and beef. Cover and simmer over a low heat for 1½ hours, stirring now and then, until the beef is tender and the gravy coats a spoon."
+      },
+      {
+        "title": "Top the pie",
+        "text": "Heat the oven to 220°C (200°C fan). Spoon the filling into a small pie dish (about 1 litre) and leave to cool for 10 minutes. Brush the rim with milk, lay the pastry over, press the edges to seal and trim. Brush the top with milk and cut a small hole in the middle for steam."
+      },
+      {
+        "title": "Bake the pie",
+        "text": "Put the pie on a baking tray and bake on the middle shelf for 25 to 30 minutes until puffed, deep golden and bubbling at the edges."
+      },
+      {
+        "title": "Make the mash",
+        "text": "While the pie bakes, boil the potatoes in a large pan of salted water for 15 minutes until tender. Drain, leave to steam for 2 minutes, then mash with the butter, 3 tablespoons of milk and a pinch of salt until smooth."
+      },
+      {
+        "title": "Cook the veg and serve",
+        "text": "For the last few minutes, cook the frozen veg pack following the packet. Serve the pie with a big spoonful of mash, the veg and extra gravy from the dish."
+      }
+    ],
+    "why": "Broccoli is boiled for the last few minutes and served next to the pie and mash.",
+    "note": "The carrot is cooked into the pie filling, so it stays."
+  },
+  {
+    "id": "br_lancashire_hotpot",
+    "remove": [
+      "broccoli"
+    ],
+    "q": 160,
+    "steps": [
+      {
+        "title": "Prep the veg",
+        "text": "Heat the oven to 170°C (150°C fan). Slice the onions and carrot, and thinly slice the potatoes to about 3mm. Dissolve the stock cube in 350 millilitres of boiling water and melt the butter."
+      },
+      {
+        "title": "Brown the lamb",
+        "text": "Toss the lamb with the mixed herbs, salt and pepper. Heat the oil in a flameproof casserole (or a frying pan) over a high heat. Brown the lamb for 4–5 minutes until coloured all over. Lift onto a plate."
+      },
+      {
+        "title": "Make the gravy",
+        "text": "Turn the heat to medium and cook the onions and carrot for 8–10 minutes until soft and golden. Stir in the flour for 1 minute, then gradually stir in the stock and Worcestershire until it thickens. Return the lamb and season."
+      },
+      {
+        "title": "Layer the potatoes",
+        "text": "If you used a frying pan, tip everything into a small ovenproof dish (about 1 litre). Lay the potato slices over the top, overlapping like roof tiles. Brush with half the melted butter and season."
+      },
+      {
+        "title": "Bake covered",
+        "text": "Cover with a lid or foil and bake on the middle shelf for 1 hour 15 minutes, until the lamb is tender."
+      },
+      {
+        "title": "Crisp the top and serve",
+        "text": "Uncover, brush the potatoes with the remaining butter and turn the oven up to 200°C (180°C fan). Bake for 35–40 minutes more until the top is golden and crisp at the edges and a knife slides easily through the potatoes. Near the end, cook the frozen veg pack following the packet so it's ready with the hotpot. Leave the hotpot to settle for a couple of minutes, then serve with the veg."
+      }
+    ],
+    "why": "Broccoli is boiled separately and served with the hotpot.",
+    "note": "The carrot is cooked into the hotpot, so it stays. The original 7 steps were cut to 6 by folding the veg into the final bake step."
+  },
+  {
+    "id": "br_lamb_chops_new_potatoes",
+    "remove": [
+      "broccoli"
+    ],
+    "q": 160,
+    "steps": [
+      {
+        "title": "Prep everything",
+        "text": "Boil a full kettle and heat the grill to high. Halve any larger potatoes so they're all a similar size. Peel the garlic: halve one clove and crush the other. In a small bowl, mix the honey with the mixed herbs and a pinch of salt and pepper."
+      },
+      {
+        "title": "Boil the potatoes",
+        "text": "Put the potatoes in a medium saucepan, cover with boiling water from the kettle and add a pinch of salt. Simmer over a medium-high heat for 15–18 minutes, until a knife slides in easily."
+      },
+      {
+        "title": "Grill the lamb chops",
+        "text": "While the potatoes cook, rub the chops all over with the cut side of the halved garlic clove. Rub with the oil and season with salt and pepper. Grill on a rack for 3–4 minutes each side for pink, or 5 minutes each side for well done."
+      },
+      {
+        "title": "Glaze and rest the lamb",
+        "text": "Brush the honey glaze over the chops and grill for a final 1 minute, until sticky and golden at the edges. Move to a warm plate and rest for 3 minutes."
+      },
+      {
+        "title": "Cook the veg and butter the potatoes",
+        "text": "When the potatoes are nearly done, cook the frozen veg pack following the packet. Drain the potatoes well and return them to the pan off the heat. Add the butter, the crushed garlic and a pinch of salt and pepper. Toss gently until the butter melts and coats everything."
+      },
+      {
+        "title": "Finish and serve",
+        "text": "Pile the buttery potatoes and the veg onto plates and add two chops each. Spoon over any resting juices and serve with the lemon wedges (optional)."
+      }
+    ],
+    "why": "Broccoli is cooked with the new potatoes and served on the side of the lamb chops.",
+    "note": "The broccoli was buttered with the potatoes; now only the potatoes are buttered. The original 7 steps were cut to 6 by combining the veg and buttering steps."
+  },
+  {
+    "id": "br_roast_beef_yorkshires",
+    "remove": [
+      "carrots",
+      "broccoli"
+    ],
+    "q": 200,
+    "steps": [
+      {
+        "title": "Prep and make the batter",
+        "text": "Heat the oven to 220°C (200°C fan) and boil a full kettle. Peel the potatoes and cut into large chunks. Take the steaks out of the fridge. Whisk the flour, egg and a pinch of salt in a jug, then whisk in the milk until smooth and leave to rest."
+      },
+      {
+        "title": "Par-boil and roast the potatoes",
+        "text": "Cover the potatoes with boiling water in a saucepan, add a pinch of salt and boil for 8 minutes. Meanwhile, put 2 tablespoons of oil in a roasting tin and heat in the oven for 5 minutes. Drain the potatoes, leave to steam for 2 minutes, then shake in the colander to rough up the edges. Carefully tip the potatoes into the hot oil and turn to coat. Season and roast on the middle shelf for 45–50 minutes, turning halfway, until golden and crisp."
+      },
+      {
+        "title": "Sear and roast the beef",
+        "text": "When the potatoes have been in for 15 minutes, rub the steaks with 2 teaspoons of oil, the coarse pepper and a pinch of salt. Sear in an ovenproof frying pan over a high heat for 1½ minutes each side, then hold the fat edge down for 30 seconds. Roast in the oven for 6 minutes for medium-rare (8 minutes for medium). Rest on a board under foil for at least 15 minutes."
+      },
+      {
+        "title": "Bake the Yorkshires",
+        "text": "Straight after the beef comes out, put ½ teaspoon of oil into each of 4 holes of a muffin tin. Heat on the top shelf for 5 minutes, until smoking hot. Quickly pour in the batter and bake for 18–20 minutes, until puffed and deep golden. Don't open the oven door for the first 15 minutes."
+      },
+      {
+        "title": "Cook the veg and make the gravy",
+        "text": "While the Yorkshires bake, cook the frozen veg pack following the packet. Stir the gravy granules into 250 millilitres of boiling water from the kettle until smooth and thickened. Pour in any juices from the resting beef."
+      },
+      {
+        "title": "Carve and serve",
+        "text": "Slice the beef thinly across the grain. Share it between plates with the roast potatoes, Yorkshires and veg, then pour over the hot gravy. Add a spoonful of mustard on the side (optional)."
+      }
+    ],
+    "why": "The boiled carrots and broccoli are served alongside the beef, roasties and Yorkshires.",
+    "note": "The original 8 steps were cut to 6: the two potato steps are joined word for word, and the veg is folded into the gravy step."
+  },
+  {
+    "id": "br_slow_cooker_lamb_shanks_mash",
+    "remove": [
+      "broccoli"
+    ],
+    "q": 160,
+    "steps": [
+      {
+        "title": "Prep everything",
+        "text": "Boil the kettle and make up 450 millilitres of stock with the cube. Finely chop the onion, cut the carrots into small chunks and crush the garlic. Season the lamb shanks all over with salt and pepper."
+      },
+      {
+        "title": "Brown the lamb and make the sauce",
+        "text": "Heat the oil in a large frying pan over a high heat. Brown the shanks for 8–10 minutes, turning, until well coloured on all sides. Move them into the slow cooker. Turn the heat under the same pan to medium. Cook the onion and carrots for 5 minutes, stirring, until softened, then add the garlic for 1 minute. Stir in the stock, tomato purée, Worcestershire sauce and mixed herbs, scraping up the browned bits, and bring to a simmer. Pour over the lamb."
+      },
+      {
+        "title": "Slow-cook the lamb",
+        "text": "Cover and cook on low for 7–8 hours, until the meat is meltingly tender and pulls away from the bone. No slow cooker? Cook in a lidded casserole in the oven at 180°C (160°C fan) for 3–3½ hours instead. Add a splash of water in the last hour if it looks dry."
+      },
+      {
+        "title": "Make the mash",
+        "text": "About 30 minutes before the lamb is ready, peel the potatoes and cut into even chunks. Boil in salted water over a medium-high heat for 15–20 minutes, until soft. Drain, then mash with the butter and milk until smooth. Season and keep covered."
+      },
+      {
+        "title": "Thicken the gravy and cook the veg",
+        "text": "Lift the shanks onto a plate and cover with foil. Pour the sauce and veg into a saucepan, stir in the honey and bring to a bubble over a medium heat. Mix the cornflour with 2 tablespoons of cold water, then whisk it in gradually and simmer for 2–3 minutes, until the gravy coats a spoon. Season. While the gravy bubbles, cook the frozen veg pack following the packet."
+      },
+      {
+        "title": "Finish and serve",
+        "text": "Spoon the mash onto warm plates and sit a lamb shank on top of each. Pour over plenty of gravy with its carrots and serve the frozen veg on the side."
+      }
+    ],
+    "why": "Broccoli is boiled separately and served on the side of the lamb shanks and mash.",
+    "note": "The carrots cook in the slow-cooker gravy, so they stay. The original 8 steps were cut to 6: browning and the sauce are joined word for word, and the veg is folded into the gravy step."
+  },
+  {
+    "id": "as_chinese_lemon_chicken",
+    "remove": [
+      "broccoli"
+    ],
+    "q": 160,
+    "steps": [
+      {
+        "title": "Get prepped",
+        "text": "Put the kettle on. Slice each chicken breast in half horizontally to make 4 thin steaks, then season with a pinch of salt. Spread 40 grams of the cornflour on a plate. Dissolve the stock cube in 100 millilitres of boiling water and juice the lemons."
+      },
+      {
+        "title": "Cook the rice",
+        "text": "Rinse the rice and put it in a saucepan with 300 millilitres of boiling water and a pinch of salt. Bring back to the boil, cover and cook on the lowest heat for 12 minutes. Take off the heat and leave covered for 5 minutes."
+      },
+      {
+        "title": "Make the lemon sauce",
+        "text": "Mix the remaining cornflour with a splash of the stock in a small saucepan until smooth. Stir in the rest of the stock, the lemon juice, honey and garlic. Simmer over a medium heat, stirring, for 2 to 3 minutes until glossy and the thickness of runny honey. Keep warm on the lowest heat."
+      },
+      {
+        "title": "Fry the chicken",
+        "text": "Heat the oil in a large frying pan over a medium-high heat until a pinch of cornflour sizzles. Press the chicken into the cornflour to coat, shake off the excess and fry for 3 to 4 minutes each side until golden, crisp and cooked through with no pink. Drain on kitchen paper."
+      },
+      {
+        "title": "Cook the veg",
+        "text": "While the chicken fries, cook the frozen veg pack following the packet."
+      },
+      {
+        "title": "Slice and serve",
+        "text": "Slice the chicken into strips and lay over the rice with the veg alongside. Spoon over the lemon sauce. Let the oil cool completely before binning it; never pour it down the sink."
+      }
+    ],
+    "why": "Broccoli is boiled while the chicken fries and served alongside on the rice."
+  },
+  {
+    "id": "ez_southern_fried_chicken",
+    "remove": [
+      "sweetcorn"
+    ],
+    "q": 160,
+    "steps": [
+      {
+        "title": "Bake",
+        "text": "Heat the oven following the chicken packet, usually 200°C (180°C fan). Bake the chicken and chips on separate trays for the times on their packets, usually 20 to 25 minutes, turning halfway."
+      },
+      {
+        "title": "Veg",
+        "text": "Cook the frozen veg pack following the packet so it's ready with the chicken and chips."
+      },
+      {
+        "title": "Serve",
+        "text": "Serve the chicken and chips with the veg and coleslaw."
+      }
+    ],
+    "why": "Sweetcorn is boiled and served on the side of the fried chicken and chips.",
+    "note": "Coleslaw is a slaw, so it stays."
+  }
+]
