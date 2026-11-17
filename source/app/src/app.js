@@ -1248,7 +1248,7 @@ function fromHomeHtml(w, sim) {
     const exp = cs.filter(c => !c.frozen && c.exp).map(c => c.exp).sort()[0], frozen = cs.length && cs.every(c => c.frozen);
     const uses = []; (sim.usesOf && sim.usesOf[id] || []).forEach(u => { const r = S.RMAP[u.r]; if (r && isDinner(r) && !uses.some(x => x.r === r)) uses.push({ r, d: u.d }); });
     const why = uses.slice(0, 2).map(x => h(rt(x.r)) + ' (' + DAY_NAMES[x.d] + ')').join(', ');
-    return '<div class="homerow"><div style="flex:1;min-width:0"><b>' + h(ing.name) + '</b><span class="small muted" style="display:block">' + h(leftText(id, q)) + (frozen ? ' in the freezer' : exp ? ', ' + h(useByText(exp)) : '') + (why ? ' · for ' + why : '') + '</span></div><button class="btn small-btn" data-act="not-got" data-v="' + h(id) + '">Not got it</button></div>'; }).join('');
+    return '<div class="homerow"><div style="flex:1;min-width:0"><b>' + h(ing.name) + '</b><span class="small muted" style="display:block">' + h(ing.unit === 'each' ? leftText(id, q) : fmtQty(q, ing.unit)) + (frozen ? ' in the freezer' : exp ? ', ' + h(useByText(exp)) : '') + (why ? ' · for ' + why : '') + '</span></div><button class="btn small-btn" data-act="not-got" data-v="' + h(id) + '">Not got it</button></div>'; }).join('');
   return '<details class="havebox fromhome"' + (S.homeOpen ? ' open' : '') + '><summary data-act="home-open">Not on the list because you should have ' + (ids.length === 1 ? 'this' : 'these ' + ids.length) + '</summary>' + rows + '</details>';
 }
 function renderShop() {
