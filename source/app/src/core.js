@@ -204,6 +204,8 @@ function withShop(week, ctx) { return week && week.shop && week.shop !== ctx.set
 function simulate(week, ctx) {
   ctx = withShop(week, ctx);
   const shopId = ctx.settings.shop || 'tesco';
+  // "1 jar", "1 tin", "half a pack": one of whatever size your shop sells (480g at one, 500g at another), not a fixed weight
+  const lineQ = l => { if (!(l.whole > 0)) return l.q; const ing = ING[l.i]; if (!ing) return l.q; const pk = Math.min(...packsAt(ing, shopId)); return pk > 0 ? l.whole * pk : l.q; };
   const { ING, RMAP } = ctx;
   const shop = ctx.settings.shop || 'tesco', loy = ctx.settings.useLoyalty !== false;
   const skipOpt = !!ctx.settings.skipOptional;
@@ -337,7 +339,7 @@ function simulate(week, ctx) {
       const r = RMAP[e.r]; let c = 0;
       // breakfasts and lunches on days already gone this week were eaten from what was in; there's nothing to buy for them now
       if (d < pastDays) { info.bl.push({ ...e, cost: 0, past: true }); continue; }
-      for (const l of r.ingredients) if (l.q > 0) c += use(l, l.q / (r.servings || 1), d, r.id);
+      for (const l of r.ingredients) if (l.q > 0) c += use(l, lineQ(l) / (r.servings || 1), d, r.id);
       blCost += c; blPortions++; info.bl.push({ ...e, cost: c });
     }
     // a dinner you didn't have: what was bought for it goes in the freezer that night (or stays in the fridge if it doesn't
@@ -347,7 +349,7 @@ function simulate(week, ctx) {
       const f = (fz.portions || fr.servings || 2) / (fr.servings || 2);
       for (const l of fr.ingredients) {
         const ing = ING[l.i]; if (!ing || ing.staple || !(l.q > 0) || (l.opt && skipOpt)) continue;
-        const q = l.q * f; use(l, q, d, fr.id);
+        const q = lineQ(l) * f; use(l, q, d, fr.id);
         if (ing.freeze && roomFor(1)) { lots.push({ i: l.i, q, exp: 999, frozen: true, opened: false }); addFrozen(1); freezeNotes.push({ d, i: l.i, q, skipped: fr.id }); }
         else lots.push({ i: l.i, q, exp: Math.min(ing.life, d + ing.keeps), frozen: false, opened: true });
       }
@@ -368,7 +370,7 @@ function simulate(week, ctx) {
     const factor = portions / (r.servings || 2);
     info.portions = portions; info.forLunch = loFor[d];
     let cost = 0;
-    for (const l of r.ingredients) if (l.q > 0) cost += use(l, l.q * factor, d, r.id);
+    for (const l of r.ingredients) if (l.q > 0) cost += use(l, lineQ(l) * factor, d, r.id);
     info.cost = cost; info.perPortion = cost / portions;
     if ((day.extra || 0) > 0 && day.extraUse === 'freeze') {
       if (roomFor(day.extra)) { newFreezerMeals.push({ r: day.r, portions: day.extra }); addFrozen(day.extra); }
@@ -391,7 +393,7 @@ function simulate(week, ctx) {
   let stapleCost = 0; for (const row of buy.rows) if (row.staple) stapleCost += row.byShop[buy.prefKey].cost;
   for (const id in purchases) purchases[id].uses = usesOf[id] || [];
   return { purchases, waste, wasteValue, carryOut, freezerOut: fmOut, leftoverValue, freezeNotes, defrostNotes, warnings, dayInfo, freezer: { start: freezerStart, peak: freezerPeak, end: inFreezer, cap: freezerCap, fullSkips: freezerFullSkips }, consumed, portions,
-    perPortion: portions ? consumed / portions : 0, buy, usedFromCarry, staplesUsed, skippedOpt, stapleCost, blCost, blPortions };
+    perPortion: portions ? consumed / portions : 0, buy, usedFromCarry, usesOf, staplesUsed, skippedOpt, stapleCost, blCost, blPortions };
 }
 
 // Price the purchases at every shop. Preferred shop uses the packs the plan bought; other shops cover the same need with their own pack size.

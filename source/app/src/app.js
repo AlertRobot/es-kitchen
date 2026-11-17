@@ -1239,6 +1239,18 @@ function segHtml(act, cur, opts) {
   return '<span class="seg full" role="tablist">' + opts.map(([k, n, c]) => '<button role="tab" class="' + (cur === k ? 'on' : '') + '" data-act="' + act + '" data-v="' + k + '" aria-selected="' + (cur === k) + '">' + n + (c ? '<span class="count">' + c + '</span>' : '') + '</button>').join('') + '</span>';
 }
 const slug = s => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-');
+// things this week's meals use that aren't on the list because Peckish thinks you've still got them (last week's leftovers,
+// the freezer): said out loud, so a binned tub of soured cream doesn't quietly go missing from the shop
+function fromHomeHtml(w, sim) {
+  const used = sim.usedFromCarry || {}, ids = Object.keys(used).filter(id => S.ING[id] && !S.ING[id].staple && used[id] > 1e-6);
+  if (!ids.length) return '';
+  const rows = ids.map(id => { const ing = S.ING[id], cs = (w.carryIn || []).filter(c => c.i === id), q = cs.reduce((a, c) => a + c.q, 0);
+    const exp = cs.filter(c => !c.frozen && c.exp).map(c => c.exp).sort()[0], frozen = cs.length && cs.every(c => c.frozen);
+    const uses = []; (sim.usesOf && sim.usesOf[id] || []).forEach(u => { const r = S.RMAP[u.r]; if (r && isDinner(r) && !uses.some(x => x.r === r)) uses.push({ r, d: u.d }); });
+    const why = uses.slice(0, 2).map(x => h(rt(x.r)) + ' (' + DAY_NAMES[x.d] + ')').join(', ');
+    return '<div class="homerow"><div style="flex:1;min-width:0"><b>' + h(ing.name) + '</b><span class="small muted" style="display:block">' + h(leftText(id, q)) + (frozen ? ' in the freezer' : exp ? ', ' + h(useByText(exp)) : '') + (why ? ' · for ' + why : '') + '</span></div><button class="btn small-btn" data-act="not-got" data-v="' + h(id) + '">Not got it</button></div>'; }).join('');
+  return '<details class="havebox fromhome"' + (S.homeOpen ? ' open' : '') + '><summary data-act="home-open">Not on the list because you should have ' + (ids.length === 1 ? 'this' : 'these ' + ids.length) + '</summary>' + rows + '</details>';
+}
 function renderShop() {
   const w = currentWeek(), C = ctx();
   const sim = simulate(w, C), list = weekList(w, sim, C), B = list.basket;
@@ -1273,6 +1285,7 @@ function renderShop() {
   const aisles = list.aisles.filter(a => list.groups[a].some(r => !isTop(r)));
   out += '<div class="row between"><span class="muted small">Prices at ' + h(prefShopName()) + '</span><button class="btn small-btn" data-act="share-menu" aria-expanded="' + !!S.shareMenu + '">' + ICON.share + ' Share</button></div>';
   if (S.shareMenu) out += '<div class="mgroup popmenu" role="menu"><button class="mrow1" role="menuitem" data-act="copy-list">Copy the list</button><a class="mrow1" role="menuitem" href="https://wa.me/?text=' + encodeURIComponent(listText(list, w)) + '" target="_blank" rel="noopener">Send it on WhatsApp</a></div>';
+  out += fromHomeHtml(w, sim);
   for (const a of aisles) {
     const rows = list.groups[a].filter(r => !isTop(r));
     out += '<section class="aisle" id="sec-' + slug(a) + '"><h3>' + h(a) + '</h3>' + rows.slice().sort((x, y) => (w.checked[x.i] ? 1 : 0) - (w.checked[y.i] ? 1 : 0)).map(r => shopRowHtml(r, B, w)).join('') + '</section>';
@@ -1378,7 +1391,7 @@ function stockCard(w, todayIdx) {
 }
 function sheetStock(top) {
   const rows = top.items.map((c, k) => { const ing = S.ING[c.i]; if (!ing || ing.staple) return ''; const gone = !(c.q > 0);
-    return '<div class="stockrow' + (gone ? ' gone' : '') + '"><div style="min-width:0"><b>' + h(ing.name) + '</b>' + (c.frozen ? ' <span class="muted small">' + ICON.snow + ' frozen</span>' : '') + '</div>' +
+    return '<div class="stockrow' + (gone ? ' gone' : '') + '"><div style="min-width:0"><b>' + h(ing.name) + '</b>' + (c.frozen ? ' <span class="muted small">' + ICON.snow + ' frozen</span>' : c.exp ? ' <span class="muted small">' + (c.opened ? 'opened, ' : '') + h(useByText(c.exp)) + '</span>' : '') + '</div>' +
       '<div class="row" style="gap:6px;flex:none">' + (gone ? '<span class="muted small">All gone</span><button class="btn small-btn" data-act="stock-back" data-v="' + k + '">Undo</button>' :
       '<input class="input" type="number" min="0" step="any" inputmode="decimal" data-change="stock-q" data-v="' + k + '" value="' + (Math.round(c.q * 100) / 100) + '" aria-label="How much ' + h(ing.name) + ' is left"><span class="small muted stockunit">' + ({ g: 'g', ml: 'ml', clove: 'cloves' }[ing.unit] || 'left') + '</span><button class="btn small-btn" data-act="stock-gone" data-v="' + k + '">All gone</button>') + '</div></div>'; }).join('');
   return '<p class="small">Fix anything that’s wrong and tap <b>All gone</b> for what’s been used. Suggestions and the shopping list then use what’s really here.</p>' +
@@ -3144,6 +3157,8 @@ document.addEventListener('click', e => {
       else if (w.days[q.d] && w.days[q.d].r === q.r) { mutateWeek(x => { x.frozeOn = (x.frozeOn || []).concat({ d: q.d, r: q.r, portions: q.p }); x.days[q.d] = nightKeep(x.days[q.d]); }); toast('Added to the freezer'); }
       render(); break; }
     case 'froze-no': S.frzAsk = null; render(); break;
+    case 'not-got': { const ing = S.ING[v]; mutateCarry(w => { w.carryIn = (w.carryIn || []).filter(c => c.i !== v); }); toast((ing ? ing.name : 'That') + ' is on the list now'); break; }
+    case 'home-open': S.homeOpen = !S.homeOpen; break;
     case 'got-count': mutateWeek(w => { const g = { ...(w.bought || {}) }; if (g[v]) g[v] = { ...g[v], count: Math.max(1, Number(b.dataset.n) || 1) }; w.bought = g; }); break;
     case 'got-reset': mutateWeek(w => { const g = { ...(w.bought || {}) }; delete g[v]; w.bought = g; }); toast('Back to the suggested pack'); break;
     case 'have': mutateWeek(w => { w.have = { ...(w.have || {}), [v]: true }; }); toast('Taken off the list'); break;

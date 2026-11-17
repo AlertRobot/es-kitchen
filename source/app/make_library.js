@@ -94,9 +94,9 @@ for (const id in ING) { const ps = ING[id].prices || {}; for (const shop of Obje
 console.log('estimated prices dropped:', droppedEst);
 if (ING.oil) { ING.oil.name = 'Vegetable oil'; ING.oil.packs = [1000]; }
 // shelf life once opened and freezability, checked against usual UK storage advice (freeze = fine frozen for cooking)
-const SHELF = { greek_yogurt: { keeps: 7, freeze: true }, anchovies: { keeps: 14 }, feta: { keeps: 7, freeze: true }, broccoli: { keeps: 5 },
+const SHELF = { greek_yogurt: { keeps: 5, freeze: true }, anchovies: { keeps: 14 }, feta: { keeps: 5, freeze: true }, broccoli: { keeps: 5 },
   coriander: { freeze: true }, basil: { freeze: true }, spinach: { keeps: 3, freeze: true }, double_cream: { keeps: 4, freeze: true },
-  peppers: { freeze: true }, leeks: { freeze: true }, mushrooms: { freeze: true }, sour_cream: { keeps: 7 }, skyr: { keeps: 7 },
+  peppers: { freeze: true }, leeks: { freeze: true }, mushrooms: { freeze: true }, sour_cream: { keeps: 5 }, skyr: { keeps: 5 },
   spring_onions: { keeps: 7 }, weetabix: { staple: true }, porridge_oats: { staple: true },
   // whole fruit and veg don't go off just because the bag's been opened
   leeks: { keeps: 10 }, peppers: { keeps: 7 }, red_onion: { keeps: 21 }, onion: { keeps: 21 }, green_chillies: { keeps: 10 }, lemon: { keeps: 14 }, lime: { keeps: 14 },
@@ -170,6 +170,10 @@ for (const f of recipeFiles) for (const r0 of rd(f)) {
   if (sc && sc.site && sc.title && sc.url && ['close', 'adapted', 'loose'].includes(sc.match)) { r.source = { title: sc.title, site: sc.site, match: r.simplified ? 'loose' : sc.match }; if (sc.author) r.source.author = sc.author; }
   else if (ex(V2 + '/sources') && !(r.tags || []).includes('quick') && !r.easy) problems.push('no source ' + r.id);
   if (r.simplified && r.source) r.source = { ...r.source, match: 'loose' };
+  // "1 jar" / "1 tin" / "half a pack" means one of whatever your shop sells, so mark it and let the planner use the real pack size
+  for (const l of r.ingredients) { const ing = ING[l.i]; if (!ing || ing.staple || ing.unit === 'each') continue; const m = /^\s*(1|one|a|half a)\s+(jar|tin|can|pouch|pack|packet|bag|sachet|tub|carton|bottle)\b/i.exec(l.t || ''); if (m) { const wh = /half/i.test(m[1]) ? 0.5 : 1, per = (Number(l.q) || 0) / wh, sizes = Object.values(ing.prices || {}).map(p => p && p.pack).filter(x => x > 0);
+    // only when every shop's pack is roughly the size the recipe means (a box of 8 yeast sachets isn't "1 sachet")
+    if (per > 0 && sizes.length && sizes.every(x => x >= per * 0.75 && x <= per * 1.35)) l.whole = wh; } }
   if (SIDES[r.id] && ING.frozen_veg_pack) { const sd = SIDES[r.id]; if (sd.remove.every(i => r.ingredients.some(l => l.i === i))) r.side = sd; else problems.push('side doesn\'t match ' + r.id); }
   delete r.simplified;
   if (seen.has(r.id)) { problems.push('dup ' + r.id); continue; }
@@ -178,7 +182,7 @@ for (const f of recipeFiles) for (const r0 of rd(f)) {
   r.ingredients = merged;
   const missing = r.ingredients.filter(l => !ING[l.i]).map(l => l.i);
   if (missing.length) problems.push(r.id + ' unknown ' + missing.join(','));
-  r.ingredients = r.ingredients.filter(l => ING[l.i]).map(l => { const o = { i: l.i, q: Number(l.q) || 0, t: l.t || '' }; if (l.swap) o.swap = l.swap; if (l.opt) o.opt = true; return o; });
+  r.ingredients = r.ingredients.filter(l => ING[l.i]).map(l => { const o = { i: l.i, q: Number(l.q) || 0, t: l.t || '' }; if (l.swap) o.swap = l.swap; if (l.opt) o.opt = true; if (l.whole) o.whole = l.whole; return o; });
   r.steps = (r.steps || []).slice(0, 8).map(s => typeof s === 'string' ? { title: '', text: s } : { title: s.title || '', text: s.text || '' });
   const bl = r.meal === 'breakfast' || r.meal === 'lunch';
   r.servings = bl ? 1 : 2; r.category = r.category === 'treat' ? 'treat' : 'everyday';
