@@ -1907,7 +1907,9 @@ function lookHtml() {
       '<span class="seg full">' + [['', 'Auto'], ['light', 'Light'], ['dark', 'Dark']].map(([k, n]) => '<button class="' + ((L.theme || '') === k ? 'on' : '') + '" data-act="look" data-k="theme" data-v="' + k + '">' + n + '</button>').join('') + '</span>' +
       (L.theme !== 'light' ? '<span class="label" style="margin-top:6px">Dark mode</span><span class="seg full">' + [['', 'Soft dark'], ['1', 'Pure black']].map(([k, n]) => '<button class="' + ((L.oled || '') === k ? 'on' : '') + '" data-act="look" data-k="oled" data-v="' + k + '">' + n + '</button>').join('') + '</span>' : '')) + '</div></section>' +
     '<section class="panel"><h2>Special themes</h2><div class="themegrid">' + THEMES.map(([k, n, blurb, bg, a1, a2]) => '<button class="theme ' + (L.palette === k ? 'on' : '') + '" data-act="look" data-k="palette" data-v="' + k + '" aria-pressed="' + (L.palette === k) + '"><span class="tprev" style="background:' + bg + '"><i style="background:' + a1 + '"></i><i style="background:' + a2 + '"></i></span><span class="tname"><b>' + n + '</b><span>' + blurb + '</span></span></button>').join('') + '</div></section>' +
-    '<section class="panel"><h2>Text size</h2><span class="seg full">' + [['', 'Normal'], ['large', 'Larger']].map(([k, n]) => '<button class="' + ((L.size || '') === k ? 'on' : '') + '" data-act="look" data-k="size" data-v="' + k + '">' + n + '</button>').join('') + '</span></section>';
+    '<section class="panel"><h2>Text size</h2><span class="seg full">' + [['', 'Normal'], ['large', 'Larger']].map(([k, n]) => '<button class="' + ((L.size || '') === k ? 'on' : '') + '" data-act="look" data-k="size" data-v="' + k + '">' + n + '</button>').join('') + '</span></section>' +
+    // both phones: spoon sizes in recipes as bold capitals so a teaspoon can't be read as a tablespoon
+    '<section class="panel"><h2>Spoon sizes in recipes</h2><span class="seg full"><button class="' + (S.settings.bigSpoons === false ? 'on' : '') + '" data-act="big-spoons" data-v="off">tablespoon</button><button class="' + (S.settings.bigSpoons === false ? '' : 'on') + '" data-act="big-spoons" data-v="on"><b>TABLESPOON</b></button></span></section>';
 }
 applyLook(getLook());
 
@@ -2491,6 +2493,42 @@ function plannedPortions(r, start, d) {
 const SPOONISH = /spoon|tbsp|tsp|pinch|taste|splash|drizzle|handful|sprinkle|dash|glug|knob|squeeze|sprig|few /i;
 function multText(f) { const w = Math.floor(f + 1e-9), fr = f - w; const q = Math.abs(fr - 0.5) < 0.01 ? '½' : Math.abs(fr - 0.25) < 0.01 ? '¼' : Math.abs(fr - 0.75) < 0.01 ? '¾' : fr > 0.01 ? fr.toFixed(1).slice(1) : ''; return '\u00d7' + (w || '') + q; }
 // the amount to show for one ingredient line at a different number of servings
+// ---------- the method, for the number you're cooking for ----------
+// Amounts in a step ("300 millilitres of water", "1 teaspoon of the cornflour", "2 eggs") scale with the portions;
+// times, temperatures and sizes don't. Scaled amounts are marked so they show in bold.
+const SFRAC = { '½': 0.5, '¼': 0.25, '¾': 0.75, '⅓': 1 / 3, '⅔': 2 / 3 };
+function fracText(x) { const q = Math.round(x * 4) / 4, w0 = Math.floor(q), fr = q - w0; const sym = fr === 0.5 ? '½' : fr === 0.25 ? '¼' : fr === 0.75 ? '¾' : ''; return (w0 || (sym ? '' : '1')) + sym; }
+function scaleStepText(text, f, r) {
+  if (!text || !(f > 0) || Math.abs(f - 1) < 0.01) return text;
+  const num = (a, b) => (Number(a) || 0) + (SFRAC[b] || 0);
+  const mark = t => '\u0001' + t + '\u0002';
+  let out = text.replace(/(^|[\s(])(\d+(?:\.\d+)?)?\s*([½¼¾⅓⅔])?\s*(kg|g|grams?|ml|millilitres?|litres?|tablespoons?|teaspoons?|tbsp|tsp|cloves?)\b/gi, (m, pre, a, b, unit) => {
+    if (!a && !b) return m; const v = num(a, b) * f, u = unit.toLowerCase();
+    const lit = x => x === 1 ? '1 litre' : x + ' litres';
+    if (/^(ml|millilitres?)$/.test(u) && v >= 1000) return pre + mark(lit(Math.round(v / 100) / 10));
+    if (/^(g|grams?|ml|millilitres?)$/.test(u)) { const x = v >= 100 ? Math.round(v / 10) * 10 : v >= 20 ? Math.round(v / 5) * 5 : Math.max(1, Math.round(v)); return pre + mark(x + (/^(g|ml)$/.test(u) ? '' : ' ') + unit); }
+    if (/^litres?$/.test(u)) return pre + mark(v < 1 ? Math.round(v * 1000 / 10) * 10 + ' millilitres' : lit(Math.round(v * 10) / 10));
+    if (u === 'kg') return pre + mark(v < 1 ? Math.round(v * 1000 / 10) * 10 + 'g' : Math.round(v * 10) / 10 + 'kg');
+    if (/^cloves?$/.test(u)) { const x = Math.max(1, Math.round(v)); return pre + mark(x + ' clove' + (x > 1 ? 's' : '')); }
+    const sp = /^(tablespoon|tbsp)/.test(u) ? 'tablespoon' : 'teaspoon', x = Math.round(v * 4) / 4;
+    return pre + mark(fracText(x) + ' ' + (/^t[bs]p$/.test(u) ? unit : sp + (x > 1 ? 's' : '')));
+  });
+  // counted things that are ingredients in this recipe: "2 eggs", "4 tortilla wraps"
+  const nouns = Array.from(new Set((r && r.ingredients || []).map(l => S.ING[l.i]).filter(i => i && i.unit === 'each').map(i => i.name.toLowerCase().replace(/\(.*?\)/g, '').trim().split(/\s+/).pop().replace(/(es|s)$/, '').replace(/[^a-z]/g, '')).filter(w => w.length > 2)));
+  if (nouns.length) {
+    const re = new RegExp('(^|[\\s(])(\\d+)\\s+(' + nouns.join('|') + ')(e?s)?\\b', 'gi');
+    out = out.replace(re, (m, pre, a, w, pl) => { const x = Math.max(1, Math.round(Number(a) * f * 2) / 2); return pre + mark(fracText(x) + ' ' + w + (x > 1 ? (pl || (/(s|sh|ch|x)$/.test(w) ? 'es' : 's')) : '')); });
+  }
+  return out;
+}
+function plainStep(t) { return String(t).replace(/[\u0001\u0002]/g, ''); }
+// TABLESPOON and TEASPOON in bold capitals so they can't be mixed up (on unless turned off in Settings)
+function spoonsHtml(html) {
+  if (S.settings.bigSpoons === false) return html;
+  return html.replace(/\b(tablespoons?|teaspoons?|tbsp|tsp)\b/gi, w => '<b class="spoon">' + (/^(tablespoon|tbsp)/i.test(w) ? 'TABLESPOON' : 'TEASPOON') + (/s$/i.test(w) && !/^t[bs]p$/i.test(w) ? 'S' : '') + '</b>');
+}
+function stepHtml(r, s, f) { return spoonsHtml(h(scaleStepText(stepText(s), f, r)).replace(/\u0001/g, '<b class="scaled">').replace(/\u0002/g, '</b>')); }
+function scaledNote(r, serv, f) { if (!(f > 0) || Math.abs(f - 1) < 0.01) return ''; const how = Math.abs(f - 2) < 0.01 ? 'doubled' : Math.abs(f - 0.5) < 0.01 ? 'halved' : 'changed'; return '<p class="note small">Amounts in the steps are ' + how + ' for ' + serv + '. Cooking times stay the same' + (f > 1.4 ? '. If it won’t fit in one layer, cook it in batches' : '') + '.</p>'; }
 function amtFor(l, f) {
   const ing = S.ING[l.i];
   if (Math.abs(f - 1) < 0.01 || !(l.q > 0)) return l.t || '';
@@ -2558,9 +2596,9 @@ function sheetRecipe(r, top) {
   }
   out += more;
   out += '<section class="stack" style="gap:6px"><div class="row between"><h2>Ingredients</h2><span class="seg" aria-label="Servings">' + Array.from(new Set((isDinner(r) ? [2, 3, 4] : [1, 2, 3]).concat([serv]))).sort((a, b) => a - b).map(k => '<button class="' + (serv === k ? 'on' : '') + '" data-act="serv" data-v="' + k + '">' + k + '</button>').join('') + '</span></div><div class="ings">' +
-    r.ingredients.map(l => { const ing = S.ING[l.i]; const amt = amtFor(l, f); const low = ing && ing.staple && ['low', 'out'].includes((S.pantry.status || {})[l.i]); return '<div class="ing"><span>' + h(ing ? ing.name : l.i) + (ing && ing.staple ? ' <span class="tag ' + (low ? 'warn' : '') + '">' + (low ? 'pantry · low' : 'pantry') + '</span>' : '') + (l.opt ? ' <span class="tag">optional</span>' : '') + (ing && pc.swaps.some(x => x.ingName === ing.name) ? ' <span class="tag swap">swap for ' + h(pc.swaps.filter(x => x.ingName === ing.name).map(x => nick(x.person)).join(' & ')) + '</span>' : '') + '</span><span class="amt">' + h(amt) + '</span></div>'; }).join('') + '</div></section>';
+    r.ingredients.map(l => { const ing = S.ING[l.i]; const amt = amtFor(l, f); const low = ing && ing.staple && ['low', 'out'].includes((S.pantry.status || {})[l.i]); return '<div class="ing"><span>' + h(ing ? ing.name : l.i) + (ing && ing.staple ? ' <span class="tag ' + (low ? 'warn' : '') + '">' + (low ? 'pantry · low' : 'pantry') + '</span>' : '') + (l.opt ? ' <span class="tag">optional</span>' : '') + (ing && pc.swaps.some(x => x.ingName === ing.name) ? ' <span class="tag swap">swap for ' + h(pc.swaps.filter(x => x.ingName === ing.name).map(x => nick(x.person)).join(' & ')) + '</span>' : '') + '</span><span class="amt">' + spoonsHtml(h(amt)) + '</span></div>'; }).join('') + '</div></section>';
   loadStepPhotos(r);
-  out += '<section class="stack"><h2>Method</h2>' + (Math.abs(f - 1) > 0.01 ? '<p class="note small">The method is written for ' + (r.servings || 2) + '. Use the amounts above for ' + serv + '.</p>' : '') + '<ol class="steps">' + r.steps.map((s, k) => { const sp = stepPhoto(r, k); return '<li><div>' + (stepTitle(s) ? '<b class="stitle">' + h(stepTitle(s)) + '</b>' : '') + '<p>' + h(stepText(s)) + '</p>' +
+  out += '<section class="stack"><h2>Method</h2>' + scaledNote(r, serv, f) + '<ol class="steps">' + r.steps.map((s, k) => { const sp = stepPhoto(r, k); return '<li><div>' + (stepTitle(s) ? '<b class="stitle">' + h(stepTitle(s)) + '</b>' : '') + '<p>' + stepHtml(r, s, f) + '</p>' +
     (sp && !sp.hidden ? '<figure class="stepimg"><img src="' + h(sp.x.img) + '" alt="How step ' + (k + 1) + ' should look" loading="lazy"><figcaption>' + h(sp.x.by || '') + (sp.x.uid === myUid() ? ' · <button class="linkish small" data-act="del-step-photo" data-v="' + h(r.id) + '" data-n="' + k + '">Remove</button>' : '') + stepPhotoNote(r, k, sp) + '</figcaption></figure>' : '') +
     noteHtml(r, k) + '<div class="row wrap steplinks">' + stepPhotoLink(r, k, sp, 'small') + noteLink(r, k) + '</div></div></li>'; }).join('') + '</ol>' +
     '<div class="stack" style="gap:6px">' + (noteOf(r, 'all') || S.noteEdit === noteId(r) + ':all' ? '<span class="label">Our notes on this recipe</span>' + noteHtml(r, 'all', true) : '<button class="linkish small steplink" data-act="note-edit" data-v="' + h(noteId(r) + ':all') + '">' + ICON.note + ' Add a note about the whole recipe</button>') + '</div></section>';
@@ -2771,7 +2809,7 @@ async function startCook(id, serv) { S.cook = { id, step: 0, showIngs: false, se
 function speakStep() {
   if (!S.cook || !S.cook.speak || !('speechSynthesis' in window)) return;
   const r = S.RMAP[S.cook.id]; const st = r && r.steps[S.cook.step]; if (!st) return;
-  try { speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance('Step ' + (S.cook.step + 1) + '. ' + (stepTitle(st) ? stepTitle(st) + '. ' : '') + stepText(st)); u.lang = 'en-GB'; u.rate = 0.95; speechSynthesis.speak(u); } catch (e) {}
+  try { speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance('Step ' + (S.cook.step + 1) + '. ' + (stepTitle(st) ? stepTitle(st) + '. ' : '') + plainStep(scaleStepText(stepText(st), cookF(r), r))); u.lang = 'en-GB'; u.rate = 0.95; speechSynthesis.speak(u); } catch (e) {}
 }
 function stopCook() { try { speechSynthesis.cancel(); } catch (e) {} S.cook = null; renderCook(); try { if (wakeLock) wakeLock.release(); } catch (e) {} wakeLock = null; }
 function cookF(r) { return S.cook && S.cook.serv ? S.cook.serv / (r.servings || 2) : 1; }
@@ -2794,8 +2832,8 @@ function renderCook() {
   const k = Math.min(S.cook.step, steps.length - 1), n = steps.length, s = steps[k];
   loadStepPhotos(r);
   el.innerHTML = '<div class="chead"><button class="icon-btn" data-act="cook-close" aria-label="Stop cooking">' + ICON.close + '</button><b class="grow ellip">' + h(rt(r)) + '</b><span id="tmrs" class="tmrs">' + timersHtml() + '</span><span class="cchips">' + ('speechSynthesis' in window ? '<button class="chip ' + (S.cook.speak ? 'on' : '') + '" data-act="cook-speak" aria-pressed="' + !!S.cook.speak + '">' + (S.cook.speak ? 'Reading aloud' : 'Read aloud') + '</button>' : '') + '<button class="chip ' + (S.cook.showIngs ? 'on' : '') + '" data-act="cook-ings">Ingredients</button></span></div>' +
-    '<div class="cbody">' + (S.cook.showIngs ? '<div class="ings" style="font-size:1.15rem">' + (cookF(r) !== 1 ? '<p class="muted small">Amounts for ' + S.cook.serv + '. The steps are written for ' + (r.servings || 2) + '.</p>' : '') + r.ingredients.map(l => '<div class="ing"><span>' + h(ingName(l.i)) + '</span><span class="amt">' + h(amtFor(l, cookF(r))) + '</span></div>').join('') + '</div>' :
-      '<div class="stepno">Step ' + (k + 1) + ' of ' + n + '</div>' + (stepTitle(s) ? '<div class="steptitle">' + h(stepTitle(s)) + '</div>' : '') + '<div class="steptext">' + h(stepText(s)) + '</div>' + cookSwaps(r, k, s) + cookExtras(r, k, s) + (S.settings.equipment && S.settings.equipment.air_fryer && r.airFryer && /oven|fry|crisp|chips|wedges/i.test(stepText(s)) ? '<div class="note"><b>Air fryer:</b> ' + h(r.airFryer) + '</div>' : '')) + '</div>' +
+    '<div class="cbody">' + (S.cook.showIngs ? '<div class="ings" style="font-size:1.15rem">' + (cookF(r) !== 1 ? '<p class="muted small">Amounts for ' + S.cook.serv + '.</p>' : '') + r.ingredients.map(l => '<div class="ing"><span>' + h(ingName(l.i)) + '</span><span class="amt">' + spoonsHtml(h(amtFor(l, cookF(r)))) + '</span></div>').join('') + '</div>' :
+      '<div class="stepno">Step ' + (k + 1) + ' of ' + n + '</div>' + (stepTitle(s) ? '<div class="steptitle">' + h(stepTitle(s)) + '</div>' : '') + (k === 0 && cookF(r) !== 1 ? scaledNote(r, S.cook.serv, cookF(r)) : '') + '<div class="steptext">' + stepHtml(r, s, cookF(r)) + '</div>' + cookSwaps(r, k, s) + cookExtras(r, k, s) + (S.settings.equipment && S.settings.equipment.air_fryer && r.airFryer && /oven|fry|crisp|chips|wedges/i.test(stepText(s)) ? '<div class="note"><b>Air fryer:</b> ' + h(r.airFryer) + '</div>' : '')) + '</div>' +
     '<div class="cfoot"><button class="btn" data-act="cook-prev" ' + (k === 0 ? 'disabled' : '') + '>Back</button><div class="dots" aria-hidden="true">' + steps.map((_, j) => '<i class="' + (j === k ? 'on' : '') + '"></i>').join('') + '</div><button class="btn primary" data-act="' + (k === n - 1 ? 'cook-close' : 'cook-next') + '"' + (k === n - 1 ? ' data-v="done"' : '') + '>' + (k === n - 1 ? 'Done' : 'Next') + '</button></div>';
   el.hidden = false;
 }
@@ -3159,6 +3197,7 @@ document.addEventListener('click', e => {
     case 'froze-no': S.frzAsk = null; render(); break;
     case 'not-got': { const ing = S.ING[v]; mutateCarry(w => { w.carryIn = (w.carryIn || []).filter(c => c.i !== v); }); toast((ing ? ing.name : 'That') + ' is on the list now'); break; }
     case 'home-open': S.homeOpen = !S.homeOpen; break;
+    case 'big-spoons': saveSettings({ bigSpoons: v === 'on' }); break;
     case 'got-count': mutateWeek(w => { const g = { ...(w.bought || {}) }; if (g[v]) g[v] = { ...g[v], count: Math.max(1, Number(b.dataset.n) || 1) }; w.bought = g; }); break;
     case 'got-reset': mutateWeek(w => { const g = { ...(w.bought || {}) }; delete g[v]; w.bought = g; }); toast('Back to the suggested pack'); break;
     case 'have': mutateWeek(w => { w.have = { ...(w.have || {}), [v]: true }; }); toast('Taken off the list'); break;
