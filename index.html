@@ -383,6 +383,10 @@ form.notebox { display: flex; background: none; padding: 0; }
 details > summary svg { width: 18px; height: 18px; }
 .note svg, .why svg { width: 16px; height: 16px; vertical-align: -3px; }
 .cook .chead { flex-wrap: wrap; row-gap: 6px; }
+/* a dish's name in a vote row gets two lines too */
+.voterow b.ellip { white-space: normal; display: -webkit-box !important; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow-wrap: break-word; line-height: 1.25; }
+/* the recipe's name gets two lines before it's cut short */
+.cook .chead > b.ellip { white-space: normal; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow-wrap: break-word; min-width: 0; line-height: 1.25; }
 .cook .chead > b.grow { flex: 1 1 160px; }
 /* Read aloud and Ingredients always on their own line, so the header doesn't change shape from step to step */
 .cook .chead .cchips { flex: 1 0 100%; display: flex; flex-wrap: wrap; gap: 8px; }
@@ -684,6 +688,6 @@ details.fold > .in { padding: 0 16px 16px; display: grid; gap: 10px; }
 <nav class="nav" aria-label="Sections"><div class="in" id="nav"></div></nav>
 <div id="toast" class="toast" hidden role="status"></div>
 <script src="firebase-config.js"></script>
-<script src="app.js?v=mwtmqgq6"></script>
+<script src="app.js?v=mwtq2kdh"></script>
 </body>
 </html>
