@@ -203,7 +203,9 @@ textarea.input { min-height: 72px; resize: vertical; }
 @media (prefers-reduced-motion: no-preference) { .sheet { animation: up 0.18s ease-out; } @keyframes up { from { transform: translateY(16px); opacity: 0.6; } } }
 
 .ings { display: grid; gap: 0; }
-.ing { display: grid; grid-template-columns: 1fr auto; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+/* the amount takes no more than just over half the row, wrapping after that, so the name always has room for its words */
+.ing { display: grid; grid-template-columns: minmax(0, 1fr) fit-content(55%); gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.ing > span { min-width: 0; overflow-wrap: break-word; }
 .ing:last-child { border-bottom: 0; }
 .ing .amt { text-align: right; color: var(--muted); }
 .steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; counter-reset: s; }
@@ -386,7 +388,6 @@ details > summary svg { width: 18px; height: 18px; }
 .cook .chead .cchips { flex: 1 0 100%; display: flex; flex-wrap: wrap; gap: 8px; }
 .cook .chead .btn, .cook .chead .icon-btn, .cook .chead .chip { flex: none; }
 .cook .steptext, .cook .steptitle { overflow-wrap: anywhere; }
-.cook .ings .ing > span { min-width: 0; overflow-wrap: break-word; }
 @media (max-height: 500px) { .cook .chead, .cook .cfoot { padding-block: 6px; } .cook .cfoot .btn { min-height: 48px; } .cook .steptext { font-size: 1.15rem; } .cook .steptitle { font-size: 1.25rem; } .cookimg img { max-height: 30vh; } }
 
 .fimg { position: relative; display: block; aspect-ratio: 4 / 3; background: var(--surface-2); overflow: hidden; }
