@@ -715,12 +715,12 @@
    {
     "i": "potatoes",
     "q": 700,
-    "t": "700g, cut into thin fries"
+    "t": "700g, peeled if you like, cut into fries"
    },
    {
     "i": "oil",
-    "q": 20,
-    "t": "1½ tablespoons"
+    "q": 1000,
+    "t": "about a litre, to fry in (rapeseed is ideal)"
    },
    {
     "i": "smoked_paprika",
@@ -748,28 +748,36 @@
   "steps": [
    {
     "title": "Prep",
-    "text": "Heat the oven to 220°C (200°C fan) and line two baking trays. Cut the potatoes into thin fries, rinse in cold water and pat completely dry with a clean tea towel. Chop the bacon, grate the cheddar and slice the spring onions (optional)."
+    "text": "Cut the potatoes into fries, rinse in cold water and dry them really well with a clean tea towel: wet fries make the oil spit. Chop the bacon, grate the cheddar and slice the spring onions (optional). Line a tray with kitchen paper and have a slotted spoon, spider or metal sieve ready to lift the fries in and out."
    },
    {
-    "title": "Bake the fries",
-    "text": "Toss the fries with the oil, paprika and a good pinch of salt and spread over the trays in a single layer. Bake for 35 to 40 minutes until golden and crisp at the edges, turning them halfway."
+    "title": "Heat the oil",
+    "text": "Pour the oil into a large, deep pan until it's no more than a third full, because it bubbles up when the fries go in. Heat over a medium heat to 150 to 160°C. No thermometer? It's ready when a fry dropped in fizzes steadily. Never leave the pan alone, and keep a lid or baking tray nearby: if the oil catches fire, turn off the heat and cover it. Never use water."
+   },
+   {
+    "title": "First fry",
+    "text": "Lower in about a third of the fries with the slotted spoon, away from you. Fry for 6 to 8 minutes until soft but still pale, then lift out onto the kitchen paper. Fry the rest the same way. Do them in batches: too many at once cools the oil, and they go soggy and greasy."
    },
    {
     "title": "Crisp the bacon",
-    "text": "When the fries have 15 minutes left, put the bacon in a dry frying pan over a medium-high heat. Fry for 6 to 8 minutes, stirring, until crisp and golden. Drain on kitchen paper."
+    "text": "Heat the oven to 200°C (180°C fan). Put the bacon in a dry frying pan over a medium-high heat and fry for 6 to 8 minutes, stirring, until crisp and golden. Drain on kitchen paper."
    },
    {
-    "title": "Load and melt",
-    "text": "Pile all the hot fries onto one tray. Scatter over the cheddar and bacon and return to the oven for 3 to 4 minutes until the cheese has melted."
+    "title": "Second fry",
+    "text": "Turn the oil up to 180 to 190°C: a fry dropped in should bubble hard straight away, but the oil should never smoke. Fry the fries again in batches for 2 to 3 minutes until golden and crisp, then lift onto fresh kitchen paper."
+   },
+   {
+    "title": "Season, load and melt",
+    "text": "While they're hot, toss the fries in a big bowl with the paprika and a good pinch of salt. Tip onto a baking tray, scatter over the cheddar and bacon and bake for 5 minutes until the cheese has melted."
    },
    {
     "title": "Serve",
-    "text": "Scatter with the spring onions (optional) and dig in straight from the tray."
+    "text": "Scatter with the spring onions (optional) and dig in straight from the tray. Turn off the oil and leave it to cool completely before straining it into a bottle to reuse or bin. Never pour it down the sink."
    }
   ],
-  "time": 45,
+  "time": 50,
   "title": "Loaded Bacon Cheese Fries with Spring Onions",
-  "changed": "Cheddar melted straight onto the fries instead of a cheese sauce; no green chilli or yogurt."
+  "changed": "Fries double-fried in a pan of oil (rapeseed) instead of baked, seasoned after frying; cheddar melted straight onto the fries."
  },
  {
   "id": "am_sausage_hot_dogs",
