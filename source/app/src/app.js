@@ -1241,6 +1241,20 @@ function segHtml(act, cur, opts) {
 const slug = s => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-');
 // things this week's meals use that aren't on the list because Peckish thinks you've still got them (last week's leftovers,
 // the freezer): said out loud, so a binned tub of soured cream doesn't quietly go missing from the shop
+// cupboard staples this week's meals use that nobody's said they have yet: Peckish assumes they're in, so ask once
+function cupboardCheckHtml(w, sim, B) {
+  const status = (S.pantry && S.pantry.status) || {}, from = Math.max(0, daysBetween(w.start, TODAY));
+  const ids = Object.keys(sim.staplesUsed || {}).filter(id => S.ING[id] && S.ING[id].staple && !status[id] && !B.rows.some(r => r.i === id) && sim.staplesUsed[id].some(d => d >= from))
+    .sort((a, b) => S.ING[a].name.localeCompare(S.ING[b].name));
+  if (!ids.length) return '';
+  const rows = ids.map(id => {
+    const uses = ((sim.usesOf || {})[id] || []).filter(u => u.d >= from && S.RMAP[u.r]).sort((a, b) => a.d - b.d);
+    const opt = uses.length && uses.every(u => (S.RMAP[u.r].ingredients || []).some(l => l.i === id && l.opt));
+    const forTxt = uses.length ? 'for ' + DAY_NAMES[uses[0].d] + ' (' + h(rt(S.RMAP[uses[0].r]).split(/ with | & |,/)[0]) + ')' + (uses.length > 1 ? ' +' + (uses.length - 1) : '') : '';
+    return '<div class="pantryrow ruled-sm"><span style="min-width:0">' + h(S.ING[id].name) + '<span class="muted small" style="display:block">' + (opt ? 'optional · ' : '') + forTxt + '</span></span><span class="seg" role="group" aria-label="' + h(S.ING[id].name) + '"><button data-act="pantry" data-v="' + h(id) + '" data-s="have">Got it</button><button data-act="pantry" data-v="' + h(id) + '" data-s="out">Need it</button></span></div>';
+  }).join('');
+  return '<section class="aisle" id="sec-cupcheck"><div class="row between"><h3>In the cupboard?</h3>' + (ids.length > 2 ? '<button class="linkish small" data-act="pantry-all" data-v="' + h(ids.join(',')) + '">Got them all</button>' : '') + '</div>' + rows + '</section>';
+}
 function fromHomeHtml(w, sim) {
   const used = sim.usedFromCarry || {}, ids = Object.keys(used).filter(id => S.ING[id] && !S.ING[id].staple && used[id] > 1e-6);
   if (!ids.length) return '';
@@ -1291,11 +1305,12 @@ function renderShop() {
     out += '<section class="aisle" id="sec-' + slug(a) + '"><h3>' + h(a) + '</h3>' + rows.slice().sort((x, y) => (w.checked[x.i] ? 1 : 0) - (w.checked[y.i] ? 1 : 0)).map(r => shopRowHtml(r, B, w)).join('') + '</section>';
   }
   out += '<div class="subtot"><span>Food for the week</span><span class="money">' + fmtMoney(foodTotal) + '</span></div>';
+  out += cupboardCheckHtml(w, sim, B);
   if (tops.length) {
     out += '<section class="aisle topups" id="sec-topups"><h3>Cupboard top-ups</h3><p class="muted small">Staples you marked low that this week’s meals use. A pack lasts weeks, so this is mostly a one-off. Skip anything you can do without.</p>' + tops.map(r => shopRowHtml(r, B, w)).join('') + '</section>';
     out += '<div class="subtot"><span>Cupboard top-ups</span><span class="money">' + fmtMoney(topTotal) + '</span></div>';
   }
-  if (sim.skippedOpt && sim.skippedOpt.length) { const ids = Array.from(new Set(sim.skippedOpt.map(x => x.i))); out += '<p class="muted small">Left off because they’re optional and you’re low: ' + ids.map(id => h(lowerName(id))).join(', ') + '.</p>'; }
+  if (sim.skippedOpt && sim.skippedOpt.length) { const ids = Array.from(new Set(sim.skippedOpt.map(x => x.i))); out += '<p class="muted small">Left off because they’re optional (Settings): ' + ids.map(id => h(lowerName(id))).join(', ') + '.</p>'; }
   out += '<section class="panel" id="sec-extras"><h3>Anything else?</h3>';
   w.extras.forEach((x, k) => { out += '<div class="item ' + (x.done ? 'done' : '') + '" style="border-top:0;padding:4px 0"><button class="check ' + (x.done ? 'on' : '') + '" data-act="tick-extra" data-v="' + h(x.id) + '" aria-label="Tick ' + h(x.name) + '">' + (x.done ? ICON.tick : '') + '</button><div class="iname itap" data-act="tick-extra" data-v="' + h(x.id) + '">' + h(x.name) + '</div><button class="icon-btn" data-act="del-extra" data-v="' + h(x.id) + '" aria-label="Remove ' + h(x.name) + '">' + ICON.close + '</button></div>'; });
   const haveIds = Object.keys(w.have || {}).filter(id => S.ING[id]);
@@ -1322,7 +1337,7 @@ function shopRowHtml(row, B, w) {
   let why;
   if (row.staple) {
     const forR = (row.forWhat || []).map(id => S.RMAP[id] && S.RMAP[id].title).filter(Boolean);
-    why = row.always ? 'always buy when low' : 'for ' + Array.from(new Set(row.forDays)).map(x => DAY_NAMES[x]).join(', ') + (forR.length ? ' (' + h(forR[0].split(/ with | & |,/)[0]) + (forR.length > 1 ? ' +' + (forR.length - 1) : '') + ')' : '');
+    why = (row.opt ? 'optional · ' : '') + (row.always ? 'always buy when low' : 'for ' + Array.from(new Set(row.forDays)).map(x => DAY_NAMES[x]).join(', ') + (forR.length ? ' (' + h(forR[0].split(/ with | & |,/)[0]) + (forR.length > 1 ? ' +' + (forR.length - 1) : '') + ')' : ''));
   } else {
     // what it's for: each meal with its days, dinners first
     const byR = []; (row.uses || []).forEach(u => { const r = S.RMAP[u.r]; if (!r) return; let x = byR.find(y => y.r === r); if (!x) byR.push(x = { r, days: [] }); if (!x.days.includes(u.d)) x.days.push(u.d); });
@@ -3118,6 +3133,7 @@ document.addEventListener('click', e => {
     case 'clear-carry': mutateCarry(w => { w.carryIn = []; w.freezerMeals = []; }); toast('Cleared'); break;
     case 'del-fm': mutateCarry(w => { w.freezerMeals.splice(Number(v), 1); }); break;
     case 'pantry': S.pantry.status[v] = b.dataset.s; savePantry(); break;
+    case 'pantry-all': v.split(',').forEach(id => { if (S.ING[id]) S.pantry.status[id] = 'have'; }); savePantry(); break;
     case 'pref-del': { const p = clone(S.people.find(x => x.id === v)); p[b.dataset.k].splice(Number(b.dataset.i), 1); S.people = S.people.map(x => x.id === v ? p : x); savePerson(p); render(); break; }
     case 'rm-shop': S.confirm = { ['rmshop:' + v]: true }; render(); break;
     case 'bg-mine': { if (!S.bg.data.me) break; const u = myUid(); S.shopsLog = (S.shopsLog || []).map(x => x.id === v ? { ...x, okBy: u } : x); (Store.update || Store.patch)('shops/' + v, { okBy: u }).then(() => bgSyncShops()).catch(e => { console.warn(e); toast('Couldn\u2019t save that.'); }); render(); break; }

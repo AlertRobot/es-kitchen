@@ -260,10 +260,10 @@ function simulate(week, ctx) {
       const st = pantryStatus(ctx, l.i);
       if (st !== 'low' && st !== 'out') return need * up(l.i);
       const P = purchases[l.i];
-      if (P) { if (!P.forDays.includes(d)) P.forDays.push(d); if (forWhat && !P.forWhat.includes(forWhat)) P.forWhat.push(forWhat); return need * up(l.i); }
-      if (l.opt) { skippedOpt.push({ i: l.i, d, staple: true }); return 0; }
+      if (P) { if (!P.forDays.includes(d)) P.forDays.push(d); if (forWhat && !P.forWhat.includes(forWhat)) P.forWhat.push(forWhat); if (!l.opt) P.opt = false; return need * up(l.i); }
+      // an optional extra you're low on still goes on the list as a top-up, marked optional, so you can choose
       const packs = choosePacks(ing, need, shopId); const total = packs.reduce((a, b) => a + b, 0);
-      purchases[l.i] = { need, packs, bought: total, staple: true, forDays: [d], forWhat: forWhat ? [forWhat] : [] };
+      purchases[l.i] = { need, packs, bought: total, staple: true, opt: !!l.opt, forDays: [d], forWhat: forWhat ? [forWhat] : [] };
       return need * up(l.i);
     }
     let remain = need;
@@ -408,7 +408,7 @@ function basketTotals(purchases, ctx, extraRows) {
   const ids = Object.keys(purchases);
   for (const id of ids) {
     const ing = ING[id], P = purchases[id];
-    const row = { i: id, need: P.need, packs: P.packs, bought: P.bought, got: !!P.got, short: P.short || 0, needAll: P.needAll || P.need, staple: !!P.staple, forDays: P.forDays || [], forWhat: P.forWhat || [], uses: P.uses || [], always: !!P.always, byShop: {} };
+    const row = { i: id, need: P.need, packs: P.packs, bought: P.bought, got: !!P.got, short: P.short || 0, needAll: P.needAll || P.need, staple: !!P.staple, opt: !!P.opt, forDays: P.forDays || [], forWhat: P.forWhat || [], uses: P.uses || [], always: !!P.always, byShop: {} };
     for (const k of keys) {
       const sp = shopPrice(ing, k.shop, k.loyalty);
       let cost, missing = false, est = false, stale = false, rough = false, count = 0, pack = null;
