@@ -1250,7 +1250,7 @@ function cupboardCheckHtml(w, sim, B) {
   const rows = ids.map(id => {
     const uses = ((sim.usesOf || {})[id] || []).filter(u => u.d >= from && S.RMAP[u.r]).sort((a, b) => a.d - b.d);
     const opt = uses.length && uses.every(u => (S.RMAP[u.r].ingredients || []).some(l => l.i === id && l.opt));
-    const forTxt = uses.length ? 'for ' + DAY_NAMES[uses[0].d] + ' (' + h(rt(S.RMAP[uses[0].r]).split(/ with | & |,/)[0]) + ')' + (uses.length > 1 ? ' +' + (uses.length - 1) : '') : '';
+    const forTxt = uses.length ? 'for ' + DAY_NAMES[uses[0].d] + ' (' + h(rt(S.RMAP[uses[0].r])) + ')' + (uses.length > 1 ? ' +' + (uses.length - 1) : '') : '';
     return '<div class="pantryrow ruled-sm"><span style="min-width:0">' + h(S.ING[id].name) + '<span class="muted small" style="display:block">' + (opt ? 'optional · ' : '') + forTxt + '</span></span><span class="seg" role="group" aria-label="' + h(S.ING[id].name) + '"><button data-act="pantry" data-v="' + h(id) + '" data-s="have">Got it</button><button data-act="pantry" data-v="' + h(id) + '" data-s="out">Need it</button></span></div>';
   }).join('');
   return '<section class="aisle" id="sec-cupcheck"><div class="row between"><h3>In the cupboard?</h3>' + (ids.length > 2 ? '<button class="linkish small" data-act="pantry-all" data-v="' + h(ids.join(',')) + '">Got them all</button>' : '') + '</div>' + rows + '</section>';
@@ -1336,8 +1336,8 @@ function shopRowHtml(row, B, w) {
   const open = S.expanded['s:' + row.i];
   let why;
   if (row.staple) {
-    const forR = (row.forWhat || []).map(id => S.RMAP[id] && S.RMAP[id].title).filter(Boolean);
-    why = (row.opt ? 'optional · ' : '') + (row.always ? 'always buy when low' : 'for ' + Array.from(new Set(row.forDays)).map(x => DAY_NAMES[x]).join(', ') + (forR.length ? ' (' + h(forR[0].split(/ with | & |,/)[0]) + (forR.length > 1 ? ' +' + (forR.length - 1) : '') + ')' : ''));
+    const forR = (row.forWhat || []).map(id => S.RMAP[id] && rt(S.RMAP[id])).filter(Boolean);
+    why = (row.opt ? 'optional · ' : '') + (row.always ? 'always buy when low' : 'for ' + Array.from(new Set(row.forDays)).map(x => DAY_NAMES[x]).join(', ') + (forR.length ? ' (' + h(forR[0]) + (forR.length > 1 ? ' +' + (forR.length - 1) : '') + ')' : ''));
   } else {
     // what it's for: each meal with its days, dinners first
     const byR = []; (row.uses || []).forEach(u => { const r = S.RMAP[u.r]; if (!r) return; let x = byR.find(y => y.r === r); if (!x) byR.push(x = { r, days: [] }); if (!x.days.includes(u.d)) x.days.push(u.d); });
